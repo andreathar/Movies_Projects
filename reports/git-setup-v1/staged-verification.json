@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "baselineCommit": "180723df055ca297827d26109042637f12d36160",
+  "checkedStagedEntries": 688,
+  "lfsFiles": 295,
+  "distinctLfsObjects": 268,
+  "mediaBytes": 647113187,
+  "symlinksPreservedWithoutCopyingTargets": 12,
+  "largestOrdinaryGitBlobBytes": 184701,
+  "indexedIgnoredFiles": [],
+  "unstagedNonignoredFilesAtCheck": [],
+  "byteIntegrity": "Every staged regular file matches its working bytes or exact LFS SHA-256; all LFS objects present locally.",
+  "gitLfsFsck": "Git LFS fsck OK",
+  "gitFsckReturnCode": 0,
+  "note": "LFS pointers verified directly from Git blobs, including duplicate-content paths."
+}
