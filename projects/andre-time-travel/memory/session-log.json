@@ -53,6 +53,25 @@
       "paidJobsSubmitted": 0,
       "evidenceWorkspacePath": "reports/git-setup-v1/setup.json",
       "note": "User requested local versioning; initial snapshot prepared after tests. Runtime/cache/credential files excluded; original production media tracked through LFS."
+    },
+    {
+      "at": "2026-10-09T09:05:23-03:00",
+      "event": "art_direction_review_v1",
+      "role": "art-director (review/proposal, not in registry)",
+      "filesCreated": [
+        "projects/andre-time-travel/docs/art-direction-review-v1.md",
+        "projects/andre-time-travel/01_script/proposals/script-en-v2-proposal.md",
+        "projects/andre-time-travel/docs/decision-sheet-andre-v1.md",
+        "series/andre-time-travel/FRAMEWORK.md"
+      ],
+      "filesAppended": [
+        "projects/andre-time-travel/memory/STATE.md",
+        "projects/andre-time-travel/memory/session-log.json"
+      ],
+      "canonicalStateChanged": false,
+      "creativeApprovalGranted": false,
+      "paidJobsSubmitted": 0,
+      "note": "Inventory, story/asset/workflow analysis, prioritized plan, delegation table, script v2 proposal, decision sheet and series framework. Vision inspection of contact sheets and anchors; manage.py status/validate and 10 unit tests passed before and after."
     }
   ]
 }

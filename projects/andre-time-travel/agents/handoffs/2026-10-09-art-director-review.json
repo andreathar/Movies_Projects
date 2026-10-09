@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "art-director (review/proposal)",
+  "assignment": "Inventory, story/asset/workflow analysis, prioritized improvement plan, delegation, scene/dialogue proposal, reusable framework",
+  "ownedPaths": [
+    "projects/andre-time-travel/docs/art-direction-review-v1.md",
+    "projects/andre-time-travel/01_script/proposals/script-en-v2-proposal.md",
+    "projects/andre-time-travel/docs/decision-sheet-andre-v1.md",
+    "series/andre-time-travel/FRAMEWORK.md",
+    "projects/andre-time-travel/agents/handoffs/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "cfce7b10d415abfc706dc842752fb33dd727862fc5c42a1a60c3af4337e83bd5"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "cdfd74e11bc6df3b2ca462d544484414d0fa77a6513619b0aa06ef37207dce87"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/docs/art-direction-review-v1.md",
+      "sha256After": "0bdb9d35c85b40cabadfb86960e8fbc055114efd6b8c8431bb8acaf3a0e4911f",
+      "reason": "created (proposal)"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/proposals/script-en-v2-proposal.md",
+      "sha256After": "eebab11df444cc49619a569fa44c81ae04f1c8b3443677516361d8e1458182f0",
+      "reason": "created (proposal)"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/decision-sheet-andre-v1.md",
+      "sha256After": "46e8009eb1ddb36501f2c01f80a0e9bcefe4fb422af88d7d93bd105854083eac",
+      "reason": "created (proposal)"
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256After": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+      "reason": "created (proposal)"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "46e06ac0c9999bbf98574ad8a9514eed835a44af9c2aefb5145d5149db316ed9",
+      "reason": "appended session memory entry"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "652d8715f52c4278d1b7d87634c49bcde119956cda54cacfb88f19600e0eae58",
+      "reason": "appended session memory entry"
+    }
+  ],
+  "verification": [
+    "manage.py status/validate ok (warnings: uncached sources 18,19)",
+    "unittest 10/10 ok",
+    "vision inspection: 6 contact sheets, R2 master still, 1 real photo, inbox Kling render, shot card O-03",
+    "git clean at e0b2a31 before edits"
+  ],
+  "pendingDecisions": [
+    "Andre: decision-sheet-andre-v1 D1-D8",
+    "Producer: integrate script v2 if approved (script+CSV together), link FRAMEWORK.md in series.json, add director role to agents/registry.json, fix acceptance-checklist path, quarantine full-face originals, label inbox Kling render, register inbox voice file",
+    "Historian: T05 on v2; add surrender source; cache snapshots 18,19"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

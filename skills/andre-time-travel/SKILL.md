@@ -31,5 +31,8 @@ Use only for this film in Movies_Projects. This project-local procedure is not a
 ## Verification
 Run `.venv/bin/python scripts/manage.py validate` and the stdlib unit tests. A valid workspace is not a completed movie. Report pending input/approval/production gates honestly. This file can always be read directly; automatic project skill discovery also needs the native Git/trust setup and is not claimed enabled here.
 
+## Art direction and episode grammar
+Read `series/andre-time-travel/FRAMEWORK.md` (scene grammar, gates, asset requirements, "ready" definition) before writing or reviewing any episode. The latest review and the open decision sheet for this film are in `projects/andre-time-travel/docs/art-direction-review-v1.md` and `docs/decision-sheet-andre-v1.md`. Freeze the English script before translating; cut a free local-TTS scratch before any paid audio or picture; bibles stay `PROPOSED` until they cite a decision ID.
+
 ## Local handoff and future episodes
 Read `START_HERE.md` and `docs/REPEATABLE_WORKFLOW.md`. Directions for this episode's atlas are editable in `05_storyboard/source/atlas.json`; build a new output revision instead of replacing V1. Local edits must follow `docs/LOCAL_AGENT_HANDOFF.md` and preserve source/version hashes. The five encounters in step 4 belong to this film. New continuations start from `shared/templates/continuation.json` and choose their own structure; no approval, job or spending ceiling carries over automatically.
