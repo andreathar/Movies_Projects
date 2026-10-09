@@ -1,0 +1,348 @@
+{
+  "recordedAt": "2026-10-09T19:43:16.741524+00:00",
+  "pathBase": "film-root",
+  "scope": "New v2 deliverables only; index itself excluded to avoid recursive hashing",
+  "count": 68,
+  "files": [
+    {
+      "path": "08_edit/picture-lock/galileo-en-preview-v2.mp4",
+      "bytes": 16952870,
+      "sha256": "bd687d42ea6692b4c81efa2a78a8acdcea48f2f98308e1f9b40ee55d5b7e850b"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/audio-build.log",
+      "bytes": 2284,
+      "sha256": "b1f987d53881513e39885693717c9ada035315b30435321d3634d2c9c2dafd0e"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/baseline.json",
+      "bytes": 4495,
+      "sha256": "1f03e213ee7d6b5208c2733338fae6c026de90ba3342ce73fd62a05170286993"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/build-log.json",
+      "bytes": 12028,
+      "sha256": "60548df2769fcb80b656c5327103d96726d7b0076bba8c1c02bf2d50b7c1b7bc"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/build-result.json",
+      "bytes": 483,
+      "sha256": "014abeb44123107ab378e2297f76089e463027c42c6a3195551addd8b875de02"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/build.py",
+      "bytes": 13153,
+      "sha256": "b664d7ed464de773077e6284387667e3312f000e73228ea73878cdfd1de511d2"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/decode.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/ffprobe.json",
+      "bytes": 4826,
+      "sha256": "8f0ef0005c75a1a72a35a623f000b73fe703a0472951717b0c3fa58ca3469aa0"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/ffprobe.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/final-preservation.json",
+      "bytes": 4694,
+      "sha256": "de787d8344cdda39cd9ebe3482c363f3b6b64676f86b13e3c61beb526b7ef70a"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frame_sheets.py",
+      "bytes": 3768,
+      "sha256": "bf346561272ba90957ae809ee7b9de7852a4a700229980291b7a42224d5de9f6"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/decode.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0000-0039.png",
+      "bytes": 4518631,
+      "sha256": "de1171216d6627b85bdd221746ff91a6150608616b67256052a90235e679bc22"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0040-0079.png",
+      "bytes": 4707127,
+      "sha256": "5e242b80dbe6e160519b9674ddf81d7582067c387e4527f0765bf74fcad3a24b"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0080-0119.png",
+      "bytes": 3771140,
+      "sha256": "09b3edf3991dcb3cdc2895674ec5b2ebf05a99ccf48fbc6b67d4493032e4afe4"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0120-0159.png",
+      "bytes": 2453709,
+      "sha256": "294bf66e0513ea0f44fa9190b440bd4b5c99b6d41cefa93d8e81cdc9785fb141"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0160-0199.png",
+      "bytes": 2619518,
+      "sha256": "02f153b52db805eec53334de52675de224b1965a6ca6fdbe67e23f346268104b"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0200-0239.png",
+      "bytes": 2526092,
+      "sha256": "12479066f60c9633c0c796346695e2929d4eb5ffca88707e8dd027323411aea2"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0240-0279.png",
+      "bytes": 2514234,
+      "sha256": "193093b01170130adf748ed46da701f15d9e652d8e0e1c33ff9ff7cae15f4198"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0280-0319.png",
+      "bytes": 2388139,
+      "sha256": "e8b03ed26bfe1f14f2cbcbeae7729563548e7951ae2ebdd66318b75415d63e99"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0320-0359.png",
+      "bytes": 2486270,
+      "sha256": "d97db66a75c32583dc40f488184c352c7fdd93c2a8b98e93719615557b1bdcc8"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0360-0399.png",
+      "bytes": 2779557,
+      "sha256": "8d05343715f30c428d54388a905c930450414a58806364cbfcb1cde76d78a6c2"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0400-0439.png",
+      "bytes": 3907093,
+      "sha256": "58c2b9237fe003e89b98e82eacd55b64235d7c920387c206fc53f64710af420c"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0440-0479.png",
+      "bytes": 4789215,
+      "sha256": "734b156b3264930ab1f303710375cdf445c6adb6e2b9055f7f0d7fb6d44f6a46"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0480-0519.png",
+      "bytes": 4754481,
+      "sha256": "0ed779c9bb2377ca2989cd967de30d8616b425ebc42b69c3d5e1f6457d9ad8e5"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0520-0559.png",
+      "bytes": 4425799,
+      "sha256": "a0424c222596e9ac300f4e82dbbff41e748a73ba721d320f12bd9f63e1309d00"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0560-0599.png",
+      "bytes": 2496304,
+      "sha256": "546a73e2d81a5ab7f7439aa15c6ad0826c0d93d08e02b7d8a67211b679234740"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0600-0639.png",
+      "bytes": 2397933,
+      "sha256": "bf4bd09ad2120e5b813a2621aa4aa3fcc5277d89cdb21f70bfdecf2fcac077a6"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0640-0679.png",
+      "bytes": 2296086,
+      "sha256": "e87f80bc2ca6ec5619d269796d7306921bdda672d4ae37173494e86a74c84771"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0680-0719.png",
+      "bytes": 2337165,
+      "sha256": "3202e47acc744d305c21a72bdffccbffb83c4c181deb9b5b00445b32294499eb"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0720-0759.png",
+      "bytes": 2653370,
+      "sha256": "42e81925483083e30ea1e2453bf80ceaa13fec3ec659041936aaa5fd7fd4165c"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0760-0799.png",
+      "bytes": 3660202,
+      "sha256": "fdb7a92dca9677ed98556da9807487c9569d9d5bc7b08992a6fea483a8f25e09"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0800-0839.png",
+      "bytes": 4891580,
+      "sha256": "876caf0380bce1e55506cad41702023768607280e635297e89d64e4fa789dc03"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0840-0879.png",
+      "bytes": 4826094,
+      "sha256": "c7a5513bcfee6491907105f2bf757a3050f96fd1207f0a576b3ed7e0c9269b13"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0880-0919.png",
+      "bytes": 4719142,
+      "sha256": "ac3bd9b6aaf1cf9e01764825485b47ea9590c11842198b31cee62b092fc5e853"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0920-0959.png",
+      "bytes": 3227961,
+      "sha256": "2eaa74c7c6bf59825748fe795da1ac20c4dd84cbe3d9f3b231c555f48c1aa022"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-0960-0999.png",
+      "bytes": 3236233,
+      "sha256": "b5a19810c57558c2e5489aa84c0973f46570d9b5bf3f8853a19ad23999b348c3"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/frames-1000-1007.png",
+      "bytes": 933658,
+      "sha256": "472df606d43ccaebb2e17dff612bdc36b8cd49f7260117eb584f644d44a203bc"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/index.json",
+      "bytes": 17890,
+      "sha256": "19006b1031fd8679e1e76b89e63752fd9e5ac944436fd6cc8631fe88b41a2b03"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/frames/joins.png",
+      "bytes": 2312585,
+      "sha256": "12c775756c4e59633b3e5342f36ecf8d7b8fb3dca34f96bad1520877c4c2cfa3"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/galileo-en-v2.srt",
+      "bytes": 606,
+      "sha256": "6faa06811ee6630f99a743f26f71c97f2c83dad704d2bf1fd1d8b5d5997adf83"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/guide-mix.wav",
+      "bytes": 12096102,
+      "sha256": "43a62c7534922c0c20a04867f4fba6c1d01f23acee0bb7e55676383f3deafeb3"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/loudness.log",
+      "bytes": 74603,
+      "sha256": "b0cbca8a168e9b35209d6e909836324f14c2af7f3e77ade0be1d8a3afe1074d6"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/picture-build.log",
+      "bytes": 13646,
+      "sha256": "77d64c4cb5cc8894698fc90c4d89200c723f3233da5e9f034be0679a4c093ed8"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/preservation.json",
+      "bytes": 4528,
+      "sha256": "36aed2ed728dd998f8e0817fbabc52ff4622729813808b391df259a2e23f0578"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/review.md",
+      "bytes": 6760,
+      "sha256": "add5b016bf1909cee1356160b2f309b2c2bb0855f73793d07b13c44077999309"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E01.log",
+      "bytes": 5291,
+      "sha256": "1aaec01ce69bea1182d2f86c1c8db7ebe217bce30445990a1e8920298a5fa961"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E02.log",
+      "bytes": 5793,
+      "sha256": "91b6a2afff84ce3aaffa72a3022fee5173575e9bde808bc05560013ba1b14491"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E03.log",
+      "bytes": 4835,
+      "sha256": "beb1c0aa0db1a02ce3ee04fbba588d689ba6235390e75cd2f6cd70ac197efe7f"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E04.log",
+      "bytes": 5432,
+      "sha256": "6d43f8ab3d386b81aa804b57d4af5b7682c10b62f09aebf78f38d2c5e6df197c"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E05.log",
+      "bytes": 5447,
+      "sha256": "42493e7951ddcfbda495e0b8bd9ceda789e4559a96b04b1418464c383b7705b2"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E06.log",
+      "bytes": 4834,
+      "sha256": "6bf6b6c9c214e9908e44fd1fabdc2270133cce4e35572ebf5c58b5c2bef1058d"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E07.log",
+      "bytes": 4739,
+      "sha256": "3985fca7083855799abc3e3d6b122bcb8148c596f6d18638760c360dd6ed8abb"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E08.log",
+      "bytes": 5550,
+      "sha256": "f9b8d6fa4c0ac953eb9bf4f9d4224732c376fe3e3bbcc5bde487c96393c83b00"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E09.log",
+      "bytes": 4821,
+      "sha256": "32c01eb1b28844abc160ff2fc0500e17b6fbdcb31f97ce522761843f52eb75cb"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segment-E10.log",
+      "bytes": 4740,
+      "sha256": "d21756ec67ded69ada12fe6c2c372f0cc15854a8b29ac5e03d160b679d98420d"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E01.mp4",
+      "bytes": 2089472,
+      "sha256": "97ca4ba70bd6d0c2ba1629eb1046c56712b1694f929eddb494160211572cc770"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E02.mp4",
+      "bytes": 3338014,
+      "sha256": "1e8014d15e96ce63a347a8f7fa14d93cf41147e5ab2abf43f561fc72a5ccc503"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E03.mp4",
+      "bytes": 1040641,
+      "sha256": "f9b92742486a270c0c87431affba9004acdcd3bce319641596f39b781b4dd659"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E04.mp4",
+      "bytes": 2558321,
+      "sha256": "1e14038e02d717d0de520338bcc54a317986ab65a613e000a029690c32c54a93"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E05.mp4",
+      "bytes": 1847768,
+      "sha256": "e4d758861ea25fce2b0398da1c51069229a906ad104bd02e764b1235db65a9d6"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E06.mp4",
+      "bytes": 991735,
+      "sha256": "1030f780944c796c7482a9802ba27f91eeca762572fa31a6489517e19de5b0b0"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E07.mp4",
+      "bytes": 414396,
+      "sha256": "2430b721425a0767c8f9e7f0bba1d51c2e5864805f619efb380e7af1c76bd939"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E08.mp4",
+      "bytes": 2657273,
+      "sha256": "c84dba8e01928abcfb1fbb32f455356d1f9ba5ca6a8ada3fb6fed9c3418448a4"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E09.mp4",
+      "bytes": 1029545,
+      "sha256": "d3045403deeac0cbc81ae5e58225f1bfb271885c6793835e21625b940452846c"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/segments/E10.mp4",
+      "bytes": 315145,
+      "sha256": "5497f71f9d5b2ac41791988b0b94c8b1955654d4daaa8f489e58ed970fe2e369"
+    },
+    {
+      "path": "08_edit/reviews/galileo-en-v2/technical-qc.json",
+      "bytes": 3424,
+      "sha256": "3a4b66c4c041eef7c2ace1f061f5451628137f1fd4e10cadbef0616413fa91e8"
+    },
+    {
+      "path": "08_edit/timelines/galileo-en-v2.json",
+      "bytes": 9359,
+      "sha256": "55dcaf3b90513c669615c7d72019162bf9a1f02127e440e855a6e8f3c0a84534"
+    }
+  ]
+}

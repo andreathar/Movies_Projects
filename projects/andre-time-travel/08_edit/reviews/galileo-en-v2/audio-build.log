@@ -1,0 +1,42 @@
+Input #0, wav, from '04_audio/stems/dialogue/galileo-guide-v1/G-L01.wav':
+  Metadata:
+    encoder         : Lavf63.1.101
+  Duration: 00:00:02.47, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Input #1, wav, from '04_audio/stems/dialogue/galileo-guide-v1/G-L02.wav':
+  Metadata:
+    encoder         : Lavf63.1.101
+  Duration: 00:00:12.00, bitrate: 2304 kb/s
+  Stream #1:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Input #2, wav, from '04_audio/stems/dialogue/galileo-guide-v1/G-L03.wav':
+  Metadata:
+    encoder         : Lavf63.1.101
+  Duration: 00:00:02.83, bitrate: 2304 kb/s
+  Stream #2:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Input #3, wav, from '04_audio/stems/dialogue/galileo-guide-v1/G-L04.wav':
+  Metadata:
+    encoder         : Lavf63.1.101
+  Duration: 00:00:08.00, bitrate: 2304 kb/s
+  Stream #3:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Input #4, wav, from '04_audio/stems/dialogue/galileo-guide-v1/room-tail.wav':
+  Metadata:
+    encoder         : Lavf63.1.101
+  Duration: 00:00:00.80, bitrate: 2305 kb/s
+  Stream #4:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 (pcm_s24le) -> adelay:default
+  Stream #1:0 (pcm_s24le) -> adelay:default
+  Stream #2:0 (pcm_s24le) -> adelay:default
+  Stream #3:0 (pcm_s24le) -> adelay:default
+  Stream #4:0 (pcm_s24le) -> volume:default
+  atrim:default -> Stream #0:0 (pcm_s24le)
+Output #0, wav, to '08_edit/reviews/galileo-en-v2/guide-mix.wav':
+  Metadata:
+    ISFT            : Lavf63.1.101
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+    Metadata:
+      encoder         : Lavc63.1.101 pcm_s24le
+size=    4352KiB time=00:00:15.69 bitrate=2270.8kbits/s speed=31.4x elapsed=0:00:00.50    
+size=    8960KiB time=00:00:32.59 bitrate=2251.6kbits/s speed=32.6x elapsed=0:00:01.00    
+[out#0/wav @ 0x557a92360000] video:0KiB audio:11812KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000843%
+size=   11813KiB time=00:00:42.00 bitrate=2304.0kbits/s speed=33.3x elapsed=0:00:01.26    

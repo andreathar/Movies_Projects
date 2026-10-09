@@ -1,0 +1,13 @@
+{
+  "output": "08_edit/picture-lock/galileo-en-preview-v2.mp4",
+  "sha256": "bd687d42ea6692b4c81efa2a78a8acdcea48f2f98308e1f9b40ee55d5b7e850b",
+  "timeline": "08_edit/timelines/galileo-en-v2.json",
+  "timelineSha256": "55dcaf3b90513c669615c7d72019162bf9a1f02127e440e855a6e8f3c0a84534",
+  "durationSeconds": 42,
+  "decodedFrames": 1008,
+  "decodeExitCode": 0,
+  "inputsUnchanged": true,
+  "visualReviewCompleted": false,
+  "normalSpeedPlaybackCompleted": false,
+  "accepted": false
+}

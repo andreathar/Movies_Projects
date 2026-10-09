@@ -1,0 +1,91 @@
+{
+  "recordedAt": "2026-10-09T19:43:16.741524+00:00",
+  "pathBase": "film-root",
+  "status": "ready_for_editorial_review_not_accepted",
+  "assignment": "Parley message 3 plus Andre timing clarification on 2026-10-09",
+  "output": "08_edit/picture-lock/galileo-en-preview-v2.mp4",
+  "outputSha256": "bd687d42ea6692b4c81efa2a78a8acdcea48f2f98308e1f9b40ee55d5b7e850b",
+  "timeline": "08_edit/timelines/galileo-en-v2.json",
+  "timelineSha256": "55dcaf3b90513c669615c7d72019162bf9a1f02127e440e855a6e8f3c0a84534",
+  "media": {
+    "durationSeconds": 42,
+    "videoCodec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "frames": 1008,
+    "audioCodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "fullDecodeExitCode": 0,
+    "decodeLogEmpty": true,
+    "integratedLoudnessLUFS": -16.3,
+    "loudnessRangeLU": 6.5,
+    "truePeakDBFS": -1.0
+  },
+  "visualReview": {
+    "method": "Every decoded output frame manually inspected in sequential contact sheets; joins separately inspected",
+    "sequentialSheetsReviewed": 26,
+    "framesReviewed": 1008,
+    "firstFrame": 0,
+    "lastFrameInclusive": 1007,
+    "historicalFramingRiskFramesReviewed": 456,
+    "tileWidth": 400,
+    "tileHeight": 225,
+    "fullHistoricalFacesObserved": 0,
+    "reflectedHistoricalFacesObserved": 0,
+    "accidentalBlackFramesObserved": 0,
+    "fullResolutionLikenessAccepted": false,
+    "limitations": "Contact sheets do not establish normal-speed rhythm, lip-sync, guide pronunciation or fine-detail likeness approval."
+  },
+  "edit": {
+    "sourcePlaybackRate": 1,
+    "eyesAFrames": 48,
+    "eyesBFrames": 48,
+    "eyesBFillFrames": 17,
+    "gl04AudioStartSeconds": 22.8,
+    "pictureBoundaryQuantizationSeconds": -0.008333333333333333,
+    "originalDialogueFilesUnchanged": true,
+    "mixRebuiltForAuthorizedTiming": true,
+    "mixByteIdenticalToV1": false,
+    "gl03Gl04NominalAudioOverlapSeconds": 0.03
+  },
+  "verification": [
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "result": "29 passed; exit 0",
+      "evidence": "Command output observed during this session; no saved full test log"
+    },
+    {
+      "command": ".venv/bin/python scripts/manage.py validate",
+      "result": "Valid, zero errors, four existing shared-skill hash warnings",
+      "evidence": "Command output observed during this session; no saved full validation log"
+    },
+    {
+      "command": "git diff --exit-code; git diff --cached --exit-code (run separately as subprocess calls)",
+      "result": "Both exit 0"
+    },
+    {
+      "check": "All baseline file SHA-256 values compared again",
+      "result": "38 unchanged; final-preservation.json"
+    }
+  ],
+  "sourceStatusFilesAreBuildStageSnapshots": [
+    "08_edit/reviews/galileo-en-v2/build-result.json",
+    "08_edit/timelines/galileo-en-v2.json"
+  ],
+  "normalSpeedPlaybackCompleted": false,
+  "accepted": false,
+  "creditSpend": 0,
+  "externalGenerationCalls": 0,
+  "commit": null,
+  "merged": false,
+  "remaining": [
+    "Andre full playback at normal speed with audio: pace, lip-sync, guide speech and GL03/GL04 junction",
+    "G-L04 guide pronunciation and later voice/language review",
+    "G-X01 and G-X02 absent; existing-take substitutes remain",
+    "PILOT-02 ending has known table/seat discontinuity F01",
+    "Full-resolution likeness and fine-detail approval"
+  ],
+  "details": "08_edit/reviews/galileo-en-v2/review.md"
+}
