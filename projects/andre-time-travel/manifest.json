@@ -196,12 +196,12 @@
     }
   },
   "approvals": {
-    "characterReferences": false,
+    "characterReferences": true,
     "productionElement": true,
     "screenplay": true,
     "voiceTests": false,
-    "speechRoute": false,
-    "pilot": false,
+    "speechRoute": true,
+    "pilot": true,
     "storyboard": false,
     "paidBatch": false,
     "finalPicture": false
@@ -212,7 +212,7 @@
       "phase": "pilot",
       "path": "06_pilot/originals/PILOT-01-galileo-listening-locked_1.mp4",
       "credits": 70,
-      "status": "accepted_pending_andre",
+      "status": "accepted",
       "id": "PILOT-01-galileo-listening-locked_1"
     },
     {
@@ -220,7 +220,7 @@
       "phase": "pilot",
       "path": "06_pilot/originals/PILOT-02-galileo-gentle-turn_1.mp4",
       "credits": 70,
-      "status": "accepted_pending_andre",
+      "status": "accepted",
       "id": "PILOT-02-galileo-gentle-turn_1"
     },
     {
@@ -228,7 +228,7 @@
       "phase": "pilot",
       "path": "06_pilot/originals/PILOT-03-oppenheimer-expression_1.mp4",
       "credits": 30,
-      "status": "accepted_pending_andre",
+      "status": "accepted",
       "id": "PILOT-03-oppenheimer-expression_1"
     },
     {
@@ -236,7 +236,7 @@
       "phase": "pilot",
       "path": "06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
       "credits": 72,
-      "status": "accepted_pending_andre",
+      "status": "accepted",
       "id": "PILOT-04-galileo-speech-native_1"
     },
     {
@@ -244,7 +244,7 @@
       "phase": "pilot",
       "path": "06_pilot/originals/PILOT-05-oppenheimer-speech-OL04_1.mp4",
       "credits": 92,
-      "status": "accepted_pending_andre",
+      "status": "accepted",
       "id": "PILOT-05-oppenheimer-speech-OL04_1"
     }
   ],

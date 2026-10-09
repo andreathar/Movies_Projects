@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "status": 400,
+  "body": "The uploaded media must have an aspect ratio between 2:5 and 5:2. Please upload a different file and try again."
+}

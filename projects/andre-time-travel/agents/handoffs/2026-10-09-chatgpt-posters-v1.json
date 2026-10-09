@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Generate five cinematic posters using the built-in ChatGPT image model and project references; save locally with reproducible prompts and provenance.",
+  "ownedPaths": [
+    "projects/andre-time-travel/09_delivery/posters/chatgpt-v1"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/image-review-log.json",
+      "sha256Before": "b7f258b468ec43cce58da16bc7dc5499eac38bb3395c56cba88d859242078dca"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "ad25ef2c687baf93b26fe858aeac8eb05eec762237a66a6732bc0a35f82a12f9"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "33de3e64dd3fdb78598fd93fc56525f51f531ab644fbac9fbdfe5d7c26085909"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/01-theatrical-hero.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/02-double-exposure.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/03-table-noir.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/04-five-eras.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/05-auteur-minimal.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/README.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/index.html",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/manifest.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/prompts.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/verification.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/workspace-validation.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/workspace-tests.txt",
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/image-review-log.json",
+      "sha256After": "419769a3318e86d2e545fb814cd27a31147da57c2745a5b1065d8c842b3fce2a",
+      "reason": "Append visual checks of five exact poster files, no approval granted."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "ae42d5122779ef199027f088f570f1aa47440599adf4abe480d60c078f042113",
+      "reason": "Append verified poster deliverables and pending human decision."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "ee339cc12aa8ddcc3a953544c658a86ec482ae991b1b04d43a0624b6fcf8ab92",
+      "reason": "Append actual image generation results."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/01-theatrical-hero.png",
+      "sha256After": "308c564d7481a63c060902ad339d82e8c31164e3fd0d85066d5d25564324d0ac",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/02-double-exposure.png",
+      "sha256After": "040a6dba5e6f441330727f00e948fb1848e67ca04e413ea0c2b9d6ce3fe1e44f",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/03-table-noir.png",
+      "sha256After": "4fd8b4c290f0ab26bf8b35423c91a2affe64f69c0a80423f7632a1dde1f1bf21",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/04-five-eras.png",
+      "sha256After": "15cc6b090330128e206cfb92e72ce0f7b452fdd0f5dfd502434cd04a47e97734",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/05-auteur-minimal.png",
+      "sha256After": "d391e80c33458c5d95f47b59047f8121dc5cf77a2896a651fa9cef81b9c13ffe",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/README.md",
+      "sha256After": "1fb822b25b532a7b8d0ac53d639a871cb83027a3f23cb8674b1f397930dfe899",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/index.html",
+      "sha256After": "c0bb966f2b0d743c80a45f520f0cb9d2c422df236ce37859babf2b6fdcf9e585",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/manifest.json",
+      "sha256After": "e42dea972ed56ee1f226f15e098da7271e97147b51c1b63e58356bbc5185791c",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/prompts.json",
+      "sha256After": "764f31f5b551bab9c73a54f2195b79e24e7b9274271b8916b470574f7e1b67f2",
+      "reason": "New poster package asset."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/verification.json",
+      "sha256After": "7bb20153389684560cc4d76d1055bf4d15bd36477a38b70d587391c85bffb328",
+      "reason": "Verification evidence for poster package."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/workspace-validation.txt",
+      "sha256After": "30bae0a57301ec36efa49da6795c14b11ec972e0f577b1d89b27fea685d9b16c",
+      "reason": "Verification evidence for poster package."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/workspace-tests.txt",
+      "sha256After": "8bdd8e455e21db6f7b9ca651a36e20f75747602954b70782058a631152af05e3",
+      "reason": "Verification evidence for poster package."
+    }
+  ],
+  "verification": [
+    {
+      "check": "image_decode_dimensions",
+      "result": "pass",
+      "details": "All five PNGs fully decode as RGB 1024x1536."
+    },
+    {
+      "check": "visual_review",
+      "result": "pass_as_candidates",
+      "details": "Exact title and lead billing legible; only Andre visible; no historical full faces. Human likeness decision pending."
+    },
+    {
+      "check": "byte_preservation",
+      "result": "pass",
+      "details": "Five project files byte-identical to built-in generator outputs."
+    },
+    {
+      "check": "gallery_links",
+      "result": "pass",
+      "details": "23 local links resolved."
+    },
+    {
+      "check": "workspace_validation",
+      "result": "pass_with_existing_shared_skill_warnings"
+    },
+    {
+      "check": "workspace_unit_tests",
+      "result": "10_pass_1_existing_fixture_failure",
+      "evidence": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/workspace-tests.txt"
+    },
+    {
+      "check": "verification_report",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/verification.json"
+    }
+  ],
+  "pendingDecisions": [
+    "Andre likeness approval for these exact five synthetic derivatives.",
+    "Official poster selection."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_user_review",
+  "builtInImageGenerations": 5,
+  "billingKnown": false
+}

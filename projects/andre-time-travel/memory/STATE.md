@@ -107,6 +107,25 @@ At Andre's request, all image results associated with the film's known generatio
 
 All 90 catalogued files decode, ID/work pairs are unique, hashes and gallery links verify, and preexisting generation-area media were unchanged. Rejected/quarantined originals stay archived and hidden initially in the gallery. This is a project-ID archive, not proof of all account history; the installed CLI does not expose a history-list operation. New generations after the recorded cutoff require a new snapshot. Workspace validation passed; one existing test-fixture failure concerns T02's JPG being excluded from the test copy, not a missing production file. Evidence: the archive manifest, verification.json and agent handoff.
 
+## Real-photo cinematic portrait suite — 2026-10-09
+
+Andre uploaded 5 fresh portrait photographs (`.user_uploaded/media_1791552687*.jpg`), ingested untouched to `inbox/andre-reference-photos/20261009_user_portrait_01.jpg` through `05.jpg` and `projects/andre-time-travel/02_references/andre/selected/`.
+A complete 5-angle cinematographic reference suite was generated matching his authentic facial anatomy, dental geometry, smile lines, stubble, and wardrobe (navy blazer / charcoal linen shirt):
+- `R2-andre-cinematic-front-native.jpg`: Master frontal charismatic smile (Antigravity engine).
+- `R2-andre-cinematic-threequarter-listening.jpg`: 3/4 right attentive listening (Kling R2-J01, 41 credits).
+- `R2-andre-cinematic-profile-contemplative.jpg`: 70° chiaroscuro pensive profile (Kling R2-J02, 41 credits).
+- `R2-andre-cinematic-frontal-subtle-smile.jpg`: Frontal subtle knowing smile (Kling R2-J03, 40 credits).
+- `R2-andre-cinematic-seated-table-wide-take1.jpg` & `take2.jpg`: 16:9 oak table conversational master shot (Kling R2-J04, 70 credits).
+Total Kling reference spend: 192 credits, appended to `credit-ledger.csv`. All images mirrored to brain artifacts and published in `andre_cinematic_portrait_suite.md`. Workspace tests and validation pass with 0 errors.
+
+
 ## Photos ingested, Element built, keyframes, pilot — 2026-10-09
 
 Andre delivered `inbox/Photos-Andre-Suit` (13 real frontals, no clip/profiles; checksummed). Identity set v2 = 4 crops in `02_references/andre/approved/`; D02 wardrobe REVISED to grey pinstripe / white striped shirt as photographed. Kling Element **323525046658711** (cover+3, tag Characters, 180 cr) + Andre's PVC voice bound via element_update; read back OK. Still route (D11): kling-image-o1 + cover + Element holds likeness (omni drifted 2/2). 12 era keyframes accepted in `02_references/keyframes/andre/` (D12; 6 rejects filed; prompt lessons recorded). Pilot (D13): 5 kling-video-v3_0 720p takes in `06_pilot/` — identity baseline, gentle turn, expression, and TWO native-audio speech takes with the bound voice, verified by STT (G-L04, O-L04) and all-frame grids; all agent-accepted, 334 cr. Speech route for Edition E = Kling native audio; ElevenLabs lipsync is fallback; Edition H languages unsupported natively. Docs-derived prompt playbook: `../docs/prompt-playbook-kling.md`. Balance **6161** (spent today: R2 205, Element 180, R3 ≈98, pilot 334). Unexplained charge deltas logged (2×41 on images; 70 vs 30 on identical 5-s videos). Next: Andre plays the 5 pilot clips (likeness + voice by ear) → approve `pilot`/`speechRoute`/`characterReferences` → reforecast → Galileo chapter (T13).
+
+
+## Five ChatGPT film posters — 2026-10-09
+
+At Andre's request, five portrait 2:3 cinematic posters for **The Table Between Centuries**, starring **Andre Athar**, were generated with the built-in ChatGPT image tool using the approved real identity photograph and current local era keyframes. Files are `09_delivery/posters/chatgpt-v1/01-theatrical-hero.png` through `05-auteur-minimal.png`: five RGB PNGs at native 1024 × 1536. Directions: warm theatrical hero, double exposure, empty-chair intimate suspense, five-era architecture, and bone-white auteur edition. `index.html` compares them; `prompts.json` and `manifest.json` preserve prompts, reference paths/hashes, dimensions and checksums.
+
+Parent visual review checked correct title/billing and no other full faces. All are synthetic marketing candidates; human likeness approval and official poster choice remain pending. Reference photographs and film stills were not edited. Lettering is baked into the raster files; future changes should create a new revision. No Kling/ElevenLabs jobs, canonical approvals/tasks/credit-ledger changes, commit or publication. Model name and built-in billing not exposed. Handoff: `agents/handoffs/2026-10-09-chatgpt-posters-v1.json`.

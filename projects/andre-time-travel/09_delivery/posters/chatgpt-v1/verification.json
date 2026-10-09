@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-10-09T14:50:50.961814+00:00",
+  "imageCount": 5,
+  "decodedImages": 5,
+  "nativeDimensions": [
+    1024,
+    1536
+  ],
+  "byteIdenticalToGeneratorOutputs": true,
+  "imageHashesMatchManifest": true,
+  "referenceHashesMatchAtPackaging": true,
+  "galleryLinksResolved": 23,
+  "workspaceValidation": "ok",
+  "workspaceWarnings": [
+    "shared skill changed since linking: kling-cli",
+    "shared skill changed since linking: film-character-continuity",
+    "shared skill changed since linking: film-dialogue-localization",
+    "shared skill changed since linking: film-editing-qc"
+  ],
+  "unitTests": {
+    "total": 11,
+    "passed": 10,
+    "failed": 1,
+    "failure": "test_validate_checks_workspace_integrity",
+    "observedFailure": "Expected 'approvals disagree', received 'completed task artifact is missing: T08'.",
+    "scope": "Existing workspace management fixture failure, not a poster decoding or generation failure. Test sets pilot approval true, which is already true in current production state. Test output preserved.",
+    "log": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/workspace-tests.txt"
+  },
+  "humanLikenessApproval": false,
+  "officialPosterSelection": null,
+  "localGalleryOpenRequest": "queued by Codex UI; visual opening not claimed"
+}

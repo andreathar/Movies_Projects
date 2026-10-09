@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "createdAt": "2026-10-09T14:49:35.345672+00:00",
+  "title": "The Table Between Centuries",
+  "lead": "Andre Athar",
+  "provider": "OpenAI built-in ChatGPT image generation",
+  "tool": "image_gen.imagegen",
+  "model": "not exposed by tool",
+  "successfulImageGenerations": 5,
+  "klingJobsSubmitted": 0,
+  "elevenLabsJobsSubmitted": 0,
+  "billing": "No provider billing data exposed by the built-in tool; no claim of free usage. No Kling or ElevenLabs interaction for these posters.",
+  "outputCount": 5,
+  "assetStatus": "synthetic_candidates_pending_user_review",
+  "promptsPath": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/prompts.json",
+  "galleryPath": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/index.html",
+  "referenceAssets": [
+    {
+      "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "sha256AtPackaging": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "classification": "real_identity_photo"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-caesar-listening.jpg",
+      "sha256AtPackaging": "cc1d913f17d48621a4de620d804c24082aa9cd17720ce4b63e0b289e302d0cac",
+      "classification": "synthetic_film_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+      "sha256AtPackaging": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866",
+      "classification": "synthetic_film_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-genghis-listening.jpg",
+      "sha256AtPackaging": "b207de7dd70ba86764a3c22ccb403bc7a0711b81293f206ebe9bc9585905ab0e",
+      "classification": "synthetic_film_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-napoleon-listening.jpg",
+      "sha256AtPackaging": "ec65bcd0c8263e3d86701b270f6c51d124fe3f8aa8ab7bcd715650e047888ce0",
+      "classification": "synthetic_film_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-oppenheimer-listening.jpg",
+      "sha256AtPackaging": "b1d64ed0c8b18806e578a0cc91641ac3913865aca2e64c59be6752f5d16a52e8",
+      "classification": "synthetic_film_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+      "sha256AtPackaging": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "classification": "synthetic_film_reference"
+    }
+  ],
+  "images": [
+    {
+      "id": "01-theatrical-hero",
+      "name": "Pôster principal — A mesa atravessa o tempo",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/01-theatrical-hero.png",
+      "sha256": "308c564d7481a63c060902ad339d82e8c31164e3fd0d85066d5d25564324d0ac",
+      "bytes": 2300467,
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "colorMode": "RGB",
+      "classification": "synthetic_poster",
+      "approvalStatus": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-caesar-listening.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "reviewedBy": "parent_agent",
+        "reviewedAt": "2026-10-09T14:49:35.345672+00:00",
+        "titleSpelling": "pass",
+        "starBillingSpelling": "pass",
+        "otherFullFacesVisible": false,
+        "notes": "Warm Roman/Tuscan theatrical portrait at the table. Title and billing read correctly; one Andre visible, no other faces. Jacket reads grey/charcoal in the warm grade; fine pinstripe is subtle. Table texture interpreted, not pixel-identical to reference.",
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "02-double-exposure",
+      "name": "Dupla exposição — Memória e arquitetura",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/02-double-exposure.png",
+      "sha256": "040a6dba5e6f441330727f00e948fb1848e67ca04e413ea0c2b9d6ce3fe1e44f",
+      "bytes": 2456931,
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "colorMode": "RGB",
+      "classification": "synthetic_poster",
+      "approvalStatus": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-oppenheimer-listening.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-napoleon-listening.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "reviewedBy": "parent_agent",
+        "reviewedAt": "2026-10-09T14:49:35.345672+00:00",
+        "titleSpelling": "pass",
+        "starBillingSpelling": "pass",
+        "otherFullFacesVisible": false,
+        "notes": "Cool photographic portrait with architecture double exposure, table and window. Title and billing read correctly; one Andre and no other faces. Added city skyline is conceptual poster artwork, not evidence of a shot in the film.",
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "03-table-noir",
+      "name": "Suspense intimista — A cadeira vazia",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/03-table-noir.png",
+      "sha256": "4fd8b4c290f0ab26bf8b35423c91a2affe64f69c0a80423f7632a1dde1f1bf21",
+      "bytes": 2143691,
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "colorMode": "RGB",
+      "classification": "synthetic_poster",
+      "approvalStatus": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-napoleon-listening.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "reviewedBy": "parent_agent",
+        "reviewedAt": "2026-10-09T14:49:35.345672+00:00",
+        "titleSpelling": "pass",
+        "starBillingSpelling": "pass",
+        "otherFullFacesVisible": false,
+        "notes": "Wide intimate scene with Andre left, table and empty opposite chair; circle stain visible. Title and billing read correctly, no additional faces. Portrait is smaller by design; likeness requires Andre review.",
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "04-five-eras",
+      "name": "Cinco épocas — Uma única mesa",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/04-five-eras.png",
+      "sha256": "15cc6b090330128e206cfb92e72ce0f7b452fdd0f5dfd502434cd04a47e97734",
+      "bytes": 2439917,
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "colorMode": "RGB",
+      "classification": "synthetic_poster",
+      "approvalStatus": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-caesar-listening.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-napoleon-listening.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-genghis-listening.jpg"
+      ],
+      "visualReview": {
+        "reviewedBy": "parent_agent",
+        "reviewedAt": "2026-10-09T14:49:35.345672+00:00",
+        "titleSpelling": "pass",
+        "starBillingSpelling": "pass",
+        "otherFullFacesVisible": false,
+        "notes": "Single coherent Andre in front of five architectural bands and continuous table. Title and billing read correctly; no other faces. Far-right chalkboard marks are soft, non-semantic set texture, not a validated historical equation.",
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "05-auteur-minimal",
+      "name": "Pôster de autor — O tempo à mesa",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1/05-auteur-minimal.png",
+      "sha256": "d391e80c33458c5d95f47b59047f8121dc5cf77a2896a651fa9cef81b9c13ffe",
+      "bytes": 2478923,
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "colorMode": "RGB",
+      "classification": "synthetic_poster",
+      "approvalStatus": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-oppenheimer-listening.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "reviewedBy": "parent_agent",
+        "reviewedAt": "2026-10-09T14:49:35.345672+00:00",
+        "titleSpelling": "pass",
+        "starBillingSpelling": "pass",
+        "otherFullFacesVisible": false,
+        "notes": "Bone-white collector composition with photographic portrait and oak edge/ring stain. Title and billing read correctly; one Andre, no other faces. This is a flattened raster candidate, not layered typography.",
+        "humanLikenessApproval": false
+      }
+    }
+  ],
+  "notes": [
+    "Original film photographs and keyframes were used as references, not copied pixel-for-pixel into a collage.",
+    "Lettering is baked into each PNG; revise via a new image generation/edit or a separate layout workflow. Preserve v1.",
+    "One preflight call for poster 04 was refused because seven references exceed the tool maximum of five. No image returned from that call. The saved final prompt uses five references.",
+    "These posters do not approve likeness, final picture, film acceptance, print production or release."
+  ]
+}

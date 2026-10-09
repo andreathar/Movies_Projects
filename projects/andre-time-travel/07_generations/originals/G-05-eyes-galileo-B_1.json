@@ -1,0 +1,21 @@
+{
+  "job": "G-05-eyes-galileo-B",
+  "generationId": "AZX8AmaPSs5Gu82TjfMJEZufMX_Xj7VLLpIEu3YZIKjlDJVNMTRCShohHL0-3gHpSaRkehjH",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0_turbo",
+  "options": {
+    "duration": "5",
+    "resolution": "720p",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/_video-pad/R2-J04-eyes-galileo-resolve-B_1_eyescrop_pad52.png"
+  ],
+  "prompt": "The image is an eyes-only strip letterboxed with black bars above and below; keep the black bars exactly as they are, never fill them, never reveal more of the face. An old man's eyes, looking toward camera-left, settle into quiet resolve: a single slow blink, then stillness, the gaze fixed and calm. Locked camera, no zoom, no pull-back, the frame never widens: it stays this exact eyes-only strip from the eyebrows to just under the lower eyelids for the whole shot. No nose tip, no mouth, no face, no hand, no text. One continuous shot.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "4d666c715b21fdbaea2828bbe74180651bc4c5c0050f7fa503451e0bd4250b9b",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3dcb84f7-1629-4321-aff5-22b607055822-n9bbJky7A6WOQrzlbmFMbg-output.mp4?x-kcdn-pid=112372",
+  "note": "G-05 cue B quiet resolve",
+  "created": "2026-10-09T11:38:46-03:00"
+}

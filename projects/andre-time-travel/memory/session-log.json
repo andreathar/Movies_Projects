@@ -152,6 +152,21 @@
       "pilotTakes": 5,
       "speechVerifiedBySTT": true,
       "andreApprovalPending": true
+    },
+    {
+      "at": "2026-10-09T14:49:35.345672+00:00",
+      "event": "chatgpt_film_posters_generated",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v1",
+      "imageCount": 5,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "provider": "OpenAI built-in image generation",
+      "klingJobsSubmitted": 0,
+      "elevenLabsJobsSubmitted": 0,
+      "creativeApprovalGranted": false,
+      "humanLikenessReviewPending": true
     }
   ]
 }

@@ -119,31 +119,35 @@
       "id": "T08",
       "title": "Approve a restrained four-shot identity pilot",
       "ownerRole": "continuity",
-      "status": "in_progress",
+      "status": "completed",
       "dependsOn": [
         "T03",
         "T04"
       ],
-      "blocker": "Pilot executed and agent-accepted (06_pilot/). Needs Andre: play all 5 at full speed, approve likeness + voice.",
+      "blocker": null,
       "specification": "production-tasks.md",
       "deliverables": [
-        "06_pilot/reviews/"
+        "06_pilot/reviews/PILOT-01-galileo-listening-locked.json",
+        "00_brief/decisions/D13-speech-route.json"
       ],
-      "verifiedAt": null
+      "verifiedAt": "2026-10-09T11:35:30-03:00"
     },
     {
       "id": "T09",
       "title": "Prove the speech route in both edition strategies",
       "ownerRole": "dialogue-sound",
-      "status": "in_progress",
+      "status": "completed",
       "dependsOn": [
         "T07",
         "T08"
       ],
-      "blocker": "Native-audio route proven on 2 takes (D13). Edition H route still open.",
+      "blocker": null,
       "specification": "production-tasks.md",
-      "deliverables": [],
-      "verifiedAt": null
+      "deliverables": [
+        "00_brief/decisions/D13-speech-route.json",
+        "00_brief/decisions/D14-dub-strategy.json"
+      ],
+      "verifiedAt": "2026-10-09T11:35:30-03:00"
     },
     {
       "id": "T10",
@@ -200,13 +204,13 @@
       "id": "T13",
       "title": "Produce Galileo as the first complete chapter",
       "ownerRole": "producer",
-      "status": "blocked",
+      "status": "in_progress",
       "dependsOn": [
         "T09",
         "T10",
         "T12"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Galileo chapter in production under APR-galileo",
       "specification": "production-tasks.md",
       "deliverables": [],
       "verifiedAt": null

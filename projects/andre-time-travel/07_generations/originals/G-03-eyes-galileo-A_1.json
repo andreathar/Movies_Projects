@@ -1,0 +1,21 @@
+{
+  "job": "G-03-eyes-galileo-A",
+  "generationId": "AUneHc_qNPqqspdHRhlbpt5X_mBNs3CYBP104zFWICuE5iK6C6hEjlM8GECws9yp2EMtfIEA",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0_turbo",
+  "options": {
+    "duration": "5",
+    "resolution": "720p",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/_video-pad/R1-J15-eyes-galileo-weariness_1_eyescrop_pad52.png"
+  ],
+  "prompt": "The image is an eyes-only strip letterboxed with black bars above and below; keep the black bars exactly as they are, never fill them, never reveal more of the face. An old man's tired eyes, looking toward camera-left at someone speaking. They hold still, then brighten very slightly with attention \u2014 a slow blink, the brows lift a fraction, the gaze steadies on the speaker. Locked camera, no zoom, no pull-back, the frame never widens: it stays this exact eyes-only strip from the eyebrows to just under the lower eyelids for the whole shot. No nose tip, no mouth, no face, no hand, no text. One continuous shot.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "5398824c54c468ff587de07b87ca74f3ae9815da1fdeea3ccae758f66372c96a",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/dd57e836-912d-4942-9691-5125f58e095c-n9bbJky7A6V9Z73xLrro2A-output.mp4?x-kcdn-pid=112372",
+  "note": "eyes-only animation test; G-03 cue A weariness\u2192attention",
+  "created": "2026-10-09T11:36:28-03:00"
+}

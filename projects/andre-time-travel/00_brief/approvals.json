@@ -2,12 +2,12 @@
   "schemaVersion": "1.0",
   "workspaceSetupAuthorized": true,
   "creativeApprovals": {
-    "characterReferences": false,
+    "characterReferences": true,
     "productionElement": true,
     "screenplay": true,
     "voiceTests": false,
-    "speechRoute": false,
-    "pilot": false,
+    "speechRoute": true,
+    "pilot": true,
     "storyboard": false,
     "paidBatch": false,
     "finalPicture": false
@@ -105,6 +105,25 @@
       "ceiling": "400 Kling credits; stop at 360.",
       "status": "executed",
       "result": "5 takes, 334 credits (6495→6161), all accepted pending Andre"
+    },
+    {
+      "id": "APR-andre-pilot-2026-10-09",
+      "type": "creative_approval",
+      "gate": "characterReferences+pilot+speechRoute(picture)",
+      "grantedBy": "Andre Athar (chat, 2026-10-09)",
+      "quote": "the face its me fine. the voice no, but its ok for now . i can dub later. now we have to continue",
+      "scope": "Likeness approved on the 5 pilot takes (Element 323525046658711, o1 keyframe route, v3_0 video envelope). Picture side of the native-audio speech route approved for mouth motion. Kling native VOICE rejected: final Andre voice will be dubbed (ElevenLabs clone) in post; Kling audio is scratch/guide only.",
+      "notApproved": [
+        "voiceTests (Kling native voice not Andre's; ElevenLabs renders still unjudged)"
+      ]
+    },
+    {
+      "id": "APR-galileo-2026-10-09",
+      "type": "paid_video_batch_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "Galileo chapter (G-01..G-07): eyes-only animation test, 1 table insert clip, Andre G-L02 speech clip (native audio guide), reuse of pilot takes 01/02/04. Model kling-video-v3_0 / v3_0_turbo per playbook.",
+      "ceiling": "900 credits; stop at 810.",
+      "status": "executing"
     }
   ],
   "decisionRecords": "00_brief/decisions/"

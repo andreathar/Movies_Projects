@@ -1,0 +1,69 @@
+[
+  {
+    "job": "G-03-eyes-galileo-A",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "auth": "APR-galileo-2026-10-09",
+    "note": "eyes-only animation test; G-03 cue A weariness\u2192attention",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/_video-pad/R1-J15-eyes-galileo-weariness_1_eyescrop_pad52.png"
+    ],
+    "prompt": "The image is an eyes-only strip letterboxed with black bars above and below; keep the black bars exactly as they are, never fill them, never reveal more of the face. An old man's tired eyes, looking toward camera-left at someone speaking. They hold still, then brighten very slightly with attention \u2014 a slow blink, the brows lift a fraction, the gaze steadies on the speaker. Locked camera, no zoom, no pull-back, the frame never widens: it stays this exact eyes-only strip from the eyebrows to just under the lower eyelids for the whole shot. No nose tip, no mouth, no face, no hand, no text. One continuous shot."
+  },
+  {
+    "job": "G-05-eyes-galileo-B",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "auth": "APR-galileo-2026-10-09",
+    "note": "G-05 cue B quiet resolve",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/_video-pad/R2-J04-eyes-galileo-resolve-B_1_eyescrop_pad52.png"
+    ],
+    "prompt": "The image is an eyes-only strip letterboxed with black bars above and below; keep the black bars exactly as they are, never fill them, never reveal more of the face. An old man's eyes, looking toward camera-left, settle into quiet resolve: a single slow blink, then stillness, the gaze fixed and calm. Locked camera, no zoom, no pull-back, the frame never widens: it stays this exact eyes-only strip from the eyebrows to just under the lower eyelids for the whole shot. No nose tip, no mouth, no face, no hand, no text. One continuous shot."
+  },
+  {
+    "job": "G-01-insert-galileo-v2",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "auth": "APR-galileo-2026-10-09",
+    "note": "G-01/G-06 table insert: fingers press then stop (replacement for lost-ID job; see ledger UNCERTAIN row)",
+    "args": {
+      "duration": "10",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/inserts/R2-J12-insert-galileo_1.jpg"
+    ],
+    "prompt": "The aged hand on the far edge of the oak table presses its fingertips lightly into the wood, holds, then relaxes and goes still. The manuscript page stays out of focus and unreadable. Dust drifts in the cool window light. Locked camera at tabletop height, no camera movement, the frame never tilts up: the head, neck and face stay outside the frame for the whole shot. No second hand, no other person, no text. One continuous shot."
+  },
+  {
+    "job": "G-02-andre-GL02",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "auth": "APR-galileo-2026-10-09",
+    "note": "Andre speaks G-L02; native audio = guide track (D14)",
+    "args": {
+      "duration": "12",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "true",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/keyframes/andre/KF-galileo-speaking.jpg"
+    ],
+    "prompt": "<<<323525046658711>>> speaks warmly in English to the unseen old man across the table, amused at the myth and respectful of the man, in a plain, unhurried voice. Andre says: \"Believed, taught \u2014 and turned into a simple story: one man against the whole world. The truth was harder, and more interesting.\" He pauses briefly after \"story\", keeps his eyes on the person to camera-right, and falls silent after the last word, a small smile fading. Quiet room tone only, no music. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face."
+  }
+]

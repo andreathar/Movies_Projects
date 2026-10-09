@@ -15,6 +15,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 import urllib.request
 from pathlib import Path
 
@@ -65,11 +66,34 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
         cmd += [f"--{k}", str(v)]
     cmd.append(prompt)
     started = dt.datetime.now().astimezone().isoformat(timespec="seconds")
+    # Submit WITHOUT polling so the generationId is persisted before any wait.
+    cmd[cmd.index("--poll") + 1] = "0"
     data = run(cmd)
+    (res_dir / f"{job}.submit.json").write_text(json.dumps(data, indent=2), encoding="utf-8")
+    body = data.get("body") or {}
+    if not isinstance(body, dict):
+        body = {}
+    gen_id = (body.get("generationId") or body.get("generation_id")
+              or ((body.get("generations") or [{}])[0].get("generationId")))
+    if not gen_id:
+        (res_dir / f"{job}.response.json").write_text(json.dumps(data, indent=2), encoding="utf-8")
+        return {"job": job, "generationId": None, "status": "SUBMIT_FAILED", "works": [],
+                "creditsDelta": None, "balanceBefore": before, "balanceAfter": account(),
+                "error": data}
+    deadline = time.time() + max(poll, 60)
+    data = {}
+    while True:
+        data = run(["kling", "query_tasks", gen_id, "-q", *TELEMETRY])
+        gens = (data.get("body") or {}).get("generations") or []
+        st = (gens[0].get("status") if gens else "") or ""
+        if st.upper() in ("COMPLETED", "PARTIAL_COMPLETED", "SUCCEED", "FAILED", "CANCELLED"):
+            break
+        if time.time() > deadline:
+            break
+        time.sleep(8)
     (res_dir / f"{job}.response.json").write_text(json.dumps(data, indent=2), encoding="utf-8")
     gens = (data.get("body") or {}).get("generations") or []
-    gen_id = gens[0].get("generationId") if gens else data.get("body", {}).get("generationId")
-    status = gens[0].get("status") if gens else data.get("body", {}).get("status")
+    status = gens[0].get("status") if gens else "TIMEOUT_STILL_RUNNING"
     works = []
     if gens:
         for i, w in enumerate((gens[0].get("result") or {}).get("works") or [], start=1):
