@@ -1,0 +1,24 @@
+{
+  "id": "03-galileo-in",
+  "kind": "synthetic_keyframe_candidate",
+  "authorization": "Andre requested ten built-in ChatGPT IN/OUT frames across five personalities in this chat.",
+  "prompt": "Create ONE photorealistic cinematic FILM KEYFRAME, landscape 16:9, ideally 1536x864, full-bleed image without borders, text, title, logo, watermark or collage. This is the IN/start frame of a continuous 5-second locked-camera conversation shot, not a poster. Real actor Andre Athar is the man in reference photos 1 and 2: preserve his exact facial anatomy, olive/hazel eyes, actual age, nose, jaw, short salt-and-pepper stubble, hairline and natural skin texture. Do not beautify him into another actor. Wardrobe exactly as photographed: mid-grey subtly pinstriped jacket, finely striped white open-collar shirt, no tie. Reference 3 is ONLY the oak tabletop material, circular water-ring stain and small corner chip. Reference 4 is ONLY Galileo's black wool sleeve/shoulder fabric; DO NOT copy its visible beard, mouth, readable papers or camera direction.\nSCENE: intimate fictional meeting with Galileo Galilei, Arcetri 1634, a quiet pale-stone study, muted warm daylight through one leaded window at screen-left; modest closed books on a rear shelf, no paintings/statues/portraits, no shiny mirrors. Deep tactile and elegant cinema lighting, soft falloff, subtle film grain, restrained ochre and cool shadow palette, natural realistic photography rather than illustration.\nSTAGING IS CRITICAL: exactly two people SEATED opposite one another across the SHORT 75cm depth of ONE small rectangular pale oak domestic table (about 120x75cm top, 75cm high). Andre sits on its far long side, centre-left of frame, chest and both forearms visibly OVER THE TABLE in front of him. Camera is on the near side, behind and to the LEFT of Galileo, looking past Galileo's LEFT shoulder. Galileo occupies the RIGHT foreground as a softly defocused black wool shoulder, upper arm and forearm reaching onto the SAME tabletop. The whole historical head, neck, ear, hair, beard and face are completely OUTSIDE the top/right crop: there must be no part of any second face, even blurry, anywhere. Do not create a head-shaped black mass. Only a shoulder rising through the right edge/top-right corner and a sleeve. The near edge, far edge and tactile table grain establish a close shared conversation. The table is not behind or beside Andre and is not a huge dining table. Frame the table in the bottom quarter to third, Andre's face large and sharp. Andre looks 10 degrees to camera-right toward Galileo's unseen head, never at the viewer. 50mm full-frame lens feeling, camera near seated eye height, shallow depth of field while keeping Andre's hands usable; no ultrawide distortion.\nIN performance: Andre listens attentively, lips gently closed, slight thoughtful lift of eyebrows, a calm welcoming posture. Both forearms rest naturally on his edge; his right hand relaxed palm-down, left hand resting near it, anatomically plausible five fingers. Galileo's near forearm rests still at the right edge. Keep the centre of the table mostly empty; just one small unmarked folded cream sheet near Galileo, no readable writing. Make a beautiful believable still from an intimate prestige time-travel drama, with emotion and bodily presence, not a posed portrait.",
+  "referencePaths": [
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/andre/approved/sec1_20240202_015347_hs34.jpg",
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg"
+  ],
+  "billingKnown": false,
+  "paidKlingJobs": 0,
+  "referencePathBase": "film_root",
+  "referenceSha256": {
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+    "02_references/andre/approved/sec1_20240202_015347_hs34.jpg": "fefcda40f1b70cd827f66fddf7ec1d29083d64f882a9df2f30b7f6ef53afd140",
+    "02_references/table/R1-J26-table-anchor_2.png": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+    "02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df"
+  },
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "outputApproval": "pending_user_review"
+}

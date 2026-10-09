@@ -1,0 +1,18 @@
+{
+  "id": "03-galileo-out",
+  "prompt": "Edit reference 1 into the OUT/end frame approximately five seconds later of the EXACT SAME locked cinematic shot. Output one landscape 16:9 image with identical resolution and framing, no text/borders. Reference 1 is the edit target: preserve the camera, crop, lens, oak table geometry, water ring and chip at exact same positions, folded paper, all background books/window/candlesticks, lighting, shadows, wardrobe and foreground Galileo shoulder/hand. Do not add objects or shift either person. Reference 2 is the REAL identity authority for Andre; preserve his facial anatomy, age, eyes, short hair and stubble. ONLY CHANGE: Andre gently lifts his own RIGHT hand (the hand on screen-left) about 8cm above the tabletop in a small open palm-up explanatory gesture, relaxed fingers together naturally, while his LEFT forearm/hand remains resting on the table as before. His chin straightens by at most 2 degrees and his lips are barely parted as if calmly beginning a thoughtful explanation. Same warm attentive eyes looking toward Galileo camera-right; no broad smile, no teeth emphasis. The gesture is restrained and plausible to interpolate over five seconds, not a different pose or camera angle. Keep Galileo's entire head, neck, beard, ear and face outside the right/top crop, only black wool shoulder and forearm visible. Only Andre's face in the entire picture; no new faces or reflections. Preserve high-end realistic cinematic texture and exact color palette. This is an endpoint candidate, not an animated video.",
+  "transparent_background": false,
+  "referencePaths": [
+    "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+  ],
+  "referencePathBase": "film_root",
+  "referenceSha256": {
+    "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+  },
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "billingKnown": false,
+  "outputApproval": "pending_user_review"
+}

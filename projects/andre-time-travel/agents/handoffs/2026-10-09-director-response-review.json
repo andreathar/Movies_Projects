@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "continuity-reviewer",
+  "assignment": "Verify director response relayed by Andre and document proportionate recovery guidance",
+  "ownedPaths": [
+    "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/DIRECTOR_RESPONSE_REVIEW.md",
+    "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/director-response-check.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "d2a6f1df12ddeccbcc952907f8388bc87c6414957d7c5d47625e47f5f50102ad"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/DIRECTOR_RESPONSE_REVIEW.md",
+      "sha256After": "c60adb211e2bf3f9e71a0f0244ccf1c2b28849128ea5307361b9d88b6b66b8b4",
+      "reason": "Review document/evidence or appended project-local audit log"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/director-response-check.json",
+      "sha256After": "d79495d449b74eae76647c0c57dd48568118085f81aafdeff7a522b90cd62c7b",
+      "reason": "Review document/evidence or appended project-local audit log"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "02f1dc4e2a5c0707298b34ac8b24026f212441bde36ba9f4f39258656ca0aa32",
+      "reason": "Review document/evidence or appended project-local audit log"
+    }
+  ],
+  "canonicalStateChanged": false,
+  "projectLocalMemoryUpdated": true,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review",
+  "verification": [
+    "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/director-response-check.json",
+    "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/director-response-validation.txt",
+    "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/director-response-tests.txt"
+  ],
+  "pendingDecisions": [
+    "Producer reconciles current proposals and documents take-acceptance semantics",
+    "Validate shared-table Galileo conversation before replication"
+  ],
+  "validationStatus": "ok",
+  "unitTestsPassed": 29
+}

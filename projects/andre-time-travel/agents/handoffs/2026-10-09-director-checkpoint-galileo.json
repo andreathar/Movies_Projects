@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "director/producer (Hermes session 20261009_081822_9a8c50, re-anchored to Movies_Projects)",
+  "assignment": "Re-read all reviews and concurrent proposals; consolidate current state into one checkpoint; propose integration changes. No generation, no canonical state change beyond STATE pointer and session log.",
+  "ownedPaths": [
+    "projects/andre-time-travel/docs/checkpoint-2026-10-09-galileo-retomada.md",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/memory/session-log.json",
+    "projects/andre-time-travel/logs/kling-discovery-checkpoint/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "403fa8c9f55dac6048b4329184d253097757850c724490ef6a41aa8ad3c2484c"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/timelines/galileo-en-v1.json",
+      "sha256": "777ef59e547d75bf922c0a6ad1801e6e1799e525590e6272d58c1d832eb71e1d"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v1.mp4",
+      "sha256": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request.json",
+      "sha256": "5cb10375103dbd7289fabce6e7d10d22abfb672109d22bc150f7d51997b922ea"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+      "sha256": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e"
+    }
+  ],
+  "readOnlyInputs": [
+    "08_edit/reviews/holistic-staging-v1/",
+    "08_edit/reviews/2026-10-09-revisao-nova-direcao/",
+    "docs/status-report-2026-10-09.md",
+    "03_bibles/*-v2-proposta*",
+    "03_bibles/scene-bibles/*-v3-proposta.md",
+    "07_generations/plans/",
+    "07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/"
+  ],
+  "findings": [
+    {
+      "id": "CK-01",
+      "severity": "blocking_for_phase_a",
+      "detail": "gemini-3-pro-image declares only image_1/image_2 in live who_am_i; Phase A request.json passes 5 images. Needs request-r2 and renewed D16 review before submission."
+    },
+    {
+      "id": "CK-02",
+      "severity": "authorization",
+      "detail": "D16 is recorded as relayed via Grok Bot; producer will require Andre's direct confirmation in chat before any spend."
+    },
+    {
+      "id": "CK-03",
+      "severity": "editorial",
+      "detail": "Listening pilots PILOT-01/02 are not the Galileo geometry (F01); G-02 and PILOT-04 are mutually compatible frontal speech coverage; reaction B must move after G-L04 end (F03)."
+    }
+  ],
+  "pendingDecisions": [
+    "Andre: confirm D16 directly",
+    "Andre: D16-r2 input correction (2 declared inputs) or model change",
+    "Andre: D18 blurred nape for phases B/C",
+    "Andre: D17 geometry canonization timing",
+    "Andre: phases B/C"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "klingCallsMade": [
+    "image_to_image --help (free, logged)"
+  ],
+  "createdAt": "2026-10-09T13:10:41.849064-03:00"
+}

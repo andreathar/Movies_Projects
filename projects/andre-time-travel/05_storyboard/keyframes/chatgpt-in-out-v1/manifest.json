@@ -1,0 +1,349 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "version": "chatgpt-in-out-v1",
+  "createdAt": "2026-10-09T13:29:02.676667-03:00",
+  "authorization": "Andre explicitly requested IN and OUT frames for all five encounters, using built-in ChatGPT generation; then requested checking historical character references.",
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "billingKnown": false,
+  "builtInImageCalls": 11,
+  "deliveredImages": 10,
+  "preservedRejectedDrafts": 1,
+  "klingJobsSubmitted": 0,
+  "elevenLabsJobsSubmitted": 0,
+  "requestedAspectRatio": "16:9",
+  "actualDimensions": [
+    1672,
+    941
+  ],
+  "aspectRatioNote": "Native output approximately 16:9; no resizing, crop or upscale performed. Exact video dimensions require a deliberate later edit.",
+  "pairs": [
+    {
+      "id": "caesar",
+      "name": "César",
+      "era": "Roma · 44 a.C.",
+      "performance": "Toga clara e borda púrpura; pequeno gesto aberto.",
+      "lineInspiration": "C-L02",
+      "lineSynchronizationVerified": false,
+      "intendedShotSeconds": 5,
+      "purpose": "One short conversational shot, not whole-chapter start/end",
+      "in": "01-caesar-in.png",
+      "out": "01-caesar-out.png",
+      "userLikenessApproved": false,
+      "videoInterpolationTested": false
+    },
+    {
+      "id": "genghis",
+      "name": "Gengis Khan",
+      "era": "Acampamento · 1227",
+      "performance": "Tecido escuro, pele e detalhe de armadura da referência R2; gesto contido com palma para baixo.",
+      "lineInspiration": "K-L02",
+      "lineSynchronizationVerified": false,
+      "intendedShotSeconds": 5,
+      "purpose": "One short conversational shot, not whole-chapter start/end",
+      "in": "02-genghis-in.png",
+      "out": "02-genghis-out.png",
+      "userLikenessApproved": false,
+      "videoInterpolationTested": false
+    },
+    {
+      "id": "galileo",
+      "name": "Galileu",
+      "era": "Arcetri · 1634",
+      "performance": "Lã preta; escuta seguida de gesto explicativo.",
+      "lineInspiration": "G-L02",
+      "lineSynchronizationVerified": false,
+      "intendedShotSeconds": 5,
+      "purpose": "One short conversational shot, not whole-chapter start/end",
+      "in": "03-galileo-in.png",
+      "out": "03-galileo-out.png",
+      "userLikenessApproved": false,
+      "videoInterpolationTested": false
+    },
+    {
+      "id": "napoleon",
+      "name": "Napoleão",
+      "era": "Santa Helena · 1816",
+      "performance": "Casaco verde, detalhe vermelho e bicorne sobre a mesa; gesto baixo de reflexão.",
+      "lineInspiration": "N-L04",
+      "lineSynchronizationVerified": false,
+      "intendedShotSeconds": 5,
+      "purpose": "One short conversational shot, not whole-chapter start/end",
+      "in": "04-napoleon-in.png",
+      "out": "04-napoleon-out.png",
+      "userLikenessApproved": false,
+      "videoInterpolationTested": false
+    },
+    {
+      "id": "oppenheimer",
+      "name": "Oppenheimer",
+      "era": "Sala ficcional perto de Trinity · 1945",
+      "performance": "Tweed, luz noturna; mãos se separam e a expressão fica mais sóbria.",
+      "lineInspiration": "O-L04",
+      "lineSynchronizationVerified": false,
+      "intendedShotSeconds": 5,
+      "purpose": "One short conversational shot, not whole-chapter start/end",
+      "in": "05-oppenheimer-in.png",
+      "out": "05-oppenheimer-out.png",
+      "userLikenessApproved": false,
+      "videoInterpolationTested": false
+    }
+  ],
+  "images": [
+    {
+      "id": "01-caesar-in",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+      "pair": "caesar",
+      "phase": "in",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "6a194b93459cac2981b2bb34dc547535dcb7205dc050eb4d51ee0296f47bb432",
+      "bytes": 2107693,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "01-caesar-out",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-out.png",
+      "pair": "caesar",
+      "phase": "out",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "8dda8aa7efda6ac5e8c8b4aec8450968277ccca47612fe000b5b5463f9e0f1be",
+      "bytes": 2067735,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "02-genghis-in",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+      "pair": "genghis",
+      "phase": "in",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "72ac01cbbc8ff7388aac5934bc7db3a3d0bf2c376461c5c9dd65476970b74098",
+      "bytes": 2207910,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "02-genghis-out",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-out.png",
+      "pair": "genghis",
+      "phase": "out",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "124803c1fb58cbd745df96fe69285a94d62ca874dc69aa6db26b3b09c88c06f1",
+      "bytes": 2115258,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "03-galileo-in",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+      "pair": "galileo",
+      "phase": "in",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+      "bytes": 2194215,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "03-galileo-out",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+      "pair": "galileo",
+      "phase": "out",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+      "bytes": 2044160,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "04-napoleon-in",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+      "pair": "napoleon",
+      "phase": "in",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "be6df991029f5e7f2364c3816936f2492cb034d9e41808c9d4bf91062f8edc7a",
+      "bytes": 2234964,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "04-napoleon-out",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-out.png",
+      "pair": "napoleon",
+      "phase": "out",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "525cd4a5549e0b1a65c58769d1e42767c2353a133ace457e24f99296c37c44ae",
+      "bytes": 2078427,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "05-oppenheimer-in",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+      "pair": "oppenheimer",
+      "phase": "in",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "22989dfd0f87ac839aedbee11181a7ad249037d976db1e40b6b741b3170026b1",
+      "bytes": 2144616,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    },
+    {
+      "id": "05-oppenheimer-out",
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-out.png",
+      "pair": "oppenheimer",
+      "phase": "out",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "1d5025b1a4389124f04e83cdf3c2db36f3fea7400e65e009c52173ca52a6b0ff",
+      "bytes": 2040660,
+      "classification": "synthetic_keyframe_candidate",
+      "status": "pending_user_review",
+      "visualReview": {
+        "reviewer": "parent_agent",
+        "method": "full-image visual inspection of returned image",
+        "historicalFullFaceObserved": false,
+        "historicalHeadOutsideFrame": true,
+        "andreForearmsAtSharedTable": true,
+        "handsNeedVideoReview": true,
+        "humanLikenessApproval": false
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "path": "05_storyboard/keyframes/chatgpt-in-out-v1/rejected/01-caesar-in-before-period-fix.png",
+      "sha256": "2091dbc1630cc6e50eec1e8790ae88a893dbb40dbe51247a46b24dd33270201b",
+      "reason": "Roman background inherited gridded glazing and bound books; targeted correction retained as final IN. Not a full historical validation."
+    }
+  ],
+  "pending": [
+    "Andre likeness approval on these exact images",
+    "Historical/art-direction review of candidate sets and wardrobe differences",
+    "Small video test: identity, hands, eyeline, shared-space continuity and zero historical face in every frame",
+    "Live provider schema and explicit paid scope before any video submission; no IN/OUT route capability is inferred from image generation"
+  ],
+  "canonicalApprovalsChanged": false
+}

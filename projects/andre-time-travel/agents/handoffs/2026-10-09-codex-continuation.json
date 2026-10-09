@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "director-review",
+  "assignment": "User-requested durable continuation checkpoint before compaction or possible new session",
+  "ownedPaths": [
+    "projects/andre-time-travel/memory/CONTINUE_HERE.md"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "51127f836dabc7b9eb9ca04a3ca5876cbba2f6dba752553b64206a5f1b6a5627"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "b1e448c4a91c5a1dd2ee0287804f8ebeefece7fb0545617b36469022dba30b55"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/CONTINUE_HERE.md",
+      "sha256After": "eaa911fc6762f70c6f64b3a57792692d7ecd41ea66dcdba184f6ffa3d41185c9",
+      "reason": "Continuation checkpoint or project memory pointer/event"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "5e426020736805d583b215c69d50bded817d59b9b22cf86deb2d64e9d82a27da",
+      "reason": "Continuation checkpoint or project memory pointer/event"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "ef7dd5e05751bb7023b95fa307447a2c96879d2134ea296ea802551e03104159",
+      "reason": "Continuation checkpoint or project memory pointer/event"
+    }
+  ],
+  "canonicalStateChanged": false,
+  "projectLocalMemoryUpdated": true,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "ready_for_continuation",
+  "pendingDecisions": [
+    "Andre will describe ideas in next audio; no folder restructure/deletion authorized"
+  ],
+  "newThreadCreated": false
+}

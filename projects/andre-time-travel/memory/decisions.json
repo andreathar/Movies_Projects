@@ -1,35 +1,44 @@
 {
   "schemaVersion": "1.0",
+  "status": "superseded",
+  "supersededOn": "2026-10-09",
+  "supersededBy": "projects/andre-time-travel/00_brief/decisions/ (D01-D16 review-decision records; the only decision namespace)",
+  "note": "These five bootstrap entries (07:30) reuse IDs D01-D05 with different meanings from the records in 00_brief/decisions/. They are kept as history. Cite decisions only by the 00_brief/decisions ID. Legacy IDs are prefixed LEGACY- below so a bare 'D01' is never ambiguous. Original file: history/decisions-2026-10-09-pre-restructure.json.",
   "decisions": [
     {
-      "id": "D01",
+      "id": "LEGACY-D01",
       "topic": "Project scope",
       "state": "confirmed_from_conversation",
-      "decision": "Five selected historical conversations featuring Andre; full interlocutor faces prohibited."
+      "decision": "Five selected historical conversations featuring Andre; full interlocutor faces prohibited.",
+      "legacyId": "D01"
     },
     {
-      "id": "D02",
+      "id": "LEGACY-D02",
       "topic": "Character safety",
       "state": "production_gate",
-      "decision": "Approve clean real-photo references and a versioned production Element before full production."
+      "decision": "Approve clean real-photo references and a versioned production Element before full production.",
+      "legacyId": "D02"
     },
     {
-      "id": "D03",
+      "id": "LEGACY-D03",
       "topic": "Spending",
       "state": "ceiling_authorized_not_batch_approved",
-      "decision": "All remaining Kling credits may be useful film spend; refresh live balance, retain retry approval and separate external fees."
+      "decision": "All remaining Kling credits may be useful film spend; refresh live balance, retain retry approval and separate external fees.",
+      "legacyId": "D03"
     },
     {
-      "id": "D04",
+      "id": "LEGACY-D04",
       "topic": "Editions",
       "state": "recovered_from_prior_brief",
-      "decision": "All-English and reviewed historical-language editions; language authenticity and provider access remain pending."
+      "decision": "All-English and reviewed historical-language editions; language authenticity and provider access remain pending.",
+      "legacyId": "D04"
     },
     {
-      "id": "D05",
+      "id": "LEGACY-D05",
       "topic": "Memory",
       "state": "workspace_initialized",
-      "decision": "Project-local files are canonical; no global memory pollution or remote memory provision."
+      "decision": "Project-local files are canonical; no global memory pollution or remote memory provision.",
+      "legacyId": "D05"
     }
   ]
 }

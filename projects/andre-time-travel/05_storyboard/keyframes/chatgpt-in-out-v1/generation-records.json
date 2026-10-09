@@ -1,0 +1,79 @@
+[
+  {
+    "id": "03-galileo-in",
+    "generatedFileBasename": "exec-5b3eb60a-3c53-4389-98c0-8095aeaed529.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "01-caesar-in",
+    "generatedFileBasename": "exec-289f1017-d3d5-49f9-84db-09f5a7725542.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "02-genghis-in",
+    "generatedFileBasename": "exec-47dfd8ec-6bf8-41f7-80e3-825104f32d60.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "03-galileo-out",
+    "generatedFileBasename": "exec-39e18b90-2059-45b4-9d92-b7d831ae7db5.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "04-napoleon-in",
+    "generatedFileBasename": "exec-a903e93a-7e9a-464b-9a45-b51a03f7fbdf.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "05-oppenheimer-in",
+    "generatedFileBasename": "exec-27ebd629-9daf-40d3-8d0c-271c5e79fff1.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "01-caesar-in-period-fix",
+    "generatedFileBasename": "exec-0a944ac7-683d-40cd-b834-91b99cb107c7.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "01-caesar-out",
+    "generatedFileBasename": "exec-1c3535bb-ce62-464f-8187-716ceec65d91.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "02-genghis-out",
+    "generatedFileBasename": "exec-4233b97c-3fe0-40d8-a7c5-7326ca240749.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "04-napoleon-out",
+    "generatedFileBasename": "exec-0e140675-08d7-4129-b814-237e5e1f0695.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  },
+  {
+    "id": "05-oppenheimer-out",
+    "generatedFileBasename": "exec-649a3a68-9eeb-4303-89a5-9da42fa4480b.png",
+    "result": "image_returned",
+    "modelExposed": false,
+    "billingKnown": false
+  }
+]

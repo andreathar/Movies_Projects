@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "storyboard",
+  "assignment": "Create ten built-in ChatGPT IN/OUT candidate keyframes for the five encounters and inspect character reference material, per direct user voice request",
+  "ownedPaths": [
+    "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "3b3e6915666ce9885e1f5ee7d7e97ba76c055c520299422450e9fa79f0891530"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "e7fd85eebc693bfc17a921ee2de086a46373f2ae8d355388f9972fc1a48d6c8e"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+      "sha256After": "6a194b93459cac2981b2bb34dc547535dcb7205dc050eb4d51ee0296f47bb432",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-out.png",
+      "sha256After": "8dda8aa7efda6ac5e8c8b4aec8450968277ccca47612fe000b5b5463f9e0f1be",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+      "sha256After": "72ac01cbbc8ff7388aac5934bc7db3a3d0bf2c376461c5c9dd65476970b74098",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-out.png",
+      "sha256After": "124803c1fb58cbd745df96fe69285a94d62ca874dc69aa6db26b3b09c88c06f1",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+      "sha256After": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+      "sha256After": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+      "sha256After": "be6df991029f5e7f2364c3816936f2492cb034d9e41808c9d4bf91062f8edc7a",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-out.png",
+      "sha256After": "525cd4a5549e0b1a65c58769d1e42767c2353a133ace457e24f99296c37c44ae",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+      "sha256After": "22989dfd0f87ac839aedbee11181a7ad249037d976db1e40b6b741b3170026b1",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-out.png",
+      "sha256After": "1d5025b1a4389124f04e83cdf3c2db36f3fea7400e65e009c52173ca52a6b0ff",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/CHARACTER_REVIEW.md",
+      "sha256After": "2b8b9ed0fc34c29e85037cdbd1a306f27ccdd08f8e454f5b2630bc271a6e58d1",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/README.md",
+      "sha256After": "aacbb901858c687f131f73d5b7bb940dab6f0cccb940decff06eee6cd493a266",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/andre-five-encounters-in-out-v1.zip",
+      "sha256After": "b65423a1b1daaec8c12d5510a35d75205ee5a8b6c4f7b33b000e1f0b24f9c5dc",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/generation-records.json",
+      "sha256After": "f04d31e6bb3a7cb3da3f894d4524a104d5f4f082700c6f8aca5fa26a13b02867",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/index.html",
+      "sha256After": "e4a715d2469e1fb785ce726bd09a5a6626aef70eceb5444d7726489babf06c20",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+      "sha256After": "0c10a58e30476bf69c5407687ffa1e392cbaaf19aa2d0ca0b0b6ec7f64b85b0e",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/memory-update-base.json",
+      "sha256After": "368c6b0ca97138ad7885ff6117c4a2a22eb86995df30f68bd2bd8bd5aed21f59",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/prompts.json",
+      "sha256After": "785ac6da275873a81a47e727a98f61f4dca404a738dbef3f041a18f4dbcaca00",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/rejected/01-caesar-in-before-period-fix.png",
+      "sha256After": "2091dbc1630cc6e50eec1e8790ae88a893dbb40dbe51247a46b24dd33270201b",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/01-caesar-in-period-fix.json",
+      "sha256After": "849aaa720b6a2e94e397b6afcb7158ec823d3fddc0b5e90b9f9f154afbf5166c",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/01-caesar-in.json",
+      "sha256After": "fe013b3ca0e50bb50d729355d7fa85e2f6f5d20fe6a6e289c0237023051e9760",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/01-caesar-out.json",
+      "sha256After": "7fc619189bb643471017d1d49481798fba8ac48c43de6fcddce6c9c8d9329577",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/02-genghis-in.json",
+      "sha256After": "14a080be8a62b5934c00575e4b790da457928592316d9625b10090db446964c5",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/02-genghis-out.json",
+      "sha256After": "f0c7978e94e7442f8710d98e9281a149a4446986f0410a2396bff17b4b608504",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/03-galileo-in.json",
+      "sha256After": "3cd93d92c4aced4e95b68b1008f4f0dbbc2e28ccb47b747c848f5e943c5cc2bf",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/03-galileo-out.json",
+      "sha256After": "56303eb54710dabe8001ba003e4720a22751d3fbf91eb1502cbfc72f1a5b0261",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/04-napoleon-in.json",
+      "sha256After": "77ee992a42742580b408ed9de769ba77cf188ccf5f5a33fa9a45d99c1c578e77",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/04-napoleon-out.json",
+      "sha256After": "7a59cef6dccea75a969d0718d542d0c045fcdf529d39e9de2f05a5947cd2ccbc",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/05-oppenheimer-in.json",
+      "sha256After": "26a39af6fd130c8263ecdfbebf1a6d295b286da834803033dd3d30ef586a41e9",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/requests/05-oppenheimer-out.json",
+      "sha256After": "fff6ee54301e68f8d13c5610616d936514c1efe7f3d1689d8a2b792523250b41",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/verification.json",
+      "sha256After": "4841b5da68abf02f31f8f921c93109807f1f516fc5036973dfb9959a8a5144fb",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/workspace-tests.txt",
+      "sha256After": "64133320fbc7696fd4e2025e2c3478954fa36cbf746e67ba18f364c7a8eac304",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/workspace-validation.txt",
+      "sha256After": "7589029233d5e0449e57ab0b38c221e080838b898b3e166ad143681ed5f7b5b3",
+      "reason": "New candidate image/production reference package or appended local session memory"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "51127f836dabc7b9eb9ca04a3ca5876cbba2f6dba752553b64206a5f1b6a5627",
+      "reason": "Append-only local session summary; preserve concurrent producer state"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "b1e448c4a91c5a1dd2ee0287804f8ebeefece7fb0545617b36469022dba30b55",
+      "reason": "Append-only local session summary; preserve concurrent producer state"
+    }
+  ],
+  "verification": [
+    "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/verification.json",
+    "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/workspace-validation.txt",
+    "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/workspace-tests.txt"
+  ],
+  "pendingDecisions": [
+    "Andre likeness approval of the exact ten candidate images",
+    "Genghis R2 armour detail versus proposed no-armour wardrobe",
+    "Integrate selected keyframes only after continuity/art-direction review",
+    "Verify actual video provider support and specific spending scope before a small animation test"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review",
+  "projectLocalMemoryUpdated": true,
+  "builtInImageCalls": 11,
+  "builtInBillingKnown": false,
+  "directorSessionMessaged": false
+}

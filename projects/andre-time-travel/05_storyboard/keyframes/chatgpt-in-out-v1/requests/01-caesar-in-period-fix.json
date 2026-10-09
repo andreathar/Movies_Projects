@@ -1,0 +1,16 @@
+{
+  "id": "01-caesar-in-period-fix",
+  "prompt": "Make a narrowly targeted period-setting correction to this existing cinematic frame. Preserve Andre's face, every facial proportion, his pose, both hands, suit, lighting on him, camera, table, water-ring and chip, foreground Caesar's toga and sleeve, and all framing EXACTLY. Change ONLY the Roman background props: replace the gridded glazed Renaissance-looking window at screen-left with an unglazed open Roman stone-framed aperture/courtyard opening with a softly defocused sunlit olive branch beyond; no rectangular leaded glass grid. Replace the stack of bound modern-looking books below that opening with two rolled papyrus scrolls and one small closed plain wax tablet, no writing. The rest of the red-ochre Roman plaster and travertine architecture remains identical. Do not add people, human statues, busts, faces, mirrors, letters or signage. Same landscape 16:9 dimensions, full-bleed no text. This is still the IN frame, Andre listening with closed lips and resting hands. Only Andre's face is visible. Caesar's entire head remains outside the right/top frame; only toga shoulder and forearm visible.",
+  "transparent_background": false,
+  "referencePaths": [
+    "05_storyboard/keyframes/chatgpt-in-out-v1/rejected/01-caesar-in-before-period-fix.png"
+  ],
+  "referencePathBase": "film_root",
+  "referenceSha256": {
+    "05_storyboard/keyframes/chatgpt-in-out-v1/rejected/01-caesar-in-before-period-fix.png": "2091dbc1630cc6e50eec1e8790ae88a893dbb40dbe51247a46b24dd33270201b"
+  },
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "billingKnown": false,
+  "outputApproval": "pending_user_review"
+}

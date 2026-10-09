@@ -1,0 +1,20 @@
+{
+  "id": "04-napoleon-in",
+  "prompt": "Create ONE full-bleed photorealistic movie keyframe, landscape 16:9, SAME exact framing/camera distance as reference 1. No text, lettering, captions, posters, logos, watermarks, borders or collage. Reference 1 is the approved-layout candidate: use its fixed CAMERA, small SHARED table geometry, scale, composition, Andre's screen-left seated position, and the softly out-of-focus historical LEFT SHOULDER entering from the RIGHT foreground with a forearm on the SAME table. Reference 2 is Andre's REAL photograph and takes absolute priority for his identity: same actual age, facial anatomy, hazel/olive eyes, salt-and-pepper stubble, jaw, nose and hairline; natural pores, no beautification/anatomy change. Reference 3 is COSTUME MATERIAL ONLY for the interlocutor, never copy any visible face fragment, labels or inscriptions. Preserve Andre's mid-grey fine-pinstripe jacket and white finely-striped open-collar shirt, no tie, identical to reference 1. Both sit across the short depth of a modest 120x75cm oak table. Keep its circular water-ring mark and small near-edge chip. Never put the table behind Andre. Exactly two people, ONLY ANDRE'S FACE is visible. Historical head, neck, face, ear, hair and beard are COMPLETELY outside the top/right crop; not merely blurred or hidden by shadow. Do not generate a head-shaped black silhouette. No other human faces, statues, paintings, reflections or people. Locked 50mm photographic lens at seated height; face tack sharp, realistic controlled shallow depth of field; keep hands below face and anatomically plausible. IN/start pose: Andre's forearms are resting over his table edge, his hands gently rest together, mouth closed, eyes toward his listener just camera-right. This begins one short conversational shot; it is NOT the beginning of an entire chapter. Cinematic natural lighting, tactile period materials, subtle 35mm grain, coherent skin. ERA: a quiet Longwood room on Saint Helena in 1816. Pale faded green plaster, weathered wooden shutters, cool overcast maritime daylight from screen-left with soft warm bounce. The foreground left shoulder and sleeve are DARK FOREST GREEN Chasseur wool with restrained red piping, consistent with reference 3, no large fantasy epaulette. Napoleon's black bicorne rests small on the far-right part of the tabletop beside a closed plain worn book with its unlettered cover facing upward; keep both away from centre. No readable letters, maps, portraits or flags. Andre's attentive expression is sober and thoughtful, mouth closed, with quiet self-questioning. Same shared small table and camera; intimate human drama.",
+  "transparent_background": false,
+  "referencePaths": [
+    "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg"
+  ],
+  "referencePathBase": "film_root",
+  "referenceSha256": {
+    "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+    "02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0"
+  },
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "billingKnown": false,
+  "outputApproval": "pending_user_review"
+}

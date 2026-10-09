@@ -1,0 +1,20 @@
+{
+  "id": "01-caesar-in",
+  "prompt": "Create ONE full-bleed photorealistic movie keyframe, landscape 16:9, SAME exact framing/camera distance as reference 1. No text, lettering, captions, posters, logos, watermarks, borders or collage. Reference 1 is the approved-layout candidate: use its fixed CAMERA, small SHARED table geometry, scale, composition, Andre's screen-left seated position, and the softly out-of-focus historical LEFT SHOULDER entering from the RIGHT foreground with a forearm on the SAME table. Reference 2 is Andre's REAL photograph and takes absolute priority for his identity: same actual age, facial anatomy, hazel/olive eyes, salt-and-pepper stubble, jaw, nose and hairline; natural pores, no beautification/anatomy change. Reference 3 is COSTUME MATERIAL ONLY for the interlocutor, never copy any visible face fragment, labels or inscriptions. Preserve Andre's mid-grey fine-pinstripe jacket and white finely-striped open-collar shirt, no tie, identical to reference 1. Both sit across the short depth of a modest 120x75cm oak table. Keep its circular water-ring mark and small near-edge chip. Never put the table behind Andre. Exactly two people, ONLY ANDRE'S FACE is visible. Historical head, neck, face, ear, hair and beard are COMPLETELY outside the top/right crop; not merely blurred or hidden by shadow. Do not generate a head-shaped black silhouette. No other human faces, statues, paintings, reflections or people. Locked 50mm photographic lens at seated height; face tack sharp, realistic controlled shallow depth of field; keep hands below face and anatomically plausible. IN/start pose: Andre's forearms are resting over his table edge, his hands gently rest together, mouth closed, eyes toward his listener just camera-right. This begins one short conversational shot; it is NOT the beginning of an entire chapter. Cinematic natural lighting, tactile period materials, subtle 35mm grain, coherent skin. ERA: Rome, early 44 BCE. A quiet private Roman room, red-ochre painted plaster, one restrained travertine pilaster, soft courtyard daylight from screen-left, background softly out of focus, no marble busts. Caesar's foreground left shoulder is heavy OFF-WHITE WOOL TOGA with a muted purple border, simply draped with no clasp or armor; narrow purple fabric edge and left forearm suggest authority. Keep desk uncluttered: one small closed wax tablet near Caesar with no writing visible. Andre has a quietly confident, attentive expression, the first moment before calmly explaining something; subtle warmth, not a smile to camera.",
+  "transparent_background": false,
+  "referencePaths": [
+    "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/wardrobe/R2-wardrobe-caesar-roman.jpg"
+  ],
+  "referencePathBase": "film_root",
+  "referenceSha256": {
+    "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+    "02_references/wardrobe/R2-wardrobe-caesar-roman.jpg": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7"
+  },
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "billingKnown": false,
+  "outputApproval": "pending_user_review"
+}

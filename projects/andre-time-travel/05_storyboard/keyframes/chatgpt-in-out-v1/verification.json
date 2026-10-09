@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-09T13:29:51.975882-03:00",
+  "deliveredImages": 10,
+  "uniqueHashes": 10,
+  "pairs": 5,
+  "allPNGDecoded": true,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "nativeApproximate16x9": true,
+  "localGalleryLinksChecked": 24,
+  "missingLinks": [],
+  "galleryJavaScriptSyntaxPass": true,
+  "browserInteractionTested": false,
+  "requestReferenceHashesVerified": true,
+  "builtInImageCalls": 11,
+  "rejectedDraftsPreserved": 1,
+  "videoGenerated": false,
+  "humanLikenessApproval": false,
+  "historicalValidationComplete": false,
+  "klingJobsSubmitted": 0,
+  "elevenLabsJobsSubmitted": 0,
+  "workspaceValidation": "ok",
+  "unitTestsPassed": 29,
+  "workspaceWarnings": [
+    "shared skill changed since linking: kling-cli",
+    "shared skill changed since linking: film-character-continuity",
+    "shared skill changed since linking: film-dialogue-localization",
+    "shared skill changed since linking: film-editing-qc"
+  ],
+  "codexOpenResult": "queued"
+}

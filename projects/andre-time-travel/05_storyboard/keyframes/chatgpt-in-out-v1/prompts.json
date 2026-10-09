@@ -1,0 +1,215 @@
+{
+  "referencePathBase": "film_root",
+  "requests": [
+    {
+      "id": "01-caesar-in-period-fix",
+      "prompt": "Make a narrowly targeted period-setting correction to this existing cinematic frame. Preserve Andre's face, every facial proportion, his pose, both hands, suit, lighting on him, camera, table, water-ring and chip, foreground Caesar's toga and sleeve, and all framing EXACTLY. Change ONLY the Roman background props: replace the gridded glazed Renaissance-looking window at screen-left with an unglazed open Roman stone-framed aperture/courtyard opening with a softly defocused sunlit olive branch beyond; no rectangular leaded glass grid. Replace the stack of bound modern-looking books below that opening with two rolled papyrus scrolls and one small closed plain wax tablet, no writing. The rest of the red-ochre Roman plaster and travertine architecture remains identical. Do not add people, human statues, busts, faces, mirrors, letters or signage. Same landscape 16:9 dimensions, full-bleed no text. This is still the IN frame, Andre listening with closed lips and resting hands. Only Andre's face is visible. Caesar's entire head remains outside the right/top frame; only toga shoulder and forearm visible.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/rejected/01-caesar-in-before-period-fix.png"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/rejected/01-caesar-in-before-period-fix.png": "2091dbc1630cc6e50eec1e8790ae88a893dbb40dbe51247a46b24dd33270201b"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "01-caesar-in",
+      "prompt": "Create ONE full-bleed photorealistic movie keyframe, landscape 16:9, SAME exact framing/camera distance as reference 1. No text, lettering, captions, posters, logos, watermarks, borders or collage. Reference 1 is the approved-layout candidate: use its fixed CAMERA, small SHARED table geometry, scale, composition, Andre's screen-left seated position, and the softly out-of-focus historical LEFT SHOULDER entering from the RIGHT foreground with a forearm on the SAME table. Reference 2 is Andre's REAL photograph and takes absolute priority for his identity: same actual age, facial anatomy, hazel/olive eyes, salt-and-pepper stubble, jaw, nose and hairline; natural pores, no beautification/anatomy change. Reference 3 is COSTUME MATERIAL ONLY for the interlocutor, never copy any visible face fragment, labels or inscriptions. Preserve Andre's mid-grey fine-pinstripe jacket and white finely-striped open-collar shirt, no tie, identical to reference 1. Both sit across the short depth of a modest 120x75cm oak table. Keep its circular water-ring mark and small near-edge chip. Never put the table behind Andre. Exactly two people, ONLY ANDRE'S FACE is visible. Historical head, neck, face, ear, hair and beard are COMPLETELY outside the top/right crop; not merely blurred or hidden by shadow. Do not generate a head-shaped black silhouette. No other human faces, statues, paintings, reflections or people. Locked 50mm photographic lens at seated height; face tack sharp, realistic controlled shallow depth of field; keep hands below face and anatomically plausible. IN/start pose: Andre's forearms are resting over his table edge, his hands gently rest together, mouth closed, eyes toward his listener just camera-right. This begins one short conversational shot; it is NOT the beginning of an entire chapter. Cinematic natural lighting, tactile period materials, subtle 35mm grain, coherent skin. ERA: Rome, early 44 BCE. A quiet private Roman room, red-ochre painted plaster, one restrained travertine pilaster, soft courtyard daylight from screen-left, background softly out of focus, no marble busts. Caesar's foreground left shoulder is heavy OFF-WHITE WOOL TOGA with a muted purple border, simply draped with no clasp or armor; narrow purple fabric edge and left forearm suggest authority. Keep desk uncluttered: one small closed wax tablet near Caesar with no writing visible. Andre has a quietly confident, attentive expression, the first moment before calmly explaining something; subtle warmth, not a smile to camera.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "02_references/wardrobe/R2-wardrobe-caesar-roman.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "02_references/wardrobe/R2-wardrobe-caesar-roman.jpg": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "01-caesar-out",
+      "prompt": "Edit reference 1 into the OUT/end keyframe of the EXACT SAME continuous short conversation shot, about 5 seconds after its IN frame. Output ONE full-bleed landscape image with identical dimensions, framing, camera position, focal length and realistic photographic rendering. Reference 1 is the edit target: lock ALL background architecture/objects, light, color grading, table grain/edges/ring stain/chip, the historical shoulder and forearm, props, Andre's position and wardrobe. Reference 2 is Andre's REAL face identity authority: preserve facial proportions, actual age, nose, jaw, hazel eyes, hairline and stubble. No new objects, no zoom/camera shift, no face beautification, no wardrobe changes. The only visible face is Andre's. Historical head/face/neck/hair/ears remain entirely outside the right/top crop: the foreground is ONLY cloth shoulder/arm and hand. Preserve natural anatomy, restrained gesture below Andre's face, no extra fingers. No text/lettering/logo/watermark/borders. Keep his eyeline toward the seated interlocutor camera-right, never at the lens. Motion must be modest enough for a 5-second shot. ONLY CHANGE THE PERFORMANCE: Andre's right hand, on screen-left, lifts 10cm above his table edge into a small sideways open-palm gesture, fingers relaxed and naturally separated, elbow still supported. His left forearm stays planted, left hand relaxes palm-down in the same area. His lips part slightly as if explaining a consequence with quiet confidence, eyebrows a little raised, no grin and no aggressive pointing. Keep his head at almost the same angle, not more than 2 degrees of change. Caesar remains completely still. Preserve the corrected open Roman window with papyrus rolls, red-ochre walls and toga exactly.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png": "6a194b93459cac2981b2bb34dc547535dcb7205dc050eb4d51ee0296f47bb432",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "02-genghis-in",
+      "prompt": "Create ONE full-bleed photorealistic movie keyframe, landscape 16:9, SAME exact framing/camera distance as reference 1. No text, lettering, captions, posters, logos, watermarks, borders or collage. Reference 1 is the approved-layout candidate: use its fixed CAMERA, small SHARED table geometry, scale, composition, Andre's screen-left seated position, and the softly out-of-focus historical LEFT SHOULDER entering from the RIGHT foreground with a forearm on the SAME table. Reference 2 is Andre's REAL photograph and takes absolute priority for his identity: same actual age, facial anatomy, hazel/olive eyes, salt-and-pepper stubble, jaw, nose and hairline; natural pores, no beautification/anatomy change. Reference 3 is COSTUME MATERIAL ONLY for the interlocutor, never copy any visible face fragment, labels or inscriptions. Preserve Andre's mid-grey fine-pinstripe jacket and white finely-striped open-collar shirt, no tie, identical to reference 1. Both sit across the short depth of a modest 120x75cm oak table. Keep its circular water-ring mark and small near-edge chip. Never put the table behind Andre. Exactly two people, ONLY ANDRE'S FACE is visible. Historical head, neck, face, ear, hair and beard are COMPLETELY outside the top/right crop; not merely blurred or hidden by shadow. Do not generate a head-shaped black silhouette. No other human faces, statues, paintings, reflections or people. Locked 50mm photographic lens at seated height; face tack sharp, realistic controlled shallow depth of field; keep hands below face and anatomically plausible. IN/start pose: Andre's forearms are resting over his table edge, his hands gently rest together, mouth closed, eyes toward his listener just camera-right. This begins one short conversational shot; it is NOT the beginning of an entire chapter. Cinematic natural lighting, tactile period materials, subtle 35mm grain, coherent skin. ERA: an intimate Mongol campaign tent in 1227. Soft warm fire bounce mixed with cool daylight from a tent flap at screen-left; weathered felt, a little wooden lattice, earth and tobacco palette, no fantasy banners/weapons. The foreground listener's broad left shoulder and sleeve use the dark brown textile, restrained fur trim and subdued lamellar shoulder detail of costume reference 3; these are continuity DESIGN references, not claims of verified actual dress. Keep the historical head totally out of frame. One plain small wooden bowl on the listener's side of the table, no ring or writing. Andre watches with measured respect, lips closed, small furrow of concern, same grey suit and same face.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "02-genghis-out",
+      "prompt": "Edit reference 1 into the OUT/end keyframe of the EXACT SAME continuous short conversation shot, about 5 seconds after its IN frame. Output ONE full-bleed landscape image with identical dimensions, framing, camera position, focal length and realistic photographic rendering. Reference 1 is the edit target: lock ALL background architecture/objects, light, color grading, table grain/edges/ring stain/chip, the historical shoulder and forearm, props, Andre's position and wardrobe. Reference 2 is Andre's REAL face identity authority: preserve facial proportions, actual age, nose, jaw, hazel eyes, hairline and stubble. No new objects, no zoom/camera shift, no face beautification, no wardrobe changes. The only visible face is Andre's. Historical head/face/neck/hair/ears remain entirely outside the right/top crop: the foreground is ONLY cloth shoulder/arm and hand. Preserve natural anatomy, restrained gesture below Andre's face, no extra fingers. No text/lettering/logo/watermark/borders. Keep his eyeline toward the seated interlocutor camera-right, never at the lens. Motion must be modest enough for a 5-second shot. ONLY CHANGE THE PERFORMANCE: Andre moves his right hand (screen-left) a modest 8cm forward across the table and lifts it 6cm, palm angled down in a restrained calming explanatory gesture, fingers together naturally. His left hand/forearm remains in its original resting area. His expression becomes a little more sober: brow gently furrowed, lips just barely parted, eyes stay on the listener. No dramatic distress or smile. Keep head angle and shoulders essentially unchanged. The foreground fur/lamellar shoulder and small bowl do not move.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png": "72ac01cbbc8ff7388aac5934bc7db3a3d0bf2c376461c5c9dd65476970b74098",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "03-galileo-in",
+      "kind": "synthetic_keyframe_candidate",
+      "authorization": "Andre requested ten built-in ChatGPT IN/OUT frames across five personalities in this chat.",
+      "prompt": "Create ONE photorealistic cinematic FILM KEYFRAME, landscape 16:9, ideally 1536x864, full-bleed image without borders, text, title, logo, watermark or collage. This is the IN/start frame of a continuous 5-second locked-camera conversation shot, not a poster. Real actor Andre Athar is the man in reference photos 1 and 2: preserve his exact facial anatomy, olive/hazel eyes, actual age, nose, jaw, short salt-and-pepper stubble, hairline and natural skin texture. Do not beautify him into another actor. Wardrobe exactly as photographed: mid-grey subtly pinstriped jacket, finely striped white open-collar shirt, no tie. Reference 3 is ONLY the oak tabletop material, circular water-ring stain and small corner chip. Reference 4 is ONLY Galileo's black wool sleeve/shoulder fabric; DO NOT copy its visible beard, mouth, readable papers or camera direction.\nSCENE: intimate fictional meeting with Galileo Galilei, Arcetri 1634, a quiet pale-stone study, muted warm daylight through one leaded window at screen-left; modest closed books on a rear shelf, no paintings/statues/portraits, no shiny mirrors. Deep tactile and elegant cinema lighting, soft falloff, subtle film grain, restrained ochre and cool shadow palette, natural realistic photography rather than illustration.\nSTAGING IS CRITICAL: exactly two people SEATED opposite one another across the SHORT 75cm depth of ONE small rectangular pale oak domestic table (about 120x75cm top, 75cm high). Andre sits on its far long side, centre-left of frame, chest and both forearms visibly OVER THE TABLE in front of him. Camera is on the near side, behind and to the LEFT of Galileo, looking past Galileo's LEFT shoulder. Galileo occupies the RIGHT foreground as a softly defocused black wool shoulder, upper arm and forearm reaching onto the SAME tabletop. The whole historical head, neck, ear, hair, beard and face are completely OUTSIDE the top/right crop: there must be no part of any second face, even blurry, anywhere. Do not create a head-shaped black mass. Only a shoulder rising through the right edge/top-right corner and a sleeve. The near edge, far edge and tactile table grain establish a close shared conversation. The table is not behind or beside Andre and is not a huge dining table. Frame the table in the bottom quarter to third, Andre's face large and sharp. Andre looks 10 degrees to camera-right toward Galileo's unseen head, never at the viewer. 50mm full-frame lens feeling, camera near seated eye height, shallow depth of field while keeping Andre's hands usable; no ultrawide distortion.\nIN performance: Andre listens attentively, lips gently closed, slight thoughtful lift of eyebrows, a calm welcoming posture. Both forearms rest naturally on his edge; his right hand relaxed palm-down, left hand resting near it, anatomically plausible five fingers. Galileo's near forearm rests still at the right edge. Keep the centre of the table mostly empty; just one small unmarked folded cream sheet near Galileo, no readable writing. Make a beautiful believable still from an intimate prestige time-travel drama, with emotion and bodily presence, not a posed portrait.",
+      "referencePaths": [
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "02_references/andre/approved/sec1_20240202_015347_hs34.jpg",
+        "02_references/table/R1-J26-table-anchor_2.png",
+        "02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg"
+      ],
+      "billingKnown": false,
+      "paidKlingJobs": 0,
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "02_references/andre/approved/sec1_20240202_015347_hs34.jpg": "fefcda40f1b70cd827f66fddf7ec1d29083d64f882a9df2f30b7f6ef53afd140",
+        "02_references/table/R1-J26-table-anchor_2.png": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+        "02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "03-galileo-out",
+      "prompt": "Edit reference 1 into the OUT/end frame approximately five seconds later of the EXACT SAME locked cinematic shot. Output one landscape 16:9 image with identical resolution and framing, no text/borders. Reference 1 is the edit target: preserve the camera, crop, lens, oak table geometry, water ring and chip at exact same positions, folded paper, all background books/window/candlesticks, lighting, shadows, wardrobe and foreground Galileo shoulder/hand. Do not add objects or shift either person. Reference 2 is the REAL identity authority for Andre; preserve his facial anatomy, age, eyes, short hair and stubble. ONLY CHANGE: Andre gently lifts his own RIGHT hand (the hand on screen-left) about 8cm above the tabletop in a small open palm-up explanatory gesture, relaxed fingers together naturally, while his LEFT forearm/hand remains resting on the table as before. His chin straightens by at most 2 degrees and his lips are barely parted as if calmly beginning a thoughtful explanation. Same warm attentive eyes looking toward Galileo camera-right; no broad smile, no teeth emphasis. The gesture is restrained and plausible to interpolate over five seconds, not a different pose or camera angle. Keep Galileo's entire head, neck, beard, ear and face outside the right/top crop, only black wool shoulder and forearm visible. Only Andre's face in the entire picture; no new faces or reflections. Preserve high-end realistic cinematic texture and exact color palette. This is an endpoint candidate, not an animated video.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "04-napoleon-in",
+      "prompt": "Create ONE full-bleed photorealistic movie keyframe, landscape 16:9, SAME exact framing/camera distance as reference 1. No text, lettering, captions, posters, logos, watermarks, borders or collage. Reference 1 is the approved-layout candidate: use its fixed CAMERA, small SHARED table geometry, scale, composition, Andre's screen-left seated position, and the softly out-of-focus historical LEFT SHOULDER entering from the RIGHT foreground with a forearm on the SAME table. Reference 2 is Andre's REAL photograph and takes absolute priority for his identity: same actual age, facial anatomy, hazel/olive eyes, salt-and-pepper stubble, jaw, nose and hairline; natural pores, no beautification/anatomy change. Reference 3 is COSTUME MATERIAL ONLY for the interlocutor, never copy any visible face fragment, labels or inscriptions. Preserve Andre's mid-grey fine-pinstripe jacket and white finely-striped open-collar shirt, no tie, identical to reference 1. Both sit across the short depth of a modest 120x75cm oak table. Keep its circular water-ring mark and small near-edge chip. Never put the table behind Andre. Exactly two people, ONLY ANDRE'S FACE is visible. Historical head, neck, face, ear, hair and beard are COMPLETELY outside the top/right crop; not merely blurred or hidden by shadow. Do not generate a head-shaped black silhouette. No other human faces, statues, paintings, reflections or people. Locked 50mm photographic lens at seated height; face tack sharp, realistic controlled shallow depth of field; keep hands below face and anatomically plausible. IN/start pose: Andre's forearms are resting over his table edge, his hands gently rest together, mouth closed, eyes toward his listener just camera-right. This begins one short conversational shot; it is NOT the beginning of an entire chapter. Cinematic natural lighting, tactile period materials, subtle 35mm grain, coherent skin. ERA: a quiet Longwood room on Saint Helena in 1816. Pale faded green plaster, weathered wooden shutters, cool overcast maritime daylight from screen-left with soft warm bounce. The foreground left shoulder and sleeve are DARK FOREST GREEN Chasseur wool with restrained red piping, consistent with reference 3, no large fantasy epaulette. Napoleon's black bicorne rests small on the far-right part of the tabletop beside a closed plain worn book with its unlettered cover facing upward; keep both away from centre. No readable letters, maps, portraits or flags. Andre's attentive expression is sober and thoughtful, mouth closed, with quiet self-questioning. Same shared small table and camera; intimate human drama.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "04-napoleon-out",
+      "prompt": "Edit reference 1 into the OUT/end keyframe of the EXACT SAME continuous short conversation shot, about 5 seconds after its IN frame. Output ONE full-bleed landscape image with identical dimensions, framing, camera position, focal length and realistic photographic rendering. Reference 1 is the edit target: lock ALL background architecture/objects, light, color grading, table grain/edges/ring stain/chip, the historical shoulder and forearm, props, Andre's position and wardrobe. Reference 2 is Andre's REAL face identity authority: preserve facial proportions, actual age, nose, jaw, hazel eyes, hairline and stubble. No new objects, no zoom/camera shift, no face beautification, no wardrobe changes. The only visible face is Andre's. Historical head/face/neck/hair/ears remain entirely outside the right/top crop: the foreground is ONLY cloth shoulder/arm and hand. Preserve natural anatomy, restrained gesture below Andre's face, no extra fingers. No text/lettering/logo/watermark/borders. Keep his eyeline toward the seated interlocutor camera-right, never at the lens. Motion must be modest enough for a 5-second shot. ONLY CHANGE THE PERFORMANCE: Andre opens his right hand (screen-left) a few centimetres above the table in a low understated palm-up gesture, elbow resting; his left hand remains resting near the same spot. A subtle self-questioning expression replaces the faint listening smile: mouth gently closed as if a sentence just finished, lower lip relaxed, eyebrows draw slightly inward. No big posture change, no different head angle. Keep Napoleon's dark-green shoulder, red piping, hat and unmarked book in exactly the same positions.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png": "be6df991029f5e7f2364c3816936f2492cb034d9e41808c9d4bf91062f8edc7a",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "05-oppenheimer-in",
+      "prompt": "Create ONE full-bleed photorealistic movie keyframe, landscape 16:9, SAME exact framing/camera distance as reference 1. No text, lettering, captions, posters, logos, watermarks, borders or collage. Reference 1 is the approved-layout candidate: use its fixed CAMERA, small SHARED table geometry, scale, composition, Andre's screen-left seated position, and the softly out-of-focus historical LEFT SHOULDER entering from the RIGHT foreground with a forearm on the SAME table. Reference 2 is Andre's REAL photograph and takes absolute priority for his identity: same actual age, facial anatomy, hazel/olive eyes, salt-and-pepper stubble, jaw, nose and hairline; natural pores, no beautification/anatomy change. Reference 3 is COSTUME MATERIAL ONLY for the interlocutor, never copy any visible face fragment, labels or inscriptions. Preserve Andre's mid-grey fine-pinstripe jacket and white finely-striped open-collar shirt, no tie, identical to reference 1. Both sit across the short depth of a modest 120x75cm oak table. Keep its circular water-ring mark and small near-edge chip. Never put the table behind Andre. Exactly two people, ONLY ANDRE'S FACE is visible. Historical head, neck, face, ear, hair and beard are COMPLETELY outside the top/right crop; not merely blurred or hidden by shadow. Do not generate a head-shaped black silhouette. No other human faces, statues, paintings, reflections or people. Locked 50mm photographic lens at seated height; face tack sharp, realistic controlled shallow depth of field; keep hands below face and anatomically plausible. IN/start pose: Andre's forearms are resting over his table edge, his hands gently rest together, mouth closed, eyes toward his listener just camera-right. This begins one short conversational shot; it is NOT the beginning of an entire chapter. Cinematic natural lighting, tactile period materials, subtle 35mm grain, coherent skin. ERA: a fictional sparse wooden room near Trinity, evening before the test, July 1945. Quiet dark timber walls, a cool blue desert-night window at screen-left, warm practical desk-lamp bounce illuminating Andre naturally; controlled warm/cool contrast and deep background. Oppenheimer's very thin foreground left shoulder and sleeve use grey-brown herringbone tweed with gentle wrinkles, as reference 3, entirely headless by crop, no face. One small unmarked closed notebook on his side. OMIT cigarette packs, brands, labels, weapons, explosions, posters and visible technical diagrams. Andre looks attentive and burdened, mouth closed, restrained empathy. Preserve actual age and skin, not dramatic artificial wrinkles.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg": "28cda295d7560015f3fb23f54cd3371f4139db9338a669d9b97bdf50e949dbde"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    },
+    {
+      "id": "05-oppenheimer-out",
+      "prompt": "Edit reference 1 into the OUT/end keyframe of the EXACT SAME continuous short conversation shot, about 5 seconds after its IN frame. Output ONE full-bleed landscape image with identical dimensions, framing, camera position, focal length and realistic photographic rendering. Reference 1 is the edit target: lock ALL background architecture/objects, light, color grading, table grain/edges/ring stain/chip, the historical shoulder and forearm, props, Andre's position and wardrobe. Reference 2 is Andre's REAL face identity authority: preserve facial proportions, actual age, nose, jaw, hazel eyes, hairline and stubble. No new objects, no zoom/camera shift, no face beautification, no wardrobe changes. The only visible face is Andre's. Historical head/face/neck/hair/ears remain entirely outside the right/top crop: the foreground is ONLY cloth shoulder/arm and hand. Preserve natural anatomy, restrained gesture below Andre's face, no extra fingers. No text/lettering/logo/watermark/borders. Keep his eyeline toward the seated interlocutor camera-right, never at the lens. Motion must be modest enough for a 5-second shot. ONLY CHANGE THE PERFORMANCE: Andre gently separates his resting hands by about 6cm, both remaining on the tabletop, fingertips relaxed, no lifted gesture. He takes a very small quiet breath, shoulders settle only slightly; his mouth remains closed and his eyes hold the same off-camera listener with a more sober, empathetic expression. No exaggerated sadness, added wrinkles or head turn. Keep the historical tweed shoulder/forearm, notebook and all night-room practical lights exactly unchanged. End in reflective stillness.",
+      "transparent_background": false,
+      "referencePaths": [
+        "05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+      ],
+      "referencePathBase": "film_root",
+      "referenceSha256": {
+        "05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png": "22989dfd0f87ac839aedbee11181a7ad249037d976db1e40b6b741b3170026b1",
+        "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+      },
+      "provider": "OpenAI built-in image generation",
+      "model": "not exposed",
+      "billingKnown": false,
+      "outputApproval": "pending_user_review"
+    }
+  ]
+}

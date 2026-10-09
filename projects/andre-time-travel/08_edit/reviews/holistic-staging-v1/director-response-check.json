@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-09T13:03:15.672601-03:00",
+  "initialCommit": "180723df055ca297827d26109042637f12d36160",
+  "initialCommitLocalTime": "2026-10-09T08:56:14-03:00",
+  "sources": [
+    {
+      "path": "workspace.json",
+      "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256": "a8ec187622c5546c436c1d4f09a66afc80f01fbe94f17936642e442caee5f271"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/production-tasks.md",
+      "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "403fa8c9f55dac6048b4329184d253097757850c724490ef6a41aa8ad3c2484c"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity-v2-proposta.md",
+      "sha256": "6dfce7227859eec4fff0c2718ad0e70fabf83d7e99defdbec1b65247078db9eb"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v3-proposta.md",
+      "sha256": "3af75a9a8f2efe1abd21ee00760bdeaaa03dc2514c778593cdcdeb3894364978"
+    }
+  ],
+  "baselineFindings": {
+    "normalizedAndTimelinesDirectoriesPreexisting": true,
+    "dialogueStemsParentPreexisting": true,
+    "shotTakeIdsFieldPreexisting": true
+  },
+  "currentFindings": {
+    "pilotReuseExplicitInRecordedGalileoScope": true,
+    "newGalileoPreviewFieldsPresent": true,
+    "takeStatusAcceptedPendingPlaybackPresent": true,
+    "validatorExplicitlyValidatesTakeStatusVocabulary": false,
+    "validatorChecksRegisteredTakeReferences": true,
+    "stateCurrentSummaryNowPresent": true,
+    "newDirectionProposalsExist": true
+  },
+  "limitations": [
+    "Compaction and model-switch causal explanation is director self-report relayed by user; not independently reconstructed in this follow-up.",
+    "No live provider balance queried; 5813 is a dated observation.",
+    "No new media inspection or normal-speed playback in this follow-up.",
+    "Approval provenance of newly relayed decisions is outside this follow-up; no paid execution."
+  ],
+  "mutations": "New audit documents, handoff and appended project session log only; no production manifest/board/approval/shared-skill/media edits."
+}

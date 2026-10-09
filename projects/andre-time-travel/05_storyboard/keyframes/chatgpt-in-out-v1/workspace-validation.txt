@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "errors": [],
+  "warnings": [
+    "shared skill changed since linking: kling-cli",
+    "shared skill changed since linking: film-character-continuity",
+    "shared skill changed since linking: film-dialogue-localization",
+    "shared skill changed since linking: film-editing-qc"
+  ],
+  "projects": [
+    {
+      "id": "andre-time-travel",
+      "chapters": 5,
+      "storyboardSlots": 41,
+      "targetSeconds": 240,
+      "budgetCeiling": 6981,
+      "productionTasks": 21,
+      "taskStates": {
+        "completed": 7,
+        "blocked": 11,
+        "in_progress": 3
+      },
+      "recordedTakes": 9,
+      "finalMovieVerified": false,
+      "registeredSources": 20,
+      "importedSourceSnapshots": 20
+    }
+  ]
+}

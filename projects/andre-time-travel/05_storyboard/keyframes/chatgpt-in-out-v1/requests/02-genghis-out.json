@@ -1,0 +1,18 @@
+{
+  "id": "02-genghis-out",
+  "prompt": "Edit reference 1 into the OUT/end keyframe of the EXACT SAME continuous short conversation shot, about 5 seconds after its IN frame. Output ONE full-bleed landscape image with identical dimensions, framing, camera position, focal length and realistic photographic rendering. Reference 1 is the edit target: lock ALL background architecture/objects, light, color grading, table grain/edges/ring stain/chip, the historical shoulder and forearm, props, Andre's position and wardrobe. Reference 2 is Andre's REAL face identity authority: preserve facial proportions, actual age, nose, jaw, hazel eyes, hairline and stubble. No new objects, no zoom/camera shift, no face beautification, no wardrobe changes. The only visible face is Andre's. Historical head/face/neck/hair/ears remain entirely outside the right/top crop: the foreground is ONLY cloth shoulder/arm and hand. Preserve natural anatomy, restrained gesture below Andre's face, no extra fingers. No text/lettering/logo/watermark/borders. Keep his eyeline toward the seated interlocutor camera-right, never at the lens. Motion must be modest enough for a 5-second shot. ONLY CHANGE THE PERFORMANCE: Andre moves his right hand (screen-left) a modest 8cm forward across the table and lifts it 6cm, palm angled down in a restrained calming explanatory gesture, fingers together naturally. His left hand/forearm remains in its original resting area. His expression becomes a little more sober: brow gently furrowed, lips just barely parted, eyes stay on the listener. No dramatic distress or smile. Keep head angle and shoulders essentially unchanged. The foreground fur/lamellar shoulder and small bowl do not move.",
+  "transparent_background": false,
+  "referencePaths": [
+    "05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+  ],
+  "referencePathBase": "film_root",
+  "referenceSha256": {
+    "05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png": "72ac01cbbc8ff7388aac5934bc7db3a3d0bf2c376461c5c9dd65476970b74098",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+  },
+  "provider": "OpenAI built-in image generation",
+  "model": "not exposed",
+  "billingKnown": false,
+  "outputApproval": "pending_user_review"
+}
