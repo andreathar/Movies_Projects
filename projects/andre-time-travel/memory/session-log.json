@@ -125,6 +125,33 @@
       "creativeApprovalGranted": false,
       "paidJobsSubmitted": 0,
       "userStoppedFurtherCollection": true
+    },
+    {
+      "at": "2026-10-09T14:09:58.316974+00:00",
+      "event": "kling_image_archive_verified",
+      "archivePath": "projects/andre-time-travel/07_generations/downloads/2026-10-09-v1",
+      "images": 90,
+      "tasks": 73,
+      "downloadedImages": 1,
+      "alreadyLocalImages": 89,
+      "liveQueryConfirmedTasks": 72,
+      "localOnlyTasks": [
+        "R3-galileo-speaking"
+      ],
+      "accountHistoryComplete": false,
+      "paidJobsSubmitted": 0,
+      "creativeApprovalGranted": false
+    },
+    {
+      "at": "2026-10-09T11:29:07-03:00",
+      "event": "element_keyframes_pilot_executed",
+      "paidJobsSubmitted": 25,
+      "creditsDelta": 817,
+      "balanceAfter": 6161,
+      "elementId": "323525046658711",
+      "pilotTakes": 5,
+      "speechVerifiedBySTT": true,
+      "andreApprovalPending": true
     }
   ]
 }

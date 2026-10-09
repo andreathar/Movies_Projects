@@ -3,11 +3,11 @@
   "episode": "andre-time-travel",
   "gate": "characterReferences:wardrobe_canon",
   "artifact": {
-    "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-andre-modern.jpg",
-    "sha256": "5d52f6059163471cebb7ab291f4c9e4f7183cef8a9f175bf10dd8cc37388d174",
-    "version": "v1"
+    "path": "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+    "sha256": "75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b",
+    "version": "v2"
   },
-  "decision": "DECIDED: option B — deep navy unstructured blazer, charcoal open-collar shirt, silver band left hand, no watch/logos. Reason: separates from pale oak and from every era palette; no stripe moiré; all existing synthetic assets already use it. Andre wears this look at the photo session.",
+  "decision": "REVISED 2026-10-09: wardrobe = AS PHOTOGRAPHED — mid-grey pinstripe suit jacket, white shirt with fine stripes, open collar, no tie (inbox/Photos-Andre-Suit). Reason: the identity Element is built from these frames; a different jacket in prompts would fight the reference. Navy/charcoal (previous option B) is retired. Keyframe prompts must specify this look and keep it invariant across eras; pinstripe moiré risk is accepted and will be checked in the pilot.",
   "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
   "reviewedAt": "2026-10-09T09:18:43-03:00",
   "evidence": [
@@ -18,6 +18,6 @@
   "limitations": [
     "If the photo session is shot in another outfit, this decision is void and must be re-recorded."
   ],
-  "supersedes": null,
+  "supersedes": "D02 v1 (navy blazer / charcoal shirt)",
   "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
 }

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "shotId": "PILOT-04-galileo-speech-native",
+  "takeId": "PILOT-04-galileo-speech-native_1",
+  "assetPath": "06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
+  "sha256": "3094014a1f28e2080582139f7a4f34c3ca22b790eb393fccfdb85de5c3ef5ef1",
+  "generationId": "AZowVPxUuYVU0wScaazw4_OFtEmC7Qtz_D14pBUg_SZNYKOuR55tMu3tg72YT-N6EcluN5xv",
+  "reviewer": "director agent (frame strips + ffprobe/decode; STT via faster-whisper base.en for speech takes)",
+  "fullPlaybackCompleted": false,
+  "fullFrameInspectionCompleted": true,
+  "likenessUserApproved": false,
+  "historicalFaceExposureFound": false,
+  "speechSyncPassed": true,
+  "decision": "accepted_pending_andre",
+  "issues": [
+    "ACCEPT (agent): native audio + bound voice; STT = G-L04 verbatim except 'keep relearning' heard as 'keep told to relearning' \u2192 human ear check; articulation live; 0\u20137.8 s"
+  ],
+  "creditsDelta": 72
+}

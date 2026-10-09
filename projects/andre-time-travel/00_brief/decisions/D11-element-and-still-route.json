@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "productionElement:andre_v2",
+  "artifact": {
+    "path": "projects/andre-time-travel/07_generations/responses/ELEMENT-andre-v2.response.json",
+    "sha256": "e3ddc6de529b0881697441663d439b75e07c3f74e348ff9035f953bbc53b61c8",
+    "version": "v2"
+  },
+  "decision": "DECIDED 2026-10-09: Kling Element id 323525046658711 'Andre Athar - grey suit - identity v2 20261009' (tag Characters; cover 015341 + 3 secondaries, read back OK). Cost 180 credits (6776→6596). Legacy Elements 323415933655261 / 323336237505580 preserved, not used. STILL ROUTE (tested on 3 paid variants, ≤2 cr each): kling-image-o1 + real cover photo as image_1 + table anchor image_2 + era plate image_3 + Element binding = likeness holds (MCU, screen-left, gaze camera-right). kling-image-v3_0_omni with the same inputs drifted to a wide shot and a different face twice → not used for Andre stills.",
+  "reviewer": "director/producer agent under APR-blanket-2026-10-09",
+  "reviewedAt": "2026-10-09T10:53:02-03:00",
+  "evidence": [
+    "07_generations/originals/R3-galileo-speaking_1.jpg (REJECT, omni, Element only)",
+    "07_generations/originals/R3-test-omni-galileo-speaking_1.jpg (REJECT)",
+    "07_generations/originals/R3-test-o1-galileo-speaking_1.jpg (ACCEPT likeness)"
+  ],
+  "scope": "All Andre keyframes; video pilot inputs",
+  "limitations": [
+    "Andre's own likeness approval in motion pending (pilot).",
+    "Element is front-weighted (no profiles in real photos)."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope."
+}

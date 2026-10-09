@@ -1,0 +1,361 @@
+[
+  {
+    "job": "R3-test-o1-galileo-speaking",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "identity test: cover photo as image_1 + Element, o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair; the table edge and his hands in the lower third. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eyes, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no younger or different actor. He is the ONLY person, seated in the LEFT half of the frame, body and gaze turned toward camera-RIGHT at someone unseen across the table. Wardrobe exactly as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, faint ring stain and chipped near corner in the foreground. Room and light from \u56fe\u72473, kept soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool Tuscan dusk through a stone window from the left; quiet study. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-test-omni-galileo-speaking",
+    "tool": "image_to_image",
+    "model": "kling-image-v3_0_omni",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "identity test: cover photo as image_1 + Element, v3 omni",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair; the table edge and his hands in the lower third. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eyes, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no younger or different actor. He is the ONLY person, seated in the LEFT half of the frame, body and gaze turned toward camera-RIGHT at someone unseen across the table. Wardrobe exactly as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, faint ring stain and chipped near corner in the foreground. Room and light from \u56fe\u72473, kept soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool Tuscan dusk through a stone window from the left; quiet study. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-galileo-speaking",
+    "tool": "image_to_image",
+    "model": "kling-image-v3_0_omni",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe galileo/speaking, Element 323525046658711",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. <<<323525046658711>>> Andre is seated at the near-left side of the exact plain unpainted oak table from \u56fe\u72471 \u2014 same pale wide planks, length-wise grain, the faint ring stain and the chipped near-left corner visible in the foreground. He is the ONLY person in the frame, positioned in the left half, body angled toward camera-right, eyes looking toward camera-right at someone unseen across the table. Medium close-up from mid-chest to just above the hair. He wears his mid-grey pinstripe suit jacket open over a white finely striped shirt with an open collar, no tie; short textured dark-brown hair, light stubble \u2014 exactly his real face, no beautification. Hands resting on the table. Soft directional key light from camera-left, subtle rim light separating him from the background; healthy natural skin tones. The room and light are those of \u56fe\u72472. No other person, no reflection of a face, no portrait, no text, no watermark, no lens distortion, no wide-angle. Cool Tuscan dusk through a stone arched window from the left; quiet study; an out-of-focus manuscript page at the far edge. Expression: attentive, mid-thought, lips parted slightly as if about to speak \u2014 neutral pre-speech mouth, no baked phoneme."
+  },
+  {
+    "job": "R3-galileo-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe galileo/speaking; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool Tuscan dusk through a stone window from the left; quiet study. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-galileo-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe galileo/listening; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool Tuscan dusk through a stone window from the left; quiet study. Expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes."
+  },
+  {
+    "job": "R3-caesar-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe caesar/speaking; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J27-plate-rome-44bce_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Warm oil-lamp light, ochre plaster and muted red, marble colonnade blurred behind. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-caesar-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe caesar/listening; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J27-plate-rome-44bce_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Warm oil-lamp light, ochre plaster and muted red, marble colonnade blurred behind. Expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes."
+  },
+  {
+    "job": "R3-genghis-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe genghis/speaking; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J28-plate-tent-1227_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Dim amber firelight inside a felt tent, lattice wall blurred; steady light on his eyes. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-genghis-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe genghis/listening; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J28-plate-tent-1227_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Dim amber firelight inside a felt tent, lattice wall blurred; steady light on his eyes. Expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes."
+  },
+  {
+    "job": "R3-napoleon-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe napoleon/speaking; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool humid sea-mist light through shutters, peeling plaster blurred. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-napoleon-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe napoleon/listening; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool humid sea-mist light through shutters, peeling plaster blurred. Expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes."
+  },
+  {
+    "job": "R3-oppenheimer-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe oppenheimer/speaking; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J31-plate-trinity-1945_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Harsh single tungsten bulb above, pine plank wall blurred, night outside; noir shadows but readable eyes. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-oppenheimer-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe oppenheimer/listening; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J31-plate-trinity-1945_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Harsh single tungsten bulb above, pine plank wall blurred, night outside; noir shadows but readable eyes. Expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes."
+  },
+  {
+    "job": "R3-present-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe present/speaking; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Clean soft cool morning window light, bare concrete-grey wall. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-present-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "Andre era keyframe present/listening; cover+Element route",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Clean soft cool morning window light, bare concrete-grey wall. Expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes."
+  },
+  {
+    "job": "R3-oppenheimer-speaking-o1-v2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "regen oppenheimer/speaking: composition-first prompt (left third, right side empty)",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J31-plate-trinity-1945_1.png"
+    ],
+    "prompt": "Medium close-up, 16:9, photorealistic film still. COMPOSITION FIRST: the man occupies the LEFT third of the frame; the RIGHT two-thirds show only the empty oak table top receding away and the out-of-focus room \u2014 nobody else, no second person, no silhouette, no hand, no shadow of a person, no reflection. He faces camera-RIGHT, eyes on an unseen person across the table. His forearms rest on the near table edge in the lower third. The man is <<<323525046658711>>> with EXACTLY the face of \u56fe\u72471 (same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties). Wardrobe as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of \u56fe\u72472: pale wide planks, faint ring stain, chipped near corner. Setting and light from \u56fe\u72473, soft and out of focus. Soft key light from camera-left, subtle rim light, natural skin, no beautification. No text, no watermark, no wide-angle distortion. Harsh single tungsten bulb above, pine plank wall blurred, night outside; noir shadows but readable eyes. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-present-speaking-o1-v2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "regen present/speaking: composition-first prompt (left third, right side empty)",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "prompt": "Medium close-up, 16:9, photorealistic film still. COMPOSITION FIRST: the man occupies the LEFT third of the frame; the RIGHT two-thirds show only the empty oak table top receding away and the out-of-focus room \u2014 nobody else, no second person, no silhouette, no hand, no shadow of a person, no reflection. He faces camera-RIGHT, eyes on an unseen person across the table. His forearms rest on the near table edge in the lower third. The man is <<<323525046658711>>> with EXACTLY the face of \u56fe\u72471 (same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties). Wardrobe as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of \u56fe\u72472: pale wide planks, faint ring stain, chipped near corner. Setting and light from \u56fe\u72473, soft and out of focus. Soft key light from camera-left, subtle rim light, natural skin, no beautification. No text, no watermark, no wide-angle distortion. Clean soft cool morning window light from camera-left, bare concrete-grey wall. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth."
+  },
+  {
+    "job": "R3-present-listening-o1-v2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "regen present/listening: composition-first prompt (left third, right side empty)",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "prompt": "Medium close-up, 16:9, photorealistic film still. COMPOSITION FIRST: the man occupies the LEFT third of the frame; the RIGHT two-thirds show only the empty oak table top receding away and the out-of-focus room \u2014 nobody else, no second person, no silhouette, no hand, no shadow of a person, no reflection. He faces camera-RIGHT, eyes on an unseen person across the table. His forearms rest on the near table edge in the lower third. The man is <<<323525046658711>>> with EXACTLY the face of \u56fe\u72471 (same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties). Wardrobe as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of \u56fe\u72472: pale wide planks, faint ring stain, chipped near corner. Setting and light from \u56fe\u72473, soft and out of focus. Soft key light from camera-left, subtle rim light, natural skin, no beautification. No text, no watermark, no wide-angle distortion. Clean soft cool morning window light from camera-left, bare concrete-grey wall. Expression: listening, mouth closed, calm steady attention."
+  },
+  {
+    "job": "R3-present-listening-o1-v3",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "APR-R3-keyframes-2026-10-09",
+    "note": "present/listening derived from accepted present-speaking keyframe (edit, not re-compose)",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "07_generations/originals/R3-present-speaking-o1-v2_1.jpg",
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+    ],
+    "prompt": "Edit \u56fe\u72471 minimally. Keep EXACTLY the same framing, camera, seat, table, wall, light, wardrobe and the same man <<<323525046658711>>> (face identical to \u56fe\u72472). Change only his expression: close the mouth, relax the jaw, and let him listen quietly to the unseen person across the table \u2014 eyes still toward camera-right, steady attention, a small weight of thought. No other change. No other person, no text."
+  }
+]

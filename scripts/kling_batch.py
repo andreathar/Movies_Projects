@@ -76,7 +76,11 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
             url = w.get("urlWithoutWatermark") or w.get("url")
             if not url:
                 continue
-            ext = ".png" if "png" in url.lower() else ".jpg"
+            ctype = (w.get("contentType") or w.get("content_type") or "").lower()
+            if ctype == "video" or ".mp4" in url.lower():
+                ext = ".mp4"
+            else:
+                ext = ".png" if "png" in url.lower() else ".jpg"
             target = orig / f"{job}_{i}{ext}"
             urllib.request.urlretrieve(url, target)
             meta = {"job": job, "generationId": gen_id, "tool": tool, "model": model,

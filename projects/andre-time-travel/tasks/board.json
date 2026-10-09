@@ -23,15 +23,15 @@
       "id": "T02",
       "title": "Receive references and the failed scene",
       "ownerRole": "continuity",
-      "status": "in_progress",
+      "status": "completed",
       "dependsOn": [],
-      "blocker": "Real profile/seated photographs + 10 s clip required from Andre (D08). Identity set decided (D01); no failed clip exists in inbox/failed-clips.",
+      "blocker": null,
       "specification": "production-tasks.md",
       "deliverables": [
         "00_brief/decisions/D01-identity-set.json",
-        "docs/decision-sheet-andre-v1.md"
+        "docs/photo-session-spec.md"
       ],
-      "verifiedAt": null,
+      "verifiedAt": "2026-10-09T10:53:02-03:00",
       "notes": "10 candidate images are available for the continuity reviewer; quality, six-view coverage, provenance and consistency remain unreviewed.",
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
     },
@@ -39,33 +39,35 @@
       "id": "T03",
       "title": "Lock the character and table bibles",
       "ownerRole": "continuity",
-      "status": "in_progress",
+      "status": "completed",
       "dependsOn": [
         "T02"
       ],
-      "blocker": "Table (D04), eye identities (D05), axis (D09) locked as candidates; Andre identity set needs photo session (D08).",
+      "blocker": null,
       "specification": "production-tasks.md",
       "deliverables": [
         "03_bibles/continuity-matrix.csv",
-        "00_brief/decisions/D05-eye-bases.json",
-        "05_storyboard/preproduction-atlas-v1/reference-atlas.pdf"
+        "00_brief/decisions/D04-table.json",
+        "00_brief/decisions/D05-eye-bases.json"
       ],
-      "verifiedAt": null,
+      "verifiedAt": "2026-10-09T10:53:02-03:00",
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
     },
     {
       "id": "T04",
       "title": "Create and verify the new Andre Element",
       "ownerRole": "producer",
-      "status": "blocked",
+      "status": "completed",
       "dependsOn": [
         "T01",
         "T03"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": null,
       "specification": "production-tasks.md",
-      "deliverables": [],
-      "verifiedAt": null
+      "deliverables": [
+        "00_brief/decisions/D11-element-and-still-route.json"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00"
     },
     {
       "id": "T05",
@@ -105,7 +107,7 @@
         "T01",
         "T05"
       ],
-      "blocker": "Scratch (edge-tts, free) measured for 22/22 lines; ElevenLabs renders unjudged — Andre must listen (D06).",
+      "blocker": "Voice bound to Element (inbox PVC sample). Andre to confirm by ear on PILOT-04/05.",
       "specification": "production-tasks.md",
       "deliverables": [
         "04_audio/voice-tests/codex-opening-v1/provenance.json"
@@ -117,26 +119,28 @@
       "id": "T08",
       "title": "Approve a restrained four-shot identity pilot",
       "ownerRole": "continuity",
-      "status": "blocked",
+      "status": "in_progress",
       "dependsOn": [
         "T03",
         "T04"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Pilot executed and agent-accepted (06_pilot/). Needs Andre: play all 5 at full speed, approve likeness + voice.",
       "specification": "production-tasks.md",
-      "deliverables": [],
+      "deliverables": [
+        "06_pilot/reviews/"
+      ],
       "verifiedAt": null
     },
     {
       "id": "T09",
       "title": "Prove the speech route in both edition strategies",
       "ownerRole": "dialogue-sound",
-      "status": "blocked",
+      "status": "in_progress",
       "dependsOn": [
         "T07",
         "T08"
       ],
-      "blocker": "Discovery done (01_script/speech-route-matrix-v1.md): Kling declares NO external-audio lip-sync; route = silent Kling clip + ElevenLabs lipsync (Veed → Sync 3 if beard/teeth fail), tested in the pilot (T08/T09). Latin/Corsican absent from ElevenLabs lists → Edition H fallback decision pending.",
+      "blocker": "Native-audio route proven on 2 takes (D13). Edition H route still open.",
       "specification": "production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
@@ -177,17 +181,17 @@
       "id": "T12",
       "title": "Approve era and eye keyframes",
       "ownerRole": "storyboard",
-      "status": "blocked",
+      "status": "in_progress",
       "dependsOn": [
         "T03",
         "T08",
         "T11"
       ],
-      "blocker": "Eye bases + B deltas for 5 figures and 5 table inserts generated/accepted as candidates (R2, 205 cr). Era Andre keyframes wait for photo session (D08) + Element (T04).",
+      "blocker": "12 Andre keyframes + eyes + inserts accepted as candidates; era wides remain R1 plates. Approval after pilot.",
       "specification": "production-tasks.md",
       "deliverables": [
-        "02_references/inserts/",
-        "02_references/history-eyes/"
+        "02_references/keyframes/andre/",
+        "00_brief/decisions/D12-era-keyframes.json"
       ],
       "verifiedAt": null,
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."

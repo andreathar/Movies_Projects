@@ -1,0 +1,22 @@
+{
+  "job": "R2-J03-andre-cinematic-frontal-subtle-smile",
+  "generationId": "AV-I23HaXNf5EBRhUtTPeo383mJkAjAE9pCo67F_WHcpQsH2pzTCCjhY5-JbIdtLx-WGtQGi",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:4",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/20261009_user_portrait_03.jpg",
+    "02_references/andre/selected/20261009_user_portrait_05.jpg"
+  ],
+  "prompt": "Cinematic photorealistic 35mm portrait of the exact man in the reference photos. 100% preserve his real face, warm brown eyes, smile lines around the eyes, facial structure, swept-back dark brown hair, and groomed stubble. Facing forward slightly off-axis with a subtle, warm, knowing smile. Wardrobe: dark charcoal cotton-linen shirt unbuttoned at the collar, navy blue blazer. Warm morning window light, natural skin texture with subtle pores, rich cinematic color grading, 85mm portrait lens, 8k.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "716f0271fe15c557beb5fd5d395a7d3642a36c8f945bfaf647a1360bc9be215d",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzdmYTgzOWI4LTJmNWQtNGMyMy05ZGE1LTc4NTFhMjllZWUyYS5wbmc.origin?x-kcdn-pid=112372",
+  "note": "Andre cinematic frontal subtle smile from fresh uploads",
+  "created": "2026-10-09T11:09:49-03:00"
+}

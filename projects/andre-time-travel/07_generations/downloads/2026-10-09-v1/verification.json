@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "imageFilesDecoded": 90,
+  "uniqueGenerationWorkPairs": 90,
+  "imageSHA256ChecksPassed": 90,
+  "localGalleryLinksChecked": 273,
+  "missingGalleryLinks": [],
+  "preexistingMediaFilesChecked": 90,
+  "preexistingMediaChanged": [],
+  "workspaceValidation": {
+    "status": "ok",
+    "errors": [],
+    "warnings": [
+      "shared skill changed since linking: kling-cli",
+      "shared skill changed since linking: film-character-continuity",
+      "shared skill changed since linking: film-dialogue-localization",
+      "shared skill changed since linking: film-editing-qc"
+    ],
+    "projects": [
+      {
+        "id": "andre-time-travel",
+        "chapters": 5,
+        "storyboardSlots": 41,
+        "targetSeconds": 240,
+        "budgetCeiling": 6981,
+        "productionTasks": 21,
+        "taskStates": {
+          "completed": 5,
+          "blocked": 14,
+          "in_progress": 2
+        },
+        "recordedTakes": 0,
+        "finalMovieVerified": false,
+        "registeredSources": 20,
+        "importedSourceSnapshots": 20
+      }
+    ]
+  },
+  "tests": {
+    "exitCode": 1,
+    "passed": 10,
+    "failed": 1,
+    "diagnostic": "test_status_reports_real_state_without_writes (test_manage.WorkspaceValidationTests.test_status_reports_real_state_without_writes) ... ok\ntest_validate_checks_workspace_integrity (test_manage.WorkspaceValidationTests.test_validate_checks_workspace_integrity) ... FAIL\ntest_new_and_changed_images_are_pending_until_recorded (test_review_sweep.ReviewSweepTests.test_new_and_changed_images_are_pending_until_recorded) ... ok\ntest_accidental_inherited_approval_is_rejected (test_workflow.WorkflowTests.test_accidental_inherited_approval_is_rejected) ... ok\ntest_dialogue_cannot_be_silently_forked_inside_atlas_source (test_workflow.WorkflowTests.test_dialogue_cannot_be_silently_forked_inside_atlas_source) ... ok\ntest_inventory_detects_changed_missing_and_added_files_without_writing (test_workflow.WorkflowTests.test_inventory_detects_changed_missing_and_added_files_without_writing) ... ok\ntest_local_direction_and_canonical_dialogue_edits_reach_render_inputs (test_workflow.WorkflowTests.test_local_direction_and_canonical_dialogue_edits_reach_render_inputs) ... ok\ntest_missing_reference_and_stale_line_mapping_fail_before_rendering (test_workflow.WorkflowTests.test_missing_reference_and_stale_line_mapping_fail_before_rendering) ... ok\ntest_new_episode_does_not_inherit_previous_approval_cost_or_layout (test_workflow.WorkflowTests.test_new_episode_does_not_inherit_previous_approval_cost_or_layout) ... ok\ntest_paths_cannot_escape_workspace (test_workflow.WorkflowTests.test_paths_cannot_escape_workspace) ... ok\ntest_script_and_csv_cannot_silently_diverge (test_workflow.WorkflowTests.test_script_and_csv_cannot_silently_diverge) ... ok\n\n======================================================================\nFAIL: test_validate_checks_workspace_integrity (test_manage.WorkspaceValidationTests.test_validate_checks_workspace_integrity)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/Projects_SSD/Movies_Projects/tests/test_manage.py\", line 138, in test_validate_checks_workspace_integrity\n    self.assertIn(\"unrecorded take\", \" \".join(json.loads(bad.stdout)[\"errors\"]))\nAssertionError: 'unrecorded take' not found in 'completed task artifact is missing: T02'\n\n----------------------------------------------------------------------\nRan 11 tests in 0.370s\n\nFAILED (failures=1)\n",
+    "interpretation": "The test fixture excludes JPG files while completed task T02 now requires a JPG deliverable; the real production artifact exists. Test source and production approvals were not modified by this archive pass."
+  }
+}

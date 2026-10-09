@@ -1,0 +1,6 @@
+R3-galileo-speaking_1.jpg	omni, Element-only: wide shot, different face
+R3-test-omni-galileo-speaking_1.jpg	omni: wide, different face
+R3-oppenheimer-speaking-o1_1.jpg	second head (interlocutor) in frame — zero-face contract
+R3-present-speaking-o1_1.jpg	axis flipped: Andre right half, gaze camera-left
+R3-present-listening-o1_1.jpg	axis: centred, to camera
+R3-present-listening-o1-v2_1.jpg	reference photo pasted as collage, to camera

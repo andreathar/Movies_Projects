@@ -23,12 +23,12 @@
 
 ## 2. Signature Wardrobe & Accessories
 
-Andre's wardrobe is **invariant across all five historical encounters and the present-day opening/ending (decision D02)**. He does not play dress-up in historical attire; his modern clothing anchors his role as an outsider visiting the past.
+Andre's wardrobe is **invariant across all five historical encounters and the present-day opening/ending (decision D02, revised 2026-10-09: grey pinstripe suit / white striped shirt as photographed)**. He does not play dress-up in historical attire; his modern clothing anchors his role as an outsider visiting the past.
 
 | Garment | Detailed Material & Cut Specification | Reference File |
 |---|---|---|
-| **Shirt** | Garment-dyed dark charcoal cotton-linen blend button-up shirt. Relaxed soft collar, unbuttoned at top (first 1–2 buttons open), visible woven fabric texture, horn buttons. | `02_references/wardrobe/R2-wardrobe-andre-modern.jpg` |
-| **Jacket** | Deep navy blue unstructured lightweight wool-blend blazer. Soft natural shoulders (no heavy padding), notch lapels, patch pockets, subtle micro-texture. | `02_references/wardrobe/R2-wardrobe-andre-modern.jpg` |
+| **Shirt** | White shirt with fine grey stripes, soft collar open, no tie (D02 revised — as photographed). | `02_references/andre/approved/sec2_20240202_015421_hs34.jpg` |
+| **Jacket** | Mid-grey pinstripe suit jacket, notch lapels, worn open (D02 revised — as photographed). Pinstripe moiré to be checked in the pilot. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 | **Seated Fit** | Clean, natural drape while seated at a rustic wooden table; sleeves pulled back slightly showing wrists. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
 | **Accessories** | Simple silver wedding band on left ring finger; no flashy watches or modern logos visible in frame. | Production invariant |
 

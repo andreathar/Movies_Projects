@@ -1,0 +1,24 @@
+{
+  "job": "PILOT-01-galileo-listening-locked",
+  "generationId": "AbKbbItiACS4LQBQNfMc3V12zs2sOxwR3sQQXGFCExsbmEPxYhgrh3RLrYn06jqBz0gF1LvO",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0",
+  "options": {
+    "duration": "5",
+    "resolution": "720p",
+    "imageCount": "1",
+    "prefer_multi_shots": "false",
+    "enable_audio": "false",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/keyframes/andre/KF-galileo-listening.jpg"
+  ],
+  "prompt": "<<<323525046658711>>> sits still and listens to the unseen person across the table. He blinks once naturally, his chest rises with a slow breath, his eyes stay on the person to camera-right. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "0d8ab9454c6b2486c4834f28ff8efa037f13d1b0d54e516365a7982b9c43853d",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/1fd1541f-24c9-45ec-b76e-ab30540b3e55-AkiIgO9xd7ywGvVIxLPDTw-output.mp4?x-kcdn-pid=112372",
+  "note": "identity baseline: near-still listening",
+  "created": "2026-10-09T11:09:07-03:00"
+}

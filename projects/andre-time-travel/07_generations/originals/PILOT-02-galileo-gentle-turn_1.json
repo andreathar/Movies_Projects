@@ -1,0 +1,24 @@
+{
+  "job": "PILOT-02-galileo-gentle-turn",
+  "generationId": "ATZXKyi2TkJxTmkkIFv8nfsYkbkXEMBlxJzBz8585NC3lxDRkoDI9SiUuyCdIaW_NFK2Yfcr",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0",
+  "options": {
+    "duration": "5",
+    "resolution": "720p",
+    "imageCount": "1",
+    "prefer_multi_shots": "false",
+    "enable_audio": "false",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/keyframes/andre/KF-galileo-listening.jpg"
+  ],
+  "prompt": "<<<323525046658711>>> slowly turns his head a few degrees further toward camera-right, as if a quiet question reached him, holds there, then settles back. Small movement only, no large rotation, no profile. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "afdadba6103defcfee29a5937ed2fb5611d0e55729ed93f54642d46ed888ea44",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6ea3f3f3-c118-4ea9-ad2c-70ea498b0f4e-2LkphwR-BN4LyR12DB8bKw-output.mp4?x-kcdn-pid=112372",
+  "note": "angle envelope: small head turn and return",
+  "created": "2026-10-09T11:12:56-03:00"
+}

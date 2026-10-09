@@ -1,0 +1,24 @@
+{
+  "job": "R3-present-listening-o1-v2",
+  "generationId": "AT4-m8lbO6N5xYhcUA5l7wJp5aBNgSZ6o3v5vd_QyNvng1xUTut4ClhEYNfHlhpcMwJ94bD4",
+  "tool": "image_to_image",
+  "model": "kling-image-o1",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": "1",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/table/R1-J32-plate-present-day_1.png"
+  ],
+  "prompt": "Medium close-up, 16:9, photorealistic film still. COMPOSITION FIRST: the man occupies the LEFT third of the frame; the RIGHT two-thirds show only the empty oak table top receding away and the out-of-focus room \u2014 nobody else, no second person, no silhouette, no hand, no shadow of a person, no reflection. He faces camera-RIGHT, eyes on an unseen person across the table. His forearms rest on the near table edge in the lower third. The man is <<<323525046658711>>> with EXACTLY the face of \u56fe\u72471 (same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties). Wardrobe as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of \u56fe\u72472: pale wide planks, faint ring stain, chipped near corner. Setting and light from \u56fe\u72473, soft and out of focus. Soft key light from camera-left, subtle rim light, natural skin, no beautification. No text, no watermark, no wide-angle distortion. Clean soft cool morning window light from camera-left, bare concrete-grey wall. Expression: listening, mouth closed, calm steady attention.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "2e4c9faa153a82c1bce07d6fc789964c55b0fa983fbc8a30d73af9569d93f91d",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoydXBzY2FsZV9fZDQ5YmNiMzkxODNkYWJmMTE4MzM0Yzg1MTdmYjkyYzdoOXdwNS5wbmc.origin?x-kcdn-pid=112372",
+  "note": "regen present/listening: composition-first prompt (left third, right side empty)",
+  "created": "2026-10-09T11:05:32-03:00"
+}

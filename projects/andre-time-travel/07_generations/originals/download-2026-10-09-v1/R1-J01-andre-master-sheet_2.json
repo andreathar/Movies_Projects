@@ -1,0 +1,18 @@
+{
+  "generationId": "ASFd1z9LwkmPCq6zPFqBpklKDzqtxhau1N90Uf62VtdArlvlTJfdAgcZnw4s8I_j2m_uiRwk",
+  "job": "R1-J01-andre-master-sheet",
+  "sourceResponse": "projects/andre-time-travel/07_generations/responses/R1-J01-andre-master-sheet.response.json",
+  "sourceResponseSHA256": "fa9a92acaacafc0f78dfb3ef9095fff13489f26ba81c687756e893f5ffcac30a",
+  "path": "projects/andre-time-travel/07_generations/originals/download-2026-10-09-v1/R1-J01-andre-master-sheet_2.png",
+  "sha256": "97f8c6194ebfaa3b6fe0827af82474edc95169008dca8610be5f7053faaec59d",
+  "bytes": 6980809,
+  "width": 2752,
+  "height": 1536,
+  "format": "PNG",
+  "retrieval": "downloaded",
+  "workIndex": 2,
+  "provenance": "synthetic",
+  "approved": false,
+  "urlField": "url",
+  "downloadedAt": "2026-10-09T14:04:18.952989+00:00"
+}

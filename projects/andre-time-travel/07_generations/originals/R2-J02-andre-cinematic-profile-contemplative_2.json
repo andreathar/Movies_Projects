@@ -1,0 +1,22 @@
+{
+  "job": "R2-J02-andre-cinematic-profile-contemplative",
+  "generationId": "AeYqbMVHttLiygKZJwxiHGIbilEkQHWSLsEqVvvKW6AByIlhAVDhLOL031mxHE4FaMV_hQk0",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:4",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/20261009_user_portrait_01.jpg",
+    "02_references/andre/selected/20261009_user_portrait_04.jpg"
+  ],
+  "prompt": "Cinematic photorealistic 35mm film still of the exact man in the reference photos. 100% preserve his real face, facial features, jawline, nose, and short groomed stubble beard. Near-profile / 70-degree side angle looking camera-right in deep contemplation. Mouth closed, grave and thoughtful expression, reflecting on history. Wardrobe: dark charcoal collared shirt under dark navy unstructured jacket. Dramatic chiaroscuro lighting, soft directional rim light tracing his profile and hair, atmospheric dark background, fine film grain, 8k resolution.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "569d2a4dfd0d05ee14ccd263307df78e9c65dca88d73d9f8a732e90302d5696e",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2RlZmE2YmYyLWYwNDUtNGI4Ny04Y2Y3LWU4OTkzOTVkNmExNi5wbmc.origin?x-kcdn-pid=112372",
+  "note": "Andre cinematic near-profile contemplative portrait from fresh uploads",
+  "created": "2026-10-09T11:03:55-03:00"
+}

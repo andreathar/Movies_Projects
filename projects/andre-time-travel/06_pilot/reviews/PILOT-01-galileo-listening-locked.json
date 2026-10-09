@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "shotId": "PILOT-01-galileo-listening-locked",
+  "takeId": "PILOT-01-galileo-listening-locked_1",
+  "assetPath": "06_pilot/originals/PILOT-01-galileo-listening-locked_1.mp4",
+  "sha256": "0d8ab9454c6b2486c4834f28ff8efa037f13d1b0d54e516365a7982b9c43853d",
+  "generationId": "AbKbbItiACS4LQBQNfMc3V12zs2sOxwR3sQQXGFCExsbmEPxYhgrh3RLrYn06jqBz0gF1LvO",
+  "reviewer": "director agent (frame strips + ffprobe/decode; STT via faster-whisper base.en for speech takes)",
+  "fullPlaybackCompleted": false,
+  "fullFrameInspectionCompleted": true,
+  "likenessUserApproved": false,
+  "historicalFaceExposureFound": false,
+  "speechSyncPassed": null,
+  "decision": "accepted_pending_andre",
+  "issues": [
+    "ACCEPT: same face t=0/2.5/5, locked camera, blink+breath, gaze right, 121/121 frames clean"
+  ],
+  "creditsDelta": 70
+}

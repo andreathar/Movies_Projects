@@ -3,11 +3,11 @@
   "episode": "andre-time-travel",
   "gate": "characterReferences:identity_photo_set",
   "artifact": {
-    "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015259.jpg",
-    "sha256": "ea0d9f2b0c7dcabb94ec1ba55001bc415b5c3ac03a20c1670d2f2d9b4ca74294",
-    "version": "v1"
+    "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+    "version": "v2"
   },
-  "decision": "DECIDED: identity truth = the three 2024 photographs (20240202_015214/015259/015304, originals in inbox, crops in 02_references/andre/selected). 2021–2023 photos are grooming-history only. R1/R2 synthetic portraits are tone/style references, NOT identity inputs.",
+  "decision": "DECIDED: identity truth = the three 2024 photographs (20240202_015214/015259/015304, originals in inbox, crops in 02_references/andre/selected). 2021–2023 photos are grooming-history only. R1/R2 synthetic portraits are tone/style references, NOT identity inputs. UPDATE 2026-10-09: Andre delivered inbox/Photos-Andre-Suit (13 frames, 2024-02-02 session, 3216x1158 portrait w/ EXIF rotation; no clip, no profiles — all near-frontal). Element set selected: cover 015341 (neutral), secondaries 015347 (soft), 015421 (smile, wider), 015328 (neutral). Crops in 02_references/andre/approved/ (crop only, no retouch; charger excluded by crop). Gemini_Generated_Image_*.jpeg in the same folder is SYNTHETIC — tone reference only.",
   "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
   "reviewedAt": "2026-10-09T09:18:43-03:00",
   "evidence": [
@@ -16,7 +16,8 @@
   ],
   "scope": "Element cover/secondary selection and all likeness comparisons",
   "limitations": [
-    "Only frontal/three-quarter coverage exists; profiles and seated views come from the photo session (D08). Andre's own likeness approval of the pilot remains a separate gate (characterReferences stays false until then)."
+    "No profile or 3/4 coverage in real photos: Element is front-weighted; pilot must test a gentle turn and reject if geometry drifts.",
+    "Likeness approval in motion remains Andre's."
   ],
   "supersedes": null,
   "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."

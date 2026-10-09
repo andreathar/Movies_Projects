@@ -1,0 +1,24 @@
+{
+  "job": "R3-galileo-speaking-o1",
+  "generationId": "AQWYiQ8UXXe55Lm0WIEUNX4KA7v8HBRAvEJQlZoh-PLBFOCjCK51AbcJRgDnIl-ctir5vaTp",
+  "tool": "image_to_image",
+  "model": "kling-image-o1",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": "1",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+  ],
+  "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no different actor. He is the ONLY person, seated in the LEFT half of the frame at the near side of the table, body and gaze turned toward camera-RIGHT at someone unseen across the table. His forearms and hands rest on the near edge of the table in the lower third of the frame. Wardrobe exactly as in \u56fe\u72471: mid-grey suit jacket with visible fine pinstripes, open, over a white shirt with fine stripes, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, length-wise grain, the faint ring stain near his hands. Room and light from \u56fe\u72473, soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool Tuscan dusk through a stone window from the left; quiet study. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "5405a8e6c55945e59987e72829abe9cb6578eb82e7cc2ea6c8fea3252b8446df",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoydXBzY2FsZV9fYzVjNmQzZGIzMzkxZDk4MTk1ZmM2MmE3Y2VlODk2N2VtYjBndC5wbmc.origin?x-kcdn-pid=112372",
+  "note": "Andre era keyframe galileo/speaking; cover+Element route",
+  "created": "2026-10-09T10:51:36-03:00"
+}

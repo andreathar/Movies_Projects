@@ -1,0 +1,24 @@
+{
+  "job": "R3-oppenheimer-speaking-o1-v2",
+  "generationId": "ASVdyFR6JO-7dpO1-phTlrcP7po1AgDCWmHavoFabawqVs1qGffS0B2L0A2TO8jYZIybX__z",
+  "tool": "image_to_image",
+  "model": "kling-image-o1",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": "1",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/table/R1-J31-plate-trinity-1945_1.png"
+  ],
+  "prompt": "Medium close-up, 16:9, photorealistic film still. COMPOSITION FIRST: the man occupies the LEFT third of the frame; the RIGHT two-thirds show only the empty oak table top receding away and the out-of-focus room \u2014 nobody else, no second person, no silhouette, no hand, no shadow of a person, no reflection. He faces camera-RIGHT, eyes on an unseen person across the table. His forearms rest on the near table edge in the lower third. The man is <<<323525046658711>>> with EXACTLY the face of \u56fe\u72471 (same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties). Wardrobe as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of \u56fe\u72472: pale wide planks, faint ring stain, chipped near corner. Setting and light from \u56fe\u72473, soft and out of focus. Soft key light from camera-left, subtle rim light, natural skin, no beautification. No text, no watermark, no wide-angle distortion. Harsh single tungsten bulb above, pine plank wall blurred, night outside; noir shadows but readable eyes. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "bf19b2d90a2e7b8b4e70726614eaaca81d1f7cb4bd3f3bd789eed1a649855290",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoydXBzY2FsZV9fOGZkMDViNWViZTFmN2Q4NTc5ODkxY2M5NzU2ZjFjNGFjbXZ0NC5wbmc.origin?x-kcdn-pid=112372",
+  "note": "regen oppenheimer/speaking: composition-first prompt (left third, right side empty)",
+  "created": "2026-10-09T11:03:40-03:00"
+}

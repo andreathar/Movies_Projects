@@ -1,0 +1,22 @@
+{
+  "job": "R2-J01-andre-cinematic-threequarter-listening",
+  "generationId": "AbDNwW1E7ghbRwIkyQ-O5S70SK693YBlJfS9q6O72mOLZYXLVvvAR4W_69ejAVPnzO4wOswQ",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:4",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/20261009_user_portrait_04.jpg",
+    "02_references/andre/selected/20261009_user_portrait_02.jpg"
+  ],
+  "prompt": "Cinematic photorealistic 35mm film still of the exact man in the reference photos. 100% preserve his real face, facial structure, nose, eyes, smile lines, hair style, and short groomed beard. Three-quarter angle looking slightly camera-right in attentive, thoughtful dialogue. Mouth closed, serious and contemplative gaze, intelligent and observant expression. Wardrobe: dark charcoal collared shirt open at the neck under a dark navy blue unstructured blazer. Moody cinematic soft directional key light from camera-left, subtle shadows, shallow depth of field with soft bokeh, high dynamic range, masterclass cinematography, 8k resolution.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "7b8cf3ab692cd210387c956f36c30c830660b19e0fc3d3ef0ba0d5b10e919980",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzhkZjAzNGQ2LWM2YWItNGZiMC1iNzliLTYwMmE1YWY0NDJhYi5wbmc.origin?x-kcdn-pid=112372",
+  "note": "Andre cinematic 3/4 listening portrait from fresh 2026-10-09 uploads",
+  "created": "2026-10-09T10:57:57-03:00"
+}

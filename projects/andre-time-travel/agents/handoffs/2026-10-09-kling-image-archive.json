@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Archive all currently available Kling images for this film",
+  "ownedPaths": [
+    "scripts/archive_kling_images.py",
+    "projects/andre-time-travel/07_generations/downloads/2026-10-09-v1",
+    "projects/andre-time-travel/07_generations/originals/download-2026-10-09-v1"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "aae0118c349b56204aa3049b542eb3bbc5c45cde66cac1f173e297931ac93450"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "6e02659f5a47ad34935efb67b0936585f9296ed77707d45f0e3903c0841ceb71"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "a914b136584d6db838ee9fe9d580176390bdbd497f71d728e121251310fa8f26",
+      "reason": "append verified archive result"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "7ebba070048c5341bd628117af5766a5b958f29d6d93445ffe13943ede7cc87d",
+      "reason": "append verified archive result"
+    }
+  ],
+  "verification": [
+    "90 image files fully decoded and SHA256 verified",
+    "90 unique generation/work pairs",
+    "273 local gallery links resolve",
+    "All preexisting generation media unchanged",
+    "Workspace validation passed",
+    "General test suite: one unrelated fixture failure documented in verification.json"
+  ],
+  "pendingDecisions": [
+    "Creative selection and likeness approval remain separate",
+    "Account-wide history beyond locally recorded IDs is not discoverable through the installed CLI"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "archive_verified_with_one_remote_query_gap",
+  "archive": "projects/andre-time-travel/07_generations/downloads/2026-10-09-v1",
+  "downloadedImages": 1,
+  "allKnownImageResultsLocal": true
+}

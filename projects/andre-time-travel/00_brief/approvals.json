@@ -3,7 +3,7 @@
   "workspaceSetupAuthorized": true,
   "creativeApprovals": {
     "characterReferences": false,
-    "productionElement": false,
+    "productionElement": true,
     "screenplay": true,
     "voiceTests": false,
     "speechRoute": false,
@@ -85,7 +85,26 @@
         "likeness approval (characterReferences stays false; Andre must judge each variant)",
         "ElevenLabs spend"
       ],
-      "status": "executed_3_of_3_completed; 60 credits (6776->6716); awaiting Andre likeness judgement"
+      "status": "executed",
+      "result": "Element 180 + 18 image jobs ≈ 98 (incl. 2×41 anomalies) = 278; 12 keyframes accepted; balance 6495"
+    },
+    {
+      "id": "APR-R3-keyframes-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "Element creation + Andre era keyframes (6 eras × speaking/listening) via kling-image-o1 with cover photo + Element; identity tests.",
+      "ceiling": "400 Kling credits (R3) + Element 180 booked to pilot phase. Balance before Element: 6776.",
+      "status": "executed",
+      "result": "Element 180 + 18 image jobs ≈ 98 (incl. 2×41 anomalies) = 278; 12 keyframes accepted; balance 6495"
+    },
+    {
+      "id": "APR-pilot-2026-10-09",
+      "type": "paid_video_pilot_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "kling-video-v3_0 image_to_video, 720p, 5 s each, prefer_multi_shots=false, Element bound: (1) Galileo listening locked, (2) Galileo gentle turn/attention, (3) Oppenheimer expression shift, (4) Galileo visible speech with native audio + bound voice saying G-L04 (English), (5) 1 correction. Documented rate: 6 cr/s no-audio 720p, 9 cr/s native audio 720p, +2/s voice control.",
+      "ceiling": "400 Kling credits; stop at 360.",
+      "status": "executed",
+      "result": "5 takes, 334 credits (6495→6161), all accepted pending Andre"
     }
   ],
   "decisionRecords": "00_brief/decisions/"

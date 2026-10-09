@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "storyboard:andre_era_keyframes",
+  "artifact": {
+    "path": "projects/andre-time-travel/02_references/keyframes/andre/",
+    "sha256": null,
+    "version": "v1"
+  },
+  "decision": "DECIDED 2026-10-09: 12 Andre era keyframes accepted as candidates (6 eras × speaking/listening) in 02_references/keyframes/andre/. 18 o1 image jobs total ≈ 98 credits incl. two 41-credit anomalies; 6 rejects kept. Element voice bound (Andre's ElevenLabs PVC sample, inbox file) via element_update; read-back OK.",
+  "promptLessons": [
+    "kling-image-o1 + real cover as image_1 + Element binding preserves likeness; v3_0_omni with Element only does not (2/2 drift).",
+    "State COMPOSITION FIRST (left third / right two-thirds empty / 'nobody else, no silhouette, no hand') — the plain 'only person' clause let an interlocutor head appear once.",
+    "A plain grey wall + 'listening, mouth closed' makes o1 paste the reference photo; derive the listening frame from the accepted speaking keyframe (edit 图片1 minimally) instead.",
+    "Eyes-only deltas read near-centre; video prompts must drive gaze camera-left explicitly."
+  ],
+  "reviewer": "director agent under APR-blanket-2026-10-09",
+  "reviewedAt": "2026-10-09T11:08:42-03:00",
+  "evidence": [
+    "07_generations/batches/R3-keyframes.json",
+    "07_generations/rejected/R3/REASONS.txt"
+  ],
+  "scope": "first_image inputs for the pilot and production",
+  "limitations": [
+    "Andre's likeness approval in motion pending the pilot."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope."
+}

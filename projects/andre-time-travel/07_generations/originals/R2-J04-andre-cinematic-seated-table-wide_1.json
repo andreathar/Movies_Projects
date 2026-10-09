@@ -1,0 +1,22 @@
+{
+  "job": "R2-J04-andre-cinematic-seated-table-wide",
+  "generationId": "AQVD2Tmi2Tqo2_7ejDRS0Bl-q-7Vk0iEMM8vYXAv45HjMjEadmj1QOOOVdQPQOnQ0WP1xu4V",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/20261009_user_portrait_02.jpg",
+    "02_references/andre/selected/20261009_user_portrait_04.jpg"
+  ],
+  "prompt": "Cinematic wide medium shot, 35mm film still. The exact man from the reference photos seated at an unpainted rustic solid oak wooden table in a moody minimalist room. Waist-up framing, both hands resting naturally on the edge of the wood grain. He looks camera-right across the table in deep conversation with an unseen person. Wardrobe: dark charcoal shirt open at collar, dark navy blazer. Absolutely no other people in background. Soft directional key light, warm wood grain texture, masterclass film cinematography, 8k resolution.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "0ef81bd7022eba6ed048158a8ea2547f0403998082461047256f30b647c8c221",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzg5NWNiZTBkLWJkNzctNDA3OC05MmFkLTdiM2EyMjE1MmYyMC5wbmc.origin?x-kcdn-pid=112372",
+  "note": "Andre cinematic seated table master shot from fresh uploads",
+  "created": "2026-10-09T11:13:02-03:00"
+}

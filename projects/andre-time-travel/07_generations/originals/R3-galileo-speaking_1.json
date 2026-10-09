@@ -1,0 +1,23 @@
+{
+  "job": "R3-galileo-speaking",
+  "generationId": "Abt70gOkxD1aDwZdUvPQO6dvgUCJmqdtmPelI-o_wXldc9nvKb2gZ7WpqllBefhQteZ3-fmL",
+  "tool": "image_to_image",
+  "model": "kling-image-v3_0_omni",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": "1",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+  ],
+  "prompt": "Photorealistic cinematic film still, 16:9, 2K. <<<323525046658711>>> Andre is seated at the near-left side of the exact plain unpainted oak table from \u56fe\u72471 \u2014 same pale wide planks, length-wise grain, the faint ring stain and the chipped near-left corner visible in the foreground. He is the ONLY person in the frame, positioned in the left half, body angled toward camera-right, eyes looking toward camera-right at someone unseen across the table. Medium close-up from mid-chest to just above the hair. He wears his mid-grey pinstripe suit jacket open over a white finely striped shirt with an open collar, no tie; short textured dark-brown hair, light stubble \u2014 exactly his real face, no beautification. Hands resting on the table. Soft directional key light from camera-left, subtle rim light separating him from the background; healthy natural skin tones. The room and light are those of \u56fe\u72472. No other person, no reflection of a face, no portrait, no text, no watermark, no lens distortion, no wide-angle. Cool Tuscan dusk through a stone arched window from the left; quiet study; an out-of-focus manuscript page at the far edge. Expression: attentive, mid-thought, lips parted slightly as if about to speak \u2014 neutral pre-speech mouth, no baked phoneme.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "9238adee119e1502bd05a66041a1a4401a31bce8984dba04c9eb1ed413d07360",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qfQoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpjS2xpbmdBSV9Lb2xvcnNfS29sb3JzLXYzXzAtb21uaS12Mi1pMmktc3ItdmFlX2RfXzliNTkyY2Y3XzljMDZkMjFhZjYyNDZiYThmMjIzOWZiZDIyN2E5YTAxZXR1aTIucG5n.origin?x-kcdn-pid=112372",
+  "note": "Andre era keyframe galileo/speaking, Element 323525046658711",
+  "created": "2026-10-09T10:46:48-03:00"
+}

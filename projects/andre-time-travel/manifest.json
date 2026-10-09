@@ -180,11 +180,24 @@
       "observedDate": "2026-10-09",
       "chargeBasis": "per-job balance deltas via kling account before/after",
       "providerCreditsConsumedReported": null
+    },
+    "observedVideoUnitCosts": {
+      "v3_0_720p_5s_element_noaudio": [
+        70,
+        70,
+        30
+      ],
+      "v3_0_720p_8s_element_nativeaudio": [
+        72,
+        92
+      ],
+      "note": "balance deltas; docs rate 6/9 cr/s + voice control; 30 vs 70 for identical 5-s jobs unexplained; plan on 14 cr/s worst case",
+      "observedAt": "2026-10-09T11:27:36-03:00"
     }
   },
   "approvals": {
     "characterReferences": false,
-    "productionElement": false,
+    "productionElement": true,
     "screenplay": true,
     "voiceTests": false,
     "speechRoute": false,
@@ -193,7 +206,48 @@
     "paidBatch": false,
     "finalPicture": false
   },
-  "takes": [],
+  "takes": [
+    {
+      "shotId": "PILOT-01-galileo-listening-locked",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-01-galileo-listening-locked_1.mp4",
+      "credits": 70,
+      "status": "accepted_pending_andre",
+      "id": "PILOT-01-galileo-listening-locked_1"
+    },
+    {
+      "shotId": "PILOT-02-galileo-gentle-turn",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-02-galileo-gentle-turn_1.mp4",
+      "credits": 70,
+      "status": "accepted_pending_andre",
+      "id": "PILOT-02-galileo-gentle-turn_1"
+    },
+    {
+      "shotId": "PILOT-03-oppenheimer-expression",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-03-oppenheimer-expression_1.mp4",
+      "credits": 30,
+      "status": "accepted_pending_andre",
+      "id": "PILOT-03-oppenheimer-expression_1"
+    },
+    {
+      "shotId": "PILOT-04-galileo-speech-native",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
+      "credits": 72,
+      "status": "accepted_pending_andre",
+      "id": "PILOT-04-galileo-speech-native_1"
+    },
+    {
+      "shotId": "PILOT-05-oppenheimer-speech-OL04",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-05-oppenheimer-speech-OL04_1.mp4",
+      "credits": 92,
+      "status": "accepted_pending_andre",
+      "id": "PILOT-05-oppenheimer-speech-OL04_1"
+    }
+  ],
   "finalMovieVerified": false,
   "projectRoot": ".",
   "createdAt": "2026-10-09T07:24:04-03:00",
@@ -629,5 +683,12 @@
     "newKlingGenerations": 0,
     "approved": false,
     "basis": "script v2 + edge-tts scratch timings; v1 remains the published delivery, v2 the rebuild proof"
+  },
+  "productionElement": {
+    "id": "323525046658711",
+    "name": "Andre Athar - grey suit - identity v2 20261009",
+    "createdAt": "2026-10-09T10:53:02-03:00",
+    "credits": 180,
+    "decision": "00_brief/decisions/D11-element-and-still-route.json"
   }
 }

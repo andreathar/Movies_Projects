@@ -1,0 +1,24 @@
+{
+  "job": "PILOT-04-galileo-speech-native",
+  "generationId": "AZowVPxUuYVU0wScaazw4_OFtEmC7Qtz_D14pBUg_SZNYKOuR55tMu3tg72YT-N6EcluN5xv",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0",
+  "options": {
+    "duration": "8",
+    "resolution": "720p",
+    "imageCount": "1",
+    "prefer_multi_shots": "false",
+    "enable_audio": "true",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/keyframes/andre/KF-galileo-speaking.jpg"
+  ],
+  "prompt": "<<<323525046658711>>> speaks calmly in English to the unseen person across the table, in a plain, warm, unhurried voice. Andre says: \"Your observations. And one lesson from your trial that people keep relearning: silencing a man does not settle a question.\" He pauses briefly after \"observations\", keeps his eyes on the person to camera-right, and falls silent after the last word. Quiet room tone only, no music. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "3094014a1f28e2080582139f7a4f34c3ca22b790eb393fccfdb85de5c3ef5ef1",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d9351e01-4a79-4d3b-9721-db01fb8faaea-Zpaj0tAXV8rLI1F9G_EBVw-output.mp4?x-kcdn-pid=112372",
+  "note": "visible speech test: native audio + bound voice, line G-L04",
+  "created": "2026-10-09T11:18:27-03:00"
+}

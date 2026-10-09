@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "shotId": "PILOT-03-oppenheimer-expression",
+  "takeId": "PILOT-03-oppenheimer-expression_1",
+  "assetPath": "06_pilot/originals/PILOT-03-oppenheimer-expression_1.mp4",
+  "sha256": "e0a019236749408773095837bfbb1f8bf68e4fca6217673fa72110b449fb80f4",
+  "generationId": "AdrPcqbo3GN8Twutk7skFuzpivwSNlIf4Mv4YVAyl-NLflImg7xD5Z5VzTfxGIuqA9qbN3wu",
+  "reviewer": "director agent (frame strips + ffprobe/decode; STT via faster-whisper base.en for speech takes)",
+  "fullPlaybackCompleted": false,
+  "fullFrameInspectionCompleted": true,
+  "likenessUserApproved": false,
+  "historicalFaceExposureFound": false,
+  "speechSyncPassed": null,
+  "decision": "accepted_pending_andre",
+  "issues": [
+    "ACCEPT: attention\u2192gravity under hard top light; mouth closed; stable"
+  ],
+  "creditsDelta": 30
+}

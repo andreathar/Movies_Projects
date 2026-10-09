@@ -1,0 +1,24 @@
+{
+  "job": "R3-test-o1-galileo-speaking",
+  "generationId": "Aaf5Wfk_1dhTPr2o9LjEg5LxsMEXHvLxiZbqhT1mt9NLQm36_Gjcwk4cOqR1crF4kQDkbBJ8",
+  "tool": "image_to_image",
+  "model": "kling-image-o1",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": "1",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+  ],
+  "prompt": "Photorealistic cinematic film still, 16:9, 2K. MEDIUM CLOSE-UP: frame from mid-chest to just above the hair; the table edge and his hands in the lower third. The man is <<<323525046658711>>> and his face must be EXACTLY the face in \u56fe\u72471 \u2014 same face shape, nose, brow, eyes, short textured dark-brown hair, light stubble, mid-forties \u2014 no beautification, no younger or different actor. He is the ONLY person, seated in the LEFT half of the frame, body and gaze turned toward camera-RIGHT at someone unseen across the table. Wardrobe exactly as in \u56fe\u72471: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table in \u56fe\u72472: pale wide planks, faint ring stain and chipped near corner in the foreground. Room and light from \u56fe\u72473, kept soft and out of focus behind him. Soft key light from camera-left, subtle rim light, natural skin. No other person, no face reflections, no text, no watermark, no wide-angle distortion. Cool Tuscan dusk through a stone window from the left; quiet study. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "dba6ab24dacb4e4383145f86152d81c41c34a897026c6bf626c3521959b1ea21",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoydXBzY2FsZV9fZTFkMzRjOGQyOTNmN2UxZjNmNjMwZGE3NzA2ZThjYjlkc3oyai5wbmc.origin?x-kcdn-pid=112372",
+  "note": "identity test: cover photo as image_1 + Element, o1",
+  "created": "2026-10-09T10:48:32-03:00"
+}

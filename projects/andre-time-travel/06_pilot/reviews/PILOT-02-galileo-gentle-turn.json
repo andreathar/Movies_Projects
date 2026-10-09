@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "shotId": "PILOT-02-galileo-gentle-turn",
+  "takeId": "PILOT-02-galileo-gentle-turn_1",
+  "assetPath": "06_pilot/originals/PILOT-02-galileo-gentle-turn_1.mp4",
+  "sha256": "afdadba6103defcfee29a5937ed2fb5611d0e55729ed93f54642d46ed888ea44",
+  "generationId": "ATZXKyi2TkJxTmkkIFv8nfsYkbkXEMBlxJzBz8585NC3lxDRkoDI9SiUuyCdIaW_NFK2Yfcr",
+  "reviewer": "director agent (frame strips + ffprobe/decode; STT via faster-whisper base.en for speech takes)",
+  "fullPlaybackCompleted": false,
+  "fullFrameInspectionCompleted": true,
+  "likenessUserApproved": false,
+  "historicalFaceExposureFound": false,
+  "speechSyncPassed": null,
+  "decision": "accepted_pending_andre",
+  "issues": [
+    "ACCEPT: small turn right then settle; identity constant; no profile"
+  ],
+  "creditsDelta": 70
+}

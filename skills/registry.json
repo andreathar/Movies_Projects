@@ -7,36 +7,40 @@
       "path": "skills/kling-cli",
       "source": "/home/athar/.hermes/skills/kling-cli",
       "type": "machine_local_symlink",
-      "sourceSha256": "0f9fb6388f182e6af433b952d3ae222347d7346af3b532700d011ae08b53df36",
-      "alreadyInstalledInActiveProfile": true
+      "sourceSha256": "7562b79b4ad98746f8d65bcb9d25e34913530cc39d4b8d393bac6dcdc74efc14",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "0f9fb6388f182e6af433b952d3ae222347d7346af3b532700d011ae08b53df36",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
     },
     {
       "name": "film-character-continuity",
       "path": "skills/film-character-continuity",
       "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
       "type": "machine_local_symlink",
-      "sourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+      "sourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
       "alreadyInstalledInActiveProfile": true,
-      "previousSourceSha256": "2d04a73edabb2a0034b1503c5c8b26f8ece600ab093bdc4ab226887d54034d5a",
-      "rehashedAt": "2026-10-09T09:24:27-03:00"
+      "previousSourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
     },
     {
       "name": "film-dialogue-localization",
       "path": "skills/film-dialogue-localization",
       "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
       "type": "machine_local_symlink",
-      "sourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+      "sourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
       "alreadyInstalledInActiveProfile": true,
-      "previousSourceSha256": "85862917bd2e2cfcaf949d609715f7a4c01a9038d81ea05451c703f705a4c54d",
-      "rehashedAt": "2026-10-09T09:24:27-03:00"
+      "previousSourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
     },
     {
       "name": "film-editing-qc",
       "path": "skills/film-editing-qc",
       "source": "/home/athar/.hermes/skills/creative/film-editing-qc",
       "type": "machine_local_symlink",
-      "sourceSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
-      "alreadyInstalledInActiveProfile": true
+      "sourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
     },
     {
       "name": "grounded-citations",

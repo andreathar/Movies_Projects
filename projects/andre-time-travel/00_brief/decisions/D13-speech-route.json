@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "speechRoute:native_audio_bound_voice",
+  "artifact": {
+    "path": "projects/andre-time-travel/06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
+    "sha256": "3094014a1f28e2080582139f7a4f34c3ca22b790eb393fccfdb85de5c3ef5ef1",
+    "version": "v1"
+  },
+  "decision": "DECIDED 2026-10-09 (agent side): Edition E speech route = kling-video-v3_0 native audio with the Element-bound Andre voice (ElevenLabs PVC sample), prompt pattern 'Andre says: \"<line>\"' + pauses + silence instruction. Two takes verified by STT (G-L04, O-L04), articulation live, identity stable. ElevenLabs lipsync route is now the FALLBACK, not the plan. Edition H: Kling native audio lists EN/ZH/JA/KO/ES only → historical-language lines will need the fallback route or mouth-hidden coverage; decide after Edition E lock.",
+  "reviewer": "director agent under APR-blanket-2026-10-09",
+  "reviewedAt": "2026-10-09T11:27:36-03:00",
+  "evidence": [
+    "06_pilot/reviews/PILOT-04-galileo-speech-native.json",
+    "06_pilot/reviews/PILOT-05-oppenheimer-speech-OL04.json",
+    "01_script/speech-route-matrix-v1.md"
+  ],
+  "scope": "Andre mouth-visible shots, Edition E",
+  "limitations": [
+    "Andre must listen: is the native voice recognisably his (bound sample) and is 'keep relearning' pronounced right?",
+    "Full-speed playback by a human still required (agent reviewed frame strips)."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope."
+}

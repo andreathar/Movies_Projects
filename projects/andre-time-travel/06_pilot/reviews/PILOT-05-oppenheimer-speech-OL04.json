@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "shotId": "PILOT-05-oppenheimer-speech-OL04",
+  "takeId": "PILOT-05-oppenheimer-speech-OL04_1",
+  "assetPath": "06_pilot/originals/PILOT-05-oppenheimer-speech-OL04_1.mp4",
+  "sha256": "0bb6dea33ecd5d559d5c9c76cace6a6a88ed40a29dd7d2b99f470bed193a449e",
+  "generationId": "AULANFURuYiSfOtQoGSg9Sy9jYttmbyBXyPX-helk09gckI6K9ovgiGaGNEEceGMeZq7dYiW",
+  "reviewer": "director agent (frame strips + ffprobe/decode; STT via faster-whisper base.en for speech takes)",
+  "fullPlaybackCompleted": false,
+  "fullFrameInspectionCompleted": true,
+  "likenessUserApproved": false,
+  "historicalFaceExposureFound": false,
+  "speechSyncPassed": true,
+  "decision": "accepted_pending_andre",
+  "issues": [
+    "ACCEPT (agent): STT exact O-L04; speech 0\u20131.5 s and 5\u20136.2 s with silence between and after; stable"
+  ],
+  "creditsDelta": 92
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "job": "R2-J01-andre-cinematic-threequarter-listening",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "prompt": "Cinematic photorealistic 35mm film still of the exact man in the reference photos. 100% preserve his real face, facial structure, nose, eyes, smile lines, hair style, and short groomed beard. Three-quarter angle looking slightly camera-right in attentive, thoughtful dialogue. Mouth closed, serious and contemplative gaze, intelligent and observant expression. Wardrobe: dark charcoal collared shirt open at the neck under a dark navy blue unstructured blazer. Moody cinematic soft directional key light from camera-left, subtle shadows, shallow depth of field with soft bokeh, high dynamic range, masterclass cinematography, 8k resolution.",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "3:4",
+      "image_count": 2
+    },
+    "images": [
+      "02_references/andre/selected/20261009_user_portrait_04.jpg",
+      "02_references/andre/selected/20261009_user_portrait_02.jpg"
+    ],
+    "auth": "APR-R1-references-2026-10-09",
+    "note": "Andre cinematic 3/4 listening portrait from fresh 2026-10-09 uploads"
+  },
+  {
+    "job": "R2-J02-andre-cinematic-profile-contemplative",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "prompt": "Cinematic photorealistic 35mm film still of the exact man in the reference photos. 100% preserve his real face, facial features, jawline, nose, and short groomed stubble beard. Near-profile / 70-degree side angle looking camera-right in deep contemplation. Mouth closed, grave and thoughtful expression, reflecting on history. Wardrobe: dark charcoal collared shirt under dark navy unstructured jacket. Dramatic chiaroscuro lighting, soft directional rim light tracing his profile and hair, atmospheric dark background, fine film grain, 8k resolution.",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "3:4",
+      "image_count": 2
+    },
+    "images": [
+      "02_references/andre/selected/20261009_user_portrait_01.jpg",
+      "02_references/andre/selected/20261009_user_portrait_04.jpg"
+    ],
+    "auth": "APR-R1-references-2026-10-09",
+    "note": "Andre cinematic near-profile contemplative portrait from fresh uploads"
+  },
+  {
+    "job": "R2-J03-andre-cinematic-frontal-subtle-smile",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "prompt": "Cinematic photorealistic 35mm portrait of the exact man in the reference photos. 100% preserve his real face, warm brown eyes, smile lines around the eyes, facial structure, swept-back dark brown hair, and groomed stubble. Facing forward slightly off-axis with a subtle, warm, knowing smile. Wardrobe: dark charcoal cotton-linen shirt unbuttoned at the collar, navy blue blazer. Warm morning window light, natural skin texture with subtle pores, rich cinematic color grading, 85mm portrait lens, 8k.",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "3:4",
+      "image_count": 2
+    },
+    "images": [
+      "02_references/andre/selected/20261009_user_portrait_03.jpg",
+      "02_references/andre/selected/20261009_user_portrait_05.jpg"
+    ],
+    "auth": "APR-R1-references-2026-10-09",
+    "note": "Andre cinematic frontal subtle smile from fresh uploads"
+  },
+  {
+    "job": "R2-J04-andre-cinematic-seated-table-wide",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "prompt": "Cinematic wide medium shot, 35mm film still. The exact man from the reference photos seated at an unpainted rustic solid oak wooden table in a moody minimalist room. Waist-up framing, both hands resting naturally on the edge of the wood grain. He looks camera-right across the table in deep conversation with an unseen person. Wardrobe: dark charcoal shirt open at collar, dark navy blazer. Absolutely no other people in background. Soft directional key light, warm wood grain texture, masterclass film cinematography, 8k resolution.",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": 2
+    },
+    "images": [
+      "02_references/andre/selected/20261009_user_portrait_02.jpg",
+      "02_references/andre/selected/20261009_user_portrait_04.jpg"
+    ],
+    "auth": "APR-R1-references-2026-10-09",
+    "note": "Andre cinematic seated table master shot from fresh uploads"
+  }
+]

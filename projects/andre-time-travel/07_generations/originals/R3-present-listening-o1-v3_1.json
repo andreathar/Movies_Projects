@@ -1,0 +1,23 @@
+{
+  "job": "R3-present-listening-o1-v3",
+  "generationId": "AYf73AbCOT3Bd76pPt1WisngkXKojjYB8N0gB-YSzAvyfoh_eNLNmBMOz58MAozjP_6a1INN",
+  "tool": "image_to_image",
+  "model": "kling-image-o1",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": "1",
+    "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+  },
+  "refs": [
+    "07_generations/originals/R3-present-speaking-o1-v2_1.jpg",
+    "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+  ],
+  "prompt": "Edit \u56fe\u72471 minimally. Keep EXACTLY the same framing, camera, seat, table, wall, light, wardrobe and the same man <<<323525046658711>>> (face identical to \u56fe\u72472). Change only his expression: close the mouth, relax the jaw, and let him listen quietly to the unseen person across the table \u2014 eyes still toward camera-right, steady attention, a small weight of thought. No other change. No other person, no text.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "3e2008a25b442b8a8e1cd9798f22dfa4e40b8e852de13d234e96cd0a73351627",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoydXBzY2FsZV9fNDY0N2FkZGI0YjNjZDQ5ZjU3NGUzYzA5YzMxYzk3ZDE1cGF6OS5wbmc.origin?x-kcdn-pid=112372",
+  "note": "present/listening derived from accepted present-speaking keyframe (edit, not re-compose)",
+  "created": "2026-10-09T11:07:05-03:00"
+}
