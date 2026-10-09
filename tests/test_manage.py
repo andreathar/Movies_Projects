@@ -139,7 +139,7 @@ class WorkspaceValidationTests(unittest.TestCase):
             manifest_path.write_text(manifest_original)
 
             wrong_budget = json.loads(manifest_original)
-            wrong_budget["budget"]["phaseCaps"]["final_quality_reserve"] += 1
+            wrong_budget["budget"]["phaseCaps"]["final_reserve"] += 1
             manifest_path.write_text(json.dumps(wrong_budget))
             bad = self.run_cli("validate", fixture)
             self.assertEqual(bad.returncode, 2)
