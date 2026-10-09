@@ -46,6 +46,7 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - `session-log.json` mixes timezones and lacks entries for several deliveries (see handoffs).
 
 ## Shared direction
+New detail images are created by Codex in the main desktop conversation. Lanes prepare/review only assigned work; image-dependent work waits for explicit delivery with paths and versions. See `../../../docs/PARLEY_PROTOCOL.md`.
 All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
