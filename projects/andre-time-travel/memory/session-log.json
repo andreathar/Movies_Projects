@@ -96,6 +96,18 @@
       "accepted": 11,
       "rejected": 1,
       "screenplayApproved": true
+    },
+    {
+      "at": "2026-10-09T12:58:20.036099+00:00",
+      "event": "instagram_photos_partial_import",
+      "account": "andreathar",
+      "workspacePath": "inbox/instagram-andreathar/2026-10-09-public",
+      "filesSaved": 9,
+      "uniquePhotoPosts": 8,
+      "complete": false,
+      "requiresUserLogin": true,
+      "creativeApprovalGranted": false,
+      "paidJobsSubmitted": 0
     }
   ]
 }

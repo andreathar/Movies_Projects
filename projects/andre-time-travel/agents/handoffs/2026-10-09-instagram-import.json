@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "at": "2026-10-09T12:58:20.036099+00:00",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Retrieve photos from the user-owned Instagram profile andreathar into the local project",
+  "ownedPaths": [
+    "inbox/instagram-andreathar/2026-10-09-public"
+  ],
+  "status": "partial_waiting_for_user_authentication",
+  "savedFiles": 9,
+  "uniquePhotoPosts": 8,
+  "highResolutionPostFiles": 1,
+  "profilePreviewFiles": 8,
+  "completeAccountArchive": false,
+  "source": "https://www.instagram.com/andreathar/",
+  "verification": [
+    "All 9 files decoded as JPEG and copied byte-identically",
+    "SHA256SUMS and manifest hashes match",
+    "Source links are permanent post URLs; no cookies/passwords/CDN query URLs persisted"
+  ],
+  "pendingDecisions": [
+    "User to authenticate in the open Instagram browser tab or provide an official photo export"
+  ],
+  "paidJobsSubmitted": 0,
+  "creativeApprovalGranted": false,
+  "otherAgentsFiles": "Unrelated image-review-log.json, review_sweep.py and test_review_sweep.py were observed and not changed."
+}
