@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "voiceTests:scratch_reference",
+  "artifact": {
+    "path": null,
+    "sha256": null,
+    "version": "v1"
+  },
+  "decision": "PROVISIONAL: no render has been judged by ear (agent cannot evaluate likeness/accent). For scratch timing only, the agent uses free local TTS; ElevenLabs renders stay candidates. Andre must listen to the six files listed in docs/decision-sheet-andre-v1.md D6 and name one; voiceTests remains false.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "04_audio/voice-tests/codex-opening-v1/provenance.json",
+    "VT-01.json"
+  ],
+  "scope": "Scratch animatic only",
+  "limitations": [
+    "Human listening required; inbox file ElevenLabs_2026-10-09T10_42_57_Athar_pvc_sp100_s50_sb75_v4.mp3 (23.8 s) content unknown and now registered as unreviewed."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

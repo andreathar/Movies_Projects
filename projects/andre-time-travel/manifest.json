@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "project": "andre-time-travel",
   "workingTitle": "The Table Between Centuries",
-  "state": "planned_waiting_for_references_and_approval",
+  "state": "preproduction_decisions_recorded_waiting_photo_session_and_r2_batch",
   "lead": "Andre Athar",
   "scope": {
     "visualStyle": "photorealistic_cinematic",
@@ -126,19 +126,20 @@
   ],
   "budget": {
     "provider": "Kling",
-    "verifiedBalanceSnapshot": 7741,
+    "verifiedBalanceSnapshot": 6981,
     "refreshBeforeSpend": true,
     "phaseCaps": {
-      "identity_and_speech_validation": 1161,
-      "references_and_storyboard": 774,
-      "main_five_chapter_footage": 3483,
-      "targeted_corrections_and_language_picture": 1935,
-      "final_quality_reserve": 388
+      "r2_references_images": 450,
+      "r3_andre_keyframes_images": 400,
+      "identity_and_speech_pilot_video": 1100,
+      "main_footage_video": 3300,
+      "corrections_and_edition_h": 1300,
+      "final_reserve": 431
     },
     "actualProductionCharges": [],
     "externalAudioServiceBudgetApproved": false,
     "topupAuthorized": false,
-    "snapshotObservedDate": "2026-10-08",
+    "snapshotObservedDate": "2026-10-09",
     "snapshotIsLiveBalance": false,
     "referenceBatchAccounting": {
       "batch": "R1",
@@ -156,6 +157,19 @@
       "credits": 383.9616,
       "evidence": "05_storyboard/preproduction-atlas-v1/evidence/speech-results.json",
       "scope": "four short English opening references; not full-film audio authorization"
+    },
+    "phaseCapsV1Historical": {
+      "identity_and_speech_validation": 1161,
+      "references_and_storyboard": 774,
+      "main_five_chapter_footage": 3483,
+      "targeted_corrections_and_language_picture": 1935,
+      "final_quality_reserve": 388,
+      "note": "7,741 planning split from 2026-10-08; R1 spent 760 under references_and_storyboard"
+    },
+    "phaseCapsBasis": {
+      "doc": "docs/budget-plan-v2.md",
+      "liveBalanceObserved": 6981,
+      "observedAt": "2026-10-09T09:23:16-03:00"
     }
   },
   "approvals": {
@@ -594,5 +608,16 @@
     "cardImages": 79,
     "newKlingGenerations": 0,
     "approved": false
+  },
+  "decisions": "00_brief/decisions/",
+  "scratchAudio": "04_audio/scratch/edge-tts-v2/provenance.json",
+  "preproductionAtlasLatest": {
+    "path": "05_storyboard/preproduction-atlas-v3/index.html",
+    "catalog": "05_storyboard/preproduction-atlas-v3/catalog.json",
+    "createdAt": "2026-10-09T09:24:27-03:00",
+    "cardImages": 79,
+    "newKlingGenerations": 0,
+    "approved": false,
+    "basis": "script v2 + edge-tts scratch timings; v1 remains the published delivery, v2 the rebuild proof"
   }
 }

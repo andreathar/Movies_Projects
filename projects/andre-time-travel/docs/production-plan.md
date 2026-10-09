@@ -1,5 +1,7 @@
 # The Table Between Centuries — Andre Athar Film Production Plan
 
+> **DERIVED — do not edit dialogue here.** Canonical text is `01_script/script-en.md` + `dialogue-lines.csv` (v2 since 2026-10-09). Dialogue quoted below is v1 history.
+
 > **For Hermes:** Use the subagent-driven-development skill, if available, for bounded research and review tasks. Load `kling-cli`, `film-character-continuity`, `film-dialogue-localization`, and `film-editing-qc` before production. The parent agent alone owns paid submissions, approvals, and the credit ledger. This document is a production plan, not permission to execute placeholder commands.
 
 **Goal:** Produce a photorealistic short in which Andre Athar visits five historical figures at a simple table, explains consequences and their contested legacies, and remains visually consistent throughout; the other characters are shown only through tightly cropped eyes, hands, and clothing.

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "screenplay:english_v2",
+  "artifact": {
+    "path": "projects/andre-time-travel/01_script/proposals/script-en-v2-proposal.md",
+    "sha256": "eebab11df444cc49619a569fa44c81ae04f1c8b3443677516361d8e1458182f0",
+    "version": "v1"
+  },
+  "decision": "DECIDED: script v2 integrated into canonical script-en.md + dialogue-lines.csv (line IDs preserved). screenplay approval flag is set only after the historian pass returns with every anchor sourced (one claim flagged NEEDS SOURCE). Translations v1 marked superseded; redo after freeze.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "art-direction-review-v1 §2, §7"
+  ],
+  "scope": "Canonical script, CSV, atlas v3, scratch",
+  "limitations": [
+    "Historian review pending (delegated)."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

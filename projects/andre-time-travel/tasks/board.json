@@ -7,23 +7,29 @@
       "id": "T01",
       "title": "Freeze the brief and spending boundaries",
       "ownerRole": "producer",
-      "status": "ready",
+      "status": "completed",
       "dependsOn": [],
       "blocker": null,
       "specification": "production-tasks.md",
-      "deliverables": [],
-      "verifiedAt": null
+      "deliverables": [
+        "docs/budget-plan-v2.md",
+        "00_brief/approvals.json",
+        "00_brief/decisions/D04-table.json"
+      ],
+      "verifiedAt": "2026-10-09T09:23:16-03:00",
+      "note": "Brief frozen as decided (D01–D10); spending ceilings in budget-plan-v2; live balance 6,981."
     },
     {
       "id": "T02",
       "title": "Receive references and the failed scene",
       "ownerRole": "continuity",
-      "status": "ready",
+      "status": "in_progress",
       "dependsOn": [],
-      "blocker": null,
+      "blocker": "Real profile/seated photographs + 10 s clip required from Andre (D08). Identity set decided (D01); no failed clip exists in inbox/failed-clips.",
       "specification": "production-tasks.md",
       "deliverables": [
-        "05_storyboard/preproduction-atlas-v1/documents/review-findings.md"
+        "00_brief/decisions/D01-identity-set.json",
+        "docs/decision-sheet-andre-v1.md"
       ],
       "verifiedAt": null,
       "notes": "10 candidate images are available for the continuity reviewer; quality, six-view coverage, provenance and consistency remain unreviewed.",
@@ -33,13 +39,15 @@
       "id": "T03",
       "title": "Lock the character and table bibles",
       "ownerRole": "continuity",
-      "status": "blocked",
+      "status": "in_progress",
       "dependsOn": [
         "T02"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Bibles reconciled and headed PROPOSED; decisions D02–D05, D09 recorded; final lock after photo session and eye-base batch.",
       "specification": "production-tasks.md",
       "deliverables": [
+        "03_bibles/continuity-matrix.csv",
+        "00_brief/decisions/D05-eye-bases.json",
         "05_storyboard/preproduction-atlas-v1/reference-atlas.pdf"
       ],
       "verifiedAt": null,
@@ -63,12 +71,13 @@
       "id": "T05",
       "title": "Fact-check and approve the English script",
       "ownerRole": "historian",
-      "status": "ready",
+      "status": "in_progress",
       "dependsOn": [],
-      "blocker": null,
+      "blocker": "Historian subagent running on script v2; report expected at 00_brief/research/historian-review-v2.md",
       "specification": "production-tasks.md",
       "deliverables": [
-        "05_storyboard/preproduction-atlas-v1/documents/director-script-en.md"
+        "01_script/script-en.md",
+        "01_script/proposals/script-en-v2-proposal.md"
       ],
       "verifiedAt": null,
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
@@ -95,7 +104,7 @@
         "T01",
         "T05"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Scratch (edge-tts, free) measured for 22/22 lines; ElevenLabs renders unjudged — Andre must listen (D06).",
       "specification": "production-tasks.md",
       "deliverables": [
         "04_audio/voice-tests/codex-opening-v1/provenance.json"
@@ -126,7 +135,7 @@
         "T07",
         "T08"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Read-only speech-route discovery delegated; matrix expected at 01_script/speech-route-matrix-v1.md",
       "specification": "production-tasks.md",
       "deliverables": [],
       "verifiedAt": null

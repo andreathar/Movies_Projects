@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "characterReferences:wardrobe_canon",
+  "artifact": {
+    "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-andre-modern.jpg",
+    "sha256": "5d52f6059163471cebb7ab291f4c9e4f7183cef8a9f175bf10dd8cc37388d174",
+    "version": "v1"
+  },
+  "decision": "DECIDED: option B — deep navy unstructured blazer, charcoal open-collar shirt, silver band left hand, no watch/logos. Reason: separates from pale oak and from every era palette; no stripe moiré; all existing synthetic assets already use it. Andre wears this look at the photo session.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "art-direction-review-v1 C1",
+    "contact sheet andre-closeups"
+  ],
+  "scope": "All Andre keyframes, Element, pilot, production",
+  "limitations": [
+    "If the photo session is shot in another outfit, this decision is void and must be re-recorded."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

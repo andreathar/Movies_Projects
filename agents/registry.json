@@ -16,6 +16,21 @@
       "paidSubmissionRequiresApprovedShot": true
     },
     {
+      "id": "director",
+      "name": "Director / art director",
+      "brief": "agents/director.md",
+      "skills": [
+        "film-character-continuity",
+        "film-dialogue-localization",
+        "film-editing-qc"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true,
+      "creativeDecisionAuthority": true,
+      "decisionRecords": "projects/<episode>/00_brief/decisions/"
+    },
+    {
       "id": "continuity",
       "name": "Character continuity reviewer",
       "brief": "agents/continuity.md",

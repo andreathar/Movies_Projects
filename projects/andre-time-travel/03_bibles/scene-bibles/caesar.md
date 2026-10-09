@@ -1,5 +1,8 @@
 # Julius Caesar — Scene Bible
 
+> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+
+
 **Chapter:** C — Julius Caesar  
 **Fictional Setting:** Rome, early 44 BCE (prior to the Ides of March, 44 BCE)  
 **Location:** Private atrium in a Roman domus / villa on the Palatine Hill  

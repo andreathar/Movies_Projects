@@ -1,5 +1,8 @@
 # Genghis Khan — Scene Bible
 
+> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+
+
 **Chapter:** K — Genghis Khan  
 **Fictional Setting:** A military campaign ger (yurt), Western Xia / Yinchuan campaign, summer 1227  
 **Location:** Central headquarters tent on the arid steppe borderlands  

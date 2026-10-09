@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "continuity:table_anchor",
+  "artifact": {
+    "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+    "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+    "version": "v1"
+  },
+  "decision": "DECIDED: table anchor = R1-J26-table-anchor_2 (pale European oak, three planks, ring stain, near-corner chip). RULE: the table is Andre's and travels with him; stain and chip appear in every era; match cuts are made on the insert (hand+stain+chip, locked lens height), never on the wide; the seat opposite is era-specific, the table never is.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "contact sheet table-candidates: all four tiles share stain+chip",
+    "era plates: identical stain in all six eras"
+  ],
+  "scope": "All era inserts, keyframes, plates, bibles",
+  "limitations": [
+    "Era wides keep their current camera axes; they are environment context, not match-cut material."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

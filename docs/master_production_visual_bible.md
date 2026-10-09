@@ -1,5 +1,7 @@
 # The Table Between Centuries — Master Production Bible & Visual Reference Suite
 
+> **DERIVED — do not edit dialogue here.** Canonical text is `01_script/script-en.md` + `dialogue-lines.csv` (v2 since 2026-10-09). Dialogue quoted below is v1 history.
+
 > [!IMPORTANT]
 > **Production Status:** Draft materials compiled for review. Character identity, wardrobe, scene plates, eye continuity, screenplay and historical-language proposals remain unapproved in the canonical records. The zero-full-face rule is a production requirement; every selected asset and risky frame still needs inspection. Local file links were consolidated on 9 October 2026; this does not approve their content.
 

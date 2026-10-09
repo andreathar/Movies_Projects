@@ -56,7 +56,8 @@ class WorkspaceValidationTests(unittest.TestCase):
         self.assertEqual(report["projects"][0]["chapters"], 5)
         self.assertEqual(report["projects"][0]["storyboardSlots"], 41)
         self.assertEqual(report["projects"][0]["targetSeconds"], 240)
-        self.assertEqual(report["projects"][0]["budgetCeiling"], 7741)
+        # Ceiling equals the live balance observed when budget-plan-v2 was written (2026-10-09).
+        self.assertEqual(report["projects"][0]["budgetCeiling"], 6981)
 
         scratch = Path(os.environ.get("TMPDIR", str(Path.home() / ".hermes/cache/scratch")))
         scratch.mkdir(parents=True, exist_ok=True)

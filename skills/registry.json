@@ -15,16 +15,20 @@
       "path": "skills/film-character-continuity",
       "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
       "type": "machine_local_symlink",
-      "sourceSha256": "2d04a73edabb2a0034b1503c5c8b26f8ece600ab093bdc4ab226887d54034d5a",
-      "alreadyInstalledInActiveProfile": true
+      "sourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "2d04a73edabb2a0034b1503c5c8b26f8ece600ab093bdc4ab226887d54034d5a",
+      "rehashedAt": "2026-10-09T09:24:27-03:00"
     },
     {
       "name": "film-dialogue-localization",
       "path": "skills/film-dialogue-localization",
       "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
       "type": "machine_local_symlink",
-      "sourceSha256": "85862917bd2e2cfcaf949d609715f7a4c01a9038d81ea05451c703f705a4c54d",
-      "alreadyInstalledInActiveProfile": true
+      "sourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "85862917bd2e2cfcaf949d609715f7a4c01a9038d81ea05451c703f705a4c54d",
+      "rehashedAt": "2026-10-09T09:24:27-03:00"
     },
     {
       "name": "film-editing-qc",

@@ -1,5 +1,8 @@
 # Napoleon Bonaparte — Scene Bible
 
+> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+
+
 **Chapter:** N — Napoleon Bonaparte  
 **Fictional Setting:** Longwood House, Island of Saint Helena (South Atlantic), autumn 1816  
 **Location:** Damp, unadorned private study overlooking the bleak windswept plateau  

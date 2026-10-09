@@ -29,6 +29,34 @@
         "ElevenLabs credit purchases or plan upgrades"
       ],
       "constraints": "Historical figures: no full faces. Outputs labelled synthetic. Record every generation ID and creditsConsumed."
+    },
+    {
+      "id": "APR-blanket-2026-10-09",
+      "type": "delegated_decision_authority",
+      "grantedBy": "Andre Athar (chat message, 2026-10-09)",
+      "quote": "you are perfectionist and you make the budget,tools and subagents decisions. i aprove all",
+      "scope": "Agent (director/producer) makes creative, budget, tool and subagent decisions and records each in 00_brief/decisions/. Paid Kling/ElevenLabs work is executed against a live balance with a written per-batch ceiling.",
+      "notApproved": [
+        "Andre's own likeness approval of the pilot (cannot be delegated)",
+        "voice selection by ear (cannot be delegated)",
+        "purchases/top-ups"
+      ],
+      "constraints": "Every paid batch gets its own scope record with ceiling, live balance before/after and per-job IDs."
+    },
+    {
+      "id": "APR-R2-references-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "Kling image generation via installed CLI: Napoleon eye recast candidates, expression-B deltas for 5 figures from decided bases (D05), 5 hand/table inserts on R1-J26-table-anchor_2 (D04). Eyes-only, below-neck, no readable text.",
+      "ceiling": "450 Kling credits; stop at 405 and reconcile. Balance before: 6981 (live, 2026-10-09T09:23:16-03:00).",
+      "notApproved": [
+        "video generation",
+        "Element creation (needs D08 photos)",
+        "Andre keyframes (R3)",
+        "ElevenLabs spend"
+      ],
+      "status": "authorized_not_yet_submitted"
     }
-  ]
+  ],
+  "decisionRecords": "00_brief/decisions/"
 }

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "characterReferences:photo_session",
+  "artifact": {
+    "path": null,
+    "sha256": null,
+    "version": "v1"
+  },
+  "decision": "REQUIRED FROM ANDRE: six views + 10 s clip per docs/decision-sheet-andre-v1.md D8, in the D02/D03 look. Until delivered: Element creation (T04) and Andre era keyframes (P1-4) are NOT started; eye bases and table inserts proceed because they do not depend on Andre's face.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [],
+  "scope": "T02/T04 sequencing",
+  "limitations": [
+    "Cannot be executed by an agent."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

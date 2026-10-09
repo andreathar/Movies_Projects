@@ -1,6 +1,6 @@
 # Galileo Galilei — Historical Language Translation (17th Century Tuscan Italian)
 
-> Status: unreviewed proposal. Translation, IPA, pronunciation and timing are not validated. The edition name is a target, not evidence of reviewer acceptance. Canonical approvals remain pending.
+> **SUPERSEDED 2026-10-09:** translated from script v1; English lines C-L02, C-L04, K-L02, K-L04, G-L02, G-L04, N-L02, N-L03, N-L04, O-L02, O-L04, OUT-L01 changed in v2 (decision D07). Do not record from this file. Status: unreviewed proposal. Translation, IPA, pronunciation and timing are not validated. The edition name is a target, not evidence of reviewer acceptance. Canonical approvals remain pending.
 
 **Edition:** Edition H — draft for qualified historical-language review  
 **Language Target:** Early Modern Tuscan Italian (Seventeenth-Century Academic Register)  

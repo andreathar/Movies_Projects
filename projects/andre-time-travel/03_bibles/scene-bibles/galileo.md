@@ -1,5 +1,8 @@
 # Galileo Galilei — Scene Bible
 
+> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+
+
 **Chapter:** G — Galileo Galilei  
 **Fictional Setting:** Villa Il Gioiello, Arcetri (hills overlooking Florence), late 1634  
 **Location:** Private stone study during his lifelong papal house arrest following the 1633 Inquisition trial  
@@ -23,7 +26,7 @@
 | Attribute | Production Requirement | Reference Anchor |
 |---|---|---|
 | **Setting Plate** | Tuscan stone study: vaulted plaster ceiling, arched stone window revealing cypress trees and dusk sky over the hills of Arcetri, brass candle lantern, bookshelves with bound manuscripts. | `02_references/table/R1-J29-plate-arcetri-1634_1.png` |
-| **Table Props** | Hand-written Latin manuscript sheets of astronomical diagrams (*Dialogo* / *Two New Sciences* notes), brass ink pot, goose quill pen, brass drafting compass. | Table Bible |
+| **Table Props** | Hand-written manuscript sheets of astronomical diagrams, always out of focus or turned away — no legible invented text (review-findings §4), brass ink pot, goose quill pen, brass drafting compass. | Table Bible |
 | **Galileo Wardrobe (Below Neck Only)** | Heavy dark charcoal wool doublet with neat rows of fabric buttons; wide white linen falling collar resting across shoulders; dark scholar's gown; white linen sleeve cuffs with faint brown iron-gall ink smudges; aged, trembling hands resting on papers. | `02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg` |
 | **Galileo Eyes Reference** | Extreme close-up macro crop (brow to lower eyelids, zero nose, mouth, or white beard). Aged Tuscan scholar eyes, heavy crow's feet, slight cataract haze, deep sunken sockets, profound weariness. | `02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png` & `R1-J16-eyes-galileo-resolve_1_eyescrop.png` |
 | **Andre Framing** | Seated screen-left, looking camera-right. Cool Tuscan evening blue ambient light with warm candlelight on his face and hands. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |

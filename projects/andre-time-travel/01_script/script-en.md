@@ -1,6 +1,6 @@
-# English Screenplay Draft
+# English Screenplay — v2
 
-Status: draft, not approved or recorded. Source: ../docs/production-plan.md. All dialogue is fictional.
+Status: v2 integrated 2026-10-09 (decision D07-script-v2); historian fact-check pending; not recorded. Rationale and per-line diff: proposals/script-en-v2-proposal.md. Previous text: ../../../reports/art-direction-v1/script-en-v1-before.md. All dialogue is fictional. Performance curve for Andre: fluent · slower · warm · caught · silent.
 
 
 All dialogue below is **invented for this film**. It is not an attributed historical quotation. Its factual anchors are cited in the notes. Modern-reputation language is a deliberately limited dramatic synthesis—not a claim that all people today hold the same view.
@@ -11,7 +11,7 @@ The target is roughly a few short exchanges per 42-second chapter, leaving room 
 
 **Andre, over the table/his arrival:**
 
-> I wanted to ask history a question. Not what happened. What it felt like to hear what came next.
+> I wanted to ask history a question. Not what happened — what it felt like to hear what came next.
 
 A hand rests on the wooden edge. Ambient present-day sound falls away. Cut through the table motif into Rome. No portal distorts his face.
 
@@ -21,17 +21,17 @@ A hand rests on the wooden edge. Ambient present-day sound falls away. Cut throu
 > Does my name survive?
 
 **C-L02 — Andre:**
-> Your name survives. So do the reforms and the victories people study. But they also study how much power one man can hold—and what happens to a republic around him.
+> It survives. People still study the victories and the reforms. They also study what one man's power did to a republic.
 
 **C-L03 — Caesar, offscreen:**
 > Then they remember a tyrant?
 
 **C-L04 — Andre:**
-> They argue about you. A brilliant commander. An ambitious ruler. I came to ask what victory leaves behind.
+> They remember a question. Could the republic survive you? They are still asking it — about other men.
 
-**Eye cue A:** focused confidence at “Your name survives.”
+**Eye cue A:** focused confidence at “It survives.”
 
-**Eye cue B:** the gaze holds, then loses a fraction of certainty at “what happens to a republic.” No caricatured rage.
+**Eye cue B:** certainty slips at “survive you?”; hold through “other men” — he hears that he became a precedent. No caricatured rage.
 
 **Factual note:** Military achievement, reforms, and his contested contribution to the Republic's transformation are grounded anchors; avoid making him the single cause of every later imperial development.[1]
 
@@ -41,17 +41,17 @@ A hand rests on the wooden edge. Ambient present-day sound falls away. Cut throu
 > Will my sons keep what I have made?
 
 **K-L02 — Andre:**
-> They will enlarge it. Routes across Eurasia will carry merchants, ideas, and knowledge. But conquest also leaves ruined cities and families who never return.
+> They will make it larger than you can picture. Merchants, ideas, and knowledge will cross it. So will the news of cities that are no longer there.
 
 **K-L03 — Khan, offscreen:**
 > And what will they call me?
 
 **K-L04 — Andre:**
-> A founder. A conqueror. They will argue about what your empire joined—and what it destroyed. None of those words can make the dead speak.
+> Founder. Conqueror. Both words are still fighting over you. Neither one can make the dead speak.
 
-**Eye cue A:** controlled pride at “They will enlarge it.”
+**Eye cue A:** controlled pride at “larger than you can picture.”
 
-**Eye cue B:** hardened pupils soften into guarded stillness at “families who never return.” Use a restrained blink, not an unexplained tear.
+**Eye cue B:** a single restrained blink at “no longer there”; stillness through “the dead speak.” No tear.
 
 **Factual note:** Attribute later expansion and exchange to the empire and its successors, not every later conquest personally to Genghis Khan. The scholarly account covers the connected-world legacy alongside destructive warfare.[2][15]
 
@@ -61,15 +61,15 @@ A hand rests on the wooden edge. Ambient present-day sound falls away. Cut throu
 > Am I finally believed?
 
 **G-L02 — Andre:**
-> People learn from you. They also turn you into a simple story: one scientist against a whole world. The truth is harder than that.
+> Believed, taught — and turned into a simple story: one man against the whole world. The truth was harder, and more interesting.
 
 **G-L03 — Galileo, offscreen:**
 > And what survives of the question?
 
 **G-L04 — Andre:**
-> Your observations. And the warning in your trial. Silencing a person does not settle a question.
+> Your observations. And one lesson from your trial that people keep relearning: silencing a man does not settle a question.
 
-**Eye cue A:** exhausted attention, not blindness, at “People learn from you.”
+**Eye cue A:** exhausted attention, not blindness, brightening at “more interesting.”
 
 **Eye cue B:** quiet renewed resolve at “does not settle a question.”
 
@@ -81,17 +81,19 @@ A hand rests on the wooden edge. Ambient present-day sound falls away. Cut throu
 > Does France keep my laws?
 
 **N-L02 — Andre:**
-> Your civil code outlives your throne. Other countries borrow from it. But a law can promise equality and still deny it to someone.
+> Your code outlives your throne. Other nations borrow from it. It promises equality — and still finds people to leave out.
 
 **N-L03 — Napoleon, offscreen:**
-> And do they call me great?
+> And you. Where you come from — do they still argue about the price?
 
 **N-L04 — Andre:**
-> Some do. Others ask about the wars and the power you kept for yourself. When they say greatness, they still argue about the price.
+> Every day. We are still not sure who pays it.
 
 **Eye cue A:** pride at “outlives your throne.”
 
-**Eye cue B:** wounded attention, then a contained downward glance at “still deny it to someone.”
+**Eye cue B:** not wounded pride — attention: Napoleon watches Andre fail to be superior. Contained downward glance after “who pays it.”
+
+**Hinge note:** N-L03 is the only time a figure asks about Andre's world; the ending answers it. N-L03/N-L04 are the single permitted use of “argue”.
 
 **Factual note:** The code's lasting international influence and patriarchal constraints support the contrast; do not call its protections universal. The empire/exile chronology frames the location. Reputation lines remain dramatic interpretation.[4][17]
 
@@ -101,19 +103,19 @@ A hand rests on the wooden edge. Ambient present-day sound falls away. Cut throu
 > Does the test work?
 
 **O-L02 — Andre:**
-> It works. Weeks later, atomic bombs strike Hiroshima and Nagasaki. People will argue about ending the war, about those who died, and about the fear that follows.
+> It works. Three weeks later, Hiroshima. Three days after that, Nagasaki. The war ends that summer. What it cost — and whether it had to — people are still asking.
 
 **O-L03 — Oppenheimer, offscreen:**
 > Can you tell me whether it was right?
 
 **O-L04 — Andre:**
-> I can tell you what came next. That is not the same as answering the question.
+> I can tell you what came next. I can't tell you that.
 
-**Eye cue A:** the anticipated triumph empties at the names of the cities.
+**Eye cue A:** the anticipated triumph empties at “Hiroshima.”
 
-**Eye cue B:** near-still eyes at “not the same as answering.” Hold the silence.
+**Eye cue B:** near-motionless at “I can't tell you that.” Hold at least 4 s of silence before the cut.
 
-**Factual note:** Trinity and the two bombings have separate documented anchors.[5][18][19]
+**Factual note:** Trinity 16 July; Hiroshima 6 August (21 days = “three weeks”); Nagasaki 9 August (“three days after”).[5][18][19] “The war ends that summer” — surrender announced 15 August / signed 2 September 1945: **[NEEDS SOURCE — historian to add to registry]**. “Whether it had to” points to the documented debate[9] without asserting a cause of surrender.
 
 The contemporary debate is separately documented.[9]
 
@@ -123,9 +125,9 @@ Do not assert a single uncontested explanation of Japan's surrender, fabricate c
 
 **Andre, at the empty table in the present:**
 
-> I went looking for answers in the past. I came back with a question for us. What will they have to tell us about the things we are doing now?
+> I went looking for answers. I came back with their question. One day someone will sit across from us, knowing what came next. What will they have to tell us?
 
-Hold briefly. Fade on the table, not through a face. Include a concise fictionalization notice and production/source/voice credits. Full source notes can accompany delivery rather than crowding the dramatic frame.
+Hold on the empty chair, then the table. Fade on wood, never through a face. Include a concise fictionalization notice and production/source/voice credits. Full source notes can accompany delivery rather than crowding the dramatic frame.
 
 
 ## Sources

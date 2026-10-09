@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "characterReferences:grooming_canon",
+  "artifact": {
+    "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015259.jpg",
+    "sha256": "ea0d9f2b0c7dcabb94ec1ba55001bc415b5c3ac03a20c1670d2f2d9b4ca74294",
+    "version": "v1"
+  },
+  "decision": "DECIDED: hair and beard as in the 2024 photographs — short, textured, natural (not the sleek swept-back synthetic variant); 3–5 day stubble trimmed at jaw and neck. The Element is built from real photos, so the canon must be reproducible at the photo session.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "art-direction-review-v1 C1, §3.1"
+  ],
+  "scope": "Element, pilot, production",
+  "limitations": [
+    "R1 close-up suite shows the sleek variant and is downgraded to tone reference."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

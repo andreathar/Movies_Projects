@@ -57,5 +57,6 @@
   ],
   "template": "shared/templates/continuation.json",
   "workflow": "docs/REPEATABLE_WORKFLOW.md",
-  "noInheritedPaidAuthorization": true
+  "noInheritedPaidAuthorization": true,
+  "framework": "series/andre-time-travel/FRAMEWORK.md"
 }

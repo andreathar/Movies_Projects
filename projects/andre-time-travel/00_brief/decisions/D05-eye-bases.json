@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "continuity:eye_identity_per_figure",
+  "artifact": {
+    "path": null,
+    "sha256": null,
+    "version": "v1"
+  },
+  "decision": "DECIDED per figure (contact sheet 02_references/_review/historical-eyes_contact.jpg, tiles top→bottom): Caesar = tile 1 (R1-J11-eyes-caesar-command_1, correct screen direction); Genghis = tile 4 (R1-J13 pride: firelight, clean crop, reads ~60); Galileo = tile 6 (R1-J15 weariness: sharper, reads 70); Oppenheimer = tile 10 (R1-J19 anticipation; full lower lid). Napoleon = RECAST (both tiles read ~40 with fair brows; target: 47, dark brows, sea-mist pallor, heavier lids). Expression B for every figure is a minimal delta (lids/brow/catchlight) generated FROM the base, same crop scale, gaze camera-left.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "full-resolution region review of Genghis/Galileo/Napoleon pairs",
+    "review-findings §2"
+  ],
+  "scope": "R2 paid eye-base batch; scene bibles; atlas v3",
+  "limitations": [
+    "Fictional castings; not verified reproductions of real eyes. Rejected pairs are retained as history, never as references."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

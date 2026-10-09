@@ -42,9 +42,9 @@ These are future acceptance criteria, not completed checks.
 These target future real files; they have not been run on a finished movie because none exists yet.
 
 ```bash
-ffprobe -v error -show_format -show_streams -of json "/mnt/data/Projects_SSD/Andre_Time_Travel/09_delivery/film-en.mp4"
-ffmpeg -v error -i "/mnt/data/Projects_SSD/Andre_Time_Travel/09_delivery/film-en.mp4" -f null -
-ffmpeg -hide_banner -i "/mnt/data/Projects_SSD/Andre_Time_Travel/09_delivery/film-en.mp4" -filter_complex ebur128=peak=true -f null -
+ffprobe -v error -show_format -show_streams -of json "projects/andre-time-travel/09_delivery/film-en.mp4"
+ffmpeg -v error -i "projects/andre-time-travel/09_delivery/film-en.mp4" -f null -
+ffmpeg -hide_banner -i "projects/andre-time-travel/09_delivery/film-en.mp4" -filter_complex ebur128=peak=true -f null -
 ```
 
 Repeat against `film-historical.mp4`, then inspect the exact masters visually/audibly. A clean decode is not evidence of good likeness or meaningful eye acting.

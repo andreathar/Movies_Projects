@@ -1,9 +1,12 @@
 # Character Bible — Andre Athar
 
+> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+
+
 **Working Title:** *The Table Between Centuries*  
 **Character:** Andre Athar (Lead Traveler / Interlocutor)  
 **Role:** Contemporary observer, inquisitive and humane historical interlocutor  
-**Status:** Visual identity foundation established; candidate synthetic references and real photo anchors logged.
+**Status:** PROPOSED; identity set D01, wardrobe D02, grooming D03 decided; likeness pilot approval pending.
 
 ---
 
@@ -12,7 +15,7 @@
 | Feature | Specification & Continuity Anchor | Reference Asset |
 |---|---|---|
 | **Facial Structure** | Strong square-oval jawline, defined cheekbones, natural skin texture with visible micro-pores (zero beauty filters / AI smoothing). | `inbox/andre-reference-photos/20240202_015259.jpg` |
-| **Hair & Grooming** | Dark brown, textured, naturally swept-back with subtle natural volume, short neat side tapers. Short groomed stubble beard and moustache (approx. 3–5 days growth), trimmed evenly along jawline and neck. | `02_references/andre/synthetic/R2-andre-profile-left.jpg` |
+| **Hair & Grooming** | Dark brown, short, textured, natural (as photographed 2024 — decision D03; NOT the sleek swept-back synthetic variant). Short groomed stubble beard and moustache (approx. 3–5 days growth), trimmed evenly along jawline and neck. | `02_references/andre/selected/crop34_20240202_015259.jpg` |
 | **Eyes & Gaze** | Warm deep amber-brown irises, natural slight asymmetry, alert and empathetic. Primary screen direction: **looking camera-right** toward the offscreen historical figure across the table. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
 | **Age Impression** | Mid-40s, distinguished, calm presence. | Real photo inbox series 2024 |
 
@@ -20,7 +23,7 @@
 
 ## 2. Signature Wardrobe & Accessories
 
-Andre's wardrobe is **strictly invariant across all five historical encounters and the present-day opening/ending**. He does not play dress-up in historical attire; his modern clothing anchors his role as an outsider visiting the past.
+Andre's wardrobe is **invariant across all five historical encounters and the present-day opening/ending (decision D02)**. He does not play dress-up in historical attire; his modern clothing anchors his role as an outsider visiting the past.
 
 | Garment | Detailed Material & Cut Specification | Reference File |
 |---|---|---|
@@ -65,4 +68,4 @@ Andre's wardrobe is **strictly invariant across all five historical encounters a
 - **Left Profile Synthetic Reference:** `02_references/andre/synthetic/R2-andre-profile-left.jpg`
 - **Right Profile Synthetic Reference:** `02_references/andre/synthetic/R2-andre-profile-right.jpg`
 - **Master Cinematic Table Still:** `02_references/andre/synthetic/R2-andre-table-cinematic.jpg`
-- **Approved Expression Suite:** `02_references/andre/synthetic/R1-J02` through `R1-J09`
+- **Synthetic expression suite (tone reference only, NOT identity — D01/D03):** `02_references/andre/synthetic/R1-J02` through `R1-J09`

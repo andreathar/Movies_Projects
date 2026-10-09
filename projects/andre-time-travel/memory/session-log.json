@@ -72,6 +72,19 @@
       "creativeApprovalGranted": false,
       "paidJobsSubmitted": 0,
       "note": "Inventory, story/asset/workflow analysis, prioritized plan, delegation table, script v2 proposal, decision sheet and series framework. Vision inspection of contact sheets and anchors; manage.py status/validate and 10 unit tests passed before and after."
+    },
+    {
+      "at": "2026-10-09T09:24:27-03:00",
+      "event": "decisions_d01_d10_script_v2_scratch_atlas_v3",
+      "creativeApprovalGranted": false,
+      "paidJobsSubmitted": 0,
+      "liveKlingBalance": 6981,
+      "scratchEngine": "edge-tts (free)",
+      "subagentsDispatched": [
+        "historian-review-v2",
+        "speech-route-matrix-v1"
+      ],
+      "note": "Blanket authorization recorded as APR-blanket-2026-10-09; R2 reference batch scope authorized (450) not submitted."
     }
   ]
 }

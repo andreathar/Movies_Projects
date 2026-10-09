@@ -1,0 +1,260 @@
+{
+  "createdAt": "2026-10-09T09:20:16-03:00",
+  "engine": "edge-tts (Microsoft neural, free)",
+  "purpose": "scratch timing only \u2014 not a voice candidate; final Andre voice is the approved ElevenLabs clone",
+  "cost": 0,
+  "lines": [
+    {
+      "line_id": "IN-L01",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/IN-L01.mp3",
+      "sha256": "f4e6896b6f514a6ef52283d5ebd733b599ff1e0b28d207ce42b9103a2a0e750c",
+      "measuredSeconds": 5.83,
+      "words": 20,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "C-L01",
+      "speaker": "Caesar, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/C-L01.mp3",
+      "sha256": "d20db0a5d9ad57ed92e037e999edf04a77e343dfb66157025042f8712cc498b3",
+      "measuredSeconds": 2.47,
+      "words": 4,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "C-L02",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/C-L02.mp3",
+      "sha256": "8041d2b7c169ad3fb335d133702e835a4e0b70647a5a01c4dcc9bdaa585a6840",
+      "measuredSeconds": 8.81,
+      "words": 21,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "C-L03",
+      "speaker": "Caesar, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/C-L03.mp3",
+      "sha256": "93c05dcd28811debcaec42a1b2d43174fe6f694f44a3f50d757b26d9a391dbeb",
+      "measuredSeconds": 2.66,
+      "words": 5,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "C-L04",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/C-L04.mp3",
+      "sha256": "bd24547993c3ae69a979a1f87706d064dd57355eaa675d2d09e1f4751919554b",
+      "measuredSeconds": 6.05,
+      "words": 18,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "K-L01",
+      "speaker": "Khan, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/K-L01.mp3",
+      "sha256": "ba8a70f602c75dec3e8de2d209f1e648a11228f14a335ff891f292aa6b18ac55",
+      "measuredSeconds": 3.12,
+      "words": 8,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "K-L02",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/K-L02.mp3",
+      "sha256": "db08af20ea41caf4f04a0f583152738729256ed19f6015cdbb49181d92fc4bec",
+      "measuredSeconds": 9.22,
+      "words": 27,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "K-L03",
+      "speaker": "Khan, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/K-L03.mp3",
+      "sha256": "8c56a999ced297df9a7069ddbc72c7e5a50d922e8a9cf068ae14fa09ff5e1f2c",
+      "measuredSeconds": 2.38,
+      "words": 6,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "K-L04",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/K-L04.mp3",
+      "sha256": "c5555e32960d450b7b07b78fe0263a3404827a11154d16ea025db569789aefed",
+      "measuredSeconds": 6.67,
+      "words": 16,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "G-L01",
+      "speaker": "Galileo, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/G-L01.mp3",
+      "sha256": "66f20d16580b757ce880373b2d2a3a7c1b387984ce0d30323c89079b23c914c1",
+      "measuredSeconds": 2.47,
+      "words": 4,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "G-L02",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/G-L02.mp3",
+      "sha256": "116da7b636d013490e7cd98be6c7e63929e504ab2d6c508b4150c2f849e7d8ad",
+      "measuredSeconds": 9.38,
+      "words": 22,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "G-L03",
+      "speaker": "Galileo, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/G-L03.mp3",
+      "sha256": "31a00b1c9e77bebd796d7fabe6f13606ebe2bc3c24f494568cd13fa2639a37a0",
+      "measuredSeconds": 2.83,
+      "words": 6,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "G-L04",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/G-L04.mp3",
+      "sha256": "cf76432da09e6495d90bf63ce185773f7dcb0274a5601dc2ad54cff824d7ea81",
+      "measuredSeconds": 8.62,
+      "words": 20,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "N-L01",
+      "speaker": "Napoleon, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/N-L01.mp3",
+      "sha256": "9239fdef51995a4909dd46b97defbd16d25b98b19e08504d76a8e38e02888f61",
+      "measuredSeconds": 2.76,
+      "words": 5,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "N-L02",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/N-L02.mp3",
+      "sha256": "29e5fe295bb4b04ff53afb3669e6748d865b662fe986c32db34890776e2235e4",
+      "measuredSeconds": 8.52,
+      "words": 21,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "N-L03",
+      "speaker": "Napoleon, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/N-L03.mp3",
+      "sha256": "5ceadcbb2db1fdeaebc008743524fefd8fa52e6bc611111f713f30bd884102c6",
+      "measuredSeconds": 5.74,
+      "words": 14,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "N-L04",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/N-L04.mp3",
+      "sha256": "c046eac43220f4220084072b439c470c882a5a1c294b9689b388a0d10d2d442d",
+      "measuredSeconds": 3.1,
+      "words": 10,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "O-L01",
+      "speaker": "Oppenheimer, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/O-L01.mp3",
+      "sha256": "0a2714be3bcb3328467bb52eb9b7675479ee5b80545734cb0fd8739f96d046ab",
+      "measuredSeconds": 2.26,
+      "words": 4,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "O-L02",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/O-L02.mp3",
+      "sha256": "c967c652fd3c759ce34759eb27f47f88ecf32e38f3126fac9154ad1a23930835",
+      "measuredSeconds": 11.86,
+      "words": 30,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "O-L03",
+      "speaker": "Oppenheimer, offscreen",
+      "voice": "en-GB-RyanNeural -8%",
+      "path": "04_audio/scratch/edge-tts-v2/O-L03.mp3",
+      "sha256": "160686c1acce75e0d0ced574f558166a48c6e803cc107842569ddd28c84f1f6a",
+      "measuredSeconds": 2.9,
+      "words": 8,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "O-L04",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/O-L04.mp3",
+      "sha256": "f111a8681fc8f69b50372ca5cad48204775e89e5a44a339703290520a0594549",
+      "measuredSeconds": 3.43,
+      "words": 12,
+      "scratchOnly": true,
+      "approved": false
+    },
+    {
+      "line_id": "OUT-L01",
+      "speaker": "Andre",
+      "voice": "en-US-AndrewNeural -12%",
+      "path": "04_audio/scratch/edge-tts-v2/OUT-L01.mp3",
+      "sha256": "46975ba8aca54bfc70a8d082f3231c8cce25aeabcc2fbe4dd7bc0958179e1ffa",
+      "measuredSeconds": 9.72,
+      "words": 30,
+      "scratchOnly": true,
+      "approved": false
+    }
+  ],
+  "totalSpeechSeconds": 120.8,
+  "perChapter": {
+    "IN": 5.83,
+    "C": 19.99,
+    "K": 21.39,
+    "G": 23.3,
+    "N": 20.12,
+    "O": 20.45,
+    "OUT": 9.72
+  }
+}

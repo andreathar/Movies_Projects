@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "storyboard:chapter_allocation",
+  "artifact": {
+    "path": null,
+    "sha256": null,
+    "version": "v1"
+  },
+  "decision": "DEFERRED: chapters stay 42 s uniform (manage.py and atlas_inputs enforce scope.chapterSeconds). Unequal allocation (N 32 / O 48 / OUT 22) will be decided from the measured scratch track; if adopted, tooling gets a per-chapter override with tests, then manifest/shot-list change together.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "scripts/manage.py L169-172",
+    "scripts/atlas_inputs.py L48-50"
+  ],
+  "scope": "Manifest, shot-list, tooling",
+  "limitations": [],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}
