@@ -49,8 +49,10 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
+- Codex storyboard: shared checklist `../tasks/scene-detail-assets-v1.md` — five characters, feet/floor, back/hair, left/right shoulder alternatives and fingers/table. Planning only; no generation yet.
 - Andre: answer items 1–2 above (confirm D16 / r2), then D18.
 - Producer: build request-r2 with hash, refresh live balance, record D16 confirmation; own board/manifest/ledger updates.
 - Editor: Galileo timeline v2 (0 cr) per checkpoint §5; qc: normal-speed playback of preview.
 - Dialogue-sound/continuity: integrate scene-bible v3 and matrix v2 as one revision each with hashes.
+- Parley: service is up; lanes claude/codex are defined but not launched. Proposal and smoke test: `../../../docs/PARLEY_PROTOCOL.md` (nothing configured; Andre launches lanes and decides the merge gate).
 - Memory work: Phases 1–4 of the memory/handoff plan (handoff v2, role briefs, `manage.py resume/lint`, backfill) await design review: `../../../docs/superpowers/specs/2026-10-09-memory-handoff-design.md`.

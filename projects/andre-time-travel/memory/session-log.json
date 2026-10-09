@@ -315,6 +315,15 @@
       "lightingRoleAdded": true,
       "agentsLaunched": 0,
       "paidJobsSubmitted": 0
+    },
+    {
+      "at": "2026-10-09T16:38:53.920610-03:00",
+      "event": "scene_detail_checklist_created",
+      "path": "tasks/scene-detail-assets-v1.md",
+      "characters": 5,
+      "candidateStudies": 25,
+      "paidJobsSubmitted": 0,
+      "agentsDispatched": 0
     }
   ]
 }
