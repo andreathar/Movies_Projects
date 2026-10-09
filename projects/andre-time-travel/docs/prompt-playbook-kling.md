@@ -41,7 +41,7 @@ Envelope proven (PILOT-01/02/03): still listening with blink/breath; a few-degre
 - Costs observed (balance deltas, 720p, Element bound): 5 s no-audio 70, 70, 30; 8 s native audio 72, 92. Docs list 6 cr/s (no audio) / 9 cr/s (audio) / +2 cr/s voice control; the 70 vs 30 split for identical jobs is unexplained — plan at 14 cr/s worst case.
 
 ### Interlocutor shots
-- Eyes-only: `image_to_video` from the 4:1 crop? Not yet tested — the first test must confirm the model keeps the strip framing and does not "discover" a face. Prefer `kling-video-v3_0_turbo` (single first_image, no Element) and a locked camera with "the frame never widens".
+- Eyes-only: original 4:1 input was rejected without charge. Pad the crop (no stretch) to a 5:2 canvas with black bars, then `kling-video-v3_0_turbo` (single first_image, no Element), locked framing and explicit preservation of bars. G-03/G-05 both returned 121 video frames, 1516×604, 5.041667 s; FFmpeg full decodes passed. G-05 full sequential grids show eyes-only framing held, with two blinks instead of one; accepted pending full-speed playback. These are output observations, not guaranteed behavior.
 - Below-neck inserts: hand presses, then stops. Same lock-camera clause.
 - Figures' lines: offscreen only. Never prompt a figure's face.
 

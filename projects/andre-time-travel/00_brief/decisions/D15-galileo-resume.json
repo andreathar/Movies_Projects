@@ -1,0 +1,13 @@
+{
+  "id": "D15",
+  "authority": "APR-blanket-2026-10-09; user continuation 'proceed'",
+  "scope": "Resume Galileo picture work under APR-galileo-2026-10-09 (900 credit cap, stop at 810); temporary voices only.",
+  "liveBalanceBeforeResume": 6001,
+  "ledgerSpendBeforeResume": 160,
+  "unresolvedSubmission": {"job": "G-01-insert-galileo", "generationId": null, "balanceDelta": 80, "chargeBasis": "balance-derived; provider ID/output unavailable", "feedbackReceipt": "62fac6e3-ac86-49c0-92b6-00dc8df903ea"},
+  "newTakeAuthorization": {"job": "G-01-insert-galileo-v2", "isNewPaidTake": true, "reason": "Original job cannot be queried without ID. A distinct replacement is authorized by delegated producer authority, not a silent retry.", "model": "kling-video-v3_0_turbo", "durationSeconds": 10, "resolution": "720p", "planningAllowanceCredits": 140},
+  "remainingSpeechTake": {"job": "G-02-andre-GL02", "model": "kling-video-v3_0", "durationSeconds": 12, "planningAllowanceCredits": 168, "voiceUse": "scratch/guide only; final Andre voice still rejected"},
+  "safeguards": ["No paid submission until mock-tested runner persists submission intent and ID before waiting.", "Submit one job with no polling; query the stored ID separately.", "Preserve unresolved original ledger row and all original media.", "No full historical faces, no camera tilt/reverse; inspect actual outputs.", "Do not change voiceTests or finalPicture approval."],
+  "guidesRefreshed": ["https://kling.ai/quickstart/klingai-video-3-model-user-guide", "https://kling.ai/blog/kling-ai-prompt-guide"],
+  "capabilitiesSnapshot": "logs/kling-discovery-resume/who_am_i.json"
+}

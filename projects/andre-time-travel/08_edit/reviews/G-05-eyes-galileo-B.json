@@ -1,0 +1,12 @@
+{
+  "job": "G-05-eyes-galileo-B",
+  "generationId": "AZX8AmaPSs5Gu82TjfMJEZufMX_Xj7VLLpIEu3YZIKjlDJVNMTRCShohHL0-3gHpSaRkehjH",
+  "source": "07_generations/originals/G-05-eyes-galileo-B_1.mp4",
+  "status": "accepted_pending_full_playback",
+  "technical": {"durationSeconds": 5.041667, "width": 1516, "height": 604, "videoFrames": 121, "fullDecodeExit": 0},
+  "reviewMethod": "ffprobe, full FFmpeg decode, first/middle/last triptych, four sequential grids covering every video frame 0..120 inspected with vision_analyze; not real-time playback",
+  "visualFindings": ["Stable eyes-only strip and letterbox; no visible nose tip, nostrils, mouth, jaw or full face in reviewed tiles.", "Two small blinks rather than the prompted single blink; acceptable quiet resolve.", "Gaze near-centre/slightly camera-left, no camera widening or extra person/reflection observed.", "No obvious eyelid or pupil deformation at reviewed resolution."],
+  "limitations": ["Downscaled frame grids cannot certify all full-resolution details.", "Full-speed playback remains pending; not final-picture approval."],
+  "evidenceDirectory": "/home/athar/.hermes/cache/scratch/galileo-resume-qc",
+  "voiceApproval": false
+}
