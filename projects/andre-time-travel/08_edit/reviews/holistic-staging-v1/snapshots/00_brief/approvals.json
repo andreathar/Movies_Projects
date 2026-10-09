@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "workspaceSetupAuthorized": true,
+  "creativeApprovals": {
+    "characterReferences": true,
+    "productionElement": true,
+    "screenplay": true,
+    "voiceTests": false,
+    "speechRoute": true,
+    "pilot": true,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "paidGenerationBatchApproved": false,
+  "externalAudioServiceBudgetApproved": false,
+  "approvals": [
+    {
+      "id": "APR-R1-references-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "Andre Athar (chat message, 2026-10-09)",
+      "quote": "i aprove you to do whatever you need to acomplish that mission",
+      "scope": "Kling image generation via installed CLI for reference/character sheets (Andre synthetic variants, eyes-only historical references, table/wardrobe/scene anchors); upload of Andre's own photos to Kling and its image providers; small ElevenLabs test lines for voice 'Athar'.",
+      "ceiling": "Phase B 'references_and_storyboard' cap of 774 Kling credits; stop and report if exceeded. Not approval for video generation, Element creation or the film batch.",
+      "notApproved": [
+        "video generation",
+        "new Kling Element (T04)",
+        "likeness approval (characterReferences stays false)",
+        "ElevenLabs credit purchases or plan upgrades"
+      ],
+      "constraints": "Historical figures: no full faces. Outputs labelled synthetic. Record every generation ID and creditsConsumed."
+    },
+    {
+      "id": "APR-blanket-2026-10-09",
+      "type": "delegated_decision_authority",
+      "grantedBy": "Andre Athar (chat message, 2026-10-09)",
+      "quote": "you are perfectionist and you make the budget,tools and subagents decisions. i aprove all",
+      "scope": "Agent (director/producer) makes creative, budget, tool and subagent decisions and records each in 00_brief/decisions/. Paid Kling/ElevenLabs work is executed against a live balance with a written per-batch ceiling.",
+      "notApproved": [
+        "Andre's own likeness approval of the pilot (cannot be delegated)",
+        "voice selection by ear (cannot be delegated)",
+        "purchases/top-ups"
+      ],
+      "constraints": "Every paid batch gets its own scope record with ceiling, live balance before/after and per-job IDs."
+    },
+    {
+      "id": "APR-R2-references-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "Kling image generation via installed CLI: Napoleon eye recast candidates, expression-B deltas for 5 figures from decided bases (D05), 5 hand/table inserts on R1-J26-table-anchor_2 (D04). Eyes-only, below-neck, no readable text.",
+      "ceiling": "450 Kling credits; stop at 405 and reconcile. Balance before: 6981 (live, 2026-10-09T09:23:16-03:00).",
+      "notApproved": [
+        "video generation",
+        "Element creation (needs D08 photos)",
+        "Andre keyframes (R3)",
+        "ElevenLabs spend"
+      ],
+      "status": "executed",
+      "result": "11 jobs, 12 works, 205 credits reconciled from balance deltas (6981→6776); all COMPLETED; 11 accepted candidates, 1 rejected candidate (Napoleon recast_1). Under 450 cap."
+    },
+    {
+      "id": "APR-screenplay-v2-2026-10-09",
+      "type": "creative_approval",
+      "gate": "screenplay",
+      "grantedBy": "director agent under APR-blanket-2026-10-09; historian review APPROVE WITH EDITS applied",
+      "artifact": {
+        "path": "01_script/script-en.md",
+        "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+      },
+      "evidence": [
+        "00_brief/research/historian-review-v2.md",
+        "00_brief/decisions/D07-script-v2.json"
+      ],
+      "scope": "English Edition E text; Edition H translations must be redone from this version"
+    },
+    {
+      "id": "APR-R3-andre-polish-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "Andre Athar (chat: 'ok' to the proposed polish batch, 2026-10-09T10:05)",
+      "scope": "Kling image_to_image via installed CLI: 3 polish-only parallel versions (A, faithful) of Andre: R2-andre-table-cinematic.jpg and the 2024 crops 015259 and 015214. Lighting, skin retouch keeping texture, grade, posture only; same face, age, hair and stubble. New files beside originals, labelled synthetic; originals untouched.",
+      "ceiling": "300 Kling credits per Andre's choice; expected ~60 (3 x ~20). Stop and report on any non-COMPLETED status; no retries. Balance before: 6776 (live, 2026-10-09).",
+      "notApproved": [
+        "video generation",
+        "Element creation",
+        "likeness approval (characterReferences stays false; Andre must judge each variant)",
+        "ElevenLabs spend"
+      ],
+      "status": "executed",
+      "result": "Element 180 + 18 image jobs ≈ 98 (incl. 2×41 anomalies) = 278; 12 keyframes accepted; balance 6495"
+    },
+    {
+      "id": "APR-R3-keyframes-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "Element creation + Andre era keyframes (6 eras × speaking/listening) via kling-image-o1 with cover photo + Element; identity tests.",
+      "ceiling": "400 Kling credits (R3) + Element 180 booked to pilot phase. Balance before Element: 6776.",
+      "status": "executed",
+      "result": "Element 180 + 18 image jobs ≈ 98 (incl. 2×41 anomalies) = 278; 12 keyframes accepted; balance 6495"
+    },
+    {
+      "id": "APR-pilot-2026-10-09",
+      "type": "paid_video_pilot_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "kling-video-v3_0 image_to_video, 720p, 5 s each, prefer_multi_shots=false, Element bound: (1) Galileo listening locked, (2) Galileo gentle turn/attention, (3) Oppenheimer expression shift, (4) Galileo visible speech with native audio + bound voice saying G-L04 (English), (5) 1 correction. Documented rate: 6 cr/s no-audio 720p, 9 cr/s native audio 720p, +2/s voice control.",
+      "ceiling": "400 Kling credits; stop at 360.",
+      "status": "executed",
+      "result": "5 takes, 334 credits (6495→6161), all accepted pending Andre"
+    },
+    {
+      "id": "APR-andre-pilot-2026-10-09",
+      "type": "creative_approval",
+      "gate": "characterReferences+pilot+speechRoute(picture)",
+      "grantedBy": "Andre Athar (chat, 2026-10-09)",
+      "quote": "the face its me fine. the voice no, but its ok for now . i can dub later. now we have to continue",
+      "scope": "Likeness approved on the 5 pilot takes (Element 323525046658711, o1 keyframe route, v3_0 video envelope). Picture side of the native-audio speech route approved for mouth motion. Kling native VOICE rejected: final Andre voice will be dubbed (ElevenLabs clone) in post; Kling audio is scratch/guide only.",
+      "notApproved": [
+        "voiceTests (Kling native voice not Andre's; ElevenLabs renders still unjudged)"
+      ]
+    },
+    {
+      "id": "APR-galileo-2026-10-09",
+      "type": "paid_video_batch_scope",
+      "grantedBy": "producer agent under APR-blanket-2026-10-09",
+      "scope": "Galileo chapter (G-01..G-07): eyes-only animation test, 1 table insert clip, Andre G-L02 speech clip (native audio guide), reuse of pilot takes 01/02/04. Model kling-video-v3_0 / v3_0_turbo per playbook.",
+      "ceiling": "900 credits; stop at 810.",
+      "status": "executing"
+    }
+  ],
+  "decisionRecords": "00_brief/decisions/"
+}

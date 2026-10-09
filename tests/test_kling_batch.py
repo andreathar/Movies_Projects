@@ -35,6 +35,42 @@ class ProducerTests(unittest.TestCase):
             account.assert_not_called()
             run.assert_not_called()
 
+    def test_pre_submit_account_snapshot_is_durable_before_network(self):
+        import subprocess
+        def cli(cmd, **kwargs):
+            if cmd[1] == 'account':
+                return subprocess.CompletedProcess(cmd, 0, json.dumps({'body': {'availableRemainCredits': 100}}), '')
+            intent = json.loads((self.film / '07_generations/responses/J1.intent.json').read_text())
+            self.assertEqual(intent['accountBefore']['body']['availableRemainCredits'], 100)
+            return subprocess.CompletedProcess(cmd, 0, json.dumps({'body': {'generationId': 'mock-id'}}), '')
+        with patch.object(k.subprocess, 'run', side_effect=cli):
+            result = self.submit(submit_only=True)
+        self.assertEqual(result['generationId'], 'mock-id', result)
+
+    def test_post_submit_unavailable_balance_has_unknown_delta_and_zero_is_retained(self):
+        for after in (None, 0):
+            film = self.film / str(after)
+            with patch.object(k, 'account', side_effect=[100, after]), patch.object(k, 'run', return_value={'body': {'generationId': 'mock-id'}}):
+                result = k.submit(film, 'J1', 'text_to_video', 'mock', 'prompt', {}, [], 'auth', '', submit_only=True)
+            self.assertEqual(result['balanceAfter'], after)
+            self.assertEqual(result['creditsDelta'], None if after is None else 100)
+            import csv
+            row = next(csv.reader((film / 'credit-ledger.csv').read_text().splitlines()))
+            self.assertEqual(row[8], '' if after is None else '0')
+
+    def test_legacy_batch_interface_reconciles_before_poll(self):
+        calls = []
+        def network(cmd):
+            calls.append(cmd[1])
+            if cmd[1] != 'query_tasks':
+                return {'body': {'generationId': 'mock-id'}}
+            self.assertTrue((self.film / 'credit-ledger.csv').exists())
+            return {'body': {'generations': [{'status': 'COMPLETED', 'result': {'works': []}}]}}
+        with patch.object(k, 'account', side_effect=[100, 80]), patch.object(k, 'run', side_effect=network):
+            result = self.submit()
+        self.assertEqual(result['status'], 'COMPLETED')
+        self.assertEqual(calls, ['text_to_video', 'query_tasks'])
+
     def test_submit_only_archives_intent_then_reconciles_without_query(self):
         def network(cmd):
             intent = json.loads((self.film / '07_generations/responses/J1.intent.json').read_text())
@@ -56,6 +92,24 @@ class ProducerTests(unittest.TestCase):
         self.assertEqual(run.call_count, 1)
         self.assertEqual(result['status'], 'RUNNING')
         self.assertEqual(len((self.film / 'credit-ledger.csv').read_text().splitlines()), 1)
+
+    def test_reconciliation_preserves_existing_ledger_bytes(self):
+        ledger = self.film / 'credit-ledger.csv'
+        previous = b'id,created,provider\r\nLold,time,Kling\r\n'
+        ledger.write_bytes(previous)
+        with patch.object(k, 'account', side_effect=[100, 80]), patch.object(k, 'run', return_value={'body': {'generationId': 'mock-id'}}):
+            self.submit(submit_only=True)
+        self.assertTrue(ledger.read_bytes().startswith(previous))
+
+    def test_existing_prompt_is_not_overwritten(self):
+        prompt = self.film / '07_generations/requests/J1.prompt.txt'
+        prompt.parent.mkdir(parents=True)
+        prompt.write_text('original prompt\n')
+        with patch.object(k, 'account', return_value=100), patch.object(k, 'run') as run:
+            with self.assertRaisesRegex(SystemExit, 'existing prompt differs'):
+                self.submit(submit_only=True)
+            run.assert_not_called()
+        self.assertEqual(prompt.read_text(), 'original prompt\n')
 
     def test_all_evidence_markers_fail_closed(self):
         for kind in ('response', 'submit', 'intent'):
@@ -150,6 +204,21 @@ class ProducerTests(unittest.TestCase):
         meta = json.loads(target.with_suffix('.json').read_text())
         self.assertEqual(meta['sha256'], hashlib.sha256(b'mock media').hexdigest())
         self.assertEqual(meta['url'], 'https://mock/default')
+
+    def test_resume_live_flat_response_running_and_completed(self):
+        with patch.object(k, 'account', side_effect=[100, 80]), patch.object(k, 'run', return_value={'body': {'generationId': 'mock-id'}}):
+            self.submit(submit_only=True)
+        running = {'ok': True, 'body': {'generationId': 'mock-id', 'status': 'RUNNING', 'works': [{'status': 'RUNNING'}]}}
+        with patch.object(k, 'run', return_value=running):
+            self.assertEqual(k.resume(self.film, 'J1')['status'], 'RUNNING')
+        completed = {'ok': True, 'body': {'generationId': 'mock-id', 'status': 'COMPLETED', 'works': [{'url': 'https://mock/video.mp4', 'contentType': 'video'}]}}
+        def retrieve(url, path):
+            Path(path).write_bytes(b'mock video')
+        with patch.object(k, 'run', return_value=completed), patch.object(k.urllib.request, 'urlretrieve', side_effect=retrieve):
+            self.assertEqual(len(k.resume(self.film, 'J1')['works']), 1)
+        wrong = {'ok': True, 'body': {'generationId': 'other-id', 'status': 'COMPLETED', 'works': []}}
+        with patch.object(k, 'run', return_value=wrong):
+            self.assertEqual(k.resume(self.film, 'J1')['status'], 'QUERY_UNKNOWN')
 
     def test_different_existing_original_is_never_overwritten(self):
         original = self.film / '07_generations/originals/J1_1.mp4'

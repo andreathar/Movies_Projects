@@ -289,6 +289,60 @@
       "notes": "Bone-white collector composition with photographic portrait and oak edge/ring stain. Title and billing read correctly; one Andre, no other faces. This is a flattened raster candidate, not layered typography. Synthetic poster candidate; user likeness and official poster selection pending.",
       "beautyVariant": null,
       "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/01-caesar-over-shoulder.png",
+      "sha256": "70bf172d6c3d14577d8c84b4d74858f669cd9da6391cdb7889bac9af2dfd73f4",
+      "reviewedAt": "2026-10-09T15:10:14.535747+00:00",
+      "verdict": "keep",
+      "notes": "Corrected version: background human bust removed. Andre seated, mouth slightly parted, right hand open palm-up, left on table. Soft foreground cream-purple toga shoulder; historical head offscreen. Title, lead and chapter label legible. No other faces or sculpted faces visible. Synthetic poster candidate; user likeness approval pending.",
+      "beautyVariant": null,
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/02-genghis-over-shoulder.png",
+      "sha256": "6f3a76558a8e3ee895d3d27e91e07fecaeb4ee3ca9724f19488020b466161ae4",
+      "reviewedAt": "2026-10-09T15:10:14.535747+00:00",
+      "verdict": "keep",
+      "notes": "Andre seated and visibly explaining with two separated hands; fur and leather lamellar shoulder in soft foreground. Tent context, mixed warm/cool light. Title, lead and chapter label legible. No other faces visible. Synthetic poster candidate; user likeness approval pending.",
+      "beautyVariant": null,
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/03-galileo-over-shoulder.png",
+      "sha256": "ba65e2aca96fe0c26c2b019930fc5ad6f2d2ed6c8c0dd65a5877aebf88b1f4d4",
+      "reviewedAt": "2026-10-09T15:10:14.535747+00:00",
+      "verdict": "keep",
+      "notes": "Andre seated, lips parted, precision gesture with right hand and open left hand; scholar wool and white collar foreground in soft focus. Title, lead and chapter label legible. Generator also included A QUESTION SURVIVES. as a thematic marketing tagline; this is fictional copy, not a historical quotation. No other faces visible. Synthetic poster candidate; user likeness approval pending.",
+      "beautyVariant": null,
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/04-napoleon-over-shoulder.png",
+      "sha256": "26c542580a8f804f278eae37e11f6a7bb5b6395eca2ea5aa2ceebe6e21baed67",
+      "reviewedAt": "2026-10-09T15:10:14.535747+00:00",
+      "verdict": "keep",
+      "notes": "Andre seated, left hand on chest and right palm extended; forest-green, red-piped shoulder out of focus, rainy shuttered room. Title, lead and chapter label legible. No other faces visible. Synthetic poster candidate; user likeness approval pending.",
+      "beautyVariant": null,
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/05-oppenheimer-over-shoulder.png",
+      "sha256": "4a8c9ec92049d2d30381698ee6a4f5c0df18200d680895ecca6fb7673a029d9f",
+      "reviewedAt": "2026-10-09T15:10:14.535747+00:00",
+      "verdict": "keep",
+      "notes": "Andre seated, right palm open low over table and left hand resting, softly open mouth, restrained serious expression. Tweed shoulder out of focus, tungsten shelter lighting. Title, lead and chapter label legible. No other faces visible. Synthetic poster candidate; user likeness approval pending.",
+      "beautyVariant": null,
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/rejected/01-caesar-background-bust.png",
+      "sha256": "d892c5654f44c9d4f9fea1de2608cf44832e60aec66cb85bcadd0c4243d5c72b",
+      "reviewedAt": "2026-10-09T15:10:14.535747+00:00",
+      "verdict": "reject",
+      "notes": "Background human bust face violates project visual rule; superseded by corrected Caesar poster. Do not use.",
+      "beautyVariant": null,
+      "approval": "none"
     }
   ]
 }

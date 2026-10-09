@@ -1,0 +1,16 @@
+{
+  "job":"G-02-andre-GL02",
+  "generationId":"AYFTgg8vK-N6Ifvl8ZxCK001kK1fkd9ruOCZtbm4a-Ecb9IHq5XSMB69yhQ-xj3cjeCBpWXw",
+  "source":"07_generations/originals/G-02-andre-GL02_1.mp4",
+  "decision":"accepted_pending_full_playback",
+  "technical":{"durationSeconds":12.041995,"width":1276,"height":720,"videoFrames":289,"fullDecodeExit":0},
+  "reviewMethod":"Full FFmpeg decode, first/middle/last, sequential face grids covering all 289 video frames, faster-whisper base.en word-timestamp transcription.",
+  "transcript":"Believed, taught, and turned into a simple story, one man against the whole world. The truth was harder and more interesting.",
+  "canonicalTextMatches":true,
+  "speechWindows":[[0,7.36],[8.46,10.96]],
+  "findings":["Grooming, hairline, jaw and overall facial structure remain visually consistent in inspected grids.","Screen-left framing, camera-right eyeline, grey jacket/white shirt maintained.","Mouth articulation and pauses correspond broadly with STT windows; mouth closes in final tail.","No additional person/full historical face or hand-to-face occlusion seen.","No obvious catastrophic teeth/beard/eye damage in downscaled grids."],
+  "limitations":["Not full-speed playback, fine mouth details still require human review.","Generated timbre remains temporary and not Andre's approved voice.","Default returned provider watermark is retained."],
+  "creditsDelta":108,
+  "voiceApproval":false,
+  "fullPlaybackCompleted":false
+}

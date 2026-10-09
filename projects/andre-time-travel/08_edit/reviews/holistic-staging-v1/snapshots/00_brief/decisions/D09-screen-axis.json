@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "continuity:screen_axis",
+  "artifact": {
+    "path": null,
+    "sha256": null,
+    "version": "v1"
+  },
+  "decision": "DECIDED: Andre sits screen-LEFT and looks camera-RIGHT; interlocutor eyes sit screen-RIGHT looking camera-LEFT (bible + visual contract). continuity-matrix.csv row values 'Andre right / interlocutor left' were the outlier and are corrected. Existing seated/close-up synthetics with other gazes are tone references only.",
+  "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
+  "reviewedAt": "2026-10-09T09:18:43-03:00",
+  "evidence": [
+    "art-direction-review-v1 C2",
+    "03_bibles/continuity-matrix.csv before this change"
+  ],
+  "scope": "All keyframes, eye crops, edit eyelines",
+  "limitations": [],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review."
+}

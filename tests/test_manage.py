@@ -104,6 +104,19 @@ class WorkspaceValidationTests(unittest.TestCase):
                     link.symlink_to(skill["source"], target_is_directory=True)
             manifest_path = fixture / "projects/andre-time-travel/manifest.json"
             board_path = fixture / "projects/andre-time-travel/tasks/board.json"
+            # Metadata fixtures omit production-media folders, but completed tasks
+            # can legitimately point to text reviews inside those folders.
+            fixture_board = json.loads(board_path.read_text())
+            for task in fixture_board["tasks"]:
+                if task["status"] != "completed":
+                    continue
+                for artifact in task["deliverables"]:
+                    source = ROOT / "projects/andre-time-travel" / artifact
+                    destination = fixture / "projects/andre-time-travel" / artifact
+                    if source.suffix in {".json", ".md", ".csv", ".txt"} and not destination.exists():
+                        destination.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy2(source, destination)
+            self.assertEqual(self.run_cli("validate", fixture).returncode, 0)
             manifest_original = manifest_path.read_text()
             board_original = board_path.read_text()
 
@@ -123,7 +136,7 @@ class WorkspaceValidationTests(unittest.TestCase):
             manifest_path.write_text(manifest_original)
 
             inconsistent_approval = json.loads(manifest_original)
-            inconsistent_approval["approvals"]["pilot"] = True
+            inconsistent_approval["approvals"]["pilot"] = not inconsistent_approval["approvals"]["pilot"]
             manifest_path.write_text(json.dumps(inconsistent_approval))
             bad = self.run_cli("validate", fixture)
             self.assertEqual(bad.returncode, 2)

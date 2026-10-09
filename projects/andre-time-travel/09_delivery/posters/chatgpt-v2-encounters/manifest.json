@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "version": "chatgpt-v2-encounters",
+  "createdAt": "2026-10-09T15:10:14.535747+00:00",
+  "title": "The Table Between Centuries",
+  "lead": "Andre Athar",
+  "brief": "Five over-the-shoulder encounter posters; historical listener softly out of focus, seated Andre sharply focused and actively explaining with a distinct gesture.",
+  "provider": "OpenAI built-in ChatGPT image generation",
+  "tool": "image_gen.imagegen",
+  "model": "not exposed by tool",
+  "builtInCalls": 6,
+  "newCompositions": 5,
+  "targetedEdits": 1,
+  "deliveredPosters": 5,
+  "klingJobsSubmitted": 0,
+  "elevenLabsJobsSubmitted": 0,
+  "billingKnown": false,
+  "status": "synthetic_candidates_pending_user_review",
+  "referenceAssets": [
+    {
+      "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "classification": "real_identity_photo"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-caesar-listening.jpg",
+      "sha256": "cc1d913f17d48621a4de620d804c24082aa9cd17720ce4b63e0b289e302d0cac",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+      "sha256": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-genghis-listening.jpg",
+      "sha256": "b207de7dd70ba86764a3c22ccb403bc7a0711b81293f206ebe9bc9585905ab0e",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-napoleon-listening.jpg",
+      "sha256": "ec65bcd0c8263e3d86701b270f6c51d124fe3f8aa8ab7bcd715650e047888ce0",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-oppenheimer-listening.jpg",
+      "sha256": "b1d64ed0c8b18806e578a0cc91641ac3913865aca2e64c59be6752f5d16a52e8",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+      "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-caesar-roman.jpg",
+      "sha256": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg",
+      "sha256": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg",
+      "sha256": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+      "sha256": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+      "classification": "synthetic_reference"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg",
+      "sha256": "28cda295d7560015f3fb23f54cd3371f4139db9338a669d9b97bdf50e949dbde",
+      "classification": "synthetic_reference"
+    }
+  ],
+  "images": [
+    {
+      "id": "01-caesar-over-shoulder",
+      "figure": "Julius Caesar",
+      "name": "César — o peso do poder",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/01-caesar-over-shoulder.png",
+      "sha256": "70bf172d6c3d14577d8c84b4d74858f669cd9da6391cdb7889bac9af2dfd73f4",
+      "bytes": 2026875,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "classification": "synthetic_poster",
+      "status": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-caesar-listening.jpg",
+        "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-caesar-roman.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "at": "2026-10-09T15:10:14.535747+00:00",
+        "reviewer": "parent_agent",
+        "overShoulderComposition": true,
+        "foregroundSoftFocus": true,
+        "andreSeated": true,
+        "visibleSpeakingGesture": true,
+        "otherFullFacesVisible": false,
+        "titleAndBilling": "legible_correct_spelling",
+        "humanLikenessApproval": false,
+        "notes": "Corrected version: background human bust removed. Andre seated, mouth slightly parted, right hand open palm-up, left on table. Soft foreground cream-purple toga shoulder; historical head offscreen. Title, lead and chapter label legible. No other faces or sculpted faces visible."
+      }
+    },
+    {
+      "id": "02-genghis-over-shoulder",
+      "figure": "Genghis Khan",
+      "name": "Gêngis Khan — o alcance de um império",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/02-genghis-over-shoulder.png",
+      "sha256": "6f3a76558a8e3ee895d3d27e91e07fecaeb4ee3ca9724f19488020b466161ae4",
+      "bytes": 2056570,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "classification": "synthetic_poster",
+      "status": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-genghis-listening.jpg",
+        "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "at": "2026-10-09T15:10:14.535747+00:00",
+        "reviewer": "parent_agent",
+        "overShoulderComposition": true,
+        "foregroundSoftFocus": true,
+        "andreSeated": true,
+        "visibleSpeakingGesture": true,
+        "otherFullFacesVisible": false,
+        "titleAndBilling": "legible_correct_spelling",
+        "humanLikenessApproval": false,
+        "notes": "Andre seated and visibly explaining with two separated hands; fur and leather lamellar shoulder in soft foreground. Tent context, mixed warm/cool light. Title, lead and chapter label legible. No other faces visible."
+      }
+    },
+    {
+      "id": "03-galileo-over-shoulder",
+      "figure": "Galileo Galilei",
+      "name": "Galileu — uma pergunta que permanece",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/03-galileo-over-shoulder.png",
+      "sha256": "ba65e2aca96fe0c26c2b019930fc5ad6f2d2ed6c8c0dd65a5877aebf88b1f4d4",
+      "bytes": 2143240,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "classification": "synthetic_poster",
+      "status": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+        "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "at": "2026-10-09T15:10:14.535747+00:00",
+        "reviewer": "parent_agent",
+        "overShoulderComposition": true,
+        "foregroundSoftFocus": true,
+        "andreSeated": true,
+        "visibleSpeakingGesture": true,
+        "otherFullFacesVisible": false,
+        "titleAndBilling": "legible_correct_spelling",
+        "humanLikenessApproval": false,
+        "notes": "Andre seated, lips parted, precision gesture with right hand and open left hand; scholar wool and white collar foreground in soft focus. Title, lead and chapter label legible. Generator also included A QUESTION SURVIVES. as a thematic marketing tagline; this is fictional copy, not a historical quotation. No other faces visible."
+      }
+    },
+    {
+      "id": "04-napoleon-over-shoulder",
+      "figure": "Napoleon Bonaparte",
+      "name": "Napoleão — a pergunta devolvida",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/04-napoleon-over-shoulder.png",
+      "sha256": "26c542580a8f804f278eae37e11f6a7bb5b6395eca2ea5aa2ceebe6e21baed67",
+      "bytes": 2138025,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "classification": "synthetic_poster",
+      "status": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-napoleon-listening.jpg",
+        "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "at": "2026-10-09T15:10:14.535747+00:00",
+        "reviewer": "parent_agent",
+        "overShoulderComposition": true,
+        "foregroundSoftFocus": true,
+        "andreSeated": true,
+        "visibleSpeakingGesture": true,
+        "otherFullFacesVisible": false,
+        "titleAndBilling": "legible_correct_spelling",
+        "humanLikenessApproval": false,
+        "notes": "Andre seated, left hand on chest and right palm extended; forest-green, red-piped shoulder out of focus, rainy shuttered room. Title, lead and chapter label legible. No other faces visible."
+      }
+    },
+    {
+      "id": "05-oppenheimer-over-shoulder",
+      "figure": "J. Robert Oppenheimer",
+      "name": "Oppenheimer — o limite da resposta",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/05-oppenheimer-over-shoulder.png",
+      "sha256": "4a8c9ec92049d2d30381698ee6a4f5c0df18200d680895ecca6fb7673a029d9f",
+      "bytes": 2160921,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "classification": "synthetic_poster",
+      "status": "pending_user_review",
+      "referencePaths": [
+        "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "projects/andre-time-travel/02_references/keyframes/andre/KF-oppenheimer-listening.jpg",
+        "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "visualReview": {
+        "at": "2026-10-09T15:10:14.535747+00:00",
+        "reviewer": "parent_agent",
+        "overShoulderComposition": true,
+        "foregroundSoftFocus": true,
+        "andreSeated": true,
+        "visibleSpeakingGesture": true,
+        "otherFullFacesVisible": false,
+        "titleAndBilling": "legible_correct_spelling",
+        "humanLikenessApproval": false,
+        "notes": "Andre seated, right palm open low over table and left hand resting, softly open mouth, restrained serious expression. Tweed shoulder out of focus, tungsten shelter lighting. Title, lead and chapter label legible. No other faces visible."
+      }
+    }
+  ],
+  "rejectedDrafts": [
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/rejected/01-caesar-background-bust.png",
+      "sha256": "d892c5654f44c9d4f9fea1de2608cf44832e60aec66cb85bcadd0c4243d5c72b",
+      "reason": "Human bust face in Roman background violates film visual rule. Corrected with image generation edit; do not use this rejected draft.",
+      "classification": "rejected_synthetic_poster"
+    }
+  ],
+  "promptsPath": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/prompts.json",
+  "galleryPath": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/index.html",
+  "notes": [
+    "Thematic marketing stills derived from film references; not exact frames extracted from a final movie.",
+    "Historical interlocutors identified by costume, setting and chapter labels. Their entire faces are kept out of frame, not merely blurred.",
+    "Identity, print-production readiness and official poster selection require user review.",
+    "Text is baked into the PNG, no editable typography layers. Preserve v1 and v2 originals; create a new revision for edits."
+  ]
+}

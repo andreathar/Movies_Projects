@@ -1,0 +1,38 @@
+{
+  "job": "G-01-insert-galileo-v2",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0_turbo",
+  "prompt": "The aged hand on the far edge of the oak table presses its fingertips lightly into the wood, holds, then relaxes and goes still. The manuscript page stays out of focus and unreadable. Dust drifts in the cool window light. Locked camera at tabletop height, no camera movement, the frame never tilts up: the head, neck and face stay outside the frame for the whole shot. No second hand, no other person, no text. One continuous shot.",
+  "options": {
+    "duration": "10",
+    "resolution": "720p",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/inserts/R2-J12-insert-galileo_1.jpg"
+  ],
+  "auth": "APR-galileo-2026-10-09",
+  "note": "G-01/G-06 table insert: fingers press then stop (replacement for lost-ID job; see ledger UNCERTAIN row)",
+  "balanceBefore": 6001,
+  "accountBefore": {
+    "ok": true,
+    "status": 200,
+    "body": {
+      "userId": 15994123,
+      "membershipType": "SSVIP",
+      "membershipTypeDescription": "Premier",
+      "availableRemainCredits": 6001
+    },
+    "_cli": {
+      "stdout": "{\"ok\":true,\"status\":200,\"body\":{\"userId\":15994123,\"membershipType\":\"SSVIP\",\"membershipTypeDescription\":\"Premier\",\"availableRemainCredits\":6001}}\n",
+      "stderr": "",
+      "rc": 0
+    }
+  },
+  "created": "2026-10-09T12:08:43-03:00",
+  "generationId": "AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "148f76ba6c0d04a3d3302bc10723c7cf1f2818f08d8d3c51504a3efe1ccb696a",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/321fc6cf-a2c5-4e3e-90d2-ba5e4cacaa28-n9bbJky7A6VGDmsE6xvF9Q-output.mp4?x-kcdn-pid=112372"
+}

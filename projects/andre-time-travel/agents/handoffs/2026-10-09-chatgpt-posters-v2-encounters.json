@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Five over-the-shoulder encounter posters; historical listener softly out of focus, seated Andre sharply focused and actively explaining with a distinct gesture.",
+  "ownedPaths": [
+    "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/image-review-log.json",
+      "sha256Before": "419769a3318e86d2e545fb814cd27a31147da57c2745a5b1065d8c842b3fce2a"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "ae42d5122779ef199027f088f570f1aa47440599adf4abe480d60c078f042113"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "ee339cc12aa8ddcc3a953544c658a86ec482ae991b1b04d43a0624b6fcf8ab92"
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/01-caesar-over-shoulder.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/02-genghis-over-shoulder.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/03-galileo-over-shoulder.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/04-napoleon-over-shoulder.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/05-oppenheimer-over-shoulder.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/README.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/index.html",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/manifest.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/prompts.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/rejected/01-caesar-background-bust.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/rejected/README.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/verification.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/workspace-validation.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/workspace-tests.txt",
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/image-review-log.json",
+      "sha256After": "ee06493d77b67ff9e6c7679aa82122f2fc3f0502b72e47a3fafe384a446276bc",
+      "reason": "Append exact-file reviews of five candidates and one rejected draft."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "d9646a3753695089abf97976d209f1a742a71dc6320054358baa68a87bd6bee4",
+      "reason": "Append verified new poster direction and pending human review."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "1ca1388674784c010e18934fe46e61077f697f9e29314152e79828a225eb66bc",
+      "reason": "Append actual outputs and correction event."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/01-caesar-over-shoulder.png",
+      "sha256After": "70bf172d6c3d14577d8c84b4d74858f669cd9da6391cdb7889bac9af2dfd73f4",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/02-genghis-over-shoulder.png",
+      "sha256After": "6f3a76558a8e3ee895d3d27e91e07fecaeb4ee3ca9724f19488020b466161ae4",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/03-galileo-over-shoulder.png",
+      "sha256After": "ba65e2aca96fe0c26c2b019930fc5ad6f2d2ed6c8c0dd65a5877aebf88b1f4d4",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/04-napoleon-over-shoulder.png",
+      "sha256After": "26c542580a8f804f278eae37e11f6a7bb5b6395eca2ea5aa2ceebe6e21baed67",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/05-oppenheimer-over-shoulder.png",
+      "sha256After": "4a8c9ec92049d2d30381698ee6a4f5c0df18200d680895ecca6fb7673a029d9f",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/README.md",
+      "sha256After": "de9751b643d62e85f470e8422c4f952aa7cfbd1516b352ba79c6da9d4c6c8c6c",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/index.html",
+      "sha256After": "c757f7fa70f1d437a7b2b9d3674bb41a2642d0a3c4ae005c509370e70e7e5975",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/manifest.json",
+      "sha256After": "98eb43b0ae58fdcb9740a85766f0cf0fc3a8677507e2d358dc6edda7ed091993",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/prompts.json",
+      "sha256After": "200b9cf51cca0ed0b7bd66144b247677dff5d7fc89a608038988a054f98cd268",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/rejected/01-caesar-background-bust.png",
+      "sha256After": "d892c5654f44c9d4f9fea1de2608cf44832e60aec66cb85bcadd0c4243d5c72b",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/rejected/README.md",
+      "sha256After": "9a40deea4f97458d37aaec149a5dc3669b8313b2a0eb6a9319cd1fdac00b8c91",
+      "reason": "New v2 encounter poster package artifact."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/verification.json",
+      "sha256After": "4b0e5d32c2a6e064a2f6257b733fb6a37656e1b0e7ee67a99d0765a77327a8ae",
+      "reason": "Final verification evidence."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/workspace-validation.txt",
+      "sha256After": "30bae0a57301ec36efa49da6795c14b11ec972e0f577b1d89b27fea685d9b16c",
+      "reason": "Final verification evidence."
+    },
+    {
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/workspace-tests.txt",
+      "sha256After": "66ec5e59f02127de31c71c1f7d152dd0f5e4ffc0832e3bfbf37fe7deba449976",
+      "reason": "Final verification evidence."
+    }
+  ],
+  "verification": [
+    {
+      "check": "image_decode",
+      "result": "pass",
+      "details": "Five deliverable RGB PNGs decode at native 1024x1536."
+    },
+    {
+      "check": "visual_review",
+      "result": "pass_as_candidates",
+      "details": "Over-shoulder interaction, Andre speaking gestures, no historical faces. Caesar draft corrected. Human likeness review pending."
+    },
+    {
+      "check": "local_artifact_integrity",
+      "result": "pass",
+      "details": "Five tool outputs copied byte-for-byte, all hashes and 24 gallery links verified; five v1 images unchanged."
+    },
+    {
+      "check": "workspace_validation",
+      "result": "pass_with_existing_shared_skill_warnings"
+    },
+    {
+      "check": "stdlib_unit_tests",
+      "result": "28_pass_1_existing_fixture_failure",
+      "evidence": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters/workspace-tests.txt"
+    }
+  ],
+  "pendingDecisions": [
+    "Andre likeness approval for these exact new derivatives.",
+    "Poster selection."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_user_review",
+  "builtInImageCalls": 6,
+  "billingKnown": false
+}

@@ -1,0 +1,33 @@
+{
+  "revision": "galileo-en-v1",
+  "purpose": "42-second English picture review, native/scratch guide voices; NOT final picture or final dubbing",
+  "fps": 24,
+  "targetSeconds": 42,
+  "outputWidth": 1920,
+  "outputHeight": 1080,
+  "pictureEvents": [
+    {"id":"E01","slot":"G-01","path":"07_generations/originals/G-01-insert-galileo-v2_1.mp4","sourceIn":0,"duration":4},
+    {"id":"E02","slot":"G-02","path":"07_generations/originals/G-02-andre-GL02_1.mp4","sourceIn":0,"duration":10},
+    {"id":"E03","slot":"G-03","path":"07_generations/originals/G-03-eyes-galileo-A_1.mp4","sourceIn":0,"duration":4},
+    {"id":"E04","slot":"G-04","path":"06_pilot/originals/PILOT-01-galileo-listening-locked_1.mp4","sourceIn":0,"duration":3.5},
+    {"id":"E05","slot":"G-05","path":"07_generations/originals/G-05-eyes-galileo-B_1.mp4","sourceIn":0,"duration":4},
+    {"id":"E06","slot":"G-04","path":"06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4","sourceIn":0,"duration":4},
+    {"id":"E07","slot":"G-06","path":"07_generations/originals/G-01-insert-galileo-v2_1.mp4","sourceIn":4,"duration":4},
+    {"id":"E08","slot":"G-07","path":"06_pilot/originals/PILOT-02-galileo-gentle-turn_1.mp4","sourceIn":0,"duration":5},
+    {"id":"E09","slot":"G-06","path":"07_generations/originals/G-01-insert-galileo-v2_1.mp4","sourceIn":6.5,"duration":3.5}
+  ],
+  "dialogue": [
+    {"lineId":"G-L01","path":"04_audio/scratch/edge-tts-v2/G-L01.mp3","timelineStart":0.5,"sourceIn":0,"duration":2.47,"kind":"scratch-offscreen"},
+    {"lineId":"G-L02","path":"07_generations/originals/G-02-andre-GL02_1.mp4","timelineStart":4,"sourceIn":0,"duration":12,"kind":"native-guide; L-cut last sentence over eyes"},
+    {"lineId":"G-L03","path":"04_audio/scratch/edge-tts-v2/G-L03.mp3","timelineStart":20,"sourceIn":0,"duration":2.83,"kind":"scratch-offscreen"},
+    {"lineId":"G-L04","path":"06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4","timelineStart":25.5,"sourceIn":0,"duration":8,"kind":"native-guide; doubtful phrase after source 4.06 seconds covered by table, canonical ADR required"}
+  ],
+  "audio": {"guideLineTargetLufs":-18,"mixTargetLufs":-16,"targetTruePeakDb":-1,"music":false,"ambientBed":"quiet speech-free tail extracted from G-L02 source 11.2..12.0, repeated with short fades; provisional not production ambience"},
+  "subtitles":"08_edit/subtitles/galileo-en-v1.srt",
+  "output":"08_edit/picture-lock/galileo-en-preview-v1.mp4",
+  "normalization":"preserve aspect, pad to 16:9, 24 fps, H.264 yuv420p; upscaled review export from 720p sources, not native 1080p generation",
+  "fullPlaybackCompleted":false,
+  "voiceApproved":false,
+  "finalPictureApproved":false,
+  "notes":["Hard cuts only: no face-morph dissolve or temporal retiming.","All seven primary G slots covered by nine edit events and seven distinct source clips.","Default provider watermarks retained.","Subtitles use canonical script, not certification of the doubtful G-L04 guide pronunciation."]
+}

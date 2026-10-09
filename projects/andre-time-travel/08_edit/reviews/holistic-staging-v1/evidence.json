@@ -1,0 +1,246 @@
+{
+  "capturedAt": "2026-10-09T15:19:33.741172+00:00",
+  "method": "All local original video files probed and fully decoded; first/middle/last frames extracted for composition audit. Sampling does not replace temporal playback or all-frame safety acceptance.",
+  "canonicalSnapshots": [
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "770acccc03f61a0befef249292ae43574ff0c37d04a4dfd74d6c2cadca236859"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "836a3540184f7eaa8ea89f70f6985ddf7e7b7863b9244be29283de7ab3c06bde"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "d9646a3753695089abf97976d209f1a742a71dc6320054358baa68a87bd6bee4"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity.md",
+      "sha256": "907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix.csv",
+      "sha256": "8a81c5cba52d35391756736c09a5dd4c51b8f43d3c064f788bad86aba0412865"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+      "sha256": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D09-screen-axis.json",
+      "sha256": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D15-galileo-resume.json",
+      "sha256": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d"
+    }
+  ],
+  "videos": [
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/G-01-insert-galileo-v2_1.mp4",
+      "sha256": "148f76ba6c0d04a3d3302bc10723c7cf1f2818f08d8d3c51504a3efe1ccb696a",
+      "dimensions": [
+        1284,
+        716
+      ],
+      "fps": "24/1",
+      "frames": 241,
+      "duration": 10.041667,
+      "hasAudio": true,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        120,
+        240
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/G-01-insert-galileo-v2_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/G-02-andre-GL02_1.mp4",
+      "sha256": "1d3cea802f0c84873376c2e10b7704bf7581c645f683288963ae73230a379d5c",
+      "dimensions": [
+        1276,
+        720
+      ],
+      "fps": "24/1",
+      "frames": 289,
+      "duration": 12.041995,
+      "hasAudio": true,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        144,
+        288
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/G-02-andre-GL02_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/G-03-eyes-galileo-A_1.mp4",
+      "sha256": "5398824c54c468ff587de07b87ca74f3ae9815da1fdeea3ccae758f66372c96a",
+      "dimensions": [
+        1516,
+        604
+      ],
+      "fps": "24/1",
+      "frames": 121,
+      "duration": 5.041667,
+      "hasAudio": true,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        60,
+        120
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/G-03-eyes-galileo-A_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/G-05-eyes-galileo-B_1.mp4",
+      "sha256": "4d666c715b21fdbaea2828bbe74180651bc4c5c0050f7fa503451e0bd4250b9b",
+      "dimensions": [
+        1516,
+        604
+      ],
+      "fps": "24/1",
+      "frames": 121,
+      "duration": 5.041667,
+      "hasAudio": true,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        60,
+        120
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/G-05-eyes-galileo-B_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/PILOT-01-galileo-listening-locked_1.mp4",
+      "sha256": "0d8ab9454c6b2486c4834f28ff8efa037f13d1b0d54e516365a7982b9c43853d",
+      "dimensions": [
+        1276,
+        720
+      ],
+      "fps": "24/1",
+      "frames": 121,
+      "duration": 5.041667,
+      "hasAudio": false,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        60,
+        120
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/PILOT-01-galileo-listening-locked_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/PILOT-02-galileo-gentle-turn_1.mp4",
+      "sha256": "afdadba6103defcfee29a5937ed2fb5611d0e55729ed93f54642d46ed888ea44",
+      "dimensions": [
+        1276,
+        720
+      ],
+      "fps": "24/1",
+      "frames": 121,
+      "duration": 5.041667,
+      "hasAudio": false,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        60,
+        120
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/PILOT-02-galileo-gentle-turn_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/PILOT-03-oppenheimer-expression_1.mp4",
+      "sha256": "e0a019236749408773095837bfbb1f8bf68e4fca6217673fa72110b449fb80f4",
+      "dimensions": [
+        1276,
+        720
+      ],
+      "fps": "24/1",
+      "frames": 121,
+      "duration": 5.041667,
+      "hasAudio": false,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        60,
+        120
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/PILOT-03-oppenheimer-expression_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/PILOT-04-galileo-speech-native_1.mp4",
+      "sha256": "3094014a1f28e2080582139f7a4f34c3ca22b790eb393fccfdb85de5c3ef5ef1",
+      "dimensions": [
+        1276,
+        720
+      ],
+      "fps": "24/1",
+      "frames": 193,
+      "duration": 8.041667,
+      "hasAudio": true,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        96,
+        192
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/PILOT-04-galileo-speech-native_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/PILOT-05-oppenheimer-speech-OL04_1.mp4",
+      "sha256": "0bb6dea33ecd5d559d5c9c76cace6a6a88ed40a29dd7d2b99f470bed193a449e",
+      "dimensions": [
+        1276,
+        720
+      ],
+      "fps": "24/1",
+      "frames": 193,
+      "duration": 8.041667,
+      "hasAudio": true,
+      "decodeReturnCode": 0,
+      "decodeStderr": "",
+      "sampledFrames": [
+        0,
+        96,
+        192
+      ],
+      "triptych": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/PILOT-05-oppenheimer-speech-OL04_1-first-middle-last.png",
+      "fullPlaybackReviewed": false,
+      "allFramesVisuallyReviewedInThisAudit": false
+    }
+  ]
+}

@@ -43,8 +43,10 @@ def run(cmd: list[str]) -> dict:
     return data
 
 
-def account() -> int | None:
+def account(snapshot: dict | None = None) -> int | None:
     data = run(["kling", "account", "-q", *TELEMETRY])
+    if snapshot is not None:
+        snapshot.update(data)
     try:
         value = data["body"]["availableRemainCredits"]
         if data.get('ok') is False or isinstance(value, bool):
@@ -107,8 +109,10 @@ def generation_id(data: dict):
     if not isinstance(body, dict):
         return None
     gens = body.get('generations') or []
-    return (body.get('generationId') or body.get('generation_id') or
-            (gens[0].get('generationId') or gens[0].get('generation_id') if gens else None))
+    first = gens[0] if isinstance(gens, list) and gens and isinstance(gens[0], dict) else {}
+    value = (body.get('generationId') or body.get('generation_id') or
+             first.get('generationId') or first.get('generation_id'))
+    return value if isinstance(value, str) and value.strip() else None
 
 
 def reconcile(film: Path, job: str, intent: dict, gen_id, *, immediate=False) -> dict:
@@ -129,7 +133,10 @@ def reconcile(film: Path, job: str, intent: dict, gen_id, *, immediate=False) ->
                    'reconciliation': 'immediate' if immediate else 'delayed_unattributed'}
         save(receipt, balance)
     ledger = film / 'credit-ledger.csv'
-    previous = ledger.read_text(encoding='utf-8') if ledger.exists() else ''
+    previous = ''
+    if ledger.exists():
+        with ledger.open(encoding='utf-8', newline='') as stream:
+            previous = stream.read()
     rows = list(csv.reader(io.StringIO(previous)))
     key = f'L{job}'
     if not any(row and row[0] == key for row in rows):
@@ -171,12 +178,13 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
                 raise SystemExit(f'reserved option: {key}')
             cmd += [f'--{key}', str(value)]
         cmd.append(prompt)
-        before = account()
+        snapshot = {}
+        before = account(snapshot)
         if before is None:
             raise SystemExit('balance unavailable; no submission made')
         intent = {'job': job, 'tool': tool, 'model': model, 'prompt': prompt,
                   'options': args, 'refs': images, 'auth': auth, 'note': note,
-                  'balanceBefore': before, 'command': cmd,
+                  'balanceBefore': before, 'accountBefore': snapshot, 'command': cmd,
                   'created': dt.datetime.now().astimezone().isoformat(timespec='seconds')}
         prompt_path = req / f'{job}.prompt.txt'
         if prompt_path.exists() and prompt_path.read_text() != prompt + '\n':
@@ -264,15 +272,23 @@ def resume(film: Path, job: str) -> dict:
         data = run(['kling', 'query_tasks', gen_id, '-q', *TELEMETRY])
         save(res / f'{job}.response.json', data)
         body = data.get('body') or {}
+        if not isinstance(body, dict):
+            body = {}
         gens = body.get('generations') or []
-        generation = next((g for g in gens if (g.get('generationId') or g.get('generation_id')) == gen_id), None)
+        if not isinstance(gens, list):
+            gens = []
+        generation = next((g for g in gens if isinstance(g, dict) and (g.get('generationId') or g.get('generation_id')) == gen_id), None)
+        # Live CLI 0.2.1 returns the queried generation directly in body.
+        if generation is None and (body.get('generationId') or body.get('generation_id')) == gen_id:
+            generation = body
         # Some CLI responses omit ID when querying exactly one job.
-        if generation is None and len(gens) == 1 and not (gens[0].get('generationId') or gens[0].get('generation_id')):
+        if generation is None and len(gens) == 1 and isinstance(gens[0], dict) and not (gens[0].get('generationId') or gens[0].get('generation_id')):
             generation = gens[0]
         status = (generation or {}).get('status') or 'QUERY_UNKNOWN'
         works = []
         if status.upper() in {'COMPLETED', 'PARTIAL_COMPLETED', 'SUCCEED'}:
-            works = download(film, job, gen_id, intent, (generation.get('result') or {}).get('works') or [])
+            provider_works = generation.get('works') or (generation.get('result') or {}).get('works') or []
+            works = download(film, job, gen_id, intent, provider_works)
         return summary(job, gen_id, status, balance, works,
                        None if data.get('ok', True) else data)
 

@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "generationId": "AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53",
+    "status": "QUEUING",
+    "model": "kling-video-v3_0_turbo",
+    "creditsConsumed": 80,
+    "message": "Generation submitted. Poll query_tasks with this generationId to get the result.",
+    "credits_consumed": 80,
+    "generation_id": "AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53"
+  },
+  "_cli": {
+    "stdout": "{\"ok\":true,\"status\":200,\"body\":{\"generationId\":\"AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53\",\"status\":\"QUEUING\",\"model\":\"kling-video-v3_0_turbo\",\"creditsConsumed\":80,\"message\":\"Generation submitted. Poll query_tasks with this generationId to get the result.\",\"credits_consumed\":80,\"generation_id\":\"AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53\"}}\n",
+    "stderr": "[kling] Uploading local file: /mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/02_references/inserts/R2-J12-insert-galileo_1.jpg\n[kling] Uploaded -> https://s15-kling.klingai.com/kimg/EMXN1y8qWAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo-YWdlbnRfdXBsb2FkLzE3OTE1NTg1MzIvMUwzd1FCZGpHMi9yMi1qMTItaW5zZXJ0LWdhbGlsZW9fMS5qcGc.origin?x-kcdn-pid=112372\n[kling] image_to_video -> model=kling-video-v3_0_turbo (from who_am_i)\n[kling] who_am_i argument declaration: prompt(required), duration(default 5, allowed 3|4|5|6|7|8|9|10|11|12|13|14|15), resolution(default 1080p, allowed 720p|1080p), imageCount(default 1, allowed 1|2|3|4)\n[kling] who_am_i input declaration: first_image(required)\n[kling] Submit arguments: [{\"name\":\"prompt\",\"value\":\"The aged hand on the far edge of the oak table presses its fingertips lightly into the wood, holds, then relaxes and goes still. The manuscript page stays out of focus and unreadable. Dust drifts in the cool window light. Locked camera at tabletop height, no camera movement, the frame never tilts up: the head, neck and face stay outside the frame for the whole shot. No second hand, no other person, no text. One continuous shot.\"},{\"name\":\"duration\",\"value\":\"10\"},{\"name\":\"resolution\",\"value\":\"720p\"},{\"name\":\"imageCount\",\"value\":\"1\"}]\n[kling] Submit inputs: [{\"name\":\"first_image\",\"inputType\":\"URL\",\"url\":\"https://s15-kling.klingai.com/kimg/EMXN1y8qWAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo-YWdlbnRfdXBsb2FkLzE3OTE1NTg1MzIvMUwzd1FCZGpHMi9yMi1qMTItaW5zZXJ0LWdhbGlsZW9fMS5qcGc.origin?x-kcdn-pid=112372\"}]\n",
+    "rc": 0
+  }
+}

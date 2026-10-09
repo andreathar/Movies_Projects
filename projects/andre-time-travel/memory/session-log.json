@@ -167,6 +167,22 @@
       "elevenLabsJobsSubmitted": 0,
       "creativeApprovalGranted": false,
       "humanLikenessReviewPending": true
+    },
+    {
+      "at": "2026-10-09T15:10:14.535747+00:00",
+      "event": "chatgpt_encounter_posters_v2_generated",
+      "path": "projects/andre-time-travel/09_delivery/posters/chatgpt-v2-encounters",
+      "deliveredPosters": 5,
+      "rejectedDrafts": 1,
+      "builtInImageCalls": 6,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "direction": "over-the-shoulder, historical figure softly out of focus, Andre seated and explaining with gestures",
+      "klingJobsSubmitted": 0,
+      "elevenLabsJobsSubmitted": 0,
+      "creativeApprovalGranted": false
     }
   ]
 }

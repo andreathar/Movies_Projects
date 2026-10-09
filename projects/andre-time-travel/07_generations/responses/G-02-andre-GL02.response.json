@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "generationId": "AYFTgg8vK-N6Ifvl8ZxCK001kK1fkd9ruOCZtbm4a-Ecb9IHq5XSMB69yhQ-xj3cjeCBpWXw",
+    "status": "COMPLETED",
+    "createTime": 1791558627188,
+    "finishTime": 1791558889169,
+    "works": [
+      {
+        "status": "COMPLETED",
+        "contentType": "video",
+        "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b4c6c2b7-b2e8-4c97-8c70-e9567e4dc8fb-bY4l_U-i_REL0pvpHShSOQ-output.mp4?x-kcdn-pid=112372",
+        "urlWithoutWatermark": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3ff13866-9542-4d35-bf15-b8729896446b-bY4l_U-i_REL0pvpHShSOQ-output.mp4?x-kcdn-pid=112372",
+        "coverUrl": "https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJYjRjNmMyYjctYjJlOC00Yzk3LThjNzAtZTk1NjdlNGRjOGZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372",
+        "coverUrlWithoutWatermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJM2ZmMTM4NjYtOTU0Mi00ZDM1LWJmMTUtYjg3Mjk4OTY0NDZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372",
+        "content_type": "video",
+        "cover_url": "https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJYjRjNmMyYjctYjJlOC00Yzk3LThjNzAtZTk1NjdlNGRjOGZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372",
+        "url_without_watermark": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3ff13866-9542-4d35-bf15-b8729896446b-bY4l_U-i_REL0pvpHShSOQ-output.mp4?x-kcdn-pid=112372",
+        "cover_url_without_watermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJM2ZmMTM4NjYtOTU0Mi00ZDM1LWJmMTUtYjg3Mjk4OTY0NDZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372"
+      }
+    ],
+    "generation_id": "AYFTgg8vK-N6Ifvl8ZxCK001kK1fkd9ruOCZtbm4a-Ecb9IHq5XSMB69yhQ-xj3cjeCBpWXw",
+    "create_time": 1791558627188,
+    "finish_time": 1791558889169
+  },
+  "_cli": {
+    "stdout": "{\"ok\":true,\"status\":200,\"body\":{\"generationId\":\"AYFTgg8vK-N6Ifvl8ZxCK001kK1fkd9ruOCZtbm4a-Ecb9IHq5XSMB69yhQ-xj3cjeCBpWXw\",\"status\":\"COMPLETED\",\"createTime\":1791558627188,\"finishTime\":1791558889169,\"works\":[{\"status\":\"COMPLETED\",\"contentType\":\"video\",\"url\":\"https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/b4c6c2b7-b2e8-4c97-8c70-e9567e4dc8fb-bY4l_U-i_REL0pvpHShSOQ-output.mp4?x-kcdn-pid=112372\",\"urlWithoutWatermark\":\"https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3ff13866-9542-4d35-bf15-b8729896446b-bY4l_U-i_REL0pvpHShSOQ-output.mp4?x-kcdn-pid=112372\",\"coverUrl\":\"https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJYjRjNmMyYjctYjJlOC00Yzk3LThjNzAtZTk1NjdlNGRjOGZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372\",\"coverUrlWithoutWatermark\":\"https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJM2ZmMTM4NjYtOTU0Mi00ZDM1LWJmMTUtYjg3Mjk4OTY0NDZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372\",\"content_type\":\"video\",\"cover_url\":\"https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJYjRjNmMyYjctYjJlOC00Yzk3LThjNzAtZTk1NjdlNGRjOGZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372\",\"url_without_watermark\":\"https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/3ff13866-9542-4d35-bf15-b8729896446b-bY4l_U-i_REL0pvpHShSOQ-output.mp4?x-kcdn-pid=112372\",\"cover_url_without_watermark\":\"https://s15-kling.klingai.com/kimg/EMXN1y8qYwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpJM2ZmMTM4NjYtOTU0Mi00ZDM1LWJmMTUtYjg3Mjk4OTY0NDZiLWJZNGxfVS1pX1JFTDBwdnBIU2hTT1Etb3V0cHV0X2ZmLmpwZw.origin?x-kcdn-pid=112372\"}],\"generation_id\":\"AYFTgg8vK-N6Ifvl8ZxCK001kK1fkd9ruOCZtbm4a-Ecb9IHq5XSMB69yhQ-xj3cjeCBpWXw\",\"create_time\":1791558627188,\"finish_time\":1791558889169}}\n",
+    "stderr": "",
+    "rc": 0
+  }
+}

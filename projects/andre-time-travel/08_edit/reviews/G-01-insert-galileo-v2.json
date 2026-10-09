@@ -1,0 +1,13 @@
+{
+  "job": "G-01-insert-galileo-v2",
+  "generationId": "AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53",
+  "source": "07_generations/originals/G-01-insert-galileo-v2_1.mp4",
+  "decision": "accepted_pending_full_playback",
+  "technical": {"durationSeconds": 10.041667, "width": 1284, "height": 716, "videoFrames": 241, "fullDecodeExit": 0},
+  "method": "Full decode; first/middle/last and all video frames 0..240 in seven sequential grids inspected through vision_analyze.",
+  "findings": ["No head/full historical face/reflected face observed in inspected tiles.", "Hand remains attached and supported on table; very restrained movement.", "Oak grain, ring stain, chipped corner and manuscript remain recognizable.", "Slight composition drift rather than a mathematically locked camera; acceptable tabletop coverage.", "Provider watermark present in default work URL; this is a review cut, not a clean delivery master."],
+  "limitations": ["Grid resolution limits fine anatomy inspection.", "video_analyze failed: Codex Responses does not support video_url input; normal-speed temporal playback not verified.", "No final acceptance or voice approval granted."],
+  "creditsDelta": 80,
+  "supersedesUnresolvedJob": false,
+  "note": "Separate authorized paid replacement; unresolved original G-01 remains in ledger."
+}

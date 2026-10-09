@@ -1,0 +1,12 @@
+{
+  "job": "G-03-eyes-galileo-A",
+  "generationId": "AUneHc_qNPqqspdHRhlbpt5X_mBNs3CYBP104zFWICuE5iK6C6hEjlM8GECws9yp2EMtfIEA",
+  "source": "07_generations/originals/G-03-eyes-galileo-A_1.mp4",
+  "decision": "accepted_pending_full_playback",
+  "technical": {"durationSeconds": 5.041667, "width": 1516, "height": 604, "videoFrames": 121, "fullDecodeExit": 0},
+  "method": "FFprobe plus full decode; sequential grids for all video frames 0..120 reviewed through vision_analyze.",
+  "findings": ["Letterbox and eyes-only framing held in inspected tiles.", "No nose tip, nostrils, mouth, chin, full face or reflected face observed.", "Gaze predominantly camera-left with restrained blinks; slight brow lift."],
+  "limitations": ["Downscaled grids do not establish full-resolution or real-time playback acceptance."],
+  "creditsDelta": 40,
+  "fullPlaybackCompleted": false
+}
