@@ -1,0 +1,152 @@
+{
+  "capturedAt": "2026-10-09T15:23:35.221650+00:00",
+  "sourcePath": "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v1.mp4",
+  "snapshotPath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/snapshots/galileo-en-preview-v1.mp4",
+  "sha256": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d",
+  "sourceStillMatchesSnapshot": true,
+  "duration": 42.0,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "videoFrames": "1008",
+  "fullDecodeReturnCode": 0,
+  "fullDecodeStderr": "",
+  "events": [
+    {
+      "id": "E01",
+      "slot": "G-01",
+      "path": "07_generations/originals/G-01-insert-galileo-v2_1.mp4",
+      "sourceIn": 0,
+      "duration": 4,
+      "timelineStart": 0,
+      "timelineEnd": 4,
+      "sampleTime": 2.0,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E01-G-01-mid.png"
+    },
+    {
+      "id": "E02",
+      "slot": "G-02",
+      "path": "07_generations/originals/G-02-andre-GL02_1.mp4",
+      "sourceIn": 0,
+      "duration": 10,
+      "timelineStart": 4,
+      "timelineEnd": 14,
+      "sampleTime": 9.0,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E02-G-02-mid.png"
+    },
+    {
+      "id": "E03",
+      "slot": "G-03",
+      "path": "07_generations/originals/G-03-eyes-galileo-A_1.mp4",
+      "sourceIn": 0,
+      "duration": 4,
+      "timelineStart": 14,
+      "timelineEnd": 18,
+      "sampleTime": 16.0,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E03-G-03-mid.png"
+    },
+    {
+      "id": "E04",
+      "slot": "G-04",
+      "path": "06_pilot/originals/PILOT-01-galileo-listening-locked_1.mp4",
+      "sourceIn": 0,
+      "duration": 3.5,
+      "timelineStart": 18,
+      "timelineEnd": 21.5,
+      "sampleTime": 19.75,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E04-G-04-mid.png"
+    },
+    {
+      "id": "E05",
+      "slot": "G-05",
+      "path": "07_generations/originals/G-05-eyes-galileo-B_1.mp4",
+      "sourceIn": 0,
+      "duration": 4,
+      "timelineStart": 21.5,
+      "timelineEnd": 25.5,
+      "sampleTime": 23.5,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E05-G-05-mid.png"
+    },
+    {
+      "id": "E06",
+      "slot": "G-04",
+      "path": "06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
+      "sourceIn": 0,
+      "duration": 4,
+      "timelineStart": 25.5,
+      "timelineEnd": 29.5,
+      "sampleTime": 27.5,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E06-G-04-mid.png"
+    },
+    {
+      "id": "E07",
+      "slot": "G-06",
+      "path": "07_generations/originals/G-01-insert-galileo-v2_1.mp4",
+      "sourceIn": 4,
+      "duration": 4,
+      "timelineStart": 29.5,
+      "timelineEnd": 33.5,
+      "sampleTime": 31.5,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E07-G-06-mid.png"
+    },
+    {
+      "id": "E08",
+      "slot": "G-07",
+      "path": "06_pilot/originals/PILOT-02-galileo-gentle-turn_1.mp4",
+      "sourceIn": 0,
+      "duration": 5,
+      "timelineStart": 33.5,
+      "timelineEnd": 38.5,
+      "sampleTime": 36.0,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E08-G-07-mid.png"
+    },
+    {
+      "id": "E09",
+      "slot": "G-06",
+      "path": "07_generations/originals/G-01-insert-galileo-v2_1.mp4",
+      "sourceIn": 6.5,
+      "duration": 3.5,
+      "timelineStart": 38.5,
+      "timelineEnd": 42.0,
+      "sampleTime": 40.25,
+      "samplePath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/frames/E09-G-06-mid.png"
+    }
+  ],
+  "dialogue": [
+    {
+      "lineId": "G-L01",
+      "path": "04_audio/scratch/edge-tts-v2/G-L01.mp3",
+      "timelineStart": 0.5,
+      "sourceIn": 0,
+      "duration": 2.47,
+      "kind": "scratch-offscreen"
+    },
+    {
+      "lineId": "G-L02",
+      "path": "07_generations/originals/G-02-andre-GL02_1.mp4",
+      "timelineStart": 4,
+      "sourceIn": 0,
+      "duration": 12,
+      "kind": "native-guide; L-cut last sentence over eyes"
+    },
+    {
+      "lineId": "G-L03",
+      "path": "04_audio/scratch/edge-tts-v2/G-L03.mp3",
+      "timelineStart": 20,
+      "sourceIn": 0,
+      "duration": 2.83,
+      "kind": "scratch-offscreen"
+    },
+    {
+      "lineId": "G-L04",
+      "path": "06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
+      "timelineStart": 25.5,
+      "sourceIn": 0,
+      "duration": 8,
+      "kind": "native-guide; doubtful phrase after source 4.06 seconds covered by table, canonical ADR required"
+    }
+  ],
+  "fullPlaybackReviewed": false,
+  "visualMethod": "One midpoint sample per actual edit event; source first/middle/last triptychs. No full-playback or all-frame acceptance claim."
+}

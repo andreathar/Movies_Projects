@@ -1,0 +1,23 @@
+line_id,speaker,text_en,audio_path,measured_seconds,approved
+IN-L01,Andre,I wanted to ask history a question. Not what happened — what it felt like to hear what came next.,04_audio/scratch/edge-tts-v2/IN-L01.mp3,5.83,false
+C-L01,"Caesar, offscreen",Does my name survive?,04_audio/scratch/edge-tts-v2/C-L01.mp3,2.47,false
+C-L02,Andre,It survives. People still study the victories and the reforms. They also study what one man's power did to a republic.,04_audio/scratch/edge-tts-v2/C-L02.mp3,8.81,false
+C-L03,"Caesar, offscreen",Then they remember a tyrant?,04_audio/scratch/edge-tts-v2/C-L03.mp3,2.66,false
+C-L04,Andre,They remember a question. Could the republic survive you? They are still asking it — about other men.,04_audio/scratch/edge-tts-v2/C-L04.mp3,6.05,false
+K-L01,"Khan, offscreen",Will my sons keep what I have made?,04_audio/scratch/edge-tts-v2/K-L01.mp3,3.12,false
+K-L02,Andre,"They will make it larger than you can picture. Merchants, ideas, and knowledge will cross it. So will the news of cities that are no longer there.",04_audio/scratch/edge-tts-v2/K-L02.mp3,9.22,false
+K-L03,"Khan, offscreen",And what will they call me?,04_audio/scratch/edge-tts-v2/K-L03.mp3,2.38,false
+K-L04,Andre,Founder. Conqueror. Both words are still fighting over you. Neither one can make the dead speak.,04_audio/scratch/edge-tts-v2/K-L04.mp3,6.67,false
+G-L01,"Galileo, offscreen",Am I finally believed?,04_audio/scratch/edge-tts-v2/G-L01.mp3,2.47,false
+G-L02,Andre,"Believed, taught — and turned into a simple story: one man against the whole world. The truth was harder, and more interesting.",04_audio/scratch/edge-tts-v2/G-L02.mp3,9.38,false
+G-L03,"Galileo, offscreen",And what survives of the question?,04_audio/scratch/edge-tts-v2/G-L03.mp3,2.83,false
+G-L04,Andre,Your observations. And one lesson from your trial that people keep relearning: silencing a man does not settle a question.,04_audio/scratch/edge-tts-v2/G-L04.mp3,8.62,false
+N-L01,"Napoleon, offscreen",Does France keep my laws?,04_audio/scratch/edge-tts-v2/N-L01.mp3,2.76,false
+N-L02,Andre,Your code outlives your throne. Other nations borrow from it. It promises equality — and still finds people to leave out.,04_audio/scratch/edge-tts-v2/N-L02.mp3,8.52,false
+N-L03,"Napoleon, offscreen",And you. Where you come from — do they still argue about the price?,04_audio/scratch/edge-tts-v2/N-L03.mp3,5.74,false
+N-L04,Andre,Every day. We are still not sure who pays it.,04_audio/scratch/edge-tts-v2/N-L04.mp3,3.10,false
+O-L01,"Oppenheimer, offscreen",Does the test work?,04_audio/scratch/edge-tts-v2/O-L01.mp3,2.26,false
+O-L02,Andre,"It works. Three weeks later, Hiroshima. Three days after that, Nagasaki. The war ends that summer. What it cost — and whether it had to — people are still asking.",04_audio/scratch/edge-tts-v2/O-L02.mp3,11.86,false
+O-L03,"Oppenheimer, offscreen",Can you tell me whether it was right?,04_audio/scratch/edge-tts-v2/O-L03.mp3,2.90,false
+O-L04,Andre,I can tell you what came next. I can't tell you that.,04_audio/scratch/edge-tts-v2/O-L04.mp3,3.43,false
+OUT-L01,Andre,"I went looking for answers. I came back with their question. One day someone will sit across from us, knowing what came next. What will they have to tell us?",04_audio/scratch/edge-tts-v2/OUT-L01.mp3,9.72,false

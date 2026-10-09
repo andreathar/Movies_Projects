@@ -1,0 +1,25 @@
+{
+  "id": "20261009_081822_9a8c50",
+  "title": "Art direction workflow for Andre Athar time-travel film",
+  "model": "gpt-6.1-sol",
+  "cwd": "/mnt/data/Projects_SSD/tranfere_gov_api",
+  "started_at": 1791546793.5556436,
+  "last_activity_at": 1791559333.6099706,
+  "compression_fallback_streak": 0,
+  "compression_ineffective_count": 0,
+  "compression_failure_error": null,
+  "rewind_count": 0,
+  "inspection": "Read-only scoped session metadata; no message, interruption, model switch or runtime change made.",
+  "snapshotAt": "2026-10-09T15:23:35.220812+00:00",
+  "cwdMismatch": "Session cwd metadata points outside the film workspace. Observed recent film outputs use explicit correct film paths; no conclusion of cross-project writes.",
+  "evidenceMessages": [
+    {
+      "id": 103423,
+      "observation": "User-visible active-model notice changes session to gpt-6.1-sol before proceed."
+    },
+    {
+      "id": 103644,
+      "observation": "Tool result reports newly assembled 42-second Galileo preview."
+    }
+  ]
+}

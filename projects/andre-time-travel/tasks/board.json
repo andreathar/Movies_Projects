@@ -107,7 +107,7 @@
         "T01",
         "T05"
       ],
-      "blocker": "Voice bound to Element (inbox PVC sample). Andre to confirm by ear on PILOT-04/05.",
+      "blocker": "Andre approved likeness but rejected native voice; temporary guide authorized by D14. Final dubbing/ear approval remains pending.",
       "specification": "production-tasks.md",
       "deliverables": [
         "04_audio/voice-tests/codex-opening-v1/provenance.json"
@@ -153,14 +153,16 @@
       "id": "T10",
       "title": "Reforecast costs and freeze the production envelope",
       "ownerRole": "producer",
-      "status": "blocked",
+      "status": "in_progress",
       "dependsOn": [
         "T08",
         "T09"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Measured-cost planning reforecast recorded; remaining-phase reallocation/release and chapter recipe freeze await Galileo playback. External-audio fees remain separately unapproved.",
       "specification": "production-tasks.md",
-      "deliverables": [],
+      "deliverables": [
+        "docs/budget-and-envelope-resume-v3.md"
+      ],
       "verifiedAt": null
     },
     {
@@ -210,9 +212,14 @@
         "T10",
         "T12"
       ],
-      "blocker": "Galileo chapter in production under APR-galileo",
+      "blocker": "42-second guide-voice preview assembled and technically verified. End-to-end normal-speed playback, fine sync, pacing and chapter acceptance still pending; no final voice approval.",
       "specification": "production-tasks.md",
-      "deliverables": [],
+      "deliverables": [
+        "08_edit/picture-lock/galileo-en-preview-v1.mp4",
+        "08_edit/timelines/galileo-en-v1.json",
+        "08_edit/reviews/galileo-en-v1/review.md",
+        "08_edit/reviews/galileo-en-v1/technical-qc.json"
+      ],
       "verifiedAt": null
     },
     {

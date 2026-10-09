@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "project": "andre-time-travel",
   "workingTitle": "The Table Between Centuries",
-  "state": "preproduction_decisions_recorded_waiting_photo_session_and_r2_batch",
+  "state": "galileo_english_preview_assembled_pending_playback_and_dubbing",
   "lead": "Andre Athar",
   "scope": {
     "visualStyle": "photorealistic_cinematic",
@@ -77,7 +77,10 @@
         "G-07"
       ],
       "languageReview": "pending",
-      "acceptedTakeId": null
+      "acceptedTakeId": null,
+      "preview": "08_edit/picture-lock/galileo-en-preview-v1.mp4",
+      "previewReview": "08_edit/reviews/galileo-en-v1/review.md",
+      "previewStatus": "assembled_pending_full_playback_and_dubbing"
     },
     {
       "id": "N",
@@ -192,7 +195,17 @@
         92
       ],
       "note": "balance deltas; docs rate 6/9 cr/s + voice control; 30 vs 70 for identical 5-s jobs unexplained; plan on 14 cr/s worst case",
-      "observedAt": "2026-10-09T11:27:36-03:00"
+      "observedAt": "2026-10-09T11:27:36-03:00",
+      "v3_0_720p_12s_element_nativeaudio": [
+        108
+      ],
+      "v3_0_turbo_10s_insert": [
+        80
+      ],
+      "v3_0_turbo_5s_eyes": [
+        40,
+        40
+      ]
     }
   },
   "approvals": {
@@ -246,7 +259,11 @@
       "credits": 92,
       "status": "accepted",
       "id": "PILOT-05-oppenheimer-speech-OL04_1"
-    }
+    },
+    {"id":"G-01-insert-galileo-v2_1","shotId":"G-01","phase":"galileo","path":"07_generations/originals/G-01-insert-galileo-v2_1.mp4","credits":80,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-01-insert-galileo-v2.json"},
+    {"id":"G-02-andre-GL02_1","shotId":"G-02","phase":"galileo","path":"07_generations/originals/G-02-andre-GL02_1.mp4","credits":108,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-02-andre-GL02.json"},
+    {"id":"G-03-eyes-galileo-A_1","shotId":"G-03","phase":"galileo","path":"07_generations/originals/G-03-eyes-galileo-A_1.mp4","credits":40,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-03-eyes-galileo-A.json"},
+    {"id":"G-05-eyes-galileo-B_1","shotId":"G-05","phase":"galileo","path":"07_generations/originals/G-05-eyes-galileo-B_1.mp4","credits":40,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-05-eyes-galileo-B.json"}
   ],
   "finalMovieVerified": false,
   "projectRoot": ".",
@@ -429,8 +446,10 @@
       "targetSeconds": 4,
       "description": "Quiet table, paper/hand, Arcetri atmosphere",
       "framingRestriction": "Opponent below neck only",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "G-01-insert-galileo-v2_1"
+      ],
       "acceptedTakeId": null
     },
     {
@@ -439,8 +458,10 @@
       "targetSeconds": 10,
       "description": "Andre answers about remembrance",
       "framingRestriction": "Andre only; split if speech test requires",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "G-02-andre-GL02_1"
+      ],
       "acceptedTakeId": null
     },
     {
@@ -449,8 +470,10 @@
       "targetSeconds": 4,
       "description": "Eye attention through weariness",
       "framingRestriction": "Eyes-only safe crop",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "G-03-eyes-galileo-A_1"
+      ],
       "acceptedTakeId": null
     },
     {
@@ -459,8 +482,11 @@
       "targetSeconds": 8,
       "description": "Andre on the harder story; listens to G-L03",
       "framingRestriction": "Andre only",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "PILOT-01-galileo-listening-locked_1",
+        "PILOT-04-galileo-speech-native_1"
+      ],
       "acceptedTakeId": null
     },
     {
@@ -469,8 +495,10 @@
       "targetSeconds": 4,
       "description": "Eye resolve at “question”",
       "framingRestriction": "Eyes-only safe crop",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "G-05-eyes-galileo-B_1"
+      ],
       "acceptedTakeId": null
     },
     {
@@ -479,8 +507,10 @@
       "targetSeconds": 7,
       "description": "Paper/hand stillness; G-L04 overlaps",
       "framingRestriction": "No face",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "G-01-insert-galileo-v2_1"
+      ],
       "acceptedTakeId": null
     },
     {
@@ -489,8 +519,10 @@
       "targetSeconds": 5,
       "description": "Andre's quiet respect; table cut",
       "framingRestriction": "Andre only; no facial morph",
-      "status": "planned",
-      "takeIds": [],
+      "status": "in_progress",
+      "takeIds": [
+        "PILOT-02-galileo-gentle-turn_1"
+      ],
       "acceptedTakeId": null
     },
     {

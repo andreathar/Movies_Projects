@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-10-09T15:29:16.139976+00:00",
+  "scope": "Holistic independent staging and workflow audit, with emphasis on table scale and shared presence. Read-only on film sources and Hermes runtime.",
+  "verdict": "Promising identity/coverage foundation; shared staging not yet proven. Recommend resolving Galileo staging before scaling to remaining chapters.",
+  "method": {
+    "originalVideos": 9,
+    "originalVideoDecodeFailures": 0,
+    "sampledSourceFrames": 27,
+    "previewDuration": 42.0,
+    "previewEventsInspected": 9,
+    "previewHash": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d",
+    "normalSpeedPlaybackReviewed": false,
+    "allFrameAcceptanceGranted": false,
+    "klingCalls": 0,
+    "paidGenerations": 0,
+    "sessionMessagesSent": 0,
+    "sessionInterrupted": false,
+    "canonicalProductionStateChanged": false
+  },
+  "strengths": [
+    "Roteiro canônico possui arco para Andre e virada no encontro com Napoleão.",
+    "Aprovação humana de semelhança do piloto está registrada; não é aprovação automática da encenação.",
+    "O diretor está ativo: produziu quatro vídeos adicionais de Galileu, revisões e uma prévia de 42 s.",
+    "G-L02 tem transcrição local compatível com o texto canônico segundo a revisão do diretor.",
+    "O fluxo distingue voz guia, dublagem final, revisão por quadros e reprodução completa.",
+    "Todos os nove vídeos originais e a prévia decodificaram integralmente sem erro.",
+    "Validação do workspace e 29 testes passaram na checagem desta auditoria; avisos de skills compartilhadas permanecem."
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "P0",
+      "title": "O espaço da conversa muda entre fala e escuta",
+      "kind": "visual_observation",
+      "evidence": [
+        "frames/E02-G-02-mid.png",
+        "frames/E04-G-04-mid.png",
+        "frames/E06-G-04-mid.png",
+        "frames/E08-G-07-mid.png"
+      ],
+      "detail": "Na fala (4–14 s e 25,5–29,5 s), Andre apoia os antebraços na mesa à frente. Na escuta (18–21,5 s e 33,5–38,5 s), o tampo aparece lateral/atrás, com outro fundo e sem apoio visível dos braços. As imagens não estabelecem o mesmo arranjo de cadeiras. Isso é uma diferença observável de composição; não é uma medição 3D nem prova de dimensão física.",
+      "action": "Rever E04/E08 antes de usar como escuta do mesmo diálogo; selecionar cobertura neutra da composição de fala ou produzir uma nova escuta a partir do mesmo keyframe, com a mesa e a cadeira nas mesmas posições."
+    },
+    {
+      "id": "F02",
+      "priority": "P0",
+      "title": "Falta um plano que estabeleça os dois na mesma mesa",
+      "kind": "coverage_gap",
+      "evidence": [
+        "preview-audit.json",
+        "snapshots/manifest.json"
+      ],
+      "detail": "Os nove eventos da prévia alternam Andre sozinho, olhos isolados e mão/torso de Galileu. Nenhum estabelece simultaneamente Andre e o ombro/mão do interlocutor na mesma geometria. Os planos separados podem sustentar diálogo, mas o espaço compartilhado ainda não foi demonstrado. Não existe no plano uma etapa comprovada de inserir uma pessoa por composição digital depois.",
+      "action": "Validar um plano de 3–5 s sobre o ombro de Galileu, com Andre em foco, os dois sentados, trecho de mesa compartilhado e cabeça histórica integralmente fora do quadro. Usar como âncora; manter os closes isolados compatíveis."
+    },
+    {
+      "id": "F03",
+      "priority": "P1",
+      "title": "A reação de Galileu antecede a frase que deveria provocá-la",
+      "kind": "timeline_script_mismatch",
+      "evidence": [
+        "snapshots/08_edit/timelines/galileo-en-v1.json",
+        "snapshots/01_script/script-en.md"
+      ],
+      "detail": "E05 usa o olhar de resolução G-05 em 21,5–25,5 s. G-L04 começa em 25,5 s; a ideia final está legendada em 31,1–33,5 s. O roteiro associa a resolução a does not settle a question. A reação aparece antes de sua causa.",
+      "action": "Reposicionar a reação B para durante o fim da frase ou imediatamente depois; usar escuta neutra na pergunta G-L03. Preservar tempos reais de fala e não acelerar rostos para caber."
+    },
+    {
+      "id": "F04",
+      "priority": "P1",
+      "title": "A mesa tem textura definida, mas a escala e os assentos não estão fechados",
+      "kind": "missing_staging_specification",
+      "evidence": [
+        "snapshots/00_brief/decisions/D04-table.json",
+        "snapshots/03_bibles/table-and-continuity.md"
+      ],
+      "detail": "D04 fixa carvalho, três tábuas, anel e lasca. A bíblia dá altura aproximada de 75 cm, mas não largura/profundidade e não mostra planta de assentos/câmeras. Tampo vazio e perspectiva lateral ampliam a sensação de distância. Não é possível medir a mesa real a partir destes enquadramentos gerados.",
+      "action": "Proposta para teste, não medida/aprovada: mesa doméstica de cerca de 120 × 75 × 75 cm, duas cadeiras em lados opostos do tampo de 75 cm, conversa próxima. Fixar planta, distância de borda e altura do olhar num único quadro mestre antes de variar planos."
+    },
+    {
+      "id": "F05",
+      "priority": "P1",
+      "title": "As bíblias de cena repetem falas antigas",
+      "kind": "document_conflict",
+      "evidence": [
+        "snapshots/01_script/dialogue-lines.csv",
+        "snapshots/03_bibles/scene-bibles/caesar.md",
+        "snapshots/03_bibles/scene-bibles/genghis.md",
+        "snapshots/03_bibles/scene-bibles/galileo.md",
+        "snapshots/03_bibles/scene-bibles/napoleon.md"
+      ],
+      "detail": "C-L04, K-L04, G-L04 e N-L04 nas bíblias não coincidem com script-en.md/dialogue-lines.csv, apesar do cabeçalho de sincronização com v2. Exemplo decisivo: N-L04 canônica é Every day. We are still not sure who pays it.; a bíblia ainda traz o comentário antigo sobre guerras e grandeza, perdendo a virada do protagonista.",
+      "action": "Gerar os textos derivados exclusivamente do CSV/roteiro vigente e anexar hash/versão; não permitir que bíblias antigas voltem a alimentar prompts de fala."
+    },
+    {
+      "id": "F06",
+      "priority": "P1",
+      "title": "Estado operacional não acompanha os artefatos atuais",
+      "kind": "management_gap_at_snapshot",
+      "evidence": [
+        "management-checks.json",
+        "snapshots/memory/STATE.md",
+        "snapshots/tasks/board.json",
+        "snapshots/03_bibles/continuity-matrix.csv"
+      ],
+      "detail": "Na checagem registrada há 9 vídeos originais únicos e uma prévia de 42 s; manifest tem 5 takes e 0/41 slots mapeados. STATE abre dizendo que ainda não houve vídeo/Element, a matriz mantém referências antigas e recast de Napoleão pendente. T13 está em andamento enquanto T10 segue bloqueada. O diretor está trabalhando durante a auditoria, portanto alguns registros podem estar em atualização.",
+      "action": "Ao concluir o capítulo, registrar todos os takes reais e suas decisões, mapear slots/timeline, atualizar o resumo vigente e a matriz e registrar explicitamente o escopo das exceções de dependência. Aprovação de identidade, voz, encenação e filme final devem continuar separadas."
+    },
+    {
+      "id": "F07",
+      "priority": "P1",
+      "title": "Sessão do diretor vinculada a diretório de outro projeto",
+      "kind": "session_metadata",
+      "evidence": [
+        "director-session.json"
+      ],
+      "detail": "A sessão Art direction workflow for Andre Athar time-travel film, id 20261009_081822_9a8c50, registra cwd /mnt/data/Projects_SSD/tranfere_gov_api. Os resultados recentes observados apontam para Movies_Projects; não foi constatada escrita cruzada neste exame. O modelo registrado no momento é gpt-6.1-sol, com mudança visível de modelo no histórico. Não foi confirmada a identificação Fable 5.1.",
+      "action": "Reancorar a sessão no projeto Movies_Projects antes do próximo bloco de trabalho, carregar o checkpoint atual e tornar explícito o escopo de arquivos. Não reiniciar ou trocar modelo apenas pelo tempo decorrido; avaliar artefatos e estado atual."
+    },
+    {
+      "id": "F08",
+      "priority": "P2",
+      "title": "A prévia ainda precisa de acabamento e aceitação temporal",
+      "kind": "delivery_limit",
+      "evidence": [
+        "preview-audit.json",
+        "snapshots/08_edit/reviews/G-02-andre-GL02.json",
+        "snapshots/00_brief/decisions/D14-dub-strategy.json"
+      ],
+      "detail": "Vozes são guias, dublagem final não aprovada; frase G-L04 tem pronúncia duvidosa registrada. Olhos aparecem em faixa com bordas pretas grandes; não cortar/expandir revelando face. Há marca d’água dos originais. A saída 1920×1080 é ampliada de fontes ~720p. Esta auditoria decodificou os arquivos e examinou quadros, mas não ouviu/assistiu a prévia integralmente em tempo real.",
+      "action": "Uniformizar a apresentação da faixa de olhos, finalizar a dublagem alinhada, revisar todos os quadros arriscados e reproduzir o arquivo final inteiro. Manter prévia e master final distintos."
+    }
+  ],
+  "budgetObservation": {
+    "galileoRecordedCredits": 348,
+    "includesUnresolvedOriginalJobCredits": 80,
+    "recordedBalanceAfter": 5813,
+    "isLiveBalance": false,
+    "note": "Somente ledger local; nenhuma consulta ao provedor. Reforecast T10 ainda precisa usar estado real antes de ampliar produção."
+  },
+  "nextCheckpoint": [
+    "Confirmar composição e proporção de mesa para conversa próxima.",
+    "Validar um keyframe 16:9 sobre o ombro, sem texto, com o rosto histórico fora do quadro e Andre sentado do outro lado.",
+    "Usar o mesmo arranjo para fala, escuta e insert; testar apenas um plano curto antes de replicar.",
+    "Reeditar Galileu alinhando reação B ao fim de G-L04 e substituindo escutas incompatíveis.",
+    "Rever com Andre uma conversa completa, incluindo voz guia claramente identificada e plano para dublagem.",
+    "Atualizar mapa de takes/slots, resumos e orçamento; só então liberar o próximo capítulo."
+  ]
+}

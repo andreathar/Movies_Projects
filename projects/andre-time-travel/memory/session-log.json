@@ -183,6 +183,25 @@
       "klingJobsSubmitted": 0,
       "elevenLabsJobsSubmitted": 0,
       "creativeApprovalGranted": false
+    },
+    {
+      "at": "2026-10-09T12:28:25-03:00",
+      "event": "galileo_english_preview_v1_assembled",
+      "preview": "08_edit/picture-lock/galileo-en-preview-v1.mp4",
+      "sha256": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d",
+      "seconds": 42,
+      "videoFrames": 1008,
+      "editEvents": 9,
+      "distinctClips": 7,
+      "mixLufs": -16.2,
+      "truePeakDb": -1.0,
+      "balanceObserved": 5813,
+      "galileoLedgerTotal": 348,
+      "includedUnknownIdCharge": 80,
+      "fullPlaybackCompleted": false,
+      "voiceApproved": false,
+      "finalPictureApproved": false,
+      "note": "Replacement insert 80 and G-L02 108 completed; separate qualified reviews. G-L02 STT matches, G-L04 doubtful pronunciation covered by insert for later ADR. T13 stays in progress. 29 mocked/unit tests and workspace validation passed; four shared-skill hash warnings remain. Concurrent actor commits preserved; this producer made no commit."
     }
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "validation": {
+    "returnCode": 0,
+    "outputPath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/validation.txt",
+    "tail": ": kling-cli\",\n    \"shared skill changed since linking: film-character-continuity\",\n    \"shared skill changed since linking: film-dialogue-localization\",\n    \"shared skill changed since linking: film-editing-qc\"\n  ],\n  \"projects\": [\n    {\n      \"id\": \"andre-time-travel\",\n      \"chapters\": 5,\n      \"storyboardSlots\": 41,\n      \"targetSeconds\": 240,\n      \"budgetCeiling\": 6981,\n      \"productionTasks\": 21,\n      \"taskStates\": {\n        \"completed\": 7,\n        \"blocked\": 12,\n        \"in_progress\": 2\n      },\n      \"recordedTakes\": 5,\n      \"finalMovieVerified\": false,\n      \"registeredSources\": 20,\n      \"importedSourceSnapshots\": 20\n    }\n  ]\n}\n"
+  },
+  "tests": {
+    "returnCode": 0,
+    "outputPath": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/tests.txt",
+    "tail": "d_stale_line_mapping_fail_before_rendering (test_workflow.WorkflowTests.test_missing_reference_and_stale_line_mapping_fail_before_rendering) ... ok\ntest_new_episode_does_not_inherit_previous_approval_cost_or_layout (test_workflow.WorkflowTests.test_new_episode_does_not_inherit_previous_approval_cost_or_layout) ... ok\ntest_paths_cannot_escape_workspace (test_workflow.WorkflowTests.test_paths_cannot_escape_workspace) ... ok\ntest_script_and_csv_cannot_silently_diverge (test_workflow.WorkflowTests.test_script_and_csv_cannot_silently_diverge) ... ok\n\n----------------------------------------------------------------------\nRan 29 tests in 1.887s\n\nOK\n"
+  },
+  "liveAtCheck": {
+    "at": "2026-10-09T15:26:12.840556+00:00",
+    "registeredTakes": 5,
+    "mappedShots": 0,
+    "slots": 41,
+    "completedTasks": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T08",
+      "T09"
+    ],
+    "galileoTask": {
+      "id": "T13",
+      "title": "Produce Galileo as the first complete chapter",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "dependsOn": [
+        "T09",
+        "T10",
+        "T12"
+      ],
+      "blocker": "Galileo chapter in production under APR-galileo",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    }
+  }
+}
