@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "dialogue-sound/continuity",
+  "assignment": "Operator message 4 (2026-10-09): (a) integrate the v3 scene bibles of caesar, genghis, galileo and napoleon into ONE new revision with §3 by line IDs + CSV hash only (audit F05); (b) produce continuity-matrix v2 as a new revision (audit F06). Oppenheimer has no v3: record as pending. 0 credits; no edits to manifest, board, approvals, ledger, STATE, decisions or D16-D19.",
+  "ownedPaths": [
+    "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+    "projects/andre-time-travel/03_bibles/continuity-matrix-v2.csv",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-dialogue-continuity-integracao.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar.md",
+      "sha256Before": "ea0f972b3d8bc9bf77ef3a49e30b4bc76b14158bdc04b65525a44274017c9e52"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis.md",
+      "sha256Before": "27d2b59bca35a33fbc2ee4bd38ff293f5d482606f73a955a6623812cadfc2084"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo.md",
+      "sha256Before": "15fe262629e0170c5d7f33c9ea48adb18fdb739401aed1a0ccd10195850d2516"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon.md",
+      "sha256Before": "7dbb63e5252efab4e9ba564f8bfef73ab422bc7c3cde9be36c31da7b30eb8a2f"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer.md",
+      "sha256Before": "f64813d94f57695313eb78401ccd24a54f15286f7f5a66f0ea2ef0b09ceac2a5"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v3-proposta.md",
+      "sha256Before": "72448c774ce1d01fed2a79aad7ee57e517f26ad15197f9b610354cda0f0bf17b"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v3-proposta.md",
+      "sha256Before": "0b9ce9eef87e606b18a4040f09f63b6e794f2a5baf15752f5df2c87e973f2c92"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v3-proposta.md",
+      "sha256Before": "706c6dfa0d0b42d63b241329378471d515f318206ece701d868224977171ced4"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v3-proposta.md",
+      "sha256Before": "4aeb5c0df40e6481ac5df6e6970fe49e374a4ca13f78ceceeca50130ac0bad66"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix.csv",
+      "sha256Before": "8a81c5cba52d35391756736c09a5dd4c51b8f43d3c064f788bad86aba0412865"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+      "sha256Before": "8bcea089aebb71c83796d3c30371b17f27c1d0743de9543ab00b3d2d3730d232"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity-v2-proposta.md",
+      "sha256Before": "6dfce7227859eec4fff0c2718ad0e70fabf83d7e99defdbec1b65247078db9eb"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256Before": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2.csv",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-dialogue-continuity-integracao.json",
+      "sha256Before": "absent"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "sha256After": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+      "reason": "New single revision integrating the C/K/G/N v3 proposals. §3 cites line IDs only, anchored to dialogue-lines.csv sha256 d14322550e9f…; §2/§4 copied verbatim from the CURRENT v1 files; eye cues moved after a back-view beat; Oppenheimer recorded as pending; open flags (armour, costume N-A/N-B, fibula, historian flags, P-K) listed but not resolved."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2.csv",
+      "sha256After": "24f5ba49b43526d427cceaa1de9bcdc14417accff05a0a18af4178c95a93e115",
+      "reason": "New matrix revision (F06): v1 columns kept in order with stale cells reconciled to D01/D02/D05/D09/D11 (Napoleon eye base = R2-J01 recast, element id, wardrobe/lighting refs); geometry/back-view columns merged from continuity-matrix-v2-proposta.csv; eye-cue anchors and dialogue line IDs (no text) added; every row approved=false."
+    }
+  ],
+  "verification": [
+    "Read AGENTS.md, docs/2026-10-09-direcao-encontros-fala-dificil.md, checkpoint §7 items 4-5, the four v3 files, v1 bibles, v2-proposta bibles, historian-review-v2 §4, D02/D04/D05/D09/D11, both matrices and dialogue-lines.csv.",
+    "Machine check: carried §2 and §4 of each v3 are identical to the current v1 §2/§4 (8 comparisons). v1 files differ from the hashes in the v3 headers only because of the D02 reconciliation (commit 0f291c1: Andre Framing path + reconciliation note).",
+    "Machine check: every trigger fragment quoted in §1 occurs in the stated CSV line; no full CSV line text appears anywhere in the integrated bible or the matrix; L01..L04 of C, K, G, N are all cited by ID.",
+    "Every 02_references/... path cited in the carried §2 exists in the worktree.",
+    "Slot seconds sum to 42 for C, K, G, N (copied from v3 proposals).",
+    "Originals untouched: v1 bibles, v3/v2 proposals, both existing matrices, 01_script/*; hashes re-read after writing. git status shows only the new files (untracked): no git add, commit or merge.",
+    ".venv/bin/python scripts/manage.py validate: exit 0, status ok, errors [] (known shared-skill hash warnings unchanged).",
+    "No Kling/ElevenLabs call, no spend, no external write. Role consultation: historian input taken from existing historian-review-v2.md and *-v2-proposta.md; no agent launched."
+  ],
+  "pendingDecisions": [
+    "Oppenheimer: no v3. v1 O-L04 is split around cue B (cause after effect, as F03 for Galileo); Hiroshima-Nagasaki framing is PENDING ANDRE DECISION in oppenheimer-v2-proposta. A dialogue-sound v3 for O is still to be written.",
+    "Andre/art-director: Genghis armour vs light robe + dark coat; Napoleon N-A vs N-B and bicorne; Caesar fibula/wreath; Oppenheimer porkpie. §2 of the integrated bible still carries the v1 text.",
+    "Andre/director: P-K option 1 vs 2 (Genghis cue B placement); canonical script-note proposals P-ALL/P-C/P-K/P-G/P-N (script-en.md, not applied).",
+    "Historian flags on carried text (Galileo failing eyesight and 'slight , ' gap in §2, Siena, Discorsi cited to [3]) are listed, not applied.",
+    "D17/D18/D19 remain proposals (not recorded); the integrated bible and matrix label them so. The reported 'Galileo eyes B <= 2 s' choice came from the editor lane (message 8) and is unverified by me.",
+    "Producer: register the two new files/hashes in manifest if wanted; lighting columns in the matrix are provisional copies of bible §2 until the lighting role details them.",
+    "Editor: confirm slot seconds and J-cuts; Galileo v2 timeline follows checkpoint §5, not these proposals."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}
