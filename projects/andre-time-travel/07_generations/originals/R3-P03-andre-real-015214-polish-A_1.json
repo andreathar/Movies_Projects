@@ -1,0 +1,21 @@
+{
+  "job": "R3-P03-andre-real-015214-polish-A",
+  "generationId": "Aabxw1UaGrMTrJgyryu7tJky1Y8N4IA1hxyEp-2BDpxaaxPLDzPT4K-CgFPYW9W_lKrklq-Z",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:4",
+    "image_count": "1"
+  },
+  "refs": [
+    "02_references/andre/selected/crop34_20240202_015214.jpg"
+  ],
+  "prompt": "Edit image 1 as a cinematic portrait retouch, not a redesign. Keep EXACTLY the same man: identical face structure, age, eyes, expression, nose, mouth, hair, stubble, jacket and shirt. Replace the plain wall and cable with a soft out-of-focus dark neutral background. Improve only the photography: soft directional key light with gentle falloff, catchlights in the eyes, natural skin retouch that keeps pores and texture (no smoothing), even skin tone, a subtle filmic grade. No text, no watermark, no other people.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "68149c3eb614fe3cc02932f288511ffda7a627a29fd688da932537dc74a33de2",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2RiY2ZkYjYzLTEwNGItNDU3Zi05YjQ2LTE3ZDE3MzhiNjY0NS5wbmc.origin?x-kcdn-pid=112372",
+  "note": "polish-only variant A of real 2024 crop 015214",
+  "created": "2026-10-09T10:08:45-03:00"
+}

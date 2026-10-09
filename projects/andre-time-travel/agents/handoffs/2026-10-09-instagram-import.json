@@ -1,28 +1,44 @@
 {
   "schemaVersion": "1.0",
-  "at": "2026-10-09T12:58:20.036099+00:00",
+  "at": "2026-10-09T13:14:16.846541+00:00",
   "episode": "andre-time-travel",
   "agentRole": "producer",
   "assignment": "Retrieve photos from the user-owned Instagram profile andreathar into the local project",
   "ownedPaths": [
-    "inbox/instagram-andreathar/2026-10-09-public"
+    "inbox/instagram-andreathar/2026-10-09-public",
+    "inbox/instagram-andreathar/2026-10-09-chrome",
+    "scripts/catalog_instagram.py"
   ],
-  "status": "partial_waiting_for_user_authentication",
-  "savedFiles": 9,
-  "uniquePhotoPosts": 8,
-  "highResolutionPostFiles": 1,
-  "profilePreviewFiles": 8,
+  "status": "published_profile_photos_complete_verified",
+  "uniquePhotoPosts": 286,
   "completeAccountArchive": false,
   "source": "https://www.instagram.com/andreathar/",
   "verification": [
-    "All 9 files decoded as JPEG and copied byte-identically",
-    "SHA256SUMS and manifest hashes match",
-    "Source links are permanent post URLs; no cookies/passwords/CDN query URLs persisted"
+    "Authenticated Chrome grid yielded 353 unique post links matching the local catalog by ID/type/carousel comparison",
+    "All 290 existing images decoded fully and have unique SHA256 hashes",
+    "No photo files missing from catalog; both carousel counts verified in browser (3 and 2 slides)",
+    "Local gallery links and management validation checked separately"
   ],
   "pendingDecisions": [
-    "User to authenticate in the open Instagram browser tab or provide an official photo export"
+    "Select and approve suitable identity reference photographs; import does not grant creative approval"
   ],
   "paidJobsSubmitted": 0,
   "creativeApprovalGranted": false,
-  "otherAgentsFiles": "Unrelated image-review-log.json, review_sweep.py and test_review_sweep.py were observed and not changed."
+  "savedFilesThisPass": 0,
+  "verifiedImageFiles": 290,
+  "verifiedPostPhotoFiles": 289,
+  "profilePictureFiles": 1,
+  "observedPosts": 353,
+  "observedVideoPosts": 67,
+  "publishedProfilePhotosComplete": true,
+  "sourceMediaPath": "inbox/andre-reference-photos/instagram-andreathar",
+  "reportPath": "inbox/instagram-andreathar/2026-10-09-chrome/manifest.json",
+  "downloadIssueResolvedBy": "Concurrent local import supplied all profile photos; this pass verified and indexed them",
+  "missingVideoFile": "CMN4kGWlUYu",
+  "historicalPublicBatch": {
+    "path": "inbox/instagram-andreathar/2026-10-09-public",
+    "files": 9,
+    "uniquePhotoPosts": 8,
+    "includedInMainPhotoCount": false
+  }
 }

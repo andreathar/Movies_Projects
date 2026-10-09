@@ -1,0 +1,21 @@
+{
+  "job": "R3-P01-andre-table-polish-A",
+  "generationId": "AT_V0qwSqnaX-zPg8HtEw7AsNriJ3o_c-OXG2jjb_qXnLtgLQWrT9xaujDxQ05Uy_YTUygdg",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": "1"
+  },
+  "refs": [
+    "02_references/andre/synthetic/R2-andre-table-cinematic.jpg"
+  ],
+  "prompt": "Edit image 1 as a cinematic retouch, not a redesign. Keep EXACTLY the same man: identical face structure, age, eyes, nose, mouth, hair, grey-flecked stubble, jacket, shirt, hands, pose, table and background. Improve only the photography: a soft directional key light on his face from camera-left with gentle falloff, subtle catchlights in the eyes, refined natural skin retouch that keeps pores and texture (no smoothing, no plastic skin), slightly reduced under-eye shadow, relaxed confident posture with shoulders open, a rich filmic colour grade with deep navy and warm wood tones. No added people, no text, no watermark.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "8850cdadaaf9d52e57c34136d31950818f4eb3e5d2dcd5ae219e1e9664d17857",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzI3YmJhMTZiLTZjMzctNGI0YS05MWUxLTJiZjI5MGY5YmRjNi5wbmc.origin?x-kcdn-pid=112372",
+  "note": "polish-only variant A of R2-andre-table-cinematic",
+  "created": "2026-10-09T10:07:04-03:00"
+}

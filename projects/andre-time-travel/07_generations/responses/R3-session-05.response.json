@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "generationId": "AY72ooKEeU3l_RVmtEgSGL-DUTzHqmkHAkkssThmNO6m4KQhCU5x40GVL4hiZglmcLX4VVlk",
+    "status": "QUEUING",
+    "model": "gemini-3-pro-image",
+    "creditsConsumed": 20,
+    "message": "Generation submitted. Poll query_tasks with this generationId to get the result.",
+    "generation_id": "AY72ooKEeU3l_RVmtEgSGL-DUTzHqmkHAkkssThmNO6m4KQhCU5x40GVL4hiZglmcLX4VVlk",
+    "credits_consumed": 20
+  }
+}

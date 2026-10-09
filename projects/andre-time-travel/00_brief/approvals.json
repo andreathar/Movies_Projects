@@ -72,6 +72,20 @@
         "00_brief/decisions/D07-script-v2.json"
       ],
       "scope": "English Edition E text; Edition H translations must be redone from this version"
+    },
+    {
+      "id": "APR-R3-andre-polish-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "Andre Athar (chat: 'ok' to the proposed polish batch, 2026-10-09T10:05)",
+      "scope": "Kling image_to_image via installed CLI: 3 polish-only parallel versions (A, faithful) of Andre: R2-andre-table-cinematic.jpg and the 2024 crops 015259 and 015214. Lighting, skin retouch keeping texture, grade, posture only; same face, age, hair and stubble. New files beside originals, labelled synthetic; originals untouched.",
+      "ceiling": "300 Kling credits per Andre's choice; expected ~60 (3 x ~20). Stop and report on any non-COMPLETED status; no retries. Balance before: 6776 (live, 2026-10-09).",
+      "notApproved": [
+        "video generation",
+        "Element creation",
+        "likeness approval (characterReferences stays false; Andre must judge each variant)",
+        "ElevenLabs spend"
+      ],
+      "status": "executed_3_of_3_completed; 60 credits (6776->6716); awaiting Andre likeness judgement"
     }
   ],
   "decisionRecords": "00_brief/decisions/"

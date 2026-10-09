@@ -108,6 +108,23 @@
       "requiresUserLogin": true,
       "creativeApprovalGranted": false,
       "paidJobsSubmitted": 0
+    },
+    {
+      "at": "2026-10-09T13:14:43.711128+00:00",
+      "event": "instagram_published_photos_verified",
+      "account": "andreathar",
+      "observedPosts": 353,
+      "photoPosts": 286,
+      "verifiedPostPhotoFiles": 289,
+      "profilePictureFiles": 1,
+      "publishedProfilePhotosComplete": true,
+      "completeAccountArchive": false,
+      "requiresUserLogin": false,
+      "sourceMediaPath": "inbox/andre-reference-photos/instagram-andreathar",
+      "verificationPath": "inbox/instagram-andreathar/2026-10-09-chrome",
+      "creativeApprovalGranted": false,
+      "paidJobsSubmitted": 0,
+      "userStoppedFurtherCollection": true
     }
   ]
 }

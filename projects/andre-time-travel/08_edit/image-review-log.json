@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "reviews": [
+    {
+      "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015214.jpg",
+      "sha256": "53969f6e70dae4bb0a377fa63c8e9b127d39bd33909b8bf05c3ed3910acaeb22",
+      "reviewedAt": "2026-10-09T09:48:51-03:00",
+      "verdict": "keep",
+      "notes": "Identity truth per D01 (real 2024 photo crop). Never beautify in place; polish variants are parallel files only.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015259.jpg",
+      "sha256": "ea0d9f2b0c7dcabb94ec1ba55001bc415b5c3ac03a20c1670d2f2d9b4ca74294",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep",
+      "notes": "Identity truth per D01 (real 2024 photo crop). Never beautify in place; polish variants are parallel files only.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015304.jpg",
+      "sha256": "27aaf9dad00df5f7a57937f7b004410d852a4b31ef7556318471b54695c8f2bb",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep",
+      "notes": "Identity truth per D01 (real 2024 photo crop). Never beautify in place; polish variants are parallel files only.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-table-cinematic.jpg",
+      "sha256": "fb04f329baabaa95e101157f0482767d3ec0779dc253677b299e133b85a1dcc0",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "variant-needed",
+      "notes": "Best likeness+mood of all synthetics; natural hair/stubble matches D03. Best source for polish-only parallel (cleaner key light on face, eye catchlight, subtle skin retouch keeping texture, graded navy). Hands/ring unverified vs real.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J02-andre-closeup-neutral_1.png",
+      "sha256": "a2384f2e4d5087405ce9e92781498f1f6ac70d1b094ba64c13e08e7bc937f4e4",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J02-andre-closeup-neutral_2.png",
+      "sha256": "c2e3f75176a6e6b4c7e6088ef1f2722c079ab8fb3e80bea7b6735c2337747915",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J03-andre-closeup-smile_1.png",
+      "sha256": "5fba61f45dd8c9000109dd556e42d2dc5f7c6d46aa334ca498275e2e2931929f",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J03-andre-closeup-smile_2.png",
+      "sha256": "662bef86eff899c33d0e52cc2e16fc7a4c0ee26d82917efeb8dbd7b1e0527ac5",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "sha256": "68ae60dca9a574fb6a4718c46ca223c0e1cb5830512dc5b4acb25a92c597a0a2",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J04-andre-closeup-listening_2.png",
+      "sha256": "83172fee4b8c829b6fb90d7904adb137aeb94bf0b7c01b52e2f6077999a33eaa",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J05-andre-closeup-concerned_1.png",
+      "sha256": "28830409b4554d6fb3a530d6894ef8484c43333d15ac1f64de75a197a06f089b",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J05-andre-closeup-concerned_2.png",
+      "sha256": "4e9e55407cfe29c08592013aef8720950ff722d4f35fb7865ce1ffefff720287",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "sha256": "7e2a666a08a79cb43464b7b2ae90300cad4d1bd176f05ef6dcb7fdfd3eee309f",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_2.png",
+      "sha256": "1bb276e2e9b1b5b9a5c8f0f5cff9d18f5f50f80389b8191a68576b59b7eb19b7",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Beautiful studio/low-key lighting but hair swept/sleek and face slightly younger/leaner than the 2024 photos (D03). Expression reference only, not identity input.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J07-andre-seated-listening_1.png",
+      "sha256": "5e85c16ae6b29fc7de0550864ee660277da82993b2de295b5c185354895c1744",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Seated framing/lighting reference. Hair/face drift between takes (J07_2 worst; J08_1 darker hair); table and wardrobe consistent navy jacket/charcoal shirt.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J07-andre-seated-listening_2.png",
+      "sha256": "8a7de99b0346e2178492fab79031efc813000108d8b9df62da37ab9edc7e42f2",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Seated framing/lighting reference. Hair/face drift between takes (J07_2 worst; J08_1 darker hair); table and wardrobe consistent navy jacket/charcoal shirt.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "sha256": "be59cdab2a35dae48376ed2857eeb32fb5cac5d2517b916a77b9438ea62b3183",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Seated framing/lighting reference. Hair/face drift between takes (J07_2 worst; J08_1 darker hair); table and wardrobe consistent navy jacket/charcoal shirt.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J08-andre-seated-threequarter_2.png",
+      "sha256": "92956bb67807aed52f3f1db5c81d3ee8a43f34e8172ac6b658c518bb854ae7a7",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Seated framing/lighting reference. Hair/face drift between takes (J07_2 worst; J08_1 darker hair); table and wardrobe consistent navy jacket/charcoal shirt.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.png",
+      "sha256": "d49c96cbd82d969cae16eae01ab6b9dd78f7d094e348335b5ad49a5450e905c9",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Seated framing/lighting reference. Hair/face drift between takes (J07_2 worst; J08_1 darker hair); table and wardrobe consistent navy jacket/charcoal shirt.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J09-andre-seated-present-day_2.png",
+      "sha256": "7f36b368eca426a98b744521c97b22964f06d8a2864f52c6d3fb8c8298060cb3",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Seated framing/lighting reference. Hair/face drift between takes (J07_2 worst; J08_1 darker hair); table and wardrobe consistent navy jacket/charcoal shirt.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-profile-left.jpg",
+      "sha256": "87a424b435a14513fd1f1a083166c55df33b064d4a48d0bc38ffdc510821c1cd",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Strong profile lighting; synthetic only because no real profile photo exists (D08 photo session).",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-profile-right.jpg",
+      "sha256": "7a7e1ef4846702b106a49792b3a7f7b114ce849613af6c25797097392ad3dd10",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "keep-tone-only",
+      "notes": "Strong profile lighting; synthetic only because no real profile photo exists (D08 photo session).",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-seated-conversational.jpg",
+      "sha256": "11c2fbcc1f250669f82b22b738f58020da4a9ed5a6a4ffa0a11f902d2481f19f",
+      "reviewedAt": "2026-10-09T09:48:52-03:00",
+      "verdict": "reject",
+      "notes": "Cafe with bystanders and a second person's back; breaks simple-recurring-table rule and zero-extra-faces risk; frame has black letterbox bottom.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R3-P01-andre-table-polish-A_1.jpg",
+      "sha256": "8850cdadaaf9d52e57c34136d31950818f4eb3e5d2dcd5ae219e1e9664d17857",
+      "reviewedAt": "2026-10-09T10:10:03-03:00",
+      "verdict": "keep",
+      "notes": "Polish A of R2 table still: cleaner key, warmer wood, brighter eyes, texture kept; face/hair/pose faithful. Candidate only; awaiting Andre's judgement.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R3-P02-andre-real-015259-polish-A_1.jpg",
+      "sha256": "50dbab3c6106425a9add16ad98c9f5dcbd526e9c665de4a379d6affb403c047f",
+      "reviewedAt": "2026-10-09T10:10:03-03:00",
+      "verdict": "keep",
+      "notes": "Polish A of real smile crop: dark neutral background replaces wall/cable, skin evened with pores kept, identity faithful. Synthetic derivative; not an Element input (D01).",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R3-P03-andre-real-015214-polish-A_1.jpg",
+      "sha256": "68149c3eb614fe3cc02932f288511ffda7a627a29fd688da932537dc74a33de2",
+      "reviewedAt": "2026-10-09T10:10:03-03:00",
+      "verdict": "keep",
+      "notes": "Polish A of real 3/4 smile crop: same as P02; hair and expression faithful. Synthetic derivative.",
+      "beautyVariant": "",
+      "approval": "none"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-table-cinematic.jpg",
+      "sha256": "fb04f329baabaa95e101157f0482767d3ec0779dc253677b299e133b85a1dcc0",
+      "reviewedAt": "2026-10-09T10:10:03-03:00",
+      "verdict": "variant-needed",
+      "notes": "Variant produced.",
+      "beautyVariant": "projects/andre-time-travel/02_references/andre/synthetic/R3-P01-andre-table-polish-A_1.jpg",
+      "approval": "none"
+    }
+  ]
+}

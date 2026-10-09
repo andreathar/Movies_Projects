@@ -1,0 +1,12 @@
+{
+  "job": "R3-session-02",
+  "generationId": "AVh3-PtlINQfPQU4zJ5K2ufTQQ6DH9Oy6n6B14nLq8qquXxUuvJMqEtvCOVzZp4ox-2U2iJb",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "provenance": "synthetic",
+  "approved": false,
+  "sha256": "2092fd60092d287020a5cfb0a04125a1e058b62f178ea77ecbdd63d50a15d52c",
+  "bytes": 7049784,
+  "queryStatus": "COMPLETED",
+  "note": "Synthetic session plate. Face from Photos-Andre-Suit. Wardrobe prompted to navy unstructured blazer and charcoal open-collar shirt."
+}

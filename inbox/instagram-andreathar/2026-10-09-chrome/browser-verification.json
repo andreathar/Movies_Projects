@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "observedDate": "2026-10-09",
+  "profile": "https://www.instagram.com/andreathar/",
+  "access": "Existing user-authenticated Chrome session, as directed by the user",
+  "scope": "Published profile grid; excludes archived posts, stories, highlights, tagged posts and DMs",
+  "displayedPostCount": 353,
+  "uniqueObservedPostLinks": 353,
+  "photoPosts": 286,
+  "videoPosts": 67,
+  "lastObservedPost": "https://www.instagram.com/andreathar/p/iQ2UkODi1T/",
+  "setComparison": {
+    "serialization": "Sort lines id|mediaType|carousel (lowercase boolean) lexicographically; join with LF and no trailing LF",
+    "textLength": 8347,
+    "algorithm": "FNV-1a-32, used only to compare the browser inventory with the local catalog",
+    "fingerprint": "29c740b2"
+  },
+  "carousels": [
+    {"id": "B9W5JjKDL8l", "slidesViewed": 3, "nextButtonAbsentAtEnd": true},
+    {"id": "B1PcWyIDBe6", "slidesViewed": 2, "nextButtonAbsentAtEnd": true}
+  ],
+  "retrieval": {
+    "existingImport": "inbox/andre-reference-photos/instagram-andreathar",
+    "catalog": "inbox/andre-reference-photos/instagram-andreathar/CATALOG.md",
+    "ownership": "A concurrent local import supplied the media; this pass independently verified the authenticated profile inventory and local files",
+    "chromeMediaDownloadsSucceeded": 0,
+    "chromeDownloadDiagnostics": ["First media download canceled", "Second media download timed out"],
+    "diagnosticsResolution": "No further browser downloads required after concurrent import completed"
+  },
+  "creativeApprovalGranted": false,
+  "accountExportComplete": false
+}

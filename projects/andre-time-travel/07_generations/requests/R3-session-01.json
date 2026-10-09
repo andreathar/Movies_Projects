@@ -1,0 +1,18 @@
+{
+  "job": "R3-session-01",
+  "status": "covered_by_real_photo",
+  "provenance": "real_photograph",
+  "doNotGenerate": true,
+  "specFrame": 1,
+  "spec": "Front, neutral, eyes to lens",
+  "source": "inbox/Photos-Andre-Suit/20240202_015335.jpg",
+  "sourceAbsolute": "/mnt/data/Projects_SSD/Movies_Projects/inbox/Photos-Andre-Suit/20240202_015335.jpg",
+  "alsoSatisfies": [
+    "inbox/Photos-Andre-Suit/20240202_015328.jpg",
+    "inbox/Photos-Andre-Suit/20240202_015341.jpg"
+  ],
+  "wardrobeNote": "Identity plate only, not a costume plate. The clothes are a grey pinstripe jacket and a light striped shirt. They do not match the locked wardrobe (navy unstructured blazer worn open, charcoal open-collar shirt). Do not generate a replacement.",
+  "whyCovered": "Andre alone, front, eyes on the lens, mouth closed, serious/neutral. Slight head tilt only. No Kling job. Clothes do not match the locked navy/charcoal wardrobe; this file is an identity plate only, not a costume plate.",
+  "command": null,
+  "creditEstimate": 0
+}
