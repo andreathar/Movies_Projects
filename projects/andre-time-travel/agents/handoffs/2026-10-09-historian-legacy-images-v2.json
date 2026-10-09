@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "historian+continuity",
+  "assignment": "Coordinator task 2026-10-09 ~12:48 PT: (1) read Produção v2 plan (read-only) and define the 16 legacy/repercussion images (visual, fetched source, generated vs licensed archive with licence status, face-safe prompt guidance; Hiroshima/Nagasaki as PENDING ANDRE DECISION, no casualty numbers); (2) fetch and mark every previously search-only source verified/corrected/unverifiable, re-check Napoleon birth year, update only own v2 proposal files; (3) write legacy-images-v2-proposta.md + .csv in 03_bibles/; (4) this handoff.",
+  "ownedPaths": [
+    "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.csv",
+    "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+    "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer-v2-proposta.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-historian-legacy-images-v2.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.csv",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+      "sha256Before": "c58aecdddb2a098ee6f7bf76c6450a4bc0f7b5a2fcfc16a58b3bcc9876fa4ae5"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v2-proposta.md",
+      "sha256Before": "8d5f4a13b409a0a9642b9e63d9ae4218bee6b28519d8d42a0195d77f00e4836a"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+      "sha256Before": "f610a4cd32323b123c909d01822e3bfb36efbac74a697a644dfdfe257d9f6a94"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v2-proposta.md",
+      "sha256Before": "1145eddfdd273598bba6309c7938781bc8e28a4ece1902aa86bf9aa7d8f0a9ad"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v2-proposta.md",
+      "sha256Before": "7dc33eb11107b86184237cce2b42049bcd9cef861855de853c33b4f569721b5e"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer-v2-proposta.md",
+      "sha256Before": "08e8fb62b3b590924dbcccbafb395e1e24578af7d67f8d19290041c8b1a2faac"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-historian-legacy-images-v2.json",
+      "sha256Before": "absent"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.md",
+      "sha256After": "6b79b79ca3bdabdcc22be25251e821047e096f0a617ed8ce1e0c65772dd00e96",
+      "reason": "New PROPOSAL: the 16 legacy/repercussion takes of the Produção v2 plan (C/K/G/N/O-X03/X06/X07 + OUT-03) — concrete visual, fetched source, generated vs archive with licence status, face-safe prompt guidance; LI-15 (Hiroshima/Nagasaki) left PENDING ANDRE DECISION; source re-verification table."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.csv",
+      "sha256After": "1bd497ff8bc6748dceb8c1107475fac3f509d98eb85754505bd457551d0909eb",
+      "reason": "New PROPOSAL CSV (16 rows; columns id, take_id, figure, beat, description, source_url, source_status, origin, license, face_risk, pending_decision)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+      "sha256After": "8bcea089aebb71c83796d3c30371b17f27c1d0743de9543ab00b3d2d3730d232",
+      "reason": "r3: legacy_beats column updated for Caesar (leap day, Kaiser source) and Oppenheimer (hat; Hiroshima/Nagasaki pending Andre); new column legacy_takes_prod_v2 linking to legacy-images-v2-proposta.csv (25 columns)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v2-proposta.md",
+      "sha256After": "da36061d6648cc390aa7c4e721c65b8d03b520b0de9cc826090278858e3a1a75",
+      "reason": "r3: Britannica Julian calendar/July fetched (verified); leap-day beat corrected (no Feb 29 in the Julian calendar); Kaiser/tsar re-sourced to Etymonline (not in Britannica)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+      "sha256After": "7605a5078f83d51d6ede27f39f03928f19326d1c51df2633b1d34029907e2904",
+      "reason": "r3: Christie's eyesight note and Wikimedia Commons fetched (verified); Commons 1636 vs Uffizi 1635 date discrepancy noted."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v2-proposta.md",
+      "sha256After": "521b485523063b11a71fb3ca838f223659bb52e8b673f56dbe48c423cf31bbf3",
+      "reason": "r3: Zerjal 2003 verified via Europe PMC abstract and wording corrected; Columbia verified; NPM fetched (no robe colour stated -> 'white robe' unverified); Met unverifiable -> belt marked design choice."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v2-proposta.md",
+      "sha256After": "a370dc88846713201a2a89030585f07272e5db67bd04a9d047632969231a0113",
+      "reason": "r3: birth 15 Aug 1769 verified (Britannica); BBC and napoleon.org waistcoat/uniform pages fetched (verified)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer-v2-proposta.md",
+      "sha256After": "ba10a8516c7fe079201fec3468c273cc5c46ee515c81ca71c88d1d97886372ed",
+      "reason": "r3: LANL page fetched in full — '1946 photo on cyclotron pipes' removed (not on page), replaced by the May 1948 Physics Today cover line; Britannica Oppenheimer fetched (verified) and added as V2-O6."
+    }
+  ],
+  "verification": [
+    "Produção v2 plan found and read only (not modified): 07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v2.md sha256=f7adfc19f30c0da3cf70ecbfb0b9928486671681550b02520bc757ec97bb8bee; 2026-10-09-plano-regeneracao-takes-v2.csv sha256=1ae13220449dc44733087dabb97a5e29428fc334574be4e8013e87810ce3e0e0. Takes CSV has exactly 16 LEGADO rows: C/K/G/N/O-X03, X06, X07 and OUT-03 -> STOP rule not triggered.",
+    "Target new paths confirmed absent before writing (legacy-images-v2-proposta.md/.csv, this handoff); placed with no-clobber copy.",
+    "Own v2 files (6 changed) re-hashed on disk before overwrite and matched the r2 sha256Before values; table-and-continuity-v2-proposta.md not changed in r3 (6dfce722…9eb).",
+    "v1 03_bibles files re-hashed after copy and unchanged: character-andre.md=8ca583cf44f546f600370038dc376c1c42a0f5d8fb529e650412a340902f2c5f; continuity-matrix.csv=8a81c5cba52d35391756736c09a5dd4c51b8f43d3c064f788bad86aba0412865; table-and-continuity.md=907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3; scene-bibles/caesar.md=cf01c1abf8acf63a01a9afe4b3096beb41f6dee840fc08b747088582fe91328f; scene-bibles/galileo.md=76126a010e9adb305970bc22927979d1e85b2485c8e0b7b52db56978dd8d4f00; scene-bibles/genghis.md=8c3a56400ed32301e86d39412a169048d78c7af36d516a422b7e08c7140ce042; scene-bibles/napoleon.md=c318bdba1065d5b1cc657c7ad0522ec2400291bd184471b9f65c215727c88bc8; scene-bibles/oppenheimer.md=f855d4b6b662bd5b5f23320f55f12dca31c7f29837c07544671de5b8a6782ac3.",
+    "Sources fetched 2026-10-09: Britannica Julian calendar, July, J. Robert Oppenheimer, Napoleon I (fetch tool); Zerjal 2003 abstract via Europe PMC REST (PubMed 403); Christie's lot-251304, Commons Uffizi category, BBC 56977769, Columbia AFE, NPM digital archive, LANL porkpie page, napoleon.org interview 43051 and waistcoat page, DOE statement + order PDF (curl); Etymonline kaiser/czar, SEP Galileo, vie-publique 279807, OSTI Hiroshima page, LII 17 U.S.C. §105 (fetch tool); Commons file metadata (API extmetadata) for File:Medicean_Stars.png, File:Code_civil_des_Français_(1804).jpg, File:Code_Civil_1804.png. Unverifiable: Met Khubilai Khan exhibition (HTTP 429 curl and Wayback; fetch timeout).",
+    "Corrections made: Julian leap day (no Feb 29); Kaiser/tsar source moved from Britannica to Etymonline; Zerjal population wording; LANL 'cyclotron pipes' claim removed; NPM 'white robe' downgraded to unverified; Met belt support dropped.",
+    "Archive images visually checked at thumbnail size: Medicean Stars page = text + diagrams only; Code civil 1804 title page = text + allegorical Justice vignette (not a real person; crop/defocus advised).",
+    "No dialogue text copied; no casualty numbers; Hiroshima/Nagasaki left to Andre. No git commit, no paid jobs, no external messages; source-registry.json and Produção files untouched."
+  ],
+  "pendingDecisions": [
+    "ANDRE: LI-15 / O-X07 Hiroshima and Nagasaki — choose among neutral options (a) generated present-day river/city without people, (b) licensed 1945 archive (per-image check; victims' faces would breach the face rule), (c) present-day memorial site (rights/cultural review), (d) no city image (dates only, or move the beat to the 1954 hearing room). Nothing decided; no casualty numbers anywhere.",
+    "Director/producer: LI-05 / K-X06 Ulaanbaatar monument — generated non-replica silhouette (recommended) vs licensed archive photo (licence and 2006-sculpture copyright/freedom-of-panorama not verified) vs chronicle alternative.",
+    "Producer (Produção owns costs): archive items LI-07, LI-10, LI-14 do not need the PRO still; re-cost if accepted. LI-10 option 1 needs CC BY 2.0 attribution (Yale Law Library).",
+    "Producer/legal: LI-14 DOE order is a US government work (17 U.S.C. §105) — protection abroad not settled by §105 for international editions.",
+    "Director: LI-12 (N-X07 cane field) tone check.",
+    "Historian/producer: Met 'World of Khubilai Khan' page remains unverifiable (HTTP 429); merge the V2-xx sources into source-registry.json with snapshots (registry not touched)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "paid_batch_galileo_pilot_v2_phase_a",
+  "artifact": {
+    "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu-v2.md",
+    "sha256": "a6892aa197062e1f0a31d72573097f8d6c97db716f501d892527601f4a3c6cee",
+    "version": "v2"
+  },
+  "decision": "approved",
+  "reviewer": "Andre Athar (relayed via Grok Bot / Grok Architect Bot)",
+  "reviewedAt": "2026-10-09T12:57:00-03:00",
+  "evidence": ["Andre approval relayed by Grok Architect Bot handoff 2026-10-09 12:57 -03:00"],
+  "scope": "Phase A only (reference images + keyframe) of the Galileo pilot v2; hard ceiling 23 Kling credits. Submission by Hermes only. Phases B and C NOT approved.",
+  "limitations": ["Stop and report if actual cost exceeds 23 credits", "No retries beyond the plan", "Not a creative acceptance of outputs"],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review. Producer records the real human decision; this template grants nothing."
+}

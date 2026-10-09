@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Plano v3 a partir do v2. Aplica as decisões da Direção de 2026-10-09: nuca desfocada liberada sem rosto ou perfil; reaproveitamento dos pilotos com crop e X01 de 8 s aceitos; fechos C/K/N em still animado local a 0 cr. Mapeia as 16 imagens de legado do historiador (03_bibles/legacy-images-v2-proposta.csv) para as linhas do plano: arquivo a 0 cr com atribuição anotada; LI-05 e LI-15 como faixa. Nenhum job pago.",
+  "ownedPaths": [
+    "projects/andre-time-travel/07_generations/plans/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v2.md",
+      "sha256Before": "f7adfc19f30c0da3cf70ecbfb0b9928486671681550b02520bc757ec97bb8bee",
+      "note": "v2 preservada"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v2.csv",
+      "sha256Before": "1ae13220449dc44733087dabb97a5e29428fc334574be4e8013e87810ce3e0e0",
+      "note": "v2 preservada"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.csv",
+      "sha256Before": "1bd497ff8bc6748dceb8c1107475fac3f509d98eb85754505bd457551d0909eb",
+      "note": "entrada do historiador; só leitura"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu-v2.md",
+      "sha256Before": "a6892aa197062e1f0a31d72573097f8d6c97db716f501d892527601f4a3c6cee",
+      "note": "piloto: custo inalterado; ajuste de prompt da nuca descrito no plano v3, não editado"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v3.csv",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md",
+      "sha256After": "a342d046233187b8d4afcce9231b326d1afb83bbf334368f0db0109b50b43d1b",
+      "reason": "Plano v3: normal 2.129–2.249 (v2 2.519), pior caso 2.957–3.077; faixa por LI-05/LI-15 (0 ou 60 cada); atribuições de arquivo anotadas; adendo de prompt da nuca no piloto."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v3.csv",
+      "sha256After": "fe999606d21a852054759ca60a4d60a44fb61bfd96e4b872d934a447668b1bbd",
+      "reason": "59 takes com legacy_id, creditos_v2/v3, faixa_min/max, pior_caso_v3, status_v3 (DESCONTADO/ARQUIVO/FAIXA/MANTIDO...) e motivo."
+    }
+  ],
+  "verification": [
+    "Soma do CSV v3: mínimo 2.129, máximo 2.249, pior caso 2.957–3.077; ABERTURA 175, CÉSAR 431, GENGHIS 380–440, GALILEU 281, NAPOLEÃO 368, OPPENHEIMER 236–296, FECHAMENTO 258.",
+    "Delta contra a v2: -90 nos fechos C/K/N-X08; -180 nos arquivos LI-07/LI-10/LI-14 (G-X03, N-X03, O-X06); -120 a 0 de LI-05/LI-15. Pior caso +120 pelo 2º clipe de LI-04 e LI-09.",
+    "Saldo de referência: 5.813 (kling account, 12:37); sem nova consulta.",
+    "Arquivos v1 e v2 não alterados."
+  ],
+  "pendingDecisions": [
+    "LI-05 (K-X06): arquivo, gerado sem réplica ou opção B. A recomendação é gerar (60 cr); o arquivo não tem licença verificada.",
+    "LI-15 (O-X07): decisão do Andre entre a/b/c/d.",
+    "LI-12: checagem de tom pela Direção.",
+    "LI-07: a cauda gerada opcional (telescópio) não está no custo (+60 se aprovada).",
+    "LI-14: confirmar o status de direitos fora dos EUA para as edições internacionais. LI-10: escolher CC BY 2.0 (Yale, alta resolução, crédito obrigatório) ou o scan da Gallica em domínio público (baixa resolução).",
+    "Piloto: aprovar a troca do texto do prompt sobre a nuca (custo igual)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Correção de registro em lote (área do producer), aprovada pelo Andre/Direção em 2026-10-09 (decisão 5): aplicar nas linhas 41-53 e 55-56 do asset-registry.csv a mesma correção da J23. Linhas novas com nota, sem editar as antigas nem os sidecars originais; sidecars .correction-2026-10-09.json; rodar manage.py validate.",
+  "ownedPaths": [
+    "projects/andre-time-travel/asset-registry.csv",
+    "projects/andre-time-travel/02_references/wardrobe/",
+    "projects/andre-time-travel/02_references/history-eyes/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "c7085cdfa8078b4698a05a9b94a3cd6275b32f7b395136ec0a38fb688da15163",
+      "note": "já incluía as 2 linhas da correção J23 (276-277), ainda não commitadas"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.json",
+      "sha256Before": "61f3279786d29ea86f16721f4d769518a19a3c4b877852c0a41914f2c4aa701d",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J11-eyes-caesar-command_1.png",
+      "sha256Before": "5cff8e00d9b078cd06a245fa741d1d8f12920d9aee2590341b72e15d439d1bb5",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png",
+      "sha256Before": "eaa2b1217ac58335ed563a8b40d6ebe286456c14fb04d0e665b4f2df0db15adb",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_2_eyescrop.json",
+      "sha256Before": "f3c747175ad57074ae3963ad9ab3f84872ed5d6440700d429b42432e73df5e65",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_2_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J11-eyes-caesar-command_2.png",
+      "sha256Before": "867cbf77661cc1489596f90b8d5f094163bd979664e1ee6329ba06eab8c32994",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_2_eyescrop.png",
+      "sha256Before": "22fe1af0f886b49c75ea24a4fd29f995bfd9c6effd93b9f3b529630ee5a39c1f",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.json",
+      "sha256Before": "c80313ebd6757b028adf1873a3221b6ee26fc9110dd4895cab8d0cc7e11bded7",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J12-eyes-caesar-uncertainty_1.png",
+      "sha256Before": "cfa36817775c73e5ba4129054754ba7b42020ac81ac7dbb13ba08bef2ba7862a",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.png",
+      "sha256Before": "60bf1aca8ab8bb1745a199ff7566346fbf0eb32496251a35795d54d352f776a4",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.json",
+      "sha256Before": "ae920465f1a037c9ad153e2693a7fdcd1eb694f76800ada38ac2a9b2e7d0c268",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J15-eyes-galileo-weariness_1.png",
+      "sha256Before": "7f6f2b2ef8bbf81dde1ecec5a2c1eb09860737a000f8ffb58165f89436b2d33d",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+      "sha256Before": "50a8288e93bed03cad5959e738eb11bc372c61baca5650e541df3b997e5bfa12",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.json",
+      "sha256Before": "920d7d0aebc601bb2dc84e4dbb4e90f910788e5a3bdc11a95e70806c0482ce83",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J16-eyes-galileo-resolve_1.png",
+      "sha256Before": "27f5f7fe219317044aa14e3f859b4f23c8a717a099c7c862e3b3001cb3397657",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.png",
+      "sha256Before": "3ea4c3de1e70e268b99898a17afd25aa2b09c6b293fad36c4b23698703eb0f4b",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.json",
+      "sha256Before": "86cb20b6cc7ed928cb14f901604db5c865d521cb9eb4b867d7295a410bf1e856",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J13-eyes-genghis-pride_1.png",
+      "sha256Before": "0eab8e9e5c0cae517459d214a3bbad9392c03ec8cc7a0bea341307ce8ce3e3d1",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png",
+      "sha256Before": "872223aad6da64c37e2d3d24df102a7dda14966a2f706f7cd4560cf62e4ad74a",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.json",
+      "sha256Before": "194147801bf2957f95c9a08f21b9db5ebc9e2920f4692e28b5974cf92029437c",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J14-eyes-genghis-recognition_1.png",
+      "sha256Before": "e0f1f8fc3a5d7e93fb46e39d6818647cbd23c6f40721055094c579e713e9b39e",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.png",
+      "sha256Before": "eb05c3bcb782b4cd217fdf4a88f3a4397914d37b9cbf61a45bff7f158f313101",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.json",
+      "sha256Before": "bb67cab769bc44e4b3822ca261a20608e6ba9a87e447b25aa9a2ff7fad3b5535",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J17-eyes-napoleon-selfpossession_1.png",
+      "sha256Before": "cf1e0dc850369065219885d232e6efa2e64f213a624bbddd79070e27c4d906bc",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png",
+      "sha256Before": "7cdbe3c41e0ffe5f1f0fefa9e969406dc98ca7e9dd5d055e844e66ba257e471f",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.json",
+      "sha256Before": "aede944caccbd5a56c45959daf643f2dd8bd6d3984fd9c04b74efb389b9fd0bd",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J18-eyes-napoleon-reflection_1.png",
+      "sha256Before": "3f27a06e4ffa445e5ab70af95b2f19fa202f7bfa75e34b7ce227b1c5b2bc4101",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.png",
+      "sha256Before": "03d73a9587bf05e13cf8d5e4a6d7126bc6805e5fa78b4756d3c4cdfde1835fe2",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.json",
+      "sha256Before": "19bbf76d39a359a8e27c0d6f108f98f1e17c669046175ba03d95903929c7db5b",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J19-eyes-oppenheimer-anticipation_1.png",
+      "sha256Before": "d07e4cb29f1e52de6f1b72992d0d0137205fc82df901ecc94f4d1938ed53d5c2",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png",
+      "sha256Before": "ae2af2fa42926f0ca7173059023f8b15e30ba3c53639751f6b5e214c271c7a6c",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.json",
+      "sha256Before": "dc2be8727ea6ab54b6019774c3ccb35e923cbdafe3c2e40507965e7d30c39240",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/_quarantine-full-face/R1-J20-eyes-oppenheimer-stillness_1.png",
+      "sha256Before": "37ebe890c63692e93fd605a8493e923b6935fddbcced88588326768acf6d0389",
+      "note": "evidência: original; não alterado (em _quarantine-full-face/)"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png",
+      "sha256Before": "ec78d5bd614bddb0d1a65f650665fb9ba74e63057e82d71351d88fe5443cd9a2",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.json",
+      "sha256Before": "981f9d49dbc6a8a19f404cd24698dfd690be6445f7d45d78dc166be6473a105a",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J21-costume-caesar_1.png",
+      "sha256Before": "4f66bb17a94f3aafae6f52983cb836bf4969743d040d3c35a9ac163e2d1885de",
+      "note": "evidência: original; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.png",
+      "sha256Before": "afb1767a5898a3c950c0cd060329f801c3b008e95aa76f1cdc390db5c075252d",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J22-costume-genghis_belowneck.json",
+      "sha256Before": "7992aa160a7eee4943ad4d45612155b110a47fc888c862b81b4ec2c9c6fdf916",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J22-costume-genghis_belowneck.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J22-costume-genghis_1.png",
+      "sha256Before": "d0aefde13269b0be0c5c87b422260a62619eb038d231b1a736b497e31e1715a6",
+      "note": "evidência: original; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J22-costume-genghis_belowneck.png",
+      "sha256Before": "9ec0f57715cfef12e306f0bda677a944c45f792e3e8d233e2505e9e73af6785e",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J24-costume-napoleon_belowneck.json",
+      "sha256Before": "915589b117331603d85a1126b8f04c211286ac0b12b38329b79e1f4c116a2699",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J24-costume-napoleon_belowneck.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J24-costume-napoleon_1.png",
+      "sha256Before": "e48b7e867889d924022719c6f36a35010e94224b464d33a45258fcd46a406644",
+      "note": "evidência: original; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png",
+      "sha256Before": "4935d92b6a6c1dc60026a61d61f27fe0d38c1465879b80212c9cf7aefb9db538",
+      "note": "evidência: recorte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.json",
+      "sha256Before": "cd6c354fe4aa801c49c7a643c3ef869e0ac4278dcc306a4b3fb7f94365e3e074",
+      "note": "sidecar original preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J25-costume-oppenheimer_1.png",
+      "sha256Before": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d",
+      "note": "evidência: original; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+      "sha256Before": "0e2cbb6fbc05150dd8ea6b2b4c39fc469d75e4d09eacbb8380231878429b4828",
+      "note": "evidência: recorte; não alterado"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256After": "2fda88372dd8e843ee6efea74ca772097feafd89d39d76a3c1e5252290ec72f3",
+      "reason": "Somente anexadas 30 linhas no fim (278-307, formato de 8 colunas): para cada uma das linhas legadas 41-53 e 55-56, uma linha do ORIGINAL (sha256 citado na linha antiga) e uma do RECORTE (sha256 real, path_base = original), ambas com nota CORREÇÃO 2026-10-09. As linhas 41-53 e 55-56 ficaram intactas como histórico."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "044da7fddb21fc887c6fdae6a98bef56ec3fa1cdcdcbdd1af5a59832ac5dddfd",
+      "reason": "Nova versão do sidecar de R1-J11-eyes-caesar-command_1_eyescrop (linha 41): sha256 = recorte eaa2b121…, sourceSha256 = original 5cff8e00…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_2_eyescrop.correction-2026-10-09.json",
+      "sha256After": "6d7a8b5fc93d3ef4a0be3eb1971418e5071481f71840d9b6948958c0c0e24a6c",
+      "reason": "Nova versão do sidecar de R1-J11-eyes-caesar-command_2_eyescrop (linha 42): sha256 = recorte 22fe1af0…, sourceSha256 = original 867cbf77…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "358ed66f6b90f8d380ce4648259766f6fe227ce1c440170041b6d0f8359aa04d",
+      "reason": "Nova versão do sidecar de R1-J12-eyes-caesar-uncertainty_1_eyescrop (linha 43): sha256 = recorte 60bf1aca…, sourceSha256 = original cfa36817…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "a210f450c505ab3f4460b6af67ae604c69c8e859ad3c6f2c724e4a1cf220a829",
+      "reason": "Nova versão do sidecar de R1-J15-eyes-galileo-weariness_1_eyescrop (linha 44): sha256 = recorte 50a8288e…, sourceSha256 = original 7f6f2b2e…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "58bdf5bae7182b42eaaf3eaa058d74548b1fb7bd88c83bdc752da4388bc5f0a9",
+      "reason": "Nova versão do sidecar de R1-J16-eyes-galileo-resolve_1_eyescrop (linha 45): sha256 = recorte 3ea4c3de…, sourceSha256 = original 27f5f7fe…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "83a35b3a10ddd304413e8a803c786663d56d0d18ffe7bd47647857883cfd7f2c",
+      "reason": "Nova versão do sidecar de R1-J13-eyes-genghis-pride_1_eyescrop (linha 46): sha256 = recorte 872223aa…, sourceSha256 = original 0eab8e9e…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "e5a1c3e3953dcc2e6b879e7be746d77ff755c19c33b9e8a6190d5282836266aa",
+      "reason": "Nova versão do sidecar de R1-J14-eyes-genghis-recognition_1_eyescrop (linha 47): sha256 = recorte eb05c3bc…, sourceSha256 = original e0f1f8fc…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "79b966a4f78fa2f75fe92b0949da21b842165e4fc5b79af0f339657f215c7e13",
+      "reason": "Nova versão do sidecar de R1-J17-eyes-napoleon-selfpossession_1_eyescrop (linha 48): sha256 = recorte 7cdbe3c4…, sourceSha256 = original cf1e0dc8…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "6b6104e1c64dfe764d320497bb39ba85f6688f385be1a22884753dbe4c11cf1e",
+      "reason": "Nova versão do sidecar de R1-J18-eyes-napoleon-reflection_1_eyescrop (linha 49): sha256 = recorte 03d73a95…, sourceSha256 = original 3f27a06e…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "eaefba0796c55daa724934d8c2c04b9221b939d0a12b217b4c6dfe5fc228bc64",
+      "reason": "Nova versão do sidecar de R1-J19-eyes-oppenheimer-anticipation_1_eyescrop (linha 50): sha256 = recorte ae2af2fa…, sourceSha256 = original d07e4cb2…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.correction-2026-10-09.json",
+      "sha256After": "a5405bce92828fb90f8c6f1746dc5a20182e55290860ad792045d457fe0af148",
+      "reason": "Nova versão do sidecar de R1-J20-eyes-oppenheimer-stillness_1_eyescrop (linha 51): sha256 = recorte ec78d5bd…, sourceSha256 = original 37ebe890…, bloco corrections com previousValue/newValue e supersedesSidecar e derivedFrom atualizado para _quarantine-full-face/ (caminho antigo não existe mais)."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.correction-2026-10-09.json",
+      "sha256After": "4a3ed9fca7f92247304b1bedf308ea6cf83d2b66f8ed3eccc1ca0b5ceda4362d",
+      "reason": "Nova versão do sidecar de R1-J21-costume-caesar_belowneck (linha 52): sha256 = recorte afb1767a…, sourceSha256 = original 4f66bb17…, bloco corrections com previousValue/newValue e supersedesSidecar."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J22-costume-genghis_belowneck.correction-2026-10-09.json",
+      "sha256After": "7d19b62008e57626c73fc37ac994ff73f238a9b07ab238d8d753f5210c38e8cd",
+      "reason": "Nova versão do sidecar de R1-J22-costume-genghis_belowneck (linha 53): sha256 = recorte 9ec0f577…, sourceSha256 = original d0aefde1…, bloco corrections com previousValue/newValue e supersedesSidecar."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J24-costume-napoleon_belowneck.correction-2026-10-09.json",
+      "sha256After": "1a9d9dea05d449e08697af5859d321e98c48b73a67b15f69351d3896b871ff89",
+      "reason": "Nova versão do sidecar de R1-J24-costume-napoleon_belowneck (linha 55): sha256 = recorte 4935d92b…, sourceSha256 = original e48b7e86…, bloco corrections com previousValue/newValue e supersedesSidecar."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.correction-2026-10-09.json",
+      "sha256After": "6a25bbeb98f0b09528da2ed472a327095e604071c0554ad8ccfdd2d8a333b043",
+      "reason": "Nova versão do sidecar de R1-J25-costume-oppenheimer_belowneck (linha 56): sha256 = recorte 0e2cbb6f…, sourceSha256 = original e46baa1d…, bloco corrections com previousValue/newValue e supersedesSidecar."
+    }
+  ],
+  "verification": [
+    "sha256sum: cada sha256 citado nas linhas 41-53 e 55-56 bate com o arquivo original (assert no script). Cada recorte tem sha256 diferente, registrado na linha nova.",
+    "Linhas 41-51 (recortes de olhos J11-J20): os originais estão em 07_generations/originals/_quarantine-full-face/ (movidos com git mv na decisão de rosto zero). Os sidecars antigos ainda apontam o caminho anterior; a linha nova e o sidecar de correção usam o caminho atual. Os originais têm nota de 'nunca em tela nem em prompt'.",
+    "git diff --numstat de asset-registry.csv: 32 inserções e 0 remoções contra o HEAD (2 da J23 + 30 deste lote). Contagem de colunas: 264 linhas de 8 + 43 legadas de 6.",
+    "Os 15 sidecars originais conferidos depois: sha256 inalterado.",
+    "manage.py validate (raiz do repositório): status ok, errors []; 4 warnings preexistentes, não relacionados ('shared skill changed since linking': kling-cli, film-character-continuity, film-dialogue-localization, film-editing-qc)."
+  ],
+  "pendingDecisions": [
+    "Ferramentas que leem o registro devem preferir a linha de correção mais recente quando o asset_id se repetir (16 recortes R1 agora aparecem 2 vezes).",
+    "Commit: os arquivos novos e o asset-registry ainda não foram commitados. Fica para o dono do repositório."
+  ],
+  "canonicalStateChanged": true,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

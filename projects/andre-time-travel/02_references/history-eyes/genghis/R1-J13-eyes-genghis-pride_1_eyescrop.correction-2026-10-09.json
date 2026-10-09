@@ -1,0 +1,50 @@
+{
+  "job": "R1-J13-eyes-genghis-pride",
+  "generationId": "AaMBux3FwDh6QzgMBk-rXoVICdacDPK2t9Ph-Vbje--Xtd1_pNXuqQ2jlVgXkBMPOutcXBE4",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Man in his sixties from the Mongolian steppe, narrow dark-brown eyes with epicanthic folds, weathered sun-lined skin, grey-streaked brows. Expression: hard unyielding pride, a proud direct stare. Warm firelight from the right inside a dim felt tent.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "872223aad6da64c37e2d3d24df102a7dda14966a2f706f7cd4560cf62e4ad74a",
+  "note": "eyes-only strip 4:1; genghis; genghis-pride",
+  "created": "2026-10-09T07:56:42-03:00",
+  "derivedFrom": "07_generations/originals/_quarantine-full-face/R1-J13-eyes-genghis-pride_1.png",
+  "cropFractions": [
+    0.178,
+    0,
+    0.77,
+    0.7
+  ],
+  "purpose": "eyes-only crop (brow to just below lower lids), ears/nose removed",
+  "sourceSha256": "0eab8e9e5c0cae517459d214a3bbad9392c03ec8cc7a0bea341307ce8ce3e3d1",
+  "corrections": [
+    {
+      "at": "2026-10-09",
+      "by": "producer (bot Filme · Produção e Créditos 9bfe6c7d)",
+      "field": "sha256",
+      "previousValue": "0eab8e9e5c0cae517459d214a3bbad9392c03ec8cc7a0bea341307ce8ce3e3d1",
+      "newValue": "872223aad6da64c37e2d3d24df102a7dda14966a2f706f7cd4560cf62e4ad74a",
+      "reason": "O valor anterior é o sha256 do original derivedFrom, não do recorte. Conferido com sha256sum.",
+      "supersedesSidecar": {
+        "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.json",
+        "sha256": "86cb20b6cc7ed928cb14f901604db5c865d521cb9eb4b867d7295a410bf1e856",
+        "preserved": true,
+        "whyNotEditedInPlace": "Sidecars entregues são preservados (docs/LOCAL_AGENT_HANDOFF.md: alterações de conteúdo criam nova versão); o sidecar original pode constar em reports/workflow-v1/originals-before.json."
+      }
+    },
+    {
+      "at": "2026-10-09",
+      "field": "derivedFrom",
+      "previousValue": "07_generations/originals/R1-J13-eyes-genghis-pride_1.png",
+      "newValue": "07_generations/originals/_quarantine-full-face/R1-J13-eyes-genghis-pride_1.png",
+      "reason": "Original movido para _quarantine-full-face/ (git mv, decisão de 2026-10-09); mesmo sha256."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor+qc",
+  "assignment": "Triagem quadro a quadro (somente leitura) de todo o material gerado (piloto, keyframes, capítulo Galileu, plates de era, recortes de olhos, referências) contra a NEW CREATIVE DIRECTION de 2026-10-09 12:35 (personagens de costas e desfocados à mesa enquanto Andre fala + imagens de legado/repercussão): SERVE / REAPROVEITAR / REFAZER.",
+  "ownedPaths": [
+    "projects/andre-time-travel/08_edit/reviews/2026-10-09-revisao-nova-direcao/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-editor-qc-revisao-nova-direcao.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "ac8790e727623a00510a424ea055aadbbae08e0ad42792303062c40398fdbcc2"
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256Before": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/bindings.json",
+      "sha256Before": "b2d490ab7ff6c137fff9f2a522f94d3956f002c57e1f0fa9307c184d8c8d6327"
+    },
+    {
+      "path": "shared/templates/agent-handoff.json",
+      "sha256Before": "7c12a5df456ff7689f8818e80017e65b68f9fa5c762cba5f1d870d3175c8bd36"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/normalized/galileo-en-v1/build-log.json",
+      "sha256Before": "2a7dfedaaf6e7c090cd3a93264d63faf0c9b9210b0d12c0fdc13b34ae68da053"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v1.mp4",
+      "sha256Before": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-09-revisao-nova-direcao/review.csv",
+      "sha256After": "15e0d84b692e9cd3c8c424fc927dee83c772b9989e24f87e46ed1ebaa67f8da9",
+      "reason": "Arquivo novo: parecer por arquivo (234 linhas; colunas caminho,tipo,timecode_ou_frame,classificacao,ajuste,motivo)."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-09-revisao-nova-direcao/review.md",
+      "sha256After": "a36b86115e7e57330d4d4e3831b92db1228dc81ab5d2dada7436f36a61c6f00e",
+      "reason": "Arquivo novo: resumo com contagens por classe, achados e lacunas (planos de costas/desfocados, figurino de costas, legado/repercussão)."
+    }
+  ],
+  "verification": [
+    "Vídeos: 9 originais únicos extraídos a 2 fps (mosaicos com timecode) em /tmp da máquina; detecção de cena (0,2) sem cortes internos; preview de 42 s a 1 fps com cortes em 4/14/18/21,5/25,5/29,5/33,5/38,5 s, conferidos com build-log.json (E01–E09).",
+    "Imagens: 154 imagens únicas (SHA-256) vistas uma a uma; cópias idênticas herdam o parecer; topos dos figurinos ampliados para checar a regra de zero rosto.",
+    "Contagem CSV: SERVE 65, REAPROVEITAR 160, REFAZER 9 (234 linhas). Únicos: imagens SERVE 45 / REAPROVEITAR 100 / REFAZER 9; vídeos (9 originais + 9 normalizados + preview) todos REAPROVEITAR.",
+    "Integridade: sha256sum -c dos 253 arquivos de mídia de 02_references/06_pilot/07_generations/08_edit (lista feita antes da revisão) passou depois da revisão; nenhum arquivo existente foi modificado por este agente.",
+    "Fora do escopo: 09_delivery/posters, cartões 05_storyboard/preproduction-atlas-v*, evidências de 08_edit/reviews/holistic-staging-v1."
+  ],
+  "pendingDecisions": [
+    "Produtor: plano de regeneração com custo por take para os planos de costas e desfocados (OTS + geral por capítulo, 0/5 existem hoje) e para as imagens de legado/repercussão (0 existem); nenhum job pago sem aprovação explícita de Andre.",
+    "Historiador/continuidade: referências de figurino vistas de costas para os 5 personagens (todas as atuais são frontais) e conteúdo de legado/repercussão com fontes.",
+    "Andre: confirmar R3-oppenheimer-speaking-o1 (nuca desfocada em primeiro plano) como gramática-modelo dos novos OTS.",
+    "Editor: remontar o preview de Galileu (T13) trocando parte dos olhos (E03/E05) e da mão repetida (E07/E09) por plano de costas + legado; remover marcas KlingAI de G-01/G-02; escolher uma única linhagem de olhos de César.",
+    "Antes de usar em prompt: cortar o topo de R2-wardrobe genghis/galileo/napoleon/oppenheimer (boca/queixo visíveis)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

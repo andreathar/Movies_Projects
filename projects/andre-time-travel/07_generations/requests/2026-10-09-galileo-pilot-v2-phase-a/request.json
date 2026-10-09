@@ -1,0 +1,22 @@
+[
+  {
+    "job": "G-REF-galileo-pilot-v2",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "auth": "D16-galileo-pilot-v2-phase-a",
+    "note": "Fase A piloto Galileu v2: placa da disposição sobre o ombro (sem Andre); 1 imagem; 20 cr estimados",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": "1"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "02_references/inserts/R2-J12-insert-galileo_1.jpg",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9. A small domestic oak dining table about 120 cm long and 75 cm deep — exactly the table of image 1: pale wide planks with length-wise grain, the faint ring stain in the middle of the tabletop, the chipped near corner. Camera at seated eye height, locked, standard 50 mm lens, placed BEHIND and slightly to the right of a man seated on the near long side. In the RIGHT third of the frame, very close to the lens and strongly OUT OF FOCUS: only his right shoulder, upper arm and sleeve, and his forearm resting on the near edge of the table — dark charcoal wool doublet and ink-stained white linen cuff exactly as in images 2 and 3. His entire head, neck, ear, hair, beard and chin are OUTSIDE the frame beyond the right and top edges — no face, no profile, no silhouette of a head, no shadow or reflection of a face. Across the 75 cm tabletop, on the far long side, an EMPTY wooden chair faces the camera, in sharp focus, in the centre-left of the frame. Room and light from image 4: Arcetri 1634, cool dusk through a stone window from the left, soft and out of focus. No other people, no readable text or writing, no watermark, no wide-angle distortion. Use image 5 ONLY as a guide for camera position, lens and the scale/blur of the foreground shoulder; do not copy any person, face, clothing, room or light from image 5. The foreground man is completely still except for a barely visible breath."
+  }
+]

@@ -1,0 +1,38 @@
+test_all_evidence_markers_fail_closed (test_kling_batch.ProducerTests.test_all_evidence_markers_fail_closed) ... ok
+test_cli_submit_only_requires_single_job_and_resume_has_no_spec (test_kling_batch.ProducerTests.test_cli_submit_only_requires_single_job_and_resume_has_no_spec) ... usage: runner [-h] [--film FILM] [--spec SPEC] [--only ONLY]
+              [--submit-only | --resume JOB]
+runner: error: --submit-only requires exactly one selected job
+ok
+test_completed_resume_preserves_default_url_mp4_and_hash (test_kling_batch.ProducerTests.test_completed_resume_preserves_default_url_mp4_and_hash) ... ok
+test_crash_between_receipt_and_ledger_is_recoverable (test_kling_batch.ProducerTests.test_crash_between_receipt_and_ledger_is_recoverable) ... ok
+test_different_existing_original_is_never_overwritten (test_kling_batch.ProducerTests.test_different_existing_original_is_never_overwritten) ... ok
+test_existing_prompt_is_not_overwritten (test_kling_batch.ProducerTests.test_existing_prompt_is_not_overwritten) ... ok
+test_intent_only_recovery_does_not_claim_delayed_charge (test_kling_batch.ProducerTests.test_intent_only_recovery_does_not_claim_delayed_charge) ... ok
+test_legacy_batch_interface_reconciles_before_poll (test_kling_batch.ProducerTests.test_legacy_batch_interface_reconciles_before_poll) ... ok
+test_network_exception_records_unknown_charge (test_kling_batch.ProducerTests.test_network_exception_records_unknown_charge) ... ok
+test_post_submit_unavailable_balance_has_unknown_delta_and_zero_is_retained (test_kling_batch.ProducerTests.test_post_submit_unavailable_balance_has_unknown_delta_and_zero_is_retained) ... ok
+test_pre_submit_account_snapshot_is_durable_before_network (test_kling_batch.ProducerTests.test_pre_submit_account_snapshot_is_durable_before_network) ... ok
+test_reconciliation_preserves_existing_ledger_bytes (test_kling_batch.ProducerTests.test_reconciliation_preserves_existing_ledger_bytes) ... ok
+test_resume_live_flat_response_running_and_completed (test_kling_batch.ProducerTests.test_resume_live_flat_response_running_and_completed) ... ok
+test_run_preserves_raw_subprocess_response (test_kling_batch.ProducerTests.test_run_preserves_raw_subprocess_response) ... ok
+test_submit_marker_blocks_before_account_or_network (test_kling_batch.ProducerTests.test_submit_marker_blocks_before_account_or_network) ... ok
+test_submit_only_archives_intent_then_reconciles_without_query (test_kling_batch.ProducerTests.test_submit_only_archives_intent_then_reconciles_without_query) ... ok
+test_unavailable_balance_never_submits (test_kling_batch.ProducerTests.test_unavailable_balance_never_submits) ... ok
+test_unknown_id_failures_still_record_charge_once (test_kling_batch.ProducerTests.test_unknown_id_failures_still_record_charge_once) ... ok
+test_status_reports_real_state_without_writes (test_manage.WorkspaceValidationTests.test_status_reports_real_state_without_writes) ... ok
+test_validate_checks_workspace_integrity (test_manage.WorkspaceValidationTests.test_validate_checks_workspace_integrity) ... ok
+test_new_and_changed_images_are_pending_until_recorded (test_review_sweep.ReviewSweepTests.test_new_and_changed_images_are_pending_until_recorded) ... ok
+test_accidental_inherited_approval_is_rejected (test_workflow.WorkflowTests.test_accidental_inherited_approval_is_rejected) ... ok
+test_dialogue_cannot_be_silently_forked_inside_atlas_source (test_workflow.WorkflowTests.test_dialogue_cannot_be_silently_forked_inside_atlas_source) ... ok
+test_inventory_detects_changed_missing_and_added_files_without_writing (test_workflow.WorkflowTests.test_inventory_detects_changed_missing_and_added_files_without_writing) ... ok
+test_local_direction_and_canonical_dialogue_edits_reach_render_inputs (test_workflow.WorkflowTests.test_local_direction_and_canonical_dialogue_edits_reach_render_inputs) ... ok
+test_missing_reference_and_stale_line_mapping_fail_before_rendering (test_workflow.WorkflowTests.test_missing_reference_and_stale_line_mapping_fail_before_rendering) ... ok
+test_new_episode_does_not_inherit_previous_approval_cost_or_layout (test_workflow.WorkflowTests.test_new_episode_does_not_inherit_previous_approval_cost_or_layout) ... ok
+test_paths_cannot_escape_workspace (test_workflow.WorkflowTests.test_paths_cannot_escape_workspace) ... ok
+test_script_and_csv_cannot_silently_diverge (test_workflow.WorkflowTests.test_script_and_csv_cannot_silently_diverge) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 1.800s
+
+OK
+{"status": "RUNNING"}

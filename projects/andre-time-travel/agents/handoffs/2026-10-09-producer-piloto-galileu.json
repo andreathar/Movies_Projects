@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Delegado de envio pago e ledgers (bot Filme · Produção e Créditos 9bfe6c7d). Especificar o piloto do Galileu (G-REF + G-KF + G-X01 sobre o ombro de 3 a 5 s + G-X02 fala) para aprovação do Andre, referenciando a auditoria holistic-staging-v1 (F01/F02/F04). Mesa doméstica de ~120x75 cm, conversa atravessando os 75 cm, ombro do Galileu desfocado à direita, Andre em foco à esquerda, cabeça histórica fora do quadro. Só especificação; nenhum job pago.",
+  "ownedPaths": [
+    "projects/andre-time-travel/07_generations/plans/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "d71d29f301b13fbcecd2d4c562e0b01ba3a54f862e2e56a8576f52585b65eb05",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256Before": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "ac8790e727623a00510a424ea055aadbbae08e0ad42792303062c40398fdbcc2",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "d2a6f1df12ddeccbcc952907f8388bc87c6414957d7c5d47625e47f5f50102ad",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/findings.json",
+      "sha256Before": "8ec734e4032ac8fa6db73af554b77fed456c7e0784b829a9c535874280a7b85b",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1/DIRECTOR_HANDOFF.md",
+      "sha256Before": "e3549098919d023fca442b46f6f2a85650a25b0bb281c1517a3b62fb36297839",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity.md",
+      "sha256Before": "907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+      "sha256Before": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/prompt-playbook-kling.md",
+      "sha256Before": "6d1619dd50dafb23043d73d7b018ed7390c2975223bf77d938777f7b38815af8",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao.md",
+      "sha256Before": "41cfddcc9d593c6c9d70fde10c4d32ee1b71ffc657a742538b324b127b4fe2ad",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/G-02-andre-GL02.prompt.txt",
+      "sha256Before": "9ec67ac6014b86a88988772f47d7b6ebe0ffdb5022a9b5b1cd58fdf9080287d9",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "sha256Before": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+      "sha256Before": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "sha256Before": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "sha256Before": "aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J12-insert-galileo_1.jpg",
+      "sha256Before": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+      "note": "lido como fonte/referência; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu.md",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu.md",
+      "sha256After": "26b30321f1588e5b9d1c0bd540e41f1f34f4900875dac573bbb8a1d378b765a9",
+      "reason": "Especificação do piloto: disposição fixa, 4 itens com modelo/duração/prompt/referências/Element/custo/critério de aceite, total por duração 3/4/5 s, fases de aprovação, dúvidas."
+    }
+  ],
+  "verification": [
+    "Auditoria localizada e referenciada sem duplicar: 08_edit/reviews/holistic-staging-v1 (findings F01-F04, DIRECTOR_HANDOFF itens 1-3), STATE.md 'Holistic staging audit', session-log nextCheckpoint.",
+    "Preços conferidos com o ledger e as respostas: G-02-andre-GL02 creditsConsumed=108 (12 s, v3_0 com áudio e Element); R3-session-* = 20 (gemini-3-pro); LR3-*-o1 = 1; LPILOT-03 = 30 por 5 s.",
+    "Durações aceitas pelo v3_0 conferidas no stderr da CLI em responses/G-02-andre-GL02.submit.json: 3 a 15 s. kling-image-o1 aceita até 10 imagens de referência (logs/kling-discovery-2026-10-09/who_am_i.json).",
+    "Totais: 172/178/184 cr para G-X01 de 3/4/5 s; pior caso 236/250/264; variante enxuta 150/156/162.",
+    "sha256 de todos os baseFiles conferido de novo depois da escrita: sem alteração. Ledgers e registro intocados.",
+    "Limitação: as imagens de referência não foram inspecionadas visualmente neste passo (o acesso local recusou a leitura de imagem); vale a aceitação do registro."
+  ],
+  "pendingDecisions": [
+    "Andre: aprovar a especificação e cada fase (A: G-REF+G-KF ≤46 cr; B: G-X01 18-30 cr; C: G-X02 108 cr), cada job com OK explícito.",
+    "Andre/Direção: aprovar a mesa de 120x75x75 cm como medida canônica (hoje é proposta F04).",
+    "Andre: duração do G-X01 (3, 4 ou 5 s; sugestão 5 s).",
+    "Andre/Direção: fala do piloto: G-L02 (12 s, 108) ou outra.",
+    "Personagens/Edição: conferir J23 visualmente; bíblia de costas pendente.",
+    "Responsável pelo registro: divergência de sha256 de R1-J23 entre o texto de origem no asset-registry (d2824def…) e o arquivo atual (aa1a68bd…)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

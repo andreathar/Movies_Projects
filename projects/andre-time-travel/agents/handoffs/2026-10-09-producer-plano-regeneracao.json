@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Delegado de envio pago e ledgers (bot Filme · Produção e Créditos 9bfe6c7d). Plano de regeneração com custo por take para a NEW CREATIVE DIRECTION (2026-10-09 12:35: personalidades de costas e desfocadas à mesa + imagens de legado/repercussão), com saldo Kling ao vivo. Somente leitura + consulta de saldo; nenhum job pago.",
+  "ownedPaths": [
+    "projects/andre-time-travel/07_generations/plans/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "d71d29f301b13fbcecd2d4c562e0b01ba3a54f862e2e56a8576f52585b65eb05",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256Before": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "ac8790e727623a00510a424ea055aadbbae08e0ad42792303062c40398fdbcc2",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256Before": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/prompt-playbook-kling.md",
+      "sha256Before": "6d1619dd50dafb23043d73d7b018ed7390c2975223bf77d938777f7b38815af8",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/budget-and-envelope-resume-v3.md",
+      "sha256Before": "37776801486872a45af11231913b397b53db46ad5d3ade7c5cbb1d9c257a1db7",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/timelines/galileo-en-v1.json",
+      "sha256Before": "777ef59e547d75bf922c0a6ad1801e6e1799e525590e6272d58c1d832eb71e1d",
+      "note": "lido como fonte; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao.md",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes.csv",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao.md",
+      "sha256After": "41cfddcc9d593c6c9d70fde10c4d32ee1b71ffc657a742538b324b127b4fe2ad",
+      "reason": "Plano novo: saldo, preços observados com base no ledger, takes por capítulo, subtotais/total, comparação com saldo, seção a descontar após triagem, premissas e lacunas."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes.csv",
+      "sha256After": "e6ef4da89632dcaa2fb52d23b3d8dd42573300c793af25832437bb73588a05fa",
+      "reason": "Lista de takes (59 linhas) legível por máquina, com modelo, duração, cálculo e créditos."
+    }
+  ],
+  "verification": [
+    "Saldo Kling ao vivo, somente leitura: `kling account -q --skill-name kling-cli --skill-version 0.2.0` em 2026-10-09T12:37:08-03:00 → SSVIP, availableRemainCredits=5813 (igual a balance_after de LG-02-andre-GL02).",
+    "Preços conferidos com creditsConsumed em 07_generations/responses (G-01-insert-galileo-v2=80, G-02-andre-GL02=108, R3-session-*=20) e com as linhas do credit-ledger.csv.",
+    "Subtotais calculados com Python a partir do CSV: base 2961; pior caso 3617; reserva de retake 30% = 888; desconto máximo após triagem = 399.",
+    "sha256 dos arquivos-fonte lidos (baseFiles) foi conferido de novo depois da escrita: sem alteração. credit-ledger.csv e asset-registry.csv intocados.",
+    "sha256 dos arquivos novos conferido depois da escrita no pop-os, igual ao arquivo gerado."
+  ],
+  "pendingDecisions": [
+    "Andre: aprovar ou ajustar o plano (estrutura de 8 eventos por capítulo, legado animado no Kling ou localmente) e cada job pago.",
+    "Andre: autorizar um piloto do plano de costas/OTS antes de escalar (sugestão: G-REF + G-KF + G-X02, ~154 cr). O teto do Galileu (900/810) não comporta o plano novo sem novo escopo.",
+    "Edição e Qualidade: triagem quadro a quadro para fechar a seção 'a descontar' (até -399).",
+    "Personagens Históricos: bíblias de costas e conteúdo/fonte das imagens de legado; regra para estátuas/retratos/fotos de época com rosto; tratamento de Hiroshima/Nagasaki.",
+    "Direção: confirmar a abertura com as 5 silhuetas de costas e o payoff OUT-02.",
+    "Pendência que já existia: job G-01 de 80 cr com ID perdido (não reenviar)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

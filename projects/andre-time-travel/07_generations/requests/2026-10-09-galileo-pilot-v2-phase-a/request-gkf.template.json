@@ -1,0 +1,62 @@
+[
+  {
+    "job": "G-KF-M-galileo-pilot-v2-a1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "D16-galileo-pilot-v2-phase-a",
+    "note": "Fase A: keyframe mestre/fala, tentativa 1 de até 2; 1 cr estimado",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "<G-REF-accepted: caminho do download aceito de G-REF-galileo-pilot-v2, com sha256 conferido>",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. Keep EXACTLY the composition, camera position, lens, table, out-of-focus shoulder and room of 图片2; change nothing in the right third. Place <<<323525046658711>>> in the EMPTY chair across the table: the man's face must be EXACTLY the face in 图片1 — same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties — no beautification, no different actor. He sits on the far long side, about 75 cm away across the same tabletop, in the centre-left of the frame, IN SHARP FOCUS, forearms resting on his edge of the table, body and gaze turned toward camera-RIGHT at the man whose shoulder is in the foreground. Wardrobe exactly as in 图片1: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of 图片3: pale wide planks, faint ring stain between the two men. Light from 图片4, soft key from camera-left. The foreground man's head, neck and face stay completely OUTSIDE the frame; his shoulder and sleeve stay soft and out of focus. Exactly two people. No face reflections, no text, no watermark. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth. Match the camera height, lens and foreground-shoulder framing of 图片5, but keep the head of the foreground man fully outside the frame and keep everything else from 图片2/图片3/图片4."
+  },
+  {
+    "job": "G-KF-M-galileo-pilot-v2-a2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "D16-galileo-pilot-v2-phase-a",
+    "note": "Fase A: keyframe mestre/fala, tentativa 2 (só se a1 for rejeitada); 1 cr estimado",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "<G-REF-accepted: caminho do download aceito de G-REF-galileo-pilot-v2, com sha256 conferido>",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg"
+    ],
+    "prompt": "Photorealistic cinematic film still, 16:9, 2K. Keep EXACTLY the composition, camera position, lens, table, out-of-focus shoulder and room of 图片2; change nothing in the right third. Place <<<323525046658711>>> in the EMPTY chair across the table: the man's face must be EXACTLY the face in 图片1 — same face shape, nose, brow, eye colour, short textured dark-brown hair, light stubble, mid-forties — no beautification, no different actor. He sits on the far long side, about 75 cm away across the same tabletop, in the centre-left of the frame, IN SHARP FOCUS, forearms resting on his edge of the table, body and gaze turned toward camera-RIGHT at the man whose shoulder is in the foreground. Wardrobe exactly as in 图片1: mid-grey pinstripe suit jacket open over a white finely striped shirt, open collar, no tie. The table is the oak table of 图片3: pale wide planks, faint ring stain between the two men. Light from 图片4, soft key from camera-left. The foreground man's head, neck and face stay completely OUTSIDE the frame; his shoulder and sleeve stay soft and out of focus. Exactly two people. No face reflections, no text, no watermark. Expression: attentive, mid-thought, lips slightly parted, neutral pre-speech mouth. Match the camera height, lens and foreground-shoulder framing of 图片5, but keep the head of the foreground man fully outside the frame and keep everything else from 图片2/图片3/图片4."
+  },
+  {
+    "job": "G-KF-L-galileo-pilot-v2-a1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "auth": "D16-galileo-pilot-v2-phase-a",
+    "note": "Fase A: keyframe de escuta derivado do mestre aceito, 1 tentativa; 1 cr estimado",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "<G-KF-M-accepted: caminho do download aceito de G-KF-M, com sha256 conferido>",
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+    ],
+    "prompt": "Edit 图片1 minimally. Keep EXACTLY the same composition, camera, table, foreground shoulder, light and the face of <<<323525046658711>>> (identity as in 图片2). Change ONLY his expression: listening, mouth closed, calm steady attention, a hint of weight in the eyes. Foreground man's head stays outside the frame."
+  }
+]

@@ -1,0 +1,60 @@
+chapter,take_id,descricao,modelo,duracao_s,calculo,creditos,reaproveitavel_candidato,notas
+ABERTURA,IN-KF,"Keyframes o1 com Element (3 quadros x 2 tentativas): mesa presente, Andre fala, match-cut",O1,,O1x6=6,6,,
+ABERTURA,IN-01,"Mesa do presente, mao do Andre entra (insert sem rosto)",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,R2-J10..J14 / R1-J32 plate como referencia (custo 0),
+ABERTURA,IN-02,Andre fala IN-L01 (5.83s) a mesa; cadeiras opostas com 5 silhuetas de costas desfocadas (a confirmar com Direcao),V3A,8,V3Ax8=72,72,,
+ABERTURA,IN-03,Match-cut pela mesa para Roma (sem rosto),TURBO,5,TURBOx5=40,40,keyframe = R1-J27 plate Roma (0 cr),
+CESAR,C-REF,"Biblia: figura de COSTAS, corpo/ombros/nuca, figurino R1-J2x (2 variantes p/ escolha)",PRO,,PROx2=40,40,R1-J21..J25 figurino abaixo do pescoco como referencia,
+CESAR,C-KF,"Keyframes OTS o1 + Element (3 quadros x 2 tentativas): estabelecimento, fala, escuta",O1,,O1x6=6,6,R3 KF-<era>-speaking/listening + plates R1-J27..J31 como image_1/3 (0 cr),
+CESAR,C-X01,"Estabelecimento: figura de costas desfocada em 1o plano, Andre do outro lado ouve a pergunta L01 (off)",V3S,5,V3Sx5=30,30,,
+CESAR,C-X02,Andre fala C-L02 (8.81s) sobre o ombro desfocado da figura,V3A,11,V3Ax11=99,99,,
+CESAR,C-X03,"LEGADO 1 - o que ele se tornou (imagem intima, sem rosto da figura) still + animacao curta",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+CESAR,C-X04,"Figura de costas faz a pergunta L03 (leve movimento de ombro/cabeca, desfocada); Andre escuta ao fundo",V3S,5,V3Sx5=30,30,,
+CESAR,C-X05,Andre fala C-L04 (6.05s) OTS,V3A,9,V3Ax9=81,81,,
+CESAR,C-X06,"LEGADO 2 - como falam dele hoje (sala de aula, livro, praca, debate; sem rosto)",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+CESAR,C-X07,LEGADO 3 - repercussao dos atos (lugar/objeto/consequencia; sem rosto),PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+CESAR,C-X08,"Fecho: figura imovel de costas, Andre em silencio; corte pela mesa",V3S,5,V3Sx5=30,30,,
+GENGHIS,K-REF,"Biblia: figura de COSTAS, corpo/ombros/nuca, figurino R1-J2x (2 variantes p/ escolha)",PRO,,PROx2=40,40,R1-J21..J25 figurino abaixo do pescoco como referencia,
+GENGHIS,K-KF,"Keyframes OTS o1 + Element (3 quadros x 2 tentativas): estabelecimento, fala, escuta",O1,,O1x6=6,6,R3 KF-<era>-speaking/listening + plates R1-J27..J31 como image_1/3 (0 cr),
+GENGHIS,K-X01,"Estabelecimento: figura de costas desfocada em 1o plano, Andre do outro lado ouve a pergunta L01 (off)",V3S,5,V3Sx5=30,30,,
+GENGHIS,K-X02,Andre fala K-L02 (9.22s) sobre o ombro desfocado da figura,V3A,12,V3Ax12=108,108,,
+GENGHIS,K-X03,"LEGADO 1 - o que ele se tornou (imagem intima, sem rosto da figura) still + animacao curta",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+GENGHIS,K-X04,"Figura de costas faz a pergunta L03 (leve movimento de ombro/cabeca, desfocada); Andre escuta ao fundo",V3S,5,V3Sx5=30,30,,
+GENGHIS,K-X05,Andre fala K-L04 (6.67s) OTS,V3A,9,V3Ax9=81,81,,
+GENGHIS,K-X06,"LEGADO 2 - como falam dele hoje (sala de aula, livro, praca, debate; sem rosto)",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+GENGHIS,K-X07,LEGADO 3 - repercussao dos atos (lugar/objeto/consequencia; sem rosto),PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+GENGHIS,K-X08,"Fecho: figura imovel de costas, Andre em silencio; corte pela mesa",V3S,5,V3Sx5=30,30,,
+GALILEU,G-REF,"Biblia: figura de COSTAS, corpo/ombros/nuca, figurino R1-J2x (2 variantes p/ escolha)",PRO,,PROx2=40,40,R1-J21..J25 figurino abaixo do pescoco como referencia,
+GALILEU,G-KF,"Keyframes OTS o1 + Element (3 quadros x 2 tentativas): estabelecimento, fala, escuta",O1,,O1x6=6,6,R3 KF-<era>-speaking/listening + plates R1-J27..J31 como image_1/3 (0 cr),
+GALILEU,G-X01,"Estabelecimento: figura de costas desfocada em 1o plano, Andre do outro lado ouve a pergunta L01 (off)",V3S,5,V3Sx5=30,30,G-01-insert-galileo-v2_1 (insert mao/papel 10 s) como abertura alternativa,
+GALILEU,G-X02,Andre fala G-L02 (9.38s) sobre o ombro desfocado da figura,V3A,12,V3Ax12=108,108,"G-02-andre-GL02_1 (108 cr, fala G-L02 frontal SEM a figura) - so se a triagem aceitar plano sem a figura",
+GALILEU,G-X03,"LEGADO 1 - o que ele se tornou (imagem intima, sem rosto da figura) still + animacao curta",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+GALILEU,G-X04,"Figura de costas faz a pergunta L03 (leve movimento de ombro/cabeca, desfocada); Andre escuta ao fundo",V3S,5,V3Sx5=30,30,PILOT-01-galileo-listening-locked_1 como contraplano de escuta,
+GALILEU,G-X05,Andre fala G-L04 (8.62s) OTS,V3A,11,V3Ax11=99,99,PILOT-04-galileo-speech-native_1 (G-L04; palavras duvidosas p/ ADR) - idem,
+GALILEU,G-X06,"LEGADO 2 - como falam dele hoje (sala de aula, livro, praca, debate; sem rosto)",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+GALILEU,G-X07,LEGADO 3 - repercussao dos atos (lugar/objeto/consequencia; sem rosto),PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+GALILEU,G-X08,"Fecho: figura imovel de costas, Andre em silencio; corte pela mesa",V3S,5,V3Sx5=30,30,PILOT-02-galileo-gentle-turn_1 como fecho,
+NAPOLEAO,N-REF,"Biblia: figura de COSTAS, corpo/ombros/nuca, figurino R1-J2x (2 variantes p/ escolha)",PRO,,PROx2=40,40,R1-J21..J25 figurino abaixo do pescoco como referencia,
+NAPOLEAO,N-KF,"Keyframes OTS o1 + Element (3 quadros x 2 tentativas): estabelecimento, fala, escuta",O1,,O1x6=6,6,R3 KF-<era>-speaking/listening + plates R1-J27..J31 como image_1/3 (0 cr),
+NAPOLEAO,N-X01,"Estabelecimento: figura de costas desfocada em 1o plano, Andre do outro lado ouve a pergunta L01 (off)",V3S,5,V3Sx5=30,30,,
+NAPOLEAO,N-X02,Andre fala N-L02 (8.52s) sobre o ombro desfocado da figura,V3A,11,V3Ax11=99,99,,
+NAPOLEAO,N-X03,"LEGADO 1 - o que ele se tornou (imagem intima, sem rosto da figura) still + animacao curta",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+NAPOLEAO,N-X04,"Figura de costas faz a pergunta L03 (leve movimento de ombro/cabeca, desfocada); Andre escuta ao fundo",V3S,7,V3Sx7=42,42,,"N-L03 = gancho, 7 s"
+NAPOLEAO,N-X05,Andre fala N-L04 (3.1s) OTS,V3A,6,V3Ax6=54,54,,
+NAPOLEAO,N-X06,"LEGADO 2 - como falam dele hoje (sala de aula, livro, praca, debate; sem rosto)",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+NAPOLEAO,N-X07,LEGADO 3 - repercussao dos atos (lugar/objeto/consequencia; sem rosto),PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+NAPOLEAO,N-X08,"Fecho: figura imovel de costas, Andre em silencio; corte pela mesa",V3S,5,V3Sx5=30,30,,
+OPPENHEIMER,O-REF,"Biblia: figura de COSTAS, corpo/ombros/nuca, figurino R1-J2x (2 variantes p/ escolha)",PRO,,PROx2=40,40,R1-J21..J25 figurino abaixo do pescoco como referencia,
+OPPENHEIMER,O-KF,"Keyframes OTS o1 + Element (3 quadros x 2 tentativas): estabelecimento, fala, escuta",O1,,O1x6=6,6,R3 KF-<era>-speaking/listening + plates R1-J27..J31 como image_1/3 (0 cr),
+OPPENHEIMER,O-X01,"Estabelecimento: figura de costas desfocada em 1o plano, Andre do outro lado ouve a pergunta L01 (off)",V3S,5,V3Sx5=30,30,,
+OPPENHEIMER,O-X02,Andre fala O-L02 (11.86s) sobre o ombro desfocado da figura,V3A,14,V3Ax14=126,126,,
+OPPENHEIMER,O-X03,"LEGADO 1 - o que ele se tornou (imagem intima, sem rosto da figura) still + animacao curta",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+OPPENHEIMER,O-X04,"Figura de costas faz a pergunta L03 (leve movimento de ombro/cabeca, desfocada); Andre escuta ao fundo",V3S,5,V3Sx5=30,30,,
+OPPENHEIMER,O-X05,Andre fala O-L04 (3.43s) OTS + >=4 s de silencio,V3A,8,V3Ax8=72,72,PILOT-05-oppenheimer-speech-OL04_1 (O-L04 8 s com silencio),
+OPPENHEIMER,O-X06,"LEGADO 2 - como falam dele hoje (sala de aula, livro, praca, debate; sem rosto)",PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+OPPENHEIMER,O-X07,LEGADO 3 - repercussao dos atos (lugar/objeto/consequencia; sem rosto),PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,conteudo/fonte pela Historia
+OPPENHEIMER,O-X08,"Fecho: figura imovel de costas, Andre em silencio; corte pela mesa",V3S,5,V3Sx5=30,30,PILOT-03-oppenheimer-expression_1 como fecho,
+FECHAMENTO,OUT-KF,Keyframes o1 com Element (3 quadros x 2 tentativas),O1,,O1x6=6,6,,
+FECHAMENTO,OUT-01,Andre fala OUT-L01 (9.72s) no presente,V3A,12,V3Ax12=108,108,,
+FECHAMENTO,OUT-02,"As 5 figuras de costas desfocadas na mesa longa (payoff ""estavam na mesa""); ref nova + video com Element",PRO + V3S,5,PROx1=20 ; V3Sx5=30,50,,
+FECHAMENTO,OUT-03,LEGADO coletivo - eco das 5 historias hoje (sem rostos),PRO + TURBO,5,PROx1=20 ; TURBOx5=40,60,,
+FECHAMENTO,OUT-04,"Mesa vazia, hold/fade sobre a madeira + creditos",TURBO,5,TURBOx5=40,40,keyframe = R1-J32 plate presente (0 cr),

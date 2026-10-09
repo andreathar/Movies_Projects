@@ -61,11 +61,11 @@ C-L04, K-L04, G-L04 e N-L04 nas bíblias não coincidem com script-en.md/dialogu
 
 **Evidência local:** `snapshots/01_script/dialogue-lines.csv`, `snapshots/03_bibles/scene-bibles/caesar.md`, `snapshots/03_bibles/scene-bibles/genghis.md`, `snapshots/03_bibles/scene-bibles/galileo.md`, `snapshots/03_bibles/scene-bibles/napoleon.md`
 
-### P1 · F06 — Estado operacional não acompanha os artefatos atuais
+### P1 · F06 — Registros parcialmente reconciliados; resumo e matriz ainda desatualizados
 
-Na checagem registrada há 9 vídeos originais únicos e uma prévia de 42 s; manifest tem 5 takes e 0/41 slots mapeados. STATE abre dizendo que ainda não houve vídeo/Element, a matriz mantém referências antigas e recast de Napoleão pendente. T13 está em andamento enquanto T10 segue bloqueada. O diretor está trabalhando durante a auditoria, portanto alguns registros podem estar em atualização.
+Na primeira checagem, às 15:26 UTC, o manifest tinha 5 takes e 0/41 slots mapeados. Durante a auditoria, o diretor atualizou o registro: na checagem de fechamento há 9 takes e os 7 slots de Galileu mapeados, ainda sem aceite final. Essa parte foi resolvida pelo trabalho concorrente do produtor. A abertura de STATE e a matriz de continuidade continuam com referências de etapas antigas. A prévia e a timeline auditadas permanecem byte a byte iguais; os problemas de encenação e de ordem da reação continuam presentes.
 
-**Ação recomendada:** Ao concluir o capítulo, registrar todos os takes reais e suas decisões, mapear slots/timeline, atualizar o resumo vigente e a matriz e registrar explicitamente o escopo das exceções de dependência. Aprovação de identidade, voz, encenação e filme final devem continuar separadas.
+**Ação recomendada:** Preservar a reconciliação já feita; atualizar o resumo vigente e a matriz, sincronizar bíblias e separar aprovação de identidade, voz, encenação e filme final. Não tratar a lacuna inicial de registro como prova de tarefa esquecida.
 
 **Evidência local:** `management-checks.json`, `snapshots/memory/STATE.md`, `snapshots/tasks/board.json`, `snapshots/03_bibles/continuity-matrix.csv`
 
@@ -104,3 +104,7 @@ O diretor segue trabalhando. Este documento é um parecer com snapshots, não um
 ## Verificação de gestão
 
 Workspace válido; 29 testes passaram nesta checagem (a falha de fixture relatada anteriormente já não ocorreu). Permanecem quatro avisos de hashes de skills compartilhadas. Isso não verifica composição, atuação ou montagem. Ledger local registra 348 créditos na etapa Galileu, incluindo 80 do job original sem ID recuperável, e saldo posterior 5813: são registros históricos, não saldo consultado agora. Nenhum job, compra, mensagem externa, alteração de sessão, commit ou publicação foi executado por esta auditoria.
+
+## Fechamento com produção concorrente
+
+Conferência em 2026-10-09T15:34:47.517055+00:00: o produtor já registrou os 9 takes e mapeou os 7 slots de Galileu. Sua revisão local também reconhece que a geometria física não está comprovada e que a reprodução integral ainda está pendente. A prévia e a timeline são idênticas às cópias analisadas. Não atribuir a lacuna inicial de registros a perda de memória; manter os achados visuais, dramáticos e de documentos derivados. Evidência: `snapshots/final-check/` e `management-checks.json`.

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "historian+continuity",
+  "assignment": "NEW CREATIVE DIRECTION (Andre, 2026-10-09 12:35; memory/STATE.md): personalities seated at the table seen from behind and out of focus while Andre speaks, intercut with legacy/repercussion imagery, intimate tone. Create new versioned PROPOSAL bible/continuity files in 03_bibles/ (no overwrite) covering per figure: full-body back framing, focus/blur level, silhouette, period costume with sources, seat/posture continuity, legacy & repercussion content with verifiable sources; plus continuity sheet (seating order, consistency rules).",
+  "ownedPaths": [
+    "projects/andre-time-travel/03_bibles/table-and-continuity-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+    "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v2-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer-v2-proposta.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-historian-bibles-nova-direcao.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer-v2-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/character-andre.md",
+      "sha256Before": "8ca583cf44f546f600370038dc376c1c42a0f5d8fb529e650412a340902f2c5f"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix.csv",
+      "sha256Before": "8a81c5cba52d35391756736c09a5dd4c51b8f43d3c064f788bad86aba0412865"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity.md",
+      "sha256Before": "907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar.md",
+      "sha256Before": "cf01c1abf8acf63a01a9afe4b3096beb41f6dee840fc08b747088582fe91328f"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo.md",
+      "sha256Before": "76126a010e9adb305970bc22927979d1e85b2485c8e0b7b52db56978dd8d4f00"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis.md",
+      "sha256Before": "8c3a56400ed32301e86d39412a169048d78c7af36d516a422b7e08c7140ce042"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon.md",
+      "sha256Before": "c318bdba1065d5b1cc657c7ad0522ec2400291bd184471b9f65c215727c88bc8"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer.md",
+      "sha256Before": "f855d4b6b662bd5b5f23320f55f12dca31c7f29837c07544671de5b8a6782ac3"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity-v2-proposta.md",
+      "sha256After": "6dfce7227859eec4fff0c2718ad0e70fabf83d7e99defdbec1b65247078db9eb",
+      "reason": "New v2 PROPOSAL continuity bible for the back-view/defocus direction: chapter seating (one opposite seat per era), BV-W/BV-O/BV-R shot grammar, blur levels BL-1..3, stricter face-safety rules, legacy-intercut grammar, optional Route A 'chair of centuries' outro. r2 (coordinator follow-up after the local holistic staging audit): added §3A table/seat/camera geometry PROPOSAL (table ~120x75x75 cm, Andre seat (-30,+62), figure seat (+30,-62), all seats ~45 cm, BV-O camera (-15,-155) z115-120 50 mm locked with the historical head fully out of frame, BV-W (-20,-390) z~105 35 mm phase 2, insert at locked D04 lens height); added §0 refreshed continuity summary; Genghis seat raised to ~45 cm (CB-15); flagged producer pilot camera-side wording and 3-vs-4 plank conflict."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2-proposta.csv",
+      "sha256After": "c58aecdddb2a098ee6f7bf76c6450a4bc0f7b5a2fcfc16a58b3bcc9876fa4ae5",
+      "reason": "Machine-readable v2 PROPOSAL continuity matrix (seat, frame position, head-turn cap, blur levels, silhouette identifiers, wardrobe deltas, legacy beats, face risks); approved=false on every row. r2: added columns seat_height_cm, andre_seat_xy_cm, figure_seat_xy_cm, cam_bvo, cam_bvw, table_size_cm (24 columns, 6 rows); frame_position now BV-O head-out-of-frame / BV-W phase 2; Genghis seat ~45 cm stool, 'camera lowered' removed."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v2-proposta.md",
+      "sha256After": "8d5f4a13b409a0a9642b9e63d9ae4218bee6b28519d8d42a0195d77f00e4836a",
+      "reason": "Caesar back-view + legacy PROPOSAL: sella curulis, toga praetexta, Suetonius-sourced tunic/girdle/laurel wreath; proposes removing v1 fibula; legacy intercuts (July, leap day, republic debate, walled-up hall) with sources. r2: all copied dialogue text replaced by line IDs pointing to 01_script/script-en.md + dialogue-lines.csv; added §0 refreshed continuity summary (dialogue status, D05 eyes, insert/plate, generated-take status, historian flags, seat/camera geometry); BV-O rewritten to head-out-of-frame, BV-W moved to phase 2."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v2-proposta.md",
+      "sha256After": "1145eddfdd273598bba6309c7938781bc8e28a4ece1902aa86bf9aa7d8f0a9ad",
+      "reason": "Genghis back-view + legacy PROPOSAL: leather warming cap, braids, monochrome robe per NPM Taipei Yuan portrait (posthumous caveat); proposes dropping v1 lamellar armour; legacy intercuts (Mongolia monument from behind, chroniclers, Pax Mongolica, Zerjal 2003 as hypothesis). r2: all copied dialogue text replaced by line IDs pointing to 01_script/script-en.md + dialogue-lines.csv; added §0 refreshed continuity summary (dialogue status, D05 eyes, insert/plate, generated-take status, historian flags, seat/camera geometry); BV-O rewritten to head-out-of-frame, BV-W moved to phase 2."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+      "sha256After": "f610a4cd32323b123c909d01822e3bfb36efbac74a697a644dfdfe257d9f6a94",
+      "reason": "Galileo back-view + legacy PROPOSAL: near-black academic gown + white collar per Uffizi Sustermans 1635; low-backed armchair; legacy intercuts (Galilean moons, smuggled Two New Sciences, SEP 'father of science', JPII 1992 verbatim, reburial 1737, Index to 1835). r2: all copied dialogue text replaced by line IDs pointing to 01_script/script-en.md + dialogue-lines.csv; added §0 refreshed continuity summary (dialogue status, D05 eyes, insert/plate, generated-take status, historian flags, seat/camera geometry); BV-O rewritten to head-out-of-frame, BV-W moved to phase 2."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v2-proposta.md",
+      "sha256After": "7dc33eb11107b86184237cce2b42049bcd9cef861855de853c33b4f569721b5e",
+      "reason": "Napoleon back-view + legacy PROPOSAL: green Chasseur coat (N-A) or Longwood home dress (N-B), bicorne en bataille on the table; legacy intercuts (faded uniform green->blue, Civil Code, Macron 2021 verbatim FR, 1802 slavery restoration). r2: all copied dialogue text replaced by line IDs pointing to 01_script/script-en.md + dialogue-lines.csv; added §0 refreshed continuity summary (dialogue status, D05 eyes, insert/plate, generated-take status, historian flags, seat/camera geometry); BV-O rewritten to head-out-of-frame, BV-W moved to phase 2."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer-v2-proposta.md",
+      "sha256After": "08e8fb62b3b590924dbcccbafb395e1e24578af7d67f8d19290041c8b1a2faac",
+      "reason": "Oppenheimer back-view + legacy PROPOSAL: extreme thinness (NPS), brown porkpie hat (LANL), smoke trail; legacy intercuts (DOE 2022 vacatur verbatim, Fulbright as quoted in DOE order, Hiroshima/Nagasaki without figures, 1954 hearing). r2: all copied dialogue text replaced by line IDs pointing to 01_script/script-en.md + dialogue-lines.csv; added §0 refreshed continuity summary (dialogue status, D05 eyes, insert/plate, generated-take status, historian flags, seat/camera geometry); BV-O rewritten to head-out-of-frame, BV-W moved to phase 2."
+    }
+  ],
+  "verification": [
+    "Required paths checked before work (project root, 03_bibles/, agents/handoffs/, shared/templates/agent-handoff.json, docs/LOCAL_AGENT_HANDOFF.md, agents/bindings.json): all present. STATE.md is at projects/andre-time-travel/memory/STATE.md (not at workspace root); section 'NEW CREATIVE DIRECTION' read there.",
+    "All 7 target paths confirmed absent before writing; files placed with no-clobber copy; sha256 of placed files equals sha256 of the drafted files.",
+    "Existing 03_bibles files (8) re-hashed after writing; sha256After == sha256Before for each: projects/andre-time-travel/03_bibles/character-andre.md=8ca583cf44f546f600370038dc376c1c42a0f5d8fb529e650412a340902f2c5f; projects/andre-time-travel/03_bibles/continuity-matrix.csv=8a81c5cba52d35391756736c09a5dd4c51b8f43d3c064f788bad86aba0412865; projects/andre-time-travel/03_bibles/table-and-continuity.md=907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3; projects/andre-time-travel/03_bibles/scene-bibles/caesar.md=cf01c1abf8acf63a01a9afe4b3096beb41f6dee840fc08b747088582fe91328f; projects/andre-time-travel/03_bibles/scene-bibles/galileo.md=76126a010e9adb305970bc22927979d1e85b2485c8e0b7b52db56978dd8d4f00; projects/andre-time-travel/03_bibles/scene-bibles/genghis.md=8c3a56400ed32301e86d39412a169048d78c7af36d516a422b7e08c7140ce042; projects/andre-time-travel/03_bibles/scene-bibles/napoleon.md=c318bdba1065d5b1cc657c7ad0522ec2400291bd184471b9f65c215727c88bc8; projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer.md=f855d4b6b662bd5b5f23320f55f12dca31c7f29837c07544671de5b8a6782ac3",
+    "continuity-matrix-v2-proposta.csv parsed: 7 rows x 18 columns, consistent.",
+    "Every quotation in the new files is marked [verbatim] with a source ID, and was checked against fetched page text (Suetonius/LacusCurtius, Met, Smith's Dictionary, NPM Taipei, Britannica Genghis Khan, IIAS, Uffizi via full-text extract, SEP Galileo, PAS 1992 address, vie-publique Macron 2021, NPS, DOE statement page and DOE order PDF); paraphrases are marked [paraphrase].",
+    "Sources not fetched (blocked/timeouts: Britannica Julian calendar/July/Oppenheimer, PubMed Zerjal, Met Khubilai exhibition, Columbia, Christie's, Commons, BBC) are labelled 'search-only' in each file and must be verified before on-screen use.",
+    "No existing file modified; no git commit; no paid job; no external message; source-registry.json not modified (additions proposed in table-and-continuity-v2-proposta.md §7).",
+    "r2 revision (2026-10-09): before overwriting, each of the 7 v2 files on disk was re-hashed and matched its r1 hash (table-and-continuity-v2-proposta.md=429c8e0d18b9c1f87dec6412b0832800876c0c4fb175532f47e61ffca853906a; continuity-matrix-v2-proposta.csv=22e8a73fa38c01607646fd546f4b6c34f3b9c08650b3548b4e9b2690744cf074; caesar-v2-proposta.md=99236bee87ae33298d4c0faff7f200321ae6a0610088a46064f85d4f459b644e; genghis-v2-proposta.md=c69dc6125378291c75cdbb4a63729c4b2720acd514d63a87730552c84a1ec922; galileo-v2-proposta.md=3f254cb73cca0abe05c2d4d4e222d8ce6478c475c18213fb5fd900551c8eee5f; napoleon-v2-proposta.md=38486cf1d7bb5876aecd6187ff5737babeaad063fe9e674892cb7cf54e38f1fa; oppenheimer-v2-proposta.md=a742b99c7fbd5b55c02b9d261e71bbb8091947a5b51d580120672e28993c1373); only these 7 own files were overwritten; baseFiles sha256Before stays 'absent' as the creation baseline. The 8 v1 03_bibles files were re-hashed after the r2 copy and are unchanged (same values as above).",
+    "r2 dialogue check: the v2 files contain no Andre/historical dialogue text; v1 scene bibles caesar.md, genghis.md, galileo.md, napoleon.md carry outdated C-L04/K-L04/G-L04/N-L04 text (+ v1-phrase eye-cue triggers) vs 01_script/dialogue-lines.csv; oppenheimer.md matches. v1 files not edited (outside this role; owner dialogue-sound/director)."
+  ],
+  "pendingDecisions": [
+    "Andre/director: approve back-view grammar (BV-W/BV-O/BV-R) and blur levels BL-1..3",
+    "Andre/director: outro Route A 'chair of centuries' dissolve (recommended) vs physical five-seat ensemble (conflicts with D04/D09)",
+    "Andre/art director: Genghis wardrobe change (drop lamellar armour; light monochrome robe + dark outer coat) vs existing R2-wardrobe-genghis-mongol.jpg",
+    "Andre/art director: Caesar — remove v1 fibula; sella curulis; wreath worn",
+    "Andre/director: Napoleon costume N-A (green Chasseur coat) vs N-B (Longwood home dress); bicorne on table vs worn",
+    "Andre/director: Oppenheimer porkpie worn vs beside him; cigarette vs pipe",
+    "Producer: rights policy for real archival photos/documents in legacy intercuts vs generated reconstructions",
+    "Historian/producer: merge V2-xx sources into source-registry.json with snapshots; verify search-only sources",
+    "Dialogue-sound: any line adjustments to reference legacy beats are proposals for 01_script only",
+    "Approve or adjust the §3A geometry proposal (table 120x75x75, seat positions, camera positions/lenses) before any paid keyframe.",
+    "Producer: Galileo pilot prompt says camera 'behind and slightly to the right' of the figure while placing him in the right third; with the figure facing away this is inconsistent with D09. Proposal: camera behind and to the figure's LEFT (~45 cm offset), visible edge = his left shoulder/arm.",
+    "Art director: plank count of the D04 anchor (D04 says three planks; continuity-bible-draft-v1 says about 4 wide planks) — confirm from R1-J26-table-anchor_2.png.",
+    "Director/dialogue-sound: update or supersede the outdated dialogue text in v1 caesar/genghis/galileo/napoleon bibles (not done here)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

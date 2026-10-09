@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Montar o pacote de pedido da FASE A do piloto Galileu v2 (G-REF: 1 imagem gemini-3-pro-image 2K, 20 cr; G-KF: kling-image-o1 com Element, 3 tentativas, 3 cr), com teto de 23 cr e regras de parada, para execução pelo Hermes. Aprovação do Andre: D16. Producer NÃO submete.",
+  "ownedPaths": [
+    "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+      "sha256Before": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "note": "autorização: só a Fase A, teto de 23 cr; só leitura"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu-v2.md",
+      "sha256Before": "a6892aa197062e1f0a31d72573097f8d6c97db716f501d892527601f4a3c6cee",
+      "note": "igual ao sha256 citado na D16 (a6892aa1…); só leitura"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu.md",
+      "sha256Before": "26b30321f1588e5b9d1c0bd540e41f1f34f4900875dac573bbb8a1d378b765a9",
+      "note": "v1: fonte dos prompts-base que a v2 herda; só leitura"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D11-element-and-still-route.json",
+      "sha256Before": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "note": "Element 323525046658711; só leitura"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+      "sha256Before": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "note": "referência do pacote; conferida com sha256sum; não alterada"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "sha256Before": "aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31",
+      "note": "referência do pacote; conferida com sha256sum; não alterada"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J12-insert-galileo_1.jpg",
+      "sha256Before": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+      "note": "referência do pacote; conferida com sha256sum; não alterada"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "sha256Before": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "note": "referência do pacote; conferida com sha256sum; não alterada"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg",
+      "sha256Before": "4c26297a7668e1460e85334e526a3813c4c8e55075eba76ab383af9b2f05bfbd",
+      "note": "referência do pacote; conferida com sha256sum; não alterada"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "sha256Before": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "note": "referência do pacote; conferida com sha256sum; não alterada"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request.md",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request-gkf.template.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request.md",
+      "sha256After": "b1bb8d8833af3e571440dc91daddeafeb73aa23f2e46c20ca48b6556463efde8",
+      "reason": "Pacote legível: autorização, teto de 23 cr e regras de parada, disposição na mesa de 120x75 (conversa atravessando os 75 cm), referências com sha256, Element, jobs em ordem com parâmetros, tentativas, custo e acumulado, prompts finais e critérios de aceite."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request.json",
+      "sha256After": "5cb10375103dbd7289fabce6e7d10d22abfb672109d22bc150f7d51997b922ea",
+      "reason": "Spec no formato de scripts/kling_batch.py (--spec/--only/--submit-only), igual a 07_generations/batches/*.json; contém só o G-REF, cujas referências existem."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request-gkf.template.json",
+      "sha256After": "8d9ec51ca433bdd60d6380255027e99a6af83b8dbb52c6b004179624d3f8d67d",
+      "reason": "Os 3 jobs G-KF (M a1, M a2 condicional, L a1) no mesmo formato. Há marcadores para as saídas aceitas de G-REF e G-KF-M, que ainda não existem; o Hermes substitui pelo caminho real e registra o sha256 antes de submeter."
+    }
+  ],
+  "verification": [
+    "D16 existe; o artifact.sha256 bate com o sha256sum atual de piloto-galileu-v2.md (a6892aa197062e1f…).",
+    "As 6 referências existem; sha256sum confere com os prefixos esperados (J23 aa1a68bd, R2-J12 b59837cf, R3-oppenheimer 4c26297a, J26-2 3b25e4d2, J29 09ae1705, cover fee8a610).",
+    "Element 323525046658711 consta em D11 e em manifest.json.",
+    "Prompts copiados do plano v1/v2 sem alteração de conteúdo. A liberação posterior da nuca desfocada não foi aplicada, porque a D16 vale só para o conteúdo exato da v2.",
+    "Nenhum job submetido; kling_batch.py não foi executado; ledger e registro inalterados por este passo."
+  ],
+  "pendingDecisions": [
+    "Usar a nuca desfocada (decisão posterior da Direção) exige uma v2.1 do piloto e nova revisão (regra da D16). Por enquanto, a cabeça fica fora do quadro.",
+    "Fases B (30 cr) e C (108 cr) sem aprovação.",
+    "Aceite criativo do G-REF e do G-KF: Andre (a D16 não é aceite criativo)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-09T15:36:12.730777+00:00",
+  "localViewerLinks": 48,
+  "missingLinks": [],
+  "viewerJavaScriptSyntaxReturnCode": 0,
+  "viewerBrowserInteractionTested": false,
+  "originalMediaUnchanged": 9,
+  "previewSnapshotAndCurrentHashMatch": true,
+  "eventsWithinPreviewBounds": 9,
+  "workspaceValidation": "ok",
+  "workspaceWarnings": [
+    "shared skill changed since linking: kling-cli",
+    "shared skill changed since linking: film-character-continuity",
+    "shared skill changed since linking: film-dialogue-localization",
+    "shared skill changed since linking: film-editing-qc"
+  ],
+  "unitTestsPassed": 29,
+  "fullPlaybackReviewed": false,
+  "creativeApprovalGranted": false,
+  "paidJobsSubmitted": 0,
+  "directorSessionMessaged": false,
+  "codexOpenResult": "queued"
+}

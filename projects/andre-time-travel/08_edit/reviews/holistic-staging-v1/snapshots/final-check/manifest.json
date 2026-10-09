@@ -1,0 +1,726 @@
+{
+  "schemaVersion": "1.0",
+  "project": "andre-time-travel",
+  "workingTitle": "The Table Between Centuries",
+  "state": "galileo_english_preview_assembled_pending_playback_and_dubbing",
+  "lead": "Andre Athar",
+  "scope": {
+    "visualStyle": "photorealistic_cinematic",
+    "targetSeconds": 240,
+    "openingSeconds": 12,
+    "chapterSeconds": 42,
+    "endingSeconds": 18,
+    "primaryStoryboardSlots": 41,
+    "slotCountIsPaidJobCount": false,
+    "interlocutorFullFaceAllowed": false,
+    "editions": [
+      "all_english",
+      "reviewed_historical_languages"
+    ]
+  },
+  "chapterSlotSeconds": [
+    4,
+    10,
+    4,
+    8,
+    4,
+    7,
+    5
+  ],
+  "chapters": [
+    {
+      "id": "C",
+      "key": "caesar",
+      "person": "Julius Caesar",
+      "setting": "Rome, early 44 BCE",
+      "slotIds": [
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-04",
+        "C-05",
+        "C-06",
+        "C-07"
+      ],
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K",
+      "key": "genghis",
+      "person": "Genghis Khan",
+      "setting": "Campaign tent, 1227",
+      "slotIds": [
+        "K-01",
+        "K-02",
+        "K-03",
+        "K-04",
+        "K-05",
+        "K-06",
+        "K-07"
+      ],
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G",
+      "key": "galileo",
+      "person": "Galileo Galilei",
+      "setting": "Arcetri, 1634",
+      "slotIds": [
+        "G-01",
+        "G-02",
+        "G-03",
+        "G-04",
+        "G-05",
+        "G-06",
+        "G-07"
+      ],
+      "languageReview": "pending",
+      "acceptedTakeId": null,
+      "preview": "08_edit/picture-lock/galileo-en-preview-v1.mp4",
+      "previewReview": "08_edit/reviews/galileo-en-v1/review.md",
+      "previewStatus": "assembled_pending_full_playback_and_dubbing"
+    },
+    {
+      "id": "N",
+      "key": "napoleon",
+      "person": "Napoleon Bonaparte",
+      "setting": "Saint Helena, 1816",
+      "slotIds": [
+        "N-01",
+        "N-02",
+        "N-03",
+        "N-04",
+        "N-05",
+        "N-06",
+        "N-07"
+      ],
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O",
+      "key": "oppenheimer",
+      "person": "J. Robert Oppenheimer",
+      "setting": "Fictional room near Trinity, July 15, 1945",
+      "slotIds": [
+        "O-01",
+        "O-02",
+        "O-03",
+        "O-04",
+        "O-05",
+        "O-06",
+        "O-07"
+      ],
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    }
+  ],
+  "openingSlotIds": [
+    "IN-01",
+    "IN-02",
+    "IN-03"
+  ],
+  "endingSlotIds": [
+    "OUT-01",
+    "OUT-02",
+    "OUT-03"
+  ],
+  "budget": {
+    "provider": "Kling",
+    "verifiedBalanceSnapshot": 6981,
+    "refreshBeforeSpend": true,
+    "phaseCaps": {
+      "r2_references_images": 450,
+      "r3_andre_keyframes_images": 400,
+      "identity_and_speech_pilot_video": 1100,
+      "main_footage_video": 3300,
+      "corrections_and_edition_h": 1300,
+      "final_reserve": 431
+    },
+    "actualProductionCharges": [],
+    "externalAudioServiceBudgetApproved": false,
+    "topupAuthorized": false,
+    "snapshotObservedDate": "2026-10-09",
+    "snapshotIsLiveBalance": false,
+    "referenceBatchAccounting": {
+      "batch": "R1",
+      "ledger": "credit-ledger.csv",
+      "aggregateCreditDelta": 760,
+      "availableCreditsObserved": 6981,
+      "observedDate": "2026-10-09",
+      "remainingPhaseAllocation": 14,
+      "chargeBasis": "aggregate balance reconciliation; individual row allocation approximate",
+      "providerCreditsConsumedReported": null,
+      "refreshBeforeSpend": true
+    },
+    "referenceVoiceTestsAtlasV1": {
+      "provider": "ElevenLabs",
+      "credits": 383.9616,
+      "evidence": "05_storyboard/preproduction-atlas-v1/evidence/speech-results.json",
+      "scope": "four short English opening references; not full-film audio authorization"
+    },
+    "phaseCapsV1Historical": {
+      "identity_and_speech_validation": 1161,
+      "references_and_storyboard": 774,
+      "main_five_chapter_footage": 3483,
+      "targeted_corrections_and_language_picture": 1935,
+      "final_quality_reserve": 388,
+      "note": "7,741 planning split from 2026-10-08; R1 spent 760 under references_and_storyboard"
+    },
+    "phaseCapsBasis": {
+      "doc": "docs/budget-plan-v2.md",
+      "liveBalanceObserved": 6981,
+      "observedAt": "2026-10-09T09:23:16-03:00"
+    },
+    "referenceBatchAccountingR2": {
+      "batch": "R2",
+      "ledger": "credit-ledger.csv",
+      "aggregateCreditDelta": 205,
+      "cap": 450,
+      "availableCreditsObserved": 6776,
+      "observedDate": "2026-10-09",
+      "chargeBasis": "per-job balance deltas via kling account before/after",
+      "providerCreditsConsumedReported": null
+    },
+    "observedVideoUnitCosts": {
+      "v3_0_720p_5s_element_noaudio": [
+        70,
+        70,
+        30
+      ],
+      "v3_0_720p_8s_element_nativeaudio": [
+        72,
+        92
+      ],
+      "note": "balance deltas; docs rate 6/9 cr/s + voice control; 30 vs 70 for identical 5-s jobs unexplained; plan on 14 cr/s worst case",
+      "observedAt": "2026-10-09T11:27:36-03:00",
+      "v3_0_720p_12s_element_nativeaudio": [
+        108
+      ],
+      "v3_0_turbo_10s_insert": [
+        80
+      ],
+      "v3_0_turbo_5s_eyes": [
+        40,
+        40
+      ]
+    }
+  },
+  "approvals": {
+    "characterReferences": true,
+    "productionElement": true,
+    "screenplay": true,
+    "voiceTests": false,
+    "speechRoute": true,
+    "pilot": true,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "takes": [
+    {
+      "shotId": "PILOT-01-galileo-listening-locked",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-01-galileo-listening-locked_1.mp4",
+      "credits": 70,
+      "status": "accepted",
+      "id": "PILOT-01-galileo-listening-locked_1"
+    },
+    {
+      "shotId": "PILOT-02-galileo-gentle-turn",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-02-galileo-gentle-turn_1.mp4",
+      "credits": 70,
+      "status": "accepted",
+      "id": "PILOT-02-galileo-gentle-turn_1"
+    },
+    {
+      "shotId": "PILOT-03-oppenheimer-expression",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-03-oppenheimer-expression_1.mp4",
+      "credits": 30,
+      "status": "accepted",
+      "id": "PILOT-03-oppenheimer-expression_1"
+    },
+    {
+      "shotId": "PILOT-04-galileo-speech-native",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-04-galileo-speech-native_1.mp4",
+      "credits": 72,
+      "status": "accepted",
+      "id": "PILOT-04-galileo-speech-native_1"
+    },
+    {
+      "shotId": "PILOT-05-oppenheimer-speech-OL04",
+      "phase": "pilot",
+      "path": "06_pilot/originals/PILOT-05-oppenheimer-speech-OL04_1.mp4",
+      "credits": 92,
+      "status": "accepted",
+      "id": "PILOT-05-oppenheimer-speech-OL04_1"
+    },
+    {"id":"G-01-insert-galileo-v2_1","shotId":"G-01","phase":"galileo","path":"07_generations/originals/G-01-insert-galileo-v2_1.mp4","credits":80,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-01-insert-galileo-v2.json"},
+    {"id":"G-02-andre-GL02_1","shotId":"G-02","phase":"galileo","path":"07_generations/originals/G-02-andre-GL02_1.mp4","credits":108,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-02-andre-GL02.json"},
+    {"id":"G-03-eyes-galileo-A_1","shotId":"G-03","phase":"galileo","path":"07_generations/originals/G-03-eyes-galileo-A_1.mp4","credits":40,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-03-eyes-galileo-A.json"},
+    {"id":"G-05-eyes-galileo-B_1","shotId":"G-05","phase":"galileo","path":"07_generations/originals/G-05-eyes-galileo-B_1.mp4","credits":40,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-05-eyes-galileo-B.json"}
+  ],
+  "finalMovieVerified": false,
+  "projectRoot": ".",
+  "createdAt": "2026-10-09T07:24:04-03:00",
+  "sourcePlan": "docs/production-plan.md",
+  "shots": [
+    {
+      "id": "IN-01",
+      "chapter": "opening",
+      "targetSeconds": 4,
+      "description": "Present-day table grain; Andre's hand enters",
+      "framingRestriction": "No opponent; no face needed",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "IN-02",
+      "chapter": "opening",
+      "targetSeconds": 4,
+      "description": "Andre's approved three-quarter view; opening question",
+      "framingRestriction": "Andre only; tested speech or offscreen overlap",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "IN-03",
+      "chapter": "opening",
+      "targetSeconds": 4,
+      "description": "Table match cut; Rome atmosphere arrives",
+      "framingRestriction": "Transition away from face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-01",
+      "chapter": "caesar",
+      "targetSeconds": 4,
+      "description": "Arrival/table edge; sleeve/hand suggests Caesar",
+      "framingRestriction": "Opponent below neck only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-02",
+      "chapter": "caesar",
+      "targetSeconds": 10,
+      "description": "Andre answers C-L01; opening consequence",
+      "framingRestriction": "Andre only; split if speech test requires",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-03",
+      "chapter": "caesar",
+      "targetSeconds": 4,
+      "description": "Eye response to name/power",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-04",
+      "chapter": "caesar",
+      "targetSeconds": 8,
+      "description": "Andre listens to C-L03, begins answer",
+      "framingRestriction": "Andre only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-05",
+      "chapter": "caesar",
+      "targetSeconds": 4,
+      "description": "Eye uncertainty at republic/legacy",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-06",
+      "chapter": "caesar",
+      "targetSeconds": 7,
+      "description": "Table/hand tension; C-L04 continues",
+      "framingRestriction": "No face; motivated L-cut",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "C-07",
+      "chapter": "caesar",
+      "targetSeconds": 5,
+      "description": "Andre's restrained closing look; table transition",
+      "framingRestriction": "Andre only; no facial morph",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-01",
+      "chapter": "genghis",
+      "targetSeconds": 4,
+      "description": "Tent-lit table; a resting sleeve/hand",
+      "framingRestriction": "Opponent below neck only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-02",
+      "chapter": "genghis",
+      "targetSeconds": 10,
+      "description": "Andre on succession/exchange",
+      "framingRestriction": "Andre only; split if speech test requires",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-03",
+      "chapter": "genghis",
+      "targetSeconds": 4,
+      "description": "Eye pride at enlarged empire",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-04",
+      "chapter": "genghis",
+      "targetSeconds": 8,
+      "description": "Andre on destruction; listens to K-L03",
+      "framingRestriction": "Andre only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-05",
+      "chapter": "genghis",
+      "targetSeconds": 4,
+      "description": "Eye reaction to missing families",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-06",
+      "chapter": "genghis",
+      "targetSeconds": 7,
+      "description": "Hand loosens on table; K-L04 overlaps",
+      "framingRestriction": "No face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K-07",
+      "chapter": "genghis",
+      "targetSeconds": 5,
+      "description": "Andre holds the consequence; match cut",
+      "framingRestriction": "Andre only; transition off face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-01",
+      "chapter": "galileo",
+      "targetSeconds": 4,
+      "description": "Quiet table, paper/hand, Arcetri atmosphere",
+      "framingRestriction": "Opponent below neck only",
+      "status": "in_progress",
+      "takeIds": [
+        "G-01-insert-galileo-v2_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-02",
+      "chapter": "galileo",
+      "targetSeconds": 10,
+      "description": "Andre answers about remembrance",
+      "framingRestriction": "Andre only; split if speech test requires",
+      "status": "in_progress",
+      "takeIds": [
+        "G-02-andre-GL02_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-03",
+      "chapter": "galileo",
+      "targetSeconds": 4,
+      "description": "Eye attention through weariness",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "in_progress",
+      "takeIds": [
+        "G-03-eyes-galileo-A_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-04",
+      "chapter": "galileo",
+      "targetSeconds": 8,
+      "description": "Andre on the harder story; listens to G-L03",
+      "framingRestriction": "Andre only",
+      "status": "in_progress",
+      "takeIds": [
+        "PILOT-01-galileo-listening-locked_1",
+        "PILOT-04-galileo-speech-native_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-05",
+      "chapter": "galileo",
+      "targetSeconds": 4,
+      "description": "Eye resolve at “question”",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "in_progress",
+      "takeIds": [
+        "G-05-eyes-galileo-B_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-06",
+      "chapter": "galileo",
+      "targetSeconds": 7,
+      "description": "Paper/hand stillness; G-L04 overlaps",
+      "framingRestriction": "No face",
+      "status": "in_progress",
+      "takeIds": [
+        "G-01-insert-galileo-v2_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G-07",
+      "chapter": "galileo",
+      "targetSeconds": 5,
+      "description": "Andre's quiet respect; table cut",
+      "framingRestriction": "Andre only; no facial morph",
+      "status": "in_progress",
+      "takeIds": [
+        "PILOT-02-galileo-gentle-turn_1"
+      ],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-01",
+      "chapter": "napoleon",
+      "targetSeconds": 4,
+      "description": "Sea-worn light at plain table; sleeve/book",
+      "framingRestriction": "Opponent below neck only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-02",
+      "chapter": "napoleon",
+      "targetSeconds": 10,
+      "description": "Andre on the code's survival",
+      "framingRestriction": "Andre only; split if speech test requires",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-03",
+      "chapter": "napoleon",
+      "targetSeconds": 4,
+      "description": "Eye pride",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-04",
+      "chapter": "napoleon",
+      "targetSeconds": 8,
+      "description": "Andre on exclusions; listens to N-L03",
+      "framingRestriction": "Andre only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-05",
+      "chapter": "napoleon",
+      "targetSeconds": 4,
+      "description": "Eye pride bruised by the cost",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-06",
+      "chapter": "napoleon",
+      "targetSeconds": 7,
+      "description": "Hand stops over book/table; N-L04 overlaps",
+      "framingRestriction": "No face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N-07",
+      "chapter": "napoleon",
+      "targetSeconds": 5,
+      "description": "Andre closes without verdict; table cut",
+      "framingRestriction": "Andre only; no facial morph",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-01",
+      "chapter": "oppenheimer",
+      "targetSeconds": 4,
+      "description": "Sparse night-lit table near test setting",
+      "framingRestriction": "Opponent below neck only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-02",
+      "chapter": "oppenheimer",
+      "targetSeconds": 10,
+      "description": "Andre on the test and two cities",
+      "framingRestriction": "Andre only; split if speech test requires",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-03",
+      "chapter": "oppenheimer",
+      "targetSeconds": 4,
+      "description": "Anticipation drains from the eyes",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-04",
+      "chapter": "oppenheimer",
+      "targetSeconds": 8,
+      "description": "Andre listens to O-L03 before answering",
+      "framingRestriction": "Andre only",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-05",
+      "chapter": "oppenheimer",
+      "targetSeconds": 4,
+      "description": "Eye stillness at the moral question",
+      "framingRestriction": "Eyes-only safe crop",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-06",
+      "chapter": "oppenheimer",
+      "targetSeconds": 7,
+      "description": "Hand/table; O-L04 and a deliberate pause",
+      "framingRestriction": "No face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O-07",
+      "chapter": "oppenheimer",
+      "targetSeconds": 5,
+      "description": "Andre acknowledges uncertainty; present-day cut",
+      "framingRestriction": "Andre only; no facial morph",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "OUT-01",
+      "chapter": "ending",
+      "targetSeconds": 6,
+      "description": "Present-day Andre begins the closing thought",
+      "framingRestriction": "Andre only; tested speech coverage",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "OUT-02",
+      "chapter": "ending",
+      "targetSeconds": 6,
+      "description": "Empty opposite chair/table; final thought overlaps",
+      "framingRestriction": "No invented historical face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    },
+    {
+      "id": "OUT-03",
+      "chapter": "ending",
+      "targetSeconds": 6,
+      "description": "Table hold/fade; concise credit tail",
+      "framingRestriction": "No face",
+      "status": "planned",
+      "takeIds": [],
+      "acceptedTakeId": null
+    }
+  ],
+  "workspaceInitialized": true,
+  "preproductionAtlas": {
+    "path": "05_storyboard/preproduction-atlas-v1/index.html",
+    "catalog": "05_storyboard/preproduction-atlas-v1/catalog.json",
+    "createdAt": "2026-10-09T08:26:02.743699-03:00",
+    "cardImages": 79,
+    "newKlingGenerations": 0,
+    "approved": false
+  },
+  "decisions": "00_brief/decisions/",
+  "scratchAudio": "04_audio/scratch/edge-tts-v2/provenance.json",
+  "preproductionAtlasLatest": {
+    "path": "05_storyboard/preproduction-atlas-v3/index.html",
+    "catalog": "05_storyboard/preproduction-atlas-v3/catalog.json",
+    "createdAt": "2026-10-09T09:24:27-03:00",
+    "cardImages": 79,
+    "newKlingGenerations": 0,
+    "approved": false,
+    "basis": "script v2 + edge-tts scratch timings; v1 remains the published delivery, v2 the rebuild proof"
+  },
+  "productionElement": {
+    "id": "323525046658711",
+    "name": "Andre Athar - grey suit - identity v2 20261009",
+    "createdAt": "2026-10-09T10:53:02-03:00",
+    "credits": 180,
+    "decision": "00_brief/decisions/D11-element-and-still-route.json"
+  }
+}

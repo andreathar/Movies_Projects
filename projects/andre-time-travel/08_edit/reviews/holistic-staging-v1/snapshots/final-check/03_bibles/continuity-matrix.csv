@@ -1,0 +1,6 @@
+chapter,character_reference_version,element_id,wardrobe_reference,table_reference,eyes_reference,lighting_anchor,camera_axis,approved
+caesar,identity-set-2024-v1 (D01); wardrobe D02; grooming D03,,,R1-J26-table-anchor_2.png (D04),R1-J11-eyes-caesar-command_1_eyescrop.png (D05),,Andre screen-left → camera-right / interlocutor eyes screen-right → camera-left (D09),false
+genghis,identity-set-2024-v1 (D01); wardrobe D02; grooming D03,,,R1-J26-table-anchor_2.png (D04),R1-J13-eyes-genghis-pride_1_eyescrop.png (D05),,Andre screen-left → camera-right / interlocutor eyes screen-right → camera-left (D09),false
+galileo,identity-set-2024-v1 (D01); wardrobe D02; grooming D03,,,R1-J26-table-anchor_2.png (D04),R1-J15-eyes-galileo-weariness_1_eyescrop.png (D05),,Andre screen-left → camera-right / interlocutor eyes screen-right → camera-left (D09),false
+napoleon,identity-set-2024-v1 (D01); wardrobe D02; grooming D03,,,R1-J26-table-anchor_2.png (D04),RECAST pending (D05),,Andre screen-left → camera-right / interlocutor eyes screen-right → camera-left (D09),false
+oppenheimer,identity-set-2024-v1 (D01); wardrobe D02; grooming D03,,,R1-J26-table-anchor_2.png (D04),R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png (D05),,Andre screen-left → camera-right / interlocutor eyes screen-right → camera-left (D09),false

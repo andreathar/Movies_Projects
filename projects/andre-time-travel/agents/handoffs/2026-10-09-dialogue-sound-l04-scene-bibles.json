@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "dialogue-sound",
+  "assignment": "Compare the outdated C-L04/K-L04/G-L04/N-L04 text and eye-cue triggers in the v1 scene bibles (caesar/genghis/galileo/napoleon.md) with canonical 01_script/script-en.md + dialogue-lines.csv; propose the correction as NEW versioned bible files without editing v1; incorporate Andre's new direction (2026-10-09): the eyes become a short reaction AFTER the figure is shown from behind, adjusting eye-cue triggers; list (not apply) any canonical change the new direction requires.",
+  "ownedPaths": [
+    "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v3-proposta.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-dialogue-sound-l04-scene-bibles.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar.md",
+      "sha256Before": "cf01c1abf8acf63a01a9afe4b3096beb41f6dee840fc08b747088582fe91328f"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis.md",
+      "sha256Before": "8c3a56400ed32301e86d39412a169048d78c7af36d516a422b7e08c7140ce042"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo.md",
+      "sha256Before": "76126a010e9adb305970bc22927979d1e85b2485c8e0b7b52db56978dd8d4f00"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon.md",
+      "sha256Before": "c318bdba1065d5b1cc657c7ad0522ec2400291bd184471b9f65c215727c88bc8"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256Before": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v3-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v3-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v3-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v3-proposta.md",
+      "sha256Before": "absent"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-dialogue-sound-l04-scene-bibles.json",
+      "sha256Before": "absent"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v3-proposta.md",
+      "sha256After": "636ae52cdc926d01a6bf4336928cab2290c8e68d36fe6d02963a48edca8d264e",
+      "reason": "New v3 PROPOSAL of caesar.md (v1 untouched). C-L04 synced to canonical ('They remember a question. Could the republic survive you? They are still asking it — about other men.'), played whole in C-04 instead of split around the eyes; v1 triggers ('Your name survives...', 'what happens to a republic around him') replaced by canonical ('It survives.'; 'survive you?' held through 'other men'); eyes A as 1.5–2 s J-cut inside C-02 after a back-view beat, eyes B in C-05 after a back-view beat; C-03 becomes back-view hold/legacy; C-06 table insert without dialogue. §2/§4 carried verbatim."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v3-proposta.md",
+      "sha256After": "c597937a05418c72b6dbe240daafe6c2159ae8e63328c1f96a848fb921b15243",
+      "reason": "New v3 PROPOSAL of genghis.md (v1 untouched). K-L04 synced to canonical ('Founder. Conqueror. Both words are still fighting over you. Neither one can make the dead speak.'), whole in K-04; v1 triggers ('They will enlarge it', 'families who never return/missing families') replaced by canonical ('larger than you can picture'; blink at 'no longer there', stillness through 'the dead speak'); eyes A as J-cut in K-02 after back-view beat, eyes B (blink) in K-03 after back-view beat; the canonical stillness is carried by the motionless back through K-04/K-05 (no third eye shot). §2/§4 verbatim."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v3-proposta.md",
+      "sha256After": "3af75a9a8f2efe1abd21ee00760bdeaaa03dc2514c778593cdcdeb3894364978",
+      "reason": "New v3 PROPOSAL of galileo.md (v1 untouched). G-L04 synced to canonical ('Your observations. And one lesson from your trial that people keep relearning: silencing a man does not settle a question.'), whole in G-04; v1 triggers ('People learn from you.'; 'Silencing a person...' placed before the end of G-L04) replaced by canonical ('more interesting'; 'does not settle a question'); eyes A in G-03 and eyes B in G-05, each 1.5–2 s after a back-view beat — fixes audit F03 order. §2/§4 verbatim."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v3-proposta.md",
+      "sha256After": "090427ff8d496fa01e88bc3b3caefba2c51fd09e274e1e4ffd5030dad815e4e1",
+      "reason": "New v3 PROPOSAL of napoleon.md (v1 untouched). N-L04 synced to canonical ('Every day. We are still not sure who pays it.'), whole in N-04; v1 triggers ('Your civil code outlives your throne.'; 'wounded ego' at 'When they say greatness, they still argue about the price.') replaced by canonical (pride at 'outlives your throne'; not wounded pride — attention, contained downward glance after 'who pays it'); eyes A as J-cut in N-02 and eyes B in N-05, each after a back-view beat. §2/§4 verbatim."
+    }
+  ],
+  "verification": [
+    "Read before work: docs/LOCAL_AGENT_HANDOFF.md, shared/templates/agent-handoff.json, docs/VERSION_CONTROL.md, memory/STATE.md (NEW CREATIVE DIRECTION), the historian handoff 2026-10-09-historian-bibles-nova-direcao.json, *-v2-proposta.md and table-and-continuity-v2-proposta.md, 08_edit/reviews/2026-10-09-revisao-nova-direcao/review.{md,csv}.",
+    "v1 hashes before work matched those recorded in the historian handoff (caesar cf01c1ab…, genghis 8c3a5640…, galileo 76126a01…, napoleon c318bdba…). v1 files also show no diff vs git HEAD.",
+    "v1 unchanged: projects/andre-time-travel/03_bibles/scene-bibles/caesar.md sha256Before=cf01c1abf8acf63a01a9afe4b3096beb41f6dee840fc08b747088582fe91328f sha256After=cf01c1abf8acf63a01a9afe4b3096beb41f6dee840fc08b747088582fe91328f equal=True",
+    "v1 unchanged: projects/andre-time-travel/03_bibles/scene-bibles/genghis.md sha256Before=8c3a56400ed32301e86d39412a169048d78c7af36d516a422b7e08c7140ce042 sha256After=8c3a56400ed32301e86d39412a169048d78c7af36d516a422b7e08c7140ce042 equal=True",
+    "v1 unchanged: projects/andre-time-travel/03_bibles/scene-bibles/galileo.md sha256Before=76126a010e9adb305970bc22927979d1e85b2485c8e0b7b52db56978dd8d4f00 sha256After=76126a010e9adb305970bc22927979d1e85b2485c8e0b7b52db56978dd8d4f00 equal=True",
+    "v1 unchanged: projects/andre-time-travel/03_bibles/scene-bibles/napoleon.md sha256Before=c318bdba1065d5b1cc657c7ad0522ec2400291bd184471b9f65c215727c88bc8 sha256After=c318bdba1065d5b1cc657c7ad0522ec2400291bd184471b9f65c215727c88bc8 equal=True",
+    "canonical unchanged (read-only): projects/andre-time-travel/01_script/script-en.md sha256Before=a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1 sha256After=a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1 equal=True",
+    "canonical unchanged (read-only): projects/andre-time-travel/01_script/dialogue-lines.csv sha256Before=d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6 sha256After=d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6 equal=True",
+    "Each v3 file contains its chapter's L01..L04 text byte-identical to dialogue-lines.csv: True. v1 L01..L03 already matched the CSV; only L04 and the eye-cue triggers differed.",
+    "v3 paths confirmed absent before writing; files generated in /tmp/l04-staging/out and placed with no-clobber copy; placed hashes equal staged hashes (after one cosmetic fix in caesar-v3, a double period, re-hashed above).",
+    "Slot seconds in each v3 sum to 42 s; speech durations are the edge-tts v2 scratch measurements from the CSV (approved=false) and are flagged as editor proposals.",
+    ".venv/bin/python scripts/manage.py validate: exit 0 after placing the v3 files.",
+    "No edit to v1 bibles, *-v2-proposta.md, 01_script/ or 04_audio/; no git add/commit/push; no paid API, credit spend, external action or message."
+  ],
+  "pendingDecisions": [
+    "Producer: accept the name '-v3-proposta' (next free number; '-v2-proposta' is the historian's back-view/legacy file for the same figures). v3 is a sibling of v2 (dialogue + eye-cue scope), not a replacement; rename if a different convention is preferred.",
+    "Andre/director: approve the eye-cue rule (back view first; eyes 1.5–2 s, max 2.5 s, max two per chapter; triggers land over the back view and the eyes react after; holds carried by the figure's back).",
+    "CANONICAL PROPOSAL P-ALL (script-en.md, NOT applied): the eye-cue notes say 'at <phrase>'; under the new direction the eyes land ~1.5–2 s after the phrase, following a back-view beat. Proposed wording pattern: 'Eye cue X (short eyes reaction after a back-view beat): <emotion> after <phrase>.' Also intro paragraph 'leaving room for listening and eye reactions' -> 'leaving room for listening, the figure seen from behind, and a short eye reaction after it'. No dialogue text and no dialogue-lines.csv change is needed.",
+    "CANONICAL PROPOSAL P-C (NOT applied): A: 'focused confidence after \"It survives.\" (back-view beat first)'. B: 'certainty slips at \"survive you?\" — shown from behind (the body stops) and held still through \"other men\"; then a short eye reaction: he hears that he became a precedent. No caricatured rage.'",
+    "CANONICAL PROPOSAL P-K (NOT applied; choose one): option 1 (used in genghis-v3): A 'controlled pride after \"larger than you can picture\"'; B 'a single restrained blink after a back-view beat following \"no longer there\"; the figure's back holds still through \"the dead speak\". No tear.' Option 2: keep 'no longer there' from behind only and move the blink to after \"the dead speak\" (spreads the two eye beats to K-02 and K-05).",
+    "CANONICAL PROPOSAL P-G (NOT applied): A 'exhausted attention, not blindness, brightening after \"more interesting\"'; B 'quiet renewed resolve after \"does not settle a question\"' (each after a back-view beat).",
+    "CANONICAL PROPOSAL P-N (NOT applied): A 'pride after \"outlives your throne\"'; B unchanged (already 'after \"who pays it\"') plus 'after a back-view beat'.",
+    "Out of scope, flagged: oppenheimer.md text matches canonical, but its O-05 eyes sit between a split O-L04 and the canonical cue B asks for a >=4 s hold — under the new direction the hold should be carried by the back view; an oppenheimer v3 would need the same restructure (not done here).",
+    "Editor: confirm v3 slot seconds and the J-cuts for cue A inside C-02/K-02/N-02 (eyes over Andre's offscreen continuation); re-cut of the Galileo preview (T13) so eyes B follows the whole G-L04 (audit F03).",
+    "Dialogue-sound/editor: STATE.md notes the Galileo preview's older G-L04 guide has doubtful words near 'keep relearning' (covered by table, later ADR); all line audio is scratch/guide, approved=false.",
+    "Historian/director: v1 material carried verbatim in v3 still holds small inconsistencies — galileo §1 'failing eyesight' vs the v1 cue note 'no eyesight impairment is sourced for 1634'; galileo §2 typo 'slight , '; caesar core question echoes the removed v1 phrase 'what victory leaves behind'; v1 wardrobe/fibula etc. are superseded proposals in *-v2-proposta.md.",
+    "Producer: integrate (or not) into manifest/board; the v3 files are untracked by git (no commit made)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

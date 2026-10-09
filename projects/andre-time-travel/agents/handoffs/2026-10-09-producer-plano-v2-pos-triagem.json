@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Delegado de envio pago e ledgers (bot Filme · Produção e Créditos 9bfe6c7d). Recalcular o piloto do Galileu e o plano total (v1: 59 takes, 2.961 cr) após a triagem da Edição (2026-10-09-revisao-nova-direcao) e as decisões da Direção (G-X01 5 s, fala G-L02, ombro parado com respiração mínima, J23 + manga R2-J12, mesa 120x75x75 como proposta). Criar versões v2 sem sobrescrever as v1. Nenhum job pago.",
+  "ownedPaths": [
+    "projects/andre-time-travel/07_generations/plans/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-09-revisao-nova-direcao/review.csv",
+      "sha256Before": "15e0d84b692e9cd3c8c424fc927dee83c772b9989e24f87e46ed1ebaa67f8da9",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-09-revisao-nova-direcao/review.md",
+      "sha256Before": "a36b86115e7e57330d4d4e3831b92db1228dc81ab5d2dada7436f36a61c6f00e",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao.md",
+      "sha256Before": "41cfddcc9d593c6c9d70fde10c4d32ee1b71ffc657a742538b324b127b4fe2ad",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes.csv",
+      "sha256Before": "e6ef4da89632dcaa2fb52d23b3d8dd42573300c793af25832437bb73588a05fa",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu.md",
+      "sha256Before": "26b30321f1588e5b9d1c0bd540e41f1f34f4900875dac573bbb8a1d378b765a9",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg",
+      "sha256Before": "4c26297a7668e1460e85334e526a3813c4c8e55075eba76ab383af9b2f05bfbd",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R3-present-speaking-o1_1.jpg",
+      "sha256Before": "c7afdc2e135c385210d17a04a43cfa7734dd3201dfd50109ac2b02f686d8fe4f",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R3-present-listening-o1_1.jpg",
+      "sha256Before": "f0dc96f9b5673c7806b500bf711df0249aa8065c4b157a9548cdd300bcd72281",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/prompt-playbook-kling.md",
+      "sha256Before": "6d1619dd50dafb23043d73d7b018ed7390c2975223bf77d938777f7b38815af8",
+      "note": "lido; não alterado (v1 preservadas)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v2.md",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v2.csv",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu-v2.md",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v2.md",
+      "sha256After": "f7adfc19f30c0da3cf70ecbfb0b9928486671681550b02520bc757ec97bb8bee",
+      "reason": "Plano v2: total por capítulo (2.961 -> 2.519; pior caso 3.347), comparação com saldo 5.813, descontos justificados pela triagem, pós-produção local 0 cr."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v2.csv",
+      "sha256After": "1ae13220449dc44733087dabb97a5e29428fc334574be4e8013e87810ce3e0e0",
+      "reason": "Lista de takes v2 (59 linhas: v1, v2, pior caso, status MANTIDO/REDUZIDO/AJUSTADO/DESCONTADO, motivo da triagem)."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-piloto-galileu-v2.md",
+      "sha256After": "a6892aa197062e1f0a31d72573097f8d6c97db716f501d892527601f4a3c6cee",
+      "reason": "Piloto Galileu v2: 161 cr normal / 261 pior caso (v1: 184), com R3-oppenheimer-speaking-o1_1 como modelo de enquadramento e decisões da Direção."
+    }
+  ],
+  "verification": [
+    "Triagem lida: 234 linhas, únicos 45 SERVE / 100 REAPROVEITAR / 9 REFAZER (review.md); classificações de cada take reaproveitado conferidas linha a linha no CSV.",
+    "Totais calculados com Python a partir do CSV v1; soma por capítulo conferida: 175+461+470+341+458+356+258 = 2.519.",
+    "Preços inalterados desde a v1 (base: credit-ledger.csv e creditsConsumed em 07_generations/responses). Saldo de referência 5.813 (kling account 12:37; não reconsultado nesta rodada).",
+    "sha256 dos arquivos v2 no pop-os igual ao gerado; v1 e fontes conferidas sem alteração depois da escrita."
+  ],
+  "pendingDecisions": [
+    "Andre: aprovar o piloto v2 por fases (A: G-REF+G-KF 23 cr; B: G-X01 30 cr; C: G-X02 108 cr), cada job com OK explícito.",
+    "Direção: nuca desfocada permitida (como em R3-oppenheimer-speaking-o1_1) ou cabeça totalmente fora do quadro (especificação atual)?",
+    "Direção/Edição: aceitar a reutilização de PILOT-01/02/03/04/05 com crops (G-X04, G-X05, G-X08, O-X05, O-X08 descontados) e X01 de 8 s cobrindo L01 e L03 em C, K e O.",
+    "Direção: fechos de C, K e N a partir de stills KF-*-listening animados localmente (desconto adicional possível de 90 cr).",
+    "Historiador: conteúdo e fontes das 16 imagens de legado (0 existentes)."
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

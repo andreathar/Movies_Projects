@@ -202,6 +202,23 @@
       "voiceApproved": false,
       "finalPictureApproved": false,
       "note": "Replacement insert 80 and G-L02 108 completed; separate qualified reviews. G-L02 STT matches, G-L04 doubtful pronunciation covered by insert for later ADR. T13 stays in progress. 29 mocked/unit tests and workspace validation passed; four shared-skill hash warnings remain. Concurrent actor commits preserved; this producer made no commit."
+    },
+    {
+      "at": "2026-10-09T15:34:47.517055+00:00",
+      "event": "holistic_staging_audit",
+      "path": "projects/andre-time-travel/08_edit/reviews/holistic-staging-v1",
+      "originalVideosDecoded": 9,
+      "originalSampleFrames": 27,
+      "previewSeconds": 42,
+      "previewSampleFrames": 9,
+      "fullPlaybackCompleted": false,
+      "historicalAllFrameVisualClearance": false,
+      "creativeApprovalGranted": false,
+      "paidJobsSubmitted": 0,
+      "directorSessionMessaged": false,
+      "registeredTakesAtClosingCheck": 9,
+      "mappedGalileoSlotsAtClosingCheck": 7,
+      "nextCheckpoint": "shared over-shoulder shot and fixed table/seat geometry; resolution reaction after motivating line; approve complete Galileo dialogue before repeating chapters"
     }
   ]
 }

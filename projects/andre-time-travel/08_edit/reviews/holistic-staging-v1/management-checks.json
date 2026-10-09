@@ -38,5 +38,13 @@
       "deliverables": [],
       "verifiedAt": null
     }
+  },
+  "closingSnapshot": {
+    "at": "2026-10-09T15:34:47.517055+00:00",
+    "registeredTakes": 9,
+    "mappedShots": 7,
+    "slots": 41,
+    "previewUnchangedFromAudit": true,
+    "timelineUnchangedFromAudit": true
   }
 }

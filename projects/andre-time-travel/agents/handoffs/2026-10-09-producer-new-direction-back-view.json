@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Record Andre's new creative direction (back-view, defocused personalities + legacy/repercussion imagery) and delegate re-plan to historian+continuity, editor+qc and paid-producer delegate.",
+  "ownedPaths": [
+    "projects/andre-time-travel/memory/STATE.md"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "9e9afc7e3e40023d8fa812d6dfafecb86516066b99ecae2f968ca30d85fb296a"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "ac8790e727623a00510a424ea055aadbbae08e0ad42792303062c40398fdbcc2",
+      "reason": "New creative direction section prepended to current state."
+    }
+  ],
+  "verification": [
+    "STATE.md re-read after write"
+  ],
+  "pendingDecisions": [
+    "Andre: approve bible/continuity proposals",
+    "Andre: approve regeneration plan and each paid job",
+    "Andre: storyboard role owner"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

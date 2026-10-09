@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Correção de registro (área do producer: asset-registry.csv) pedida pelo Andre: a linha 54 do asset-registry.csv e o sidecar de R1-J23-costume-galileo_belowneck.png citavam o sha256 do original (d2824def…) e não o do recorte (aa1a68bd…). Registrar original e recorte em linhas separadas, com nota de correção, sem apagar histórico.",
+  "ownedPaths": [
+    "projects/andre-time-travel/asset-registry.csv",
+    "projects/andre-time-travel/02_references/wardrobe/"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "d71d29f301b13fbcecd2d4c562e0b01ba3a54f862e2e56a8576f52585b65eb05"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.json",
+      "sha256Before": "41a36a16473fc432357d074409706d635103c6f2efe9b34fc637e74981e91904",
+      "note": "preservado sem alteração"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.correction-2026-10-09.json",
+      "sha256Before": null,
+      "note": "arquivo novo"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J23-costume-galileo_1.png",
+      "sha256Before": "d2824defabe2d3388e9acdad66b358a9f05bfd3c64152da86df7d61b84d599db",
+      "note": "evidência: original; não alterado"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "sha256Before": "aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31",
+      "note": "evidência: recorte; não alterado"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256After": "c7085cdfa8078b4698a05a9b94a3cd6275b32f7b395136ec0a38fb688da15163",
+      "reason": "Somente anexadas 2 linhas no fim (276 e 277, formato de 8 colunas do cabeçalho): R1-J23-costume-galileo_1 (original, sha256 d2824def…) e R1-J23-costume-galileo_belowneck (recorte, sha256 aa1a68bd…, path_base = original), ambas com nota CORREÇÃO 2026-10-09. A linha 54 (formato legado de 6 colunas) ficou intacta como histórico; git diff mostra só 2 inserções."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.correction-2026-10-09.json",
+      "sha256After": "fdcd32542cf64e27c6e3986b51c2349735e54b9ff9fa5d3544fa3d66ecaee96d",
+      "reason": "Nova versão do sidecar: sha256 = recorte aa1a68bd…, sourceSha256 = original d2824def…, bloco corrections com previousValue/newValue e referência ao sidecar original (41a36a16…). O sidecar original não foi editado porque consta em reports/workflow-v1/originals-before.json e é verificado byte a byte por scripts/verify_handoff.py; docs/LOCAL_AGENT_HANDOFF.md pede nova versão para alterações de conteúdo."
+    }
+  ],
+  "verification": [
+    "sha256sum: 07_generations/originals/R1-J23-costume-galileo_1.png = d2824defabe2d3388e9acdad66b358a9f05bfd3c64152da86df7d61b84d599db; 02_references/wardrobe/R1-J23-costume-galileo_belowneck.png = aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31.",
+    "git diff de asset-registry.csv: 2 inserções, 0 remoções. Contagem de colunas: 234 linhas de 8 + 43 legadas de 6 (antes 232 + 43).",
+    "Sidecar original 41a36a16… inalterado (conferido depois).",
+    "scripts/manage.py validate rodou sem erro depois da mudança."
+  ],
+  "pendingDecisions": [
+    "Responsável pelo registro/Andre: o mesmo erro aparece em outras 15 linhas legadas de R1 (41 a 53 e 55 a 56: recortes de olhos J11-J20 e figurinos J21, J22, J24, J25), que citam o sha256 do original e não o do recorte. Não foram corrigidas (fora do pedido); mesma correção pode ser aplicada se aprovada.",
+    "Decidir se ferramentas futuras devem preferir a linha de correção mais recente quando houver asset_id repetido (R1-J23-costume-galileo_belowneck aparece nas linhas 54 e 277)."
+  ],
+  "canonicalStateChanged": true,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

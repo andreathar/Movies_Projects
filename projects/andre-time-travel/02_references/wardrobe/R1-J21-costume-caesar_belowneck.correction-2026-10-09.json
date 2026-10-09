@@ -1,0 +1,43 @@
+{
+  "job": "R1-J21-costume-caesar",
+  "generationId": "ARTBBq-BaFNTScyehlMKg2b2hz8AVwohq7glGCdZ6l4fW_gF1Sj_jBP6i3XKJUzFkc1TfydF",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:5",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Photorealistic cinematic costume detail photograph. The frame is cropped from the collarbone down to the waist: the head, face, chin and neck are completely outside the frame above the top edge. Both hands visible with natural anatomy. Original fictional costume reference, historically grounded, no text, no watermark, no other people, no face anywhere. Roman man's torso in a white wool toga with a narrow purple border draped over a plain tunic, a plain iron signet ring on one hand, hands loosely folded. Warm oil-lamp light, dark background.",
+  "provenance": "synthetic_fictional_costume",
+  "approved": false,
+  "sha256": "afb1767a5898a3c950c0cd060329f801c3b008e95aa76f1cdc390db5c075252d",
+  "note": "below-neck costume fragment; caesar",
+  "created": "2026-10-09T08:02:37-03:00",
+  "derivedFrom": "07_generations/originals/R1-J21-costume-caesar_1.png",
+  "cropFractions": [
+    0,
+    0.16,
+    1,
+    1
+  ],
+  "purpose": "below-neck costume fragment, chin/neck removed",
+  "sourceSha256": "4f66bb17a94f3aafae6f52983cb836bf4969743d040d3c35a9ac163e2d1885de",
+  "corrections": [
+    {
+      "at": "2026-10-09",
+      "by": "producer (bot Filme · Produção e Créditos 9bfe6c7d)",
+      "field": "sha256",
+      "previousValue": "4f66bb17a94f3aafae6f52983cb836bf4969743d040d3c35a9ac163e2d1885de",
+      "newValue": "afb1767a5898a3c950c0cd060329f801c3b008e95aa76f1cdc390db5c075252d",
+      "reason": "O valor anterior é o sha256 do original derivedFrom, não do recorte. Conferido com sha256sum.",
+      "supersedesSidecar": {
+        "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.json",
+        "sha256": "981f9d49dbc6a8a19f404cd24698dfd690be6445f7d45d78dc166be6473a105a",
+        "preserved": true,
+        "whyNotEditedInPlace": "Sidecars entregues são preservados (docs/LOCAL_AGENT_HANDOFF.md: alterações de conteúdo criam nova versão); o sidecar original pode constar em reports/workflow-v1/originals-before.json."
+      }
+    }
+  ]
+}

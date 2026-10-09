@@ -1,0 +1,43 @@
+{
+  "job": "R1-J23-costume-galileo",
+  "generationId": "AWgb8IGYTWCkaaLQBPlgdR0TbYuRk4XX_2Iqyn12yol_pOZDBMsax2P8YlVLd4hSsO0iHrVd",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:5",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Photorealistic cinematic costume detail photograph. The frame is cropped from the collarbone down to the waist: the head, face, chin and neck are completely outside the frame above the top edge. Both hands visible with natural anatomy. Original fictional costume reference, historically grounded, no text, no watermark, no other people, no face anywhere. Elderly man's torso in a plain black wool scholar's gown with a white linen collar band, ink-stained fingers holding a small brass geometric compass. Soft cool window light, stone room.",
+  "provenance": "synthetic_fictional_costume",
+  "approved": false,
+  "sha256": "aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31",
+  "note": "below-neck costume fragment; galileo",
+  "created": "2026-10-09T08:04:00-03:00",
+  "derivedFrom": "07_generations/originals/R1-J23-costume-galileo_1.png",
+  "cropFractions": [
+    0,
+    0.16,
+    1,
+    1
+  ],
+  "purpose": "below-neck costume fragment, chin/neck removed",
+  "sourceSha256": "d2824defabe2d3388e9acdad66b358a9f05bfd3c64152da86df7d61b84d599db",
+  "corrections": [
+    {
+      "at": "2026-10-09",
+      "by": "producer (bot Filme · Produção e Créditos 9bfe6c7d)",
+      "field": "sha256",
+      "previousValue": "d2824defabe2d3388e9acdad66b358a9f05bfd3c64152da86df7d61b84d599db",
+      "newValue": "aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31",
+      "reason": "O valor anterior é o sha256 do original derivedFrom (07_generations/originals/R1-J23-costume-galileo_1.png), não do recorte. Conferido com sha256sum.",
+      "supersedesSidecar": {
+        "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.json",
+        "sha256": "41a36a16473fc432357d074409706d635103c6f2efe9b34fc637e74981e91904",
+        "preserved": true,
+        "whyNotEditedInPlace": "O sidecar original está em reports/workflow-v1/originals-before.json e é verificado byte a byte por scripts/verify_handoff.py; docs/LOCAL_AGENT_HANDOFF.md: alterações de conteúdo criam nova versão."
+      }
+    }
+  ]
+}

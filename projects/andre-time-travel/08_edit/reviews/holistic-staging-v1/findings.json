@@ -96,16 +96,19 @@
     {
       "id": "F06",
       "priority": "P1",
-      "title": "Estado operacional não acompanha os artefatos atuais",
+      "title": "Registros parcialmente reconciliados; resumo e matriz ainda desatualizados",
       "kind": "management_gap_at_snapshot",
       "evidence": [
         "management-checks.json",
         "snapshots/memory/STATE.md",
         "snapshots/tasks/board.json",
-        "snapshots/03_bibles/continuity-matrix.csv"
+        "snapshots/03_bibles/continuity-matrix.csv",
+        "snapshots/final-check/manifest.json",
+        "snapshots/final-check/08_edit/reviews/galileo-en-v1/review.md"
       ],
-      "detail": "Na checagem registrada há 9 vídeos originais únicos e uma prévia de 42 s; manifest tem 5 takes e 0/41 slots mapeados. STATE abre dizendo que ainda não houve vídeo/Element, a matriz mantém referências antigas e recast de Napoleão pendente. T13 está em andamento enquanto T10 segue bloqueada. O diretor está trabalhando durante a auditoria, portanto alguns registros podem estar em atualização.",
-      "action": "Ao concluir o capítulo, registrar todos os takes reais e suas decisões, mapear slots/timeline, atualizar o resumo vigente e a matriz e registrar explicitamente o escopo das exceções de dependência. Aprovação de identidade, voz, encenação e filme final devem continuar separadas."
+      "detail": "Na primeira checagem, às 15:26 UTC, o manifest tinha 5 takes e 0/41 slots mapeados. Durante a auditoria, o diretor atualizou o registro: na checagem de fechamento há 9 takes e os 7 slots de Galileu mapeados, ainda sem aceite final. Essa parte foi resolvida pelo trabalho concorrente do produtor. A abertura de STATE e a matriz de continuidade continuam com referências de etapas antigas. A prévia e a timeline auditadas permanecem byte a byte iguais; os problemas de encenação e de ordem da reação continuam presentes.",
+      "action": "Preservar a reconciliação já feita; atualizar o resumo vigente e a matriz, sincronizar bíblias e separar aprovação de identidade, voz, encenação e filme final. Não tratar a lacuna inicial de registro como prova de tarefa esquecida.",
+      "status": "partially_resolved_by_concurrent_producer"
     },
     {
       "id": "F07",
@@ -146,5 +149,6 @@
     "Reeditar Galileu alinhando reação B ao fim de G-L04 e substituindo escutas incompatíveis.",
     "Rever com Andre uma conversa completa, incluindo voz guia claramente identificada e plano para dublagem.",
     "Atualizar mapa de takes/slots, resumos e orçamento; só então liberar o próximo capítulo."
-  ]
+  ],
+  "closingCheckAt": "2026-10-09T15:34:47.517055+00:00"
 }

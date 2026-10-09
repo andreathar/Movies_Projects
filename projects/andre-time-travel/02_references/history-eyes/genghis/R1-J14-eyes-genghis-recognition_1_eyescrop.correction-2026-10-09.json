@@ -1,0 +1,50 @@
+{
+  "job": "R1-J14-eyes-genghis-recognition",
+  "generationId": "AeiIik_EaWPPcjf2Pjwbtw0uL7dCC48U-Vvp4arjK69ES-mzOL_ZnHI4W-6RSP0mFp9roH7N",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Man in his sixties from the Mongolian steppe, narrow dark-brown eyes with epicanthic folds, weathered sun-lined skin, grey-streaked brows. Expression: guarded recognition, the gaze softens slightly, lids lower a little, a long thoughtful look. Warm firelight from the right inside a dim felt tent.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "eb05c3bcb782b4cd217fdf4a88f3a4397914d37b9cbf61a45bff7f158f313101",
+  "note": "eyes-only strip 4:1; genghis; genghis-recognition",
+  "created": "2026-10-09T07:57:15-03:00",
+  "derivedFrom": "07_generations/originals/_quarantine-full-face/R1-J14-eyes-genghis-recognition_1.png",
+  "cropFractions": [
+    0.324,
+    0,
+    0.848,
+    0.7
+  ],
+  "purpose": "eyes-only crop (brow to just below lower lids), ears/nose removed",
+  "sourceSha256": "e0f1f8fc3a5d7e93fb46e39d6818647cbd23c6f40721055094c579e713e9b39e",
+  "corrections": [
+    {
+      "at": "2026-10-09",
+      "by": "producer (bot Filme · Produção e Créditos 9bfe6c7d)",
+      "field": "sha256",
+      "previousValue": "e0f1f8fc3a5d7e93fb46e39d6818647cbd23c6f40721055094c579e713e9b39e",
+      "newValue": "eb05c3bcb782b4cd217fdf4a88f3a4397914d37b9cbf61a45bff7f158f313101",
+      "reason": "O valor anterior é o sha256 do original derivedFrom, não do recorte. Conferido com sha256sum.",
+      "supersedesSidecar": {
+        "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.json",
+        "sha256": "194147801bf2957f95c9a08f21b9db5ebc9e2920f4692e28b5974cf92029437c",
+        "preserved": true,
+        "whyNotEditedInPlace": "Sidecars entregues são preservados (docs/LOCAL_AGENT_HANDOFF.md: alterações de conteúdo criam nova versão); o sidecar original pode constar em reports/workflow-v1/originals-before.json."
+      }
+    },
+    {
+      "at": "2026-10-09",
+      "field": "derivedFrom",
+      "previousValue": "07_generations/originals/R1-J14-eyes-genghis-recognition_1.png",
+      "newValue": "07_generations/originals/_quarantine-full-face/R1-J14-eyes-genghis-recognition_1.png",
+      "reason": "Original movido para _quarantine-full-face/ (git mv, decisão de 2026-10-09); mesmo sha256."
+    }
+  ]
+}

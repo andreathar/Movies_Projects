@@ -1,0 +1,50 @@
+{
+  "job": "R1-J16-eyes-galileo-resolve",
+  "generationId": "AYAcNj-Q2wOXQtcBPohkmRD5oXaOqxoxrK3Iju4iWqh_xyFgrkZkPnGJIrwm2zUCz_TJqgTi",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Tuscan man in his seventies, pale hazel eyes with slightly clouded irises and reddened rims, heavy lids, white wiry brows, deep wrinkles. Expression: quiet resolve, the eyes steady and attentive, brows lifting slightly. Soft cool daylight from a window on the right, stone-walled room.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "3ea4c3de1e70e268b99898a17afd25aa2b09c6b293fad36c4b23698703eb0f4b",
+  "note": "eyes-only strip 4:1; galileo; galileo-resolve",
+  "created": "2026-10-09T07:58:32-03:00",
+  "derivedFrom": "07_generations/originals/_quarantine-full-face/R1-J16-eyes-galileo-resolve_1.png",
+  "cropFractions": [
+    0.223,
+    0,
+    0.653,
+    0.68
+  ],
+  "purpose": "eyes-only crop (brow to just below lower lids), ears/nose removed",
+  "sourceSha256": "27f5f7fe219317044aa14e3f859b4f23c8a717a099c7c862e3b3001cb3397657",
+  "corrections": [
+    {
+      "at": "2026-10-09",
+      "by": "producer (bot Filme · Produção e Créditos 9bfe6c7d)",
+      "field": "sha256",
+      "previousValue": "27f5f7fe219317044aa14e3f859b4f23c8a717a099c7c862e3b3001cb3397657",
+      "newValue": "3ea4c3de1e70e268b99898a17afd25aa2b09c6b293fad36c4b23698703eb0f4b",
+      "reason": "O valor anterior é o sha256 do original derivedFrom, não do recorte. Conferido com sha256sum.",
+      "supersedesSidecar": {
+        "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.json",
+        "sha256": "920d7d0aebc601bb2dc84e4dbb4e90f910788e5a3bdc11a95e70806c0482ce83",
+        "preserved": true,
+        "whyNotEditedInPlace": "Sidecars entregues são preservados (docs/LOCAL_AGENT_HANDOFF.md: alterações de conteúdo criam nova versão); o sidecar original pode constar em reports/workflow-v1/originals-before.json."
+      }
+    },
+    {
+      "at": "2026-10-09",
+      "field": "derivedFrom",
+      "previousValue": "07_generations/originals/R1-J16-eyes-galileo-resolve_1.png",
+      "newValue": "07_generations/originals/_quarantine-full-face/R1-J16-eyes-galileo-resolve_1.png",
+      "reason": "Original movido para _quarantine-full-face/ (git mv, decisão de 2026-10-09); mesmo sha256."
+    }
+  ]
+}
