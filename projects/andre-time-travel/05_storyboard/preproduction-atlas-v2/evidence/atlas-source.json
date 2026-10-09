@@ -1,0 +1,844 @@
+{
+  "schemaVersion": "1.0",
+  "film": "andre-time-travel",
+  "status": "draft_not_approved",
+  "rendererScope": "This episode only; future episodes require their own scene and shot design.",
+  "andreReferences": {
+    "neutral": "02_references/andre/synthetic/R1-J02-andre-closeup-neutral_1.png",
+    "listening": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+    "concerned": "02_references/andre/synthetic/R1-J05-andre-closeup-concerned_1.png",
+    "thoughtful": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+    "seated": "02_references/andre/synthetic/R1-J07-andre-seated-listening_1.png",
+    "threequarter": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+    "present": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.png"
+  },
+  "tableReference": "02_references/table/R1-J26-table-anchor_2.png",
+  "presentReference": "02_references/table/R1-J32-plate-present-day_1.png",
+  "realPhotoWorkspacePath": "inbox/andre-reference-photos/20240202_015214.jpg",
+  "scenes": [
+    {
+      "code": "C",
+      "key": "caesar",
+      "name": "Julius Caesar",
+      "place": "ROME / EARLY 44 BCE",
+      "title": "A name is not an answer",
+      "palette": [
+        "#A26436",
+        "#603C33",
+        "#CBB997"
+      ],
+      "question": "Does victory leave a republic, or personal power?",
+      "arc": "Command → calculation → uncertainty",
+      "action": "The fingers press into the table, then stop. Andre lets the question land before answering.",
+      "light": "Warm, diffuse oil-lamp direction; steady exposure on skin. Ochre plaster and muted red.",
+      "sound": "Small flame, distant room tone, a dry sleeve against the grain. No cheering crowd.",
+      "costume": "Muted wool and linen; an understated drape. Fabric weight and fold direction carry status.",
+      "warning": "Fictional room and casting. Review the costume as a concept; no portrait, bust or polished vessel may reveal a face.",
+      "sources": [
+        1
+      ],
+      "cueA": "Your name survives.",
+      "cueB": "what happens to a republic",
+      "platePath": "02_references/table/R1-J27-plate-rome-44bce_1.png",
+      "aPath": "02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png",
+      "bPath": "02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.png",
+      "costumePath": "02_references/wardrobe/R1-J21-costume-caesar_belowneck.png"
+    },
+    {
+      "code": "K",
+      "key": "genghis",
+      "name": "Genghis Khan",
+      "place": "CAMPAIGN TENT / 1227",
+      "title": "What an empire carries",
+      "palette": [
+        "#90704B",
+        "#514235",
+        "#B5A081"
+      ],
+      "question": "Can connection and destruction belong to the same legacy?",
+      "arc": "Pride → resistance → guarded recognition",
+      "action": "One grip loosens. Andre stays upright and keeps a level, humane gaze.",
+      "light": "Felt-filtered amber and soft fire bounce. No moving flame shadow across eyes.",
+      "sound": "Wind in felt, restrained leather creak, low fire. Avoid battle spectacle.",
+      "costume": "Current candidate: blue patterned fabric, leather belt and ring. Proposed direction: restrained campaign clothing; confirm material and period details.",
+      "warning": "The eye pair differs in brow colour and texture. The blue costume is a candidate, not a locked campaign outfit. No later imperial palace.",
+      "sources": [
+        2,
+        15
+      ],
+      "cueA": "They will enlarge it.",
+      "cueB": "families who never return",
+      "platePath": "02_references/table/R1-J28-plate-tent-1227_1.png",
+      "aPath": "02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png",
+      "bPath": "02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.png",
+      "costumePath": "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png"
+    },
+    {
+      "code": "G",
+      "key": "galileo",
+      "name": "Galileo Galilei",
+      "place": "ARCETRI / 1634",
+      "title": "A question survives",
+      "palette": [
+        "#647F83",
+        "#AAA58F",
+        "#D3D3C3"
+      ],
+      "question": "Does silencing a person settle a question?",
+      "arc": "Weariness → attention → quiet resolve",
+      "action": "A hand rests beside a blank page. Andre leans forward only a fraction, then becomes still.",
+      "light": "Soft cool window light, warm wood retained; page readable, face never overexposed.",
+      "sound": "Quiet air, a single paper movement, a faint chair creak. Let stillness carry the final beat.",
+      "costume": "Dark, plain scholar layers; soft aged cloth. No theatrical wizard robe.",
+      "warning": "The costume reference contains generated writing; replace it with a reviewed prop before a readable close-up. Do not depict later blindness or insert a legendary quotation.",
+      "sources": [
+        3,
+        12
+      ],
+      "cueA": "People learn from you.",
+      "cueB": "does not settle a question",
+      "platePath": "02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "aPath": "02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+      "bPath": "02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.png",
+      "costumePath": "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png"
+    },
+    {
+      "code": "N",
+      "key": "napoleon",
+      "name": "Napoleon Bonaparte",
+      "place": "SAINT HELENA / 1816",
+      "title": "The price of greatness",
+      "palette": [
+        "#647265",
+        "#B7B9A6",
+        "#D4C8AD"
+      ],
+      "question": "Can greatness be separated from its price?",
+      "arc": "Self-possession → wounded pride → reflection",
+      "action": "A hand stops above a closed book. Andre does not lean away from the second question.",
+      "light": "Muted sea-grey window light and damp plaster. Preserve skin warmth without a sepia wash.",
+      "sound": "Distant wind, restrained room creak, cloth. Sea stays outside the scene.",
+      "costume": "Dark green wool concept, pale waistcoat and shirt, restrained brass. Verify tailoring and remove unmotivated rings in future design.",
+      "warning": "The current costume candidate has several rings; do not copy them into continuity without review. No claim of exact Longwood reconstruction.",
+      "sources": [
+        4,
+        17
+      ],
+      "cueA": "outlives your throne",
+      "cueB": "still deny it to someone",
+      "platePath": "02_references/table/R1-J30-plate-sthelena-1816_1.png",
+      "aPath": "02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png",
+      "bPath": "02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.png",
+      "costumePath": "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png"
+    },
+    {
+      "code": "O",
+      "key": "oppenheimer",
+      "name": "J. Robert Oppenheimer",
+      "place": "FICTIONAL ROOM NEAR TRINITY / 15 JULY 1945",
+      "title": "What comes next",
+      "palette": [
+        "#6D858C",
+        "#454D50",
+        "#D4BD93"
+      ],
+      "question": "Can technical success answer a moral question?",
+      "arc": "Anticipation → fear → stillness",
+      "action": "A resting hand loses its tension. Andre stops speaking and stays present for the silence.",
+      "light": "Dusty pre-dawn blue and one muted practical lamp. No flash, mushroom cloud or reflected face.",
+      "sound": "Sparse desert wind and room tone. No dramatic detonation under the city names.",
+      "costume": "Plain pale shirt, muted civilian jacket and fabric creases. Avoid borrowing a movie actor’s styling.",
+      "warning": "The eye pair changes brow darkness and gaze. The meeting is fictional. No weapons diagrams, unsupported casualty totals or claimed quotation from the test.",
+      "sources": [
+        5,
+        18,
+        19,
+        9
+      ],
+      "cueA": "Hiroshima and Nagasaki",
+      "cueB": "not the same as answering",
+      "platePath": "02_references/table/R1-J31-plate-trinity-1945_1.png",
+      "aPath": "02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png",
+      "bPath": "02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png",
+      "costumePath": "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png"
+    }
+  ],
+  "performance": [
+    {
+      "line_id": "IN-L01",
+      "chapter": "opening",
+      "startSecondsProposed": 0.6,
+      "endSecondsProposed": 10.3,
+      "timingBasis": "editorial allocation; four opening references measured separately",
+      "intention": "An intimate recollection. Curiosity becomes a need to understand consequence.",
+      "emphasis": "what came next",
+      "pause": "Separate the short middle sentence. Keep the final clause connected.",
+      "mouthRule": "Begin over the hand/table; any mouth-visible section remains a speech-test dependency.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "C-L01",
+      "chapter": "caesar",
+      "startSecondsProposed": 0.4,
+      "endSecondsProposed": 2.6,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Ask for permanence, with the confidence of someone used to yes.",
+      "emphasis": "survive",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "C-L02",
+      "chapter": "caesar",
+      "startSecondsProposed": 4,
+      "endSecondsProposed": 20.8,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Offer recognition first; let the consequence complicate it.",
+      "emphasis": "one man",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "C-L03",
+      "chapter": "caesar",
+      "startSecondsProposed": 21.7,
+      "endSecondsProposed": 24.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Test whether admiration has turned into condemnation.",
+      "emphasis": "tyrant",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "C-L04",
+      "chapter": "caesar",
+      "startSecondsProposed": 26,
+      "endSecondsProposed": 37.2,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Refuse a simple label. End by opening a question.",
+      "emphasis": "leaves behind",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "K-L01",
+      "chapter": "genghis",
+      "startSecondsProposed": 0.3,
+      "endSecondsProposed": 4.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Ask about what is left to the sons, not a list of victories.",
+      "emphasis": "sons",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "K-L02",
+      "chapter": "genghis",
+      "startSecondsProposed": 5.3,
+      "endSecondsProposed": 19.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Let the first sentence offer pride; slow at the human loss.",
+      "emphasis": "families",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "K-L03",
+      "chapter": "genghis",
+      "startSecondsProposed": 21,
+      "endSecondsProposed": 24.3,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Seek a name that can contain both outcomes.",
+      "emphasis": "call me",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "K-L04",
+      "chapter": "genghis",
+      "startSecondsProposed": 25.3,
+      "endSecondsProposed": 39,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Hold the last clause quietly; do not perform a verdict.",
+      "emphasis": "dead speak",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "G-L01",
+      "chapter": "galileo",
+      "startSecondsProposed": 0.5,
+      "endSecondsProposed": 2.8,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Ask with fatigue and a remaining thread of hope.",
+      "emphasis": "believed",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "G-L02",
+      "chapter": "galileo",
+      "startSecondsProposed": 4,
+      "endSecondsProposed": 17.8,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Warm recognition; resist turning him into a simplified hero.",
+      "emphasis": "simple story",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "G-L03",
+      "chapter": "galileo",
+      "startSecondsProposed": 20,
+      "endSecondsProposed": 23.2,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Return from reputation to the work itself.",
+      "emphasis": "question",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "G-L04",
+      "chapter": "galileo",
+      "startSecondsProposed": 25,
+      "endSecondsProposed": 35,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Offer respect in a plain voice. Leave silence after the final word.",
+      "emphasis": "settle",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "N-L01",
+      "chapter": "napoleon",
+      "startSecondsProposed": 0.3,
+      "endSecondsProposed": 3.2,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Look for an institution that survives exile.",
+      "emphasis": "laws",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "N-L02",
+      "chapter": "napoleon",
+      "startSecondsProposed": 4.2,
+      "endSecondsProposed": 17.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Make equality and its exclusions part of the same thought.",
+      "emphasis": "someone",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "N-L03",
+      "chapter": "napoleon",
+      "startSecondsProposed": 20.5,
+      "endSecondsProposed": 23.7,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Let vulnerability appear inside the demand for praise.",
+      "emphasis": "great",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "N-L04",
+      "chapter": "napoleon",
+      "startSecondsProposed": 25,
+      "endSecondsProposed": 38.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Keep some people and others distinct; end without a final verdict.",
+      "emphasis": "price",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "O-L01",
+      "chapter": "oppenheimer",
+      "startSecondsProposed": 0.4,
+      "endSecondsProposed": 2.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Ask the narrow technical question first.",
+      "emphasis": "works",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "O-L02",
+      "chapter": "oppenheimer",
+      "startSecondsProposed": 4.5,
+      "endSecondsProposed": 20,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "State the events clearly. Give the city names room; do not swell emotionally.",
+      "emphasis": "Hiroshima and Nagasaki",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "O-L03",
+      "chapter": "oppenheimer",
+      "startSecondsProposed": 21.2,
+      "endSecondsProposed": 25.2,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Drop the scientific certainty. Ask a human question.",
+      "emphasis": "right",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Offscreen throughout",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "O-L04",
+      "chapter": "oppenheimer",
+      "startSecondsProposed": 27,
+      "endSecondsProposed": 36.5,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Admit the limit of knowing the future; do not supply a moral answer.",
+      "emphasis": "question",
+      "pause": "A brief breath at a sentence boundary; allow the listener to respond.",
+      "mouthRule": "Visible mouth requires approved speech route; dialogue may bridge reviewed inserts.",
+      "measuredSeconds": null
+    },
+    {
+      "line_id": "OUT-L01",
+      "chapter": "ending",
+      "startSecondsProposed": 0.5,
+      "endSecondsProposed": 14.2,
+      "timingBasis": "editorial allocation, not measured speech",
+      "intention": "Return responsibility to the present. Address one person rather than announce a lesson.",
+      "emphasis": "us / now",
+      "pause": "A small breath after past; another before the final question.",
+      "mouthRule": "Carry the final clause over the empty chair/table; end speech before the credit tail.",
+      "measuredSeconds": null
+    }
+  ],
+  "shotDirections": {
+    "IN-01": {
+      "reference": "02_references/table/R1-J26-table-anchor_2.png",
+      "kind": "TABLE / ARRIVAL",
+      "action": "Andre’s hand comes to rest on the edge.",
+      "missingComposition": "Reference assembly only; exact hand position and matched transition require a keyframe.",
+      "references": [
+        "02_references/table/R1-J32-plate-present-day_1.png",
+        "02_references/table/R1-J26-table-anchor_2.png"
+      ]
+    },
+    "IN-02": {
+      "reference": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.png",
+      "kind": "ANDRE / OPENING",
+      "action": "A calm first question; head held within the approved angle.",
+      "missingComposition": "Reference assembly only; exact hand position and matched transition require a keyframe.",
+      "references": [
+        "02_references/table/R1-J32-plate-present-day_1.png",
+        "02_references/table/R1-J26-table-anchor_2.png"
+      ]
+    },
+    "IN-03": {
+      "reference": "02_references/table/R1-J32-plate-present-day_1.png",
+      "kind": "TABLE / TRANSITION",
+      "action": "Cut on the same grain and edge mark into Rome.",
+      "missingComposition": "Reference assembly only; exact hand position and matched transition require a keyframe.",
+      "references": [
+        "02_references/table/R1-J32-plate-present-day_1.png",
+        "02_references/table/R1-J26-table-anchor_2.png"
+      ]
+    },
+    "C-01": {
+      "reference": "02_references/wardrobe/R1-J21-costume-caesar_belowneck.png",
+      "kind": "BELOW-NECK / TABLE",
+      "action": "A sleeve and one hand enter the established table edge.",
+      "missingComposition": "Exact seated sleeve/hand composition still needed.",
+      "references": [
+        "02_references/wardrobe/R1-J21-costume-caesar_belowneck.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "C-02": {
+      "reference": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "kind": "ANDRE / MEDIUM CLOSE-UP",
+      "action": "One quiet answer, seated; eyes just camera-right.",
+      "missingComposition": "Andre has not yet been composed into this era at the locked table.",
+      "references": [
+        "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "C-03": {
+      "reference": "02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png",
+      "kind": "EYES / STATE A",
+      "action": "A slight eye response to “Your name survives.”.",
+      "missingComposition": "Eye strip is a reference; final full-frame composition and gaze need approval.",
+      "references": [
+        "02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "C-04": {
+      "reference": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "kind": "ANDRE / LISTENING",
+      "action": "Listen without moving the head out of the supplied angle.",
+      "missingComposition": "Era-matched lighting and mouth visibility still need a keyframe.",
+      "references": [
+        "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "C-05": {
+      "reference": "02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.png",
+      "kind": "EYES / STATE B",
+      "action": "Let “what happens to a republic” change the gaze; at most one blink.",
+      "missingComposition": "Two eye states were generated separately: compare iris, brow and crease continuity.",
+      "references": [
+        "02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "C-06": {
+      "reference": "02_references/wardrobe/R1-J21-costume-caesar_belowneck.png",
+      "kind": "HAND / TABLE INSERT",
+      "action": "The fingers press into the table, then stop. Andre lets the question land before answering.",
+      "missingComposition": "The costume fragment is a material reference, not the required tabletop hand keyframe.",
+      "references": [
+        "02_references/wardrobe/R1-J21-costume-caesar_belowneck.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "C-07": {
+      "reference": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "kind": "ANDRE / CLOSING HOLD",
+      "action": "Hold the consequence, then cut to wood before changing era.",
+      "missingComposition": "Needs the same era lighting, seating and table geometry as the opening Andre shot.",
+      "references": [
+        "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+        "02_references/table/R1-J27-plate-rome-44bce_1.png"
+      ]
+    },
+    "K-01": {
+      "reference": "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png",
+      "kind": "BELOW-NECK / TABLE",
+      "action": "A sleeve and one hand enter the established table edge.",
+      "missingComposition": "Exact seated sleeve/hand composition still needed.",
+      "references": [
+        "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "K-02": {
+      "reference": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "kind": "ANDRE / MEDIUM CLOSE-UP",
+      "action": "One quiet answer, seated; eyes just camera-right.",
+      "missingComposition": "Andre has not yet been composed into this era at the locked table.",
+      "references": [
+        "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "K-03": {
+      "reference": "02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png",
+      "kind": "EYES / STATE A",
+      "action": "A slight eye response to “They will enlarge it.”.",
+      "missingComposition": "Eye strip is a reference; final full-frame composition and gaze need approval.",
+      "references": [
+        "02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "K-04": {
+      "reference": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "kind": "ANDRE / LISTENING",
+      "action": "Listen without moving the head out of the supplied angle.",
+      "missingComposition": "Era-matched lighting and mouth visibility still need a keyframe.",
+      "references": [
+        "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "K-05": {
+      "reference": "02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.png",
+      "kind": "EYES / STATE B",
+      "action": "Let “families who never return” change the gaze; at most one blink.",
+      "missingComposition": "Two eye states were generated separately: compare iris, brow and crease continuity.",
+      "references": [
+        "02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "K-06": {
+      "reference": "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png",
+      "kind": "HAND / TABLE INSERT",
+      "action": "One grip loosens. Andre stays upright and keeps a level, humane gaze.",
+      "missingComposition": "The costume fragment is a material reference, not the required tabletop hand keyframe.",
+      "references": [
+        "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "K-07": {
+      "reference": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "kind": "ANDRE / CLOSING HOLD",
+      "action": "Hold the consequence, then cut to wood before changing era.",
+      "missingComposition": "Needs the same era lighting, seating and table geometry as the opening Andre shot.",
+      "references": [
+        "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+        "02_references/table/R1-J28-plate-tent-1227_1.png"
+      ]
+    },
+    "G-01": {
+      "reference": "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "kind": "BELOW-NECK / TABLE",
+      "action": "A sleeve and one hand enter the established table edge.",
+      "missingComposition": "Exact seated sleeve/hand composition still needed.",
+      "references": [
+        "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "G-02": {
+      "reference": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "kind": "ANDRE / MEDIUM CLOSE-UP",
+      "action": "One quiet answer, seated; eyes just camera-right.",
+      "missingComposition": "Andre has not yet been composed into this era at the locked table.",
+      "references": [
+        "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "G-03": {
+      "reference": "02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+      "kind": "EYES / STATE A",
+      "action": "A slight eye response to “People learn from you.”.",
+      "missingComposition": "Eye strip is a reference; final full-frame composition and gaze need approval.",
+      "references": [
+        "02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "G-04": {
+      "reference": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "kind": "ANDRE / LISTENING",
+      "action": "Listen without moving the head out of the supplied angle.",
+      "missingComposition": "Era-matched lighting and mouth visibility still need a keyframe.",
+      "references": [
+        "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "G-05": {
+      "reference": "02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.png",
+      "kind": "EYES / STATE B",
+      "action": "Let “does not settle a question” change the gaze; at most one blink.",
+      "missingComposition": "Two eye states were generated separately: compare iris, brow and crease continuity.",
+      "references": [
+        "02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "G-06": {
+      "reference": "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "kind": "HAND / TABLE INSERT",
+      "action": "A hand rests beside a blank page. Andre leans forward only a fraction, then becomes still.",
+      "missingComposition": "The costume fragment is a material reference, not the required tabletop hand keyframe.",
+      "references": [
+        "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "G-07": {
+      "reference": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "kind": "ANDRE / CLOSING HOLD",
+      "action": "Hold the consequence, then cut to wood before changing era.",
+      "missingComposition": "Needs the same era lighting, seating and table geometry as the opening Andre shot.",
+      "references": [
+        "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+        "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+      ]
+    },
+    "N-01": {
+      "reference": "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png",
+      "kind": "BELOW-NECK / TABLE",
+      "action": "A sleeve and one hand enter the established table edge.",
+      "missingComposition": "Exact seated sleeve/hand composition still needed.",
+      "references": [
+        "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "N-02": {
+      "reference": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "kind": "ANDRE / MEDIUM CLOSE-UP",
+      "action": "One quiet answer, seated; eyes just camera-right.",
+      "missingComposition": "Andre has not yet been composed into this era at the locked table.",
+      "references": [
+        "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "N-03": {
+      "reference": "02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png",
+      "kind": "EYES / STATE A",
+      "action": "A slight eye response to “outlives your throne”.",
+      "missingComposition": "Eye strip is a reference; final full-frame composition and gaze need approval.",
+      "references": [
+        "02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "N-04": {
+      "reference": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "kind": "ANDRE / LISTENING",
+      "action": "Listen without moving the head out of the supplied angle.",
+      "missingComposition": "Era-matched lighting and mouth visibility still need a keyframe.",
+      "references": [
+        "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "N-05": {
+      "reference": "02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.png",
+      "kind": "EYES / STATE B",
+      "action": "Let “still deny it to someone” change the gaze; at most one blink.",
+      "missingComposition": "Two eye states were generated separately: compare iris, brow and crease continuity.",
+      "references": [
+        "02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "N-06": {
+      "reference": "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png",
+      "kind": "HAND / TABLE INSERT",
+      "action": "A hand stops above a closed book. Andre does not lean away from the second question.",
+      "missingComposition": "The costume fragment is a material reference, not the required tabletop hand keyframe.",
+      "references": [
+        "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "N-07": {
+      "reference": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "kind": "ANDRE / CLOSING HOLD",
+      "action": "Hold the consequence, then cut to wood before changing era.",
+      "missingComposition": "Needs the same era lighting, seating and table geometry as the opening Andre shot.",
+      "references": [
+        "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+        "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+      ]
+    },
+    "O-01": {
+      "reference": "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+      "kind": "BELOW-NECK / TABLE",
+      "action": "A sleeve and one hand enter the established table edge.",
+      "missingComposition": "Exact seated sleeve/hand composition still needed.",
+      "references": [
+        "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "O-02": {
+      "reference": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "kind": "ANDRE / MEDIUM CLOSE-UP",
+      "action": "One quiet answer, seated; eyes just camera-right.",
+      "missingComposition": "Andre has not yet been composed into this era at the locked table.",
+      "references": [
+        "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "O-03": {
+      "reference": "02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png",
+      "kind": "EYES / STATE A",
+      "action": "A slight eye response to “Hiroshima and Nagasaki”.",
+      "missingComposition": "Eye strip is a reference; final full-frame composition and gaze need approval.",
+      "references": [
+        "02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "O-04": {
+      "reference": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "kind": "ANDRE / LISTENING",
+      "action": "Listen without moving the head out of the supplied angle.",
+      "missingComposition": "Era-matched lighting and mouth visibility still need a keyframe.",
+      "references": [
+        "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "O-05": {
+      "reference": "02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png",
+      "kind": "EYES / STATE B",
+      "action": "Let “not the same as answering” change the gaze; at most one blink.",
+      "missingComposition": "Two eye states were generated separately: compare iris, brow and crease continuity.",
+      "references": [
+        "02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "O-06": {
+      "reference": "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+      "kind": "HAND / TABLE INSERT",
+      "action": "A resting hand loses its tension. Andre stops speaking and stays present for the silence.",
+      "missingComposition": "The costume fragment is a material reference, not the required tabletop hand keyframe.",
+      "references": [
+        "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "O-07": {
+      "reference": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "kind": "ANDRE / CLOSING HOLD",
+      "action": "Hold the consequence, then cut to wood before changing era.",
+      "missingComposition": "Needs the same era lighting, seating and table geometry as the opening Andre shot.",
+      "references": [
+        "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+        "02_references/table/R1-J31-plate-trinity-1945_1.png"
+      ]
+    },
+    "OUT-01": {
+      "reference": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.png",
+      "kind": "ANDRE / RETURN",
+      "action": "Andre begins the question for us.",
+      "missingComposition": "Leave the proposed 3.8-second credit tail after dialogue; check with measured final audio.",
+      "references": [
+        "02_references/table/R1-J32-plate-present-day_1.png",
+        "02_references/table/R1-J26-table-anchor_2.png"
+      ]
+    },
+    "OUT-02": {
+      "reference": "02_references/table/R1-J32-plate-present-day_1.png",
+      "kind": "EMPTY CHAIR / QUESTION",
+      "action": "The empty chair receives the final clause.",
+      "missingComposition": "Leave the proposed 3.8-second credit tail after dialogue; check with measured final audio.",
+      "references": [
+        "02_references/table/R1-J32-plate-present-day_1.png",
+        "02_references/table/R1-J26-table-anchor_2.png"
+      ]
+    },
+    "OUT-03": {
+      "reference": "02_references/table/R1-J26-table-anchor_2.png",
+      "kind": "TABLE / CREDITS",
+      "action": "Hold the wood; then fade after the last spoken word.",
+      "missingComposition": "Leave the proposed 3.8-second credit tail after dialogue; check with measured final audio.",
+      "references": [
+        "02_references/table/R1-J32-plate-present-day_1.png",
+        "02_references/table/R1-J26-table-anchor_2.png"
+      ]
+    }
+  }
+}

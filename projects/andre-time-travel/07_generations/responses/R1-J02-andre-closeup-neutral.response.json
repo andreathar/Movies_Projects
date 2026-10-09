@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "polled": true,
+    "timedOut": false,
+    "generations": [
+      {
+        "generationId": "ASwLQMKie4cE9LiX3ToZ9ifc42AYveq9x1uqZGDE-X-zPr8d1S6a9vbAYxzqjl_G5rMI9AM5",
+        "status": "COMPLETED",
+        "result": {
+          "generationId": "ASwLQMKie4cE9LiX3ToZ9ifc42AYveq9x1uqZGDE-X-zPr8d1S6a9vbAYxzqjl_G5rMI9AM5",
+          "status": "COMPLETED",
+          "createTime": 1791542686787,
+          "finishTime": 1791542718631,
+          "works": [
+            {
+              "status": "COMPLETED",
+              "contentType": "image",
+              "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qZwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpNc2UvYWlfcG9ydGFsX3NncF9rbGluZ19jb21tb25fbG9nby9iMWY4OTc3OC0yODVkLTQyNTEtYmEyMy04Y2NkMTRiN2Y0YTQvMC5wbmc.origin?x-kcdn-pid=112372",
+              "urlWithoutWatermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2RjODcyZTdjLTgyMDEtNDM4NC04NzRjLWZmMjQ4MjdhMTY5YS5wbmc.origin?x-kcdn-pid=112372",
+              "url_without_watermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2RjODcyZTdjLTgyMDEtNDM4NC04NzRjLWZmMjQ4MjdhMTY5YS5wbmc.origin?x-kcdn-pid=112372",
+              "content_type": "image"
+            },
+            {
+              "status": "COMPLETED",
+              "contentType": "image",
+              "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qZwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpNc2UvYWlfcG9ydGFsX3NncF9rbGluZ19jb21tb25fbG9nby8xMGU0N2M5Ni1iNTM1LTQ3MjAtOGQ2Ny0wYzg5OTMxZjIzNTgvMC5wbmc.origin?x-kcdn-pid=112372",
+              "urlWithoutWatermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2QxNjM5NTE2LWU0ZDMtNDExZS1iYTM4LWM3OWJkZDA0ZjI2My5wbmc.origin?x-kcdn-pid=112372",
+              "url_without_watermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2QxNjM5NTE2LWU0ZDMtNDExZS1iYTM4LWM3OWJkZDA0ZjI2My5wbmc.origin?x-kcdn-pid=112372",
+              "content_type": "image"
+            }
+          ],
+          "generation_id": "ASwLQMKie4cE9LiX3ToZ9ifc42AYveq9x1uqZGDE-X-zPr8d1S6a9vbAYxzqjl_G5rMI9AM5",
+          "create_time": 1791542686787,
+          "finish_time": 1791542718631
+        }
+      }
+    ]
+  }
+}

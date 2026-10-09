@@ -1,0 +1,16 @@
+{
+  "cards": 79,
+  "canonicalShots": 41,
+  "canonicalLinesPreserved": 22,
+  "proposedTimelineSeconds": 240,
+  "layoutOverflows": 0,
+  "allLocalLinksResolve": true,
+  "inputHashesMatch": true,
+  "audioFilesDecode": true,
+  "browserPreview": "not inspected: file protocol blocked; no workaround attempted",
+  "pdfPageCounts": {
+    "reference-atlas.pdf": 16,
+    "storyboard-cards.pdf": 41,
+    "performance-cards.pdf": 22
+  }
+}

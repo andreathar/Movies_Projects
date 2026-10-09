@@ -1,0 +1,61 @@
+{
+  "provider": "ElevenLabs",
+  "flow_id": "v2Bk76GrVDOxQCLbSjmU",
+  "records": [
+    {
+      "id": "yyOni9RKpb0h0rYztvB9",
+      "status": "completed",
+      "duration_secs": 8.312743764172335,
+      "price": {
+        "credits": 95.9904,
+        "price_cents": 1.74528,
+        "cost_fiat_currency": "usd"
+      },
+      "model_id": "eleven_multilingual_v2",
+      "approved": false,
+      "audioQualityReviewed": false
+    },
+    {
+      "id": "gxMB2hHH1NUGFeWPePlw",
+      "status": "completed",
+      "duration_secs": 8.034104308390022,
+      "price": {
+        "credits": 95.9904,
+        "price_cents": 1.74528,
+        "cost_fiat_currency": "usd"
+      },
+      "model_id": "eleven_multilingual_v2",
+      "approved": false,
+      "audioQualityReviewed": false
+    },
+    {
+      "id": "JPwPGSRbhILZE6utIPxq",
+      "status": "completed",
+      "duration_secs": 6.965986394557823,
+      "price": {
+        "credits": 95.9904,
+        "price_cents": 1.74528,
+        "cost_fiat_currency": "usd"
+      },
+      "model_id": "eleven_multilingual_v2",
+      "approved": false,
+      "audioQualityReviewed": false
+    },
+    {
+      "id": "Z0IswJlv6onLcoYlVURk",
+      "status": "completed",
+      "duration_secs": 6.873106575963718,
+      "price": {
+        "credits": 95.9904,
+        "price_cents": 1.74528,
+        "cost_fiat_currency": "usd"
+      },
+      "model_id": "eleven_multilingual_v2",
+      "approved": false,
+      "audioQualityReviewed": false
+    }
+  ],
+  "totalCredits": 383.9616,
+  "all_completed": true,
+  "approved": false
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": "2026-10-09T11:47:53.406764+00:00",
+  "status": "ok",
+  "newPaidJobs": 0,
+  "atlas": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v2",
+  "cardImages": 79,
+  "canonicalDialogueLinesPreserved": 22,
+  "shotDirectionsFromEditableSource": 41,
+  "timelineSeconds": 240,
+  "buildInputHashesMatched": 36,
+  "pdfPageCounts": {
+    "reference-atlas.pdf": 16,
+    "storyboard-cards.pdf": 41,
+    "performance-cards.pdf": 22
+  },
+  "localAtlasLinksResolved": 169,
+  "layoutOverflows": 0,
+  "originalFilesUnchanged": 382,
+  "localizedBibleImageLinks": 26,
+  "missingLocalDependenciesCopied": 1,
+  "cleanContinuationRehearsal": {
+    "status": "ok",
+    "testOnly": true,
+    "paidJobs": 0,
+    "inheritedApprovals": 0,
+    "runtimeAndChapterCountInherited": false,
+    "scope": "clean starting template only; not production acceptance"
+  },
+  "management": {
+    "status": "ok",
+    "errors": [],
+    "warnings": [
+      {
+        "missingCachedSourceSnapshots": [
+          18,
+          19
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id": "andre-time-travel",
+        "chapters": 5,
+        "storyboardSlots": 41,
+        "targetSeconds": 240,
+        "budgetCeiling": 7741,
+        "productionTasks": 21,
+        "taskStates": {
+          "ready": 3,
+          "blocked": 18
+        },
+        "recordedTakes": 0,
+        "finalMovieVerified": false,
+        "registeredSources": 19,
+        "importedSourceSnapshots": 17
+      }
+    ]
+  },
+  "creativeApproval": false,
+  "limits": [
+    "No end-to-end movie, likeness, language or speech synchronization acceptance",
+    "Historical source snapshots 18 and 19 still uncached",
+    "R2 provider jobs and charges not independently verified",
+    "HTML links inspected statically; browser interaction not verified",
+    "Two V2 cards visually inspected separately; not full artistic acceptance"
+  ]
+}

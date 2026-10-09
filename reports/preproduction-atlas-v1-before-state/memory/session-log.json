@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "entries": [
+    {
+      "at": "2026-10-09T07:24:04-03:00",
+      "event": "workspace_bootstrap",
+      "productionWorkPerformed": false,
+      "note": "Existing production plan migrated; local management state initialized. No paid generation or media approval."
+    },
+    {
+      "at": "2026-10-09T07:44:16-03:00",
+      "event": "reference_candidates_recorded",
+      "candidateCount": 10,
+      "approved": false,
+      "paidJobIds": [],
+      "note": "Existing inbox originals preserved; T02 is ready for reference auditing, not completed."
+    }
+  ]
+}

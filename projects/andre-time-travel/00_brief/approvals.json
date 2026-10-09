@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "workspaceSetupAuthorized": true,
+  "creativeApprovals": {
+    "characterReferences": false,
+    "productionElement": false,
+    "screenplay": false,
+    "voiceTests": false,
+    "speechRoute": false,
+    "pilot": false,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "paidGenerationBatchApproved": false,
+  "externalAudioServiceBudgetApproved": false,
+  "approvals": [
+    {
+      "id": "APR-R1-references-2026-10-09",
+      "type": "paid_reference_generation_scope",
+      "grantedBy": "Andre Athar (chat message, 2026-10-09)",
+      "quote": "i aprove you to do whatever you need to acomplish that mission",
+      "scope": "Kling image generation via installed CLI for reference/character sheets (Andre synthetic variants, eyes-only historical references, table/wardrobe/scene anchors); upload of Andre's own photos to Kling and its image providers; small ElevenLabs test lines for voice 'Athar'.",
+      "ceiling": "Phase B 'references_and_storyboard' cap of 774 Kling credits; stop and report if exceeded. Not approval for video generation, Element creation or the film batch.",
+      "notApproved": [
+        "video generation",
+        "new Kling Element (T04)",
+        "likeness approval (characterReferences stays false)",
+        "ElevenLabs credit purchases or plan upgrades"
+      ],
+      "constraints": "Historical figures: no full faces. Outputs labelled synthetic. Record every generation ID and creditsConsumed."
+    }
+  ]
+}

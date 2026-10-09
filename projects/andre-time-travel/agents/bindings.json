@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "registry": "../../../agents/registry.json",
+  "roles": [
+    "producer",
+    "continuity",
+    "historian",
+    "dialogue-sound",
+    "storyboard",
+    "editor",
+    "qc"
+  ],
+  "activeProcesses": [],
+  "paidSubmissionOwner": "producer",
+  "reviewersMayCloseTasks": false
+}

@@ -1,0 +1,18 @@
+{
+  "job": "R1-J18-eyes-napoleon-reflection",
+  "generationId": "AbMueqQPppVGfatIXP6ZcudqiKkArxhqoVaM-fjsQUoHszjVeKM6zk7gUe7sseC0ktsJyb67",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Man in his mid-forties, pale grey-blue eyes, heavy lids, light chestnut brows, pale skin. Expression: inward reflection, the gaze lowered a little and distant, a trace of wounded pride. Cool overcast grey sea-light from a window on the right, damp plaster wall.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "3f27a06e4ffa445e5ab70af95b2f19fa202f7bfa75e34b7ce227b1c5b2bc4101",
+  "note": "eyes-only strip 4:1; napoleon; napoleon-reflection",
+  "created": "2026-10-09T07:59:49-03:00"
+}

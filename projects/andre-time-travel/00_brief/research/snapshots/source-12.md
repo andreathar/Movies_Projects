@@ -1,0 +1,14 @@
+[Home](https://catalogue.museogalileo.it/index.html) \> [In-depth Index](https://catalogue.museogalileo.it/index/IndepthIndex.html) \>
+
+[![Share on Facebook](https://catalogue.museogalileo.it/imm_layout/01Facebook.png)](https://www.facebook.com/sharer.php?u=https://catalogue.museogalileo.it/indepth/VillaGioiello.html&t=Museo%20Galileo%20-%20Villa%20Il%20Gioiello "Share on Facebook")[![Share on Twitter](https://catalogue.museogalileo.it/imm_layout/02Twitter.png)](https://twitter.com/home?status=Museo%20Galileo%20-%20Villa%20Il%20Gioiello%20https://catalogue.museogalileo.it/indepth/VillaGioiello.html "Share on Twitter")[![Share by e-mail](https://catalogue.museogalileo.it/imm_layout/03Mail.png)](mailto:?subject=Museo%20Galileo%20-%20Villa%20Il%20Gioiello&body=https://catalogue.museogalileo.it/indepth/VillaGioiello.html "Share by e-mail")[![Convert to PDF](https://catalogue.museogalileo.it/imm_layout/acrobat.png)](https://www.web2pdfconvert.com/convert.aspx?cURL=https://catalogue.museogalileo.it/indepth/VillaGioiello.html&title=Museo%20Galileo%20-%20Villa%20Il%20Gioiello "Convert to PDF")
+
+[![up](https://catalogue.museogalileo.it/imm_layout/up.png)](https://catalogue.museogalileo.it/index/IndepthIndex.html)[In-depth Index](https://catalogue.museogalileo.it/index/IndepthIndex.html)
+
+[![Villa Il Gioiello](https://catalogue.museogalileo.it/images/cat/approfondimenti_150/8856_3081_4361-017_150.jpg)](https://catalogue.museogalileo.it/gallery/VillaGioiello.html)
+
+The villa, which seems to date from the fourteenth century, was rebuilt in the sixteenth century. The name "Gioiello" \[Jewel\] denoted the property's attractive location, in the hills of Arcetri, facing west. Galileo's daughter, Sister Maria Celeste (1600-1634), was living in the convent of San Matteo in Arcetri. It was she who informed her father of the possibility of renting the villa adjoining the convent. Galileo (1564-1642) signed the lease in September 1631. After his condemnation by the Holy Office, Galileo was permitted to return to the villa on December 1, 1633, but was barred from receiving visitors with whom to discuss scientific subjects. Only in January 1639 was he allowed, owing to his poor health, to host the young Vincenzo Viviani (1622-1703)—joined, three months before Galileo's death, by Evangelista Torricelli (1608-1647). Galileo died at Il Gioiello on January 8, 1642, attended by Viviani, Torricelli, and his son Vincenzo Galilei (1606-1649).
+
+Related objects
+
+- \- [Galileo and Milton (Inv. 3682)](https://catalogue.museogalileo.it/object/GalileoMilton.html)
+- \- [Galileo and Viviani (Loan INAF-Arcetri)](https://catalogue.museogalileo.it/object/GalileoViviani.html)

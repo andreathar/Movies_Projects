@@ -1,0 +1,1532 @@
+{
+  "files": [
+    {
+      "path": "inbox/andre-reference-photos/20230817_203913.jpg",
+      "sha256": "9951e9da18903f79a70b951ef8477916accbfc88ff3b557b833c609b6628ab09"
+    },
+    {
+      "path": "inbox/andre-reference-photos/20240202_015214.jpg",
+      "sha256": "b623ba936797b426a59058dc9d839f803eeca0ae823079f5e6d9b2ad4ac5476d"
+    },
+    {
+      "path": "inbox/andre-reference-photos/20240202_015259.jpg",
+      "sha256": "44c1d4dbd9d3ffe39bffbf5d771201857cb098346b7fdd9bfd667af67a1b528a"
+    },
+    {
+      "path": "inbox/andre-reference-photos/20240202_015304.jpg",
+      "sha256": "4acc534591a4cc3b82c0b75062e4b9c336c831c08ea7766fd0dcb4de22736239"
+    },
+    {
+      "path": "inbox/andre-reference-photos/IMG_20210428_141013_optimized.jpg",
+      "sha256": "957c68529e4bc592fd38da85954372c3a1b2b6019b342b433c36bb3a8f5231b0"
+    },
+    {
+      "path": "inbox/andre-reference-photos/IMG_20210722_151056_optimized.jpg",
+      "sha256": "68a13e274e7fd5e24c47b25998d80f1ede3e26bc94fb2735b639ba964a66d580"
+    },
+    {
+      "path": "inbox/andre-reference-photos/IMG_20210818_105943_optimized.jpg",
+      "sha256": "99cd110aa657a30b78b3efa1534f0aa89fd14ae9b3cada4e5f045aa3d7b7bca6"
+    },
+    {
+      "path": "inbox/andre-reference-photos/IMG_20220321_103632.jpg",
+      "sha256": "8ba33c154d64e252791dfc9fe851bad706fe69ab3b6bd9cd1028f40a15939476"
+    },
+    {
+      "path": "inbox/andre-reference-photos/IMG_20230220_183202.jpg",
+      "sha256": "1b02d577bb02df02d68fc422b3c1636f0e8bb5a5e5987ced9b31299b4e71046b"
+    },
+    {
+      "path": "inbox/andre-reference-photos/SHA256SUMS.txt",
+      "sha256": "93c1d0cc8b09607d10fb4632ae1fe9b89fa95e8a84c5ca8149d3bb10d33d3d7b"
+    },
+    {
+      "path": "inbox/andre-reference-photos/kling_20261008_IMAGE.png",
+      "sha256": "0a4acd0ffce2260514058e36b26e0afaf87961b9262bf318b1f62aac0d1e2839"
+    },
+    {
+      "path": "inbox/andre-voice/ElevenLabs_2026-10-09T10_42_57_Athar_pvc_sp100_s50_sb75_v4.mp3",
+      "sha256": "d8e5e20a16b103b363a52975d6c560c3a6ba1de116b501fc19d8bee3b44e3de8"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/_review/andre-closeups_contact.jpg",
+      "sha256": "9530901325c966df9d04876ab757dfa34c007362e542392138f07fb97a839ef3"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/_review/andre-seated_contact.jpg",
+      "sha256": "8cfa6c1383138d0ab4f8fb5c3c78d590e25a7c1cd4be6e1ed3b699f96b4498be"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/_review/era-plates_contact.jpg",
+      "sha256": "c77e7fcfd4898f0426d1ab69453bcd565a29f49e4b26f7a9c9b615817fef7ba7"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/_review/historical-costumes_contact.jpg",
+      "sha256": "7f4d57bd838082a7b52237375e2a97b3571a4bbe452507d61be9e7ba5b00c80f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/_review/historical-eyes_contact.jpg",
+      "sha256": "b83ce245b763c1d0849855a032820563fcebcfb49ce956b8cc5c816157c94786"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/_review/table-candidates_contact.jpg",
+      "sha256": "d1b1bac9b5025a28e0bdb14332bb53d547864b8d2288d3894dad7e84111afff1"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015214.jpg",
+      "sha256": "53969f6e70dae4bb0a377fa63c8e9b127d39bd33909b8bf05c3ed3910acaeb22"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015259.jpg",
+      "sha256": "ea0d9f2b0c7dcabb94ec1ba55001bc415b5c3ac03a20c1670d2f2d9b4ca74294"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/selected/crop34_20240202_015304.jpg",
+      "sha256": "27aaf9dad00df5f7a57937f7b004410d852a4b31ef7556318471b54695c8f2bb"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J01-andre-master-sheet_1.json",
+      "sha256": "d7784416efee2787837c6038a741d3c62a5766a848bb3c57118fea7f42ea3444"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J01-andre-master-sheet_1.png",
+      "sha256": "2bb39d4926b9d1a05e9f1fa02c73d857ed526fdf399f9d900dd1d2717e399b3b"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J02-andre-closeup-neutral_1.json",
+      "sha256": "718b84039b0f1252d953f994535dcb0c6e5c296fc9b9d6e05976301900f31d50"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J02-andre-closeup-neutral_1.png",
+      "sha256": "a2384f2e4d5087405ce9e92781498f1f6ac70d1b094ba64c13e08e7bc937f4e4"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J02-andre-closeup-neutral_2.json",
+      "sha256": "a1c0456b1edd4fed85af236e99de2ec3e9def3b85f10364a20959825037df334"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J02-andre-closeup-neutral_2.png",
+      "sha256": "c2e3f75176a6e6b4c7e6088ef1f2722c079ab8fb3e80bea7b6735c2337747915"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J03-andre-closeup-smile_1.json",
+      "sha256": "f8b66d62b5a12b8aab18ed94303d9b2c1f96ab07d8c288616755e0d606047788"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J03-andre-closeup-smile_1.png",
+      "sha256": "5fba61f45dd8c9000109dd556e42d2dc5f7c6d46aa334ca498275e2e2931929f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J03-andre-closeup-smile_2.json",
+      "sha256": "8ca96dc811bb20c911b8e8a62e6f4ad18f81bfa5cb20d0516a0736d1eb4c63ea"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J03-andre-closeup-smile_2.png",
+      "sha256": "662bef86eff899c33d0e52cc2e16fc7a4c0ee26d82917efeb8dbd7b1e0527ac5"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.json",
+      "sha256": "13b965139c52e18ca909f9e4681cd73d07c570c4eac350f421f8cb25b025d8ce"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "sha256": "68ae60dca9a574fb6a4718c46ca223c0e1cb5830512dc5b4acb25a92c597a0a2"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J04-andre-closeup-listening_2.json",
+      "sha256": "083bffd4cc0637bb8273866fd1b74485d6e8ba8b011f986734e702fff1a7e463"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J04-andre-closeup-listening_2.png",
+      "sha256": "83172fee4b8c829b6fb90d7904adb137aeb94bf0b7c01b52e2f6077999a33eaa"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J05-andre-closeup-concerned_1.json",
+      "sha256": "21020b436dd937dfb283a53991331b4ace53c602ba0bb21524a978fbb11b6a07"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J05-andre-closeup-concerned_1.png",
+      "sha256": "28830409b4554d6fb3a530d6894ef8484c43333d15ac1f64de75a197a06f089b"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J05-andre-closeup-concerned_2.json",
+      "sha256": "a11a257889474babadab49592c2a06244a2f08ecbd5481fb4529c80f6d287b56"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J05-andre-closeup-concerned_2.png",
+      "sha256": "4e9e55407cfe29c08592013aef8720950ff722d4f35fb7865ce1ffefff720287"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.json",
+      "sha256": "8cb57de734472e0e3fe2fc17cee2d281d2ac566d5f5f1e805d06a5da2584a435"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "sha256": "7e2a666a08a79cb43464b7b2ae90300cad4d1bd176f05ef6dcb7fdfd3eee309f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_2.json",
+      "sha256": "bc9e5541a94c8725ddc5672cdb33278b39bd3fb29edf8da36e0b6ba64fcbdf9e"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_2.png",
+      "sha256": "1bb276e2e9b1b5b9a5c8f0f5cff9d18f5f50f80389b8191a68576b59b7eb19b7"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J07-andre-seated-listening_1.json",
+      "sha256": "d7682f21b90cb78b59a44bf3b97dacd55bf3e8fa9dfe45266ead7c80ec753714"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J07-andre-seated-listening_1.png",
+      "sha256": "5e85c16ae6b29fc7de0550864ee660277da82993b2de295b5c185354895c1744"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J07-andre-seated-listening_2.json",
+      "sha256": "d9bbf84890cac92a7baa27671f1b6cd316257e5a7ea2f4cf2ad40514c0a1901f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J07-andre-seated-listening_2.png",
+      "sha256": "8a7de99b0346e2178492fab79031efc813000108d8b9df62da37ab9edc7e42f2"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.json",
+      "sha256": "d14623e05f158f063ae2da16661f9060ea58a22d82b55ade1348807d5333896d"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "sha256": "be59cdab2a35dae48376ed2857eeb32fb5cac5d2517b916a77b9438ea62b3183"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J08-andre-seated-threequarter_2.json",
+      "sha256": "dee27e7eebe859d16d0ddc8fd2c2450a9ac6b84fcb64a7815991ddee182245f5"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J08-andre-seated-threequarter_2.png",
+      "sha256": "92956bb67807aed52f3f1db5c81d3ee8a43f34e8172ac6b658c518bb854ae7a7"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.json",
+      "sha256": "b7dc07799aef6d0e8ca6f84e8d3255ba99f1ac89a0be9eeef0a0b91aa0e43f37"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.png",
+      "sha256": "d49c96cbd82d969cae16eae01ab6b9dd78f7d094e348335b5ad49a5450e905c9"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J09-andre-seated-present-day_2.json",
+      "sha256": "784511428561ff392c7bc36d4c3f3f75e4ff8797e655f4170d3d47c1c0d0803c"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R1-J09-andre-seated-present-day_2.png",
+      "sha256": "7f36b368eca426a98b744521c97b22964f06d8a2864f52c6d3fb8c8298060cb3"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-profile-left.jpg",
+      "sha256": "87a424b435a14513fd1f1a083166c55df33b064d4a48d0bc38ffdc510821c1cd"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-profile-right.jpg",
+      "sha256": "7a7e1ef4846702b106a49792b3a7f7b114ce849613af6c25797097392ad3dd10"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-table-cinematic.jpg",
+      "sha256": "fb04f329baabaa95e101157f0482767d3ec0779dc253677b299e133b85a1dcc0"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.json",
+      "sha256": "61f3279786d29ea86f16721f4d769518a19a3c4b877852c0a41914f2c4aa701d"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png",
+      "sha256": "eaa2b1217ac58335ed563a8b40d6ebe286456c14fb04d0e665b4f2df0db15adb"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_2_eyescrop.json",
+      "sha256": "f3c747175ad57074ae3963ad9ab3f84872ed5d6440700d429b42432e73df5e65"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_2_eyescrop.png",
+      "sha256": "22fe1af0f886b49c75ea24a4fd29f995bfd9c6effd93b9f3b529630ee5a39c1f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.json",
+      "sha256": "c80313ebd6757b028adf1873a3221b6ee26fc9110dd4895cab8d0cc7e11bded7"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.png",
+      "sha256": "60bf1aca8ab8bb1745a199ff7566346fbf0eb32496251a35795d54d352f776a4"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.json",
+      "sha256": "ae920465f1a037c9ad153e2693a7fdcd1eb694f76800ada38ac2a9b2e7d0c268"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+      "sha256": "50a8288e93bed03cad5959e738eb11bc372c61baca5650e541df3b997e5bfa12"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.json",
+      "sha256": "920d7d0aebc601bb2dc84e4dbb4e90f910788e5a3bdc11a95e70806c0482ce83"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.png",
+      "sha256": "3ea4c3de1e70e268b99898a17afd25aa2b09c6b293fad36c4b23698703eb0f4b"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.json",
+      "sha256": "86cb20b6cc7ed928cb14f901604db5c865d521cb9eb4b867d7295a410bf1e856"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png",
+      "sha256": "872223aad6da64c37e2d3d24df102a7dda14966a2f706f7cd4560cf62e4ad74a"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.json",
+      "sha256": "194147801bf2957f95c9a08f21b9db5ebc9e2920f4692e28b5974cf92029437c"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.png",
+      "sha256": "eb05c3bcb782b4cd217fdf4a88f3a4397914d37b9cbf61a45bff7f158f313101"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.json",
+      "sha256": "bb67cab769bc44e4b3822ca261a20608e6ba9a87e447b25aa9a2ff7fad3b5535"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png",
+      "sha256": "7cdbe3c41e0ffe5f1f0fefa9e969406dc98ca7e9dd5d055e844e66ba257e471f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.json",
+      "sha256": "aede944caccbd5a56c45959daf643f2dd8bd6d3984fd9c04b74efb389b9fd0bd"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.png",
+      "sha256": "03d73a9587bf05e13cf8d5e4a6d7126bc6805e5fa78b4756d3c4cdfde1835fe2"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.json",
+      "sha256": "19bbf76d39a359a8e27c0d6f108f98f1e17c669046175ba03d95903929c7db5b"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png",
+      "sha256": "ae2af2fa42926f0ca7173059023f8b15e30ba3c53639751f6b5e214c271c7a6c"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.json",
+      "sha256": "dc2be8727ea6ab54b6019774c3ccb35e923cbdafe3c2e40507965e7d30c39240"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png",
+      "sha256": "ec78d5bd614bddb0d1a65f650665fb9ba74e63057e82d71351d88fe5443cd9a2"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_1_alt.json",
+      "sha256": "29cae09338a1af34a4594f7f115795bc3ee13a6279567ef25425c0c1cc06eb67"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_1_alt.png",
+      "sha256": "2bf53b536cc3f140991ef65a024db04eb8dd190661630841ee0325df753ff930"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.json",
+      "sha256": "1acd9821896201b54bdc3dcb5ad25f6fdd947d304829501c651c239e0cdc237f"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+      "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_3_alt.json",
+      "sha256": "42ed4586348bbe4790d8d4b823581160eb5b2f4663ad219ddf6113eff6f21e0e"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_3_alt.png",
+      "sha256": "837e1de2769cc4878b6fc5e603963b443263446f7f588cd10688630249fd808c"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_4_alt.json",
+      "sha256": "9262a9756e7cc21eb2bfe921610b9690851c519cf61428cd71389a2496efc940"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_4_alt.png",
+      "sha256": "629651c09beef771aa9ecd3379e64139db4e2b63f0e93346fe708abb05caf82d"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J27-plate-rome-44bce_1.json",
+      "sha256": "b9fedf6162fa9771e354a79bc5f3b13a25f9fe671875db8e1359c3eba8bd4e59"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J27-plate-rome-44bce_1.png",
+      "sha256": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J28-plate-tent-1227_1.json",
+      "sha256": "d6ef3f372e2871652beaf14448e4cb995fbd1cc58d9748079ca6b74ac577bb97"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J28-plate-tent-1227_1.png",
+      "sha256": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.json",
+      "sha256": "65a92f830fc0753def4a92e15dad4ba3653e1e91201989e7a1d194725e461f69"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J30-plate-sthelena-1816_1.json",
+      "sha256": "80b60cfd75c7c00963c56a160805591953c53c233600ec55af46afa7b2285ecb"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J30-plate-sthelena-1816_1.png",
+      "sha256": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J31-plate-trinity-1945_1.json",
+      "sha256": "1d423ec353f9dba85ce7ccc1c42a6b436265da1074f698286693e2140d20ba0b"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J31-plate-trinity-1945_1.png",
+      "sha256": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J32-plate-present-day_1.json",
+      "sha256": "2badd62d53cd3d98b686cd76b4fa2dc91173077637b2674b84fce639ce01c828"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J32-plate-present-day_1.png",
+      "sha256": "4e8e426e4abe643febe78e48748b2237bd6c0e0cc9752f45597cb881218dffb2"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R2-plate-present-day-table.jpg",
+      "sha256": "fa8ac7ef55394b398eba555602aaae5aeadf901ff8c56cf295172446d0873218"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R2-plate-rome-villa.jpg",
+      "sha256": "7da16e35d594a8e325b7b8cad4d6aaeec4e9d6c543459ac2f01d7dda4540d816"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.json",
+      "sha256": "981f9d49dbc6a8a19f404cd24698dfd690be6445f7d45d78dc166be6473a105a"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J21-costume-caesar_belowneck.png",
+      "sha256": "afb1767a5898a3c950c0cd060329f801c3b008e95aa76f1cdc390db5c075252d"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J22-costume-genghis_belowneck.json",
+      "sha256": "7992aa160a7eee4943ad4d45612155b110a47fc888c862b81b4ec2c9c6fdf916"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J22-costume-genghis_belowneck.png",
+      "sha256": "9ec0f57715cfef12e306f0bda677a944c45f792e3e8d233e2505e9e73af6785e"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.json",
+      "sha256": "41a36a16473fc432357d074409706d635103c6f2efe9b34fc637e74981e91904"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J23-costume-galileo_belowneck.png",
+      "sha256": "aa1a68bd89bf700bbc1832b6d5a244515d6fcfc2fe88d504bd5ba6fb62484b31"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J24-costume-napoleon_belowneck.json",
+      "sha256": "915589b117331603d85a1126b8f04c211286ac0b12b38329b79e1f4c116a2699"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png",
+      "sha256": "4935d92b6a6c1dc60026a61d61f27fe0d38c1465879b80212c9cf7aefb9db538"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.json",
+      "sha256": "cd6c354fe4aa801c49c7a643c3ef869e0ac4278dcc306a4b3fb7f94365e3e074"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+      "sha256": "0e2cbb6fbc05150dd8ea6b2b4c39fc469d75e4d09eacbb8380231878429b4828"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-andre-modern.jpg",
+      "sha256": "5d52f6059163471cebb7ab291f4c9e4f7183cef8a9f175bf10dd8cc37388d174"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-caesar-roman.jpg",
+      "sha256": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg",
+      "sha256": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg",
+      "sha256": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+      "sha256": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0"
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg",
+      "sha256": "28cda295d7560015f3fb23f54cd3371f4139db9338a669d9b97bdf50e949dbde"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/VT-01.json",
+      "sha256": "41db611e5b6928a3ee2f1cf7ca825186e23b40e3c657d323cc614b54d7f32b5c"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/VT-01_athar_multilingual-v2_en_IN-L01.mp3",
+      "sha256": "34dc6f77e2eb432ba225a6be568cc15e0dcb702d35e5848b2d7b03dce5124302"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-1.mp3",
+      "sha256": "ca128df7f6a68a1ffc016b6b83997ee87850c6cdf281ccfb983d1d2952d11e14"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-2.mp3",
+      "sha256": "cf6cf07eaaa69e09206e5d5a4b01d7dabbed25a8f383162e753f866b43fa8933"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-3.mp3",
+      "sha256": "0508dfbf20290b65e809863e846af18dd59a9036c86ebf1f50b2473a527a9ab0"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-4.mp3",
+      "sha256": "855286a8027e4cb24c5d8eb9e8f58436f3b7d835fc92830efe003a64597926f6"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/provenance.json",
+      "sha256": "c0363f43d24720db5cc56bcf3de132935bbc67e67b48a9f8c6e4b64e21a3d782"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J01-andre-master-sheet_1.json",
+      "sha256": "d7784416efee2787837c6038a741d3c62a5766a848bb3c57118fea7f42ea3444"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J01-andre-master-sheet_1.png",
+      "sha256": "2bb39d4926b9d1a05e9f1fa02c73d857ed526fdf399f9d900dd1d2717e399b3b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J02-andre-closeup-neutral_1.json",
+      "sha256": "718b84039b0f1252d953f994535dcb0c6e5c296fc9b9d6e05976301900f31d50"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J02-andre-closeup-neutral_1.png",
+      "sha256": "a2384f2e4d5087405ce9e92781498f1f6ac70d1b094ba64c13e08e7bc937f4e4"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J02-andre-closeup-neutral_2.json",
+      "sha256": "a1c0456b1edd4fed85af236e99de2ec3e9def3b85f10364a20959825037df334"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J02-andre-closeup-neutral_2.png",
+      "sha256": "c2e3f75176a6e6b4c7e6088ef1f2722c079ab8fb3e80bea7b6735c2337747915"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J03-andre-closeup-smile_1.json",
+      "sha256": "f8b66d62b5a12b8aab18ed94303d9b2c1f96ab07d8c288616755e0d606047788"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J03-andre-closeup-smile_1.png",
+      "sha256": "5fba61f45dd8c9000109dd556e42d2dc5f7c6d46aa334ca498275e2e2931929f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J03-andre-closeup-smile_2.json",
+      "sha256": "8ca96dc811bb20c911b8e8a62e6f4ad18f81bfa5cb20d0516a0736d1eb4c63ea"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J03-andre-closeup-smile_2.png",
+      "sha256": "662bef86eff899c33d0e52cc2e16fc7a4c0ee26d82917efeb8dbd7b1e0527ac5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J04-andre-closeup-listening_1.json",
+      "sha256": "13b965139c52e18ca909f9e4681cd73d07c570c4eac350f421f8cb25b025d8ce"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J04-andre-closeup-listening_1.png",
+      "sha256": "68ae60dca9a574fb6a4718c46ca223c0e1cb5830512dc5b4acb25a92c597a0a2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J04-andre-closeup-listening_2.json",
+      "sha256": "083bffd4cc0637bb8273866fd1b74485d6e8ba8b011f986734e702fff1a7e463"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J04-andre-closeup-listening_2.png",
+      "sha256": "83172fee4b8c829b6fb90d7904adb137aeb94bf0b7c01b52e2f6077999a33eaa"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J05-andre-closeup-concerned_1.json",
+      "sha256": "21020b436dd937dfb283a53991331b4ace53c602ba0bb21524a978fbb11b6a07"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J05-andre-closeup-concerned_1.png",
+      "sha256": "28830409b4554d6fb3a530d6894ef8484c43333d15ac1f64de75a197a06f089b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J05-andre-closeup-concerned_2.json",
+      "sha256": "a11a257889474babadab49592c2a06244a2f08ecbd5481fb4529c80f6d287b56"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J05-andre-closeup-concerned_2.png",
+      "sha256": "4e9e55407cfe29c08592013aef8720950ff722d4f35fb7865ce1ffefff720287"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J06-andre-closeup-thoughtful_1.json",
+      "sha256": "8cb57de734472e0e3fe2fc17cee2d281d2ac566d5f5f1e805d06a5da2584a435"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J06-andre-closeup-thoughtful_1.png",
+      "sha256": "7e2a666a08a79cb43464b7b2ae90300cad4d1bd176f05ef6dcb7fdfd3eee309f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J06-andre-closeup-thoughtful_2.json",
+      "sha256": "bc9e5541a94c8725ddc5672cdb33278b39bd3fb29edf8da36e0b6ba64fcbdf9e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J06-andre-closeup-thoughtful_2.png",
+      "sha256": "1bb276e2e9b1b5b9a5c8f0f5cff9d18f5f50f80389b8191a68576b59b7eb19b7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J07-andre-seated-listening_1.json",
+      "sha256": "d7682f21b90cb78b59a44bf3b97dacd55bf3e8fa9dfe45266ead7c80ec753714"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J07-andre-seated-listening_1.png",
+      "sha256": "5e85c16ae6b29fc7de0550864ee660277da82993b2de295b5c185354895c1744"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J07-andre-seated-listening_2.json",
+      "sha256": "d9bbf84890cac92a7baa27671f1b6cd316257e5a7ea2f4cf2ad40514c0a1901f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J07-andre-seated-listening_2.png",
+      "sha256": "8a7de99b0346e2178492fab79031efc813000108d8b9df62da37ab9edc7e42f2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J08-andre-seated-threequarter_1.json",
+      "sha256": "d14623e05f158f063ae2da16661f9060ea58a22d82b55ade1348807d5333896d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J08-andre-seated-threequarter_1.png",
+      "sha256": "be59cdab2a35dae48376ed2857eeb32fb5cac5d2517b916a77b9438ea62b3183"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J08-andre-seated-threequarter_2.json",
+      "sha256": "dee27e7eebe859d16d0ddc8fd2c2450a9ac6b84fcb64a7815991ddee182245f5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J08-andre-seated-threequarter_2.png",
+      "sha256": "92956bb67807aed52f3f1db5c81d3ee8a43f34e8172ac6b658c518bb854ae7a7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J09-andre-seated-present-day_1.json",
+      "sha256": "b7dc07799aef6d0e8ca6f84e8d3255ba99f1ac89a0be9eeef0a0b91aa0e43f37"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J09-andre-seated-present-day_1.png",
+      "sha256": "d49c96cbd82d969cae16eae01ab6b9dd78f7d094e348335b5ad49a5450e905c9"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J09-andre-seated-present-day_2.json",
+      "sha256": "784511428561ff392c7bc36d4c3f3f75e4ff8797e655f4170d3d47c1c0d0803c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J09-andre-seated-present-day_2.png",
+      "sha256": "7f36b368eca426a98b744521c97b22964f06d8a2864f52c6d3fb8c8298060cb3"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J11-eyes-caesar-command_1.json",
+      "sha256": "2d0de8e4883fd532fa22939c8f2d6a3048d92dff4aef2e2869c60ade0c81413a"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J11-eyes-caesar-command_1.png",
+      "sha256": "5cff8e00d9b078cd06a245fa741d1d8f12920d9aee2590341b72e15d439d1bb5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J11-eyes-caesar-command_2.json",
+      "sha256": "f49f40b235a0ecd279a279c5a23765afd37fe382045b66b6dee232260b353f2d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J11-eyes-caesar-command_2.png",
+      "sha256": "867cbf77661cc1489596f90b8d5f094163bd979664e1ee6329ba06eab8c32994"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J12-eyes-caesar-uncertainty_1.json",
+      "sha256": "c0f29b8f7851c0443017df60fe1b47131992177b95b5a6f6c84c5c930ffc0a40"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J12-eyes-caesar-uncertainty_1.png",
+      "sha256": "cfa36817775c73e5ba4129054754ba7b42020ac81ac7dbb13ba08bef2ba7862a"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J13-eyes-genghis-pride_1.json",
+      "sha256": "590a8e771731e720b52785f4a4602f00cf9bb5f52ba4b35ee73274d71d8a7d3b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J13-eyes-genghis-pride_1.png",
+      "sha256": "0eab8e9e5c0cae517459d214a3bbad9392c03ec8cc7a0bea341307ce8ce3e3d1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J14-eyes-genghis-recognition_1.json",
+      "sha256": "b6db2c1262e0eb9f77149037c27deaef57666a808a2dcd282443c470f216c199"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J14-eyes-genghis-recognition_1.png",
+      "sha256": "e0f1f8fc3a5d7e93fb46e39d6818647cbd23c6f40721055094c579e713e9b39e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J15-eyes-galileo-weariness_1.json",
+      "sha256": "5f7d5ebb4c76c9e61eea7a411acf299c876d8233bf4a950fdda22ee33afa0884"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J15-eyes-galileo-weariness_1.png",
+      "sha256": "7f6f2b2ef8bbf81dde1ecec5a2c1eb09860737a000f8ffb58165f89436b2d33d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J16-eyes-galileo-resolve_1.json",
+      "sha256": "ce2b88a65a45347e82f58191ce5d28dacee5842ae95c405eaf15b61b98b1ae05"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J16-eyes-galileo-resolve_1.png",
+      "sha256": "27f5f7fe219317044aa14e3f859b4f23c8a717a099c7c862e3b3001cb3397657"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J17-eyes-napoleon-selfpossession_1.json",
+      "sha256": "c987f8ea2ef4ffe18f4d4d838be79f576d66cd64d75dea4e44abb27e0bcabf2d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J17-eyes-napoleon-selfpossession_1.png",
+      "sha256": "cf1e0dc850369065219885d232e6efa2e64f213a624bbddd79070e27c4d906bc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J18-eyes-napoleon-reflection_1.json",
+      "sha256": "ca4128706a64280c17d68bba68b784f1ab665bb5a62fd2fcaa44c4b38312ff08"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J18-eyes-napoleon-reflection_1.png",
+      "sha256": "3f27a06e4ffa445e5ab70af95b2f19fa202f7bfa75e34b7ce227b1c5b2bc4101"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J19-eyes-oppenheimer-anticipation_1.json",
+      "sha256": "4f340eeb332425c025498ada4de92c01d42d6ddc5164a49da547de968ef5ef7d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J19-eyes-oppenheimer-anticipation_1.png",
+      "sha256": "d07e4cb29f1e52de6f1b72992d0d0137205fc82df901ecc94f4d1938ed53d5c2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J20-eyes-oppenheimer-stillness_1.json",
+      "sha256": "2e6105ee6d3934f876db730ca40c4ec4125d3a9178db42f1f4ad21de38f081a6"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J20-eyes-oppenheimer-stillness_1.png",
+      "sha256": "37ebe890c63692e93fd605a8493e923b6935fddbcced88588326768acf6d0389"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J21-costume-caesar_1.json",
+      "sha256": "fb516110cbe6291f64ff10acbf6d6e69574dc290221b5713881906900e200e69"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J21-costume-caesar_1.png",
+      "sha256": "4f66bb17a94f3aafae6f52983cb836bf4969743d040d3c35a9ac163e2d1885de"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J22-costume-genghis_1.json",
+      "sha256": "a99c9bda50fe6bd141d4cd958eb6ea58bc33f6e9268a1163ae4253073e79cdb1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J22-costume-genghis_1.png",
+      "sha256": "d0aefde13269b0be0c5c87b422260a62619eb038d231b1a736b497e31e1715a6"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J23-costume-galileo_1.json",
+      "sha256": "ea3d2922fc3fd0872622a7dabf74a0dfc2bde31487079959198a6a4d0a8a8cdd"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J23-costume-galileo_1.png",
+      "sha256": "d2824defabe2d3388e9acdad66b358a9f05bfd3c64152da86df7d61b84d599db"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J24-costume-napoleon_1.json",
+      "sha256": "d478dcca7566995700d95c62c8e7978f4671d05edb02afd10d143f92e288adde"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J24-costume-napoleon_1.png",
+      "sha256": "e48b7e867889d924022719c6f36a35010e94224b464d33a45258fcd46a406644"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J25-costume-oppenheimer_1.json",
+      "sha256": "9527420a02a9b30bc4380a1b4e7b0cc6a6887ef13fd901f639a7a9738199b986"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J25-costume-oppenheimer_1.png",
+      "sha256": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_1.json",
+      "sha256": "29cae09338a1af34a4594f7f115795bc3ee13a6279567ef25425c0c1cc06eb67"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_1.png",
+      "sha256": "2bf53b536cc3f140991ef65a024db04eb8dd190661630841ee0325df753ff930"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_2.json",
+      "sha256": "1acd9821896201b54bdc3dcb5ad25f6fdd947d304829501c651c239e0cdc237f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_2.png",
+      "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_3.json",
+      "sha256": "42ed4586348bbe4790d8d4b823581160eb5b2f4663ad219ddf6113eff6f21e0e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_3.png",
+      "sha256": "837e1de2769cc4878b6fc5e603963b443263446f7f588cd10688630249fd808c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_4.json",
+      "sha256": "9262a9756e7cc21eb2bfe921610b9690851c519cf61428cd71389a2496efc940"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J26-table-anchor_4.png",
+      "sha256": "629651c09beef771aa9ecd3379e64139db4e2b63f0e93346fe708abb05caf82d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J27-plate-rome-44bce_1.json",
+      "sha256": "b9fedf6162fa9771e354a79bc5f3b13a25f9fe671875db8e1359c3eba8bd4e59"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J27-plate-rome-44bce_1.png",
+      "sha256": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J28-plate-tent-1227_1.json",
+      "sha256": "d6ef3f372e2871652beaf14448e4cb995fbd1cc58d9748079ca6b74ac577bb97"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J28-plate-tent-1227_1.png",
+      "sha256": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J29-plate-arcetri-1634_1.json",
+      "sha256": "65a92f830fc0753def4a92e15dad4ba3653e1e91201989e7a1d194725e461f69"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J29-plate-arcetri-1634_1.png",
+      "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J30-plate-sthelena-1816_1.json",
+      "sha256": "80b60cfd75c7c00963c56a160805591953c53c233600ec55af46afa7b2285ecb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J30-plate-sthelena-1816_1.png",
+      "sha256": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J31-plate-trinity-1945_1.json",
+      "sha256": "1d423ec353f9dba85ce7ccc1c42a6b436265da1074f698286693e2140d20ba0b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J31-plate-trinity-1945_1.png",
+      "sha256": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J32-plate-present-day_1.json",
+      "sha256": "2badd62d53cd3d98b686cd76b4fa2dc91173077637b2674b84fce639ce01c828"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J32-plate-present-day_1.png",
+      "sha256": "4e8e426e4abe643febe78e48748b2237bd6c0e0cc9752f45597cb881218dffb2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J01-andre-master-sheet_2.png",
+      "sha256": "462f0b782fbcb7fd140264c0341dd6fd1623e577d53e1b9b3e38f02905fcafcf"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J01-andre-master-sheet_2.reason.txt",
+      "sha256": "ffa619e32df33209e75f4cc97bcbfb3ef8594d393b440126dc1be0a4d83495c9"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J10-eyes-caesar-command.reason.txt",
+      "sha256": "c8461f2063230f269c8f161f8425a586652c0bbb1c1832a0a9565dd84c68aec2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J10-eyes-caesar-command_1.json",
+      "sha256": "81b5757f067f6ab6a34863200968f7bc2cbddc73ac03e38a76e80341caefb0c0"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J10-eyes-caesar-command_1.png",
+      "sha256": "9364d0d8afe0acd73a1ceda929956858663ca82990e7be9200b7c2f0bf05e5be"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J10-eyes-caesar-command_2.json",
+      "sha256": "1f7a2b5b58daccd8ba90b37be99fb3f91a8e03970f4ceb4978f958464709c01c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/rejected/R1-J10-eyes-caesar-command_2.png",
+      "sha256": "7cd62e59a410eab8180f6c19bc18461d9cfb4c66a7bb1e53a4894affa14ee532"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J01-andre-master-sheet.prompt.txt",
+      "sha256": "e00ec9bfc653cf1ae491c34c005fa67daba579bb478b4e52e8476666b9746865"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J02-andre-closeup-neutral.prompt.txt",
+      "sha256": "1d07dd7a672c434af173823d6e33157eebd2654b99d1d0cfb8ba05efb6aa1259"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J03-andre-closeup-smile.prompt.txt",
+      "sha256": "050f4be994b843505b89627ac8ee0d33217b63c2d4261c8e58985069c539facc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J04-andre-closeup-listening.prompt.txt",
+      "sha256": "1ab25ea5a1e16c7a2ffe1ab1565e3f8af885a67dcdb0b11d2c14f943c26c8dde"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J05-andre-closeup-concerned.prompt.txt",
+      "sha256": "a4dbe8920b0e2c6bf012f1814b71e4e3b29520ef05ffb9cf8c176e39b62487fc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J06-andre-closeup-thoughtful.prompt.txt",
+      "sha256": "7553532adc1886857495fb3788f0e1b7b25ea92436ea47c59b8be88482910a60"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J07-andre-seated-listening.prompt.txt",
+      "sha256": "ae0285490159887848f3cb6d4a0633423353b6ef9ef585556f914a4f200d9f94"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J08-andre-seated-threequarter.prompt.txt",
+      "sha256": "03a2518a619b91d1964923d5224d5e53e04f96943c02c6da7eabc292b64c6fbe"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J09-andre-seated-present-day.prompt.txt",
+      "sha256": "87475b0bec28ec7acf27220ffa3323498f781334963f5fb36ef6814e4b2e3ec5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J10-eyes-caesar-command.prompt.txt",
+      "sha256": "8aab67b9f3198b4d333bbb795937b4f234d8a7a3fb5a7947e2de53d25d1b401e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J11-eyes-caesar-command.prompt.txt",
+      "sha256": "fb2699495016d83b569ee3085830d158d10053d9bb1c36add5726693318e8e61"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J12-eyes-caesar-uncertainty.prompt.txt",
+      "sha256": "d33394a9aaccc6e510deade6998dcb0ccf846b74f232ae756fe4f69eee97e4ce"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J13-eyes-genghis-pride.prompt.txt",
+      "sha256": "a3e83631af0f85f145fa0d692a36fadd3d8edd8532c4552081a5446ee53c472f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J14-eyes-genghis-recognition.prompt.txt",
+      "sha256": "1787a97703963a99e8c8786544a9b3218945c65cc89fe63801c52b0221aa4b00"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J15-eyes-galileo-weariness.prompt.txt",
+      "sha256": "fc559533778a302bd5b0e6e8089a8d03b141b2385a2e25fa94c2a42bc63c2129"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J16-eyes-galileo-resolve.prompt.txt",
+      "sha256": "850d5e8153e8486b210bd68bb79f2ec9f7397d7fd26bad9b4cfb07948abe2802"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J17-eyes-napoleon-selfpossession.prompt.txt",
+      "sha256": "897a4148f540cd801e55c004947538546fa6ed3e0f408238e9df78f3d1be425e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J18-eyes-napoleon-reflection.prompt.txt",
+      "sha256": "534c30c5844a0e5dff63dd2f2712fcb68dcd93bdb8321f4964d7c72626e2b0e2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J19-eyes-oppenheimer-anticipation.prompt.txt",
+      "sha256": "e527709104a32122ff5076b27880f787c24aa06cacdf26bbe92485fd5e81db5b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J20-eyes-oppenheimer-stillness.prompt.txt",
+      "sha256": "2119c1680e19a78737e7b31ade51aa5fbab265e2ea2d9979c28e73f89feb6676"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J21-costume-caesar.prompt.txt",
+      "sha256": "018a5356fa17cb6b06ac0dda0f4bd77656eef5d08e1dd8d860297d7902ec202c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J22-costume-genghis.prompt.txt",
+      "sha256": "8454bc68a5e317a8302491187bce0418562fa9307a2e06a11b8cd3101aec149e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J23-costume-galileo.prompt.txt",
+      "sha256": "47c2a49b181fbbda3e0ddf2bdd7ecc271986c71c0d97ed953d70ea6655f3c2da"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J24-costume-napoleon.prompt.txt",
+      "sha256": "5735d38fdb6dc510c7e86c35fc6a9e46e34ff14de356d1957dfa325e69db01eb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J25-costume-oppenheimer.prompt.txt",
+      "sha256": "ecb6785752b7d88d61bbcd9fc95cf5a655bebe4839d521921fb2e1b3317f8b7c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J26-table-anchor.prompt.txt",
+      "sha256": "09d9d65970b9b03327a5f01f5ba168b0591b2b4ae83fa49d78c48399fc1d1cc1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J27-plate-rome-44bce.prompt.txt",
+      "sha256": "c6963aba2ae96059e9ac9ba87a1a8722a6eaa187d433a11cc838a4a51b75054d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J28-plate-tent-1227.prompt.txt",
+      "sha256": "d22edefa2685962cca9a20bb955ed0c853a970b2580b2767230432ffc8162874"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J29-plate-arcetri-1634.prompt.txt",
+      "sha256": "a9b3d5141936ccb4aeab195cc693d5dc8ffa2194fa2d6396bc3dd30dc2b444fb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J30-plate-sthelena-1816.prompt.txt",
+      "sha256": "0807ee7e21c10dc89e7dad2e1a6893808960a23105c4d28b1a1286731c133721"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J31-plate-trinity-1945.prompt.txt",
+      "sha256": "a8b33937f330a46bb07205f743e31f25c2eab79dfeb9df4bb08e3d08621546fb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/R1-J32-plate-present-day.prompt.txt",
+      "sha256": "158761899ca94acdcf21046fe9d110de42a572dd0392b5c7d959734e6bf76c1b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J01-andre-master-sheet.response.json",
+      "sha256": "fa9a92acaacafc0f78dfb3ef9095fff13489f26ba81c687756e893f5ffcac30a"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J02-andre-closeup-neutral.response.json",
+      "sha256": "afd73ada231eaed5597dbcbb72b6e01cd8d0ade8ffa3399271198ebc88896c82"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J03-andre-closeup-smile.response.json",
+      "sha256": "86526cc577592f6660b92155da2d6233e4e18622f9b9cc0057733ce49ddee560"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J04-andre-closeup-listening.response.json",
+      "sha256": "aed303581df165cc727d43d3eae627f8fb60be42a5dc02ff827887b6c417fe41"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J05-andre-closeup-concerned.response.json",
+      "sha256": "096e0e3bd384ad10e023d0bd04b13e6206edb10a0954392f5823f665cf6ffedc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J06-andre-closeup-thoughtful.response.json",
+      "sha256": "a2b491dc0c637ead694dab3b5ae5c05261515c172c16344be7f700a0f8a87dad"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J07-andre-seated-listening.response.json",
+      "sha256": "e35875638fb42d5da284a91c0d8eed6fa4e8669547e39e05d6866b7c24b8f6b5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J08-andre-seated-threequarter.response.json",
+      "sha256": "0f36f6f2211f61cef13a53ce3b62a2e998c8a78b5223de43b4e16ebd16e052ce"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J09-andre-seated-present-day.response.json",
+      "sha256": "3b393e7de9ba537cf1fc20e4db4f68e38ffc576b9708a13dbf0bdaa33d7d6206"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J10-eyes-caesar-command.response.json",
+      "sha256": "c732eba70671951007dec6f6ea7e212190feb46b0a1f9e7d95dd8d9ac16409ef"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J11-eyes-caesar-command.response.json",
+      "sha256": "1d4d133655a21ebee4f63d02e14f985c8981f04ebff7e8c6196c690c444ae247"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J12-eyes-caesar-uncertainty.response.json",
+      "sha256": "673cf3069c9295f68fa910aa1325f00eef840c6a62a114f104b9573e9619171d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J13-eyes-genghis-pride.response.json",
+      "sha256": "1c3650f222aee50a18f0478361dacc880563f00e3364cb88134311bb0fb7bc67"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J14-eyes-genghis-recognition.response.json",
+      "sha256": "70da046a78d3b7e44e5e25e5a147830bbe49bcfc8f23d6d5ee103f66ab982a1e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J15-eyes-galileo-weariness.response.json",
+      "sha256": "1c361123672a11a19a7e56cbefb889921d58063fad15954eae22b357e61726ee"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J16-eyes-galileo-resolve.response.json",
+      "sha256": "7ddfbc544e7c4e30da6ecd86ea34aab249d2ad8b04b2a9aa4b080e750655ccdf"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J17-eyes-napoleon-selfpossession.response.json",
+      "sha256": "b2bc3d47b4bcf945cde5c152fb9f81d44d1e42bdafde93c1a2f6f4a73e3e3788"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J18-eyes-napoleon-reflection.response.json",
+      "sha256": "a00b10b5ad3f69e5a2431e4d3f4c02783d6062c450576a57157e3c302a5f9d6a"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J19-eyes-oppenheimer-anticipation.response.json",
+      "sha256": "00e3aa27ee22c57837fdfd638f262b7d391d8593c6a1b3d365d39b22f30744a3"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J20-eyes-oppenheimer-stillness.response.json",
+      "sha256": "9dc0c07c62735de6a989496c6c71b129afd3e32c6f0d28b5f47a6db69218e4fc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J21-costume-caesar.response.json",
+      "sha256": "d3115198ca43c30cb2628971f1299da2746a2f6224765a46d0e49a2a88a2ac10"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J22-costume-genghis.response.json",
+      "sha256": "298b30b951460374acb8f7b73bd4c2a1da663a19729b6f424a1857c430350764"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J23-costume-galileo.response.json",
+      "sha256": "536fe3aba87cbf56efe4da2c6fdf88bb199ef11b44cc18c10f02f4e050ff5f22"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J24-costume-napoleon.response.json",
+      "sha256": "f24f9e6bb530361cfa9ffd76a58c0aa18b17464b07a88864b48aba7afbc509e8"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J25-costume-oppenheimer.response.json",
+      "sha256": "2f044a7b1250925b082c4b2bbdc613848eec8a35783ebeb86215e03f5fa4a251"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J26-table-anchor.response.json",
+      "sha256": "e78fbb837884ff15430ae4eea988dcd27a6530d7476fb1cc8e014c81ffbba6bc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J27-plate-rome-44bce.response.json",
+      "sha256": "b83b111d223382abda7e02edf7fc083c4de5f9be975c490960a3e6fb10938585"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J28-plate-tent-1227.response.json",
+      "sha256": "1a651331ec5d0306eb45a59aef988a4bddf745acaeacfcd13fb1839769096af7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J29-plate-arcetri-1634.response.json",
+      "sha256": "65c5a79cd55e3010fe659a250e6c501dce254b613bcaf425f5d6eceea512cbda"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J30-plate-sthelena-1816.response.json",
+      "sha256": "f1186461a863f7fbec05e95a6c239c542b54dcb0d6c76a5669a2354f18436b95"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J31-plate-trinity-1945.response.json",
+      "sha256": "d6ce8457c0ea8e7f66a150348d1851cb250f9e9ae12e63bae3625a42999bddc4"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/R1-J32-plate-present-day.response.json",
+      "sha256": "752b220f0b69c9b0dc3047ce0e87613587dc345aa5a5640a485f178ec1b95866"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/README.md",
+      "sha256": "916e4f7314014aa415102ab9edca553c473e090bdd036c3c35e5fb311f11d924"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/00-cover.png",
+      "sha256": "e575694eb507a724f828bcc4e70e70b3002f46f8462725c3b505d52d0aaa6a87"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/01-workflow.png",
+      "sha256": "66eb6ec00d7124cccbe1ec1f9f3e1df79a0d7181029286fefda4b556b7c6eac9"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/character-andre.png",
+      "sha256": "b6cb0a05c1a22969b42bfc14930bf44da68f38e34c61e1f13d42623201aea47a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/character-caesar.png",
+      "sha256": "c7b57545bb247892012c3ba5a1fd4ccff9df4e584378a0500a154eec5cb480e4"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/character-galileo.png",
+      "sha256": "8ad01ba326bfedf9618fe8a37da3011c5770dd521248eed4d627294ad38b299a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/character-genghis.png",
+      "sha256": "b8741db15cf54668e52baacaaa00ba217dde4b158d8df6ca9a1c09fc84485bbe"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/character-napoleon.png",
+      "sha256": "8aeae7d3c1e8f22341a2a7dfa19992fa3331ee90c5a4dd6427207ba8ab357242"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/character-oppenheimer.png",
+      "sha256": "2f92a40afb737a58325f5522e6b0773ad69ef7fcd257ff7d0d7ab19d9f74f49d"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-caesar.png",
+      "sha256": "e3fca344c5631d030396c5d3f358395babbde2a2cee715036ba9ec88f90e733c"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-ending.png",
+      "sha256": "f60851ec7af6861f6de2b34151f94223740db494364fc0286482feb3bc417479"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-galileo.png",
+      "sha256": "87e62586f422514b967438bdd6974336dda52371f0634bbd7ab2dd5eaa97770b"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-genghis.png",
+      "sha256": "c665fd49d26d4fa57ae41812c40f77cc66192f1f0c19e7066cc261733a37c344"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-napoleon.png",
+      "sha256": "846f6ace76ebd16b396dec23495f9646ae01a072623543b5678a505e1a9f5992"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-opening.png",
+      "sha256": "d13480d63414ed73a712aae71858dfa4d7f38662693f9e69f535803167c8dd0c"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/scene-oppenheimer.png",
+      "sha256": "b3c65f8a7d78152ef1db6df6175b4061c04c5184e82416280280a7fc600fae86"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/boards/wardrobe-five-eras.png",
+      "sha256": "4889d546f75170e6c7a42d31ab65ce1832ac060088e6a63a5bac832afdda82aa"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/catalog.json",
+      "sha256": "a743510420a5716a90a6c91cb7aab100a454f30df70de461a02a6f735c3e59b5"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/dialogue-performance.csv",
+      "sha256": "b4e5e8ba38e0ded55d07b71a4ebb56badbe76b5c61444997828e402a518a11f1"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/director-script-en.md",
+      "sha256": "f08c5c8cd30d0a0ff5dd1d804c497bcbc8503fa8325f1f37f0f09875e02eb9ec"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/next-image-batch.md",
+      "sha256": "d5e1c399685b6c6566a6bdb67fcec4dddcfc14bfdea92f179731345bff4c7abb"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/review-findings.md",
+      "sha256": "9d44c2484beceb386556cd5e012466b6eb5a3421c95cae743537d2fae97e2631"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/shot-coverage.csv",
+      "sha256": "909573d9bc906eda8b84a4bd46b9e9f5e5fcb49c6729dc74bb6f304116c267b0"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/shot-specifications.json",
+      "sha256": "4aa95b9e54b8e1423d78a4db76fb50dcbcc79d6ddf6bf7672515904ba34567a0"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/andre-inspection.png",
+      "sha256": "e79d9050ca438f46ce7adcfb1567f6b072f062433b8f111736a9fa21493a5041"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/costumes-inspection.png",
+      "sha256": "cc23f8f7f7de9bee73471edc5191c1fccb1d7c58012fb5231bee48887f5e3826"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/drive-delivery.json",
+      "sha256": "efe04f3b302a6b0d3fb3f1042f3b0e24bf7c61f0dc2d3aa600b772197e8ff577"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/eyes-inspection.png",
+      "sha256": "0151af9382b531d7bf8703166e2163cf242206e57833cbfb61dd40135dc97dd6"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/scenes-inspection.png",
+      "sha256": "828099bf53c269d6b756857ebe59548d638b5c27eb0a97883d6103debf4939d6"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/speech-results.json",
+      "sha256": "d0c3ad1976fcfb2981136991064431751ac4f73dfd11c092aeac5e8e15167507"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/speech-submission.json",
+      "sha256": "a38ab69e8f93e4c7a13af47d2326a8b4f6cc3e7a8be0ca5383ca81dbd6723e92"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/verification.json",
+      "sha256": "04f0be9a5f5a84ce5efc5d4f807f277b42ded52b4b140996ad89fd215359391a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/index.html",
+      "sha256": "dd5a35c311de1723a5424538e118db94daadfc20985b09c1294985ebb254c605"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/C-L01.png",
+      "sha256": "7f3b1862808e625644bea31739759da2661f030093db0739b90517a4fd46cc1e"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/C-L02.png",
+      "sha256": "ddaab65bf8502f6a78c03e96cc21a9b3844ba892d7f091a657b6f215897332dd"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/C-L03.png",
+      "sha256": "a79462c51ded8df64698c8ec8e3b69393e5653b8ad420fadde4ad01bb7ce198b"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/C-L04.png",
+      "sha256": "e4129e4dc5cb7359efb9e1cc593836e6d7d3f31c4b1968c9fa3863eeb432011a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/G-L01.png",
+      "sha256": "e1a93aa2fdb28d194f09026fe91cb7c9452d40b867c3d1b3495efbd83136d99a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/G-L02.png",
+      "sha256": "7a396165f763c986124251c6ba0c3464344b73bbb400f695ffacc853528d056a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/G-L03.png",
+      "sha256": "4a97b283573b8b8ac28703024b5984914ac0c028349f8fbe6517f56f41a8bb80"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/G-L04.png",
+      "sha256": "f18750b5b332654061f9460b3d12fb7e80c924be7a6d21461bf98f0ae4ed248f"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/IN-L01.png",
+      "sha256": "64e1dd4bc00ab02c53339a0b1f9a1c64358588e23bd7dd1c4499d3685e7868da"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/K-L01.png",
+      "sha256": "3b430d3de658bcbeab83643b9f9d4f4db1514ee2f8c8d58d5cf5a05553d909f6"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/K-L02.png",
+      "sha256": "2a3cda179e670f279869dc13c76cac3b327ec1aa6eed9a5394452fcda8876cb4"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/K-L03.png",
+      "sha256": "e891084f27518d1874ffc9d865bfaad9f3af928aca03f55f901d531d8bf02602"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/K-L04.png",
+      "sha256": "44e611577803b26a5ea9bd075ff66bcfb2a53dadf7c4998f01b57e8cae6da030"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/N-L01.png",
+      "sha256": "2697a7d99fd514d96ff806d3b8c454cf14c7ba48ef4c380c4b903b76804baf56"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/N-L02.png",
+      "sha256": "cd27fdf6dad8fda362c02ce5403643d6b87095377249731978335f354e23ad65"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/N-L03.png",
+      "sha256": "f5a8ef27bd465f2267b5beef211511f561b627af5938a101780f87b1c0f75950"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/N-L04.png",
+      "sha256": "79f3fa1c7c099ad0eff348a6e54c4b8db7a90d0c612fed010b911514d2000480"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/O-L01.png",
+      "sha256": "e1564b8873eb54ce8ac59352e4fb61729deb69936b05e3576c97009a8f0fa967"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/O-L02.png",
+      "sha256": "4b642dea958128f4c11f26ad5c9c7eee9986b2d1ea1b4c3768185ff9d6859491"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/O-L03.png",
+      "sha256": "1e07a0379de773c6fde2dbfb80695b3792b926b5e1d24b51df3d65c0b733a0c6"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/O-L04.png",
+      "sha256": "708bfa60c15075c383a277e90f059e705b4f6f8f7de27fcc58a35e60a36c86fd"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance/OUT-L01.png",
+      "sha256": "9f0b4c4cc3907d719b3117076ad834805672b1e6212cb3403a34ff8642c81630"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/performance-cards.pdf",
+      "sha256": "460a193e2fcec3f1bd88b81fa46801c3b708a1b7ca2445634f8a6e17361f73bc"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/reference-atlas.pdf",
+      "sha256": "0a5043499d4d0f8aba082b93003bc0f2030f63a828830c87bf70988d7a10afa9"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-01.png",
+      "sha256": "da2ed0844cc8d6e46b516c912b40bf314c37f87415d65af93c4888e46898446d"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-02.png",
+      "sha256": "7a7e864818f752afdc016a271cf99e9302d02ad3bc177b25cf4c6d8a532916ae"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-03.png",
+      "sha256": "e5b75f0405ef75c38d8eedcb263056329398c377fc1f896978eea06ac2eb90e1"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-04.png",
+      "sha256": "7126eb50aed46cbf3f1215f085b8e5cdc5a61deb1cf64979e21a62e90269f120"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-05.png",
+      "sha256": "24499c3c23327e5d227eee169c82928425add71a8cf00077196dfbc6ba0c0fc5"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-06.png",
+      "sha256": "3994c77e5be4e416af8f5d2827ca302fa03c43af51d423734b0ad41f9ec8f6d5"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/C-07.png",
+      "sha256": "346a6314a6f554bc1fb915d0d11aa4fc4aaaf7ece7990e6b00b06c7f3a1782c9"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-01.png",
+      "sha256": "8085b66aad6dba1f2edaf6e2687dfd6f11d62704ffd2bc064706672dd853d9af"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-02.png",
+      "sha256": "32be4f0a5493e9da28d342a0165416abca8fbea0c1bc5d8cd3cd30dbd7e9c88f"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-03.png",
+      "sha256": "edf380e461e65d818901fd1aa437d7cf6dd6a56872daf87673bf5f1fd46c11a1"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-04.png",
+      "sha256": "aab447a133f1b32c7b9d316e20fc1e597b0848b898108a42c2d6d4bc5dfa7de3"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-05.png",
+      "sha256": "0553d4e6d00e0fb51169d11d53fc5931c4e299e30bdc72bdbade922d7e2d4ae0"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-06.png",
+      "sha256": "3fa2f16fd02e7c024124963ddc7a0b3cc7268c618f86fe0f01db6aa1d87621c5"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/G-07.png",
+      "sha256": "ad80b8bdc9822aac766cee25b1df845f268e3c5c82d8a6d80af5d616f41951d8"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/IN-01.png",
+      "sha256": "da56a038c539944831d469ff0e1ca8ef27ec991ffdb36bee216b96d2437846e1"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/IN-02.png",
+      "sha256": "b7f323d96eee0df53b26499fdf9f3c42f753a826897b1bfb9505d3077f4978d4"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/IN-03.png",
+      "sha256": "8a9ecbc5d66a32b14b29ff8b0030be20c28d75139ebe03e1f7089a15f0e4f920"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-01.png",
+      "sha256": "abd49df3c948922f80aa505b8a1b3cb798130ba5a652658e535613c14385bc92"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-02.png",
+      "sha256": "f2334e50f9a00b135e53c821338926c5f74c7fc09281eaff4a9601d776fe35a5"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-03.png",
+      "sha256": "9f6e2853294d699383b18a7c7be96ed545556a8e435120109c1251de3a48f464"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-04.png",
+      "sha256": "8836772d1d625f5b843065d09f584afd291aa7c50d7cd975d6e431ca9fdc65a0"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-05.png",
+      "sha256": "3b008c9a7b9015a0cae6d3a135a2ec2f8a0d98e37c6996bf0ab69bae6931752f"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-06.png",
+      "sha256": "947968298fe3381036cce493b8f54feca02b12b2d2cf3cc52bd99fd6e0b10cbd"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/K-07.png",
+      "sha256": "5c1e148d2bbc14d83ca5b933d1350fa6bd09b4761a6c293a09bd9e6fdd611355"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-01.png",
+      "sha256": "5eada28d302171c8253893ed9178fd4385ae358409998eadd050095e3181a66c"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-02.png",
+      "sha256": "5148f217a237c713c4766fa3b499fb40d11f9b29c107e1d8bbcc078f5ab39cca"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-03.png",
+      "sha256": "3c499bb4e3d702b4a18c7b19d78b81e287ac8afb2ec9e0c10a9d39f827c26a3a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-04.png",
+      "sha256": "eb248eb60b4644fed575889ab3bf0ca09ad7939acfb0299ba7dcf5c2bca98d0a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-05.png",
+      "sha256": "b9bd5663603df79d06e1bb84b2fdf557cee7111967f595a64f79a9aff85dd249"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-06.png",
+      "sha256": "340d7418ff8adf4fc7fc6a35f31dd9379adb0f823ed70056d1c5ad8fb7d0d161"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/N-07.png",
+      "sha256": "ef21cb0659723afeca5d026a3ed16efa9e9fa23834520f162ca929a94ddac174"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-01.png",
+      "sha256": "9a4ab8df1a377a49b807c9f044ef45fee80603686f2be29135f194993fac053b"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-02.png",
+      "sha256": "881cf888814088619c5f498ddf9267f6fdd43660cdae6412d9ad59454f6aae08"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-03.png",
+      "sha256": "79981a329a47f2b89e7223b3c45d602f2c5ce4c7d9efdd3d8f9318b0ca9e5b3f"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-04.png",
+      "sha256": "89fb4894d6ac1ad1cb159cf5d079f0e0ee35d7d988d5e7285ddfb3af6532faba"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-05.png",
+      "sha256": "5c0489e372421d6bdca6f29d2c3323f78867695454fd85594f8160b6847d40b4"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-06.png",
+      "sha256": "bfca99c6f7b8c2bd221d273c258682083c96f31b286f6d7f8001f8a367f6d34c"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/O-07.png",
+      "sha256": "114f89506d96d011291ba437947b92c2e33a8f537ea24520fef38607548035d7"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/OUT-01.png",
+      "sha256": "55b57dd903e599661c2a00be214ec9e77789fac48d5c38ae1f316418e5cc1aad"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/OUT-02.png",
+      "sha256": "20487fb9cdcace39161a1940ca8f63fb4b23a1209ce23d62925ba87873f50555"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/shots/OUT-03.png",
+      "sha256": "53a1f8cafc3a8e8d32e2e8752833ebfd5ffe5f09936331e13a8b97dce3a73ea9"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/storyboard-cards.pdf",
+      "sha256": "84d21b14c11842a062740318d347651c33125b7702ca868c4367961777548f6a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/The-Table-Between-Centuries-Preproduction-v1.zip",
+      "sha256": "7411a176a4d2b683fcf083631c1f1942ed5a66afa226b8632d27c7b69e0de57d"
+    }
+  ]
+}

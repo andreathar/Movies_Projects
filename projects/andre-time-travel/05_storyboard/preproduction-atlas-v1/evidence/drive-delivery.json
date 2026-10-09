@@ -1,0 +1,86 @@
+{
+  "folderId": "1PrS_KnduOmFOZ1MDeZrRPzLy08DFte8v",
+  "folderUrl": "https://drive.google.com/drive/folders/1PrS_KnduOmFOZ1MDeZrRPzLy08DFte8v",
+  "readback": [
+    {
+      "id": "1L7A3pk4O_zngK-RyOcc9roiFiVcTSKfj",
+      "title": "01 - Reference Atlas - Andre Athar.pdf",
+      "mime_type": "application/pdf",
+      "size": "6199503",
+      "url": "https://drive.google.com/file/d/1L7A3pk4O_zngK-RyOcc9roiFiVcTSKfj/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/1L7A3pk4O_zngK-RyOcc9roiFiVcTSKfj/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": null,
+      "parent_ids": [
+        "1PrS_KnduOmFOZ1MDeZrRPzLy08DFte8v"
+      ],
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified"
+    },
+    {
+      "id": "14nGKSiAJTA38x-KrfOZM21R8wR4imT6O",
+      "title": "02 - Storyboard - 41 Shot Cards.pdf",
+      "mime_type": "application/pdf",
+      "size": "5089791",
+      "url": "https://drive.google.com/file/d/14nGKSiAJTA38x-KrfOZM21R8wR4imT6O/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/14nGKSiAJTA38x-KrfOZM21R8wR4imT6O/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": null,
+      "parent_ids": [
+        "1PrS_KnduOmFOZ1MDeZrRPzLy08DFte8v"
+      ],
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified"
+    },
+    {
+      "id": "1P8_lZ0zmlW355RcLcl3pzEZDJtdHSHnO",
+      "title": "03 - Dialogue - 22 Performance Cards.pdf",
+      "mime_type": "application/pdf",
+      "size": "1481363",
+      "url": "https://drive.google.com/file/d/1P8_lZ0zmlW355RcLcl3pzEZDJtdHSHnO/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/1P8_lZ0zmlW355RcLcl3pzEZDJtdHSHnO/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": null,
+      "parent_ids": [
+        "1PrS_KnduOmFOZ1MDeZrRPzLy08DFte8v"
+      ],
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified"
+    },
+    {
+      "id": "1Pu-RoOhOoVc_9FPl0CowYa0XmaP0JlSZ",
+      "title": "04 - Complete Preproduction Package - Images Scripts Audio.zip",
+      "mime_type": "application/zip",
+      "size": "51062589",
+      "url": "https://drive.google.com/file/d/1Pu-RoOhOoVc_9FPl0CowYa0XmaP0JlSZ/view?usp=drivesdk",
+      "display_url": "https://drive.google.com/file/d/1Pu-RoOhOoVc_9FPl0CowYa0XmaP0JlSZ/view?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": null,
+      "parent_ids": [
+        "1PrS_KnduOmFOZ1MDeZrRPzLy08DFte8v"
+      ],
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified"
+    }
+  ]
+}

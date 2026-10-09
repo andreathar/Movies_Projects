@@ -1,0 +1,21 @@
+{
+  "job": "R1-J08-andre-seated-threequarter",
+  "generationId": "Af1WWVxLRigSy1cNBVYIhEGUyCBNngcv7SI1XbSMvpHuHqDiXNgvATZmER2hCu36MAyVa-gU",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:2",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/crop34_20240202_015259.jpg",
+    "02_references/andre/selected/crop34_20240202_015214.jpg"
+  ],
+  "prompt": "Photorealistic cinematic film still of the exact man shown in the reference photos (image 1 front view, image 2 three-quarter view). Preserve his real face exactly: same facial structure, brown eyes, dark brown swept-back hair, short stubble beard and moustache, natural skin texture, no retouching. Wardrobe: plain dark charcoal collared shirt open at the neck under a dark navy unstructured jacket. He is seated at a plain unpainted oak table with visible length-wise grain and one small chipped nick on the front edge; both hands resting on the table, five fingers each, natural anatomy. Medium shot, three-quarter angle, he leans very slightly forward, gaze toward camera-right, thoughtful expression, mouth closed. Dim 1630s-evening warm candle-and-window ambience, soft key from camera-left, deep shadows, readable skin.",
+  "provenance": "synthetic",
+  "approved": false,
+  "sha256": "be59cdab2a35dae48376ed2857eeb32fb5cac5d2517b916a77b9438ea62b3183",
+  "note": "Andre seated at the table; synthetic variant",
+  "created": "2026-10-09T07:51:41-03:00"
+}

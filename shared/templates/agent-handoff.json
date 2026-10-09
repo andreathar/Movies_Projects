@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "episode": null,
+  "agentRole": null,
+  "assignment": null,
+  "ownedPaths": [],
+  "baseFiles": [
+    {
+      "path": null,
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": null,
+      "sha256After": null,
+      "reason": null
+    }
+  ],
+  "verification": [],
+  "pendingDecisions": [],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

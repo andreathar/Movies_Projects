@@ -1,0 +1,20 @@
+{
+  "job": "R1-J31-plate-trinity-1945",
+  "generationId": "AcqkOi1xPBaW_lrJxbQt-ABi0TkSQyp9LXpE77brGl5GqLCudEYaxbj432CSD6psSjOnuZWu",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": 1
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png"
+  ],
+  "prompt": "Photorealistic cinematic establishing frame. Keep the exact plain unpainted oak table from image 1: same wide planks, length-wise grain, chipped nick on the near-left front corner, faint ring stain. The room is completely empty of people; one empty chair on the far side of the table; nothing on the table. No faces, no portraits, no mirrors or reflective glass showing anyone, no text, no watermark. Wide frame at table height. Plain wooden room of a 1945 New Mexico desert base: pine plank walls, an iron-framed window showing pale pre-dawn desert, a bare bulb, dusty light.",
+  "provenance": "synthetic_scene_plate",
+  "approved": false,
+  "sha256": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7",
+  "note": "empty era plate; trinity-1945",
+  "created": "2026-10-09T08:10:21-03:00"
+}

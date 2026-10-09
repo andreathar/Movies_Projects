@@ -1,0 +1,1 @@
+Rejected 2026-10-09: 21:9 aspect did not enforce the eyes-only crop; nose/beard/ear visible (full-face violation). Retry with 4:1 strip.

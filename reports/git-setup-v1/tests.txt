@@ -1,0 +1,15 @@
+test_status_reports_real_state_without_writes (test_manage.WorkspaceValidationTests.test_status_reports_real_state_without_writes) ... ok
+test_validate_checks_workspace_integrity (test_manage.WorkspaceValidationTests.test_validate_checks_workspace_integrity) ... ok
+test_accidental_inherited_approval_is_rejected (test_workflow.WorkflowTests.test_accidental_inherited_approval_is_rejected) ... ok
+test_dialogue_cannot_be_silently_forked_inside_atlas_source (test_workflow.WorkflowTests.test_dialogue_cannot_be_silently_forked_inside_atlas_source) ... ok
+test_inventory_detects_changed_missing_and_added_files_without_writing (test_workflow.WorkflowTests.test_inventory_detects_changed_missing_and_added_files_without_writing) ... ok
+test_local_direction_and_canonical_dialogue_edits_reach_render_inputs (test_workflow.WorkflowTests.test_local_direction_and_canonical_dialogue_edits_reach_render_inputs) ... ok
+test_missing_reference_and_stale_line_mapping_fail_before_rendering (test_workflow.WorkflowTests.test_missing_reference_and_stale_line_mapping_fail_before_rendering) ... ok
+test_new_episode_does_not_inherit_previous_approval_cost_or_layout (test_workflow.WorkflowTests.test_new_episode_does_not_inherit_previous_approval_cost_or_layout) ... ok
+test_paths_cannot_escape_workspace (test_workflow.WorkflowTests.test_paths_cannot_escape_workspace) ... ok
+test_script_and_csv_cannot_silently_diverge (test_workflow.WorkflowTests.test_script_and_csv_cannot_silently_diverge) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.433s
+
+OK

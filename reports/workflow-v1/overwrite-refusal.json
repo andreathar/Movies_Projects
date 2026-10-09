@@ -1,0 +1,7 @@
+{
+  "attempt": "render into the existing V2 folder",
+  "returnCode": 1,
+  "reason": "output already exists; choose a new revision, never overwrite",
+  "filesUnchanged": 92,
+  "status": "pass"
+}

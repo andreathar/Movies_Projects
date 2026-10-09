@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "series": "Andre viajando no tempo",
+  "lead": "Andre Athar",
+  "status": "workflow_under_validation",
+  "constraints": {
+    "lead": "Andre Athar",
+    "likenessRequiresHumanApproval": true,
+    "historicalFullFacesAllowed": false,
+    "dialogueIsFictional": true,
+    "factsRequireSources": true,
+    "producerOnlyPaidSubmissions": true,
+    "automaticRetries": false,
+    "paidAutomation": false,
+    "externalAudioNeedsSeparateScope": true
+  },
+  "reusableCandidates": [
+    {
+      "kind": "identity",
+      "source": "projects/andre-time-travel/02_references/andre",
+      "approved": false,
+      "reuseRequires": "Individual photo/version selection and Andre likeness approval"
+    },
+    {
+      "kind": "voice",
+      "source": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/provenance.json",
+      "approved": false,
+      "reuseRequires": "Listening, pronunciation, language and usage review"
+    },
+    {
+      "kind": "table",
+      "source": "projects/andre-time-travel/03_bibles/table-and-continuity.md",
+      "approved": false,
+      "reuseRequires": "Check actual bible and lock geometry for each episode"
+    }
+  ],
+  "episodeSpecific": [
+    "historical encounters",
+    "number of chapters",
+    "runtime",
+    "language editions",
+    "scene palettes",
+    "screenplay",
+    "wardrobe choice",
+    "budget",
+    "provider/model parameters",
+    "jobs and takes",
+    "approval scope"
+  ],
+  "episodes": [
+    {
+      "id": "andre-time-travel",
+      "root": "projects/andre-time-travel",
+      "title": "The Table Between Centuries",
+      "status": "preproduction_not_approved"
+    }
+  ],
+  "template": "shared/templates/continuation.json",
+  "workflow": "docs/REPEATABLE_WORKFLOW.md",
+  "noInheritedPaidAuthorization": true
+}

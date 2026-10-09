@@ -1,0 +1,20 @@
+{
+  "job": "R1-J01-andre-master-sheet",
+  "generationId": "ASFd1z9LwkmPCq6zPFqBpklKDzqtxhau1N90Uf62VtdArlvlTJfdAgcZnw4s8I_j2m_uiRwk",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/crop34_20240202_015259.jpg",
+    "02_references/andre/selected/crop34_20240202_015214.jpg"
+  ],
+  "prompt": "Professional photorealistic character reference turnaround sheet of the exact man shown in the reference photos (image 1 front view, image 2 three-quarter view). Preserve his real face exactly: same facial structure, brown eyes, dark brown swept-back hair, short stubble beard and moustache, natural skin texture with no retouching or beauty filter. Five head-and-shoulders portraits side by side in one row, evenly spaced, same scale and eye line: front, three-quarter left, three-quarter right, full profile left, full profile right. Calm neutral expression, mouth closed, no smile. Wardrobe identical in all five: a plain dark charcoal modern collared shirt open at the neck under a dark navy unstructured jacket. Seamless neutral mid-grey studio backdrop, soft diffused key light from camera-left, subtle fill, sharp eyes, 85mm portrait lens look, high detail. No text, no labels, no watermark, no props, no extra people.",
+  "provenance": "synthetic",
+  "approved": false,
+  "sha256": "2bb39d4926b9d1a05e9f1fa02c73d857ed526fdf399f9d900dd1d2717e399b3b",
+  "note": "5-angle turnaround sheet; profile/3-4 panels are synthetic, not photographic evidence"
+}

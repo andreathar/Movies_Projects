@@ -1,0 +1,23 @@
+line_id,speaker,text_en,audio_path,measured_seconds,approved
+IN-L01,Andre,I wanted to ask history a question. Not what happened. What it felt like to hear what came next.,,,false
+C-L01,"Caesar, offscreen",Does my name survive?,,,false
+C-L02,Andre,Your name survives. So do the reforms and the victories people study. But they also study how much power one man can hold—and what happens to a republic around him.,,,false
+C-L03,"Caesar, offscreen",Then they remember a tyrant?,,,false
+C-L04,Andre,They argue about you. A brilliant commander. An ambitious ruler. I came to ask what victory leaves behind.,,,false
+K-L01,"Khan, offscreen",Will my sons keep what I have made?,,,false
+K-L02,Andre,"They will enlarge it. Routes across Eurasia will carry merchants, ideas, and knowledge. But conquest also leaves ruined cities and families who never return.",,,false
+K-L03,"Khan, offscreen",And what will they call me?,,,false
+K-L04,Andre,A founder. A conqueror. They will argue about what your empire joined—and what it destroyed. None of those words can make the dead speak.,,,false
+G-L01,"Galileo, offscreen",Am I finally believed?,,,false
+G-L02,Andre,People learn from you. They also turn you into a simple story: one scientist against a whole world. The truth is harder than that.,,,false
+G-L03,"Galileo, offscreen",And what survives of the question?,,,false
+G-L04,Andre,Your observations. And the warning in your trial. Silencing a person does not settle a question.,,,false
+N-L01,"Napoleon, offscreen",Does France keep my laws?,,,false
+N-L02,Andre,Your civil code outlives your throne. Other countries borrow from it. But a law can promise equality and still deny it to someone.,,,false
+N-L03,"Napoleon, offscreen",And do they call me great?,,,false
+N-L04,Andre,"Some do. Others ask about the wars and the power you kept for yourself. When they say greatness, they still argue about the price.",,,false
+O-L01,"Oppenheimer, offscreen",Does the test work?,,,false
+O-L02,Andre,"It works. Weeks later, atomic bombs strike Hiroshima and Nagasaki. People will argue about ending the war, about those who died, and about the fear that follows.",,,false
+O-L03,"Oppenheimer, offscreen",Can you tell me whether it was right?,,,false
+O-L04,Andre,I can tell you what came next. That is not the same as answering the question.,,,false
+OUT-L01,Andre,I went looking for answers in the past. I came back with a question for us. What will they have to tell us about the things we are doing now?,,,false

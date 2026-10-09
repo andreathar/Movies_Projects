@@ -1,0 +1,34 @@
+[
+  {
+    "path": "04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-1.mp3",
+    "generationId": "yyOni9RKpb0h0rYztvB9",
+    "sha256": "ca128df7f6a68a1ffc016b6b83997ee87850c6cdf281ccfb983d1d2952d11e14",
+    "measuredSeconds": 8.359184,
+    "audioQualityReviewed": false,
+    "approved": false
+  },
+  {
+    "path": "04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-2.mp3",
+    "generationId": "gxMB2hHH1NUGFeWPePlw",
+    "sha256": "cf6cf07eaaa69e09206e5d5a4b01d7dabbed25a8f383162e753f866b43fa8933",
+    "measuredSeconds": 8.071837,
+    "audioQualityReviewed": false,
+    "approved": false
+  },
+  {
+    "path": "04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-3.mp3",
+    "generationId": "JPwPGSRbhILZE6utIPxq",
+    "sha256": "0508dfbf20290b65e809863e846af18dd59a9036c86ebf1f50b2473a527a9ab0",
+    "measuredSeconds": 7.000816,
+    "audioQualityReviewed": false,
+    "approved": false
+  },
+  {
+    "path": "04_audio/voice-tests/codex-opening-v1/IN-L01-athar-v2-ref-4.mp3",
+    "generationId": "Z0IswJlv6onLcoYlVURk",
+    "sha256": "855286a8027e4cb24c5d8eb9e8f58436f3b7d835fc92830efe003a64597926f6",
+    "measuredSeconds": 6.922449,
+    "audioQualityReviewed": false,
+    "approved": false
+  }
+]

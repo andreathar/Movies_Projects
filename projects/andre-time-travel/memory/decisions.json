@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "decisions": [
+    {
+      "id": "D01",
+      "topic": "Project scope",
+      "state": "confirmed_from_conversation",
+      "decision": "Five selected historical conversations featuring Andre; full interlocutor faces prohibited."
+    },
+    {
+      "id": "D02",
+      "topic": "Character safety",
+      "state": "production_gate",
+      "decision": "Approve clean real-photo references and a versioned production Element before full production."
+    },
+    {
+      "id": "D03",
+      "topic": "Spending",
+      "state": "ceiling_authorized_not_batch_approved",
+      "decision": "All remaining Kling credits may be useful film spend; refresh live balance, retain retry approval and separate external fees."
+    },
+    {
+      "id": "D04",
+      "topic": "Editions",
+      "state": "recovered_from_prior_brief",
+      "decision": "All-English and reviewed historical-language editions; language authenticity and provider access remain pending."
+    },
+    {
+      "id": "D05",
+      "topic": "Memory",
+      "state": "workspace_initialized",
+      "decision": "Project-local files are canonical; no global memory pollution or remote memory provision."
+    }
+  ]
+}

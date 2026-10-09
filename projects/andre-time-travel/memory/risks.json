@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "risks": [
+    {
+      "id": "R01",
+      "topic": "Likeness",
+      "status": "open",
+      "mitigation": "New clean photographic reference set, approved Element, full temporal pilot."
+    },
+    {
+      "id": "R02",
+      "topic": "Historical face exposure",
+      "status": "open",
+      "mitigation": "Fixed eye crops, reflections check and full frame inspection."
+    },
+    {
+      "id": "R03",
+      "topic": "Historical languages",
+      "status": "open",
+      "mitigation": "Qualified review, short pronunciation tests and declared adaptation choices."
+    },
+    {
+      "id": "R04",
+      "topic": "External audio sync",
+      "status": "open",
+      "mitigation": "Separate approved short lip-sync test; reject face-changing output."
+    },
+    {
+      "id": "R05",
+      "topic": "Cost forecast",
+      "status": "open",
+      "mitigation": "Refresh account and derive forecast from real pilot charges."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cards": 79,
+  "canonicalShots": 41,
+  "canonicalLinesPreserved": 22,
+  "proposedTimelineSeconds": 240,
+  "layoutOverflows": 0,
+  "allLocalLinksResolve": true,
+  "inputHashesMatch": true,
+  "audioFilesDecode": true,
+  "browserPreview": "not inspected: file protocol blocked; no workaround attempted",
+  "pdfPageCounts": {
+    "reference-atlas.pdf": 16,
+    "storyboard-cards.pdf": 41,
+    "performance-cards.pdf": 22
+  },
+  "workspaceStdlibTests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "workspaceValidation": {
+    "status": "ok",
+    "warnings": [
+      "Source snapshots 18 and 19 remain uncached"
+    ]
+  },
+  "driveDeliveryReadback": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/evidence/drive-delivery.json"
+}

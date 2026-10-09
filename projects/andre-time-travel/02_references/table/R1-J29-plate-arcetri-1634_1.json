@@ -1,0 +1,20 @@
+{
+  "job": "R1-J29-plate-arcetri-1634",
+  "generationId": "AYcLpVKo164lgHI13p3oEd3JAAFyzOaLFWY71qQyf3wB2QjdukaOl7YgmwoVoj_qIKgyKSSE",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": 1
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png"
+  ],
+  "prompt": "Photorealistic cinematic establishing frame. Keep the exact plain unpainted oak table from image 1: same wide planks, length-wise grain, chipped nick on the near-left front corner, faint ring stain. The room is completely empty of people; one empty chair on the far side of the table; nothing on the table. No faces, no portraits, no mirrors or reflective glass showing anyone, no text, no watermark. Wide frame at table height. Stone room of a Tuscan villa at Arcetri in 1634: whitewashed stone walls, a small leaded window, shelves of books, soft cool winter daylight.",
+  "provenance": "synthetic_scene_plate",
+  "approved": false,
+  "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+  "note": "empty era plate; arcetri-1634",
+  "created": "2026-10-09T08:08:51-03:00"
+}

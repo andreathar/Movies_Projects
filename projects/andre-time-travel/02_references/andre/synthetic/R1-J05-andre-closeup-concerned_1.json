@@ -1,0 +1,21 @@
+{
+  "job": "R1-J05-andre-closeup-concerned",
+  "generationId": "AdaMd8CBYOYWmHxoE5v3Ufz5AlC1oUYjT7c1HK4_We2_0-ISl3xUcqUHeNFOv2vZNjP2aRGc",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:4",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/crop34_20240202_015259.jpg",
+    "02_references/andre/selected/crop34_20240202_015214.jpg"
+  ],
+  "prompt": "Photorealistic cinematic portrait of the exact man shown in the reference photos (image 1 front view, image 2 three-quarter view). Preserve his real face exactly: same facial structure, brown eyes, dark brown swept-back hair, short stubble beard and moustache, natural skin texture, no retouching or beauty filter. Wardrobe: plain dark charcoal collared shirt open at the neck under a dark navy unstructured jacket. Close-up head and shoulders, three-quarter angle, looking toward camera-right, concerned serious expression, slightly furrowed brow, mouth closed. Neutral mid-grey seamless studio backdrop, soft diffused key light from camera-left. No text, no watermark, no extra people, no props in front of the face. Sharp focus on the eyes, 85mm lens look, high detail.",
+  "provenance": "synthetic",
+  "approved": false,
+  "sha256": "28830409b4554d6fb3a530d6894ef8484c43333d15ac1f64de75a197a06f089b",
+  "note": "Andre expression close-up; synthetic variant from 2 real photo crops",
+  "created": "2026-10-09T07:48:20-03:00"
+}

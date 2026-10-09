@@ -1,0 +1,20 @@
+{
+  "job": "R1-J27-plate-rome-44bce",
+  "generationId": "AUWKFp8t9UiSyV8GD5UZOVd8uKwRJ8k0VmzgwP9fCQE2Z6i_Z5nZfg2vBZ6P9aQM-SNH_fAb",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": 1
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png"
+  ],
+  "prompt": "Photorealistic cinematic establishing frame. Keep the exact plain unpainted oak table from image 1: same wide planks, length-wise grain, chipped nick on the near-left front corner, faint ring stain. The room is completely empty of people; one empty chair on the far side of the table; nothing on the table. No faces, no portraits, no mirrors or reflective glass showing anyone, no text, no watermark. Wide frame at table height. Interior of a Roman house in early 44 BCE: plastered walls with faded red fresco bands, terracotta oil lamps, a bronze brazier, warm lamplight, evening.",
+  "provenance": "synthetic_scene_plate",
+  "approved": false,
+  "sha256": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580",
+  "note": "empty era plate; rome-44bce",
+  "created": "2026-10-09T08:07:22-03:00"
+}

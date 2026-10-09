@@ -1,0 +1,18 @@
+{
+  "job": "R1-J25-costume-oppenheimer",
+  "generationId": "ARhatI2BZLf2HhN7jMABocI2X1jna5Okb5ZZTIhJOe_8O6ZhotHZjt1-yeAr-smDJkt-aw6F",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:5",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Photorealistic cinematic costume detail photograph. The frame is cropped from the collarbone down to the waist: the head, face, chin and neck are completely outside the frame above the top edge. Both hands visible with natural anatomy. Original fictional costume reference, historically grounded, no text, no watermark, no other people, no face anywhere. Man's torso in a rumpled 1940s grey suit jacket over a white shirt with a loosened narrow tie, fingers holding a pencil. Pale pre-dawn desert light through a window.",
+  "provenance": "synthetic_fictional_costume",
+  "approved": false,
+  "sha256": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d",
+  "note": "below-neck costume fragment; oppenheimer",
+  "created": "2026-10-09T08:05:14-03:00"
+}

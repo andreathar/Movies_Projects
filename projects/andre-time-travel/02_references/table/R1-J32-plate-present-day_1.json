@@ -1,0 +1,20 @@
+{
+  "job": "R1-J32-plate-present-day",
+  "generationId": "Ac5UiakCzXO6wz7dSLgRqMryjsdXz8SSk1Y1pABHh5uqJORgFByujp1exwlAFU2WtzrPSF3H",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "imageCount": 1
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png"
+  ],
+  "prompt": "Photorealistic cinematic establishing frame. Keep the exact plain unpainted oak table from image 1: same wide planks, length-wise grain, chipped nick on the near-left front corner, faint ring stain. The room is completely empty of people; one empty chair on the far side of the table; nothing on the table. No faces, no portraits, no mirrors or reflective glass showing anyone, no text, no watermark. Wide frame at table height. Present-day empty modern room with a tall window, soft cool daylight, pale concrete floor, minimal and quiet.",
+  "provenance": "synthetic_scene_plate",
+  "approved": false,
+  "sha256": "4e8e426e4abe643febe78e48748b2237bd6c0e0cc9752f45597cb881218dffb2",
+  "note": "empty era plate; present-day",
+  "created": "2026-10-09T08:11:01-03:00"
+}

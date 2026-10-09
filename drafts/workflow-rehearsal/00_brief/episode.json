@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "series": "andre-time-travel",
+  "state": "draft_unregistered",
+  "targetSeconds": null,
+  "chapters": [],
+  "languages": [],
+  "dramaticQuestion": null,
+  "constraints": {
+    "lead": "Andre Athar",
+    "likenessRequiresHumanApproval": true,
+    "historicalFullFacesAllowed": false,
+    "dialogueIsFictional": true,
+    "factsRequireSources": true,
+    "producerOnlyPaidSubmissions": true,
+    "automaticRetries": false,
+    "paidAutomation": false,
+    "externalAudioNeedsSeparateScope": true
+  },
+  "budget": {
+    "authorizedCeiling": null,
+    "liveBalance": null,
+    "batchApproved": false,
+    "externalAudioApproved": false
+  },
+  "providerJobs": [],
+  "acceptedTakes": [],
+  "id": "workflow-rehearsal",
+  "workingTitle": "Ensaio local de continuação — sem produção",
+  "createdAt": "2026-10-09T11:44:08.219814+00:00",
+  "testOnly": true,
+  "seriesRules": "series/andre-time-travel/series.json"
+}

@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0",
+  "project": "andre-time-travel",
+  "statusIsProductionStatus": true,
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Freeze the brief and spending boundaries",
+      "ownerRole": "producer",
+      "status": "ready",
+      "dependsOn": [],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T02",
+      "title": "Receive references and the failed scene",
+      "ownerRole": "continuity",
+      "status": "ready",
+      "dependsOn": [],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null,
+      "notes": "10 candidate images are available for the continuity reviewer; quality, six-view coverage, provenance and consistency remain unreviewed."
+    },
+    {
+      "id": "T03",
+      "title": "Lock the character and table bibles",
+      "ownerRole": "continuity",
+      "status": "blocked",
+      "dependsOn": [
+        "T02"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T04",
+      "title": "Create and verify the new Andre Element",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T01",
+        "T03"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T05",
+      "title": "Fact-check and approve the English script",
+      "ownerRole": "historian",
+      "status": "ready",
+      "dependsOn": [],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T06",
+      "title": "Resolve historical-language targets and reviewers",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T05"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T07",
+      "title": "Approve voice samples and dry dialogue",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T01",
+        "T05"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T08",
+      "title": "Approve a restrained four-shot identity pilot",
+      "ownerRole": "continuity",
+      "status": "blocked",
+      "dependsOn": [
+        "T03",
+        "T04"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T09",
+      "title": "Prove the speech route in both edition strategies",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T07",
+        "T08"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T10",
+      "title": "Reforecast costs and freeze the production envelope",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T08",
+        "T09"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T11",
+      "title": "Approve the storyboard and audio-first animatic",
+      "ownerRole": "storyboard",
+      "status": "blocked",
+      "dependsOn": [
+        "T05",
+        "T07",
+        "T10"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T12",
+      "title": "Approve era and eye keyframes",
+      "ownerRole": "storyboard",
+      "status": "blocked",
+      "dependsOn": [
+        "T03",
+        "T08",
+        "T11"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T13",
+      "title": "Produce Galileo as the first complete chapter",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T09",
+        "T10",
+        "T12"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T14",
+      "title": "Produce Caesar coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T15",
+      "title": "Produce Genghis Khan coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T16",
+      "title": "Produce Napoleon coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T17",
+      "title": "Produce Oppenheimer coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T18",
+      "title": "Produce opening/ending and lock the English picture",
+      "ownerRole": "editor",
+      "status": "blocked",
+      "dependsOn": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T19",
+      "title": "Spend the correction reserve on measured gaps",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T18"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T20",
+      "title": "Assemble and verify the historical-language edition",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T06",
+        "T07",
+        "T19"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T21",
+      "title": "Finish, deliver, and independently verify both masters",
+      "ownerRole": "qc",
+      "status": "blocked",
+      "dependsOn": [
+        "T19",
+        "T20"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    }
+  ]
+}

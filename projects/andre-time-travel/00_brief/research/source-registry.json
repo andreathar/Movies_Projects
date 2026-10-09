@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.britannica.com/biography/Julius-Caesar-Roman-ruler",
+      "title": "Julius Caesar | Conquests, Death, Assassination, Cleopatra, & Facts | Britannica",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-01.md",
+      "snapshotSha256": "e40af803110cf6a0aca5579874a85a20304fa0156f661be39942b4e570a0c1ca",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 2,
+      "url": "https://www.britannica.com/place/Mongol-empire",
+      "title": "Mongol empire | Origins, Organization, History, Map, & Legacy | Britannica",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-02.md",
+      "snapshotSha256": "1d8641ef80e7f83b8009f7629422831a7933a3cf48607a48f6392b18eb9159c7",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 3,
+      "url": "https://catalogue.museogalileo.it/multimedia/GalileosTrialBis.html",
+      "title": "Museo Galileo - Multimedia - Galileo's trial",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-03.md",
+      "snapshotSha256": "72e40a3c4363b88089e889792697c2d5dede8b4cec97710f2352a0049330504f",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 4,
+      "url": "https://www.napoleon.org/en/young-historians/napodoc/chrono-consulat-1er-empire",
+      "title": "The life of Napoleon I: a timeline for 6 years old + - napoleon.org",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-04.md",
+      "snapshotSha256": "d3edc3852277cea8116997dae58d0d2ee62f2db27b5aa40eb8be4f67c0289cf7",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 5,
+      "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/trinity.htm",
+      "title": "Manhattan Project: The Trinity Test, July 16, 1945",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-05.md",
+      "snapshotSha256": "e3a3b7ae0ea33b8a9d83b268fcc94923061d753fa548f1b616ecc970968c2d38",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 6,
+      "url": "https://elevenlabs.io/docs/overview/models",
+      "title": "Models | ElevenLabs Documentation",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-06.md",
+      "snapshotSha256": "9c6212b96938de6cfe8467a014ce1fa33c2f0d9bcec825f7bd1452fbde113dfa",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 7,
+      "url": "https://elevenlabs.io/docs/eleven-creative/products/dubbing",
+      "title": "Dubbing Overview | ElevenLabs Documentation",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-07.md",
+      "snapshotSha256": "656c9a647e8de821270db44605e1eb7ed729e82fb71d2a594536532a2bea3de0",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 8,
+      "url": "https://www.napoleon.org/en/history-of-the-two-empires/articles/bullet-point-21-what-was-napoleons-mother-tongue",
+      "title": "Bullet Point #21 - What was Napoleon’s mother tongue? - napoleon.org",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-08.md",
+      "snapshotSha256": "45d339adefc8ae09a438c26bc39cc7969ecb1bdf3c2f697d1087cd70d7046ca8",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 9,
+      "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/debate.htm",
+      "title": "Manhattan Project: Debate Over How to Use the Bomb, 1945",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-09.md",
+      "snapshotSha256": "6e4dd54f12465845676b602e643c3032b61cd3eb5a377db578e9c7bf2d144bce",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 10,
+      "url": "https://www.britannica.com/place/Mongol-empire/Effects-of-Mongol-rule",
+      "title": "Mongol empire - Expansion, Trade, Legacy | Britannica",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-10.md",
+      "snapshotSha256": "6ec9175e823e70b651425c4491c74f231d79c5dbd87bdf9311041057408fc33e",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 11,
+      "url": "https://elevenlabs.io/docs/eleven-creative/playground/image-video",
+      "title": "Image & Video | ElevenLabs Documentation",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-11.md",
+      "snapshotSha256": "316031de5ca5a6bfcfb5ba70b09fd64c7ee0b50df0b5a4804b22fa549e3b2070",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 12,
+      "url": "https://catalogue.museogalileo.it/indepth/VillaGioiello.html",
+      "title": "Museo Galileo - In depth - Villa Il Gioiello",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-12.md",
+      "snapshotSha256": "123823268d03b1995350732c908666626d76a5344cc81afbb244d11888b3d4a7",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 13,
+      "url": "https://www.britannica.com/biography/Julius-Caesar-Roman-ruler/Break-with-Pompey-and-the-collapse-of-the-triumvirate",
+      "title": "Julius Caesar - Roman Ruler, Civil War, 49-45 BCE | Britannica",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-13.md",
+      "snapshotSha256": "e465a3adbde60dc00cfe8d44f9c7761c21f8dffadfb9d6da4cfd8617946a61fd",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 14,
+      "url": "https://journalofdigitalhistory.org/en/article/Gqh2Bf5W4TdK",
+      "title": "Journal of Digital History",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-14.md",
+      "snapshotSha256": "7f7e237bff10e251ad962fc74426b44924f4d03b82a97c7121df3f570b596a0d",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 15,
+      "url": "https://worldhistoryconnected.press.uillinois.edu/5.2/may.html",
+      "title": "World History Connected | Vol. 5 No. 2 | Timothy May: The Mongol Empire in World History",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-15.md",
+      "snapshotSha256": "fc52cdc34eb43980dfb0e055543d1ad01ad92c3042f5dc4d398551f0af60db7e",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 16,
+      "url": "https://www.britannica.com/place/Mongol-empire/The-Golden-Horde",
+      "title": "Mongol empire - Central Asia, Steppe Warriors, Genghis Khan | Britannica",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-16.md",
+      "snapshotSha256": "54b1b50c6ab872272dd6d719bc1e9a45777962c1b99d14944f76dedbcca3e10b",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 17,
+      "url": "https://www.britannica.com/topic/Napoleonic-Code",
+      "title": "Napoleonic Code | Definition, Facts, & Significance | Britannica",
+      "accessed": "2026-10-08",
+      "snapshotPath": "00_brief/research/snapshots/source-17.md",
+      "snapshotSha256": "019264f478ac7de5f5aa52deaca2f54bd7d6f923bf66f9ed83f170a39e20cc9b",
+      "snapshotStatus": "imported_cached_extraction",
+      "evidenceValidated": false
+    },
+    {
+      "id": 18,
+      "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/hiroshima.htm",
+      "title": "",
+      "accessed": "2026-10-08",
+      "snapshotPath": null,
+      "snapshotSha256": null,
+      "snapshotStatus": "not_found_in_current_cache",
+      "evidenceValidated": false
+    },
+    {
+      "id": 19,
+      "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/nagasaki.htm",
+      "title": "",
+      "accessed": "2026-10-08",
+      "snapshotPath": null,
+      "snapshotSha256": null,
+      "snapshotStatus": "not_found_in_current_cache",
+      "evidenceValidated": false
+    }
+  ]
+}

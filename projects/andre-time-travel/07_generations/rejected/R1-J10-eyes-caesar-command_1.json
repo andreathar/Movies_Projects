@@ -1,0 +1,18 @@
+{
+  "job": "R1-J10-eyes-caesar-command",
+  "generationId": "AbRuHEkzn-iKFoKKcvXS9hgvo2oY_EfAAqPVJu_ygcXqRJVOw7VZAYR-ytLDJvoX-AtNP-5e",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "21:9",
+    "imageCount": 2
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, framed as a wide horizontal strip from the eyebrows down to just beneath the lower eyelids. Nose tip, nostrils, mouth, cheeks, jaw and chin are NOT in the frame; the frame ends at the lower eyelids. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Roman man in his mid-fifties, deep-set dark brown eyes, strong straight brows, fine crow's feet, a faint sheen of fatigue. Expression: cold command and total self-assurance, steady unblinking stare. Warm flickering oil-lamp light from the right, dark background.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "9364d0d8afe0acd73a1ceda929956858663ca82990e7be9200b7c2f0bf05e5be",
+  "note": "eyes-only; fictional casting; Caesar state 1 command",
+  "created": "2026-10-09T07:53:51-03:00"
+}

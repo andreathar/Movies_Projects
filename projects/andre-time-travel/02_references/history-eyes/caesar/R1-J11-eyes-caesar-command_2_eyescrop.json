@@ -1,0 +1,26 @@
+{
+  "job": "R1-J11-eyes-caesar-command",
+  "generationId": "AaT7W_nhi7iSyB72SdP1dmkKmhiEIgbJnKyR7YH-cOhkjEuCrPa6yyltaJJHE0cCSIJN64FG",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 2
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Roman man in his mid-fifties, deep-set dark brown eyes, strong straight brows, fine crow's feet. Expression: cold command and total self-assurance, steady unblinking stare. Warm flickering oil-lamp light from the right, dark background.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "867cbf77661cc1489596f90b8d5f094163bd979664e1ee6329ba06eab8c32994",
+  "note": "eyes-only strip 4:1; Caesar state 1 command; retry after J10 rejected",
+  "created": "2026-10-09T07:54:58-03:00",
+  "derivedFrom": "07_generations/originals/R1-J11-eyes-caesar-command_2.png",
+  "cropFractions": [
+    0.1,
+    0,
+    0.707,
+    0.75
+  ],
+  "purpose": "eyes-only crop (brow to just below lower lids), ears/nose removed"
+}

@@ -1,0 +1,18 @@
+{
+  "job": "R1-J26-table-anchor",
+  "generationId": "AYU7Vr4vNUkt865fG3WgBE01nqNEDXSVLBvLig-M14o-jPjwqafQjgUNxkwiRRSmcM4gvP0X",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:2",
+    "imageCount": 4
+  },
+  "refs": [],
+  "prompt": "Photorealistic cinematic photograph of a plain unpainted solid oak table made of wide planks, matte raw wood with visible length-wise grain, one small chipped nick on the near-left front edge, a faint pale ring stain near the centre, hand-planed top, simple square legs. Empty table, nothing on it, no people, no chairs in frame. Camera at table height, three-quarter angle from the front-left, soft warm window light from the right, plain dark neutral background. Sharp focus on the grain, fine film grain. No text, no watermark.",
+  "provenance": "synthetic_table_reference",
+  "approved": false,
+  "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+  "note": "table anchor candidates (4)",
+  "created": "2026-10-09T08:05:54-03:00"
+}

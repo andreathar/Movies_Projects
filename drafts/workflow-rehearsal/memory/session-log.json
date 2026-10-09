@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "entries": [
+    {
+      "at": "2026-10-09T11:44:08.222856+00:00",
+      "event": "clean_draft_created",
+      "testOnly": true,
+      "paidJobs": 0,
+      "creativeApprovalsInherited": 0
+    }
+  ]
+}

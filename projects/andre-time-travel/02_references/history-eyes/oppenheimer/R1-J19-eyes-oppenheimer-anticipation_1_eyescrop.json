@@ -1,0 +1,26 @@
+{
+  "job": "R1-J19-eyes-oppenheimer-anticipation",
+  "generationId": "AeNmOoIQNFzOTPVlhtbqL4s8SK_CjKDur7SiSzFKMj5aEuaSwz7g7BZyC_q07vaAQFYXl01k",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Man in his early forties, strikingly pale blue eyes, thin dark brows, a soft shadow of a hat brim falling across the upper forehead above the brows. Expression: feverish alert anticipation. Pale pre-dawn desert light through a window on the right.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "d07e4cb29f1e52de6f1b72992d0d0137205fc82df901ecc94f4d1938ed53d5c2",
+  "note": "eyes-only strip 4:1; oppenheimer; oppenheimer-anticipation",
+  "created": "2026-10-09T08:00:25-03:00",
+  "derivedFrom": "07_generations/originals/R1-J19-eyes-oppenheimer-anticipation_1.png",
+  "cropFractions": [
+    0.123,
+    0,
+    0.737,
+    0.7
+  ],
+  "purpose": "eyes-only crop (brow to just below lower lids), ears/nose removed"
+}

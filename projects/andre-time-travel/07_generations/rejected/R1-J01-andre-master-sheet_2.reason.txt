@@ -1,0 +1,1 @@
+Layout defect: two stacked rows, top row cropped at nose, duplicated panels. Rejected 2026-10-09.

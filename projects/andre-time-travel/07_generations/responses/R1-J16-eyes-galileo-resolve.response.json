@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "polled": true,
+    "timedOut": false,
+    "generations": [
+      {
+        "generationId": "AYAcNj-Q2wOXQtcBPohkmRD5oXaOqxoxrK3Iju4iWqh_xyFgrkZkPnGJIrwm2zUCz_TJqgTi",
+        "status": "COMPLETED",
+        "result": {
+          "generationId": "AYAcNj-Q2wOXQtcBPohkmRD5oXaOqxoxrK3Iju4iWqh_xyFgrkZkPnGJIrwm2zUCz_TJqgTi",
+          "status": "COMPLETED",
+          "createTime": 1791543477947,
+          "finishTime": 1791543506106,
+          "works": [
+            {
+              "status": "COMPLETED",
+              "contentType": "image",
+              "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qZwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpNc2UvYWlfcG9ydGFsX3NncF9rbGluZ19jb21tb25fbG9nby8yZTI4NjBhNi0wZDViLTQyNWYtOTg1ZS0zYjRjYzM0YjQ2MTUvMC5wbmc.origin?x-kcdn-pid=112372",
+              "urlWithoutWatermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTE0LzJlMjY1ODNjLWFkOWItNGZkMi1iOWU0LTlkMzcwZTg3MjhlMi5wbmc.origin?x-kcdn-pid=112372",
+              "url_without_watermark": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTE0LzJlMjY1ODNjLWFkOWItNGZkMi1iOWU0LTlkMzcwZTg3MjhlMi5wbmc.origin?x-kcdn-pid=112372",
+              "content_type": "image"
+            }
+          ],
+          "generation_id": "AYAcNj-Q2wOXQtcBPohkmRD5oXaOqxoxrK3Iju4iWqh_xyFgrkZkPnGJIrwm2zUCz_TJqgTi",
+          "create_time": 1791543477947,
+          "finish_time": 1791543506106
+        }
+      }
+    ]
+  }
+}

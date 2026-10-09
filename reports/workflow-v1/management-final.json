@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "errors": [],
+  "warnings": [
+    {
+      "missingCachedSourceSnapshots": [
+        18,
+        19
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "andre-time-travel",
+      "chapters": 5,
+      "storyboardSlots": 41,
+      "targetSeconds": 240,
+      "budgetCeiling": 7741,
+      "productionTasks": 21,
+      "taskStates": {
+        "ready": 3,
+        "blocked": 18
+      },
+      "recordedTakes": 0,
+      "finalMovieVerified": false,
+      "registeredSources": 19,
+      "importedSourceSnapshots": 17
+    }
+  ]
+}

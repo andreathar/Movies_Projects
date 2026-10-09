@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-09T11:55:28.155606+00:00",
+  "scope": "local Git versioning requested by user",
+  "branch": "main",
+  "git": "git version 2.43.0",
+  "gitLfs": "git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)",
+  "lfsConfigurationScope": "repository-local",
+  "remotes": [],
+  "mediaVersioning": "Git LFS, including inbox originals and review deliveries",
+  "credentialPatternScan": {
+    "textFilesScannedBeforeSetup": 318,
+    "findings": 0,
+    "limitation": "Common explicit token/private-key/signed-URL patterns; not an exhaustive security audit"
+  },
+  "creativeApprovalsChanged": false,
+  "paidJobsSubmitted": 0,
+  "checks": {
+    "stdlibTests": 10,
+    "workspaceStatus": "ok",
+    "knownWarnings": "Historical source snapshots 18 and 19 remain uncached"
+  },
+  "commitPolicy": "Create the first snapshot after staged-file and LFS object verification."
+}

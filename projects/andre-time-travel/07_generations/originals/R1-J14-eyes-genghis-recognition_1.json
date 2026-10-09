@@ -1,0 +1,18 @@
+{
+  "job": "R1-J14-eyes-genghis-recognition",
+  "generationId": "AeiIik_EaWPPcjf2Pjwbtw0uL7dCC48U-Vvp4arjK69ES-mzOL_ZnHI4W-6RSP0mFp9roH7N",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. Man in his sixties from the Mongolian steppe, narrow dark-brown eyes with epicanthic folds, weathered sun-lined skin, grey-streaked brows. Expression: guarded recognition, the gaze softens slightly, lids lower a little, a long thoughtful look. Warm firelight from the right inside a dim felt tent.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "e0f1f8fc3a5d7e93fb46e39d6818647cbd23c6f40721055094c579e713e9b39e",
+  "note": "eyes-only strip 4:1; genghis; genghis-recognition",
+  "created": "2026-10-09T07:57:15-03:00"
+}

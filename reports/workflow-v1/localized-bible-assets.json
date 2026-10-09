@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0",
+  "document": "docs/master_production_visual_bible.md",
+  "previousDocumentSha256": "b138ab8f5f31a479b95bf13b1deddf3bbbe699943326a77e085347dbc741ace2",
+  "images": [
+    {
+      "sourceFilename": "andre_table_cinematic_1791544478396.jpg",
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-table-cinematic.jpg",
+      "sha256": "fb04f329baabaa95e101157f0482767d3ec0779dc253677b299e133b85a1dcc0",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "andre_profile_left_1791544366914.jpg",
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-profile-left.jpg",
+      "sha256": "87a424b435a14513fd1f1a083166c55df33b064d4a48d0bc38ffdc510821c1cd",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "andre_profile_right_1791544394291.jpg",
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-profile-right.jpg",
+      "sha256": "7a7e1ef4846702b106a49792b3a7f7b114ce849613af6c25797097392ad3dd10",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "andre_seated_table_1791544443779.jpg",
+      "path": "projects/andre-time-travel/02_references/andre/synthetic/R2-andre-seated-conversational.jpg",
+      "sha256": "11c2fbcc1f250669f82b22b738f58020da4a9ed5a6a4ffa0a11f902d2481f19f",
+      "action": "copied_missing_local_dependency",
+      "approved": false
+    },
+    {
+      "sourceFilename": "wardrobe_andre_modern_1791544512578.jpg",
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-andre-modern.jpg",
+      "sha256": "5d52f6059163471cebb7ab291f4c9e4f7183cef8a9f175bf10dd8cc37388d174",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "wardrobe_caesar_roman_1791544544638.jpg",
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-caesar-roman.jpg",
+      "sha256": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "wardrobe_genghis_mongol_1791544592729.jpg",
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg",
+      "sha256": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "wardrobe_galileo_scholar_1791544653262.jpg",
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg",
+      "sha256": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "wardrobe_napoleon_uniform_1791544697001.jpg",
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+      "sha256": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "wardrobe_oppenheimer_tweed_1791544745535.jpg",
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg",
+      "sha256": "28cda295d7560015f3fb23f54cd3371f4139db9338a669d9b97bdf50e949dbde",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "scene_present_empty_table_1791544802517.jpg",
+      "path": "projects/andre-time-travel/02_references/table/R2-plate-present-day-table.jpg",
+      "sha256": "fa8ac7ef55394b398eba555602aaae5aeadf901ff8c56cf295172446d0873218",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "scene_rome_villa_1791544871954.jpg",
+      "path": "projects/andre-time-travel/02_references/table/R2-plate-rome-villa.jpg",
+      "sha256": "7da16e35d594a8e325b7b8cad4d6aaeec4e9d6c543459ac2f01d7dda4540d816",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "scene_tent_1227.png",
+      "path": "projects/andre-time-travel/02_references/table/R1-J28-plate-tent-1227_1.png",
+      "sha256": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "scene_arcetri_1634.png",
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "scene_sthelena_1816.png",
+      "path": "projects/andre-time-travel/02_references/table/R1-J30-plate-sthelena-1816_1.png",
+      "sha256": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "scene_trinity_1945.png",
+      "path": "projects/andre-time-travel/02_references/table/R1-J31-plate-trinity-1945_1.png",
+      "sha256": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_caesar_command.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png",
+      "sha256": "eaa2b1217ac58335ed563a8b40d6ebe286456c14fb04d0e665b4f2df0db15adb",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_caesar_uncertainty.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/caesar/R1-J12-eyes-caesar-uncertainty_1_eyescrop.png",
+      "sha256": "60bf1aca8ab8bb1745a199ff7566346fbf0eb32496251a35795d54d352f776a4",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_genghis_pride.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png",
+      "sha256": "872223aad6da64c37e2d3d24df102a7dda14966a2f706f7cd4560cf62e4ad74a",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_genghis_recognition.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/genghis/R1-J14-eyes-genghis-recognition_1_eyescrop.png",
+      "sha256": "eb05c3bcb782b4cd217fdf4a88f3a4397914d37b9cbf61a45bff7f158f313101",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_galileo_weariness.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+      "sha256": "50a8288e93bed03cad5959e738eb11bc372c61baca5650e541df3b997e5bfa12",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_galileo_resolve.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J16-eyes-galileo-resolve_1_eyescrop.png",
+      "sha256": "3ea4c3de1e70e268b99898a17afd25aa2b09c6b293fad36c4b23698703eb0f4b",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_napoleon_selfpossession.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png",
+      "sha256": "7cdbe3c41e0ffe5f1f0fefa9e969406dc98ca7e9dd5d055e844e66ba257e471f",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_napoleon_reflection.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/napoleon/R1-J18-eyes-napoleon-reflection_1_eyescrop.png",
+      "sha256": "03d73a9587bf05e13cf8d5e4a6d7126bc6805e5fa78b4756d3c4cdfde1835fe2",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_oppenheimer_anticipation.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png",
+      "sha256": "ae2af2fa42926f0ca7173059023f8b15e30ba3c53639751f6b5e214c271c7a6c",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    },
+    {
+      "sourceFilename": "eyes_oppenheimer_stillness.png",
+      "path": "projects/andre-time-travel/02_references/history-eyes/oppenheimer/R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png",
+      "sha256": "ec78d5bd614bddb0d1a65f650665fb9ba74e63057e82d71351d88fe5443cd9a2",
+      "action": "relinked_byte_identical_local_copy",
+      "approved": false
+    }
+  ],
+  "localImageLinks": 26,
+  "newCopies": 1,
+  "newPaidJobs": 0,
+  "providerProvenanceStatus": "R2 provider/model/job/charge evidence not independently verified in this pass."
+}

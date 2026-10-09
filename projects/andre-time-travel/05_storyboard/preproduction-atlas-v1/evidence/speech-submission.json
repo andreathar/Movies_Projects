@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "purpose": "Four short opening-line performance references",
+  "voice_name": "Athar",
+  "voice_id": "xxSch4PcHFM1VKvYKjt2",
+  "model_id": "eleven_multilingual_v2",
+  "text": "I wanted to ask history a question. Not what happened. What it felt like to hear what came next.",
+  "flow_id": "v2Bk76GrVDOxQCLbSjmU",
+  "session_ids": [
+    "aCXeIoqNpsfab7ikoTAl",
+    "CDMbDupjZFdnSWA4Tfc3",
+    "hO4OxBDPzEDPOZTN9uby",
+    "oQLzVy535wKhtNd0cSDi"
+  ],
+  "estimate": {
+    "credits": 383.9616,
+    "price_cents": 6.98112,
+    "generations_count": 4,
+    "currency": "usd",
+    "estimated_runtime_seconds": 3
+  },
+  "status": "submitted",
+  "approved": false
+}

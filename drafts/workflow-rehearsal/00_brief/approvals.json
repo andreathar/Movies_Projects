@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "creativeApprovals": {
+    "characterReferences": false,
+    "productionElement": false,
+    "screenplay": false,
+    "voiceTests": false,
+    "speechRoute": false,
+    "pilot": false,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "paidGenerationBatchApproved": false,
+  "externalAudioServiceBudgetApproved": false,
+  "approvals": []
+}

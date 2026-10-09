@@ -1,0 +1,30 @@
+# Local runtimes and regenerable caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Credentials remain outside version history.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.credentials
+*.secret
+credentials.json
+credentials-*.json
+client_secret*.json
+*.pem
+*.p12
+*.pfx
+
+# Production sources, inbox originals, media and evidence are tracked.
+# Binary media uses Git LFS through .gitattributes.

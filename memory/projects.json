@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "backend": "local_files",
+  "activeProject": "andre-time-travel",
+  "remoteCogneeProvisioned": false,
+  "projects": [
+    {
+      "id": "andre-time-travel",
+      "state": "projects/andre-time-travel/memory/STATE.md",
+      "decisions": "projects/andre-time-travel/memory/decisions.json",
+      "risks": "projects/andre-time-travel/memory/risks.json",
+      "sessions": "projects/andre-time-travel/memory/session-log.json"
+    }
+  ]
+}

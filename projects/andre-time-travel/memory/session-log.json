@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0",
+  "entries": [
+    {
+      "at": "2026-10-09T07:24:04-03:00",
+      "event": "workspace_bootstrap",
+      "productionWorkPerformed": false,
+      "note": "Existing production plan migrated; local management state initialized. No paid generation or media approval."
+    },
+    {
+      "at": "2026-10-09T07:44:16-03:00",
+      "event": "reference_candidates_recorded",
+      "candidateCount": 10,
+      "approved": false,
+      "paidJobIds": [],
+      "note": "Existing inbox originals preserved; T02 is ready for reference auditing, not completed."
+    },
+    {
+      "at": "2026-10-09T08:26:02.743699-03:00",
+      "event": "preproduction_atlas_v1_created",
+      "artifacts": "05_storyboard/preproduction-atlas-v1/catalog.json",
+      "cardImages": 79,
+      "voiceTests": 4,
+      "newKlingGenerations": 0,
+      "elevenLabsCredits": 383.9616,
+      "approved": false,
+      "note": "32 R1 Kling jobs from another producer session reused as existing references, not resubmitted. Four new opening voice tests completed and archived. Canonical film approval flags unchanged."
+    },
+    {
+      "at": "2026-10-09T11:49:41.979784+00:00",
+      "event": "local_workflow_v1_validated",
+      "editableAtlas": "05_storyboard/source/atlas.json",
+      "rebuild": "05_storyboard/preproduction-atlas-v2/catalog.json",
+      "reportWorkspacePath": "reports/workflow-v1/validation.json",
+      "continuationRehearsalWorkspacePath": "drafts/workflow-rehearsal",
+      "newPaidJobs": 0,
+      "newKlingGenerations": 0,
+      "newElevenLabsGenerations": 0,
+      "originalFilesPreserved": 382,
+      "visualBibleImagesLocalized": 26,
+      "missingDependencyCopied": 1,
+      "creativeApprovalGranted": false,
+      "note": "Local editing/series handoff implemented; no full movie acceptance. R2 provenance claims remain unverified; historical language proposals need qualified review."
+    },
+    {
+      "at": "2026-10-09T11:55:28.155606+00:00",
+      "event": "local_git_versioning_initialized",
+      "branch": "main",
+      "mediaStorage": "git_lfs_local",
+      "remoteConfigured": false,
+      "globalGitConfigurationChanged": false,
+      "creativeApprovalGranted": false,
+      "paidJobsSubmitted": 0,
+      "evidenceWorkspacePath": "reports/git-setup-v1/setup.json",
+      "note": "User requested local versioning; initial snapshot prepared after tests. Runtime/cache/credential files excluded; original production media tracked through LFS."
+    }
+  ]
+}

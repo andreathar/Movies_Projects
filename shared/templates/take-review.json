@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "shotId": null,
+  "takeId": null,
+  "assetPath": null,
+  "reviewer": null,
+  "fullPlaybackCompleted": false,
+  "fullFrameInspectionCompleted": false,
+  "likenessUserApproved": false,
+  "historicalFaceExposureFound": null,
+  "speechSyncPassed": null,
+  "decision": "pending",
+  "issues": []
+}

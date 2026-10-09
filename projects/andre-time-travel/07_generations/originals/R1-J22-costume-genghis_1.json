@@ -1,0 +1,18 @@
+{
+  "job": "R1-J22-costume-genghis",
+  "generationId": "AZ8AfNGOD1ShNEyngi6dscwgHmnDzyZCzG91HGuiSxBVCX4PQUZcmg8VXVuxeLx65Q9NZPq-",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:5",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Photorealistic cinematic costume detail photograph. The frame is cropped from the collarbone down to the waist: the head, face, chin and neck are completely outside the frame above the top edge. Both hands visible with natural anatomy. Original fictional costume reference, historically grounded, no text, no watermark, no other people, no face anywhere. Man's torso in a dark-blue silk deel robe with gold-thread trim and a worn leather belt with iron fittings, fur-trimmed collar, weathered hands resting on his knees. Firelight inside a dim felt tent.",
+  "provenance": "synthetic_fictional_costume",
+  "approved": false,
+  "sha256": "d0aefde13269b0be0c5c87b422260a62619eb038d231b1a736b497e31e1715a6",
+  "note": "below-neck costume fragment; genghis",
+  "created": "2026-10-09T08:03:11-03:00"
+}

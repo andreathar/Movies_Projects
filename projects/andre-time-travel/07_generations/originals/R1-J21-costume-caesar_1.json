@@ -1,0 +1,18 @@
+{
+  "job": "R1-J21-costume-caesar",
+  "generationId": "ARTBBq-BaFNTScyehlMKg2b2hz8AVwohq7glGCdZ6l4fW_gF1Sj_jBP6i3XKJUzFkc1TfydF",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:5",
+    "imageCount": 1
+  },
+  "refs": [],
+  "prompt": "Photorealistic cinematic costume detail photograph. The frame is cropped from the collarbone down to the waist: the head, face, chin and neck are completely outside the frame above the top edge. Both hands visible with natural anatomy. Original fictional costume reference, historically grounded, no text, no watermark, no other people, no face anywhere. Roman man's torso in a white wool toga with a narrow purple border draped over a plain tunic, a plain iron signet ring on one hand, hands loosely folded. Warm oil-lamp light, dark background.",
+  "provenance": "synthetic_fictional_costume",
+  "approved": false,
+  "sha256": "4f66bb17a94f3aafae6f52983cb836bf4969743d040d3c35a9ac163e2d1885de",
+  "note": "below-neck costume fragment; caesar",
+  "created": "2026-10-09T08:02:37-03:00"
+}

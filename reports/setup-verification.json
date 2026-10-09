@@ -1,0 +1,281 @@
+{
+  "verifiedAt": "2026-10-09T07:54:30-03:00",
+  "runs": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_status_reports_real_state_without_writes (test_manage.WorkspaceValidationTests.test_status_reports_real_state_without_writes) ... ok\ntest_validate_checks_workspace_integrity (test_manage.WorkspaceValidationTests.test_validate_checks_workspace_integrity) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.290s\n\nOK\n"
+    },
+    {
+      "command": [
+        "ruff",
+        "check",
+        "scripts",
+        "tests"
+      ],
+      "exitCode": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "ruff",
+        "format",
+        "scripts",
+        "tests",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdout": "2 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"status\": \"ok\",\n  \"errors\": [],\n  \"warnings\": [\n    {\n      \"missingCachedSourceSnapshots\": [\n        18,\n        19\n      ]\n    }\n  ],\n  \"projects\": [\n    {\n      \"id\": \"andre-time-travel\",\n      \"chapters\": 5,\n      \"storyboardSlots\": 41,\n      \"targetSeconds\": 240,\n      \"budgetCeiling\": 7741,\n      \"productionTasks\": 21,\n      \"taskStates\": {\n        \"ready\": 3,\n        \"blocked\": 18\n      },\n      \"recordedTakes\": 0,\n      \"finalMovieVerified\": false,\n      \"registeredSources\": 19,\n      \"importedSourceSnapshots\": 17\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "/home/athar/.hermes/skills/research/grounded-citations/scripts/sources.py",
+        "--ledger",
+        "projects/andre-time-travel/00_brief/research/citations.json",
+        "verify",
+        "projects/andre-time-travel/docs/production-plan.md"
+      ],
+      "exitCode": 0,
+      "stdout": "info: stats: 507 prose sentence(s), 9 with declared provenance (2%) — 9 cited, 0 marked [unverified] (a sentence may be both); 15 distinct source(s) cited, 19 in ledger (0 with evidence quotes)\nwarn: registered in the ledger but not cited in this draft: [10], [13], [14], [16]\ncitations OK\n",
+      "stderr": ""
+    }
+  ],
+  "directories": [
+    ".hermes",
+    "agents",
+    "docs",
+    "inbox",
+    "memory",
+    "projects",
+    "reports",
+    "scripts",
+    "shared",
+    "skills",
+    "tasks",
+    "tests",
+    ".hermes/plans",
+    ".hermes/skills",
+    "docs/archive",
+    "inbox/andre-reference-photos",
+    "inbox/andre-voice",
+    "inbox/failed-clips",
+    "projects/andre-time-travel",
+    "projects/andre-time-travel/00_brief",
+    "projects/andre-time-travel/01_script",
+    "projects/andre-time-travel/02_references",
+    "projects/andre-time-travel/03_bibles",
+    "projects/andre-time-travel/04_audio",
+    "projects/andre-time-travel/05_storyboard",
+    "projects/andre-time-travel/06_pilot",
+    "projects/andre-time-travel/07_generations",
+    "projects/andre-time-travel/08_edit",
+    "projects/andre-time-travel/09_delivery",
+    "projects/andre-time-travel/agents",
+    "projects/andre-time-travel/docs",
+    "projects/andre-time-travel/logs",
+    "projects/andre-time-travel/memory",
+    "projects/andre-time-travel/tasks",
+    "projects/andre-time-travel/00_brief/research",
+    "projects/andre-time-travel/00_brief/research/snapshots",
+    "projects/andre-time-travel/01_script/translations",
+    "projects/andre-time-travel/02_references/andre",
+    "projects/andre-time-travel/02_references/history-eyes",
+    "projects/andre-time-travel/02_references/legacy",
+    "projects/andre-time-travel/02_references/table",
+    "projects/andre-time-travel/02_references/wardrobe",
+    "projects/andre-time-travel/02_references/andre/approved",
+    "projects/andre-time-travel/02_references/andre/raw",
+    "projects/andre-time-travel/02_references/andre/selected",
+    "projects/andre-time-travel/02_references/andre/synthetic",
+    "projects/andre-time-travel/02_references/history-eyes/caesar",
+    "projects/andre-time-travel/02_references/history-eyes/galileo",
+    "projects/andre-time-travel/02_references/history-eyes/genghis",
+    "projects/andre-time-travel/02_references/history-eyes/napoleon",
+    "projects/andre-time-travel/02_references/history-eyes/oppenheimer",
+    "projects/andre-time-travel/02_references/legacy/quarantined",
+    "projects/andre-time-travel/03_bibles/scene-bibles",
+    "projects/andre-time-travel/04_audio/en",
+    "projects/andre-time-travel/04_audio/historical",
+    "projects/andre-time-travel/04_audio/stems",
+    "projects/andre-time-travel/04_audio/voice-tests",
+    "projects/andre-time-travel/04_audio/historical/caesar",
+    "projects/andre-time-travel/04_audio/historical/galileo",
+    "projects/andre-time-travel/04_audio/historical/genghis",
+    "projects/andre-time-travel/04_audio/historical/napoleon",
+    "projects/andre-time-travel/04_audio/historical/oppenheimer",
+    "projects/andre-time-travel/04_audio/stems/ambience",
+    "projects/andre-time-travel/04_audio/stems/dialogue",
+    "projects/andre-time-travel/04_audio/stems/foley",
+    "projects/andre-time-travel/04_audio/stems/music",
+    "projects/andre-time-travel/05_storyboard/animatics",
+    "projects/andre-time-travel/05_storyboard/contact-sheets",
+    "projects/andre-time-travel/05_storyboard/keyframes",
+    "projects/andre-time-travel/05_storyboard/keyframes/caesar",
+    "projects/andre-time-travel/05_storyboard/keyframes/galileo",
+    "projects/andre-time-travel/05_storyboard/keyframes/genghis",
+    "projects/andre-time-travel/05_storyboard/keyframes/napoleon",
+    "projects/andre-time-travel/05_storyboard/keyframes/oppenheimer",
+    "projects/andre-time-travel/06_pilot/originals",
+    "projects/andre-time-travel/06_pilot/reviews",
+    "projects/andre-time-travel/06_pilot/speech-variants",
+    "projects/andre-time-travel/07_generations/accepted",
+    "projects/andre-time-travel/07_generations/originals",
+    "projects/andre-time-travel/07_generations/rejected",
+    "projects/andre-time-travel/07_generations/requests",
+    "projects/andre-time-travel/07_generations/responses",
+    "projects/andre-time-travel/08_edit/normalized",
+    "projects/andre-time-travel/08_edit/picture-lock",
+    "projects/andre-time-travel/08_edit/subtitles",
+    "projects/andre-time-travel/08_edit/timelines",
+    "projects/andre-time-travel/09_delivery/captions",
+    "projects/andre-time-travel/09_delivery/qc",
+    "projects/andre-time-travel/09_delivery/stems",
+    "shared/templates",
+    "skills/andre-time-travel"
+  ],
+  "links": [
+    {
+      "path": ".hermes/plans/andre-time-travel-production.md",
+      "target": "../../projects/andre-time-travel/docs/production-plan.md",
+      "exists": true
+    },
+    {
+      "path": ".hermes/skills/andre-time-travel",
+      "target": "../../skills/andre-time-travel",
+      "exists": true
+    },
+    {
+      "path": ".hermes/skills/film-character-continuity",
+      "target": "../../skills/film-character-continuity",
+      "exists": true
+    },
+    {
+      "path": ".hermes/skills/film-dialogue-localization",
+      "target": "../../skills/film-dialogue-localization",
+      "exists": true
+    },
+    {
+      "path": ".hermes/skills/film-editing-qc",
+      "target": "../../skills/film-editing-qc",
+      "exists": true
+    },
+    {
+      "path": ".hermes/skills/grounded-citations",
+      "target": "../../skills/grounded-citations",
+      "exists": true
+    },
+    {
+      "path": ".hermes/skills/kling-cli",
+      "target": "../../skills/kling-cli",
+      "exists": true
+    },
+    {
+      "path": "skills/film-character-continuity",
+      "target": "../../../../../home/athar/.hermes/skills/creative/film-character-continuity",
+      "exists": true
+    },
+    {
+      "path": "skills/film-dialogue-localization",
+      "target": "../../../../../home/athar/.hermes/skills/creative/film-dialogue-localization",
+      "exists": true
+    },
+    {
+      "path": "skills/film-editing-qc",
+      "target": "../../../../../home/athar/.hermes/skills/creative/film-editing-qc",
+      "exists": true
+    },
+    {
+      "path": "skills/grounded-citations",
+      "target": "../../../../../home/athar/.hermes/skills/research/grounded-citations",
+      "exists": true
+    },
+    {
+      "path": "skills/kling-cli",
+      "target": "../../../../../home/athar/.hermes/skills/kling-cli",
+      "exists": true
+    }
+  ],
+  "agentRoles": [
+    "producer",
+    "continuity",
+    "historian",
+    "dialogue-sound",
+    "storyboard",
+    "editor",
+    "qc"
+  ],
+  "workflowSources": [
+    "kling-cli",
+    "film-character-continuity",
+    "film-dialogue-localization",
+    "film-editing-qc",
+    "grounded-citations",
+    "andre-time-travel"
+  ],
+  "workspaceValidation": {
+    "status": "ok",
+    "errors": [],
+    "warnings": [
+      {
+        "missingCachedSourceSnapshots": [
+          18,
+          19
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id": "andre-time-travel",
+        "chapters": 5,
+        "storyboardSlots": 41,
+        "targetSeconds": 240,
+        "budgetCeiling": 7741,
+        "productionTasks": 21,
+        "taskStates": {
+          "ready": 3,
+          "blocked": 18
+        },
+        "recordedTakes": 0,
+        "finalMovieVerified": false,
+        "registeredSources": 19,
+        "importedSourceSnapshots": 17
+      }
+    ]
+  },
+  "desktopProject": {
+    "registeredId": "p_ac127d95",
+    "registeredName": "Movies_Projects",
+    "registeredPrimaryPath": "/mnt/data/Projects_SSD/Movies_Projects",
+    "switchRequested": true,
+    "readBackActiveId": "p_1bdc035a",
+    "switchVerified": false
+  },
+  "scopeNotes": [
+    "Workspace setup submitted no paid jobs and approved no media.",
+    "Concurrent/existing generation and synthetic-reference artifacts are present and remain untouched; producer reconciliation is required.",
+    "Metadata test fixtures exclude private inbox and production-media directories.",
+    "Two source snapshots were not available in the existing cache. Registered URLs and citation IDs are preserved."
+  ]
+}

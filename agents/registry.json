@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "executionMode": "explicit_parent_delegation",
+  "autostart": false,
+  "roles": [
+    {
+      "id": "producer",
+      "name": "Producer / coordinator",
+      "brief": "agents/producer.md",
+      "skills": [
+        "kling-cli",
+        "film-editing-qc"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": true,
+      "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "continuity",
+      "name": "Character continuity reviewer",
+      "brief": "agents/continuity.md",
+      "skills": [
+        "film-character-continuity"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "historian",
+      "name": "Historical research reviewer",
+      "brief": "agents/historian.md",
+      "skills": [
+        "grounded-citations"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "dialogue-sound",
+      "name": "Dialogue, localization and sound",
+      "brief": "agents/dialogue-sound.md",
+      "skills": [
+        "film-dialogue-localization"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "storyboard",
+      "name": "Storyboard and shot designer",
+      "brief": "agents/storyboard.md",
+      "skills": [
+        "film-character-continuity",
+        "film-editing-qc"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "editor",
+      "name": "Editor / finisher",
+      "brief": "agents/editor.md",
+      "skills": [
+        "film-editing-qc"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "qc",
+      "name": "Independent final reviewer",
+      "brief": "agents/qc.md",
+      "skills": [
+        "film-character-continuity",
+        "film-dialogue-localization",
+        "film-editing-qc"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
+    }
+  ]
+}

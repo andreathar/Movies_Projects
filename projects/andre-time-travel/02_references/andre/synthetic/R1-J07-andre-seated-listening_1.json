@@ -1,0 +1,21 @@
+{
+  "job": "R1-J07-andre-seated-listening",
+  "generationId": "AWlLd1RzKzq6Av_7CjXRG5CZP-HALqdYv5F38hh3gQ3W-fSBDv6XWi_tCsea_bxhlK6iqHaK",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "3:2",
+    "image_count": 2
+  },
+  "refs": [
+    "02_references/andre/selected/crop34_20240202_015259.jpg",
+    "02_references/andre/selected/crop34_20240202_015214.jpg"
+  ],
+  "prompt": "Photorealistic cinematic film still of the exact man shown in the reference photos (image 1 front view, image 2 three-quarter view). Preserve his real face exactly: same facial structure, brown eyes, dark brown swept-back hair, short stubble beard and moustache, natural skin texture, no retouching. Wardrobe: plain dark charcoal collared shirt open at the neck under a dark navy unstructured jacket. He is seated at a plain unpainted oak table with visible length-wise grain and one small chipped nick on the front edge; both hands resting on the table, five fingers each, natural anatomy. Medium close-up, waist up, camera slightly front-left, he looks toward camera-right at an unseen listener with calm attentive expression, mouth closed. Warm low-key cinematic light, soft key from camera-left, dark room with soft out-of-focus amber bokeh behind him.",
+  "provenance": "synthetic",
+  "approved": false,
+  "sha256": "5e85c16ae6b29fc7de0550864ee660277da82993b2de295b5c185354895c1744",
+  "note": "Andre seated at the table; synthetic variant",
+  "created": "2026-10-09T07:50:45-03:00"
+}
