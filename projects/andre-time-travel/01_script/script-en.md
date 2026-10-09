@@ -1,6 +1,6 @@
 # English Screenplay — v2
 
-Status: v2 integrated 2026-10-09 (decision D07-script-v2); historian fact-check pending; not recorded. Rationale and per-line diff: proposals/script-en-v2-proposal.md. Previous text: ../../../reports/art-direction-v1/script-en-v1-before.md. All dialogue is fictional. Performance curve for Andre: fluent · slower · warm · caught · silent.
+Status: v2 integrated 2026-10-09 (decision D07-script-v2); historian review APPROVE WITH EDITS applied 2026-10-09 (00_brief/research/historian-review-v2.md); not recorded. Rationale and per-line diff: proposals/script-en-v2-proposal.md. Previous text: ../../../reports/art-direction-v1/script-en-v1-before.md. All dialogue is fictional. Performance curve for Andre: fluent · slower · warm · caught · silent.
 
 
 All dialogue below is **invented for this film**. It is not an attributed historical quotation. Its factual anchors are cited in the notes. Modern-reputation language is a deliberately limited dramatic synthesis—not a claim that all people today hold the same view.
@@ -115,7 +115,7 @@ A hand rests on the wooden edge. Ambient present-day sound falls away. Cut throu
 
 **Eye cue B:** near-motionless at “I can't tell you that.” Hold at least 4 s of silence before the cut.
 
-**Factual note:** Trinity 16 July; Hiroshima 6 August (21 days = “three weeks”); Nagasaki 9 August (“three days after”).[5][18][19] “The war ends that summer” — surrender announced 15 August / signed 2 September 1945: **[NEEDS SOURCE — historian to add to registry]**. “Whether it had to” points to the documented debate[9] without asserting a cause of surrender.
+**Factual note:** Trinity 16 July; Hiroshima 6 August (21 days = “three weeks”); Nagasaki 9 August (“three days after”).[5][18][19] “The war ends that summer” — surrender announced 15 August / signed 2 September 1945: [20]. “Whether it had to” points to the documented debate[9] without asserting a cause of surrender.
 
 The contemporary debate is separately documented.[9]
 
@@ -147,3 +147,4 @@ Hold on the empty chair, then the table. Fade on wood, never through a face. Inc
 [17] https://www.britannica.com/topic/Napoleonic-Code
 [18] https://www.osti.gov/opennet/manhattan-project-history/Events/1945/hiroshima.htm
 [19] https://www.osti.gov/opennet/manhattan-project-history/Events/1945/nagasaki.htm
+[20] https://www.osti.gov/opennet/manhattan-project-history/Events/1945/surrender.htm

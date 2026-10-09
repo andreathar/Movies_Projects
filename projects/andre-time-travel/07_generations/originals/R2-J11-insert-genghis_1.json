@@ -1,0 +1,22 @@
+{
+  "job": "R2-J11-insert-genghis",
+  "generationId": "AQx6sR0YGPSKAtTr8U7SirgkUlu17zH90CmgoVCsuUuBdknbj5UBf7SjkWROqXBoSCPygB-C",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": "1"
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png"
+  ],
+  "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Mongol campaign tent, 1227: dim amber firelight, felt lattice wall softly blurred; a fur-trimmed felt deel sleeve, weathered calloused hand.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "6f33e041e329f72ea2267e3799ab695f7caa388b1c8048f032d5bd8f3bec234b",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzQ3M2FmNzI5LTZjYzItNGRmNC05ZTdiLWNiNWI5ODk0YTAxYy5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D04 hand/table insert genghis on anchor J26-2",
+  "created": "2026-10-09T09:38:25-03:00"
+}

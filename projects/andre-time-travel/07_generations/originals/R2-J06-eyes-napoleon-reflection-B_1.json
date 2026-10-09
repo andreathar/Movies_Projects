@@ -1,0 +1,21 @@
+{
+  "job": "R2-J06-eyes-napoleon-reflection-B",
+  "generationId": "AUMGRIaS9zBaZwCJiQxBhWiZmdO1Cz8aJqfJbCkU_BEzj4oo5LMaaEw0uUFXuW7AFU5rEfDf",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/napoleon/R2-J01-eyes-napoleon-recast_2_eyescrop.png"
+  ],
+  "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: self-possession gives way to attention and a contained downward glance \u2014 the gaze drops a few degrees, lids lower slightly, as if watching the other man fail to be superior. No anger, no sadness performed.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "567453e4b6d85234dbd5125dbffdc4b5acbc36746033216934576046641763d9",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qUAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo2c3RhcmdhdGUvMTE0Lzg2NTc4MDZiLWY5YzAtNGRjYS04M2I4LWQ2Mjg4NGNiZWI5YS5qcGVn.origin?x-kcdn-pid=112372",
+  "note": "D05 Napoleon expression B delta from recast base R2-J01_2 crop",
+  "created": "2026-10-09T09:35:51-03:00"
+}

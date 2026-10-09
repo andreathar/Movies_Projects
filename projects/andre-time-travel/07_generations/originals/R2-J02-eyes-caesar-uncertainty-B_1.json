@@ -1,0 +1,21 @@
+{
+  "job": "R2-J02-eyes-caesar-uncertainty-B",
+  "generationId": "AaWpJkGksVg8hYPI1x7mINmPln_uIdHfWAtAYhoJG4dCRpiAYzDzYzvP0rk63hXTPbf-ukDa",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png"
+  ],
+  "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: the commanding certainty slips \u2014 the brows relax a fraction, the eyes widen very slightly and the focus turns inward, as if hearing that he became a precedent for other men. No fear, no anger.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "d7c2fce55b314580cd52acd8f2e6fc809acc8e87b6877c639262f68908397e29",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzVhNzMzNWNjLTE3YWQtNDA1Yy1iYzg0LTMwZWViOGY5ZjI1Mi5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D05 Caesar expression B delta from base J11_1",
+  "created": "2026-10-09T09:32:02-03:00"
+}

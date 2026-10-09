@@ -1,0 +1,22 @@
+{
+  "job": "R2-J14-insert-oppenheimer",
+  "generationId": "AbL2A2UHY9wVLc6BSSvGbfW5uivqxFchO2AQjKIOhAeKcNEZcGj_JP60kSwVmJClDhOcqYh0",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": "1"
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png"
+  ],
+  "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Trinity base camp, July 1945, night: harsh single tungsten bulb from above, pine plank wall blurred; a grey herringbone tweed sleeve with a white cotton cuff, a lean hand resting beside a closed unmarked field notebook and an unbranded cigarette pack.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "16357583149bfba849632f96a66384ae68b5556d4791effc4ab1939bc2f004cf",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzBlNTBmOGNiLWIwN2MtNGZmZC1hOWNiLTFkOWFmYWJlNjM0Ny5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D04 hand/table insert oppenheimer on anchor J26-2",
+  "created": "2026-10-09T09:41:34-03:00"
+}

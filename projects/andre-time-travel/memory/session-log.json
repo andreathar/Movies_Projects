@@ -85,6 +85,17 @@
         "speech-route-matrix-v1"
       ],
       "note": "Blanket authorization recorded as APR-blanket-2026-10-09; R2 reference batch scope authorized (450) not submitted."
+    },
+    {
+      "at": "2026-10-09T09:44:05-03:00",
+      "event": "r2_reference_batch_executed",
+      "paidJobsSubmitted": 11,
+      "creditsDelta": 205,
+      "balanceAfter": 6776,
+      "authorization": "APR-R2-references-2026-10-09",
+      "accepted": 11,
+      "rejected": 1,
+      "screenplayApproved": true
     }
   ]
 }

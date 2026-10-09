@@ -1,0 +1,181 @@
+[
+  {
+    "job": "R2-J01-eyes-napoleon-recast",
+    "tool": "text_to_image",
+    "model": "gemini-3.1-flash-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D05 Napoleon recast state A self-possession; 2 candidates",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "4:1",
+      "imageCount": "2"
+    },
+    "images": [],
+    "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. European man of about forty-seven, exiled on a cold Atlantic island: pale sallow skin with faint grey shadows under the eyes, heavier upper lids, fine lines at the outer corners, dark brown straight brows, grey-blue irises. Expression: contained self-possession, the stare of someone used to command, a guarded pride. Cool diffuse sea-mist window light from the left; muted blue-grey palette."
+  },
+  {
+    "job": "R2-J02-eyes-caesar-uncertainty-B",
+    "tool": "image_to_image",
+    "model": "gemini-3.1-flash-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D05 Caesar expression B delta from base J11_1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "4:1",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png"
+    ],
+    "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: the commanding certainty slips \u2014 the brows relax a fraction, the eyes widen very slightly and the focus turns inward, as if hearing that he became a precedent for other men. No fear, no anger."
+  },
+  {
+    "job": "R2-J03-eyes-genghis-recognition-B",
+    "tool": "image_to_image",
+    "model": "gemini-3.1-flash-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D05 Genghis expression B delta from base J13",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "4:1",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png"
+    ],
+    "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: the hard pride stills into guarded recognition \u2014 lids lower slightly, the stare softens into stillness, as if hearing of cities that are no longer there. No tears."
+  },
+  {
+    "job": "R2-J04-eyes-galileo-resolve-B",
+    "tool": "image_to_image",
+    "model": "gemini-3.1-flash-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D05 Galileo expression B delta from base J15",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "4:1",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png"
+    ],
+    "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: weariness becomes quiet resolve \u2014 the eyes open a little, the catchlights sharpen, the brows settle, a calm steady attention returns. Still tired, now certain."
+  },
+  {
+    "job": "R2-J05-eyes-oppenheimer-stillness-B",
+    "tool": "image_to_image",
+    "model": "gemini-3.1-flash-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D05 Oppenheimer expression B delta from base J19; keep full lower lids in frame",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "4:1",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png"
+    ],
+    "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: feverish anticipation drains into near-motionless stillness \u2014 the pupils stay fixed, lids slightly heavier, the gaze goes hollow and far away, as if hearing a question he cannot answer. Keep the lower eyelids fully inside the frame."
+  },
+  {
+    "job": "R2-J06-eyes-napoleon-reflection-B",
+    "tool": "image_to_image",
+    "model": "gemini-3.1-flash-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D05 Napoleon expression B delta from recast base R2-J01_2 crop",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "4:1",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/history-eyes/napoleon/R2-J01-eyes-napoleon-recast_2_eyescrop.png"
+    ],
+    "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: self-possession gives way to attention and a contained downward glance \u2014 the gaze drops a few degrees, lids lower slightly, as if watching the other man fail to be superior. No anger, no sadness performed."
+  },
+  {
+    "job": "R2-J10-insert-caesar",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D04 hand/table insert caesar on anchor J26-2",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": "1"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/wardrobe/R1-J21-costume-caesar_belowneck.png"
+    ],
+    "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Rome, early 44 BCE: warm oil-lamp light from the right, ochre plaster and muted red in the soft background; a wool toga sleeve with a narrow purple border; one plain iron signet ring is allowed."
+  },
+  {
+    "job": "R2-J11-insert-genghis",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D04 hand/table insert genghis on anchor J26-2",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": "1"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/wardrobe/R1-J22-costume-genghis_belowneck.png"
+    ],
+    "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Mongol campaign tent, 1227: dim amber firelight, felt lattice wall softly blurred; a fur-trimmed felt deel sleeve, weathered calloused hand."
+  },
+  {
+    "job": "R2-J12-insert-galileo",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D04 hand/table insert galileo on anchor J26-2",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": "1"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png"
+    ],
+    "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Arcetri, 1634: cool dusk window light from the left, stone wall blurred; a dark wool doublet sleeve with an ink-stained linen cuff, an aged hand resting beside an unreadable, out-of-focus manuscript page."
+  },
+  {
+    "job": "R2-J13-insert-napoleon",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D04 hand/table insert napoleon on anchor J26-2",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": "1"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png"
+    ],
+    "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Saint Helena, 1816: cool humid sea-mist light through shutters, peeling plaster blurred; a dark green tailcoat cuff with a brass button, white cuff, a bare hand resting on a closed worn leather book with no readable title."
+  },
+  {
+    "job": "R2-J14-insert-oppenheimer",
+    "tool": "image_to_image",
+    "model": "gemini-3-pro-image",
+    "auth": "APR-R2-references-2026-10-09",
+    "note": "D04 hand/table insert oppenheimer on anchor J26-2",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "image_count": "1"
+    },
+    "images": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png"
+    ],
+    "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Trinity base camp, July 1945, night: harsh single tungsten bulb from above, pine plank wall blurred; a grey herringbone tweed sleeve with a white cotton cuff, a lean hand resting beside a closed unmarked field notebook and an unbranded cigarette pack."
+  }
+]

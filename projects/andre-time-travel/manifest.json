@@ -170,12 +170,22 @@
       "doc": "docs/budget-plan-v2.md",
       "liveBalanceObserved": 6981,
       "observedAt": "2026-10-09T09:23:16-03:00"
+    },
+    "referenceBatchAccountingR2": {
+      "batch": "R2",
+      "ledger": "credit-ledger.csv",
+      "aggregateCreditDelta": 205,
+      "cap": 450,
+      "availableCreditsObserved": 6776,
+      "observedDate": "2026-10-09",
+      "chargeBasis": "per-job balance deltas via kling account before/after",
+      "providerCreditsConsumedReported": null
     }
   },
   "approvals": {
     "characterReferences": false,
     "productionElement": false,
-    "screenplay": false,
+    "screenplay": true,
     "voiceTests": false,
     "speechRoute": false,
     "pilot": false,

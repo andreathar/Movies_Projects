@@ -1,6 +1,6 @@
 # Julius Caesar — Scene Bible
 
-> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+> **STATUS: PROPOSED** — dialogue synced to script v2 and historian review (00_brief/research/historian-review-v2.md) applied 2026-10-09; remaining unsourced period details are listed there as design choices. — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
 
 
 **Chapter:** C — Julius Caesar  
@@ -14,7 +14,7 @@
 ## 1. Dramatic Progression & Emotional Arc
 
 - **Core Question:** *Does victory leave behind a republic or personal power?*
-- **Caesar's Motivation:** Preoccupied with his legacy, reforms, and ultimate stature after the civil wars and appointment as dictator perpetuo.
+- **Caesar's Motivation:** Preoccupied with his legacy, reforms, and ultimate stature after the civil wars and appointment as dictator (46–44 BCE)[1].
 - **Eye Cue Progression (Eyes-Only Safe Crop):**
   - **Cue A (`C-03`, 4s):** *Focused command and imperial pride* at Andre's response ("Your name survives...").
   - **Cue B (`C-05`, 4s):** *Calculation yielding to sudden mortal uncertainty* at "what happens to a republic around him." A subtle pupil contraction and brow shift, without caricature or fury.
@@ -22,6 +22,8 @@
 ---
 
 ## 2. Visual Contract & Atmosphere
+
+> **R2 references (2026-10-09, accepted candidates, decision D05/D04):** eyes state A base → `02_references/history-eyes/caesar/` (R1 base per D05); eyes state B → `R2-J02-eyes-caesar-uncertainty-B_1_eyescrop.png`; hand/table insert → `02_references/inserts/R2-J10-insert-caesar_1.jpg`. Gaze in stills reads near-centre; video prompts must set camera-left.
 
 | Attribute | Production Requirement | Reference Anchor |
 |---|---|---|
@@ -38,7 +40,7 @@
 | Slot | Line ID | Speaker | Line & Action |
 |---|---|---|---|
 | `C-01` | — | Ambient | *Arrival/table edge; toga drape and sleeve suggest Caesar. Ambient Roman morning birds and distant market hum.* (4s) |
-| `C-02` | `C-L01`<br>`C-L02` | Caesar (O.S.)<br>Andre | **Caesar:** *"Does my name survive?"*<br>**Andre:** *"Your name survives. So do the reforms and the victories people study. But they also study how much power one man can hold—and what happens to a republic around him."* (10s) |
+| `C-02` | `C-L01`<br>`C-L02` | Caesar (O.S.)<br>Andre | **Caesar:** *"Does my name survive?"*<br>**Andre:** *"It survives. People still study the victories and the reforms. They also study what one man's power did to a republic."* (10s) |
 | `C-03` | — | Caesar (Eyes) | *Eye cue A: Focused command and imperial pride. Gaze camera-left.* (4s) |
 | `C-04` | `C-L03`<br>`C-L04` (start) | Caesar (O.S.)<br>Andre | **Caesar:** *"Then they remember a tyrant?"*<br>**Andre:** *"They argue about you. A brilliant commander. An ambitious ruler..."* (8s) |
 | `C-05` | — | Caesar (Eyes) | *Eye cue B: The calculation softens into uncertainty. A quiet, heavy stillness.* (4s) |
@@ -49,5 +51,5 @@
 
 ## 4. Historical Anchor & Research Citations
 
-- **Assassination Context:** March 15, 44 BCE (Ides of March). The scene is set in early 44 BCE when Caesar held supreme power as *dictator perpetuo*.[1]
+- **Assassination Context:** March 15, 44 BCE (Ides of March). The scene is set in early 44 BCE when Caesar held supreme power as *dictator (46–44 BCE)[1]*.[1]
 - **Reforms & Senate Dynamics:** Reforms included the Julian calendar, provincial reorganization, and debt relief, balanced against the disenfranchisement of traditional senatorial republican norms.[1]

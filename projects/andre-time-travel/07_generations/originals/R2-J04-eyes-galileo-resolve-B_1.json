@@ -1,0 +1,21 @@
+{
+  "job": "R2-J04-eyes-galileo-resolve-B",
+  "generationId": "Abs82dWV1HMFLV0nSpucteROBpM0m2fFoSe14vI8v8aGe8CqWrkGkiTyElAmHPQuevIxC1_s",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png"
+  ],
+  "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: weariness becomes quiet resolve \u2014 the eyes open a little, the catchlights sharpen, the brows settle, a calm steady attention returns. Still tired, now certain.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "9a47f2c116e7997bcf2d6a9b73ab2cf85b95b0a040c423fb33f046f70f4d4a55",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2ZkYThhODEwLWM3MTQtNGY2OC1iMTRiLTdiY2IxMTgyM2NiZi5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D05 Galileo expression B delta from base J15",
+  "created": "2026-10-09T09:33:40-03:00"
+}

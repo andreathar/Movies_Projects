@@ -1,0 +1,22 @@
+{
+  "job": "R2-J13-insert-napoleon",
+  "generationId": "AXYH55nuG6I2bSO-K8-gdOuZ1mDr4HtoPZlEFW7n4AtchwaIqUYD4RE_N_kHdW6mo-wFpHdI",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": "1"
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/wardrobe/R1-J24-costume-napoleon_belowneck.png"
+  ],
+  "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Saint Helena, 1816: cool humid sea-mist light through shutters, peeling plaster blurred; a dark green tailcoat cuff with a brass button, white cuff, a bare hand resting on a closed worn leather book with no readable title.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "92b11495686624494e184942bdbfff9bd1a8632653fe5bc762fd5fc9a0307ade",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyL2ExMTNiMmE1LTQyODItNDBjYy1iZGMyLTYwMDI5ODQyNjAwNS5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D04 hand/table insert napoleon on anchor J26-2",
+  "created": "2026-10-09T09:40:31-03:00"
+}

@@ -4,7 +4,7 @@
   "creativeApprovals": {
     "characterReferences": false,
     "productionElement": false,
-    "screenplay": false,
+    "screenplay": true,
     "voiceTests": false,
     "speechRoute": false,
     "pilot": false,
@@ -55,7 +55,23 @@
         "Andre keyframes (R3)",
         "ElevenLabs spend"
       ],
-      "status": "authorized_not_yet_submitted"
+      "status": "executed",
+      "result": "11 jobs, 12 works, 205 credits reconciled from balance deltas (6981→6776); all COMPLETED; 11 accepted candidates, 1 rejected candidate (Napoleon recast_1). Under 450 cap."
+    },
+    {
+      "id": "APR-screenplay-v2-2026-10-09",
+      "type": "creative_approval",
+      "gate": "screenplay",
+      "grantedBy": "director agent under APR-blanket-2026-10-09; historian review APPROVE WITH EDITS applied",
+      "artifact": {
+        "path": "01_script/script-en.md",
+        "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+      },
+      "evidence": [
+        "00_brief/research/historian-review-v2.md",
+        "00_brief/decisions/D07-script-v2.json"
+      ],
+      "scope": "English Edition E text; Edition H translations must be redone from this version"
     }
   ],
   "decisionRecords": "00_brief/decisions/"

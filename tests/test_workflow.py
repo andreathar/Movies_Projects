@@ -116,7 +116,9 @@ class WorkflowTests(unittest.TestCase):
                          "Hold a quiet breath before replying.")
         cue = next(c for c in edited["cues"] if c["line_id"] == "C-L01")
         self.assertEqual(cue["text_en"], "What survives?")
-        self.assertFalse(edited["manifest"]["approvals"]["screenplay"])
+        # Editing sources must never change approval state in either direction.
+        self.assertEqual(edited["manifest"]["approvals"]["screenplay"],
+                         original["manifest"]["approvals"]["screenplay"])
 
     def test_script_and_csv_cannot_silently_diverge(self):
         film, source_path, _ = self.atlas_fixture()

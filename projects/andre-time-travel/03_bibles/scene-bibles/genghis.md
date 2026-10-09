@@ -1,10 +1,10 @@
 # Genghis Khan — Scene Bible
 
-> **STATUS: PROPOSED** — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
+> **STATUS: PROPOSED** — dialogue synced to script v2 and historian review (00_brief/research/historian-review-v2.md) applied 2026-10-09; remaining unsourced period details are listed there as design choices. — nothing in this file is approved unless it cites a decision ID in `00_brief/decisions/`. Decided so far: D01 identity set, D02 wardrobe, D03 grooming, D04 table + travel rule, D05 eye bases, D09 screen axis. Likeness approval (pilot) remains Andre's.
 
 
 **Chapter:** K — Genghis Khan  
-**Fictional Setting:** A military campaign ger (yurt), Western Xia / Yinchuan campaign, summer 1227  
+**Fictional Setting:** A military campaign ger (yurt), Western Xia / Zhongxing (Xi Xia capital)[15] campaign, summer 1227  
 **Location:** Central headquarters tent on the arid steppe borderlands  
 **Target Duration:** 42 seconds  
 **Slots:** `K-01` (4s), `K-02` (10s), `K-03` (4s), `K-04` (8s), `K-05` (4s), `K-06` (7s), `K-07` (5s)
@@ -23,6 +23,8 @@
 
 ## 2. Visual Contract & Atmosphere
 
+> **R2 references (2026-10-09, accepted candidates, decision D05/D04):** eyes state A base → `02_references/history-eyes/genghis/` (R1 base per D05); eyes state B → `R2-J03-eyes-genghis-recognition-B_1_eyescrop.png`; hand/table insert → `02_references/inserts/R2-J11-insert-genghis_1.jpg`. Gaze in stills reads near-centre; video prompts must set camera-left.
+
 | Attribute | Production Requirement | Reference Anchor |
 |---|---|---|
 | **Setting Plate** | Nomad ger interior: thick multi-layered wool felt walls, willow lattice frame (*khana*), stone hearth fire pit casting warm amber flickering light, smoke gently drafting toward the central roof ring (*toono*). | `02_references/table/R1-J28-plate-tent-1227_1.png` |
@@ -38,7 +40,7 @@
 | Slot | Line ID | Speaker | Line & Action |
 |---|---|---|---|
 | `K-01` | — | Ambient | *Tent-lit table; a resting fur-trimmed sleeve and scarred hand. Steppe wind howling softly outside.* (4s) |
-| `K-02` | `K-L01`<br>`K-L02` | Khan (O.S.)<br>Andre | **Khan:** *"Will my sons keep what I have made?"*<br>**Andre:** *"They will enlarge it. Routes across Eurasia will carry merchants, ideas, and knowledge. But conquest also leaves ruined cities and families who never return."* (10s) |
+| `K-02` | `K-L01`<br>`K-L02` | Khan (O.S.)<br>Andre | **Khan:** *"Will my sons keep what I have made?"*<br>**Andre:** *"They will make it larger than you can picture. Merchants, ideas, and knowledge will cross it. So will the news of cities that are no longer there."* (10s) |
 | `K-03` | — | Khan (Eyes) | *Eye cue A: Controlled pride at "They will enlarge it." Gaze camera-left.* (4s) |
 | `K-04` | `K-L03`<br>`K-L04` (start) | Khan (O.S.)<br>Andre | **Khan:** *"And what will they call me?"*<br>**Andre:** *"A founder. A conqueror. They will argue about what your empire joined—and what it destroyed..."* (8s) |
 | `K-05` | — | Khan (Eyes) | *Eye cue B: Reaction to missing families; the gaze holds still and lowers slightly.* (4s) |

@@ -7,12 +7,14 @@
     "sha256": null,
     "version": "v1"
   },
-  "decision": "DECIDED per figure (contact sheet 02_references/_review/historical-eyes_contact.jpg, tiles top→bottom): Caesar = tile 1 (R1-J11-eyes-caesar-command_1, correct screen direction); Genghis = tile 4 (R1-J13 pride: firelight, clean crop, reads ~60); Galileo = tile 6 (R1-J15 weariness: sharper, reads 70); Oppenheimer = tile 10 (R1-J19 anticipation; full lower lid). Napoleon = RECAST (both tiles read ~40 with fair brows; target: 47, dark brows, sea-mist pallor, heavier lids). Expression B for every figure is a minimal delta (lids/brow/catchlight) generated FROM the base, same crop scale, gaze camera-left.",
+  "decision": "DECIDED per figure (contact sheet 02_references/_review/historical-eyes_contact.jpg, tiles top→bottom): Caesar = tile 1 (R1-J11-eyes-caesar-command_1, correct screen direction); Genghis = tile 4 (R1-J13 pride: firelight, clean crop, reads ~60); Galileo = tile 6 (R1-J15 weariness: sharper, reads 70); Oppenheimer = tile 10 (R1-J19 anticipation; full lower lid). Napoleon = RECAST (both tiles read ~40 with fair brows; target: 47, dark brows, sea-mist pallor, heavier lids). Expression B for every figure is a minimal delta (lids/brow/catchlight) generated FROM the base, same crop scale, gaze camera-left. UPDATE 2026-10-09: Napoleon base = R2-J01-eyes-napoleon-recast_2 (crop in history-eyes/napoleon). Expression-B deltas generated and accepted as candidates for all five: R2-J02 (Caesar), R2-J03 (Genghis), R2-J04 (Galileo), R2-J05 (Oppenheimer), R2-J06 (Napoleon). Superseded pairs (R1-J12, J14, J16, J18, J20, J17) stay as history only.",
   "reviewer": "Andre Athar (blanket authorization 2026-10-09: 'you make the budget, tools and subagents decisions. i aprove all') executed by director/producer agent",
   "reviewedAt": "2026-10-09T09:18:43-03:00",
   "evidence": [
     "full-resolution region review of Genghis/Galileo/Napoleon pairs",
-    "review-findings §2"
+    "review-findings §2",
+    "07_generations/batches/R2-references.json",
+    "director full-resolution review of all five base/delta pairs"
   ],
   "scope": "R2 paid eye-base batch; scene bibles; atlas v3",
   "limitations": [

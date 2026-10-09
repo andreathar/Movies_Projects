@@ -1,0 +1,22 @@
+{
+  "job": "R2-J12-insert-galileo",
+  "generationId": "ATSpI9HQLOb5HCeOKHz9Kjk8C1iR5HlxIZ6Uxz7IKk0E7rwtaScqxSnof9yykf7rGv4kC0kK",
+  "tool": "image_to_image",
+  "model": "gemini-3-pro-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "16:9",
+    "image_count": "1"
+  },
+  "refs": [
+    "02_references/table/R1-J26-table-anchor_2.png",
+    "02_references/wardrobe/R1-J23-costume-galileo_belowneck.png"
+  ],
+  "prompt": "Photorealistic cinematic insert, 16:9. Keep the exact plain unpainted oak table from image 1: same pale wide planks, length-wise grain, the chipped nick on the near-left front corner, the faint ring stain. Camera at tabletop height, below the shoulder line, looking across the table toward the far edge. Exactly one forearm, sleeve and hand of the person seated on the far side rest on the table near the far edge; the fingers press lightly into the wood. The entire head, neck, shoulders and face are OUTSIDE the frame above the top edge \u2014 no face, no chin, no reflection, no mirror, no portrait, no other people, no readable text or writing, no watermark. Natural hand anatomy, five fingers, no rings. The sleeve, cuff and hand match the costume in image 2. Arcetri, 1634: cool dusk window light from the left, stone wall blurred; a dark wool doublet sleeve with an ink-stained linen cuff, an aged hand resting beside an unreadable, out-of-focus manuscript page.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzYwOTliMjhiLWUwNWEtNDkxZS1iYmJmLWFjMWRiMjQyMDczYS5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D04 hand/table insert galileo on anchor J26-2",
+  "created": "2026-10-09T09:39:24-03:00"
+}

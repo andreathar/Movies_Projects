@@ -1,0 +1,21 @@
+{
+  "job": "R2-J05-eyes-oppenheimer-stillness-B",
+  "generationId": "AY_Jbqe6SnXUoB6HBiGiHvoxFIEjR4otMFYXFaIALySZIgBac4Z78WQNGtcommLuhU-OaO9j",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png"
+  ],
+  "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: feverish anticipation drains into near-motionless stillness \u2014 the pupils stay fixed, lids slightly heavier, the gaze goes hollow and far away, as if hearing a question he cannot answer. Keep the lower eyelids fully inside the frame.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "776e5a898ae87905bb91062e5d161589ba78564175c8e5e4e5e1440c8472bd65",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qUAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo2c3RhcmdhdGUvMTE0L2FkMTJkMjFiLTRlMWItNDAxNC04OWFjLTJlNTBkNThkOGQxYS5qcGVn.origin?x-kcdn-pid=112372",
+  "note": "D05 Oppenheimer expression B delta from base J19; keep full lower lids in frame",
+  "created": "2026-10-09T09:34:35-03:00"
+}

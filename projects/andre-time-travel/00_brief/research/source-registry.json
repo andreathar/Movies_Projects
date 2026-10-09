@@ -159,7 +159,8 @@
       "snapshotPath": "00_brief/research/snapshots/source-16.md",
       "snapshotSha256": "54b1b50c6ab872272dd6d719bc1e9a45777962c1b99d14944f76dedbcca3e10b",
       "snapshotStatus": "imported_cached_extraction",
-      "evidenceValidated": false
+      "evidenceValidated": false,
+      "registryNote": "2026-10-09: snapshot content is the Britannica Genghis Khan biography, not the Golden Horde page listed in url; historian flagged. Detected URL in snapshot: https://www.britannica.com/biography/Genghis-Khan. Re-fetch or re-point before citing [16] for 'died August 1227'."
     },
     {
       "id": 17,
@@ -174,22 +175,33 @@
     {
       "id": 18,
       "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/hiroshima.htm",
-      "title": "",
-      "accessed": "2026-10-08",
-      "snapshotPath": null,
-      "snapshotSha256": null,
-      "snapshotStatus": "not_found_in_current_cache",
+      "title": "The Atomic Bombing of Hiroshima, August 6, 1945 — OSTI Manhattan Project History",
+      "accessed": "2026-10-09",
+      "snapshotPath": "00_brief/research/snapshots/source-18.md",
+      "snapshotSha256": "9168c68ba49932e80cbd72b57349bdb4421e12f769b0934a88f96282a4770f99",
+      "snapshotStatus": "fetched_2026-10-09",
       "evidenceValidated": false
     },
     {
       "id": 19,
       "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/nagasaki.htm",
-      "title": "",
-      "accessed": "2026-10-08",
-      "snapshotPath": null,
-      "snapshotSha256": null,
-      "snapshotStatus": "not_found_in_current_cache",
+      "title": "The Atomic Bombing of Nagasaki, August 9, 1945 — OSTI Manhattan Project History",
+      "accessed": "2026-10-09",
+      "snapshotPath": "00_brief/research/snapshots/source-19.md",
+      "snapshotSha256": "960255fda52d7d48335651a11d3e4425c5779787b3d58d83c97ccb3ab5ecec13",
+      "snapshotStatus": "fetched_2026-10-09",
       "evidenceValidated": false
+    },
+    {
+      "id": 20,
+      "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/surrender.htm",
+      "title": "Japan Surrenders, August 10–15, 1945 — OSTI Manhattan Project History",
+      "accessed": "2026-10-09",
+      "snapshotPath": "00_brief/research/snapshots/source-20.md",
+      "snapshotSha256": "5bb6911eb04e041d595cfc0fd8c770176728fa4e451ba711167496ab5fb97a37",
+      "snapshotStatus": "fetched_2026-10-09",
+      "evidenceValidated": false,
+      "supports": "O-L02 'The war ends that summer' (broadcast 15 Aug 1945; ceremony 2 Sep 1945)"
     }
   ]
 }

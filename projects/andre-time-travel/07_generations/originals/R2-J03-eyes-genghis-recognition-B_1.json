@@ -1,0 +1,21 @@
+{
+  "job": "R2-J03-eyes-genghis-recognition-B",
+  "generationId": "AVJQO4fGjuKOyPH7xZ6K_aIF_oBtCI8oZwCPZJXTxG7O_BE89y5deRumI653GNQN3B0qIdi7",
+  "tool": "image_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": "1"
+  },
+  "refs": [
+    "02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png"
+  ],
+  "prompt": "Edit image 1. Keep EXACTLY the same person: identical eye shape, iris colour and pattern, brows, lashes, skin texture, wrinkles, lighting direction and colour, crop, scale and framing. Keep the strip eyes-only: no nose tip, no mouth, no jaw. Gaze stays toward camera-left. Change ONLY the expression, subtly, as a real face would in one second: the hard pride stills into guarded recognition \u2014 lids lower slightly, the stare softens into stillness, as if hearing of cities that are no longer there. No tears.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "89bfab418b0053a87a34f54719e2bd53e447caedce2027dba1981a074d887245",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTE0L2IxZjM5N2RjLTdjNDAtNDhhZi1iODczLWE0NTIzMGMzZmYwZC5wbmc.origin?x-kcdn-pid=112372",
+  "note": "D05 Genghis expression B delta from base J13",
+  "created": "2026-10-09T09:32:48-03:00"
+}

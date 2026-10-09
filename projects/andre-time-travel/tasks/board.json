@@ -43,7 +43,7 @@
       "dependsOn": [
         "T02"
       ],
-      "blocker": "Bibles reconciled and headed PROPOSED; decisions D02–D05, D09 recorded; final lock after photo session and eye-base batch.",
+      "blocker": "Table (D04), eye identities (D05), axis (D09) locked as candidates; Andre identity set needs photo session (D08).",
       "specification": "production-tasks.md",
       "deliverables": [
         "03_bibles/continuity-matrix.csv",
@@ -71,15 +71,16 @@
       "id": "T05",
       "title": "Fact-check and approve the English script",
       "ownerRole": "historian",
-      "status": "in_progress",
+      "status": "completed",
       "dependsOn": [],
-      "blocker": "Historian subagent running on script v2; report expected at 00_brief/research/historian-review-v2.md",
+      "blocker": null,
       "specification": "production-tasks.md",
       "deliverables": [
         "01_script/script-en.md",
-        "01_script/proposals/script-en-v2-proposal.md"
+        "00_brief/research/historian-review-v2.md",
+        "00_brief/research/snapshots/source-20.md"
       ],
-      "verifiedAt": null,
+      "verifiedAt": "2026-10-09T09:28:09-03:00",
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
     },
     {
@@ -135,7 +136,7 @@
         "T07",
         "T08"
       ],
-      "blocker": "Read-only speech-route discovery delegated; matrix expected at 01_script/speech-route-matrix-v1.md",
+      "blocker": "Discovery done (01_script/speech-route-matrix-v1.md): Kling declares NO external-audio lip-sync; route = silent Kling clip + ElevenLabs lipsync (Veed → Sync 3 if beard/teeth fail), tested in the pilot (T08/T09). Latin/Corsican absent from ElevenLabs lists → Edition H fallback decision pending.",
       "specification": "production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
@@ -182,10 +183,11 @@
         "T08",
         "T11"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Eye bases + B deltas for 5 figures and 5 table inserts generated/accepted as candidates (R2, 205 cr). Era Andre keyframes wait for photo session (D08) + Element (T04).",
       "specification": "production-tasks.md",
       "deliverables": [
-        "05_storyboard/preproduction-atlas-v1/documents/next-image-batch.md"
+        "02_references/inserts/",
+        "02_references/history-eyes/"
       ],
       "verifiedAt": null,
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."

@@ -1,0 +1,19 @@
+{
+  "job": "R2-J01-eyes-napoleon-recast",
+  "generationId": "AaP-H3gBgNnxV9GqHZXOkmYYRxbSRiQbSkacQzh8hrVEaPa4DmvSnj8BYU1dhJujmi73EWvK",
+  "tool": "text_to_image",
+  "model": "gemini-3.1-flash-image",
+  "options": {
+    "img_resolution": "2k",
+    "aspect_ratio": "4:1",
+    "imageCount": "2"
+  },
+  "refs": [],
+  "prompt": "Extreme close-up cinematic photograph of a man's eyes only, a thin horizontal strip containing just the eyebrows, both eyes and the very top of the cheekbones. The frame ends immediately beneath the lower eyelids: no nose tip, no nostrils, no mouth, no beard, no jaw, no chin, no ears. Both eyes visible, gaze directed toward camera-left. Locked camera, shallow depth of field, razor-sharp irises, natural skin texture. No reflections of a face, no glasses, no text, no watermark, no other people. Original fictional casting, not any real person's likeness. European man of about forty-seven, exiled on a cold Atlantic island: pale sallow skin with faint grey shadows under the eyes, heavier upper lids, fine lines at the outer corners, dark brown straight brows, grey-blue irises. Expression: contained self-possession, the stare of someone used to command, a guarded pride. Cool diffuse sea-mist window light from the left; muted blue-grey palette.",
+  "provenance": "synthetic_fictional_casting",
+  "approved": false,
+  "sha256": "96a75cbda84381ed82e9357f997e654d9c2c64cbc302fc0b469b856aa24c42a6",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qUAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo2c3RhcmdhdGUvMTE0L2U1MzlhOWIxLTQ4NGQtNDdiNy1hODlmLTg3YTA1ZDFiNzBmZC5qcGVn.origin?x-kcdn-pid=112372",
+  "note": "D05 Napoleon recast state A self-possession; 2 candidates",
+  "created": "2026-10-09T09:30:09-03:00"
+}
