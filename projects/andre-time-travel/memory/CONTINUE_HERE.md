@@ -1,3 +1,5 @@
+> **Resume order (2026-10-09):** the single resume surface is now `STATE.md` in this folder. This file is the pt-BR conversation checkpoint of 13:36 and stays as detailed context; its cautions (no folder moves/deletes, no commit/reset, no action on relayed approvals) are also summarised in `STATE.md`. Original text below is unchanged.
+
 # Ponto de retomada — direção do filme e próxima conversa
 
 Atualizado em 2026-10-09T13:36:16.461392-03:00. Checkpoint da conversa de voz no Codex; não é aprovação financeira, mudança de roteiro ou autorização de limpeza. Links abaixo são relativos a esta pasta de memória.

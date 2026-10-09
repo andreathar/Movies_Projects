@@ -1,0 +1,32 @@
+Usage: kling file_upload <filePath>
+
+--- Live server declaration (tools/list) ---
+MCP tool: file_upload
+
+Description:
+Get a one-time upload ticket for sending a local file (image/video) to Kling AI. Then upload the file bytes yourself: POST multipart/form-data to upload_url with two fields: 'ticket' (the ticket string) and 'file' (the file bytes). The 'file' part Content-Type must be image/png, image/jpeg, or video/mp4. The upload response contains the file URL, which can be used as the 'image' parameter of image_to_video or image_to_image. The ticket is single-use and expires at expire_at. Reuse result URL instead of re-upload for unchanged local files. Supported image specs: PNG/JPG only, below 4K resolution, ≤30MB, aspect ratio no wider than 1:2.
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "filename": {
+      "type": "string",
+      "description": "File name, e.g. 'photo.png'"
+    },
+    "contentType": {
+      "type": "string",
+      "description": "MIME type, e.g. 'image/png' or 'video/mp4'"
+    },
+    "size": {
+      "type": "integer",
+      "description": "File size in bytes"
+    },
+    "taskTraceId": {
+      "type": "string",
+      "description": "RFC 4122 UUID V7 identifier to group consecutive, logically connected operations under one user task intent. The same ID is reused for chained steps completing a single goal, such as generating an image then converting it to video for the same subject. A fresh unique UUID must be assigned once the user switches to an unrelated new task, isolating execution traces across distinct user requests."
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

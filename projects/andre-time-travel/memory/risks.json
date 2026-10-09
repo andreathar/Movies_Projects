@@ -4,32 +4,93 @@
     {
       "id": "R01",
       "topic": "Likeness",
-      "status": "open",
-      "mitigation": "New clean photographic reference set, approved Element, full temporal pilot."
+      "status": "mitigated_for_pilot_open_for_new_material",
+      "mitigation": "New clean photographic reference set, approved Element, full temporal pilot.",
+      "assessment": "Andre approved likeness on the Kling pilots (approvals.pilot, characterReferences true). Not covered: 10 IN/OUT frames, 10 posters, any new chapter footage; omni route drifted 2/2 (D11). Re-judge per new material.",
+      "evidence": "00_brief/approvals.json; 00_brief/decisions/D11-element-and-still-route.json",
+      "lastReviewed": "2026-10-09"
     },
     {
       "id": "R02",
       "topic": "Historical face exposure",
       "status": "open",
-      "mitigation": "Fixed eye crops, reflections check and full frame inspection."
+      "mitigation": "Fixed eye crops, reflections check and full frame inspection.",
+      "assessment": "22 full-face originals quarantined. Back-view direction adds nape/profile/reflection risk; D18 (blurred nape) is undecided. Inspect every frame of risky shots.",
+      "evidence": "07_generations/originals/_quarantine-full-face/; docs/checkpoint-2026-10-09-galileo-retomada.md section 4",
+      "lastReviewed": "2026-10-09"
     },
     {
       "id": "R03",
       "topic": "Historical languages",
       "status": "open",
-      "mitigation": "Qualified review, short pronunciation tests and declared adaptation choices."
+      "mitigation": "Qualified review, short pronunciation tests and declared adaptation choices.",
+      "assessment": "T06 blocked. Latin and Corsican absent from ElevenLabs lists; translations marked superseded and need redoing from script v2; IPA is not language approval.",
+      "evidence": "01_script/speech-route-matrix-v1.md; tasks/board.json T06",
+      "lastReviewed": "2026-10-09"
     },
     {
       "id": "R04",
       "topic": "External audio sync",
-      "status": "open",
-      "mitigation": "Separate approved short lip-sync test; reject face-changing output."
+      "status": "reduced_for_english_open_for_edition_h",
+      "mitigation": "Separate approved short lip-sync test; reject face-changing output.",
+      "assessment": "English route = Kling native audio (D13, STT-verified on 2 pilots). Edition H languages unsupported natively; ElevenLabs lipsync fallback untested. G-L04 STT still hears extra words near 4.06-4.88 s.",
+      "evidence": "00_brief/decisions/D13-speech-route.json; docs/budget-and-envelope-resume-v3.md",
+      "lastReviewed": "2026-10-09"
     },
     {
       "id": "R05",
       "topic": "Cost forecast",
       "status": "open",
-      "mitigation": "Refresh account and derive forecast from real pilot charges."
+      "mitigation": "Refresh account and derive forecast from real pilot charges.",
+      "assessment": "Envelope v3 is an estimate (2,129-2,249). Unresolved 80-credit charge with lost job ID; unexplained deltas (2x41 images, 70 vs 30 on identical 5 s videos). Live balance last read 5,813 at 2026-10-09T12:28:25-03:00; refresh before spend.",
+      "evidence": "credit-ledger.csv; 00_brief/decisions/D15-galileo-resume.json; docs/budget-and-envelope-resume-v3.md",
+      "lastReviewed": "2026-10-09"
+    },
+    {
+      "id": "R06",
+      "topic": "State duplication and drift",
+      "status": "open",
+      "assessment": "Resume state was spread over five entry files, a 32 KB narrative STATE.md, a second decision namespace and duplicated approval flags.",
+      "mitigation": "Phase 0 done: single STATE.md, history/ preserved, legacy IDs prefixed. Phases 1-4 (handoff v2, lint, ingestion) pending.",
+      "evidence": "memory/STATE.md; memory/history/",
+      "lastReviewed": "2026-10-09"
+    },
+    {
+      "id": "R07",
+      "topic": "Authority provenance of paid approvals",
+      "status": "open",
+      "assessment": "D16 is recorded as relayed via a bot; blanket authority (APR-blanket) coexists with Andre-only gates. Spending on a relayed approval would be unsafe.",
+      "mitigation": "Andre confirms D16 directly; producer records confirmation with hash. Machine-readable Andre-only gate list planned (Phase 1).",
+      "evidence": "00_brief/decisions/D16-galileo-pilot-v2-phase-a.json; AGENTS.md",
+      "lastReviewed": "2026-10-09"
+    },
+    {
+      "id": "R08",
+      "topic": "Paid request does not match declared model schema",
+      "status": "open",
+      "assessment": "Phase A request.json passes 5 images to gemini-3-pro-image, which declares image_1/image_2 only.",
+      "mitigation": "New request-r2 with 2 inputs and a hash; Andre re-confirms; no submission before.",
+      "evidence": "logs/kling-discovery-checkpoint/; docs/checkpoint-2026-10-09-galileo-retomada.md section 4.2",
+      "lastReviewed": "2026-10-09"
+    },
+    {
+      "id": "R09",
+      "topic": "Table geometry and reaction timing in Galileo preview",
+      "status": "open",
+      "assessment": "Listening pilots show a different table/seat than speech clips (F01); resolution reaction precedes G-L04 (F03).",
+      "mitigation": "Timeline v2 (0 cr) and over-shoulder proof shot; D17 geometry decision.",
+      "evidence": "08_edit/reviews/holistic-staging-v1/REPORT.md",
+      "lastReviewed": "2026-10-09"
+    },
+    {
+      "id": "R10",
+      "topic": "Concurrent edits and uncommitted work",
+      "status": "open",
+      "assessment": "Several agents share one checkout; 14 uncommitted entries incl. newest handoffs and checkpoints; no ownership rule for manifest/board/approvals/ledger.",
+      "mitigation": "Record base hashes before edits; do not clean or reset; decide single owner of canonical files; commit only when Andre asks.",
+      "evidence": "git status; docs/LOCAL_AGENT_HANDOFF.md",
+      "lastReviewed": "2026-10-09"
     }
-  ]
+  ],
+  "note": "Refreshed 2026-10-09 (Phase 0). R01-R05 keep their IDs and original mitigation text; status/assessment/evidence added. Original: history/risks-2026-10-09-pre-restructure.json."
 }

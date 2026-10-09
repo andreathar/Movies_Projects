@@ -98,6 +98,17 @@
       "running": false,
       "paidSubmissionAuthority": false,
       "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "lighting",
+      "name": "Lighting and light continuity reviewer",
+      "brief": "agents/lighting.md",
+      "skills": [
+        "film-character-continuity"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true
     }
   ]
 }

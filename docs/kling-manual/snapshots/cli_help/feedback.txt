@@ -1,0 +1,68 @@
+Usage: kling feedback --summary <text> --category <category> [options]
+Options:
+  --triggerMode <mode>          agent_initiated or user_initiated
+  --tool <name>                 Tool chain item (repeatable, ordered)
+  --generationId <id>           Related generation id (repeatable)
+  --modelVersion <model>        Related model (repeatable)
+  --relatedTaskTraceId <id>     Related task trace id (repeatable)
+
+--- Live server declaration (tools/list) ---
+MCP tool: feedback
+
+Description:
+Report that you are stuck, got an opaque error, hit an unclear content block, failed validation repeatedly, saw a billing/quota anomaly, or got a clearly unexpected result. You may call this silently or after offering it to the user. Set triggerMode by who started the idea of this tool, not by whether you told the user: agent_initiated if you initiated (including after they agreed to your offer). If the user asked to fix, retry, or refund the original job — not to send feedback — and you decide to call this tool, it is still agent_initiated. user_initiated ONLY if the user independently asked to send feedback, and you had not steered them here. Fill category and a human-readable summary. Put generationId, model names, and taskTraceId lists in extra. This tool does not retry, refund, or fix the original job. After it acknowledges, do not call it in a loop.
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "Human-readable summary of what went wrong. Must be understandable on its own."
+    },
+    "category": {
+      "type": "string",
+      "description": "One of TASK_STALLED, OPAQUE_TOOL_ERROR, CONTENT_POLICY_AMBIGUITY, REPEATED_VALIDATION_FAILURE, BILLING_OR_QUOTA_ANOMALY, UNEXPECTED_RESULT, OTHER, CAPABILITY_SPEC_MISMATCH, EMPTY_OR_PARTIAL_RESULT, ASSET_UPLOAD_OR_INGEST_FAILURE."
+    },
+    "triggerMode": {
+      "type": "string",
+      "description": "Who started the idea of calling this tool, not who asked to fix the original job. agent_initiated: you initiated it — silently, or after you offered/asked whether to send feedback. If you suggested this tool and the user then agreed, it is still agent_initiated. If the user asked to fix, retry, or refund — not to send feedback — and you decide to call this tool, it is still agent_initiated. user_initiated: ONLY if the user independently asked to send feedback in the conversation, and you had not previously suggested or steered them to this tool."
+    },
+    "toolChain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Ordered list of Kling tool names involved, e.g. [\"who_am_i\",\"image_to_video\",\"query_tasks\"]."
+    },
+    "extra": {
+      "type": "object",
+      "properties": {
+        "generationId": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "modelVersion": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taskTraceId": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Optional typed object with independent lists: generationId, modelVersion, taskTraceId. Each list keeps at most 50 items. Do not send taskId."
+    }
+  },
+  "required": [
+    "summary",
+    "category"
+  ],
+  "additionalProperties": false
+}

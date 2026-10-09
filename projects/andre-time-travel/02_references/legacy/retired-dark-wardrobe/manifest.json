@@ -1,0 +1,153 @@
+{
+  "createdAt": "2026-10-09T15:30:40.292964-03:00",
+  "decision": "D02; Andre delegated archive decision in current voice conversation",
+  "archiveMode": "logical_archive_original_paths_preserved",
+  "reason": "Preserve historical approval, provenance and delivered atlas links; remove as active identity and wardrobe guidance",
+  "identitySource": "02_references/andre/approved/",
+  "items": [
+    {
+      "path": "02_references/andre/synthetic/R1-J01-andre-master-sheet_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J01-andre-master-sheet_1.json",
+      "sha256": "2bb39d4926b9d1a05e9f1fa02c73d857ed526fdf399f9d900dd1d2717e399b3b",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": true
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J02-andre-closeup-neutral_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J02-andre-closeup-neutral_1.json",
+      "sha256": "a2384f2e4d5087405ce9e92781498f1f6ac70d1b094ba64c13e08e7bc937f4e4",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J02-andre-closeup-neutral_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J02-andre-closeup-neutral_2.json",
+      "sha256": "c2e3f75176a6e6b4c7e6088ef1f2722c079ab8fb3e80bea7b6735c2337747915",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J03-andre-closeup-smile_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J03-andre-closeup-smile_1.json",
+      "sha256": "5fba61f45dd8c9000109dd556e42d2dc5f7c6d46aa334ca498275e2e2931929f",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J03-andre-closeup-smile_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J03-andre-closeup-smile_2.json",
+      "sha256": "662bef86eff899c33d0e52cc2e16fc7a4c0ee26d82917efeb8dbd7b1e0527ac5",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_1.json",
+      "sha256": "68ae60dca9a574fb6a4718c46ca223c0e1cb5830512dc5b4acb25a92c597a0a2",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J04-andre-closeup-listening_2.json",
+      "sha256": "83172fee4b8c829b6fb90d7904adb137aeb94bf0b7c01b52e2f6077999a33eaa",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J05-andre-closeup-concerned_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J05-andre-closeup-concerned_1.json",
+      "sha256": "28830409b4554d6fb3a530d6894ef8484c43333d15ac1f64de75a197a06f089b",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J05-andre-closeup-concerned_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J05-andre-closeup-concerned_2.json",
+      "sha256": "4e9e55407cfe29c08592013aef8720950ff722d4f35fb7865ce1ffefff720287",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_1.json",
+      "sha256": "7e2a666a08a79cb43464b7b2ae90300cad4d1bd176f05ef6dcb7fdfd3eee309f",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J06-andre-closeup-thoughtful_2.json",
+      "sha256": "1bb276e2e9b1b5b9a5c8f0f5cff9d18f5f50f80389b8191a68576b59b7eb19b7",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J07-andre-seated-listening_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J07-andre-seated-listening_1.json",
+      "sha256": "5e85c16ae6b29fc7de0550864ee660277da82993b2de295b5c185354895c1744",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J07-andre-seated-listening_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J07-andre-seated-listening_2.json",
+      "sha256": "8a7de99b0346e2178492fab79031efc813000108d8b9df62da37ab9edc7e42f2",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_1.json",
+      "sha256": "be59cdab2a35dae48376ed2857eeb32fb5cac5d2517b916a77b9438ea62b3183",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J08-andre-seated-threequarter_2.json",
+      "sha256": "92956bb67807aed52f3f1db5c81d3ee8a43f34e8172ac6b658c518bb854ae7a7",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.png",
+      "metadata": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_1.json",
+      "sha256": "d49c96cbd82d969cae16eae01ab6b9dd78f7d094e348335b5ad49a5450e905c9",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_2.png",
+      "metadata": "02_references/andre/synthetic/R1-J09-andre-seated-present-day_2.json",
+      "sha256": "7f36b368eca426a98b744521c97b22964f06d8a2864f52c6d3fb8c8298060cb3",
+      "status": "retired_from_production",
+      "classification": "recorded_prompt",
+      "visuallyReviewed": false
+    },
+    {
+      "path": "02_references/andre/synthetic/R2-andre-table-cinematic.jpg",
+      "sha256": "fb04f329baabaa95e101157f0482767d3ec0779dc253677b299e133b85a1dcc0",
+      "status": "retired_from_production",
+      "classification": "visual_review",
+      "visuallyReviewed": true
+    }
+  ],
+  "remainingReview": "Other R2/R3 synthetic variants require visual classification; entire synthetic directory is not retired."
+}

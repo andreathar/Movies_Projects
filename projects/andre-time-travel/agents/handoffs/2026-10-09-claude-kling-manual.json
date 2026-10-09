@@ -1,0 +1,345 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "contributor (Claude; Kling specialist: documentation + offline tooling; not a registry role, no spending authority)",
+  "assignment": "Andre asked: become a Kling specialist, research docs/tutorials/notebooks, build a manual folder with a solution per process, and tell Codex about useful tools not listed. Proposal only; nothing here is an approval.",
+  "ownedPaths": [
+    "docs/kling-manual/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-kling-manual.json"
+  ],
+  "baseFiles": [],
+  "baseFilesNote": "Only new files were created. No existing file was modified, moved, deleted or committed.",
+  "changedFiles": [
+    {
+      "path": "docs/kling-manual/00-regras-do-projeto.md",
+      "sha256After": "97a184e185a3317f4eb7ecb3ebbd10123b3409a0b2b3b718cdc069a61319fb1d",
+      "reason": "AGENTS.md limits that touch Kling use; four server-vs-project conflicts; open divergences.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/01-setup-diagnostico.md",
+      "sha256After": "d9dcd553674a245c56d3034d2fe22394fd677de4fa85e8bf0c861b502be7258b",
+      "reason": "Zero-cost diagnostics routine; media limits; extension-mismatch finding.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/02-escolha-de-modelo.md",
+      "sha256After": "23a9f273cfa294aee120aedecb8af74d14bb96e224379d00421b0a1fb98baf4d",
+      "reason": "Task -> tool/model table with evidence level.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/03-modelos-ao-vivo.md",
+      "sha256After": "4c2136f0a306948144095ca388fa84aae5e87303fe6bd792a089bda63d65b21b",
+      "reason": "GENERATED from snapshot by tools/kling_model_sheet.py; do not hand-edit.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/04-imagens-estaticas.md",
+      "sha256After": "a36f662e70fabe7eb437337b9fbd8fd3406243fc7a55170e9d5043fed26781dc",
+      "reason": "text_to_image / image_to_image guide.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/05-elements.md",
+      "sha256After": "a940dd935f90d4490c239d0ef914c29e3cc3285c38b5b457bc43587d0a43c944",
+      "reason": "Element lifecycle and where Elements work.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256After": "54d4958d076dedd54df1de8620ff0d69e118cc453d8f937f9ed2483438a7536e",
+      "reason": "image_to_video guide, defaults to watch.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/07-texto-para-video-e-multishot.md",
+      "sha256After": "8a0da0567882d8a860193e7941bcb08337e45826db91436ad3a8130c2fbbc0e3",
+      "reason": "text_to_video and multi-shot (untested).",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256After": "3e00cf754a11801733f7e988b977325e8f06ed5d3926b71c9f86355ba0ee3923",
+      "reason": "omni_ref_video (absent from skill 0.2.0), editing, untested citation syntax.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/09-motion-control.md",
+      "sha256After": "bbd38ff8f3396ba98ed4b47b76e75983a72392f0c029bcde04e4bd670240ea5d",
+      "reason": "motion_control, plus untested lip-sync-by-driver-video hypothesis.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+      "sha256After": "b2ff32b90be938fa1a193c177e4fceb96587430dc8f7dd1483c144b2e68a61de",
+      "reason": "Native audio, voice, lip-sync/dubbing routes A-G.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/11-receitas-do-filme.md",
+      "sha256After": "3d65791dc253a1cca1a0d3b1e5ecacc5c9cddf87d7ecdce69f8424b27e5ec13c",
+      "reason": "Film recipes R1-R10 and proposed small tests T1-T4.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256After": "1365a0f355c73dffddb7dc995fb8cba649d486c33d26027b0de9dca4c4e576f8",
+      "reason": "Rate card, clean observed costs, ledger window-overlap finding.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/13-qc-e-aceitacao.md",
+      "sha256After": "0b34a3a36ef9af0eca6e3d129143b70d275bfc3bf6f0d6c57352551fd92a4aa3",
+      "reason": "Take QC commands and acceptance checklist.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/14-erros-e-troubleshooting.md",
+      "sha256After": "a581861db4457fdb9185278940ed4eed141dac57f4a5f6792a3e4698890d4b5d",
+      "reason": "Error -> cause -> action table.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/15-ferramentas-nao-listadas.md",
+      "sha256After": "3bb7fb52032f501528ea0669a54b7a13f83906ae90965cde86b3f42a452924ca",
+      "reason": "Tools outside the project registry (the notice to Codex).",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/16-fontes.md",
+      "sha256After": "a3fbf56b81c7b4e571f932f3f66cf4c309029b135901854ffb7105476d32aa50",
+      "reason": "Sources with confidence; what was not read.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/README.md",
+      "sha256After": "2949d2417d32c5e0e4eb1f8bd42c1fdc7b1926560c7446addf961c5cc4d35627",
+      "reason": "Index, evidence labels, usage.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/tool_list.json",
+      "sha256After": "50e342a967c5a548478bd0c0bd7e6d51924aeb46d50b5e2c5e7a1dfff70750e8",
+      "reason": "kling tool_list.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/who_am_i.sanitized.json",
+      "sha256After": "069bd2e4431959018eed342b6c7399026eb0e71bb34b0f909b39a6031f7847a1",
+      "reason": "kling who_am_i, body.user removed.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/account.txt",
+      "sha256After": "2577d95832bcc96d0ff16d6980acb116194293702a76fd6df59137d159ed45bd",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/element_create.txt",
+      "sha256After": "f55a4b3458cae38e951a8d9890b0f99a3711d0dc382c5c44f6b445d76c76e5a0",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/element_update.txt",
+      "sha256After": "35d1e7063f63715b7de7110a811e22b43b029d49d1e27aa4847f22a3d6f68995",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/feedback.txt",
+      "sha256After": "5c57bd55b1a16f772c42f741517ff1df482e9279c234049683a4a240cb465f8f",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/file_upload.txt",
+      "sha256After": "491f65b769ec295dbdccddd66970f234e831c77b590bf3a28eb8ebc6065ef30a",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/image_to_image.txt",
+      "sha256After": "55564ed87c16b4a1891d7e00059c3ae1a174393c9da18e7f758fa76a69caa5da",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/image_to_video.txt",
+      "sha256After": "ffcee5a029e8ca332f130fc6f8190fef5745af285c4d19290e62bc99c35151dc",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/motion_control.txt",
+      "sha256After": "5340da4d9f4485bdc15ee577f9a09ea10764ba797692cf30bb2d392e9ffdcd29",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/motion_library_list.txt",
+      "sha256After": "95c93787fb490a3b56fb4087f7d0af605f6e71038ab77a7f626dabb855c6c8c4",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/omni_ref_video.txt",
+      "sha256After": "bb7bc542710b090abc7f094aa1b8bcd5b98e03021a8219144bba657e91021736",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/query_tasks.txt",
+      "sha256After": "4482821d3e17d313f57baabdb3a55393c4449c1c83192b31b65ea33cfd990217",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/text_to_image.txt",
+      "sha256After": "63e47eb1ec16bc6430dd9267a5498f80499960ce426758636b22d7d9089c1c3b",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/snapshots/cli_help/text_to_video.txt",
+      "sha256After": "f51618e7f6964e05033efb57c6d7b624cabb2bba2e061efe9d14b2750b23a7f2",
+      "reason": "Verbatim kling --help output.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_model_sheet.py",
+      "sha256After": "ff9cdedb1a6d713f9432f7d6f775af114f92008ceac20e580a960dd43230b4ab",
+      "reason": "Offline stdlib tool / tests.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256After": "106aa92849f441e2b46a81aa7c1dbf8a9314faab804acc19a0a681edb406aef0",
+      "reason": "Offline stdlib tool / tests.",
+      "created": true
+    },
+    {
+      "path": "docs/kling-manual/tools/test_kling_tools.py",
+      "sha256After": "0104022d6b6ed79a424977465e4a8e0e1949a84f9a760398190166bd3baf14ab",
+      "reason": "Offline stdlib tool / tests.",
+      "created": true
+    }
+  ],
+  "readFirst": [
+    "docs/kling-manual/README.md",
+    "docs/kling-manual/15-ferramentas-nao-listadas.md",
+    "docs/kling-manual/12-custos-e-ledger.md"
+  ],
+  "findings": [
+    {
+      "id": "K1",
+      "severity": "high",
+      "owner": "producer/Codex",
+      "summary": "Phase A request.json (G-REF-galileo-pilot-v2) gives gemini-3-pro-image 5 images but the live model declares 2 input slots (image_1, image_2).",
+      "evidence": "snapshots/who_am_i.sanitized.json; tools/kling_preflight.py reports SLOT_COUNT. Same as risk R08.",
+      "suggestion": "Prepare request-r2 with 2 inputs (about 20 credits) or choose a 10-slot model after review; Andre's direct D16 confirmation still required."
+    },
+    {
+      "id": "K2",
+      "severity": "high",
+      "owner": "producer",
+      "summary": "credit-ledger.csv overstates spend: concurrent jobs share one balance-delta window and each row gets the full delta. Clean-window video costs match the official rate card exactly.",
+      "evidence": "Windows 6539->6498 (two rows), 6425->6355 (two rows), 6495->6425 contains 6465->6425, Element window 6776->6596 contains three 20-credit windows. Ledger sum 2300; unique-window sum 2049; balance 7741->5813 = 1928. Details in 12-custos-e-ledger.md.",
+      "suggestion": "Mark affected rows (do not delete), record creditsConsumed when the response carries it, run one paid job at a time. This replaces the earlier assumption that costs were about 2x the rate card; confirmation by producer pending.",
+      "confidence": "inference, strong"
+    },
+    {
+      "id": "K3",
+      "severity": "medium",
+      "owner": "Codex",
+      "summary": "omni_ref_video exists in CLI 0.2.1 / server 1.3.3 but is absent from skills/kling-cli/SKILL.md 0.2.0; skills/registry.json hash for kling-cli is also stale after the skill replacement.",
+      "evidence": "kling omni_ref_video --help; grep of SKILL.md; docs/kling-manual/08-omni-ref-video-e-edicao.md."
+    },
+    {
+      "id": "K4",
+      "severity": "medium",
+      "owner": "Codex",
+      "summary": "Two reference files have the wrong extension (R1-J26-table-anchor_2.png is JPEG; R3-oppenheimer-speaking-o1_1.jpg is PNG). Unknown whether Kling upload cares.",
+      "evidence": "kling_preflight.py EXT_MISMATCH. Work on copies, never rename originals."
+    },
+    {
+      "id": "K5",
+      "severity": "medium",
+      "owner": "Codex/Andre",
+      "summary": "Input aspect-ratio limit: tool text says no wider than 1:2, but a 5:2 input was accepted in video and 4:1 rejected.",
+      "evidence": "playbook section 3 (G-03/G-05); preflight treats >1:2 as WARN and >~2.5:1 as ERROR."
+    },
+    {
+      "id": "K6",
+      "severity": "info",
+      "owner": "Codex",
+      "summary": "Account at 15:04: plan Ultra, balance 31,621 (ledger last balance 5,813). The jump is not recorded anywhere.",
+      "evidence": "kling account."
+    }
+  ],
+  "unlistedTools": {
+    "kling_app_or_api_only": [
+      "Lip Sync",
+      "Avatar 2.0",
+      "video extension",
+      "upscale",
+      "Effects",
+      "Voice Control library",
+      "Canvas Agent",
+      "negative_prompt / cfg_scale / camera_control / motion brush are not exposed by the CLI"
+    ],
+    "connectors_in_claude_session_possibly_absent_for_codex": [
+      "Higgsfield dubbing (18 languages, lip-sync), voice_change, upscale_video, video_analysis",
+      "ElevenLabs speech / transcription / voice design",
+      "Jockey (TwelveLabs) clip search and query",
+      "Adobe media_enhance_speech (speech/background/reverb stems)"
+    ],
+    "local": [
+      "ffmpeg filters ebur128, loudnorm, minterpolate, vidstab, tile",
+      "exiftool",
+      "faster-whisper in .venv"
+    ],
+    "hardware": "RTX 3060 Laptop, 6 GB VRAM: LatentSync (8 GB / 18 GB) is not viable locally",
+    "rule": "Every external service needs its own scope and cost approval (AGENTS.md); uploading film media to third parties is an external write."
+  },
+  "proposedSmallTests": [
+    {
+      "id": "T1",
+      "question": "tail_image closes on the table-stain detail without identity damage",
+      "config": "kling-video-v3_0, 5 s, 720p, silent",
+      "estimatedCredits": 30
+    },
+    {
+      "id": "T2",
+      "question": "omni_ref_video reference-citation syntax",
+      "config": "kling-video-v3_0_omni, 3 s, 720p, 1 image + 1 short video, no audio",
+      "estimatedCredits": 27
+    },
+    {
+      "id": "T3",
+      "question": "motion_control transfers mouth and voice from Andre's recorded line (dubbing route)",
+      "config": "kling-video-v3_0, 5 s, 720p, keepOriginalSound true",
+      "estimatedCredits": 45
+    }
+  ],
+  "estimateBasis": "rate card x10 (inference); each test needs its own authorization and is submitted by the producer only",
+  "verification": [
+    "python3 -I docs/kling-manual/tools/test_kling_tools.py -> 15 tests OK",
+    "kling_preflight.py on the Phase A request.json -> 1 ERROR (SLOT_COUNT), as expected; on the gkf template -> 0 ERROR with --allow-placeholders",
+    "03-modelos-ao-vivo.md regenerated byte-identical from the snapshot",
+    "Every model name cited in the guides exists in the snapshot; README index complete; no account id or token strings in the folder",
+    "Only free Kling commands were run: account, who_am_i, tool_list, --help"
+  ],
+  "pendingDecisions": [
+    "Andre: D16 direct confirmation and request-r2 for Phase A (K1)",
+    "Producer: ledger correction approach and balance-jump entry (K2, K6)",
+    "Codex: adopt or rewrite the manual; update kling-cli skill and registry hash (K3)",
+    "Producer/Andre: authorize T1-T3 (about 100 credits total) or defer",
+    "Andre: whether the dubbing route may use the real voice (D13/D14)"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

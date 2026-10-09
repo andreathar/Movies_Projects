@@ -31,7 +31,7 @@
 | **Table Props** | Wooden diptych wax tablet with Latin text incisions, bronze stylus, terracotta oil lamp with subtle olive oil flame. | Table Bible |
 | **Caesar Wardrobe (Below Neck Only)** | Fine off-white wool tunic with broad purple *latus clavus* stripe; heavy cream wool *toga praetexta* with Tyrian purple border pinned at the shoulder with a round gold fibula. Right hand resting on table with Roman signet ring. | `02_references/wardrobe/R2-wardrobe-caesar-roman.jpg` |
 | **Caesar Eyes Reference** | Extreme close-up (macro crop from brow to lower eyelids, zero nose, mouth, or jaw). Mediterranean Roman bone structure, piercing dark brown irises, stern brow. | `02_references/history-eyes/caesar/R1-J11-eyes-caesar-command_1_eyescrop.png` & `R1-J12-eyes-caesar-uncertainty_1_eyescrop.png` |
-| **Andre Framing** | Medium close-up, seated screen-left, looking camera-right. Charcoal shirt, navy blazer. Soft warm natural key light from camera-left. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Andre Framing** | Medium close-up, seated screen-left, looking camera-right. Grey pinstripe jacket, white finely striped shirt, open collar, no tie (D02). Soft warm natural key light from camera-left. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 
 ---
 
@@ -53,3 +53,5 @@
 
 - **Assassination Context:** March 15, 44 BCE (Ides of March). The scene is set in early 44 BCE when Caesar held supreme power as *dictator (46–44 BCE)[1]*.[1]
 - **Reforms & Senate Dynamics:** Reforms included the Julian calendar, provincial reorganization, and debt relief, balanced against the disenfranchisement of traditional senatorial republican norms.[1]
+
+> Wardrobe reconciliation: D02 governs new production. Dark-shirt synthetic studies are retired; see `02_references/legacy/retired-dark-wardrobe/manifest.json`. The approved photo anchors face and clothing, not seated table geometry.

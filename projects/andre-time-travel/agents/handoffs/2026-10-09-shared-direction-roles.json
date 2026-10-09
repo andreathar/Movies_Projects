@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Disseminate Andre creative direction through shared entrypoint and role briefs",
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256Before": "3238a79cefe5786680a0b9881342fc58bb748236c2fc34053a48f61a50c5eeae",
+      "sha256After": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "8776ce39c696b9ddd485fa369c15d7eadc73b7698f532f73466747e87b87bd14",
+      "sha256After": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d"
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256Before": "674b504b44fa5c70ab51bd06284b8261ee1fcdee338904888362a3e89888327d",
+      "sha256After": "7eaea1994c32e02fd2303156a79a820b0b211c26055eabfa1c5a16b1016c7f64"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256Before": "70e9a0d47a2a25cf0a35e298d181764afb1363567bb2b9d87a69b42c6c05bf05",
+      "sha256After": "868439025190860ff4ce8478ce1e7dd07b9b587d7982a9e4df63357c1f358fad"
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256Before": null,
+      "sha256After": "34493975bc81bc8c6d26beb220efbd8f041fe62286db38a8442521fff292a13c"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "e7106efef26701015401b8fbe770bb848ab0b9e664dd0ebd133fa2983920f22f",
+      "sha256After": "2f7ff27c4e02c646fc8b628c049b2911c7bc69a83c5b8736fb9af00a8a9e4c1e"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/bindings.json",
+      "sha256Before": "b2d490ab7ff6c137fff9f2a522f94d3956f002c57e1f0fa9307c184d8c8d6327",
+      "sha256After": "18da11a071dc055ffd30cd454f09c0e42d572181594cec01278bc02d7583e52d"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "e9bbb66c9100decbd9b22c81fb93c054890c67ae1a76f78bd034c43711110cc4",
+      "sha256After": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "b3af4bf7785d9611649526f2e863c5de5dc3a6333a515f920433938b83c677c1",
+      "sha256After": "2515f9695dd6d810e32466f4701ccd4f571e51c8e8941669c4d7a6bf989e9058"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "agentsLaunched": 0,
+  "receiptByOtherAgentsVerified": false,
+  "pendingDecisions": [
+    "Detailed lighting design later; per-encounter reaction and sound sheets after remaining user ideas"
+  ],
+  "canonicalStateChanged": false
+}

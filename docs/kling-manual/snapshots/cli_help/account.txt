@@ -1,0 +1,21 @@
+Usage: kling account
+Queries membership type and available points (query_membership_and_credits).
+
+--- Live server declaration (tools/list) ---
+MCP tool: query_membership_and_credits
+
+Description:
+query the member information and remaining available credits of kling user. Membership subscription and recharge are available at https://kling.ai/h5-app/membership-agent?r=agent_codex_skill&type=credit
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "taskTraceId": {
+      "type": "string",
+      "description": "RFC 4122 UUID V7 identifier to group consecutive, logically connected operations under one user task intent. The same ID is reused for chained steps completing a single goal, such as generating an image then converting it to video for the same subject. A fresh unique UUID must be assigned once the user switches to an unrelated new task, isolating execution traces across distinct user requests."
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

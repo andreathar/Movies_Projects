@@ -4,7 +4,7 @@ This is a film production workspace, not the TransfereGov application. Do not mo
 
 ## Session start
 
-1. Read `workspace.json` and the active film's `memory/STATE.md`.
+1. Read `workspace.json` and the active film's `memory/STATE.md` — the single resume surface. `CONTINUE_HERE.md`, `START_HERE.md` and `docs/checkpoint-*.md` are detail, not alternatives. Decisions are cited only by `00_brief/decisions/` IDs (`memory/decisions.json` is superseded history).
 2. Read that film's `manifest.json`, `tasks/board.json`, and `00_brief/approvals.json`.
 3. Read `skills/andre-time-travel/SKILL.md` for this film's operating procedure.
 4. Load existing `kling-cli`, `film-character-continuity`, `film-dialogue-localization`, and `film-editing-qc` skills when relevant. Their links are in `skills/`; do not copy vendor/profile skills here.
@@ -36,3 +36,6 @@ Read `START_HERE.md`, `docs/REPEATABLE_WORKFLOW.md` and `docs/LOCAL_AGENT_HANDOF
 ## Local version control
 
 The user requested local Git versioning on 2026-10-09. The workspace uses `main` and repository-local Git LFS; no remote or publication is configured by that request. Read `docs/VERSION_CONTROL.md`. Preserve media and approvals, stage only your assigned changes, inspect the staged diff, and coordinate with agents sharing this checkout. A commit does not grant production approval. Runtime environments, caches and credentials remain ignored. Keep necessary empty directories through `.gitkeep`; track symlinks without copying external skill contents.
+
+## Direção dramática compartilhada do filme ativo
+Antes de planejar, gerar ou revisar encontros, todos os agentes e subagentes devem ler `projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md`. A fala difícil motiva a reação; preservar a perspectiva pessoal de Andre, sua identidade e zero rostos históricos completos. Humor é liberdade dramática, não dispensa de verificar cultura material. Consultar os papéis historian, lighting e dialogue-sound; iluminação será detalhada depois. Estas instruções não iniciam agentes nem autorizam gasto.

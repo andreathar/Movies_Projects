@@ -31,7 +31,7 @@
 | **Table Props** | Hand-written manuscript sheets of astronomical diagrams, always out of focus or turned away — no legible invented text (review-findings §4), brass ink pot, goose quill pen, brass drafting compass. | Table Bible |
 | **Galileo Wardrobe (Below Neck Only)** | Heavy dark charcoal wool doublet with neat rows of fabric buttons; wide white linen falling collar resting across shoulders; dark scholar's gown; white linen sleeve cuffs with faint brown iron-gall ink smudges; aged, trembling hands resting on papers. | `02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg` |
 | **Galileo Eyes Reference** | Extreme close-up macro crop (brow to lower eyelids, zero nose, mouth, or white beard). Aged Tuscan scholar eyes, heavy crow's feet, slight , deep sunken sockets, profound weariness. | `02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png` & `R1-J16-eyes-galileo-resolve_1_eyescrop.png` |
-| **Andre Framing** | Seated screen-left, looking camera-right. Cool Tuscan evening blue ambient light with warm candlelight on his face and hands. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Andre Framing** | Seated screen-left, looking camera-right. Cool Tuscan evening blue ambient light with warm candlelight on his face and hands. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 
 ---
 
@@ -53,3 +53,5 @@
 
 - **Inquisition Sentence & House Arrest:** Condemned in Rome on June 22, 1633; forced to recite the formal abjuration; confined under house arrest first in Siena and then at Villa Il Gioiello in Arcetri until his death in 1642.[3][12]
 - **Scientific Legacy:** Published *Discorsi e dimostrazioni matematiche intorno a due nuove scienze* in Leiden in 1638 while under house arrest, establishing foundational principles of kinematics and material strength.[3]
+
+> Wardrobe reconciliation: D02 governs new production. Dark-shirt synthetic studies are retired; see `02_references/legacy/retired-dark-wardrobe/manifest.json`. The approved photo anchors face and clothing, not seated table geometry.

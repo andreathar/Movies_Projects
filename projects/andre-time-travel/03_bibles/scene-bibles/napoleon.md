@@ -31,7 +31,7 @@
 | **Table Props** | Worn, cracked leather-bound volume of *Code Civil des Français*, pewter ink pot, brass candlestick with guttering wick, hand-drawn map of Europe. | Table Bible |
 | **Napoleon Wardrobe (Below Neck Only)** | Dark forest-green wool tailcoat of the Chasseurs-à-Cheval with red wool piping along lapels; brass eagle buttons with patina; scarlet ribbon and silver star of the Légion d'Honneur on chest; white piqué waistcoat; hand resting heavily upon the Code Civil tome. | `02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg` |
 | **Napoleon Eyes Reference** | Extreme close-up macro crop (brow to lower eyelids, zero nose, mouth, or chin). Piercing gray-blue irises, sharp Corsican brow, hooded lids, deep exhaustion mixed with imperial intensity. | `02_references/history-eyes/napoleon/R1-J17-eyes-napoleon-selfpossession_1_eyescrop.png` & `R1-J18-eyes-napoleon-reflection_1_eyescrop.png` |
-| **Andre Framing** | Seated screen-left, looking camera-right. Cool, diffuse marine daylight falling over his left shoulder, capturing his solemn gaze. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Andre Framing** | Seated screen-left, looking camera-right. Cool, diffuse marine daylight falling over his left shoulder, capturing his solemn gaze. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 
 ---
 
@@ -54,3 +54,5 @@
 - **Exile & Setting:** Exiled to Saint Helena aboard HMS Northumberland in October 1815; resided at Longwood House from December 1815 until his death in May 1821.[4]
 - **The Napoleonic Code:** Promulgated in 1804 as the *Code Civil des Français*, establishing legal equality and freedom of conscience while simultaneously institutionalizing severe patriarchal restrictions and curtailing women's legal rights.[4][17]
 - **Linguistic Reality:** His childhood mother tongue was Corsican (an Italo-Romance dialect closely related to Tuscan); he spoke Italian before learning French at age 9 at Autun and Brienne, retaining an accent throughout his life.[8]
+
+> Wardrobe reconciliation: D02 governs new production. Dark-shirt synthetic studies are retired; see `02_references/legacy/retired-dark-wardrobe/manifest.json`. The approved photo anchors face and clothing, not seated table geometry.

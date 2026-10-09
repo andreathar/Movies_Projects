@@ -16,7 +16,7 @@
 |---|---|---|
 | **Facial Structure** | Strong square-oval jawline, defined cheekbones, natural skin texture with visible micro-pores (zero beauty filters / AI smoothing). | `inbox/andre-reference-photos/20240202_015259.jpg` |
 | **Hair & Grooming** | Dark brown, short, textured, natural (as photographed 2024 — decision D03; NOT the sleek swept-back synthetic variant). Short groomed stubble beard and moustache (approx. 3–5 days growth), trimmed evenly along jawline and neck. | `02_references/andre/selected/crop34_20240202_015259.jpg` |
-| **Eyes & Gaze** | Warm deep amber-brown irises, natural slight asymmetry, alert and empathetic. Primary screen direction: **looking camera-right** toward the offscreen historical figure across the table. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Eyes & Gaze** | Warm deep amber-brown irises, natural slight asymmetry, alert and empathetic. Primary screen direction: **looking camera-right** toward the offscreen historical figure across the table. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 | **Age Impression** | Mid-40s, distinguished, calm presence. | Real photo inbox series 2024 |
 
 ---
@@ -29,7 +29,7 @@ Andre's wardrobe is **invariant across all five historical encounters and the pr
 |---|---|---|
 | **Shirt** | White shirt with fine grey stripes, soft collar open, no tie (D02 revised — as photographed). | `02_references/andre/approved/sec2_20240202_015421_hs34.jpg` |
 | **Jacket** | Mid-grey pinstripe suit jacket, notch lapels, worn open (D02 revised — as photographed). Pinstripe moiré to be checked in the pilot. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
-| **Seated Fit** | Clean, natural drape while seated at a rustic wooden table; sleeves pulled back slightly showing wrists. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Seated Fit** | Clean, natural drape while seated at a rustic wooden table; sleeves pulled back slightly showing wrists. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 | **Accessories** | Simple silver wedding band on left ring finger; no flashy watches or modern logos visible in frame. | Production invariant |
 
 ---
@@ -45,7 +45,7 @@ Andre's wardrobe is **invariant across all five historical encounters and the pr
   - Zero hand movements obscuring the mouth or chin during dialogue segments.
 - **Lighting Anchors:**
   - Soft directional key light from camera-left (wrap-around 45°).
-  - Subtle architectural rim light separating his dark blazer from the moody background.
+  - Subtle architectural rim light separating his grey pinstripe jacket from the moody background.
   - Color temperature adapts gently to each era's ambient plate (golden in Rome, amber hearth in Mongol tent, cool dusk in Arcetri, soft diffuse mist in St. Helena, tungsten noir in Trinity) while maintaining realistic, healthy skin tones.
 
 ---
@@ -67,5 +67,7 @@ Andre's wardrobe is **invariant across all five historical encounters and the pr
 - **Frontal / Three-Quarter Real Photographs:** `inbox/andre-reference-photos/20240202_015259.jpg`, `20240202_015214.jpg`, `20240202_015304.jpg`
 - **Left Profile Synthetic Reference:** `02_references/andre/synthetic/R2-andre-profile-left.jpg`
 - **Right Profile Synthetic Reference:** `02_references/andre/synthetic/R2-andre-profile-right.jpg`
-- **Master Cinematic Table Still:** `02_references/andre/synthetic/R2-andre-table-cinematic.jpg`
+- **Approved identity / wardrobe photo (not a seated composition):** `02_references/andre/approved/cover_20240202_015341_hs34.jpg`
 - **Synthetic expression suite (tone reference only, NOT identity — D01/D03):** `02_references/andre/synthetic/R1-J02` through `R1-J09`
+
+> Wardrobe reconciliation: D02 governs new production. Dark-shirt synthetic studies are retired; see `02_references/legacy/retired-dark-wardrobe/manifest.json`. The approved photo anchors face and clothing, not seated table geometry.

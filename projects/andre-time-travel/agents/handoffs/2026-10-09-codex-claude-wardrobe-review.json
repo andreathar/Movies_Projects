@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Registrar coordenação por arquivos e inventariar figurino substituído; sem mover ou apagar mídia.",
+  "ownedPaths": [
+    "projects/andre-time-travel/docs/2026-10-09-wardrobe-archive-review.md"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D02-wardrobe.json",
+      "sha256Before": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-wardrobe-archive-review.md",
+      "sha256After": "85ed2127a08212ddb982ca01ed9be7f06ebdbedf0768861bddae4ccc54d240dc",
+      "reason": "Revisão solicitada por Andre e alinhamento local com Claude"
+    }
+  ],
+  "verification": [
+    "D02 lido; duas imagens inspecionadas; busca de referências nas bíblias"
+  ],
+  "pendingDecisions": [
+    "Destino de arquivo e escopo final da limpeza; confirmar recepção do Claude"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "review_available_claude_receipt_unverified"
+}

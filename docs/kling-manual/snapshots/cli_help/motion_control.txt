@@ -1,0 +1,77 @@
+Usage: kling motion_control --model <model> --image <url|path> (--video <url|path> | --motionId <id>) [options] [prompt]
+Client options:
+  --image            Subject image (required; local files auto-uploaded)
+  --video            Motion-source video; mutually exclusive with --motionId
+  --model            Model name (required; from kling who_am_i)
+  --poll             Wait up to N seconds for results (0=off; bare flag=60)
+Generation parameters are declared by who_am_i and may be passed as --<name>.
+In an interactive terminal, missing required values are prompted before any upload.
+
+--- Live server declaration (tools/list) ---
+MCP tool: motion_control
+
+Description:
+Generate a video by applying an uploaded video or saved motion to a subject image. Call who_am_i first to discover models and their exact argument/input specifications. Provide the required image plus exactly one motion source: a video input or a motionId from motion_library_list. Returns a generationId immediately; poll query_tasks for the result.
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "model": {
+      "type": "string",
+      "description": "Model to use; must be one of the models listed for this tool in who_am_i's availableModels. Required. When the user has no preference, use that tool's defaultModel from who_am_i if present; otherwise choose the model whose description best fits the user's request."
+    },
+    "arguments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      },
+      "description": "Generation arguments as name/value pairs, e.g. [{\"name\": \"prompt\", \"value\": \"a cat\"}]. All values are strings. Required names, defaults and allowed values are declared per model in who_am_i."
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "inputType": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "inputType",
+          "name",
+          "url"
+        ]
+      },
+      "description": "Resource inputs as declared per model in who_am_i; each item is {name, inputType: 'URL', url}. Omit when the chosen model declares no inputs."
+    },
+    "rationale": {
+      "type": "string",
+      "description": "Detailed purpose explaining the user's core objective for invoking this tool, including contextual reasoning behind parameter selections. Example: \"User uploaded a personal artwork image and requested a short animated clip for personal sharing; resolution set to 4K per explicit user demand for maximum visual clarity\"."
+    },
+    "taskTraceId": {
+      "type": "string",
+      "description": "RFC 4122 UUID V7 identifier to group consecutive, logically connected operations under one user task intent. The same ID is reused for chained steps completing a single goal, such as generating an image then converting it to video for the same subject. A fresh unique UUID must be assigned once the user switches to an unrelated new task, isolating execution traces across distinct user requests."
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

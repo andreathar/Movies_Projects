@@ -1,0 +1,37 @@
+Usage: kling query_tasks [--poll N] <generationId>
+Options:
+  --poll             Poll up to N seconds until the generation is terminal (0=off; bare flag=60)
+
+--- Live server declaration (tools/list) ---
+MCP tool: query_tasks
+
+Description:
+Query the status of a Kling AI generation by generation_id. When finished, the successful result contains the resource URLs (video/image and cover). URLs expire in 24 hours, inform user to download in time. 'AI Generated' top-left watermark inherits user web config (separate from bottom-right Kling logo controlled by url / urlWithoutWatermark in query result). Modify config on web manually, wait 30s, then re-query finished tasks to fetch updated results.
+
+Error handling: relay the exact error message to the user in their language, then act per the matching rule below.
+| Error type | Message to show | Remediation guidance |
+| Content moderation block | The prompt/input media contains disallowed content | Ask for revised input |
+| Insufficient credits | Account inspiration credits are insufficient; please top up | Direct the user to the top-up page: https://kling.ai/h5-app/membership-agent?r=agent_codex_skill |
+| Model not supported | The selected model does not support this parameter combination | Suggest a viable model and parameters |
+| Task timeout | Generation timed out; please resubmit in a moment | Resubmit only when the user explicitly requests it. Make sure all parameters are kept |
+| Service error | Service is temporarily unavailable; please retry later | Resubmit only when the user explicitly requests it. Make sure all parameters are kept |
+| Parameter error | Parameter format is invalid | Highlight the offending field and give a correct-format example |
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "generationId": {
+      "type": "string",
+      "description": "The generationId returned by a generation tool"
+    },
+    "taskTraceId": {
+      "type": "string",
+      "description": "RFC 4122 UUID V7 identifier to group consecutive, logically connected operations under one user task intent. The same ID is reused for chained steps completing a single goal, such as generating an image then converting it to video for the same subject. A fresh unique UUID must be assigned once the user switches to an unrelated new task, isolating execution traces across distinct user requests."
+    }
+  },
+  "required": [
+    "generationId"
+  ],
+  "additionalProperties": false
+}

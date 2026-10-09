@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "contributor (Claude Code session; memory/handoff restructure, not a registry role)",
+  "assignment": "Andre approved approach B and Phase 0 (English): reconcile sources of truth, documentation only.",
+  "ownedPaths": [
+    "projects/andre-time-travel/memory/",
+    "docs/superpowers/specs/",
+    "AGENTS.md (one line)",
+    "START_HERE.md (banner)"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "5e426020736805d583b215c69d50bded817d59b9b22cf86deb2d64e9d82a27da"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/decisions.json",
+      "sha256Before": "a978f6731b3a0ae74b6984c97e2e4e30c759eb1efb57631fd398fb7451ec9151"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/risks.json",
+      "sha256Before": "44fc85adb93227b5a28ba43958879257a5bfa50810b76b61f0df903116ab5d60"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/CONTINUE_HERE.md",
+      "sha256Before": "eaa911fc6762f70c6f64b3a57792692d7ecd41ea66dcdba184f6ffa3d41185c9"
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256Before": "79e97805d33c77d618a44a01bc38b29b1afaa9d5b63b53bdd4ce522c56762b8a"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "e3f9e8d7ac1ca042aef40cdbc82d7743943cf0145f3180646039c3d45b88c965"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "ab1f7ccf599c95642ab7c9490a16e2536e33da897449cf074ac2b305ffc0cd6b",
+      "reason": "Rewritten to a short single resume surface; full prior text preserved in memory/history."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/decisions.json",
+      "sha256After": "13a4328a5ca85e098896d6e24cad68068d69caa08d9540fe9fd4a647c7b61a00",
+      "reason": "Marked superseded; legacy IDs prefixed LEGACY-; entries otherwise unchanged."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/risks.json",
+      "sha256After": "36808754c78459275596986bc05ddd8104536931a54bf0b1acf0f4ca0dacaa45",
+      "reason": "R01-R05 gained status/assessment/evidence; R06-R10 added."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/CONTINUE_HERE.md",
+      "sha256After": "631efebf155c682cd00a974be43ed4b422a7e541bee4475b5aef8ad13c59b20b",
+      "reason": "Banner prepended; body unchanged."
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256After": "cf9ec2e9c25df5422f9084ade323592cb3b28a5f0604bc507b9d568230f1dd5e",
+      "reason": "Banner prepended; body unchanged."
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256After": "8776ce39c696b9ddd485fa369c15d7eadc73b7698f532f73466747e87b87bd14",
+      "reason": "Session-start item 1 clarified: STATE.md is the single resume surface; decisions cited by 00_brief/decisions IDs."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/history/STATE-2026-10-09-pre-restructure.md",
+      "sha256After": "5e426020736805d583b215c69d50bded817d59b9b22cf86deb2d64e9d82a27da",
+      "reason": "Byte-identical preservation copy of prior STATE.md.",
+      "created": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/history/decisions-2026-10-09-pre-restructure.json",
+      "sha256After": "a978f6731b3a0ae74b6984c97e2e4e30c759eb1efb57631fd398fb7451ec9151",
+      "reason": "Byte-identical preservation copy.",
+      "created": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/history/risks-2026-10-09-pre-restructure.json",
+      "sha256After": "44fc85adb93227b5a28ba43958879257a5bfa50810b76b61f0df903116ab5d60",
+      "reason": "Byte-identical preservation copy.",
+      "created": true
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-09-memory-handoff-design.md",
+      "sha256After": "ff7c69b04aff1412004474b373d1ed522d17c9f3652148fa31e3e6d411e9cc2d",
+      "reason": "Design record for the memory/handoff plan (phases 0-4).",
+      "created": true
+    }
+  ],
+  "verification": [
+    "history copies byte-identical to base hashes (sha256 compared)",
+    "evidence paths cited in risks.json checked to exist",
+    "manage.py validate and unit tests run after edits: see session-log entry"
+  ],
+  "pendingDecisions": [
+    "Andre: direct confirmation of D16 and approval of request-r2 (image-count mismatch)",
+    "Andre: D17/D18/D19 (proposed, not recorded)",
+    "Single owner of manifest/board/approvals/ledger",
+    "Review of the design doc before Phases 1-4",
+    "Andre: whether per-task commits are allowed"
+  ],
+  "readFirst": [
+    "projects/andre-time-travel/memory/STATE.md"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Update T13 blocker text and manifest.state to match the back-view direction (not changed by this handoff)"
+    },
+    {
+      "role": "parent",
+      "action": "Review docs/superpowers/specs/2026-10-09-memory-handoff-design.md, then start Phase 1"
+    }
+  ],
+  "andreOnlyGates": [
+    "D16 direct confirmation",
+    "likeness review of IN/OUT frames and posters",
+    "voice by ear",
+    "final picture"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review",
+  "createdAt": "2026-10-09T14:16:28-03:00",
+  "note": "No manifest, board, approvals, ledger, media or folder was changed, moved or deleted. No commit. Fields readFirst/nextActions/andreOnlyGates preview handoff v2."
+}

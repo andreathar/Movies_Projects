@@ -270,6 +270,51 @@
       "newThreadCreated": false,
       "paidJobsSubmitted": 0,
       "canonicalProductionStateChanged": false
+    },
+    {
+      "at": "2026-10-09T14:16:28-03:00",
+      "event": "memory_restructure_phase0",
+      "role": "contributor (Claude Code)",
+      "taskIds": [],
+      "verifiedArtifacts": [
+        "projects/andre-time-travel/memory/STATE.md",
+        "projects/andre-time-travel/memory/history/",
+        "projects/andre-time-travel/memory/risks.json",
+        "projects/andre-time-travel/memory/decisions.json"
+      ],
+      "decisions": [
+        "Approach B, Phase 0 first, English (Andre, chat)"
+      ],
+      "blockers": [
+        "D16 direct confirmation; request-r2",
+        "design doc review before Phases 1-4"
+      ],
+      "paidJobIds": [],
+      "paidJobsSubmitted": 0,
+      "canonicalStateChanged": false,
+      "creativeApprovalGranted": false,
+      "handoff": "projects/andre-time-travel/agents/handoffs/2026-10-09-memory-phase0-reconcile.json",
+      "nextAction": "Review design doc; then Phase 1 (handoff v2 + role briefs)."
+    },
+    {
+      "at": "2026-10-09T15:31:13.314147-03:00",
+      "event": "dark_wardrobe_logical_archive",
+      "archivedImages": 18,
+      "mediaMoved": false,
+      "originalsPreserved": true,
+      "biblesUpdated": 10,
+      "handoff": "agents/handoffs/2026-10-09-dark-wardrobe-archive.json",
+      "claudeReceiptVerified": false,
+      "paidJobsSubmitted": 0,
+      "verification": "validate OK; 29 tests passed; four existing skill warnings"
+    },
+    {
+      "at": "2026-10-09T15:41:25.452875-03:00",
+      "event": "shared_encounter_direction_and_roles",
+      "direction": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "lightingRoleAdded": true,
+      "agentsLaunched": 0,
+      "paidJobsSubmitted": 0
     }
   ]
 }

@@ -1,3 +1,5 @@
+> **Resume order (2026-10-09):** for agents, read `AGENTS.md`, then `projects/andre-time-travel/memory/STATE.md` (the single resume surface). This page is the pt-BR human index of deliverables and editing locations. Original text below is unchanged.
+
 # Andre viajando no tempo — comece por aqui
 
 Este projeto é a fonte local de trabalho da série. O filme ativo é **The Table Between Centuries**. A pasta do Google Drive contém uma entrega anterior; não é sincronizada automaticamente com as edições locais.

@@ -31,7 +31,7 @@
 | **Table Props** | US Army field notebook (closed, unmarked — no stamp, no readable text), pack of unfiltered cigarettes (no brand), slim silver pocket watch, metal ashtray with spent stubs. | Table Bible |
 | **Oppenheimer Wardrobe (Below Neck Only)** | Slightly crumpled, loose-fitting charcoal gray herringbone tweed wool suit jacket; soft unstarched off-white cotton shirt; narrow dark knit tie; silver pocket watch chain looped across vest; lean, gaunt hands. Single hanging tungsten bulb directly above conceals the upper head in deep shadow. | `02_references/wardrobe/R2-wardrobe-oppenheimer-tweed.jpg` |
 | **Oppenheimer Eyes Reference** | Extreme close-up macro crop (brow to lower eyelids, zero nose, mouth, or pipe). Luminous pale blue-gray irises, dark thin brow, intense intellectual strain, nervous fatigue. | `02_references/history-eyes/oppenheimer/R1-J19-eyes-oppenheimer-anticipation_1_eyescrop.png` & `R1-J20-eyes-oppenheimer-stillness_1_eyescrop.png` |
-| **Andre Framing** | Seated screen-left, looking camera-right. Harsh top-down tungsten light carving dramatic noir shadows along his cheekbones and hands. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Andre Framing** | Seated screen-left, looking camera-right. Harsh top-down tungsten light carving dramatic noir shadows along his cheekbones and hands. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 
 ---
 
@@ -54,3 +54,5 @@
 - **Trinity Test Context:** July 16, 1945 at about 5:30 a.m. at the Trinity site, Alamogordo Bombing and Gunnery Range, New Mexico.[5]
 - **Subsequent Bombings:** Hiroshima on August 6, 1945 and Nagasaki on August 9, 1945.[18][19] Japan's surrender broadcast 15 August; formal ceremony 2 September 1945.[20]
 - **Contemporary Ethical Debate:** Documented discussions among Manhattan Project scientists (Franck Committee, Interim Committee) regarding the use, demonstration, and future international control of nuclear weapons.[9]
+
+> Wardrobe reconciliation: D02 governs new production. Dark-shirt synthetic studies are retired; see `02_references/legacy/retired-dark-wardrobe/manifest.json`. The approved photo anchors face and clothing, not seated table geometry.

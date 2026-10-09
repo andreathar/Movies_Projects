@@ -1,0 +1,20 @@
+Usage: kling motion_library_list
+
+--- Live server declaration (tools/list) ---
+MCP tool: motion_library_list
+
+Description:
+List all saved motion assets owned by the current Kling user, newest first. Each item includes an id, name, playable motion URL, optional cover URL, duration in milliseconds, and whether the motion contains audio. Use this to discover an existing motion before a creation flow.
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "taskTraceId": {
+      "type": "string",
+      "description": "RFC 4122 UUID V7 identifier to group consecutive, logically connected operations under one user task intent. The same ID is reused for chained steps completing a single goal, such as generating an image then converting it to video for the same subject. A fresh unique UUID must be assigned once the user switches to an unrelated new task, isolating execution traces across distinct user requests."
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

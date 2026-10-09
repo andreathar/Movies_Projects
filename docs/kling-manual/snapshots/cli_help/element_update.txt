@@ -1,0 +1,85 @@
+Usage: kling element_update <elementId> [options]
+Update options (provide at least one; omitted fields are preserved):
+  --name <name>        Replace the name
+  --description <text> Replace the description
+  --tag <tag>          Replace all tags (repeatable)
+Resource update options (URLs or local paths; local files auto-uploaded):
+  --secondary <file>   Replace secondary images (repeat 1-3 times)
+  --video <file>       Replace the video of a video element
+  --voice <file>       Replace the optional .mp3 voice
+The CLI reads the current Element and submits a full payload. Image covers are preserved automatically.
+
+--- Live server declaration (tools/list) ---
+MCP tool: element_update
+
+Description:
+Fully overwrite an existing Kling Element. Unset or empty fields are cleared (cover / secondary / video / voice / tags). Fetch current values with element_get first, then resubmit the full payload with changes. Image subjects use cover + 1–3 secondary images; video subjects use a single resource.video (do not pass cover/secondary). Choose tag name(s) from the tag catalog in this description: Characters, Animals, Items, Costumes, Scenes, Effects, Others. Video subject constraints (enforced downstream): Duration 3–60s; fps > 23.8; short edge ≥ 700px; resolution ≤ 3840×2160 (4K); SAR must be empty or 1:1 or 0:1; HDR (HDR10/HLG/HDR10+/Dolby Vision) not supported.. Soft constraint (tell the user before submitting): the cover (main image / resource.cover) of an image subject cannot be replaced after creation. When the user asks to replace images, tell them the cover is immutable; always echo back the existing resource.cover URL from element_get and never submit a different cover URL. Downstream hard-rejects a changed cover. If they truly need a new cover, confirm, then element_delete + element_create instead. Other fields (name / description / secondary / voice / tags) remain freely updatable. Secondary-image caveat: only secondary[] may be replaced; element_update fully replaces the secondary[] list; secondary is capped at 1–3. When the user asks to "add" a secondary and the subject already has 3, you cannot append — you must drop at least one existing image. Before submitting, call element_get, show the current secondary list to the user, and confirm which ones to keep (must end up with 1–3). Never silently discard an existing reference image. Never treat cover as part of this replacement.
+
+inputSchema:
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Element id to update"
+    },
+    "name": {
+      "type": "string",
+      "description": "Element name (Agent-generated)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Element description (Agent-generated)"
+    },
+    "resource": {
+      "type": "object",
+      "properties": {
+        "cover": {
+          "type": "string"
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "inputType": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "inputType",
+              "name",
+              "url"
+            ]
+          }
+        },
+        "video": {
+          "type": "string"
+        },
+        "voice": {
+          "type": "string"
+        }
+      },
+      "description": "Resource: for an image subject, cover URL plus 1–3 secondary images as ToolInputItem {name,inputType,url}; for a video subject, a single video URL in video. Optional voice .mp3 URL. Pass either video or cover+secondary, not both."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "At least one tag name chosen from the tag catalog in this tool's description"
+    },
+    "taskTraceId": {
+      "type": "string",
+      "description": "RFC 4122 UUID V7 identifier to group consecutive, logically connected operations under one user task intent. The same ID is reused for chained steps completing a single goal, such as generating an image then converting it to video for the same subject. A fresh unique UUID must be assigned once the user switches to an unrelated new task, isolating execution traces across distinct user requests."
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

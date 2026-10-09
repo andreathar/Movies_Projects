@@ -31,7 +31,7 @@
 | **Table Props** | Coarse stoneware tea/kumis bowl, rolled leather map scroll tied with rawhide string, sheep tallow candle in iron saucer. | Table Bible |
 | **Genghis Wardrobe (Below Neck Only)** | Heavy dark brown patterned silk deel lined with wolf fur trim; boiled hardened leather lamellar armor chest plate with antique brass studs; wide studded leather belt with nomad pouch; rough calloused hand resting on table. | `02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg` |
 | **Genghis Eyes Reference** | Extreme close-up macro crop (brow to lower eyelids, zero nose, mouth, or beard). Sun-weathered, wind-creased steppe warrior brow, intense dark golden-brown irises, steady unblinking focus. | `02_references/history-eyes/genghis/R1-J13-eyes-genghis-pride_1_eyescrop.png` & `R1-J14-eyes-genghis-recognition_1_eyescrop.png` |
-| **Andre Framing** | Seated screen-left, looking camera-right. Navy blazer and charcoal shirt catching warm, flickering ember tones from the hearth. | `02_references/andre/synthetic/R2-andre-table-cinematic.jpg` |
+| **Andre Framing** | Seated screen-left, looking camera-right. Grey pinstripe jacket and white finely striped shirt (D02) catching warm, flickering ember tones from the hearth. | `02_references/andre/approved/cover_20240202_015341_hs34.jpg` |
 
 ---
 
@@ -53,3 +53,5 @@
 
 - **Succession & Imperial Growth:** The division among his sons and the continued expansion under Ögedei and Kublai Khan created the Pax Mongolica, facilitating unprecedented Afro-Eurasian trade and transmission of technology.[2][15]
 - **Human Cost of Warfare:** The siege warfare against Khwarazm, Western Xia, and Jin resulted in massive civilian casualties and demographic disruption, documented as an integral facet of his historical legacy.[2][15]
+
+> Wardrobe reconciliation: D02 governs new production. Dark-shirt synthetic studies are retired; see `02_references/legacy/retired-dark-wardrobe/manifest.json`. The approved photo anchors face and clothing, not seated table geometry.

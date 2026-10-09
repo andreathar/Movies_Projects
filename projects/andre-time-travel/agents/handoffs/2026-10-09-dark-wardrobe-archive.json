@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Retire dark wardrobe from active selection and make shared visual review available",
+  "archiveMode": "logical_archive_original_paths_preserved",
+  "archivedImageCount": 18,
+  "changedBiblePaths": [
+    "projects/andre-time-travel/03_bibles/character-andre.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/galileo.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/napoleon-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/genghis.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/caesar.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/caesar-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/genghis-v3-proposta.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/oppenheimer.md",
+    "projects/andre-time-travel/03_bibles/scene-bibles/napoleon.md"
+  ],
+  "reviewGallery": "projects/andre-time-travel/02_references/legacy/retired-dark-wardrobe/index.html",
+  "nextAgent": "Claude",
+  "receiverAcknowledged": false,
+  "jointReviewCompleted": false,
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "uncommittedWork": "Existing concurrent changes preserved; no commit authorized",
+  "verification": [
+    "18 image hashes recorded; 2 images visually inspected; remaining R1 classified from prompts"
+  ],
+  "pendingDecisions": [
+    "Claude visual review of remaining R2/R3 variants"
+  ]
+}

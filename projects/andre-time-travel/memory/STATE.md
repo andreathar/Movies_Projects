@@ -27,11 +27,11 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - Ledger: `../credit-ledger.csv` (87 rows); last row G-L02 at 12:10:15. Handoffs after that report no paid jobs.
 
 ## Open Andre-only gates and decisions (do not self-approve)
-1. D16 (Phase A, cap 23 cr) is recorded as "relayed via Grok Architect Bot". Needs Andre's direct confirmation. Do not spend on it as it stands.
+1. D16 = approval to spend up to 23 Kling credits on Phase A of the Galileo test: 3 reference images for one over-the-shoulder shot (Andre seated, Galileo's blurred back in front, head out of frame). Recorded as "relayed via Grok Architect Bot". Needs Andre's direct confirmation. Do not spend on it as it stands.
 2. D16-r2: `request.json` passes 5 images to `gemini-3-pro-image`, which declares `image_1`/`image_2` only. Fix = new request-r2 (recommended: 2 inputs, cost ≤23), then Andre re-confirms.
-3. Proposed, NOT yet recorded: D17 table/seat/camera geometry, D18 blurred nape allowed in phases B/C, D19 eye-reaction rule. Also pending: Genghis armour choice, owner of manifest/board/approvals/ledger (director proposes the producer session).
+3. Proposed, NOT yet recorded: D17 = fixed table layout (table ~120x75 cm, Andre and Galileo on opposite long sides, camera behind-right of Galileo, 50 mm, seated eye height; canonize only after the first test shot is accepted); D18 = allow Galileo's blurred nape (no ear, cheek, beard, profile or reflection) in later phases B/C; D19 = record the eye-reaction rule (1.5-2 s, max 2 per chapter, only after a back-view beat). Also pending: Genghis armour choice, owner of manifest/board/approvals/ledger (director proposes the producer session).
 4. Likeness review of IN/OUT frames and posters; voice by ear; final picture/movie; qualified language review (Edition H).
-5. Andre will send an audio with ideas (incl. folder cleanup). No move/delete/rename of folders, Git reset/commit/push, or approval change is authorized.
+5. Andre delegated dark-wardrobe archiving: 18 images logically retired with original paths preserved; 10 bibles reconciled to D02. See `../agents/handoffs/2026-10-09-dark-wardrobe-archive.json`. No deletion, commit/push or paid batch authorized. Claude receipt/review remains unverified.
 
 ## Hard cautions
 - No automatic retries; one `kling_batch.py --submit-only`, then individual `--resume`. Never resubmit an existing job.
@@ -44,6 +44,9 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - `manifest.json` `state` string and `manifest.approvals` duplicate `approvals.json` (match today).
 - Scene bibles v1 §3 repeat old dialogue (F05); v2/v3 proposals exist for four chapters, Oppenheimer has no v3. `continuity-matrix.csv` has stale-stage lines (F06).
 - `session-log.json` mixes timezones and lacks entries for several deliveries (see handoffs).
+
+## Shared direction
+All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
 - Andre: answer items 1–2 above (confirm D16 / r2), then D18.
