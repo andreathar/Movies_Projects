@@ -413,4 +413,24 @@ The first task ready to accept is **P0.1**, owned by Andre as `operator`: run `a
 - [ ] P0.5 smoke test to `codex-edit-qc`, four questions, `ack_required` (producer)
 - [ ] P0.6 hook proof: three event kinds observed, one `reserved_path` denial observed (producer + Andre)
 
-This plan is the deliverable of this session, not an accepted assignment: per the closure rule, the producer keeps ownership of P0.1 until Andre confirms he will run it. A copy of this plan is committed to the film repo at `docs/PLAN-parley-integration-v1.md` on branch `claude/wizardly-clarke-23j2kj` as a draft pull request, so the producer can integrate it as one delivery after reading the diff. The commit does not change any canonical record, approval or media, and grants no production approval.
+This plan is the deliverable of this session, not an accepted assignment: per the closure rule, the producer keeps ownership of P0.1 until Andre confirms he will run it. The plan and its implementation are on branch `claude/wizardly-clarke-23j2kj` as a draft pull request, so the producer can integrate them as one delivery after reading the diff. Nothing in the branch changes an approval or a media file, and nothing grants production approval.
+
+## Implementation status (2026-10-10, same session, "implement all")
+
+Everything that is code, configuration, tests or documents and needs no credits, no Andre decision and no action on Andre's machine was built and tested on the branch. Handoff: `projects/andre-time-travel/agents/handoffs/2026-10-10-claude-parley-implementation-v1.json`.
+
+| Item | Status | Evidence |
+|---|---|---|
+| Layer 2 film gate hooks (8 scripts) + `.claude/settings.json` | built, dry-run tested | `tests/test_hooks.py`, 25 tests |
+| `manage.py lint`, `resume`, `handoff check`, `handoff ingest` (P1.2) | built, tested | `tests/test_manage_lint.py`, 20 tests; `lint` on the real workspace: 0 hard, 5 advisories |
+| Handoff template v2 and role briefs with reads/writes/may-not/done (P1.3) | built | `shared/templates/agent-handoff-v2.json`, `agents/*.md` |
+| Mistake/Solution register with 8 seed entries (P1.11) | built | `projects/andre-time-travel/memory/mistakes.jsonl` |
+| Board blockers T06, T11, T12, T13 rewritten from current evidence (P1.1, W03) | proposed to the producer | `tasks/board.json` diff |
+| Current-plan pointer for `07_generations/plans/` | built | `current-plan.json` with hashes |
+| Phase 0 runbook, smoke test and hook proof procedure (P0.1–P0.7, P0.8) | documents ready | `scripts/parley_setup.sh`, `docs/parley-smoke-test.md`, `docs/PARLEY_PROTOCOL.md` roster v2, AGENTS.md step 7 |
+| P0.1–P0.7 execution (lanes, service, hook proof) | needs Andre's machine | run `scripts/parley_setup.sh --apply`, then the smoke test |
+| P1.4 ingest of 32 handoffs | needs the producer's reconciliation | `manage.py handoff ingest <path> --by producer` per file |
+| P1.5 bible revisions, P1.6 manifest pointer, P1.7 ledger (Kling CLI), P1.8 D16, P1.9 D17–D19, P1.10 skill links | open, owners unchanged | section 5 |
+| Phases 2–5 | open; dispatch after Gate 0 and Gate 1 | section 5 |
+
+Verification on the branch: `python3 -m unittest discover -s tests` runs 74 tests; the only 2 failures are the pre-existing machine-local skill symlink (`film-character-continuity`) that does not exist in the cloud container. `manage.py validate` reports the same symlink; `manage.py lint` reports no hard contradiction.

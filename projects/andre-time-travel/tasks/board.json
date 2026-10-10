@@ -93,7 +93,8 @@
       "dependsOn": [
         "T05"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Script v2 approved (T05), but Latin and Corsican are absent from the ElevenLabs language lists, earlier translations are superseded and must restart from script v2, and no qualified language reviewer is named. Unblock: Andre names reviewers per language and the dialogue-sound role records the feasible route per language (R03). Does not block the English edition.",
+      "blockerUpdatedAt": "2026-10-10",
       "specification": "production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
@@ -175,7 +176,8 @@
         "T07",
         "T10"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
+      "blocker": "Storyboard cards v1 and atlas v2 are candidates, not approved. The audio-first animatic waits on measured guide timing (W24) and selected coverage from the detail-study review (W21); T07 final voice is not required for the local animatic, T10 envelope waits on Galileo playback. Unblock: measured_seconds filled and a coverage selection recorded.",
+      "blockerUpdatedAt": "2026-10-10",
       "specification": "production-tasks.md",
       "deliverables": [
         "05_storyboard/preproduction-atlas-v1/storyboard-cards.pdf"
@@ -193,7 +195,8 @@
         "T08",
         "T11"
       ],
-      "blocker": "12 Andre keyframes + eyes + inserts accepted as candidates; era wides remain R1 plates. Approval after pilot.",
+      "blocker": "12 Andre keyframes + eyes + inserts accepted as candidates; era wides remain R1 plates. 26 detail-study candidates (05_storyboard/keyframes/detail-studies-v1/) delivered 2026-10-10 under D20 with the producer's static review done; independent continuity, material and lighting review (W14-W18) and Andre's likeness judgment on a selected set (W20) pending. Approval after the Galileo recipe (T13).",
+      "blockerUpdatedAt": "2026-10-10",
       "specification": "production-tasks.md",
       "deliverables": [
         "02_references/keyframes/andre/",
@@ -212,7 +215,8 @@
         "T10",
         "T12"
       ],
-      "blocker": "42-second guide-voice preview assembled and technically verified. End-to-end normal-speed playback, fine sync, pacing and chapter acceptance still pending; no final voice approval.",
+      "blocker": "Preview v1 (42 s, guide voice, decodes, -16.2 LUFS) is a candidate, not accepted: no full normal-speed playback with audio; F01 listening pilots show a different table/seat than the speech clips; F03 the resolution reaction precedes its motivating line G-L04. Direction changed 2026-10-09 to the over-the-shoulder back view; timeline v2 reported delivered by the Codex lane but unverified. D16 Phase A paid test is recorded as relayed and request-r2 is unfixed; neither blocks local review. Next: full playback and timeline/bible reconciliation (W43, W44), then decide the proof shot (W35-W37). No final voice approval.",
+      "blockerUpdatedAt": "2026-10-10",
       "specification": "production-tasks.md",
       "deliverables": [
         "08_edit/picture-lock/galileo-en-preview-v1.mp4",

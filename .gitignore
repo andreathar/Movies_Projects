@@ -28,3 +28,6 @@ client_secret*.json
 
 # Production sources, inbox originals, media and evidence are tracked.
 # Binary media uses Git LFS through .gitattributes.
+
+# Runtime log of the film gate hooks (decisions are also drafted to mistakes-draft.jsonl, which is tracked).
+projects/*/logs/hooks.jsonl

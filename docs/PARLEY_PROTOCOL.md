@@ -51,3 +51,30 @@ A divisão efetiva está em `projects/andre-time-travel/tasks/scene-detail-asset
 
 ## Mapa de tarefas e passagem ao sucessor — 2026-10-10
 Consultar [workflow do filme](../projects/andre-time-travel/tasks/workflow-map-v1.md), com responsabilidades, dependências e fila imediata. A regra de fechamento está em [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md#fechamento-e-sucessor-obrigatório). Esse mapa não envia mensagens, inicia lanes nem transforma pacotes planejados em atribuições aceitas. O produtor continua responsável pelo próximo trabalho pronto até confirmar o aceite. Usar mensagens/handoffs locais; não exigir forge issues neste repositório sem remote.
+
+## Lane roster v2, dispatch contract and film gate hooks — proposed 2026-10-10
+
+Status: implemented on branch `claude/wizardly-clarke-23j2kj` as a proposal ([plan](PLAN-parley-integration-v1.md)). It becomes the active protocol only when Andre merges it and runs Phase 0 (`scripts/parley_setup.sh`, [smoke test and hook proof](parley-smoke-test.md)). Earlier sections stay valid until then.
+
+### Roster (lanes are tools; the film role is named per assignment)
+
+| Lane | Provider | Roles it may hold | Allowed write paths (reserve first) | Never |
+|---|---|---|---|---|
+| `claude-research` | claude | historian, continuity preparation, dialogue text work | `03_bibles/detail-planning/`, `03_bibles/scene-bibles/*-vNEXT.md`, `01_script/translations/` proposals, `00_brief/research/`, own handoff | media, canonical records, logging a proposal as a decision |
+| `codex-edit-qc` | codex | editor, QC, coverage review, tooling | `08_edit/reviews/`, `08_edit/timelines/*-vNEXT.json`, `08_edit/normalized/`, `09_delivery/qc/`, `scripts/` and `tests/` when assigned tooling, own handoff | re-render by default, another lane's documents, accepting takes |
+| `claude-review` | claude (second account if needed) | independent continuity, lighting, facial safety | `02_references/_review/`, `08_edit/reviews/<topic>-independent/`, own handoff | substitutes, paths reserved by `codex-edit-qc` |
+| producer (not a lane) | Codex desktop, base checkout | producer, director, image creator | canonical records, `07_generations/`, `05_storyboard/keyframes/` | dependent work before evidence; spending on a relayed approval |
+
+Andre is the `operator` (CLI only): `say`, `participant merge`, `verify set`. `participant merge` and `participant pr` stay unused until he asks.
+
+### Identity for the film gate hooks
+
+Export in each lane shell before `agent-parley run`: `MOVIES_LANE_NAME=<lane>` and `MOVIES_LANE_ROLE=<film role>`. Only the producer's base-checkout shell exports `MOVIES_PRODUCER_LANE=1`. Without it a session is treated as a lane: canonical records and paid submission are refused (`.claude/hooks/`, tests in `tests/test_hooks.py`). The hooks log to `projects/<episode>/logs/hooks.jsonl` and draft mistakes to `logs/mistakes-draft.jsonl`; they never approve, spend, commit, merge or wake the desktop conversation.
+
+### Dispatch contract (one `send_message` per assignment, 150–250 words)
+
+`ack_required`, `ack_within` 900 s, idempotency key `<task>-<version>-<n>`. Body: goal; film role; parent board task and W package; input paths with SHA-256; allowed output paths; definition of done with the evidence files required; constraints (no media, no spending, no canonical edits); next owner on completion. A deadline that passes unacknowledged returns the task to the producer with the recipients' reasons; the producer records a blocker with owner or re-offers to a fit lane. A delivery is accepted only when `manage.py handoff check` passes on the lane's handoff and the checks it names were run; the producer then runs `handoff ingest`.
+
+### Reservations and supervision
+
+Producer: canonical set with no TTL plus the named resource `kling:submit`, once per session. Lanes: output folders per assignment, TTL 3600 s, released at handoff. Supervision `stalled_after` and `claim_idle_after` are lengthened to one working day so human gates never trigger wake, offer and release.
