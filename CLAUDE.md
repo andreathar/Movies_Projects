@@ -41,6 +41,8 @@ Run `manage.py validate` and the unit tests after any change to management data 
 
 `skills/film-*`, `skills/grounded-citations` are symlinks to `/home/athar/.hermes/skills/...` (machine-local, recorded in `skills/registry.json`). On any other machine `manage.py validate` exits 2 with `missing or broken skill source: ...` and the two `tests/test_manage.py` tests fail; the other 27 tests pass. That is an environment condition, not a regression: do not "fix" it by editing the registry, deleting the links, or weakening the validator. The expected baseline on the owner's machine is `validate` ok with shared-skill hash warnings and 29 passing tests.
 
+In Claude Code cloud sessions, `.claude/hooks/session-start.sh` (registered in `.claude/settings.json`, active only when `CLAUDE_CODE_REMOTE=true`) creates `.venv` and writes a labelled placeholder `SKILL.md` at each missing link target outside the repository, so `validate` passes and all 29 tests run. The placeholders are not the skills: they carry no procedure, and `validate` keeps reporting `shared skill changed since linking` for them.
+
 ## Architecture
 
 Offline production-management workspace for an AI-generated film series. There is no application server; the "code" is a set of validators and renderers over JSON/CSV/Markdown state, and the real product is the media and documents under `projects/`.
