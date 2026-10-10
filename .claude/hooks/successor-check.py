@@ -21,7 +21,7 @@ def main() -> int:
         return _common.allow(root, HOOK, note="second stop; not blocking again")
     orphans = []
     for path in _common.new_handoffs(root, film):
-        document = _common.load_json(path) or {}
+        document = _common.load_object(path) or {}
         if not _common.has_successor(document):
             orphans.append(path.name)
     if orphans:

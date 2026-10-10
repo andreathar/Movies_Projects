@@ -421,7 +421,7 @@ Everything that is code, configuration, tests or documents and needs no credits,
 
 | Item | Status | Evidence |
 |---|---|---|
-| Layer 2 film gate hooks (8 scripts) + `.claude/settings.json` | built, dry-run tested | `tests/test_hooks.py`, 25 tests |
+| Layer 2 film gate hooks (8 scripts) + `.claude/settings.json` | built, dry-run tested, fixed after a fresh review (default batch mode, list specs, nested manifests, destructive commands without a path, PostToolUseFailure, QC log location) | `tests/test_hooks.py`, 34 tests |
 | `manage.py lint`, `resume`, `handoff check`, `handoff ingest` (P1.2) | built, tested | `tests/test_manage_lint.py`, 20 tests; `lint` on the real workspace: 0 hard, 5 advisories |
 | Handoff template v2 and role briefs with reads/writes/may-not/done (P1.3) | built | `shared/templates/agent-handoff-v2.json`, `agents/*.md` |
 | Mistake/Solution register with 8 seed entries (P1.11) | built | `projects/andre-time-travel/memory/mistakes.jsonl` |
@@ -433,4 +433,6 @@ Everything that is code, configuration, tests or documents and needs no credits,
 | P1.5 bible revisions, P1.6 manifest pointer, P1.7 ledger (Kling CLI), P1.8 D16, P1.9 D17–D19, P1.10 skill links | open, owners unchanged | section 5 |
 | Phases 2–5 | open; dispatch after Gate 0 and Gate 1 | section 5 |
 
-Verification on the branch: `python3 -m unittest discover -s tests` runs 74 tests; the only 2 failures are the pre-existing machine-local skill symlink (`film-character-continuity`) that does not exist in the cloud container. `manage.py validate` reports the same symlink; `manage.py lint` reports no hard contradiction.
+Verification on the branch: `python3 -m unittest discover -s tests` runs 83 tests; the only 2 failures are the pre-existing machine-local skill symlink (`film-character-continuity`) that does not exist in the cloud container. `manage.py validate` reports the same symlink; `manage.py lint` reports no hard contradiction once the delivery handoff hashes are current.
+
+Known limits after review: the Layer 2 reservation check was dropped because `agent-parley status --json` reports reservation counts, not paths (Parley's own `reserved_path` denial covers it); `mistake-capture` on `PostToolUse` relies on stderr patterns because the Bash tool response carries no exit code, so it is also registered on `PostToolUseFailure` and must be confirmed during the P0.6 hook proof; the plan's dry-run tests 1 (duplicate completion), 3 (unavailable recipient) and 4 (restart) belong to the Parley service and are not covered by `tests/test_hooks.py`.

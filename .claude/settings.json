@@ -44,6 +44,18 @@
         ]
       }
     ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/mistake-capture.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "hooks": [

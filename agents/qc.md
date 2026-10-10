@@ -19,7 +19,7 @@ Preserve sources and opaque IDs exactly. No secrets or invented evidence. A comp
 The exact exported files, zero-face logs, technical QC JSON, caption files.
 
 ## Writes
-`09_delivery/qc/` reports, a `zero-face-log.json` beside every inspected media set, own handoff from `shared/templates/agent-handoff-v2.json`. Reserve paths through Agent Parley before editing.
+`09_delivery/qc/<set>/` reports and a `zero-face-log.json` there listing every inspected media file by path and hash, own handoff from `shared/templates/agent-handoff-v2.json`. Reserve paths through Agent Parley before editing.
 
 ## May not
 Review a timeline or contact sheet in place of the exact file; approve likeness or story (Andre only); spend; edit canonical records.

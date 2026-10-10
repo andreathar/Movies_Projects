@@ -33,7 +33,7 @@ def main() -> int:
         )
     problems: list[str] = []
     for path in handoffs:
-        document = _common.load_json(path)
+        document = _common.load_object(path)
         if document is None:
             problems.append(f"{path.name}: not a JSON object")
             continue

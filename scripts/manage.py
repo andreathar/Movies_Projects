@@ -430,8 +430,8 @@ def lint_handoffs(root: Path, film: Path, hard: list[str], advisory: list[str]) 
     for name, handoff in load_handoffs(film):
         if ingest_status(handoff) in (None, "pending"):
             pending.append(name)
-        if handoff.get("schemaVersion") == "2.0":
-            hard.extend(hash_findings(root, film, handoff, name))
+            if handoff.get("schemaVersion") == "2.0":
+                hard.extend(hash_findings(root, film, handoff, name))
     if pending:
         advisory.append(f"{len(pending)} handoff(s) not ingested: {', '.join(pending)}")
 
@@ -736,9 +736,14 @@ def handoff_check(root: Path, path: Path) -> dict[str, Any]:
     """Validate a handoff file: v2 schema and hashes, or advisory field gaps for legacy."""
     report: dict[str, Any] = {"status": "ok", "version": "legacy", "errors": [], "advisory": []}
     try:
-        handoff = read_json(path)
         project = active_project(root)
         film = film_root(root, project)
+        handoffs = (film / "agents" / "handoffs").resolve()
+        require(
+            path.resolve().parent == handoffs and path.suffix == ".json",
+            f"handoff must be a JSON file directly under {film.name}/agents/handoffs/",
+        )
+        handoff = read_json(path)
     except LINT_ERRORS as error:
         report["status"] = "error"
         report["errors"].append(str(error))

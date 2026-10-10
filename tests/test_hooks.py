@@ -180,23 +180,23 @@ class CanonicalGuardTests(HookTestCase):
         )
         self.assertEqual(result.returncode, 0, result.stderr)
 
-    def test_path_reserved_by_another_lane_is_denied(self) -> None:
-        stub = self.fixture / "status-stub.py"
-        stub.write_text(
-            "import json; print(json.dumps({'reservations': [{'participant': 'codex-edit-qc',"
-            " 'paths': ['projects/test-film/08_edit/reviews/']}]}))\n",
-            encoding="utf-8",
-        )
-        result = self.run_hook(
-            "canonical-guard.py",
-            self.write_payload("Write", file_path=f"{FILM}/08_edit/reviews/findings.md"),
-            env={
-                "MOVIES_PARLEY_STATUS_CMD": f"{sys.executable} {stub}",
-                "MOVIES_LANE_NAME": "claude-research",
-            },
-        )
+    def test_nested_manifest_and_decision_lookalikes_are_allowed(self) -> None:
+        for path in [
+            f"{FILM}/05_storyboard/keyframes/detail-studies-v1/manifest.json",
+            f"{FILM}/07_generations/downloads/v1/manifest.json",
+            f"{FILM}/08_edit/reviews/galileo/decisions/notes.md",
+            f"{FILM}/03_bibles/../03_bibles/x-v2.md",
+        ]:
+            result = self.run_hook("canonical-guard.py", self.write_payload("Write", file_path=path))
+            self.assertEqual(result.returncode, 0, path)
+
+    def test_canonical_path_outside_the_worktree_is_denied_by_suffix(self) -> None:
+        outside = "/mnt/base-checkout/projects/andre-time-travel/tasks/board.json"
+        result = self.run_hook("canonical-guard.py", self.write_payload("Write", file_path=outside))
         self.assertEqual(result.returncode, 2, result.stderr)
-        self.assertIn("codex-edit-qc", result.stderr)
+        scratch = "/tmp/scratch/notes.md"
+        result = self.run_hook("canonical-guard.py", self.write_payload("Write", file_path=scratch))
+        self.assertEqual(result.returncode, 0, result.stderr)
 
 
 class MediaGuardTests(HookTestCase):
@@ -210,8 +210,26 @@ class MediaGuardTests(HookTestCase):
             result = self.run_hook("media-guard.py", self.write_payload("Bash", command=command))
             self.assertEqual(result.returncode, 2, command)
 
+    def test_destructive_command_without_a_named_folder_is_denied(self) -> None:
+        for command in [
+            "git clean -fdx",
+            "git reset --hard",
+            "/bin/rm -rf projects/test-film/07_generations",
+            "rm -rf projects/test-film",
+            "find projects/test-film/07_generations -name '*.png' -delete",
+            "rsync -a --delete /tmp/x/ projects/test-film/08_edit/",
+        ]:
+            result = self.run_hook("media-guard.py", self.write_payload("Bash", command=command))
+            self.assertEqual(result.returncode, 2, command)
+
     def test_read_only_command_is_allowed(self) -> None:
-        for command in ["ls projects/test-film/07_generations", "rm -f /tmp/scratch.txt"]:
+        for command in [
+            "ls projects/test-film/07_generations",
+            "rm -f /tmp/scratch.txt",
+            "rm -f /tmp/a; ls projects/test-film/07_generations",
+            "git restore --staged projects/test-film/00_brief/approvals.json",
+            "git status --short -- projects/test-film/08_edit",
+        ]:
             result = self.run_hook("media-guard.py", self.write_payload("Bash", command=command))
             self.assertEqual(result.returncode, 0, command)
 
@@ -221,10 +239,7 @@ class KlingPreflightTests(HookTestCase):
         super().setUp()
         self.request_dir = self.film / "07_generations/requests/shot-a"
         self.request = self.request_dir / "request.json"
-        self.request.write_text(
-            json.dumps({"model": "kling-image-o1", "images": ["a.png", "b.png"]}),
-            encoding="utf-8",
-        )
+        self.write_spec([["a.png", "b.png"]])
         self.scope = self.request_dir / "scope.json"
         self.valid_scope = {
             "ceiling": 23,
@@ -236,18 +251,70 @@ class KlingPreflightTests(HookTestCase):
         }
         self.command = f"python3 scripts/kling_batch.py --submit-only --spec {self.request}"
 
-    def submit(self, producer: bool = True) -> subprocess.CompletedProcess[str]:
+    def write_spec(self, image_lists: list[list[str]]) -> None:
+        jobs = [
+            {
+                "job": f"G-0{index + 1}-test",
+                "tool": "image_to_image",
+                "model": "kling-image-o1",
+                "auth": "APR-X",
+                "note": "",
+                "args": {},
+                "images": images,
+                "prompt": "p",
+            }
+            for index, images in enumerate(image_lists)
+        ]
+        self.request.write_text(json.dumps(jobs), encoding="utf-8")
+
+    def submit(self, producer: bool = True, command: str | None = None) -> subprocess.CompletedProcess[str]:
         env = {"MOVIES_PRODUCER_LANE": "1"} if producer else {}
-        return self.run_hook("kling-preflight.py", self.write_payload("Bash", command=self.command), env)
+        payload = self.write_payload("Bash", command=command or self.command)
+        return self.run_hook("kling-preflight.py", payload, env)
 
     def test_valid_scope_passes(self) -> None:
         self.scope.write_text(json.dumps(self.valid_scope), encoding="utf-8")
         result = self.submit()
         self.assertEqual(result.returncode, 0, result.stderr)
 
-    def test_unrelated_command_is_ignored(self) -> None:
-        result = self.run_hook("kling-preflight.py", self.write_payload("Bash", command="ls"))
-        self.assertEqual(result.returncode, 0, result.stderr)
+    def test_unrelated_and_read_only_commands_are_ignored(self) -> None:
+        for command in [
+            "ls",
+            "grep -rn text_to_video skills/kling-cli/SKILL.md",
+            f"python3 scripts/kling_batch.py --resume G-01-test",
+            "kling query_tasks --id abc",
+        ]:
+            result = self.run_hook("kling-preflight.py", self.write_payload("Bash", command=command))
+            self.assertEqual(result.returncode, 0, command)
+
+    def test_default_batch_mode_is_a_paid_submission(self) -> None:
+        self.scope.write_text(json.dumps(self.valid_scope), encoding="utf-8")
+        default_mode = f"python3 scripts/kling_batch.py --spec {self.request}"
+        self.assertEqual(self.submit(producer=False, command=default_mode).returncode, 2)
+        self.assertEqual(self.submit(producer=True, command=default_mode).returncode, 0)
+
+    def test_list_spec_image_count_is_checked_per_selected_job(self) -> None:
+        self.write_spec([["a.png"], ["a.png", "b.png", "c.png"]])
+        scope = dict(self.valid_scope)
+        scope["requestSha256"] = sha256(self.request)
+        self.scope.write_text(json.dumps(scope), encoding="utf-8")
+        base = f"python3 scripts/kling_batch.py --submit-only --spec {self.request}"
+        self.assertEqual(self.submit(command=f"{base} --only G-01-test").returncode, 0)
+        self.assertEqual(self.submit(command=f"{base} --only G-02-test").returncode, 2)
+        self.assertEqual(self.submit(command=f"python3 scripts/kling_batch.py --spec {self.request}").returncode, 2)
+
+    def test_unbalanced_quote_and_naive_timestamp_are_denied(self) -> None:
+        self.scope.write_text(json.dumps(self.valid_scope), encoding="utf-8")
+        self.assertEqual(self.submit(command=f"{self.command}  # don't retry").returncode, 0)
+        result = self.submit(command=f'{self.command} --only "G-01-test')
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("quot", result.stderr)
+        naive = dict(self.valid_scope)
+        naive["balanceTimestamp"] = datetime.now().replace(tzinfo=None).isoformat()
+        self.scope.write_text(json.dumps(naive), encoding="utf-8")
+        result = self.submit()
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("offset", result.stderr)
 
     def test_missing_scope_fields_are_denied(self) -> None:
         for field in self.valid_scope:
@@ -287,25 +354,42 @@ class KlingPreflightTests(HookTestCase):
 
 
 class NoRetryTests(HookTestCase):
-    def test_resume_of_terminal_job_is_denied(self) -> None:
-        command = "python3 scripts/kling_batch.py --resume JOBDONE123456"
+    def setUp(self) -> None:
+        super().setUp()
+        self.spec = self.film / "07_generations/requests/plan.json"
+        jobs = [
+            {"job": name, "tool": "image_to_video", "model": "kling-video-v3_0", "auth": "APR-X",
+             "note": "", "args": {}, "images": [], "prompt": "p"}
+            for name in ["G-01", "G-02-new"]
+        ]
+        self.spec.write_text(json.dumps(jobs), encoding="utf-8")
+        responses = self.film / "07_generations/responses"
+        responses.mkdir(parents=True, exist_ok=True)
+        (responses / "G-02-new.intent.json").write_text("{}", encoding="utf-8")
+
+    def test_submit_of_job_closed_in_ledger_is_denied(self) -> None:
+        command = f"python3 scripts/kling_batch.py --submit-only --spec {self.spec} --only G-01"
         result = self.run_hook("no-retry.py", self.write_payload("Bash", command=command))
         self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("G-01", result.stderr)
 
-    def test_resume_of_unknown_job_is_allowed(self) -> None:
-        command = "python3 scripts/kling_batch.py --resume JOBNEW987654"
-        result = self.run_hook("no-retry.py", self.write_payload("Bash", command=command))
-        self.assertEqual(result.returncode, 0, result.stderr)
-
-    def test_submit_of_plan_with_recorded_job_is_denied(self) -> None:
-        spec = self.film / "07_generations/requests/plan.json"
-        spec.write_text(
-            json.dumps({"jobs": [{"id": "G-01", "generation_id": "JOBDONE123456"}]}),
-            encoding="utf-8",
-        )
-        command = f"python3 scripts/kling_batch.py --submit-only --spec {spec}"
+    def test_submit_of_job_with_stored_intent_is_denied(self) -> None:
+        command = f"python3 scripts/kling_batch.py --submit-only --spec {self.spec} --only G-02-new"
         result = self.run_hook("no-retry.py", self.write_payload("Bash", command=command))
         self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("G-02-new", result.stderr)
+
+    def test_submit_of_fresh_job_and_resume_query_are_allowed(self) -> None:
+        jobs = json.loads(self.spec.read_text(encoding="utf-8"))
+        jobs.append(dict(jobs[0], job="G-03-fresh"))
+        self.spec.write_text(json.dumps(jobs), encoding="utf-8")
+        for command in [
+            f"python3 scripts/kling_batch.py --submit-only --spec {self.spec} --only G-03-fresh",
+            "python3 scripts/kling_batch.py --resume G-01",
+            f"python3 scripts/kling_batch.py --submit-only --spec {self.spec} --only G-03-fresh  # don't",
+        ]:
+            result = self.run_hook("no-retry.py", self.write_payload("Bash", command=command))
+            self.assertEqual(result.returncode, 0, command)
 
 
 class StopHookTests(HookTestCase):
@@ -374,6 +458,40 @@ class StopHookTests(HookTestCase):
         result = self.run_hook("zero-face-gate.py", self.stop_payload(), env={"MOVIES_LANE_ROLE": "qc"})
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_zero_face_gate_accepts_a_qc_folder_log_and_ignores_empty_or_text_evidence(self) -> None:
+        clip = self.film / "07_generations/originals/G-01-take.mp4"
+        clip.write_bytes(b"\x00")
+        report = self.film / "08_edit/reviews/notes.md"
+        report.write_text("notes\n", encoding="utf-8")
+        claims = [
+            {"statement": "reviewed", "evidence": f"{FILM}/07_generations/originals/G-01-take.mp4", "sha256": sha256(clip)},
+            {"statement": "empty", "evidence": "", "sha256": ""},
+            {"statement": "text", "evidence": f"{FILM}/08_edit/reviews", "sha256": ""},
+        ]
+        write_handoff(self.fixture, "2026-10-10-qc-test.json", agentRole="qc", claims=claims)
+        env = {"MOVIES_LANE_ROLE": "qc"}
+        result = self.run_hook("zero-face-gate.py", self.stop_payload(), env=env)
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertNotIn("08_edit/reviews", result.stderr)
+        qc_log = self.film / "09_delivery/qc/galileo-v2/zero-face-log.json"
+        qc_log.parent.mkdir(parents=True)
+        qc_log.write_text(
+            json.dumps({"files": [{"path": f"{FILM}/07_generations/originals/G-01-take.mp4", "sha256": sha256(clip)}], "framesInspected": 120, "reflectionsChecked": True}),
+            encoding="utf-8",
+        )
+        result = self.run_hook("zero-face-gate.py", self.stop_payload(), env=env)
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_stop_hooks_survive_a_directory_in_changed_files(self) -> None:
+        write_handoff(
+            self.fixture,
+            "2026-10-10-continuity-test.json",
+            changedFiles=[{"path": f"{FILM}/03_bibles", "sha256After": "0" * 64, "reason": "folder"}],
+        )
+        result = self.run_hook("handoff-check.py", self.stop_payload())
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("directory", result.stderr)
+
     def test_zero_face_gate_ignores_non_review_roles(self) -> None:
         clip = self.film / "07_generations/originals/G-01-take.mp4"
         clip.write_bytes(b"\x00")
@@ -388,8 +506,8 @@ class MistakeCaptureTests(HookTestCase):
         payload = {
             "hook_event_name": "PostToolUse",
             "tool_name": "Bash",
-            "tool_input": {"command": "python3 scripts/kling_batch.py --resume X"},
-            "tool_response": {"stdout": "", "stderr": "KeyError: 'works'", "exit_code": 1},
+            "tool_input": {"command": "python3 scripts/kling_batch.py --resume X --token=SECRET123"},
+            "tool_response": {"stdout": "", "stderr": "Traceback (most recent call last):\nKeyError: 'works'", "interrupted": False},
             "cwd": str(self.fixture),
         }
         result = self.run_hook("mistake-capture.py", payload, env={"MOVIES_LANE_NAME": "codex-edit-qc"})
@@ -399,6 +517,20 @@ class MistakeCaptureTests(HookTestCase):
         self.assertEqual(entry["lane"], "codex-edit-qc")
         self.assertIn("KeyError", entry["error"])
         self.assertEqual(entry["solution"], "")
+        self.assertNotIn("SECRET123", json.dumps(entry))
+
+    def test_post_tool_use_failure_event_is_recorded(self) -> None:
+        payload = {
+            "hook_event_name": "PostToolUseFailure",
+            "tool_name": "Bash",
+            "tool_input": {"command": "ffprobe missing.mp4"},
+            "error": "Command exited with code 1: missing.mp4: No such file",
+            "cwd": str(self.fixture),
+        }
+        result = self.run_hook("mistake-capture.py", payload)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        drafts = (self.film / "logs/mistakes-draft.jsonl").read_text(encoding="utf-8").splitlines()
+        self.assertIn("No such file", json.loads(drafts[-1])["error"])
 
     def test_successful_command_writes_nothing(self) -> None:
         payload = {
@@ -435,6 +567,12 @@ class SettingsTests(unittest.TestCase):
             self.assertTrue(any(script.name in command for command in commands), script.name)
         for command in commands:
             self.assertIn("$CLAUDE_PROJECT_DIR", command)
+        failure_commands = [
+            hook["command"]
+            for group in settings["hooks"].get("PostToolUseFailure", [])
+            for hook in group["hooks"]
+        ]
+        self.assertTrue(any("mistake-capture.py" in command for command in failure_commands))
 
 
 if __name__ == "__main__":

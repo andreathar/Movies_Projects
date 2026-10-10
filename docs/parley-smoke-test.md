@@ -39,6 +39,7 @@ Layer 2 (film gate hooks, `.claude/settings.json` in the lane worktree):
 
 5. Confirm `projects/andre-time-travel/logs/hooks.jsonl` in the lane worktree received a `deny` row from step 4 and that `logs/mistakes-draft.jsonl` received a draft entry.
 6. In the lane, ask the agent to run `ls projects/andre-time-travel/07_generations` (allowed) and `rm -rf projects/andre-time-travel/07_generations/originals` (must be denied by `media-guard` before execution; the folder still exists afterwards).
+7. In the lane, ask the agent to run `ffprobe does-not-exist.mp4`. Confirm that `logs/mistakes-draft.jsonl` gains an entry: this proves which event (`PostToolUse` with stderr, or `PostToolUseFailure`) Claude Code fires for a failed command. If neither fires, record it in `mistakes.jsonl` and adjust `mistake-capture.py`.
 
 Record all six observations with timestamps in `reports/parley-setup-v1/hook-proof.md`. Gate 0 = three acknowledgements, three event kinds, one reserved-path denial.
 

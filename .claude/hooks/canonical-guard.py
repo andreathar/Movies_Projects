@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""PreToolUse guard: only the producer edits canonical records; respect lane reservations."""
+"""PreToolUse guard: only the producer edits canonical records, in any checkout."""
 
 from __future__ import annotations
 
-from fnmatch import fnmatch
-from pathlib import Path
+from fnmatch import fnmatchcase
+from pathlib import Path, PurePosixPath
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -29,6 +29,26 @@ PRODUCER_OWNED = [
 EDIT_TOOLS = {"Write", "Edit", "MultiEdit", "NotebookEdit"}
 
 
+def parts_match(parts: tuple[str, ...], pattern: str) -> bool:
+    """Match path parts one by one so ``*`` never crosses a slash."""
+    wanted = pattern.split("/")
+    return len(parts) == len(wanted) and all(
+        fnmatchcase(part, token) for part, token in zip(parts, wanted)
+    )
+
+
+def is_canonical(relative: str) -> bool:
+    """True when the path, or any suffix of an outside path, names a canonical record."""
+    parts = PurePosixPath(relative).parts
+    if parts and parts[0] == "/":
+        parts = parts[1:]
+    for start in range(len(parts)):
+        suffix = parts[start:]
+        if any(parts_match(suffix, pattern) for pattern in PRODUCER_OWNED):
+            return True
+    return False
+
+
 def main() -> int:
     payload = _common.read_payload()
     root = _common.workspace_root(payload)
@@ -39,26 +59,13 @@ def main() -> int:
     if not target:
         return 0
     relative = _common.relative_to_root(root, target)
-    if not _common.is_producer() and any(fnmatch(relative, pattern) for pattern in PRODUCER_OWNED):
+    if not _common.is_producer() and is_canonical(relative):
         return _common.deny(
             root,
             HOOK,
             f"{relative} is a producer-owned canonical record; lanes propose through a handoff",
             path=relative,
         )
-    me = _common.lane_name()
-    for reservation in _common.parley_reservations():
-        if reservation["owner"] == me:
-            continue
-        for reserved in reservation["paths"]:
-            reserved_relative = _common.relative_to_root(root, reserved).rstrip("/")
-            if relative == reserved_relative or relative.startswith(reserved_relative + "/"):
-                return _common.deny(
-                    root,
-                    HOOK,
-                    f"{relative} is reserved by lane {reservation['owner']}; request the reservation first",
-                    path=relative,
-                )
     return _common.allow(root, HOOK, path=relative)
 
 

@@ -232,6 +232,14 @@ class LintTests(ManageCliMixin, unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertIn("2026-10-10-good.json", " ".join(report["hard"]))
 
+        ingested = dict(film_relative)
+        ingested["ingest"] = {"status": "ingested", "by": "producer", "at": "2026-10-10T10:00:00-03:00"}
+        write_json(self.film / "agents/handoffs/2026-10-10-good.json", ingested)
+        code, report = self.run_json(self.root, "lint")
+        self.assertEqual(code, 0, report)
+        self.assertNotIn("2026-10-10-good.json", " ".join(report["hard"]))
+        deliverable.write_text("review\n", encoding="utf-8")
+
         missing = dict(handoff)
         missing["changedFiles"] = [
             {"path": "docs/absent.md", "sha256After": "0" * 64, "reason": "created"}
@@ -539,6 +547,18 @@ class HandoffTests(ManageCliMixin, unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertIn("already ingested", report["errors"])
         self.assertEqual(json.loads(self.path.read_text(encoding="utf-8")), after)
+
+    def test_check_and_ingest_refuse_paths_outside_the_handoff_folder(self) -> None:
+        approvals = self.film / "00_brief/approvals.json"
+        original = approvals.read_bytes()
+        for arguments in [
+            ("handoff", "check", str(approvals)),
+            ("handoff", "ingest", str(approvals), "--by", "producer"),
+        ]:
+            code, report = self.run_json(self.root, *arguments)
+            self.assertEqual(code, 2, report)
+            self.assertIn("agents/handoffs", " ".join(report["errors"]))
+        self.assertEqual(approvals.read_bytes(), original)
 
     def test_ingest_refuses_invalid_handoff_without_writing(self) -> None:
         self.deliverable.write_text("changed\n", encoding="utf-8")

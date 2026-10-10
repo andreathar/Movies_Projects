@@ -69,7 +69,7 @@ Andre is the `operator` (CLI only): `say`, `participant merge`, `verify set`. `p
 
 ### Identity for the film gate hooks
 
-Export in each lane shell before `agent-parley run`: `MOVIES_LANE_NAME=<lane>` and `MOVIES_LANE_ROLE=<film role>`. Only the producer's base-checkout shell exports `MOVIES_PRODUCER_LANE=1`. Without it a session is treated as a lane: canonical records and paid submission are refused (`.claude/hooks/`, tests in `tests/test_hooks.py`). The hooks log to `projects/<episode>/logs/hooks.jsonl` and draft mistakes to `logs/mistakes-draft.jsonl`; they never approve, spend, commit, merge or wake the desktop conversation.
+Export in each lane shell before `agent-parley run`: `MOVIES_LANE_NAME=<lane>` and `MOVIES_LANE_ROLE=<film role>`. Only the producer's base-checkout shell exports `MOVIES_PRODUCER_LANE=1`. Without it a session is treated as a lane: canonical records and paid submission are refused (`.claude/hooks/`, tests in `tests/test_hooks.py`). Paid submission goes only through `scripts/kling_batch.py` with a `scope.json` beside the spec; direct CLI generation verbs are refused. Review roles record a `zero-face-log.json` under `09_delivery/qc/<set>/` or `08_edit/reviews/<topic>/` listing each inspected file by path and hash. The hooks log to `projects/<episode>/logs/hooks.jsonl` and draft mistakes to `logs/mistakes-draft.jsonl` (both untracked; a lane copies its drafts into the handoff `mistakes[]`); they never approve, spend, commit, merge or wake the desktop conversation. Parley's own `reserved_path` denial, not the film hooks, enforces lane reservations.
 
 ### Dispatch contract (one `send_message` per assignment, 150–250 words)
 
