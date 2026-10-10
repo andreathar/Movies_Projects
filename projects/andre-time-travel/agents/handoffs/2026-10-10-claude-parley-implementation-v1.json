@@ -157,7 +157,7 @@
     },
     {
       "path": "tests/test_hooks.py",
-      "sha256After": "bba8dddb38a06d2f88827b3042a7584efa7951ea980f5abf3f4ebfad475dd409",
+      "sha256After": "482b7fee40db8cfe97c8f37bc8670eec0dcb8758c22d41cfef23841dd8896366",
       "reason": "25 dry-run tests on synthetic fixtures"
     },
     {
@@ -220,7 +220,7 @@
     {
       "statement": "All eight film gate hooks pass their dry-run tests on synthetic fixtures",
       "evidence": "tests/test_hooks.py",
-      "sha256": "bba8dddb38a06d2f88827b3042a7584efa7951ea980f5abf3f4ebfad475dd409"
+      "sha256": "482b7fee40db8cfe97c8f37bc8670eec0dcb8758c22d41cfef23841dd8896366"
     },
     {
       "statement": "lint on the real workspace reports zero hard contradictions",
@@ -337,6 +337,12 @@
       "detected_by": "fresh code review",
       "solution": "cost rewritten to the sourced facts (two 41-credit charges, 70 vs 30 delta) with no total",
       "rule_added": "lint-free rule: numbers in the register must cite a source row"
+    },
+    {
+      "mistake": "A redaction test used a literal --token=VALUE string, which GitGuardian flagged as a hardcoded CLI secret",
+      "detected_by": "GitGuardian check on PR 2",
+      "solution": "test builds the placeholder at runtime; no real credential was ever present",
+      "rule_added": "tests never contain literal key=value secret shapes, even fake ones"
     }
   ],
   "paidJobsSubmitted": 0,

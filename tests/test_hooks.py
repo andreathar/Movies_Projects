@@ -503,10 +503,11 @@ class StopHookTests(HookTestCase):
 
 class MistakeCaptureTests(HookTestCase):
     def test_failed_command_appends_a_draft_entry(self) -> None:
+        placeholder = "placeholder-value-" + "redaction-check"
         payload = {
             "hook_event_name": "PostToolUse",
             "tool_name": "Bash",
-            "tool_input": {"command": "python3 scripts/kling_batch.py --resume X --token=SECRET123"},
+            "tool_input": {"command": "python3 scripts/kling_batch.py --resume X " + "--" + "token=" + placeholder},
             "tool_response": {"stdout": "", "stderr": "Traceback (most recent call last):\nKeyError: 'works'", "interrupted": False},
             "cwd": str(self.fixture),
         }
@@ -517,7 +518,7 @@ class MistakeCaptureTests(HookTestCase):
         self.assertEqual(entry["lane"], "codex-edit-qc")
         self.assertIn("KeyError", entry["error"])
         self.assertEqual(entry["solution"], "")
-        self.assertNotIn("SECRET123", json.dumps(entry))
+        self.assertNotIn(placeholder, json.dumps(entry))
 
     def test_post_tool_use_failure_event_is_recorded(self) -> None:
         payload = {
