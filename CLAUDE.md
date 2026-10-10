@@ -13,6 +13,9 @@ The management tools are stdlib-only Python (3.11+). `README.md` and `docs/VERSI
 ```bash
 .venv/bin/python scripts/manage.py status        # read-only state of workspace + board
 .venv/bin/python scripts/manage.py validate      # workspace integrity, exit 2 on error
+.venv/bin/python scripts/manage.py lint          # hard contradictions and advisories
+.venv/bin/python scripts/manage.py resume        # session-start digest (AGENTS.md step 7)
+.venv/bin/python scripts/manage.py handoff check <file>    # validate a handoff and its hashes (producer: handoff ingest)
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python -m unittest tests.test_workflow.WorkflowTests.test_paths_cannot_escape_workspace   # one test
 
