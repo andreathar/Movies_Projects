@@ -1,6 +1,8 @@
-# Versionamento local do projeto
+# Versionamento do projeto
 
-O workspace é um repositório **Git local**, na branch inicial `main`, preparado para uso futuro com GitHub. A inicialização foi solicitada pelo usuário em 9 de outubro de 2026. Não há remoto configurado nem publicação na nuvem.
+O workspace usa **Git com Git LFS**, na branch `main`. A inicialização local foi solicitada pelo usuário em 9 de outubro de 2026. Em 10 de outubro de 2026, Andre autorizou o envio para o repositório privado [andreathar/Movies_Projects](https://github.com/andreathar/Movies_Projects), configurado como `origin`; `main` acompanha `origin/main`.
+
+A primeira publicação integrou o commit remoto `65976e5` ao histórico local `5c50da9`, preservando `initial.txt`, por meio do merge `c6b11a8`. O push informou 937 objetos LFS enviados (~1,6 GB). Essa autorização cobre esta publicação; futuros commits, integrações e envios continuam sujeitos ao escopo da tarefa. A visibilidade privada foi verificada nesta entrega; não é uma configuração imutável.
 
 ## O que fica no histórico
 
@@ -9,7 +11,7 @@ O workspace é um repositório **Git local**, na branch inicial `main`, preparad
 - Fotos de entrada, referências sintéticas, áudios, imagens, PDFs e pacotes de apresentação. A mídia é armazenada com **Git LFS**; os arquivos continuam normais e editáveis na pasta do projeto.
 - Links de skills e diretórios necessários à produção. O destino externo de um symlink não é copiado para o repositório.
 
-Ambientes Python, caches, arquivos temporários de editor e credenciais usuais são ignorados. Atributos de texto preservam os bytes e finais de linha para não invalidar hashes de proveniência. Fotos e vozes pessoais estão somente neste repositório local; publicar o projeto exige uma decisão específica de destino e visibilidade.
+Ambientes Python, caches, arquivos temporários de editor e credenciais usuais são ignorados. Atributos de texto preservam os bytes e finais de linha para não invalidar hashes de proveniência. Fotos e vozes pessoais versionadas estão incluídas no repositório privado autorizado; publicar em outro destino ou alterar a visibilidade exige uma decisão específica.
 
 ## Ciclo de trabalho dos agentes
 

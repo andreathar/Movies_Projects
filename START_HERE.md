@@ -4,7 +4,7 @@
 
 Este projeto é a fonte local de trabalho da série. O filme ativo é **The Table Between Centuries**. A pasta do Google Drive contém uma entrega anterior; não é sincronizada automaticamente com as edições locais.
 
-O histórico agora é mantido em Git local com Git LFS para mídia. Leia [Versionamento e colaboração](docs/VERSION_CONTROL.md) antes de preparar um commit. Não há remoto ou publicação no GitHub.
+O histórico é mantido em Git com Git LFS para mídia, com publicação autorizada no GitHub privado. Leia [Versionamento e colaboração](docs/VERSION_CONTROL.md) para o destino, a evidência do envio e as regras de commit.
 
 ## Para ver os materiais
 
