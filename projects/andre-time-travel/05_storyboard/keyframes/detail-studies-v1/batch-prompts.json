@@ -1,0 +1,371 @@
+{
+  "decision": "D20",
+  "status": "generation_complete_candidates",
+  "images": [
+    {
+      "name": "caesar-hands-v1",
+      "character": "caesar",
+      "study": "hands",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new close-up insert of Julius Caesar's single 55-year-old man's pale olive right hand, fingers easing their pressure, no jewelry on the recurring worn oak table. Crop entirely below chest; no other hand, no person across table. Costume: ivory fine wool toga with a restrained purple stripe over an ivory linen tunic whose sleeves reach the wrists; no brooch or ring. Light: soft late-day daylight from frame left, muted red plaster and warm stone, intimate fictional room at the Via Sacra residence. Background is tabletop only, no props, architecture or floor. Reference 1 supplies scene palette and established oak surface ONLY; replace the historical costume with the specified new variant. Reference 2 supplies oak construction and patina only, ignore its room. Fingers and contact shadow sharp with gentle depth of field. Match table scale, not a giant banquet table. Quiet restrained reaction, never a clenched fist.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-hands-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-0b338273-6bb2-49e7-bc0c-44924c481eee.png"
+    },
+    {
+      "name": "caesar-feet-v1",
+      "character": "caesar",
+      "study": "feet",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a low close detail of Julius Caesar's two feet seated under the recurring oak table: closed muted reddish leather Roman shoes with simple construction, flat soles, no modern heel or metal buckle, under ivory drapery, supported on small understated black and ivory mosaic tesserae. Only calves downward and a single oak table leg at the far side of frame; table apron overhead softly cropped, adequate natural knee clearance, no anatomy above knees, no face, no extra feet. Camera at ankle height, 85mm detail. A small change of pressure in one foot, quiet grounded pose, not a walking shot. Light: soft late-day daylight from frame left, muted red plaster and warm stone, intimate fictional room at the Via Sacra residence. Reference 1 supplies grading only; do not copy its people or props. Reference 2 supplies oak leg texture only. Floor and shoe design are deliberate art proposals, not asserted historical facts.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-feet-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-0fced3f6-99e9-403f-bb05-080a9ee38c0f.png"
+    },
+    {
+      "name": "caesar-back-v1",
+      "character": "caesar",
+      "study": "back",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Strict directly-behind portrait detail of the seated Julius Caesar, tightly framing back of crown, nape and both shoulders only. Hair: short sparse silver-grey hair combed forward, thinning crown, simple natural laurel leaves with no decorative ribbons. Clothing: ivory fine wool toga with a restrained purple stripe over an ivory linen tunic whose sleeves reach the wrists; no brooch or ring. Camera exactly on back centerline, no turned head, no exposed cheek, profile, eyes or beard. Back head/nape in focus with gentle falloff; face points away and is fully occluded by skull. No other person in this tight crop, no mirror. Light: soft late-day daylight from frame left, muted red plaster and warm stone, intimate fictional room at the Via Sacra residence. Reference supplies scene palette only; replace costume as specified and do not show Andre. Quiet posture, subtle shoulder heaviness, 85mm lens, cinematic still.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-back-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-37297383-d695-48ba-90e5-0adbb565d99c.png"
+    },
+    {
+      "name": "caesar-shoulder-left-v1",
+      "character": "caesar",
+      "study": "shoulder-left",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-left-shoulder conversation shot, an ALTERNATIVE camera setup for Julius Caesar's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Julius Caesar's left shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at right edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at left third, looks toward interlocutor, not camera. Historical costume: ivory fine wool toga with a restrained purple stripe over an ivory linen tunic whose sleeves reach the wrists; no brooch or ring; rear hair if visible: short sparse silver-grey hair combed forward, thinning crown, simple natural laurel leaves with no decorative ribbons. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: soft late-day daylight from frame left, muted red plaster and warm stone, intimate fictional room at the Via Sacra residence. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-left-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-d9787040-d544-40a0-a906-20fbe1c68aec.png"
+    },
+    {
+      "name": "caesar-shoulder-right-v1",
+      "character": "caesar",
+      "study": "shoulder-right",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-right-shoulder conversation shot, an ALTERNATIVE camera setup for Julius Caesar's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Julius Caesar's right shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at left edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at right third, looks toward interlocutor, not camera. Historical costume: ivory fine wool toga with a restrained purple stripe over an ivory linen tunic whose sleeves reach the wrists; no brooch or ring; rear hair if visible: short sparse silver-grey hair combed forward, thinning crown, simple natural laurel leaves with no decorative ribbons. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: soft late-day daylight from frame left, muted red plaster and warm stone, intimate fictional room at the Via Sacra residence. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-right-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-b7d96fc0-602e-4469-839d-a89534653c65.png"
+    },
+    {
+      "name": "genghis-hands-v1",
+      "character": "genghis",
+      "study": "hands",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new close-up insert of Genghis Khan's single older weathered medium-toned right hand, broad and heavy, resting open as tension eases, no jewelry on the recurring worn oak table. Crop entirely below chest; no other hand, no person across table. Costume: plain light cream inner robe with low collar under a dark brown woven-cloth outer robe, simple narrow sleeves, no armor, no metal ornaments, no rings, no pouches. Light: warm low raking daylight from a felt tent opening at frame left, soft subdued warm interior bounce, no visible flames or armor. Background is tabletop only, no props, architecture or floor. Reference 1 supplies scene palette and established oak surface ONLY; replace the historical costume with the specified new variant. Reference 2 supplies oak construction and patina only, ignore its room. Fingers and contact shadow sharp with gentle depth of field. Match table scale, not a giant banquet table. Quiet restrained reaction, never a clenched fist.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-hands-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-0110ed61-4808-41d9-bf12-f6a0d392b7c1.png"
+    },
+    {
+      "name": "genghis-feet-v1",
+      "character": "genghis",
+      "study": "feet",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a low close detail of Genghis Khan's two feet seated under the recurring oak table: plain worn brown leather soft boots with modest rounded toes, under dark brown robe hem, no metal, supported on plain worn dark felt mat over compact earth, modest texture. Only calves downward and a single oak table leg at the far side of frame; table apron overhead softly cropped, adequate natural knee clearance, no anatomy above knees, no face, no extra feet. Camera at ankle height, 85mm detail. A small change of pressure in one foot, quiet grounded pose, not a walking shot. Light: warm low raking daylight from a felt tent opening at frame left, soft subdued warm interior bounce, no visible flames or armor. Reference 1 supplies grading only; do not copy its people or props. Reference 2 supplies oak leg texture only. Floor and shoe design are deliberate art proposals, not asserted historical facts.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-feet-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-2b60f732-7e97-4bf7-bf03-9b2c6de5fd35.png"
+    },
+    {
+      "name": "genghis-back-v1",
+      "character": "genghis",
+      "study": "back",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Strict directly-behind portrait detail of the seated Genghis Khan, tightly framing back of crown, nape and both shoulders only. Hair: partially shaved nape and crown with two small dark greying side braids laid behind the ears, no hat, no facial hair visible from the rear. Clothing: plain light cream inner robe with low collar under a dark brown woven-cloth outer robe, simple narrow sleeves, no armor, no metal ornaments, no rings, no pouches. Camera exactly on back centerline, no turned head, no exposed cheek, profile, eyes or beard. Back head/nape in focus with gentle falloff; face points away and is fully occluded by skull. No other person in this tight crop, no mirror. Light: warm low raking daylight from a felt tent opening at frame left, soft subdued warm interior bounce, no visible flames or armor. Reference supplies scene palette only; replace costume as specified and do not show Andre. Quiet posture, subtle shoulder heaviness, 85mm lens, cinematic still.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-back-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-e3d591cb-3c8d-4c4c-999b-7059c895c3c1.png"
+    },
+    {
+      "name": "genghis-shoulder-left-v1",
+      "character": "genghis",
+      "study": "shoulder-left",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-left-shoulder conversation shot, an ALTERNATIVE camera setup for Genghis Khan's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Genghis Khan's left shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at right edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at left third, looks toward interlocutor, not camera. Historical costume: plain light cream inner robe with low collar under a dark brown woven-cloth outer robe, simple narrow sleeves, no armor, no metal ornaments, no rings, no pouches; rear hair if visible: partially shaved nape and crown with two small dark greying side braids laid behind the ears, no hat, no facial hair visible from the rear. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: warm low raking daylight from a felt tent opening at frame left, soft subdued warm interior bounce, no visible flames or armor. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-shoulder-left-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-01f0f54e-8769-4d26-a6c2-83ac4140b430.png"
+    },
+    {
+      "name": "genghis-shoulder-right-v1",
+      "character": "genghis",
+      "study": "shoulder-right",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-right-shoulder conversation shot, an ALTERNATIVE camera setup for Genghis Khan's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Genghis Khan's right shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at left edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at right third, looks toward interlocutor, not camera. Historical costume: plain light cream inner robe with low collar under a dark brown woven-cloth outer robe, simple narrow sleeves, no armor, no metal ornaments, no rings, no pouches; rear hair if visible: partially shaved nape and crown with two small dark greying side braids laid behind the ears, no hat, no facial hair visible from the rear. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: warm low raking daylight from a felt tent opening at frame left, soft subdued warm interior bounce, no visible flames or armor. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-shoulder-right-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-beddf611-0a34-4bb6-96fc-a044b7c381c9.png"
+    },
+    {
+      "name": "galileo-feet-v1",
+      "character": "galileo",
+      "study": "feet",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a low close detail of Galileo Galilei's two feet seated under the recurring oak table: plain dark leather low shoes with no buckle, rosette or colored heel, largely covered by long near-black robe hem; toes in gentle soft focus, supported on aged matte wide wooden planks chosen for set continuity, not a documented historical floor. Only calves downward and a single oak table leg at the far side of frame; table apron overhead softly cropped, adequate natural knee clearance, no anatomy above knees, no face, no extra feet. Camera at ankle height, 85mm detail. A small change of pressure in one foot, quiet grounded pose, not a walking shot. Light: warm soft window daylight from frame left, quiet Tuscan study, restrained brown and charcoal palette. Reference 1 supplies grading only; do not copy its people or props. Reference 2 supplies oak leg texture only. Floor and shoe design are deliberate art proposals, not asserted historical facts.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-feet-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-711ea4f6-254d-4161-9084-35ff773c5641.png"
+    },
+    {
+      "name": "galileo-back-v1",
+      "character": "galileo",
+      "study": "back",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Strict directly-behind portrait detail of the seated Galileo Galilei, tightly framing back of crown, nape and both shoulders only. Hair: sparse short grey-white hair around a thinning bald crown and soft wisps at the nape; no cap. Clothing: near-black textured wool scholar gown with narrow off-white linen cuff and modest white collar, no rings. Camera exactly on back centerline, no turned head, no exposed cheek, profile, eyes or beard. Back head/nape in focus with gentle falloff; face points away and is fully occluded by skull. No other person in this tight crop, no mirror. Light: warm soft window daylight from frame left, quiet Tuscan study, restrained brown and charcoal palette. Reference supplies scene palette only; replace costume as specified and do not show Andre. Quiet posture, subtle shoulder heaviness, 85mm lens, cinematic still.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-back-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-74e9e769-2923-4421-af1c-aa54f628c322.png"
+    },
+    {
+      "name": "galileo-shoulder-left-v1",
+      "character": "galileo",
+      "study": "shoulder-left",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-left-shoulder conversation shot, an ALTERNATIVE camera setup for Galileo Galilei's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Galileo Galilei's left shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at right edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at left third, looks toward interlocutor, not camera. Historical costume: near-black textured wool scholar gown with narrow off-white linen cuff and modest white collar, no rings; rear hair if visible: sparse short grey-white hair around a thinning bald crown and soft wisps at the nape; no cap. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: warm soft window daylight from frame left, quiet Tuscan study, restrained brown and charcoal palette. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-left-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-44e36efc-d4d1-49e4-9579-c170a692cb1f.png"
+    },
+    {
+      "name": "galileo-shoulder-right-v1",
+      "character": "galileo",
+      "study": "shoulder-right",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-right-shoulder conversation shot, an ALTERNATIVE camera setup for Galileo Galilei's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Galileo Galilei's right shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at left edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at right third, looks toward interlocutor, not camera. Historical costume: near-black textured wool scholar gown with narrow off-white linen cuff and modest white collar, no rings; rear hair if visible: sparse short grey-white hair around a thinning bald crown and soft wisps at the nape; no cap. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: warm soft window daylight from frame left, quiet Tuscan study, restrained brown and charcoal palette. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-right-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-ec253136-256f-4523-bd3d-b38195e25140.png"
+    },
+    {
+      "name": "napoleon-hands-v1",
+      "character": "napoleon",
+      "study": "hands",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new close-up insert of Napoleon Bonaparte's single middle-aged pale right hand with slightly fleshy fingers, one fingertip settling into stillness, no jewelry on the recurring worn oak table. Crop entirely below chest; no other hand, no person across table. Costume: worn dark forest-green wool coat, plain pale cloth-covered buttons, no red piping, no medals, no epaulettes, white waistcoat and linen cuffs. Light: soft overcast window daylight from frame left, subdued damp-weather Longwood atmosphere, modest fictional study, no set dimensions specified. Background is tabletop only, no props, architecture or floor. Reference 1 supplies scene palette and established oak surface ONLY; replace the historical costume with the specified new variant. Reference 2 supplies oak construction and patina only, ignore its room. Fingers and contact shadow sharp with gentle depth of field. Match table scale, not a giant banquet table. Quiet restrained reaction, never a clenched fist.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-70a9679b-ee6e-42c3-810e-37c174a58b17.png"
+    },
+    {
+      "name": "napoleon-feet-v1",
+      "character": "napoleon",
+      "study": "feet",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a low close detail of Napoleon Bonaparte's two feet seated under the recurring oak table: plain low black leather shoes with no flashy ornament, pale stockings and off-white breeches, both feet close together, supported on threadbare muted green patterned rug covering wooden floorboards. Only calves downward and a single oak table leg at the far side of frame; table apron overhead softly cropped, adequate natural knee clearance, no anatomy above knees, no face, no extra feet. Camera at ankle height, 85mm detail. A small change of pressure in one foot, quiet grounded pose, not a walking shot. Light: soft overcast window daylight from frame left, subdued damp-weather Longwood atmosphere, modest fictional study, no set dimensions specified. Reference 1 supplies grading only; do not copy its people or props. Reference 2 supplies oak leg texture only. Floor and shoe design are deliberate art proposals, not asserted historical facts.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-feet-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-30abae06-671d-4a53-8263-658284075d3d.png"
+    },
+    {
+      "name": "napoleon-back-v1",
+      "character": "napoleon",
+      "study": "back",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Strict directly-behind portrait detail of the seated Napoleon Bonaparte, tightly framing back of crown, nape and both shoulders only. Hair: short dark brown hair, thinning slightly at the crown, no queue, no hat. Clothing: worn dark forest-green wool coat, plain pale cloth-covered buttons, no red piping, no medals, no epaulettes, white waistcoat and linen cuffs. Camera exactly on back centerline, no turned head, no exposed cheek, profile, eyes or beard. Back head/nape in focus with gentle falloff; face points away and is fully occluded by skull. No other person in this tight crop, no mirror. Light: soft overcast window daylight from frame left, subdued damp-weather Longwood atmosphere, modest fictional study, no set dimensions specified. Reference supplies scene palette only; replace costume as specified and do not show Andre. Quiet posture, subtle shoulder heaviness, 85mm lens, cinematic still.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-back-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-96b5ce7e-edef-42dd-9078-b212d487c6a6.png"
+    },
+    {
+      "name": "napoleon-shoulder-left-v1",
+      "character": "napoleon",
+      "study": "shoulder-left",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-left-shoulder conversation shot, an ALTERNATIVE camera setup for Napoleon Bonaparte's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Napoleon Bonaparte's left shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at right edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at left third, looks toward interlocutor, not camera. Historical costume: worn dark forest-green wool coat, plain pale cloth-covered buttons, no red piping, no medals, no epaulettes, white waistcoat and linen cuffs; rear hair if visible: short dark brown hair, thinning slightly at the crown, no queue, no hat. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: soft overcast window daylight from frame left, subdued damp-weather Longwood atmosphere, modest fictional study, no set dimensions specified. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-shoulder-left-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-795b9d6c-57f7-4cc2-82f2-c25eb1fcc9ab.png"
+    },
+    {
+      "name": "napoleon-shoulder-right-v1",
+      "character": "napoleon",
+      "study": "shoulder-right",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-right-shoulder conversation shot, an ALTERNATIVE camera setup for Napoleon Bonaparte's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind Napoleon Bonaparte's right shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at left edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at right third, looks toward interlocutor, not camera. Historical costume: worn dark forest-green wool coat, plain pale cloth-covered buttons, no red piping, no medals, no epaulettes, white waistcoat and linen cuffs; rear hair if visible: short dark brown hair, thinning slightly at the crown, no queue, no hat. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: soft overcast window daylight from frame left, subdued damp-weather Longwood atmosphere, modest fictional study, no set dimensions specified. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-shoulder-right-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-06fb1a24-8a54-4f5f-908b-d83d595e28a4.png"
+    },
+    {
+      "name": "oppenheimer-hands-v1",
+      "character": "oppenheimer",
+      "study": "hands",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new close-up insert of J. Robert Oppenheimer's single slender pale right hand with long fine fingers at rest, no watch, ring, cigarette or pen on the recurring worn oak table. Crop entirely below chest; no other hand, no person across table. Costume: plain muted blue cotton work shirt with buttoned simple cuffs and khaki trousers, no jacket, tie, wristwatch or jewelry. Light: night interior with a warm shaded practical electric lamp at frame left and faint cool blue window spill, restrained intimate lighting, no flame. Background is tabletop only, no props, architecture or floor. Reference 1 supplies scene palette and established oak surface ONLY; replace the historical costume with the specified new variant. Reference 2 supplies oak construction and patina only, ignore its room. Fingers and contact shadow sharp with gentle depth of field. Match table scale, not a giant banquet table. Quiet restrained reaction, never a clenched fist.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-hands-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-2bd1b500-a134-4566-a482-351d0e207199.png"
+    },
+    {
+      "name": "oppenheimer-feet-v1",
+      "character": "oppenheimer",
+      "study": "feet",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a low close detail of J. Robert Oppenheimer's two feet seated under the recurring oak table: plain brown leather lace-up shoes and straight khaki trouser cuffs, no overshoes, supported on unvarnished worn wooden boards in a fictional private base-camp room. Only calves downward and a single oak table leg at the far side of frame; table apron overhead softly cropped, adequate natural knee clearance, no anatomy above knees, no face, no extra feet. Camera at ankle height, 85mm detail. A small change of pressure in one foot, quiet grounded pose, not a walking shot. Light: night interior with a warm shaded practical electric lamp at frame left and faint cool blue window spill, restrained intimate lighting, no flame. Reference 1 supplies grading only; do not copy its people or props. Reference 2 supplies oak leg texture only. Floor and shoe design are deliberate art proposals, not asserted historical facts.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-feet-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-c8002a11-4494-4fef-8cfb-20012c08ae4f.png"
+    },
+    {
+      "name": "oppenheimer-back-v1",
+      "character": "oppenheimer",
+      "study": "back",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Strict directly-behind portrait detail of the seated J. Robert Oppenheimer, tightly framing back of crown, nape and both shoulders only. Hair: very short closely clipped dark hair at the nape, no hat. Clothing: plain muted blue cotton work shirt with buttoned simple cuffs and khaki trousers, no jacket, tie, wristwatch or jewelry. Camera exactly on back centerline, no turned head, no exposed cheek, profile, eyes or beard. Back head/nape in focus with gentle falloff; face points away and is fully occluded by skull. No other person in this tight crop, no mirror. Light: night interior with a warm shaded practical electric lamp at frame left and faint cool blue window spill, restrained intimate lighting, no flame. Reference supplies scene palette only; replace costume as specified and do not show Andre. Quiet posture, subtle shoulder heaviness, 85mm lens, cinematic still.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-back-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-770faa57-895b-46e4-863f-b319d5a93238.png"
+    },
+    {
+      "name": "oppenheimer-shoulder-left-v1",
+      "character": "oppenheimer",
+      "study": "shoulder-left",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-left-shoulder conversation shot, an ALTERNATIVE camera setup for J. Robert Oppenheimer's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind J. Robert Oppenheimer's left shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at right edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at left third, looks toward interlocutor, not camera. Historical costume: plain muted blue cotton work shirt with buttoned simple cuffs and khaki trousers, no jacket, tie, wristwatch or jewelry; rear hair if visible: very short closely clipped dark hair at the nape, no hat. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: night interior with a warm shaded practical electric lamp at frame left and faint cool blue window spill, restrained intimate lighting, no flame. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-left-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-34506c84-24fb-4ca7-a840-2d2872b67a6a.png"
+    },
+    {
+      "name": "oppenheimer-shoulder-right-v1",
+      "character": "oppenheimer",
+      "study": "shoulder-right",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+        "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png"
+      ],
+      "prompt": "Single photorealistic cinematic landscape 16:9 film still, no collage, no panels, no text, no watermark. Natural human anatomy and tactile imperfect materials. This is a fictional art-direction study, not a claim of historical reconstruction. Absolutely no historical face or profile: no historical eyes, nose, mouth, cheek or reflections. Create a new over-the-right-shoulder conversation shot, an ALTERNATIVE camera setup for J. Robert Oppenheimer's encounter with Andre Athar. Reference 2 is the real photographed Andre identity: preserve his face faithfully, age, hair, hazel eyes and facial hair, never beautify into another person. Andre sits opposite at a modest shared oak table, mid-grey pinstripe jacket, white fine-striped open collar shirt, no tie, explaining something quietly with one relaxed open hand. Camera behind J. Robert Oppenheimer's right shoulder, only rear shoulder and a sliver of back hair visible in blurred foreground at left edge; historical head is mostly cropped out, absolutely no historical cheek/profile. Andre face in focus at right third, looks toward interlocutor, not camera. Historical costume: plain muted blue cotton work shirt with buttoned simple cuffs and khaki trousers, no jacket, tie, wristwatch or jewelry; rear hair if visible: very short closely clipped dark hair at the nape, no hat. Reference 1 supplies mood and composition continuity but new costume specification overrides historical wardrobe; Reference 3 supplies recurring oak table with cup ring and chipped near edge; preserve geometry and modest intimate seating distance. Light: night interior with a warm shaded practical electric lamp at frame left and faint cool blue window spill, restrained intimate lighting, no flame. No added objects on tabletop, no book, hat, ornament or weapon. Camera seated eye height, 50mm natural perspective, genuine listening exchange, no melodrama. This opposite shoulder is a coverage alternative, not a mirrored image. CRITICAL CROP: show shoulder cloth only in the foreground; the entire historical head, neck and ear must be outside the upper and side edges, like the original reference. Hair is covered in a separate back-view study; exclude it from this shoulder frame. Do not show even blurred skin of the historical head.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-right-v1.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-2d624713-57c0-4c37-9c9d-60500b2429e9.png"
+    },
+    {
+      "name": "caesar-feet-v2",
+      "character": "caesar",
+      "study": "feet",
+      "parent": "caesar-feet-v1",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-feet-v1.png"
+      ],
+      "prompt": "Edit this exact film still with one correction only: remove the raised separate heel blocks and the arched gaps under BOTH reddish leather shoes. Each shoe must have a single thin continuous flat leather sole touching the mosaic floor from heel to toe, with no raised heel, no modern boot heel. Preserve the upper shoe leather, muted red color, draped ivory/purple fabric, pose, mosaic, table legs, light and framing. Photorealistic cinematic 16:9. No faces, no text.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-feet-v2.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-56324285-598c-4c38-ab4d-744e43baad97.png"
+    },
+    {
+      "name": "caesar-shoulder-left-v2",
+      "character": "caesar",
+      "study": "shoulder-left",
+      "parent": "caesar-shoulder-left-v1",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-left-v1.png"
+      ],
+      "prompt": "Edit this exact film still for safer over-the-shoulder framing. Keep Andre's face, grey pinstripe jacket, white striped open-collar shirt, seated gesture, table, Roman room and warm window light unchanged as far as possible. Reframe foreground Caesar much closer to camera so ONLY his blurred ivory wool toga shoulder with a restrained purple stripe fills the lower/right edge. His ENTIRE head, neck, hair, laurel, ear and all skin must be outside the upper/right image boundaries. No visible historic head or face or reflection. Andre stays in focus on the LEFT, looking camera-right toward the offscreen interlocutor. Don't replace the cropped head with other objects. Cinematic landscape 16:9.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-left-v2.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-7ce6a815-4111-48ab-ae66-d22a6c363ea1.png"
+    },
+    {
+      "name": "caesar-shoulder-right-v2",
+      "character": "caesar",
+      "study": "shoulder-right",
+      "parent": "caesar-shoulder-right-v1",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-right-v1.png"
+      ],
+      "prompt": "Edit this exact film still for safer over-the-shoulder framing. Keep Andre's face, grey pinstripe jacket, white striped open-collar shirt, seated gesture, table, Roman room and warm window light unchanged as far as possible. Reframe foreground Caesar much closer to camera so ONLY his blurred ivory wool toga shoulder with a restrained purple stripe fills the lower/left edge. His ENTIRE head, neck, hair, laurel, ear and all skin must be outside the upper/left image boundaries. No visible historic head or face or reflection. Andre stays in focus on the RIGHT, looking camera-left toward the offscreen interlocutor. Don't replace the cropped head with other objects. Cinematic landscape 16:9.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-right-v2.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-9be35946-dede-4338-b6ff-daccf999fa2a.png"
+    },
+    {
+      "name": "napoleon-hands-v2",
+      "character": "napoleon",
+      "study": "hands",
+      "parent": "napoleon-hands-v1",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v1.png"
+      ],
+      "prompt": "Edit this exact close-up film still with a tiny cleanup only. Remove the small brown raised sliver/pin/object beneath the rightmost visible fingertip, near the center-right of the frame. There must be no object under any finger: the relaxed fingertips should contact bare worn oak naturally, and the finger anatomy must remain believable. Preserve hand age, every other finger, sleeve in worn dark green wool, white cuff and waistcoat, pale buttons, wood grain, ring mark, table chip, lighting, camera and crop. No added props or jewelry, no head or face, no text. Cinematic 16:9.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v2.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-d2d9491e-6e0e-4de4-8468-eee975757e3f.png"
+    },
+    {
+      "name": "oppenheimer-shoulder-right-v2",
+      "character": "oppenheimer",
+      "study": "shoulder-right",
+      "parent": "oppenheimer-shoulder-right-v1",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-right-v1.png"
+      ],
+      "prompt": "Edit this exact cinematic still. Preserve Andre in focus at screen-right, his face, grey pinstripe jacket and white finely striped shirt, gesture and table, lamp and night lighting. The left foreground should contain ONLY blurred blue shirt shoulder fabric: move/reframe the foreground interlocutor closer so his ENTIRE head, neck, ear and all skin are OUTSIDE the upper-left frame boundaries. Remove the visible flesh wedge in the upper-left corner. Keep a believable over-the-shoulder composition, no face or reflection of the historical interlocutor. No other changes. Landscape 16:9.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-right-v2.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-49ef9ce8-0846-44c4-b8fb-ee34621d73c4.png"
+    },
+    {
+      "name": "napoleon-hands-v3",
+      "character": "napoleon",
+      "study": "hands",
+      "parent": "napoleon-hands-v2",
+      "refs": [
+        "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v2.png"
+      ],
+      "prompt": "Revise this close-up film still: change the visible hand pose to a relaxed open hand lying flat on the table, fingers gently extended and naturally separated, with all fingertips resting flush on bare oak. The hand has exactly five natural digits with believable joints. Remove the little brown peg/sliver currently sticking up under the far-right fingertip; do not preserve it or create a replacement. The entire hand/table contact area must be clean wood with no objects, splinters, props, rings or jewelry. Preserve Napoleon's worn dark green wool sleeve with pale buttons, white cuff and waistcoat, soft overcast side light, table ring/chip and horizontal camera crop. No head or face. Photorealistic cinematic 16:9.",
+      "output": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v3.png",
+      "source": "$CODEX_HOME/generated_images/01a1205a-251e-7753-9721-ef38e1a79472/exec-d84a1a61-7bf5-4794-8f6b-c457cd0ac413.png"
+    }
+  ]
+}

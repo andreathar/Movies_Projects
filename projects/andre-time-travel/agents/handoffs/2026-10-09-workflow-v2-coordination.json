@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Document reusable multi-session film workflow requested by Andre",
+  "changedFiles": [
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256Before": "c29e7eef2933e285aeaa45afc1301c12f71c7611cef2aa18c7b7a5a2486a8123",
+      "sha256After": "1e97ea4ade5940508e12f246a44822b90631b6636e67fc397fcb99415849f70b"
+    },
+    {
+      "path": "docs/VERSION_CONTROL.md",
+      "sha256Before": "bf09d9143d64b255916ccd66efd9ccd4543e366e625945b7bf8e397a10979983",
+      "sha256After": "6ca63f3d0342f212c61bf9e2b61316612146b7200ef7fff8b73f5bc5096d8dfb"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "61f1577b196e1915e76bb0d31b776ee4cd28745000582888a1431e75293e8368",
+      "sha256After": "03936bed99be2f1b6de8f4e6137741187b2843b688c40278363bcb8c9d60fa2a"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "pendingDecisions": [
+    "No new commit/merge authorization inferred"
+  ],
+  "verification": []
+}

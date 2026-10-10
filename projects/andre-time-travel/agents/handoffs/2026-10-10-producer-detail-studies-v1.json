@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-10-10T06:16:54.954765-03:00",
+  "episode": "andre-time-travel",
+  "owner": "Codex desktop/base producer",
+  "scope": "Review and adopt Claude research v2, resolve requested correction/cue specifications, delegated art choices D20, generate and inspect candidate detail studies",
+  "userAuthorization": "Direct user: review Claude v2, check six corrections and sound cues, make possible art choices, continue images without waiting at every step",
+  "status": "delivered_candidates_not_production_accepted",
+  "artifacts": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/art-choices-v1.md",
+      "sha256": "b03c6bcce2e9213c6b50e3baa87607a243a31198568f4819eec3c624c12875e6"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+      "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/source-historical-review.md",
+      "sha256": "2da7d044f8b7ec619d712475438d30a2cac8186ba79b8b150405ad385cc57ca3"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/coverage-plan.md",
+      "sha256": "8578570c7b07a60c56f1efcdf0c192e172bd8640491655741224835e407b5ac3"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/source-historical-review-evidence.json",
+      "sha256": "617ee775e01417e7394bfe2ddb9903ff5a73841decb2622667e685f11f3e860a"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/producer-review.md",
+      "sha256": "f0dbe58cc9f19e048aa5add5c55f1918a5f6d76851081f682d50caa86852e4d5"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/integration-evidence.json",
+      "sha256": "ce9f4dd2574dfa88feb422a968a184b5866611b6c912dea04c4534883b6f6137"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/foley-cues.md",
+      "sha256": "8dfe4d9b49945cf4a99a2ef68bccd12577807ef2a825e9a625ae1aa93a500302"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/index.html",
+      "sha256": "440bfaadb210d4e01011afde5ba95e032c52f9e2f8e462ba4754bb342d7b88cb"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/README.md",
+      "sha256": "b6ee28b5962271552f7f21039928ed4dbd93f2e23da18bb654e8904b8f29c363"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/review.md",
+      "sha256": "f9cfe48842d905991628fbc40c5ade312784544516489ffe34e5f542e5f4dd85"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/manifest.json",
+      "sha256": "9bf4c44ddedb011581421f5570f3afa0700a2cdd432a7f2da6c46407a75d18bd"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/batch-prompts.json",
+      "sha256": "189e1c14a338c7b68218465a66e7727d77ac6496c25b6f4a92a7db57751512bd"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/batch-progress.json",
+      "sha256": "96220cfeb8d1fe4d82eda44e3d108abf5cb7cda1cd6461bab1f836ea0edf8a45"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "9a55c922004e6acd01a7312abd383cc37c20146aa25ee0a3e7f1f6d2e5439205"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/RESUME-PRODUCER-2026-10-09.md",
+      "sha256": "919a17c9203d699df33a3f33440556112ca24fa140182b37f4a5c363dbbd42be"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256": "4b4e9f255a94411477cb1b7638e0d0d78e24f9b6b3f966292fe6bef7c9f84366"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "sha256": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/validation.json",
+      "sha256": "42f0024b5e7a5a171772ede5f8ba586738aca2672e9207a7ad2877b0e73e969f"
+    }
+  ],
+  "baseHashesBeforeManagementEdits": {
+    "projects/andre-time-travel/memory/STATE.md": "7f1df5b83fa9c760f34d3e61dd370c5e5151e42b1262a9787d518c5f487a09b1",
+    "projects/andre-time-travel/memory/RESUME-PRODUCER-2026-10-09.md": "874ebdef3d112f519b371a4f32b37b6ce5eab786b49d51e0cbb506b08b31d6d7",
+    "projects/andre-time-travel/memory/session-log.json": "03936bed99be2f1b6de8f4e6137741187b2843b688c40278363bcb8c9d60fa2a",
+    "projects/andre-time-travel/tasks/scene-detail-assets-v1.md": "dffdef79d7611f4747306dbc53d950319e5064aaeb61e4644325a95b671c7853",
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/coverage-plan.md": "655f2ac0c3afc3a361cf22795f506280dd17dd54961606f0dd0927e1e7cd0922",
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/foley-cues.md": "5507afdc38a86cb4f7ba711b2ae6d87515046d512fbbde82632f02e2fbdf4031"
+  },
+  "counts": {
+    "studySlots": 25,
+    "galleryCandidates": 26,
+    "newImagesThisBatch": 30,
+    "reusedGalileoHandImages": 2,
+    "preservedSupersededVariants": 6,
+    "physicalPngs": 32
+  },
+  "reviewEvidence": [
+    "Claude v2 SHA matches handoff",
+    "v1/v2 diff compared with H01-H06",
+    "Napoleon coat source inspected visually",
+    "Full affected cue plan and coverage rows read and reconciled",
+    "Every generated output inspected as still image; targeted revisions made",
+    "All 32 PNGs decoded; 1672x941",
+    "Input/output hashes in image catalog"
+  ],
+  "researchDisposition": "H01-H06 closed for correction scope, not independent full-source historical verification",
+  "cueDisposition": "G-F2/N-PE/N-F2 no longer rely on undocumented Arcetri floor or borrowed Longwood dimensions; no rendered audio or synchronization",
+  "principalCandidates": "Left-shoulder studies under D09; right-shoulder studies retained as axis alternatives outside current cut selection",
+  "dependenciesAndRemainingDecisions": [
+    "Andre likeness/expressions review",
+    "Video motion/contact/anatomy and no-face checks",
+    "Table geometry, wardrobe and lighting continuity across chosen angles",
+    "Confirm exact dramatic timing against actual dialogue/audio",
+    "Full Galileo v2 playback with audio and timeline/bible reconciliation",
+    "Separate scope for any paid Kling or ElevenLabs job"
+  ],
+  "notPerformed": [
+    "New full historical source audit",
+    "Final film acceptance",
+    "Paid Kling/ElevenLabs submission",
+    "Git commit/merge/push",
+    "Live Parley status or messages in this delivery"
+  ],
+  "validation": {
+    "status": "passed",
+    "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/validation.json",
+    "sha256": "42f0024b5e7a5a171772ede5f8ba586738aca2672e9207a7ad2877b0e73e969f",
+    "unitTestsPassed": 29,
+    "knownSharedSkillWarnings": 4
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-10",
+  "workspace": {
+    "status": "ok",
+    "errors": [],
+    "warnings": [
+      "shared skill changed since linking: kling-cli",
+      "shared skill changed since linking: film-character-continuity",
+      "shared skill changed since linking: film-dialogue-localization",
+      "shared skill changed since linking: film-editing-qc"
+    ],
+    "projects": [
+      {
+        "id": "andre-time-travel",
+        "chapters": 5,
+        "storyboardSlots": 41,
+        "targetSeconds": 240,
+        "budgetCeiling": 6981,
+        "productionTasks": 21,
+        "taskStates": {
+          "completed": 7,
+          "blocked": 11,
+          "in_progress": 3
+        },
+        "recordedTakes": 9,
+        "finalMovieVerified": false,
+        "registeredSources": 20,
+        "importedSourceSnapshots": 20
+      }
+    ]
+  },
+  "unitTests": {
+    "passed": 29,
+    "exitCode": 0,
+    "note": "Expected argparse rejection and mock RUNNING output are unit-test fixtures, not live jobs."
+  },
+  "artifactCheck": "PASS: 32 image hashes, all input-reference hashes, 26-image gallery links, handoff artifacts and unchanged Claude v2 hash.",
+  "visualReview": "Producer static inspection during generation; see image-folder review.md. No complete film playback performed."
+}

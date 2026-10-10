@@ -324,6 +324,70 @@
       "candidateStudies": 25,
       "paidJobsSubmitted": 0,
       "agentsDispatched": 0
+    },
+    {
+      "at": "2026-10-09T17:11:20.281161-03:00",
+      "event": "repeatable_workflow_v2_coordination_documented",
+      "files": [
+        "docs/REPEATABLE_WORKFLOW.md",
+        "docs/VERSION_CONTROL.md"
+      ],
+      "paidJobsSubmitted": 0,
+      "commitsCreated": 0
+    },
+    {
+      "at": "2026-10-10T06:16:54.954765-03:00",
+      "event": "producer_detail_studies_v1_delivered",
+      "decision": "D20",
+      "researchRevision": "03_bibles/detail-planning/historical-details-v2.md",
+      "researchCorrections": "H01-H06 closed for requested correction scope; historical uncertainties preserved",
+      "soundCues": "G-F2/N-PE/N-F2 resolved at specification level; no audio produced",
+      "studySlots": 25,
+      "candidateImages": 26,
+      "newImagesThisBatch": 30,
+      "reusedImages": 2,
+      "supersededPreserved": 6,
+      "catalog": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+      "handoff": "agents/handoffs/2026-10-10-producer-detail-studies-v1.json",
+      "klingJobsSubmitted": 0,
+      "elevenLabsJobsSubmitted": 0,
+      "commitsCreated": 0,
+      "productionAccepted": false
+    },
+    {
+      "at": "2026-10-10T07:23:16.666487-03:00",
+      "event": "workflow_dependency_map_created",
+      "path": "tasks/workflow-map-v1.md",
+      "existingProductionTasksMapped": 21,
+      "workPackages": 68,
+      "detailStudySlots": 25,
+      "mermaidDiagrams": 3,
+      "newLaneDispatches": 0,
+      "automationEnabled": false,
+      "paidJobsSubmitted": 0,
+      "note": "Explicit next-owner/blocked/stage-complete closure rule; no production status or approval changed."
+    },
+    {
+      "at": "2026-10-10T07:27:52.749704-03:00",
+      "event": "workflow_rules_anchored_in_primary_instructions",
+      "files": [
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "scope": "Required workflow-map reading, explicit successor ownership and primary-entry update rule",
+      "laneCopiesUpdated": false,
+      "liveSessionReadConfirmed": false,
+      "paidJobsSubmitted": 0
+    },
+    {
+      "at": "2026-10-10T07:31:43.011204-03:00",
+      "event": "project_cleanup_audit_plan_created",
+      "path": "tasks/project-cleanup-plan-v1.md",
+      "scope": "Plan and preliminary metadata inventory only",
+      "filesDeleted": 0,
+      "pluginsUninstalled": 0,
+      "hooksActivated": 0,
+      "paidJobsSubmitted": 0
     }
   ]
 }

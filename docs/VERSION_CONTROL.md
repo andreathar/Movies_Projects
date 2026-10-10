@@ -47,3 +47,6 @@ O Git LFS foi ativado apenas na configuração deste repositório. Uma máquina 
 Sem um servidor LFS, preservar a pasta **completa**, incluindo `.git/lfs/objects`, em um backup. Uma cópia só do histórico Git ou um `git bundle` não inclui os objetos LFS. `git lfs fsck` verifica os objetos locais; um clone/checkout com LFS indisponível pode conter apenas ponteiros no lugar das mídias. Os links de skills externos continuam dependentes do perfil da máquina.
 
 Inventários antigos são fotografias de um momento: edições documentadas desde então aparecem como mudanças. Use um novo nome de snapshot para registrar o estado posterior, sem reescrever o inventário antigo. O relatório da inicialização fica em `reports/git-setup-v1/`.
+
+## Integração entre lanes
+Seguir a seção Worktrees, commits e integração de [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md). Uma sessão coordenadora integra uma entrega por vez, após conferir diff, base, trabalho não commitado e evidências. Alterações salvas e commits não sincronizam automaticamente outras worktrees. Commit, merge e publicação são ações distintas, com autorizações distintas. O botão Publish Branch não é necessário à colaboração local. O ciclo de comandos acima descreve o procedimento quando autorizado; não concede autorização permanente de commit.

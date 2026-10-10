@@ -1,12 +1,12 @@
 # Fluxo repetível — Andre viajando no tempo
 
-Versão 1, 9 de outubro de 2026. Escopo: pré-produção, edição local, rastreabilidade e preparação de novas histórias. O fluxo de geração e montagem ainda precisa ser provado pelo piloto e pelos masters do primeiro filme.
+Versão 2, 9 de outubro de 2026. Escopo: pré-produção, edição local, rastreabilidade e preparação de novas histórias. O fluxo de geração e montagem ainda precisa ser provado pelo piloto e pelos masters do primeiro filme.
 
 ## O que permanece e o que muda
 
 O registro [series.json](../series/andre-time-travel/series.json) mantém o protagonista, a exigência de aprovação da semelhança, a separação entre foto real e imagem sintética, a regra de nenhum rosto histórico completo e a separação entre diálogo ficcional e fatos documentados.
 
-A mesa, o figurino e a voz atuais são candidatos de continuidade, ainda sem aprovação. Reutilizar um arquivo exige identificar sua versão e seu hash, a decisão que permite o uso e o escopo dessa decisão. Copiar o arquivo não transfere aceite nem autorização financeira.
+O estado de aprovação de mesa, figurino, identidade e voz deve ser consultado nas decisões do episódio; não se deve tratar todos como aprovados ou pendentes em bloco. Reutilizar um arquivo exige identificar sua versão e seu hash, a decisão que permite o uso e o escopo dessa decisão. Copiar o arquivo não transfere aceite nem autorização financeira.
 
 As cinco épocas, os 240 segundos, as 41 tomadas e as duas edições são decisões deste filme. Cada continuação define seus próprios encontros, duração, estrutura, idiomas, referências, orçamento e testes. O modelo de rascunho não preenche esses campos por herança.
 
@@ -82,3 +82,59 @@ O ZIP V1 é uma apresentação autocontida, não um backup restaurável de toda 
 ## Critério de validação do modelo
 
 O ensaio local prova organização, acesso, edição rastreável, reconstrução, recusa de sobrescrita, integridade e isolamento de uma continuação. Ele não prova semelhança em movimento, voz convincente, sincronização labial, precisão dos idiomas históricos, preço futuro ou qualidade final. Esses pontos devem aparecer como pendentes até o piloto, a escuta/revisão e o QC dos arquivos exatos.
+
+## Coordenação reutilizável entre sessões
+
+### Responsabilidade e ponto de direção
+Cada episódio nomeia uma sessão produtora/coordenadora e registra seu checkout. Nome de ferramenta (Claude/Codex) não é papel de filme. A conversa principal recebe as decisões de Andre, distribui tarefas delimitadas e integra entregas. Uma lane no terminal não herda automaticamente o histórico da conversa principal.
+
+O produtor concentra manifesto, board, aprovações, ledger, registro de assets, decisões e integração da memória. Demais agentes entregam propostas e evidências sem alterar esses registros em paralelo. A responsabilidade por criar imagens-base também deve ser explicitamente nomeada. No filme atual é o Codex desta conversa desktop; futuras continuações escolhem novamente seus responsáveis.
+
+### Divisão que prepara as imagens
+- História e cultura material: fatos, calçados, piso, cabelo, mangas, objetos e fontes de luz possíveis, com fontes e incerteza.
+- Storyboard/continuidade: espaço compartilhado, mesa, eixo, alternativas de ombro, anatomia e rosto histórico protegido.
+- Iluminação: fonte motivadora e continuidade entre planos; uma fonte plausível não equivale a design aprovado.
+- Diálogo/som: voz-guia, sincronismo, duração medida, contato de pés/dedos, tecido, respiração e silêncio.
+- Criador de imagens: integra referências e produz candidatos versionados; demais agentes não geram substitutos sem atribuição.
+- Editor/QC: monta material existente autorizado e revisa arquivos exatos. Operação do Kling e capacidade de inspeção visual são avaliadas separadamente por evidência, não pelo fornecedor do agente.
+
+A ficha de encontro relaciona intenção, fala difícil, palavra/ideia causadora, reação corporal e efeito sobre Andre. Humor e opinião pessoal são escolhas dramáticas; não são fatos ou citações atribuídas. Usar apenas os detalhes úteis à cena, sem obrigar cinco encontros a repetir os mesmos planos.
+
+### Contrato de tarefa e dependências
+Toda atribuição informa objetivo, dono, entradas e versões, saídas e caminhos permitidos, dependências, verificação e limites. Classificar como preparação independente ou trabalho dependente de mídia. Checklist, prompt e placeholder não comprovam imagem entregue. A entrega de mídia informa caminhos relativos, hashes, versões e estado candidato/aprovado para o uso específico. Não transferir aprovação de um rosto ou still automaticamente para vídeo.
+
+Gates de um teste pago não bloqueiam pesquisa e preparação independentes. Autorização para planejar não libera geração paga. O emissor de jobs é único por lote, com saldo/esquema atual e registro de IDs; ninguém reenvia um job para resolver falta de coordenação.
+
+### Worktrees, commits e integração
+As sessões trabalham em pastas/branches separadas. Um arquivo salvo na base pode ser consultado por caminho explícito antes do commit, mas não aparece automaticamente nas outras cópias. Commit na base também não atualiza branches de participantes. Dependências devem identificar versão/hash; não usar caminhos de outra lane para editar ou assumir sua identidade.
+
+Commits registram entregas coerentes, não cada pequeno ajuste. Antes de registrar: conferir escopo, alterações concorrentes, arquivos preparados e validação pertinente. Respeitar a autorização vigente para commit; na ausência dela, entregar arquivos e hashes sem bloquear a preparação. Não presumir permissão de merge/push a partir de permissão de commit.
+
+O produtor prepara integração de UMA entrega por vez. Conferir base da branch, mudanças locais, diff, caminhos sobrepostos e evidências; preservar trabalho não commitado. Incorporar pelo mecanismo autorizado, resolver divergências de conteúdo sem escolher cegamente uma versão e verificar o resultado integrado antes da entrega seguinte. Andre acompanha e autoriza conforme o escopo vigente; não precisa resolver sozinho conflitos técnicos.
+
+Changes indica alterações, não necessariamente conflitos. Publish Branch publica remotamente, não integra à main. Colaboração local não exige publicação. Commit e validação técnica não são aceite artístico. Reservas de arquivos ajudam a coordenar; não são bloqueios físicos nem garantia de ausência de conflitos.
+
+### Evidência de comunicação
+Distinguir plugin instalado, serviço pronto, participante iniciado, mensagem aceita, recebida/reconhecida e tarefa concluída. Branch existente não prova agente ativo. Só declarar comunicação testada após ida e volta verificadas. Não contornar diálogos de confiança. Um handoff em disco não prova leitura pelo destinatário. Checkpoints preservam estado; não fundem conversas.
+
+O protocolo operacional do episódio está em [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md); regras de edição em [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md) e versionamento em [VERSION_CONTROL.md](VERSION_CONTROL.md). Essas regras podem ser usadas com outro coordenador além do Parley. Atribuições, autorizações e medidas de cena não passam automaticamente à próxima continuação.
+
+## Economia de contexto
+Seguir [TOKEN_EFFICIENCY.md](TOKEN_EFFICIENCY.md): uma fonte por assunto, tarefas consolidadas, comunicação por mudança real, leituras por diferença e verificação proporcional. Não reduzir controles de gasto ou inspeção artística para economizar tokens.
+
+## Lições da primeira rodada Parley — 2026-10-10
+
+- **Preservar a entrega principal.** Nesta rodada, pesquisa e documentação avançaram, mas as novas imagens não foram geradas. O produtor deve manter explícita a próxima entrega criativa e o que realmente impede sua execução. Organização adicional não substitui essa entrega.
+- **Bloquear apenas o detalhe afetado.** Uma dúvida sobre piso ou dimensão não suspende automaticamente todos os personagens e enquadramentos. Separar fato documentado, lacuna e escolha de arte antes de usar cada referência; não transformar plausibilidade em comprovação.
+- **Fechar o ciclo de correção.** Pedido enviado não é correção concluída. Conferir retorno e versão, revisar apenas os achados afetados e registrar a disposição antes do uso dependente. Não reenviar pesquisa inteira nem duplicar uma correção já em andamento.
+- **Atualizar a retomada na entrega.** Ao verificar um handoff final, substituir o estado parcial correspondente em STATE e no checkpoint. Entregue, revisado, integrado e aprovado são estados diferentes; preservar essa distinção sem repetir o histórico em mensagens.
+- **Não prometer execução entre turnos.** Informar o que terminou, o que está efetivamente em execução e o que permanece aguardando. Tempo transcorrido ou encerramento da voz não prova trabalho em segundo plano; esta regra não habilita automações.
+- **Revisar a contribuição do produtor.** A avaliação inclui integração, resolução das divergências e criação das imagens atribuídas à conversa principal, não apenas produtividade das lanes. Revisão histórica não substitui playback integral com áudio ou aceite de semelhança por Andre.
+
+## Fechamento e sucessor obrigatório
+
+Regra solicitada por Andre em 2026-10-10: uma entrega verificada termina com próxima atribuição aceita, bloqueio específico com dono e condição de desbloqueio, ou etapa realmente encerrada sem sucessor. Até haver aceite do destinatário, o produtor mantém a responsabilidade pela tarefa pronta. Mensagem enviada, arquivo salvo e hook disparado não são início confirmado da tarefa seguinte.
+
+Antes de despachar, verificar versões/evidências, dependências, disponibilidade e escopo. Consolidar a atribuição, evitar duplicatas e reabrir apenas o que mudou. Gates de gasto, identidade, voz e aceite permanecem separados. Hooks podem notificar; nenhum despachante automático ou despertar da conversa desktop está comprovado por esta regra. Implementação/teste de automação é trabalho separado, sem ativação implícita.
+
+Mapa aplicado ao episódio atual: [organograma, tarefas e dependências](../projects/andre-time-travel/tasks/workflow-map-v1.md). Novos episódios reutilizam a regra, não responsáveis, estados ou autorizações.

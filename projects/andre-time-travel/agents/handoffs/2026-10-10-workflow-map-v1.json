@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "date": "2026-10-10",
+  "owner": "Codex desktop producer",
+  "scope": "Workflow organigram, known-task inventory and completion-to-next-owner rule requested directly by Andre",
+  "artifacts": [
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "2a855dcd32f0cfabccd83734ecbb6f62853583f9bec781a2ba932518fc536a0b"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256": "d2176a1355a28c4c22d7cd032f179877e6a571f3124b681958fec9ad8c83f1ad"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/workflow-map-v1.md",
+      "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081"
+    }
+  ],
+  "baseHashes": {
+    "docs/REPEATABLE_WORKFLOW.md": "33555fe698f00a91a2c08d87a56d194f77c1cd8c1b5c033935042499408ab3c7",
+    "docs/PARLEY_PROTOCOL.md": "967e8d6df052ca5a2a85abb49a0c00491907abbc15df7d25e4909d3d54771845",
+    "projects/andre-time-travel/memory/STATE.md": "9a55c922004e6acd01a7312abd383cc37c20146aa25ee0a3e7f1f6d2e5439205",
+    "projects/andre-time-travel/memory/session-log.json": "4b4e9f255a94411477cb1b7638e0d0d78e24f9b6b3f966292fe6bef7c9f84366"
+  },
+  "status": "documented_not_automated",
+  "nextTask": "Dispatch bounded independent image review",
+  "nextAccountableOwner": "Codex desktop producer until reviewer acceptance",
+  "limits": [
+    "No new lane message or assignment accepted in this task",
+    "No hooks or scheduler configured",
+    "No production status/approval changed",
+    "No paid submission",
+    "No commit/merge/push"
+  ],
+  "validation": {
+    "workspace": "passed",
+    "unitTestsPassed": 29,
+    "knownSharedSkillWarnings": 4,
+    "inventoryRowsAndLinks": "passed",
+    "handoffHashes": "passed",
+    "diffWhitespace": "passed",
+    "mermaid": "3 blocks, syntax structure inspected; not independently rendered"
+  }
+}

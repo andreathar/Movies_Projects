@@ -1,0 +1,16 @@
+{
+  "name": "agent-parley",
+  "displayName": "Agent Parley (local fork)",
+  "version": "0.18.0",
+  "description": "Antigravity workspace manifest for the local Agent Parley fork. Exposes the shared `coordinate` skill via a symlink to /mnt/data/Projects_SSD/agent-parley/plugins/agent-parley/skills; edits in the fork apply live. Adds no hooks, MCP servers or permissions; the agent-parley CLI is installed separately.",
+  "source": {
+    "path": "../agent-parley/plugins/agent-parley",
+    "repository": "https://github.com/andreathar/agent-parley",
+    "upstream": "https://github.com/suneel944/agent-parley",
+    "branchAtInstall": "work/linux-isolation",
+    "commitAtInstall": "5fd888f",
+    "coordinateSkillSha256AtInstall": "3693db0b21a838b019f1a9efef3cab6d7e88ff8144ea2c29b13417c4a394c2e3",
+    "installedAt": "2026-10-10"
+  },
+  "license": "MIT"
+}

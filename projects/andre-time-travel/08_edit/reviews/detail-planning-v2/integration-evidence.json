@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-10",
+  "v2Sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5",
+  "copiedUnchanged": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-caesar.md",
+      "sha256": "9d58581c2ef5bd17e7baacf276657a01706a2a3ed24448b156be521893080cc2",
+      "sourceCheckout": "claude lane; copied unchanged"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-genghis.md",
+      "sha256": "cd4c7076bd0d119c3713079016b44b363480d57efc8fafd101f09542f81a2064",
+      "sourceCheckout": "claude lane; copied unchanged"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-napoleon.md",
+      "sha256": "40812180514aadac0babd744e3a12fc4da481ea7b574ba936554d33140804914",
+      "sourceCheckout": "claude lane; copied unchanged"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-oppenheimer.md",
+      "sha256": "ff6c80723227478bbc8d001863d431aa950fa87224f0c1195ad7b253bf91f777",
+      "sourceCheckout": "claude lane; copied unchanged"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/source-historical-review.md",
+      "sha256": "2da7d044f8b7ec619d712475438d30a2cac8186ba79b8b150405ad385cc57ca3",
+      "sourceCheckout": "codex lane; preserved review of v1, not a v2 verdict"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/source-historical-review-evidence.json",
+      "sha256": "617ee775e01417e7394bfe2ddb9903ff5a73841decb2622667e685f11f3e860a",
+      "sourceCheckout": "codex lane; preserved review of v1, not a v2 verdict"
+    }
+  ],
+  "reviewScope": "diff against v1, six findings, handoff completeness, cue and coverage text; not a new full source audit",
+  "laneFilesModified": false
+}

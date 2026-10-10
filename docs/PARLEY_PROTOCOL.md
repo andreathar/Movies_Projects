@@ -15,7 +15,7 @@ Lanes are tools, not film roles. The film role (producer, director, historian, .
 |---|---|---|
 | `manifest.json`, `tasks/board.json`, `00_brief/approvals.json`, `credit-ledger.csv`, `asset-registry.csv`, `00_brief/decisions/` | producer (director for decision records) | propose through a handoff; never edit |
 | `01_script/`, `03_bibles/`, `05_storyboard/source/`, `08_edit/` new revisions | the role named in the task | new versioned files only |
-| `memory/STATE.md`, `memory/session-log.json` | whoever closes a task, after reading the file fresh | record base hash in the handoff |
+| `memory/STATE.md`, `memory/session-log.json` | desktop/base producer integrates after reading fresh | lanes return handoffs; record base hash |
 | Named resource `kling:submit` | producer only | one paid submission at a time |
 
 ## Close-out message (replaces re-reading the whole thread)
@@ -45,3 +45,9 @@ Pass: (1) back-view over-the-shoulder with eyes only as short reaction; (2) incl
 The Codex producer in the main desktop conversation creates the new scene-detail images. Claude prepares research/specifications and the Codex lane reviews/edits only as explicitly assigned. Neither lane generates substitutes, initiates an image batch, or delegates new work independently under this assignment.
 Work requiring the new pictures waits for an explicit producer delivery with paths, versions/hashes and review status. A checklist, prompt, placeholder or previous IN/OUT set is not delivery of the new detail images. Candidate delivery is not final approval. Research, existing bible handoff, and already-assigned Galileo editing with existing footage may continue independently; do not replace its media with assumed new assets.
 The producer chooses further delegation and sends scoped assignments. Lanes report blocked dependencies and continue only independent assigned work; do not claim dependent shots complete before the images exist.
+
+## Refinamento das entregas
+A divisão efetiva está em `projects/andre-time-travel/tasks/scene-detail-assets-v1.md`, seção Delegação efetiva: Claude pesquisa cultura material; Codex lane prepara cobertura e foley depois do Galileo, além da revisão; Codex desktop gera imagens. Esta divisão refina as atribuições anteriores e evita duplicação.
+
+## Mapa de tarefas e passagem ao sucessor — 2026-10-10
+Consultar [workflow do filme](../projects/andre-time-travel/tasks/workflow-map-v1.md), com responsabilidades, dependências e fila imediata. A regra de fechamento está em [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md#fechamento-e-sucessor-obrigatório). Esse mapa não envia mensagens, inicia lanes nem transforma pacotes planejados em atribuições aceitas. O produtor continua responsável pelo próximo trabalho pronto até confirmar o aceite. Usar mensagens/handoffs locais; não exigir forge issues neste repositório sem remote.

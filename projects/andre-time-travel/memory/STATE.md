@@ -2,9 +2,11 @@
 
 Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume surface. Keep it under ~80 lines: replace stale lines, do not append narrative. History lives in `history/`; full pre-restructure text: `history/STATE-2026-10-09-pre-restructure.md` (sha256 5e426020…27da). Not live data: re-verify against the canonical files below before acting.
 
+Latest verified producer delivery (2026-10-10): research v2 / H01–H06 reviewed; D20 art choices; 25 detail-study slots covered by 26 candidate images. Start from `../agents/handoffs/2026-10-10-producer-detail-studies-v1.json`; gallery: `../05_storyboard/keyframes/detail-studies-v1/index.html`. `RESUME-PRODUCER-2026-10-09.md` holds remaining context; do not repeat completed research.
+
 ## Read order
 1. `AGENTS.md` (rules) → `workspace.json` → this file.
-2. `../manifest.json`, `../tasks/board.json`, `../00_brief/approvals.json`, `../00_brief/decisions/D01–D16` (the only decision namespace).
+2. `../manifest.json`, `../tasks/board.json`, `../00_brief/approvals.json`, `../00_brief/decisions/` (D01–D16 and D20; D17–D19 remain proposed topics).
 3. `CONTINUE_HERE.md` (pt-BR conversation checkpoint, 13:36) and `../docs/checkpoint-2026-10-09-galileo-retomada.md` (director checkpoint, 13:10) for detail.
 4. `.venv/bin/python scripts/manage.py status` for real pending state.
 
@@ -12,7 +14,7 @@ Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume s
 Andre Athar leads five conversations (Caesar, Genghis Khan, Galileo, Napoleon, Oppenheimer), ~240 s, photorealistic, one recurring oak table. Other figures' full faces: zero frames (eyes-only reactions and below-neck allowed; check reflections). English edition first; historical-language edition reuses safe footage.
 
 ## Current creative direction (Andre, 2026-10-09 12:35 — supersedes older plans)
-Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks (over-the-shoulder, historical head outside frame). Eyes only as a short reaction (1.5–2 s, max 2 per chapter) AFTER a back-view beat. Legacy/repercussion intercuts in intimate tone. Chapters ≈42 s. Invariants: identity = 2024 photos + Element 323525046658711 (D01/D11); grey pinstripe jacket / white striped shirt (D02); table J26-2 with ring + chip (D04); Andre left, looking camera-right (D09); script v2 canonical (D07); Kling voice = guide only, dub later (D14).
+Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks (over-the-shoulder, historical head outside frame). Eyes-only reactions remain scene-specific; the 2 s choice belongs to the Galileo v2 candidate, not a universal timing rule. Legacy/repercussion intercuts in intimate tone. Chapters ≈42 s. Invariants: identity = 2024 photos + Element 323525046658711 (D01/D11); grey pinstripe jacket / white striped shirt (D02); table J26-2 with ring + chip (D04); Andre left, looking camera-right (D09); script v2 canonical (D07); Kling voice = guide only, dub later (D14).
 
 ## Production status
 - Tasks (21): 7 completed (T01–T05, T08, T09); 3 in progress (T10 forecast, T12 keyframes, T13 Galileo); 11 blocked (T06, T07, T11, T14–T21).
@@ -29,13 +31,13 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 ## Open Andre-only gates and decisions (do not self-approve)
 1. D16 = approval to spend up to 23 Kling credits on Phase A of the Galileo test: 3 reference images for one over-the-shoulder shot (Andre seated, Galileo's blurred back in front, head out of frame). Recorded as "relayed via Grok Architect Bot". Needs Andre's direct confirmation. Do not spend on it as it stands.
 2. D16-r2: `request.json` passes 5 images to `gemini-3-pro-image`, which declares `image_1`/`image_2` only. Fix = new request-r2 (recommended: 2 inputs, cost ≤23), then Andre re-confirms.
-3. Proposed, NOT yet recorded: D17 = fixed table layout (table ~120x75 cm, Andre and Galileo on opposite long sides, camera behind-right of Galileo, 50 mm, seated eye height; canonize only after the first test shot is accepted); D18 = allow Galileo's blurred nape (no ear, cheek, beard, profile or reflection) in later phases B/C; D19 = record the eye-reaction rule (1.5-2 s, max 2 per chapter, only after a back-view beat). Also pending: Genghis armour choice, owner of manifest/board/approvals/ledger (director proposes the producer session).
+3. Proposed, NOT yet recorded: D17 = fixed table layout (table ~120x75 cm, Andre and Galileo on opposite long sides, camera behind-right of Galileo, 50 mm, seated eye height; canonize only after the first test shot is accepted); D18 = allow Galileo's blurred nape (no ear, cheek, beard, profile or reflection) in later phases B/C; D19 = record the eye-reaction rule (1.5-2 s, max 2 per chapter, only after a back-view beat). Producer ownership is defined by AGENTS.md / PARLEY_PROTOCOL. D20 selects no armour for the new Genghis studies only.
 4. Likeness review of IN/OUT frames and posters; voice by ear; final picture/movie; qualified language review (Edition H).
 5. Andre delegated dark-wardrobe archiving: 18 images logically retired with original paths preserved; 10 bibles reconciled to D02. See `../agents/handoffs/2026-10-09-dark-wardrobe-archive.json`. No deletion, commit/push or paid batch authorized. Claude receipt/review remains unverified.
 
 ## Hard cautions
 - No automatic retries; one `kling_batch.py --submit-only`, then individual `--resume`. Never resubmit an existing job.
-- Other agents share this checkout. 14 uncommitted entries exist (handoffs, IN/OUT frames, checkpoints). Do not clean, restore or reset; record base hashes before editing shared files.
+- Other agents share this checkout. Uncommitted entries include handoffs, media and checkpoints; inspect actual Git status rather than reuse an old count. Do not clean, restore or reset; record base hashes before editing shared files.
 - Andre says he closed Hermes Desktop; unverified. Producer authority for paid submission stays with the parent/producer only.
 - Four shared-skill hash warnings from `validate` are known; do not revert them.
 
@@ -46,14 +48,17 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - `session-log.json` mixes timezones and lacks entries for several deliveries (see handoffs).
 
 ## Shared direction
+Primary instructions now require workflow-map reading and explicit successor ownership; root CLAUDE.md references AGENTS.md. Separate worktrees/open sessions are not automatically synchronized by this edit.
 New detail images are created by Codex in the main desktop conversation. Lanes prepare/review only assigned work; image-dependent work waits for explicit delivery with paths and versions. See `../../../docs/PARLEY_PROTOCOL.md`.
 All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
-- Codex storyboard: shared checklist `../tasks/scene-detail-assets-v1.md` — five characters, feet/floor, back/hair, left/right shoulder alternatives and fingers/table. Planning only; no generation yet.
-- Andre: answer items 1–2 above (confirm D16 / r2), then D18.
-- Producer: build request-r2 with hash, refresh live balance, record D16 confirmation; own board/manifest/ledger updates.
-- Editor: Galileo timeline v2 (0 cr) per checkpoint §5; qc: normal-speed playback of preview.
+- Requested cleanup audit plan: `../tasks/project-cleanup-plan-v1.md`. Preliminary inventory only; execution/retirement/global uninstall/hook activation not performed. Reuse existing Claude consolidation before new auditing.
+- Workflow map: `../tasks/workflow-map-v1.md` covers all 21 board tasks, 68 work packages and the five chapter checklists. Next ready work is independent image continuity review; producer owns dispatch until a reviewer accepts. Map created, no new lane dispatch or automatic hook configured.
+- Detail studies: generation and static producer review complete; see gallery and `review.md`. Andre likeness review and video continuity remain pending. Left shoulders are principal D09 candidates; right shoulders are axis alternatives, not current cut selections.
+- Old D16/r2 test: reassess need before seeking a new paid scope; it does not block local preparation or the delivered built-in image batch.
+- Producer: select the smallest useful image subset for the next shot; reconcile table/wardrobe/axis with the edit before any separately scoped paid video request.
+- Editor: Galileo timeline v2 reported delivered; do not rebuild it by default. Full-file normal-speed playback with audio and timeline/bible reconciliation still required before acceptance.
 - Dialogue-sound/continuity: integrate scene-bible v3 and matrix v2 as one revision each with hashes.
-- Parley: service is up; lanes claude/codex are defined but not launched. Proposal and smoke test: `../../../docs/PARLEY_PROTOCOL.md` (nothing configured; Andre launches lanes and decides the merge gate).
+- Research: Claude v2 is adopted at `../03_bibles/detail-planning/historical-details-v2.md`; producer review and sound/coverage revision at `../08_edit/reviews/detail-planning-v2/`. H01–H06 closed for corrections; G-F2/N-PE/N-F2 resolved as conditional specifications, no audio produced. Arcetri floor and Longwood dimensions remain unproven. New imagery is delivered as candidates, not film acceptance.
 - Memory work: Phases 1–4 of the memory/handoff plan (handoff v2, role briefs, `manage.py resume/lint`, backfill) await design review: `../../../docs/superpowers/specs/2026-10-09-memory-handoff-design.md`.

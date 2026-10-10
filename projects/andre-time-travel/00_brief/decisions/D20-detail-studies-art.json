@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "detail_studies_art_direction",
+  "artifact": {
+    "path": "projects/andre-time-travel/03_bibles/detail-planning/art-choices-v1.md",
+    "sha256": "b03c6bcce2e9213c6b50e3baa87607a243a31198568f4819eec3c624c12875e6",
+    "version": "v1"
+  },
+  "decision": "Producer selections for candidate detail studies under direct user delegation; not historical verification or final artistic acceptance.",
+  "reviewer": "Codex producer, under Andre direct delegation 2026-10-10",
+  "reviewedAt": "2026-10-10",
+  "evidence": [
+    "User: review Claude v2, resolve six corrections and sound cues, make art choices possible, continue images.",
+    "08_edit/reviews/detail-planning-v2/producer-review.md"
+  ],
+  "scope": "New built-in ChatGPT detail studies only",
+  "limitations": [
+    "No Kling/ElevenLabs spending authorized here",
+    "No final likeness, picture, voice or language approval",
+    "Existing takes and references preserved",
+    "D17-D19 proposed topics not silently approved"
+  ],
+  "supersedes": null
+}

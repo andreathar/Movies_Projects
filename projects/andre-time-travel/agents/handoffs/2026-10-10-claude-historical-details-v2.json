@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "continuity/research correction (Claude Code session in the base checkout, NOT a launcher-managed Parley lane; contributor, no approval authority)",
+  "assignment": "Andre direct authorization in conversation, 2026-10-10 ('autorizado'), to apply only the six scoped corrections H01-H06 from the independent review of historical-details-v1. Records of the authorization: this handoff only; no decision record was written.",
+  "state": "ready_for_review",
+  "supersedes": "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-historical-details-v1.json (for historical-details only; v1 file and handoff are unchanged and live in the Parley claude lane worktree, not integrated)",
+  "reviewInput": {
+    "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review.md",
+    "location": "Parley codex lane worktree, not integrated into the base checkout; read there",
+    "parleyReport": "2c4fc95cdbee414e",
+    "verdict": "fail (scoped): H01-H06 before use as a factual specification"
+  },
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v1.md",
+      "role": "read only; copied unchanged to create v2",
+      "sha256": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+      "hashNote": "Matches the v1 hash in the v1 handoff and in the review header; computed in the Parley claude lane worktree (commit 9686949) immediately before copying."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review.md",
+      "role": "read only; source of H01-H06",
+      "sha256": "not computed",
+      "hashNote": "Read in the codex lane worktree; hash not recorded by this session."
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+      "role": "image viewed directly for H05",
+      "sha256": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+      "hashNote": "Matches the hash cited by the review; computed in the base checkout."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+      "role": "v1 input, not read by this session",
+      "sha256AtV2Time": "7605a5078f83d51d6ede27f39f03928f19326d1c51df2633b1d34029907e2904",
+      "hashNote": "Computed 2026-10-10 in the base checkout (HEAD 6d50b89). The hash at the start of the v1 lane's reading was NOT recorded in the v1 handoff, so this does not prove which base the v1 lane read."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "role": "v1 input, not read by this session",
+      "sha256AtV2Time": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+      "hashNote": "Same gap: start-of-work hash for v1 unrecorded."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "role": "v1 input, not read by this session; has UNCOMMITTED changes in the base checkout",
+      "sha256AtV2Time": "dffdef79d7611f4747306dbc53d950319e5064aaeb61e4644325a95b671c7853",
+      "hashNote": "Same gap; the file is modified in the working tree, so the version the v1 lane read may differ."
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "role": "v1 input, not read by this session",
+      "sha256AtV2Time": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "hashNote": "Same gap."
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "created": true,
+      "sha256After": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5",
+      "reason": "New revision of v1 with H01-H05 applied; edits marked [v2/Hxx]."
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-claude-historical-details-v2.json",
+      "created": true,
+      "reason": "This handoff (H06)."
+    }
+  ],
+  "corrections": [
+    {"id": "H01", "section": "1.3, 1.10", "change": "Arcetri floor in 1634 recorded as NOT documented; terracotta/planks are art choices; removed the claim that terracotta is the reported original floor and the implication that it should force a plate change or fix G-F2's acoustic."},
+    {"id": "H02", "section": "4.3", "change": "Removed 'use O'Meara 14x12 / Montholon 12x15 for the study' and the 'transcription error' guess. Las Cases' 45x42 ft is for two chambers A/B; 14x12 is O'Meara's bedroom. Study dimensions recorded as UNKNOWN."},
+    {"id": "H03", "section": "1.5", "change": "Split the portrait row into three images: Uffizi 1635 original, RMG BHC2700 c.1640, RMG BHC2701 = Cecconi 1879 copy of a 1636 original. Iconographic reference only, not observation of 1634 dress."},
+    {"id": "H04", "section": "4.2", "change": "'nunca bota' replaced: the shoes-indoors statement is dated to Las Cases, April 1816; October-November footwear stays N; no variant approved."},
+    {"id": "H05", "section": "4.8, 4.9", "change": "'novo, nao gasto' replaced by the visible wear (frayed/torn cuff and edges, wear marks, lint) seen on the original-resolution image; separated from the documentary conflicts on buttons and piping; front view does not settle inside-out."},
+    {"id": "H06", "section": "this handoff", "change": "baseFiles now carry hashes with their limits stated; pendingDecisions below cover all five encounters."}
+  ],
+  "verification": [
+    "Review historical-review.md read in full (codex lane worktree).",
+    "v1 hash confirmed equal to 037acbf2...6341 before copying; v1 file untouched.",
+    "R2-wardrobe-napoleon-uniform.jpg viewed at original resolution; wear on cuffs/edges and fuzz seen; hash matches the review.",
+    "Each [v2/Hxx] edit was read back by the editing tool as applied; no full diff review of v2 against v1 was run, and no whole-document re-read.",
+    "NOT done: the sources cited by the review (Museo Galileo, RMG, Gutenberg Las Cases vol. II) were not reopened by this session; the corrections follow the review's findings and only lower certainty.",
+    "NOT done: manage.py validate and unit tests (no management file changed)."
+  ],
+  "pendingDecisions": [
+    "Galileo: floor (terracotta vs planks, both art choices), chair back height, ring yes/no, gown near-black vs charcoal, footwear (only after a dated source), cadeira de espaldar alto da plate vs encosto baixo",
+    "Caesar: residence (Palatino vs Via Sacra) as declared fiction or correction; short sleeves and fibula/brooch reference (correct the local reference or mark as licence); footwear variant; floor 'generic fine' labelled C; laurel wreath knot/ribbon and use at home; ring hand/finger (N)",
+    "Genghis: clothing in 1227 (armour vs light deel vs dark outer coat) as a declared art choice; footwear and floor (no source); table and folding seat as a declared narrative exception; Taipei portrait (hat, colour, number of loops) pending catalogue check; armour, rings, belt pouches in R2-wardrobe-genghis-mongol.jpg have no source",
+    "Napoleon: green coat in 1816 (option a: worn, turned, white/covered buttons; option b: house dress with piqué waistcoat, trousers with feet, red slippers); room/environment before deciding carpet over deal floor, N-PE/N-F2 and shoulder distances; study dimensions unknown (H02); footwear variant for Oct-Nov (N); desk objects (inkwell, quills, Code Civil volume) have no source; R1-J30 plate shows bare planks against three witnesses citing a carpet",
+    "Oppenheimer: private room is fiction (the documented setting is the canteen at night); hat (brown porkpie vs light hat of September); footwear, shirt, jacket, cuffs on 15 July 1945 (no source); tweed jacket, wristwatch and tie in R1-J25 have no source for that night; floor and lighting of Base Camp unsourced",
+    "Producer/Andre: whether to integrate v2 and in which location (the Parley lane worktrees are not integrated); research-notes referenced by v2 exist only in the claude lane worktree",
+    "Open from the review, not addressed here: independent re-verification of the corrected statements against their sources"
+  ],
+  "blockers": [],
+  "nextActions": [
+    {
+      "role": "producer (Codex desktop conversation)",
+      "action": "Review v2 against v1 and the review; decide integration and the pending choices above. Images stay the producer's work and must not use H01/H02/H04 values as facts."
+    },
+    {
+      "role": "editor/QC lane",
+      "action": "Optional: confirm that H01-H06 are closed in v2 and that foley cues G-F2/N-PE/N-F2 do not rest on the withdrawn claims (coverage-plan.md and foley-cues.md were not read or changed by this session)."
+    }
+  ],
+  "andreOnlyGates": [
+    "creative acceptance of any detail choice",
+    "likeness review of any new images",
+    "spending and generation (producer only)"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "not_reviewed",
+  "createdAt": "2026-10-10",
+  "note": "No manifest, board, approvals, ledger, STATE, session-log, script, media, Parley mail, report or reservation was touched. No commit, merge or push. v1 and the lane worktrees were not modified. Parley has no registered session for this work: both lanes are dead and this session is not launcher-managed, so no file reservation or report was made. v2 sits in the base checkout as an untracked new file."
+}

@@ -1,6 +1,6 @@
 # Lista de trabalho — detalhes dos cinco encontros
 
-Solicitada diretamente por Andre em 2026-10-09. Responsável pela preparação: Codex desta conversa, papel storyboard, com integração pelo produtor. Estado: planejamento; nenhuma imagem desta lista gerada ou aprovada. Complementa T12 (keyframes), sem criar IDs de produção ou alterar tarefas de montagem do Galileu em andamento. Caminhos abaixo relativos à raiz do filme.
+Solicitada diretamente por Andre em 2026-10-09. Responsável pela preparação: Codex desta conversa, papel storyboard, com integração pelo produtor. Estado em 2026-10-10: 25 estudos cobertos por 26 imagens candidatas no catálogo `05_storyboard/keyframes/detail-studies-v1/manifest.json`; revisão estática do produtor concluída, aceite artístico e teste em vídeo pendentes. Complementa T12 (keyframes), sem criar IDs de produção ou alterar tarefas de montagem do Galileu em andamento. Caminhos abaixo relativos à raiz do filme.
 
 ## Ordem de trabalho
 1. Conferir local/data de cada encontro nas bíblias e pesquisar calçado, piso, cabelo, mangas e detalhes das mãos. Registrar fontes e incertezas; não inferir o calçado apenas pelo personagem ser conhecido.
@@ -21,72 +21,72 @@ Solicitada diretamente por Andre em 2026-10-09. Responsável pela preparação: 
 
 ### César
 
-- [ ] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
-- [ ] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
-- [ ] Preparar estudo de pés/calçado e chão.
-- [ ] Preparar estudo de costas e cabelo sem rosto visível.
-- [ ] Preparar alternativa sobre o ombro esquerdo.
-- [ ] Preparar alternativa sobre o ombro direito com eixo documentado.
-- [ ] Preparar estudo de dedos/mãos sobre a mesa.
+- [x] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
+- [x] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
+- [x] Preparar estudo de pés/calçado e chão.
+- [x] Preparar estudo de costas e cabelo sem rosto visível.
+- [x] Preparar alternativa sobre o ombro esquerdo.
+- [x] Preparar alternativa sobre o ombro direito com eixo documentado.
+- [x] Preparar estudo de dedos/mãos sobre a mesa.
 - [ ] Relacionar gesto e reação à fala difícil; marcar pendência quando o texto ainda não estiver definido.
-- [ ] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
-- [ ] Revisar imagens e registrar seleção, ajustes e pendências.
+- [x] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
+- [x] Revisar imagens e registrar seleção, ajustes e pendências.
 
 ### Gengis Khan
 
-- [ ] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
-- [ ] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
-- [ ] Preparar estudo de pés/calçado e chão.
-- [ ] Preparar estudo de costas e cabelo sem rosto visível.
-- [ ] Preparar alternativa sobre o ombro esquerdo.
-- [ ] Preparar alternativa sobre o ombro direito com eixo documentado.
-- [ ] Preparar estudo de dedos/mãos sobre a mesa.
+- [x] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
+- [x] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
+- [x] Preparar estudo de pés/calçado e chão.
+- [x] Preparar estudo de costas e cabelo sem rosto visível.
+- [x] Preparar alternativa sobre o ombro esquerdo.
+- [x] Preparar alternativa sobre o ombro direito com eixo documentado.
+- [x] Preparar estudo de dedos/mãos sobre a mesa.
 - [ ] Relacionar gesto e reação à fala difícil; marcar pendência quando o texto ainda não estiver definido.
-- [ ] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
-- [ ] Revisar imagens e registrar seleção, ajustes e pendências.
+- [x] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
+- [x] Revisar imagens e registrar seleção, ajustes e pendências.
 
 ### Galileu
 
-- [ ] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
-- [ ] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
-- [ ] Preparar estudo de pés/calçado e chão.
-- [ ] Preparar estudo de costas e cabelo sem rosto visível.
-- [ ] Preparar alternativa sobre o ombro esquerdo.
-- [ ] Preparar alternativa sobre o ombro direito com eixo documentado.
-- [ ] Preparar estudo de dedos/mãos sobre a mesa.
+- [x] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
+- [x] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
+- [x] Preparar estudo de pés/calçado e chão.
+- [x] Preparar estudo de costas e cabelo sem rosto visível.
+- [x] Preparar alternativa sobre o ombro esquerdo.
+- [x] Preparar alternativa sobre o ombro direito com eixo documentado.
+- [x] Preparar estudo de dedos/mãos sobre a mesa.
 - [ ] Relacionar gesto e reação à fala difícil; marcar pendência quando o texto ainda não estiver definido.
-- [ ] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
-- [ ] Revisar imagens e registrar seleção, ajustes e pendências.
+- [x] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
+- [x] Revisar imagens e registrar seleção, ajustes e pendências.
 
 ### Napoleão
 
-- [ ] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
-- [ ] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
-- [ ] Preparar estudo de pés/calçado e chão.
-- [ ] Preparar estudo de costas e cabelo sem rosto visível.
-- [ ] Preparar alternativa sobre o ombro esquerdo.
-- [ ] Preparar alternativa sobre o ombro direito com eixo documentado.
-- [ ] Preparar estudo de dedos/mãos sobre a mesa.
+- [x] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
+- [x] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
+- [x] Preparar estudo de pés/calçado e chão.
+- [x] Preparar estudo de costas e cabelo sem rosto visível.
+- [x] Preparar alternativa sobre o ombro esquerdo.
+- [x] Preparar alternativa sobre o ombro direito com eixo documentado.
+- [x] Preparar estudo de dedos/mãos sobre a mesa.
 - [ ] Relacionar gesto e reação à fala difícil; marcar pendência quando o texto ainda não estiver definido.
-- [ ] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
-- [ ] Revisar imagens e registrar seleção, ajustes e pendências.
+- [x] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
+- [x] Revisar imagens e registrar seleção, ajustes e pendências.
 
 ### Oppenheimer
 
-- [ ] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
-- [ ] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
-- [ ] Preparar estudo de pés/calçado e chão.
-- [ ] Preparar estudo de costas e cabelo sem rosto visível.
-- [ ] Preparar alternativa sobre o ombro esquerdo.
-- [ ] Preparar alternativa sobre o ombro direito com eixo documentado.
-- [ ] Preparar estudo de dedos/mãos sobre a mesa.
+- [x] Conferir local/data e reunir evidências de calçado, piso, cabelo e mangas.
+- [x] Inventariar referências existentes e lacunas, separando aprovadas e propostas.
+- [x] Preparar estudo de pés/calçado e chão.
+- [x] Preparar estudo de costas e cabelo sem rosto visível.
+- [x] Preparar alternativa sobre o ombro esquerdo.
+- [x] Preparar alternativa sobre o ombro direito com eixo documentado.
+- [x] Preparar estudo de dedos/mãos sobre a mesa.
 - [ ] Relacionar gesto e reação à fala difícil; marcar pendência quando o texto ainda não estiver definido.
-- [ ] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
-- [ ] Revisar imagens e registrar seleção, ajustes e pendências.
+- [x] Anotar luz motivada e sons de contato; detalhamento de iluminação depois.
+- [x] Revisar imagens e registrar seleção, ajustes e pendências.
 
 ## Entregas e localização
 - Pesquisa e ficha de continuidade: nova revisão em `03_bibles/scene-bibles/`, com ligação às fontes.
-- Imagens: nova revisão dentro de `05_storyboard/keyframes/<personagem>/`; não sobrescrever os dez IN/OUT existentes.
+- Imagens entregues: `05_storyboard/keyframes/detail-studies-v1/`, com nomes por personagem; os dez IN/OUT existentes foram preservados.
 - Catálogo compartilhado: manifesto do lote com papel de cada imagem, origem, hash, estado de revisão e rota pretendida (referência ou primeiro/último quadro).
 - Parecer e passagem de trabalho: `agents/handoffs/`, identificando arquivos e verificações.
 
@@ -95,3 +95,13 @@ Historiador: evidências de cultura material. Iluminação: fonte e continuidade
 
 ## Critério de conclusão
 Cinco conjuntos revisados, com alternativas claramente identificadas e seleção por tomada; nenhuma ficha com época presumida apresentada como fato. Mídia candidata não equivale a aceite de Andre. A contagem inicial é 25 estudos (5 por personagem), não 25 gerações obrigatórias: reutilizar o que servir e reduzir redundâncias. Compatibilidade com Kling é conferida por rota/modelo antes de qualquer envio; referências múltiplas não são automaticamente quadros IN/OUT.
+
+## Delegação efetiva — 2026-10-09
+Mensagens aceitas pelo Parley; leitura desta divisão ainda não confirmada.
+- Claude: pesquisa de cultura material dos cinco encontros, Galileu primeiro; entrega `03_bibles/detail-planning/historical-details-v1.md` em sua própria lane. Calçados/piso/cabelo/gola/mangas/mãos, fontes e incertezas; fontes de luz plausíveis, sem design final. Refina a tarefa anterior, sem duplicá-la.
+- Codex lane: após entregar Galileo v2, preparar `08_edit/reviews/detail-planning-v1/coverage-plan.md` e `foley-cues.md`: enquadramento/eixo/segurança facial e sons relativos a gestos. Não gerar áudio nem inventar timestamps. Revisar posteriormente as fichas do Claude.
+- Codex desktop/base: integrar as entregas, definir pacotes de referência e criar as novas imagens. Dependentes aguardam entrega com caminhos/versões; continuam independentes já atribuídos.
+Nenhuma geração paga, commit ou merge autorizado nesta divisão. Disposição em 2026-10-10: pesquisa v2 e notas de pesquisa disponíveis na base; correções H01–H06 e cobertura/foley revisados em `08_edit/reviews/detail-planning-v2/`. Galileo v2 e consolidação documental são entregas separadas e não foram aceitas por este lote.
+
+## Entrega do produtor — 2026-10-10
+D20 registra as escolhas delegadas; o piso de Arcetri e as dimensões do estudo de Longwood continuam incertos. Catálogo/galeria e parecer em `05_storyboard/keyframes/detail-studies-v1/`. Cinco conjuntos gerados e inspecionados como candidatos; seis variantes substituídas preservadas. Ombro esquerdo é candidato principal D09, ombro direito é alternativa de eixo fora da seleção do corte atual. Gatilhos e gestos estão propostos no plano de cobertura, mas sua confirmação no áudio/montagem continua pendente; por isso essa linha do checklist não foi marcada concluída. Não refazer pesquisa nem regenerar todo o lote na retomada.
