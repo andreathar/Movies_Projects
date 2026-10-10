@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "2.0",
+  "episode": null,
+  "agentRole": null,
+  "contributorKind": "registry-role",
+  "assignment": null,
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [],
+  "baseFiles": [
+    {
+      "path": null,
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": null,
+      "sha256After": null,
+      "reason": null
+    }
+  ],
+  "claims": [
+    {
+      "statement": null,
+      "evidence": null,
+      "sha256": null
+    }
+  ],
+  "verification": [],
+  "nextActions": [
+    {
+      "role": null,
+      "action": null,
+      "readiness": null
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": null,
+      "owner": null,
+      "unblockCondition": null
+    }
+  ],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": null,
+      "detected_by": null,
+      "solution": null,
+      "rule_added": null
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

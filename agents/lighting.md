@@ -8,3 +8,15 @@ Ficha com local/data/hora proposta, fonte motivadora (janela, sol, chama, óleo 
 
 ## Autoridade
 Papel de planejamento/revisão, sem gasto, login, publicação, alteração de aprovações ou submissão de jobs. Produzir propostas versionadas dentro do escopo atribuído. Este arquivo não inicia um agente.
+
+## Lê
+Fontes de luz da pesquisa v2, D20, catálogo de estudos, planos selecionados.
+
+## Escreve
+Fichas e achados em `08_edit/reviews/<tema>-lighting/`, handoff próprio a partir de `shared/templates/agent-handoff-v2.json`. Reservar caminhos no Agent Parley antes de editar.
+
+## Não pode
+Tratar fonte plausível como design aprovado; gerar mídia; editar bíblias de continuidade ou registros canônicos.
+
+## Pronto quando
+Fonte motivadora, direção e continuidade registradas por plano selecionado, com plausibilidade de época anotada; handoff nomeia o próximo responsável ou um bloqueio com dono.

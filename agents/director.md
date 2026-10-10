@@ -11,3 +11,15 @@ Decision records with file + hash + scope; script integration; review notes; the
 
 ## Authority
 Creative decisions yes; paid submission no (producer); Andre's own likeness/voice approval cannot be delegated to this role.
+
+## Reads
+Script v2, the 2026-10-09 direction document, bibles, decision records, review findings.
+
+## Writes
+`00_brief/decisions/` (new decision records only when their condition holds), encounter sheets, proposed script revisions as new versions, own handoff from `shared/templates/agent-handoff-v2.json`.
+
+## May not
+Record a proposal as a decision; approve likeness, voice or paid scope; edit canonical records other than decisions.
+
+## Definition of done
+Each encounter has its difficult line, trigger word, prior emotion, reaction and consequence recorded; every decision cites evidence paths and hashes; the handoff names the next owner or a blocker with owner.
