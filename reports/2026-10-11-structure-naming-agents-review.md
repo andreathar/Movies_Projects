@@ -39,7 +39,7 @@ Not run: unit tests, `workflow.py verify`, atlas rebuild, `scripts/parley_setup.
 
 ## Current shape
 
-`workspace.json` names one film, `projects/andre-time-travel`, and lists 70 `requiredDirectories`. Every required directory exists. The numbered pipeline `00_brief` through `09_delivery` is present. Many of those directories contain only `.gitkeep`.
+`workspace.json` names one film, `projects/andre-time-travel`, and lists 69 `requiredDirectories`. Every required directory exists. The numbered pipeline `00_brief` through `09_delivery` is present. Many of those directories contain only `.gitkeep`.
 
 Live creative state sits beside that scaffold and is not what the required-directory list describes: `00_brief/decisions/`, `05_storyboard/source/atlas.json`, three atlas revisions, `08_edit/reviews/`, `03_bibles/detail-planning/`, and `02_references/keyframes/andre/`.
 
