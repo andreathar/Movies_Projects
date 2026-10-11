@@ -188,5 +188,10 @@
   "paidJobsSubmitted": 0,
   "reviewStatus": "pending_user_review",
   "builtInImageGenerations": 5,
-  "billingKnown": false
+  "billingKnown": false,
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:43+00:00"
+  }
 }

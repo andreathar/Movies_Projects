@@ -137,5 +137,10 @@
     "sha256": "42f0024b5e7a5a171772ede5f8ba586738aca2672e9207a7ad2877b0e73e969f",
     "unitTestsPassed": 29,
     "knownSharedSkillWarnings": 4
+  },
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:45+00:00"
   }
 }

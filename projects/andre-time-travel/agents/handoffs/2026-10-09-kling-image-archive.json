@@ -47,5 +47,10 @@
   "reviewStatus": "archive_verified_with_one_remote_query_gap",
   "archive": "projects/andre-time-travel/07_generations/downloads/2026-10-09-v1",
   "downloadedImages": 1,
-  "allKnownImageResultsLocal": true
+  "allKnownImageResultsLocal": true,
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:44+00:00"
+  }
 }

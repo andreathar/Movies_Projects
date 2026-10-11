@@ -50,5 +50,10 @@
     "handoffHashes": "passed",
     "diffWhitespace": "passed",
     "mermaid": "3 blocks, syntax structure inspected; not independently rendered"
+  },
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:45+00:00"
   }
 }
