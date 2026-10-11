@@ -61,8 +61,8 @@
     },
     {
       "path": "reports/2026-10-11-structure-naming-agents-review.md",
-      "sha256After": "8707b7033e19df951461432176d0988b687486293f67b88872fef17f5704bbfc",
-      "reason": "Later commits on this branch changed the role-count sentence, the shared-skill note, and a verification sentence; merge 2f96351 kept that text"
+      "sha256After": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780",
+      "reason": "Later branch commits plus 21a565b and 2fca1a5 changed the role count, shared-skill note, verification sentence, paidSubmissionRequiresApprovedShot, and the requiredDirectories count"
     },
     {
       "path": "skills/registry.json",
@@ -87,9 +87,9 @@
       "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
     },
     {
-      "statement": "reports/2026-10-11-structure-naming-agents-review.md no longer matches the implementation handoff sha256After. Later commits on this branch changed the role-count sentence, the shared-skill note, and a verification sentence. Merge 2f96351 kept that text.",
+      "statement": "reports/2026-10-11-structure-naming-agents-review.md no longer matches the implementation handoff sha256After. Later branch commits plus 21a565b and 2fca1a5 changed the role count, the shared-skill note, a verification sentence, paidSubmissionRequiresApprovedShot, and the requiredDirectories count.",
       "evidence": "reports/2026-10-11-structure-naming-agents-review.md",
-      "sha256": "8707b7033e19df951461432176d0988b687486293f67b88872fef17f5704bbfc"
+      "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
     },
     {
       "statement": "skills/registry.json does not list coordinate. The entry on origin/main (050bded) was not kept because the coordinate skill target is absent, so the registry does not require skills/coordinate/SKILL.md.",
@@ -99,7 +99,7 @@
   ],
   "verification": [
     ".venv/bin/python scripts/manage.py handoff check projects/andre-time-travel/agents/handoffs/2026-10-11-structure-naming-merge-v1.json: status ok, version 2.0, errors empty",
-    ".venv/bin/python scripts/manage.py lint: status ok, hard empty. Advisories: duplicated approval flags (R06); 1 handoff not ingested (this file); 2 handoffs superseded (2026-10-11-claude-repo-cleanup-v1.json, 2026-10-11-structure-naming-agents-implementation.json); session-log.json offsets +0000 and -0300. While this file was untracked, lint also named it under projects/andre-time-travel.",
+    ".venv/bin/python scripts/manage.py lint: status ok, hard empty. Advisories: duplicated approval flags (R06); 1 handoff not ingested (this file); 2 handoffs superseded (2026-10-11-claude-repo-cleanup-v1.json, 2026-10-11-structure-naming-agents-implementation.json); session-log.json offsets +0000 and -0300. Lint also named this file while it was untracked and again while the review-report hash was corrected after 21a565b and 2fca1a5.",
     ".venv/bin/python scripts/manage.py validate: status ok, errors empty, five warnings that shared skills changed since linking: kling-cli, film-character-continuity, film-dialogue-localization, film-editing-qc, grounded-citations. sourceSha256 was not rewritten."
   ],
   "nextActions": [
