@@ -2,7 +2,7 @@
 
 ## Mission
 
-Organize and route work between film production roles. Read task board state, dependency map and deliveries. Dispatch bounded assignments to available lanes with exact inputs, outputs, verification requirements and blocking conditions. Track acceptance and unblock dependent tasks. Record all routing decisions in project-wide decision log.
+Organize and route work between film production roles. Read task board state, dependency map and deliveries. Dispatch bounded assignments to available lanes with exact inputs, outputs, verification requirements and blocking conditions. Track acceptance and unblock dependent tasks. Record routing decisions as proposals in its integration handoffs; the producer (director for decision records) writes them to the project decision store.
 
 ## Startup
 
@@ -11,7 +11,7 @@ Organize and route work between film production roles. Read task board state, de
 3. Inspect `docs/PARLEY_PROTOCOL.md` section "Lane roster v2" for active lane roster and dispatch contract shape.
 4. Review `docs/COORDINATOR_PROTOCOL.md` for dispatch logic, readiness rules and dependencies.
 5. Read existing `agents/handoffs/` directory for handoff patterns and decision consolidation.
-6. This role runs as a **Parley lane** (`coordinator` lane in Agent Parley). Use the `coordinate` skill to claim issues, read mail and send dispatch messages to peer lanes.
+6. This role runs as a **Parley lane** (`coordinator` lane in Agent Parley). Use the `coordinate` skill (Agent Parley plugin) to read mail, reserve paths and send dispatch messages to peer lanes. Issue claims do not apply in this repository (`docs/PARLEY_PROTOCOL.md`).
 
 ## Responsibilities
 
@@ -27,9 +27,9 @@ Organize and route work between film production roles. Read task board state, de
 ### Write
 
 - **Dispatch messages** (via Parley mail) to assigned lanes with task scope, input paths/versions, output paths, checks, next owner, acceptance deadline.
-- **Handoff integrations** (via file creation) that record delivery metadata, verification results, decision log entries and next assignment.
-- **Blocker updates** → propose the new blocker text in an integration handoff (`proposedDecisions` or `nextActions`) when a blocker is resolved or discovered. The producer applies it to `tasks/board.json`.
-- **Decision proposals** → record coordination decisions with evidence paths and options considered in the handoff. The producer or director records them under `00_brief/decisions/`.
+- **Handoff integrations** (via file creation) that record delivery metadata, verification results, proposed decisions and next assignment.
+- **Blocker updates** → record each proposed blocker in the handoff `blockers[]` array (`description`, `owner`, `unblockCondition`) when a blocker is resolved or discovered, with the successor action in `nextActions`. The producer applies it to `tasks/board.json`.
+- **Decision proposals** → record coordination decisions with evidence paths and options considered in the handoff. Use the handoff `proposedDecisions`. The director records them under `00_brief/decisions/` for decision records and the producer for everything else.
 - **Status reports** → periodic summaries of dispatch queue, stalled claims, pending approvals.
 
 ### Does not
@@ -78,8 +78,8 @@ A handoff is **verified** when:
 6. **Receives handoff** from Claude: output file with SHA, evidence of checks, blockers if any.
 7. **Verifies** output exists, hash matches, no incomplete checks.
 8. **Consolidates** findings with W15 (Codex continuity), W16 (lighting), W18 findings into W19 (producer chooses corrections).
-9. **Updates** `board.json` T12 with blocker → "W19 awaiting producer selection, owner Codex-desktop, deadline N/A".
-10. **Records decision** with evidence paths and options considered.
+9. **Proposes** a `blockers[]` entry for T12 in its handoff → "W19 awaiting producer selection, owner Codex-desktop, deadline N/A". The producer applies it to `board.json`.
+10. **Proposes the decision** in the handoff `proposedDecisions` with evidence paths and options considered.
 
 ## Definition of done
 
@@ -97,7 +97,7 @@ All read-only: `tasks/board.json`, `workflow-map-v1.md`, `manifest.json`, `appro
 - `agents/handoffs/YYYY-MM-DD-coordinator-<TASK>-<VERSION>.json` (new integration handoffs).
 - Parley mail messages (via `coordinate` skill, read-only to files).
 
-The coordinator never writes `tasks/board.json`, `00_brief/decisions/`, approvals, the ledger, STATE or `memory/mistakes.jsonl`. Those are producer-owned (`docs/PARLEY_PROTOCOL.md` ownership table) and the film gate hooks refuse the writes. Everything the coordinator wants changed there goes into its integration handoff.
+The coordinator never writes `tasks/board.json`, `00_brief/decisions/`, approvals, the ledger, STATE or `memory/mistakes.jsonl`. Those are producer-owned, with the director for decision records (`docs/PARLEY_PROTOCOL.md` ownership table) and the film gate hooks refuse the writes. Everything the coordinator wants changed there goes into its integration handoff.
 
 ## May not
 
@@ -121,5 +121,5 @@ If a lane becomes idle, unresponsive, or reports a blocker outside its scope:
 1. Check Parley `status`, `problems`, `top` for stall reasons.
 2. Send a wake message via Parley mail asking for status.
 3. If no response within the `stalled_after` threshold, escalate to the operator (Andre) via Telegram/email notification.
-4. Record a named blocker on the board: "Lane `<name>` idle since <time>, coordinator awaiting response or operator decision."
+4. Propose a named blocker in the handoff `blockers[]`: "Lane `<name>` idle since <time>, coordinator awaiting response or operator decision." The producer records it on the board.
 

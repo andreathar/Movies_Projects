@@ -26,7 +26,7 @@ The coordinator follows this loop for every next step:
 6. Send the task to the named lane via Parley mail.
 7. Track acknowledgment.
 8. Await the handoff and verify the output artifact.
-9. Record actual result in the decision log and/or the relevant handoff file.
+9. Record the actual result in the coordinator's integration handoff, with any proposed decision in `proposedDecisions` and any proposed blocker in `blockers[]`.
 10. Release the next dependent task or keep the blocker explicit.
 
 No task moves forward on optimism alone. Movement requires evidence.
@@ -214,9 +214,9 @@ Example:
 
 The coordinator must never leave a blocker as “waiting on something” without a named owner and a clear condition.
 
-## 9. Decision log integration
+## 9. Decision proposals
 
-All coordinator decisions should be recorded in the project’s decision store, not just in the thread.
+The coordinator does not write the decision store or the board. Every coordination decision is proposed in its integration handoff, not just in the thread. The director records decision records under `00_brief/decisions/` and the producer applies board changes (`docs/PARLEY_PROTOCOL.md` ownership table; the film gate hooks refuse lane writes there).
 
 Record:
 
@@ -227,10 +227,7 @@ Record:
 - The acceptance or rejection reason
 - Which task is now unblocked or deferred
 
-Files should be saved under:
-
-- `projects/andre-time-travel/00_brief/decisions/`
-- `projects/andre-time-travel/agents/handoffs/`
+The coordinator saves only under `projects/andre-time-travel/agents/handoffs/`. The proposals it contains are applied by their owners under `projects/andre-time-travel/00_brief/decisions/` and `tasks/board.json`.
 
 ## 10. Non-goals and guardrails
 

@@ -56,6 +56,14 @@
       "source": "project_canonical",
       "type": "project_local",
       "alreadyInstalledInActiveProfile": false
+    },
+    {
+      "name": "coordinate",
+      "path": "skills/coordinate",
+      "source": ".agents/skills/coordinate",
+      "type": "agent_parley_plugin_link",
+      "alreadyInstalledInActiveProfile": false,
+      "note": "Provided by the Agent Parley plugin (.agents/plugins/agent-parley); not a film skill and not vendored here."
     }
   ]
 }

@@ -15,7 +15,8 @@
       "paidSubmissionRequiresApprovedShot": false,
       "creativeDecisionAuthority": false,
       "dispatchAuthority": true,
-      "notes": "Runs as Agent Parley lane. Routes work between roles, verifies handoffs, tracks dependencies, records decisions. Does not approve work or spend money."
+      "notes": "Runs as Agent Parley lane. Routes work between roles, verifies handoffs and tracks dependencies. Proposes board, decision and approval changes through handoffs; the producer (director for decision records) applies them. Does not approve work or spend money.",
+      "canonicalWriteAuthority": false
     },
     {
       "id": "producer",
@@ -123,17 +124,6 @@
       "running": false,
       "paidSubmissionAuthority": false,
       "paidSubmissionRequiresApprovedShot": true
-    },
-    {
-      "id": "coordinator",
-      "name": "Coordinator / dispatcher",
-      "brief": "agents/coordinator.md",
-      "skills": [],
-      "running": false,
-      "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true,
-      "canonicalWriteAuthority": false,
-      "note": "Routes work to lanes and verifies deliveries. Proposes board, decision and approval changes through handoffs; the producer applies them."
     }
   ]
 }
