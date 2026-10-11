@@ -174,7 +174,7 @@ Atlas catalogs (v1 created 2026-10-09T08:23, v2 08:44, v3 09:23, all `-03:00`) e
 | Skill | Registry `source` | Actual link | On this machine |
 |---|---|---|---|
 | `kling-cli` | `/home/athar/.hermes/skills/kling-cli` | `../.agents/skills/kling-cli` (files in-repo, not a symlink) | Real skill text, version 0.2.0. SHA-256 of `SKILL.md` does not match `sourceSha256`. |
-| `film-character-continuity`, `film-dialogue-localization`, `film-editing-qc`, `grounded-citations` | matching `/home/athar/.hermes/skills/...` paths | relative links that resolve to those paths | Targets exist and are cloud placeholders. `film-editing-qc/SKILL.md` says it contains no procedure. Their hashes do not match `sourceSha256`. |
+| `film-character-continuity`, `film-dialogue-localization`, `film-editing-qc`, `grounded-citations` | matching `/home/athar/.hermes/skills/...` paths | relative links that resolve to those paths | All four targets exist and their hashes do not match `sourceSha256`. Only `film-editing-qc/SKILL.md` was inspected and confirmed as a cloud placeholder; the other three bodies were not read. |
 
 `docs/CLEANUP-INVENTORY-2026-10-09.md` already says the Kling origin must be reconciled and that hashes must not be rewritten just to clear warnings.
 
