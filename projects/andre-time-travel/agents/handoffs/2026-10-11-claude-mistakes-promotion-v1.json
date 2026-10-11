@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "coordinator",
+  "contributorKind": "registry-role",
+  "assignment": "Andre (cloud Claude session, 2026-10-11): write the mistakes from the cleanup and tasks-restructure work into memory/mistakes.jsonl",
+  "parentTask": "coordination (W63, W64, W65)",
+  "workPackages": [
+    "W63",
+    "W64",
+    "W65"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "projects/andre-time-travel/memory/mistakes.jsonl"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256Before": "5ba8de483efe867464e309e105d3d1b2770cc5e6c9e43897a5faecd3760be28f"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256After": "629c6346c5c1ef09952293af05d0d507132607695b5482fffeb9b6543b784b45",
+      "reason": "appended M-2026-10-11-09..13 (5 entries), written at Andre request; producer-owned file"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Five confirmed mistakes appended with root cause, solution and rule; existing 8 entries unchanged",
+      "evidence": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256": "629c6346c5c1ef09952293af05d0d507132607695b5482fffeb9b6543b784b45"
+    }
+  ],
+  "verification": [
+    "manage.py lint: ok, 0 hard findings",
+    "tests.test_manage_lint: 21 tests OK",
+    "all 13 entries share the same key set"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "review the five entries (risk left null, no risk ID asserted) and ingest this handoff",
+      "readiness": "ready"
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "successor is producer review and ingest, named above",
+  "blockers": [],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": null,
+      "detected_by": null,
+      "solution": null,
+      "rule_added": null
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}
