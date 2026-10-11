@@ -28,8 +28,8 @@ Organize and route work between film production roles. Read task board state, de
 
 - **Dispatch messages** (via Parley mail) to assigned lanes with task scope, input paths/versions, output paths, checks, next owner, acceptance deadline.
 - **Handoff integrations** (via file creation) that record delivery metadata, verification results, decision log entries and next assignment.
-- **Blocker updates** → update `tasks/board.json` when a blocker is resolved or a new one is discovered.
-- **Decision log entries** → record coordination decisions with evidence paths and options considered.
+- **Blocker updates** → propose the new blocker text in an integration handoff (`proposedDecisions` or `nextActions`) when a blocker is resolved or discovered. The producer applies it to `tasks/board.json`.
+- **Decision proposals** → record coordination decisions with evidence paths and options considered in the handoff. The producer or director records them under `00_brief/decisions/`.
 - **Status reports** → periodic summaries of dispatch queue, stalled claims, pending approvals.
 
 ### Does not
@@ -95,9 +95,9 @@ All read-only: `tasks/board.json`, `workflow-map-v1.md`, `manifest.json`, `appro
 ## Writes
 
 - `agents/handoffs/YYYY-MM-DD-coordinator-<TASK>-<VERSION>.json` (new integration handoffs).
-- `00_brief/decisions/D<N>-<topic>.json` (new coordination decisions, with evidence).
-- `tasks/board.json` blocker/status updates (only after producer verifies).
 - Parley mail messages (via `coordinate` skill, read-only to files).
+
+The coordinator never writes `tasks/board.json`, `00_brief/decisions/`, approvals, the ledger, STATE or `memory/mistakes.jsonl`. Those are producer-owned (`docs/PARLEY_PROTOCOL.md` ownership table) and the film gate hooks refuse the writes. Everything the coordinator wants changed there goes into its integration handoff.
 
 ## May not
 

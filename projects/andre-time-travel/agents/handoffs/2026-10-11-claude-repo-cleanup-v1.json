@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Andre (cloud Claude session, 2026-10-11): clean up the repository after the Coordinator role landed; answer whether root and film tasks folders conflict; improve structure and naming",
+  "parentTask": "coordination (W63, W64, W65)",
+  "workPackages": [
+    "W63",
+    "W64",
+    "W65"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "docs/COORDINATOR_PROTOCOL.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "tasks/README.md"
+  ],
+  "ownedPaths": [
+    "agents/registry.json",
+    "agents/coordinator.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "tasks/README.md",
+    "coordinator/web/package.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "2f7ff27c4e02c646fc8b628c049b2911c7bc69a83c5b8736fb9af00a8a9e4c1e"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "60e44862c2f77862c28e7d8c45f0a69ffa58c607783ae8d700b93cb34df8c062"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "e58ffde292c77fca7ad1f12bc66fb1d8c7bc93fe0f816ab9fa7ac2950df1d300"
+    },
+    {
+      "path": "tasks/README.md",
+      "sha256Before": "93ac93d660929c7a779a162f73ad57266eec31c072d54c1a8ce4d0cb6e1cea9e"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "agents/registry.json",
+      "sha256After": "f00d224bc24a9ae512825d2fd9448bebc8f60ae8838d30e296b296205c523860",
+      "reason": "registers the coordinator role: no paid authority, no canonical write authority"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "6b33850158fcd5c05cfac3296f25e83207c6cf2965dbe8fd9fc5c42ecb8aad33",
+      "reason": "board, decision and approval changes become handoff proposals; the producer applies them"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "09359727ca8d7dc9574df337e311cc1a511fa98281621078b0dd697e4f2f0174",
+      "reason": "coordinator row added to the lane roster v2"
+    },
+    {
+      "path": "tasks/README.md",
+      "sha256After": "0b56d42bf41d9b7b3294189b1fe9cc989c189425a20936acf02df18fbca0692a",
+      "reason": "glossary of board task, work package and Parley claim; naming rule for new files"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Root tasks/ held only a pointer README; the film tasks/ folder holds the board, specification and plans; they do not conflict",
+      "evidence": "tasks/README.md",
+      "sha256": "0b56d42bf41d9b7b3294189b1fe9cc989c189425a20936acf02df18fbca0692a"
+    },
+    {
+      "statement": "coordinator/web/package.json was an empty npm init stub with no code; removed",
+      "evidence": "agents/registry.json",
+      "sha256": "f00d224bc24a9ae512825d2fd9448bebc8f60ae8838d30e296b296205c523860"
+    }
+  ],
+  "verification": [
+    "python3 -m unittest discover -s tests: 83 tests, 2 failures (pre-existing: test_manage status/validate fail on the machine-local skill symlink film-character-continuity)",
+    "python3 scripts/manage.py lint: status ok, 0 hard findings",
+    "python3 scripts/manage.py validate: error only on the pre-existing skill symlink",
+    "git diff --stat: 4 files modified, 1 stub file deleted; no canonical record, approval, ledger, manifest or media touched"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "read the PR diff, integrate, run handoff ingest on this file; promote the mistake below to memory/mistakes.jsonl",
+      "readiness": "this PR"
+    },
+    {
+      "role": "Andre",
+      "action": "delete the stale remote branches claude/festive-gates-sgkekc, copilot/research-task-analysis-workflow and, after this PR merges, claude/wizardly-clarke-23j2kj (git push --delete is refused by the cloud git proxy)",
+      "readiness": "GitHub branches page or a local clone"
+    },
+    {
+      "role": "producer",
+      "action": "decide whether to split the film tasks/ folder into the board, specs/ and plans/ as one reviewed PR with a change manifest and handoff-hash updates",
+      "readiness": "proposal only; not started"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Remote branch deletion is not possible from the cloud session",
+      "owner": "Andre",
+      "unblockCondition": "delete the three merged branches in GitHub or from a local clone"
+    }
+  ],
+  "andreOnlyGates": [],
+  "proposedDecisions": [
+    "Coordinator proposes board, decision and approval changes through handoffs; only the producer writes them (matches the PARLEY_PROTOCOL ownership table and the canonical-guard hook)",
+    "Keep the root tasks/ folder as a pointer plus glossary; do not remove it, because workspace.json requires it"
+  ],
+  "mistakes": [
+    {
+      "mistake": "The Coordinator role was added with a brief and a protocol but without a registry entry, and its brief gave it write access to board.json and decisions that the ownership table reserves to the producer",
+      "detected_by": "repository review after PR 5",
+      "solution": "role registered with no canonical write authority; brief rewritten so changes travel as handoff proposals",
+      "rule_added": "agents/registry.json canonicalWriteAuthority false; canonical-guard hook already refuses lane writes to those records"
+    },
+    {
+      "mistake": "An empty npm init stub (coordinator/web/package.json) was committed into a standard-library-only workspace",
+      "detected_by": "repository review after PR 5",
+      "solution": "file removed",
+      "rule_added": ""
+    },
+    {
+      "mistake": "git push --delete is refused by the cloud git proxy, so merged branches could not be removed from the session",
+      "detected_by": "branch cleanup attempt",
+      "solution": "deletion handed to Andre in nextActions",
+      "rule_added": ""
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

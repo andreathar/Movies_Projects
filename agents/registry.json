@@ -109,6 +109,17 @@
       "running": false,
       "paidSubmissionAuthority": false,
       "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "coordinator",
+      "name": "Coordinator / dispatcher",
+      "brief": "agents/coordinator.md",
+      "skills": [],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true,
+      "canonicalWriteAuthority": false,
+      "note": "Routes work to lanes and verifies deliveries. Proposes board, decision and approval changes through handoffs; the producer applies them."
     }
   ]
 }
