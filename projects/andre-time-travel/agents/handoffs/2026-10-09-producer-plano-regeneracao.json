@@ -97,5 +97,10 @@
   ],
   "canonicalStateChanged": false,
   "paidJobsSubmitted": 0,
-  "reviewStatus": "pending_producer_review"
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:44+00:00"
+  }
 }

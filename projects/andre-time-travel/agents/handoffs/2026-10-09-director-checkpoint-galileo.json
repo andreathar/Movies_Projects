@@ -81,5 +81,10 @@
   "klingCallsMade": [
     "image_to_image --help (free, logged)"
   ],
-  "createdAt": "2026-10-09T13:10:41.849064-03:00"
+  "createdAt": "2026-10-09T13:10:41.849064-03:00",
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:44+00:00"
+  }
 }
