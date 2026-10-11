@@ -227,8 +227,8 @@
   "canonicalStateChanged": true,
   "reviewStatus": "pending_producer_review",
   "ingest": {
-    "status": "pending",
-    "by": null,
-    "at": null
+    "status": "ingested",
+    "by": "Andre request via Claude cloud session 2026-10-11 (producer ingest)",
+    "at": "2026-10-11T23:44:53+00:00"
   }
 }
