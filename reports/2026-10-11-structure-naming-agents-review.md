@@ -60,7 +60,7 @@ The two objects are not copies:
 | Origin | `5dbd641` inserted it at the start of `roles` | `52a5355` appended it; merge `e1b5eb4` kept both |
 | `skills` | `["coordinate"]` | `[]` |
 | Extra authority fields | `dispatchAuthority: true`, `notes` | `canonicalWriteAuthority: false`, `note` |
-| `paidSubmissionRequiresApprovedShot` | absent | `true` |
+| `paidSubmissionRequiresApprovedShot` | `false` | `true` |
 
 `projects/andre-time-travel/agents/bindings.json` lists nine roles and omits `coordinator`. `agents/README.md` and `docs/MEMORY_AND_AGENTS.md` still say seven role briefs. There are ten role brief files plus `agents/README.md`. `agents/producer.md` is still titled "Producer / coordinator".
 
