@@ -107,8 +107,9 @@
     },
     {
       "path": ".claude/settings.json",
-      "sha256After": "85052133720b0cb7abd6bbb9ee0de9320e511c378c953afc339b3668d2a8479e",
-      "reason": "registers the film gate hooks for Claude Code sessions in this checkout"
+      "sha256After": "fa415418e3c4a7e0f5889fe2c33e85002e31ef7b08890342aefa3ebe0efeb1a7",
+      "reason": "registers the film gate hooks for Claude Code sessions in this checkout; integration note 2026-10-10: hash refreshed after main also gained a SessionStart hook entry from PR 1 (session-start.sh); the delivered Pre/PostToolUse/Stop hook entries are unchanged",
+      "sha256Delivered": "85052133720b0cb7abd6bbb9ee0de9320e511c378c953afc339b3668d2a8479e"
     },
     {
       "path": ".claude/hooks/_common.py",
@@ -350,8 +351,8 @@
   "canonicalStateChangeNote": "board.json blocker text only (T06, T11, T12, T13) plus blockerUpdatedAt; no status, dependency, approval, ledger or manifest change; proposed to the producer through this PR",
   "reviewStatus": "pending_producer_review",
   "ingest": {
-    "status": "pending",
-    "by": null,
-    "at": null
+    "status": "ingested",
+    "by": "andre-requested-via-claude-cloud-session",
+    "at": "2026-10-10T20:47:37+00:00"
   }
 }
