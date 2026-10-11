@@ -4,7 +4,7 @@ Status: Andre directly authorized this conversation to decide assignments and no
 
 ## What Parley gives and what it does not
 - Gives: lanes (`claude`, `codex`), mail between lanes, a decision log, advisory file reservations, status/reports. Service: `agent-parley up`; check: `agent-parley doctor`.
-- Does not apply here: forge issues, claims on issue numbers and PRs (no Git remote). Use mail, reservations and reports only.
+- Git remote: `origin` tracks the private GitHub repository. See `docs/VERSION_CONTROL.md`. Lane assignment still uses mail, reservations and handoffs. A pull request is an integration request Andre asks for; it is not a Parley claim on an issue number.
 - Each lane works in its own Git worktree and branch (`parley/<project>/lane-N`). Ignored files (`.venv`, credentials, caches) are not in a lane worktree. Work reaches `main` only through an explicit merge that Andre has asked for.
 
 ## Lane roles
@@ -28,12 +28,12 @@ agent-parley verify set ".venv/bin/python scripts/manage.py validate && .venv/bi
 Known baseline: validate reports ok with four shared-skill hash warnings; 29 tests pass. A passing gate is not creative acceptance. Do not run `participant merge` or `participant pr` until Andre asks.
 
 ## Smoke test (read-only, no spending, no file edits)
-Prerequisites: `agent-parley up`; Claude and Codex each launched with `agent-parley run NAME --repo /mnt/data/Projects_SSD/Movies_Projects`; lane approvals resumed.
+Prerequisites: `agent-parley up`; Claude and Codex each launched with `agent-parley run NAME --repo <checkout>`. The path recorded when this section was written was `/mnt/data/Projects_SSD/Movies_Projects` on the owner's machine. Lane approvals resumed. This review did not run the smoke test.
 Message to `codex`: read AGENTS.md and `projects/andre-time-travel/memory/STATE.md`, then reply in one thread with (1) the current creative direction in one sentence, (2) the Andre-only open items, (3) whether D17–D19 are recorded decisions or proposals, (4) the owner of `credit-ledger.csv`.
 Pass: (1) back-view over-the-shoulder with eyes only as short reaction; (2) includes D16 direct confirmation and the Phase A request mismatch; (3) proposals, not recorded; (4) producer. Any miss means STATE.md or AGENTS.md is unclear, so fix the file, not the answer.
 
 ## Active assignment — Andre direct authorization, 2026-10-09
-- Producer/coordinator: Codex in the main desktop conversation, operating from the base checkout. This is NOT the Parley codex lane. Owns canonical manifest, board, approvals, ledger, asset registry, decision records, STATE and session-log integration. Lanes return handoffs instead of editing those shared records.
+- Producer: Codex in the main desktop conversation, operating from the base checkout. This is NOT the Parley codex lane, and it is not the registry role `coordinator`. The producer owns canonical manifest, board, approvals, ledger, asset registry, decision records, STATE and session-log integration. The coordinator dispatches and proposes; lanes return handoffs instead of editing those shared records.
 - Claude lane: continuity / research preparation. Finish and report the existing bible reconciliation without repeating completed work. Then prepare one new detail-planning document covering all five figures: feet/footwear/floor, rear hair/costume, left/right shoulder alternatives, fingers/hands/table. Read tasks/scene-detail-assets-v1.md and the shared dramatic-direction document. Map reusable assets, missing references, source-backed period details and uncertainties. Own only new files under 03_bibles/detail-planning/ plus its own handoff. No new media generation.
 - Codex lane: editing / QC. First deliver the actual status and artifact paths for Galileo timeline/preview v2, including any incomplete verification. Finish remaining local rendering/QC if needed without duplicating completed work. Then independently review the Claude detail-planning handoff read-only and record findings in new files under 08_edit/reviews/detail-planning-v1/ plus its own handoff. Do not modify Claude's documents.
 - Both may immediately read, research and write the assigned new local documents; producer-owned canonical state does not block this work. No forge issue is required in this local-only repository. Reserve assigned output paths through Parley where available; preserve current uncommitted work.
@@ -50,11 +50,11 @@ The producer chooses further delegation and sends scoped assignments. Lanes repo
 A divisão efetiva está em `projects/andre-time-travel/tasks/scene-detail-assets-v1.md`, seção Delegação efetiva: Claude pesquisa cultura material; Codex lane prepara cobertura e foley depois do Galileo, além da revisão; Codex desktop gera imagens. Esta divisão refina as atribuições anteriores e evita duplicação.
 
 ## Mapa de tarefas e passagem ao sucessor — 2026-10-10
-Consultar [workflow do filme](../projects/andre-time-travel/tasks/workflow-map-v1.md), com responsabilidades, dependências e fila imediata. A regra de fechamento está em [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md#fechamento-e-sucessor-obrigatório). Esse mapa não envia mensagens, inicia lanes nem transforma pacotes planejados em atribuições aceitas. O produtor continua responsável pelo próximo trabalho pronto até confirmar o aceite. Usar mensagens/handoffs locais; não exigir forge issues neste repositório sem remote.
+Consultar [workflow do filme](../projects/andre-time-travel/tasks/workflow-map-v1.md), com responsabilidades, dependências e fila imediata. A regra de fechamento está em [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md#fechamento-e-sucessor-obrigatório). Esse mapa não envia mensagens, inicia lanes nem transforma pacotes planejados em atribuições aceitas. O produtor continua responsável pelo próximo trabalho pronto até confirmar o aceite. Usar mensagens/handoffs locais. O remote Git está em [VERSION_CONTROL.md](VERSION_CONTROL.md); uma issue de forge não é o método de atribuição desta lane.
 
 ## Lane roster v2, dispatch contract and film gate hooks — proposed 2026-10-10
 
-Status: implemented on branch `claude/wizardly-clarke-23j2kj` as a proposal ([plan](PLAN-parley-integration-v1.md)). It becomes the active protocol only when Andre merges it and runs Phase 0 (`scripts/parley_setup.sh`, [smoke test and hook proof](parley-smoke-test.md)). Earlier sections stay valid until then.
+Status: the roster text below is on `main`. Phase 0 has not been recorded in this workspace (`scripts/parley_setup.sh` was not run here, and `agent-parley` is not assumed to be installed). Treat the roster as the written contract for lane roles and write paths. Do not treat Parley as running, or `.claude/hooks/` as protection outside the runtime where those hooks are installed and tested. The smoke-test `--repo /mnt/data/Projects_SSD/Movies_Projects` path is the owner's machine path, not this checkout. The plan file remains a proposal: [PLAN-parley-integration-v1.md](PLAN-parley-integration-v1.md). Read that plan from `main`, not from branch `claude/wizardly-clarke-23j2kj`.
 
 ### Roster (lanes are tools; the film role is named per assignment)
 

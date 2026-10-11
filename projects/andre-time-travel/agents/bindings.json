@@ -3,6 +3,7 @@
   "registry": "../../../agents/registry.json",
   "roles": [
     "producer",
+    "coordinator",
     "director",
     "continuity",
     "historian",

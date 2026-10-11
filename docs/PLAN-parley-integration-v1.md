@@ -2,7 +2,7 @@
 
 Date: 2026-10-10 · Author: Claude session for Andre Athar · Source doc: https://claude.ai/code/artifact/89aeeadb-5b65-4318-854a-84bb91278f1c
 
-Status: PROPOSED plan. Not an accepted assignment, approval, spending scope or workflow-rule change. The producer integrates it as one delivery per `docs/LOCAL_AGENT_HANDOFF.md`; AGENTS.md links change only if Andre adopts the rules here. Read from the workspace at branch `claude/wizardly-clarke-23j2kj`, head dfec3be.
+Status: PROPOSED plan. Not an accepted assignment, approval, spending scope or workflow-rule change. The roster text that came from this plan is on `main`; Phase 0 is not recorded as run. Read the current files on `main`. The branch `claude/wizardly-clarke-23j2kj` at dfec3be is history, not the checkout to use. The producer integrates adopted rules per `docs/LOCAL_AGENT_HANDOFF.md`; AGENTS.md changes only when Andre adopts them.
 
 ## Executive summary
 

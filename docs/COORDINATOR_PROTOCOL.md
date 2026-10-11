@@ -208,7 +208,7 @@ Example:
   "ownerName": "desktop-producer",
   "reason": "Selected image subset is not yet approved by Andre for likeness.",
   "unblockCondition": "Andre reviews the selected subset and records approval in the decision log.",
-  "evidencePath": "projects/andre-time-travel/00_brief/decisions/D20-likeness-review.json"
+  "evidencePath": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/review.md"
 }
 ```
 
@@ -216,7 +216,7 @@ The coordinator must never leave a blocker as “waiting on something” without
 
 ## 9. Decision log integration
 
-All coordinator decisions should be recorded in the project’s decision store, not just in the thread.
+Coordinator decisions are proposed in the integration handoff, not written into the decision store. The producer or director records adopted decisions under `00_brief/decisions/`. D20 (`D20-detail-studies-art.json`) is an art selection for detail studies, not a likeness approval. There is no `D20-likeness-review.json`.
 
 Record:
 
@@ -227,10 +227,11 @@ Record:
 - The acceptance or rejection reason
 - Which task is now unblocked or deferred
 
-Files should be saved under:
+The coordinator saves its own integration handoff under:
 
-- `projects/andre-time-travel/00_brief/decisions/`
 - `projects/andre-time-travel/agents/handoffs/`
+
+The producer writes `00_brief/decisions/` when a proposal is adopted.
 
 ## 10. Non-goals and guardrails
 
@@ -241,8 +242,7 @@ The coordinator must not:
 - Claim a task as complete without evidence.
 - Dispatch work to a lane outside its allowed write paths.
 - Delete originals or archival sources.
-- 
-Assume a staged workflow and never “skip ahead” to the next milestone by inference.
+- Skip ahead to the next milestone by inference. The staged workflow still applies.
 
 ## 11. Minimum coordination checklist
 

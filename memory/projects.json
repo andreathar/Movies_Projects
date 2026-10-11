@@ -7,7 +7,8 @@
     {
       "id": "andre-time-travel",
       "state": "projects/andre-time-travel/memory/STATE.md",
-      "decisions": "projects/andre-time-travel/memory/decisions.json",
+      "decisions": "projects/andre-time-travel/00_brief/decisions",
+      "legacyDecisions": "projects/andre-time-travel/memory/decisions.json",
       "risks": "projects/andre-time-travel/memory/risks.json",
       "sessions": "projects/andre-time-travel/memory/session-log.json"
     }

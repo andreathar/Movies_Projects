@@ -11,7 +11,7 @@ Organize and route work between film production roles. Read task board state, de
 3. Inspect `docs/PARLEY_PROTOCOL.md` section "Lane roster v2" for active lane roster and dispatch contract shape.
 4. Review `docs/COORDINATOR_PROTOCOL.md` for dispatch logic, readiness rules and dependencies.
 5. Read existing `agents/handoffs/` directory for handoff patterns and decision consolidation.
-6. This role runs as a **Parley lane** (`coordinator` lane in Agent Parley). Use the `coordinate` skill to claim issues, read mail and send dispatch messages to peer lanes.
+6. This role is the `coordinator` lane when Agent Parley is installed. Phase 0 (`scripts/parley_setup.sh` and the smoke test) is not recorded as run. The `coordinate` skill is not in `skills/registry.json` and its link target is absent, so do not depend on it. Dispatch through the handoff and the protocol in `docs/PARLEY_PROTOCOL.md`.
 
 ## Responsibilities
 
@@ -78,8 +78,8 @@ A handoff is **verified** when:
 6. **Receives handoff** from Claude: output file with SHA, evidence of checks, blockers if any.
 7. **Verifies** output exists, hash matches, no incomplete checks.
 8. **Consolidates** findings with W15 (Codex continuity), W16 (lighting), W18 findings into W19 (producer chooses corrections).
-9. **Updates** `board.json` T12 with blocker → "W19 awaiting producer selection, owner Codex-desktop, deadline N/A".
-10. **Records decision** with evidence paths and options considered.
+9. **Proposes** the T12 blocker in the integration handoff: "W19 awaiting producer selection, owner Codex-desktop, deadline N/A". The producer applies it to `board.json`.
+10. **Proposes** the decision, with evidence paths and options considered, in that handoff. The producer or director records it under `00_brief/decisions/`.
 
 ## Definition of done
 
@@ -94,8 +94,8 @@ All read-only: `tasks/board.json`, `workflow-map-v1.md`, `manifest.json`, `appro
 
 ## Writes
 
-- `agents/handoffs/YYYY-MM-DD-coordinator-<TASK>-<VERSION>.json` (new integration handoffs).
-- Parley mail messages (via `coordinate` skill, read-only to files).
+- `agents/handoffs/YYYY-MM-DD-coordinator-<TASK>-<VERSION>.json` (new integration handoffs), copied from `shared/templates/agent-handoff-v2.json`.
+- Parley mail when `agent-parley` is installed. Mail does not write canonical records.
 
 The coordinator never writes `tasks/board.json`, `00_brief/decisions/`, approvals, the ledger, STATE or `memory/mistakes.jsonl`. Those are producer-owned (`docs/PARLEY_PROTOCOL.md` ownership table) and the film gate hooks refuse the writes. Everything the coordinator wants changed there goes into its integration handoff.
 
@@ -111,7 +111,7 @@ The coordinator never writes `tasks/board.json`, `00_brief/decisions/`, approval
 - **No automatic handoff ingestion.** Each delivery must be read, hashes verified and manually acknowledged by this role before unblocking dependents.
 - **Blocker precedence.** Do not dispatch if `board.json` records an open blocker, even if dependencies are complete.
 - **Lane capacity.** Do not overload lanes. Check `docs/PARLEY_PROTOCOL.md` `max_claims_per_lane` (default 2) before dispatching.
-- **Andre-only gates.** D16 (likeness approval), D20 (final picture), voice by ear, final movie acceptance — these block no other work but cannot be assumed.
+- **Andre-only gates.** D16 is a relayed Phase A spend ceiling (up to 23 credits), not likeness approval. D20 (`D20-detail-studies-art.json`) is an art selection for detail studies, not final picture. Likeness, voice by ear, final picture and language review stay Andre-only. Read them from `00_brief/approvals.json` when `andreOnlyGates` is present, and from `memory/STATE.md` until that list is applied.
 - **Idempotency.** Resend the same dispatch with the same sequence number only; a new version number means a new assignment.
 - **Stale STATE.md.** Always run `.venv/bin/python scripts/manage.py status` to see real pending work; do not rely on memory alone.
 
@@ -121,5 +121,5 @@ If a lane becomes idle, unresponsive, or reports a blocker outside its scope:
 1. Check Parley `status`, `problems`, `top` for stall reasons.
 2. Send a wake message via Parley mail asking for status.
 3. If no response within the `stalled_after` threshold, escalate to the operator (Andre) via Telegram/email notification.
-4. Record a named blocker on the board: "Lane `<name>` idle since <time>, coordinator awaiting response or operator decision."
+4. Propose a named blocker in the integration handoff: "Lane `<name>` idle since <time>, coordinator awaiting response or operator decision." The producer writes `board.json`.
 

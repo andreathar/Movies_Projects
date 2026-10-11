@@ -2,6 +2,8 @@
 
 Date: 2026-10-11
 
+Implementation note: this file is the review, not a claim that the findings were already fixed. The same branch applies the non-canonical changes. Producer-owned files (`AGENTS.md`, `CLAUDE.md`, `workspace.json`, `00_brief/approvals.json`, `memory/STATE.md`, `memory/session-log.json`, `memory/mistakes.jsonl`) are proposed in `reports/2026-10-11-canonical-records.patch` because the canonical-guard hook refused those writes from this session.
+
 ## Scope
 
 Read-only review of folder structure, naming, and agent settings in Movies_Projects, active film `andre-time-travel` (*The Table Between Centuries*). This report does not change media, approvals, manifests, the board, scripts, skills, or workflow rules. It does not record new approvals, quotations, charges, or job results.
