@@ -79,6 +79,8 @@
     "projects/andre-time-travel/logs",
     "projects/andre-time-travel/memory",
     "projects/andre-time-travel/tasks",
+    "projects/andre-time-travel/tasks/plans",
+    "projects/andre-time-travel/tasks/specs",
     "reports",
     "scripts",
     "shared/templates",

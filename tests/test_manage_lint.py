@@ -377,7 +377,7 @@ class ResumeTests(ManageCliMixin, unittest.TestCase):
                 f"{FILM}/tasks/board.json",
                 f"{FILM}/00_brief/approvals.json",
                 f"{FILM}/00_brief/decisions/",
-                f"{FILM}/tasks/workflow-map-v1.md",
+                f"{FILM}/tasks/plans/workflow-map-v1.md",
             ],
         )
         self.assertEqual(report["stateHeadline"], "First headline line.")
