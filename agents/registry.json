@@ -4,6 +4,20 @@
   "autostart": false,
   "roles": [
     {
+      "id": "coordinator",
+      "name": "Coordinator / dispatcher",
+      "brief": "agents/coordinator.md",
+      "skills": [
+        "coordinate"
+      ],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": false,
+      "creativeDecisionAuthority": false,
+      "dispatchAuthority": true,
+      "notes": "Runs as Agent Parley lane. Routes work between roles, verifies handoffs, tracks dependencies, records decisions. Does not approve work or spend money."
+    },
+    {
       "id": "producer",
       "name": "Producer / coordinator",
       "brief": "agents/producer.md",
