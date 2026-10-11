@@ -63,6 +63,7 @@ Status: implemented on branch `claude/wizardly-clarke-23j2kj` as a proposal ([pl
 | `claude-research` | claude | historian, continuity preparation, dialogue text work | `03_bibles/detail-planning/`, `03_bibles/scene-bibles/*-vNEXT.md`, `01_script/translations/` proposals, `00_brief/research/`, own handoff | media, canonical records, logging a proposal as a decision |
 | `codex-edit-qc` | codex | editor, QC, coverage review, tooling | `08_edit/reviews/`, `08_edit/timelines/*-vNEXT.json`, `08_edit/normalized/`, `09_delivery/qc/`, `scripts/` and `tests/` when assigned tooling, own handoff | re-render by default, another lane's documents, accepting takes |
 | `claude-review` | claude (second account if needed) | independent continuity, lighting, facial safety | `02_references/_review/`, `08_edit/reviews/<topic>-independent/`, own handoff | substitutes, paths reserved by `codex-edit-qc` |
+| `coordinator` | claude or codex | coordinator, dispatcher (`agents/coordinator.md`, `docs/COORDINATOR_PROTOCOL.md`) | its own integration handoffs under `agents/handoffs/`, Parley mail | writing board, decisions, approvals, ledger, STATE or `mistakes.jsonl`; submitting paid jobs; approving work |
 | producer (not a lane) | Codex desktop, base checkout | producer, director, image creator | canonical records, `07_generations/`, `05_storyboard/keyframes/` | dependent work before evidence; spending on a relayed approval |
 
 Andre is the `operator` (CLI only): `say`, `participant merge`, `verify set`. `participant merge` and `participant pr` stay unused until he asks.
