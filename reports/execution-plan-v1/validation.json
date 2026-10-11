@@ -1,0 +1,84 @@
+{
+  "observedAt": "2026-10-10T11:50:06.018562-03:00",
+  "status": "pass",
+  "scope": "Plan and local management integration only; not implementation, media acceptance or native hook runtime proof",
+  "structure": {
+    "status": "pass",
+    "type": "planning-structure-only",
+    "packages": 96,
+    "executionInstances": 111,
+    "requirementRows": 129,
+    "coverage": {
+      "T": 21,
+      "W": 68,
+      "cleanupPhases": 8,
+      "memoryPhases": 4,
+      "invariantRows": 28
+    },
+    "acyclic": true,
+    "independenceAndGateChecks": {
+      "scratch_likeness_independent": true,
+      "scratch_payment_independent": true,
+      "english_historical_independent": true,
+      "historical_reviewed_audio": true,
+      "mock_adapter_liveness_independent": true,
+      "joint_final_qc": true,
+      "remaining_chapter_preparation_independent": true,
+      "bookend_preparation_independent": true,
+      "all_chapter_assembly": true,
+      "english_route_mandatory": true
+    },
+    "localLinksChecked": 19,
+    "brokenLinks": [],
+    "planningWords": 22163,
+    "runtimeDispatcherTested": false,
+    "paidJobsSubmitted": 0
+  },
+  "unitTests": {
+    "count": 29,
+    "result": "pass",
+    "evidence": "reports/execution-plan-v1/unit-tests.txt"
+  },
+  "workspaceValidation": {
+    "result": "ok",
+    "warnings": [
+      "shared skill changed since linking: kling-cli",
+      "shared skill changed since linking: film-character-continuity",
+      "shared skill changed since linking: film-dialogue-localization",
+      "shared skill changed since linking: film-editing-qc"
+    ],
+    "evidence": "reports/execution-plan-v1/manage-validate.txt"
+  },
+  "independentReview": {
+    "verdict": "PASS",
+    "path": "reports/execution-plan-v1/plan-review-final.md",
+    "sha256": "6a6dd8f4e832a4fe429a08036bd310e345be19def8f2e24b8b3293a166de79eb",
+    "reviewedGraphSha256": "ee9e74a69337d23299a604d274eb3abf5a1c1835f95a9e5eca4c5649b23f39ab"
+  },
+  "protectedBaselineFilesUnchanged": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "workspace.json",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/REPEATABLE_WORKFLOW.md",
+    "docs/TOKEN_EFFICIENCY.md",
+    "docs/VERSION_CONTROL.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "docs/superpowers/specs/2026-10-09-memory-handoff-design.md",
+    "projects/andre-time-travel/manifest.json",
+    "projects/andre-time-travel/tasks/board.json",
+    "projects/andre-time-travel/00_brief/approvals.json",
+    "projects/andre-time-travel/tasks/workflow-map-v1.md",
+    "projects/andre-time-travel/tasks/production-tasks.md",
+    "projects/andre-time-travel/tasks/project-cleanup-plan-v1.md"
+  ],
+  "existingConcurrentEditsPreserved": [
+    "CLAUDE.md"
+  ],
+  "otherConcurrentNewPathsObserved": [
+    "sites/"
+  ],
+  "noRuntimeActivation": true,
+  "newPaidJobs": 0,
+  "gitCommitMergePushPerformed": false
+}

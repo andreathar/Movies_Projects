@@ -1,0 +1,1972 @@
+{
+  "schemaVersion": "planning-instance-1.0",
+  "planningOnly": true,
+  "source": "work-packages.json",
+  "runtimeImplemented": false,
+  "evaluation": "This is the prerequisite graph for scoped instances. Root package dependencies group topics and must not be treated as dispatch gates. Instance completion is separate from production board milestone completion.",
+  "counts": {
+    "packages": 96,
+    "instances": 111
+  },
+  "instances": [
+    {
+      "id": "W01",
+      "package": "W01",
+      "purpose": "Confirm brief, runtime, editions and boundaries",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Brief, caps and nondelegable judgments have exact provenance"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W02",
+      "package": "W02",
+      "purpose": "Maintain single resume surface and decision references",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "A cold-start reader finds the active episode and next owner"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W03",
+      "package": "W03",
+      "purpose": "Reconcile stale board blockers, bible variants and approval scopes",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W01"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Board, manifest and approvals agree by version and use; no completion inferred from a file"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W04",
+      "package": "W04",
+      "purpose": "Inventory real photos, synthetic variants, source rights and failed clips",
+      "ownerRole": "continuity",
+      "dependsOn": [
+        "W01"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Provenance and likeness scope attached to selected references"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W05",
+      "package": "W05",
+      "purpose": "Keep dark wardrobe retired without deleting originals",
+      "ownerRole": "continuity",
+      "dependsOn": [
+        "W04"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Original media preserved and active packets use D02"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W06",
+      "package": "W06",
+      "purpose": "Lock current Andre grooming, posture, wardrobe and table anchors",
+      "ownerRole": "continuity + producer",
+      "dependsOn": [
+        "W04",
+        "W05"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Selected geometry and character anchors visually reviewable and versioned"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W07",
+      "package": "W07",
+      "purpose": "Check existing Element resources and route compatibility",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W06"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Exact Element ID and resource versions support intended request"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W08",
+      "package": "W08",
+      "purpose": "Maintain English script, line IDs and factual anchors",
+      "ownerRole": "historian + director",
+      "dependsOn": [
+        "W01"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Script and CSV match; fictional dialogue clearly distinguished from sources"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W09",
+      "package": "W09",
+      "purpose": "Fill difficult line, trigger word, prior emotion, reaction and consequence per encounter",
+      "ownerRole": "director + editor",
+      "dependsOn": [
+        "W08",
+        "W24"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Reaction timing follows identifiable cause; no mandatory repeated gesture pattern"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W10",
+      "package": "W10",
+      "purpose": "Adopt historical research and resolve H01–H06",
+      "ownerRole": "historian + producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Arcetri floor and Longwood dimensions stay uncertain; corrections scoped and traceable"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W11",
+      "package": "W11",
+      "purpose": "Record floor, room, coat, hair, shoe and accessory choices",
+      "ownerRole": "director",
+      "dependsOn": [
+        "W10"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No new shot mixes mutually inconsistent D20 and older reference choices"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W12",
+      "package": "W12",
+      "purpose": "Review and integrate four revised bibles and continuity matrix",
+      "ownerRole": "producer + continuity",
+      "dependsOn": [
+        "W06",
+        "W08",
+        "W11"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "One selected bible per encounter plus coherent matrix; proposals remain labeled until adopted"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W13",
+      "package": "W13",
+      "purpose": "Create five detail studies for each historical figure",
+      "ownerRole": "desktop storyboard",
+      "dependsOn": [
+        "W10",
+        "W11"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No regeneration of delivered study set; exact review input hashes present"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W14",
+      "package": "W14",
+      "purpose": "Review historical material, costume and uncertainty against images",
+      "ownerRole": "historian / Claude intended",
+      "dependsOn": [
+        "W13"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "All five encounters covered and each material finding has evidence and disposition"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W15",
+      "package": "W15",
+      "purpose": "Review likeness evidence, proportions, expression and grooming",
+      "ownerRole": "continuity / terminal Codex intended",
+      "dependsOn": [
+        "W13",
+        "W06"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Evidence-ranked shortlist and identity risks, not substituted likeness acceptance"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W16",
+      "package": "W16",
+      "purpose": "Review table, chairs, eye line, camera axis and physical placement",
+      "ownerRole": "continuity + editor",
+      "dependsOn": [
+        "W13",
+        "W06"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Principal angle and safe cuts have coherent geometry and documented exceptions"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W17",
+      "package": "W17",
+      "purpose": "Review hands, fingers, footwear contact and rear-head facial safety",
+      "ownerRole": "continuity + QC",
+      "dependsOn": [
+        "W13"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Every selected still passes framing/anatomy review or has bounded defect list"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W18",
+      "package": "W18",
+      "purpose": "Review motivated light source, direction, shadows and era plausibility",
+      "ownerRole": "lighting",
+      "dependsOn": [
+        "W13",
+        "W11"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Motivated source and continuity map with unresolved design choices explicit"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W19",
+      "package": "W19",
+      "purpose": "Apply bounded image corrections and re-review only changed outputs",
+      "ownerRole": "desktop storyboard",
+      "dependsOn": [
+        "W14",
+        "W15",
+        "W16",
+        "W17",
+        "W18"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Each correction closes cited defect and updates version/hash without blanket reapproval"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W20",
+      "package": "W20",
+      "purpose": "Approve Andre likeness on selected new stills",
+      "ownerRole": "Andre",
+      "dependsOn": [
+        "W15",
+        "W19"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual personal likeness judgment tied to exact selected versions"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W21",
+      "package": "W21",
+      "purpose": "Choose only required coverage and map images to actual shot slots",
+      "ownerRole": "director + editor",
+      "dependsOn": [
+        "W14",
+        "W16",
+        "W17",
+        "W18",
+        "W19"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No assumption that each candidate or planning row needs a paid clip"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W22",
+      "package": "W22",
+      "purpose": "Review existing eyes-only references and needed reaction states",
+      "ownerRole": "continuity",
+      "dependsOn": [
+        "W10",
+        "W21"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Safe necessary eye references selected; no universal eye duration imposed"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W23",
+      "package": "W23",
+      "purpose": "Resolve timeline/bible timing differences without imposing global eye duration",
+      "ownerRole": "producer + editor",
+      "dependsOn": [
+        "W09",
+        "W43",
+        "W12"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No conclusive reaction precedes its trigger and no stale duration silently overrides performance"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W24",
+      "package": "W24",
+      "purpose": "Measure guide dialogue and pauses; build local scratch/animatic",
+      "ownerRole": "dialogue-sound + editor",
+      "dependsOn": [
+        "W08"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual durations support natural chapter timing; unapproved scratch labeled as guide"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W25",
+      "package": "W25",
+      "purpose": "Choose Andre recording/dubbing route and short voice samples",
+      "ownerRole": "dialogue-sound + Andre",
+      "dependsOn": [
+        "W08"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Andre's ear judgment recorded; native Kling guide remains provisional"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W26.EN",
+      "package": "W26",
+      "purpose": "Produce scoped dry English historical-speaker tracks; no claim of personal voice approval.",
+      "ownerRole": "dialogue-sound",
+      "dependsOn": [
+        "W08"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual scoped English dry historical-speaker files have stable line IDs, measured durations, provenance and declared voice-review status."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W26.H",
+      "package": "W26",
+      "purpose": "Produce scoped historical-language tracks from reviewed translations and pronunciation guidance.",
+      "ownerRole": "dialogue-sound",
+      "dependsOn": [
+        "W29"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual scoped localized dry files match reviewed translation/target/pronunciation references and have measured durations and provenance."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W27.EN",
+      "package": "W27",
+      "purpose": "Conform final English dialogue timing and visible speech evidence.",
+      "ownerRole": "dialogue-sound + editor",
+      "dependsOn": [
+        "W25",
+        "W26.EN"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Final English dry words, pauses and duration are measured and conformed to intended picture; sync risks and exact versions recorded."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W27.H",
+      "package": "W27",
+      "purpose": "Conform localized dialogue and pauses from reviewed actual audio.",
+      "ownerRole": "dialogue-sound + editor",
+      "dependsOn": [
+        "W25",
+        "W26.H"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Localized dry words, pauses and duration are measured against reviewed text and intended picture; sync risks and exact versions recorded."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W28",
+      "package": "W28",
+      "purpose": "Confirm historical-language targets, feasible route and qualified reviewers",
+      "ownerRole": "dialogue-sound",
+      "dependsOn": [
+        "W08"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Each target is confirmed or explicitly blocked; no silent French substitution"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W29",
+      "package": "W29",
+      "purpose": "Translate, back-translate and review pronunciation/meaning",
+      "ownerRole": "qualified language reviewers",
+      "dependsOn": [
+        "W28"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Reviewer identity, competence, exact version, findings and accepted adaptation documented"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W30.EN",
+      "package": "W30",
+      "purpose": "Prove final English speech route on exact approved picture.",
+      "ownerRole": "continuity + dialogue-sound",
+      "dependsOn": [
+        "W27.EN",
+        "W31"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Exact final English speech route inspected in full for mouth synchronization and likeness; applicable acceptance recorded or equivalent prior exact proof cited; H completion not required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W30.H",
+      "package": "W30",
+      "purpose": "Prove representative difficult reviewed-language line on intended picture; no final H claim without reviewed audio.",
+      "ownerRole": "continuity + dialogue-sound",
+      "dependsOn": [
+        "W27.H",
+        "W29",
+        "W31"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Representative difficult localized line uses reviewed translation and actual localized test audio; full processed clip passes sync and likeness review or remains blocked."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W31",
+      "package": "W31",
+      "purpose": "Check existing pilot evidence against new camera/costume references",
+      "ownerRole": "producer + continuity",
+      "dependsOn": [
+        "W06"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No unnecessary complete pilot rerun; additional test justified by concrete gap"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W32",
+      "package": "W32",
+      "purpose": "Evaluate operator access and visual-review capability separately",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Operator and reviewer capability individually established"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W33.forecast",
+      "package": "W33",
+      "purpose": "Prepare offline low/base/adverse cost forecast with historical figures visibly labeled; no live balance needed for scratch planning.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W03",
+        "W31"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Offline forecast separates already-debited costs, prospective exposure, accepted reuse and adverse yield; historical balances labeled and no live balance required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W33.release",
+      "package": "W33",
+      "purpose": "Reconcile chapter evidence and exact release envelope; live balance/schema is required at W37 immediately before paid submission.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W33.forecast",
+        "W43"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Forecast reconciled to Galileo playback and chosen release envelope; exact scope and reserve feasible; actual live schema/balance check remains mandatory at W37."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W34.scratch",
+      "package": "W34",
+      "purpose": "Build free local English scratch animatic from labeled candidates and measured guide, preserving unresolved timing/likeness notes.",
+      "ownerRole": "storyboard + editor",
+      "dependsOn": [
+        "W21",
+        "W24"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Playable local English scratch animatic uses candidate-labeled images and measured guide; records pacing/causality findings and unapproved likeness notes; no paid release or personal acceptance required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W34.approval",
+      "package": "W34",
+      "purpose": "Freeze reviewed coverage and pacing for production use after applicable likeness/timing/forecast gates; not final voice approval.",
+      "ownerRole": "storyboard + editor",
+      "dependsOn": [
+        "W34.scratch",
+        "W20",
+        "W23",
+        "W33.forecast"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Exact animatic coverage/timing version reviewed and approved for selected production use after scoped likeness, timing and offline forecast disposition; final voice and actual paid release remain separate."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W35",
+      "package": "W35",
+      "purpose": "Build reference packet with roles and tested first/last versus multi-reference route",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W34.approval",
+        "W22",
+        "W07"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No unsupported multi-reference assumption and no changed hash after preflight"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W36",
+      "package": "W36",
+      "purpose": "Define safe motion, camera limits, face exclusions and reaction causality",
+      "ownerRole": "director + continuity",
+      "dependsOn": [
+        "W35",
+        "W09"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Motion envelope protects identity, axis and historical-face restriction for whole clip"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W37",
+      "package": "W37",
+      "purpose": "Verify approved request, schema, output settings and spending limits",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W36",
+        "W33.release"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Only exact scoped request is eligible; changed request invalidates release; no runner auto-dispatch"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W38",
+      "package": "W38",
+      "purpose": "Submit approved shot and persist returned job/charge immediately",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W37"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "One request maps to at most one known submission; uncertain result goes to recovery"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W39",
+      "package": "W39",
+      "purpose": "Resume job, recover/download output, preserve originals and provenance",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W38"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Known job never resubmitted; output can be recovered locally without transient URL dependence"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W40",
+      "package": "W40",
+      "purpose": "Inspect every frame for historic faces, identity, anatomy and contact",
+      "ownerRole": "QC",
+      "dependsOn": [
+        "W39"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Zero full historical faces and no unresolved identity/anatomy violation on selected take"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W41",
+      "package": "W41",
+      "purpose": "Inspect sync, reaction timing, sound and technical decode",
+      "ownerRole": "editor + QC",
+      "dependsOn": [
+        "W39"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Playable coherent take, motivated timing and documented limits; contact sheet alone insufficient"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W42",
+      "package": "W42",
+      "purpose": "Register take disposition and reconcile actual charges",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W40",
+        "W41"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Successful job not confused with accepted take; ledger and asset/slot provenance consistent"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W43",
+      "package": "W43",
+      "purpose": "Locate and play exact Galileo v2 with full audio",
+      "ownerRole": "editor + producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "F01/F03 and voice/continuity findings based on actual version; no rerender just to locate delivery"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W44",
+      "package": "W44",
+      "purpose": "Compare Galileo timeline with bible and replace only verified gaps",
+      "ownerRole": "editor + producer",
+      "dependsOn": [
+        "W43",
+        "W12",
+        "W23"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Minimal correction list with ownership and applicable creative/paid gates"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W45.G",
+      "package": "W45",
+      "purpose": "Accept Galileo as the first complete chapter recipe within declared guide/final scope.",
+      "ownerRole": "editor + QC",
+      "dependsOn": [
+        "W42",
+        "W44"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Complete Galileo chapter has compatible real takes, full audio playback, risky-frame and causal/geometry review, reconciled cost and exact declared guide/final acceptance scope."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W46.prepare",
+      "package": "W46",
+      "purpose": "Prepare all four remaining chapters independently of Galileo production acceptance.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W12",
+        "W21",
+        "W24"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "C/K/N/O each has current selected bible, measured guide, minimal coverage and pending gate list; no generated footage, accepted chapters or Galileo acceptance required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W46.C",
+      "package": "W46",
+      "purpose": "Execute scoped Caesar shot loop and full-chapter review.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W46.prepare",
+        "W45.G"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Caesar complete chapter passes applicable production, frame, temporal, sound and acceptance checks with exact costs and evidence."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W46.K",
+      "package": "W46",
+      "purpose": "Execute scoped Genghis shot loop and full-chapter review.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W46.prepare",
+        "W45.G"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Genghis complete chapter passes applicable production, frame, temporal, sound and acceptance checks with exact costs and evidence."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W46.N",
+      "package": "W46",
+      "purpose": "Execute scoped Napoleon shot loop and full-chapter review.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W46.prepare",
+        "W45.G"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Napoleon complete chapter passes applicable production, frame, temporal, sound and acceptance checks with exact costs and evidence."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W46.O",
+      "package": "W46",
+      "purpose": "Execute scoped Oppenheimer shot loop and full-chapter review.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W46.prepare",
+        "W45.G"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Oppenheimer complete chapter passes applicable production, frame, temporal, sound and acceptance checks with exact costs and evidence."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W47.prepare",
+      "package": "W47",
+      "purpose": "Prepare existing-media opening/ending coverage independently of Galileo acceptance.",
+      "ownerRole": "director + producer",
+      "dependsOn": [
+        "W08"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Six bookend slots have approved-script coverage/reuse/gap plan and candidate labels; no production or Galileo acceptance required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W47.produce",
+      "package": "W47",
+      "purpose": "Release only applicable scoped opening/ending production and accepted coverage.",
+      "ownerRole": "director + producer",
+      "dependsOn": [
+        "W47.prepare",
+        "W45.G"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Opening/ending have compatible actual accepted coverage and scoped request/cost/QC evidence for any newly produced media."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W48",
+      "package": "W48",
+      "purpose": "Normalize accepted sources and edit table transitions",
+      "ownerRole": "editor",
+      "dependsOn": [
+        "W46.C",
+        "W46.K",
+        "W46.N",
+        "W46.O",
+        "W47.produce"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Reproducible resolved timeline with coherent axis, frame rate and source quality notes"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W49",
+      "package": "W49",
+      "purpose": "Review complete English rough cut for story, pacing and continuity",
+      "ownerRole": "director + QC",
+      "dependsOn": [
+        "W48"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Every chapter serves intended arc; defect list distinguishes critical from optional polish"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W50",
+      "package": "W50",
+      "purpose": "Create foley, room tone, ambience and optional music under applicable scope",
+      "ownerRole": "dialogue-sound",
+      "dependsOn": [
+        "W21",
+        "W26.EN"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No cue sheet mistaken for produced audio; period and selected floor materials match"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W51",
+      "package": "W51",
+      "purpose": "Sync contact sounds and preserve meaningful silence",
+      "ownerRole": "dialogue-sound + editor",
+      "dependsOn": [
+        "W48",
+        "W50"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Audible contacts correspond to visible contact; no repetitive blanket effects"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W52",
+      "package": "W52",
+      "purpose": "Rank corrections and approve only measured replacement hypotheses",
+      "ownerRole": "producer + QC",
+      "dependsOn": [
+        "W49"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No speculative decoration spend; every replacement has independent success criterion"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W53",
+      "package": "W53",
+      "purpose": "Reinspect replacements and reconcile reserve/ledger",
+      "ownerRole": "producer + QC",
+      "dependsOn": [
+        "W52"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "All targeted defects closed or explicit blocker retained; no automatic retry chain"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W54",
+      "package": "W54",
+      "purpose": "Conform final dialogue, color and shot-to-shot light; lock picture",
+      "ownerRole": "editor + lighting",
+      "dependsOn": [
+        "W53",
+        "W27.EN",
+        "W30.EN",
+        "W51"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Picture and dialogue timing stable; future changes invalidate only dependent checks"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W55.EN",
+      "package": "W55",
+      "purpose": "Mix and measure exact English locked-audio edition.",
+      "ownerRole": "dialogue-sound",
+      "dependsOn": [
+        "W54"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual full English mix measured for integrated loudness/true peak and reviewed for intelligibility with separate stems; H mix not required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W55.H",
+      "package": "W55",
+      "purpose": "Mix and measure exact localized edition; English loudness proof cannot substitute.",
+      "ownerRole": "dialogue-sound",
+      "dependsOn": [
+        "W56"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual full historical mix independently measured/reviewed with separate stems and language-specific intelligibility; E measurements cannot substitute."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W56",
+      "package": "W56",
+      "purpose": "Assemble historical-language edition with reviewed audio and speech variants",
+      "ownerRole": "dialogue-sound + editor",
+      "dependsOn": [
+        "W29",
+        "W30.H",
+        "W54"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Every language requirement met or explicitly approved adaptation; sync and meaning checked"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W57.EN",
+      "package": "W57",
+      "purpose": "Create/review English captions against exact English locked audio.",
+      "ownerRole": "dialogue-sound + language reviewers",
+      "dependsOn": [
+        "W54"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "English captions reviewed against exact English audio for words, speaker, spelling, timing and encoding; H captions not required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W57.H",
+      "package": "W57",
+      "purpose": "Create/review historical-edition captions with qualified language review.",
+      "ownerRole": "dialogue-sound + language reviewers",
+      "dependsOn": [
+        "W56"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Historical-edition captions reviewed against exact localized audio and qualified meaning/pronunciation review references."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W58.EN",
+      "package": "W58",
+      "purpose": "Export English master independently of historical readiness.",
+      "ownerRole": "editor",
+      "dependsOn": [
+        "W55.EN",
+        "W57.EN"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Exact local English master, English stems/captions and stream/hash/source-quality evidence exist; H export not required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W58.H",
+      "package": "W58",
+      "purpose": "Export historical master only after reviewed localized audio/captions and mix.",
+      "ownerRole": "editor",
+      "dependsOn": [
+        "W55.H",
+        "W56",
+        "W57.H"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Exact local historical master with its own mix, captions, stream/hash/source-quality and language evidence exists."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W59.EN",
+      "package": "W59",
+      "purpose": "Independently inspect/play exact English master and record limits.",
+      "ownerRole": "independent QC",
+      "dependsOn": [
+        "W58.EN"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Independent reviewer fully decodes and plays exact English export with audio, reviews all risky frames/joins/captions and records findings/limitations; H playback not required."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W59.H",
+      "package": "W59",
+      "purpose": "Independently inspect/play exact historical master including required language proof.",
+      "ownerRole": "independent QC",
+      "dependsOn": [
+        "W58.H"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Independent reviewer fully decodes and plays exact historical export with audio, reviews risky frames/joins/captions/language evidence and records findings/limitations."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W60",
+      "package": "W60",
+      "purpose": "Obtain final likeness, performance, voice and story acceptance",
+      "ownerRole": "Andre",
+      "dependsOn": [
+        "W59.EN",
+        "W59.H"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual final acceptance tied to hashes; no agent self-approval of personal gates"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W61",
+      "package": "W61",
+      "purpose": "Package local masters, captions, stems, sources, rights notes and ledger",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W60"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Two usable local editions delivered with provenance; finalMovieVerified updated only by producer with full evidence"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W62",
+      "package": "W62",
+      "purpose": "Archive episode and start clean continuation planning when requested",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W61"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No inherited jobs/balance/approvals; episode may end with no successor"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W63",
+      "package": "W63",
+      "purpose": "Accept next owner or retain a named blocker on every delivery",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Every ready delivery has accountable custody, including silent/offline recipients"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W64",
+      "package": "W64",
+      "purpose": "Review documentation consolidation and remove active duplication by reference",
+      "ownerRole": "producer / Claude delivery",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No overwrite of newer base edits; historical snapshots preserved"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W65",
+      "package": "W65",
+      "purpose": "Audit unused skills/plugins with project/global separation",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Shared tools preserved; current registry and links truthful"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W66",
+      "package": "W66",
+      "purpose": "Integrate one delivery at a time; verify hashes and concurrent changes",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No blind worktree copy, unauthorized Git merge or silent approval transfer"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W67",
+      "package": "W67",
+      "purpose": "Record checkpoints, validation and next dependency without repeated histories",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "One current resume source; next responsibility and limitations explicit"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "W68",
+      "package": "W68",
+      "purpose": "Design/test optional automatic dispatcher only under separate implementation scope",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O01.restore",
+        "O02",
+        "O03",
+        "O04",
+        "O05",
+        "O06",
+        "O07",
+        "O08",
+        "O09",
+        "O10",
+        "O11",
+        "O12",
+        "O13"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No runtime protection claim before tests and live authorized rehearsal; rollback to manual works"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O01.inventory",
+      "package": "O01",
+      "purpose": "Inspect installation, state and declared native contracts without restoring a lane.",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Daily installation/state identity and available CLI/source contracts recorded read-only; no live lane needed."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O01.restore",
+      "package": "O01",
+      "purpose": "User-terminal native restoration and current-session identity proof; not a dependency of fake-adapter development.",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O01.inventory"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Actual intended native session/worktree identity and current contract read verified; remaining permission gap explicit; two-way challenge is O02."
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O02",
+      "package": "O02",
+      "purpose": "Prove operator-to-lane round trip with report readback",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O01.restore"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Record both echoes, lane/session identity and read/ack/acceptance separately"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O03",
+      "package": "O03",
+      "purpose": "Review handoff v2 and task lifecycle schema",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W03"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Schema review completed before daemon or canonical migration"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O04",
+      "package": "O04",
+      "purpose": "Implement read-mostly resume and lint views",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O03"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No automatic repairs or approval writes; tests distinguish advisory warning from hard contradiction"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O05",
+      "package": "O05",
+      "purpose": "Implement handoff check and producer ingestion",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O03"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Partial failure never claims ingestion; v1 records preserve history and require explicit migration disposition"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O06",
+      "package": "O06",
+      "purpose": "Build durable project-local coordination journal",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O03"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Crash/restart and duplicate events preserve one logical assignment; not a parallel production board"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O07",
+      "package": "O07",
+      "purpose": "Build read-only Parley event/report adapter",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O01.inventory",
+        "O06"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Unknown event/JSON schema quarantined; payload secrets and arbitrary commands rejected"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O08",
+      "package": "O08",
+      "purpose": "Build policy and dependency evaluator",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O03",
+        "O04",
+        "O06"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Negative tests prove prohibited dispatch is refused, without claiming whole-system security"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O09",
+      "package": "O09",
+      "purpose": "Build verified successor dispatcher",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O05",
+        "O07",
+        "O08"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Unknown send outcome enters reconciliation; no silent ownership transfer or immediate duplicate send"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O10",
+      "package": "O10",
+      "purpose": "Build derived operator monitor and alert spool",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O07",
+        "O09"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Static/local monitor has no authority; no automatic desktop wake or external transport promised"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O11",
+      "package": "O11",
+      "purpose": "Implement fault, permission and concurrency tests",
+      "ownerRole": "independent technical QA",
+      "dependsOn": [
+        "O05",
+        "O06",
+        "O07",
+        "O08",
+        "O09",
+        "O10"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "All cases in validation plan pass with replayable evidence"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O12",
+      "package": "O12",
+      "purpose": "Run observer-only rehearsal and manual fallback",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O02",
+        "O11"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No auto dispatch in observer phase; producer can reconstruct work from journal plus canonical files"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O13",
+      "package": "O13",
+      "purpose": "Activate one bounded local-document chain",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O12",
+        "O27",
+        "O28"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Activation separately scoped; paid/media/approval/Git actions stay excluded; named rollback tested"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O14",
+      "package": "O14",
+      "purpose": "Audit metadata and project reference graph",
+      "ownerRole": "documentation reviewer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Coverage/exclusions and provenance explicit; no deletion merely because unused recently"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O15",
+      "package": "O15",
+      "purpose": "Consolidate active instructions reversibly",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O14",
+        "W64"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Keep concurrent CLAUDE edit; no rule adoption claimed from a plan file alone"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O16",
+      "package": "O16",
+      "purpose": "Reconcile project skill registry",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O14",
+        "W65"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No global uninstall, copied vendor skills or blind warning suppression"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O17",
+      "package": "O17",
+      "purpose": "Backfill handoff ingestion and current-plan pointers",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O05",
+        "O15"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Every incorporated delivery has explicit ingest evidence and authoritative current-plan pointer"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O18",
+      "package": "O18",
+      "purpose": "Rehearse episode recovery and clean continuation",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O17"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No inherited budget/jobs/approvals/runtime/chapter count and no activeFilm change"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O19",
+      "package": "O19",
+      "purpose": "Harden exact paid-scope preflight separately",
+      "ownerRole": "technical worker",
+      "dependsOn": [
+        "O03",
+        "W33.forecast"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Fake CLI proves rejection and zero spend; tool remains outside automatic dispatcher; cannot prevent bypass by unrestricted shell"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O20",
+      "package": "O20",
+      "purpose": "Review existing rendering and provider entry points",
+      "ownerRole": "technical reviewer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Canonical manual directs to installed CLI; no direct HTTP/MCP provider bypass reintroduced"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O21",
+      "package": "O21",
+      "purpose": "Create complete shot and candidate crosswalk",
+      "ownerRole": "editor",
+      "dependsOn": [
+        "W21"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No alias conflates edit slot, source media, planning row and provider job"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O22",
+      "package": "O22",
+      "purpose": "Resolve outstanding charge evidence",
+      "ownerRole": "producer",
+      "dependsOn": [],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No guessed job ID or synthetic balancing charge; conservative reserve includes exposure"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O23",
+      "package": "O23",
+      "purpose": "Build exact decision review packets",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W14",
+        "W15",
+        "W16",
+        "W18"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Human decisions are concrete and scoped; no redundant blanket approval request"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O24",
+      "package": "O24",
+      "purpose": "Freeze delivery rights and preservation manifest",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "W08",
+        "W50"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Final package rights notes are evidence-based and do not infer new publication authority"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O25",
+      "package": "O25",
+      "purpose": "Cold-start independent acceptance of workflow",
+      "ownerRole": "independent QA",
+      "dependsOn": [
+        "O13",
+        "O15",
+        "O16",
+        "O17"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Working procedure survives session change and no orphaned successor remains"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O26",
+      "package": "O26",
+      "purpose": "Review registry and working-role briefs",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O03"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No role name implies launched session; final QC independent of creator"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O27",
+      "package": "O27",
+      "purpose": "Freeze machine-readable runtime deployment contract",
+      "ownerRole": "producer",
+      "dependsOn": [
+        "O11"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "Proposed config becomes active only after authorized rollout; no credentials in repository"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    },
+    {
+      "id": "O28",
+      "package": "O28",
+      "purpose": "Document and test rollback and emergency stop",
+      "ownerRole": "technical QA",
+      "dependsOn": [
+        "O09",
+        "O10",
+        "O27"
+      ],
+      "executionEnabled": false,
+      "assignmentNeeded": true,
+      "evidenceContract": [
+        "No killed paid job, deleted evidence or abandoned accepted work; exact resume checklist provided"
+      ],
+      "scopeRule": "Use this instance purpose for edition/stage; do not require completion of sibling instances except explicit dependencies.",
+      "authorizationRule": "All package authority limits remain; this graph grants none.",
+      "outputVersionRule": "Choose a unique owned path including instance ID/edition/stage and revision; sibling instances must not overwrite each other."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "observedAt": "2026-10-10T11:36:14.580134-03:00",
+  "scope": "read-only local workspace and daily Agent Parley; no native lane handshake or hook test performed",
+  "commands": [
+    {
+      "name": "git-status",
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/git-status.txt",
+      "sha256": "b4efa7568a2f2c5b463d62276d2aeb1538a80ffaa1c3fe5260600043d2f9a742"
+    },
+    {
+      "name": "git-worktrees",
+      "command": [
+        "git",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/git-worktrees.txt",
+      "sha256": "856700e8a3b7bacee615f57c7a99d70f9a027d73bcbf0895046dc10b03483768"
+    },
+    {
+      "name": "git-head",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/git-head.txt",
+      "sha256": "6c5532d964cc96fe4022644126197fcc28aa66226e8942dfcac2ab5d89a6e101"
+    },
+    {
+      "name": "git-remotes",
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/git-remotes.txt",
+      "sha256": "6fa8302066de9d90e10f3b76b8282cb89f49d9dbd80538286d7bfa988b22cd6a"
+    },
+    {
+      "name": "manage-status",
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "status"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/manage-status.txt",
+      "sha256": "8cdf6558649aa114474121889ee45235c577790f900a52d6a93f27fb4d15be05"
+    },
+    {
+      "name": "parley-status",
+      "command": [
+        "agent-parley",
+        "status"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/parley-status.txt",
+      "sha256": "509f4c6e2a586dbefdaccd19bcab1bfd91e4893c301360ab4029cb74d227fadb"
+    },
+    {
+      "name": "parley-participants",
+      "command": [
+        "agent-parley",
+        "participant",
+        "list"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/parley-participants.txt",
+      "sha256": "cc02faa2713b20d3027b9d12655845229160465453c59649f46de0b46fe2bb68"
+    },
+    {
+      "name": "parley-doctor",
+      "command": [
+        "agent-parley",
+        "doctor",
+        "--json"
+      ],
+      "exitCode": 0,
+      "path": "reports/execution-plan-v1/baseline/parley-doctor.txt",
+      "sha256": "43870120b34e3ecf1228c48c67681e7d31234a72ca92ea9e5f0003368aa0a7a9"
+    }
+  ]
+}

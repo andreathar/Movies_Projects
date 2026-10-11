@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0",
+  "observedAt": "2026-10-10T14:38:14.342954+00:00",
+  "scope": "source-inspection-only",
+  "sourceRoot": "/home/athar/.local/share/uv/tools/agent-parley/lib/python3.12/site-packages/agent_parley",
+  "devRoot": "/mnt/data/Projects_SSD/agent-parley/agent_parley",
+  "testsExecuted": false,
+  "runtimeVerifiedByThisAudit": false,
+  "files": [
+    {
+      "file": "roster.py",
+      "sha256": "ba9fd30d3292d9d84c348a993b1c1827306f66bd0a4d395063ab4ea23e102e41",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "launch.py",
+      "sha256": "29793af605b9d1a3f47e381b0e386e85e5fe75d4a4c428876deb364b55c751b1",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "hook.py",
+      "sha256": "b3476b882a8fb2be93ac75d6f0ff70140d975ede4fa19d9f04d62c4da3156891",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "checkpoints.py",
+      "sha256": "e1f9a60117b8cb51ab6138f49a7a2f1fda525c6d97c703879f058b5d81714670",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "supervision.py",
+      "sha256": "8e8dc78cff6558dfd8ee3669be86bfd6d5fb444bf05664a2227bd02f48a0ffd6",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "server.py",
+      "sha256": "2089e006b968a1a0b24e33e0ffb77e84f3eaa1d668f986729d67deab5265f633",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "store.py",
+      "sha256": "36cf5874a0d906f0276af44650960896dfd70625d6132f747fc569f20f6d5a7f",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "mail.py",
+      "sha256": "432b02635b32c09c82d4ad157b8fc223b3dbe3eae8dc68d87f954df3d3d27228",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "notify.py",
+      "sha256": "c4599650aab2f620e9e7143eb5dd6a6f2671bdf82e74b69a7b60e5d81c2b1ce9",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "reports.py",
+      "sha256": "77ff370c62febccb526e7df2f0112c5a9a08b5075e13bc4109e24cdbbeec6d98",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "denials.py",
+      "sha256": "3eaf79598b8a493fb201043a953e25ce49ed3176280ec008c43e646e60b532c3",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "host_resources.py",
+      "sha256": "654536dfa548d230ec991f1dc0c7c39d9d8226e12aa3d0deee64ef3bb7c46e7c",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "retries.py",
+      "sha256": "54762f8d3d651ea0da014a048aef29cc8690bb997ed390489e5bb2aafcdb9dfd",
+      "sameAsDevelopmentCheckout": true
+    },
+    {
+      "file": "cli.py",
+      "sha256": "232863609070bfeb111a37af909996f9bfa0d1be2c58f1e417badd9b31f16ba0",
+      "sameAsDevelopmentCheckout": true
+    }
+  ]
+}

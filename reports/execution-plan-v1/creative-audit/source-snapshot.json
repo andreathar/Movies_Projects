@@ -1,0 +1,315 @@
+{
+  "scope": "creative specification audit; source bytes fingerprinted, not all media visually inspected",
+  "observedAt": "2026-10-10",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186",
+      "bytes": 8733
+    },
+    {
+      "path": "workspace.json",
+      "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+      "bytes": 4061
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256": "bf15d94f8f8140a1cf17ba794dbee493e45272467b4c42ac247ed4d0f39c0ef1",
+      "bytes": 5254
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be",
+      "bytes": 16998
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717",
+      "bytes": 3542
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d",
+      "bytes": 8240
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+      "bytes": 3122
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+      "bytes": 9084
+    },
+    {
+      "path": "series/andre-time-travel/series.json",
+      "sha256": "01f4db9b997e49ba6d6fce46f8dea5aae2ec4118646cfd01009f74073dfbc1f8",
+      "bytes": 1856
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483",
+      "bytes": 9576
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "bytes": 21035
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "bytes": 10694
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/production-tasks.md",
+      "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c",
+      "bytes": 14665
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/workflow-map-v1.md",
+      "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081",
+      "bytes": 32523
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "bytes": 7490
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "bytes": 5438
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+      "bytes": 7817
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "bytes": 3288
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/language-strategy.md",
+      "sha256": "ca25b020b3251df6be25148558ab5d7d6d7708b88f0bd6f8fce91d9d2774d857",
+      "bytes": 5283
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/language-matrix.csv",
+      "sha256": "f924f1fa2d5255cb96e61855851fa3b60bf0b00488d1b2c853fa1708eb9d6261",
+      "bytes": 655
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/character-andre.md",
+      "sha256": "90c8c02457699177d197dd582c33dad85c2cd6a5154d68026adfabae4d83a213",
+      "bytes": 5702
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity.md",
+      "sha256": "907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3",
+      "bytes": 5265
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2.csv",
+      "sha256": "24f5ba49b43526d427cceaa1de9bcdc14417accff05a0a18af4178c95a93e115",
+      "bytes": 11865
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "sha256": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+      "bytes": 35178
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5",
+      "bytes": 77883
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/art-choices-v1.md",
+      "sha256": "b03c6bcce2e9213c6b50e3baa87607a243a31198568f4819eec3c624c12875e6",
+      "bytes": 3819
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.csv",
+      "sha256": "1bd497ff8bc6748dceb8c1107475fac3f509d98eb85754505bd457551d0909eb",
+      "bytes": 11990
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.md",
+      "sha256": "6b79b79ca3bdabdcc22be25251e821047e096f0a617ed8ce1e0c65772dd00e96",
+      "bytes": 24982
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/atlas.json",
+      "sha256": "ac63a0a7deae7ba306ac62453247fff1cc9c19c3c15d2929f959c7b56c5a47ba",
+      "bytes": 41716
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/shot-list.csv",
+      "sha256": "cb3fa40ac9834b7a391fb72484e29300520bdf1a79c3ee1e0a6f1509a626cb00",
+      "bytes": 3670
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/manifest.json",
+      "sha256": "9bf4c44ddedb011581421f5570f3afa0700a2cdd432a7f2da6c46407a75d18bd",
+      "bytes": 94504
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/review.md",
+      "sha256": "f9cfe48842d905991628fbc40c5ade312784544516489ffe34e5f542e5f4dd85",
+      "bytes": 5716
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+      "sha256": "0c10a58e30476bf69c5407687ffa1e392cbaaf19aa2d0ca0b0b6ec7f64b85b0e",
+      "bytes": 12285
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v3/catalog.json",
+      "sha256": "7d02449d533d42c88aba087a6d6f6e14dfdfe18f6101adbaf39f33cd24ff8e23",
+      "bytes": 36221
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v3/documents/shot-specifications.json",
+      "sha256": "4aa95b9e54b8e1423d78a4db76fb50dcbcc79d6ddf6bf7672515904ba34567a0",
+      "bytes": 26082
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/provenance.json",
+      "sha256": "c0363f43d24720db5cc56bcf3de132935bbc67e67b48a9f8c6e4b64e21a3d782",
+      "bytes": 1219
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/foley-cues.md",
+      "sha256": "8dfe4d9b49945cf4a99a2ef68bccd12577807ef2a825e9a625ae1aa93a500302",
+      "bytes": 13899
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/coverage-plan.md",
+      "sha256": "8578570c7b07a60c56f1efcdf0c192e172bd8640491655741224835e407b5ac3",
+      "bytes": 15939
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/producer-review.md",
+      "sha256": "f0dbe58cc9f19e048aa5add5c55f1918a5f6d76851081f682d50caa86852e4d5",
+      "bytes": 3592
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md",
+      "sha256": "a342d046233187b8d4afcce9231b326d1afb83bbf334368f0db0109b50b43d1b",
+      "bytes": 16312
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v3.csv",
+      "sha256": "fe999606d21a852054759ca60a4d60a44fb61bfd96e4b872d934a447668b1bbd",
+      "bytes": 13478
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-producer-detail-studies-v1.json",
+      "sha256": "f0c9f787b7998eeb7537e934b84b136f6ae22817db0920833632e89c3d563754",
+      "bytes": 7138
+    },
+    {
+      "path": "agents/storyboard.md",
+      "sha256": "17a10fb1df1597aa84bcdcad178924ca73b260d5857678a2d0caeb6b2340ca81",
+      "bytes": 1018
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256": "34493975bc81bc8c6d26beb220efbd8f041fe62286db38a8442521fff292a13c",
+      "bytes": 1121
+    },
+    {
+      "path": "agents/director.md",
+      "sha256": "dc25475460a93db85644b4a80cbd794f4f67c0a5f21cf83b7731e2c5fb3ea408",
+      "bytes": 791
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256": "be33ee2ea9164e1cd657c2daff23c727a5d6f9eed18d08898def3e754220b3ae",
+      "bytes": 1101
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256": "7eaea1994c32e02fd2303156a79a820b0b211c26055eabfa1c5a16b1016c7f64",
+      "bytes": 1583
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256": "46b8dcbf771d872f6f2921c280624d7838f721087a0b567269b259b983d25495",
+      "bytes": 996
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256": "868439025190860ff4ce8478ce1e7dd07b9b587d7982a9e4df63357c1f358fad",
+      "bytes": 1706
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256": "d8c450f102d23a0dd75a724e5bec1a040bf456455e972ac6b069a11d37a1bb21",
+      "bytes": 1030
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256": "5fa9574e20750ba379c3d8e8311bf38f79b902a2022c6ebf9012658ade2848ae",
+      "bytes": 1016
+    },
+    {
+      "path": "agents/README.md",
+      "sha256": "6afbe3c25c9f845ce47492d9ab551cd32538270bbca43867a1f122f79fa30c18",
+      "bytes": 909
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/italian-galileo.md",
+      "sha256": "f6cedaf8c9741f9d9afc711f67cfd347b63a60bf162f9842d460ea93f1220418",
+      "bytes": 3839
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/mongol-genghis.md",
+      "sha256": "4230f78a0abd80411b74b5d5f448b76b0f30a6dd0861b6d0127c60bb4117647f",
+      "bytes": 4160
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/latin-caesar.md",
+      "sha256": "ed346e71d4fe87971cd8b2d33fed909d3fe02f8fbf494c23f6d079b3916c8140",
+      "bytes": 4000
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/corsican-napoleon.md",
+      "sha256": "3b3dacbd86ec8cd8c5e00847fe119eebf8276497cfad4b112f6f6118da5e0189",
+      "bytes": 5087
+    }
+  ],
+  "counts": {
+    "storyboardSlots": 41,
+    "slotTargetSeconds": 240,
+    "dialogueLines": 22,
+    "scratchTotalSeconds": 120.8,
+    "scratchSecondsBySection": {
+      "IN": 5.83,
+      "C": 19.99,
+      "K": 21.39,
+      "G": 23.3,
+      "N": 20.12,
+      "O": 20.45,
+      "OUT": 9.72
+    },
+    "dialogueApproved": 0,
+    "takes": 9,
+    "takeStatusCounts": {
+      "accepted": 5,
+      "accepted_pending_full_playback": 4
+    },
+    "acceptedSlotMappings": 0,
+    "legacyCandidates": 16,
+    "regenerationProposalRows": 59
+  },
+  "missingInBaseCheckout": [
+    "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v2.mp4",
+    "projects/andre-time-travel/08_edit/timelines/galileo-en-v2.json",
+    "projects/andre-time-travel/08_edit/reviews/galileo-en-v2/technical-qc.json"
+  ]
+}

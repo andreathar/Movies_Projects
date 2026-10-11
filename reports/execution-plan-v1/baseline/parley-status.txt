@@ -1,0 +1,10 @@
+Server: ready
+Notify: outbound off: No notification transport is configured; run `agent-parley notify setup`, or set AGENT_PARLEY_NOTIFY.; inbound off: AGENT_PARLEY_INBOUND is not set
+State: /home/athar/.local/state/agent-parley
+
+Project: /mnt/data/Projects_SSD/Movies_Projects
+No open claims.
+LANE    STATE  CLAIMS  TASK
+claude  dead   0       Delivered for review: historical-details-v1 (5 figures + research-notes) and docs consolidation draft (6 docs, report with deltas 25/27/29, before/diffs). No canonical files, spending, generation or commits.
+codex   dead   0       Mensagem 30 revisada e reconhecida. Revisao independente da ficha historica concluida: seis correcoes pontuais H01-H06 antes de uso como especificacao de producao. Parecer fail delimitado registrado contra report 2c4fc95cdbee414e; workflow
+Pull requests (last 168h): 0 opened, 0 merged, 0 closed unmerged, first pass 0/0, 1 unowned excluded

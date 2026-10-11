@@ -1,0 +1,616 @@
+{
+  "auditDate": "2026-10-10",
+  "timezone": "America/Sao_Paulo",
+  "scope": "read-only production/management requirements audit; no media playback, no provider or Parley runtime verification",
+  "sourceFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186",
+      "bytes": 8733
+    },
+    {
+      "path": "workspace.json",
+      "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+      "bytes": 4061
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be",
+      "bytes": 16998
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d",
+      "bytes": 8240
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717",
+      "bytes": 3542
+    },
+    {
+      "path": "docs/VERSION_CONTROL.md",
+      "sha256": "96ae2a70d11607a7149ccef90161179e3b2c818df508d9299740e517cb7b687a",
+      "bytes": 4517
+    },
+    {
+      "path": "docs/TOKEN_EFFICIENCY.md",
+      "sha256": "9729b3b97bbe3313395132958235de384149c2addedfb23510bab682c720ee1f",
+      "bytes": 4229
+    },
+    {
+      "path": "docs/MEMORY_AND_AGENTS.md",
+      "sha256": "15b41ca3e9bc649fd555d0f7a7bc8040eead8625164b6ad466a85f3927c60ef7",
+      "bytes": 1535
+    },
+    {
+      "path": "docs/CLEANUP-INVENTORY-2026-10-09.md",
+      "sha256": "847a4b2951967d19ca842da1f9aaca569e7b87441a07d3535565a59db0f3f5d1",
+      "bytes": 2859
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-09-memory-handoff-design.md",
+      "sha256": "ff7c69b04aff1412004474b373d1ed522d17c9f3652148fa31e3e6d411e9cc2d",
+      "bytes": 3776
+    },
+    {
+      "path": "shared/templates/agent-handoff.json",
+      "sha256": "7c12a5df456ff7689f8818e80017e65b68f9fa5c762cba5f1d870d3175c8bd36",
+      "bytes": 450
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+      "bytes": 3122
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256": "2f7ff27c4e02c646fc8b628c049b2911c7bc69a83c5b8736fb9af00a8a9e4c1e",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256": "a8ec187622c5546c436c1d4f09a66afc80f01fbe94f17936642e442caee5f271",
+      "bytes": 13768
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256": "871d2b0e2e72dadfa9bf1c8445cc75c4356b0b1b1f285d724d384de9262c4c02",
+      "bytes": 14933
+    },
+    {
+      "path": "scripts/verify_handoff.py",
+      "sha256": "3b0faf525c6b3c0706db98c4bb3bf6bd52f00a8c8ebe4b051f2d352801957e7f",
+      "bytes": 6623
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+      "bytes": 9084
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483",
+      "bytes": 9576
+    },
+    {
+      "path": "projects/andre-time-travel/memory/risks.json",
+      "sha256": "36808754c78459275596986bc05ddd8104536931a54bf0b1acf0f4ca0dacaa45",
+      "bytes": 5547
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "bytes": 21035
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "bytes": 10694
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/production-tasks.md",
+      "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c",
+      "bytes": 14665
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/workflow-map-v1.md",
+      "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081",
+      "bytes": 32523
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "sha256": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3",
+      "bytes": 9689
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/project-cleanup-plan-v1.md",
+      "sha256": "0e1e20730ea553a146ed18d123884a89514361bfbccec94de4f7a0e2d8a1db4b",
+      "bytes": 14589
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "bytes": 7490
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/language-matrix.csv",
+      "sha256": "f924f1fa2d5255cb96e61855851fa3b60bf0b00488d1b2c853fa1708eb9d6261",
+      "bytes": 655
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+      "bytes": 7817
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "bytes": 3288
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "bytes": 39156
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2.csv",
+      "sha256": "24f5ba49b43526d427cceaa1de9bcdc14417accff05a0a18af4178c95a93e115",
+      "bytes": 11865
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "sha256": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+      "bytes": 35178
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "bytes": 5438
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D01-identity-set.json",
+      "sha256": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+      "bytes": 1830
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D02-wardrobe.json",
+      "sha256": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+      "bytes": 1475
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D03-grooming.json",
+      "sha256": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+      "bytes": 1172
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+      "sha256": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "bytes": 1344
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D05-eye-bases.json",
+      "sha256": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+      "bytes": 1946
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D06-voice.json",
+      "sha256": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+      "bytes": 1172
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D07-script-v2.json",
+      "sha256": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+      "bytes": 1141
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D08-photo-session.json",
+      "sha256": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+      "bytes": 830
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D09-screen-axis.json",
+      "sha256": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+      "bytes": 1050
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D10-chapter-timing.json",
+      "sha256": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+      "bytes": 994
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D11-element-and-still-route.json",
+      "sha256": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "bytes": 1640
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D12-era-keyframes.json",
+      "sha256": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+      "bytes": 1667
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D13-speech-route.json",
+      "sha256": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+      "bytes": 1553
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+      "bytes": 1170
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D15-galileo-resume.json",
+      "sha256": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+      "bytes": 1641
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+      "sha256": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "bytes": 1088
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+      "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54",
+      "bytes": 1082
+    }
+  ],
+  "productionTasks": [
+    {
+      "id": "T01",
+      "title": "Freeze the brief and spending boundaries",
+      "ownerRole": "producer",
+      "status": "completed",
+      "dependsOn": [],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "docs/budget-plan-v2.md",
+        "00_brief/approvals.json",
+        "00_brief/decisions/D04-table.json"
+      ],
+      "verifiedAt": "2026-10-09T09:23:16-03:00",
+      "note": "Brief frozen as decided (D01–D10); spending ceilings in budget-plan-v2; live balance 6,981."
+    },
+    {
+      "id": "T02",
+      "title": "Receive references and the failed scene",
+      "ownerRole": "continuity",
+      "status": "completed",
+      "dependsOn": [],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "00_brief/decisions/D01-identity-set.json",
+        "docs/photo-session-spec.md"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00",
+      "notes": "10 candidate images are available for the continuity reviewer; quality, six-view coverage, provenance and consistency remain unreviewed.",
+      "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
+    },
+    {
+      "id": "T03",
+      "title": "Lock the character and table bibles",
+      "ownerRole": "continuity",
+      "status": "completed",
+      "dependsOn": [
+        "T02"
+      ],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "03_bibles/continuity-matrix.csv",
+        "00_brief/decisions/D04-table.json",
+        "00_brief/decisions/D05-eye-bases.json"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00",
+      "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
+    },
+    {
+      "id": "T04",
+      "title": "Create and verify the new Andre Element",
+      "ownerRole": "producer",
+      "status": "completed",
+      "dependsOn": [
+        "T01",
+        "T03"
+      ],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "00_brief/decisions/D11-element-and-still-route.json"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00"
+    },
+    {
+      "id": "T05",
+      "title": "Fact-check and approve the English script",
+      "ownerRole": "historian",
+      "status": "completed",
+      "dependsOn": [],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "01_script/script-en.md",
+        "00_brief/research/historian-review-v2.md",
+        "00_brief/research/snapshots/source-20.md"
+      ],
+      "verifiedAt": "2026-10-09T09:28:09-03:00",
+      "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
+    },
+    {
+      "id": "T06",
+      "title": "Resolve historical-language targets and reviewers",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T05"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T07",
+      "title": "Approve voice samples and dry dialogue",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T01",
+        "T05"
+      ],
+      "blocker": "Andre approved likeness but rejected native voice; temporary guide authorized by D14. Final dubbing/ear approval remains pending.",
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "04_audio/voice-tests/codex-opening-v1/provenance.json"
+      ],
+      "verifiedAt": null,
+      "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
+    },
+    {
+      "id": "T08",
+      "title": "Approve a restrained four-shot identity pilot",
+      "ownerRole": "continuity",
+      "status": "completed",
+      "dependsOn": [
+        "T03",
+        "T04"
+      ],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "06_pilot/reviews/PILOT-01-galileo-listening-locked.json",
+        "00_brief/decisions/D13-speech-route.json"
+      ],
+      "verifiedAt": "2026-10-09T11:35:30-03:00"
+    },
+    {
+      "id": "T09",
+      "title": "Prove the speech route in both edition strategies",
+      "ownerRole": "dialogue-sound",
+      "status": "completed",
+      "dependsOn": [
+        "T07",
+        "T08"
+      ],
+      "blocker": null,
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "00_brief/decisions/D13-speech-route.json",
+        "00_brief/decisions/D14-dub-strategy.json"
+      ],
+      "verifiedAt": "2026-10-09T11:35:30-03:00"
+    },
+    {
+      "id": "T10",
+      "title": "Reforecast costs and freeze the production envelope",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "dependsOn": [
+        "T08",
+        "T09"
+      ],
+      "blocker": "Measured-cost planning reforecast recorded; remaining-phase reallocation/release and chapter recipe freeze await Galileo playback. External-audio fees remain separately unapproved.",
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "docs/budget-and-envelope-resume-v3.md"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T11",
+      "title": "Approve the storyboard and audio-first animatic",
+      "ownerRole": "storyboard",
+      "status": "blocked",
+      "dependsOn": [
+        "T05",
+        "T07",
+        "T10"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "05_storyboard/preproduction-atlas-v1/storyboard-cards.pdf"
+      ],
+      "verifiedAt": null,
+      "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
+    },
+    {
+      "id": "T12",
+      "title": "Approve era and eye keyframes",
+      "ownerRole": "storyboard",
+      "status": "in_progress",
+      "dependsOn": [
+        "T03",
+        "T08",
+        "T11"
+      ],
+      "blocker": "12 Andre keyframes + eyes + inserts accepted as candidates; era wides remain R1 plates. Approval after pilot.",
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "02_references/keyframes/andre/",
+        "00_brief/decisions/D12-era-keyframes.json"
+      ],
+      "verifiedAt": null,
+      "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending."
+    },
+    {
+      "id": "T13",
+      "title": "Produce Galileo as the first complete chapter",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "dependsOn": [
+        "T09",
+        "T10",
+        "T12"
+      ],
+      "blocker": "42-second guide-voice preview assembled and technically verified. End-to-end normal-speed playback, fine sync, pacing and chapter acceptance still pending; no final voice approval.",
+      "specification": "production-tasks.md",
+      "deliverables": [
+        "08_edit/picture-lock/galileo-en-preview-v1.mp4",
+        "08_edit/timelines/galileo-en-v1.json",
+        "08_edit/reviews/galileo-en-v1/review.md",
+        "08_edit/reviews/galileo-en-v1/technical-qc.json"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T14",
+      "title": "Produce Caesar coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T15",
+      "title": "Produce Genghis Khan coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T16",
+      "title": "Produce Napoleon coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T17",
+      "title": "Produce Oppenheimer coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T18",
+      "title": "Produce opening/ending and lock the English picture",
+      "ownerRole": "editor",
+      "status": "blocked",
+      "dependsOn": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T19",
+      "title": "Spend the correction reserve on measured gaps",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T18"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T20",
+      "title": "Assemble and verify the historical-language edition",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T06",
+        "T07",
+        "T19"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T21",
+      "title": "Finish, deliver, and independently verify both masters",
+      "ownerRole": "qc",
+      "status": "blocked",
+      "dependsOn": [
+        "T19",
+        "T20"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "specification": "production-tasks.md",
+      "deliverables": [],
+      "verifiedAt": null
+    }
+  ],
+  "creativeApprovals": {
+    "characterReferences": true,
+    "productionElement": true,
+    "screenplay": true,
+    "voiceTests": false,
+    "speechRoute": true,
+    "pilot": true,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "counts": {
+    "tasks": 21,
+    "takes": 9,
+    "shots": 41,
+    "handoffs": 32,
+    "roleDefinitions": 9,
+    "ledgerRows": 87
+  },
+  "noClaims": [
+    "media visually reviewed in this audit",
+    "normal-speed playback performed",
+    "voice audition heard",
+    "live balance refreshed",
+    "Parley hooks verified",
+    "canonical files changed"
+  ]
+}

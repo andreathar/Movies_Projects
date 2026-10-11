@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "status": "delivered_for_producer_integration",
+  "scope": "Read-only daily Agent Parley source audit plus proposed project dispatcher architecture",
+  "episode": "andre-time-travel",
+  "owner": "parley_hooks_audit delegated reviewer",
+  "producer": "root desktop producer",
+  "createdAt": "2026-10-10T14:38:33.828130+00:00",
+  "outputs": [
+    {
+      "path": "reports/execution-plan-v1/parley-audit/README.md",
+      "sha256": "78069ef11b9578c2f96104669daf614fbb62fa0e331ac5ce620643a70fa2d6c1",
+      "priorSha256": null,
+      "createdNew": true
+    },
+    {
+      "path": "reports/execution-plan-v1/parley-audit/source-evidence.json",
+      "sha256": "093497d2060afadcec9ecb622c4a6d583eaa728a88d87f5f90aafa0b9fdfaaa6",
+      "priorSha256": null,
+      "createdNew": true
+    }
+  ],
+  "checksActuallyPerformed": [
+    "Read applicable startup contract, film state/manifest/board/approvals, local skill, workflow map, dramatic direction, local handoff and token policy",
+    "Inspected daily installed source for hook, identity, operator, report, reservation, notification, retry and wake contracts",
+    "Compared 14 installed source files with development checkout by bytes and recorded SHA-256",
+    "Read test function/source pointers only; did not execute upstream tests",
+    "Inspected project hook presence using sanitized key/count output only",
+    "JSON parsed source evidence; all 14 inspected sources match development checkout at observation"
+  ],
+  "notPerformed": [
+    "No live handshake",
+    "No Parley messages, reports, reservations or other mutations",
+    "No native permission/trust changes",
+    "No service or lane starts/restarts",
+    "No dispatcher implementation or activation",
+    "No media creation, paid calls, commits, merges or publication"
+  ],
+  "pending": [
+    "Producer links own live CLI evidence",
+    "Producer reviews and integrates audit into final plan",
+    "Future implementation tests and user-terminal lane restoration before any functioning automation claim"
+  ],
+  "successor": {
+    "owner": "root desktop producer",
+    "task": "Integrate detailed capability audit and architecture into requested plan",
+    "acceptance": "Pending parent receipt; audit author retains handoff responsibility until receipt"
+  },
+  "memoryUsed": [
+    {
+      "path": "MEMORY.md",
+      "lines": "44-48",
+      "rollout": "01a12496-faf7-7062-be9f-bab9ba48c26e"
+    },
+    {
+      "path": "MEMORY.md",
+      "lines": "96",
+      "rollout": "01a12218-4ca7-79d2-af30-dc09597e22c3"
+    }
+  ]
+}

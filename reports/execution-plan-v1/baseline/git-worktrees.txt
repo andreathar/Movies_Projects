@@ -1,0 +1,12 @@
+worktree /mnt/data/Projects_SSD/Movies_Projects
+HEAD dfec3be82452bc2c17215308bfeebe71ec238ac9
+branch refs/heads/main
+
+worktree /home/athar/.local/state/agent-parley/projects/7d5e3e71ffde7f47/claude
+HEAD 9686949ecd554cc2a40a0b0ab3ab5175f28060c0
+branch refs/heads/parley/7d5e3e71ffde7f47/lane-2
+
+worktree /home/athar/.local/state/agent-parley/projects/7d5e3e71ffde7f47/codex
+HEAD e0f69567198122313eca93283b153d534e785690
+branch refs/heads/parley/7d5e3e71ffde7f47/lane-1
+

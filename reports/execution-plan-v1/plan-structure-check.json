@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "type": "planning-structure-only",
+  "packages": 96,
+  "executionInstances": 111,
+  "requirementRows": 129,
+  "coverage": {
+    "T": 21,
+    "W": 68,
+    "cleanupPhases": 8,
+    "memoryPhases": 4,
+    "invariantRows": 28
+  },
+  "acyclic": true,
+  "independenceAndGateChecks": {
+    "scratch_likeness_independent": true,
+    "scratch_payment_independent": true,
+    "english_historical_independent": true,
+    "historical_reviewed_audio": true,
+    "mock_adapter_liveness_independent": true,
+    "joint_final_qc": true,
+    "remaining_chapter_preparation_independent": true,
+    "bookend_preparation_independent": true,
+    "all_chapter_assembly": true,
+    "english_route_mandatory": true
+  },
+  "localLinksChecked": 19,
+  "brokenLinks": [],
+  "planningWords": 22163,
+  "runtimeDispatcherTested": false,
+  "paidJobsSubmitted": 0
+}

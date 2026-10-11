@@ -1,0 +1,1209 @@
+{
+  "planningOnly": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "observations": [
+        {
+          "sha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "CLAUDE.md",
+      "observations": [
+        {
+          "sha256": "94e547ee0204ae1600af99a9b3c18ce8d3ba9635d62f96936d938dd8e78a042b",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        }
+      ],
+      "currentSha256": "94e547ee0204ae1600af99a9b3c18ce8d3ba9635d62f96936d938dd8e78a042b",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "workspace.json",
+      "observations": [
+        {
+          "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "observations": [
+        {
+          "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "observations": [
+        {
+          "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/TOKEN_EFFICIENCY.md",
+      "observations": [
+        {
+          "sha256": "9729b3b97bbe3313395132958235de384149c2addedfb23510bab682c720ee1f",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "9729b3b97bbe3313395132958235de384149c2addedfb23510bab682c720ee1f",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "9729b3b97bbe3313395132958235de384149c2addedfb23510bab682c720ee1f",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/VERSION_CONTROL.md",
+      "observations": [
+        {
+          "sha256": "96ae2a70d11607a7149ccef90161179e3b2c818df508d9299740e517cb7b687a",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "96ae2a70d11607a7149ccef90161179e3b2c818df508d9299740e517cb7b687a",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "96ae2a70d11607a7149ccef90161179e3b2c818df508d9299740e517cb7b687a",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "observations": [
+        {
+          "sha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-09-memory-handoff-design.md",
+      "observations": [
+        {
+          "sha256": "ff7c69b04aff1412004474b373d1ed522d17c9f3652148fa31e3e6d411e9cc2d",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "ff7c69b04aff1412004474b373d1ed522d17c9f3652148fa31e3e6d411e9cc2d",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "ff7c69b04aff1412004474b373d1ed522d17c9f3652148fa31e3e6d411e9cc2d",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "observations": [
+        {
+          "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "observations": [
+        {
+          "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "observations": [
+        {
+          "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "observations": [
+        {
+          "sha256": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "1224b1382b9ed47ab9c37b82fabc3c90ea455e6a84d64f2e4bdb5f8e7e05b7c5",
+      "changedSinceAnyObservation": true,
+      "changeDisposition": "Producer planning pointer/session entry only; production state not changed"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "observations": [
+        {
+          "sha256": "cc04e102b6f8c8ea1c9aad03997c0b24a2a0a751c99114640a163ae9732c76ae",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        }
+      ],
+      "currentSha256": "fdc064e54825c74c18664087f84e23fc63d99ca10cf1842d26b373e18e4c5218",
+      "changedSinceAnyObservation": true,
+      "changeDisposition": "Producer planning pointer/session entry only; production state not changed"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/workflow-map-v1.md",
+      "observations": [
+        {
+          "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/production-tasks.md",
+      "observations": [
+        {
+          "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/project-cleanup-plan-v1.md",
+      "observations": [
+        {
+          "sha256": "0e1e20730ea553a146ed18d123884a89514361bfbccec94de4f7a0e2d8a1db4b",
+          "evidence": "reports/execution-plan-v1/baseline/base-hashes.json"
+        },
+        {
+          "sha256": "0e1e20730ea553a146ed18d123884a89514361bfbccec94de4f7a0e2d8a1db4b",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "0e1e20730ea553a146ed18d123884a89514361bfbccec94de4f7a0e2d8a1db4b",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/MEMORY_AND_AGENTS.md",
+      "observations": [
+        {
+          "sha256": "15b41ca3e9bc649fd555d0f7a7bc8040eead8625164b6ad466a85f3927c60ef7",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "15b41ca3e9bc649fd555d0f7a7bc8040eead8625164b6ad466a85f3927c60ef7",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "docs/CLEANUP-INVENTORY-2026-10-09.md",
+      "observations": [
+        {
+          "sha256": "847a4b2951967d19ca842da1f9aaca569e7b87441a07d3535565a59db0f3f5d1",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "847a4b2951967d19ca842da1f9aaca569e7b87441a07d3535565a59db0f3f5d1",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "shared/templates/agent-handoff.json",
+      "observations": [
+        {
+          "sha256": "7c12a5df456ff7689f8818e80017e65b68f9fa5c762cba5f1d870d3175c8bd36",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "7c12a5df456ff7689f8818e80017e65b68f9fa5c762cba5f1d870d3175c8bd36",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "observations": [
+        {
+          "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/registry.json",
+      "observations": [
+        {
+          "sha256": "2f7ff27c4e02c646fc8b628c049b2911c7bc69a83c5b8736fb9af00a8a9e4c1e",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "2f7ff27c4e02c646fc8b628c049b2911c7bc69a83c5b8736fb9af00a8a9e4c1e",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "scripts/manage.py",
+      "observations": [
+        {
+          "sha256": "a8ec187622c5546c436c1d4f09a66afc80f01fbe94f17936642e442caee5f271",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "a8ec187622c5546c436c1d4f09a66afc80f01fbe94f17936642e442caee5f271",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "observations": [
+        {
+          "sha256": "871d2b0e2e72dadfa9bf1c8445cc75c4356b0b1b1f285d724d384de9262c4c02",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "871d2b0e2e72dadfa9bf1c8445cc75c4356b0b1b1f285d724d384de9262c4c02",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "scripts/verify_handoff.py",
+      "observations": [
+        {
+          "sha256": "3b0faf525c6b3c0706db98c4bb3bf6bd52f00a8c8ebe4b051f2d352801957e7f",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "3b0faf525c6b3c0706db98c4bb3bf6bd52f00a8c8ebe4b051f2d352801957e7f",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "observations": [
+        {
+          "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/risks.json",
+      "observations": [
+        {
+          "sha256": "36808754c78459275596986bc05ddd8104536931a54bf0b1acf0f4ca0dacaa45",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "36808754c78459275596986bc05ddd8104536931a54bf0b1acf0f4ca0dacaa45",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "observations": [
+        {
+          "sha256": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/language-matrix.csv",
+      "observations": [
+        {
+          "sha256": "f924f1fa2d5255cb96e61855851fa3b60bf0b00488d1b2c853fa1708eb9d6261",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "f924f1fa2d5255cb96e61855851fa3b60bf0b00488d1b2c853fa1708eb9d6261",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f924f1fa2d5255cb96e61855851fa3b60bf0b00488d1b2c853fa1708eb9d6261",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "observations": [
+        {
+          "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "observations": [
+        {
+          "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "observations": [
+        {
+          "sha256": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/continuity-matrix-v2.csv",
+      "observations": [
+        {
+          "sha256": "24f5ba49b43526d427cceaa1de9bcdc14417accff05a0a18af4178c95a93e115",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "24f5ba49b43526d427cceaa1de9bcdc14417accff05a0a18af4178c95a93e115",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "24f5ba49b43526d427cceaa1de9bcdc14417accff05a0a18af4178c95a93e115",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "observations": [
+        {
+          "sha256": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "observations": [
+        {
+          "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        },
+        {
+          "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D01-identity-set.json",
+      "observations": [
+        {
+          "sha256": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D02-wardrobe.json",
+      "observations": [
+        {
+          "sha256": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D03-grooming.json",
+      "observations": [
+        {
+          "sha256": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+      "observations": [
+        {
+          "sha256": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D05-eye-bases.json",
+      "observations": [
+        {
+          "sha256": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D06-voice.json",
+      "observations": [
+        {
+          "sha256": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D07-script-v2.json",
+      "observations": [
+        {
+          "sha256": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D08-photo-session.json",
+      "observations": [
+        {
+          "sha256": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D09-screen-axis.json",
+      "observations": [
+        {
+          "sha256": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D10-chapter-timing.json",
+      "observations": [
+        {
+          "sha256": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D11-element-and-still-route.json",
+      "observations": [
+        {
+          "sha256": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D12-era-keyframes.json",
+      "observations": [
+        {
+          "sha256": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D13-speech-route.json",
+      "observations": [
+        {
+          "sha256": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "observations": [
+        {
+          "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D15-galileo-resume.json",
+      "observations": [
+        {
+          "sha256": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+      "observations": [
+        {
+          "sha256": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+      "observations": [
+        {
+          "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54",
+          "evidence": "reports/execution-plan-v1/requirements-audit/baseline.json"
+        }
+      ],
+      "currentSha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "START_HERE.md",
+      "observations": [
+        {
+          "sha256": "bf15d94f8f8140a1cf17ba794dbee493e45272467b4c42ac247ed4d0f39c0ef1",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "bf15d94f8f8140a1cf17ba794dbee493e45272467b4c42ac247ed4d0f39c0ef1",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "series/andre-time-travel/series.json",
+      "observations": [
+        {
+          "sha256": "01f4db9b997e49ba6d6fce46f8dea5aae2ec4118646cfd01009f74073dfbc1f8",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "01f4db9b997e49ba6d6fce46f8dea5aae2ec4118646cfd01009f74073dfbc1f8",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/language-strategy.md",
+      "observations": [
+        {
+          "sha256": "ca25b020b3251df6be25148558ab5d7d6d7708b88f0bd6f8fce91d9d2774d857",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "ca25b020b3251df6be25148558ab5d7d6d7708b88f0bd6f8fce91d9d2774d857",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/character-andre.md",
+      "observations": [
+        {
+          "sha256": "90c8c02457699177d197dd582c33dad85c2cd6a5154d68026adfabae4d83a213",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "90c8c02457699177d197dd582c33dad85c2cd6a5154d68026adfabae4d83a213",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/table-and-continuity.md",
+      "observations": [
+        {
+          "sha256": "907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "907bd7b95bd006a020e0260dac251063ec9ed6271acd3f515b42c42587337ca3",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "observations": [
+        {
+          "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/art-choices-v1.md",
+      "observations": [
+        {
+          "sha256": "b03c6bcce2e9213c6b50e3baa87607a243a31198568f4819eec3c624c12875e6",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "b03c6bcce2e9213c6b50e3baa87607a243a31198568f4819eec3c624c12875e6",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.csv",
+      "observations": [
+        {
+          "sha256": "1bd497ff8bc6748dceb8c1107475fac3f509d98eb85754505bd457551d0909eb",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "1bd497ff8bc6748dceb8c1107475fac3f509d98eb85754505bd457551d0909eb",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/legacy-images-v2-proposta.md",
+      "observations": [
+        {
+          "sha256": "6b79b79ca3bdabdcc22be25251e821047e096f0a617ed8ce1e0c65772dd00e96",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "6b79b79ca3bdabdcc22be25251e821047e096f0a617ed8ce1e0c65772dd00e96",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/atlas.json",
+      "observations": [
+        {
+          "sha256": "ac63a0a7deae7ba306ac62453247fff1cc9c19c3c15d2929f959c7b56c5a47ba",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "ac63a0a7deae7ba306ac62453247fff1cc9c19c3c15d2929f959c7b56c5a47ba",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/shot-list.csv",
+      "observations": [
+        {
+          "sha256": "cb3fa40ac9834b7a391fb72484e29300520bdf1a79c3ee1e0a6f1509a626cb00",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "cb3fa40ac9834b7a391fb72484e29300520bdf1a79c3ee1e0a6f1509a626cb00",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/manifest.json",
+      "observations": [
+        {
+          "sha256": "9bf4c44ddedb011581421f5570f3afa0700a2cdd432a7f2da6c46407a75d18bd",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "9bf4c44ddedb011581421f5570f3afa0700a2cdd432a7f2da6c46407a75d18bd",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/review.md",
+      "observations": [
+        {
+          "sha256": "f9cfe48842d905991628fbc40c5ade312784544516489ffe34e5f542e5f4dd85",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f9cfe48842d905991628fbc40c5ade312784544516489ffe34e5f542e5f4dd85",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+      "observations": [
+        {
+          "sha256": "0c10a58e30476bf69c5407687ffa1e392cbaaf19aa2d0ca0b0b6ec7f64b85b0e",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "0c10a58e30476bf69c5407687ffa1e392cbaaf19aa2d0ca0b0b6ec7f64b85b0e",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v3/catalog.json",
+      "observations": [
+        {
+          "sha256": "7d02449d533d42c88aba087a6d6f6e14dfdfe18f6101adbaf39f33cd24ff8e23",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "7d02449d533d42c88aba087a6d6f6e14dfdfe18f6101adbaf39f33cd24ff8e23",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/preproduction-atlas-v3/documents/shot-specifications.json",
+      "observations": [
+        {
+          "sha256": "4aa95b9e54b8e1423d78a4db76fb50dcbcc79d6ddf6bf7672515904ba34567a0",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "4aa95b9e54b8e1423d78a4db76fb50dcbcc79d6ddf6bf7672515904ba34567a0",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/04_audio/voice-tests/codex-opening-v1/provenance.json",
+      "observations": [
+        {
+          "sha256": "c0363f43d24720db5cc56bcf3de132935bbc67e67b48a9f8c6e4b64e21a3d782",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "c0363f43d24720db5cc56bcf3de132935bbc67e67b48a9f8c6e4b64e21a3d782",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/foley-cues.md",
+      "observations": [
+        {
+          "sha256": "8dfe4d9b49945cf4a99a2ef68bccd12577807ef2a825e9a625ae1aa93a500302",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "8dfe4d9b49945cf4a99a2ef68bccd12577807ef2a825e9a625ae1aa93a500302",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/coverage-plan.md",
+      "observations": [
+        {
+          "sha256": "8578570c7b07a60c56f1efcdf0c192e172bd8640491655741224835e407b5ac3",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "8578570c7b07a60c56f1efcdf0c192e172bd8640491655741224835e407b5ac3",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v2/producer-review.md",
+      "observations": [
+        {
+          "sha256": "f0dbe58cc9f19e048aa5add5c55f1918a5f6d76851081f682d50caa86852e4d5",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f0dbe58cc9f19e048aa5add5c55f1918a5f6d76851081f682d50caa86852e4d5",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md",
+      "observations": [
+        {
+          "sha256": "a342d046233187b8d4afcce9231b326d1afb83bbf334368f0db0109b50b43d1b",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "a342d046233187b8d4afcce9231b326d1afb83bbf334368f0db0109b50b43d1b",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v3.csv",
+      "observations": [
+        {
+          "sha256": "fe999606d21a852054759ca60a4d60a44fb61bfd96e4b872d934a447668b1bbd",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "fe999606d21a852054759ca60a4d60a44fb61bfd96e4b872d934a447668b1bbd",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-producer-detail-studies-v1.json",
+      "observations": [
+        {
+          "sha256": "f0c9f787b7998eeb7537e934b84b136f6ae22817db0920833632e89c3d563754",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f0c9f787b7998eeb7537e934b84b136f6ae22817db0920833632e89c3d563754",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/storyboard.md",
+      "observations": [
+        {
+          "sha256": "17a10fb1df1597aa84bcdcad178924ca73b260d5857678a2d0caeb6b2340ca81",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "17a10fb1df1597aa84bcdcad178924ca73b260d5857678a2d0caeb6b2340ca81",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/lighting.md",
+      "observations": [
+        {
+          "sha256": "34493975bc81bc8c6d26beb220efbd8f041fe62286db38a8442521fff292a13c",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "34493975bc81bc8c6d26beb220efbd8f041fe62286db38a8442521fff292a13c",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/director.md",
+      "observations": [
+        {
+          "sha256": "dc25475460a93db85644b4a80cbd794f4f67c0a5f21cf83b7731e2c5fb3ea408",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "dc25475460a93db85644b4a80cbd794f4f67c0a5f21cf83b7731e2c5fb3ea408",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/qc.md",
+      "observations": [
+        {
+          "sha256": "be33ee2ea9164e1cd657c2daff23c727a5d6f9eed18d08898def3e754220b3ae",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "be33ee2ea9164e1cd657c2daff23c727a5d6f9eed18d08898def3e754220b3ae",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/historian.md",
+      "observations": [
+        {
+          "sha256": "7eaea1994c32e02fd2303156a79a820b0b211c26055eabfa1c5a16b1016c7f64",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "7eaea1994c32e02fd2303156a79a820b0b211c26055eabfa1c5a16b1016c7f64",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/producer.md",
+      "observations": [
+        {
+          "sha256": "46b8dcbf771d872f6f2921c280624d7838f721087a0b567269b259b983d25495",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "46b8dcbf771d872f6f2921c280624d7838f721087a0b567269b259b983d25495",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "observations": [
+        {
+          "sha256": "868439025190860ff4ce8478ce1e7dd07b9b587d7982a9e4df63357c1f358fad",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "868439025190860ff4ce8478ce1e7dd07b9b587d7982a9e4df63357c1f358fad",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/continuity.md",
+      "observations": [
+        {
+          "sha256": "d8c450f102d23a0dd75a724e5bec1a040bf456455e972ac6b069a11d37a1bb21",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "d8c450f102d23a0dd75a724e5bec1a040bf456455e972ac6b069a11d37a1bb21",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/editor.md",
+      "observations": [
+        {
+          "sha256": "5fa9574e20750ba379c3d8e8311bf38f79b902a2022c6ebf9012658ade2848ae",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "5fa9574e20750ba379c3d8e8311bf38f79b902a2022c6ebf9012658ade2848ae",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "agents/README.md",
+      "observations": [
+        {
+          "sha256": "6afbe3c25c9f845ce47492d9ab551cd32538270bbca43867a1f122f79fa30c18",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "6afbe3c25c9f845ce47492d9ab551cd32538270bbca43867a1f122f79fa30c18",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/italian-galileo.md",
+      "observations": [
+        {
+          "sha256": "f6cedaf8c9741f9d9afc711f67cfd347b63a60bf162f9842d460ea93f1220418",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "f6cedaf8c9741f9d9afc711f67cfd347b63a60bf162f9842d460ea93f1220418",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/mongol-genghis.md",
+      "observations": [
+        {
+          "sha256": "4230f78a0abd80411b74b5d5f448b76b0f30a6dd0861b6d0127c60bb4117647f",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "4230f78a0abd80411b74b5d5f448b76b0f30a6dd0861b6d0127c60bb4117647f",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/latin-caesar.md",
+      "observations": [
+        {
+          "sha256": "ed346e71d4fe87971cd8b2d33fed909d3fe02f8fbf494c23f6d079b3916c8140",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "ed346e71d4fe87971cd8b2d33fed909d3fe02f8fbf494c23f6d079b3916c8140",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/translations/corsican-napoleon.md",
+      "observations": [
+        {
+          "sha256": "3b3dacbd86ec8cd8c5e00847fe119eebf8276497cfad4b112f6f6118da5e0189",
+          "evidence": "reports/execution-plan-v1/creative-audit/source-snapshot.json"
+        }
+      ],
+      "currentSha256": "3b3dacbd86ec8cd8c5e00847fe119eebf8276497cfad4b112f6f6118da5e0189",
+      "changedSinceAnyObservation": false,
+      "changeDisposition": "Review before use if changed"
+    }
+  ]
+}

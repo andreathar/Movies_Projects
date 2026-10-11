@@ -1,0 +1,71 @@
+{
+  "receipts": [
+    {
+      "owner": "requirements_audit",
+      "acceptedBy": "desktop producer /root",
+      "scope": "Planning evidence integration only; no film artistic acceptance",
+      "files": [
+        {
+          "path": "reports/execution-plan-v1/requirements-audit/requirements-audit.md",
+          "sha256": "830f538fbf883ab8e5688864048ce4aba712ba2c4373b6cff732153f525039a5"
+        },
+        {
+          "path": "reports/execution-plan-v1/requirements-audit/baseline.json",
+          "sha256": "b675817b477bfd96f1a03513789a8d550b52833d0f96604ccaaad2d1a5bdaa06"
+        },
+        {
+          "path": "reports/execution-plan-v1/requirements-audit/workflow-demand-crosswalk.csv",
+          "sha256": "72212e8fbf664fe085ac8396cd16daa747b88ace11e46d14faf08ff777c00f44"
+        }
+      ],
+      "successor": "Producer final plan delivery; accepted by /root",
+      "stage": "audit complete"
+    },
+    {
+      "owner": "parley_hooks_audit",
+      "acceptedBy": "desktop producer /root",
+      "scope": "Planning evidence integration only; no film artistic acceptance",
+      "files": [
+        {
+          "path": "reports/execution-plan-v1/parley-audit/README.md",
+          "sha256": "78069ef11b9578c2f96104669daf614fbb62fa0e331ac5ce620643a70fa2d6c1"
+        },
+        {
+          "path": "reports/execution-plan-v1/parley-audit/source-evidence.json",
+          "sha256": "093497d2060afadcec9ecb622c4a6d583eaa728a88d87f5f90aafa0b9fdfaaa6"
+        }
+      ],
+      "successor": "Producer final plan delivery; accepted by /root",
+      "stage": "audit complete"
+    },
+    {
+      "owner": "creative_delivery_audit",
+      "acceptedBy": "desktop producer /root",
+      "scope": "Planning evidence integration only; no film artistic acceptance",
+      "files": [
+        {
+          "path": "reports/execution-plan-v1/creative-audit/CREATIVE-DELIVERY-PLAN.md",
+          "sha256": "f4d83e1582d63bf24fd3444cd24650b4759e734b538a3c60e00966fa98d35410"
+        },
+        {
+          "path": "reports/execution-plan-v1/creative-audit/legacy-readiness-16.csv",
+          "sha256": "02cfff2c9a9e71bc03508691a78c14ca2e050b9df4e05c978440102a37cd7af0"
+        },
+        {
+          "path": "reports/execution-plan-v1/creative-audit/line-readiness-22.csv",
+          "sha256": "bc7811db758451425449d03d75f680af3944e43bf9dcd53636ad07eee79010b6"
+        },
+        {
+          "path": "reports/execution-plan-v1/creative-audit/shot-readiness-41.csv",
+          "sha256": "5bc4115d7311e3493e73421cc3ad1f0931effa4848864058415bbea0b6f496f8"
+        },
+        {
+          "path": "reports/execution-plan-v1/creative-audit/source-snapshot.json",
+          "sha256": "c4b4fab144f1474cb900609c3258fa92dacd9b60f96761e734f6db269f458bc9"
+        }
+      ],
+      "successor": "Producer final plan delivery; accepted by /root",
+      "stage": "audit complete"
+    }
+  ]
+}

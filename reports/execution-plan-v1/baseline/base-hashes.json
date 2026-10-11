@@ -1,0 +1,73 @@
+{
+  "observedAt": "2026-10-10T11:36:14.580134-03:00",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "94e547ee0204ae1600af99a9b3c18ce8d3ba9635d62f96936d938dd8e78a042b"
+    },
+    {
+      "path": "workspace.json",
+      "sha256": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be"
+    },
+    {
+      "path": "docs/TOKEN_EFFICIENCY.md",
+      "sha256": "9729b3b97bbe3313395132958235de384149c2addedfb23510bab682c720ee1f"
+    },
+    {
+      "path": "docs/VERSION_CONTROL.md",
+      "sha256": "96ae2a70d11607a7149ccef90161179e3b2c818df508d9299740e517cb7b687a"
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-09-memory-handoff-design.md",
+      "sha256": "ff7c69b04aff1412004474b373d1ed522d17c9f3652148fa31e3e6d411e9cc2d"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256": "cc04e102b6f8c8ea1c9aad03997c0b24a2a0a751c99114640a163ae9732c76ae"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/workflow-map-v1.md",
+      "sha256": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/production-tasks.md",
+      "sha256": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/project-cleanup-plan-v1.md",
+      "sha256": "0e1e20730ea553a146ed18d123884a89514361bfbccec94de4f7a0e2d8a1db4b"
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "assignment": "Analyze Movies_Projects demands and deliver exhaustive specification-based execution plan integrated with Agent Parley delegation and hook monitoring",
+  "ownedPaths": [
+    "projects/andre-time-travel/tasks/execution-plan-v1/",
+    "reports/execution-plan-v1/",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/memory/session-log.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256Before": "cc04e102b6f8c8ea1c9aad03997c0b24a2a0a751c99114640a163ae9732c76ae"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/01-baseline-and-decisions.md",
+      "sha256After": "6b6e5491e9708214f729a274c7f1d49dd6a1bf3253b41161bd2c15e8e97736a6",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/02-work-packages.md",
+      "sha256After": "774dd221d94e27bce6fcfd412004a6511dbb661226f3465ff54ded2a5f04e564",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/03-film-execution.md",
+      "sha256After": "8324cc78ee6c6ffaca0b0fe4233970fa1f577c38a6cf4aadfbbd9750e3300156",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/04-parley-and-hooks.md",
+      "sha256After": "828c3ef5e4b003e729c602e2f4770878b7964db1a15e9fb18e69a78acb7b36fc",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/05-validation-and-rollout.md",
+      "sha256After": "4fa36ade7bfd8604e979fe93634001261aef088ed363c0bc1d6de1be0b48c1db",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/06-runbook-and-sequence.md",
+      "sha256After": "0e69b22b7db32eed557212e8786af955e0b813db4432a256b4a5f96d19cd0419",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/07-stage-gates.md",
+      "sha256After": "4cd60fc7f2c0215b141e7766a325088a7707b8caa02d482666f6a3b764fbee6c",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/README.md",
+      "sha256After": "9f652caf33477e9da68f926d11d657c70e9f024f8fc12a4ab2bbe6142138f84a",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/execution-graph.json",
+      "sha256After": "ee9e74a69337d23299a604d274eb3abf5a1c1835f95a9e5eca4c5649b23f39ab",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/requirements.csv",
+      "sha256After": "d7fe965e905dd2ac257602fa46b0c0282000eb34d453cd10187097ace8953dab",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/execution-plan-v1/work-packages.json",
+      "sha256After": "d99c602bd42884139503f5e282e6a09b8655a0a81cf4de2722c2fdaa65963aff",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/README.md",
+      "sha256After": "e14e176c676371f00978945753a75e03ab25af64499d04b288715f3d6a9b0cc2",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/base-hashes.json",
+      "sha256After": "9ced9cbf5d9403acae647b7adf2fefcc2612c00a61d3ec9754f8b7eeba5ed7ee",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/capture.json",
+      "sha256After": "59b2a31153edaa355ffdb19697f306ea0796f33646bb336a4804631fc672b76c",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/git-head.txt",
+      "sha256After": "6c5532d964cc96fe4022644126197fcc28aa66226e8942dfcac2ab5d89a6e101",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/git-remotes.txt",
+      "sha256After": "6fa8302066de9d90e10f3b76b8282cb89f49d9dbd80538286d7bfa988b22cd6a",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/git-status.txt",
+      "sha256After": "b4efa7568a2f2c5b463d62276d2aeb1538a80ffaa1c3fe5260600043d2f9a742",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/git-worktrees.txt",
+      "sha256After": "856700e8a3b7bacee615f57c7a99d70f9a027d73bcbf0895046dc10b03483768",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/manage-status.txt",
+      "sha256After": "8cdf6558649aa114474121889ee45235c577790f900a52d6a93f27fb4d15be05",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/parley-doctor.txt",
+      "sha256After": "43870120b34e3ecf1228c48c67681e7d31234a72ca92ea9e5f0003368aa0a7a9",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/parley-participants.txt",
+      "sha256After": "cc02faa2713b20d3027b9d12655845229160465453c59649f46de0b46fe2bb68",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/baseline/parley-status.txt",
+      "sha256After": "509f4c6e2a586dbefdaccd19bcab1bfd91e4893c301360ab4029cb74d227fadb",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/CREATIVE-DELIVERY-PLAN.md",
+      "sha256After": "f4d83e1582d63bf24fd3444cd24650b4759e734b538a3c60e00966fa98d35410",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/HANDOFF.json",
+      "sha256After": "a65c5d5ccfb8f1b50a6c353c2707806fb1dda29a162ced44c3c245d7143f0264",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/legacy-readiness-16.csv",
+      "sha256After": "02cfff2c9a9e71bc03508691a78c14ca2e050b9df4e05c978440102a37cd7af0",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/line-readiness-22.csv",
+      "sha256After": "bc7811db758451425449d03d75f680af3944e43bf9dcd53636ad07eee79010b6",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/shot-readiness-41.csv",
+      "sha256After": "5bc4115d7311e3493e73421cc3ad1f0931effa4848864058415bbea0b6f496f8",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/source-snapshot.json",
+      "sha256After": "c4b4fab144f1474cb900609c3258fa92dacd9b60f96761e734f6db269f458bc9",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/integration-receipts.json",
+      "sha256After": "224788550b260d2ba5bc5e5fc4a91727b6cc2dbdc5dda290fb731a219d54ba14",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/manage-validate.txt",
+      "sha256After": "7589029233d5e0449e57ab0b38c221e080838b898b3e166ad143681ed5f7b5b3",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/parley-audit/README.md",
+      "sha256After": "78069ef11b9578c2f96104669daf614fbb62fa0e331ac5ce620643a70fa2d6c1",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/parley-audit/handoff.json",
+      "sha256After": "481ff78723283ae7528bb6fc2238c525da1702c102c0be8e1ea4ee6c292449d8",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/parley-audit/source-evidence.json",
+      "sha256After": "093497d2060afadcec9ecb622c4a6d583eaa728a88d87f5f90aafa0b9fdfaaa6",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/plan-review-final.md",
+      "sha256After": "6a6dd8f4e832a4fe429a08036bd310e345be19def8f2e24b8b3293a166de79eb",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/plan-review.md",
+      "sha256After": "ab1af5146561d8da12bef4ad10d85e814505ec08e3b80ace5e168258ba527764",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/plan-structure-check.json",
+      "sha256After": "7c39fdf56070da783080c1c7678a8d23cbf4aa22b81b91da3b63eee251c10351",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/requirements-audit/baseline.json",
+      "sha256After": "b675817b477bfd96f1a03513789a8d550b52833d0f96604ccaaad2d1a5bdaa06",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/requirements-audit/requirements-audit.md",
+      "sha256After": "830f538fbf883ab8e5688864048ce4aba712ba2c4373b6cff732153f525039a5",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/requirements-audit/workflow-demand-crosswalk.csv",
+      "sha256After": "72212e8fbf664fe085ac8396cd16daa747b88ace11e46d14faf08ff777c00f44",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/source-index.json",
+      "sha256After": "f91344354733c6f5fe14529107600c8f0fbcb5f4371eb861992794fa463b18c2",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/unit-tests.txt",
+      "sha256After": "9783b76892df3ea904e2abf771681280a7d974c76368752e6b35bbcbcd32b7d6",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/validation.json",
+      "sha256After": "9fea57737d7754c6573c062bcd9ffd0b297a029f3424e0cae7aac74a58861abf",
+      "reason": "New planning/evidence deliverable"
+    },
+    {
+      "path": "reports/execution-plan-v1/delivery-index.json",
+      "sha256After": "cc50bbdef144adf7d0bf0185de5c73d3bc02c083bd3c6f9ad09ee17ffced5f61",
+      "reason": "Hash index for planning delivery"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "1224b1382b9ed47ab9c37b82fabc3c90ea455e6a84d64f2e4bdb5f8e7e05b7c5",
+      "reason": "Concise plan pointer/session event; production state and approvals unchanged"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/session-log.json",
+      "sha256After": "fdc064e54825c74c18664087f84e23fc63d99ca10cf1842d26b373e18e4c5218",
+      "reason": "Concise plan pointer/session event; production state and approvals unchanged"
+    }
+  ],
+  "verification": [
+    {
+      "check": "Plan coverage and prerequisite graph",
+      "result": "96 packages; 111 stage/edition/chapter instances;129 requirement rows;acyclic;10 gate/independence assertions;local links valid",
+      "evidence": "reports/execution-plan-v1/plan-structure-check.json"
+    },
+    {
+      "check": "Independent plan review",
+      "result": "PASS after scoped dependency and evidence-contract revisions",
+      "evidence": "reports/execution-plan-v1/plan-review-final.md"
+    },
+    {
+      "check": "Existing project stdlib unit tests",
+      "result": "29 passed",
+      "evidence": "reports/execution-plan-v1/unit-tests.txt"
+    },
+    {
+      "check": "manage.py validate",
+      "result": "ok with four known shared-skill warnings",
+      "evidence": "reports/execution-plan-v1/manage-validate.txt"
+    },
+    {
+      "check": "Preservation",
+      "result": "15 baseline protected sources unchanged; concurrent CLAUDE/sites edits preserved",
+      "evidence": "reports/execution-plan-v1/validation.json"
+    }
+  ],
+  "pendingDecisions": [
+    "New runtime implementation/activation requires its own concrete scoped assignment; this deliverable is a plan",
+    "Native Parley film lanes were stopped with native approval setup gap; restoration and actual handshake required before dispatch claims",
+    "Existing Andre-only media, voice, final acceptance and historical-language gates remain as recorded"
+  ],
+  "canonicalStateChanged": true,
+  "canonicalStateChangeScope": "Only STATE planning pointer and session-log event; no production task, approval, budget, manifest or media acceptance changed",
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "planning_delivery_verified",
+  "createdAt": "2026-10-10T11:50:39.976235-03:00",
+  "successor": {
+    "owner": "desktop producer",
+    "status": "planning_stage_complete; next_execution_not_dispatched",
+    "task": "Use the plan to scope first independent image/Galileo review and coordination implementation",
+    "blockerForNativeParley": "Both film lanes stopped and native approval setup gap",
+    "unblockCondition": "Intended terminal restoration, current scope acceptance and actual two-way report-readback handshake",
+    "independentWork": "Authorized local reviews/preparation remain possible; no claimed background work"
+  },
+  "runtimeActivated": false,
+  "gitActions": []
+}

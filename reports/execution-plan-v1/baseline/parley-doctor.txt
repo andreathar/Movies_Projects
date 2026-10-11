@@ -1,0 +1,82 @@
+{
+  "schema": "agent-parley/read/v1",
+  "kind": "doctor",
+  "generated_at": "2026-10-10T14:36:14Z",
+  "protocol": 1,
+  "supported": [
+    1
+  ],
+  "store_schema": 12,
+  "platform": {
+    "kernel": "7.1.5-76070105-generic",
+    "wsl": "none",
+    "pidfd_open": true
+  },
+  "components": [
+    {
+      "component": "launcher",
+      "version": "0.18.0",
+      "protocol": 1,
+      "state": "ok",
+      "remedy": "",
+      "compatible": true
+    },
+    {
+      "component": "claude plugin",
+      "version": "",
+      "protocol": 1,
+      "state": "ok",
+      "remedy": "",
+      "compatible": true
+    },
+    {
+      "component": "codex plugin",
+      "version": "",
+      "protocol": 1,
+      "state": "ok",
+      "remedy": "",
+      "compatible": true
+    },
+    {
+      "component": "store",
+      "version": "schema 12",
+      "protocol": 1,
+      "state": "ok",
+      "remedy": "",
+      "compatible": true
+    },
+    {
+      "component": "service",
+      "version": "0.18.0",
+      "protocol": 1,
+      "state": "ok",
+      "remedy": "",
+      "compatible": true
+    },
+    {
+      "component": "projects",
+      "version": "",
+      "protocol": 1,
+      "state": "ok",
+      "remedy": "",
+      "compatible": true
+    },
+    {
+      "component": "notify",
+      "version": "",
+      "protocol": 1,
+      "state": "outbound off: No notification transport is configured; run `agent-parley notify setup`, or set AGENT_PARLEY_NOTIFY.; inbound off: AGENT_PARLEY_INBOUND is not set",
+      "remedy": "No notification transport is configured; run `agent-parley notify setup`, or set AGENT_PARLEY_NOTIFY.",
+      "compatible": true
+    },
+    {
+      "component": "approvals",
+      "version": "",
+      "protocol": 1,
+      "state": "setup gap",
+      "remedy": "run `agent-parley approval resume --bridge-tools on` (or `--auto-mode on`; add `--participant NAME` for one lane), or resume the lane in your own terminal: /mnt/data/Projects_SSD/Movies_Projects claude",
+      "compatible": true
+    }
+  ],
+  "consistent": true
+}

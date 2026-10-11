@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "errors": [],
+  "warnings": [
+    "shared skill changed since linking: kling-cli",
+    "shared skill changed since linking: film-character-continuity",
+    "shared skill changed since linking: film-dialogue-localization",
+    "shared skill changed since linking: film-editing-qc"
+  ],
+  "projects": [
+    {
+      "id": "andre-time-travel",
+      "chapters": 5,
+      "storyboardSlots": 41,
+      "targetSeconds": 240,
+      "budgetCeiling": 6981,
+      "productionTasks": 21,
+      "taskStates": {
+        "completed": 7,
+        "blocked": 11,
+        "in_progress": 3
+      },
+      "recordedTakes": 9,
+      "finalMovieVerified": false,
+      "registeredSources": 20,
+      "importedSourceSnapshots": 20,
+      "readyTasks": [],
+      "balanceSnapshotIsLive": false,
+      "balanceMustBeRefreshed": true
+    }
+  ],
+  "activeFilm": "andre-time-travel",
+  "memoryBackend": "local_project_files",
+  "paidGenerationAutomation": false,
+  "inbox": [
+    {
+      "folder": "Photos-Andre-Suit",
+      "fileCount": 15,
+      "mediaFileCount": 14
+    },
+    {
+      "folder": "andre-reference-photos",
+      "fileCount": 17,
+      "mediaFileCount": 15
+    },
+    {
+      "folder": "andre-voice",
+      "fileCount": 1,
+      "mediaFileCount": 1
+    },
+    {
+      "folder": "failed-clips",
+      "fileCount": 1,
+      "mediaFileCount": 0
+    },
+    {
+      "folder": "instagram-andreathar",
+      "fileCount": 0,
+      "mediaFileCount": 0
+    }
+  ]
+}

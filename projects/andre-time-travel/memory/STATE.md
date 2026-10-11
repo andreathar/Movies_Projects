@@ -54,6 +54,7 @@ New detail images are created by Codex in the main desktop conversation. Lanes p
 All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
+- Comprehensive execution plan (planning only): `../tasks/execution-plan-v1/README.md`; 96 work packages, 129 traced requirements, Parley/hook design and staged verification. Producer owns execution kickoff; live audit found both film lanes stopped and native approval setup incomplete. No dispatcher activated or production approval changed.
 - Requested cleanup audit plan: `../tasks/project-cleanup-plan-v1.md`. Preliminary inventory only; execution/retirement/global uninstall/hook activation not performed. Reuse existing Claude consolidation before new auditing.
 - Workflow map: `../tasks/workflow-map-v1.md` covers all 21 board tasks, 68 work packages and the five chapter checklists. Next ready work is independent image continuity review; producer owns dispatch until a reviewer accepts. Map created, no new lane dispatch or automatic hook configured.
 - Detail studies: generation and static producer review complete; see gallery and `review.md`. Andre likeness review and video continuity remain pending. Left shoulders are principal D09 candidates; right shoulders are axis alternatives, not current cut selections.

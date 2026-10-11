@@ -1,0 +1,55 @@
+{
+  "episode": "andre-time-travel",
+  "owner": "/root/creative_delivery_audit",
+  "assignment": "Read-only creative and technical demand audit; write only reports/execution-plan-v1/creative-audit",
+  "status": "delivered_planning_report_for_producer_integration",
+  "artifacts": [
+    {
+      "path": "reports/execution-plan-v1/creative-audit/CREATIVE-DELIVERY-PLAN.md",
+      "sha256": "f4d83e1582d63bf24fd3444cd24650b4759e734b538a3c60e00966fa98d35410",
+      "bytes": 42246
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/legacy-readiness-16.csv",
+      "sha256": "02cfff2c9a9e71bc03508691a78c14ca2e050b9df4e05c978440102a37cd7af0",
+      "bytes": 16663
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/line-readiness-22.csv",
+      "sha256": "bc7811db758451425449d03d75f680af3944e43bf9dcd53636ad07eee79010b6",
+      "bytes": 12578
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/shot-readiness-41.csv",
+      "sha256": "5bc4115d7311e3493e73421cc3ad1f0931effa4848864058415bbea0b6f496f8",
+      "bytes": 25951
+    },
+    {
+      "path": "reports/execution-plan-v1/creative-audit/source-snapshot.json",
+      "sha256": "c4b4fab144f1474cb900609c3258fa92dacd9b60f96761e734f6db269f458bc9",
+      "bytes": 11414
+    }
+  ],
+  "checksActuallyPerformed": [
+    "Read startup canonical records, workflow map, dramatic direction and local/shared film skills",
+    "Ran manage.py status: okay, four known shared-skill hash warnings",
+    "Parsed manifest, board, line CSV, image manifests, atlas source/catalog, legacy/regeneration CSVs",
+    "Counted 41 shot rows, 22 dialogue rows, 16 legacy rows; JSON parse verified",
+    "Fingerprinted specification inputs and new outputs",
+    "Checked exact Galileo v2 base paths and final-media target directories"
+  ],
+  "notPerformed": [
+    "New historical or license verification",
+    "Independent still review",
+    "Normal-speed video/audio playback",
+    "Paid or media generation",
+    "Parley writes/delegation",
+    "Canonical edits",
+    "Full unit suite: no management or executable code changes"
+  ],
+  "successor": {
+    "owner": "/root desktop producer",
+    "task": "Integrate report and CSV inventories into workspace execution plan; verify evidence and communicate final plan",
+    "acceptance": "awaiting producer receipt; producer retains downstream responsibility"
+  }
+}

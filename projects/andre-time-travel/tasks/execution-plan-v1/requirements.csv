@@ -1,0 +1,130 @@
+requirement,demand,source,packages,completionEvidence,scopeNote
+T01,production,projects/andre-time-travel/tasks/production-tasks.md,"W01,W02,W03",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T02,production,projects/andre-time-travel/tasks/production-tasks.md,"W04,W05",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T03,production,projects/andre-time-travel/tasks/production-tasks.md,"W03,W05,W06,W11,W12",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T04,production,projects/andre-time-travel/tasks/production-tasks.md,W07,board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T05,production,projects/andre-time-travel/tasks/production-tasks.md,"W08,W09,W10",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T06,production,projects/andre-time-travel/tasks/production-tasks.md,"W28,W29",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T07,production,projects/andre-time-travel/tasks/production-tasks.md,"W24,W25,W26,W27",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T08,production,projects/andre-time-travel/tasks/production-tasks.md,W31,board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T09,production,projects/andre-time-travel/tasks/production-tasks.md,"W27,W30",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T10,production,projects/andre-time-travel/tasks/production-tasks.md,"W32,W33",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T11,production,projects/andre-time-travel/tasks/production-tasks.md,"W09,W21,W23,W24,W34",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T12,production,projects/andre-time-travel/tasks/production-tasks.md,"W10,W11,W12,W13,W14,W15,W16,W17,W18,W19,W20,W21,W22,W35",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T13,production,projects/andre-time-travel/tasks/production-tasks.md,"W35,W36,W37,W38,W39,W40,W41,W42,W43,W44,W45",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T14,production,projects/andre-time-travel/tasks/production-tasks.md,"W36,W37,W38,W39,W40,W41,W42,W45,W46",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T15,production,projects/andre-time-travel/tasks/production-tasks.md,"W36,W37,W38,W39,W40,W41,W42,W45,W46",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T16,production,projects/andre-time-travel/tasks/production-tasks.md,"W36,W37,W38,W39,W40,W41,W42,W45,W46",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T17,production,projects/andre-time-travel/tasks/production-tasks.md,"W36,W37,W38,W39,W40,W41,W42,W45,W46",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T18,production,projects/andre-time-travel/tasks/production-tasks.md,"W47,W48,W49,W50,W51,W54",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T19,production,projects/andre-time-travel/tasks/production-tasks.md,"W50,W51,W52,W53,W54",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T20,production,projects/andre-time-travel/tasks/production-tasks.md,"W56,W57",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+T21,production,projects/andre-time-travel/tasks/production-tasks.md,"W55,W57,W58,W59,W60,W61,W62",board plus exact scoped deliverable evidence,Preserve current status until producer reconciliation
+W01,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W01,"Brief, caps and nondelegable judgments have exact provenance",producer
+W02,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W02,A cold-start reader finds the active episode and next owner,producer
+W03,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W03,"Board, manifest and approvals agree by version and use; no completion inferred from a file",producer
+W04,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W04,Provenance and likeness scope attached to selected references,continuity
+W05,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W05,Original media preserved and active packets use D02,continuity
+W06,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W06,Selected geometry and character anchors visually reviewable and versioned,continuity + producer
+W07,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W07,Exact Element ID and resource versions support intended request,producer
+W08,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W08,Script and CSV match; fictional dialogue clearly distinguished from sources,historian + director
+W09,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W09,Reaction timing follows identifiable cause; no mandatory repeated gesture pattern,director + editor
+W10,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W10,Arcetri floor and Longwood dimensions stay uncertain; corrections scoped and traceable,historian + producer
+W11,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W11,No new shot mixes mutually inconsistent D20 and older reference choices,director
+W12,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W12,One selected bible per encounter plus coherent matrix; proposals remain labeled until adopted,producer + continuity
+W13,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W13,No regeneration of delivered study set; exact review input hashes present,desktop storyboard
+W14,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W14,All five encounters covered and each material finding has evidence and disposition,historian / Claude intended
+W15,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W15,"Evidence-ranked shortlist and identity risks, not substituted likeness acceptance",continuity / terminal Codex intended
+W16,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W16,Principal angle and safe cuts have coherent geometry and documented exceptions,continuity + editor
+W17,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W17,Every selected still passes framing/anatomy review or has bounded defect list,continuity + QC
+W18,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W18,Motivated source and continuity map with unresolved design choices explicit,lighting
+W19,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W19,Each correction closes cited defect and updates version/hash without blanket reapproval,desktop storyboard
+W20,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W20,Actual personal likeness judgment tied to exact selected versions,Andre
+W21,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W21,No assumption that each candidate or planning row needs a paid clip,director + editor
+W22,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W22,Safe necessary eye references selected; no universal eye duration imposed,continuity
+W23,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W23,No conclusive reaction precedes its trigger and no stale duration silently overrides performance,producer + editor
+W24,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W24,Actual durations support natural chapter timing; unapproved scratch labeled as guide,dialogue-sound + editor
+W25,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W25,Andre's ear judgment recorded; native Kling guide remains provisional,dialogue-sound + Andre
+W26,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W26,"Real files, stable line IDs, measured duration and provenance; no fabricated language validation",dialogue-sound
+W27,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W27,Mouth/meaning/likeness pass complete temporal inspection on changed speech,dialogue-sound + editor
+W28,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W28,Each target is confirmed or explicitly blocked; no silent French substitution,dialogue-sound
+W29,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W29,"Reviewer identity, competence, exact version, findings and accepted adaptation documented",qualified language reviewers
+W30,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W30,Final route works for English and representative difficult localized line or remains blocked,continuity + dialogue-sound
+W31,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W31,No unnecessary complete pilot rerun; additional test justified by concrete gap,producer + continuity
+W32,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W32,Operator and reviewer capability individually established,producer
+W33,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W33,"Five-chapter forecast, caps, stop threshold and reserve feasible or specific scope decision raised",producer
+W34,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W34,All five encounters plus opening/ending work; animatic explicitly labeled; final dubbing still separate,storyboard + editor
+W35,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W35,No unsupported multi-reference assumption and no changed hash after preflight,producer
+W36,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W36,"Motion envelope protects identity, axis and historical-face restriction for whole clip",director + continuity
+W37,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W37,Only exact scoped request is eligible; changed request invalidates release; no runner auto-dispatch,producer
+W38,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W38,One request maps to at most one known submission; uncertain result goes to recovery,producer
+W39,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W39,Known job never resubmitted; output can be recovered locally without transient URL dependence,producer
+W40,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W40,Zero full historical faces and no unresolved identity/anatomy violation on selected take,QC
+W41,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W41,"Playable coherent take, motivated timing and documented limits; contact sheet alone insufficient",editor + QC
+W42,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W42,Successful job not confused with accepted take; ledger and asset/slot provenance consistent,producer
+W43,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W43,F01/F03 and voice/continuity findings based on actual version; no rerender just to locate delivery,editor + producer
+W44,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W44,Minimal correction list with ownership and applicable creative/paid gates,editor + producer
+W45,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W45,Complete chapter accepted for declared guide/final scope; no seven-unrelated-jobs shortcut,editor + QC
+W46,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W46,Each of four chapters passes full chapter gate; preparation may precede Galileo acceptance,producer
+W47,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W47,Opening and ending have real compatible coverage and scoped request/evidence where generated,director + producer
+W48,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W48,"Reproducible resolved timeline with coherent axis, frame rate and source quality notes",editor
+W49,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W49,Every chapter serves intended arc; defect list distinguishes critical from optional polish,director + QC
+W50,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W50,No cue sheet mistaken for produced audio; period and selected floor materials match,dialogue-sound
+W51,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W51,Audible contacts correspond to visible contact; no repetitive blanket effects,dialogue-sound + editor
+W52,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W52,No speculative decoration spend; every replacement has independent success criterion,producer + QC
+W53,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W53,All targeted defects closed or explicit blocker retained; no automatic retry chain,producer + QC
+W54,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W54,Picture and dialogue timing stable; future changes invalidate only dependent checks,editor + lighting
+W55,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W55,Measured approximately -16 LUFS and <= -1 dBTP target or explicit approved deviation,dialogue-sound
+W56,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W56,Every language requirement met or explicitly approved adaptation; sync and meaning checked,dialogue-sound + editor
+W57,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W57,Both edition caption files checked against corresponding final audio/version,dialogue-sound + language reviewers
+W58,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W58,"Local files exist with stream metadata, hashes and source provenance",editor
+W59,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W59,"Exact exports pass technical, visual, temporal and audio review; source playback is insufficient",independent QC
+W60,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W60,Actual final acceptance tied to hashes; no agent self-approval of personal gates,Andre
+W61,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W61,Two usable local editions delivered with provenance; finalMovieVerified updated only by producer with full evidence,producer
+W62,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W62,No inherited jobs/balance/approvals; episode may end with no successor,producer
+W63,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W63,"Every ready delivery has accountable custody, including silent/offline recipients",producer
+W64,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W64,No overwrite of newer base edits; historical snapshots preserved,producer / Claude delivery
+W65,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W65,Shared tools preserved; current registry and links truthful,producer
+W66,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W66,"No blind worktree copy, unauthorized Git merge or silent approval transfer",producer
+W67,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W67,One current resume source; next responsibility and limitations explicit,producer
+W68,workflow decomposition,projects/andre-time-travel/tasks/workflow-map-v1.md,W68,No runtime protection claim before tests and live authorized rehearsal; rollback to manual works,producer
+CLEAN01,baseline inventory,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O14,O01",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN02,authority/dependency/obsolescence graph,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O14,W64",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN03,smallest instruction set,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O15,O26",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN04,reversible local cleanup,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O15,W66",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN05,skills/plugins scope,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O16,W65",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN06,lifecycle/hooks,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O03,O06,O07,O08,O09,O10,O11,O12,O13,O27,O28",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN07,verification and cold start,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"O11,O25",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+CLEAN08,closeout/return to film,projects/andre-time-travel/tasks/project-cleanup-plan-v1.md,"W63,W67,W14,W43",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+MEM01,handoff v2 and role briefs,docs/superpowers/specs/2026-10-09-memory-handoff-design.md,"O03,O26",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+MEM02,resume/lint/check/ingest,docs/superpowers/specs/2026-10-09-memory-handoff-design.md,"O04,O05",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+MEM03,per-task closeout,docs/superpowers/specs/2026-10-09-memory-handoff-design.md,"W63,W66,W67",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+MEM04,backfill/current plan,docs/superpowers/specs/2026-10-09-memory-handoff-design.md,O17,See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV01,likeness and personal acceptance,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W04,W06,W15,W20,W40,W60",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV02,zero full historical faces,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W17,W22,W36,W40,W59",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV03,provenance/original preservation,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W04,W05,W39,W61,O14",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV04,five encounters and two editions,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W01,W46,W47,W56,W58",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV05,fiction versus fact,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W08,W10,W11,W29",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV06,one table/wardrobe/axis,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W06,W12,W16,W48",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV07,difficult line/reaction/personal perspective,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W09,W23,W41,W49",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV08,motivated light,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W18,W36,W54",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV09,subtle foley/silence,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W50,W51,W55",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV10,voice timing/sync distinct from cloning,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W24,W25,W27,W30",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV11,live budget/exact scope/producer only,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W33,W37,W38,O19,O22",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV12,installed CLI only/no automatic retry,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W37,W38,W39,O20",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV13,no credential logging or global changes,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O06,O07,O16,O27",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV14,relative paths and concurrent edits,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O03,O05,W66",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV15,honest hook/communication proof,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O01,O02,O11,O12",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV16,accepted successor ownership,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W63,O09,O25",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV17,one resume/canonical state owner,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W02,W03,W67,O04,O17",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV18,local Git/LFS and publication scope,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W61,W62,W66,O18",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV19,context efficiency,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W64,W67,O10,O25",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV20,mandatory primary contract synchronization,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O15,O26",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV21,preserve unrelated projects/daily Parley,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O01,O14,O16,O27",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV22,independent final-file playback,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W45,W59,W60",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV23,clean continuation,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W62,O18",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV24,historical languages no silent substitution,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W28,W29,W56,W57",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV25,chosen export targets actual measurements,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W55,W58,W59",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV26,all shots/candidates/legacy plans crosswalk,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"W21,O21",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV27,rights/usable local delivery,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O24,W61",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
+INV28,human approval and stopped lanes,AGENTS.md;projects/andre-time-travel/tasks/production-tasks.md,"O01,O02,O23,O28",See package acceptance criteria and scoped canonical evidence,Planning only; no authority inferred
