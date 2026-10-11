@@ -62,7 +62,7 @@ The two objects are not copies:
 | Extra authority fields | `dispatchAuthority: true`, `notes` | `canonicalWriteAuthority: false`, `note` |
 | `paidSubmissionRequiresApprovedShot` | absent | `true` |
 
-`projects/andre-time-travel/agents/bindings.json` lists nine roles and omits `coordinator`. `agents/README.md` and `docs/MEMORY_AND_AGENTS.md` still say seven role briefs. There are nine brief files plus `agents/README.md`. `agents/producer.md` is still titled "Producer / coordinator".
+`projects/andre-time-travel/agents/bindings.json` lists nine roles and omits `coordinator`. `agents/README.md` and `docs/MEMORY_AND_AGENTS.md` still say seven role briefs. There are ten role brief files plus `agents/README.md`. `agents/producer.md` is still titled "Producer / coordinator".
 
 **Why it hurts.** Session start step 5 cannot show pending state. Any tool that builds a map from role id will keep one coordinator and drop the other, and the two definitions disagree about dispatch and canonical writes. The producer title still claims the coordinator name the new role was added to separate.
 
