@@ -254,7 +254,7 @@ These look messy and are intentional. Do not "clean" them as part of acting on t
 
 ## Not verified
 
-- Unit tests (`python -m unittest`) were not run. `validate` already fails, so any test that calls `validate` will fail with the duplicate role before skill-link tests run.
+- Unit tests (`python -m unittest`) were not run. The repository-backed success assertions for `status` and `validate` in `tests/test_manage.py` are expected to fail on the duplicate role before skill-link checks run; tests that intentionally expect validation errors are not necessarily failures.
 - Shared-skill hash warnings were not printed by `validate` on this commit. Hashes were compared directly and do not match.
 - Placeholder bodies were confirmed for `film-editing-qc` only. The other three `/home/athar` targets exist and mismatch the registry hash; their full text was not read.
 - Git LFS media was not fetched. The Galileo preview object is absent locally. No playback, loudness, or frame inspection was done.
