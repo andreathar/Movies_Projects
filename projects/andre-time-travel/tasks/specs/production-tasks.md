@@ -1,6 +1,6 @@
 # Production Tasks
 
-Canonical machine-readable board: `board.json`. This checklist is the detailed execution specification; task statuses live only in the board. No production task has been marked complete by workspace setup.
+Canonical machine-readable board: `../board.json`. This checklist is the detailed execution specification; task statuses live only in the board. No production task has been marked complete by workspace setup.
 
 
 A step is a small editorial/inspection action; generator waits, recordings, translation review, and full-playback QC naturally take longer than a coding task. Do not present a speculative completion schedule as guaranteed.

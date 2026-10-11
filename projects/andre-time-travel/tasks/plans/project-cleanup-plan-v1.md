@@ -15,7 +15,7 @@ Preliminary snapshot: about 4.0 GB in the working directory including local inte
 - Workspace `AGENTS.md`, `CLAUDE.md`, `workspace.json`, `docs/REPEATABLE_WORKFLOW.md`, `docs/PARLEY_PROTOCOL.md`, `docs/TOKEN_EFFICIENCY.md` and `docs/LOCAL_AGENT_HANDOFF.md`.
 - Existing `docs/CLEANUP-INVENTORY-2026-10-09.md`: useful leads, some state observations now stale.
 - Claude lane delivery `docs/consolidation-2026-10-09/consolidation-report.md` and associated handoff/diffs, read from the registered Claude worktree. Locate and hash current files; do not assume lane HEAD equals the main checkout or rerun completed consolidation.
-- Film `memory/STATE.md`, board/manifest/approvals/decision records, `tasks/workflow-map-v1.md`, `tasks/production-tasks.md`, latest research/image handoffs and catalog.
+- Film `memory/STATE.md`, board/manifest/approvals/decision records, `tasks/plans/workflow-map-v1.md`, `tasks/specs/production-tasks.md`, latest research/image handoffs and catalog.
 - Series framework and continuation template; existing scripts/tests, skill registry, symlinks and plugin bindings.
 
 ## Phase 1 — establish the baseline

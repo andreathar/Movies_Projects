@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "coordinator",
+  "contributorKind": "registry-role",
+  "assignment": "Andre (cloud Claude session, 2026-10-11): split the film tasks/ folder into board, specs and plans",
+  "parentTask": "coordination (W63, W64, W65)",
+  "workPackages": [
+    "W63",
+    "W64",
+    "W65"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "projects/andre-time-travel/tasks/"
+  ],
+  "baseFiles": [
+    {
+      "path": "workspace.json",
+      "sha256Before": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "bbf334242ede234c226826dafdbf00ccce6dd18469b117212a11b5b23b6186ca"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "b1229687f380303ca0c0cc42075f24da310b5ca40695283382e268d0ea555efb"
+    },
+    {
+      "path": "docs/FOLDER_STRUCTURE.md",
+      "sha256Before": "f67151732531a8b77598bcc2552330657195ec867e048052bf4d8063b676865b"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "09359727ca8d7dc9574df337e311cc1a511fa98281621078b0dd697e4f2f0174"
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256Before": "b25339f0004af20fed8505e6344d7c7f4bfd4b9dd22860361cecdca8f30da0bc"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256Before": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256Before": "4e12243d0b372ca0ac919a185a15d5bd3f5cf1d5599c00587f95716eae0013b3"
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256Before": "f2fd10a0524bfeabc6c448b462b691cb092863e9f37f889f29d125991c2e7000"
+    },
+    {
+      "path": "tasks/README.md",
+      "sha256Before": "802200f58b61fa02f6046de7b6972d41e6a1937945e2fafe15b1b82b1a597446"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "2a76097fad6d1258d96f4e4e0c49bd8ca0103ffbe189bd77a29aa932e6e81483"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "2d43ac358f13fa43a508748912a3bce7266d8c395c43d3fd97cfcc2debe7d383"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/workflow-map-v1.md",
+      "sha256Before": "1e6b1bb318d3184c72d0d3f8461c9d907ca2ab1901e0d4088254a722e97c9081"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/project-cleanup-plan-v1.md",
+      "sha256Before": "0e1e20730ea553a146ed18d123884a89514361bfbccec94de4f7a0e2d8a1db4b"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/production-tasks.md",
+      "sha256Before": "95c80dc4e982d04705d9c4d5a2ba17b375f8b23a641579306f90c8ca48f5ab5c"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "sha256Before": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "workspace.json",
+      "sha256After": "a86816b2b55fa6dd25fa6e2582c49956da0efec8cfb8267d2369e882518e5178",
+      "reason": "tasks/plans and tasks/specs added to requiredDirectories"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256After": "e8846485869d9f0d6341c81e7da8cd05f138fbccb59c3e3a3c5fb66c38d604df",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "4e12191ed0730d672cc572f3b83b0674750671e33584ad265af89beecd75c5cc",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "docs/FOLDER_STRUCTURE.md",
+      "sha256After": "05ec4711e6d564471af72a6d46b8f1e9c02f7ba1895fa0d9091e5672a3128b07",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "2f3a36ef85d41673cae27eaa72981e91f84d676ae07e4f7f56a8452e35e16dc3",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256After": "c121ac7a63248d28bbbf33bf2de7a6a1873d21a9c48a57cba83a97162cd42653",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256After": "e35f8c7606802937ce42a7e7a7153ee8ce8edf1ceb30d3d5453b7f2ab8ad5d21",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256After": "8fa590dd0a2938fb17acc47b42d28bde92a02a319cefccfabf3670f43002dbfb",
+      "reason": "resume readOrder points to tasks/plans/workflow-map-v1.md"
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256After": "09dbf421c304e9b0c7828c8f5d6fc259d5b60ade8cba31f834f638b155693148",
+      "reason": "expected readOrder path updated"
+    },
+    {
+      "path": "tasks/README.md",
+      "sha256After": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "1ea77d4ced9d7bd54e7e4a96be4a32bf20005fa0e0124cdb314aa925b71313ac",
+      "reason": "two path references updated to tasks/plans/; no state change"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256After": "0dca2c8dacaba68f8a58d44fe1ce09818dde703f008e29a5e1986cca015fa500",
+      "reason": "21 specification fields now \"specs/production-tasks.md\"; path-only, no status, owner, dependency or blocker changed"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/workflow-map-v1.md",
+      "sha256After": "d4fa69a6f561ab82d92d911ad8f6b84cfafd50fe5007e9e5c912dc1b80f74daa",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/project-cleanup-plan-v1.md",
+      "sha256After": "d8f3c3166a1fd5ba3441b0334708c2eafe76edc4bff4cd477c555533df71da76",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/specs/production-tasks.md",
+      "sha256After": "a8b9f939647e62018fb5c651bfb06e386b90abafe2a14393a0e379e4f7637c1d",
+      "reason": "path references updated for the tasks/ split"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/specs/scene-detail-assets-v1.md",
+      "sha256After": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3",
+      "reason": "moved unchanged (git mv)"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/README.md",
+      "sha256After": "2ebfd97a1ee5c8cb7892033160d37fd7867e18838718b430d55f44aecc80fbc6",
+      "reason": "new: layout of board.json, specs/ and plans/"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "board.json stays at tasks/board.json (workspace.json, workflow.py, hooks and tests resolve that path); production-tasks.md and scene-detail-assets-v1.md moved to tasks/specs/, workflow-map-v1.md and project-cleanup-plan-v1.md to tasks/plans/, all with git mv",
+      "evidence": "projects/andre-time-travel/tasks/README.md",
+      "sha256": "2ebfd97a1ee5c8cb7892033160d37fd7867e18838718b430d55f44aecc80fbc6"
+    },
+    {
+      "statement": "Board edit is path-only (21 specification fields); producer should confirm before ingesting because board.json is a producer-owned record",
+      "evidence": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "0dca2c8dacaba68f8a58d44fe1ce09818dde703f008e29a5e1986cca015fa500"
+    }
+  ],
+  "verification": [
+    "python3 -m unittest discover -s tests: 83 tests, 2 failures, the same two as on origin/main (test_manage status/validate, machine-local film-character-continuity link)",
+    "python3 scripts/manage.py validate: only error is the film-character-continuity link",
+    "link check: every tasks/plans|specs path in .md/.py/.sh/.json resolves; relative links in plans/workflow-map-v1.md resolve; board specification target exists",
+    "not touched on purpose: ingested handoffs, reports/ file indexes, review snapshots and memory/session-log.json keep old paths as history"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "review the path-only board.json diff, then run manage.py handoff ingest for this handoff and for 2026-10-11-claude-repo-cleanup-v1.json (its three hashes were refreshed, delivered values kept)",
+      "readiness": "ready"
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "restructure delivered; successor is producer ingest, named above",
+  "blockers": [],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": "Editing three files covered by a pending, not yet ingested handoff made its changedFiles hashes stale and lint reported hard sha256 mismatches",
+      "detected_by": "manage.py lint after the move",
+      "solution": "refreshed the three hashes in the pending handoff, kept the delivered values as sha256AfterDelivered with a refresh note",
+      "rule_added": "Before editing a file, check whether a pending handoff lists it; refresh that handoff in the same change"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

@@ -68,8 +68,10 @@
     },
     {
       "path": "agents/coordinator.md",
-      "sha256After": "b1229687f380303ca0c0cc42075f24da310b5ca40695283382e268d0ea555efb",
-      "reason": "board, decision and approval changes become handoff proposals (blockers[] for blockers, proposedDecisions for decisions); claim wording and examples aligned"
+      "sha256After": "4e12191ed0730d672cc572f3b83b0674750671e33584ad265af89beecd75c5cc",
+      "reason": "board, decision and approval changes become handoff proposals (blockers[] for blockers, proposedDecisions for decisions); claim wording and examples aligned",
+      "sha256AfterDelivered": "b1229687f380303ca0c0cc42075f24da310b5ca40695283382e268d0ea555efb",
+      "refreshNote": "path references updated by 2026-10-11-claude-tasks-restructure-v1 (tasks/plans, tasks/specs); verified diff is path-only"
     },
     {
       "path": "docs/COORDINATOR_PROTOCOL.md",
@@ -78,20 +80,24 @@
     },
     {
       "path": "docs/PARLEY_PROTOCOL.md",
-      "sha256After": "09359727ca8d7dc9574df337e311cc1a511fa98281621078b0dd697e4f2f0174",
-      "reason": "coordinator row added to the lane roster v2"
+      "sha256After": "2f3a36ef85d41673cae27eaa72981e91f84d676ae07e4f7f56a8452e35e16dc3",
+      "reason": "coordinator row added to the lane roster v2",
+      "sha256AfterDelivered": "09359727ca8d7dc9574df337e311cc1a511fa98281621078b0dd697e4f2f0174",
+      "refreshNote": "path references updated by 2026-10-11-claude-tasks-restructure-v1 (tasks/plans, tasks/specs); verified diff is path-only"
     },
     {
       "path": "tasks/README.md",
-      "sha256After": "802200f58b61fa02f6046de7b6972d41e6a1937945e2fafe15b1b82b1a597446",
-      "reason": "glossary of board task, work package and Parley assignment; naming rule for new files"
+      "sha256After": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1",
+      "reason": "glossary of board task, work package and Parley assignment; naming rule for new files",
+      "sha256AfterDelivered": "802200f58b61fa02f6046de7b6972d41e6a1937945e2fafe15b1b82b1a597446",
+      "refreshNote": "path references updated by 2026-10-11-claude-tasks-restructure-v1 (tasks/plans, tasks/specs); verified diff is path-only"
     }
   ],
   "claims": [
     {
       "statement": "Root tasks/ held only a pointer README; the film tasks/ folder holds the board, specification and plans; they do not conflict",
       "evidence": "tasks/README.md",
-      "sha256": "802200f58b61fa02f6046de7b6972d41e6a1937945e2fafe15b1b82b1a597446"
+      "sha256": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1"
     },
     {
       "statement": "The coordinator role has a single registry entry with no paid and no canonical write authority",
