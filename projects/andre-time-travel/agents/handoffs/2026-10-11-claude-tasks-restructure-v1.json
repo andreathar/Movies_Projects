@@ -82,6 +82,10 @@
     {
       "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
       "sha256Before": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-claude-repo-cleanup-v1.json",
+      "sha256Before": "20b3e6568ee3745a5023065e19d5cf45aa311381e4cb60ec4737697b092be269"
     }
   ],
   "changedFiles": [
@@ -167,20 +171,30 @@
     },
     {
       "path": "projects/andre-time-travel/tasks/README.md",
-      "sha256After": "2ebfd97a1ee5c8cb7892033160d37fd7867e18838718b430d55f44aecc80fbc6",
-      "reason": "new: layout of board.json, specs/ and plans/"
+      "sha256After": "720c17e2c1b14461975b9cf1c97006418f05dd4aed4887b6f04c4f3871266c17",
+      "reason": "new: layout of board.json, specs/ and plans/, plus old-to-current path table for cited provenance"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-claude-repo-cleanup-v1.json",
+      "sha256After": "d68ca2231f1920c3b8d79d5fad5a915306957bd968a2018698b4211f212ec108",
+      "reason": "three changedFiles hashes refreshed (delivered values kept as sha256AfterDelivered)"
     }
   ],
   "claims": [
     {
       "statement": "board.json stays at tasks/board.json (workspace.json, workflow.py, hooks and tests resolve that path); production-tasks.md and scene-detail-assets-v1.md moved to tasks/specs/, workflow-map-v1.md and project-cleanup-plan-v1.md to tasks/plans/, all with git mv",
       "evidence": "projects/andre-time-travel/tasks/README.md",
-      "sha256": "2ebfd97a1ee5c8cb7892033160d37fd7867e18838718b430d55f44aecc80fbc6"
+      "sha256": "720c17e2c1b14461975b9cf1c97006418f05dd4aed4887b6f04c4f3871266c17"
     },
     {
       "statement": "Board edit is path-only (21 specification fields); producer should confirm before ingesting because board.json is a producer-owned record",
       "evidence": "projects/andre-time-travel/tasks/board.json",
       "sha256": "0dca2c8dacaba68f8a58d44fe1ce09818dde703f008e29a5e1986cca015fa500"
+    },
+    {
+      "statement": "Documents that cite the old tasks/ paths (03_bibles/detail-planning/historical-details-v2.md, 08_edit/reviews/detail-planning-v2/*) are left unedited to keep their delivered hashes; the old-to-current table in tasks/README.md is the compatibility route",
+      "evidence": "projects/andre-time-travel/tasks/README.md",
+      "sha256": "720c17e2c1b14461975b9cf1c97006418f05dd4aed4887b6f04c4f3871266c17"
     }
   ],
   "verification": [
@@ -192,7 +206,7 @@
   "nextActions": [
     {
       "role": "producer",
-      "action": "review the path-only board.json diff, then run manage.py handoff ingest for this handoff and for 2026-10-11-claude-repo-cleanup-v1.json (its three hashes were refreshed, delivered values kept)",
+      "action": "review the path-only board.json diff, then ingest in this order: 2026-10-11-claude-tasks-restructure-v1.json first (its hash for the cleanup handoff is checked while that handoff is still pending), then 2026-10-11-claude-repo-cleanup-v1.json (ingest rewrites that file and changes its hash)",
       "readiness": "ready"
     }
   ],
