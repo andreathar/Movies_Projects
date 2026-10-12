@@ -1,4 +1,4 @@
-# Producer / coordinator
+# Producer
 
 ## Mission
 Own task order, user approvals, actual credit reconciliation and the single paid-submission boundary.

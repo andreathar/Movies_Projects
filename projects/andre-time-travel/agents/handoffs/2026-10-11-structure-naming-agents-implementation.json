@@ -1,0 +1,354 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Implement the 2026-10-11 structure, naming and agents review, except producer-owned records the canonical-guard hook refused",
+  "parentTask": "coordination",
+  "workPackages": [
+    "W63",
+    "W64",
+    "W65"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "reports/2026-10-11-structure-naming-agents-review.md",
+    "agents/registry.json",
+    "docs/PARLEY_PROTOCOL.md"
+  ],
+  "ownedPaths": [
+    ".agents/plugins/agent-parley/plugin.json",
+    "START_HERE.md",
+    "agents/README.md",
+    "agents/coordinator.md",
+    "agents/producer.md",
+    "agents/registry.json",
+    "docs/COORDINATOR_PROTOCOL.md",
+    "docs/FOLDER_STRUCTURE.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "docs/MEMORY_AND_AGENTS.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/PLAN-parley-integration-v1.md",
+    "docs/REPEATABLE_WORKFLOW.md",
+    "docs/WORKSPACE.md",
+    "memory/README.md",
+    "memory/projects.json",
+    "projects/andre-time-travel/agents/bindings.json",
+    "reports/2026-10-11-structure-naming-agents-review.md",
+    "scripts/manage.py",
+    "skills/README.md",
+    "tests/test_manage.py",
+    "tests/test_manage_lint.py",
+    "reports/2026-10-11-canonical-records.patch"
+  ],
+  "baseFiles": [
+    {
+      "path": ".agents/plugins/agent-parley/plugin.json",
+      "sha256Before": "9da22b48d9d813975302ab0fd6bcc116801c0d26fc44d6a55aeb315d12ecce8b"
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256Before": "bf15d94f8f8140a1cf17ba794dbee493e45272467b4c42ac247ed4d0f39c0ef1"
+    },
+    {
+      "path": "agents/README.md",
+      "sha256Before": "6afbe3c25c9f845ce47492d9ab551cd32538270bbca43867a1f122f79fa30c18"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "6b33850158fcd5c05cfac3296f25e83207c6cf2965dbe8fd9fc5c42ecb8aad33"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256Before": "3f09a115add9a6986d263d3abc65cc16d8aac878f8116619dc490c224f5a98d0"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "eedd2cc4c325c21bd1c022f5192021c390a895ab960a1f6c5017b2a643a3d326"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256Before": "c2e9483c86319e23070a585926967702c90033165b49d6d39249baaaf0bfb5d7"
+    },
+    {
+      "path": "docs/FOLDER_STRUCTURE.md",
+      "sha256Before": "f67151732531a8b77598bcc2552330657195ec867e048052bf4d8063b676865b"
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256Before": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717"
+    },
+    {
+      "path": "docs/MEMORY_AND_AGENTS.md",
+      "sha256Before": "15b41ca3e9bc649fd555d0f7a7bc8040eead8625164b6ad466a85f3927c60ef7"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "09359727ca8d7dc9574df337e311cc1a511fa98281621078b0dd697e4f2f0174"
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256Before": "b25339f0004af20fed8505e6344d7c7f4bfd4b9dd22860361cecdca8f30da0bc"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256Before": "7055a194ed66162f90d54f8a84470c49b99b762a7bf40e942acb5f7459c596be"
+    },
+    {
+      "path": "docs/WORKSPACE.md",
+      "sha256Before": "f8ce175fb38238be958a85f77aba27a5e8acb6e77f2b2b26210f30287f9e0630"
+    },
+    {
+      "path": "memory/README.md",
+      "sha256Before": "e367d754dca0d3342c189757cf3c8d0269ad51927467c060e05e3367ccbc5496"
+    },
+    {
+      "path": "memory/projects.json",
+      "sha256Before": "00120b15736aa6c090fef82abbe27aaa60e152980bfe980e59904848f0ca27e5"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/bindings.json",
+      "sha256Before": "18da11a071dc055ffd30cd454f09c0e42d572181594cec01278bc02d7583e52d"
+    },
+    {
+      "path": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256Before": "b56aa259b2077f462429470f5f8fc2c1397d371e9f19f5dcf29cf703bc440514"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256Before": "4e12243d0b372ca0ac919a185a15d5bd3f5cf1d5599c00587f95716eae0013b3"
+    },
+    {
+      "path": "skills/README.md",
+      "sha256Before": "5469b936e56ae8e48c2fdb12b697cd42f34916f0dab143d18451f44061d85208"
+    },
+    {
+      "path": "tests/test_manage.py",
+      "sha256Before": "d973ca133cb79708aaba601295c48c17a9dec2393de64376064efd00d26f6b82"
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256Before": "f2fd10a0524bfeabc6c448b462b691cb092863e9f37f889f29d125991c2e7000"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": ".agents/plugins/agent-parley/plugin.json",
+      "sha256After": "61eaed407a54f3646312a44e6dd436409311f7bf95b18d288d7a915b857f2826",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256After": "e3ee5f23640bbe747092409f04d45ef43549e7d8547e857e18bef4c0c850f0b8",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "agents/README.md",
+      "sha256After": "49852e7bcf17c164a676e764e78be3023ad3ec1a67250181b29fd7c820276b6b",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "2e4eb8abda0b38254c9cf02493e06ca514155a9ca14a1b339183015cfb584213",
+      "reason": "D16 and D20 labels match the decision files; board writes become handoff proposals"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256After": "302d38cc6e61b14b15bd99c7131c82af7756ccd5fd018dcf5f20106a59ccf9c0",
+      "reason": "title is Producer, so only the coordinator role uses that name"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256After": "b96a3186de1b018ed9356ab2e9a735915a3b22cc440b6cd836b3a68760c0dfc9",
+      "reason": "one coordinator: dispatch without canonical write or the missing coordinate skill"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256After": "57f582a1cd97cb5de67e30377e46e0eedfabdedfa6773917cd2fbd5fc2f98bc7",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/FOLDER_STRUCTURE.md",
+      "sha256After": "cb52ac6ff8a9571fe6e61e9f728887b5d9cd7a2e9b50f7b6ad0806c262eec3c6",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256After": "53d8177c5e13f09ff14f54d5a8fa8d8769c9e4dd1c07dcf4585c1e03c9f5b2d8",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/MEMORY_AND_AGENTS.md",
+      "sha256After": "6a445aad86abd8c53884600ee759b0fd976e8d67a51f5b57d74b41e93b0df0f1",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "378c20ded42af33a8e934b87e2b601f46da96002e51b9aa78eb21b402c8ef96d",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256After": "f2c6b6fb18dbf19006e578de437f91578815ea78c1361324ca11d52586439c59",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256After": "0cb8c9eb58b04f90c25f0bab28c9aba7a55f7a93311504df33b757bf5774fba5",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "docs/WORKSPACE.md",
+      "sha256After": "815b469b52841450cbe8483898a68fa74f95be1444e84dda73827db033be482e",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "memory/README.md",
+      "sha256After": "50c0d4c864b9730ce9a5198989044c6f802d0f5253705569d4a851a9528cce05",
+      "reason": "align entry points with the structure and agents review"
+    },
+    {
+      "path": "memory/projects.json",
+      "sha256After": "6a7ea0b5021e18ba6f6a96cff323c9a9617cbf8e8d8b3856cb28009939d7a2ec",
+      "reason": "decisions index is 00_brief/decisions; legacy bundle is legacyDecisions"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/bindings.json",
+      "sha256After": "0580ab15cb4c431c319151ef30fa49d799ecf146cd8c66e39034886901366778",
+      "reason": "episode binding includes the coordinator role"
+    },
+    {
+      "path": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256After": "922e3ea48c5de02ff23fc95c809a46a8a83516f622ed277a24dc24df5b3d5ab9",
+      "reason": "points at the implementation and the unapplied canonical patch"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256After": "61f55240b72ca8a6850c1093665a62b90e0a238302b8137e74d8a4d887b78447",
+      "reason": "unknown role skills fail validate; superseded handoffs are history for lint"
+    },
+    {
+      "path": "skills/README.md",
+      "sha256After": "83cbc4b36d9f53b97cf1dd1a11ee3537fc09f167fde1c8c5baccf072fdaa5b54",
+      "reason": "Git remote is real; kling checkout and removed coordinate links are recorded"
+    },
+    {
+      "path": "tests/test_manage.py",
+      "sha256After": "0a343368d43b4cacccddf8ed74520d5477c392210c0fb38336ee581a104b8abd",
+      "reason": "unknown role skill fails validate"
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256After": "f1098a4baec8a1700db4015fd3aa814db86bb15fee7d4cc7c013455c5b771463",
+      "reason": "a successor supersedes list stops live hash checks on the named file"
+    },
+    {
+      "path": "reports/2026-10-11-canonical-records.patch",
+      "sha256After": "a85c8e974c7e91903fb271a673dded2915275a5363d5d707e7a18656a08bb40d",
+      "reason": "producer-owned records this session could not edit"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "agents/registry.json has one coordinator. It may dispatch, it cannot write canonical records, and it does not require the coordinate skill.",
+      "evidence": "agents/registry.json",
+      "sha256": "b96a3186de1b018ed9356ab2e9a735915a3b22cc440b6cd836b3a68760c0dfc9"
+    },
+    {
+      "statement": "memory/projects.json decisions points at 00_brief/decisions. legacyDecisions points at the superseded memory/decisions.json bundle.",
+      "evidence": "memory/projects.json",
+      "sha256": "6a7ea0b5021e18ba6f6a96cff323c9a9617cbf8e8d8b3856cb28009939d7a2ec"
+    },
+    {
+      "statement": "The coordinate skill links were removed. skills/README.md records that, the Git remote, and the in-repo kling-cli checkout. Skill hashes were not rewritten.",
+      "evidence": "skills/README.md",
+      "sha256": "83cbc4b36d9f53b97cf1dd1a11ee3537fc09f167fde1c8c5baccf072fdaa5b54"
+    },
+    {
+      "statement": "Producer-owned records are proposed in reports/2026-10-11-canonical-records.patch and were not edited. git apply --check accepts the patch. STATE.md in that patch is 69 lines.",
+      "evidence": "reports/2026-10-11-canonical-records.patch",
+      "sha256": "a85c8e974c7e91903fb271a673dded2915275a5363d5d707e7a18656a08bb40d"
+    }
+  ],
+  "verification": [
+    ".venv/bin/python -m unittest discover -s tests: 84 tests OK",
+    ".venv/bin/python scripts/manage.py validate: status ok, five shared-skill hash warnings, no errors",
+    "git apply --check reports/2026-10-11-canonical-records.patch: exit 0",
+    "canonical-guard refused Write/Edit on AGENTS.md. The same list covers CLAUDE.md, workspace.json, approvals.json, STATE.md, session-log.json and mistakes.jsonl. Those files were not edited.",
+    "Paid jobs submitted: 0. No media moved. No skill sourceSha256 rewritten. Cited decision, plan and handoff filenames were not renamed."
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Apply reports/2026-10-11-canonical-records.patch from a producer session, then run manage.py handoff ingest on this file",
+      "readiness": "patch checks cleanly; not applied"
+    },
+    {
+      "role": "producer",
+      "action": "On the owner's machine, reconcile kling-cli registry source, the .agents checkout and skills-lock.json, then rehash. Leave film-skill placeholder hashes untouched.",
+      "readiness": "owner machine"
+    },
+    {
+      "role": "Andre",
+      "action": "D16 remains a relayed Phase A ceiling and still needs direct confirmation, decline or supersession",
+      "readiness": "unchanged by this delivery"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "canonical-guard refused this session's writes to AGENTS.md, CLAUDE.md, workspace.json, approvals.json, STATE.md, session-log.json and mistakes.jsonl",
+      "owner": "producer",
+      "unblockCondition": "apply reports/2026-10-11-canonical-records.patch from a session with MOVIES_PRODUCER_LANE=1"
+    },
+    {
+      "description": "D16 is still a relayed spend ceiling",
+      "owner": "Andre",
+      "unblockCondition": "Andre confirms, declines or supersedes D16 directly"
+    },
+    {
+      "description": "Lane roster v2 text is on main and Phase 0 was not run in this session",
+      "owner": "producer",
+      "unblockCondition": "record parley_setup.sh and smoke-test evidence, or keep the roster marked not-yet-run"
+    }
+  ],
+  "andreOnlyGates": [
+    "D16 direct confirmation",
+    "D16-r2 request passes five images; the declared slots are two",
+    "likeness on selected new stills",
+    "voice by ear",
+    "final picture and movie",
+    "language reviewers"
+  ],
+  "proposedDecisions": [
+    "Apply reports/2026-10-11-canonical-records.patch: handoff supersedes sentence in AGENTS.md, handoff v2 and atlas vN in CLAUDE.md, required directories for decisions, detail-planning, atlas source and reviews, andreOnlyGates on approvals.json, STATE.md names and stale-line replacements, one session-log entry, two mistakes.jsonl rows",
+    "Keep picture-lock/galileo-en-preview-v1.mp4 where it is and keep the extra inbox folders unclassified",
+    "Do not declare Parley Phase 0 complete"
+  ],
+  "mistakes": [
+    {
+      "mistake": "Merge e1b5eb4 left two coordinator objects, so validate and status did not describe the film",
+      "detected_by": "reports/2026-10-11-structure-naming-agents-review.md",
+      "solution": "one coordinator with dispatchAuthority true, canonicalWriteAuthority false, and no coordinate skill",
+      "rule_added": "scripts/manage.py duplicate role ids; unknown role skill names"
+    },
+    {
+      "mistake": "agents/coordinator.md called D16 likeness approval and D20 final picture, and the example wrote board.json",
+      "detected_by": "reports/2026-10-11-structure-naming-agents-review.md",
+      "solution": "brief matches the decision files and proposes board text in the handoff",
+      "rule_added": "agents/coordinator.md"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "supersedes": [
+    "2026-10-11-claude-repo-cleanup-v1.json"
+  ],
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

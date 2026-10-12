@@ -208,7 +208,7 @@ Example:
   "ownerName": "desktop-producer",
   "reason": "Selected image subset is not yet approved by Andre for likeness.",
   "unblockCondition": "Andre reviews the selected subset and records approval in the decision log.",
-  "evidencePath": "projects/andre-time-travel/00_brief/decisions/D20-likeness-review.json"
+  "evidencePath": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/review.md"
 }
 ```
 
@@ -216,7 +216,7 @@ The coordinator must never leave a blocker as “waiting on something” without
 
 ## 9. Decision proposals
 
-The coordinator does not write the decision store or the board. Every coordination decision is proposed in its integration handoff, not just in the thread. The director records decision records under `00_brief/decisions/` and the producer applies board changes (`docs/PARLEY_PROTOCOL.md` ownership table; the film gate hooks refuse lane writes there).
+The coordinator does not write the decision store or the board. Every coordination decision is proposed in its integration handoff, not just in the thread. The director records decision records under `00_brief/decisions/` and the producer applies board changes (`docs/PARLEY_PROTOCOL.md` ownership table; the film gate hooks refuse lane writes there). D20 (`D20-detail-studies-art.json`) is an art selection for detail studies, not a likeness approval. There is no `D20-likeness-review.json`.
 
 Record:
 
@@ -227,7 +227,7 @@ Record:
 - The acceptance or rejection reason
 - Which task is now unblocked or deferred
 
-The coordinator saves only under `projects/andre-time-travel/agents/handoffs/`. The proposals it contains are applied by their owners under `projects/andre-time-travel/00_brief/decisions/` and `tasks/board.json`.
+The coordinator saves only its integration handoff under `projects/andre-time-travel/agents/handoffs/`. The director records adopted decision records under `00_brief/decisions/`. The producer applies board changes.
 
 ## 10. Non-goals and guardrails
 
@@ -238,8 +238,7 @@ The coordinator must not:
 - Claim a task as complete without evidence.
 - Dispatch work to a lane outside its allowed write paths.
 - Delete originals or archival sources.
-- 
-Assume a staged workflow and never “skip ahead” to the next milestone by inference.
+- Skip ahead to the next milestone by inference. The staged workflow still applies.
 
 ## 11. Minimum coordination checklist
 

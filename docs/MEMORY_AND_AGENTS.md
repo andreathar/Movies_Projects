@@ -4,7 +4,7 @@
 This is an offline, project-scoped file memory system. `memory/projects.json` selects the film; its `memory/STATE.md` is the resume point, with decisions, risks and a session log. Tasks and manifests are canonical for progress/media. No Cognee dataset, global memory write or remote service was provisioned.
 
 ## Agents
-Seven role briefs are indexed in `agents/registry.json`. They are inputs to explicit delegation, not running bots. Reviewers return artifacts/findings; only the parent changes status or approves submissions. No scheduler, daemon or automatic spending exists.
+Ten role briefs are indexed in `agents/registry.json`. They are inputs to explicit delegation, not running bots. The producer integrates canonical records and is the only role with paid-submission authority. The coordinator dispatches and proposes board, decision and approval changes; it does not write those records. Reviewers return artifacts/findings. No scheduler, daemon or automatic spending exists.
 
 The user has authorized local editing of assigned creative sources. `docs/LOCAL_AGENT_HANDOFF.md` defines ownership, base hashes, versioned outputs and the delivery format. This does not grant reviewers authority over spending, canonical approvals or external writes. No automatic agent was started by the workflow validation.
 

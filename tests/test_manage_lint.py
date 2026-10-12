@@ -269,6 +269,28 @@ class LintTests(ManageCliMixin, unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertIn("gone.md", " ".join(report["hard"]))
 
+    def test_superseded_handoff_is_history_not_a_live_hash(self) -> None:
+        deliverable = self.film / "docs/review.md"
+        deliverable.parent.mkdir(parents=True)
+        deliverable.write_text("review\n", encoding="utf-8")
+        stale = v2_handoff(self.root, [deliverable])
+        deliverable.write_text("changed\n", encoding="utf-8")
+        write_json(self.film / "agents/handoffs/2026-10-10-stale.json", stale)
+        code, report = self.run_json(self.root, "lint")
+        self.assertEqual(code, 2)
+        self.assertIn("2026-10-10-stale.json", " ".join(report["hard"]))
+
+        successor = v2_handoff(self.root, [deliverable])
+        successor["supersedes"] = ["2026-10-10-stale.json", "2026-10-10-missing.json"]
+        write_json(self.film / "agents/handoffs/2026-10-11-successor.json", successor)
+        code, report = self.run_json(self.root, "lint")
+        self.assertEqual(code, 0, report)
+        advisory = " ".join(report["advisory"])
+        self.assertIn("2026-10-10-stale.json", advisory)
+        self.assertIn("superseded", advisory)
+        self.assertNotIn("2026-10-10-stale.json", " ".join(report["hard"]))
+        self.assertNotIn("2026-10-10-missing.json", advisory)
+
     def test_mistakes_without_rules_are_advisory_after_seven_days(self) -> None:
         today = dt.date.today()
         old = (today - dt.timedelta(days=10)).isoformat()

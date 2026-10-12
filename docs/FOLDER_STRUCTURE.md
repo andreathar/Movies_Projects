@@ -1,6 +1,16 @@
 # Movies_Projects — Folder Structure
 
-Actual directory snapshot, excluding the virtual environment, Git/cache internals and symlink targets.
+The tree below is the 2026-10-09 scaffold snapshot, excluding the virtual environment, Git/cache internals and symlink targets. It is not the full live tree.
+
+`workspace.json` `requiredDirectories` is what `manage.py validate` guards. A producer patch on this branch proposes adding `00_brief/decisions/`, `03_bibles/detail-planning/`, `05_storyboard/source/` and `08_edit/reviews/` to that list. Those directories already exist. Derived atlas folders `preproduction-atlas-v1/` through `preproduction-atlas-v3/` also exist, with `approved: false`, and stay out of the required list because the next render is a new folder. `.agents/` holds the in-repo `kling-cli` checkout that `skills/kling-cli` links to. `drafts/` and `series/` are the continuation scaffold.
+
+Names that share a word and are not the same set:
+
+- Chapter key `galileo`. Plans and handoffs named `piloto-galileu*` are that chapter. Do not rename cited files.
+- Era stills: `02_references/keyframes/andre/`. Empty per-chapter folders under `05_storyboard/keyframes/<chapter>/` are not those stills. Study sets are `detail-studies-v1/` and `chatgpt-in-out-v1/`.
+- `08_edit/picture-lock/galileo-en-preview-v1.mp4` is a candidate preview. The manifest calls it assembled pending full playback and dubbing. It was not moved.
+- `07_generations/accepted/` is empty. Chapter `acceptedTakeId` values are null. A candidate is not an accepted take.
+- `inbox/Photos-Andre-Suit/` and `inbox/instagram-andreathar/` are extra intake. They were not reclassified. No inbox file is an approval.
 
 ```text
 Movies_Projects/

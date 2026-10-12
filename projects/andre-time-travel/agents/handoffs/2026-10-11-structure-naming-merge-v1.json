@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Record the merge with origin/main (050bded) in commit 2f96351622bac02142a8d7bf18100ed07da75b70. One coordinator was kept: dispatchAuthority true, canonicalWriteAuthority false, skills empty, producer name Producer.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-11-structure-naming-agents-implementation.json",
+    "agents/registry.json",
+    "skills/registry.json"
+  ],
+  "ownedPaths": [
+    "agents/coordinator.md",
+    "agents/registry.json",
+    "docs/COORDINATOR_PROTOCOL.md",
+    "reports/2026-10-11-structure-naming-agents-review.md",
+    "skills/registry.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "2e4eb8abda0b38254c9cf02493e06ca514155a9ca14a1b339183015cfb584213"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "b96a3186de1b018ed9356ab2e9a735915a3b22cc440b6cd836b3a68760c0dfc9"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256Before": "57f582a1cd97cb5de67e30377e46e0eedfabdedfa6773917cd2fbd5fc2f98bc7"
+    },
+    {
+      "path": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256Before": "922e3ea48c5de02ff23fc95c809a46a8a83516f622ed277a24dc24df5b3d5ab9"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "fc86d621e46768bce8b036972943b3f3f2b2d166583a1ab8784aacbd88d92a31"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "601e8e5f23c326534f37f4ba6667288786fd0113961743f74d71a9bcadf739b3",
+      "reason": "Merge with origin/main 050bded kept one coordinator brief and main's handoff fields for blockers and proposed decisions"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256After": "ea102925226952a39ceb6a26fe12d8e97f9c90012b57a998f85f7ada82085da9",
+      "reason": "One coordinator kept: dispatchAuthority true, canonicalWriteAuthority false, skills empty; producer name Producer"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256After": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd",
+      "reason": "Merge records the result in the integration handoff; the director records decision records and the producer applies board changes"
+    },
+    {
+      "path": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256After": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780",
+      "reason": "Later branch commits plus 21a565b and 2fca1a5 changed the role count, shared-skill note, verification sentence, paidSubmissionRequiresApprovedShot, and the requiredDirectories count"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256After": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e",
+      "reason": "coordinate skill target is absent; registry must not require skills/coordinate/SKILL.md"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "After the merge with origin/main (050bded), agents/registry.json has one coordinator. dispatchAuthority is true, canonicalWriteAuthority is false, skills is empty, and the producer name is Producer.",
+      "evidence": "agents/registry.json",
+      "sha256": "ea102925226952a39ceb6a26fe12d8e97f9c90012b57a998f85f7ada82085da9"
+    },
+    {
+      "statement": "agents/coordinator.md after that merge keeps one coordinator brief. Routing decisions are handoff proposals. The coordinate skill is not registered for this role and its link target is absent.",
+      "evidence": "agents/coordinator.md",
+      "sha256": "601e8e5f23c326534f37f4ba6667288786fd0113961743f74d71a9bcadf739b3"
+    },
+    {
+      "statement": "docs/COORDINATOR_PROTOCOL.md after that merge records the result in the integration handoff. The director records decision records and the producer applies board changes.",
+      "evidence": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+    },
+    {
+      "statement": "reports/2026-10-11-structure-naming-agents-review.md no longer matches the implementation handoff sha256After. Later branch commits plus 21a565b and 2fca1a5 changed the role count, the shared-skill note, a verification sentence, paidSubmissionRequiresApprovedShot, and the requiredDirectories count.",
+      "evidence": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
+    },
+    {
+      "statement": "skills/registry.json does not list coordinate. The entry on origin/main (050bded) was not kept because the coordinate skill target is absent, so the registry does not require skills/coordinate/SKILL.md.",
+      "evidence": "skills/registry.json",
+      "sha256": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e"
+    }
+  ],
+  "verification": [
+    ".venv/bin/python scripts/manage.py handoff check projects/andre-time-travel/agents/handoffs/2026-10-11-structure-naming-merge-v1.json: status ok, version 2.0, errors empty",
+    ".venv/bin/python scripts/manage.py lint: status ok, hard empty. Advisories: duplicated approval flags (R06); 1 handoff not ingested (this file); 2 handoffs superseded (2026-10-11-claude-repo-cleanup-v1.json, 2026-10-11-structure-naming-agents-implementation.json); session-log.json offsets +0000 and -0300. Lint also named this file while it was untracked and again while the review-report hash was corrected after 21a565b and 2fca1a5.",
+    ".venv/bin/python scripts/manage.py validate: status ok, errors empty, five warnings that shared skills changed since linking: kling-cli, film-character-continuity, film-dialogue-localization, film-editing-qc, grounded-citations. sourceSha256 was not rewritten."
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Ingest this handoff after reading the merge with origin/main (050bded)",
+      "readiness": "pending producer review"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [],
+  "andreOnlyGates": [
+    "D16 direct confirmation",
+    "D16-r2 request passes five images; the declared slots are two",
+    "likeness on selected new stills",
+    "voice by ear",
+    "final picture and movie",
+    "language reviewers"
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "supersedes": [
+    "2026-10-11-structure-naming-agents-implementation.json"
+  ],
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

@@ -167,6 +167,18 @@ class WorkspaceValidationTests(unittest.TestCase):
             self.assertIn("dependency", " ".join(json.loads(bad.stdout)["errors"]).lower())
             board_path.write_text(board_original)
 
+            registry_path = fixture / "agents/registry.json"
+            registry_original = registry_path.read_text()
+            registry = json.loads(registry_original)
+            for role in registry["roles"]:
+                if role["id"] == "producer":
+                    role["skills"] = ["not-a-registered-skill"]
+            registry_path.write_text(json.dumps(registry))
+            bad = self.run_cli("validate", fixture)
+            self.assertEqual(bad.returncode, 2)
+            self.assertIn("unknown skill", " ".join(json.loads(bad.stdout)["errors"]))
+            registry_path.write_text(registry_original)
+
             workspace = json.loads((fixture / "workspace.json").read_text())
             workspace["projects"][0]["manifest"] = "/outside-workspace/manifest.json"
             (fixture / "workspace.json").write_text(json.dumps(workspace))

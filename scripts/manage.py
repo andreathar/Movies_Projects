@@ -101,6 +101,13 @@ def validate(root: Path) -> dict[str, Any]:
                 scoped_path(root, role["brief"]).is_file(), f"missing agent brief: {role['id']}"
             )
         skills = read_json(root / "skills/registry.json")
+        skill_names = {skill["name"] for skill in skills["skills"]}
+        for role in agents["roles"]:
+            for skill_name in role.get("skills", []):
+                require(
+                    isinstance(skill_name, str) and skill_name in skill_names,
+                    f"role {role['id']} names unknown skill: {skill_name}",
+                )
         for skill in skills["skills"]:
             skill_file = scoped_path(root, skill["path"], shared_skill=True) / "SKILL.md"
             require(skill_file.is_file(), f"missing or broken skill source: {skill['name']}")
@@ -425,15 +432,43 @@ def lint_decisions(film: Path, hard: list[str]) -> None:
             )
 
 
+def superseded_handoff_names(handoffs: list[tuple[str, dict[str, Any]]]) -> set[str]:
+    """Return handoff filenames a different handoff lists in ``supersedes``.
+
+    The named file stays the historical delivery. Lint does not treat its stored
+    hashes as a claim about the current tree. ``handoff check`` on that file
+    still compares the hashes.
+    """
+    present = {name for name, _handoff in handoffs}
+    superseded: set[str] = set()
+    for name, handoff in handoffs:
+        listed = handoff.get("supersedes", [])
+        if not isinstance(listed, list):
+            continue
+        for item in listed:
+            if isinstance(item, str) and item in present and item != name:
+                superseded.add(item)
+    return superseded
+
+
 def lint_handoffs(root: Path, film: Path, hard: list[str], advisory: list[str]) -> None:
+    loaded = load_handoffs(film)
+    superseded = superseded_handoff_names(loaded)
     pending = []
-    for name, handoff in load_handoffs(film):
+    for name, handoff in loaded:
+        if name in superseded:
+            continue
         if ingest_status(handoff) in (None, "pending"):
             pending.append(name)
             if handoff.get("schemaVersion") == "2.0":
                 hard.extend(hash_findings(root, film, handoff, name))
     if pending:
         advisory.append(f"{len(pending)} handoff(s) not ingested: {', '.join(pending)}")
+    if superseded:
+        advisory.append(
+            f"{len(superseded)} handoff(s) superseded; stored hashes kept as history: "
+            + ", ".join(sorted(superseded))
+        )
 
 
 def lint_current_plan(root: Path, film: Path, hard: list[str], advisory: list[str]) -> None:
