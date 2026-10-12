@@ -1,0 +1,659 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Integração local autorizada da coerência cinematográfica no plano, lint/resume e frontend; sem execução de mídia ou aceite criativo.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PRODUCTION_PLAN.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-master-plan-implementation-v2.json"
+  ],
+  "ownedPaths": [
+    "docs/PRODUCTION_PLAN.md",
+    "projects/andre-time-travel/memory/STATE.md",
+    "scripts/manage.py",
+    "scripts/production_plan.py",
+    "sites/movies-demandas/app/production-plan-panel.tsx",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/lib/production-plan.ts",
+    "sites/movies-demandas/tests/export.test.mjs",
+    "sites/movies-demandas/tests/model.test.ts",
+    "tests/test_cinematic_coherence.py",
+    "tests/test_manage_lint.py"
+  ],
+  "baseFiles": [
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": "b613c8eff4e4448b8179c70f1e812bd28ab1e8b8e3710d64d0e025ae7dda68aa"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256Before": "a07a1338793317bdc24dc3d5c3ddd5118f1e850145336d43f0cc676119c71974"
+    },
+    {
+      "path": "tests/test_cinematic_coherence.py",
+      "sha256Before": null
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256Before": "751b1998f28d9c68091029fae0e89c2b0d3ab161659b4f49ca1236230c6fa670"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256Before": "040bedb7d6148d9cb708dd1d146737ff8209cec95f93735ddb5a89142336625e"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256Before": "9763f4b091ad8b6a1d21463ad4c7f985a7f8da292d848da91d97bab34d23b941"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256Before": "276143f201fcb10369516b7bfa8e82caff0bb47e95ea46ce7a3d370b9e26494e"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "38cc5d7d9cabe59fe87ad9aee77c3cd50d566f59e24b83c84a6c363c98aec2ce"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "b25cb180351cc371dde6f3e66b15a14cf0e5059f064156bf9263f3ba7b602d20"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "5087bb2c07c0bfb7b56afb83ee9152232a08f5169a303e160f9d849ce25433b1"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82"
+    },
+    {
+      "path": "workspace.json",
+      "sha256Before": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "32f3e7d2fb37ce52323e240a78506315ee5b51ef9d1c4561e5f906f8130f4f57"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256Before": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "13e2e0dd8dfb658cd25e5b6ddec0e670fc37999100084e806169c0ef8cc7c48f"
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256Before": "f9dcaba3a6afc9b9ff90569a954f08edb34b0cddec9c6459bc74ff50df45a6a5",
+      "scope": "added test-only fixture change; captured before edit"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-master-plan-implementation-v2.json",
+      "sha256Before": "272914e91a24ae3fcb773fec0fbe1ea865f8cd0243792e32209a3ad5d0013803"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256After": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256After": "3a67382c81087ca4a08ae57db17b636c79787ba46741413241665dd3c98a4fbf",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256After": "96393f99f8ccea5d7f563c07894c700a4918df8afdb0ebe66e2bdf297ac1e602",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256After": "4e16448580a53c8eb657649ec97b72bf2843b62756100f6d3c57e72d5a2206da",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256After": "7f76dd24197d6863261bb9c2e80d1114506ace3d17df7a38c2399b2f3b8eb741",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+      "sha256After": "6cff2399c3991c450a9085f23ebb843117a2041b71648b98bf6ea2036a66a478",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/11-receitas-do-filme.md",
+      "sha256After": "a8f1e17a88886049307895b58269d6416bf2772bda98217d7b2934b3120fcfed",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256After": "00b3680308b89def64d71f4ad96d474c9799d194bf357a87ada77e22af328cc6",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/17-integracao-cli.md",
+      "sha256After": "ee8e51b684de56ebcef23c69a7f4b1d448ff6f1f741116d360f50f4f68a25759",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256After": "3707ff1eaec975a6766015f10a4e4c1307da5ebe31075723957595255cd8ed44",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256After": "e2ab688d90bca0532fdb87167278fb3ae0ae91640d07637e0478bc2815b3aaa5",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256After": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+      "sha256After": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+      "sha256After": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+      "sha256After": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+      "sha256After": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256After": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256After": "8efc2ad91d17f62d58d3818602ff19b2ac8994b4810f576e51091d32cf636d80",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256After": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "090b26c56914af3e7281a52f29d25443727a0de7bfec49454a88573cf0859462",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256After": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+      "sha256After": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+      "sha256After": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+      "sha256After": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256After": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256After": "8f915f396b10600b2b469deb9752e94bceb7d7d8c4084a54f2689f72a4ece774",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256After": "ae587c2688034e0c98835c0711a93b577ca1cd96cf6c27db333895d0d09ffb3b",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256After": "acfd85b03e3581d01f620a2638de3154c8d43b7d83c9bd7d55d8ffc2ed5cfc04",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256After": "64623718e745fec0385e7b79e61d93ef5367125356fc9c1d04f306523448bed0",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "shared/templates/kling-job-release.json",
+      "sha256After": "8176e011b680bdd40307c16d42df3073935a8cf95df9a04794f94ce1f95e0c57",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "shared/templates/kling-shot-families.json",
+      "sha256After": "7af89207f49ad2aad8aa3ad2116d8c1275c09505754fdc67a6087e5e86bc5db9",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "e7d5dc9aa6c3522aa842ee726d3ce2d165ed063a4b8fb7f05e46ef84984a84e1",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256After": "b0d1ce6867f5eedfc57559cc77b30990c8fa1a65738f98545f1d9d0e7f3b7b34",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256After": "503286b5b76771e5ef74a7551be50361cb2a206014b30a753739480750956b8a",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256After": "41390db3c06dae9ffda712aeca0547e253fdc88ca9b7360055d10998514dd20b",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256After": "5c9d9e2d31b5ea4518298cc69469f8cf7b294ffc293246c024b5828619dfc034",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256After": "86600eb089aa14b1ddf8ea1420cbb82ac2ffb5e4c3d1750930804c8faf4537ae",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256After": "ad4e7ff47ffdc385de3f9bdd26d8f37bb70e02a90f66f46fa9129bfe1411867e",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "tests/test_kling_batch.py",
+      "sha256After": "9cb66b016b95328143be6581f8e7dc4ca55f90f3496a7a56f222f13e4d53a51e",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "tests/test_kling_contract.py",
+      "sha256After": "b6c1c99c2f52f4ed14d52e2046198fffcf5060f5e3bde73a68c503bb4f39ed33",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "tests/test_kling_release.py",
+      "sha256After": "868f20c41d26a215f0bb85412590e93d1999eed2dc5fd40aaffa3f3082e06f90",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "tests/test_manage.py",
+      "sha256After": "6fd344aa0116abf401b50fca824637d5caee9fc027309fcca7ba8429fe746c8d",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256After": "66aa6ba844b2c1a83705d63c370cd5b041dd38c0ddeac3e37bc691dc1f75bea3",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "workspace.json",
+      "sha256After": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "58a50f53f042428245187ab3a3e1b21f0a99ddb7cca97a094bea8d7e06a1bc2d",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "32f3e7d2fb37ce52323e240a78506315ee5b51ef9d1c4561e5f906f8130f4f57",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/MATRIZ-SCHEMAS.md",
+      "sha256After": "b78abc16495de7d0a0fdbc4d9cf20d142f4a38685338ac3d8cbf86fc25060f09",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-files.json",
+      "sha256After": "6b135655e7b6c8dde0ffe95593634903056d7a6292fdcb87cd9b21d61ace3463",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-manifest-checks.json",
+      "sha256After": "850c25a6c9a2f25b13aa72517634104f05d49a7591447b0e6910441fd7586f08",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/consumed-specifications.json",
+      "sha256After": "cdc31894e5c2b03020d07872811cfcd0b3d28129dbfc55c87de0241cec707ea7",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/counts.json",
+      "sha256After": "45fd9ec6241f4966356508228a8de395ffba7434cbab8011a491022cd33e6514",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/detail-studies-summary.json",
+      "sha256After": "5260532f06593fefa017b8015e0aed6921f47b317cd977786207f458b31ab085",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/model-contracts.json",
+      "sha256After": "9e1397b18e00d46d2e6492167e41696faf8618934737a164c37ba174d63cc1fa",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/prompt-consumption-checks.json",
+      "sha256After": "39d68b09e1a656be4a98c2736d24ceabec6428a446e78a21721e47e911978020",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/schema-evidence.json",
+      "sha256After": "d89cabc2116fe33025ecc54b0ef74eb4d201c3bc35f7b7b863b4e6d62b05ed48",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/source-hashes.json",
+      "sha256After": "36626d57d953249f0dc64ff874a64c9000399821ce26504160383be52fc52601",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/verification.json",
+      "sha256After": "262917fa16a0ff4323fbad37ffd895ee2dfd328c3df9589651265cce6e0a1e9c",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "ace0d3e355fa061ff4f1d24bc8ee1901ca8c2e771a670a1fce92f5ef37fd40f1",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "5087bb2c07c0bfb7b56afb83ee9152232a08f5169a303e160f9d849ce25433b1",
+      "reason": "Integração local de coerência; escopo e testes desta entrega.",
+      "carriedForward": false
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/index.html",
+      "sha256After": "1eec08fdaf0e5ce4b3e39ef88408b8522ad60c1525c4804c5bdbe7ce9d4aea52",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/render-evidence.json",
+      "sha256After": "80dd96cd60f1d733a19d48414839de6aedde1388be709915068db4e734d5b5cc",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+      "sha256After": "ed0d596e078317f08a841b416af8e7cebe0a77a5adc26e747e009c2d63b266ec",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+      "sha256After": "56a0397f9a6fe52cb009499af5f523c29acc9bc82e033290b5c3d7228ee189b9",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+      "sha256After": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/frames.ffconcat",
+      "sha256After": "2a259789cdf90978dc89c42a81cfcb4833db35b9ec360f6512dfcbb8563ae474",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+      "sha256After": "67cb0902bbd2e5476ab93fda0ff824f57e4a2419dd56f18a55d9f10a55ec84cd",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+      "sha256After": "0a53d714b0a2cce16f5c085745da7fb2c5b1c12f95a22c11ce8b823969ce2108",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-implementation.md",
+      "sha256After": "542cfddf3f7daec51bfe85869a0237a0bdb87fdf01e59f6bf552086c970737ae",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-implementation-checks.json",
+      "sha256After": "869b0536e93eb04c83c8174d4cd87bcef8c4d2f90f8989fa3e13ed93562383f2",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review.md",
+      "sha256After": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review-checks.json",
+      "sha256After": "16877bdf0126f01e2097505a4239909605353f96f81b8b805ee9f2de4b7887c6",
+      "reason": "Hash anterior reconferido; conteúdo e autoria da entrega anterior preservados, sem nova aprovação semântica.",
+      "carriedForward": true
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256After": "6c5868694d078e05078d890685ba661ff5e161cd26d427c6fe08cbb13f162859",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "tests/test_cinematic_coherence.py",
+      "sha256After": "77a58ee4797e2b92d9dcecb7555eab14ae5a30e370ac202e5dde35a7b2999a3c",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256After": "bcd98b23fd99c9259089a65c8e427fdac86da84a837d90b01ba2e39aab4608d6",
+      "reason": "Integração local de coerência, testes, documentação ou snapshot derivado.",
+      "carriedForward": false
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Contrato de coerência, justificativas por hash e limites das propostas CINE-G-01/02.",
+      "evidence": "docs/PRODUCTION_PLAN.md",
+      "sha256": "3a67382c81087ca4a08ae57db17b636c79787ba46741413241665dd3c98a4fbf"
+    },
+    {
+      "statement": "23 casos sintéticos novos para coerência; evidência executada nos logs da entrega.",
+      "evidence": "tests/test_cinematic_coherence.py",
+      "sha256": "77a58ee4797e2b92d9dcecb7555eab14ae5a30e370ac202e5dde35a7b2999a3c"
+    },
+    {
+      "statement": "Handoff anterior preservado byte a byte como histórico e pendências, sem aprovação herdada.",
+      "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-12-master-plan-implementation-v2.json",
+      "sha256": "272914e91a24ae3fcb773fec0fbe1ea865f8cd0243792e32209a3ad5d0013803"
+    }
+  ],
+  "verification": [
+    "145 testes Python passaram; test_hooks.py omitido porque cria commits temporários, fora deste escopo.",
+    "26 testes frontend passaram; fixture export usa revisão sintética sem criar commit.",
+    "Lint e tipos frontend, build local e ambos exportadores --check passaram em série.",
+    "check --verify-media e check-coherence sem erros; seis avisos INPUT_ROLE_UNDOCUMENTED permanecem.",
+    "manage.py validate passou com três avisos existentes de hashes de skills. Ver logs finais locais para lint/handoff/resume após esta integração."
+  ],
+  "supersedes": [
+    "2026-10-12-master-plan-implementation-v2.json"
+  ],
+  "supersessionScope": "Atualiza a cadeia de hashes após a integração local; todos os 72 arquivos anteriores continuam cobertos. Handoff anterior, evidências, limites, pendências e aprovações históricas preservados; não é aceite ou ingestão da entrega anterior.",
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Produtor da conversa 01a0ff67-e9e4-75a0-99db-8bf420559029 revisa e ingere a entrega. Conciliar eventual resposta OpenCode contra os hashes efetivamente revisados. Documentar bindings apenas após verificação das referências.",
+      "readiness": "Entrega local pronta; responsabilidade continua com o produtor até aceite explícito do sucessor."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Integração local concluída; revisão externa e decisões de produção permanecem pendentes.",
+  "blockers": [
+    {
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+      "owner": "Andre / dialogue-sound",
+      "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+    },
+    {
+      "description": "Novas gerações sem preço/cotação e liberação.",
+      "owner": "producer",
+      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+    },
+    {
+      "description": "Atuação de referência e leitura atual do Element não qualificadas.",
+      "owner": "continuity / producer",
+      "unblockCondition": "Triar mídia existente; obter readback autorizado antes de vincular. Nenhuma nova captura ou upload automático."
+    },
+    {
+      "description": "Revisão OpenCode não recebida/verificada: mensagem 59, sem ACK nem resultado conforme relato do produtor.",
+      "owner": "producer / OpenCode reviewer",
+      "unblockCondition": "Obter resultado real e comparar sua base com os hashes da integração; nunca converter envio em aprovação."
+    }
+  ],
+  "andreOnlyGates": [
+    "Semelhança/composição e ritmo dos novos candidatos",
+    "Escuta e escolha de voz final; D14 vigente",
+    "Qualquer nova autorização de gasto ou upload"
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "openCodeReview": {
+    "status": "pending",
+    "messageId": 59,
+    "acknowledged": false,
+    "resultVerified": false,
+    "basis": "parent report; no independent approval claimed"
+  },
+  "commitsByThisExecutor": 0,
+  "frontendRestarted": false,
+  "published": false,
+  "localEvidenceDirectory": "/home/athar/Documents/Codex/2026-10-12/task/kling-coherence-integration"
+}

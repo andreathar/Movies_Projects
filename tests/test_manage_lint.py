@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import datetime as dt
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
@@ -11,11 +12,44 @@ import sys
 import tempfile
 from typing import Any
 import unittest
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "manage.py"
 FILM = "projects/film"
 APPROVALS = {"pilot": True, "paidBatch": False, "finalPicture": False}
+
+
+class CoherenceLintIntegrationTests(unittest.TestCase):
+    def test_errors_and_acknowledged_warnings_keep_their_severity(self):
+        spec = importlib.util.spec_from_file_location("manage_coherence", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        findings = {"items": [
+            {"shotId": "S", "level": "ERROR", "code": "DURATION_REQUEST", "msg": "mismatch"},
+            {"shotId": "S", "level": "WARN", "code": "CAMERA_MIXED", "msg": "review", "acknowledged": True},
+            {"level": "INFO", "code": "INSPECTION_LIMIT", "msg": "partial"},
+        ]}
+        hard, advisory = [], []
+        with mock.patch.object(module, "production_plan_report", side_effect=[{"errors": [], "status": "ok"}, findings]):
+            module.lint_production_plan(ROOT, hard, advisory)
+        self.assertEqual(len(hard), 1)
+        self.assertIn("DURATION_REQUEST", hard[0])
+        self.assertEqual(len(advisory), 1)
+        self.assertIn("CAMERA_MIXED", advisory[0])
+        self.assertIn("não é aprovação", advisory[0])
+
+    def test_unconfigured_or_invalid_plan_does_not_load_coherence(self):
+        spec = importlib.util.spec_from_file_location("manage_coherence", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        for report in ({"errors": [], "status": "not_configured"}, {"errors": ["broken"], "status": "error"}):
+            with mock.patch.object(module, "production_plan_report", return_value=report) as read:
+                hard, advisory = [], []
+                module.lint_production_plan(ROOT, hard, advisory)
+                self.assertEqual(hard, report["errors"])
+                self.assertEqual(advisory, [])
+                read.assert_called_once_with(ROOT)
 
 
 def sha256(path: Path) -> str:

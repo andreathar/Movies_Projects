@@ -2,7 +2,7 @@
 
 Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume surface. Keep it under ~80 lines: replace stale lines, do not append narrative. History lives in `history/`; full pre-restructure text: `history/STATE-2026-10-09-pre-restructure.md` (sha256 5e426020…27da). Not live data: re-verify against the canonical files below before acting.
 
-Última implementação local (2026-10-12): plano mestre integrado ao board e à fonte `../05_storyboard/source/production-plan.json`. Galileo G-L03/G-L04: fichas, 13 referências candidatas e animatic estático de 16 s em `../05_storyboard/animatics/galileo-g03-g04-v1/`. Andre autorizou implementar; não autorizou novos jobs/vozes/uploads. Skills, originais, roteiro e D14 preservados. Handoff desta implementação aponta verificação e pendências por versão.
+Última implementação local (2026-10-12): plano mestre integrado ao board e à fonte `../05_storyboard/source/production-plan.json`. Galileo G-L03/G-L04: fichas, 13 referências candidatas e animatic estático de 16 s em `../05_storyboard/animatics/galileo-g03-g04-v1/`. Andre autorizou implementar; não autorizou novos jobs/vozes/uploads. Skills, originais, roteiro e D14 preservados. Handoff desta implementação aponta verificação e pendências por versão. Coerência integrada ao lint/resume e painel em 2026-10-12: câmera temporal, áudio, referências e justificativas por hash; revisão OpenCode pendente (sem ACK/resultado verificado). Ver `../agents/handoffs/2026-10-12-cinematic-coherence-integration-v1.json`; sem novos envios pagos ou aceites artísticos.
 
 ## Read order
 1. `AGENTS.md` (rules) → `workspace.json` → this file.

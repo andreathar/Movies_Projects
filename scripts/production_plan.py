@@ -13,6 +13,7 @@ import csv
 import hashlib
 import importlib.util
 import json
+import math
 import re
 from pathlib import Path
 
@@ -150,6 +151,212 @@ def check_states(item, root, errors):
         errors.append(f"{item['id']}: incorporação artística requer aprovação específica")
 
 
+def coherence_hash(shot, references, request=None):
+    """Bind warning acknowledgements to this proposal, references and exact request."""
+    content = copy.deepcopy(shot)
+    if isinstance(content.get('coherence'), dict):
+        content['coherence'].pop('overrides', None)
+    evidence = {'shot': content, 'references': references, 'request': request}
+    return hashlib.sha256(json.dumps(evidence, sort_keys=True, ensure_ascii=False,
+                                     separators=(',', ':')).encode()).hexdigest()
+
+
+def cinematic_lint(shot, references, request=None, mapping=None):
+    """Offline documentary checks, not a media inspector or a spending gate.
+
+    Optional annotations live on the existing shot.coherence, never in a new registry.
+    Free-text matches only warn: negation, language and intent are not reliably parsed.
+    mapping, when supplied, comes from the existing preflight's media_mapping.
+    """
+    items = []
+    def add(level, code, msg, evidence=None):
+        items.append({'shotId': shot.get('id'), 'level': level, 'code': code,
+                      'msg': msg, 'evidence': evidence, 'acknowledged': False})
+    def seconds(value):
+        try:
+            return float(value) if not isinstance(value, bool) and math.isfinite(float(value)) else None
+        except (TypeError, ValueError, OverflowError):
+            return None
+    def flag(value):
+        return value if isinstance(value, bool) else {'true': True, 'false': False}.get(str(value).lower())
+
+    meta = shot.get('coherence', {})
+    if not isinstance(meta, dict):
+        add('ERROR', 'COHERENCE_SHAPE', 'coherence deve ser objeto.'); return items
+    total = seconds(shot.get('proposedGenerationSeconds'))
+    if shot.get('proposedGenerationSeconds') is not None and (total is None or total <= 0):
+        add('ERROR', 'DURATION_INVALID', 'Duração proposta deve ser finita e positiva.')
+    args = (request or {}).get('args', {})
+    args = args if isinstance(args, dict) else {}
+    args = {re.sub(r'[_\-\s]', '', str(k)).lower(): v for k, v in args.items()}
+    requested = seconds(args.get('duration'))
+    if 'duration' in args and (requested is None or requested <= 0):
+        add('ERROR', 'DURATION_INVALID', 'Duração do pedido deve ser finita e positiva.')
+    if total is not None and requested is not None and abs(total - requested) > .001:
+        add('ERROR', 'DURATION_REQUEST', 'Duração estruturada do pedido difere da ficha.',
+            {'shot': total, 'request': requested})
+    total = requested if requested is not None else total
+    segments = meta.get('segments')
+    modes, end, segments_ok = set(), 0.0, True
+    if segments is not None:
+        if not isinstance(segments, list) or not segments or total is None or total <= 0:
+            add('ERROR', 'SEGMENTS_SHAPE', 'Segmentos exigem lista não vazia e duração total positiva.')
+            segments_ok = False
+        else:
+            for index, segment in enumerate(segments):
+                start = seconds(segment.get('startSeconds')) if isinstance(segment, dict) else None
+                stop = seconds(segment.get('endSeconds')) if isinstance(segment, dict) else None
+                mode = segment.get('camera') if isinstance(segment, dict) else None
+                if start is None or stop is None or start < 0 or stop <= start or abs(start-end) > .001 or stop > total+.001 or not isinstance(mode, str) or mode not in {'locked', 'moving'}:
+                    add('ERROR', 'SEGMENT_INTERVAL', 'Segmento inválido: ordem, lacuna, sobreposição, limite ou câmera.', index)
+                    segments_ok = False
+                if stop is not None:
+                    end = stop
+                if isinstance(mode, str):
+                    modes.add(mode)
+            if abs(end-total) > .001:
+                add('ERROR', 'SEGMENTS_TOTAL', 'Segmentos devem cobrir a duração total.', {'end': end, 'total': total})
+                segments_ok = False
+
+    prompt = (request or {}).get('prompt', args.get('prompt', shot.get('prompt', '')))
+    text = '\n'.join(str(x or '') for x in (shot.get('camera'), prompt))
+    fixed = re.search(r'locked (?:camera|framing)|fixed camera|c[âa]mera fixa', text, re.I)
+    movement = re.search(r'(?:the )?camera (?:tilts?|orbits?|rotates?|pans?|moves?|dollies)|c[âa]mera (?:gira|orbita|move)|(?:dolly|push)[ -]in', text, re.I)
+    if fixed and movement:
+        # A schedule permits a fixed opening followed by movement. This is not NLP proof.
+        explicit = segments is not None and segments_ok and modes == {'locked', 'moving'}
+        add('INFO' if explicit else 'WARN', 'CAMERA_SEGMENTED' if explicit else 'CAMERA_MIXED',
+            'Câmera fixa/móvel têm segmentos explícitos; conferir texto e resultado.' if explicit else
+            'Texto menciona câmera fixa e movimento; conferir negação e sequência temporal.',
+            [fixed.group(), movement.group()])
+    number_words = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
+                    'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
+                    'twelve': 12, 'thirteen': 13, 'fourteen': 14, 'fifteen': 15}
+    for match in re.finditer(r'\b(\d+(?:\.\d+)?|'+'|'.join(number_words)+r')[ -]second (?:shot|take)\b', str(prompt), re.I):
+        value = number_words.get(match[1].lower()) or seconds(match[1])
+        if total is not None and value != total:
+            add('WARN', 'PROMPT_DURATION', 'Duração textual pode divergir do total; conferir se descreve um segmento.', match.group())
+
+    audio = meta.get('audioIntent')
+    if audio is not None and (not isinstance(audio, str) or audio not in {'silent', 'native_guide', 'external_audio', 'post_dub', 'unspecified'}):
+        add('ERROR', 'AUDIO_INTENT', 'Intenção sonora fora do vocabulário documentado.')
+        audio = None
+    native, original = flag(args.get('enableaudio')), flag(args.get('keeporiginalsound'))
+    audio_inputs = [slot for slot in (mapping or {}) if slot.startswith('audio')]
+    if request is not None:
+        if audio == 'silent' and (native is True or original is True or audio_inputs):
+            add('ERROR', 'AUDIO_CONTRADICTION', 'Intenção silent conflita com áudio explicitamente ativado/fornecido.')
+        elif audio == 'native_guide' and native is False:
+            add('ERROR', 'AUDIO_CONTRADICTION', 'Voz nativa solicitada com enable_audio=false.')
+        elif audio in {'silent', 'native_guide'} and native is None:
+            add('WARN', 'AUDIO_CONTROL_UNKNOWN', 'Sem controle explícito não se comprova a intenção sonora.')
+        if audio == 'external_audio' and mapping is not None and not audio_inputs:
+            add('ERROR', 'AUDIO_INPUT_MISSING', 'Intenção external_audio sem slot de áudio no pedido.')
+        if re.search(r'no audio|silent video|sem [áa]udio', str(prompt), re.I) and native is not False:
+            add('WARN', 'AUDIO_TEXT_ONLY', 'Texto de silêncio não desativa áudio; conferir intenção e controle.', prompt)
+
+    selected = shot.get('referenceIds', [])
+    for ref_id in selected:
+        ref = references.get(ref_id)
+        if not ref:
+            add('ERROR', 'REFERENCE_MISSING', 'Referência selecionada não existe.', ref_id); continue
+        if not isinstance(ref.get('sha256'), str) or not re.fullmatch(r'[0-9a-fA-F]{64}', ref['sha256']):
+            add('ERROR', 'REFERENCE_HASH', 'Referência sem SHA-256 válido.', ref_id)
+        if not ref.get('provenance') or ref.get('provenance') == 'unknown':
+            add('WARN', 'PROVENANCE_UNKNOWN', 'Origem não comprovada; não inferir fotografia/autoria/aprovação.', ref_id)
+    bindings = meta.get('referenceBindings', [])
+    if not isinstance(bindings, list):
+        add('ERROR', 'BINDINGS_SHAPE', 'referenceBindings deve ser lista.'); bindings = []
+    slots = set()
+    for binding in bindings:
+        if not isinstance(binding, dict) or any(not isinstance(binding.get(k), str) or not binding[k].strip() for k in ('slot', 'referenceId', 'role')):
+            add('ERROR', 'BINDING_SHAPE', 'Binding exige slot, referenceId e role não vazios.'); continue
+        slot, ref_id = binding['slot'], binding['referenceId']
+        ref = references.get(ref_id, {})
+        if slot in slots or ref_id not in selected or ref_id not in references:
+            add('ERROR', 'BINDING_REFERENCE', 'Slot duplicado ou referência não selecionada/existente.', binding)
+        slots.add(slot)
+        if ref.get('role') and binding['role'] != ref['role']:
+            add('WARN', 'REFERENCE_ROLE', 'Função de uso difere do catálogo; justificar a seleção, sem reclassificar o original.', binding)
+        if binding['role'] == 'identity' and ref.get('provenance') in {'ui_screenshot', 'synthetic', 'synthetic_variant'}:
+            add('WARN', 'IDENTITY_PROVENANCE', 'Origem declarada não é foto real; não promover identidade automaticamente.', ref_id)
+        if mapping is not None:
+            if slot not in mapping:
+                add('ERROR', 'BINDING_SLOT', 'Binding não tem entrada correspondente no pedido.', slot)
+            elif mapping[slot] != ref.get('path'):
+                add('WARN', 'BINDING_CONTENT_UNVERIFIED', 'Caminho/URL/placeholder não comprova o arquivo do catálogo; conferir hash.', slot)
+    if mapping is not None and set(mapping)-slots:
+        add('WARN', 'INPUT_ROLE_UNDOCUMENTED', 'Entradas sem binding de função/referência.', sorted(set(mapping)-slots))
+
+    inspection = meta.get('inspection')
+    if inspection is not None:
+        methods = {'not_reviewed', 'metadata_only', 'sampled_frames', 'all_frames', 'full_playback', 'full_playback_and_frames'}
+        if not isinstance(inspection, dict) or not isinstance(inspection.get('method'), str) or inspection['method'] not in methods:
+            add('ERROR', 'INSPECTION_SHAPE', 'Método de inspeção inválido.')
+        else:
+            method = inspection['method']
+            for field in ('fullPlaybackCompleted', 'fullFrameInspectionCompleted', 'audioAuditionCompleted'):
+                value = inspection.get(field, False)
+                if not isinstance(value, bool):
+                    add('ERROR', 'INSPECTION_FLAG', 'Flags de inspeção exigem booleanos.', field)
+                if value is True and field != 'audioAuditionCompleted' and (method in {'not_reviewed', 'metadata_only', 'sampled_frames'} or
+                        field == 'fullPlaybackCompleted' and method == 'all_frames' or
+                        field == 'fullFrameInspectionCompleted' and method == 'full_playback'):
+                    add('ERROR', 'INSPECTION_CONTRADICTION', 'Método declarado não sustenta a inspeção integral alegada.', field)
+            if any(inspection.get(k) is True for k in ('fullPlaybackCompleted', 'fullFrameInspectionCompleted', 'audioAuditionCompleted')) and not inspection.get('evidence'):
+                add('WARN', 'INSPECTION_EVIDENCE', 'Inspeção declarada sem referência de evidência; não comprova revisão.')
+            if method in {'not_reviewed', 'metadata_only', 'sampled_frames', 'all_frames'}:
+                add('INFO', 'INSPECTION_LIMIT', 'Inspeção visual parcial/estática não comprova reprodução integral, voz ou aceite artístico.', method)
+
+    overrides = meta.get('overrides', [])
+    if not isinstance(overrides, list):
+        add('ERROR', 'OVERRIDE_INVALID', 'overrides deve ser lista.'); overrides = []
+    digest = coherence_hash(shot, references, request)
+    for override in overrides:
+        if not isinstance(override, dict) or any(not isinstance(override.get(k), str) or not override[k].strip() for k in ('code', 'reason', 'reviewer', 'subjectSha256')):
+            add('ERROR', 'OVERRIDE_INVALID', 'Override exige código, motivo, revisor e hash.'); continue
+        matches = [i for i in items if i['code'] == override['code']]
+        if override['subjectSha256'] != digest or not matches or any(i['level'] != 'WARN' for i in matches):
+            add('ERROR', 'OVERRIDE_INVALID', 'Override obsoleto, sem aviso correspondente ou tentando dispensar erro.', override['code'])
+        else:
+            for item in matches:
+                item.update(acknowledged=True, override=copy.deepcopy(override))
+    return items
+
+
+def coherence_report(root, shot_id=None, request=None):
+    """Reuse canonical plan/templates and provider slot mapping; never submit."""
+    p, path, plan = plan_source(root)
+    refs = {r['id']: r for r in plan['references']}
+    shots = [s for s in plan['shots'] if shot_id is None or s['id'] == shot_id]
+    if not shots or request is not None and len(shots) != 1:
+        raise ValueError('selecionar uma ficha existente para o pedido exato')
+    pf = module('coherence_preflight', ROOT / 'docs/kling-manual/tools/kling_preflight.py')
+    models = read(root, SNAPSHOT)['body']['availableModels']
+    items, subjects = [], []
+    for shot in shots:
+        job = request if request is not None else template(root, shot['family'], shot['id'])
+        spec = next((m for m in models.get(job.get('tool'), {}).get('models', []) if m['model'] == job.get('model')), None)
+        mapping = None
+        if spec:
+            mapping_report = pf.Report(job.get('job'))
+            mapping = pf.media_mapping(job, spec, mapping_report)
+            items.extend(mapping_report.items)
+            # Normalize only film-relative local names. No media is read or downloaded.
+            mapping = {k: (p['root']+'/'+v if isinstance(v, str) and not v.startswith(('<', 'http:', 'https:', '/')) and not v.startswith(p['root']+'/') else v) for k, v in mapping.items()}
+        else:
+            items.append({'level': 'ERROR', 'code': 'MODEL', 'msg': 'Ferramenta/modelo ausente no snapshot.'})
+        state_errors = []
+        for item in [shot] + [refs[i] for i in shot.get('referenceIds', []) if i in refs]:
+            check_states(item, root, state_errors)
+        items.extend({'level': 'ERROR', 'code': 'STATE', 'msg': error} for error in state_errors)
+        items.extend(cinematic_lint(shot, refs, job, mapping))
+        subjects.append({'shotId': shot['id'], 'sha256': coherence_hash(shot, refs, job)})
+    return {'path': path, 'items': items, 'errors': [i for i in items if i['level'] == 'ERROR'],
+            'subjects': subjects, 'mediaInspected': False, 'creativeAcceptanceGranted': False,
+            'paidReleaseGranted': False}
+
+
 def validate(root, *, verify_media=False):
     errors, pending = [], []
     p, path, plan = plan_source(root)
@@ -276,7 +483,7 @@ def export(root):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
-    parser.add_argument('command', choices=['check', 'export', 'routes', 'jobs', 'template', 'check-request', 'review-hashes'])
+    parser.add_argument('command', choices=['check', 'export', 'routes', 'jobs', 'template', 'check-request', 'review-hashes', 'check-coherence'])
     parser.add_argument('--verify-media', action='store_true')
     parser.add_argument('--family')
     parser.add_argument('--shot')
@@ -294,6 +501,13 @@ def main():
     elif args.command == 'review-hashes':
         _, _, plan = plan_source(args.root)
         result = [{'id': item['id'], 'sha256': review_hash(item), 'hashScope': 'file' if item.get('path') else 'shot_content'} for item in plan['references'] + plan['shots']]
+    elif args.command == 'check-coherence':
+        if args.spec and not args.shot:
+            parser.error('check-coherence --spec exige --shot')
+        job = json.loads(args.spec.read_text()) if args.spec else None
+        if args.spec and not isinstance(job, dict):
+            parser.error('check-coherence aceita um pedido objeto')
+        result = coherence_report(args.root, args.shot, job)
     elif args.command == 'check-request':
         if not args.spec:
             parser.error('check-request exige --spec')

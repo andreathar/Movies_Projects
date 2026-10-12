@@ -18,6 +18,7 @@ O plano mestre entregue e seu anexo ficam em `tasks/plans/master-production-v1/`
 
 ```sh
 python3 scripts/production_plan.py check --verify-media
+python3 scripts/production_plan.py check-coherence
 python3 scripts/production_plan.py routes
 python3 scripts/production_plan.py jobs
 python3 scripts/production_plan.py review-hashes
@@ -60,3 +61,104 @@ A ordem é: bloqueio de rascunho/evidência existente → identidade do conteúd
 O exportador existente incorpora a fonte selecionada via `production_plan.py export`; valida o plano e todos os hashes de textos consumidos. O frontend mostra fichas, funções das referências, preparação/dependências, timeline candidata, rotas/templates e pendências, sem conceder aprovações. Snapshots antigos persistidos exigem revisão/importação; demandas e comentários são preservados.
 
 `export-production.mjs --check` e `export-workspace.mjs --check` com a raiz Movies verificam freshness contra as fontes locais. `check:data` verifica a integridade do pacote incluído, sem alegar freshness de um workspace remoto ausente. Antes da entrega: testes stdlib e frontend, lint, tipos, exports e build, em sequência. Nunca executar smoke tests de geração para conferir esses controles.
+
+## Coerência cinematográfica offline
+
+`python3 scripts/production_plan.py check-coherence` lê as fichas da fonte já apontada
+por `workspace.json` e seus templates. `--shot ID --spec PEDIDO.json` confronta uma
+ficha com um único pedido exato; sem `--spec`, placeholders continuam como pendências.
+Não cria catálogo, referência, teste pago, job ou aprovação. O comando também alimenta
+`manage.py lint`: erros documentais entram em `hard`, avisos em `advisory`, inclusive
+os reconhecidos com justificativa. `resume` conserva essa contagem. Continua separado
+de `check`/`check-request` e do runner; não é um novo gate de submissão. Executar os
+controles existentes de contrato e liberação continua necessário.
+
+O resultado preserva avisos com trechos de evidência. Somente `ERROR` causa saída 2:
+
+| Classe | Exemplos | Tratamento |
+|---|---|---|
+| Erro documental determinístico | Durações estruturadas diferentes; segmentos com lacuna/sobreposição, NaN ou fora do total; binding duplicado/ausente; flags de inspeção contraditórias | Corrigir dados; não dispensável por override |
+| Aviso semântico ou falta de prova | Câmera fixa e movimento no texto; duração textual; silêncio sem controle explícito; função/origem da referência; URL/placeholder sem hash confirmado | Revisar contexto; pode ter justificativa vinculada ao conteúdo |
+| Limite informativo | Câmera fixa seguida de movimento em segmentos válidos; inspeção estática/parcial | Não confere execução, qualidade ou aceite |
+
+Anotações opcionais pertencem a `shots[].coherence` na fonte existente. Não são
+argumentos da API e não devem ser copiadas para `args`. Exemplo sintético de estrutura:
+
+```json
+{
+  "segments": [
+    {"startSeconds": 0, "endSeconds": 2, "camera": "locked"},
+    {"startSeconds": 2, "endSeconds": 5, "camera": "moving"}
+  ],
+  "audioIntent": "post_dub",
+  "referenceBindings": [
+    {"slot": "first_image", "referenceId": "ID_JA_NO_CATALOGO", "role": "composition"}
+  ],
+  "inspection": {
+    "method": "sampled_frames",
+    "fullPlaybackCompleted": false,
+    "fullFrameInspectionCompleted": false,
+    "audioAuditionCompleted": false
+  },
+  "overrides": []
+}
+```
+
+Segmentos descrevem toda a janela, em ordem, contíguos, de zero até
+`proposedGenerationSeconds`/`args.duration`, tolerância de 0,001 s. `locked`/`moving`
+descrevem intenção de câmera, não desempenho observado. Um plano fixo pode depois
+mover: não há proibição global dessa sequência. O reconhecimento textual é limitado,
+principalmente ao inglês e a alguns termos portugueses; negação ou escopo temporal
+podem gerar falso positivo. A ausência de aviso não comprova coerência.
+
+`audioIntent`: `silent`, `native_guide`, `external_audio`, `post_dub` ou `unspecified`.
+Omissão significa não declarado. “No speech” não significa faixa sonora silenciosa.
+Slots vêm do mapeador já existente do preflight e do snapshot; não se deduz suporte de
+áudio pelo nome do modelo. `post_dub` não alega que dublagem ou sincronismo foram feitos.
+
+Bindings apontam referências selecionadas pelo ID, sem copiar seus hashes/origens.
+Função diferente da registrada exige revisão; não reclassifica o original. Caminho
+igual não verifica bytes, URL/placeholder não prova versão. Usar `check --verify-media`
+para os hashes locais; o produtor ainda precisa vincular o arquivo exato ao pedido.
+Nenhuma inspeção visual ou autenticação de autoria é realizada por este comando.
+
+`inspection.method` descreve somente a revisão visual: `not_reviewed`, `metadata_only`,
+`sampled_frames`, `all_frames`, `full_playback`, `full_playback_and_frames`.
+Audição é independente. Flags verdadeiras devem citar `evidence` (referência ao relato
+existente); sua ausência avisa, sua presença não autentica a inspeção. O estado do
+player não prova audição. Aprovação/incorporação continuam em `states` e
+`approvalEvidence`, verificadas pelo mecanismo existente de escopo/hash; não são
+inferidas de `COMPLETED`, arquivo presente ou inspeção técnica.
+
+Override reconhece um aviso sem removê-lo: `{code, reason, reviewer, subjectSha256}`.
+Usar o hash em `subjects` do relatório correspondente, que inclui ficha, catálogo de
+referências e pedido, excluindo somente `coherence.overrides`. Alterar qualquer um
+desses dados torna o reconhecimento obsoleto. `WARN` permanece `WARN`, com
+`acknowledged=true` e justificativa. Isso não é aprovação do diretor nem liberação
+financeira. Overrides de erro, sem motivo/revisor, obsoletos ou sem aviso falham.
+
+O frontend aceita e mostra essas anotações opcionais na ficha, sempre como declarações.
+Pacotes anteriores sem `coherence` continuam legíveis. Importar uma anotação ou uma
+justificativa não muda os estados de aprovação, as demandas ou os comentários.
+
+### Matriz de cobertura das propostas CINE-G-01/02
+
+Esta matriz limita a interpretação das duas propostas existentes; não cria novos
+pedidos. **Ambas estão não executadas, não testadas e sem aceite criativo.**
+
+| Dimensão | CINE-G-01 — escuta sustentada | CINE-G-02 — escuta atenta | Evidência efetiva atual |
+|---|---|---|---|
+| Escuta e estabilidade no G-IN | Objetivo do ensaio | Objetivo do ensaio | Nenhuma saída destas propostas |
+| Microajuste corporal | Respiração discreta | Inclinação aproximada após 2 s | Intenção textual, não atuação comprovada |
+| Diálogo visível / articulação | Fora do escopo | Fora do escopo | Não validado |
+| Voz / timbre / prosódia / dublagem | Áudio desligado | Áudio desligado | Não validado; D14 preservado |
+| Sincronismo labial | Sem fala | Sem fala | Não validado |
+| Movimento motivado de câmera | Câmera fixa | Câmera fixa | Não validado |
+| Continuidade entre cortes | Plano único | Plano único | Não validado; duas variantes não são uma sequência montada |
+| Identidade, mãos, mesa e rosto histórico ao longo do clipe | Critérios de revisão futura | Critérios de revisão futura | Imagem inicial não comprova todos os quadros; likeness depende de Andre |
+
+Exemplos históricos orientam perguntas, não aprovam estas propostas: versões com
+tilt/órbita e câmera fixa, texto de 3 s em resultados de 8/10 s, e cabeça já presente
+na segunda referência mostram por que separar prompt, duração e entradas. A evidência
+original (inclusive chips concatenados da interface e autoria desconhecida) deve ser
+preservada, sem corrigir o texto retrospectivamente ou alegar causalidade pelo idioma.

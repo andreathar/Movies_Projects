@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "scope": "Follow-up requested safety coverage review; synthetic tests and sanitized text report only",
+  "productionCodeChanged": false,
+  "newRegressionTests": [
+    "test_absent_reference_blocks_runner_before_discovery",
+    "test_changed_local_reference_blocks_runner_before_discovery",
+    "test_pending_release_blocks_runner_before_discovery",
+    "test_expired_quote_blocks_runner_before_discovery",
+    "test_renamed_intent_only_blocks_runner_before_discovery",
+    "test_incompatible_model_blocks_after_only_readonly_discovery",
+    "test_uncertain_transport_is_durable_with_actual_release_gate"
+  ],
+  "tests": [
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/followup/kling-tests.log",
+      "sha256": "ea8b0a805546289cd9bd305461be58d42220f14fceee13dc19daac06992e22c8",
+      "testCount": 67,
+      "passed": true
+    },
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/followup/plan-tests.log",
+      "sha256": "2e873822111ef7d52aa526b544396e9016591c7e50b26ba78fd134fdb932b4ad",
+      "testCount": 12,
+      "passed": true
+    }
+  ],
+  "baselinePriorRun": {
+    "python": 146,
+    "frontend": 24,
+    "rerunFullSuiteThisFollowup": false,
+    "rerunBuildThisFollowup": false
+  },
+  "providerCalls": 0,
+  "paidJobs": 0,
+  "referenceUploads": 0,
+  "servicesRestarted": false,
+  "libraryUpload": {
+    "file": "RELATORIO-COMPLETO-KLING-PLANO-MESTRE.md",
+    "library_file_id": "libfile_2c43cccec5308191bef4e79d2c4a2fb8",
+    "file_id": "file_000000003450820ea25799eba5e51ada",
+    "version": 0,
+    "sha256": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda",
+    "onlySanitizedText": true,
+    "mediaUploaded": false,
+    "localIdentityPersisted": true
+  },
+  "sanitization": {
+    "no_absolute_machine_paths": true,
+    "no_remote_urls": true,
+    "no_embedded_media": true,
+    "no_long_provider_ids": true
+  },
+  "snapshotRefresh": {
+    "head": "c386b15912f101664b2b71027e98dcb724b901e7",
+    "createdByThisExecutor": false,
+    "sourceContentDrift": false,
+    "snapshots": [
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "beforeHead": "0a6a7d33558f9f5110100c89dbaed0fb46897ba0",
+        "afterHead": "c386b15912f101664b2b71027e98dcb724b901e7",
+        "contentVersionUnchanged": true
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "beforeHead": "0a6a7d33558f9f5110100c89dbaed0fb46897ba0",
+        "afterHead": "c386b15912f101664b2b71027e98dcb724b901e7",
+        "contentVersionUnchanged": true
+      }
+    ],
+    "checks": [
+      {
+        "script": "export-production",
+        "check": false,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479\",\"check\":false,\"changed\":true}"
+      },
+      {
+        "script": "export-production",
+        "check": true,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479\",\"check\":true,\"changed\":false}"
+      },
+      {
+        "script": "export-workspace",
+        "check": false,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"39ce855e272a9e9ba41fc16f81ea3b2008999bcfeb131e0d664d5a13f71b4d6c\",\"check\":false,\"changed\":true}"
+      },
+      {
+        "script": "export-workspace",
+        "check": true,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"39ce855e272a9e9ba41fc16f81ea3b2008999bcfeb131e0d664d5a13f71b4d6c\",\"check\":true,\"changed\":false}"
+      }
+    ]
+  },
+  "productionApprovalGranted": false,
+  "implementationIsProductionApproval": false,
+  "knownLimits": [
+    "Live preflight discovery precedes compatibility rejection but occurs before balance/upload/generation; every test transport is mocked",
+    "Artistic approval is not inferred or authenticated by local consistency checks",
+    "Remote URL content and provider-side atomic ceiling are not guaranteed",
+    "Browser screenshot/full visual/mobile QA and full animatic listening remain pending as recorded in original delivery"
+  ],
+  "evidenceFiles": [
+    {
+      "path": "tests/test_kling_release.py",
+      "sha256": "868f20c41d26a215f0bb85412590e93d1999eed2dc5fd40aaffa3f3082e06f90"
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review.md",
+      "sha256": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-master-plan-implementation-v1.json",
+      "sha256": "0a806f0177f8e958a7438146f6f1e4f68190e53cd5840fb4d8eaba9bccbb24ac"
+    }
+  ],
+  "finalManagementChecks": "Recorded separately in followup/final-verification.json after handoff creation."
+}

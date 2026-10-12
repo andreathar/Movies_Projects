@@ -1,0 +1,821 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Fechamento complementar: relatório completo sanitizado, sete regressões de bloqueios reais com transporte simulado e proveniência do frontend após commit concorrente.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PRODUCTION_PLAN.md",
+    "reports/2026-10-12-master-plan-implementation.md"
+  ],
+  "ownedPaths": [
+    "AGENTS.md",
+    "docs/PRODUCTION_PLAN.md",
+    "docs/REPEATABLE_WORKFLOW.md",
+    "docs/kling-manual/06-imagem-para-video.md",
+    "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+    "docs/kling-manual/10-audio-voz-dublagem.md",
+    "docs/kling-manual/11-receitas-do-filme.md",
+    "docs/kling-manual/12-custos-e-ledger.md",
+    "docs/kling-manual/17-integracao-cli.md",
+    "docs/kling-manual/tools/kling_preflight.py",
+    "drafts/andre-time-travel-visual-restart-v1/scope.json",
+    "projects/andre-time-travel/00_brief/approvals.json",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+    "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+    "projects/andre-time-travel/07_generations/plans/current-plan.json",
+    "projects/andre-time-travel/manifest.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/tasks/board.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+    "scripts/build_galileo_animatic.py",
+    "scripts/kling_batch.py",
+    "scripts/kling_release.py",
+    "scripts/manage.py",
+    "scripts/production_plan.py",
+    "shared/templates/kling-job-release.json",
+    "shared/templates/kling-shot-families.json",
+    "sites/movies-demandas/README.md",
+    "sites/movies-demandas/app/dashboard.tsx",
+    "sites/movies-demandas/app/production-plan-panel.module.css",
+    "sites/movies-demandas/app/production-plan-panel.tsx",
+    "sites/movies-demandas/app/restart-summary.tsx",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/lib/production-plan.ts",
+    "sites/movies-demandas/scripts/export-production.mjs",
+    "tests/test_kling_batch.py",
+    "tests/test_kling_contract.py",
+    "tests/test_kling_release.py",
+    "tests/test_manage.py",
+    "tests/test_production_plan.py",
+    "workspace.json",
+    "sites/movies-demandas/tests/model.test.ts",
+    "agents/generated/catalog.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/MATRIZ-SCHEMAS.md",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-files.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-manifest-checks.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/consumed-specifications.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/counts.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/detail-studies-summary.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/model-contracts.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/prompt-consumption-checks.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/schema-evidence.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/source-hashes.json",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/verification.json",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/index.html",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/render-evidence.json",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/frames.ffconcat",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+    "reports/2026-10-12-master-plan-implementation.md",
+    "reports/2026-10-12-master-plan-implementation-checks.json",
+    "reports/2026-10-12-master-plan-safety-review.md",
+    "reports/2026-10-12-master-plan-safety-review-checks.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-master-plan-implementation-v2.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256Before": null
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256Before": "fc0def3ab80587ee419237563c114d0f53d95c757e5245ec76b8428c858adead"
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256Before": "31b72e08c4e6f78e5d99515ec0a43ef79f39949b95fcb1c4bb667ea75f9de61a"
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256Before": "e2ccf1ce5f3a571b8968c301242bc8ddf65668ae831f0570690595b432355092"
+    },
+    {
+      "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+      "sha256Before": "b2ff32b90be938fa1a193c177e4fceb96587430dc8f7dd1483c144b2e68a61de"
+    },
+    {
+      "path": "docs/kling-manual/11-receitas-do-filme.md",
+      "sha256Before": "3d65791dc253a1cca1a0d3b1e5ecacc5c9cddf87d7ecdce69f8424b27e5ec13c"
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256Before": "cbd79bcd9fc0840998a41d9e5d9ddf3bf66ddcaa41b3b455f45ffd7fa2271f3f"
+    },
+    {
+      "path": "docs/kling-manual/17-integracao-cli.md",
+      "sha256Before": "475507672a412f4ec6f1d97705a6ca22cd662fe217727fe414f42134f18deef4"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256Before": "0d6d4aa5d5d660b1f241c0b9a5bb9000f35d7ca4840e19025378859b45303b0f"
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256Before": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "c4b859f52011060ce7b6a12bc362c8ab0a44fde1a6e30959911b120e9ac46203"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256Before": "33850d5ecdcb658be1baed121e86a87399a214978767bf3c789885278def56bc"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256Before": "2c1a3cc7f48c63cb888d92f2ac940e26db28f6915d97f886c7aead25dc4a043b"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "0e7f5b8e0e8953cf22b29e8667e1f8c71ad1a3eb38deff81b9925b19af37100b"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "0dca2c8dacaba68f8a58d44fe1ce09818dde703f008e29a5e1986cca015fa500"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+      "sha256Before": null
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256Before": null
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256Before": "50d51f48e25752e3b0913af79b5b2f750e96493f1b5f90089f4f0f7eb0f3f90e"
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256Before": null
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256Before": "aa7830f95bfb0780d414c6a9a3e3806fcfe7d4518c55a7d7128a412755e0ef42"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": null
+    },
+    {
+      "path": "shared/templates/kling-job-release.json",
+      "sha256Before": null
+    },
+    {
+      "path": "shared/templates/kling-shot-families.json",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "efc14de38a3d2703e204dc3e1cee836b6e1c2ad748fe16f690baaab22bc1718f"
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256Before": "b6b62b376482203b917b04ce187d9c7ecda5673062dab7be56730a5289fb029d"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256Before": "d3fe2b37699260c633357bbd3ed27c5eb5fda0c967be7d09db56c65b077887c3"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "d8aac4aabae93de55c514fc20d6b55cbfd896b04feb37022e2d40f575f18e819"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256Before": "d6a84f7b33855d6388050c5e077322a1e0e640c8585988deaf2c235928516103"
+    },
+    {
+      "path": "tests/test_kling_batch.py",
+      "sha256Before": "ee659e549d258d66131d1ad41bfbaacdb5dfb87c592e81193abfd52469002709"
+    },
+    {
+      "path": "tests/test_kling_contract.py",
+      "sha256Before": "6e9f0398991aa3d00e28b133c93db6f6a26f492bb2b45d1f12d721f4e31533b8"
+    },
+    {
+      "path": "tests/test_kling_release.py",
+      "sha256Before": null
+    },
+    {
+      "path": "tests/test_manage.py",
+      "sha256Before": "0a343368d43b4cacccddf8ed74520d5477c392210c0fb38336ee581a104b8abd"
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256Before": null
+    },
+    {
+      "path": "workspace.json",
+      "sha256Before": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "70c771cc85eda3800f133ff99738a7c6db3dc16651ccf97682010fd53618393d"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "6828f9b34f3d9a67ec3512ea40272c6e5fd35e7de9fef389114d8144e20d49d3"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/MATRIZ-SCHEMAS.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-files.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-manifest-checks.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/consumed-specifications.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/counts.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/detail-studies-summary.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/model-contracts.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/prompt-consumption-checks.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/schema-evidence.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/source-hashes.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/verification.json",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "2080becf35399518454a0711c7385527ed5492091356891d88f2929d4e0046a3"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "05a0a9ef93f9efe575988a7cb60edcc9053895145b43e943dafe95a4c30efa1b"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/index.html",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/render-evidence.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/frames.ffconcat",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+      "sha256Before": null
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-implementation.md",
+      "sha256Before": null
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-implementation-checks.json",
+      "sha256Before": null
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review.md",
+      "sha256Before": null
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review-checks.json",
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256After": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256After": "040bedb7d6148d9cb708dd1d146737ff8209cec95f93735ddb5a89142336625e",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256After": "96393f99f8ccea5d7f563c07894c700a4918df8afdb0ebe66e2bdf297ac1e602",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256After": "4e16448580a53c8eb657649ec97b72bf2843b62756100f6d3c57e72d5a2206da",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256After": "7f76dd24197d6863261bb9c2e80d1114506ace3d17df7a38c2399b2f3b8eb741",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+      "sha256After": "6cff2399c3991c450a9085f23ebb843117a2041b71648b98bf6ea2036a66a478",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/11-receitas-do-filme.md",
+      "sha256After": "a8f1e17a88886049307895b58269d6416bf2772bda98217d7b2934b3120fcfed",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256After": "00b3680308b89def64d71f4ad96d474c9799d194bf357a87ada77e22af328cc6",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/17-integracao-cli.md",
+      "sha256After": "ee8e51b684de56ebcef23c69a7f4b1d448ff6f1f741116d360f50f4f68a25759",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256After": "3707ff1eaec975a6766015f10a4e4c1307da5ebe31075723957595255cd8ed44",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256After": "e2ab688d90bca0532fdb87167278fb3ae0ae91640d07637e0478bc2815b3aaa5",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256After": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+      "sha256After": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+      "sha256After": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+      "sha256After": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+      "sha256After": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256After": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256After": "8efc2ad91d17f62d58d3818602ff19b2ac8994b4810f576e51091d32cf636d80",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256After": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "13e2e0dd8dfb658cd25e5b6ddec0e670fc37999100084e806169c0ef8cc7c48f",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256After": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+      "sha256After": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+      "sha256After": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+      "sha256After": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256After": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256After": "8f915f396b10600b2b469deb9752e94bceb7d7d8c4084a54f2689f72a4ece774",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256After": "ae587c2688034e0c98835c0711a93b577ca1cd96cf6c27db333895d0d09ffb3b",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256After": "a07a1338793317bdc24dc3d5c3ddd5118f1e850145336d43f0cc676119c71974",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256After": "b613c8eff4e4448b8179c70f1e812bd28ab1e8b8e3710d64d0e025ae7dda68aa",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "shared/templates/kling-job-release.json",
+      "sha256After": "8176e011b680bdd40307c16d42df3073935a8cf95df9a04794f94ce1f95e0c57",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "shared/templates/kling-shot-families.json",
+      "sha256After": "7af89207f49ad2aad8aa3ad2116d8c1275c09505754fdc67a6087e5e86bc5db9",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "e7d5dc9aa6c3522aa842ee726d3ce2d165ed063a4b8fb7f05e46ef84984a84e1",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256After": "b0d1ce6867f5eedfc57559cc77b30990c8fa1a65738f98545f1d9d0e7f3b7b34",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256After": "503286b5b76771e5ef74a7551be50361cb2a206014b30a753739480750956b8a",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256After": "276143f201fcb10369516b7bfa8e82caff0bb47e95ea46ce7a3d370b9e26494e",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256After": "5c9d9e2d31b5ea4518298cc69469f8cf7b294ffc293246c024b5828619dfc034",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256After": "9763f4b091ad8b6a1d21463ad4c7f985a7f8da292d848da91d97bab34d23b941",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256After": "ad4e7ff47ffdc385de3f9bdd26d8f37bb70e02a90f66f46fa9129bfe1411867e",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "tests/test_kling_batch.py",
+      "sha256After": "9cb66b016b95328143be6581f8e7dc4ca55f90f3496a7a56f222f13e4d53a51e",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "tests/test_kling_contract.py",
+      "sha256After": "b6c1c99c2f52f4ed14d52e2046198fffcf5060f5e3bde73a68c503bb4f39ed33",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "tests/test_kling_release.py",
+      "sha256After": "868f20c41d26a215f0bb85412590e93d1999eed2dc5fd40aaffa3f3082e06f90",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "tests/test_manage.py",
+      "sha256After": "6fd344aa0116abf401b50fca824637d5caee9fc027309fcca7ba8429fe746c8d",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256After": "66aa6ba844b2c1a83705d63c370cd5b041dd38c0ddeac3e37bc691dc1f75bea3",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "workspace.json",
+      "sha256After": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "38cc5d7d9cabe59fe87ad9aee77c3cd50d566f59e24b83c84a6c363c98aec2ce",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "32f3e7d2fb37ce52323e240a78506315ee5b51ef9d1c4561e5f906f8130f4f57",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/MATRIZ-SCHEMAS.md",
+      "sha256After": "b78abc16495de7d0a0fdbc4d9cf20d142f4a38685338ac3d8cbf86fc25060f09",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-files.json",
+      "sha256After": "6b135655e7b6c8dde0ffe95593634903056d7a6292fdcb87cd9b21d61ace3463",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-manifest-checks.json",
+      "sha256After": "850c25a6c9a2f25b13aa72517634104f05d49a7591447b0e6910441fd7586f08",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/consumed-specifications.json",
+      "sha256After": "cdc31894e5c2b03020d07872811cfcd0b3d28129dbfc55c87de0241cec707ea7",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/counts.json",
+      "sha256After": "45fd9ec6241f4966356508228a8de395ffba7434cbab8011a491022cd33e6514",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/detail-studies-summary.json",
+      "sha256After": "5260532f06593fefa017b8015e0aed6921f47b317cd977786207f458b31ab085",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/model-contracts.json",
+      "sha256After": "9e1397b18e00d46d2e6492167e41696faf8618934737a164c37ba174d63cc1fa",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/prompt-consumption-checks.json",
+      "sha256After": "39d68b09e1a656be4a98c2736d24ceabec6428a446e78a21721e47e911978020",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/schema-evidence.json",
+      "sha256After": "d89cabc2116fe33025ecc54b0ef74eb4d201c3bc35f7b7b863b4e6d62b05ed48",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/source-hashes.json",
+      "sha256After": "36626d57d953249f0dc64ff874a64c9000399821ce26504160383be52fc52601",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/verification.json",
+      "sha256After": "262917fa16a0ff4323fbad37ffd895ee2dfd328c3df9589651265cce6e0a1e9c",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "b25cb180351cc371dde6f3e66b15a14cf0e5059f064156bf9263f3ba7b602d20",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "5087bb2c07c0bfb7b56afb83ee9152232a08f5169a303e160f9d849ce25433b1",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/index.html",
+      "sha256After": "1eec08fdaf0e5ce4b3e39ef88408b8522ad60c1525c4804c5bdbe7ce9d4aea52",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/render-evidence.json",
+      "sha256After": "80dd96cd60f1d733a19d48414839de6aedde1388be709915068db4e734d5b5cc",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+      "sha256After": "ed0d596e078317f08a841b416af8e7cebe0a77a5adc26e747e009c2d63b266ec",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+      "sha256After": "56a0397f9a6fe52cb009499af5f523c29acc9bc82e033290b5c3d7228ee189b9",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+      "sha256After": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/frames.ffconcat",
+      "sha256After": "2a259789cdf90978dc89c42a81cfcb4833db35b9ec360f6512dfcbb8563ae474",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+      "sha256After": "67cb0902bbd2e5476ab93fda0ff824f57e4a2419dd56f18a55d9f10a55ec84cd",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+      "sha256After": "0a53d714b0a2cce16f5c085745da7fb2c5b1c12f95a22c11ce8b823969ce2108",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-implementation.md",
+      "sha256After": "542cfddf3f7daec51bfe85869a0237a0bdb87fdf01e59f6bf552086c970737ae",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-implementation-checks.json",
+      "sha256After": "869b0536e93eb04c83c8174d4cd87bcef8c4d2f90f8989fa3e13ed93562383f2",
+      "reason": "Hash revalidado da entrega v1, sem nova revisão semântica; teste e proveniência atualizados apenas quando descrito nesta revisão."
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review.md",
+      "sha256After": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda",
+      "reason": "Relatório textual sanitizado e evidência desta revisão complementar."
+    },
+    {
+      "path": "reports/2026-10-12-master-plan-safety-review-checks.json",
+      "sha256After": "16877bdf0126f01e2097505a4239909605353f96f81b8b805ee9f2de4b7887c6",
+      "reason": "Relatório textual sanitizado e evidência desta revisão complementar."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Relatório completo sanitizado desta revisão; único arquivo enviado à Library.",
+      "evidence": "reports/2026-10-12-master-plan-safety-review.md",
+      "sha256": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda"
+    },
+    {
+      "statement": "79 testes pertinentes passaram, incluindo sete regressões novas; transportes simulados, sem custo/restart.",
+      "evidence": "reports/2026-10-12-master-plan-safety-review-checks.json",
+      "sha256": "16877bdf0126f01e2097505a4239909605353f96f81b8b805ee9f2de4b7887c6"
+    },
+    {
+      "statement": "Handoff v1 preservado como histórico; não equivale a nova aprovação de produção.",
+      "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-12-master-plan-implementation-v1.json",
+      "sha256": "0a806f0177f8e958a7438146f6f1e4f68190e53cd5840fb4d8eaba9bccbb24ac"
+    }
+  ],
+  "verification": [
+    "67 testes Kling + 12 testes do plano passaram nesta revisão; sete novos testes de integração.",
+    "Código de produção e UI sem alteração. Nenhuma falha funcional reproduzida nos cenários pedidos.",
+    "Snapshots receberam só coleta/proveniência de commit concorrente c386b15; conteúdo preservado.",
+    "Relatório sanitizado salvo na Library; nenhuma mídia de aparência/voz anexada.",
+    "Sem restart, novo gasto, upload de referência, push ou deploy.",
+    "146 Python, 24 frontend, lint, tipos, build e QA DOM/interação pertencem ao fechamento anterior; não foram declarados como nova execução."
+  ],
+  "supersedes": [
+    "2026-10-12-master-plan-implementation-v1.json"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Ler o relatório completo e registrar revisão/ingestão real; apresentar decisões candidatas de Galileo a Andre. Manter aprovação de implementação separada de arte/produção paga e observar limites documentados.",
+      "readiness": "Relatório e evidências locais prontos. Composição, voz/escuta, atuação e eventual cotação/liberação continuam pendentes de responsáveis."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Revisão de cobertura e relatório solicitados concluídos; sem execução de produção.",
+  "blockers": [
+    {
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+      "owner": "Andre / dialogue-sound",
+      "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+    },
+    {
+      "description": "Novas gerações sem preço/cotação e liberação.",
+      "owner": "producer",
+      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+    },
+    {
+      "description": "Atuação de referência e leitura atual do Element não qualificadas.",
+      "owner": "continuity / producer",
+      "unblockCondition": "Triar mídia existente; obter readback autorizado antes de vincular. Nenhuma nova captura ou upload automático."
+    }
+  ],
+  "andreOnlyGates": [
+    "Semelhança/composição e ritmo dos novos candidatos",
+    "Escuta e escolha de voz final; D14 vigente",
+    "Qualquer nova autorização de gasto ou upload"
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "concurrentCommitPreserved": "c386b15912f101664b2b71027e98dcb724b901e7",
+  "commitsByThisExecutor": 0,
+  "supersessionScope": "Visão atual dos hashes e testes. V1 e histórico A/B preservados; verificações anteriores atribuídas à etapa original.",
+  "libraryReportId": "libfile_2c43cccec5308191bef4e79d2c4a2fb8"
+}

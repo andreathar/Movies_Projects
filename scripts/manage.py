@@ -74,12 +74,27 @@ def check_dependencies(tasks: list[dict[str, Any]]) -> None:
         visit(identifier)
 
 
-def production_plan_report(root: Path) -> dict[str, Any]:
+def production_plan_report(root: Path, *, coherence: bool = False) -> dict[str, Any]:
     import importlib.util
     spec = importlib.util.spec_from_file_location("managed_production_plan", Path(__file__).with_name("production_plan.py"))
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    return module.validate(root)
+    return module.coherence_report(root) if coherence else module.validate(root)
+
+
+def lint_production_plan(root: Path, hard: list[str], advisory: list[str]) -> None:
+    report = production_plan_report(root)
+    hard.extend(report["errors"])
+    if report["errors"] or report.get("status") == "not_configured":
+        return
+    for item in production_plan_report(root, coherence=True)["items"]:
+        message = f"coherence {item.get('shotId', '')} {item['code']}: {item['msg']}"
+        if item["level"] == "ERROR":
+            hard.append(message)
+        elif item["level"] == "WARN":
+            if item.get("acknowledged"):
+                message += " [aviso reconhecido com justificativa; não é aprovação]"
+            advisory.append(message)
 
 
 def validate(root: Path) -> dict[str, Any]:
@@ -594,7 +609,7 @@ def lint(root: Path) -> dict[str, Any]:
         return report
     report["film"] = project["id"]
     checks = [
-        ("production-plan", lambda: hard.extend(production_plan_report(root)["errors"])),
+        ("production-plan", lambda: lint_production_plan(root, hard, advisory)),
         ("approvals", lambda: lint_approvals(film, hard, advisory)),
         ("decisions", lambda: lint_decisions(film, hard)),
         ("handoffs", lambda: lint_handoffs(root, film, hard, advisory)),
