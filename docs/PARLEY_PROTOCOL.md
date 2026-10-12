@@ -27,10 +27,11 @@ agent-parley verify set ".venv/bin/python scripts/manage.py validate && .venv/bi
 ```
 Known baseline: validate reports ok with four shared-skill hash warnings; 29 tests pass. A passing gate is not creative acceptance. Do not run `participant merge` or `participant pr` until Andre asks.
 
-## Smoke test (read-only, no spending, no file edits)
-Prerequisites: `agent-parley up`; Claude and Codex each launched with `agent-parley run NAME --repo <checkout>`. The path recorded when this section was written was `/mnt/data/Projects_SSD/Movies_Projects` on the owner's machine. Lane approvals resumed. This review did not run the smoke test.
-Message to `codex`: read AGENTS.md and `projects/andre-time-travel/memory/STATE.md`, then reply in one thread with (1) the current creative direction in one sentence, (2) the Andre-only open items, (3) whether D17–D19 are recorded decisions or proposals, (4) the owner of `credit-ledger.csv`.
-Pass: (1) back-view over-the-shoulder with eyes only as short reaction; (2) includes D16 direct confirmation and the Phase A request mismatch; (3) proposals, not recorded; (4) producer. Any miss means STATE.md or AGENTS.md is unclear, so fix the file, not the answer.
+## Dated runtime evidence — 2026-10-12 UTC
+
+Movies uses project `7d5e3e71ffde7f47` and the existing `claude` / `codex` participants. The daily service answered `ready`. In thread `PARLEY-TOOLS-20261012T0140Z`, messages 49/51 from Codex and 50/52 from Claude prove replies in both directions. Calls to 18 of 19 MCP tools were observed for each lane; `retire` was deliberately excluded. This does not prove every tool branch, a real issue handoff, or the full historical Phase 0/hook procedure. Evidence and limits: [documentation reconciliation](../reports/2026-10-12-documentation-reconciliation.md).
+
+Use `agent-parley status --json`, `agent-parley participant list --json` and `agent-parley doctor --json` for a fresh read when needed. Online status, delivery, acknowledgement, reply and accepted ownership remain separate facts. Do not rerun setup, restart sessions or create the proposed roster merely to reproduce this dated result. The old `docs/parley-smoke-test.md` is historical and must not be executed as a current safe test: it contains real project targets. No new smoke test is assigned by this document.
 
 ## Active assignment — Andre direct authorization, 2026-10-09
 - Producer/coordinator: Codex in the main desktop conversation, operating from the base checkout. This is NOT the Parley codex lane. Owns canonical manifest, board, approvals, ledger, asset registry, decision records, STATE and session-log integration. Lanes return handoffs instead of editing those shared records.
@@ -50,11 +51,11 @@ The producer chooses further delegation and sends scoped assignments. Lanes repo
 A divisão efetiva está em `projects/andre-time-travel/tasks/specs/scene-detail-assets-v1.md`, seção Delegação efetiva: Claude pesquisa cultura material; Codex lane prepara cobertura e foley depois do Galileo, além da revisão; Codex desktop gera imagens. Esta divisão refina as atribuições anteriores e evita duplicação.
 
 ## Mapa de tarefas e passagem ao sucessor — 2026-10-10
-Consultar [workflow do filme](../projects/andre-time-travel/tasks/plans/workflow-map-v1.md), com responsabilidades, dependências e fila imediata. A regra de fechamento está em [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md#fechamento-e-sucessor-obrigatório). Esse mapa não envia mensagens, inicia lanes nem transforma pacotes planejados em atribuições aceitas. O produtor continua responsável pelo próximo trabalho pronto até confirmar o aceite. Usar mensagens/handoffs locais; não exigir forge issues neste repositório sem remote.
+Consultar [workflow do filme](../projects/andre-time-travel/tasks/plans/workflow-map-v1.md), com responsabilidades, dependências e fila imediata. A regra de fechamento está em [REPEATABLE_WORKFLOW.md](REPEATABLE_WORKFLOW.md#fechamento-e-sucessor-obrigatório). Esse mapa não envia mensagens, inicia lanes nem transforma pacotes planejados em atribuições aceitas. O produtor continua responsável pelo próximo trabalho pronto até confirmar o aceite. Usar mensagens/handoffs locais; a existência do remote Git não exige forge issues para essas atribuições.
 
 ## Lane roster v2, dispatch contract and film gate hooks — proposed 2026-10-10
 
-Status: the roster text below is on `main`. Phase 0 has not been recorded in this workspace (`scripts/parley_setup.sh` was not run here, and `agent-parley` is not assumed to be installed). Treat the roster as the written contract for lane roles and write paths. Do not treat Parley as running, or `.claude/hooks/` as protection outside the runtime where those hooks are installed and tested. The smoke-test `--repo /mnt/data/Projects_SSD/Movies_Projects` path is the owner's machine path, not this checkout. The plan file remains a proposal: [PLAN-parley-integration-v1.md](PLAN-parley-integration-v1.md). Read that plan from `main`, not from branch `claude/wizardly-clarke-23j2kj`.
+Status: the table is a proposed role/ownership contract, not the live participant roster. The dated runtime evidence above confirms the existing `claude` and `codex` lanes; it does not establish complete Phase 0 or film-hook enforcement in their sessions. Do not create or relaunch lanes to match this table. The plan remains a historical proposal: [PLAN-parley-integration-v1.md](PLAN-parley-integration-v1.md). Read the current base protocol before assigning new work; old branch copies may be stale.
 
 ### Roster (lanes are tools; the film role is named per assignment)
 

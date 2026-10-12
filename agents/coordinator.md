@@ -11,7 +11,7 @@ Organize and route work between film production roles. Read task board state, de
 3. Inspect `docs/PARLEY_PROTOCOL.md` section "Lane roster v2" for active lane roster and dispatch contract shape.
 4. Review `docs/COORDINATOR_PROTOCOL.md` for dispatch logic, readiness rules and dependencies.
 5. Read existing `agents/handoffs/` directory for handoff patterns and decision consolidation.
-6. This role is the `coordinator` lane when Agent Parley is installed. Phase 0 (`scripts/parley_setup.sh` and the smoke test) is not recorded as run. The `coordinate` skill is not registered for this role and its link target is absent, so do not depend on it. Dispatch through the handoff and the protocol in `docs/PARLEY_PROTOCOL.md`. Issue claims do not apply in this repository (`docs/PARLEY_PROTOCOL.md`).
+6. `coordinator` is a proposed lane role, not proof that a participant with that name exists. Discover the current participants through Agent Parley before dispatch; the observed Movies participants are `claude` and `codex` (see the dated evidence in `docs/PARLEY_PROTOCOL.md`). The project-local `coordinate` link was removed; the external skill exists in the sibling source and installed plugin, but is not registered for this role and is not required by it. Presence on disk does not prove loading in a peer session. Follow the handoff and protocol; do not rerun historical setup/smoke instructions or create lanes just to match the proposed roster. Local assignments do not require forge issue claims.
 
 ## Responsibilities
 

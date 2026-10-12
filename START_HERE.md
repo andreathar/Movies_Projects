@@ -1,4 +1,4 @@
-> **Resume order (2026-10-09):** for agents, read `AGENTS.md`, then `projects/andre-time-travel/memory/STATE.md` (the single resume surface). This page is the pt-BR human index of deliverables and editing locations. Original text below is unchanged.
+> **Retomada:** agentes seguem [AGENTS.md — Session start](AGENTS.md#session-start). Esta página é o índice humano de entregas e locais de edição; o [STATE](projects/andre-time-travel/memory/STATE.md) é a entrada de retomada do filme.
 
 # Andre viajando no tempo — comece por aqui
 
@@ -23,10 +23,7 @@ As imagens são cartões montados com referências existentes. Sua presença aqu
 
 ## Para um agente continuar o trabalho
 
-1. Ler [AGENTS.md](AGENTS.md), [workspace.json](workspace.json), [estado atual](projects/andre-time-travel/memory/STATE.md), [manifesto](projects/andre-time-travel/manifest.json), [tarefas](projects/andre-time-travel/tasks/board.json) e [aprovações](projects/andre-time-travel/00_brief/approvals.json).
-2. Ler o [procedimento local](skills/andre-time-travel/SKILL.md), o [fluxo repetível](docs/REPEATABLE_WORKFLOW.md) e o [contrato de edição local](docs/LOCAL_AGENT_HANDOFF.md).
-3. Executar o status e a validação antes de editar. Consultar os papéis em [agents/registry.json](agents/registry.json).
-4. Escolher somente arquivos do escopo atribuído; registrar o hash inicial e a entrega. Preservar trabalho simultâneo e versões entregues.
+Seguir a sequência canônica de [AGENTS.md — Session start](AGENTS.md#session-start), incluindo leituras, verificações e identificação do escopo. O [estado atual](projects/andre-time-travel/memory/STATE.md) aponta as pendências; os procedimentos de edição e entrega estão vinculados no contrato, sem uma segunda sequência de startup nesta página.
 
 ## Onde editar
 

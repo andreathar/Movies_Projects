@@ -2,7 +2,7 @@
   "name": "agent-parley",
   "displayName": "Agent Parley (local fork)",
   "version": "0.18.0",
-  "description": "Antigravity workspace manifest for the local Agent Parley fork. The coordinate skill symlink to /mnt/data/Projects_SSD/agent-parley/plugins/agent-parley/skills was removed on 2026-10-11 because that target is not in this checkout. The coordinator role does not require the skill until a real target is vendored or registered. Adds no hooks, MCP servers or permissions; the agent-parley CLI is installed separately.",
+  "description": "Antigravity workspace manifest for the local Agent Parley fork. The project-local coordinate skill symlink was removed on 2026-10-11; its external source and the installed plugin skill exist outside this checkout. The coordinator role neither registers nor requires that skill. Presence on disk does not prove client-session loading. This manifest adds no hooks, MCP servers or permissions; the agent-parley launcher supplies its runtime integration separately.",
   "source": {
     "path": "../agent-parley/plugins/agent-parley",
     "repository": "https://github.com/andreathar/agent-parley",

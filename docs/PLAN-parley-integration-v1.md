@@ -2,7 +2,7 @@
 
 Date: 2026-10-10 · Author: Claude session for Andre Athar · Source doc: https://claude.ai/code/artifact/89aeeadb-5b65-4318-854a-84bb91278f1c
 
-Status: PROPOSED plan. Not an accepted assignment, approval, spending scope or workflow-rule change. The roster text that came from this plan is on `main`; Phase 0 is not recorded as run. Read the current files on `main`. The branch `claude/wizardly-clarke-23j2kj` at dfec3be is history, not the checkout to use. The producer integrates adopted rules per `docs/LOCAL_AGENT_HANDOFF.md`; AGENTS.md changes only when Andre adopts them.
+Status: historical PROPOSED plan from 2026-10-10, not a current assignment, approval, spending scope or workflow-rule change. Update of 2026-10-12 UTC: existing Movies lanes `claude` and `codex` and bidirectional communication were verified; complete Phase 0/hook enforcement was not. See [current protocol](PARLEY_PROTOCOL.md#dated-runtime-evidence--2026-10-12-utc) and [reconciliation evidence](../reports/2026-10-12-documentation-reconciliation.md). The historical setup/smoke checklists below are not instructions to execute now. The branch `claude/wizardly-clarke-23j2kj` at dfec3be is history; read the current base files. The producer integrates adopted rules per `docs/LOCAL_AGENT_HANDOFF.md`.
 
 ## Executive summary
 
@@ -96,7 +96,7 @@ Agent Parley is a stdlib-only Python 3.12 launcher and coordination service: eac
 | Lane setup | Per-lane init command and warm pool | `init set CMD`, `pool set N` | Ignored files (`.venv`, credentials) are not in lane worktrees: `init set` must recreate the venv |
 | Verification of Parley itself | `make check` = `uv sync --locked`, `ruff check`, `ruff format --check`, `mypy`, `scripts/check_policy.py`, build, `pytest -n auto`; integration tests use the official `mcp` SDK against a temp Git repo | `agent-parley doctor` reads versions, protocol and store schema | Live model behaviour is not covered by tests; Gemini, Copilot, OpenCode and Amp still need live trials |
 
-The fork contains no reference to Movies_Projects, Kling, film or Andre; the film-side binding is only the `coordinate` skill symlink registered in `.agents/plugins/agent-parley/plugin.json` (commit 5fd888f, branch `work/linux-isolation`). The skill itself is sound for this use: status first, `doctor` on unexplained failures, `issue match` before opening, claim before working, reserve before editing, offer to hand off, report then retire.
+Historical binding at commit 5fd888f (`work/linux-isolation`) used a project-local `coordinate` skill symlink. That link was removed on 2026-10-11. The skill exists in the external source and installed plugin; the project manifest does not configure the MCP server or enable a lane. The coordinator role does not require that skill. Use the current protocol and the launcher's actual participant discovery; do not infer client loading or permissions from this historical plan.
 
 ## Integration architecture
 
@@ -402,7 +402,9 @@ Procedure:
 - Deleting, moving or overwriting media, originals, approvals or ledgers.
 - Trust dialogs, permission prompts and bypass flags in Claude Code, Codex or Parley.
 
-## Immediate next hook
+## Historical next-hook proposal (2026-10-10; not an active queue)
+
+The checklist below is retained as history. The existing lanes and communication evidence supersede its assumption of an uninitialized service; hook-specific proof remains separate. Do not execute this checklist, `scripts/parley_setup.sh --apply`, or the old smoke test to resume the current project.
 
 The first task ready to accept is **P0.1**, owned by Andre as `operator`: run `agent-parley doctor` on the fork and save the output to `reports/parley-setup-v1/doctor.json`. Nothing depends on a decision; it costs no credits and touches no film file.
 
@@ -427,8 +429,8 @@ Everything that is code, configuration, tests or documents and needs no credits,
 | Mistake/Solution register with 8 seed entries (P1.11) | built | `projects/andre-time-travel/memory/mistakes.jsonl` |
 | Board blockers T06, T11, T12, T13 rewritten from current evidence (P1.1, W03) | proposed to the producer | `tasks/board.json` diff |
 | Current-plan pointer for `07_generations/plans/` | built | `current-plan.json` with hashes |
-| Phase 0 runbook, smoke test and hook proof procedure (P0.1–P0.7, P0.8) | documents ready | `scripts/parley_setup.sh`, `docs/parley-smoke-test.md`, `docs/PARLEY_PROTOCOL.md` roster v2, AGENTS.md step 7 |
-| P0.1–P0.7 execution (lanes, service, hook proof) | needs Andre's machine | run `scripts/parley_setup.sh --apply`, then the smoke test |
+| Phase 0 runbook, smoke test and hook proof procedure (P0.1–P0.7, P0.8) | historical documents; not a current safe execution procedure | Preserve `scripts/parley_setup.sh` and `docs/parley-smoke-test.md`; do not execute them for this resumption |
+| P0.1–P0.7 execution (lanes, service, hook proof) | partially evidenced on 2026-10-12 UTC: existing service/lanes and round-trip replies; complete hook proof not established | `docs/PARLEY_PROTOCOL.md` dated runtime evidence; no setup/restart/new lanes required by this plan |
 | P1.4 ingest of 32 handoffs | needs the producer's reconciliation | `manage.py handoff ingest <path> --by producer` per file |
 | P1.5 bible revisions, P1.6 manifest pointer, P1.7 ledger (Kling CLI), P1.8 D16, P1.9 D17–D19, P1.10 skill links | open, owners unchanged | section 5 |
 | Phases 2–5 | open; dispatch after Gate 0 and Gate 1 | section 5 |

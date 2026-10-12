@@ -2,11 +2,11 @@
 .DS_Store
 .idea/
 
-# 凭据 / 环境 / 日志（严禁入库）
+# Credentials / environment / logs (never commit)
 **/.credentials
 **/.env
 **/logs/
 *.log
 
-# 依赖
+# Dependencies
 node_modules/
