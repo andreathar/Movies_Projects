@@ -12,7 +12,8 @@
       "root": "projects/andre-time-travel",
       "manifest": "projects/andre-time-travel/manifest.json",
       "tasks": "projects/andre-time-travel/tasks/board.json",
-      "state": "projects/andre-time-travel/memory/STATE.md"
+      "state": "projects/andre-time-travel/memory/STATE.md",
+      "visualRestart": "drafts/andre-time-travel-visual-restart-v1/scope.json"
     }
   ],
   "requiredDirectories": [

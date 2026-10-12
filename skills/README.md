@@ -1,9 +1,9 @@
 # Skill Sources
 
-`andre-time-travel/` is the canonical project-specific procedure. Other entries link to the existing active-profile skills; no vendor skill or profile workflow is copied. `registry.json` records link provenance and machine-local targets. `.hermes/skills/` exposes the same sources without a second copy.
+`andre-time-travel/` is the canonical project procedure. `kling-cli` is vendored in `.agents/skills/kling-cli`; `skills/kling-cli`, `.claude/skills/kling-cli` and `.hermes/skills/kling-cli` resolve to that same tree. Its current SHA-256 in `registry.json` describes this effective source. Earlier profile provenance is retained as history.
 
-This workspace is a Git repository. `origin` is the private GitHub remote and `main` tracks `origin/main`; see `docs/VERSION_CONTROL.md`. Automatic slash-command discovery is not claimed. `AGENTS.md` routes the agent to the local procedure. Do not change global configuration or trust a directory merely to make a status report appear complete.
+The other skills link to machine-local profile sources, also exposed in `.hermes/skills/`. They are not all mirrored in `.claude/skills/`. Preserve those links and their recorded hashes; a changed shared skill requires review, not an automatic rehash. Missing links or placeholders do not count as usable skills. The English Kling translation and technical contracts remain intact.
 
-`skills/kling-cli` links to the in-repo checkout `.agents/skills/kling-cli`. `skills/registry.json` still records the owner source `/home/athar/.hermes/skills/kling-cli` and that tree's `sourceSha256`. Rehash only on the owner's machine from the tree that should be trusted. Do not rewrite hashes from cloud placeholders, and do not delete `skills/film-*` or `skills/grounded-citations` to clear a warning.
+`coordinate` is external to this registry. Its sibling source and installed Parley plugin were verified in the coordination audit; availability to a specific session requires that client's actual loaded tool/skill inventory. Removed project-local links are not recreated, and this catalog does not claim discovery or active sessions.
 
-The `coordinate` skill is not in the registry. The links `skills/coordinate`, `.agents/skills/coordinate`, `.claude/skills/coordinate` and `.agents/plugins/agent-parley/skills` pointed outside this checkout at a missing target and were removed. The coordinator role does not require that skill until a real target is vendored or registered.
+See [AGENT_CATALOG.md](../docs/AGENT_CATALOG.md) for derived metadata, drift checks and the frontend update procedure. Git and publication rules remain in [VERSION_CONTROL.md](../docs/VERSION_CONTROL.md). No global configuration or trust changes are needed for catalog generation.

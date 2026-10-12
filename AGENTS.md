@@ -43,6 +43,8 @@ Este AGENTS.md é a entrada obrigatória e a fonte das invariantes do workspace.
 
 ## Verification
 
+Role briefs and registries are the source for derived adapters and frontend metadata. Follow `docs/AGENT_CATALOG.md`: regenerate and check derived files whenever those inputs change. Generated adapters are staged only; catalog presence is not client discovery, a running session or permission. Frontend production snapshots require review before import and do not transfer approvals to the visual restart.
+
 Run the project's stdlib unit tests and `manage.py validate` after management changes. Workspace validity is not film acceptance. Full final-file playback, technical inspection, user likeness approval and language review are separate gates. Keep canonical task/approval/manifest states consistent; update session memory after material verified changes.
 
 ## Local editing and series continuation
