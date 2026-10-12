@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "continuity/research (Claude lane; contributor, no approval authority)",
+  "assignment": "Operator messages 13, 16, 18: material-culture sheet for the five encounters (historical-details-v1.md), Galileo first. Research and specification only; images are made by the producer. Revision 1 (2026-10-11): bounded correction of review findings H01-H06 (operator message 35, authorised by Andre).",
+  "state": "ready_for_review",
+  "ownedPaths": [
+    "projects/andre-time-travel/03_bibles/detail-planning/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-historical-details-v1.json"
+  ],
+  "revisions": [
+    {
+      "revision": 0,
+      "createdAt": "2026-10-09T17:50:00-03:00",
+      "sheetSha256": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+      "sheetLines": 544,
+      "preservedCopy": "projects/andre-time-travel/03_bibles/detail-planning/revisions/historical-details-v1.rev0-037acbf2.md",
+      "note": "Version reviewed by the editor lane (08_edit/reviews/detail-planning-v1/historical-review.md). Review line numbers refer to this copy. Copy hash verified identical to the reviewed hash."
+    },
+    {
+      "revision": 1,
+      "createdAt": "2026-10-11",
+      "sheetSha256": "ec98d5d4bba2da1710d2e7999fbe7e1f06cb7a305a079302ef5ddd80c2eae5b2",
+      "sheetLines": 591,
+      "preservedCopy": null,
+      "note": "Current file. Corrections are marked [Rev.1 Hxx] in the sheet. Not reviewed. Does not change the review verdict by itself."
+    }
+  ],
+  "reviewResponse": {
+    "reviewFile": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review.md (codex worktree, read only; SHA-256 at time of reading 2da7d044f8b7ec619d712475438d30a2cac8186ba79b8b150405ad385cc57ca3; not edited)",
+    "reviewedSheetSha256": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+    "delta": [
+      {
+        "id": "H01",
+        "status": "corrected",
+        "change": "Arcetri floor material in 1634 is now 'not documented' (N). Terracotta (tourist-site search summary about a 1639+ room) and planks (local plate) are labelled art choices. The terracotta hint does not require changing plate R1-J29 nor define the timbre of G-F2. Sheet lines changed: 1.3 table row and conflict paragraph, 1.8 plate observation, 1.9 item 1, 1.10 floor bullet, source row G1.",
+        "recheck": "Museo Galileo page (brunelleschi.imss.fi.it .../villagioiello.html) re-fetched 2026-10-11: no floor/terracotta/interior-surface description."
+      },
+      {
+        "id": "H02",
+        "status": "corrected",
+        "change": "Removed the recommendation to apply O'Meara 14x12 ft (and Montholon 12x15 / 9 ft) to the study in place of Las Cases. Study dimension is UNKNOWN. 14x12 is stated as valid only for the bedroom O'Meara describes. Las Cases digital edition 45x42 ft for two chambers A/B is recorded as printed; the suspected-error note does not identify the correct figure. Sheet lines changed: 4.3 bedroom and study rows, 4.9 new item 2a. The identical sentence in research-notes/research-napoleon.md (items 4 and 10) is left as delivered and declared withdrawn in the sheet.",
+        "recheck": "None new for the 45x42 text (reviewer cites Gutenberg 53968 vol. II; napoleon notes S01 quote the same). Facsimile/French original not consulted: open gap."
+      },
+      {
+        "id": "H03",
+        "status": "corrected",
+        "change": "Portrait provenance separated: Uffizi (original, 1635); RMG BHC2700 (attributed to Sustermans, c. 1640; RMG says it 'may be the original, though there are other contenders'); RMG BHC2701 (copy by Cecconi, 1879, after the Sustermans original of 1636). Cecconi copy marked as second-hand iconographic reference, not direct observation of 1634 costume. Sheet lines changed: 1.2 footwear row, 1.5 collar/gown/doublet rows, 1.6 ring row wording, source row G6.",
+        "recheck": "RMG object pages 14175 and 14174 re-fetched 2026-10-11."
+      },
+      {
+        "id": "H04",
+        "status": "corrected",
+        "change": "'Nunca bota' removed. Shoes are the recommendation supported by Las Cases (April 1816 habit) and O'Meara (July 1816 day dress); absence of boots is not stated as fact for every interior/date. October-November 1816 footwear remains N. Boots exist in the 1821 will inventory and Las Cases mentions riding boots. No footwear variant approved. Sheet lines changed: 4.2 first row, October-November row, recommendation.",
+        "recheck": "None new; uses quotes already in the sheet."
+      },
+      {
+        "id": "H05",
+        "status": "corrected",
+        "change": "Visual inventory of R2-wardrobe-napoleon-uniform.jpg now records clear wear: frayed cuff edges with loose threads on both cuffs, bleached/abraded patches and light lint on sleeves and chest, worn wool nap; gold buttons and red piping well kept. 'Novo, nao gasto' removed. Wear is separated from the documentary conflicts (gold vs white/covered buttons; red piping and collar/cuff colour N). Frontal view does not establish inside-out turning. Also noted the 'CODE CIVIL DES FRANCAIS' book on the table as unsourced (N). Sheet lines changed: 4.8 image row, 4.9 item 1.",
+        "recheck": "Image hash re-computed in this worktree and base checkout: a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0 (matches the review). Native size 1024x1024 viewed in full plus 2x crops of left sleeve/hem and right cuff."
+      },
+      {
+        "id": "H06",
+        "status": "corrected",
+        "change": "baseFiles now carry a hash as computed on 2026-10-11 and the checkout they were computed in, with the provenance gap declared (no start-of-session hash was recorded). pendingDecisions now lists every pending item for the five encounters (mirrors the sheet section 'Pendencias consolidadas', IDs P-G1..P-O4). No canonical file changed to resolve any item."
+      }
+    ],
+    "openGapsAfterCorrection": [
+      "Godoli, Palla, Righini (2016) chapter on interiors not opened: Arcetri floor stays undocumented",
+      "Las Cases facsimile/French original not consulted: Longwood study (and bedroom) dimensions unresolved",
+      "Napoleon October-November 1816 footwear: N",
+      "Whether the R2 coat was turned inside out cannot be decided from the frontal image",
+      "Start-of-session hashes of baseFiles never recorded (see baseFiles provenanceGap)",
+      "Review itself said Parley report 2c4fc95cdbee414e consolidation-of-workflow part was not reviewed; untouched here"
+    ]
+  },
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/galileo-v2-proposta.md",
+      "role": "read only; existing sourced costume and sources V2-G1..G5",
+      "sha256Computed": "7605a5078f83d51d6ede27f39f03928f19326d1c51df2633b1d34029907e2904",
+      "computedOn": "2026-10-11",
+      "checkout": "claude worktree, HEAD 9686949; file identical in main checkout (53c70bb); last commit touching file 1b239a5",
+      "startHashRecorded": false,
+      "provenanceGap": "A hash computed now does not prove which version was read at session start (2026-10-09). The file is unmodified in git since commit 1b239a5, which predates the session."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/scene-bibles/scene-bibles-v3-integrada.md",
+      "role": "read only; chapter facts and open flags",
+      "sha256Computed": "aae25a7cdfd93c8796a368121129eb1095ec19db977969ff65bc6ccb21b73b02",
+      "computedOn": "2026-10-11",
+      "checkout": "claude worktree, HEAD 9686949; file identical in main checkout (53c70bb); last commit touching file 9686949",
+      "startHashRecorded": false,
+      "provenanceGap": "Same as above. Last commit 9686949 (2026-10-09T16:48:22-03:00) predates the sheet (17:50), so git history is consistent with this being the version read, but that is an inference, not a record."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "currentPath": "projects/andre-time-travel/tasks/specs/scene-detail-assets-v1.md",
+      "role": "read only, from the base checkout (absent in this worktree)",
+      "sha256Computed": "f6ae15e1b99d9e83e62dda20d090a252df3a501f177a3e9ec5fbbfd99f4126b3",
+      "computedOn": "2026-10-11",
+      "checkout": "hash taken from git blob at commit cb6d96e^ (before the pure rename to tasks/specs/, 0 content changes); path absent from claude worktree HEAD 9686949",
+      "startHashRecorded": false,
+      "provenanceGap": "The file was read from the base checkout, not this worktree, and its commit at read time was not recorded. Content hash equals the blob before the rename commit cb6d96e; whether it was committed or untracked when read is unknown."
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "role": "read only",
+      "sha256Computed": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "computedOn": "2026-10-11",
+      "checkout": "claude worktree, HEAD 9686949; file identical in main checkout (53c70bb); last commit touching file 0f291c1",
+      "startHashRecorded": false,
+      "provenanceGap": "Same as the first entry."
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v1.md",
+      "sha256Before": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+      "sha256After": "ec98d5d4bba2da1710d2e7999fbe7e1f06cb7a305a079302ef5ddd80c2eae5b2",
+      "created": false,
+      "reason": "Revision 1: H01-H06 correction (Rev.1 markers, revision table, consolidated pending list). Original delivered file created 2026-10-09: five material-culture sheets (Galileo own research; Caesar, Genghis, Napoleon, Oppenheimer by support agents with central quotes re-checked by this lane)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/revisions/historical-details-v1.rev0-037acbf2.md",
+      "sha256After": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+      "created": true,
+      "reason": "Byte-identical preservation of the version the review cited, so review line numbers stay traceable."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-caesar.md",
+      "sha256After": "9d58581c2ef5bd17e7baacf276657a01706a2a3ed24448b156be521893080cc2",
+      "created": true,
+      "reason": "Support agent research notes copied unchanged, with full source tables and status. Unchanged in revision 1 (hash re-verified)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-genghis.md",
+      "sha256After": "cd4c7076bd0d119c3713079016b44b363480d57efc8fafd101f09542f81a2064",
+      "created": true,
+      "reason": "Support agent research notes copied unchanged, with full source tables and status. Unchanged in revision 1 (hash re-verified)."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-napoleon.md",
+      "sha256After": "40812180514aadac0babd744e3a12fc4da481ea7b574ba936554d33140804914",
+      "created": true,
+      "reason": "Support agent research notes copied unchanged, with full source tables and status. Unchanged in revision 1 (hash re-verified); its room-dimension recommendation (items 4 and 10) is declared withdrawn in the sheet, not edited here."
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-oppenheimer.md",
+      "sha256After": "ff6c80723227478bbc8d001863d431aa950fa87224f0c1195ad7b253bf91f777",
+      "created": true,
+      "reason": "Support agent research notes copied unchanged, with full source tables and status. Unchanged in revision 1 (hash re-verified)."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Across the five sheets, footwear, hair from behind, cuffs and interior floors are mostly not documented for the person on the date; sheets mark them N and keep proposals as D.",
+      "evidence": "historical-details-v1.md sections 1-5, tables Calçado/Cabelo/Piso"
+    },
+    {
+      "statement": "Four production conflicts surfaced: Caesar residence (Via Sacra, not Palatine) and short sleeves in R2-wardrobe-caesar; Napoleon season (spring, not autumn), no December 1816 new rooms, carpet over deal floor and contested green coat; Oppenheimer has no documented private room that night; Genghis table is a narrative exception. Revision 1: the Galileo floor is not a factual conflict (undocumented); Napoleon room dimensions are unresolved.",
+      "evidence": "sections 1.3, 2.1, 2.5, 3.3, 4.1-4.3, 5.1"
+    },
+    {
+      "statement": "Local reference images viewed and hashed per sheet; several contradict sources (broach, sandals, armour, rings, wristwatch, red piping, short sleeves). Revision 1 withdraws 'plank floors contradict the only floor hint' and 'new, not worn' (Napoleon coat shows wear).",
+      "evidence": "sections 1.8, 2.8, 3.8, 4.8, 5.8"
+    }
+  ],
+  "verification": [
+    "Sources G1-G6 (Galileo) opened and quoted by this lane (2026-10-09)",
+    "Caesar: Dio 43.43 and Suetonius 45.2/46.1 re-fetched by this lane",
+    "Genghis: Rubruck hair/bench/west side and Zhao Hong pojiao/hu-chuang re-fetched; one Rubruck sentence (boots to turbans) not re-found in the first 100k characters",
+    "Napoleon: Baciocchi plan quotes re-fetched; Musee de l'Armee PDF text checked for novembre 1815 (July 1820 not found)",
+    "Oppenheimer: Hempelmann hair and NPS clothing/smoking re-fetched",
+    "Local images viewed; sha256 recorded",
+    "Revision 1 (2026-10-11): re-fetched RMG BHC2701 and BHC2700 pages and the Museo Galileo Villa Il Gioiello page; re-hashed and re-viewed R2-wardrobe-napoleon-uniform.jpg at native 1024x1024 with 2x crops; verified preserved rev0 copy hash equals 037acbf2...; verified research-notes hashes unchanged; grep for stale phrasing ('nunca bota', 'casaco novo', 'novo, nao gasto', 'contradiz o unico indicio', 'e de fato o piso') leaves only the intended references inside Rev.1 text",
+    "Not verified: Las Cases facsimile or French original; Godoli et al. chapter; full re-read of all five sheets after edits beyond the changed passages",
+    "No file outside the owned paths changed; no canonical file, media, spending, commit or merge"
+  ],
+  "pendingDecisions": [
+    "P-G1 Galileo: floor material in 1634 NOT DOCUMENTED; terracotta vs planks are art choices; producer/Andre label the choice (H01)",
+    "P-G2 Galileo: footwear only after a dated source is found (N)",
+    "P-G3 Galileo: chair back height (plate high carved back vs low back)",
+    "P-G4 Galileo: ring yes/no; tremor has no source",
+    "P-G5 Galileo: gown near-black vs charcoal; hair, cap, cuffs, hem length are N",
+    "P-G6 Galileo: apparent age of hand (R2-J12); legible text on the sheet",
+    "P-G7 Galileo: exact date/age of Maria Celeste's death; window exposure and view (context only)",
+    "P-C1 Caesar: residence Palatine vs Sacra Via; declare fiction or change",
+    "P-C2 Caesar: floor and room (generic fine floor, label C)",
+    "P-C3 Caesar: footwear (high reddish calceus vs barefoot/soleae); no 'boots'",
+    "P-C4 Caesar: laurel wreath knot/ribbon/indoor use (N)",
+    "P-C5 Caesar: long fringed sleeves and no brooch (Suet. 45.3) vs reference with short sleeves and brooch; correct or declare licence",
+    "P-C6 Caesar: ring hand/finger; codex vs roll on plate; R1-J27 plate not opened",
+    "P-K1 Genghis: clothing in 1227 (armour vs light deel vs dark coat) as declared art choice",
+    "P-K2 Genghis: footwear and floor (no upturned toe, no decorated floor as fact)",
+    "P-K3 Genghis: table and chair as narrative exception",
+    "P-K4 Genghis: Taipei portrait details (hat, colour, loops), central poles, Rubruck 'boots to turbans' sentence not re-checked, unread sources",
+    "P-N1 Napoleon: choose the room (study vs bedroom); dimensions UNKNOWN until Las Cases facsimile is consulted (H02)",
+    "P-N2 Napoleon: green coat (turned/worn with white or covered buttons vs house dress N-A/N-B); reference has gold buttons and red piping with no source; wear on reference is a fact of the image, inside-out is not established (H05)",
+    "P-N3 Napoleon: October-November 1816 footwear is N; shoes are a supported option, not a fact (H04)",
+    "P-N4 Napoleon: floor (used carpet over deal boards), table and inkwell (N)",
+    "P-N5 Napoleon: hair; O'Meara dates (OCR); Marchand/Gourgaud/Bertrand unread; 'juillet 1820' not re-checked; 'new rooms December 1816' not found",
+    "P-O1 Oppenheimer: footwear, shirt, jacket, cuffs on 15 July 1945 (N); tweed, watch, tie of the reference have no source",
+    "P-O2 Oppenheimer: private room is fiction; mess hall at night is the documented place",
+    "P-O3 Oppenheimer: hat porkpie brown vs light September hat",
+    "P-O4 Oppenheimer: books/memoirs unopened; Base Camp floor and lighting (N)"
+  ],
+  "blockers": [
+    "Godoli, Palla, Righini (2016) open-access book could not be opened (HTTP 403 / connection reset); needed for the 1634 Arcetri interior",
+    "Memoirs and books not accessible to the agents (Marchand, Bird and Sherwin, Li Zhichang, Bergmann) are listed per sheet",
+    "Las Cases facsimile / French original not consulted: Longwood dimensions"
+  ],
+  "nextActions": [
+    {
+      "role": "editor/QC lane",
+      "action": "Optional re-check of H01-H06 against revision 1 (hash ec98d5d4...); the review verdict on revision 0 is unchanged until the editor says otherwise. Findings only in 08_edit/reviews/detail-planning-v1/"
+    },
+    {
+      "role": "producer",
+      "action": "Decide the items P-G1..P-O4 (sheet section 'Pendencias consolidadas') before any new image is made; the images remain the producer's work"
+    }
+  ],
+  "andreOnlyGates": [
+    "likeness review of any new images",
+    "creative acceptance of any detail choice",
+    "spending and generation (producer only)"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "revision_0_reviewed_with_findings_H01-H06; revision_1_not_reviewed",
+  "createdAt": "2026-10-09T17:50:00-03:00",
+  "updatedAt": "2026-10-11",
+  "note": "No manifest, board, approvals, ledger, STATE, session-log, script or media was touched. No commit. Peer research outputs live in the session scratchpad, not in the repository. The codex worktree review files were read only."
+}

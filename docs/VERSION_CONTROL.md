@@ -13,6 +13,8 @@ Ambientes Python, caches, arquivos temporários de editor e credenciais usuais s
 
 ## Ciclo de trabalho dos agentes
 
+Os comandos de leitura e de validação (`git status`, `git diff`, `manage.py validate`, testes) podem ser usados sempre. As linhas `git add` e `git commit` descrevem o procedimento **quando Andre ou o produtor autorizam um commit**; o documento não concede autorização permanente (regra em [AGENTS.md](../AGENTS.md)). Sem autorização, entregue arquivos e hashes em um handoff.
+
 ```bash
 git status --short
 git diff
@@ -47,3 +49,14 @@ O Git LFS foi ativado apenas na configuração deste repositório. Uma máquina 
 Sem um servidor LFS, preservar a pasta **completa**, incluindo `.git/lfs/objects`, em um backup. Uma cópia só do histórico Git ou um `git bundle` não inclui os objetos LFS. `git lfs fsck` verifica os objetos locais; um clone/checkout com LFS indisponível pode conter apenas ponteiros no lugar das mídias. Os links de skills externos continuam dependentes do perfil da máquina.
 
 Inventários antigos são fotografias de um momento: edições documentadas desde então aparecem como mudanças. Use um novo nome de snapshot para registrar o estado posterior, sem reescrever o inventário antigo. O relatório da inicialização fica em `reports/git-setup-v1/`.
+
+## Worktrees, commits e integração entre lanes
+As sessões trabalham em pastas/branches separadas. Um arquivo salvo na base pode ser consultado por caminho explícito antes do commit, mas não aparece automaticamente nas outras cópias. Commit na base também não atualiza branches de participantes. Dependências devem identificar versão/hash; não usar caminhos de outra lane para editar ou assumir sua identidade.
+
+Commits registram entregas coerentes, não cada pequeno ajuste. Antes de registrar: conferir escopo, alterações concorrentes, arquivos preparados e validação pertinente. Respeitar a autorização vigente para commit; na ausência dela, entregar arquivos e hashes sem bloquear a preparação. Não presumir permissão de merge/push a partir de permissão de commit.
+
+O produtor prepara integração de UMA entrega por vez. Conferir base da branch, mudanças locais, diff, caminhos sobrepostos e evidências; preservar trabalho não commitado. Incorporar pelo mecanismo autorizado, resolver divergências de conteúdo sem escolher cegamente uma versão e verificar o resultado integrado antes da entrega seguinte. Andre acompanha e autoriza conforme o escopo vigente; não precisa resolver sozinho conflitos técnicos.
+
+Changes indica alterações, não necessariamente conflitos. Publish Branch publica remotamente, não integra à main. Colaboração local não exige publicação. Commit e validação técnica não são aceite artístico. Reservas de arquivos ajudam a coordenar; não são bloqueios físicos nem garantia de ausência de conflitos.
+
+Responsáveis e lanes do filme atual: [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md). O ciclo de comandos desta página não concede autorização permanente de commit, merge ou publicação.

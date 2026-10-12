@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "continuity/research/documentation (Claude lane; contributor, no approval authority)",
+  "assignment": "Operator message 21 (relayed from Andre): audit and consolidate workflow/protocol/handoff/versioning documents; one canonical source per rule; nomenclature update; proposals for AGENTS.md and the registry in a report only.",
+  "state": "ready_for_producer_review",
+  "ownedPaths": [
+    "START_HERE.md",
+    "docs/REPEATABLE_WORKFLOW.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "docs/VERSION_CONTROL.md",
+    "agents/README.md",
+    "docs/consolidation-2026-10-09/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-docs-consolidation.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "START_HERE.md",
+      "baseCheckout": "cf9ec2e9c25df5422f9084ade323592cb3b28a5f0604bc507b9d568230f1dd5e"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "baseCheckout": "1e97ea4ade5940508e12f246a44822b90631b6636e67fc397fcb99415849f70b",
+      "note": "base had uncommitted producer edits (v2); lane copy was older (c29e7eef...)"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "baseCheckout": "967e8d6df052ca5a2a85abb49a0c00491907abbc15df7d25e4909d3d54771845",
+      "note": "absent in the lane before this work"
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "baseCheckout": "53342efdc8296d6a4754947740faa599409cb38228c06ce801a96559e8fdb717"
+    },
+    {
+      "path": "docs/VERSION_CONTROL.md",
+      "baseCheckout": "6ca63f3d0342f212c61bf9e2b61316612146b7200ef7fff8b73f5bc5096d8dfb",
+      "note": "base had uncommitted producer edits; lane copy was older (bf09d914...)"
+    },
+    {
+      "path": "agents/README.md",
+      "baseCheckout": "6afbe3c25c9f845ce47492d9ab551cd32538270bbca43867a1f122f79fa30c18"
+    },
+    {
+      "path": "AGENTS.md",
+      "baseCheckout": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+      "note": "read only"
+    },
+    {
+      "path": "agents/registry.json",
+      "baseCheckout": "2f7ff27c4e02c646fc8b628c049b2911c7bc69a83c5b8736fb9af00a8a9e4c1e",
+      "note": "read only"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "START_HERE.md",
+      "sha256After": "7a22370adcc866b84163e3d683243cb5321e22eaf8de468a9bbaac5d18b5ad72",
+      "reason": "Resume order points to AGENTS.md; adds canonical-source table; banner updated."
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256After": "7c1b0052b5691d4f4d91a8fcf795465fb784973f6610d50330e1adf710f3073d",
+      "reason": "Version 2.1; episode names removed; duplicated rules replaced by links; worktrees/commits section moved to VERSION_CONTROL."
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "54c7c5d40b07274892b793c021d7248383c5786f1df3463215748fc7b6d3a233",
+      "reason": "Restructured with ACTIVE/PROPOSED/MECHANICS labels and one responsibilities table; STATE/session-log owner aligned with the active assignment."
+    },
+    {
+      "path": "docs/LOCAL_AGENT_HANDOFF.md",
+      "sha256After": "101797f6977efe7649f50e00dd1f862cf0549ebfbb5f8eb10526160200c477f6",
+      "reason": "Canonical links; Andre named as author/approver; resume order corrected."
+    },
+    {
+      "path": "docs/VERSION_CONTROL.md",
+      "sha256After": "b9f82f8052e881ff1b92ae7f575eb28670f2170ef125febf658eeab928e98795",
+      "reason": "Single home for worktrees/commits/integration; commit commands tied to explicit authorization."
+    },
+    {
+      "path": "agents/README.md",
+      "sha256After": "22299f651beb60078c29639a9814ab7207ab5261d614987bb32ddb386bef71d0",
+      "reason": "Removes hard-coded role count, 'Hermes' and 'parent'; links to canonical sources."
+    },
+    {
+      "path": "docs/consolidation-2026-10-09/consolidation-report.md",
+      "sha256After": "2f5a3b952e5c672d74e7e60404ffa2a2c617f3b1d38556a6be3719576531cf6b",
+      "reason": "New: source map, before/after, naming, proposals for AGENTS.md and registry, conflicts for Andre.",
+      "created": true
+    },
+    {
+      "path": "docs/consolidation-2026-10-09/before/",
+      "reason": "New: exact copies of the six starting versions (nothing deleted).",
+      "created": true
+    },
+    {
+      "path": "docs/consolidation-2026-10-09/diffs/",
+      "reason": "New: unified diffs, before to after.",
+      "created": true
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Each repeated rule now has one canonical home; other documents link to it.",
+      "evidence": "docs/consolidation-2026-10-09/consolidation-report.md sections 2 and 3"
+    },
+    {
+      "statement": "Total word count of the six files rose from about 4,650 to about 5,260 because of tables and pointers; only REPEATABLE_WORKFLOW shrank.",
+      "evidence": "report section 3"
+    },
+    {
+      "statement": "65 relative Markdown links in the edited files and the report resolve against lane plus base.",
+      "evidence": "linkcheck run in the session; report section 8"
+    }
+  ],
+  "verification": [
+    ".venv/bin/python scripts/manage.py validate -> status ok, 0 errors, 4 known shared-skill hash warnings (lane worktree)",
+    ".venv/bin/python -m unittest discover -s tests -> 29 tests OK (lane worktree)",
+    "Relative-link check: 65 links, 0 missing",
+    "git status of the lane shows only the files listed above"
+  ],
+  "pendingDecisions": [
+    "C1 STATE/session-log owner (producer integrates)",
+    "C2 per-task commits: standing permission or case by case",
+    "C3 adopt, adjust or drop the PROPOSED parts of the Parley protocol (verify gate, smoke test, close-out message)",
+    "C4 confirm that the documentation role of the Claude lane is an active assignment",
+    "C5 reduce OPERATIONS, SAFETY and MEMORY_AND_AGENTS to pointers; fix 'seven roles' and 'parent'"
+  ],
+  "proposalsNotApplied": [
+    "AGENTS.md: 'producer/parent agent' wording and four small edits (report section 6)",
+    "agents/registry.json and bindings.json: assignments array, executionMode name, image-creation role (report section 7)"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Review the diffs, integrate one file at a time into the base, re-run validate and tests there, and decide C1-C5."
+    },
+    {
+      "role": "editor/QC lane",
+      "action": "Optional read-only review of the report; not required by this handoff."
+    }
+  ],
+  "andreOnlyGates": [
+    "creative acceptance of any detail choice",
+    "standing commit permission",
+    "adoption of the proposed Parley mechanisms"
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "not_reviewed",
+  "createdAt": "2026-10-09T17:50:00-03:00",
+  "note": "No manifest, board, approvals, ledger, STATE, session-log, script, AGENTS.md or registry was touched. No commit. Edits are in the lane copies only; the base checkout was read, never written. Deltas of messages 25, 27 and 29 are report sections 11 and 12; the AGENTS.md read for message 27 had hash 5ff4402d… (base)."
+}

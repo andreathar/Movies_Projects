@@ -1,0 +1,25 @@
+--- docs/consolidation-2026-10-09/before/docs_LOCAL_AGENT_HANDOFF.md	2026-10-09 17:19:16.276480688 -0300
++++ docs/LOCAL_AGENT_HANDOFF.md	2026-10-09 17:18:36.800605919 -0300
+@@ -1,6 +1,6 @@
+ # Edição local e passagem entre agentes
+ 
+-O usuário autorizou que os arquivos fiquem neste workspace e possam receber mudanças locais. Essa autorização permite trabalhar nas fontes atribuídas; não aprova automaticamente imagens, gastos ou publicação.
++Andre (autor e aprovador) autorizou que os arquivos fiquem neste workspace e possam receber mudanças locais. Essa autorização permite trabalhar nas fontes atribuídas; não aprova automaticamente imagens, gastos ou publicação. Os limites inegociáveis estão em [AGENTS.md](../AGENTS.md) e não são repetidos aqui.
+ 
+ ## Mapa de autoria
+ 
+@@ -14,7 +14,7 @@
+ | Editor | Timelines, legendas e masters em novas versões | Montagem reproduzível com caminhos de mídia resolvidos |
+ | QC | Pareceres em pastas de revisão | Evidência sobre o arquivo exato e problemas reproduzíveis |
+ 
+-Esses caminhos indicam áreas possíveis; o agente atua somente no escopo atribuído. Nenhum revisor recebeu autoridade para submeter jobs, alterar credenciais ou escrever fora do projeto. A atualização de aprovações, tarefas e gastos continua com o produtor/parent.
++Esses caminhos indicam áreas possíveis; o agente atua somente no escopo atribuído. A atualização de aprovações, tarefas, gastos e registros canônicos é do produtor; revisores não submetem jobs, não alteram credenciais e não escrevem fora do projeto (AGENTS.md). Quem exerce cada papel em um episódio está na tabela de responsabilidades de [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md); a tabela acima trata de funções, não de plataformas.
+ 
+ ## Como entregar uma mudança
+ 
+@@ -32,4 +32,4 @@
+ 
+ ## Retomada mínima
+ 
+-Ler `START_HERE.md` e a memória do episódio, executar status/validação, conferir hashes do conjunto relevante e registrar o que realmente mudou. Não depender de mensagens antigas, `/tmp`, links assinados de provedores ou arquivos guardados somente em outra conta. Os caminhos do catálogo e do inventário levam aos arquivos locais.
++Ler [AGENTS.md](../AGENTS.md) e `memory/STATE.md` do episódio (`START_HERE.md` é apenas o índice para humanos), executar status/validação, conferir hashes do conjunto relevante e registrar o que realmente mudou. Não depender de mensagens antigas, `/tmp`, links assinados de provedores ou arquivos guardados somente em outra conta. Os caminhos do catálogo e do inventário levam aos arquivos locais.

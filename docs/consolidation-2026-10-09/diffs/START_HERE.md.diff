@@ -1,0 +1,34 @@
+--- docs/consolidation-2026-10-09/before/START_HERE.md	2026-10-09 17:19:16.249352351 -0300
++++ START_HERE.md	2026-10-09 17:31:00.830137640 -0300
+@@ -1,4 +1,4 @@
+-> **Resume order (2026-10-09):** for agents, read `AGENTS.md`, then `projects/andre-time-travel/memory/STATE.md` (the single resume surface). This page is the pt-BR human index of deliverables and editing locations. Original text below is unchanged.
++> **Ordem de retomada (2026-10-09):** agentes leem `AGENTS.md` (regras e ordem de início) e depois `projects/andre-time-travel/memory/STATE.md` (única superfície de retomada). Esta página é o índice em português para pessoas: entregas, onde editar e qual documento é a fonte de cada assunto. Revisão consolidada em 2026-10-09; texto anterior preservado no histórico Git e em `docs/consolidation-2026-10-09/`.
+ 
+ # Andre viajando no tempo — comece por aqui
+ 
+@@ -22,10 +22,21 @@
+ 
+ ## Para um agente continuar o trabalho
+ 
+-1. Ler [AGENTS.md](AGENTS.md), [workspace.json](workspace.json), [estado atual](projects/andre-time-travel/memory/STATE.md), [manifesto](projects/andre-time-travel/manifest.json), [tarefas](projects/andre-time-travel/tasks/board.json) e [aprovações](projects/andre-time-travel/00_brief/approvals.json).
+-2. Ler o [procedimento local](skills/andre-time-travel/SKILL.md), o [fluxo repetível](docs/REPEATABLE_WORKFLOW.md) e o [contrato de edição local](docs/LOCAL_AGENT_HANDOFF.md).
+-3. Executar o status e a validação antes de editar. Consultar os papéis em [agents/registry.json](agents/registry.json).
+-4. Escolher somente arquivos do escopo atribuído; registrar o hash inicial e a entrega. Preservar trabalho simultâneo e versões entregues.
++A ordem de início é a de [AGENTS.md](AGENTS.md), seção "Session start" — não é repetida aqui. Depois dela, ler o [procedimento local](skills/andre-time-travel/SKILL.md) e executar o status/validação antes de editar. Escolher somente arquivos do escopo atribuído; registrar o hash inicial e a entrega; preservar trabalho simultâneo e versões entregues.
++
++### Qual documento é a fonte de cada assunto
++
++| Assunto | Fonte única |
++|---|---|
++| Regras inegociáveis (rostos, referências, diálogo, gasto, Kling, credenciais, memória) | [AGENTS.md](AGENTS.md) |
++| Estado e retomada do filme | [STATE.md](projects/andre-time-travel/memory/STATE.md), com [manifesto](projects/andre-time-travel/manifest.json), [tarefas](projects/andre-time-travel/tasks/board.json) e [aprovações](projects/andre-time-travel/00_brief/approvals.json) |
++| Processo reutilizável, tarefas e dependências | [REPEATABLE_WORKFLOW.md](docs/REPEATABLE_WORKFLOW.md) |
++| Quem edita o quê, formato de entrega, aprovação por versão | [LOCAL_AGENT_HANDOFF.md](docs/LOCAL_AGENT_HANDOFF.md) |
++| Commits, integração entre lanes, backup | [VERSION_CONTROL.md](docs/VERSION_CONTROL.md) |
++| Responsáveis deste episódio e mecânica dos lanes | [PARLEY_PROTOCOL.md](docs/PARLEY_PROTOCOL.md) |
++| Economia de contexto e mensagens | [TOKEN_EFFICIENCY.md](docs/TOKEN_EFFICIENCY.md) |
++| Papéis e limites de cada função | [agents/README.md](agents/README.md) e [agents/registry.json](agents/registry.json) |
++| Relatório da consolidação documental (mapa completo, antes/depois, conflitos) | [consolidation-report.md](docs/consolidation-2026-10-09/consolidation-report.md) |
+ 
+ ## Onde editar
+ 

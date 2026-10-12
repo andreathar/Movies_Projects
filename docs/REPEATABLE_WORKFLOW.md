@@ -1,12 +1,14 @@
 # Fluxo repetível — Andre viajando no tempo
 
-Versão 1, 9 de outubro de 2026. Escopo: pré-produção, edição local, rastreabilidade e preparação de novas histórias. O fluxo de geração e montagem ainda precisa ser provado pelo piloto e pelos masters do primeiro filme.
+Versão 2.1 (rascunho de consolidação), 9 de outubro de 2026. Escopo: pré-produção, edição local, rastreabilidade e preparação de novas histórias. O fluxo de geração e montagem ainda precisa ser provado pelo piloto e pelos masters do primeiro filme.
+
+Este documento descreve o **processo reutilizável**. Não repete regras que têm fonte canônica: limites inegociáveis em [AGENTS.md](../AGENTS.md); autoria e formato de entrega em [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md); commits, integração e backup em [VERSION_CONTROL.md](VERSION_CONTROL.md); responsáveis e mecânica dos lanes do filme atual em [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md). Nomes de pessoas, plataformas e lanes aparecem só no protocolo do episódio. A política de economia de contexto e de mensagens (delta, uma fonte por assunto, resultado curto, verificação em lote sem reduzir QC) está em [TOKEN_EFFICIENCY.md](TOKEN_EFFICIENCY.md) e vale para este fluxo sem ser repetida aqui.
 
 ## O que permanece e o que muda
 
 O registro [series.json](../series/andre-time-travel/series.json) mantém o protagonista, a exigência de aprovação da semelhança, a separação entre foto real e imagem sintética, a regra de nenhum rosto histórico completo e a separação entre diálogo ficcional e fatos documentados.
 
-A mesa, o figurino e a voz atuais são candidatos de continuidade, ainda sem aprovação. Reutilizar um arquivo exige identificar sua versão e seu hash, a decisão que permite o uso e o escopo dessa decisão. Copiar o arquivo não transfere aceite nem autorização financeira.
+O estado de aprovação de mesa, figurino, identidade e voz deve ser consultado nas decisões do episódio; não se deve tratar todos como aprovados ou pendentes em bloco. Reutilizar um arquivo exige identificar sua versão e seu hash, a decisão que permite o uso e o escopo dessa decisão. Copiar o arquivo não transfere aceite nem autorização financeira.
 
 As cinco épocas, os 240 segundos, as 41 tomadas e as duas edições são decisões deste filme. Cada continuação define seus próprios encontros, duração, estrutura, idiomas, referências, orçamento e testes. O modelo de rascunho não preenche esses campos por herança.
 
@@ -20,7 +22,7 @@ As cinco épocas, os 240 segundos, as 41 tomadas e as duas edições são decis�
 | Voz | Texto revisado e escopo do serviço | Arquivos reais, duração medida e notas de interpretação | Escuta, pronúncia e língua revisadas; rota de sincronização testada |
 | Piloto | Referências aprovadas e envelopes de câmera | Pequeno conjunto de tomadas com IDs, custos e revisão | Identidade, olhos, mãos, boca e continuidade sustentam o método |
 | Decupagem e animatic | Áudio medido e resultado do piloto | Cobertura completa, cortes motivados e lacunas reais | Duração e cobertura viáveis; não acelerar fala para caber no rascunho |
-| Lote | Requests concretos e revisão do saldo/parâmetros | Escopo aprovado, referências exatas e registro de submissão | Aprovação específica do lote; produtor é o único emissor |
+| Lote | Requests concretos e revisão do saldo/parâmetros | Escopo aprovado, referências exatas e registro de submissão | Aprovação específica do lote; emissão somente como em [AGENTS.md](../AGENTS.md) |
 | Produção | Requests aprovados | Respostas, originais, custo real ou explicitamente estimado, revisão por take | Aceite individual; job concluído não é take aceito |
 | Montagem | Takes e áudio aceitos | Timeline, legendas, stems e masters versionados | Sem arquivo faltando; sincronização e duração conferidas |
 | QC e arquivo | Arquivos finais exatos | Reprodução integral, revisão dos quadros de risco e hashes | Aceite de imagem, língua, som, créditos e entrega |
@@ -30,7 +32,7 @@ O gerenciador atual representa a estrutura do primeiro filme; não é ainda um p
 ## Ciclo de edição local
 
 1. Ler o estado canônico e delimitar arquivos com o coordenador.
-2. Registrar hashes de partida em uma entrega baseada em `shared/templates/agent-handoff.json`.
+2. Registrar hashes de partida e a entrega no formato de [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md) (modelo `shared/templates/agent-handoff.json`).
 3. Editar fontes, preservando IDs. Atualizar roteiro e CSV juntos quando mudar fala; manter manifesto e lista de tomadas coerentes quando mudar duração.
 4. Validar insumos. Regenerar os derivados em uma pasta nova; o gerador recusa sobrescrita.
 5. Comparar os arquivos resultantes, revisar cortes/enquadramentos e registrar a decisão com caminho, hash, versão e escopo. Mudança de conteúdo requer nova revisão dos derivados afetados.
@@ -82,3 +84,33 @@ O ZIP V1 é uma apresentação autocontida, não um backup restaurável de toda 
 ## Critério de validação do modelo
 
 O ensaio local prova organização, acesso, edição rastreável, reconstrução, recusa de sobrescrita, integridade e isolamento de uma continuação. Ele não prova semelhança em movimento, voz convincente, sincronização labial, precisão dos idiomas históricos, preço futuro ou qualidade final. Esses pontos devem aparecer como pendentes até o piloto, a escuta/revisão e o QC dos arquivos exatos.
+
+## Coordenação reutilizável entre sessões
+
+### Responsabilidade e ponto de direção
+Cada episódio nomeia, na tabela de responsabilidades do seu protocolo ([PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md)), quem é autor/aprovador, quem produz e coordena (e em qual checkout), quem pesquisa e documenta, quem edita e revisa, e quem cria as imagens-base. Nome de ferramenta ou plataforma não é papel de filme; uma continuação troca essa tabela e mais nada. A conversa produtora recebe as decisões de Andre, distribui tarefas delimitadas e integra entregas. Uma lane no terminal não herda automaticamente o histórico da conversa principal.
+
+O produtor concentra manifesto, board, aprovações, ledger, registro de assets, decisões e integração da memória. Demais agentes entregam propostas e evidências sem alterar esses registros em paralelo.
+
+### Divisão que prepara as imagens
+- História e cultura material: fatos, calçados, piso, cabelo, mangas, objetos e fontes de luz possíveis, com fontes e incerteza.
+- Storyboard/continuidade: espaço compartilhado, mesa, eixo, alternativas de ombro, anatomia e rosto histórico protegido.
+- Iluminação: fonte motivadora e continuidade entre planos; uma fonte plausível não equivale a design aprovado.
+- Diálogo/som: voz-guia, sincronismo, duração medida, contato de pés/dedos, tecido, respiração e silêncio.
+- Criador de imagens: integra referências e produz candidatos versionados; demais agentes não geram substitutos sem atribuição.
+- Editor/QC: monta material existente autorizado e revisa arquivos exatos. Operação do Kling e capacidade de inspeção visual são avaliadas separadamente por evidência, não pelo fornecedor do agente.
+
+A ficha de encontro relaciona intenção, fala difícil, palavra/ideia causadora, reação corporal e efeito sobre Andre. Humor e opinião pessoal são escolhas dramáticas; não são fatos ou citações atribuídas. Usar apenas os detalhes úteis à cena, sem obrigar cinco encontros a repetir os mesmos planos.
+
+### Contrato de tarefa e dependências
+Toda atribuição informa objetivo, dono, entradas e versões, saídas e caminhos permitidos, dependências, verificação e limites. Classificar como preparação independente ou trabalho dependente de mídia. Checklist, prompt e placeholder não comprovam imagem entregue. A entrega de mídia informa caminhos relativos, hashes, versões e estado candidato/aprovado para o uso específico. Não transferir aprovação de um rosto ou still automaticamente para vídeo.
+
+Gates de um teste pago não bloqueiam pesquisa e preparação independentes. Autorização para planejar não libera geração paga; as regras de emissão, saldo e nova tentativa estão em [AGENTS.md](../AGENTS.md).
+
+### Worktrees, commits e integração
+Movido para [VERSION_CONTROL.md](VERSION_CONTROL.md), seção "Worktrees, commits e integração entre lanes", que passa a ser a única fonte. Regra de uso neste fluxo: dependências identificam versão e hash; ninguém edita em outra lane nem assume a identidade dela.
+
+### Evidência de comunicação
+Distinguir plugin instalado, serviço pronto, participante iniciado, mensagem aceita, recebida/reconhecida e tarefa concluída. Branch existente não prova agente ativo. Só declarar comunicação testada após ida e volta verificadas. Não contornar diálogos de confiança. Um handoff em disco não prova leitura pelo destinatário. Checkpoints preservam estado; não fundem conversas.
+
+Responsáveis e mecânica do episódio: [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md). Edição e entrega: [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md). Versionamento e integração: [VERSION_CONTROL.md](VERSION_CONTROL.md). Essas regras podem ser usadas com outro coordenador além do Parley. Atribuições, autorizações e medidas de cena não passam automaticamente à próxima continuação.

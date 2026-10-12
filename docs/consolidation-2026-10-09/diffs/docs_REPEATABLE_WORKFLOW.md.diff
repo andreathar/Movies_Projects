@@ -1,0 +1,64 @@
+--- docs/consolidation-2026-10-09/before/docs_REPEATABLE_WORKFLOW.md	2026-10-09 17:19:16.257998157 -0300
++++ docs/REPEATABLE_WORKFLOW.md	2026-10-09 17:31:00.830018747 -0300
+@@ -1,6 +1,8 @@
+ # Fluxo repetível — Andre viajando no tempo
+ 
+-Versão 2, 9 de outubro de 2026. Escopo: pré-produção, edição local, rastreabilidade e preparação de novas histórias. O fluxo de geração e montagem ainda precisa ser provado pelo piloto e pelos masters do primeiro filme.
++Versão 2.1 (rascunho de consolidação), 9 de outubro de 2026. Escopo: pré-produção, edição local, rastreabilidade e preparação de novas histórias. O fluxo de geração e montagem ainda precisa ser provado pelo piloto e pelos masters do primeiro filme.
++
++Este documento descreve o **processo reutilizável**. Não repete regras que têm fonte canônica: limites inegociáveis em [AGENTS.md](../AGENTS.md); autoria e formato de entrega em [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md); commits, integração e backup em [VERSION_CONTROL.md](VERSION_CONTROL.md); responsáveis e mecânica dos lanes do filme atual em [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md). Nomes de pessoas, plataformas e lanes aparecem só no protocolo do episódio. A política de economia de contexto e de mensagens (delta, uma fonte por assunto, resultado curto, verificação em lote sem reduzir QC) está em [TOKEN_EFFICIENCY.md](TOKEN_EFFICIENCY.md) e vale para este fluxo sem ser repetida aqui.
+ 
+ ## O que permanece e o que muda
+ 
+@@ -20,7 +22,7 @@
+ | Voz | Texto revisado e escopo do serviço | Arquivos reais, duração medida e notas de interpretação | Escuta, pronúncia e língua revisadas; rota de sincronização testada |
+ | Piloto | Referências aprovadas e envelopes de câmera | Pequeno conjunto de tomadas com IDs, custos e revisão | Identidade, olhos, mãos, boca e continuidade sustentam o método |
+ | Decupagem e animatic | Áudio medido e resultado do piloto | Cobertura completa, cortes motivados e lacunas reais | Duração e cobertura viáveis; não acelerar fala para caber no rascunho |
+-| Lote | Requests concretos e revisão do saldo/parâmetros | Escopo aprovado, referências exatas e registro de submissão | Aprovação específica do lote; produtor é o único emissor |
++| Lote | Requests concretos e revisão do saldo/parâmetros | Escopo aprovado, referências exatas e registro de submissão | Aprovação específica do lote; emissão somente como em [AGENTS.md](../AGENTS.md) |
+ | Produção | Requests aprovados | Respostas, originais, custo real ou explicitamente estimado, revisão por take | Aceite individual; job concluído não é take aceito |
+ | Montagem | Takes e áudio aceitos | Timeline, legendas, stems e masters versionados | Sem arquivo faltando; sincronização e duração conferidas |
+ | QC e arquivo | Arquivos finais exatos | Reprodução integral, revisão dos quadros de risco e hashes | Aceite de imagem, língua, som, créditos e entrega |
+@@ -30,7 +32,7 @@
+ ## Ciclo de edição local
+ 
+ 1. Ler o estado canônico e delimitar arquivos com o coordenador.
+-2. Registrar hashes de partida em uma entrega baseada em `shared/templates/agent-handoff.json`.
++2. Registrar hashes de partida e a entrega no formato de [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md) (modelo `shared/templates/agent-handoff.json`).
+ 3. Editar fontes, preservando IDs. Atualizar roteiro e CSV juntos quando mudar fala; manter manifesto e lista de tomadas coerentes quando mudar duração.
+ 4. Validar insumos. Regenerar os derivados em uma pasta nova; o gerador recusa sobrescrita.
+ 5. Comparar os arquivos resultantes, revisar cortes/enquadramentos e registrar a decisão com caminho, hash, versão e escopo. Mudança de conteúdo requer nova revisão dos derivados afetados.
+@@ -86,9 +88,9 @@
+ ## Coordenação reutilizável entre sessões
+ 
+ ### Responsabilidade e ponto de direção
+-Cada episódio nomeia uma sessão produtora/coordenadora e registra seu checkout. Nome de ferramenta (Claude/Codex) não é papel de filme. A conversa principal recebe as decisões de Andre, distribui tarefas delimitadas e integra entregas. Uma lane no terminal não herda automaticamente o histórico da conversa principal.
++Cada episódio nomeia, na tabela de responsabilidades do seu protocolo ([PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md)), quem é autor/aprovador, quem produz e coordena (e em qual checkout), quem pesquisa e documenta, quem edita e revisa, e quem cria as imagens-base. Nome de ferramenta ou plataforma não é papel de filme; uma continuação troca essa tabela e mais nada. A conversa produtora recebe as decisões de Andre, distribui tarefas delimitadas e integra entregas. Uma lane no terminal não herda automaticamente o histórico da conversa principal.
+ 
+-O produtor concentra manifesto, board, aprovações, ledger, registro de assets, decisões e integração da memória. Demais agentes entregam propostas e evidências sem alterar esses registros em paralelo. A responsabilidade por criar imagens-base também deve ser explicitamente nomeada. No filme atual é o Codex desta conversa desktop; futuras continuações escolhem novamente seus responsáveis.
++O produtor concentra manifesto, board, aprovações, ledger, registro de assets, decisões e integração da memória. Demais agentes entregam propostas e evidências sem alterar esses registros em paralelo.
+ 
+ ### Divisão que prepara as imagens
+ - História e cultura material: fatos, calçados, piso, cabelo, mangas, objetos e fontes de luz possíveis, com fontes e incerteza.
+@@ -103,18 +105,12 @@
+ ### Contrato de tarefa e dependências
+ Toda atribuição informa objetivo, dono, entradas e versões, saídas e caminhos permitidos, dependências, verificação e limites. Classificar como preparação independente ou trabalho dependente de mídia. Checklist, prompt e placeholder não comprovam imagem entregue. A entrega de mídia informa caminhos relativos, hashes, versões e estado candidato/aprovado para o uso específico. Não transferir aprovação de um rosto ou still automaticamente para vídeo.
+ 
+-Gates de um teste pago não bloqueiam pesquisa e preparação independentes. Autorização para planejar não libera geração paga. O emissor de jobs é único por lote, com saldo/esquema atual e registro de IDs; ninguém reenvia um job para resolver falta de coordenação.
++Gates de um teste pago não bloqueiam pesquisa e preparação independentes. Autorização para planejar não libera geração paga; as regras de emissão, saldo e nova tentativa estão em [AGENTS.md](../AGENTS.md).
+ 
+ ### Worktrees, commits e integração
+-As sessões trabalham em pastas/branches separadas. Um arquivo salvo na base pode ser consultado por caminho explícito antes do commit, mas não aparece automaticamente nas outras cópias. Commit na base também não atualiza branches de participantes. Dependências devem identificar versão/hash; não usar caminhos de outra lane para editar ou assumir sua identidade.
+-
+-Commits registram entregas coerentes, não cada pequeno ajuste. Antes de registrar: conferir escopo, alterações concorrentes, arquivos preparados e validação pertinente. Respeitar a autorização vigente para commit; na ausência dela, entregar arquivos e hashes sem bloquear a preparação. Não presumir permissão de merge/push a partir de permissão de commit.
+-
+-O produtor prepara integração de UMA entrega por vez. Conferir base da branch, mudanças locais, diff, caminhos sobrepostos e evidências; preservar trabalho não commitado. Incorporar pelo mecanismo autorizado, resolver divergências de conteúdo sem escolher cegamente uma versão e verificar o resultado integrado antes da entrega seguinte. Andre acompanha e autoriza conforme o escopo vigente; não precisa resolver sozinho conflitos técnicos.
+-
+-Changes indica alterações, não necessariamente conflitos. Publish Branch publica remotamente, não integra à main. Colaboração local não exige publicação. Commit e validação técnica não são aceite artístico. Reservas de arquivos ajudam a coordenar; não são bloqueios físicos nem garantia de ausência de conflitos.
++Movido para [VERSION_CONTROL.md](VERSION_CONTROL.md), seção "Worktrees, commits e integração entre lanes", que passa a ser a única fonte. Regra de uso neste fluxo: dependências identificam versão e hash; ninguém edita em outra lane nem assume a identidade dela.
+ 
+ ### Evidência de comunicação
+ Distinguir plugin instalado, serviço pronto, participante iniciado, mensagem aceita, recebida/reconhecida e tarefa concluída. Branch existente não prova agente ativo. Só declarar comunicação testada após ida e volta verificadas. Não contornar diálogos de confiança. Um handoff em disco não prova leitura pelo destinatário. Checkpoints preservam estado; não fundem conversas.
+ 
+-O protocolo operacional do episódio está em [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md); regras de edição em [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md) e versionamento em [VERSION_CONTROL.md](VERSION_CONTROL.md). Essas regras podem ser usadas com outro coordenador além do Parley. Atribuições, autorizações e medidas de cena não passam automaticamente à próxima continuação.
++Responsáveis e mecânica do episódio: [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md). Edição e entrega: [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md). Versionamento e integração: [VERSION_CONTROL.md](VERSION_CONTROL.md). Essas regras podem ser usadas com outro coordenador além do Parley. Atribuições, autorizações e medidas de cena não passam automaticamente à próxima continuação.
