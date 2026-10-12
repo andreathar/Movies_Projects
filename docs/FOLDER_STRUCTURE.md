@@ -97,6 +97,8 @@ Movies_Projects/
   projects/andre-time-travel/logs/
   projects/andre-time-travel/memory/
   projects/andre-time-travel/tasks/
+  projects/andre-time-travel/tasks/plans/
+  projects/andre-time-travel/tasks/specs/
   reports/
   scripts/
   shared/
@@ -113,7 +115,7 @@ Movies_Projects/
 - `AGENTS.md`: rules for every agent working here.
 - `workspace.json`: film registry and required layout.
 - `projects/andre-time-travel/docs/production-plan.md`: canonical film plan.
-- `projects/andre-time-travel/tasks/board.json`: authoritative production tasks.
+- `projects/andre-time-travel/tasks/board.json`: authoritative production tasks. `tasks/specs/` holds execution specifications, `tasks/plans/` holds planning documents (workflow map, cleanup plan).
 - `projects/andre-time-travel/memory/STATE.md`: resume state and known gaps.
 - `scripts/manage.py`: offline read-only status/validation.
 - `reports/setup-verification.json`: real test, lint, source-mapping and layout verification output.

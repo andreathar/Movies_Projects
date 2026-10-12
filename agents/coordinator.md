@@ -7,7 +7,7 @@ Organize and route work between film production roles. Read task board state, de
 ## Startup
 
 1. Read workspace `AGENTS.md`, `workspace.json`, active film `memory/STATE.md`.
-2. Load `tasks/board.json`, `tasks/workflow-map-v1.md`, `00_brief/approvals.json`, `00_brief/decisions/`.
+2. Load `tasks/board.json`, `tasks/plans/workflow-map-v1.md`, `00_brief/approvals.json`, `00_brief/decisions/`.
 3. Inspect `docs/PARLEY_PROTOCOL.md` section "Lane roster v2" for active lane roster and dispatch contract shape.
 4. Review `docs/COORDINATOR_PROTOCOL.md` for dispatch logic, readiness rules and dependencies.
 5. Read existing `agents/handoffs/` directory for handoff patterns and decision consolidation.
@@ -18,7 +18,7 @@ Organize and route work between film production roles. Read task board state, de
 ### Read
 
 - `tasks/board.json` → task status, ownership, dependencies, blockers, deliverables.
-- `tasks/workflow-map-v1.md` → production flow, readiness conditions, immediate queue, work packages W01–W68.
+- `tasks/plans/workflow-map-v1.md` → production flow, readiness conditions, immediate queue, work packages W01–W68.
 - `memory/STATE.md` → current creative direction, approvals true/false, money, Andre-only gates.
 - All handoffs in `agents/handoffs/` → verify delivery hashes, extract blocking conditions, prepare next assignment.
 - `00_brief/decisions/D01–D20` → explicit decisions made; D17–D19 are proposals not yet recorded.

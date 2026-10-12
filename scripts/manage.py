@@ -635,7 +635,7 @@ def resume(root: Path) -> dict[str, Any]:
             project["tasks"],
             f"{film_relative}/00_brief/approvals.json",
             f"{film_relative}/00_brief/decisions/",
-            f"{film_relative}/tasks/workflow-map-v1.md",
+            f"{film_relative}/tasks/plans/workflow-map-v1.md",
         ],
         "stateHeadline": state_headline(scoped_path(root, project["state"])),
         "taskCounts": dict(Counter(task["status"] for task in tasks)),

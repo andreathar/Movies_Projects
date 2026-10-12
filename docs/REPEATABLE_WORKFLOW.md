@@ -137,4 +137,4 @@ Regra solicitada por Andre em 2026-10-10: uma entrega verificada termina com pr�
 
 Antes de despachar, verificar versões/evidências, dependências, disponibilidade e escopo. Consolidar a atribuição, evitar duplicatas e reabrir apenas o que mudou. Gates de gasto, identidade, voz e aceite permanecem separados. Hooks podem notificar; nenhum despachante automático ou despertar da conversa desktop está comprovado por esta regra. Implementação/teste de automação é trabalho separado, sem ativação implícita.
 
-Mapa aplicado ao episódio atual: [organograma, tarefas e dependências](../projects/andre-time-travel/tasks/workflow-map-v1.md). Novos episódios reutilizam a regra, não responsáveis, estados ou autorizações.
+Mapa aplicado ao episódio atual: [organograma, tarefas e dependências](../projects/andre-time-travel/tasks/plans/workflow-map-v1.md). Novos episódios reutilizam a regra, não responsáveis, estados ou autorizações.

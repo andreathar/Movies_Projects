@@ -35,7 +35,7 @@ Every obligation below was read from the workspace on 2026-10-10 (branch `claude
 | T20 | Historical-language edition | dialogue-sound | blocked | T06, T07, T19 |
 | T21 | Deliver and independently verify both masters | qc | blocked | T19, T20 |
 
-The workflow map (`tasks/workflow-map-v1.md`) decomposes these into 68 work packages W01–W68 and a 14-row chapter checklist repeated for each of the five encounters. The plan in section 5 maps every W package to a phase, owner and successor.
+The workflow map (`tasks/plans/workflow-map-v1.md`) decomposes these into 68 work packages W01–W68 and a 14-row chapter checklist repeated for each of the five encounters. The plan in section 5 maps every W package to a phase, owner and successor.
 
 ### B. Andre-only gates (`memory/STATE.md`, `00_brief/approvals.json`)
 
