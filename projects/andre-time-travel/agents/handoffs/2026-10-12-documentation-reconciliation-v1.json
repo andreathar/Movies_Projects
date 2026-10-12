@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor",
+  "contributorKind": "contributor",
+  "assignment": "Corrigir documentação conforme pedido direto de Andre; reconciliar as versões dos artefatos de gestão sem excluir produção ou atestar ingestão do produtor.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/TOKEN_EFFICIENCY.md",
+    "skills/andre-time-travel/SKILL.md"
+  ],
+  "ownedPaths": [
+    "AGENTS.md",
+    "START_HERE.md",
+    "agents/coordinator.md",
+    "agents/registry.json",
+    ".agents/plugins/agent-parley/plugin.json",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/PLAN-parley-integration-v1.md",
+    "reports/2026-10-12-documentation-reconciliation.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-documentation-reconciliation-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "e8846485869d9f0d6341c81e7da8cd05f138fbccb59c3e3a3c5fb66c38d604df"
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256Before": "e3ee5f23640bbe747092409f04d45ef43549e7d8547e857e18bef4c0c850f0b8"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "e8f901a3f948d4c51bc22d6895c114df8d2157d9a91212b594f8674bbbe36027"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "ea102925226952a39ceb6a26fe12d8e97f9c90012b57a998f85f7ada82085da9"
+    },
+    {
+      "path": ".agents/plugins/agent-parley/plugin.json",
+      "sha256Before": "61eaed407a54f3646312a44e6dd436409311f7bf95b18d288d7a915b857f2826"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "a561819dcf4d62c0f6859e6ab0e288ff6502ef1ae884e38f0a47e0408fc04883"
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256Before": "bbbe737c04b21e18980e4bf9de235c19ea4f7cfc74d016d4be4732a147d51670"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256After": "4bfa5e5ae1cb413fe1882dc3f38b237e44eb0a5866bccf3426fe2e250553f4bc",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256After": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256After": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": ".agents/plugins/agent-parley/plugin.json",
+      "sha256After": "1149a2ae3afe257f039d2b3ea127f29b9691ac048ad764c6bab50ac87b9ac468",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "e9801936734e16a8deb4387cd486df637e3056f64d3dcf7b249b86f19c3ff9f0",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256After": "5d60f4fd3246f8a1b38a7e41b788e3a4a9d6cc6d08b71c939d6923a8c10ff366",
+      "reason": "Reconciliação documental autorizada; ver relatório de evidências."
+    },
+    {
+      "path": "reports/2026-10-12-documentation-reconciliation.md",
+      "sha256After": "4ee0edb8ad71f22c5271327159b685fdbced5a47fe198913c8812e3e06766ae6",
+      "reason": "Evidência completa da cadeia de versões, limites e preservação."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Cadeia histórica conferida; correções documentais e limites estão descritos sem alterar o handoff anterior.",
+      "evidence": "reports/2026-10-12-documentation-reconciliation.md",
+      "sha256": "4ee0edb8ad71f22c5271327159b685fdbced5a47fe198913c8812e3e06766ae6"
+    },
+    {
+      "statement": "Versão atual deste artefato conferida por hash; delta documental rastreado no relatório; não altera aprovação ou autoridade.",
+      "evidence": "agents/coordinator.md",
+      "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+    },
+    {
+      "statement": "Versão atual deste artefato conferida por hash; delta documental rastreado no relatório; não altera aprovação ou autoridade.",
+      "evidence": "agents/registry.json",
+      "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+    },
+    {
+      "statement": "Versão atual deste artefato conferida por hash; preservada byte a byte em relação ao handoff anterior.",
+      "evidence": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+    },
+    {
+      "statement": "Versão atual deste artefato conferida por hash; preservada byte a byte em relação ao handoff anterior.",
+      "evidence": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
+    },
+    {
+      "statement": "Versão atual deste artefato conferida por hash; preservada byte a byte em relação ao handoff anterior.",
+      "evidence": "skills/registry.json",
+      "sha256": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e"
+    }
+  ],
+  "verification": [
+    "Reconfirmados hashes de agents/coordinator.md em 2f96351 e d5bd9cf; diff histórico contém somente duas correções de caminho.",
+    "Cinco artefatos do handoff anterior comparados; quatro coincidiam antes desta edição.",
+    "Fonte externa e skill instalada existem com o mesmo SHA-256 registrado.",
+    "Arquivos concorrentes Kling, estado canônico do filme e handoff antigo permanecem iguais ao snapshot inicial."
+  ],
+  "supersedes": [
+    "2026-10-11-structure-naming-merge-v1.json"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar esta entrega documental e registrar a retomada adequada depois da definição de descarte por Andre; não tratar lint limpo como ingestão.",
+      "readiness": "entrega local; aceite e ingestão ainda não registrados"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Alcance do descarte para o recomeço ainda não delimitado.",
+      "owner": "Andre",
+      "unblockCondition": "Definir quais derivados, decisões e entregas podem sair e quais originais/referências ficam."
+    }
+  ],
+  "andreOnlyGates": [
+    "Escopo de descarte para o recomeço; demais aprovações históricas não foram alteradas."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}
