@@ -1,51 +1,30 @@
-# 03 · Política de resolução (o ajuste de maior impacto)
+# 03 · Resolução — hipótese a medir
 
-## O problema
+O histórico consultado usa 720p em vários vídeos. Isso é uma variável plausível para
+nitidez, mas não demonstra a causa principal da diferença percebida frente à interface.
+Não medimos a configuração efetiva do site nem fizemos uma comparação controlada.
+Defaults variam por ferramenta/modelo: não presumir 1080p universal, especialmente
+para motion control. Use valores explicitamente declarados no catálogo atual.
 
-**Todos** os vídeos do projeto foram gerados com `resolution: 720p` explícito
-(PILOT-01..05, G-01..G-05, G-02 — ver `07_generations/responses/*.intent.json`).
+## Proposta de comparação
 
-- `720p` = tier **`std`** (rótulo do próprio Kling); `1080p` = `pro`; `4k` = membro.
-- O **default do servidor é 1080p** em toda ferramenta de vídeo (`who_am_i` ao vivo).
-- A **interface web** usa esse default — 1080p (4K para membros).
+Compare duas resoluções no **mesmo modelo**, com a mesma imagem, prompt, Element,
+áudio, multi-shot e duração. Registre hashes e parâmetros. AB-01 Turbo vs AB-02 v3_0
+não isola resolução, pois ambos são 1080p e outras variáveis mudam. Um take histórico
+também não é controle perfeito se o backend ou a aleatoriedade tiverem mudado.
 
-Ou seja: o projeto produziu deliberadamente no tier barato e comparou com o tier `pro` da
-interface. **Este é o principal motivo da diferença percebida.**
+720p pode servir a um ensaio econômico; 1080p ou 4K só devem ser escolhidos quando
+suportados e úteis ao plano. Não substituir automaticamente valores nos jobs existentes.
+Maior resolução não corrige identidade, composição, movimento ou sincronismo.
 
-## Política proposta
+## Custo e aceite
 
-| Uso | `resolution` | Observação |
-|-----|--------------|------------|
-| Teste de composição / movimento / prompt (descartável) | `720p` | mantém o custo baixo para iterar |
-| **Take de produção (o que entra no corte)** | **`1080p`** | default do provedor e da interface |
-| Plano herói, se exigir detalhe (rosto grande, inserto de mesa) | `4k` | 30 cr/s; usar com parcimônia |
-| `motion_control` (produção) | `1080p` | default é 720p; subir explicitamente |
+Os valores 30/40/150 créditos para exemplos de cinco segundos eram estimativas
+históricas, não cotações da conta. Não converter unidades da API de desenvolvedor
+em créditos desta assinatura sem confirmação. Planeje usando fonte, data, condições,
+quantidade e duração, inclusive referência quando tarifada. Não usar saldo antigo
+como orçamento disponível nem reservar retries automáticos.
 
-Regra curta: **rascunho em 720p, take em 1080p, herói em 4K.**
-
-## Custo (tabela `12`, créditos por segundo de saída)
-
-| Modelo · config | 720p | 1080p | 4K |
-|---|---|---|---|
-| VIDEO 3.0 · sem áudio | 6 | 8 | 30 |
-| VIDEO 3.0 · áudio nativo | 9 | 12 | 30 |
-| VIDEO 3.0 Turbo | 8 | 10 | — |
-| Motion Control 3.0 | 9 | 12 | — |
-
-Exemplos: 5 s mudo sobe de 30 (720p) para 40 (1080p); fala de 8 s sobe de 72 para 96; 4K a 30/s
-faz um plano de 5 s custar 150. Saldo atual 31.621 (Ultra): um take de 1080p de 5 s ≈ 0,13 %.
-
-## Impacto esperado
-
-- 1080p entrega pele, olhos e grão visivelmente mais definidos — é exatamente onde o filme
-  compara com a interface.
-- 4K ajuda em close-ups de rosto e no detalhe da mancha da mesa, mas quadruplica o custo; reservar.
-- Não confundir com prompt: subir a resolução **não** conserta enquadramento, identidade ou
-  movimento. A ordem é: composição/prompt → 1080p → (4K só no herói).
-
-## Como aplicar
-
-- Nos specs/jobs: trocar `"resolution": "720p"` por `"1080p"` (ou `"4k"`).
-- Nos documentos do manual (`06`, `07`, `09`) e nos comandos-modelo: atualizar o default para 1080p.
-- Registrar no ledger o `creditsConsumed` real por job e comparar com a tabela `12`.
-- O A/B (`ab-teste-resolucao-modelo.json`) mede isso no mesmo keyframe antes de mudar a produção.
+O produtor propõe o menor ensaio útil sob teto específico; Andre mantém os gates
+pertinentes. A avaliação exige playback integral, inspeção de identidade/movimento,
+comparação de nitidez e cobrança efetivamente declarada. Nenhum ensaio foi executado.

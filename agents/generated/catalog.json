@@ -11,11 +11,11 @@
     },
     {
       "path": "skills/registry.json",
-      "sha256": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7"
+      "sha256": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707"
     },
     {
       "path": "skills/kling-cli/SKILL.md",
-      "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084"
+      "sha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7"
     },
     {
       "path": "skills/film-character-continuity/SKILL.md",
@@ -82,12 +82,12 @@
     {
       "id": "kling-cli",
       "title": "kling-cli",
-      "description": "可灵 AI（Kling）官方 CLI 的使用技能：图片/视频生成、可复用 Element 主体、动作控制。CLI 通过 MCP 服务与可灵交互： 调用 text_to_image / image_to_image / text_to_video / image_to_video / omni_ref_video / motion_control（模型与参数规格由 who_am_i 动态声明）， 返回 generationId 后用 query_tasks 轮询，完成后提取 works[].url 展示给用户。命令无别名。 触发词：可灵、Kling、文生图、参考图生图、文生视频、图生视频、Omni、omni、MCP、generationId、generation_id、轮询、灵感值、 text_to_image、image_to_image、text_to_video、image_to_video、omni_ref_video、全能参考、关键帧、motion_control、motion_library_list、Element、element_create、element_list、element_get、element_update、element_delete、feedback、query_tasks、who_am_i、file_upload、 image generation、video generation、kling 命令、.credentials、 国内站、海外站、global、海外版、区域、region、安装、install。",
+      "description": "Use a CLI oficial do Kling para descobrir modelos, gerar imagens e vídeos, gerenciar Elements e aplicar motion control.",
       "path": "skills/kling-cli/SKILL.md",
       "kind": "project",
       "sourceType": "project_vendored",
       "effectiveSource": ".agents/skills/kling-cli",
-      "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+      "sha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
       "registeredHashMatches": true,
       "available": true,
       "roles": [

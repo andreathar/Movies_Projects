@@ -1,0 +1,360 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "cli-auditor",
+  "contributorKind": "contributor",
+  "assignment": "Auditar CLI Kling, manter cliente oficial e corrigir helpers/documentação sem gasto; consultar disponibilidade V4 na conta existente.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [
+    "W66",
+    "W67"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    ".agents/skills/kling-cli/SKILL.md"
+  ],
+  "ownedPaths": [
+    "scripts/kling_batch.py",
+    "tests/test_kling_batch.py",
+    "docs/kling-manual/tools/kling_preflight.py",
+    "docs/kling-manual/tools/kling_model_sheet.py",
+    "docs/kling-manual/snapshots/who_am_i.sanitized.json",
+    "docs/kling-manual/00-regras-do-projeto.md",
+    "docs/kling-manual/12-custos-e-ledger.md",
+    "skills/registry.json",
+    ".agents/skills/kling-cli/api-examples.md",
+    ".agents/skills/kling-cli/SKILL.md",
+    ".agents/skills/kling-cli/README.md",
+    ".agents/skills/kling-cli/reference.md",
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/00-README.md",
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/ab-teste-resolucao-modelo.json",
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/motion-control-specs.json",
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/03-politica-de-resolucao.md",
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/04-guia-prompts-motion-control.md",
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/tools/check-kling-drift.sh",
+    "docs/kling-manual/03-modelos-ao-vivo.md",
+    "docs/kling-manual/README.md",
+    "docs/kling-manual/17-integracao-cli.md",
+    "tests/test_kling_contract.py",
+    "scripts/archive_kling_images.py",
+    "agents/generated/catalog.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/memory/mistakes.jsonl"
+  ],
+  "baseFiles": [
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256Before": "aa99bad4b2564ae5872e10eca7cba1b458137272e376518cf392d44de51c7410"
+    },
+    {
+      "path": "tests/test_kling_batch.py",
+      "sha256Before": "98fdfa6c75969fab659a184bd6430a911228f01ced7c399f362cfa49281e8b5a"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256Before": "106aa92849f441e2b46a81aa7c1dbf8a9314faab804acc19a0a681edb406aef0"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_model_sheet.py",
+      "sha256Before": "ff9cdedb1a6d713f9432f7d6f775af114f92008ceac20e580a960dd43230b4ab"
+    },
+    {
+      "path": "docs/kling-manual/snapshots/who_am_i.sanitized.json",
+      "sha256Before": "069bd2e4431959018eed342b6c7399026eb0e71bb34b0f909b39a6031f7847a1"
+    },
+    {
+      "path": "docs/kling-manual/00-regras-do-projeto.md",
+      "sha256Before": "1ad50a8d70b2292ea19f22d9cc2750886493db84150d8355a13dfe4a5754f813"
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256Before": "1365a0f355c73dffddb7dc995fb8cba649d486c33d26027b0de9dca4c4e576f8"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7"
+    },
+    {
+      "path": ".agents/skills/kling-cli/api-examples.md",
+      "sha256Before": "b1f5d3ff2c62b35f161fe8e1462a8935e66e5ba770ab934eedaca509197b4809"
+    },
+    {
+      "path": ".agents/skills/kling-cli/SKILL.md",
+      "sha256Before": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084"
+    },
+    {
+      "path": ".agents/skills/kling-cli/README.md",
+      "sha256Before": "26f6222e3bd891622f335f85a367115e3d13fb6a70c1b33b6a436db04a8cab50"
+    },
+    {
+      "path": ".agents/skills/kling-cli/reference.md",
+      "sha256Before": "c34fe6e201b878e8dbbf259f73ce577805826286396b9ad0c66124a4bbc01837"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/00-README.md",
+      "sha256Before": "5a46c7a9adeb6c2647aa2630aa05ab5480c49969d3eb031d999bcb81415651e5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/ab-teste-resolucao-modelo.json",
+      "sha256Before": "c169bc2f785db1b05557a51d95cf03c6b6a6a32e9055e56d33f23e8a3cd4f512"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/motion-control-specs.json",
+      "sha256Before": "c5805005fc3faafb4f53aa55fc5acd95eba8cbd2bf013313414a3a4cb5441c89"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/03-politica-de-resolucao.md",
+      "sha256Before": "82621c432b62b9bdd36b42f0db7acef5566e550956a207b1c861a0d43cde4978"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/04-guia-prompts-motion-control.md",
+      "sha256Before": "1ae97d8e361622d4604efd69bc2ad867fe94f2fcdb320344b5bb4b1de29d8565"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/tools/check-kling-drift.sh",
+      "sha256Before": "14a150373660dfa1077f7cdf9ba7c2dfaed4f78762bd77df7904b2589dde7f69"
+    },
+    {
+      "path": "docs/kling-manual/03-modelos-ao-vivo.md",
+      "sha256Before": "4c2136f0a306948144095ca388fa84aae5e87303fe6bd792a089bda63d65b21b"
+    },
+    {
+      "path": "docs/kling-manual/README.md",
+      "sha256Before": "3bd257a346c8235d3e93687bd25d357c78ec82d1656eb97996234eab94662293"
+    },
+    {
+      "path": "scripts/archive_kling_images.py",
+      "sha256Before": "6e98f08dddad6d2629908afdbb2fe380d7e24e8a75844e6f263a1a2114efa109"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "390c950a8d6842235f57c4588a345a5bcdedb6c712c05a092dd13ca5f92ee8df"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "945d194f2bb4db1fc740879b822bc0804318b00d3220852c95410b4098973d7f"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "26b7be616eee9934b0704dfcd58eaeec35876a0b1a204865073e58fdbc231148"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256Before": "629c6346c5c1ef09952293af05d0d507132607695b5482fffeb9b6543b784b45"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256After": "50d51f48e25752e3b0913af79b5b2f750e96493f1b5f90089f4f0f7eb0f3f90e",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "tests/test_kling_batch.py",
+      "sha256After": "ee659e549d258d66131d1ad41bfbaacdb5dfb87c592e81193abfd52469002709",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256After": "0d6d4aa5d5d660b1f241c0b9a5bb9000f35d7ca4840e19025378859b45303b0f",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_model_sheet.py",
+      "sha256After": "6552f0cfb5a82c9e84605bffe189184579764d3af71c5379d457c389d43c88df",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/snapshots/who_am_i.sanitized.json",
+      "sha256After": "3323ae5e3718bcd1585de6e59690be5e8f23e7e43780cec7fc1d0b4f9ae0e577",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/00-regras-do-projeto.md",
+      "sha256After": "17eb36efa2add9871a57d90bc5bfc4a8582a0fe54ac305c568e80b897d66dd64",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256After": "cbd79bcd9fc0840998a41d9e5d9ddf3bf66ddcaa41b3b455f45ffd7fa2271f3f",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256After": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": ".agents/skills/kling-cli/api-examples.md",
+      "sha256After": "5033062d9395e2ceb8bd11e88722b43f413f9700becd8e76bc8858e73f4ac3e3",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": ".agents/skills/kling-cli/SKILL.md",
+      "sha256After": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": ".agents/skills/kling-cli/README.md",
+      "sha256After": "8e8a04582eaac66c03e6d78667aebe7cee0a4cdc17bfd0350d5560ae09177a5c",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": ".agents/skills/kling-cli/reference.md",
+      "sha256After": "ed91d6c8406a1e8466434db2cdb35149fa435ad78bfd4793f2a9318e58ecb486",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/00-README.md",
+      "sha256After": "44283f567fc8761f939a8310a78d0ec82a3152cf77d58c28f1ca0c0d1a704c6a",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/ab-teste-resolucao-modelo.json",
+      "sha256After": "04e0a7f078fda1d1099931becbd6d0cadfbc87b96ccb4c032452ee05f9aa589b",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/motion-control-specs.json",
+      "sha256After": "b8694ab60465743c1428643a45cc5f615aa5053f305c90b42e7f682db69b35b1",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/03-politica-de-resolucao.md",
+      "sha256After": "b2607eddf1ff3825b5c074d4d60676ba851babc8c4cd6d49e841855cf5b72d1d",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/04-guia-prompts-motion-control.md",
+      "sha256After": "ab05865ad782eee4fa151426a90a20ccc34b842dd2ab23ce9ccbcfb9ecfeef74",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/tools/check-kling-drift.sh",
+      "sha256After": "445236acb992467d4a4f610ca4c7a6ed5f0e90982180cce3803f9e2d8f2c94d1",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/03-modelos-ao-vivo.md",
+      "sha256After": "0864ae324492c753e1477f717c67d70265dc70bdf65876a386d1923ed09ae75a",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/README.md",
+      "sha256After": "a0968b9931a700e249cbfaead39293e3d2f251f84b3dbdb32eb7e1e9fed052ed",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "docs/kling-manual/17-integracao-cli.md",
+      "sha256After": "475507672a412f4ec6f1d97705a6ca22cd662fe217727fe414f42134f18deef4",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "tests/test_kling_contract.py",
+      "sha256After": "6e9f0398991aa3d00e28b133c93db6f6a26f492bb2b45d1f12d721f4e31533b8",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "scripts/archive_kling_images.py",
+      "sha256After": "56b4692c405e23514d45937a06ff9d26e6c04a87f9bd0636c9c3ef0360df5d58",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "6828f9b34f3d9a67ec3512ea40272c6e5fd35e7de9fef389114d8144e20d49d3",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "7764ac1fac8f2d90b25bdd07139bb8f8e1aac06a6d26c56900ab71fd04651933",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "a725abbe0deb51bcd15148fdb40cb77c052d5a9bc30852df3e05fc3a1fd7e115",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256After": "980450270ea5818c039338dbe4330876115c05682fcdafc60f7b3e574fe7180e",
+      "reason": "Revisão da integração, tradução/contratos, evidência de continuidade ou derivação correspondente."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "CLI oficial global 0.2.1 confirmada localmente; correções de contratos e limitações documentadas.",
+      "evidence": "docs/kling-manual/17-integracao-cli.md",
+      "sha256": "475507672a412f4ec6f1d97705a6ca22cd662fe217727fe414f42134f18deef4"
+    },
+    {
+      "statement": "Consulta autenticada somente de leitura não listou modelos V4 (MCP 1.3.3); não comprova acesso na interface web.",
+      "evidence": "docs/kling-manual/snapshots/who_am_i.sanitized.json",
+      "sha256": "3323ae5e3718bcd1585de6e59690be5e8f23e7e43780cec7fc1d0b4f9ae0e577"
+    }
+  ],
+  "verification": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -s tests -v",
+      "result": "112 passed; synthetic/offline tests; no generation"
+    },
+    {
+      "command": ".venv/bin/python -B docs/kling-manual/tools/test_kling_tools.py",
+      "result": "15 passed; existing ResourceWarning in test fixture retained"
+    },
+    {
+      "command": "node --test --test-isolation=none --test-reporter=tap tests/model.test.ts tests/export.test.mjs",
+      "result": "19 passed; after sandbox EPERM on git subprocess, approved run used disposable /tmp fixtures"
+    },
+    {
+      "command": "manage.py validate; agent_catalog.py --check; both exporters --check; frontend lint; tsc --noEmit --incremental false; npm run build",
+      "result": "passed; management lint/handoff final check follows creation of this successor"
+    }
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar/ingerir esta entrega e encaminhar ao usuário a resposta V4; qualquer orçamento/produção ou correção de permissões globais requer escopo próprio.",
+      "readiness": "delivered_pending_review"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Sem autorização/cotação/ensaio de geração; planos A/B e motion permanecem rascunhos bloqueados.",
+      "owner": "producer",
+      "unblockCondition": "Definir comparação controlada, mídia/duração verificadas e escopo financeiro específico."
+    },
+    {
+      "description": "Permissões globais de credenciais/log (0664) observadas apenas por metadados; conteúdo não lido e segurança não alterada.",
+      "owner": "Andre/producer",
+      "unblockCondition": "Tarefa específica autorizada para armazenamento/permissões, sem divulgação de segredos."
+    }
+  ],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": "Runner capturava JSON da CLI em pipe (truncamento observado), não integrava preflight e atribuía delta de saldo como cobrança por job; planos confundiam duração/cotação.",
+      "solution": "captura temporária, preflight antes do envio, contrato de inputs/elements unificado, cobrança declarada separada e planos bloqueados"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "canonicalStateChangeScope": "Somente memória técnica e fontes de integração; aprovações, board, manifesto, ledger e mídia não alterados.",
+  "supersedes": [
+    "2026-10-12-kling-otimizacao-v1.json",
+    "2026-10-12-agent-catalog-frontend-v4.json",
+    "2026-10-11-claude-mistakes-promotion-v1.json"
+  ],
+  "supersessionScope": "Atualiza hashes e contratos técnicos/skill/snapshot de referência; preserva entregas e hashes antigos como história, sem declarar ingestão, aceite artístico ou mudança nas fontes de produção. Para mistakes-promotion-v1, somente avanço do hash do arquivo append-only mistakes.jsonl; todas as 13 entradas anteriores foram preservadas byte a byte.",
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

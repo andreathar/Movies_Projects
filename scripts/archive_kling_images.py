@@ -17,7 +17,7 @@ import json
 import os
 from pathlib import Path
 import re
-import subprocess
+from kling_batch import run as run_kling
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -155,13 +155,11 @@ def main():
     (snapshot / "media-before.json").write_text(json.dumps(baseline, indent=2) + "\n")
     for number, task in enumerate(tasks.values(), 1):
         try:
-            process = subprocess.run(["kling", "query_tasks", task["generationId"], "--quiet", *TELEMETRY],
-                                     capture_output=True, text=True, timeout=60)
-            data = json.loads(process.stdout)
-            if process.returncode or not data.get("ok"):
+            data = run_kling(["kling", "query_tasks", task["generationId"], "--quiet", *TELEMETRY], timeout=60)
+            if not data.get("ok"):
                 failure_body = data.get("body") or {}
                 detail = failure_body.get("message") or failure_body.get("error")
-                raise ValueError(str(detail or f"CLI task query failed (exit {process.returncode}, status {data.get('status')})"))
+                raise ValueError(str(detail or f"CLI task query failed (status {data.get('status')})"))
             body = data.get("body") or {}
             if body.get("generationId", body.get("generation_id")) != task["generationId"]:
                 raise ValueError("Returned generation ID differs from the requested ID")

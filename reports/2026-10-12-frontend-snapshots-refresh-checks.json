@@ -1,0 +1,1515 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T04:01:02.971988+00:00",
+  "scope": "Local frontend snapshot refresh; no provider calls, persistence import or deployment.",
+  "rootHead": "2a39a07b2072a4f96664ba6a10e4ac289e665f31",
+  "siteHead": "dfb945f3aaaf5aaac20ed323cda66dd26d047bb9",
+  "snapshots": [
+    {
+      "file": "production.json",
+      "beforeSha256": "9cd0b104a8a4d2757261102169fc6cf73cf29fe10ab49f89074db1fd6906cf37",
+      "afterSha256": "f228e6cb0491dd6b9e1b7b1f00b65efd6a9c876fe157f8c1c1f3e0941d5e1ab7",
+      "beforeProvenance": {
+        "contentVersion": "546a23649552d3dcd60c47308a705a7fa5227b78c42a1d79235eafe7545359d2",
+        "repositoryHead": "f16cd363f8b36eda88636efbb464b169d179368c"
+      },
+      "afterProvenance": {
+        "contentVersion": "546a23649552d3dcd60c47308a705a7fa5227b78c42a1d79235eafe7545359d2",
+        "repositoryHead": "2a39a07b2072a4f96664ba6a10e4ac289e665f31"
+      },
+      "changedTopLevelKeys": [
+        "collectedAt",
+        "provenance"
+      ],
+      "collectedAt": "2026-10-12T03:57:00.895Z",
+      "sources": [
+        {
+          "path": "workspace.json",
+          "sha256": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8"
+        },
+        {
+          "path": "projects/andre-time-travel/tasks/board.json",
+          "sha256": "0dca2c8dacaba68f8a58d44fe1ce09818dde703f008e29a5e1986cca015fa500"
+        },
+        {
+          "path": "projects/andre-time-travel/manifest.json",
+          "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2"
+        },
+        {
+          "path": "projects/andre-time-travel/00_brief/approvals.json",
+          "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+        },
+        {
+          "path": "projects/andre-time-travel/tasks/plans/workflow-map-v1.md",
+          "sha256": "d4fa69a6f561ab82d92d911ad8f6b84cfafd50fe5007e9e5c912dc1b80f74daa"
+        },
+        {
+          "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+          "sha256": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
+        },
+        {
+          "path": "projects/andre-time-travel/01_script/script-en.md",
+          "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+        },
+        {
+          "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+          "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+        },
+        {
+          "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+          "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+        },
+        {
+          "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+          "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+        },
+        {
+          "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+          "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+        },
+        {
+          "path": "series/andre-time-travel/FRAMEWORK.md",
+          "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef"
+        }
+      ]
+    },
+    {
+      "file": "workspace-reference.json",
+      "beforeSha256": "0c05dbc2c408815cc0b64a809c8a5ab64d98a57a866a1b880ef7d85cc9d004eb",
+      "afterSha256": "945d194f2bb4db1fc740879b822bc0804318b00d3220852c95410b4098973d7f",
+      "beforeProvenance": {
+        "contentVersion": "ced46047be76c7873f8b2f8af6f52a327507a41831488c2a35914aafbaeffb96",
+        "repositoryHead": "f16cd363f8b36eda88636efbb464b169d179368c"
+      },
+      "afterProvenance": {
+        "contentVersion": "08e7fc023c044e60c1c8251645375e2aadf90e0cbb69ee8060f014312fe46649",
+        "repositoryHead": "2a39a07b2072a4f96664ba6a10e4ac289e665f31"
+      },
+      "changedTopLevelKeys": [
+        "collectedAt",
+        "provenance",
+        "skills",
+        "sources"
+      ],
+      "collectedAt": "2026-10-12T03:57:00.791Z",
+      "sources": [
+        {
+          "path": "workspace.json",
+          "sha256": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8"
+        },
+        {
+          "path": "skills/registry.json",
+          "sha256": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7"
+        },
+        {
+          "path": "skills/README.md",
+          "sha256": "44dd4917ff22fb3722fb1b055a0c95d47edb64f70f5b043dc70a29e7d8a15052"
+        },
+        {
+          "path": "agents/registry.json",
+          "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+        },
+        {
+          "path": "agents/README.md",
+          "sha256": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682"
+        },
+        {
+          "path": "tasks/README.md",
+          "sha256": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1"
+        },
+        {
+          "path": "docs/WORKSPACE.md",
+          "sha256": "815b469b52841450cbe8483898a68fa74f95be1444e84dda73827db033be482e"
+        },
+        {
+          "path": "docs/FOLDER_STRUCTURE.md",
+          "sha256": "1323c1d96a72d177373d669e4dd84a8dd7fff8dda6cd99b3a3ce32ac79af06bb"
+        },
+        {
+          "path": "projects/andre-time-travel/tasks/README.md",
+          "sha256": "720c17e2c1b14461975b9cf1c97006418f05dd4aed4887b6f04c4f3871266c17"
+        },
+        {
+          "path": "agents/generated/catalog.json",
+          "sha256": "390c950a8d6842235f57c4588a345a5bcdedb6c712c05a092dd13ca5f92ee8df"
+        },
+        {
+          "path": "AGENTS.md",
+          "sha256": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6"
+        },
+        {
+          "path": "skills/kling-cli/SKILL.md",
+          "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084"
+        },
+        {
+          "path": "skills/andre-time-travel/SKILL.md",
+          "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213"
+        },
+        {
+          "path": "agents/producer.md",
+          "sha256": "302d38cc6e61b14b15bd99c7131c82af7756ccd5fd018dcf5f20106a59ccf9c0"
+        },
+        {
+          "path": "agents/director.md",
+          "sha256": "5905a3a219d7dca6709f24789564eb4a42e6d616e8372ccd2aedcb9f11706dfe"
+        },
+        {
+          "path": "agents/continuity.md",
+          "sha256": "8df9a6ebd92e848302517585ed169a0177cacc330340daf4f8d9fafd96eee57f"
+        },
+        {
+          "path": "agents/historian.md",
+          "sha256": "1a69d90032c56acc9cb2bbf72bf66918fd018efa0f95cef0b04ea69377868dab"
+        },
+        {
+          "path": "agents/dialogue-sound.md",
+          "sha256": "23dfedf2334b10a3a04943d5e2c6e7988217209229bc8d29e7049c2f06539535"
+        },
+        {
+          "path": "agents/storyboard.md",
+          "sha256": "5872f67b48499ba312e4210f64f744c81bfeee933790b2899463c6e11000b769"
+        },
+        {
+          "path": "agents/editor.md",
+          "sha256": "2fb05ca6376857757f689c2c4b339caff0381487a4ddcf63659d990625897c2b"
+        },
+        {
+          "path": "agents/qc.md",
+          "sha256": "327bd48a19460ca87e76a7ab4aa5cd165269193d9b45fd3a59ad9f5ba65f8559"
+        },
+        {
+          "path": "agents/lighting.md",
+          "sha256": "8c2c8c02eae67bfba98a3a758d0057f271bc1e204d910b5564e9e88749750e1c"
+        },
+        {
+          "path": "agents/coordinator.md",
+          "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+        },
+        {
+          "path": "agents/generated/claude/movies-continuity.md",
+          "sha256": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1"
+        },
+        {
+          "path": "agents/generated/codex/movies-continuity.toml",
+          "sha256": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b"
+        },
+        {
+          "path": "agents/generated/claude/movies-historian.md",
+          "sha256": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250"
+        },
+        {
+          "path": "agents/generated/codex/movies-historian.toml",
+          "sha256": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7"
+        },
+        {
+          "path": "agents/generated/claude/movies-qc.md",
+          "sha256": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2"
+        },
+        {
+          "path": "agents/generated/codex/movies-qc.toml",
+          "sha256": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "label": "catalog-check",
+      "command": [
+        "python3",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exitCode": 0,
+      "log": "logs/catalog-check.log",
+      "logSha256": "1339e9bd4a8e3bc2e9e4fbcce0caab6114e225d37c66aa012e560f19b16b6e18"
+    },
+    {
+      "label": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/export-workspace.log",
+      "logSha256": "ad720bcb048e1520a13e66ecfe97f8ab0193b8f9facaff39aea3c6f416f85e23"
+    },
+    {
+      "label": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/export-production.log",
+      "logSha256": "7bd4cf64c3278545a6ca24d5a1fe3b79e695ec9606b47d7d8c6a072137082ba3"
+    },
+    {
+      "label": "export-workspace-candidate-check",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/export-workspace-candidate-check.log",
+      "logSha256": "17ca9ea657e8120d34570d79123ea38dee851a3406960754cf2f075e8c81dbfb"
+    },
+    {
+      "label": "export-production-candidate-check",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/export-production-candidate-check.log",
+      "logSha256": "3d6fda01316d716d583d53191fcf87eb4a019b517f1c33e6acd8a9bee9ddeaf1"
+    },
+    {
+      "label": "check-data-candidate",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/check-data-candidate.log",
+      "logSha256": "7ebd10be672c78c909f53e8250e6b05d0c19ac271f29a137357a352be2907e06"
+    },
+    {
+      "label": "frontend-model-tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/model.test.ts"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/frontend-model-tests.log",
+      "logSha256": "7e9e7c55f1979bd93861df4b741055b6e9735d4bf8a0315bebcc448c8f01507e"
+    },
+    {
+      "label": "frontend-lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/frontend-lint.log",
+      "logSha256": "9d4ed79a683eccf54173b6034d4187b97e629a26e9f9dbedc55bc19d45839445"
+    },
+    {
+      "label": "frontend-types",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "log": "logs/frontend-types.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "management-tests",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_manage*.py"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exitCode": 0,
+      "log": "logs/management-tests.log",
+      "logSha256": "19bfd9f533d5f2b770ef49ff2595fce7219a767a45ae42db9e5ddc404049c350"
+    },
+    {
+      "label": "catalog-tests",
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_agent_catalog.py"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exitCode": 0,
+      "log": "logs/catalog-tests.log",
+      "logSha256": "316558a93ba028238bcd514bbec8a07c6b5122f2fa8e4ce8499b5d85bc6111f8"
+    },
+    {
+      "label": "frontend-build",
+      "command": [
+        "node",
+        "/home/athar/.codex/plugins/cache/openai-curated-remote/sites/1.0.1/scripts/build-site.mjs"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/site",
+      "exitCode": 0,
+      "seconds": 4.72,
+      "log": "logs/build.log",
+      "logSha256": "1422048824a6f0dd7feaa6f56c24b5731024a0b8d7ea57da610b4798825a5273"
+    },
+    {
+      "label": "export-workspace-final-check",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exitCode": 0,
+      "log": "logs/export-workspace-final-check.log",
+      "logSha256": "17ca9ea657e8120d34570d79123ea38dee851a3406960754cf2f075e8c81dbfb"
+    },
+    {
+      "label": "export-production-final-check",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exitCode": 0,
+      "log": "logs/export-production-final-check.log",
+      "logSha256": "3d6fda01316d716d583d53191fcf87eb4a019b517f1c33e6acd8a9bee9ddeaf1"
+    },
+    {
+      "label": "check-data-final",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exitCode": 0,
+      "log": "logs/check-data-final.log",
+      "logSha256": "7ebd10be672c78c909f53e8250e6b05d0c19ac271f29a137357a352be2907e06"
+    },
+    {
+      "label": "snapshot-patch-reverse-check",
+      "command": [
+        "git",
+        "apply",
+        "--reverse",
+        "--check",
+        "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/snapshots-refresh.patch"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exitCode": 0,
+      "log": "logs/snapshot-patch-reverse-check.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "testCounts": {
+    "frontendModel": 15,
+    "management": 24,
+    "catalog": 8
+  },
+  "testLimits": [
+    "Full 92-test Python suite not repeated.",
+    "Four export fixture tests not repeated; existing exporters exercised with current sources, freshness checks and reverse-patch check.",
+    "No browser/API/D1 tests or published-instance verification."
+  ],
+  "baselineEvidence": {
+    "path": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/baseline.json",
+    "sha256": "50eb8f97aaf2c9ae0dbb6c8d5c110b378fb8185e6a1fc242fa27b3d793f13182",
+    "rootFileCount": 136,
+    "siteFileCount": 131
+  },
+  "preservation": {
+    "rootFiles": [
+      {
+        "path": ".agents/plugins/agent-parley/plugin.json",
+        "sha256": "1149a2ae3afe257f039d2b3ea127f29b9691ac048ad764c6bab50ac87b9ac468"
+      },
+      {
+        "path": ".agents/skills/kling-cli/.gitignore",
+        "sha256": "5ba172f65170fdb4846f8446dcef7cfbfa49c5cc8d4f5ed6bb42e67100858744"
+      },
+      {
+        "path": ".agents/skills/kling-cli/README.md",
+        "sha256": "26f6222e3bd891622f335f85a367115e3d13fb6a70c1b33b6a436db04a8cab50"
+      },
+      {
+        "path": ".agents/skills/kling-cli/SKILL.md",
+        "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084"
+      },
+      {
+        "path": ".agents/skills/kling-cli/api-examples.md",
+        "sha256": "b1f5d3ff2c62b35f161fe8e1462a8935e66e5ba770ab934eedaca509197b4809"
+      },
+      {
+        "path": ".agents/skills/kling-cli/reference.md",
+        "sha256": "c34fe6e201b878e8dbbf259f73ce577805826286396b9ad0c66124a4bbc01837"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce"
+      },
+      {
+        "path": "START_HERE.md",
+        "sha256": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79"
+      },
+      {
+        "path": "agents/README.md",
+        "sha256": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682"
+      },
+      {
+        "path": "agents/continuity.md",
+        "sha256": "8df9a6ebd92e848302517585ed169a0177cacc330340daf4f8d9fafd96eee57f"
+      },
+      {
+        "path": "agents/coordinator.md",
+        "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+      },
+      {
+        "path": "agents/dialogue-sound.md",
+        "sha256": "23dfedf2334b10a3a04943d5e2c6e7988217209229bc8d29e7049c2f06539535"
+      },
+      {
+        "path": "agents/director.md",
+        "sha256": "5905a3a219d7dca6709f24789564eb4a42e6d616e8372ccd2aedcb9f11706dfe"
+      },
+      {
+        "path": "agents/editor.md",
+        "sha256": "2fb05ca6376857757f689c2c4b339caff0381487a4ddcf63659d990625897c2b"
+      },
+      {
+        "path": "agents/generated/catalog.json",
+        "sha256": "390c950a8d6842235f57c4588a345a5bcdedb6c712c05a092dd13ca5f92ee8df"
+      },
+      {
+        "path": "agents/generated/claude/movies-continuity.md",
+        "sha256": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1"
+      },
+      {
+        "path": "agents/generated/claude/movies-historian.md",
+        "sha256": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250"
+      },
+      {
+        "path": "agents/generated/claude/movies-qc.md",
+        "sha256": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2"
+      },
+      {
+        "path": "agents/generated/codex/movies-continuity.toml",
+        "sha256": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b"
+      },
+      {
+        "path": "agents/generated/codex/movies-historian.toml",
+        "sha256": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7"
+      },
+      {
+        "path": "agents/generated/codex/movies-qc.toml",
+        "sha256": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11"
+      },
+      {
+        "path": "agents/historian.md",
+        "sha256": "1a69d90032c56acc9cb2bbf72bf66918fd018efa0f95cef0b04ea69377868dab"
+      },
+      {
+        "path": "agents/lighting.md",
+        "sha256": "8c2c8c02eae67bfba98a3a758d0057f271bc1e204d910b5564e9e88749750e1c"
+      },
+      {
+        "path": "agents/producer.md",
+        "sha256": "302d38cc6e61b14b15bd99c7131c82af7756ccd5fd018dcf5f20106a59ccf9c0"
+      },
+      {
+        "path": "agents/qc.md",
+        "sha256": "327bd48a19460ca87e76a7ab4aa5cd165269193d9b45fd3a59ad9f5ba65f8559"
+      },
+      {
+        "path": "agents/registry.json",
+        "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+      },
+      {
+        "path": "agents/storyboard.md",
+        "sha256": "5872f67b48499ba312e4210f64f744c81bfeee933790b2899463c6e11000b769"
+      },
+      {
+        "path": "docs/AGENT_CATALOG.md",
+        "sha256": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9"
+      },
+      {
+        "path": "docs/COORDINATOR_PROTOCOL.md",
+        "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+      },
+      {
+        "path": "docs/FOLDER_STRUCTURE.md",
+        "sha256": "1323c1d96a72d177373d669e4dd84a8dd7fff8dda6cd99b3a3ce32ac79af06bb"
+      },
+      {
+        "path": "docs/PARLEY_PROTOCOL.md",
+        "sha256": "e9801936734e16a8deb4387cd486df637e3056f64d3dcf7b249b86f19c3ff9f0"
+      },
+      {
+        "path": "docs/PLAN-parley-integration-v1.md",
+        "sha256": "5d60f4fd3246f8a1b38a7e41b788e3a4a9d6cc6d08b71c939d6923a8c10ff366"
+      },
+      {
+        "path": "docs/WORKSPACE.md",
+        "sha256": "815b469b52841450cbe8483898a68fa74f95be1444e84dda73827db033be482e"
+      },
+      {
+        "path": "drafts/andre-time-travel-visual-restart-v1/README.md",
+        "sha256": "5bf84fc03c5552bec2535a8ffd8829e9f2c6c408cfefcc9cf30c3c47a1787825"
+      },
+      {
+        "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+        "sha256": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/approvals.json",
+        "sha256": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+        "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+      },
+      {
+        "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+        "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+      },
+      {
+        "path": "projects/andre-time-travel/01_script/script-en.md",
+        "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+      },
+      {
+        "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+        "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/00-README.md",
+        "sha256": "5a46c7a9adeb6c2647aa2630aa05ab5480c49969d3eb031d999bcb81415651e5"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/01-upgrade-skill.md",
+        "sha256": "42126de305c892e65cf1cc415ec4b7565b7d24a953bbc7b214e8cb6e50194bec"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/02-regerar-ficha-modelos.md",
+        "sha256": "27b84717e6ecbfbca1c32f4e1d80fe9c75c5eeed89330a26a8c6905a87516ecd"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/03-politica-de-resolucao.md",
+        "sha256": "82621c432b62b9bdd36b42f0db7acef5566e550956a207b1c861a0d43cde4978"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/04-guia-prompts-motion-control.md",
+        "sha256": "1ae97d8e361622d4604efd69bc2ad867fe94f2fcdb320344b5bb4b1de29d8565"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/ab-teste-resolucao-modelo.json",
+        "sha256": "c169bc2f785db1b05557a51d95cf03c6b6a6a32e9055e56d33f23e8a3cd4f512"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/motion-control-specs.json",
+        "sha256": "c5805005fc3faafb4f53aa55fc5acd95eba8cbd2bf013313414a3a4cb5441c89"
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/tools/check-kling-drift.sh",
+        "sha256": "14a150373660dfa1077f7cdf9ba7c2dfaed4f78762bd77df7904b2589dde7f69"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-art-director-review.json",
+        "sha256": "9a1c744db871c6267c273c812de669c3071e170e8cf12cbcff1933b9131d4f0c"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-chatgpt-in-out-v1.json",
+        "sha256": "c70f847d9549a859402026c9cad5f9e234e62671c7904189f862f5445b3b5171"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-chatgpt-posters-v1.json",
+        "sha256": "b6d7cf9b029eaa14d6675f6eef4f5714549c5e30625098261d337c899f38e0a0"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-chatgpt-posters-v2-encounters.json",
+        "sha256": "ab8e79f435d28530d04e0e1266458e96eb6eaf60cfd206ba8050579f5cabdb6b"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-kling-manual.json",
+        "sha256": "f3d4777a27d6705a2171790f484e037b2b9a21ab4692748a4fbd42f30d68f1d8"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-codex-claude-wardrobe-review.json",
+        "sha256": "49ffe62e4ee08284c05db0db3735f5c137561fa5fc4b5dd135ee02e403d554ef"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-codex-continuation.json",
+        "sha256": "880934b876c9d7f1abf4e9097a64c6f4033b7357b3925b6ae5f888a56ce2b134"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-dark-wardrobe-archive.json",
+        "sha256": "a56171751511c4c94485eefb0c6c40c37f06a4e2e254de576d36c0cea136511e"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-dialogue-continuity-integracao.json",
+        "sha256": "05d89d5aa686b2fbfbea44c3a5a4aeb94e1d2dbfc9f5bf97ac99fe4e9f425039"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-dialogue-sound-l04-scene-bibles.json",
+        "sha256": "667e8d99a1128f93c22d07601ad6d69ed82a0455bba253cd5f4e925a5461cd58"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-director-checkpoint-galileo.json",
+        "sha256": "89379463cedf5e60929df5b24eede40644ee9be4e5d24312b490abc71052b858"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-director-response-review.json",
+        "sha256": "d555cbfce1e8356891474fabb625d75fbcd0e2c1abfad4d6eb9628cd4952e433"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-editor-qc-revisao-nova-direcao.json",
+        "sha256": "d0e2f796874626a41ff2a6ccb5fd6bdf9aacb1a01d7f99581485e5d7400a9332"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-historian-bibles-nova-direcao.json",
+        "sha256": "bd9c8273db6bd42903600050d667e4e16e2e744a246fadebc364c865cdef1c34"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-historian-legacy-images-v2.json",
+        "sha256": "39a17c63a55a9f2f036e22aefb013c52750b10605c275ba28632c0b75699a715"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-holistic-staging-review.json",
+        "sha256": "0b3d2b8209830897397dab9bb155a044a371b90727ca6d47f9f51c375af24115"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-instagram-import.json",
+        "sha256": "f2bbee4259dadba908e9eb131740e61483e59d64c77100e0cfb621ee07a49bc2"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-kling-image-archive.json",
+        "sha256": "cc56a1be0e3436e2185b87ac55be0cace33c0a286f169e14c4a023ee92240879"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-memory-phase0-reconcile.json",
+        "sha256": "8a3cceff42618bef86c61e3a141c56b2af9b783993449ba1a51eba388be27b1f"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-correcao-hash-j23.json",
+        "sha256": "bd3a1309a9949681afd8df76d37bbbbbacfd9e841d3da47a83a842873f32bfa0"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-correcao-hash-lote.json",
+        "sha256": "4c82692c3ba385ade2a653e6791701747abfc37e56727ed315d2ea6959230093"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-new-direction-back-view.json",
+        "sha256": "cd883a39f1a5d9a43372ca02675949b4e888028bade219e6996a74ad1fe829b5"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-pacote-fase-a-galileu.json",
+        "sha256": "ba90f9d862b5bb2411162f75be8979fe8feb0b7429e2e1e0f2ba9187aa0629fd"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-piloto-galileu.json",
+        "sha256": "8214552f95fecd2be321f2e15e4a30bb3ea1d5895df6a9150f392025984abcc4"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-plano-regeneracao.json",
+        "sha256": "134c26eccca37f2eec39c64e557637ba12bb71a1fb372d52058ffad6509f8988"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-plano-v2-pos-triagem.json",
+        "sha256": "4dc2fcc994a87b0d2d51e1dec38f737b23de85acd3c6aa6ecd74ffb7fe67822f"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-producer-plano-v3-legado.json",
+        "sha256": "8bc7ce894645a7b25e65e22a76d9142bfb06338907678d7e7978d6a47bf17b81"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-shared-direction-roles.json",
+        "sha256": "a2ee8325c440e4f8157abd4f339f5a4236a067339827c2ea74aac6c87ee3c98d"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-workflow-v2-coordination.json",
+        "sha256": "27d93ede382c254650553c8aa20fbb72f2e407d623a5e3223dcacb1c89f7e183"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-claude-historical-details-v2.json",
+        "sha256": "fff44a7394bbb3e72ed916c001bf0988543a637802c41eb293fd8129d8ec5869"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-claude-parley-implementation-v1.json",
+        "sha256": "71fb42dbad0aeb7da65e517ca2c3a7245f39f04777606c29625ef5edd60a4be4"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-execution-plan-v1.json",
+        "sha256": "9431a8ebec9b715fa51207283133fb26334274c0288901b8bb53e19f4ecd93c7"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-producer-detail-studies-v1.json",
+        "sha256": "99a7cb9d1ef6f82df09af9f8425aff966f269d553ae9181b28d765911eb4392f"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-10-workflow-map-v1.json",
+        "sha256": "6944cc07d9e5b8e57140ef3f166fd492d2e3a7905fdabec7ba073cce5b0d5c48"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-claude-mistakes-promotion-v1.json",
+        "sha256": "310f3df6ba59a894345a30e023308d7ed3a5f8d087c813b1e30d0e356122b14d"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-claude-repo-cleanup-v1.json",
+        "sha256": "59218095aa07ad40d4631f9b429214feb718338831e4adc160300945b4a29bc7"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-claude-tasks-restructure-v1.json",
+        "sha256": "daa5483cf707eda5a2ee71caca9eec3e0c90f68f2cc552f3caf38b686cc66e13"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-sites-structure-skills-v2.json",
+        "sha256": "83643004167e6be6f33526bd9c7ac2d6233269d5b2d58e3a17f06caf44777ab7"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-structure-naming-agents-implementation.json",
+        "sha256": "ccf329aee8b2dc1d3f98b27f3b57f68b6060299703116d97e01d43edac38fbff"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-11-structure-naming-merge-v1.json",
+        "sha256": "d895c30d481db87e4b053811013ba01d927320518a2e51e475cd2eebd9550789"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v1.json",
+        "sha256": "ebea30c1a69f04040c43ba34d5fd3faacf329b39fa2a1eaa27a08d68ecd6d946"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v2.json",
+        "sha256": "1527906defe40c425865272c5eb39c45975c9a59a8bb99ff0088472ff33b0189"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v3.json",
+        "sha256": "5b2d7cc569224d49841b25d6d712f0bfb7070c1f03d71984438ff93cb1be7d63"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-documentation-reconciliation-v1.json",
+        "sha256": "2f826602c316ef19a154fbf11933396bc6dfdb897c932e19e19553b9b96730be"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-kling-otimizacao-v1.json",
+        "sha256": "61864d96f926455d9c7d9cf7fdbce5668c7e072fe90bfa28fccc1812aa26d80f"
+      },
+      {
+        "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+        "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+      },
+      {
+        "path": "projects/andre-time-travel/manifest.json",
+        "sha256": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2"
+      },
+      {
+        "path": "projects/andre-time-travel/memory/STATE.md",
+        "sha256": "26b7be616eee9934b0704dfcd58eaeec35876a0b1a204865073e58fdbc231148"
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/README.md",
+        "sha256": "720c17e2c1b14461975b9cf1c97006418f05dd4aed4887b6f04c4f3871266c17"
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/board.json",
+        "sha256": "0dca2c8dacaba68f8a58d44fe1ce09818dde703f008e29a5e1986cca015fa500"
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/workflow-map-v1.md",
+        "sha256": "d4fa69a6f561ab82d92d911ad8f6b84cfafd50fe5007e9e5c912dc1b80f74daa"
+      },
+      {
+        "path": "reports/2026-10-11-structure-naming-agents-review.md",
+        "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
+      },
+      {
+        "path": "reports/2026-10-12-agent-catalog-frontend.md",
+        "sha256": "bfa572b9a44a0ac2e664b6a8c54b97c68272695c6d7a2e61a6032fbdc633bd76"
+      },
+      {
+        "path": "reports/2026-10-12-documentation-reconciliation.md",
+        "sha256": "947440143da2da9023c417e7110f414bff33124b0e469d528d251a7c4b4b8ada"
+      },
+      {
+        "path": "reports/2026-10-12-readme-skill-provenance-review.md",
+        "sha256": "1f89d09be982319f129c2263932993d2a310ef7ea26e8c71303935de9ed73c8f"
+      },
+      {
+        "path": "reports/2026-10-12-skill-provenance-review.json",
+        "sha256": "cccef21fac79bd166c652af9969643ff143fa8bc801ef56d59adca751359525f"
+      },
+      {
+        "path": "scripts/agent_catalog.py",
+        "sha256": "51d55d163dffc5d24e7108e27e7703c41ae34576f3c6a6d30b8e2625b4d012a2"
+      },
+      {
+        "path": "scripts/archive_kling_images.py",
+        "sha256": "6e98f08dddad6d2629908afdbb2fe380d7e24e8a75844e6f263a1a2114efa109"
+      },
+      {
+        "path": "scripts/kling_batch.py",
+        "sha256": "aa99bad4b2564ae5872e10eca7cba1b458137272e376518cf392d44de51c7410"
+      },
+      {
+        "path": "scripts/manage.py",
+        "sha256": "aa7830f95bfb0780d414c6a9a3e3806fcfe7d4518c55a7d7128a412755e0ef42"
+      },
+      {
+        "path": "series/andre-time-travel/FRAMEWORK.md",
+        "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef"
+      },
+      {
+        "path": "sites/movies-demandas/README.md",
+        "sha256": "efc14de38a3d2703e204dc3e1cee836b6e1c2ad748fe16f690baaab22bc1718f"
+      },
+      {
+        "path": "sites/movies-demandas/app/dashboard.tsx",
+        "sha256": "f341eb11222b1a3aa1a22ae3f914faab04268cfbe0a40da04760ea11aa257503"
+      },
+      {
+        "path": "sites/movies-demandas/app/restart-summary.tsx",
+        "sha256": "d3fe2b37699260c633357bbd3ed27c5eb5fda0c967be7d09db56c65b077887c3"
+      },
+      {
+        "path": "sites/movies-demandas/app/workspace-reference.tsx",
+        "sha256": "1cd4bc4319e1e9616955e6127b17e48e5a36f800b5d0f2b282dd6645e5e2e279"
+      },
+      {
+        "path": "sites/movies-demandas/lib/model.ts",
+        "sha256": "15116a80ad652a8f57364d794f46b4f78e8a7b108d677c24c1754c39d07088fe"
+      },
+      {
+        "path": "sites/movies-demandas/package.json",
+        "sha256": "9cbe43b5fb823a488c461cd72aa38516bb4097bcb4260d32a11da3b72e9774ea"
+      },
+      {
+        "path": "sites/movies-demandas/scripts/check-data.mjs",
+        "sha256": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+      },
+      {
+        "path": "sites/movies-demandas/scripts/export-common.mjs",
+        "sha256": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a"
+      },
+      {
+        "path": "sites/movies-demandas/scripts/export-production.mjs",
+        "sha256": "df6c0e5125405cd0fd84f0cc3bbde80018d5bbca18d56876671af77a1059767d"
+      },
+      {
+        "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+        "sha256": "c7dfb83b75ecc6abe0ac548879d43767a42d2a723163fb373f21bafc1e775389"
+      },
+      {
+        "path": "sites/movies-demandas/tests/export.test.mjs",
+        "sha256": "f9dcaba3a6afc9b9ff90569a954f08edb34b0cddec9c6459bc74ff50df45a6a5"
+      },
+      {
+        "path": "sites/movies-demandas/tests/model.test.ts",
+        "sha256": "4e237a2c781648c126123f8518913e934e81bc43a7164d4d522f01747e559111"
+      },
+      {
+        "path": "skills-lock.json",
+        "sha256": "520e5485df8db5bd6ea935492a674f2b1ff518ad28f4db0caf98b4171a782637"
+      },
+      {
+        "path": "skills/README.md",
+        "sha256": "44dd4917ff22fb3722fb1b055a0c95d47edb64f70f5b043dc70a29e7d8a15052"
+      },
+      {
+        "path": "skills/andre-time-travel/SKILL.md",
+        "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213"
+      },
+      {
+        "path": "skills/film-character-continuity/SKILL.md",
+        "sha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd"
+      },
+      {
+        "path": "skills/film-dialogue-localization/SKILL.md",
+        "sha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf"
+      },
+      {
+        "path": "skills/film-editing-qc/SKILL.md",
+        "sha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17"
+      },
+      {
+        "path": "skills/grounded-citations/SKILL.md",
+        "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6"
+      },
+      {
+        "path": "skills/kling-cli/SKILL.md",
+        "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084"
+      },
+      {
+        "path": "skills/registry.json",
+        "sha256": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7"
+      },
+      {
+        "path": "tasks/README.md",
+        "sha256": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1"
+      },
+      {
+        "path": "tests/test_agent_catalog.py",
+        "sha256": "a222696ab674ee9c5b9e2a347409e8202366b5763e287b419f3bf89c5f33816c"
+      },
+      {
+        "path": "workspace.json",
+        "sha256": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8"
+      }
+    ],
+    "siteFiles": [
+      {
+        "path": "app/restart-summary.tsx",
+        "sha256": "d3fe2b37699260c633357bbd3ed27c5eb5fda0c967be7d09db56c65b077887c3"
+      },
+      {
+        "path": "scripts/check-data.mjs",
+        "sha256": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+      },
+      {
+        "path": "scripts/export-common.mjs",
+        "sha256": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a"
+      },
+      {
+        "path": "tests/export.test.mjs",
+        "sha256": "f9dcaba3a6afc9b9ff90569a954f08edb34b0cddec9c6459bc74ff50df45a6a5"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "202fd3375db871dfefa14bbb6f9ca1ffb197a6cd21dce2624274df516f83f04e"
+      },
+      {
+        "path": ".openai/hosting.json",
+        "sha256": "86f82264390960a6692a434dc38a3e2ccbcc65c48287731b2aff092cd245dd90"
+      },
+      {
+        "path": "README.md",
+        "sha256": "efc14de38a3d2703e204dc3e1cee836b6e1c2ad748fe16f690baaab22bc1718f"
+      },
+      {
+        "path": "app/api/workspace/route.ts",
+        "sha256": "692095c04235d209f15ba03d55c72efe25599214fcf836db10c1b1a992ad2f9a"
+      },
+      {
+        "path": "app/chatgpt-auth.ts",
+        "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc"
+      },
+      {
+        "path": "app/dashboard.tsx",
+        "sha256": "f341eb11222b1a3aa1a22ae3f914faab04268cfbe0a40da04760ea11aa257503"
+      },
+      {
+        "path": "app/globals.css",
+        "sha256": "7036fcd1bb9613df7ab0fc78a4f1a618811f775716108ba23a381079a9993b50"
+      },
+      {
+        "path": "app/layout.tsx",
+        "sha256": "5a3c3db8a25ba7b31ff7d7df3e8236d1e26deabd7b9dc86b71d955f401781573"
+      },
+      {
+        "path": "app/page.tsx",
+        "sha256": "f5e82c85c1ddedd6e4dbf9ac5c027fdcb1f7e16b2a0d87a575d909ef1fde3709"
+      },
+      {
+        "path": "app/workspace-reference.tsx",
+        "sha256": "1cd4bc4319e1e9616955e6127b17e48e5a36f800b5d0f2b282dd6645e5e2e279"
+      },
+      {
+        "path": "build/connector-preview-plugin.mjs",
+        "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80"
+      },
+      {
+        "path": "build/connector-preview-worker.mjs",
+        "sha256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba"
+      },
+      {
+        "path": "build/sites-vite-plugin.LICENSE",
+        "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+      },
+      {
+        "path": "build/sites-vite-plugin.ts",
+        "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+      },
+      {
+        "path": "build/sites-worker.ts",
+        "sha256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8"
+      },
+      {
+        "path": "cloudflare-env.d.ts",
+        "sha256": "8b0eca84aa3364cc7ccc43cc3af6beb88dd34ebd410de08690bf094ce39fbcb0"
+      },
+      {
+        "path": "components.json",
+        "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+      },
+      {
+        "path": "components/connector-error.tsx",
+        "sha256": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155"
+      },
+      {
+        "path": "components/ui/accordion.tsx",
+        "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+      },
+      {
+        "path": "components/ui/alert-dialog.tsx",
+        "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+      },
+      {
+        "path": "components/ui/alert.tsx",
+        "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+      },
+      {
+        "path": "components/ui/aspect-ratio.tsx",
+        "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+      },
+      {
+        "path": "components/ui/attachment.tsx",
+        "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+      },
+      {
+        "path": "components/ui/avatar.tsx",
+        "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+      },
+      {
+        "path": "components/ui/badge.tsx",
+        "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+      },
+      {
+        "path": "components/ui/breadcrumb.tsx",
+        "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+      },
+      {
+        "path": "components/ui/bubble.tsx",
+        "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+      },
+      {
+        "path": "components/ui/button-group.tsx",
+        "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+      },
+      {
+        "path": "components/ui/calendar.tsx",
+        "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+      },
+      {
+        "path": "components/ui/card.tsx",
+        "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+      },
+      {
+        "path": "components/ui/carousel.tsx",
+        "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+      },
+      {
+        "path": "components/ui/chart.tsx",
+        "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+      },
+      {
+        "path": "components/ui/checkbox.tsx",
+        "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+      },
+      {
+        "path": "components/ui/collapsible.tsx",
+        "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+      },
+      {
+        "path": "components/ui/combobox.tsx",
+        "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+      },
+      {
+        "path": "components/ui/command.tsx",
+        "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+      },
+      {
+        "path": "components/ui/context-menu.tsx",
+        "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+      },
+      {
+        "path": "components/ui/dialog.tsx",
+        "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+      },
+      {
+        "path": "components/ui/direction.tsx",
+        "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+      },
+      {
+        "path": "components/ui/drawer.tsx",
+        "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+      },
+      {
+        "path": "components/ui/empty.tsx",
+        "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+      },
+      {
+        "path": "components/ui/field.tsx",
+        "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+      },
+      {
+        "path": "components/ui/form.tsx",
+        "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+      },
+      {
+        "path": "components/ui/hover-card.tsx",
+        "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+      },
+      {
+        "path": "components/ui/input-group.tsx",
+        "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+      },
+      {
+        "path": "components/ui/input-otp.tsx",
+        "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+      },
+      {
+        "path": "components/ui/input.tsx",
+        "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+      },
+      {
+        "path": "components/ui/item.tsx",
+        "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+      },
+      {
+        "path": "components/ui/kbd.tsx",
+        "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+      },
+      {
+        "path": "components/ui/label.tsx",
+        "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+      },
+      {
+        "path": "components/ui/marker.tsx",
+        "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+      },
+      {
+        "path": "components/ui/menubar.tsx",
+        "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+      },
+      {
+        "path": "components/ui/message-scroller.tsx",
+        "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+      },
+      {
+        "path": "components/ui/message.tsx",
+        "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+      },
+      {
+        "path": "components/ui/native-select.tsx",
+        "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+      },
+      {
+        "path": "components/ui/navigation-menu.tsx",
+        "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+      },
+      {
+        "path": "components/ui/pagination.tsx",
+        "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+      },
+      {
+        "path": "components/ui/popover.tsx",
+        "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+      },
+      {
+        "path": "components/ui/progress.tsx",
+        "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+      },
+      {
+        "path": "components/ui/radio-group.tsx",
+        "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+      },
+      {
+        "path": "components/ui/resizable.tsx",
+        "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+      },
+      {
+        "path": "components/ui/scroll-area.tsx",
+        "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+      },
+      {
+        "path": "components/ui/separator.tsx",
+        "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+      },
+      {
+        "path": "components/ui/sheet.tsx",
+        "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+      },
+      {
+        "path": "components/ui/sidebar.tsx",
+        "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+      },
+      {
+        "path": "components/ui/skeleton.tsx",
+        "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+      },
+      {
+        "path": "components/ui/slider.tsx",
+        "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+      },
+      {
+        "path": "components/ui/sonner.tsx",
+        "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+      },
+      {
+        "path": "components/ui/spinner.tsx",
+        "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+      },
+      {
+        "path": "components/ui/switch.tsx",
+        "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+      },
+      {
+        "path": "components/ui/table.tsx",
+        "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+      },
+      {
+        "path": "components/ui/tabs.tsx",
+        "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+      },
+      {
+        "path": "components/ui/textarea.tsx",
+        "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+      },
+      {
+        "path": "components/ui/toggle-group.tsx",
+        "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+      },
+      {
+        "path": "components/ui/toggle.tsx",
+        "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+      },
+      {
+        "path": "components/ui/tooltip.tsx",
+        "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+      },
+      {
+        "path": "db/index.ts",
+        "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+      },
+      {
+        "path": "db/schema.ts",
+        "sha256": "66d461d7bc866de12be4a9dd752c843aea53b6c7f22035b3050bd095114a6cdd"
+      },
+      {
+        "path": "drizzle.config.ts",
+        "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+      },
+      {
+        "path": "drizzle/0000_abandoned_human_cannonball.sql",
+        "sha256": "5492653cc3e0fb56d51f85855e270260f5418ace7b487b8916920c28227a93c7"
+      },
+      {
+        "path": "drizzle/meta/0000_snapshot.json",
+        "sha256": "873126f63a99cc71ab51a88154d1e167b896e152b221947ab2b74179b6eea83a"
+      },
+      {
+        "path": "drizzle/meta/_journal.json",
+        "sha256": "1fcc97e0c696af71b993da5f67d5c1504a71f69b2f33efcfc493142ebddd22dc"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06"
+      },
+      {
+        "path": "examples/d1/app/api/notes/route.ts",
+        "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+      },
+      {
+        "path": "examples/d1/db/schema.ts",
+        "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+      },
+      {
+        "path": "hooks/use-mobile.ts",
+        "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+      },
+      {
+        "path": "lib/connector-context.ts",
+        "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e"
+      },
+      {
+        "path": "lib/connector-contract.mts",
+        "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e"
+      },
+      {
+        "path": "lib/connector-errors.mts",
+        "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871"
+      },
+      {
+        "path": "lib/connector-preview.d.ts",
+        "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642"
+      },
+      {
+        "path": "lib/connectors.ts",
+        "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c"
+      },
+      {
+        "path": "lib/model.ts",
+        "sha256": "15116a80ad652a8f57364d794f46b4f78e8a7b108d677c24c1754c39d07088fe"
+      },
+      {
+        "path": "lib/utils.ts",
+        "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+      },
+      {
+        "path": "next.config.ts",
+        "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "eedaeab6870c0f70f9db869fcaa24abae9b0f945cbc9acb8a43b6e7ed6bcbfca"
+      },
+      {
+        "path": "package.json",
+        "sha256": "9cbe43b5fb823a488c461cd72aa38516bb4097bcb4260d32a11da3b72e9774ea"
+      },
+      {
+        "path": "postcss.config.mjs",
+        "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+      },
+      {
+        "path": "public/favicon.svg",
+        "sha256": "e7dd858d06bc71f6949ead6f3dd7980a1f10636e0a97b0deaa52b61eeb4162ec"
+      },
+      {
+        "path": "public/file.svg",
+        "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307"
+      },
+      {
+        "path": "public/globe.svg",
+        "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9"
+      },
+      {
+        "path": "public/window.svg",
+        "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66"
+      },
+      {
+        "path": "scripts/build-verified.sh",
+        "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+      },
+      {
+        "path": "scripts/connector-preview/connector-preview-session.mjs",
+        "sha256": "57224ad185a25115a14fccc68d3217e55b199260c3dd98a2c807beffec1a0a9b"
+      },
+      {
+        "path": "scripts/connector-preview/host-binding.mjs",
+        "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea"
+      },
+      {
+        "path": "scripts/connector-preview/protocol.mjs",
+        "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8"
+      },
+      {
+        "path": "scripts/execution-profile.mjs",
+        "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+      },
+      {
+        "path": "scripts/export-production.mjs",
+        "sha256": "df6c0e5125405cd0fd84f0cc3bbde80018d5bbca18d56876671af77a1059767d"
+      },
+      {
+        "path": "scripts/export-workspace.mjs",
+        "sha256": "c7dfb83b75ecc6abe0ac548879d43767a42d2a723163fb373f21bafc1e775389"
+      },
+      {
+        "path": "scripts/install-ci.mjs",
+        "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7"
+      },
+      {
+        "path": "scripts/install-ci.sh",
+        "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0"
+      },
+      {
+        "path": "scripts/install-pnpm.sh",
+        "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0"
+      },
+      {
+        "path": "scripts/npm-install.mjs",
+        "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6"
+      },
+      {
+        "path": "scripts/pnpm-install.mjs",
+        "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf"
+      },
+      {
+        "path": "scripts/run-framework.mjs",
+        "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+      },
+      {
+        "path": "scripts/sites-env.mjs",
+        "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88"
+      },
+      {
+        "path": "scripts/sites-env.sh",
+        "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60"
+      },
+      {
+        "path": "tests/api.test.mjs",
+        "sha256": "447d92d233cd4ecde30da79cc4dad1098e89796dd4f88581266bb2c7cae79cb3"
+      },
+      {
+        "path": "tests/model.test.ts",
+        "sha256": "4e237a2c781648c126123f8518913e934e81bc43a7164d4d522f01747e559111"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "edfaad4fe7997d45624f3ddafd881f54fd7c7fa2e45df58be48adb56243ac0b9"
+      },
+      {
+        "path": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+        "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+      },
+      {
+        "path": "vendor/shadcn-tailwind-4.13.0.css",
+        "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+      },
+      {
+        "path": "vite.config.ts",
+        "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
+      }
+    ],
+    "concurrentChangesDetected": [],
+    "paidGenerationBatchApproved": false,
+    "v2Preserved": true,
+    "v3Preserved": true,
+    "klingHandoffPreserved": true,
+    "persistedDataAccessed": false
+  },
+  "rollback": {
+    "patch": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/snapshots-refresh.patch",
+    "sha256": "f86db6228f4878184633c8e0acd06a7a318239060bfc90f636f0b4af93f6dee3",
+    "reverseCheckPassed": true,
+    "beforeCopies": "/home/athar/Documents/Codex/2026-10-11/task-2/implementation/snapshot-refresh-20261012/before",
+    "condition": "Review current hashes and concurrent edits before any future rollback; no rollback executed."
+  },
+  "reviewStatus": "pending_producer_review",
+  "ingestStatus": "pending"
+}

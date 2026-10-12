@@ -115,7 +115,7 @@ def check_media(rep, label, ref, root, req_dir, allow_ph):
         (rep.warn if allow_ph else rep.err)("PLACEHOLDER", f"{label}: placeholder não resolvido: {ref[:80]}")
         return
     if URL_RE.match(ref):
-        rep.info("URL", f"{label}: URL externa (não verifiquei o conteúdo; URLs do Kling expiram em 24 h).")
+        rep.info("URL", f"{label}: URL externa (não verifiquei o conteúdo; URLs podem expirar; prazo não verificado).")
         return
     path = resolve_local(ref, root, req_dir)
     if not os.path.isfile(path):
@@ -159,15 +159,70 @@ def parse_elements(rep, val):
         return []
     ok = []
     for e in val:
-        if not isinstance(e, dict) or "id" not in e or "bindName" not in e:
+        if not isinstance(e, dict) or any(not isinstance(e.get(k), str) or not e[k].strip() for k in ("id", "bindName")):
             rep.err("ELEMENTS_SHAPE", f"elemento inválido (precisa de id e bindName): {e}")
         else:
             ok.append(e)
+    if len({e["id"] for e in ok}) != len(ok):
+        rep.err("ELEMENT_DUPLICATE", "Cada Element deve aparecer uma vez na lista de vínculos.")
     return ok
 
 
+def cli_value(value):
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if isinstance(value, (list, dict)):
+        return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+    return str(value)
+
+
+def media_mapping(job, spec, rep):
+    """Mesmo mapeamento usado pelo runner; nunca descarta uma entrada."""
+    names = [s["name"] for s in spec.get("inputs", [])]
+    named, images = job.get("inputs") or {}, job.get("images") or []
+    if not isinstance(named, dict) or not isinstance(images, list):
+        rep.err("INPUT_SHAPE", "inputs deve ser objeto e images deve ser lista.")
+        return {}
+    if named and images:
+        rep.err("INPUT_MIX", "Use somente inputs nomeados ou images; não misture os formatos.")
+    if named and job.get("tool") not in {"image_to_video", "omni_ref_video", "motion_control"}:
+        rep.err("NAMED_UNSUPPORTED", "Este comando do CLI não aceita inputs nomeados; use images.")
+    mapping = dict(named)
+    if job.get("tool") == "image_to_video":
+        free = [n for n in names if n not in {"tail_image", "tailImage"}]
+    elif job.get("tool") == "motion_control":
+        free = [n for n in names if n == "image"]
+    elif job.get("tool") == "omni_ref_video":
+        free = [f"image_{i+1}" for i in range(len(images))]
+    else:
+        free = names
+    if len(images) > len(free):
+        rep.err("SLOT_COUNT", "Imagens excedem os slots não terminais; use inputs para vídeo/cauda.")
+    for n, ref in zip(free, images):
+        if n in mapping:
+            rep.err("SLOT_DUPLICATE", f"slot repetido: {n}")
+        mapping[n] = ref
+    for n, ref in mapping.items():
+        if n not in names:
+            rep.err("SLOT_UNKNOWN", f"slot não declarado: {n}")
+        if not isinstance(ref, str) or not ref.strip():
+            rep.err("INPUT_VALUE", f"slot {n}: caminho ou URL não vazio obrigatório.")
+    for slot in spec.get("inputs", []):
+        if slot.get("required") and slot["name"] not in mapping:
+            rep.err("SLOT_REQUIRED", f"slot obrigatório sem mídia: {slot['name']}")
+    return mapping
+
+
 def check_job(job, models, root, req_dir, allow_ph):
-    rep = Report(job.get("job", "?"))
+    rep = Report(job.get("job", "?") if isinstance(job, dict) else "?")
+    if not isinstance(job, dict):
+        rep.err("JOB_SHAPE", "job deve ser um objeto.")
+        return rep
+    if job.get("submissionBlocked"):
+        rep.err("PLAN_BLOCKED", "Plano bloqueado: " + str(job["submissionBlocked"]))
+    auth = job.get("auth")
+    if auth and (not isinstance(auth, str) or re.search(r"REPLACE|PLACEHOLDER|<.*>|PENDING", auth, re.I)):
+        rep.err("AUTH_PLACEHOLDER", "auth contém placeholder; exige referência real e escopo conferido pelo produtor.")
     tool, model = job.get("tool"), job.get("model")
     if tool not in models:
         rep.err("TOOL", f"ferramenta '{tool}' não existe no snapshot (existentes: {', '.join(models)})")
@@ -191,19 +246,31 @@ def check_job(job, models, root, req_dir, allow_ph):
         rep.warn("AUTH", "sem campo 'auth' (regra do projeto: gasto exige autorização registrada, ex. D16-...).")
 
     # ---- argumentos
+    if not isinstance(job.get("args", {}), dict):
+        rep.err("ARGS_SHAPE", "args deve ser um objeto.")
+        return rep
     args = dict(job.get("args") or {})
+    for field in ("prompt", "elements"):
+        if field in job and field in args and cli_value(job[field]) != cli_value(args[field]):
+            rep.err("ARG_CONFLICT", f"{field}: valores diferentes no topo e em args.")
     if "prompt" in job and "prompt" not in args:
         args["prompt"] = job["prompt"]
     if "elements" in job and "elements" not in args:
         args["elements"] = job["elements"]
     given = {}
     for k, v in args.items():
+        if not isinstance(k, str) or v is None or isinstance(v, dict):
+            rep.err("ARG_TYPE", "Argumento inválido: nome string e valor não nulo obrigatórios.")
+            continue
+        canonical = k if k in declared else dnorm.get(norm(k))
+        if canonical in given:
+            rep.err("ARG_DUPLICATE", f"Argumento duplicado por alias: {k}")
         if k in declared:
             given[k] = v
         elif norm(k) in dnorm:
             real = dnorm[norm(k)]
             given[real] = v
-            rep.warn("ARG_NAME", f"argumento '{k}' → o modelo declara '{real}' (CLI aceita snake/camel; o JSON bruto da API exige o nome declarado).")
+            rep.warn("ARG_NAME", f"argumento '{k}' → o modelo declara '{real}' (o runner normaliza para o nome declarado; use esse nome no CLI direto).")
         else:
             rep.err("ARG_UNKNOWN", f"argumento '{k}' não é declarado por {model}. Declarados: {', '.join(declared)}")
     for n, a in declared.items():
@@ -211,44 +278,41 @@ def check_job(job, models, root, req_dir, allow_ph):
             rep.err("ARG_REQUIRED", f"argumento obrigatório ausente: {n}")
     for n, v in given.items():
         allowed = declared[n].get("allowedValues")
-        if allowed and str(v) not in allowed:
+        if allowed and cli_value(v) not in [cli_value(x) for x in allowed]:
             rep.err("ARG_VALUE", f"{n}='{v}' fora dos valores permitidos {allowed}")
     prompt = str(given.get("prompt", ""))
     if not prompt.strip():
         rep.warn("PROMPT_EMPTY", "prompt vazio (permitido por alguns modelos; confirme que é intencional).")
 
     # ---- padrões perigosos
-    for n in ("enable_audio", "prefer_multi_shots"):
+    for n in ("enable_audio", "prefer_multi_shots", "keepOriginalSound"):
         if n in declared and n not in given:
             rep.warn("DEFAULT", f"{n} não definido → vale o padrão do servidor '{declared[n].get('default')}'. Defina explicitamente.")
     for n in ("imageCount", "image_count"):
         if n in given and str(given[n]) not in ("1",):
             rep.warn("COST_MULT", f"{n}={given[n]} multiplica o custo.")
     if given.get("resolution") == "4k" or given.get("img_resolution") == "4k":
-        rep.warn("COST_4K", "4K custa muito mais (~30 cr/s em vídeo). Trave o prompt em 1080p/2K antes.")
+        rep.warn("COST_4K", "4K altera o custo. Exige estimativa identificada e escopo aprovado; não há cotação nesta checagem.")
 
     # ---- inputs
-    images = list(job.get("images") or [])
-    named = dict(job.get("inputs") or {})
-    mapping = {}
-    for sn, ref in named.items():
-        if sn not in slot_names:
-            rep.err("SLOT_UNKNOWN", f"slot '{sn}' não declarado por {model}. Slots: {slot_names or 'nenhum'}")
-        else:
-            mapping[sn] = ref
-    free = [s for s in slot_names if s not in mapping]
-    if len(images) > len(free):
-        rep.err("SLOT_COUNT", f"{len(images)} imagens para {len(free)} slot(s) livres ({', '.join(free) or 'nenhum'}) em {model}. "
-                              "Excedentes são descartados ou rejeitados — escolha outro modelo ou reduza as referências.")
-    for sn, ref in zip(free, images):
-        mapping[sn] = ref
-    for s in slots:
-        if s.get("required") and s["name"] not in mapping:
-            rep.err("SLOT_REQUIRED", f"slot obrigatório sem mídia: {s['name']}")
+    mapping = media_mapping(job, spec, rep)
     for sn, ref in mapping.items():
-        check_media(rep, f"slot {sn}", str(ref), root, req_dir, allow_ph)
-    if not slots and (images or named):
-        rep.err("SLOT_NONE", f"{model} não declara slots de input, mas o request traz mídia.")
+        if isinstance(ref, str) and ref.strip():
+            check_media(rep, f"slot {sn}", ref, root, req_dir, allow_ph)
+    cap = spec.get("combinedItemCap")
+    if cap:
+        try:
+            count = sum(any(n.startswith(p) for p in cap["inputPrefixes"]) for n in mapping)
+            for n in cap["arguments"]:
+                val = given.get(n, [])
+                val = json.loads(val) if isinstance(val, str) else val
+                if not isinstance(val, list):
+                    raise ValueError("esperada lista")
+                count += len(val)
+            if count > cap["maxItems"]:
+                rep.err("COMBINED_CAP", f"{count} referências > limite combinado {cap['maxItems']}.")
+        except (ValueError, KeyError, TypeError):
+            rep.err("COMBINED_SCHEMA", "combinedItemCap ou argumento de lista inválido; não assumir compatibilidade.")
 
     # ---- elements
     elems = parse_elements(rep, given.get("elements"))
@@ -259,9 +323,13 @@ def check_job(job, models, root, req_dir, allow_ph):
             marker = f"<<<{e['id']}>>>"
             if marker not in prompt:
                 rep.err("ELEMENT_MARKER", f"prompt não contém {marker} (bind '{e['bindName']}').")
-        cap = (spec.get("elementSupport") or {}).get("maxTotalElements")
+        cap = declared.get("elements", {}).get("maxItems") or (spec.get("elementSupport") or {}).get("maxTotalElements")
         if cap and len(elems) > cap:
             rep.err("ELEMENTS_CAP", f"{len(elems)} elements > máximo {cap}.")
+        bound = {str(e["id"]) for e in elems}
+        markers = set(re.findall(r"<<<([^<>]+)>>>", prompt))
+        if markers - bound:
+            rep.err("ELEMENT_UNBOUND", "Há marcadores no prompt sem vínculo em elements.")
     elif "<<<" in prompt:
         rep.err("ELEMENT_NOBIND", "prompt usa <<<id>>> mas 'elements' não foi enviado.")
 
@@ -271,15 +339,20 @@ def check_job(job, models, root, req_dir, allow_ph):
         has_motion = bool(given.get("motionId"))
         if has_video == has_motion:
             rep.err("MOTION_SOURCE", "motion_control exige exatamente UM de: input 'video' ou motionId.")
-        if given.get("motionDirection") == "image_direction":
-            rep.info("MOTION_DUR", "image_direction só aceita movimentos de 3 a 10 s.")
+        seconds = job.get("referenceDurationSeconds")
+        if not isinstance(seconds, (int, float)) or isinstance(seconds, bool) or seconds <= 0:
+            rep.warn("MOTION_DURATION_UNKNOWN", "Duração da referência desconhecida; não orçar como 5 s nem enviar.")
+        elif given.get("motionDirection") == "image_direction" and not 3 <= seconds <= 10:
+            rep.err("MOTION_DURATION", "image_direction exige referência de 3 a 10 s no contrato atual.")
+        else:
+            rep.info("MOTION_DURATION", f"Referência informada: {seconds} s; medir/verificar antes do orçamento.")
     if tool == "omni_ref_video":
-        if str(given.get("enable_audio")) == "true" and str(given.get("keepOriginalSound")) == "true":
-            rep.warn("OMNI_AUDIO", "enable_audio e keepOriginalSound ambos 'true' — o guia do skill diz usar só um.")
+        if cli_value(given.get("enable_audio")) == "true" and cli_value(given.get("keepOriginalSound")) == "true":
+            rep.err("OMNI_AUDIO", "enable_audio e keepOriginalSound ambos 'true' — o guia do skill diz usar só um.")
         if "audio_1" not in slot_names:
-            rep.info("OMNI_AUDIO_SLOT", "o modelo não declara audio_N no who_am_i, embora o CLI aceite --audio (divergência conhecida).")
+            rep.info("OMNI_AUDIO_SLOT", "O snapshot não declara áudio independente; a presença de --audio no help não comprova suporte.")
     if tool in ("image_to_video", "text_to_video") and model == "kling-video-v3_0_turbo":
-        rep.info("TURBO", "Turbo: sem elements, sem áudio nativo configurável, sem multi-shot, sem tail_image.")
+        rep.info("TURBO", "Use somente os campos declarados neste snapshot; ausência de controle de áudio não garante silêncio.")
     return rep
 
 

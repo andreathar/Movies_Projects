@@ -29,11 +29,11 @@ def main(path):
 
     out = []
     w = out.append
-    w("# 03 · Modelos ao vivo [LIVE]")
+    w("# 03 · Modelos observados [SNAPSHOT]")
     w("")
     w("> Gerado por `tools/kling_model_sheet.py` — **não editar à mão**.")
     w(f"> Fonte: `snapshots/who_am_i.sanitized.json` (sha256 `{sha}`), capturado em {meta.get('captured', '?')} via `kling who_am_i`; `mcpVersion` {body.get('mcpVersion')}.")
-    w("> Se o Kling mudar, rode `kling who_am_i`, sanitize (remova `body.user`) e gere de novo.")
+    w("> Snapshot datado, não cotação nem promessa de acesso futuro. Antes de produzir, consulte `kling who_am_i`, remova identidade e segredos e gere nova ficha.")
     w("")
     w("## Índice rápido")
     w("")

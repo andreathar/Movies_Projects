@@ -7,7 +7,7 @@
       "path": "skills/kling-cli",
       "source": ".agents/skills/kling-cli",
       "type": "project_vendored",
-      "sourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+      "sourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
       "provenanceHistory": [
         {
           "source": "klingai-tech/skills",
@@ -22,6 +22,15 @@
           "sourceSha256": "7562b79b4ad98746f8d65bcb9d25e34913530cc39d4b8d393bac6dcdc74efc14",
           "previousSourceSha256": "0f9fb6388f182e6af433b952d3ae222347d7346af3b532700d011ae08b53df36",
           "rehashedAt": "2026-10-09T11:28:02-03:00"
+        },
+        {
+          "source": "klingai-tech/skills",
+          "type": "project_translation_and_contract_revision",
+          "upstreamVersion": "0.2.1",
+          "localRevision": "2026-10-12-contract-audit",
+          "previousSourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+          "sourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+          "rehashedAt": "2026-10-12T04:15:12.634163+00:00"
         }
       ]
     },

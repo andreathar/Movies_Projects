@@ -1,6 +1,11 @@
 # 12 · Custos e ledger
 
-**Correção importante a uma suposição anterior minha:** eu tinha escrito que os custos observados eram ~2× a tabela. Ao cruzar o ledger com os horários e as janelas de saldo, **isso não se sustenta**. As anomalias vêm de jobs rodando ao mesmo tempo, não de preço fora da tabela (detalhe abaixo). Status: **[INFERÊNCIA forte]**, a ser confirmada pelo producer. O próprio ledger já suspeitava ("possibly a concurrent account charge", LNOTE-R3-anomaly); aqui se identifica qual era a cobrança concorrente: os jobs `gemini-3-pro-image` do mesmo projeto.
+## Estado da evidência (revisão 2026-10-12)
+
+As tabelas abaixo são **histórico/estimativa**, não cotação. A relação 1 unidade da API
+= 10 créditos desta conta não foi comprovada. Sobreposição de janelas de saldo torna
+insegura a atribuição por job; as hipóteses anteriores foram preservadas para revisão,
+não confirmadas como preço real. Não reescrever o ledger histórico com base nelas.
 
 ## 1. Tabela de preços (créditos por segundo de saída)
 
@@ -28,7 +33,7 @@ Imagens (observado no projeto, créditos por imagem a 2K) [PROJETO]:
 | `gemini-3.1-flash-image` | 15 |
 | `gemini-3-pro-image` | 20 |
 
-`element_create` do Element "Andre v2" aparece como 180 no ledger, mas a janela contém 3 jobs de 20 créditos (ver 3): o custo real do Element deve ser ~120 [INFERÊNCIA].
+`element_create` do Element "Andre v2" aparece como 180 no ledger, mas a janela contém 3 jobs de 20 créditos (ver 3): a hipótese anterior de ~120 permanece não confirmada [INFERÊNCIA].
 
 ## 2. Custos de vídeo do projeto contra a tabela [PROJETO + tabela]
 
@@ -49,22 +54,41 @@ Todo vídeo "limpo" bate com a tabela. As exceções (PILOT-01, -02, -05) são e
 
 O ledger reconcilia custo pela **diferença de saldo** (`X->Y`). Quando dois jobs correm ao mesmo tempo, a mesma queda de saldo é atribuída aos dois [INFERÊNCIA com evidência nos próprios dados]:
 
-- Janela **6539→6498** (41): `R3-oppenheimer-speaking-o1-v2` (o1, 1 cr) e `R2-J02` (gemini, 2×20 = 40) recebem 41 cada. Real: 41 no total.
-- Janela **6425→6355** (70): `R2-J04` (gemini) e `PILOT-02` (vídeo 30) recebem 70 cada. Real: 40 + 30.
-- Janela **6495→6425** (70) de `PILOT-01` contém a janela 6465→6425 (40) de `R2-J03`. Real: 30 + 40.
+- Janela **6539→6498** (41): `R3-oppenheimer-speaking-o1-v2` (o1, 1 cr) e `R2-J02` (gemini, 2×20 = 40) recebem 41 cada. A janela caiu 41; atribuição individual não comprovada.
+- Janela **6425→6355** (70): `R2-J04` (gemini) e `PILOT-02` (vídeo 30) recebem 70 cada. Hipótese: 40 + 30, sem prova individual.
+- Janela **6495→6425** (70) de `PILOT-01` contém a janela 6465→6425 (40) de `R2-J03`. Hipótese: 30 + 40, sem prova individual.
 - Janela do Element (6776→6596 = 180) contém três janelas de 20 (6776→6756→6736→6716).
 - Quedas sem entrada: `PILOT-05` +20 e alguns saltos de 5 créditos.
 
 Soma do ledger: **2.300**. Soma das janelas únicas: **2.049**. Variação real de saldo 7.741→5.813: **1.928** (se não houve crédito entrando). Ou seja, o ledger **superestima algo entre ~250 e ~370 créditos**. Não corrija sozinho; é do producer (ledger é dele). Sugestão: marcar essas linhas com `charge_status` = `window_overlap_do_not_sum`.
 
-## 4. Como registrar sem erro daqui para frente
+## 4. Registro a partir desta revisão
 
-1. **Um job pago por vez**: espere o estado final (`query_tasks --poll`) antes de submeter o próximo.
-2. Registre `creditsConsumed` da **resposta de submissão** quando existir. O ledger repete que o provedor "não retornou creditsConsumed" (L001, LNOTE-R3-anomaly): confira se o campo vem na resposta do CLI (`--quiet` dá JSON compacto) e, se vier, use-o em vez de inferir pelo saldo.
-3. Se precisar de saldo: `kling account` antes e depois, **com nenhum outro job em andamento**.
-4. Se dois jobs forem inevitáveis, registre a soma uma vez e divida pela tabela.
-5. Sempre: `generationId`, `shot_id`, modelo, argumentos, `authorization_ref`, sha256 do download.
+1. O produtor submete um job por vez com `--submit-only`; retoma o ID com `--resume`.
+   Nunca repete submissão incerta, mesmo que haja autorização histórica de teto.
+2. Registre `creditsConsumed` retornado pela submissão, inclusive zero, com origem
+   `provider_reported`. Não invente o campo se ausente.
+3. Saldo antes/depois e `creditsDelta` são observações da conta. O lock local não
+   impede uso no site/outro processo, cobrança tardia, renovação ou crédito entrando.
+   Ausência de concorrência aparente não transforma delta em custo comprovado.
+4. O runner deixa a coluna de cobrança vazia se o provedor não informar valor. Não
+   divide uma janela por tabela nem soma a mesma variação em mais de um job.
+5. Preserve `generationId`, job, modelo, argumentos, referência de autorização,
+   schema e SHA-256 do download. Recibos e ledger anteriores não são reescritos.
 
-## 5. Planejamento de orçamento
+## 5. Planejamento, cotação e duração
 
-Conta atual (2026-10-09 15:04) [LIVE]: plano **Ultra**, saldo **31.621** — um salto de 5.813 → 31.621 sem registro no ledger; o producer deve anotar a origem (renovação/plano). Para estimar: `segundos × cr/s × imageCount`, com tabela da seção 1, e some 25% de folga para refazer. A autorização por job continua obrigatória.
+Uma estimativa identifica fonte/data, hipóteses, duração de saída, duração de entrada
+quando tarifada, número de resultados, resolução, áudio e Element. Cotação exige
+valor explícito do provedor para o pedido/configuração. Esta auditoria não obteve
+cotação, não consultou saldo para gastar e não testou geração.
+
+O saldo 31.621 mencionado na versão anterior é observação de 2026-10-09, não saldo
+atual. Os 90 créditos do A/B eram estimativa; o teste não isolava resolução. Motion 1
+é descrito como 30 s no registro anterior, incompatível com a previsão de 45/60 para
+5 s. O prompt não altera a duração do ativo. Sob a taxa histórica hipotética de 9/12
+seriam 270/360 para 30 s, **sem confirmação de preço**. Reconfirmar recurso, duração,
+compatibilidade e orçamento antes de propor execução; não gastar para descobrir isso.
+
+Ver [17 · Integração CLI](17-integracao-cli.md). Nenhum preço, revisão de texto ou
+saldo constitui autorização de produção.

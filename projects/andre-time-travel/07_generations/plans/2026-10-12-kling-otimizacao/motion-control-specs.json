@@ -4,7 +4,7 @@
     "tool": "motion_control",
     "model": "kling-video-v3_0",
     "auth": "REPLACE-WITH-AUTHORIZED-APR-ID",
-    "note": "Capability test: does motion transfer hold Andre's identity? Saved motion 'Motion 1' is 30s -> motion_direction required. 720p draft first. Silent.",
+    "note": "Rascunho com Motion 1 (30 s segundo registro anterior); reconfirmar duração via biblioteca e adequação visual. keepOriginalSound=false não prova silêncio final. Custo de 5 s removido; sem cotação.",
     "args": {
       "motionId": "323365585657985",
       "motionDirection": "motion_direction",
@@ -15,14 +15,16 @@
     "images": [
       "02_references/keyframes/andre/KF-galileo-listening.jpg"
     ],
-    "prompt": "<<<323525046658711>>> keeps his exact face, hair, stubble and the mid-grey pinstripe jacket, seated at the near side of the oak table, eyes on the person to camera-right. Preserve the table and the lighting exactly as in the image. One continuous shot, no cuts, nobody else enters the frame, no hands near his face, no face morph. Quiet room tone only, no music."
+    "prompt": "<<<323525046658711>>> keeps his exact face, hair, stubble and the mid-grey pinstripe jacket, seated at the near side of the oak table, eyes on the person to camera-right. Preserve the table and the lighting exactly as in the image. One continuous shot, no cuts, nobody else enters the frame, no hands near his face, no face morph. Quiet room tone only, no music.",
+    "submissionBlocked": "Referência informada como 30 s, sem medição/cotação atual e sem autorização específica. Não tratar como geração de 5 s.",
+    "referenceDurationSeconds": 30
   },
   {
     "job": "MC-02-motion-motion_direction-1080p",
     "tool": "motion_control",
     "model": "kling-video-v3_0",
     "auth": "REPLACE-WITH-AUTHORIZED-APR-ID",
-    "note": "Same as MC-01 at production resolution. Only run if MC-01 is acceptable. 60 cr.",
+    "note": "Rascunho com Motion 1 (30 s segundo registro anterior); reconfirmar duração via biblioteca e adequação visual. keepOriginalSound=false não prova silêncio final. Custo de 5 s removido; sem cotação.",
     "args": {
       "motionId": "323365585657985",
       "motionDirection": "motion_direction",
@@ -33,6 +35,8 @@
     "images": [
       "02_references/keyframes/andre/KF-galileo-listening.jpg"
     ],
-    "prompt": "<<<323525046658711>>> keeps his exact face, hair, stubble and the mid-grey pinstripe jacket, seated at the near side of the oak table, eyes on the person to camera-right. Preserve the table and the lighting exactly as in the image. One continuous shot, no cuts, nobody else enters the frame, no hands near his face, no face morph. Quiet room tone only, no music."
+    "prompt": "<<<323525046658711>>> keeps his exact face, hair, stubble and the mid-grey pinstripe jacket, seated at the near side of the oak table, eyes on the person to camera-right. Preserve the table and the lighting exactly as in the image. One continuous shot, no cuts, nobody else enters the frame, no hands near his face, no face morph. Quiet room tone only, no music.",
+    "submissionBlocked": "Referência informada como 30 s, sem medição/cotação atual e sem autorização específica. Não tratar como geração de 5 s.",
+    "referenceDurationSeconds": 30
   }
 ]

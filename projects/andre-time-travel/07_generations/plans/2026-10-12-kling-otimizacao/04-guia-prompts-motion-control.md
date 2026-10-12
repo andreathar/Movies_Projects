@@ -22,7 +22,7 @@ preparados.
 **Para "andar de A para B" com controle, prefira `first_image` + `tail_image`.** `motion_control`
 entra quando o **modo** do movimento (a performance) importa mais que a posição exata.
 
-## 2. Fatos ao vivo que mandam no prompt (`who_am_i`, 2026-10-12)
+## 2. Capacidades observadas — reconferir no catálogo atual
 
 `motion_control` · `kling-video-v3_0` (padrão):
 - Inputs: `image`* (sujeito), `video` (opcional). Args: `prompt`*, `motionId` (opcional),
@@ -33,7 +33,7 @@ entra quando o **modo** do movimento (a performance) importa mais que a posiçã
   `motion_direction` segue o **vídeo**.
 - `v2_6` é igual, **sem `elements`**.
 
-Biblioteca de movimentos (`motion_library_list`): só existe **"Motion 1"**
+Registro anterior da biblioteca (`motion_library_list`), não reconsultado nesta auditoria: **"Motion 1"**
 (`id 323365585657985`, **30 s**, `hasAudio: true`). 30 s **não** cabe em `image_direction` →
 com ele, use **`motion_direction`**.
 
@@ -76,9 +76,9 @@ Idioma: **inglês** (como o resto do projeto; é também idioma de áudio nativo
   conserva a do vídeo — escolha a que casa com a cena.
 - **Direitos**: prefira **gravação própria** (a mão do próprio Andre, a caminhada do próprio
   Andre). A biblioteca da conta é aceitável; vídeo de terceiros tem risco de direitos.
-- **Áudio**: `keepOriginalSound` default **true** traz o som do vídeo. Para toma muda, `false`.
+- **Áudio**: `keepOriginalSound` default **true** traz o som do vídeo. Para não reter o áudio da referência, `false`; confirmar silêncio no QC.
 
-## 5. Fórmulas prontas
+## 5. Exemplos didáticos — não executar sem revisão e autorização
 
 ### T1 · `motion_control` com movimento salvo (`motionId`) — o caso A→B sem gravar nada
 
@@ -152,20 +152,24 @@ piscada, respiração, virada de poucos graus. **Giros grandes/andar: não testa
 ## 7. Armadilhas (checar antes de submeter)
 
 - "Motion 1" tem 30 s → `image_direction` **falha**. Use `motion_direction`.
-- `keepOriginalSound` default **true** → vem áudio não pedido. Para toma muda, `false`.
+- `keepOriginalSound` default **true** → vem áudio não pedido. Para não reter o áudio da referência, `false`; confirmar silêncio no QC.
 - `elements` no `motion_control` tem **limite 1** (e só no `v3_0`).
 - Movimento grande + duração longa → deriva de identidade [INFERÊNCIA]. Teste 3–5 s em 720p antes de 1080p.
 - Orientação invertida entre imagem e vídeo → resultado torto. Alinhe antes.
 - Reflexo que revele rosto de figura histórica → descartar (regra do projeto).
 - `turbo` não aceita `tail_image` nem `elements`.
 
-## 8. Teste mínimo recomendado (autorizar antes)
+## 8. Perguntas de teste — orçamento pendente
 
 | # | Pergunta | Config | Custo |
 |---|----------|--------|-------|
-| MC-01 | `image_direction`/`motion_direction` transfere um A→B e segura a identidade? | `motion_control` `v3_0` · 720p · `keepOriginalSound false` · Element | 45 |
-| MC-02 | Mesmo teste em produção | idem · 1080p | 60 |
-| T3-mini | `tail_image` fecha A→B sem estragar identidade? | `image_to_video` `v3_0` · 5 s · 1080p · mudo | 40 |
+| MC-01 | `image_direction`/`motion_direction` transfere um A→B e segura a identidade? | `motion_control` `v3_0` · 720p · `keepOriginalSound false` · Element | sem cotação; referência registrada = 30 s |
+| MC-02 | Mesmo teste em produção | idem · 1080p | sem cotação; referência registrada = 30 s |
+| T3-mini | `tail_image` fecha A→B sem estragar identidade? | `image_to_video` `v3_0` · 5 s · 1080p · mudo | 40 era estimativa histórica para 5 s, não cotação |
 
-Uma pergunta por job, **um job por vez** (`12`, seção 4). Specs prontas em
+Uma pergunta por job, **um job por vez** (`12`, seção 4). Rascunhos bloqueados em
 `motion-control-specs.json`.
+
+## Correção de orçamento (auditoria 2026-10-12)
+
+O motionId deste pacote referencia 30 s segundo o registro anterior, não 5 s. O prompt não encurta esse ativo. As antigas estimativas de 45/60 créditos não se aplicam. Mesmo usando a taxa histórica de 9/12 cr/s apenas como hipótese, seriam 270/360 para 30 s; isso **não é preço confirmado**. Uma referência curta precisa de arquivo/ID próprio, duração medida e aprovação específica. Não criar/uploadar esse ativo durante diagnóstico.

@@ -51,3 +51,7 @@ Objetivo: uma solução por processo que o Kling permite, para o filme *The Tabl
 - O 03 é gerado: `python3 -I tools/kling_model_sheet.py snapshots/who_am_i.sanitized.json > 03-modelos-ao-vivo.md`.
 - Quando o Kling mudar (versão do MCP, modelos novos): rode `kling who_am_i`, remova `body.user`, substitua o snapshot, regenere o 03 e rode o preflight em um request conhecido.
 - Snapshot atual: `mcpVersion 1.3.3`, CLI `kling 0.2.1`, skill `kling-cli 0.2.1`.
+
+## Auditoria da integração (2026-10-12)
+
+Consulte [17 · Integração CLI](17-integracao-cli.md) para a revisão dos helpers, da captura JSON, das limitações de custo e da consulta de disponibilidade V4. Esta revisão não aprova produção nem transforma snapshots em capacidades atuais.

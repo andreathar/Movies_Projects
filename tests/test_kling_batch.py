@@ -7,6 +7,15 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+import io
+
+
+def mock_response(url):
+    response = io.BytesIO(b'mock media')
+    response.geturl = lambda: url
+    return response
+
+
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('kling_batch', ROOT / 'scripts/kling_batch.py')
 k = importlib.util.module_from_spec(spec)
@@ -20,6 +29,9 @@ class ProducerTests(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory(dir=scratch)
         self.addCleanup(self.tmp.cleanup)
         self.film = Path(self.tmp.name)
+        self.preflight_patch = patch.object(k, 'preflight', return_value={})
+        self.preflight_patch.start()
+        self.addCleanup(self.preflight_patch.stop)
 
     def submit(self, **kwargs):
         return k.submit(self.film, 'J1', 'text_to_video', 'mock-model', 'prompt',
@@ -65,8 +77,8 @@ class ProducerTests(unittest.TestCase):
             if cmd[1] != 'query_tasks':
                 return {'body': {'generationId': 'mock-id'}}
             self.assertTrue((self.film / 'credit-ledger.csv').exists())
-            return {'body': {'generations': [{'status': 'COMPLETED', 'result': {'works': []}}]}}
-        with patch.object(k, 'account', side_effect=[100, 80]), patch.object(k, 'run', side_effect=network):
+            return {'body': {'generations': [{'status': 'COMPLETED', 'result': {'works': [{'url': 'https://mock/test.mp4'}]}}]}}
+        with patch.object(k, 'account', side_effect=[100, 80]), patch.object(k, 'run', side_effect=network), patch.object(k, 'download', return_value=['mock.mp4']):
             result = self.submit()
         self.assertEqual(result['status'], 'COMPLETED')
         self.assertEqual(calls, ['text_to_video', 'query_tasks'])
@@ -138,7 +150,7 @@ class ProducerTests(unittest.TestCase):
                 with patch.object(k, 'account', side_effect=[100, 80]), patch.object(k, 'run', return_value=response):
                     result = k.submit(film, 'J1', 'text_to_video', 'mock', 'prompt', {}, [], 'auth', '', submit_only=True)
                 self.assertEqual(result['creditsDelta'], 20)
-                self.assertEqual(result['status'], 'SUBMIT_FAILED')
+                self.assertEqual(result['status'], 'SUBMISSION_UNKNOWN')
                 with patch.object(k, 'account') as account, patch.object(k, 'run') as run:
                     result = k.resume(film, 'J1')
                     account.assert_not_called()
@@ -193,7 +205,7 @@ class ProducerTests(unittest.TestCase):
         def retrieve(url, path):
             self.assertEqual(url, 'https://mock/default')
             Path(path).write_bytes(b'mock media')
-        with patch.object(k, 'run', return_value=data), patch.object(k.urllib.request, 'urlretrieve', side_effect=retrieve) as download:
+        with patch.object(k, 'run', return_value=data), patch.object(k.urllib.request, 'urlopen', side_effect=lambda url, **kw: mock_response(url)) as download:
             result = k.resume(self.film, 'J1')
             target = self.film / result['works'][0]
             before = target.stat().st_mtime_ns
@@ -214,7 +226,7 @@ class ProducerTests(unittest.TestCase):
         completed = {'ok': True, 'body': {'generationId': 'mock-id', 'status': 'COMPLETED', 'works': [{'url': 'https://mock/video.mp4', 'contentType': 'video'}]}}
         def retrieve(url, path):
             Path(path).write_bytes(b'mock video')
-        with patch.object(k, 'run', return_value=completed), patch.object(k.urllib.request, 'urlretrieve', side_effect=retrieve):
+        with patch.object(k, 'run', return_value=completed), patch.object(k.urllib.request, 'urlopen', side_effect=lambda url, **kw: mock_response(url)):
             self.assertEqual(len(k.resume(self.film, 'J1')['works']), 1)
         wrong = {'ok': True, 'body': {'generationId': 'other-id', 'status': 'COMPLETED', 'works': []}}
         with patch.object(k, 'run', return_value=wrong):
@@ -226,7 +238,7 @@ class ProducerTests(unittest.TestCase):
         original.write_bytes(b'original')
         def retrieve(url, path):
             Path(path).write_bytes(b'different')
-        with patch.object(k.urllib.request, 'urlretrieve', side_effect=retrieve):
+        with patch.object(k.urllib.request, 'urlopen', side_effect=lambda url, **kw: mock_response(url)):
             with self.assertRaisesRegex(SystemExit, 'refusing overwrite'):
                 k.download(self.film, 'J1', 'mock-id', {}, [{'url': 'https://mock/video.mp4'}])
         self.assertEqual(original.read_bytes(), b'original')

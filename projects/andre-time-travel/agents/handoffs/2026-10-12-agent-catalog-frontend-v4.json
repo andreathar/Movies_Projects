@@ -1,0 +1,344 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor",
+  "contributorKind": "contributor",
+  "assignment": "Refresh explícito dos dois snapshots do frontend, autorizado pela conversa principal; fontes, Kling, aprovações e dados persistidos preservados.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "skills/andre-time-travel/SKILL.md",
+    "docs/AGENT_CATALOG.md",
+    "docs/TOKEN_EFFICIENCY.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "projects/andre-time-travel/tasks/plans/workflow-map-v1.md"
+  ],
+  "ownedPaths": [
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "reports/2026-10-12-frontend-snapshots-refresh.md",
+    "reports/2026-10-12-frontend-snapshots-refresh-checks.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v4.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "9cd0b104a8a4d2757261102169fc6cf73cf29fe10ab49f89074db1fd6906cf37"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "0c05dbc2c408815cc0b64a809c8a5ab64d98a57a866a1b880ef7d85cc9d004eb"
+    },
+    {
+      "path": "reports/2026-10-12-frontend-snapshots-refresh.md",
+      "sha256Before": null
+    },
+    {
+      "path": "reports/2026-10-12-frontend-snapshots-refresh-checks.json",
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "f228e6cb0491dd6b9e1b7b1f00b65efd6a9c876fe157f8c1c1f3e0941d5e1ab7",
+      "reason": "Refresh de snapshot derivado."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "945d194f2bb4db1fc740879b822bc0804318b00d3220852c95410b4098973d7f",
+      "reason": "Refresh de snapshot derivado."
+    },
+    {
+      "path": "reports/2026-10-12-frontend-snapshots-refresh.md",
+      "sha256After": "841e4356cabbd1ea3d96f255a48d71f6da90953858cbb44756ab3ef41f7b6c7c",
+      "reason": "Evidência atual e limites de verificação."
+    },
+    {
+      "path": "reports/2026-10-12-frontend-snapshots-refresh-checks.json",
+      "sha256After": "56143e37477ade6874831cbf58ac40337e5e74928ad127ab3386133b7f08c9c3",
+      "reason": "Evidência atual e limites de verificação."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "AGENTS.md",
+      "sha256": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "START_HERE.md",
+      "sha256": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/coordinator.md",
+      "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/registry.json",
+      "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": ".agents/plugins/agent-parley/plugin.json",
+      "sha256": "1149a2ae3afe257f039d2b3ea127f29b9691ac048ad764c6bab50ac87b9ac468"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "e9801936734e16a8deb4387cd486df637e3056f64d3dcf7b249b86f19c3ff9f0"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "docs/PLAN-parley-integration-v1.md",
+      "sha256": "5d60f4fd3246f8a1b38a7e41b788e3a4a9d6cc6d08b71c939d6923a8c10ff366"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "reports/2026-10-12-documentation-reconciliation.md",
+      "sha256": "947440143da2da9023c417e7110f414bff33124b0e469d528d251a7c4b4b8ada"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/README.md",
+      "sha256": "5bf84fc03c5552bec2535a8ffd8829e9f2c6c408cfefcc9cf30c3c47a1787825"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "skills/registry.json",
+      "sha256": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "reports/2026-10-12-agent-catalog-frontend.md",
+      "sha256": "bfa572b9a44a0ac2e664b6a8c54b97c68272695c6d7a2e61a6032fbdc633bd76"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "CLAUDE.md",
+      "sha256": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/README.md",
+      "sha256": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "skills/README.md",
+      "sha256": "44dd4917ff22fb3722fb1b055a0c95d47edb64f70f5b043dc70a29e7d8a15052"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "workspace.json",
+      "sha256": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "docs/AGENT_CATALOG.md",
+      "sha256": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "scripts/agent_catalog.py",
+      "sha256": "51d55d163dffc5d24e7108e27e7703c41ae34576f3c6a6d30b8e2625b4d012a2"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "tests/test_agent_catalog.py",
+      "sha256": "a222696ab674ee9c5b9e2a347409e8202366b5763e287b419f3bf89c5f33816c"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/catalog.json",
+      "sha256": "390c950a8d6842235f57c4588a345a5bcdedb6c712c05a092dd13ca5f92ee8df"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/claude/movies-continuity.md",
+      "sha256": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/claude/movies-historian.md",
+      "sha256": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/claude/movies-qc.md",
+      "sha256": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/codex/movies-continuity.toml",
+      "sha256": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/codex/movies-historian.toml",
+      "sha256": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "agents/generated/codex/movies-qc.toml",
+      "sha256": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/README.md",
+      "sha256": "efc14de38a3d2703e204dc3e1cee836b6e1c2ad748fe16f690baaab22bc1718f"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256": "f341eb11222b1a3aa1a22ae3f914faab04268cfbe0a40da04760ea11aa257503"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256": "1cd4bc4319e1e9616955e6127b17e48e5a36f800b5d0f2b282dd6645e5e2e279"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256": "d3fe2b37699260c633357bbd3ed27c5eb5fda0c967be7d09db56c65b077887c3"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/lib/model.ts",
+      "sha256": "15116a80ad652a8f57364d794f46b4f78e8a7b108d677c24c1754c39d07088fe"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/package.json",
+      "sha256": "9cbe43b5fb823a488c461cd72aa38516bb4097bcb4260d32a11da3b72e9774ea"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/scripts/export-common.mjs",
+      "sha256": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256": "c7dfb83b75ecc6abe0ac548879d43767a42d2a723163fb373f21bafc1e775389"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256": "df6c0e5125405cd0fd84f0cc3bbde80018d5bbca18d56876671af77a1059767d"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/tests/model.test.ts",
+      "sha256": "4e237a2c781648c126123f8518913e934e81bc43a7164d4d522f01747e559111"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256": "f9dcaba3a6afc9b9ff90569a954f08edb34b0cddec9c6459bc74ff50df45a6a5"
+    },
+    {
+      "statement": "Snapshot atualizado pelos exportadores existentes; checks desta etapa no relatório de refresh.",
+      "evidence": "sites/movies-demandas/data/production.json",
+      "sha256": "f228e6cb0491dd6b9e1b7b1f00b65efd6a9c876fe157f8c1c1f3e0941d5e1ab7"
+    },
+    {
+      "statement": "Snapshot atualizado pelos exportadores existentes; checks desta etapa no relatório de refresh.",
+      "evidence": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256": "945d194f2bb4db1fc740879b822bc0804318b00d3220852c95410b4098973d7f"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "reports/2026-10-12-readme-skill-provenance-review.md",
+      "sha256": "1f89d09be982319f129c2263932993d2a310ef7ea26e8c71303935de9ed73c8f"
+    },
+    {
+      "statement": "Hash do caminho herdado do v3 reconferido e preservado nesta etapa; sem nova revisão semântica da entrega histórica.",
+      "evidence": "reports/2026-10-12-skill-provenance-review.json",
+      "sha256": "cccef21fac79bd166c652af9969643ff143fa8bc801ef56d59adca751359525f"
+    },
+    {
+      "statement": "Evidência deste refresh.",
+      "evidence": "reports/2026-10-12-frontend-snapshots-refresh.md",
+      "sha256": "841e4356cabbd1ea3d96f255a48d71f6da90953858cbb44756ab3ef41f7b6c7c"
+    },
+    {
+      "statement": "Evidência deste refresh.",
+      "evidence": "reports/2026-10-12-frontend-snapshots-refresh-checks.json",
+      "sha256": "56143e37477ade6874831cbf58ac40337e5e74928ad127ab3386133b7f08c9c3"
+    },
+    {
+      "statement": "Handoff histórico preservado byte a byte.",
+      "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v2.json",
+      "sha256": "1527906defe40c425865272c5eb39c45975c9a59a8bb99ff0088472ff33b0189"
+    },
+    {
+      "statement": "Handoff histórico preservado byte a byte.",
+      "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v3.json",
+      "sha256": "5b2d7cc569224d49841b25d6d712f0bfb7070c1f03d71984438ff93cb1be7d63"
+    }
+  ],
+  "verification": [
+    "Catálogo --check passou, sem mudanças e sem ativação.",
+    "Exportadores existentes geraram os candidatos; ambos --check e check-data passaram antes e depois de aplicar os snapshots.",
+    "15 testes frontend, 24 testes de gestão e 8 de catálogo passaram; suíte completa de 92 não repetida.",
+    "ESLint, TypeScript e build Sites/Vinext passaram em cópia isolada das fontes do site.",
+    "136 hashes da base e 131 do frontend acompanhados; apenas os dois snapshots foram substituídos, após reconferência de fontes e destinos.",
+    "Patch reverso --check passou; rollback não executado.",
+    "Nenhuma chamada Kling, D1, API publicada, publicação, commit, push, deploy, reinício ou instalação nesta etapa."
+  ],
+  "supersedes": [
+    "2026-10-12-agent-catalog-frontend-v3.json"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar este diff e handoff; registrar integração somente após revisão real. A atualização da instância publicada e eventual importação são etapas separadas. Corrigir/fechar o pedido A/B no seu escopo próprio antes de qualquer autorização de gasto.",
+      "readiness": "Entrega local pronta para revisão; aceite/ingestão/publicação não realizados, produtor mantém ownership até aceite explícito."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Refresh local e suas verificações concluídos. Nenhuma nova produção, publicação ou ingestão faz parte desta entrega.",
+  "blockers": [],
+  "andreOnlyGates": [
+    "Geração paga continua sem autorização neste refresh.",
+    "Likeness, voz e aceite final não são concedidos pela atualização de metadados."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}
