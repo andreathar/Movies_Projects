@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../../../../home/athar/.local/state/agent-parley/projects/7d5e3e71ffde7f47/opencode"
+		},
+		{
+			"path": "../agent-parley"
 		}
 	],
 	"settings": {}
