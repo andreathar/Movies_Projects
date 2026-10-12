@@ -1,0 +1,830 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor/QC; contributor without production or approval authority",
+  "assignment": "Independent read-only review of the historical detail sheet delivered in Parley message 30, following the prior coverage/foley handoff.",
+  "state": "ready_for_review",
+  "createdAt": "2026-10-09T20:48:18.895826+00:00",
+  "ownedPaths": [
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review.md",
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review-evidence.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-editor-historical-details-review-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v1.md",
+      "checkout": "claude-read-only",
+      "sha256Before": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+      "sha256After": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-caesar.md",
+      "checkout": "claude-read-only",
+      "sha256Before": "9d58581c2ef5bd17e7baacf276657a01706a2a3ed24448b156be521893080cc2",
+      "sha256After": "9d58581c2ef5bd17e7baacf276657a01706a2a3ed24448b156be521893080cc2",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-genghis.md",
+      "checkout": "claude-read-only",
+      "sha256Before": "cd4c7076bd0d119c3713079016b44b363480d57efc8fafd101f09542f81a2064",
+      "sha256After": "cd4c7076bd0d119c3713079016b44b363480d57efc8fafd101f09542f81a2064",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-napoleon.md",
+      "checkout": "claude-read-only",
+      "sha256Before": "40812180514aadac0babd744e3a12fc4da481ea7b574ba936554d33140804914",
+      "sha256After": "40812180514aadac0babd744e3a12fc4da481ea7b574ba936554d33140804914",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-oppenheimer.md",
+      "checkout": "claude-read-only",
+      "sha256Before": "ff6c80723227478bbc8d001863d431aa950fa87224f0c1195ad7b253bf91f777",
+      "sha256After": "ff6c80723227478bbc8d001863d431aa950fa87224f0c1195ad7b253bf91f777",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-historical-details-v1.json",
+      "checkout": "claude-read-only",
+      "sha256Before": "a8e8aa45e8bfacb8e32cf55096e030563870c15320fb5a786d09b1b64b18d87d",
+      "sha256After": "a8e8aa45e8bfacb8e32cf55096e030563870c15320fb5a786d09b1b64b18d87d",
+      "unchanged": true
+    },
+    {
+      "path": "AGENTS.md",
+      "checkout": "own-worktree",
+      "sha256Before": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+      "sha256After": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "checkout": "own-worktree",
+      "sha256Before": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc",
+      "sha256After": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "checkout": "own-worktree",
+      "sha256Before": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "sha256After": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "checkout": "own-worktree",
+      "sha256Before": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "sha256After": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "checkout": "own-worktree",
+      "sha256Before": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "sha256After": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "checkout": "own-worktree",
+      "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "sha256After": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "checkout": "own-worktree",
+      "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "sha256After": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "checkout": "own-worktree",
+      "sha256Before": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "sha256After": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D01-identity-set.json",
+      "checkout": "own-worktree",
+      "sha256Before": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+      "sha256After": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D02-wardrobe.json",
+      "checkout": "own-worktree",
+      "sha256Before": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+      "sha256After": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D03-grooming.json",
+      "checkout": "own-worktree",
+      "sha256Before": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+      "sha256After": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+      "checkout": "own-worktree",
+      "sha256Before": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "sha256After": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D05-eye-bases.json",
+      "checkout": "own-worktree",
+      "sha256Before": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+      "sha256After": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D06-voice.json",
+      "checkout": "own-worktree",
+      "sha256Before": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+      "sha256After": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D07-script-v2.json",
+      "checkout": "own-worktree",
+      "sha256Before": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+      "sha256After": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D08-photo-session.json",
+      "checkout": "own-worktree",
+      "sha256Before": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+      "sha256After": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D09-screen-axis.json",
+      "checkout": "own-worktree",
+      "sha256Before": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+      "sha256After": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D10-chapter-timing.json",
+      "checkout": "own-worktree",
+      "sha256Before": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+      "sha256After": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D11-element-and-still-route.json",
+      "checkout": "own-worktree",
+      "sha256Before": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "sha256After": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D12-era-keyframes.json",
+      "checkout": "own-worktree",
+      "sha256Before": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+      "sha256After": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D13-speech-route.json",
+      "checkout": "own-worktree",
+      "sha256Before": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+      "sha256After": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "checkout": "own-worktree",
+      "sha256Before": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+      "sha256After": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D15-galileo-resume.json",
+      "checkout": "own-worktree",
+      "sha256Before": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+      "sha256After": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+      "checkout": "own-worktree",
+      "sha256Before": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "sha256After": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/coverage-plan.md",
+      "checkout": "own-worktree",
+      "sha256Before": "b76d2b4a3eaa5dc98aebcfdf1466a4162b5f9b7fbae18cb666d86f5ad14ade1f",
+      "sha256After": "b76d2b4a3eaa5dc98aebcfdf1466a4162b5f9b7fbae18cb666d86f5ad14ade1f",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/foley-cues.md",
+      "checkout": "own-worktree",
+      "sha256Before": "f73e2c4dcfd790632e8e63419a5659724adbdfc74128018b3e984c5198a005fd",
+      "sha256After": "f73e2c4dcfd790632e8e63419a5659724adbdfc74128018b3e984c5198a005fd",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-editor-coverage-foley-v1.json",
+      "checkout": "own-worktree",
+      "sha256Before": "16f7409ef15edfa272421ebd65830926d03a8009495c35be218a7b9c2a58de32",
+      "sha256After": "16f7409ef15edfa272421ebd65830926d03a8009495c35be218a7b9c2a58de32",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "checkout": "claude-read-only",
+      "sha256Before": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "sha256After": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df",
+      "sha256After": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J12-insert-galileo_1.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+      "sha256After": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R2-plate-rome-villa.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "7da16e35d594a8e325b7b8cad4d6aaeec4e9d6c543459ac2f01d7dda4540d816",
+      "sha256After": "7da16e35d594a8e325b7b8cad4d6aaeec4e9d6c543459ac2f01d7dda4540d816",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J27-plate-rome-44bce_1.png",
+      "checkout": "claude-read-only",
+      "sha256Before": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580",
+      "sha256After": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-caesar-roman.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7",
+      "sha256After": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J10-insert-caesar_1.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "fa1b3d771e694c029f226f710d7a58a3b16743dffc2280296e66c1c3ac0abda4",
+      "sha256After": "fa1b3d771e694c029f226f710d7a58a3b16743dffc2280296e66c1c3ac0abda4",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J28-plate-tent-1227_1.png",
+      "checkout": "claude-read-only",
+      "sha256Before": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99",
+      "sha256After": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J11-insert-genghis_1.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "6f33e041e329f72ea2267e3799ab695f7caa388b1c8048f032d5bd8f3bec234b",
+      "sha256After": "6f33e041e329f72ea2267e3799ab695f7caa388b1c8048f032d5bd8f3bec234b",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca",
+      "sha256After": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J30-plate-sthelena-1816_1.png",
+      "checkout": "claude-read-only",
+      "sha256Before": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae",
+      "sha256After": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+      "sha256After": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J13-insert-napoleon_1.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "92b11495686624494e184942bdbfff9bd1a8632653fe5bc762fd5fc9a0307ade",
+      "sha256After": "92b11495686624494e184942bdbfff9bd1a8632653fe5bc762fd5fc9a0307ade",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/table/R1-J31-plate-trinity-1945_1.png",
+      "checkout": "claude-read-only",
+      "sha256Before": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7",
+      "sha256After": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+      "checkout": "claude-read-only",
+      "sha256Before": "0e2cbb6fbc05150dd8ea6b2b4c39fc469d75e4d09eacbb8380231878429b4828",
+      "sha256After": "0e2cbb6fbc05150dd8ea6b2b4c39fc469d75e4d09eacbb8380231878429b4828",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/02_references/inserts/R2-J14-insert-oppenheimer_1.jpg",
+      "checkout": "claude-read-only",
+      "sha256Before": "16357583149bfba849632f96a66384ae68b5556d4791effc4ab1939bc2f004cf",
+      "sha256After": "16357583149bfba849632f96a66384ae68b5556d4791effc4ab1939bc2f004cf",
+      "unchanged": true
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review.md",
+      "sha256After": "2da7d044f8b7ec619d712475438d30a2cac8186ba79b8b150405ad385cc57ca3",
+      "created": true
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/historical-review-evidence.json",
+      "sha256After": "617ee775e01417e7394bfe2ddb9903ff5a73841decb2622667e685f11f3e860a",
+      "created": true
+    }
+  ],
+  "reviewedMessageId": 30,
+  "peerReportId": "2c4fc95cdbee414e",
+  "reviewVerdict": "requires_targeted_corrections_before_production_specification",
+  "findings": [
+    {
+      "id": "H01",
+      "priority": "high",
+      "title": "Piso de Arcetri: hipótese vira premissa factual"
+    },
+    {
+      "id": "H02",
+      "priority": "high",
+      "title": "Longwood: substituir dimensões do estudo pelas de outro cômodo"
+    },
+    {
+      "id": "H03",
+      "priority": "medium",
+      "title": "BHC2701: distinguir cópia de 1879, original de 1636 e retrato c.1640"
+    },
+    {
+      "id": "H04",
+      "priority": "medium",
+      "title": "Hábito de abril vira proibição absoluta de botas"
+    },
+    {
+      "id": "H05",
+      "priority": "medium",
+      "title": "Descrição do casaco como novo contradiz o desgaste visível"
+    },
+    {
+      "id": "H06",
+      "priority": "medium",
+      "title": "Handoff sem hashes de base e com pendências estruturadas só de Galileu"
+    }
+  ],
+  "verification": [
+    {
+      "check": "Baseline hashes",
+      "result": "33 input files and 16 reference images unchanged; all image hashes match the delivery."
+    },
+    {
+      "check": "Bounded historical review",
+      "result": "Five sections read; four supporting notes hash-checked and selectively inspected; seven external sources checked; six images visually inspected at original resolution. No exhaustive bibliography audit."
+    },
+    {
+      "check": "Final batch",
+      "result": {
+        "status": "passed_for_document_delivery_not_historical_acceptance",
+        "checkedAt": "2026-10-09T20:48:43.956467+00:00",
+        "commands": [
+          {
+            "command": ".venv/bin/python -m unittest discover -s tests -v",
+            "exitCode": 0,
+            "result": "29 tests passed; 1.945 s; mocked tests, no live generation calls"
+          },
+          {
+            "command": ".venv/bin/python scripts/manage.py validate",
+            "exitCode": 0,
+            "result": "status ok, zero errors, four pre-existing shared-skill hash warnings",
+            "warnings": [
+              "kling-cli",
+              "film-character-continuity",
+              "film-dialogue-localization",
+              "film-editing-qc"
+            ]
+          }
+        ],
+        "unchangedInputs": 33,
+        "unchangedImageReferences": 16,
+        "allReportedImageHashesMatch": true,
+        "trackedDiffEmpty": true,
+        "stagedDiffEmpty": true,
+        "localReviewLinksExist": 2,
+        "jsonParse": "review evidence and handoff parse successfully",
+        "finalBaselineComparison": [
+          {
+            "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v1.md",
+            "checkout": "claude-read-only",
+            "sha256Before": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+            "sha256After": "037acbf25d39538717f262d8b0543887bbdd4fdfd4cbdb086a220537f5886341",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-caesar.md",
+            "checkout": "claude-read-only",
+            "sha256Before": "9d58581c2ef5bd17e7baacf276657a01706a2a3ed24448b156be521893080cc2",
+            "sha256After": "9d58581c2ef5bd17e7baacf276657a01706a2a3ed24448b156be521893080cc2",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-genghis.md",
+            "checkout": "claude-read-only",
+            "sha256Before": "cd4c7076bd0d119c3713079016b44b363480d57efc8fafd101f09542f81a2064",
+            "sha256After": "cd4c7076bd0d119c3713079016b44b363480d57efc8fafd101f09542f81a2064",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-napoleon.md",
+            "checkout": "claude-read-only",
+            "sha256Before": "40812180514aadac0babd744e3a12fc4da481ea7b574ba936554d33140804914",
+            "sha256After": "40812180514aadac0babd744e3a12fc4da481ea7b574ba936554d33140804914",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/03_bibles/detail-planning/research-notes/research-oppenheimer.md",
+            "checkout": "claude-read-only",
+            "sha256Before": "ff6c80723227478bbc8d001863d431aa950fa87224f0c1195ad7b253bf91f777",
+            "sha256After": "ff6c80723227478bbc8d001863d431aa950fa87224f0c1195ad7b253bf91f777",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-claude-historical-details-v1.json",
+            "checkout": "claude-read-only",
+            "sha256Before": "a8e8aa45e8bfacb8e32cf55096e030563870c15320fb5a786d09b1b64b18d87d",
+            "sha256After": "a8e8aa45e8bfacb8e32cf55096e030563870c15320fb5a786d09b1b64b18d87d",
+            "unchanged": true
+          },
+          {
+            "path": "AGENTS.md",
+            "checkout": "own-worktree",
+            "sha256Before": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+            "sha256After": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/memory/STATE.md",
+            "checkout": "own-worktree",
+            "sha256Before": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc",
+            "sha256After": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/manifest.json",
+            "checkout": "own-worktree",
+            "sha256Before": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+            "sha256After": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/tasks/board.json",
+            "checkout": "own-worktree",
+            "sha256Before": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+            "sha256After": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/approvals.json",
+            "checkout": "own-worktree",
+            "sha256Before": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+            "sha256After": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/credit-ledger.csv",
+            "checkout": "own-worktree",
+            "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+            "sha256After": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+            "checkout": "own-worktree",
+            "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+            "sha256After": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+            "checkout": "own-worktree",
+            "sha256Before": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+            "sha256After": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D01-identity-set.json",
+            "checkout": "own-worktree",
+            "sha256Before": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+            "sha256After": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D02-wardrobe.json",
+            "checkout": "own-worktree",
+            "sha256Before": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+            "sha256After": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D03-grooming.json",
+            "checkout": "own-worktree",
+            "sha256Before": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+            "sha256After": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+            "checkout": "own-worktree",
+            "sha256Before": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+            "sha256After": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D05-eye-bases.json",
+            "checkout": "own-worktree",
+            "sha256Before": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+            "sha256After": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D06-voice.json",
+            "checkout": "own-worktree",
+            "sha256Before": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+            "sha256After": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D07-script-v2.json",
+            "checkout": "own-worktree",
+            "sha256Before": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+            "sha256After": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D08-photo-session.json",
+            "checkout": "own-worktree",
+            "sha256Before": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+            "sha256After": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D09-screen-axis.json",
+            "checkout": "own-worktree",
+            "sha256Before": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+            "sha256After": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D10-chapter-timing.json",
+            "checkout": "own-worktree",
+            "sha256Before": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+            "sha256After": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D11-element-and-still-route.json",
+            "checkout": "own-worktree",
+            "sha256Before": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+            "sha256After": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D12-era-keyframes.json",
+            "checkout": "own-worktree",
+            "sha256Before": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+            "sha256After": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D13-speech-route.json",
+            "checkout": "own-worktree",
+            "sha256Before": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+            "sha256After": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+            "checkout": "own-worktree",
+            "sha256Before": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+            "sha256After": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D15-galileo-resume.json",
+            "checkout": "own-worktree",
+            "sha256Before": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+            "sha256After": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+            "checkout": "own-worktree",
+            "sha256Before": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+            "sha256After": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/coverage-plan.md",
+            "checkout": "own-worktree",
+            "sha256Before": "b76d2b4a3eaa5dc98aebcfdf1466a4162b5f9b7fbae18cb666d86f5ad14ade1f",
+            "sha256After": "b76d2b4a3eaa5dc98aebcfdf1466a4162b5f9b7fbae18cb666d86f5ad14ade1f",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/foley-cues.md",
+            "checkout": "own-worktree",
+            "sha256Before": "f73e2c4dcfd790632e8e63419a5659724adbdfc74128018b3e984c5198a005fd",
+            "sha256After": "f73e2c4dcfd790632e8e63419a5659724adbdfc74128018b3e984c5198a005fd",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/agents/handoffs/2026-10-09-editor-coverage-foley-v1.json",
+            "checkout": "own-worktree",
+            "sha256Before": "16f7409ef15edfa272421ebd65830926d03a8009495c35be218a7b9c2a58de32",
+            "sha256After": "16f7409ef15edfa272421ebd65830926d03a8009495c35be218a7b9c2a58de32",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+            "checkout": "claude-read-only",
+            "sha256Before": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+            "sha256After": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-galileo-scholar.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df",
+            "sha256After": "282980f3fc799cc3abd033e23dcfb586de8ce3ab17e31774b14afe1e6ad1b9df",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/inserts/R2-J12-insert-galileo_1.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+            "sha256After": "b59837cf94f1250b09a22a5bfa328ba9a0d4187b4bc3b06f0e0e10575f2a2267",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/table/R2-plate-rome-villa.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "7da16e35d594a8e325b7b8cad4d6aaeec4e9d6c543459ac2f01d7dda4540d816",
+            "sha256After": "7da16e35d594a8e325b7b8cad4d6aaeec4e9d6c543459ac2f01d7dda4540d816",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/table/R1-J27-plate-rome-44bce_1.png",
+            "checkout": "claude-read-only",
+            "sha256Before": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580",
+            "sha256After": "89cb31bab8475b115252400916944bd098ba8fb2496773ef9876b4641d63e580",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-caesar-roman.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7",
+            "sha256After": "45534bb84601b7d8e48f0619e6d6370a3acad8d1c13e2a6862b03b25628ad9e7",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/inserts/R2-J10-insert-caesar_1.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "fa1b3d771e694c029f226f710d7a58a3b16743dffc2280296e66c1c3ac0abda4",
+            "sha256After": "fa1b3d771e694c029f226f710d7a58a3b16743dffc2280296e66c1c3ac0abda4",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/table/R1-J28-plate-tent-1227_1.png",
+            "checkout": "claude-read-only",
+            "sha256Before": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99",
+            "sha256After": "d5386b7b1aaa2091529a23030b7efb516196be6850263cc4415f22ba1799ed99",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/inserts/R2-J11-insert-genghis_1.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "6f33e041e329f72ea2267e3799ab695f7caa388b1c8048f032d5bd8f3bec234b",
+            "sha256After": "6f33e041e329f72ea2267e3799ab695f7caa388b1c8048f032d5bd8f3bec234b",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-genghis-mongol.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca",
+            "sha256After": "ec9a420e067b8545e4a1ed0203eb1339ac7696bbbb27404b1db8645c0a2e3fca",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/table/R1-J30-plate-sthelena-1816_1.png",
+            "checkout": "claude-read-only",
+            "sha256Before": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae",
+            "sha256After": "59f3bc6321b2d80d23ad883f91d8155e583b877ed7dc1ae5860e184356dbaeae",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/wardrobe/R2-wardrobe-napoleon-uniform.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+            "sha256After": "a805454c3e1f3253ae25489c6d53094bfb275065f6587c42f4476caf82df5be0",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/inserts/R2-J13-insert-napoleon_1.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "92b11495686624494e184942bdbfff9bd1a8632653fe5bc762fd5fc9a0307ade",
+            "sha256After": "92b11495686624494e184942bdbfff9bd1a8632653fe5bc762fd5fc9a0307ade",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/table/R1-J31-plate-trinity-1945_1.png",
+            "checkout": "claude-read-only",
+            "sha256Before": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7",
+            "sha256After": "9ad6c741a4d6e908efaf9e2455010604017f3bed457b49eefa7dfd4e60ce4df7",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/wardrobe/R1-J25-costume-oppenheimer_belowneck.png",
+            "checkout": "claude-read-only",
+            "sha256Before": "0e2cbb6fbc05150dd8ea6b2b4c39fc469d75e4d09eacbb8380231878429b4828",
+            "sha256After": "0e2cbb6fbc05150dd8ea6b2b4c39fc469d75e4d09eacbb8380231878429b4828",
+            "unchanged": true
+          },
+          {
+            "path": "projects/andre-time-travel/02_references/inserts/R2-J14-insert-oppenheimer_1.jpg",
+            "checkout": "claude-read-only",
+            "sha256Before": "16357583149bfba849632f96a66384ae68b5556d4791effc4ab1939bc2f004cf",
+            "sha256After": "16357583149bfba849632f96a66384ae68b5556d4791effc4ab1939bc2f004cf",
+            "unchanged": true
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "No new historical decisions or canonical changes.",
+    "No inference that absence of evidence proves a prop impossible.",
+    "No full motion safety, likeness, language, voice or final picture acceptance.",
+    "No new media, paid requests, commits or integration.",
+    "Workflow consolidation is outside this review.",
+    "No new images delivered by producer in this assignment. Existing coverage/foley remains conditional."
+  ],
+  "pendingDecisions": [
+    "Producer disposition of H01-H06 and integration of corrected historical research.",
+    "Materials and wardrobe/accessory variants for all five encounters; unknowns cannot become historical facts by selection.",
+    "Producer selection of new reference images with versions, hashes and review status.",
+    "Andre likeness, voice, interpretation and final film acceptance; D17-D19 remain proposals."
+  ],
+  "nextActions": [
+    {
+      "role": "producer/coordinator in desktop/base conversation",
+      "action": "Review this bounded verdict and route H01-H06 back to the research lane before accepting the sheet as production specification; workflow draft requires separate review."
+    },
+    {
+      "role": "history/continuity lane, within the existing research scope",
+      "action": "Respond to findings against the exact reviewed version; any revised delivery needs a new hash and an updated handoff."
+    },
+    {
+      "role": "editor/QC lane",
+      "action": "Await a scoped correction or image delivery; do not duplicate the completed historical review or produce media."
+    }
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "creditsSpent": 0,
+  "newMediaGenerated": 0,
+  "commit": null,
+  "accepted": false,
+  "reviewStatus": "ready_for_producer_review_not_accepted",
+  "ingest": {
+    "status": "pending"
+  }
+}

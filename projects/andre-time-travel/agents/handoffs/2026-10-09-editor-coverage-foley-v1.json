@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor/QC (coverage and foley preparation)",
+  "contributorKind": "contributor",
+  "assignment": "Parley operator message 19, after Galileo v2 delivery; messages 14/17/22 preserve producer ownership and limit this lane to assigned new files.",
+  "createdAt": "2026-10-09T20:15:23Z",
+  "pathBase": "repository-root",
+  "ownedPaths": [
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/coverage-plan.md",
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/foley-cues.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-09-editor-coverage-foley-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+      "sha256After": "733b96bd3327dd85efa5ff64d284c6278b1cdf4d6ffc8dda266df55c15eba22d",
+      "unchanged": true
+    },
+    {
+      "path": "workspace.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+      "sha256After": "f60d01c7c3430b80c50fcd4656e6eb6d01e0e07766ce7eaac709dfa592fdfe5e",
+      "unchanged": true
+    },
+    {
+      "path": "agents/editor.md",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "5fa9574e20750ba379c3d8e8311bf38f79b902a2022c6ebf9012658ade2848ae",
+      "sha256After": "5fa9574e20750ba379c3d8e8311bf38f79b902a2022c6ebf9012658ade2848ae",
+      "unchanged": true
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "868439025190860ff4ce8478ce1e7dd07b9b587d7982a9e4df63357c1f358fad",
+      "sha256After": "868439025190860ff4ce8478ce1e7dd07b9b587d7982a9e4df63357c1f358fad",
+      "unchanged": true
+    },
+    {
+      "path": "agents/continuity.md",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "d8c450f102d23a0dd75a724e5bec1a040bf456455e972ac6b069a11d37a1bb21",
+      "sha256After": "d8c450f102d23a0dd75a724e5bec1a040bf456455e972ac6b069a11d37a1bb21",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc",
+      "sha256After": "33198c2eaf7ac1f95568758b6c8f4b22d309bf60cc983ed6990870d62b06a0bc",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "sha256After": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "sha256After": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "sha256After": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "sha256After": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "sha256After": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "sha256After": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/timelines/galileo-en-v2.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "55dcaf3b90513c669615c7d72019162bf9a1f02127e440e855a6e8f3c0a84534",
+      "sha256After": "55dcaf3b90513c669615c7d72019162bf9a1f02127e440e855a6e8f3c0a84534",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v2.mp4",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "bd687d42ea6692b4c81efa2a78a8acdcea48f2f98308e1f9b40ee55d5b7e850b",
+      "sha256After": "bd687d42ea6692b4c81efa2a78a8acdcea48f2f98308e1f9b40ee55d5b7e850b",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/galileo-en-v2/technical-qc.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "3a4b66c4c041eef7c2ace1f061f5451628137f1fd4e10cadbef0616413fa91e8",
+      "sha256After": "3a4b66c4c041eef7c2ace1f061f5451628137f1fd4e10cadbef0616413fa91e8",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D10-chapter-timing.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+      "sha256After": "3520fd7435693b01e6f3b563ff72fc6e319d8ef315d3e54e5dc9b1464d26f9f8",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D11-element-and-still-route.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "sha256After": "503040f342f5a61a6bfe213f5aea24eca92527ad40a2154adc84361613e1351a",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D06-voice.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+      "sha256After": "6e44da3f9cda40fb3f85040ab787d27f7d69d5a7cfc361e4157e468c2321e236",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D09-screen-axis.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+      "sha256After": "1b702936c2103ddfffe55c230bd3fce480e42d6ec03063be05bd42b0ed493541",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D15-galileo-resume.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+      "sha256After": "507af8025e8ce9ba7fc7c97e15a0b6a2d9cd185ef4db7861b3073ee89b88563d",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D01-identity-set.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+      "sha256After": "41a2b8e317faa2ac1ba69296716f7fa6977f1a50f9439e3c02be88e567b8efd2",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D08-photo-session.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+      "sha256After": "b2df4f3b39eabbaf73b68da5c064e4e11cced40259e3c11e3be46de7af9edb8a",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D03-grooming.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+      "sha256After": "78065bc9651040782db4cfac952d6bfd1365ac066c9e2e13dca0644ba6e1dcdd",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+      "sha256After": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D02-wardrobe.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+      "sha256After": "8af066f0b1d4f7b9cc9490147cf9638bbaa5949db0427088bfedf0683983ec71",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D13-speech-route.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+      "sha256After": "e5cab8906464a373d7fa8a243e9e05f1389e24e2d4739542d4b3c06af1a55774",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D12-era-keyframes.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+      "sha256After": "c381fd8a0cb99693508f42396685c6873a6f59e339b1fa85515f605667e5d375",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D07-script-v2.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+      "sha256After": "0aea41f3d96ffb5d6a3153b77986d1a8787e6e183a583ce4f117ebb7acebbbbb",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D05-eye-bases.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+      "sha256After": "89b2b8167e3d05b9d1bb1fdbaa6c653f1d5b79e86c8b5caa1ebe3383964d3393",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D16-galileo-pilot-v2-phase-a.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "sha256After": "e79793a58063198f291669f368dcac76dfd0ec8fc3aea46da00ed691a08c1d0e",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D04-table.json",
+      "sourceCheckout": "own-worktree",
+      "sha256Before": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "sha256After": "1296b0a758296dab016ab5ecc3137443f33c47919d9c4ada6b59812e9ad7b262",
+      "unchanged": true
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sourceCheckout": "base-read-only",
+      "sha256Before": "967e8d6df052ca5a2a85abb49a0c00491907abbc15df7d25e4909d3d54771845",
+      "sha256After": "967e8d6df052ca5a2a85abb49a0c00491907abbc15df7d25e4909d3d54771845",
+      "unchanged": true
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+      "sourceCheckout": "base-read-only",
+      "sha256Before": "dffdef79d7611f4747306dbc53d950319e5064aaeb61e4644325a95b671c7853",
+      "sha256After": "dffdef79d7611f4747306dbc53d950319e5064aaeb61e4644325a95b671c7853",
+      "unchanged": true
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/coverage-plan.md",
+      "sha256After": "b76d2b4a3eaa5dc98aebcfdf1466a4162b5f9b7fbae18cb666d86f5ad14ade1f",
+      "created": true,
+      "bytes": 14934
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/foley-cues.md",
+      "sha256After": "f73e2c4dcfd790632e8e63419a5659724adbdfc74128018b3e984c5198a005fd",
+      "created": true,
+      "bytes": 13237
+    }
+  ],
+  "verification": [
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "result": "29 tests passed, exit 0, 1.855 seconds; mocked tests, no live generation calls"
+    },
+    {
+      "check": "Document structure and canonical dialogue references",
+      "result": {
+        "coverageStudies": 25,
+        "foleyCues": 15,
+        "allFiveEncounters": true,
+        "allLineReferencesExistInCsv": true,
+        "fiveTriggerFragmentsMatchCsv": true,
+        "noFoleyTimestamps": true,
+        "ownWorktreeInputsUnchanged": true,
+        "trackedDiffEmpty": true,
+        "stagedDiffEmpty": true
+      }
+    },
+    {
+      "check": "Input SHA256 comparison",
+      "result": "All 33 baseline sources unchanged at pre-handoff check, including read-only base documents and own-worktree canonical records"
+    },
+    {
+      "command": ".venv/bin/python scripts/manage.py validate",
+      "result": "Passed after initial handoff write: status ok, zero errors; four pre-existing shared-skill hash warnings (kling-cli, film-character-continuity, film-dialogue-localization, film-editing-qc)."
+    },
+    {
+      "check": "Message 23 partial checkpoint handling",
+      "result": "Recorded as peer-reported only; no historical claims or material timbres promoted to verified."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Coverage preparation covers five alternatives for each of five encounters; it is not a request for 25 generations.",
+      "evidence": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/coverage-plan.md",
+      "sha256": "b76d2b4a3eaa5dc98aebcfdf1466a4162b5f9b7fbae18cb666d86f5ad14ade1f"
+    },
+    {
+      "statement": "Foley preparation contains three conditional cues for each encounter, with causal line references, material uncertainties, perspective and silence; no timestamps or audio generated.",
+      "evidence": "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/foley-cues.md",
+      "sha256": "f73e2c4dcfd790632e8e63419a5659724adbdfc74128018b3e984c5198a005fd"
+    }
+  ],
+  "readFirst": [
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "projects/andre-time-travel/tasks/scene-detail-assets-v1.md",
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/coverage-plan.md",
+    "projects/andre-time-travel/08_edit/reviews/detail-planning-v1/foley-cues.md"
+  ],
+  "limitations": [
+    "Textual preparation only; no new images/audio/video, visual selection, measured contact timecodes or artistic acceptance.",
+    "No historical research duplicated. Materials, footwear, floors, hair, collars, sleeves and accessories remain explicitly pending Claude's historical-details-v1.md.",
+    "The two-second eyes choice applies only to the delivered Galileo edit. D17-D19 remain proposals; fixed table dimensions are not approved here.",
+    "Workflow, protocol, START_HERE and canonical records were not edited. Message 22 assigns workflow consolidation to Claude.",
+    "Coverage/foley document delivery does not complete the later independent review of Claude's historical handoff."
+  ],
+  "pendingDecisions": [
+    "Producer selection of principal shoulder and gesture after reference/image review",
+    "Andre likeness, interpretation, voice and final-picture acceptance",
+    "Oppenheimer O-L04 staging/split and historical/autoral framing",
+    "Historical wardrobe/accessory variants, including Genghis armour and Napoleon variants, remain pending",
+    "Any later audio-production scope requires separate authorization"
+  ],
+  "andreOnlyGates": [
+    "Identity/likeness",
+    "Voice by ear",
+    "Final picture/movie",
+    "Unresolved creative choices referred by producer"
+  ],
+  "proposedDecisions": [],
+  "nextActions": [
+    {
+      "role": "producer/coordinator in desktop/base conversation",
+      "action": "Review and integrate these two documents; deliver new detail images explicitly with paths, versions/hashes and review status before image-dependent work."
+    },
+    {
+      "role": "claude continuity/history lane",
+      "action": "Finish the four pending historical sections and deliver the final historical-details-v1.md plus handoff with hashes and claim-level sources."
+    },
+    {
+      "role": "editor/QC lane",
+      "action": "After Claude's explicit handoff, independently review the historical detail sheet read-only and record findings in a new review file under the assigned directory."
+    }
+  ],
+  "blockers": [
+    {
+      "operation": "Independent review of historical-details-v1.md",
+      "dependency": "Final complete handoff from Claude; message 23 reports a partial checkpoint only and explicitly says not to review it as complete."
+    },
+    {
+      "operation": "Selecting image-dependent coverage or measuring its animation envelope",
+      "dependency": "Producer's new image delivery; previous IN/OUT candidates do not establish delivery"
+    }
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "creditsSpent": 0,
+  "newMediaGenerated": 0,
+  "commit": null,
+  "accepted": false,
+  "reviewStatus": "ready_for_producer_review_not_accepted",
+  "ingest": {
+    "status": "pending"
+  },
+  "note": "All files are local new documents in this lane. No commit, merge, push, approval mutation or further delegation. Galileo v2 was already delivered and was not rerendered.",
+  "historicalCheckpoint": {
+    "messageId": 23,
+    "sender": "claude",
+    "delivery": "partial_not_final",
+    "claimedCompletedSection": "Galileo only, with material gaps",
+    "remainingSections": [
+      "Caesar",
+      "Genghis",
+      "Napoleon",
+      "Oppenheimer"
+    ],
+    "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v1.md",
+    "sourceCheckout": "claude-worktree-read-only",
+    "reportedSha256": "61349d5cb2411922d5c70e7a10a93eb8965ec71a37637a45ec442f614413a479",
+    "independentlyReviewed": false
+  }
+}
