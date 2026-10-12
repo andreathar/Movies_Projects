@@ -1,0 +1,53 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.mp4':
+  Metadata:
+    minor_version   : 512
+    major_brand     : isom
+    compatible_brands: isomiso2avc1mp41
+    AIGC            : {"Label":"1","ContentProducer":"kling","ProduceID":"SGP_PROD_ai_web_323752797684640","ReservedCode1":null,"ContentPropagator":"kling","PropagateID":"SGP_PROD_ai_web_323752797684640","ReservedCode2":null}
+    encoder         : Lavf60.16.100
+  Duration: 00:00:03.04, start: 0.000000, bitrate: 4227 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 129 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1276x720, 4087 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 h264_slapi
+[Parsed_volumedetect_0 @ 0x5e8b1058a080] n_samples: 0
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:0 -> #0:1 (aac (native) -> pcm_s16le (native))
+[h264 @ 0x5e8b104b87c0] Late SEI is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+[h264 @ 0x5e8b104b87c0] If you want to help, upload a sample of this file to https://streams.videolan.org/upload/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Output #0, null, to 'pipe:':
+  Metadata:
+    minor_version   : 512
+    major_brand     : isom
+    compatible_brands: isomiso2avc1mp41
+    AIGC            : {"Label":"1","ContentProducer":"kling","ProduceID":"SGP_PROD_ai_web_323752797684640","ReservedCode1":null,"ContentPropagator":"kling","PropagateID":"SGP_PROD_ai_web_323752797684640","ReservedCode2":null}
+    encoder         : Lavf60.16.100
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(progressive), 1276x720, q=2-31, 200 kb/s, 24 fps, 24 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 wrapped_avframe
+  Stream #0:1(und): Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 pcm_s16le
+frame=    0 fps=0.0 q=-0.0 size=N/A time=00:00:00.44 bitrate=N/A speed=  34x    
+[out#0/null @ 0x5e8b10482400] video:34kB audio:524kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=   73 fps=0.0 q=-0.0 Lsize=N/A time=00:00:03.01 bitrate=N/A speed=  77x    
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] n_samples: 268288
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] mean_volume: -55.4 dB
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] max_volume: -33.5 dB
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_33db: 2
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_34db: 12
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_35db: 20
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_36db: 36
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_37db: 32
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_38db: 54
+[Parsed_volumedetect_0 @ 0x5e8b105e18c0] histogram_39db: 118

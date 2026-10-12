@@ -23,10 +23,10 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - New, unreviewed by Andre: ten ChatGPT IN/OUT frames (`../05_storyboard/keyframes/chatgpt-in-out-v1/`), ten posters (`../09_delivery/posters/`). Synthetic candidates; no video tested.
 
 ## Money (observation, not live)
-- Last Kling balance read: 5,813 at 2026-10-09T12:28:25-03:00. Refresh by CLI before any paid work.
+- Último saldo observado pela CLI: 31.594 em 2026-10-12T02:01:50-03:00 (05:01:50 UTC), após o teste v3_0. É observação histórica; consultar novamente antes de gasto futuro.
 - Galileo ledger 348 (cap 900, stop 810), incl. unresolved 80 (lost ID, not recovered). Whole-film authorization is a ceiling, not batch approval.
 - Current plan pointers: `../07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md` (+ `-takes-v3.csv`) and `...piloto-galileu-v2.md`; forecast `../docs/budget-and-envelope-resume-v3.md` (2,129–2,249; estimate only). No external-audio spend authorized.
-- Ledger: `../credit-ledger.csv` (87 rows); last row G-L02 at 12:10:15. Handoffs after that report no paid jobs.
+- Ledger: `../credit-ledger.csv` (88 linhas); última AB-MIN-02-v3_0-3s-720p, 27 créditos declarados pelo provedor. APR-kling-ab-min-2026-10-12: teto total 200; um job concluído, nenhum retry; Turbo bloqueado por preço não verificado (173 remanescentes condicionais).
 
 ## Open Andre-only gates and decisions (do not self-approve)
 1. D16 = approval to spend up to 23 Kling credits on Phase A of the Galileo test: 3 reference images for one over-the-shoulder shot (Andre seated, Galileo's blurred back in front, head out of frame). Recorded as "relayed via Grok Architect Bot". Needs Andre's direct confirmation. Do not spend on it as it stands.
@@ -54,7 +54,8 @@ New detail images are created by Codex in the main desktop conversation. Lanes p
 All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
-- Auditoria CLI (2026-10-12): CLI oficial global 0.2.1 mantida; captura JSON, preflight e contabilidade revisados, skill em português. Consulta autenticada MCP 1.3.3 não listou V4. Planos A/B/motion seguem bloqueados, sem gasto. Ver `../agents/handoffs/2026-10-12-kling-cli-audit-v2.json`; produtor revisa/ingere, permissões globais continuam fora do escopo.
+- Teste CLI mínimo (2026-10-12): um take adicional de teste, fora dos 9 takes de produção, `AB-MIN-02-v3_0-3s-720p_1`, sem aceite. Decode íntegro e 73 quadros inspecionados estaticamente; falhas de prompt (piscar/boca/entrada à direita). Playback com escuta e semelhança por Andre pendentes. Produtor retém a revisão e o bloqueio de preço Turbo; ver `../agents/handoffs/2026-10-12-kling-ab-min-v1.json`.
+- Auditoria CLI (2026-10-12): CLI oficial global 0.2.1 mantida; captura JSON, preflight e contabilidade revisados, skill em português. Consulta autenticada MCP 1.3.3 não listou V4. Planos antigos A/B/motion continuam bloqueados; o novo escopo mínimo separado executou um v3_0 por 27 créditos, com Turbo bloqueado por preço. Ver `../agents/handoffs/2026-10-12-kling-cli-audit-v2.json`; produtor revisa/ingere, permissões globais continuam fora do escopo.
 - Comprehensive execution plan (planning only): `../tasks/execution-plan-v1/README.md`; 96 work packages, 129 traced requirements, Parley/hook design and staged verification. Producer owns execution kickoff; live audit found both film lanes stopped and native approval setup incomplete. No dispatcher activated or production approval changed.
 - Requested cleanup audit plan: `../tasks/plans/project-cleanup-plan-v1.md`. Preliminary inventory only; execution/retirement/global uninstall/hook activation not performed. Reuse existing Claude consolidation before new auditing.
 - Workflow map: `../tasks/plans/workflow-map-v1.md` covers all 21 board tasks, 68 work packages and the five chapter checklists. Next ready work is independent image continuity review; producer owns dispatch until a reviewer accepts. Map created, no new lane dispatch or automatic hook configured.

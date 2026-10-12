@@ -260,10 +260,53 @@
       "status": "accepted",
       "id": "PILOT-05-oppenheimer-speech-OL04_1"
     },
-    {"id":"G-01-insert-galileo-v2_1","shotId":"G-01","phase":"galileo","path":"07_generations/originals/G-01-insert-galileo-v2_1.mp4","credits":80,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-01-insert-galileo-v2.json"},
-    {"id":"G-02-andre-GL02_1","shotId":"G-02","phase":"galileo","path":"07_generations/originals/G-02-andre-GL02_1.mp4","credits":108,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-02-andre-GL02.json"},
-    {"id":"G-03-eyes-galileo-A_1","shotId":"G-03","phase":"galileo","path":"07_generations/originals/G-03-eyes-galileo-A_1.mp4","credits":40,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-03-eyes-galileo-A.json"},
-    {"id":"G-05-eyes-galileo-B_1","shotId":"G-05","phase":"galileo","path":"07_generations/originals/G-05-eyes-galileo-B_1.mp4","credits":40,"status":"accepted_pending_full_playback","review":"08_edit/reviews/G-05-eyes-galileo-B.json"}
+    {
+      "id": "G-01-insert-galileo-v2_1",
+      "shotId": "G-01",
+      "phase": "galileo",
+      "path": "07_generations/originals/G-01-insert-galileo-v2_1.mp4",
+      "credits": 80,
+      "status": "accepted_pending_full_playback",
+      "review": "08_edit/reviews/G-01-insert-galileo-v2.json"
+    },
+    {
+      "id": "G-02-andre-GL02_1",
+      "shotId": "G-02",
+      "phase": "galileo",
+      "path": "07_generations/originals/G-02-andre-GL02_1.mp4",
+      "credits": 108,
+      "status": "accepted_pending_full_playback",
+      "review": "08_edit/reviews/G-02-andre-GL02.json"
+    },
+    {
+      "id": "G-03-eyes-galileo-A_1",
+      "shotId": "G-03",
+      "phase": "galileo",
+      "path": "07_generations/originals/G-03-eyes-galileo-A_1.mp4",
+      "credits": 40,
+      "status": "accepted_pending_full_playback",
+      "review": "08_edit/reviews/G-03-eyes-galileo-A.json"
+    },
+    {
+      "id": "G-05-eyes-galileo-B_1",
+      "shotId": "G-05",
+      "phase": "galileo",
+      "path": "07_generations/originals/G-05-eyes-galileo-B_1.mp4",
+      "credits": 40,
+      "status": "accepted_pending_full_playback",
+      "review": "08_edit/reviews/G-05-eyes-galileo-B.json"
+    },
+    {
+      "id": "AB-MIN-02-v3_0-3s-720p_1",
+      "shotId": "AB-MIN-02-v3_0-3s-720p",
+      "phase": "cli_ab_test",
+      "path": "07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.mp4",
+      "credits": 27,
+      "chargeBasis": "provider_reported",
+      "status": "qc_failed_prompt_pending_full_playback",
+      "review": "08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
+      "authorizationRef": "APR-kling-ab-min-2026-10-12"
+    }
   ],
   "finalMovieVerified": false,
   "projectRoot": ".",

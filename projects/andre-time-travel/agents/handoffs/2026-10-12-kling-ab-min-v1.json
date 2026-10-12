@@ -1,0 +1,516 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "delegated-kling-executor",
+  "contributorKind": "contributor",
+  "assignment": "Executar apenas o escopo mínimo autorizado, v3_0 primeiro; bloquear Turbo sem preço verificável; conferir mídia e atualizar registros/painel local. Entregar cópia na Library sob autorização específica.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [
+    "W66",
+    "W67"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/00_brief/approvals.json",
+    ".agents/skills/kling-cli/SKILL.md"
+  ],
+  "ownedPaths": [
+    "projects/andre-time-travel/00_brief/approvals.json",
+    "projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.json",
+    "projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.mp4",
+    "projects/andre-time-travel/07_generations/requests/AB-MIN-02-v3_0-3s-720p.prompt.txt",
+    "projects/andre-time-travel/07_generations/requests/AB-MIN-shared-keyframe.png",
+    "projects/andre-time-travel/07_generations/requests/AB-MIN-v3-approved.spec.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.balance.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.intent.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.response.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.submit.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-reference-upload.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/README.md",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/audio-metrics.txt",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/decode.txt",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/ffprobe.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-016.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-025.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-050.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-000-011.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-012-023.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-024-035.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-036-047.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-048-059.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-060-071.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-072-072.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/technical.json",
+    "projects/andre-time-travel/credit-ledger.csv",
+    "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+    "projects/andre-time-travel/manifest.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/memory/mistakes.jsonl",
+    "sites/movies-demandas/app/dashboard.tsx",
+    "sites/movies-demandas/app/kling-test-summary.tsx",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/scripts/export-production.mjs",
+    "sites/movies-demandas/tests/model.test.ts"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "f158e0fdf7eb0a12377dcd6ee8d428007032091306bdfe18e05104d92c66691e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.mp4",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-02-v3_0-3s-720p.prompt.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-shared-keyframe.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-v3-approved.spec.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.balance.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.intent.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.response.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.submit.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-reference-upload.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/README.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/audio-metrics.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/decode.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/ffprobe.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-016.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-025.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-050.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-000-011.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-012-023.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-024-035.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-036-047.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-048-059.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-060-071.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-072-072.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/technical.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256Before": "f5db1c39590fa748cd5bc7c502a0bd1c092d3f3ffa66f076f6e6938e2cc777a3"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256Before": "354cbd1989a58f3680081cc40a3e050dd3585357d485c54698c1bd09a2208dc2"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "a725abbe0deb51bcd15148fdb40cb77c052d5a9bc30852df3e05fc3a1fd7e115"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256Before": "980450270ea5818c039338dbe4330876115c05682fcdafc60f7b3e574fe7180e"
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256Before": "f341eb11222b1a3aa1a22ae3f914faab04268cfbe0a40da04760ea11aa257503"
+    },
+    {
+      "path": "sites/movies-demandas/app/kling-test-summary.tsx",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "f228e6cb0491dd6b9e1b7b1f00b65efd6a9c876fe157f8c1c1f3e0941d5e1ab7"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "7764ac1fac8f2d90b25bdd07139bb8f8e1aac06a6d26c56900ab71fd04651933"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "15116a80ad652a8f57364d794f46b4f78e8a7b108d677c24c1754c39d07088fe"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256Before": "df6c0e5125405cd0fd84f0cc3bbde80018d5bbca18d56876671af77a1059767d"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "4e237a2c781648c126123f8518913e934e81bc43a7164d4d522f01747e559111"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256After": "74ded1aa96a4f319a7ef4c93d18629410b1ca187c2643494a92a64ff18f27065",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.json",
+      "sha256After": "e75eb0760e23df513657279ebedd8ede76ed7c26654790ead4c6a238caee8fe0",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.mp4",
+      "sha256After": "60cb7a1bfbf2ad2296af41aa2b7eee5e6807803116df30e8c056b0796ea04a0a",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-02-v3_0-3s-720p.prompt.txt",
+      "sha256After": "7027f086c94380df26457243d5356a22faab8bb7f0c17dadf114e3e206022fee",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-shared-keyframe.png",
+      "sha256After": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-v3-approved.spec.json",
+      "sha256After": "01050ec274f03d1566a69923d2d4fb2f995e2c75e5465def78f2a73a95f1ea41",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.balance.json",
+      "sha256After": "93688775a40e5673d8c277dd513d659ea19fabf33564106ce21c21478f8b34ce",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.intent.json",
+      "sha256After": "ffc502ad6af1d65d1719290e1cf67733056d27ca3726cb68e7bdc07fb68cf85f",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.response.json",
+      "sha256After": "28dc5751bfca9f7cc1f69dd4e432314912726779f0e8106f87b895eb5959e3af",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.submit.json",
+      "sha256After": "d4e0e15bc032a174475819007e5e27ab6ab959d3552a2dc48b746d73c79d8fc6",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-reference-upload.json",
+      "sha256After": "7572955a8b3e0fe51c6264f36a1a5605e89529718fdf5c852568acc430c58a8c",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/README.md",
+      "sha256After": "93f3a7cf054a0533c8d7b4ca480caef6ace4eccb3aa84241852463721a9d51af",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/audio-metrics.txt",
+      "sha256After": "e89ad54a32bb3b0e525e3c87d2cad969d9e245206cc6d0673784f5ab9edfc198",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/decode.txt",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/ffprobe.json",
+      "sha256After": "65597f2b700ef8b78538de30fe1c8dc9f143b867f12853e9736584e2d2af5f5b",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-016.png",
+      "sha256After": "73d44ddbdbf2a3bf540ee81e5dab9f0b28f3d51a209286eb7f85602b48158c43",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-025.png",
+      "sha256After": "c577203bad499b0104dffc530eec0551b664441d19c6681582d75cc4a7532b23",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frame-050.png",
+      "sha256After": "7c87a2128f12512d2521bac7a5676633f03188d107b330476002d4525d5cf2a9",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-000-011.png",
+      "sha256After": "a94a12c639a3ea8e93f44d3b78c2481c0f2f461143c182da92fa92bc069c08e3",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-012-023.png",
+      "sha256After": "f61176c03e9a47c446916353983a37c9c6401337a169ae0ffdaafa176cd8ee47",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-024-035.png",
+      "sha256After": "99a7bee825895a642862a41227092003988fc57aa260a7cca26315de2f06519c",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-036-047.png",
+      "sha256After": "19b27fadbd8a85b87d8a8aa0329ba441810bd660a9a43ca9664506a51238dfb0",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-048-059.png",
+      "sha256After": "6181227debcf2206cfbe5a2cb591e2f0a2829dd52b09c43d39af5d14c33bf703",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-060-071.png",
+      "sha256After": "c98414da3ec66ab67158f385753da62937b7b37deb470af8762032c86d023108",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/frames-072-072.png",
+      "sha256After": "ad0d6ec4024c1c5ad212ee11ea35b3e42958e064facd0862fc28d0cccb405643",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
+      "sha256After": "a3e3e1c860c89e0618c4ba087f6badf565f2111b48baed2d36810f9e2cf4f885",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/technical.json",
+      "sha256After": "6f938f7e0bc319083e20fe39684f5f34cdb03367b0ce6f31aeae2d339b52b3e7",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256After": "96ed1f26f23383a567c60c8de86ec6489f48871655552a21a5c3d9035b4439c9",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+      "sha256After": "8c6a86bf1ba89f629e0f0c0df7a6b7d725ef577e08faa2bd3fc9b00e31f24b6f",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256After": "0c06976d9ba78605b23260af74a79045f91fc14a220c896e65d254286c598648",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "a273b4d3d3d5cf8e4250d2421440eccc5e03ea3ffd4135d7f707a63222e22b9f",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256After": "8b400555a9ea2cf48674e9790ba8034f968439b1e611ab939957cf19d00d8aa0",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256After": "b6b62b376482203b917b04ce187d9c7ecda5673062dab7be56730a5289fb029d",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/app/kling-test-summary.tsx",
+      "sha256After": "6b5a8b4c681480a99a653995c665fc476b8c3721316938434605f985cfb0215d",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "0fcde2daa983e08bb467032cdf4b9b721d4d156f68af8873f3d7a5afab373ae6",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "91cf3cef15887fb5631357750d4fc5c4c3e1400af9c1dcf703b58b8c026ec46a",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "748900ba36eef7a85c56a8825562bfcca9a8b33ac807ef3ef23cd069dc274220",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256After": "6eb1d341b09db973d66ba23018654dd7a79e3a3e2c18bf833c415bbe5ccc66cc",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "c9ee17332fdb4dcf26c5d0ebc4eb850cc0071430fdc0763ebc1be4c4d96753a6",
+      "reason": "Registro do único teste v3_0, evidência de revisão local, memória ou painel derivado; originais preservados."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Um único v3_0 concluído, cobrança declarada 27 créditos; Turbo não submetido por preço não verificável; revisão estática parcial sem aceite criativo.",
+      "evidence": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
+      "sha256": "a3e3e1c860c89e0618c4ba087f6badf565f2111b48baed2d36810f9e2cf4f885"
+    }
+  ],
+  "verification": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -s tests -v",
+      "result": "112 passed; synthetic/offline"
+    },
+    {
+      "command": "node --test --test-isolation=none --test-reporter=tap tests/model.test.ts tests/export.test.mjs",
+      "result": "21 passed"
+    },
+    {
+      "command": "npm run lint; tsc --noEmit --incremental false; npm run build",
+      "result": "passed after fixing a missing closing brace in the new component; first lint failure retained in workspace logs"
+    },
+    {
+      "command": "ffprobe -count_frames; full ffmpeg decode; volumedetect; static contact sheets",
+      "result": "73/73 frames, 24 fps, H.264 1276x720, container 3.041995s, AAC stereo 44.1kHz; full decode return 0. All 73 frames inspected in 400px-wide sheets, frames 16/25/50 at native size. No normal-speed playback/listening or artistic acceptance."
+    }
+  ],
+  "generation": {
+    "job": "AB-MIN-02-v3_0-3s-720p",
+    "generationId": "AZwN8R5A6vdmIfvpj_8CC4b8AsSai4bKKRtxq0vya7d9cLBe4CKqVQA_fsgXVBnzBM8fm7eQ",
+    "status": "COMPLETED",
+    "creditsConsumed": 27,
+    "chargeBasis": "provider_reported",
+    "balanceDeltaIsCharge": false,
+    "retries": 0,
+    "uploads": 1,
+    "batchTotalCeiling": 200,
+    "turboSubmitted": false,
+    "remainingCeilingConditional": 173
+  },
+  "libraryDelivery": {
+    "status": "succeeded",
+    "library_file_id": "libfile_10b634db290481918fe7889463876366",
+    "file_id": "file_000000000fe4820eab87e5ef393bb93c",
+    "fileName": "AB-MIN-02-v3_0-3s-720p_1.mp4",
+    "mimeType": "video/mp4",
+    "version": 0,
+    "bytes": 1607524,
+    "sha256": "60cb7a1bfbf2ad2296af41aa2b7eee5e6807803116df30e8c056b0796ea04a0a",
+    "localOriginalPreserved": true,
+    "metadataPersistedOnDeliveryCopy": true,
+    "authorization": "Direct user yes to specific private Library delivery, 2026-10-12 05:09 UTC, verbatim transcript relayed by parent; one official create_library_file call."
+  },
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar/ingerir a entrega, apresentar o vídeo salvo na Library e concluir playback com escuta/semelhança por Andre. Manter Turbo bloqueado até tarifa consumer verificável e dentro do saldo documental de 173, sem retries ou nova autenticação. Produtor retém responsabilidade até aceite explícito do próximo responsável.",
+      "readiness": "delivered_pending_review"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Preço consumer de Turbo não confirmado; CLI não ofereceu quote/cap/cancel e UI disponível mostrou Sign In. Nenhum segundo job.",
+      "owner": "producer",
+      "unblockCondition": "Preço atual verificável que caiba nos 173 créditos restantes do teto conservador, sem gasto exploratório, novo login/grant ou rota alternativa."
+    },
+    {
+      "description": "Playback integral com escuta, avaliação da forma desfocada à direita e aprovação de semelhança/arte pendentes.",
+      "owner": "producer / Andre",
+      "unblockCondition": "Revisão do arquivo original completo, sem inferir silêncio por baixa amplitude nem aceite por conclusão do job."
+    }
+  ],
+  "andreOnlyGates": [
+    "Semelhança e aceite artístico deste novo take"
+  ],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": "Fonte .jpg contém PNG; prompt com uma piscada/boca fechada/ninguém entra não foi atendido neste take.",
+      "solution": "Cópia .png com bytes idênticos; registrar as falhas e hipóteses para revisão, sem rerender. Aprendizados em projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md"
+    }
+  ],
+  "paidJobsSubmitted": 1,
+  "canonicalStateChanged": true,
+  "canonicalStateChangeScope": "Aprovação específica, um take de teste fora da montagem, uma linha de ledger, evidências/memória e frontend local. Flags globais de lote e aceites inalterados; board e shots inalterados.",
+  "supersedes": [
+    "2026-10-12-kling-cli-audit-v2.json"
+  ],
+  "supersessionScope": "Somente avanço de STATE/mistakes/snapshots e substituição do bloqueio financeiro genérico pelo escopo específico APR-kling-ab-min-2026-10-12. Preserva auditoria técnica anterior e todos os handoffs como história. Esta entrega não declara ingestão/aceite nem autoriza o plano antigo A/B/motion.",
+  "concurrency": {
+    "initialHead": "6af1f555feb9c470d428f859789b0062b89cb45d",
+    "closeoutBaseHead": "5a877c6283ef87b36257f53e940f68cf69d5d098",
+    "commitsMadeByThisTask": 0,
+    "note": "Commit concorrente 5a877c6 integrou arquivos já criados enquanto a revisão prosseguia; não foi criado por este executor. Fontes verificadas por hash antes de cada edição; alterações anteriores do frontend preservadas."
+  },
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}
