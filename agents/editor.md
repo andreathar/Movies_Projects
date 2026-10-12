@@ -14,3 +14,15 @@ Review/read-only role by default. No paid submission, login, external record wri
 
 ## Review rules
 Preserve sources and opaque IDs exactly. No secrets or invented evidence. A completed provider job is unreviewed media. Human likeness approval, language review and final-file inspection remain distinct. These are role briefs for explicit delegation, not installed/running bots.
+
+## Reads
+Accepted and candidate takes with their labels, timelines, bibles, measured audio.
+
+## Writes
+`08_edit/timelines/` and `08_edit/normalized/` new revisions, previews under `08_edit/picture-lock/` as new versions, playback reports, own handoff from `shared/templates/agent-handoff-v2.json`. Reserve paths through Agent Parley before editing.
+
+## May not
+Re-render by default; replace media with assumed new assets; accept a chapter (producer and Andre gates); edit canonical records.
+
+## Definition of done
+Full-file normal-speed playback with audio reported with timestamps and defects; timeline reconciled with the bible; F-findings dispositioned; the handoff names the next owner or a blocker with owner.

@@ -69,12 +69,36 @@
     }
   ],
   "corrections": [
-    {"id": "H01", "section": "1.3, 1.10", "change": "Arcetri floor in 1634 recorded as NOT documented; terracotta/planks are art choices; removed the claim that terracotta is the reported original floor and the implication that it should force a plate change or fix G-F2's acoustic."},
-    {"id": "H02", "section": "4.3", "change": "Removed 'use O'Meara 14x12 / Montholon 12x15 for the study' and the 'transcription error' guess. Las Cases' 45x42 ft is for two chambers A/B; 14x12 is O'Meara's bedroom. Study dimensions recorded as UNKNOWN."},
-    {"id": "H03", "section": "1.5", "change": "Split the portrait row into three images: Uffizi 1635 original, RMG BHC2700 c.1640, RMG BHC2701 = Cecconi 1879 copy of a 1636 original. Iconographic reference only, not observation of 1634 dress."},
-    {"id": "H04", "section": "4.2", "change": "'nunca bota' replaced: the shoes-indoors statement is dated to Las Cases, April 1816; October-November footwear stays N; no variant approved."},
-    {"id": "H05", "section": "4.8, 4.9", "change": "'novo, nao gasto' replaced by the visible wear (frayed/torn cuff and edges, wear marks, lint) seen on the original-resolution image; separated from the documentary conflicts on buttons and piping; front view does not settle inside-out."},
-    {"id": "H06", "section": "this handoff", "change": "baseFiles now carry hashes with their limits stated; pendingDecisions below cover all five encounters."}
+    {
+      "id": "H01",
+      "section": "1.3, 1.10",
+      "change": "Arcetri floor in 1634 recorded as NOT documented; terracotta/planks are art choices; removed the claim that terracotta is the reported original floor and the implication that it should force a plate change or fix G-F2's acoustic."
+    },
+    {
+      "id": "H02",
+      "section": "4.3",
+      "change": "Removed 'use O'Meara 14x12 / Montholon 12x15 for the study' and the 'transcription error' guess. Las Cases' 45x42 ft is for two chambers A/B; 14x12 is O'Meara's bedroom. Study dimensions recorded as UNKNOWN."
+    },
+    {
+      "id": "H03",
+      "section": "1.5",
+      "change": "Split the portrait row into three images: Uffizi 1635 original, RMG BHC2700 c.1640, RMG BHC2701 = Cecconi 1879 copy of a 1636 original. Iconographic reference only, not observation of 1634 dress."
+    },
+    {
+      "id": "H04",
+      "section": "4.2",
+      "change": "'nunca bota' replaced: the shoes-indoors statement is dated to Las Cases, April 1816; October-November footwear stays N; no variant approved."
+    },
+    {
+      "id": "H05",
+      "section": "4.8, 4.9",
+      "change": "'novo, nao gasto' replaced by the visible wear (frayed/torn cuff and edges, wear marks, lint) seen on the original-resolution image; separated from the documentary conflicts on buttons and piping; front view does not settle inside-out."
+    },
+    {
+      "id": "H06",
+      "section": "this handoff",
+      "change": "baseFiles now carry hashes with their limits stated; pendingDecisions below cover all five encounters."
+    }
   ],
   "verification": [
     "Review historical-review.md read in full (codex lane worktree).",
@@ -113,5 +137,10 @@
   "paidJobsSubmitted": 0,
   "reviewStatus": "not_reviewed",
   "createdAt": "2026-10-10",
-  "note": "No manifest, board, approvals, ledger, STATE, session-log, script, media, Parley mail, report or reservation was touched. No commit, merge or push. v1 and the lane worktrees were not modified. Parley has no registered session for this work: both lanes are dead and this session is not launcher-managed, so no file reservation or report was made. v2 sits in the base checkout as an untracked new file."
+  "note": "No manifest, board, approvals, ledger, STATE, session-log, script, media, Parley mail, report or reservation was touched. No commit, merge or push. v1 and the lane worktrees were not modified. Parley has no registered session for this work: both lanes are dead and this session is not launcher-managed, so no file reservation or report was made. v2 sits in the base checkout as an untracked new file.",
+  "ingest": {
+    "status": "ingested",
+    "by": "backfill-2026-10-11 (Andre request via Claude cloud session; legacy content not re-verified)",
+    "at": "2026-10-11T04:01:45+00:00"
+  }
 }

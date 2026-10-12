@@ -16,6 +16,7 @@ O histórico é mantido em Git com Git LFS para mídia, com publicação autoriz
 - [Problemas observados e lacunas de cobertura](projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/documents/review-findings.md).
 - [Bíblia visual ampliada com todas as imagens locais](docs/master_production_visual_bible.md): propostas R1/R2, figurinos e traduções; conteúdo pendente de revisão.
 - [Atlas V2 reconstruído a partir das fontes editáveis](projects/andre-time-travel/05_storyboard/preproduction-atlas-v2/index.html): prova de reconstrução do workflow, sem novas gerações pagas.
+- Atlas V3 já existe em `projects/andre-time-travel/05_storyboard/preproduction-atlas-v3/`. É documento derivado, com `approved: false`. A próxima renderização precisa de uma pasta nova; o renderer recusa sobrescrever a v3.
 - [ZIP de apresentação da versão 1](projects/andre-time-travel/05_storyboard/The-Table-Between-Centuries-Preproduction-v1.zip): cópia para consulta, não backup completo nem fonte de edição.
 
 As imagens são cartões montados com referências existentes. Sua presença aqui não significa aprovação de semelhança, roupa, época ou tomada. Os áudios são testes, ainda sem aceite de interpretação/pronúncia.

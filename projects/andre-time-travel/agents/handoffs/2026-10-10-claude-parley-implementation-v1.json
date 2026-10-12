@@ -1,0 +1,358 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Andre (cloud Claude session, 2026-10-10): analyze the workspace demands, write the Agent Parley integration plan, then implement everything buildable from the session as code, configuration, tests and documents",
+  "parentTask": "coordination (W63-W68); P0 preparation; P1.1, P1.2, P1.3, P1.11; current-plan pointer",
+  "workPackages": [
+    "W03",
+    "W63",
+    "W64",
+    "W67",
+    "W68"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PLAN-parley-integration-v1.md",
+    "docs/PARLEY_PROTOCOL.md"
+  ],
+  "ownedPaths": [
+    ".claude/hooks/",
+    ".claude/settings.json",
+    "tests/test_hooks.py",
+    "tests/test_manage_lint.py",
+    "scripts/manage.py",
+    "scripts/parley_setup.sh",
+    "shared/templates/agent-handoff-v2.json",
+    "docs/PLAN-parley-integration-v1.md",
+    "docs/parley-smoke-test.md",
+    "projects/andre-time-travel/memory/mistakes.jsonl",
+    "projects/andre-time-travel/07_generations/plans/current-plan.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "f41a0732e43a0f609117eae714e1bf92bc75d8274be2558c8fd3381d2d004186"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "af656791d19ccfd08733eeb61be1a8decd28e4701d478e674247bdcf58eab18d"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256Before": "a8ec187622c5546c436c1d4f09a66afc80f01fbe94f17936642e442caee5f271"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "ead5f0657dbc223eaba3eefa24dc685d49b18f98b54ff6d8033e782c77af3060"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256Before": "46b8dcbf771d872f6f2921c280624d7838f721087a0b567269b259b983d25495"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256After": "bbf334242ede234c226826dafdbf00ccce6dd18469b117212a11b5b23b6186ca",
+      "reason": "step 7: resume/lint, Parley protocol link, hooks are refusals, handoff v2, mistakes register (proposed rule link)"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "e58ffde292c77fca7ad1f12bc66fb1d8c7bc93fe0f816ab9fa7ac2950df1d300",
+      "reason": "lane roster v2, hook identity variables, dispatch contract, reservations and supervision (proposed)"
+    },
+    {
+      "path": "docs/parley-smoke-test.md",
+      "sha256After": "35533135c02cf815c55bf8e6146881d9359cef4a82c8b8f46ce44587a4a1a8e5",
+      "reason": "P0.5 smoke test and P0.6 hook proof procedure"
+    },
+    {
+      "path": "docs/PLAN-parley-integration-v1.md",
+      "sha256After": "b25339f0004af20fed8505e6344d7c7f4bfd4b9dd22860361cecdca8f30da0bc",
+      "reason": "plan plus implementation status"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256After": "4e12243d0b372ca0ac919a185a15d5bd3f5cf1d5599c00587f95716eae0013b3",
+      "reason": "lint, resume, handoff check, handoff ingest (memory design Phase 2)"
+    },
+    {
+      "path": "scripts/parley_setup.sh",
+      "sha256After": "93d3acc9397bf082e22428aaf103666aaa7188dc2fe8a05a95c6867258bef973",
+      "reason": "Phase 0 runbook; dry run by default"
+    },
+    {
+      "path": "shared/templates/agent-handoff-v2.json",
+      "sha256After": "93d0c741a894730184e6655c351aa8349a5bf9c6cde276317371996f12975909",
+      "reason": "handoff v2 template"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256After": "2d43ac358f13fa43a508748912a3bce7266d8c395c43d3fd97cfcc2debe7d383",
+      "reason": "blocker text for T06, T11, T12, T13 rewritten from STATE.md, risks and handoffs; statuses, dependencies and deliverables unchanged"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256After": "5ba8de483efe867464e309e105d3d1b2770cc5e6c9e43897a5faecd3760be28f",
+      "reason": "Mistake/Solution register with 8 seed entries from known findings"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256After": "33850d5ecdcb658be1baed121e86a87399a214978767bf3c789885278def56bc",
+      "reason": "current-plan pointer to v3 plan and takes CSV"
+    },
+    {
+      "path": ".claude/settings.json",
+      "sha256After": "fa415418e3c4a7e0f5889fe2c33e85002e31ef7b08890342aefa3ebe0efeb1a7",
+      "reason": "registers the film gate hooks for Claude Code sessions in this checkout; integration note 2026-10-10: hash refreshed after main also gained a SessionStart hook entry from PR 1 (session-start.sh); the delivered Pre/PostToolUse/Stop hook entries are unchanged",
+      "sha256Delivered": "85052133720b0cb7abd6bbb9ee0de9320e511c378c953afc339b3668d2a8479e"
+    },
+    {
+      "path": ".claude/hooks/_common.py",
+      "sha256After": "4c32f345a3c87d258040d75a64978426867c4f10b185edf29001ca7ae8848185",
+      "reason": "shared hook helpers: payload, workspace, logging, draft mistakes, Parley reservations"
+    },
+    {
+      "path": ".claude/hooks/canonical-guard.py",
+      "sha256After": "5296c789896b3c1f95fe951fe4aa124314b676cdc600593e006fe4a761783330",
+      "reason": "PreToolUse: producer-owned records and reserved paths"
+    },
+    {
+      "path": ".claude/hooks/media-guard.py",
+      "sha256After": "4649e5cb0ec4320612f58c6c96298421a3f6893f17d97b822a59d9b598eb35fe",
+      "reason": "PreToolUse: destructive commands on media folders"
+    },
+    {
+      "path": ".claude/hooks/kling-preflight.py",
+      "sha256After": "51ec8e455b24be6454d7acee9b44532e0657dc0d0853ed29bb87c1f184e05478",
+      "reason": "PreToolUse: scope, live balance, schema slots, relayed grants, producer identity"
+    },
+    {
+      "path": ".claude/hooks/no-retry.py",
+      "sha256After": "2fa91cd589d3f92dd46eec361152dec183466fd2d49dc0ce471ede95d401ff30",
+      "reason": "PreToolUse: closed ledger jobs are never resubmitted"
+    },
+    {
+      "path": ".claude/hooks/handoff-check.py",
+      "sha256After": "05b478a92035da2ab16e30975f6975c0bdfad018ba2d82fdeb87686f2a7453b5",
+      "reason": "Stop: edits require a valid handoff with matching hashes"
+    },
+    {
+      "path": ".claude/hooks/zero-face-gate.py",
+      "sha256After": "fbbf4f2278ee4f1170e6891e71b6a8b33d4feb0c416b0b9ece55ca73fd639f53",
+      "reason": "Stop: reviewed media needs zero-face-log.json"
+    },
+    {
+      "path": ".claude/hooks/mistake-capture.py",
+      "sha256After": "cfcef0d156ea53ea76f43d0cb1d4bbd822d958edab91b589f933936bb9299257",
+      "reason": "PostToolUse: failed commands become draft mistakes"
+    },
+    {
+      "path": ".claude/hooks/successor-check.py",
+      "sha256After": "7be053d7edbbb3590c8afa88bf4155a016a0c6a8ffc896001fe739b4d9d047bc",
+      "reason": "Stop: every delivery names a successor or a stage end"
+    },
+    {
+      "path": "tests/test_hooks.py",
+      "sha256After": "482b7fee40db8cfe97c8f37bc8670eec0dcb8758c22d41cfef23841dd8896366",
+      "reason": "25 dry-run tests on synthetic fixtures"
+    },
+    {
+      "path": "tests/test_manage_lint.py",
+      "sha256After": "f2fd10a0524bfeabc6c448b462b691cb092863e9f37f889f29d125991c2e7000",
+      "reason": "20 tests for lint, resume, handoff"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256After": "3f09a115add9a6986d263d3abc65cc16d8aac878f8116619dc490c224f5a98d0",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/director.md",
+      "sha256After": "5905a3a219d7dca6709f24789564eb4a42e6d616e8372ccd2aedcb9f11706dfe",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256After": "8df9a6ebd92e848302517585ed169a0177cacc330340daf4f8d9fafd96eee57f",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256After": "1a69d90032c56acc9cb2bbf72bf66918fd018efa0f95cef0b04ea69377868dab",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256After": "23dfedf2334b10a3a04943d5e2c6e7988217209229bc8d29e7049c2f06539535",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/storyboard.md",
+      "sha256After": "5872f67b48499ba312e4210f64f744c81bfeee933790b2899463c6e11000b769",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256After": "2fb05ca6376857757f689c2c4b339caff0381487a4ddcf63659d990625897c2b",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256After": "327bd48a19460ca87e76a7ab4aa5cd165269193d9b45fd3a59ad9f5ba65f8559",
+      "reason": "reads, writes, may-not, definition of done"
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256After": "8c2c8c02eae67bfba98a3a758d0057f271bc1e204d910b5564e9e88749750e1c",
+      "reason": "lê, escreve, não pode, pronto quando"
+    },
+    {
+      "path": ".gitignore",
+      "sha256After": "6957b8e94e6858627eb427b696860c80c78a3a681c01d46ae0d94064017175d3",
+      "reason": "untracked runtime hook outputs"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "All eight film gate hooks pass their dry-run tests on synthetic fixtures",
+      "evidence": "tests/test_hooks.py",
+      "sha256": "482b7fee40db8cfe97c8f37bc8670eec0dcb8758c22d41cfef23841dd8896366"
+    },
+    {
+      "statement": "lint on the real workspace reports zero hard contradictions",
+      "evidence": "scripts/manage.py",
+      "sha256": "4e12243d0b372ca0ac919a185a15d5bd3f5cf1d5599c00587f95716eae0013b3"
+    }
+  ],
+  "verification": [
+    "python3 -m unittest discover -s tests: 83 tests, 2 failures (pre-existing: test_manage.py status/validate fail on the machine-local skill symlink film-character-continuity absent in the cloud container)",
+    "python3 -m unittest tests.test_hooks: 34 tests OK; 19 new cases watched failing before the review fix pass",
+    "python3 scripts/manage.py lint: status ok, hard [] with current handoff hashes",
+    "python3 scripts/manage.py handoff check on this file: ok, version 2.0",
+    "bash scripts/parley_setup.sh (dry run): prints steps, runs nothing",
+    "fresh-context code review (opus) of HEAD~1..HEAD: 1 critical and 12 important findings fixed or ruled; see mistakes[]"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "read the PR diff, integrate as one delivery, run handoff ingest on this file; decide whether to adopt the T06/T11/T12/T13 blocker text",
+      "readiness": "PR andreathar/Movies_Projects#2 on branch claude/wizardly-clarke-23j2kj"
+    },
+    {
+      "role": "operator (Andre)",
+      "action": "P0.1-P0.7: bash scripts/parley_setup.sh --apply, launch the three lanes, run docs/parley-smoke-test.md",
+      "readiness": "after merge or checkout of the branch on the base machine"
+    },
+    {
+      "role": "producer",
+      "action": "P1.4 ingest the 32 legacy handoffs; P1.6-P1.10 per plan section 5",
+      "readiness": "after Gate 0"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "P0.1-P0.7 need Agent Parley and terminals on Andre's machine",
+      "owner": "Andre (operator)",
+      "unblockCondition": "run scripts/parley_setup.sh --apply and the smoke test"
+    },
+    {
+      "description": "P1.7 ledger reconciliation needs the Kling CLI with credentials",
+      "owner": "producer",
+      "unblockCondition": "read-only task query on the base checkout"
+    },
+    {
+      "description": "P1.8 D16 confirmation and P1.9 D17-D19 are Andre-only",
+      "owner": "Andre",
+      "unblockCondition": "direct confirmation, decline or supersession recorded by the producer"
+    },
+    {
+      "description": "P1.10 skill symlink film-character-continuity broken outside Andre's machine",
+      "owner": "producer",
+      "unblockCondition": "reconnect the link on the base machine; keep vendor code out of the repo"
+    }
+  ],
+  "andreOnlyGates": [
+    "D16 direct confirmation",
+    "likeness on selected new stills",
+    "voice by ear",
+    "final picture and movie",
+    "language reviewers"
+  ],
+  "proposedDecisions": [
+    "Adopt lane roster v2 and the dispatch contract in docs/PARLEY_PROTOCOL.md",
+    "Enable the film gate hooks by merging .claude/settings.json (reversible: delete the file)",
+    "Treat memory/mistakes.jsonl as producer-owned and append-only"
+  ],
+  "mistakes": [
+    {
+      "mistake": "Draft plan listed test fixtures under drafts/hook-rehearsal/, but the tests synthesize fixtures in a temp dir",
+      "detected_by": "implementation",
+      "solution": "plan text updated in the implementation status; no committed rehearsal folder",
+      "rule_added": ""
+    },
+    {
+      "mistake": "kling-preflight only recognised --submit-only, while kling_batch.py's default mode submits every selected job; a lane could spend without preflight",
+      "detected_by": "fresh code review",
+      "solution": "every kling_batch.py call without --resume is a paid submission; direct CLI generation verbs are refused",
+      "rule_added": "tests/test_hooks.py test_default_batch_mode_is_a_paid_submission"
+    },
+    {
+      "mistake": "Schema slot check counted images in a dict request, but real specs are JSON lists of jobs; the R08 check never fired",
+      "detected_by": "fresh code review",
+      "solution": "parse the list, select --only jobs, count images per job",
+      "rule_added": "tests/test_hooks.py test_list_spec_image_count_is_checked_per_selected_job"
+    },
+    {
+      "mistake": "canonical-guard used fnmatch where * crosses slashes, denying nested manifest.json files storyboard and downloads legitimately write",
+      "detected_by": "fresh code review",
+      "solution": "match path parts one by one; match suffixes for paths outside the worktree",
+      "rule_added": "tests/test_hooks.py test_nested_manifest_and_decision_lookalikes_are_allowed"
+    },
+    {
+      "mistake": "media-guard let destructive commands through when no protected folder was named (git clean, git reset --hard, /bin/rm, find -delete)",
+      "detected_by": "fresh code review",
+      "solution": "always deny git clean and reset --hard; match rm after a slash; protect projects/; evaluate each command segment separately",
+      "rule_added": "tests/test_hooks.py test_destructive_command_without_a_named_folder_is_denied"
+    },
+    {
+      "mistake": "no-retry matched generation_id, which neither specs nor --resume carry; it never denied on real input",
+      "detected_by": "fresh code review",
+      "solution": "match job names against stored intent/submit/response files and the ledger shot_id column",
+      "rule_added": "tests/test_hooks.py NoRetryTests"
+    },
+    {
+      "mistake": "Layer 2 reservation check parsed a status shape agent-parley does not emit (counts only) and added up to 3 s per edit",
+      "detected_by": "fresh code review",
+      "solution": "dropped; Parley's own reserved_path denial covers reservations",
+      "rule_added": "docs/PARLEY_PROTOCOL.md identity section"
+    },
+    {
+      "mistake": "mistakes.jsonl M-02 asserted 'about 62 credits', a figure present in no source; AGENTS.md forbids invented charges",
+      "detected_by": "fresh code review",
+      "solution": "cost rewritten to the sourced facts (two 41-credit charges, 70 vs 30 delta) with no total",
+      "rule_added": "lint-free rule: numbers in the register must cite a source row"
+    },
+    {
+      "mistake": "A redaction test used a literal --token=VALUE string, which GitGuardian flagged as a hardcoded CLI secret",
+      "detected_by": "GitGuardian check on PR 2",
+      "solution": "test builds the placeholder at runtime; no real credential was ever present",
+      "rule_added": "tests never contain literal key=value secret shapes, even fake ones"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "canonicalStateChangeNote": "board.json blocker text only (T06, T11, T12, T13) plus blockerUpdatedAt; no status, dependency, approval, ledger or manifest change; proposed to the producer through this PR",
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "ingested",
+    "by": "andre-requested-via-claude-cloud-session",
+    "at": "2026-10-10T20:47:37+00:00"
+  }
+}

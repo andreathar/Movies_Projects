@@ -30,7 +30,7 @@ O gerenciador atual representa a estrutura do primeiro filme; não é ainda um p
 ## Ciclo de edição local
 
 1. Ler o estado canônico e delimitar arquivos com o coordenador.
-2. Registrar hashes de partida em uma entrega baseada em `shared/templates/agent-handoff.json`.
+2. Registrar hashes de partida em uma entrega baseada em `shared/templates/agent-handoff-v2.json`. Entregas antigas em schema 1.0 ficam no histórico. Não reescrever hashes já gravados; uma entrega posterior lista o arquivo superado em `supersedes`. `lint` trata esse arquivo como história e confere o sucessor. `handoff check` no arquivo antigo continua mostrando a diferença.
 3. Editar fontes, preservando IDs. Atualizar roteiro e CSV juntos quando mudar fala; manter manifesto e lista de tomadas coerentes quando mudar duração.
 4. Validar insumos. Regenerar os derivados em uma pasta nova; o gerador recusa sobrescrita.
 5. Comparar os arquivos resultantes, revisar cortes/enquadramentos e registrar a decisão com caminho, hash, versão e escopo. Mudança de conteúdo requer nova revisão dos derivados afetados.
@@ -46,11 +46,11 @@ As direções e referências foram extraídas para `projects/andre-time-travel/0
 ```bash
 python3 scripts/build_preproduction_atlas.py \
   --source 05_storyboard/source/atlas.json \
-  --output 05_storyboard/preproduction-atlas-v3 \
-  --revision v3
+  --output 05_storyboard/preproduction-atlas-vN \
+  --revision vN
 ```
 
-Use sempre um nome ainda inexistente. V1 é a entrega original; V2 é a reconstrução usada para validar a nova fonte editável. O renderer continua específico do filme de cinco encontros: uma continuação usa o método e desenha suas próprias fontes/diagramação.
+Use sempre um nome ainda inexistente. V1 é a entrega original; V2 é a reconstrução usada para validar a nova fonte editável. V3 já existe (`preproduction-atlas-v3/`, `approved: false`) e o renderer recusa essa pasta. A próxima renderização usa outro nome, por exemplo `preproduction-atlas-v4`. O renderer continua específico do filme de cinco encontros: uma continuação usa o método e desenha suas próprias fontes/diagramação.
 
 Requisitos locais já observados: Python 3.11+, Pillow 10.2.0, ReportLab 4.1.0, `pdftoppm` e fontes DejaVu Sans. As ferramentas de gestão e os testes usam apenas a biblioteca padrão e a `.venv` do projeto. O renderer usa o `python3` com as bibliotecas de imagem disponíveis nesta máquina. Nenhum requisito foi instalado nesta etapa; em outra máquina é preciso prover esses requisitos e reconectar os links de skills.
 
@@ -137,4 +137,4 @@ Regra solicitada por Andre em 2026-10-10: uma entrega verificada termina com pr�
 
 Antes de despachar, verificar versões/evidências, dependências, disponibilidade e escopo. Consolidar a atribuição, evitar duplicatas e reabrir apenas o que mudou. Gates de gasto, identidade, voz e aceite permanecem separados. Hooks podem notificar; nenhum despachante automático ou despertar da conversa desktop está comprovado por esta regra. Implementação/teste de automação é trabalho separado, sem ativação implícita.
 
-Mapa aplicado ao episódio atual: [organograma, tarefas e dependências](../projects/andre-time-travel/tasks/workflow-map-v1.md). Novos episódios reutilizam a regra, não responsáveis, estados ou autorizações.
+Mapa aplicado ao episódio atual: [organograma, tarefas e dependências](../projects/andre-time-travel/tasks/plans/workflow-map-v1.md). Novos episódios reutilizam a regra, não responsáveis, estados ou autorizações.

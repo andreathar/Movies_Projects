@@ -5,7 +5,7 @@
   "roles": [
     {
       "id": "producer",
-      "name": "Producer / coordinator",
+      "name": "Producer",
       "brief": "agents/producer.md",
       "skills": [
         "kling-cli",
@@ -109,6 +109,19 @@
       "running": false,
       "paidSubmissionAuthority": false,
       "paidSubmissionRequiresApprovedShot": true
+    },
+    {
+      "id": "coordinator",
+      "name": "Coordinator / dispatcher",
+      "brief": "agents/coordinator.md",
+      "skills": [],
+      "running": false,
+      "paidSubmissionAuthority": false,
+      "paidSubmissionRequiresApprovedShot": true,
+      "creativeDecisionAuthority": false,
+      "dispatchAuthority": true,
+      "canonicalWriteAuthority": false,
+      "notes": "Runs as the coordinator lane when Agent Parley is installed. Routes work and verifies handoffs. Proposes board, decision and approval changes through handoffs; the producer applies board and approval changes, and the director records decision records. dispatchAuthority is not spending authority and not canonical-write authority. Does not approve work or spend money. The coordinate skill is not registered for this role and its link target is absent, so this role does not require it."
     }
   ]
 }

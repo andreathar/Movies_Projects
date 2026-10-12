@@ -4,49 +4,74 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
-`AGENTS.md` is the binding operating contract (session-start reads, spending/identity/approval boundaries, ownership). Everything below is Claude-specific orientation and does not override it.
+`AGENTS.md` (imported above) is the mandatory operating contract: session-start reading order, spending/identity boundaries, handoff rules. This file adds only what it does not cover: commands and the shape of the code.
 
-## What this repo is
+## Workspace orientation
 
-A local film-production workspace (pt-BR docs, English film script) for the series *Andre viajando no tempo*; the active film is `projects/andre-time-travel` ("The Table Between Centuries"). It is **not** a software product: the Python in `scripts/` is small stdlib-only management tooling around production records. Many tasks here are editing documents/JSON/CSV, not code. Creative acceptance, spending and likeness approval are never implied by passing validation or tests.
+This is a local film-production workspace for *Andre viajando no tempo*. The active film is `projects/andre-time-travel` ("The Table Between Centuries"); the Python tools manage production records and are not a separate application. Passing validation or tests does not imply creative, likeness, language, or spending approval.
+
+Use one source per topic: `docs/REPEATABLE_WORKFLOW.md` for the workflow, `docs/LOCAL_AGENT_HANDOFF.md` for edit and handoff rules, and `docs/VERSION_CONTROL.md` for Git. The current episode workflow map is `projects/andre-time-travel/tasks/plans/workflow-map-v1.md`; encounter direction is `projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md`.
 
 ## Commands
 
-Always use the repo venv (`.venv/bin/python`), run from the repo root.
+The management tools are stdlib-only Python (3.11+). `README.md` and `docs/VERSION_CONTROL.md` use `.venv/bin/python`; the venv is created with `python3 -m venv .venv` and any `python3` works for the stdlib tools.
 
 ```bash
-.venv/bin/python scripts/manage.py status          # read-only, offline: actual pending state
-.venv/bin/python scripts/manage.py validate        # cross-checks manifest/board/approvals/registry consistency
-.venv/bin/python -m unittest discover -s tests -v  # workspace tests (stdlib unittest, no pytest)
-.venv/bin/python -m unittest tests.test_manage -v  # one test module
-.venv/bin/python -m unittest tests.test_manage.WorkspaceValidationTests.test_validate_checks_workspace_integrity  # one test
-.venv/bin/python -m unittest discover -s docs/kling-manual/tools -p 'test_*.py'  # tests for the Kling preflight/model-sheet tools
-.venv/bin/python scripts/workflow.py verify --index reports/workflow-v1/file-index.json  # hash-check delivered files
-.venv/bin/python scripts/workflow.py new-draft --id <id> --title <t> --test-only         # clean continuation draft under drafts/
+.venv/bin/python scripts/manage.py status        # read-only state of workspace + board
+.venv/bin/python scripts/manage.py validate      # workspace integrity, exit 2 on error
+.venv/bin/python scripts/manage.py lint          # hard contradictions and advisories
+.venv/bin/python scripts/manage.py resume        # session-start digest (AGENTS.md step 7)
+.venv/bin/python scripts/manage.py handoff check <file>    # validate a handoff and its hashes (producer: handoff ingest)
+.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python -m unittest tests.test_workflow.WorkflowTests.test_paths_cannot_escape_workspace   # one test
+
+# Handoff inventory (SHA-256 index) and verification
+.venv/bin/python scripts/workflow.py index  --output reports/workflow-v1/file-index.json
+.venv/bin/python scripts/workflow.py verify --index  reports/workflow-v1/file-index.json
+.venv/bin/python scripts/workflow.py new-draft --id <slug> --title "<title>" [--test-only]
+.venv/bin/python scripts/workflow.py check-clean-draft --path drafts/<slug>
+
+# Rebuild the review atlas into a NEW revision folder (refuses to overwrite). Needs Pillow,
+# ReportLab, pdftoppm and DejaVu fonts; see docs/REPEATABLE_WORKFLOW.md.
+python3 scripts/build_preproduction_atlas.py --source 05_storyboard/source/atlas.json \
+    --output 05_storyboard/preproduction-atlas-v3 --revision v3
+python3 scripts/verify_handoff.py --output reports/<name>.json
+
+# Free local review log of images (no media generation)
+python3 scripts/review_sweep.py --film andre-time-travel
+python3 scripts/review_sweep.py --record <path> --verdict keep|keep-tone-only|reject|variant-needed
 ```
 
-Lint config is `ruff` (line length 99, py311) in `pyproject.toml`; there is no build step. `validate` currently reports ok with a few shared-skill hash warnings — a known baseline, not a regression. Run `validate` + tests after any change to `scripts/`, JSON registries or management data.
+`scripts/kling_batch.py` (`--submit-only` / `--resume JOB`) and `scripts/gemini_generate.py` are producer-only paid tools. Do not run them unless you hold the producer role with a written scope and a fresh balance refresh (AGENTS.md).
 
-Scripts that call external services or need extra deps — treat as gated, do not run casually:
-- `scripts/kling_batch.py` — producer-only paid Kling runner (`--submit-only` submits exactly one job; `--resume JOB` queries once, never submits). Writes intent/ledger before submitting; never retried. Needs explicit written spend scope and a live balance refresh (see AGENTS.md).
-- `scripts/build_preproduction_atlas.py` — renders the review atlas/PDFs; needs Pillow, ReportLab, Poppler and local fonts (not in the stdlib-only set). Output goes to a **new** versioned folder, never over `preproduction-atlas-v1`.
-- `scripts/gemini_generate.py` — uses `GEMINI_API_KEY` from `.env` (git-ignored; see `.env.example`).
-- `docs/kling-manual/tools/kling_preflight.py` — offline check of a request JSON against the `who_am_i` snapshot; safe, no credits.
+Run `manage.py validate` and the unit tests after any change to management data (JSON/CSV under `projects/`, `workspace.json`, registries, scripts).
 
-## Architecture (the big picture)
+### Known environment pitfall (Mistake/Solution record)
 
-**Registry chain.** `workspace.json` → per-film `manifest.json` + `tasks/board.json` + `00_brief/approvals.json` (+ `credit-ledger.csv`, `asset-registry.csv`) → `memory/STATE.md` (the single resume surface). `scripts/manage.py` (`validate`/`status`) is what keeps these records mutually consistent; `scripts/workflow.py` produces hash indexes and clean continuation drafts from `shared/templates/continuation.json`; `series/andre-time-travel/series.json` separates reusable series rules from episode choices. Decisions live as `00_brief/decisions/Dnn-*.json` and are cited by ID.
+`skills/film-*`, `skills/grounded-citations` are symlinks to `/home/athar/.hermes/skills/...` (machine-local, recorded in `skills/registry.json`). On any other machine `manage.py validate` exits 2 with `missing or broken skill source: ...` and the two `tests/test_manage.py` tests fail; the other 27 tests pass. That is an environment condition, not a regression: do not "fix" it by editing the registry, deleting the links, or weakening the validator. The expected baseline on the owner's machine is `validate` ok with shared-skill hash warnings and 29 passing tests.
 
-**Film pipeline layout** (`projects/<film>/`): numbered stage folders `00_brief` → `01_script` → `02_references` → `03_bibles` → `04_audio` → `05_storyboard` → `06_pilot` → `07_generations` (originals/requests/responses/accepted/rejected) → `08_edit` → `09_delivery`. `workspace.json.requiredDirectories` is the layout `validate` expects. Editable **sources** (`01_script/script-en.md` + `dialogue-lines.csv` kept in sync, `05_storyboard/source/atlas.json`, `03_bibles/`) generate **derived** deliverables (atlas HTML/PDF, cards). Fix sources and re-render to a new version; never hand-edit PDFs/PNGs or delivered V1/V2 folders.
+In Claude Code cloud sessions, `.claude/hooks/session-start.sh` (registered in `.claude/settings.json`, active only when `CLAUDE_CODE_REMOTE=true`) creates `.venv` and writes a labelled placeholder `SKILL.md` at each missing link target outside the repository, so `validate` passes and all 29 tests run. The placeholders are not the skills: they carry no procedure, and `validate` keeps reporting `shared skill changed since linking` for them.
 
-**Roles and ownership.** `agents/*.md` + `agents/registry.json` define film roles (producer, director, historian, continuity, lighting, dialogue-sound, storyboard, editor, qc). Role limits are real: only the producer submits paid jobs; reviewers never spend. Multi-agent work follows `docs/PARLEY_PROTOCOL.md` (lanes `claude`/`codex`, each in its own worktree/branch, advisory file reservations, one handoff per finished task). Canonical records (manifest, board, approvals, ledgers, STATE, session-log) are producer-owned — lanes propose via handoff and write only new files in their assigned path.
+## Architecture
 
-**Skills.** `skills/andre-time-travel/SKILL.md` is the canonical film procedure. Other entries in `skills/` and `.claude/skills/`/`.hermes/skills/` are symlinks to machine-local skills (`~/.hermes/...`) or to `.agents/skills/`; they are tracked as links, never copied.
+Offline production-management workspace for an AI-generated film series. There is no application server; the "code" is a set of validators and renderers over JSON/CSV/Markdown state, and the real product is the media and documents under `projects/`.
 
-**Docs map** (one source per subject, per `docs/TOKEN_EFFICIENCY.md` — don't duplicate or add new global summaries): `docs/REPEATABLE_WORKFLOW.md` (procedure, closure/successor rule), `docs/LOCAL_AGENT_HANDOFF.md` (edit/handoff contract), `docs/VERSION_CONTROL.md`, `docs/kling-manual/` (live-schema Kling guide + CLI help snapshots), `projects/andre-time-travel/tasks/workflow-map-v1.md` (task owners/dependencies), `projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md` (mandatory dramatic direction).
+**Registry and layout.** `workspace.json` names the active film and the `requiredDirectories` that `manage.py validate` enforces. Each film lives in `projects/<id>/` with a numbered pipeline: `00_brief` (brief, `approvals.json`, `decisions/` with cited decision IDs), `01_script` (`script-en.md` + `dialogue-lines.csv`, kept in sync), `02_references` (raw / selected / approved / synthetic / history-eyes, never mixed), `03_bibles`, `04_audio`, `05_storyboard`, `06_pilot`, `07_generations` (requests / responses / originals / accepted / rejected), `08_edit`, `09_delivery`, plus `manifest.json`, `tasks/board.json`, `credit-ledger.csv`, `asset-registry.csv`, `memory/STATE.md`.
 
-## Git specifics
+**Canonical state vs. derived output.** Editable sources are small text files; derived documents are rendered into a new versioned folder and never edited in place:
 
-- Branch `main`; media (png/jpg/webp/mp3/wav/mp4/mov/pdf/zip, etc.) is stored in **Git LFS** via `.gitattributes`, and `* -text` disables EOL conversion so provenance hashes stay valid. Don't normalize line endings or re-encode tracked files.
-- `origin` is a private GitHub repo; pushing, committing and merging each need task-level authorization (AGENTS.md). Stage only your own paths, review `git diff --cached`, no `reset --hard`/clean on shared checkouts. Keep empty dirs via `.gitkeep`.
-- `.venv/`, caches, `.env*` (except `.env.example`) and credentials are ignored.
+- `05_storyboard/source/atlas.json` + `01_script/dialogue-lines.csv` → `scripts/build_preproduction_atlas.py` (via `scripts/atlas_inputs.py`, the input contract) → `05_storyboard/preproduction-atlas-vN/` with PDFs, PNGs, gallery and `evidence/build-inputs.json` hashes. The renderer refuses unknown line IDs, missing references, external paths and existing output folders.
+- `manifest.json` ↔ `05_storyboard/shot-list.csv` (durations), owned by the producer.
+- `tasks/board.json` states are `pending|ready|blocked|in_progress|completed|cancelled`; `manage.py` checks `dependsOn` for unknown IDs and cycles.
+
+**Handoffs and provenance.** Agents deliver work as `projects/<film>/agents/handoffs/<date>-<role>-<topic>.json` copied from `shared/templates/agent-handoff-v2.json`, with before/after SHA-256 hashes. `workflow.py index/verify` produces the file inventory used to detect concurrent edits. `.gitattributes` sets `* -text` so hashes survive Git, and routes all media/PDF/ZIP through Git LFS.
+
+**Roles and skills.** `agents/registry.json` maps film roles (producer, director, continuity, historian, ...) to briefs in `agents/*.md` and to skills; only `producer` has `paidSubmissionAuthority`. `skills/andre-time-travel/SKILL.md` is the project-local procedure; the rest of `skills/` are links to profile skills, mirrored under `.hermes/skills/` and `.claude/skills/` without copies. `docs/PARLEY_PROTOCOL.md` describes the Agent Parley lanes (`claude`, `codex`) that work in separate worktrees and return handoffs instead of editing producer-owned records.
+
+**Series vs. episode.** `series/andre-time-travel/series.json` and `FRAMEWORK.md` hold reusable rules; `shared/templates/continuation.json` + `workflow.py new-draft` create a clean draft under `drafts/` that inherits no budget, jobs, approvals or layout (tests in `tests/test_workflow.py` guard this).
+
+Documentation is mixed pt-BR and English; keep each file in the language it already uses.
+
+## Local Git
+
+The project uses `main`, Git LFS, and the private `origin` remote. Treat commit, merge, and publication as separate actions requiring task-level authorization. Preserve concurrent work, stage only assigned paths, inspect the staged diff, and do not use destructive resets or cleanup on shared checkouts. Runtime environments, caches, and credentials remain ignored.

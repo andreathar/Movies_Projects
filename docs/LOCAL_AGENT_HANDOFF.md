@@ -18,7 +18,7 @@ Esses caminhos indicam áreas possíveis; o agente atua somente no escopo atribu
 
 ## Como entregar uma mudança
 
-Copiar `shared/templates/agent-handoff.json` para `projects/<episodio>/agents/handoffs/<data>-<papel>-<assunto>.json`, com nome único. Preencher responsabilidade, caminhos relativos à raiz do workspace, hashes antes/depois, motivo, verificações e decisões pendentes. Não preencher resultado ou aprovação que não ocorreu.
+Copiar `shared/templates/agent-handoff-v2.json` para `projects/<episodio>/agents/handoffs/<data>-<papel>-<assunto>.json`, com nome único. Preencher responsabilidade, caminhos relativos à raiz do workspace, hashes antes/depois, motivo, verificações e decisões pendentes. Não preencher resultado ou aprovação que não ocorreu. Entregas antigas em schema 1.0 permanecem no histórico; não reescrever os hashes gravados. Se uma entrega posterior tornar esses hashes obsoletos, a nova entrega lista o arquivo anterior em `supersedes`.
 
 Antes de salvar, reler o arquivo de destino. Se mudou desde o hash de partida, comparar as duas versões e integrar o trabalho concorrente; não restaurar cegamente uma cópia antiga. Dois agentes não devem editar ao mesmo tempo o mesmo JSON de direção. O coordenador distribui arquivos ou intervalos de edição.
 

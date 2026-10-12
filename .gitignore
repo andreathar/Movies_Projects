@@ -28,3 +28,8 @@ client_secret*.json
 
 # Production sources, inbox originals, media and evidence are tracked.
 # Binary media uses Git LFS through .gitattributes.
+
+# Runtime output of the film gate hooks. Lanes copy draft mistakes into their handoff's mistakes[]
+# before delivery; the producer promotes them to memory/mistakes.jsonl.
+projects/*/logs/hooks.jsonl
+projects/*/logs/mistakes-draft.jsonl

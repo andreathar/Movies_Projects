@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Andre (cloud Claude session, 2026-10-11): clean up the repository after the Coordinator role landed; answer whether root and film tasks folders conflict; improve structure and naming",
+  "parentTask": "coordination (W63, W64, W65)",
+  "workPackages": [
+    "W63",
+    "W64",
+    "W65"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "docs/COORDINATOR_PROTOCOL.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "tasks/README.md"
+  ],
+  "ownedPaths": [
+    "agents/registry.json",
+    "skills/registry.json",
+    "agents/coordinator.md",
+    "docs/COORDINATOR_PROTOCOL.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "tasks/README.md",
+    "coordinator/web/package.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "b7a6b3e4de4ce29303ba88e812a62367703012d7676c4ff9aa00a9fb8f851166"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "60e44862c2f77862c28e7d8c45f0a69ffa58c607783ae8d700b93cb34df8c062"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256Before": "c2e9483c86319e23070a585926967702c90033165b49d6d39249baaaf0bfb5d7"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "e58ffde292c77fca7ad1f12bc66fb1d8c7bc93fe0f816ab9fa7ac2950df1d300"
+    },
+    {
+      "path": "tasks/README.md",
+      "sha256Before": "93ac93d660929c7a779a162f73ad57266eec31c072d54c1a8ce4d0cb6e1cea9e"
+    },
+    {
+      "path": "coordinator/web/package.json",
+      "sha256Before": "24eb1d0e5c8f2292b1b095ad49593230a9d2107d21e64072cf5a47ad64b87792"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "agents/registry.json",
+      "sha256After": "36cd709c585dceccf25b6014ef5ce16033e3bd7f82bcc96db571a2547205ccfe",
+      "reason": "one coordinator entry (Andre's, from main) kept; canonicalWriteAuthority false added and notes changed to proposals through handoffs"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256After": "fc86d621e46768bce8b036972943b3f3f2b2d166583a1ab8784aacbd88d92a31",
+      "reason": "coordinate skill registered as an Agent Parley plugin link"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "4e12191ed0730d672cc572f3b83b0674750671e33584ad265af89beecd75c5cc",
+      "reason": "board, decision and approval changes become handoff proposals (blockers[] for blockers, proposedDecisions for decisions); claim wording and examples aligned",
+      "sha256AfterDelivered": "b1229687f380303ca0c0cc42075f24da310b5ca40695283382e268d0ea555efb",
+      "refreshNote": "path references updated by 2026-10-11-claude-tasks-restructure-v1 (tasks/plans, tasks/specs); verified diff is path-only"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256After": "20ca87aff38b6db9e68fc155cb4ca3b514e03c09a8abadafde20f7180ad420b8",
+      "reason": "decision log section replaced by decision proposals through the handoff; director keeps decision records"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "2f3a36ef85d41673cae27eaa72981e91f84d676ae07e4f7f56a8452e35e16dc3",
+      "reason": "coordinator row added to the lane roster v2",
+      "sha256AfterDelivered": "09359727ca8d7dc9574df337e311cc1a511fa98281621078b0dd697e4f2f0174",
+      "refreshNote": "path references updated by 2026-10-11-claude-tasks-restructure-v1 (tasks/plans, tasks/specs); verified diff is path-only"
+    },
+    {
+      "path": "tasks/README.md",
+      "sha256After": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1",
+      "reason": "glossary of board task, work package and Parley assignment; naming rule for new files",
+      "sha256AfterDelivered": "802200f58b61fa02f6046de7b6972d41e6a1937945e2fafe15b1b82b1a597446",
+      "refreshNote": "path references updated by 2026-10-11-claude-tasks-restructure-v1 (tasks/plans, tasks/specs); verified diff is path-only"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Root tasks/ held only a pointer README; the film tasks/ folder holds the board, specification and plans; they do not conflict",
+      "evidence": "tasks/README.md",
+      "sha256": "66025e07ac41ca1acdbe36eac58ccdd0b7764bdaf81dec26fd4d529d276e15d1"
+    },
+    {
+      "statement": "The coordinator role has a single registry entry with no paid and no canonical write authority",
+      "evidence": "agents/registry.json",
+      "sha256": "36cd709c585dceccf25b6014ef5ce16033e3bd7f82bcc96db571a2547205ccfe"
+    }
+  ],
+  "verification": [
+    "python3 -m unittest discover -s tests: 83 tests, 2 failures (pre-existing: test_manage status/validate fail on the machine-local skill symlink film-character-continuity)",
+    "python3 scripts/manage.py validate: error only on the pre-existing film-character-continuity link; no duplicate role ID, coordinate skill resolves",
+    "python3 scripts/manage.py lint: status ok, 0 hard findings",
+    "git diff --stat origin/main: registry and skills registry, coordinator brief, coordinator protocol, PARLEY_PROTOCOL, tasks README, this handoff; one stub deleted",
+    "Copilot review of PR 6: 8 findings verified against the files and fixed"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "read the PR diff, integrate, run handoff ingest on this file; promote the mistake below to memory/mistakes.jsonl",
+      "readiness": "this PR"
+    },
+    {
+      "role": "Andre",
+      "action": "delete the stale remote branches claude/festive-gates-sgkekc and copilot/research-task-analysis-workflow, and claude/wizardly-clarke-23j2kj after this PR merges (git push --delete is refused by the cloud git proxy)",
+      "readiness": "GitHub branches page or a local clone"
+    },
+    {
+      "role": "producer",
+      "action": "decide whether to split the film tasks/ folder into the board, specs/ and plans/ as one reviewed PR with a change manifest and handoff-hash updates",
+      "readiness": "proposal only; not started"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Remote branch deletion is not possible from the cloud session",
+      "owner": "Andre",
+      "unblockCondition": "delete the three merged branches in GitHub or from a local clone"
+    }
+  ],
+  "andreOnlyGates": [],
+  "proposedDecisions": [
+    "Coordinator proposes board, decision and approval changes through handoffs; only the producer writes them (matches the PARLEY_PROTOCOL ownership table and the canonical-guard hook)",
+    "Keep the root tasks/ folder as a pointer plus glossary; do not remove it, because workspace.json requires it"
+  ],
+  "mistakes": [
+    {
+      "mistake": "The Coordinator role was added with a brief and protocol but without alignment to the ownership table: the brief and protocol told the coordinator to write the board and decision store that the table reserves to the producer and director",
+      "detected_by": "repository review after PR 5, then Copilot review of PR 6",
+      "solution": "brief and protocol rewritten so the coordinator proposes through handoffs (blockers[], proposedDecisions); producer and director apply them",
+      "rule_added": "agents/registry.json canonicalWriteAuthority false; canonical-guard hook refuses lane writes to those records"
+    },
+    {
+      "mistake": "Two sessions registered the coordinator role in agents/registry.json at the same time (Andre on main, this PR); git merged both cleanly and left a duplicate role ID",
+      "detected_by": "merge of main into the PR branch, checked against the role list",
+      "solution": "kept the entry already on main, folded the extra safeguard into it, removed the duplicate",
+      "rule_added": "manage.py validate already rejects duplicate agent role IDs; run validate after every merge of main"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "ingested",
+    "by": "Andre request via Claude cloud session 2026-10-11 (producer ingest)",
+    "at": "2026-10-11T23:44:53+00:00"
+  },
+  "deletedFiles": [
+    {
+      "path": "coordinator/web/package.json",
+      "sha256Before": "24eb1d0e5c8f2292b1b095ad49593230a9d2107d21e64072cf5a47ad64b87792",
+      "baseRevision": "origin/main",
+      "reason": "empty npm init stub with no code in a standard-library-only workspace; recoverable from git history"
+    }
+  ]
+}

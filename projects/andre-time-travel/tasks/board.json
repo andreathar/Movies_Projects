@@ -10,7 +10,7 @@
       "status": "completed",
       "dependsOn": [],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "docs/budget-plan-v2.md",
         "00_brief/approvals.json",
@@ -26,7 +26,7 @@
       "status": "completed",
       "dependsOn": [],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "00_brief/decisions/D01-identity-set.json",
         "docs/photo-session-spec.md"
@@ -44,7 +44,7 @@
         "T02"
       ],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "03_bibles/continuity-matrix.csv",
         "00_brief/decisions/D04-table.json",
@@ -63,7 +63,7 @@
         "T03"
       ],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "00_brief/decisions/D11-element-and-still-route.json"
       ],
@@ -76,7 +76,7 @@
       "status": "completed",
       "dependsOn": [],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "01_script/script-en.md",
         "00_brief/research/historian-review-v2.md",
@@ -93,8 +93,9 @@
       "dependsOn": [
         "T05"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "blocker": "Script v2 approved (T05), but Latin and Corsican are absent from the ElevenLabs language lists, earlier translations are superseded and must restart from script v2, and no qualified language reviewer is named. Unblock: Andre names reviewers per language and the dialogue-sound role records the feasible route per language (R03). Does not block the English edition.",
+      "blockerUpdatedAt": "2026-10-10",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -108,7 +109,7 @@
         "T05"
       ],
       "blocker": "Andre approved likeness but rejected native voice; temporary guide authorized by D14. Final dubbing/ear approval remains pending.",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "04_audio/voice-tests/codex-opening-v1/provenance.json"
       ],
@@ -125,7 +126,7 @@
         "T04"
       ],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "06_pilot/reviews/PILOT-01-galileo-listening-locked.json",
         "00_brief/decisions/D13-speech-route.json"
@@ -142,7 +143,7 @@
         "T08"
       ],
       "blocker": null,
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "00_brief/decisions/D13-speech-route.json",
         "00_brief/decisions/D14-dub-strategy.json"
@@ -159,7 +160,7 @@
         "T09"
       ],
       "blocker": "Measured-cost planning reforecast recorded; remaining-phase reallocation/release and chapter recipe freeze await Galileo playback. External-audio fees remain separately unapproved.",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "docs/budget-and-envelope-resume-v3.md"
       ],
@@ -175,8 +176,9 @@
         "T07",
         "T10"
       ],
-      "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "blocker": "Storyboard cards v1 and atlas v2 are candidates, not approved. The audio-first animatic waits on measured guide timing (W24) and selected coverage from the detail-study review (W21); T07 final voice is not required for the local animatic, T10 envelope waits on Galileo playback. Unblock: measured_seconds filled and a coverage selection recorded.",
+      "blockerUpdatedAt": "2026-10-10",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "05_storyboard/preproduction-atlas-v1/storyboard-cards.pdf"
       ],
@@ -193,8 +195,9 @@
         "T08",
         "T11"
       ],
-      "blocker": "12 Andre keyframes + eyes + inserts accepted as candidates; era wides remain R1 plates. Approval after pilot.",
-      "specification": "production-tasks.md",
+      "blocker": "12 Andre keyframes + eyes + inserts accepted as candidates; era wides remain R1 plates. 26 detail-study candidates (05_storyboard/keyframes/detail-studies-v1/) delivered 2026-10-10 under D20 with the producer's static review done; independent continuity, material and lighting review (W14-W18) and Andre's likeness judgment on a selected set (W20) pending. Approval after the Galileo recipe (T13).",
+      "blockerUpdatedAt": "2026-10-10",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "02_references/keyframes/andre/",
         "00_brief/decisions/D12-era-keyframes.json"
@@ -212,8 +215,9 @@
         "T10",
         "T12"
       ],
-      "blocker": "42-second guide-voice preview assembled and technically verified. End-to-end normal-speed playback, fine sync, pacing and chapter acceptance still pending; no final voice approval.",
-      "specification": "production-tasks.md",
+      "blocker": "Preview v1 (42 s, guide voice, decodes, -16.2 LUFS) is a candidate, not accepted: no full normal-speed playback with audio; F01 listening pilots show a different table/seat than the speech clips; F03 the resolution reaction precedes its motivating line G-L04. Direction changed 2026-10-09 to the over-the-shoulder back view; timeline v2 reported delivered by the Codex lane but unverified. D16 Phase A paid test is recorded as relayed and request-r2 is unfixed; neither blocks local review. Next: full playback and timeline/bible reconciliation (W43, W44), then decide the proof shot (W35-W37). No final voice approval.",
+      "blockerUpdatedAt": "2026-10-10",
+      "specification": "specs/production-tasks.md",
       "deliverables": [
         "08_edit/picture-lock/galileo-en-preview-v1.mp4",
         "08_edit/timelines/galileo-en-v1.json",
@@ -231,7 +235,7 @@
         "T13"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -244,7 +248,7 @@
         "T13"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -257,7 +261,7 @@
         "T13"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -270,7 +274,7 @@
         "T13"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -287,7 +291,7 @@
         "T17"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -300,7 +304,7 @@
         "T18"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -315,7 +319,7 @@
         "T19"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     },
@@ -329,7 +333,7 @@
         "T20"
       ],
       "blocker": "Awaiting dependency completion and applicable approval",
-      "specification": "production-tasks.md",
+      "specification": "specs/production-tasks.md",
       "deliverables": [],
       "verifiedAt": null
     }
