@@ -1,6 +1,6 @@
 # Reconciliação documental — 2026-10-12 UTC
 
-Autorização: Andre pediu “corrija tudo e pode remover tudo para trás. agora vamos fazer quase tudo de novo”. Esta entrega corrige as divergências documentais demonstradas. O alcance do descarte foi solicitado ao usuário porque “tudo para trás” não identifica quais originais, derivados, decisões e entregas exclusivas devem sair. Nenhuma exclusão ocorreu nesta entrega.
+Autorização: Andre pediu “corrija tudo e pode remover tudo para trás. agora vamos fazer quase tudo de novo”. Esta entrega corrige as divergências documentais demonstradas. Andre esclareceu depois: preservar originais, decisões e entregas; manter roteiro e cinco encontros e refazer planejamento visual/cenas. Nenhuma exclusão foi executada. O plano novo está em `drafts/andre-time-travel-visual-restart-v1/README.md`, com fontes e escopo em `scope.json`.
 
 Escopo executado: centralizar startup em AGENTS; alinhar a referência ao remoto já documentado; distinguir skill externa, manifesto declarativo e runtime; substituir pressupostos desatualizados por evidência datada; marcar setup/smoke antigos como históricos, sem executá-los. Sem mudança de flags, grants, hooks, serviços, mídia, gastos, aprovações ou estados de tarefas. Edição local; nenhum commit/merge/push.
 
@@ -69,6 +69,8 @@ Base Git: `fde47d6d20215fe6fcd40658c7354330f58caf4e`. A comparação do registry
 
 Os quatro arquivos já modificados sob `.agents/skills/kling-cli/` foram preservados; não atualizar hashes do registry de skills para ocultar esse trabalho concorrente. Manifesto, board, aprovações, STATE, session-log e handoff anterior foram comparados por hash e permanecem iguais ao início deste lote. Originais, mídia, decisões, pesquisas, patches e trabalho das lanes não foram removidos nem movidos.
 
-Os resultados efetivos de validate, testes, lint e handoff check ficam em `verification[]` do novo handoff; sucesso técnico não é aceite artístico. A cópia anterior dos sete documentos e o diff do lote ficam no workspace desta tarefa, em `deliverables/correcoes-before-20261012.json` e `correcoes-documentais-20261012.patch`. Recuperação por trechos, sem sobrescrever mudanças concorrentes.
+Verificação do lote: `validate` ok (quatro avisos já existentes de hashes de skills), 84 testes stdlib passaram, `lint` sem hard errors e `handoff check` ok. Resultados também constam em `verification[]` do novo handoff; sucesso técnico não é aceite artístico. A cópia anterior dos sete documentos e o diff do lote ficam no workspace desta tarefa, em `deliverables/correcoes-before-20261012.json` e `correcoes-documentais-20261012.patch`. Recuperação por trechos, sem sobrescrever mudanças concorrentes.
 
-Próximo responsável: produtor/base, para revisar a entrega e incorporar a retomada quando o escopo de recomeço for definido. O alcance de exclusão aguarda a resposta de Andre à pergunta sobre preservação; não foi inferido do silêncio. Nenhuma nova atribuição foi enviada às lanes.
+Próximo responsável: produtor/base, para revisar a proposta de cobertura por encontro, detalhar o proof shot de Galileu e incorporar a nova direção na retomada. Escopo confirmado por resposta direta: mesmo roteiro e cinco encontros, novo planejamento visual e cenas, acervo preservado. Nenhuma nova atribuição foi enviada às lanes.
+
+Durante a validação apareceram commits concorrentes `d54c3899fc1ddf7c1c4bef303868364b1ee30c1f` (documentação e alterações Kling preexistentes) e `65d56f1c22068a1371891288d21cf3dbf19cfd45` (primeira versão deste relatório/handoff). Esta tarefa não executou commit/push nem atribui autoria operacional desses atos; preservou-os. As atualizações de escopo e resultados são edições posteriores, sem reescrever o histórico.

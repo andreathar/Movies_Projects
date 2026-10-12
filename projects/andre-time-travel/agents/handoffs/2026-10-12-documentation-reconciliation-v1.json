@@ -3,7 +3,7 @@
   "episode": "andre-time-travel",
   "agentRole": "editor",
   "contributorKind": "contributor",
-  "assignment": "Corrigir documentação conforme pedido direto de Andre; reconciliar as versões dos artefatos de gestão sem excluir produção ou atestar ingestão do produtor.",
+  "assignment": "Corrigir documentação e reconciliar versões conforme pedido de Andre; preparar recomeço visual mantendo roteiro, cinco encontros e acervo, sem atestar ingestão do produtor.",
   "parentTask": null,
   "workPackages": [],
   "readFirst": [
@@ -23,7 +23,9 @@
     "docs/PARLEY_PROTOCOL.md",
     "docs/PLAN-parley-integration-v1.md",
     "reports/2026-10-12-documentation-reconciliation.md",
-    "projects/andre-time-travel/agents/handoffs/2026-10-12-documentation-reconciliation-v1.json"
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-documentation-reconciliation-v1.json",
+    "drafts/andre-time-travel-visual-restart-v1/README.md",
+    "drafts/andre-time-travel-visual-restart-v1/scope.json"
   ],
   "baseFiles": [
     {
@@ -93,15 +95,25 @@
     },
     {
       "path": "reports/2026-10-12-documentation-reconciliation.md",
-      "sha256After": "4ee0edb8ad71f22c5271327159b685fdbced5a47fe198913c8812e3e06766ae6",
+      "sha256After": "947440143da2da9023c417e7110f414bff33124b0e469d528d251a7c4b4b8ada",
       "reason": "Evidência completa da cadeia de versões, limites e preservação."
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/README.md",
+      "sha256After": "5bf84fc03c5552bec2535a8ffd8829e9f2c6c408cfefcc9cf30c3c47a1787825",
+      "reason": "Escopo confirmado de recomeço e proposta de cobertura; não registra nova produção ou gasto."
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256After": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b",
+      "reason": "Escopo confirmado de recomeço e proposta de cobertura; não registra nova produção ou gasto."
     }
   ],
   "claims": [
     {
       "statement": "Cadeia histórica conferida; correções documentais e limites estão descritos sem alterar o handoff anterior.",
       "evidence": "reports/2026-10-12-documentation-reconciliation.md",
-      "sha256": "4ee0edb8ad71f22c5271327159b685fdbced5a47fe198913c8812e3e06766ae6"
+      "sha256": "947440143da2da9023c417e7110f414bff33124b0e469d528d251a7c4b4b8ada"
     },
     {
       "statement": "Versão atual deste artefato conferida por hash; delta documental rastreado no relatório; não altera aprovação ou autoridade.",
@@ -127,13 +139,23 @@
       "statement": "Versão atual deste artefato conferida por hash; preservada byte a byte em relação ao handoff anterior.",
       "evidence": "skills/registry.json",
       "sha256": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e"
+    },
+    {
+      "statement": "Andre confirmou manter roteiro e cinco encontros e preservar o acervo; proposta visual salva com hashes das fontes, sem gerar mídia.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
     }
   ],
   "verification": [
     "Reconfirmados hashes de agents/coordinator.md em 2f96351 e d5bd9cf; diff histórico contém somente duas correções de caminho.",
     "Cinco artefatos do handoff anterior comparados; quatro coincidiam antes desta edição.",
     "Fonte externa e skill instalada existem com o mesmo SHA-256 registrado.",
-    "Arquivos concorrentes Kling, estado canônico do filme e handoff antigo permanecem iguais ao snapshot inicial."
+    "Arquivos concorrentes Kling, estado canônico do filme e handoff antigo permanecem iguais ao snapshot inicial.",
+    ".venv/bin/python scripts/manage.py validate: exit 0, status ok, errors []; quatro avisos preexistentes de hashes de skills.",
+    ".venv/bin/python -m unittest discover -s tests: exit 0; 84 tests in 26.921s; OK. Rodado após o lote documental; o rascunho visual posterior é apenas Markdown/JSON.",
+    ".venv/bin/python scripts/manage.py lint: exit 0, hard []; advisories de duplicação de flags, ingestões pendentes, histórico superseded e offsets.",
+    ".venv/bin/python scripts/manage.py handoff check: exit 0, status ok, schema 2.0, errors [] no lote documental inicial; o fechamento do lote ampliado tem resultado separado no workspace da tarefa.",
+    "git diff --check: exit 0."
   ],
   "supersedes": [
     "2026-10-11-structure-naming-merge-v1.json"
@@ -141,21 +163,15 @@
   "nextActions": [
     {
       "role": "producer",
-      "action": "Revisar esta entrega documental e registrar a retomada adequada depois da definição de descarte por Andre; não tratar lint limpo como ingestão.",
-      "readiness": "entrega local; aceite e ingestão ainda não registrados"
+      "action": "Revisar drafts/andre-time-travel-visual-restart-v1/README.md e scope.json; integrar retomada e atribuir a ficha espacial/cobertura de Galileu. Roteiro e cinco encontros permanecem; acervo preservado.",
+      "readiness": "proposta entregue localmente; nenhuma atribuição às lanes ou ingestão registrada"
     }
   ],
   "stageComplete": false,
   "stageCompleteReason": null,
-  "blockers": [
-    {
-      "description": "Alcance do descarte para o recomeço ainda não delimitado.",
-      "owner": "Andre",
-      "unblockCondition": "Definir quais derivados, decisões e entregas podem sair e quais originais/referências ficam."
-    }
-  ],
+  "blockers": [],
   "andreOnlyGates": [
-    "Escopo de descarte para o recomeço; demais aprovações históricas não foram alteradas."
+    "Semelhança e voz de novas mídias continuam dependentes de revisão; nenhum aceite de mídia foi dado nesta tarefa."
   ],
   "proposedDecisions": [],
   "mistakes": [],
