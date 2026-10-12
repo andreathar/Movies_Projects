@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Update the Central de Demandas frontend to reflect the improved folder structure, naming, skills and role registry requested by Andre.",
+  "parentTask": "site-maintenance",
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "sites/movies-demandas/"
+  ],
+  "baseFiles": [
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "244a17581a0c0aca0019d4db0a2e878c003cb6a186d08c32a25135f4c3d33c35"
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256Before": "8ed0a577d94f0cd58e7d7a46a5b4070756a9ec587c4dd4936fc4bb17da11a801"
+    },
+    {
+      "path": "sites/movies-demandas/app/globals.css",
+      "sha256Before": "1c574e0438836f8d46b3007e8bf0e7248193fd6d7a8304a9f23cadc5baad3631"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "483cc04faecb293ce69c090b50c03c92e2a78fc16e77c0f0662589cb26ea2eff"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "96e452e0c5abc296fa6a348e9dde29384d93bf6354b018295e02d395952f20b5"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256Before": "5e44bc97408f3bc09a91a4193c3ce62a21f630c1718a6048a899718a444ba5b5"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "52f7198be345abf9553f6868c45b823039418eab0786ebfdf7b88f88e45fc5c4",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256After": "45540dc75a07c1821257349d2470ba4beec4da45adc924e6da44069c9772c5de",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/app/globals.css",
+      "sha256After": "7036fcd1bb9613df7ab0fc78a4f1a618811f775716108ba23a381079a9993b50",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256After": "9587cac0a6d17d0dac897a916ba728099c45b8aa4f0dc1dfd13dcd4967426277",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "4ed987d2db92d6c020f32955c19500be9232c3a52be4070ceb9f918a020f91fa",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "b3d56ba8f5080a74233ac0bd477b55e05c8e23f37b1c45ccd02572b839a3cda3",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "3049384005baaa53e79cdce1f0b902e6dbe5011baecb9159c63c68481ab80124",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256After": "9b5fccc55179320460f49a8147aea7bab6b3567ade8a187814570d52a7089e2d",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256After": "04f85bbac4448934401d41ac38028f52b723424f3c525b768092f0c089dedffc",
+      "reason": "Frontend reference catalog, naming and current management-source paths; published private Site version 2."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Private Sites deployment succeeded for source dfb945f3aaaf5aaac20ed323cda66dd26d047bb9; no canonical production records changed.",
+      "evidence": "sites/movies-demandas/qa/structure-skills-v2.json",
+      "sha256": "d76371a98f936f820b2820bc8f6e81217d536e48c45d28f79b1959052fe2d98f"
+    }
+  ],
+  "verification": [
+    "TypeScript noEmit passed.",
+    "Vinext production build passed.",
+    "12 model tests passed.",
+    "All 13 selected source hashes match current files. Official task IDs, states and approvals unchanged.",
+    "Local browser: catalog search with and without accents; origin filter; role and source disclosures; organization map.",
+    "Responsive 390x844: one main heading, no horizontal page overflow, mobile navigation, hidden sidebar excluded from accessibility tree.",
+    "Local browser console: no warnings or errors.",
+    "manage.py validate passed with four pre-existing shared-skill drift warnings.",
+    "manage.py lint: two pre-existing agents/coordinator.md hash mismatches in 2026-10-11-structure-naming-merge-v1.json. No repair of historical records in this assignment.",
+    "Published browser: catalog visible, 14 active saved demands, updated path alias, production diff reviewed and cancelled without persistence changes.",
+    "84 workspace stdlib tests passed. Final lint retained the same two pre-existing hash mismatches; this new handoff is untracked."
+  ],
+  "nextActions": [],
+  "stageComplete": true,
+  "stageCompleteReason": "Frontend published. The optional newer production snapshot remains reviewable before import; no production dispatch is created.",
+  "blockers": [],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "verified_with_limits",
+  "ingest": {
+    "status": "not_applicable",
+    "by": null,
+    "at": null
+  }
+}
