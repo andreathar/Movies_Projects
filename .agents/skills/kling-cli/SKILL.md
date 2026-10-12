@@ -2,65 +2,44 @@
 name: kling-cli
 version: 0.2.0
 description: >-
-  可灵 AI（Kling）官方 CLI 的使用技能：图片/视频生成、可复用 Element 主体、动作控制。CLI 通过 MCP 服务与可灵交互：
-  调用 text_to_image / image_to_image / text_to_video / image_to_video / motion_control（模型与参数规格由 who_am_i 动态声明），
-  返回 generationId 后用 query_tasks 轮询，完成后提取 works[].url 展示给用户。命令无别名。
-  触发词：可灵、Kling、文生图、参考图生图、文生视频、图生视频、Omni、omni、MCP、generationId、generation_id、轮询、灵感值、
-  text_to_image、image_to_image、text_to_video、image_to_video、motion_control、motion_library_list、Element、element_create、element_list、element_get、element_update、element_delete、feedback、query_tasks、who_am_i、file_upload、
-  image generation、video generation、kling 命令、.credentials、
-  国内站、海外站、global、海外版、区域、region、安装、install。
+  Skill for using the official Kling AI CLI: image/video generation, reusable Element subjects, and motion control.
+  The CLI talks to Kling through an MCP service: call text_to_image / image_to_image / text_to_video / image_to_video /
+  motion_control (models and parameter specs are declared dynamically by who_am_i), then poll query_tasks with the
+  returned generationId and, once done, extract works[].url to show the user. Commands have no aliases.
+  Trigger words: Kling, Kling AI, text-to-image, image-to-image, reference-image generation, text-to-video,
+  image-to-video, Omni, omni, MCP, generationId, generation_id, polling, credits, inspiration credits,
+  text_to_image, image_to_image, text_to_video, image_to_video, motion_control, motion_library_list, Element, element_create, element_list, element_get, element_update, element_delete, feedback, query_tasks, who_am_i, file_upload,
+  image generation, video generation, kling command, .credentials,
+  China region, mainland site, overseas site, global, international site, region, install.
 requires: node>=18
-# 可灵分中国区 / 非中国区，官网不同；skill 区域中立，按用户区域引用对应主页
+# Kling has a China region and a non-China region with different websites; this skill is region-neutral — reference the homepage matching the user's region
 homepage_cn: https://klingai.com
 homepage_global: https://kling.ai
 ---
 
-# 可灵 AI 官方图片/视频生成、Element 主体与动作控制
+# Kling AI official image/video generation, Element subjects, and motion control
 
-## 语言与回复风格
+## Language and reply style
 
-- 面向用户的解释、确认、错误说明：**跟随用户语言**（中文用户用中文回复，英文用户用英文回复）。
-- 技术字段名（`generationId`、`status`、`works[].url` 等）保留英文原样。**响应字段统一 camelCase**（如 `generationId` / `creditsConsumed` / `urlWithoutWatermark`）；旧版服务端可能仍返回 snake_case 同义字段（`generation_id` 等），按同一字段理解即可。
+- User-facing explanations, confirmations, and error messages: **follow the user's language** (reply to each user in the language they are using).
+- Technical field names (`generationId`, `status`, `works[].url`, etc.) stay in English as-is. **Response fields are uniformly camelCase** (e.g. `generationId` / `creditsConsumed` / `urlWithoutWatermark`); older servers may still return snake_case synonyms (`generation_id`, etc.) — treat them as the same field.
 
 ---
 
-## 能力介绍（固定欢迎语，按需展示）
+## Capability introduction (fixed welcome message, shown on demand)
 
-**触发时机**（满足任一即展示，纯本地、不调用命令、不扣费）：
+**When to show** (show when either applies; purely local, no commands called, no credits spent):
 
-1. 用户刚完成本 skill 或 CLI 的安装/登录，环境确认可用时；
-2. 用户询问可灵能做什么 / 有哪些能力 / 怎么用等**能力咨询类**意图（没有具体生成任务）时。
+1. The user has just finished installing/logging in to this skill or the CLI and the environment is confirmed working;
+2. The user asks what Kling can do / what capabilities it has / how to use it — a **capability inquiry** intent with no concrete generation task.
 
-**展示要求**（保留结构与 emoji，不增删条目、不自行改写含义）：
+**Display requirements** (keep the structure and emoji; do not add, remove, or reword items):
 
-- **中文用户**：原样输出中文版。
-- **非中文用户**：**必须翻译，不得输出中文版**——优先以英文版为底稿翻译成用户语言（日语用户给日语、西语用户给西语等，示例引语一并翻译）；无法可靠翻译的语种**至少原样输出英文版**。
-- 若环境尚未就绪（未安装 CLI 或未登录），把首行「可灵已就绪！/ Kling is ready!」换成对应语言的引导语（如「可灵还差一步就绪」/ "Kling is one step away"），并在文案后给出安装/登录下一步。
+- **English users**: output the English version verbatim.
+- **Other users**: **translate — do not output the English version untranslated when a reliable translation is possible** — use the English version as the base and translate it into the user's language (Japanese for Japanese users, Spanish for Spanish users, etc.; translate the example quotes as well). For languages you cannot translate reliably, output the English version as-is at minimum.
+- If the environment is not ready yet (CLI not installed or not logged in), replace the first line "Kling is ready!" with guidance in the corresponding language (e.g. "Kling is one step away"), and add the installation/login next step after the text.
 
-中文版：
-
-```text
-可灵已就绪！
-
-你可以用可灵做这些事：
-
-📷 生成图片
-   · 文生图 — "帮我画一只赛博朋克风格的猫"
-   · 参考图生图 — "用这张图做参考，改成水彩风格"
-
-🎬 生成视频
-   · 文生视频 — "生成一段日落海边的 5 秒视频"
-   · 图生视频 — "让这张图动起来"
-
-🧩 可复用主体 — 创建和管理角色、动物、道具等 Element
-🎭 动作控制 — 用动作视频或动作库驱动主体图片
-
-📤 上传素材 — 本地图片可直接传，自动上传到可灵
-
-也可以结合 agent 及 skill 能力去实现一些复杂的创作流程。比如做个广告片、故事短片、批量创作一批素材等。
-```
-
-英文版（非中文用户的翻译底稿；英文用户直接原样输出此版）：
+English version (the translation base for non-English users; English users get this verbatim):
 
 ```text
 Kling is ready!
@@ -83,356 +62,356 @@ Here's what you can do with Kling:
 You can also combine agent and skill capabilities to build more complex creative workflows — like making an ad spot, a short story film, or batch-producing a set of assets.
 ```
 
-> 展示欢迎语本身不需要调用任何 `kling` 命令；若用户接着要精确的模型/参数清单，再走 `who_am_i`。
+> Showing the welcome message itself requires no `kling` command; if the user then wants the precise model/parameter catalog, go through `who_am_i`.
 
 ---
 
-## 安装与登录（唯一合法方式）
+## Installation and login (the only legitimate path)
 
-> **可灵分「国内站」与「海外站」，对应两个不同的安装包，端点已各自内置。装错区域的包会导致登录反复失败，因此装包前必须先确认用户属于哪个区域。**
+> **Kling has a "China region" site and an "overseas" (global) site, each with its own install package with the endpoints built in. Installing the wrong region's package causes login to fail repeatedly, so you must confirm the user's region before installing.**
 
-### 第 0 步：探测是否已安装
+### Step 0: Detect whether it is already installed
 
 ```bash
-which kling   # 有输出路径 → 检查版本；未找到 → 进入第 1 步按区域安装
-kling --version   # 本 skill 的完整能力要求 CLI >= 0.2.0
+which kling   # path printed → check the version; not found → go to step 1 and install by region
+kling --version   # the full capability of this skill requires CLI >= 0.2.0
 ```
 
-已安装版本低于 `0.2.0` 时，按已有账号区域升级对应 npm 包后再使用新功能；用户已明确要求升级时直接执行，无需重复确认。CLI 与 skill 分别分发，仅更新 skill 不会升级 CLI。
+If the installed version is below `0.2.0`, upgrade the npm package matching the existing account's region before using new features; if the user has explicitly asked for the upgrade, run it directly without re-confirming. The CLI and the skill are distributed separately — updating only the skill does not upgrade the CLI.
 
-### 第 1 步：确认区域并安装（命令名统一为 `kling`）
+### Step 1: Confirm the region and install (the command name is always `kling`)
 
-**区域如何确定**：本 skill 的首要消费者是非交互 Agent，**不得让 CLI 读 stdin 阻塞**。应**在对话里直接问用户**：「你的可灵账号是**中国区**（klingai.com）还是**非中国区**（kling.ai）？」按回答选对应命令安装，**切勿默认、猜测或两个都装**。
+**How to determine the region**: the primary consumer of this skill is a non-interactive agent, and **the CLI must never block reading stdin**. Ask the user **directly in the conversation**: "Is your Kling account on the **China region** site (klingai.com) or the **non-China** site (kling.ai)?" Install with the matching command based on the answer — **never default, guess, or install both**.
 
-| 用户区域 | 官网（homepage） | 判断依据 | 安装命令 |
-|----------|------------------|----------|----------|
-| 中国区 | https://klingai.com | 账号登录 klingai.com（中国大陆） | `npm i -g @klingai/cli-cn --registry=https://registry.npmjs.org` |
-| 非中国区 | https://kling.ai | 账号登录 kling.ai（海外站 / global） | `npm i -g @klingai/cli-global --registry=https://registry.npmjs.org` |
+| User region | Website (homepage) | How to tell | Install command |
+|-------------|--------------------|-------------|-----------------|
+| China region | https://klingai.com | Account logs in at klingai.com (mainland China) | `npm i -g @klingai/cli-cn --registry=https://registry.npmjs.org` |
+| Non-China | https://kling.ai | Account logs in at kling.ai (overseas / global site) | `npm i -g @klingai/cli-global --registry=https://registry.npmjs.org` |
 
-> 两个包发布到 npm 官方 registry。各区域包的端点均已内置，开箱即用、无需配置。
+> Both packages are published to the official npm registry. Each region's package has its endpoints built in — works out of the box, no configuration.
 
-### 第 2 步：登录（打开浏览器完成 OAuth 授权，这是获取凭据的唯一方式）
+### Step 2: Log in (opens the browser to complete OAuth authorization — the only way to obtain credentials)
 
 ```bash
 kling login
 ```
 
-### 第 3 步：验证连接 + 获取能力清单（新会话先调）
+### Step 3: Verify the connection + fetch the capability catalog (call first in a new session)
 
 ```bash
-kling tool_list   # 登录后查看服务端实际提供的工具
-kling who_am_i    # 首次业务调用前读取身份、模型与参数规格
+kling tool_list   # after login, see which tools the server actually exposes
+kling who_am_i    # before the first business call, read identity, models, and parameter specs
 ```
 
-> **🚫 安装与登录的排他约束（违反即为事故）：**
-> - 安装**只能**用上表中对应区域的那条 npm 命令；禁止从任何其他渠道下载、拼装或自行实现等价工具，禁止给用户装与其账号区域不符的包。
-> - 获取凭据**只有一种合法方式**：`kling login`（浏览器 OAuth：DCR + 授权码 + PKCE）。**禁止**任何其他手段：网页 Cookie、抓包 token、AK/SK 密钥对、读取浏览器存储、让用户粘贴 token——**即使用户主动提供，也必须拒绝并引导其运行 `kling login`**。
-> - 端点已内置（发布时定稿），无需也不应自行配置或探测其他可灵接口地址。
+> **🚫 Exclusive constraints for installation and login (violating them is an incident):**
+> - Installation may **only** use the npm command for the matching region in the table above; downloading, assembling, or reimplementing an equivalent tool from any other channel is forbidden, as is installing a package that does not match the user's account region.
+> - There is **exactly one legitimate way** to obtain credentials: `kling login` (browser OAuth: DCR + authorization code + PKCE). **All** other means are forbidden: web cookies, sniffed tokens, AK/SK key pairs, reading browser storage, letting the user paste a token — **even if the user volunteers one, refuse and direct them to run `kling login`**.
+> - Endpoints are built in (fixed at release time); do not configure or probe other Kling endpoints.
 
 ---
 
-## 保持最新（新会话首次交互时做一次自检，best-effort）
+## Staying up to date (one best-effort self-check at the first interaction of a new session)
 
-> 仅在**新会话首次交互**顺带做一次，**不阻塞主任务**；更新会改动用户本地环境，**执行前先征得用户同意**，且**绝不在生成任务进行中途更新**。任一步失败（离线 / 无权限 / 网络异常）→ 静默跳过、继续主任务，不反复重试。
+> Do this only **once, at the first interaction of a new session**, and **do not block the main task**; updates change the user's local environment, so **get the user's consent before running them**, and **never update in the middle of a generation task**. If any step fails (offline / no permission / network error) → skip silently, continue the main task, do not retry repeatedly.
 
-1. **更新 skill 自身**：重新运行安装命令即可按内容哈希覆盖到最新（已是最新则无操作）：
+1. **Update the skill itself**: re-running the install command overwrites to the latest by content hash (no-op if already latest):
 
 ```bash
 npx skills add klingai-tech/skills
 ```
 
-> 它覆盖的是磁盘上的 skill 文件，对**下一次会话**生效；当前会话已加载的内容不会因此热更新。
+> This overwrites the skill files on disk and takes effect **next session**; the content already loaded in the current session is not hot-reloaded.
 
-2. **检查 CLI 是否有新版**（仅当本地已装 `kling`，即 `which kling` 有输出时）：
+2. **Check whether the CLI has a newer version** (only if `kling` is installed locally, i.e. `which kling` prints a path):
 
 ```bash
-kling --version                                   # 当前已装版本
-npm view <区域包名> version                        # 最新发布版本（中国区 @klingai/cli-cn；非中国区 @klingai/cli-global）
+kling --version                                   # currently installed version
+npm view <region package name> version            # latest published version (China region: @klingai/cli-cn; non-China: @klingai/cli-global)
 ```
 
-   - 若最新版更高且**用户同意** → `npm i -g <区域包名>@latest --registry=https://registry.npmjs.org`。
-   - 升级是改全局环境的系统操作：**先说明、再征得同意**，不要擅自执行，也不要在一次生成流程中途打断去升级。
+   - If a newer version exists and **the user agrees** → `npm i -g <region package name>@latest --registry=https://registry.npmjs.org`.
+   - Upgrading is a system-level change to the global environment: **explain first, then get consent**; never run it unprompted, and never interrupt an in-flight generation workflow to upgrade.
 
 ---
 
-## 唯一通道（Canonical Invocation）
+## Single channel (Canonical Invocation)
 
-> **⚠️ 与可灵的一切交互必须且只能通过 `kling` CLI 命令完成。**
-> - **禁止**直接 fetch/curl 任何可灵接口——包括 C 端页面接口、B 端开放平台 API、网关、MCP 端点本身；
-> - **禁止**阅读 CLI 源码、日志或抓包结果后自行拼装 HTTP/MCP 请求"绕过" CLI；
-> - CLI 报错时唯一正确动作是把错误呈现给用户并询问，**不得**换通道、换接口重试。
+> **⚠️ Every interaction with Kling must and may only go through the `kling` CLI commands.**
+> - **Never** fetch/curl any Kling endpoint directly — including consumer web endpoints, the open-platform API, gateways, or the MCP endpoint itself;
+> - **Never** read the CLI source code, logs, or captured traffic to hand-assemble HTTP/MCP requests that "bypass" the CLI;
+> - When the CLI errors, the only correct action is to show the error to the user and ask; **never** retry through another channel or endpoint.
 
 ```bash
 kling <command> [args]
 ```
 
-人和 Agent 共用同一入口：TTY 下有交互引导，非 TTY 输出 JSON 且绝不阻塞提问。CLI 对鉴权、日志、错误处理做了统一封装。
+Humans and agents share the same entry point: interactive guidance under a TTY; JSON output and never blocking on questions when not a TTY. The CLI uniformly wraps authentication, logging, and error handling.
 
-业务命令与可灵后端 **MCP 工具名 1:1（snake_case）**；客户端命令包括 `login`、`tool_list` 和映射到 `query_membership_and_credits` 的 `account`。共 **19 个命令**，另有帮助和版本选项：
+Business commands map **1:1 (snake_case)** to Kling backend **MCP tool names**; client-side commands include `login`, `tool_list`, and `account` (mapped to `query_membership_and_credits`). **19 commands** in total, plus help and version options:
 
-| # | 命令名 | 分组 | 同步性 | 触达下游 | 一句话说明 |
-|---|--------|------|--------|----------|------------|
-| 1 | `--help`（或不带参数） | 能力发现 | 同步 | 否 | 顶层 `kling --help` 纯本地打印全部命令；`<command> --help` 会尽量拉取该工具实时 `tools/list` 声明（需登录），离线/未登录时回退本地静态用法 |
-| 2 | `who_am_i` | 能力发现 | 同步 | 否 | 返回当前用户身份 + 每个生成命令的可用模型与参数规格；**首次调用先打它** |
-| 3 | `text_to_image <prompt>` | 生成 | **异步** | 是 | 文生图，返回 `generationId`，需轮询 `query_tasks`（或加 `--poll` 一步出结果） |
-| 4 | `image_to_image --image <url\|path> <prompt>` | 生成 | **异步** | 是 | 参考图 + prompt 生新图，返回 `generationId`（本地图片自动上传） |
-| 5 | `text_to_video <prompt>` | 生成 | **异步** | 是 | 文生视频，返回 `generationId`，需轮询 `query_tasks` |
-| 6 | `image_to_video --image <url\|path> <prompt>` | 生成 | **异步** | 是 | 图生视频（让图动起来），返回 `generationId` |
-| 7 | `query_tasks <generationId>` | 任务查询 | 同步 | 是 | 按 `generationId` 查询生成状态与最终资源 URL（`works[].url`） |
-| 8 | `file_upload <filePath>` | 文件上传 | 同步 | 是 | 两步式上传（申请一次性票据 + 上传文件字节），返回公网 URL |
-| 9 | `element_create` | 主体素材 | 同步 | 是 | 从图片组或视频创建可复用 Element，返回 element id |
-| 10 | `element_list` / `element_get` | 主体素材 | 同步 | 是 | 列出 Element；按 id 获取完整类型与资源详情 |
-| 11 | `element_update` / `element_delete` | 主体素材 | 同步 | 是 | 按字段更新或删除 Element；图片主图由 CLI 自动保留 |
-| 12 | `motion_library_list` | 动作素材 | 同步 | 是 | 列出已保存动作，获得 motionId 与可播放 URL |
-| 13 | `motion_control` | 生成 | **异步** | 是 | 用主体图 + 动作视频或 motionId 生成视频，返回 generationId |
-| 14 | `feedback` | 反馈 | 同步 | 是 | 上报卡住、模糊错误、计费异常或意外结果；不负责重试/退款/修复 |
-| 15 | `account` | 商业化 | 同步 | 是 | 会员类型 + 可用灵感值（`query_membership_and_credits`，身份取自 JWT） |
-| 16 | `tool_list` | 能力发现 | 同步 | 否 | 列出后端 MCP server 当前暴露的工具（MCP `tools/list`）：每个工具的 name / description / inputSchema（排障 / 确认服务端实际提供哪些 tools 用） |
-| 17 | `login` | 鉴权 | 同步 | 否（仅 OAuth 服务） | 浏览器 OAuth 登录（DCR + PKCE），token 写入本地 `.credentials` |
-| 18 | `logout` | 鉴权 | 同步 | 是 | 调用 MCP `logout` 注销服务端授权，并清除本地登录态，以便重新授权或切换账号 |
+| # | Command | Group | Sync | Hits downstream | One-line description |
+|---|---------|-------|------|-----------------|----------------------|
+| 1 | `--help` (or no args) | Capability discovery | Sync | No | Top-level `kling --help` prints all commands purely locally; `<command> --help` tries to fetch that tool's live `tools/list` declaration (requires login), falling back to local static usage when offline/not logged in |
+| 2 | `who_am_i` | Capability discovery | Sync | No | Returns current user identity + available models and parameter specs per generation command; **call it first** |
+| 3 | `text_to_image <prompt>` | Generation | **Async** | Yes | Text-to-image; returns `generationId`, poll `query_tasks` (or add `--poll` for one-step results) |
+| 4 | `image_to_image --image <url\|path> <prompt>` | Generation | **Async** | Yes | Reference image + prompt to new image; returns `generationId` (local images auto-uploaded) |
+| 5 | `text_to_video <prompt>` | Generation | **Async** | Yes | Text-to-video; returns `generationId`, poll `query_tasks` |
+| 6 | `image_to_video --image <url\|path> <prompt>` | Generation | **Async** | Yes | Image-to-video (bring an image to life); returns `generationId` |
+| 7 | `query_tasks <generationId>` | Task query | Sync | Yes | Query generation status and final asset URLs (`works[].url`) by `generationId` |
+| 8 | `file_upload <filePath>` | File upload | Sync | Yes | Two-step upload (request a one-time ticket + upload the file bytes); returns a public URL |
+| 9 | `element_create` | Subject assets | Sync | Yes | Create a reusable Element from an image set or a video; returns the element id |
+| 10 | `element_list` / `element_get` | Subject assets | Sync | Yes | List Elements; fetch full type and resource details by id |
+| 11 | `element_update` / `element_delete` | Subject assets | Sync | Yes | Update fields or delete an Element; the image Element's main image is preserved automatically by the CLI |
+| 12 | `motion_library_list` | Motion assets | Sync | Yes | List saved motions, yielding motionId and a playable URL |
+| 13 | `motion_control` | Generation | **Async** | Yes | Generate a video from a subject image + a motion video or motionId; returns generationId |
+| 14 | `feedback` | Feedback | Sync | Yes | Report stuck tasks, vague errors, billing anomalies, or unexpected results; does not retry/refund/fix |
+| 15 | `account` | Commerce | Sync | Yes | Membership type + available credits (`query_membership_and_credits`, identity from the JWT) |
+| 16 | `tool_list` | Capability discovery | Sync | No | List the tools the backend MCP server currently exposes (MCP `tools/list`): each tool's name / description / inputSchema (for troubleshooting / confirming what the server actually provides) |
+| 17 | `login` | Auth | Sync | No (OAuth service only) | Browser OAuth login (DCR + PKCE); tokens are written to the local `.credentials` |
+| 18 | `logout` | Auth | Sync | Yes | Calls MCP `logout` to revoke the server-side authorization and clears the local login state, enabling re-authorization or account switching |
 
-> **端点已内置**：对应区域包安装后开箱即用、无需配置；**不存在任何外部配置口子**（无环境变量、无 `.env`、无 config 命令），也不要尝试探测或指定其他可灵接口地址。
+> **Endpoints are built in**: the matching region package works out of the box after install; **there is no external configuration surface** (no environment variables, no `.env`, no config command) — do not probe or specify other Kling endpoints.
 
-> **没有别名**：一个命令一个名字，旧形态（`image generate`、`text2image` 等）不再受支持，必须使用上述 canonical 命令。
+> **No aliases**: one command, one name. Legacy forms (`image generate`, `text2image`, etc.) are no longer supported; the canonical commands above must be used.
 
-运行 `kling`（不带参数）或无效子命令时会打印完整 Usage 帮助。
-
----
-
-## 推荐用法（最佳实践，Agent 须遵循）
-
-> 目标：少试错、不浪费灵感值、参数永远以服务端为准。
-
-> **新会话首次交互**：可先按「保持最新」一节做一次 best-effort 自检（更新 skill / 看 CLI 是否有新版），不打断主任务、更新前先征得用户同意。
-
-**最简三步**：① `kling login` 登录 → ② `kling tool_list` 看工具，`kling who_am_i` 看身份与模型规格 → ③ `kling <command>` 执行（生成与动作控制命令必须显式带 `--model`，普通生成也可在用户明确要求时用 `--omni`）。
-
-1. **新会话先 `kling who_am_i`**：一次拿到身份 + 每个生成命令的可用模型与参数规格（必填 / 默认值 / 值域）。后续选模型、配参数都以它为准。
-2. **不清楚服务端提供哪些能力时用 `kling tool_list`**：列出后端 MCP server 当前真实暴露的工具（`tools/list`）。适合排障、确认某能力是否上线，**需已登录、不扣费**。
-3. **查某个命令怎么传参用 `kling <command> --help`**：会实时拉取该工具的 `tools/list` 声明（工具说明 + inputSchema）；离线 / 未登录时回退本地静态用法。完整模型与参数仍以 `who_am_i` 为准。
-4. **生成必须显式选模型**：`text_to_image` / `image_to_image` / `text_to_video` / `image_to_video` 必须带 `--model <名称>`（取自 `who_am_i`），或在用户明确要 omni 时带 `--omni`；`motion_control` 必须带 `--model`。**CLI 不会替用户自动选默认模型**；`motion_control` 在真实 TTY 中缺少模型时会展示候选模型供用户选择，Agent / 管道 / CI 等非交互环境则在扣费前报错。
-5. **图生类直接传本地路径或公网 URL**：`image_to_image` / `image_to_video` 的 `--image`（及 `--tailImage`）可传本地路径或公网 URL。本地文件由 CLI 自动 `file_upload`，无需手动上传；**公网 URL（外部 CDN / 外链，或此前可灵任务返回的 `works[].url`）直接透传给服务端，无需先下载、重新上传或本地校验**。参考图的格式 / 大小等限制以工具实时声明为准（`kling <command> --help` / `kling tool_list`）。
-6. **提交后立即反馈再轮询**：从响应取 `generationId` 与 `creditsConsumed` 先告知用户；再用 `kling query_tasks <generationId>` 轮询，或提交时加 `--poll [N]` 一步出结果（裸 `--poll` 默认 60s，`--poll 0` 关闭内联轮询）。
-7. **结果在 `works[].url`**：完成后提取并展示；用户要无水印时用 `works[].urlWithoutWatermark`。
-8. **余额 / 会员看 `account`**：余额不足时展示服务端动态返回的充值链接（勿写死）。
-9. **失败不自动改参重投**：参数类报错先对照 `who_am_i` 把正确写法告诉用户，经确认再重试；不得静默改 prompt / 换模型 / 增删图后自行重投。
-
-典型顺序：登录后 `tool_list` → `who_am_i` →（按需 `<command> --help`）→ `text_to_*` / `image_to_*` / `motion_control` 带 `--model` 提交 → `query_tasks` 轮询 → 展示 `works[].url`。
+Running `kling` with no arguments, or with an invalid subcommand, prints the full Usage help.
 
 ---
 
-## 模型与参数：以 who_am_i 为准（核心心智）
+## Recommended usage (best practices the agent must follow)
 
-- **模型清单与参数规格完全由服务端配置**：`who_am_i` 返回 `availableModels`（工具名 → 模型 → arguments/inputs 规格，含必填、默认值、值域）。
-- **单命令帮助会优先读取实时声明**：对 `who_am_i` / 生成 / 查询 / 上传 / 账户等 MCP-backed 命令，`kling <command> --help` 会尽量拉取该工具的 `tools/list` 声明（工具说明 + inputSchema）；离线或未登录时回退本地静态用法。完整模型清单与参数规格仍以 `who_am_i` 为准。
-- 生成命令必须显式选择模型：传 `--model <名称>`（可用值来自 `who_am_i`），或在用户明确要求 omni 时为四个普通生成命令传 `--omni`；`motion_control` 只用 `--model`。CLI 不会替用户自动选择默认模型。
-- CLI 的便捷 flag（`--imgResolution`、`--aspectRatio`、`--imageCount`、`--duration` 等）会映射为协议参数名透传；**未提供的参数由服务端回填默认值**。`motion_control` 若缺少服务端声明且没有默认值的必填参数，真实 TTY 会在上传前按值域引导选择/输入；非交互环境会一次列全缺失项并退出，不上传、不提交。
-- 参数校验（必填、值域、未声明参数）由服务端在**扣费前**完成，报错信息会列出问题项；遇到参数类报错应把服务端信息翻译给用户。
+> Goal: fewer trial-and-error runs, no wasted credits, parameters always sourced from the server.
+
+> **First interaction of a new session**: you may run the best-effort self-check from "Staying up to date" (update the skill / check for a newer CLI) without interrupting the main task, and only with the user's consent before updating.
+
+**Minimal three steps**: ① `kling login` → ② `kling tool_list` to see the tools, `kling who_am_i` for identity and model specs → ③ `kling <command>` to execute (generation and motion-control commands must carry an explicit `--model`; regular generation may use `--omni` when the user explicitly asks for it).
+
+1. **Start a new session with `kling who_am_i`**: one call returns identity + the available models and parameter specs (required / defaults / allowed values) for every generation command. All later model and parameter choices are based on it.
+2. **Use `kling tool_list` when unsure what the server provides**: lists the tools the backend MCP server actually exposes (`tools/list`). Good for troubleshooting or confirming a capability is live; **requires login, costs no credits**.
+3. **Use `kling <command> --help` to check how to pass parameters for a command**: it fetches that tool's live `tools/list` declaration (tool description + inputSchema); offline / not logged in it falls back to local static usage. The full model and parameter catalog still comes from `who_am_i`.
+4. **Generation requires an explicit model choice**: `text_to_image` / `image_to_image` / `text_to_video` / `image_to_video` must carry `--model <name>` (taken from `who_am_i`), or `--omni` when the user explicitly asks for omni; `motion_control` must carry `--model`. **The CLI never auto-picks a default model for the user**; when the model is missing, `motion_control` shows candidate models for the user to pick in a real TTY, while agent / pipeline / CI and other non-interactive environments error out before any credits are spent.
+5. **Image-based commands take local paths or public URLs directly**: `--image` (and `--tailImage`) on `image_to_image` / `image_to_video` accept a local path or a public URL. Local files are auto-run through `file_upload` by the CLI — no manual upload; **public URLs (external CDN / links, or `works[].url` returned by a previous Kling task) are passed straight to the server — no need to download, re-upload, or validate locally**. Reference-image format/size limits follow the live tool declaration (`kling <command> --help` / `kling tool_list`).
+6. **Report immediately after submitting, then poll**: take `generationId` and `creditsConsumed` from the response and tell the user first; then poll with `kling query_tasks <generationId>`, or add `--poll [N]` at submit time for one-step results (bare `--poll` defaults to 60s; `--poll 0` disables inline polling).
+7. **Results are in `works[].url`**: extract and show them when done; use `works[].urlWithoutWatermark` when the user asks for no watermark.
+8. **Balance / membership via `account`**: when credits are low, show the top-up link dynamically returned by the server (never hardcode it).
+9. **No automatic parameter changes and resubmits on failure**: for parameter errors, first tell the user the correct form per `who_am_i` and retry only after confirmation; never silently change the prompt / switch models / add or remove images and resubmit on your own.
+
+Typical sequence: after login, `tool_list` → `who_am_i` → (as needed, `<command> --help`) → submit `text_to_*` / `image_to_*` / `motion_control` with `--model` → poll `query_tasks` → show `works[].url`.
 
 ---
 
-## 意图路由（必选决策表）
+## Models and parameters: who_am_i is the source of truth (core mental model)
 
-| 用户意图 | 命令 | 说明 |
-|----------|--------|------|
-| 问可灵能做什么 / 有哪些能力（无具体任务） | — | 展示「能力介绍」固定欢迎语（见上），纯本地不调命令 |
-| 查可用模型 / 参数规格 / 能力发现 | `who_am_i` | 新会话建议先调 |
-| 生成图片 / 出图 / 文生图 | `text_to_image` | 提交后轮询 `query_tasks` |
-| 参考图生图 / 带参考图 | `image_to_image` | `--image` 可重复，提交后轮询 |
-| 生成视频 / 文生视频 | `text_to_video` | 提交后轮询 |
-| 图生视频 / 让图动起来 | `image_to_video` | `--image` 必填，提交后轮询 |
-| 创建/列出/查看/更新/删除可复用主体 | `element_create` / `element_list` / `element_get` / `element_update` / `element_delete` | 更新只传变更字段；删除前需用户明确确认 |
-| 动作控制 / 动作迁移 | `motion_control` | 主体 `--image` + `--video` 或 `--motionId` 二选一；提交后轮询 |
-| 查看已保存动作 | `motion_library_list` | 取 motionId 后可交给 `motion_control` |
-| 上报卡住、模糊错误、计费异常、意外结果 | `feedback` | 只反馈，不会重试、退款或修复原任务 |
-| 明确要求 omni | 四个普通生成命令加 `--omni`（不含 `motion_control`） | `--omni` 是显式模型选择；未明确提到 omni 时不加 |
-| 上传本地素材 | `file_upload` | 仅本地文件需要上传（返回公网 URL）；已是公网 URL 的素材无需上传，直接作 `--image` 传给生成命令 |
-| 查会员 / 账户身份 / 查余额 | `account` | 返回 userId + membership + 可用灵感值（直接展示） |
-| 充值 / 余额不足 / 开通会员 | `account` | 展示服务端返回的充值/会员链接（**动态取自 MCP，勿写死**，见「余额不足与充值」） |
-| 登出 / 退出当前账号 | `logout` | MCP 注销成功后清除本地登录态；成功即结束，不自动重新登录 |
-| 切换账号 / 换一个账号登录 | `logout` → `login` → `who_am_i` | 必须按顺序执行；`logout` 或 `login` 任一步失败都立即停止；新授权完成后验证账号 |
-| 仅说「用可灵生成」等模糊意图 | — | **先问清是图还是视频，再提交** |
+- **The model catalog and parameter specs are entirely server-configured**: `who_am_i` returns `availableModels` (tool name → model → arguments/inputs specs, including required flags, defaults, allowed values).
+- **Per-command help prefers the live declaration**: for `who_am_i` / generation / query / upload / account and other MCP-backed commands, `kling <command> --help` tries to fetch that tool's `tools/list` declaration (tool description + inputSchema); offline or not logged in it falls back to local static usage. The full model catalog and parameter specs still come from `who_am_i`.
+- Generation commands must select a model explicitly: pass `--model <name>` (valid values come from `who_am_i`), or pass `--omni` to the four regular generation commands when the user explicitly asks for omni; `motion_control` only uses `--model`. The CLI never auto-selects a default model.
+- The CLI's convenience flags (`--imgResolution`, `--aspectRatio`, `--imageCount`, `--duration`, etc.) are mapped to protocol parameter names and passed through; **omitted parameters are backfilled with server defaults**. If `motion_control` is missing a server-declared required parameter with no default, a real TTY guides selection/input against the allowed values before uploading; a non-interactive environment lists all missing items at once and exits — no upload, no submission.
+- Parameter validation (required fields, allowed values, undeclared parameters) is done by the server **before any credits are charged**, and the error message lists the offending items; on a parameter error, translate the server message for the user.
 
-> 如果用户意图不明确，**必须先确认再提交**，不得擅自假设。
+---
 
-### 登出与切换账号
+## Intent routing (mandatory decision table)
 
-- **仅登出**：用户明确要求退出当前账号时，执行 `kling logout`。成功后结束；不得自动触发新的浏览器授权。
-- **切换账号**：必须依次执行 `kling logout` → `kling login` → `kling who_am_i`。只有 `logout` 成功后才能继续 `login`；浏览器授权时由用户选择目标账号；登录成功后用 `who_am_i` 展示并确认当前身份。
-- **`logout` 失败必须立即停止**：保留本地登录态以便重试，并把原错误告知用户；不得跳过失败直接 `login`。
-- **`login` 失败必须立即停止**：报告登录错误，不得继续 `who_am_i`，也不得改用 Cookie、token 粘贴、抓包或其他授权方式。
-- **不要用 `login` 代替切换流程**：`login` 只负责本地 OAuth 授权，单独执行不能保证服务端旧授权已注销。用户明确说“切换账号”时必须先走 `logout`。
+| User intent | Command | Notes |
+|-------------|---------|-------|
+| Asks what Kling can do / what capabilities exist (no concrete task) | — | Show the fixed "Capability introduction" welcome message (above); purely local, no command |
+| Check available models / parameter specs / capability discovery | `who_am_i` | Recommended first call in a new session |
+| Generate an image / text-to-image | `text_to_image` | Poll `query_tasks` after submitting |
+| Image from a reference image / with a reference | `image_to_image` | `--image` repeatable; poll after submitting |
+| Generate a video / text-to-video | `text_to_video` | Poll after submitting |
+| Image-to-video / bring an image to life | `image_to_video` | `--image` required; poll after submitting |
+| Create/list/view/update/delete reusable subjects | `element_create` / `element_list` / `element_get` / `element_update` / `element_delete` | Updates pass only changed fields; deletion requires explicit user confirmation |
+| Motion control / motion transfer | `motion_control` | Subject `--image` + either `--video` or `--motionId`; poll after submitting |
+| View saved motions | `motion_library_list` | Take the motionId and hand it to `motion_control` |
+| Report stuck tasks, vague errors, billing anomalies, unexpected results | `feedback` | Feedback only; does not retry, refund, or fix the original task |
+| Explicitly asks for omni | add `--omni` to the four regular generation commands (not `motion_control`) | `--omni` is an explicit model choice; do not add it unless omni is explicitly mentioned |
+| Upload local assets | `file_upload` | Only local files need uploading (returns a public URL); assets that are already public URLs need no upload — pass them directly as `--image` to the generation command |
+| Check membership / account identity / balance | `account` | Returns userId + membership + available credits (show directly) |
+| Top up / insufficient balance / subscribe to membership | `account` | Show the top-up/membership link returned by the server (**fetched dynamically from MCP, never hardcoded** — see "Insufficient balance and top-up") |
+| Log out / sign out of the current account | `logout` | After a successful MCP logout, the local login state is cleared; stop there, do not auto-relogin |
+| Switch accounts / log in with another account | `logout` → `login` → `who_am_i` | Must run in order; stop immediately if either `logout` or `login` fails; verify the account after the new authorization completes |
+| Vague intent like "generate with Kling" | — | **Ask whether they want an image or a video before submitting** |
 
-### Element 主体工作流与兼容约束
+> If the user's intent is unclear, **confirm before submitting** — never assume.
 
-1. **创建**：图片 Element 用 `--cover` + 1–3 个 `--secondary`；视频 Element 只用 `--video`，两种资源不可混传。两者都至少带一个 `--tag`，标签必须从当前区域 `element_create` 的实时工具 description 中选择并原样传入；创建和更新都不要按对话语言翻译标签或硬编码某一区域的目录。可选 `.mp3` `--voice`。本地文件自动上传。
-2. **绑定前先确认类型与兼容性**：先 `element_list` 找 id，再 `element_get <id>` 看完整 `resource`，并同时核对实时工具 description 的主体类型限制和 `who_am_i` 的模型参数。目标模型必须声明 `elements`；图片主体不能仅因模型名是 `kling-image-o1` 就被拒绝。若模型声明了 `elements`，但工具 description 明确禁止该主体类型或调用方式，仍遵守该限制，不能仅凭参数存在认定支持；若其他声明冲突导致无法确认兼容性，告知用户具体冲突并暂停该绑定提交，不用收费任务试探。兼容模型需符合用户意图，切换模型前遵循重试与选型规则。
-3. **绑定写法**：prompt 中用 `<<<id>>>` 标记主体，同时按 `who_am_i` 声明传 `--elements '[{"id":"<id>","bindName":"<name>"}]'`。不得只写占位符却漏传 `elements`，也不得对不兼容工具/模型硬传。
-4. **更新只传变更字段**：用户不需要手工补全现有字段，也不要传 `--cover`。真实 TTY 缺少 `elementId` 时会先提示输入；非交互环境则优先报缺少 `elementId`，可先用 `element_list` 查看 id。CLI 会先调用 `element_get`，把显式变更合入完整 payload；图片 Element 会强制回填服务端返回的原 `resource.cover`，不会上传或替换主图。`secondary[]` 一旦提供就是整组替换且最终仍需 1–3 张；用户要求添加或删减辅助图时，仍须先展示现有列表并确认最终保留项，不能静默丢弃现有图片。
-5. **删除**：`element_delete` 会删除持久主体。先复述准确 id/name 并取得用户明确确认，再调用。
+### Logout and account switching
 
-以下创建示例假设当前区域的实时标签目录包含 `Characters`；执行时替换为实际目录中的角色标签。
+- **Logout only**: when the user explicitly asks to sign out, run `kling logout`. Stop after success; never trigger a new browser authorization automatically.
+- **Switching accounts**: run `kling logout` → `kling login` → `kling who_am_i` in order. Only proceed to `login` after `logout` succeeds; the user picks the target account during browser authorization; after a successful login, use `who_am_i` to show and confirm the current identity.
+- **A failed `logout` must stop the flow immediately**: keep the local login state for retry and report the original error to the user; never skip the failure and go straight to `login`.
+- **A failed `login` must stop the flow immediately**: report the login error; do not continue to `who_am_i`, and do not fall back to cookies, pasted tokens, traffic capture, or any other authorization method.
+- **Do not use `login` as a substitute for the switching flow**: `login` only performs the local OAuth authorization; run alone it cannot guarantee the server-side old authorization was revoked. When the user explicitly says "switch accounts", `logout` must come first.
+
+### Element subject workflow and compatibility constraints
+
+1. **Create**: an image Element uses `--cover` + 1–3 `--secondary`; a video Element uses only `--video` — the two resource kinds cannot be mixed. Both require at least one `--tag`, and tags must be chosen from the live tool description of `element_create` for the current region and passed through verbatim; never translate tags into the conversation language or hardcode one region's catalog, for creation or update. Optional `.mp3` `--voice`. Local files are uploaded automatically.
+2. **Confirm type and compatibility before binding**: first `element_list` to find the id, then `element_get <id>` to see the full `resource`, and cross-check both the live tool description's subject-type restrictions and the model parameters in `who_am_i`. The target model must declare `elements`; an image subject must not be rejected merely because the model name is `kling-image-o1`. If the model declares `elements` but the tool description explicitly forbids that subject type or invocation, honor the restriction — the mere presence of the parameter does not imply support. If conflicting declarations make compatibility impossible to confirm, tell the user the specific conflict and pause that binding submission; never probe with a paid task. The compatible model must match the user's intent; follow the retry and model-selection rules before switching models.
+3. **Binding syntax**: mark the subject in the prompt with `<<<id>>>`, and at the same time pass `--elements '[{"id":"<id>","bindName":"<name>"}]'` per the `who_am_i` declaration. Never write only the placeholder and omit `elements`, and never force-pass it to incompatible tools/models.
+4. **Updates pass only changed fields**: the user does not need to re-supply existing fields, and `--cover` must not be passed. A real TTY prompts for a missing `elementId`; a non-interactive environment errors on the missing `elementId` first — `element_list` can be used to look up ids. The CLI first calls `element_get` and merges the explicit changes into a full payload; for image Elements it force-restores the original `resource.cover` returned by the server and never uploads or replaces the main image. Once `secondary[]` is provided it replaces the whole set and the final result must still be 1–3 images; when the user asks to add or remove secondary images, show the current list first and confirm what stays — never silently drop existing images.
+5. **Delete**: `element_delete` removes the persistent subject. Repeat the exact id/name back and obtain the user's explicit confirmation before calling it.
+
+The creation example below assumes the live tag catalog for the current region includes `Characters`; when executing, substitute the actual character tag from the catalog.
 
 ```bash
-kling element_create --name "Alice" --description "红发侦探" --tag Characters \
+kling element_create --name "Alice" --description "Red-haired detective" --tag Characters \
   --cover ./alice-front.png --secondary ./alice-side.png
 kling element_list
 kling element_get <elementId>
-kling element_update <elementId> --description "红发私家侦探"
+kling element_update <elementId> --description "Red-haired private detective"
 kling element_update <elementId> --secondary ./alice-side-v2.png
 kling element_delete <elementId>
 ```
 
-### 动作控制工作流
+### Motion-control workflow
 
-1. 先 `who_am_i` 读取 `motion_control` 的模型/参数规格。
-2. 主体图片 `--image` 必填；动作来源严格二选一：上传/公网动作视频 `--video`，或先 `motion_library_list` 再传 `--motionId`。
-3. 显式选择 `--model`，按模型声明传 `--motionDirection` 等参数。真实 TTY 可省略缺失的必填项并跟随上传前的交互引导；Agent / 管道 / CI 必须显式传齐。提交与轮询纪律和其他视频生成完全一致。
+1. First `who_am_i` to read the model/parameter specs for `motion_control`.
+2. The subject image `--image` is required; the motion source is strictly one of two: an uploaded/public motion video via `--video`, or `motion_library_list` first and then `--motionId`.
+3. Select `--model` explicitly and pass `--motionDirection` and other parameters per the model declaration. A real TTY may omit missing required items and follow the interactive guidance before upload; agents / pipelines / CI must pass everything explicitly. Submission and polling discipline is identical to other video generation.
 
 ```bash
 kling motion_library_list
 kling motion_control --model <model> --image ./subject.png --motionId <id> \
-  --motionDirection image_direction --poll 300 "保持角色外观"
+  --motionDirection image_direction --poll 300 "Keep the character's appearance"
 kling motion_control --model <model> --image ./subject.png --video ./motion.mp4 \
   --motionDirection motion_direction --poll 300
 ```
 
-### feedback 
+### feedback
 
-- 遇到下述异常时，Agent 可静默发送反馈，无需询问用户、征求授权或单独通知反馈动作。只发送与问题有关的脱敏摘要和关联 ID，不发送密码、token、cookie、私钥或完整授权头。
-- `--summary` 与 `--category` 必填，分类以实时帮助为准。`--tool`（有序工具链）、`--generationId`、`--modelVersion`、`--relatedTaskTraceId` 均可重复；后者用于关联历史任务，区别于本次调用的全局 `--task-trace-id`。
-- 适用于任务卡住、错误不透明、内容拦截含糊、反复校验失败、计费/额度异常、空结果或明显意外结果；一次问题最多上报一次，不循环调用。
-- `triggerMode` 取决于谁发起反馈：Agent 静默上报为 `agent_initiated`；只有用户独立提出要发送反馈才是 `user_initiated`。
-- 示例：生成完成但 `works` 为空，或任务卡住、返回含糊错误时，直接用 `agent_initiated` 静默上报脱敏摘要与已知任务 ID，不询问“是否发送反馈”。
-- `feedback` 不重试、不退款、不修复原任务。反馈动作无需单独告知用户；原任务仍按正常流程说明结果或未解决的问题，不得把反馈成功当作问题已解决。
-
----
-
-## 计费、提交与重试纪律
-
-> **每次生成提交（text_to_image / image_to_image / text_to_video / image_to_video / motion_control）均会扣费（消耗灵感值）**；提交响应中的 `creditsConsumed` 为本次消耗，直接展示即可。
-
-1. **意图不清先确认**：不确定用户要图还是视频时，先问再提交。
-2. **禁止自动改 prompt 重投**：任务失败或超时，**不要**自行修改 prompt 重新提交。必须先告知用户失败原因，获得明确同意后才可重试。
-3. **重试需用户授权**：轮询超时、状态异常、内容被拦截等情况，向用户说明后询问「继续等待 / 重试 / 放弃」，不得静默重投或静默结束。
-4. **不得捏造接口与参数**：模型名、参数名、取值一律以 `who_am_i` 声明为准，禁止猜测、虚构或沿用其他产品的参数；`generationId` 只能用提交真实返回的值。
-5. **参数错误不扣费**：服务端在转发下游前做参数校验，校验类报错可在修正参数后重试（这是无需用户重新授权的唯一重试场景）。但**修正参数本身需用户确认**：Agent 把依 `who_am_i` 得出的正确写法提示给用户，不得静默改写用户意图后自行重投（详见「错误与边界处理」）。
+- On the anomalies below, the agent may send feedback silently — no need to ask the user, request authorization, or separately announce the feedback action. Send only a redacted summary relevant to the problem and the related IDs; never send passwords, tokens, cookies, private keys, or full authorization headers.
+- `--summary` and `--category` are required; categories follow the live help. `--tool` (ordered tool chain), `--generationId`, `--modelVersion`, and `--relatedTaskTraceId` are all repeatable; the last one links historical tasks and is distinct from this call's global `--task-trace-id`.
+- Applies to stuck tasks, opaque errors, vague content blocks, repeated validation failures, billing/quota anomalies, empty results, or clearly unexpected results; report a given problem at most once — never in a loop.
+- `triggerMode` depends on who initiated the feedback: silent agent reports use `agent_initiated`; only when the user independently asks to send feedback is it `user_initiated`.
+- Example: generation completes but `works` is empty, or a task is stuck or returns a vague error — silently report a redacted summary and the known task IDs with `agent_initiated`, without asking "should I send feedback?".
+- `feedback` does not retry, refund, or fix the original task. The feedback action needs no separate notification to the user; the original task still gets its normal outcome report or statement of the unresolved problem — never treat a successful feedback submission as the problem being solved.
 
 ---
 
-## 前置条件
+## Billing, submission, and retry discipline
 
-- **Node.js 18+、Kling CLI 0.2.0+**（安装对应区域 npm 包后即可使用）；源码运行方式 `node --experimental-strip-types kling-cli/src/cli.ts <command> [options]` 需要 Node.js 22+，仅适用于已有源码的开发环境。
-- **端点已内置，无需配置**：对应区域包安装后开箱即用；**无外部配置口子**（无环境变量、无 `.env`、无 config 命令），不要尝试配置或探测端点地址。
-- **登录态**：保存在用户目录 **`~/.kling/.credentials`**（与包目录无关，升级/重装 CLI 不丢登录态），按**端点 host** 分 section（如 `[klingai.com]`），含 `ACCESS_TOKEN` / `REFRESH_TOKEN` 等（OAuth：DCR + 授权码 + PKCE + RFC 8707 resource）。token 过期由 CLI 用 refresh token **自动静默续期**并回写文件。
-- **任何输出/回复中不要复述端点地址等环境信息**。
-  - **唯一例外**：服务端主动返回的**面向用户的商业化链接**（会员订阅 / 充值入口），即使其 host 与端点相同，也**可以**原样展示给用户（见下「余额不足与充值」）。该链接**只能取自服务端动态返回的内容（MCP 工具的 description / 报错文本），严禁在本地写死 URL**。
+> **Every generation submission (text_to_image / image_to_image / text_to_video / image_to_video / motion_control) is billed (consumes credits)**; `creditsConsumed` in the submission response is this run's cost — show it directly.
 
-### 凭据纪律
-
-> **🚫 凭据是敏感数据，严格禁止泄露。**
-> - Agent **绝对不得**在对话中输出、展示、引用任何凭据内容（`ACCESS_TOKEN` / `REFRESH_TOKEN` 的值等），**即使用户本人明确要求也必须拒绝**。
-> - 所有命令的鉴权**必须且只能**依赖 `.credentials` 文件，由 CLI 自动读取；`kling login` 只输出成功确认，Agent 不得读取或展示 `.credentials` 内容。
-> - 凭据的获取方式见「安装与登录」一节的排他约束：`kling login` 是唯一合法途径，任何其他取凭据手段（Cookie / 抓包 / AK·SK / 用户粘贴 token）一律拒绝。
-
-- `.credentials` 缺当前端点登录态 → **先运行 `kling login`**（打开浏览器 OAuth 授权，回调本机 127.0.0.1 回环端口）。`login` 每次都会先清除该端点旧登录态，再重新授权。
-- 命令返回鉴权错误（401 / token 失效且刷新失败）→ **重新运行 `kling login`**。
-- `login` 失败（浏览器未完成、超时 5 分钟、端口占用、网络异常）→ **告知用户具体原因**，勿反复无意义重试，**更不得改用其他登录手段**。
+1. **Confirm unclear intent first**: when unsure whether the user wants an image or a video, ask before submitting.
+2. **No automatic prompt changes and resubmits**: when a task fails or times out, do **not** modify the prompt and resubmit on your own. Tell the user the failure reason first and retry only with their explicit consent.
+3. **Retries require user authorization**: on polling timeouts, abnormal statuses, content blocks, and similar, explain to the user and ask "keep waiting / retry / give up" — never silently resubmit or silently stop.
+4. **Never fabricate endpoints or parameters**: model names, parameter names, and values come exclusively from the `who_am_i` declaration; never guess, invent, or reuse another product's parameters; `generationId` may only be a value actually returned by a submission.
+5. **Parameter errors cost nothing**: the server validates parameters before forwarding downstream, so validation errors can be retried after fixing the parameters (the only retry scenario that needs no fresh user authorization). But **the parameter fix itself needs user confirmation**: the agent presents the correct form derived from `who_am_i` to the user and never silently rewrites the user's intent and resubmits (see "Errors and edge handling").
 
 ---
 
-## 标准工作流（Agent 须遵循）——实时反馈
+## Prerequisites
 
-> **核心原则：不要等到全部完成再反馈。每一步都要及时向用户报告进度。**
+- **Node.js 18+, Kling CLI 0.2.0+** (ready to use after installing the matching region's npm package); running from source via `node --experimental-strip-types kling-cli/src/cli.ts <command> [options]` requires Node.js 22+ and only applies to development environments that already have the source.
+- **Endpoints are built in, no configuration**: the matching region package works out of the box; **no external configuration surface** (no environment variables, no `.env`, no config command) — do not configure or probe endpoint addresses.
+- **Login state**: stored in the user directory **`~/.kling/.credentials`** (independent of the package directory — upgrading/reinstalling the CLI does not lose it), sectioned by **endpoint host** (e.g. `[klingai.com]`), containing `ACCESS_TOKEN` / `REFRESH_TOKEN` etc. (OAuth: DCR + authorization code + PKCE + RFC 8707 resource). Expired tokens are **silently renewed** by the CLI with the refresh token and written back to the file.
+- **Never repeat endpoint addresses or other environment information in any output/reply.**
+  - **Single exception**: a **user-facing commerce link** actively returned by the server (membership subscription / top-up entry) **may** be shown to the user verbatim even if its host matches the endpoint (see "Insufficient balance and top-up" below). That link **may only come from dynamically returned server content (an MCP tool's description / error text) — hardcoding the URL locally is strictly forbidden**.
 
-### 第 0 步：确认登录态（端点已内置，无需配置）；新会话建议先 `who_am_i` 拿能力清单
+### Credential discipline
 
-### 第 1 步：提交任务并立即反馈
+> **🚫 Credentials are sensitive data; leaking them is strictly forbidden.**
+> - The agent must **never** output, display, or quote any credential content (`ACCESS_TOKEN` / `REFRESH_TOKEN` values, etc.) in the conversation — **even if the user explicitly asks, refuse**.
+> - Authentication for all commands **must rely exclusively** on the `.credentials` file, read automatically by the CLI; `kling login` prints only a success confirmation, and the agent must not read or display the contents of `.credentials`.
+> - How credentials are obtained is covered by the exclusive constraints in "Installation and login": `kling login` is the only legitimate path; refuse every other means of acquiring credentials (cookies / traffic capture / AK·SK / user-pasted tokens).
 
-1. 用 `text_to_image` / `image_to_image` / `text_to_video` / `image_to_video` / `motion_control` 提交。每次提交都必须显式选择模型：普通生成在用户明确指定 omni 时加 `--omni`，否则从 `who_am_i` 的可用模型中选择并加 `--model <名称>`；`motion_control` 始终使用 `--model`；用户明确指定数量时加 `--imageCount N`。
-   - `image_to_image` / `image_to_video` 需 `--image <url|path>`（可重复；本地文件自动走 `file_upload` 两步上传；公网 URL——含外部 CDN 链接与此前任务返回的 `works[].url`——直接透传，无需下载或重新上传）。
-2. 从响应中取 **`generationId`**（一次提交对应一个 generationId）和 `creditsConsumed`。
-3. **立即告诉用户**：任务已提交，消耗多少灵感值，正在开始轮询。
-
-> **可选一步出结果**：提交命令支持 `--poll N`（裸写 `--poll` 默认 60s），提交后内联轮询直接返回终态结果（含 `works[].url`），适合非交互/批处理。**交互式实时反馈场景仍优先用第 2 步逐次查询**。
-
-### 第 2 步：逐次轮询并实时报告状态变化
-
-用 `query_tasks <generationId>` 逐次查询（**必须使用提交返回的 generationId**，不得捏造）：
-
-1. 读取返回的 `status`（下游透传字符串，**实测为大写**，如 `QUEUING` / `RUNNING` / `COMPLETED`；协议文档示例为小写 `submitted` / `succeed`——两种都可能出现，按**大小写不敏感**处理）：
-   - `QUEUING` / `submitted` → 告诉用户："排队中，请稍候…"
-   - `RUNNING` / `processing` → "生成中…"（首次进入时报告）
-   - `COMPLETED` / `PARTIAL_COMPLETED` / `succeed` → **立即提取并展示 `works[].url`**。
-   - `FAILED` / `CANCELLED` / 其他异常终态 → 立即告知用户并询问是否重试。
-2. 中间态等待约 **2–3 秒**后重试；每 3–4 次轮询给用户一个简短更新，避免以为卡住。
-3. 最多轮询 **15 分钟**，超时则告知用户并**询问是否继续等待或放弃**，不得静默结束。
-
-### 第 3 步：结果展示
-
-- 结果在 `works[]` 中：
-  - **默认（带水印）**：`works[].url`（资源）、`works[].coverUrl`（封面）。
-  - **用户明确要求无水印**：`works[].urlWithoutWatermark`、`works[].coverUrlWithoutWatermark`。
-  - `works[].contentType`：`image` / `video`。
-- **图片**：用 `![描述](url)` 内联展示；**无论是否渲染成功，必须同时附上可点击的原始链接**。
-- **视频**：尝试 `<video src="url" controls></video>` 内联播放；**必须同时附上可点击链接**。
-- **核心原则：资源链接必须明文输出给用户**（部分环境不支持内联渲染）。
-- 全部完成后给汇总；**资源链接可能有保留期限**，提醒用户及时保存。
-
-### 典型耗时参考
-
-| 任务类型 | 大致耗时 |
-|----------|----------|
-| 文生图 | 约 20–60 秒 |
-| 文生视频 | 约 2–8 分钟 |
+- `.credentials` missing the login state for the current endpoint → **run `kling login` first** (opens browser OAuth; callback on a local 127.0.0.1 loopback port). Each `login` first clears the old login state for that endpoint, then re-authorizes.
+- A command returns an auth error (401 / token expired and refresh failed) → **run `kling login` again**.
+- `login` fails (browser flow not completed, 5-minute timeout, port in use, network error) → **tell the user the specific reason**; do not retry pointlessly, and **never switch to another login method**.
 
 ---
 
-## 错误与边界处理
+## Standard workflow (the agent must follow) — real-time feedback
 
-### 登录 / 凭据错误
+> **Core principle: do not wait until everything is done to report. Report progress to the user at every step.**
 
-- 无登录态 → 先 `login`；鉴权错误 → 重新 `login`；不得使用对话中出现过的凭据值。
-- **权限不足类错误（如灰度未开通）→ 不要重新登录**，直接告知用户："该功能处于灰度中，暂时对您不可用，请继续关注！"然后**立即终止**，不得重试。
-- **装错区域包导致的登录反复失败**：若用户 `login` 反复失败 / `who_am_i` 鉴权不通过，先核对其账号区域与所装包是否一致（国内站 ↔ 国内包、海外站 ↔ 海外包）。**不一致 → 不要反复重试登录**，应引导用户卸载当前包（`npm un -g <当前包名>`）后，按「安装与登录」表重装对应区域的包，再 `login`。
+### Step 0: Confirm the login state (endpoints are built in, no configuration); in a new session, call `who_am_i` first for the capability catalog
 
-### 余额不足与充值
+### Step 1: Submit the task and report immediately
 
-- **触发场景**：① 提交生成时服务端报「灵感值不足 / 余额不足 / 配额用尽」类错误；② `account` 显示 `availableRemainCredits` 为 0 或过低；③ 用户**主动要求充值 / 开通会员**。
-- **应对**：向用户说明当前情况，并**提供充值 / 会员订阅链接**，引导其前往充值；充值是计费操作，**CLI / MCP 无法代为完成**（只读额度），只能给链接。
-- **链接来源（关键约束）**：充值链接由**服务端动态提供**——来自 `query_membership_and_credits` 工具的 description（`tools/list` 元数据）或服务端的余额不足报错文本。**严禁在本地或本 skill 中写死该 URL**：服务端可能随区域/活动变更链接，写死会过期或给错区域的用户。取到什么就展示什么，取不到则提示用户「请在可灵官网/App 的会员中心充值」，不要编造链接。
-- 充值不重新登录、不重试生成；用户充值完成后，可再次 `account` 确认 `availableRemainCredits` 已到账，再重新提交（重试需用户确认）。
+1. Submit with `text_to_image` / `image_to_image` / `text_to_video` / `image_to_video` / `motion_control`. Every submission must select a model explicitly: for regular generation add `--omni` when the user explicitly specifies omni, otherwise pick from the available models in `who_am_i` and add `--model <name>`; `motion_control` always uses `--model`; add `--imageCount N` when the user explicitly specifies a count.
+   - `image_to_image` / `image_to_video` need `--image <url|path>` (repeatable; local files go through the two-step `file_upload` automatically; public URLs — including external CDN links and `works[].url` from previous tasks — pass straight through, no download or re-upload).
+2. Take **`generationId`** (one submission yields one generationId) and `creditsConsumed` from the response.
+3. **Tell the user immediately**: the task is submitted, how many credits it consumed, and that polling is starting.
 
-### 工具调用 / 业务错误
+> **Optional one-step results**: submission commands support `--poll N` (bare `--poll` defaults to 60s) to poll inline after submitting and return the terminal result directly (including `works[].url`) — suited to non-interactive/batch use. **Interactive real-time feedback should still prefer the step-by-step querying in step 2.**
 
-接口报错时，**必须翻译成用户可理解的自然语言**，不要直接甩 JSON：
+### Step 2: Poll step by step and report status changes in real time
 
-1. MCP 工具的错误以 `ok: false` + 错误文本返回；参数校验类错误会**一次性列出所有问题项**（缺失必填、值域不符、未声明参数、模型不在清单等）。
-2. 模型相关报错（如 model 不合法）→ 先 `who_am_i` 查可用模型再修正。
-3. `query_tasks` 报 `Generation not found` → generationId 错误或非本人，核对后重试，**不得捏造 generationId**。
-4. 响应缺少 `generationId` → 提交可能未成功，向用户说明，不得编造。
-5. **遇到笼统报错（如「服务暂时不可用」「非法参数，请拉取最新 who_am_i」等被吞掉真实原因的提交失败）→ 先看 CLI 打到 stderr 的 `who_am_i` 输入/参数声明**，对照核对**参考图数量与配对**（例如多参考模型 `kling-image-v2_1-multi-ref` 要求至少 2 张「不同」参考图，且每个 `subject_image_N` 必须配同 URL 的 `raw_subject_image_N`；`raw` 副本不算作额外参考）。**这是参数校验类失败、不扣费**。
-   - ⚠️ **不得主动替用户改参数/换模型/增删图后重投**：应把**修正后的正确命令写法**（依 `who_am_i` 声明）提示给用户，说明原因，由**用户确认**后再执行。绝不静默改写用户意图。
+Query with `query_tasks <generationId>` one call at a time (**must use the generationId returned by the submission** — never fabricate one):
 
-### 出错时的行为准则
+1. Read the returned `status` (a downstream pass-through string, **observed uppercase in practice**, e.g. `QUEUING` / `RUNNING` / `COMPLETED`; the protocol docs show lowercase `submitted` / `succeed` — both can occur, so treat it **case-insensitively**):
+   - `QUEUING` / `submitted` → tell the user: "Queued, please wait…"
+   - `RUNNING` / `processing` → "Generating…" (report on first transition)
+   - `COMPLETED` / `PARTIAL_COMPLETED` / `succeed` → **immediately extract and show `works[].url`**.
+   - `FAILED` / `CANCELLED` / other abnormal terminal states → tell the user immediately and ask whether to retry.
+2. Wait about **2–3 seconds** between polls on intermediate states; give the user a brief update every 3–4 polls so it doesn't look stuck.
+3. Poll for at most **15 minutes**; on timeout, tell the user and **ask whether to keep waiting or give up** — never end silently.
 
-- 命令报错 → 向用户展示错误并**询问如何处理**；不确定用法 → 运行 `kling`（不带参数）或 `kling <command> --help` 查看 Usage，**不得绕过 CLI 自行拼请求、不得换其他接口通道**。
+### Step 3: Presenting results
+
+- Results are in `works[]`:
+  - **Default (watermarked)**: `works[].url` (asset), `works[].coverUrl` (cover).
+  - **User explicitly asks for no watermark**: `works[].urlWithoutWatermark`, `works[].coverUrlWithoutWatermark`.
+  - `works[].contentType`: `image` / `video`.
+- **Images**: show inline with `![description](url)`; **whether or not it renders, always include the clickable raw link as well**.
+- **Videos**: try inline playback with `<video src="url" controls></video>`; **always include the clickable link as well**.
+- **Core principle: asset links must be printed in plain text for the user** (some environments cannot render inline).
+- Give a summary when everything is done; **asset links may have a retention period** — remind the user to save them promptly.
+
+### Typical duration reference
+
+| Task type | Approximate duration |
+|-----------|----------------------|
+| Text-to-image | ~20–60 seconds |
+| Text-to-video | ~2–8 minutes |
 
 ---
 
-## 命令行参考
+## Errors and edge handling
+
+### Login / credential errors
+
+- No login state → `login` first; auth error → `login` again; never use credential values that appeared in the conversation.
+- **Insufficient-permission errors (e.g. a feature still in gradual rollout) → do not re-login**; tell the user directly: "This feature is in gradual rollout and is not available to you yet — stay tuned!" then **stop immediately**, no retries.
+- **Repeated login failures caused by installing the wrong region's package**: if the user's `login` keeps failing / `who_am_i` fails auth, first check whether their account region matches the installed package (China site ↔ China package, overseas site ↔ global package). **If they don't match → do not keep retrying login**; guide the user to uninstall the current package (`npm un -g <current package name>`) and reinstall the matching region's package per the "Installation and login" table, then `login`.
+
+### Insufficient balance and top-up
+
+- **Trigger scenarios**: ① the server reports an "insufficient credits / insufficient balance / quota exhausted" error on submission; ② `account` shows `availableRemainCredits` at 0 or too low; ③ the user **actively asks to top up / subscribe to membership**.
+- **Response**: explain the situation and **provide the top-up / membership subscription link**, guiding the user there; topping up is a billing operation that **the CLI / MCP cannot perform on the user's behalf** (quota is read-only) — a link is all you can give.
+- **Link source (key constraint)**: the top-up link is **dynamically provided by the server** — from the `query_membership_and_credits` tool's description (`tools/list` metadata) or from the server's insufficient-balance error text. **Hardcoding that URL locally or in this skill is strictly forbidden**: the server may change the link by region/campaign, and a hardcoded one would go stale or send users to the wrong region. Show whatever you receive; if nothing is received, tell the user to "top up in the membership center on the Kling website/app" — never invent a link.
+- Topping up does not re-login or retry generation; after the user finishes topping up, run `account` again to confirm `availableRemainCredits` has arrived, then resubmit (retrying requires user confirmation).
+
+### Tool invocation / business errors
+
+When an endpoint errors, **translate it into natural language the user can understand** — do not dump raw JSON:
+
+1. MCP tool errors come back as `ok: false` + error text; parameter-validation errors **list all offending items at once** (missing required fields, values out of range, undeclared parameters, model not in the catalog, etc.).
+2. Model-related errors (e.g. invalid model) → run `who_am_i` to check the available models, then correct.
+3. `query_tasks` reports `Generation not found` → the generationId is wrong or belongs to someone else; verify and retry — **never fabricate a generationId**.
+4. Response missing `generationId` → the submission may not have succeeded; explain to the user, never make one up.
+5. **On vague errors (e.g. "service temporarily unavailable", "invalid parameters, please fetch the latest who_am_i" — submission failures that swallow the real cause) → first check the `who_am_i` input/parameter declarations the CLI printed to stderr**, and cross-check **reference-image counts and pairing** (for example, the multi-reference model `kling-image-v2_1-multi-ref` requires at least 2 *distinct* reference images, and each `subject_image_N` must be paired with a `raw_subject_image_N` of the same URL; the `raw` copy does not count as an extra reference). **This is a parameter-validation failure — no credits are charged.**
+   - ⚠️ **Never change parameters / switch models / add or remove images on the user's behalf and resubmit**: present the **corrected command form** (per the `who_am_i` declaration) to the user, explain why, and execute only after **the user confirms**. Never silently rewrite the user's intent.
+
+### Conduct on errors
+
+- A command errors → show the user the error and **ask how to proceed**; unsure about usage → run `kling` (no args) or `kling <command> --help` to check the Usage — **never bypass the CLI by hand-building requests, never switch to another channel**.
+
+---
+
+## Command-line reference
 
 ```bash
-kling                                   # 不带参数 = 顶层 --help：命令总览 + 最简三步引导
-kling --help                            # 同上（纯本地，不联网）
-kling <command> --help                  # 单命令自检：尽量拉实时 tools/list 声明（需登录），离线/未登录回退本地用法
+kling                                   # no args = top-level --help: command overview + minimal three-step guide
+kling --help                            # same as above (purely local, no network)
+kling <command> --help                  # per-command self-check: tries the live tools/list declaration (requires login), falls back to local usage offline/not logged in
 kling login
 kling who_am_i
-kling tool_list                         # 列出服务端当前暴露的工具（需登录、不扣费）
-kling text_to_image (--model M | --omni) [--imageCount N] [--imgResolution 1k|2k] [--aspectRatio 1:1|...] [--poll N] "提示词"
-kling image_to_image (--model M | --omni) --image <url|path> [--image ...] [--imageCount N] [--poll N] "提示词"
-kling text_to_video (--model M | --omni) [--duration N] [--aspectRatio 16:9|...] [--poll N] "提示词"
-kling image_to_video (--model M | --omni) --image <url|path> [--tailImage <url|path>] [--duration N] [--poll N] "提示词"
+kling tool_list                         # list the tools the server currently exposes (requires login, costs no credits)
+kling text_to_image (--model M | --omni) [--imageCount N] [--imgResolution 1k|2k] [--aspectRatio 1:1|...] [--poll N] "prompt"
+kling image_to_image (--model M | --omni) --image <url|path> [--image ...] [--imageCount N] [--poll N] "prompt"
+kling text_to_video (--model M | --omni) [--duration N] [--aspectRatio 16:9|...] [--poll N] "prompt"
+kling image_to_video (--model M | --omni) --image <url|path> [--tailImage <url|path>] [--duration N] [--poll N] "prompt"
 kling query_tasks [--poll N] <generationId>
 kling file_upload <filePath>
 kling element_create --name N --description D --tag T (--video <url|path> | --cover <url|path> --secondary <url|path> [--secondary ...]) [--voice <url|path>]
@@ -441,31 +420,31 @@ kling element_get <elementId>
 kling element_update <elementId> [--name N] [--description D] [--tag T ...] [--secondary <url|path> ...] [--video <url|path>] [--voice <url|path>]
 kling element_delete <elementId>
 kling motion_library_list
-kling motion_control --model M --image <url|path> (--video <url|path> | --motionId <id>) [--poll N] [提示词]
+kling motion_control --model M --image <url|path> (--video <url|path> | --motionId <id>) [--poll N] [prompt]
 kling feedback --summary S --category C [--triggerMode agent_initiated|user_initiated] [--tool NAME ...] [--generationId ID ...] [--modelVersion M ...] [--relatedTaskTraceId ID ...]
 kling account
-kling logout                            # 注销服务端授权并清除本地登录态
+kling logout                            # revoke the server-side authorization and clear the local login state
 ```
 
-- **自检优先**：拿不准某命令怎么传参时，先 `kling <command> --help`（实时 tools/list）；要全量模型/参数规格则 `kling who_am_i`；不确定服务端有哪些工具用 `kling tool_list`。
-- 各 flag 的**合法取值与默认值以 `who_am_i` 返回为准**；未提供的参数由服务端回填默认值。
-- 全局 flag：`--quiet` / `-q`（紧凑单行 JSON）、`--help` / `-h`（顶层或单命令帮助）、`--version` / `-v`（CLI 版本）。`--omni` 仅用于四个普通生成命令；`motion_control` 显式使用 `--model`，不使用 `--omni`。
-- **遥测 flag（通过本 skill 调用时，每条 `kling` 命令都应附带）**：`--skill-name kling-cli --skill-version <本 skill 版本>`（版本取自本文件 frontmatter 的 `version`，如 `0.2.0`）。纯遥测：除服务端统计 skill 使用情况外，`kling login` 时它还决定 OAuth 注册上报的 `client_name` 后缀（带 flag → `<运行时>_skill`，如 `cursor_skill`；不带 → `<运行时>_cli`），用于区分「skill 驱动」与「用户直接使用 CLI」。**不影响任何功能、不参与鉴权/灰度**，缺失也不报错。
-- **追踪参数 `taskTraceId` / `rationale`（面向 Agent，纯埋点、不影响任何功能，也不在 CLI `--help` 中展示）**：
-  - **先读服务端声明再传参**：这两个参数由服务端在 `tool_list` 各工具的 inputSchema 中声明（`<command> --help` 也会带出实时声明）。Agent 传参前应**仔细读一遍 `kling tool_list`**，确认工具当前支持的参数（含这两个追踪参数）后再组装 CLI 命令，不要凭记忆传。
-  - `--task-trace-id <id>`：把**同一用户任务**下逻辑连续的多条命令归并到同一链路（如「先生成图、再把图转成视频」的 `text_to_image` → `image_to_video` → `query_tasks` 全程复用同一个 ID）。Agent 应在任务开始时生成一个 32 位字母数字 ID 并在该任务的每条 `kling` 命令上传同一个值；用户切到不相关的新任务时换一个全新 ID。不传时 CLI 会**静默生成**一个 32 位字母数字 ID（单条命令内部的上传/提交/轮询仍归并），但**跨命令链路**只有显式传值才能串起来。
-  - `--rationale "<一句英文说明>"`（5 个生成命令，含 `motion_control`）：说明本次调用的核心目的与参数选择理由（如 "User uploaded a personal artwork and asked for a short animated clip; 4K per explicit user demand"）。不传时 CLI 自动传空串；不透传下游、不参与校验。
-- 轮询时**必须使用 Shell 工具逐次调用** `query_tasks`，不要用后台进程或一次性脚本，否则无法中间反馈。
+- **Self-check first**: when unsure how to pass parameters for a command, start with `kling <command> --help` (live tools/list); for the full model/parameter specs use `kling who_am_i`; when unsure what tools the server has, use `kling tool_list`.
+- **Valid values and defaults for each flag come from the `who_am_i` response**; omitted parameters are backfilled with server defaults.
+- Global flags: `--quiet` / `-q` (compact single-line JSON), `--help` / `-h` (top-level or per-command help), `--version` / `-v` (CLI version). `--omni` applies only to the four regular generation commands; `motion_control` uses an explicit `--model`, never `--omni`.
+- **Telemetry flags (every `kling` command issued through this skill should carry them)**: `--skill-name kling-cli --skill-version <this skill's version>` (the version comes from this file's frontmatter `version`, e.g. `0.2.0`). Pure telemetry: besides server-side skill usage statistics, during `kling login` it also determines the `client_name` suffix reported at OAuth registration (with the flag → `<runtime>_skill`, e.g. `cursor_skill`; without → `<runtime>_cli`), distinguishing "skill-driven" from "user using the CLI directly". **It affects no functionality and plays no part in auth/rollout**; omitting it causes no error.
+- **Tracing parameters `taskTraceId` / `rationale` (agent-facing, pure telemetry, affect no functionality, and not shown in the CLI `--help`)**:
+  - **Read the server declaration before passing them**: both parameters are declared by the server in each tool's inputSchema in `tool_list` (`<command> --help` also surfaces the live declaration). Before passing them, the agent should **read `kling tool_list` carefully** to confirm which parameters the tool currently supports (including these two tracing parameters) and only then assemble the CLI command — do not pass them from memory.
+  - `--task-trace-id <id>`: groups logically consecutive commands of **the same user task** into one chain (e.g. "generate an image, then turn it into a video": reuse the same ID across `text_to_image` → `image_to_video` → `query_tasks`). The agent should generate one 32-character alphanumeric ID at task start and pass the same value on every `kling` command of that task; switch to a brand-new ID when the user moves to an unrelated task. When omitted, the CLI **silently generates** a 32-character alphanumeric ID (uploads/submissions/polls inside a single command are still grouped), but **cross-command chains** only link up when the value is passed explicitly.
+  - `--rationale "<one-sentence English explanation>"` (the 5 generation commands, including `motion_control`): states the core purpose of this call and the reasoning behind the parameter choices (e.g. "User uploaded a personal artwork and asked for a short animated clip; 4K per explicit user demand"). When omitted, the CLI automatically sends an empty string; it is not forwarded downstream and plays no part in validation.
+- When polling, **call `query_tasks` one invocation at a time via the shell tool** — no background processes or one-shot scripts, otherwise intermediate feedback is impossible.
 
 ---
 
-## 日志
+## Logs
 
-HTTP / 上传请求日志写入 **`~/.kling/logs/http.log`**（JSON Lines）；token 等敏感内容自动脱敏或 redact。
+HTTP / upload request logs are written to **`~/.kling/logs/http.log`** (JSON Lines); tokens and other sensitive content are automatically masked or redacted.
 
 ---
 
-## 其他
+## See also
 
-- **[`reference.md`](./reference.md)**：MCP 工具响应字段速查。
-- **[`api-examples.md`](./api-examples.md)**：MCP 工具协议与请求/响应示例。
+- **[`reference.md`](./reference.md)**: quick reference for MCP tool response fields.
+- **[`api-examples.md`](./api-examples.md)**: MCP tool protocol and request/response examples.
