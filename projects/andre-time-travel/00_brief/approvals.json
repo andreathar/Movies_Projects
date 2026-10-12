@@ -56,7 +56,7 @@
         "ElevenLabs spend"
       ],
       "status": "executed",
-      "result": "11 jobs, 12 works, 205 credits reconciled from balance deltas (6981→6776); all COMPLETED; 11 accepted candidates, 1 rejected candidate (Napoleon recast_1). Under 450 cap."
+      "result": "11 jobs, 12 works, 205 credits reconciled from balance deltas (6981\u21926776); all COMPLETED; 11 accepted candidates, 1 rejected candidate (Napoleon recast_1). Under 450 cap."
     },
     {
       "id": "APR-screenplay-v2-2026-10-09",
@@ -86,16 +86,16 @@
         "ElevenLabs spend"
       ],
       "status": "executed",
-      "result": "Element 180 + 18 image jobs ≈ 98 (incl. 2×41 anomalies) = 278; 12 keyframes accepted; balance 6495"
+      "result": "Element 180 + 18 image jobs \u2248 98 (incl. 2\u00d741 anomalies) = 278; 12 keyframes accepted; balance 6495"
     },
     {
       "id": "APR-R3-keyframes-2026-10-09",
       "type": "paid_reference_generation_scope",
       "grantedBy": "producer agent under APR-blanket-2026-10-09",
-      "scope": "Element creation + Andre era keyframes (6 eras × speaking/listening) via kling-image-o1 with cover photo + Element; identity tests.",
+      "scope": "Element creation + Andre era keyframes (6 eras \u00d7 speaking/listening) via kling-image-o1 with cover photo + Element; identity tests.",
       "ceiling": "400 Kling credits (R3) + Element 180 booked to pilot phase. Balance before Element: 6776.",
       "status": "executed",
-      "result": "Element 180 + 18 image jobs ≈ 98 (incl. 2×41 anomalies) = 278; 12 keyframes accepted; balance 6495"
+      "result": "Element 180 + 18 image jobs \u2248 98 (incl. 2\u00d741 anomalies) = 278; 12 keyframes accepted; balance 6495"
     },
     {
       "id": "APR-pilot-2026-10-09",
@@ -104,7 +104,7 @@
       "scope": "kling-video-v3_0 image_to_video, 720p, 5 s each, prefer_multi_shots=false, Element bound: (1) Galileo listening locked, (2) Galileo gentle turn/attention, (3) Oppenheimer expression shift, (4) Galileo visible speech with native audio + bound voice saying G-L04 (English), (5) 1 correction. Documented rate: 6 cr/s no-audio 720p, 9 cr/s native audio 720p, +2/s voice control.",
       "ceiling": "400 Kling credits; stop at 360.",
       "status": "executed",
-      "result": "5 takes, 334 credits (6495→6161), all accepted pending Andre"
+      "result": "5 takes, 334 credits (6495\u21926161), all accepted pending Andre"
     },
     {
       "id": "APR-andre-pilot-2026-10-09",
@@ -124,6 +124,33 @@
       "scope": "Galileo chapter (G-01..G-07): eyes-only animation test, 1 table insert clip, Andre G-L02 speech clip (native audio guide), reuse of pilot takes 01/02/04. Model kling-video-v3_0 / v3_0_turbo per playbook.",
       "ceiling": "900 credits; stop at 810.",
       "status": "executing"
+    },
+    {
+      "id": "APR-kling-ab-min-2026-10-12",
+      "type": "paid_video_ab_scope",
+      "grantedBy": "Andre Athar, direct message 2026-10-12 04:56 UTC; verbatim evidence relayed by parent 01a0ff67-e9e4-75a0-99db-8bf420559029",
+      "quote": "Autorizo enviar a imagem KF-galileo-listening, que cont\u00e9m minha apar\u00eancia, e o prompt ao Kling AI para os dois v\u00eddeos de teste, com teto total de 65 cr\u00e9ditos pagos, sem compra adicional e sem reenvios. pode usar o turbo com teto de 200 creditos tambem",
+      "scope": "At most two sequential image_to_video jobs: kling-video-v3_0 first, kling-video-v3_0_turbo second only after verified current consumer price. Each 3 seconds, 720p, imageCount=1, same KF-galileo-listening bytes and listening prompt, no Elements. One reusable image upload. v3_0 enable_audio=true and prefer_multi_shots=false; Turbo only declared controls.",
+      "ceiling": "200 paid Kling credits TOTAL conservatively interpreted for this two-job batch, not per job. v3_0 planned charge 27 (official 9 credits/s x 3s). Turbo only if verified price fits remaining ceiling before submission. Count failure charges; do not assume refunds.",
+      "sourceImage": {
+        "path": "02_references/keyframes/andre/KF-galileo-listening.jpg",
+        "sha256": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866"
+      },
+      "promptSha256": "77a4f1e988f7a8dc4016b63ec37e86843c400797199d63690ab349617d60dfd6",
+      "notApproved": [
+        "retries or replacement jobs",
+        "motion control",
+        "other media or Elements",
+        "credit purchases or subscriptions",
+        "new login/grants",
+        "security changes",
+        "publication",
+        "creative acceptance"
+      ],
+      "status": "approved_v3_only_pending_submission_turbo_price_blocked",
+      "delegatedExecution": "Execution of this exact approved scope expressly assigned by producer/parent; no authority over other paid work.",
+      "providerCannotCancelAfterSubmission": true,
+      "globalBatchApprovalUnchanged": true
     }
   ],
   "decisionRecords": "00_brief/decisions/"

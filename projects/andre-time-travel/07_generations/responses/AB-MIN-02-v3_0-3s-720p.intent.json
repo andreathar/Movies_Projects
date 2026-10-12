@@ -1,0 +1,178 @@
+{
+  "job": "AB-MIN-02-v3_0-3s-720p",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0",
+  "prompt": "The man in the reference image remains seated and quietly listens to the unseen person to camera-right. During this three-second shot he blinks once naturally and breathes gently, keeping his mouth closed. Locked camera, one continuous shot, no cuts. Preserve the face, hair, stubble, jacket, table and lighting from the reference image. Nobody else enters the frame; no hands near his face. No speech or music; subtle quiet room ambience only if audio is generated.",
+  "options": {
+    "duration": "3",
+    "resolution": "720p",
+    "imageCount": "1",
+    "enable_audio": "true",
+    "prefer_multi_shots": "false"
+  },
+  "refs": [],
+  "inputs": {
+    "first_image": "https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWdlbnRfdXBsb2FkLzE3OTE3ODEyNjEvNWJoSHM3WmNuZy9hYi1taW4tc2hhcmVkLWtleWZyYW1lLnBuZw.origin?x-kcdn-pid=112372"
+  },
+  "validation": {
+    "modelSpec": {
+      "model": "kling-video-v3_0",
+      "alias": "kling3.0, \u53ef\u70753.0, \u89c6\u98913.0",
+      "description": "Enhanced native audio, improved element consistency, and support for multi-shot storytelling. To use features related to subject/element, refer to tools such as element_create. If no element\u2011related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+      "arguments": [
+        {
+          "name": "prompt",
+          "required": true,
+          "description": "Text prompt describing the desired motion / scene. The input image is the primary driver. Required; empty string is allowed for pure image animation. To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+        },
+        {
+          "name": "duration",
+          "required": false,
+          "default": "5",
+          "allowedValues": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "description": "Video duration in seconds, support 3s to 15s. Longer durations may require prefer_multi_shots."
+        },
+        {
+          "name": "resolution",
+          "required": false,
+          "default": "1080p",
+          "allowedValues": [
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "description": "Quality tier (member: up to 4k)."
+        },
+        {
+          "name": "imageCount",
+          "required": false,
+          "default": "1",
+          "allowedValues": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "description": "Quality tier (member: up to 4)."
+        },
+        {
+          "name": "prefer_multi_shots",
+          "required": false,
+          "default": "true",
+          "allowedValues": [
+            "true",
+            "false"
+          ],
+          "description": "Whether to enable smart multi-shot splitting (intelligent shot composition)."
+        },
+        {
+          "name": "enable_audio",
+          "required": false,
+          "default": "true",
+          "allowedValues": [
+            "true",
+            "false"
+          ],
+          "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+        },
+        {
+          "name": "elements",
+          "required": false,
+          "maxItems": 3,
+          "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+        }
+      ],
+      "inputs": [
+        {
+          "name": "first_image",
+          "required": true,
+          "description": "Source image URL used as the first frame to animate. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+        },
+        {
+          "name": "tail_image",
+          "required": false,
+          "description": "Optional tail (last-frame) image URL; when provided, the generated video transitions toward this frame. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+        }
+      ]
+    },
+    "arguments": {
+      "duration": "3",
+      "resolution": "720p",
+      "imageCount": "1",
+      "enable_audio": "true",
+      "prefer_multi_shots": "false"
+    },
+    "schemaSha256": "aaaf73c066a3dbb27f9d88e1afcbddf6e0ebbf0fe254a8eb7149dcff3fb32586",
+    "checkedAt": "2026-10-12T05:01:48.714152+00:00",
+    "items": [
+      {
+        "job": "AB-MIN-02-v3_0-3s-720p",
+        "level": "INFO",
+        "code": "URL",
+        "msg": "slot first_image: URL externa (n\u00e3o verifiquei o conte\u00fado; URLs podem expirar; prazo n\u00e3o verificado)."
+      }
+    ]
+  },
+  "referenceDurationSeconds": null,
+  "auth": "APR-kling-ab-min-2026-10-12",
+  "note": "Approved single-image model comparison; three-second 720p listening shot, no Elements. Native audio on and multishot off.",
+  "balanceBefore": 31621,
+  "accountBefore": {
+    "ok": true,
+    "status": 200,
+    "body": {
+      "userId": 15994123,
+      "membershipType": "SSSVIP",
+      "membershipTypeDescription": "Ultra",
+      "availableRemainCredits": 31621
+    },
+    "_cli": {
+      "stdout": "{\"ok\":true,\"status\":200,\"body\":{\"userId\":15994123,\"membershipType\":\"SSSVIP\",\"membershipTypeDescription\":\"Ultra\",\"availableRemainCredits\":31621}}\n",
+      "stderr": "",
+      "rc": 0
+    }
+  },
+  "command": [
+    "kling",
+    "image_to_video",
+    "--model",
+    "kling-video-v3_0",
+    "--poll",
+    "0",
+    "-q",
+    "--skill-name",
+    "kling-cli",
+    "--skill-version",
+    "0.2.1",
+    "--rationale",
+    "Film reference batch APR-kling-ab-min-2026-10-12: Approved single-image model comparison; three-second 720p listening shot, no Elements. Native audio on and multishot off.",
+    "--input",
+    "first_image=https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWdlbnRfdXBsb2FkLzE3OTE3ODEyNjEvNWJoSHM3WmNuZy9hYi1taW4tc2hhcmVkLWtleWZyYW1lLnBuZw.origin?x-kcdn-pid=112372",
+    "--duration",
+    "3",
+    "--resolution",
+    "720p",
+    "--imageCount",
+    "1",
+    "--enable_audio",
+    "true",
+    "--prefer_multi_shots",
+    "false",
+    "The man in the reference image remains seated and quietly listens to the unseen person to camera-right. During this three-second shot he blinks once naturally and breathes gently, keeping his mouth closed. Locked camera, one continuous shot, no cuts. Preserve the face, hair, stubble, jacket, table and lighting from the reference image. Nobody else enters the frame; no hands near his face. No speech or music; subtle quiet room ambience only if audio is generated."
+  ],
+  "created": "2026-10-12T02:01:50-03:00"
+}

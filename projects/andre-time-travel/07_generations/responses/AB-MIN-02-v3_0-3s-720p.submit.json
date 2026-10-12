@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "generationId": "AZwN8R5A6vdmIfvpj_8CC4b8AsSai4bKKRtxq0vya7d9cLBe4CKqVQA_fsgXVBnzBM8fm7eQ",
+    "status": "QUEUING",
+    "model": "kling-video-v3_0",
+    "creditsConsumed": 27,
+    "message": "Generation submitted. Poll query_tasks with this generationId to get the result.",
+    "generation_id": "AZwN8R5A6vdmIfvpj_8CC4b8AsSai4bKKRtxq0vya7d9cLBe4CKqVQA_fsgXVBnzBM8fm7eQ",
+    "credits_consumed": 27
+  },
+  "_cli": {
+    "stdout": "{\"ok\":true,\"status\":200,\"body\":{\"generationId\":\"AZwN8R5A6vdmIfvpj_8CC4b8AsSai4bKKRtxq0vya7d9cLBe4CKqVQA_fsgXVBnzBM8fm7eQ\",\"status\":\"QUEUING\",\"model\":\"kling-video-v3_0\",\"creditsConsumed\":27,\"message\":\"Generation submitted. Poll query_tasks with this generationId to get the result.\",\"generation_id\":\"AZwN8R5A6vdmIfvpj_8CC4b8AsSai4bKKRtxq0vya7d9cLBe4CKqVQA_fsgXVBnzBM8fm7eQ\",\"credits_consumed\":27}}\n",
+    "stderr": "[kling] image_to_video -> model=kling-video-v3_0 (from who_am_i)\n[kling] who_am_i argument declaration: prompt(required), duration(default 5, allowed 3|4|5|6|7|8|9|10|11|12|13|14|15), resolution(default 1080p, allowed 720p|1080p|4k), imageCount(default 1, allowed 1|2|3|4), prefer_multi_shots(default true, allowed true|false), enable_audio(default true, allowed true|false), elements\n[kling] who_am_i input declaration: first_image(required), tail_image\n[kling] Submit arguments: [{\"name\":\"prompt\",\"value\":\"The man in the reference image remains seated and quietly listens to the unseen person to camera-right. During this three-second shot he blinks once naturally and breathes gently, keeping his mouth closed. Locked camera, one continuous shot, no cuts. Preserve the face, hair, stubble, jacket, table and lighting from the reference image. Nobody else enters the frame; no hands near his face. No speech or music; subtle quiet room ambience only if audio is generated.\"},{\"name\":\"duration\",\"value\":\"3\"},{\"name\":\"resolution\",\"value\":\"720p\"},{\"name\":\"imageCount\",\"value\":\"1\"},{\"name\":\"prefer_multi_shots\",\"value\":\"false\"},{\"name\":\"enable_audio\",\"value\":\"true\"}]\n[kling] Submit inputs: [{\"name\":\"first_image\",\"inputType\":\"URL\",\"url\":\"https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWdlbnRfdXBsb2FkLzE3OTE3ODEyNjEvNWJoSHM3WmNuZy9hYi1taW4tc2hhcmVkLWtleWZyYW1lLnBuZw.origin?[REDACTED]\"}]\n",
+    "rc": 0
+  }
+}
