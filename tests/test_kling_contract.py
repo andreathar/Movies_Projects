@@ -20,6 +20,9 @@ MODELS = json.loads((ROOT / 'docs/kling-manual/snapshots/who_am_i.sanitized.json
 
 class ContractTests(unittest.TestCase):
     def setUp(self):
+        self.release_patch = patch.object(k.release, 'authorize', return_value={})
+        self.release_patch.start()
+        self.addCleanup(self.release_patch.stop)
         self.temp = tempfile.TemporaryDirectory(dir='/tmp')
         self.addCleanup(self.temp.cleanup)
         self.film = Path(self.temp.name)

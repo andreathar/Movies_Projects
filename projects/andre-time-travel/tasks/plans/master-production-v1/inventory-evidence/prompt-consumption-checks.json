@@ -1,0 +1,152 @@
+[
+  {
+    "job": "R3-test-o1-galileo-speaking",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-test-omni-galileo-speaking",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-galileo-speaking",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-galileo-speaking-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-galileo-listening-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-caesar-speaking-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-caesar-listening-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-genghis-speaking-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-genghis-listening-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-napoleon-speaking-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-napoleon-listening-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-oppenheimer-speaking-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-oppenheimer-listening-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-present-speaking-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-present-listening-o1",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-oppenheimer-speaking-o1-v2",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-present-speaking-o1-v2",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-present-listening-o1-v2",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "R3-present-listening-o1-v3",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "PILOT-01-galileo-listening-locked",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "PILOT-02-galileo-gentle-turn",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "PILOT-03-oppenheimer-expression",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "PILOT-04-galileo-speech-native",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "PILOT-05-oppenheimer-speech-OL04",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "G-03-eyes-galileo-A",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "G-05-eyes-galileo-B",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "G-01-insert-galileo-v2",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "G-02-andre-GL02",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "AB-MIN-02-v3_0-3s-720p",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  },
+  {
+    "job": "AB-MIN-01-turbo-3s-720p",
+    "savedPromptExists": true,
+    "promptMatchesSpec": true
+  }
+]

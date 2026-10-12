@@ -1,0 +1,677 @@
+[
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-test-o1-galileo-speaking",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "346cca79fd881a428301be46dea3c6a4d1d75f5a2c617bcdbbe56d04dc33b79c",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-test-o1-galileo-speaking.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-test-omni-galileo-speaking",
+    "tool": "image_to_image",
+    "model": "kling-image-v3_0_omni",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "346cca79fd881a428301be46dea3c6a4d1d75f5a2c617bcdbbe56d04dc33b79c",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-test-omni-galileo-speaking.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-galileo-speaking",
+    "tool": "image_to_image",
+    "model": "kling-image-v3_0_omni",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "548ab6158fd6a5e4ea54b25d11a61901e1de4b374498924afeedcf9b537cb236",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-galileo-speaking.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-galileo-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "5975cca0437eadce55103353675b8b17325d351630baabc2e0437031daf4e0f5",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-galileo-speaking-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-galileo-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J29-plate-arcetri-1634_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "8db12d99cf9ea1b40faad51e506d1501462d9ead89cb4398a13ac0df50b44550",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-galileo-listening-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-caesar-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J27-plate-rome-44bce_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "85506cc6ad2bc2be0c35221ab81cb24f0e7a2ac607128209674ed58a9bf539df",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-caesar-speaking-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-caesar-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J27-plate-rome-44bce_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "5f13d1bd30f94b1f62f2b0b999f814a50fe2c0a5e6fbea68142a02a4965c3c8e",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-caesar-listening-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-genghis-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J28-plate-tent-1227_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "2459a0b7c049dff68499881a8024220644d2afe242761b89874c373a5a476b15",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-genghis-speaking-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-genghis-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J28-plate-tent-1227_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "7e1baba5b9425adc856f39c6159a65b17bbb5d9fb725c99bdafbb7a06fc2f7e0",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-genghis-listening-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-napoleon-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "1f4bb344d3c172a1a03869c857e6c6dc988d6e9279faecf5a2684691d1b25643",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-napoleon-speaking-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-napoleon-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J30-plate-sthelena-1816_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "76282dfc3880769cb63166f0219c9a839b9ef8b906edd022c459f339bc7a54e0",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-napoleon-listening-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-oppenheimer-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J31-plate-trinity-1945_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "29a2b07130c1011ed8610712886ec7cb749b9676927c06ed0beaec759eccb215",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-oppenheimer-speaking-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-oppenheimer-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J31-plate-trinity-1945_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "4cd67032723767599cc1e3e3a7151422e084858e2ffbdb294e9fed9052d292df",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-oppenheimer-listening-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-present-speaking-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "c831ddb3033f3518382e2c908b7bfde57f0f03b1488c1697d5b2a52dffc578aa",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-present-speaking-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-present-listening-o1",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "5ae9384662b996ef46c09862c859e113db892282ecb6d9f27450c5f861bf9503",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-present-listening-o1.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-oppenheimer-speaking-o1-v2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J31-plate-trinity-1945_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "436451e0278161e8905ae4313152da51e7abe0a6494114ede827027a8a309e8e",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-oppenheimer-speaking-o1-v2.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-present-speaking-o1-v2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "ba8fbb85b63b12d3c45669f6cd1e539dd1e0c5dc0aaed43e99e142b76dbdca67",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-present-speaking-o1-v2.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-present-listening-o1-v2",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "02_references/table/R1-J26-table-anchor_2.png",
+      "02_references/table/R1-J32-plate-present-day_1.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "0409ee1953002e41cea82a6975cd75878062639ba3154ffafe8c6cb44bfb2357",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-present-listening-o1-v2.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/R3-keyframes.json",
+    "job": "R3-present-listening-o1-v3",
+    "tool": "image_to_image",
+    "model": "kling-image-o1",
+    "args": {
+      "img_resolution": "2k",
+      "aspect_ratio": "16:9",
+      "imageCount": "1",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "07_generations/originals/R3-present-speaking-o1-v2_1.jpg",
+      "02_references/andre/approved/cover_20240202_015341_hs34.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "a87f8f5514d40242828a8fda05b772de4046f63da40a304599a8c3884a92e053",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/R3-present-listening-o1-v3.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/PILOT.json",
+    "job": "PILOT-01-galileo-listening-locked",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "false",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/keyframes/andre/KF-galileo-listening.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "be1caa755ec804a6d6092551dd48ec563fbd6563b649994a2a294377f364eb50",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/PILOT-01-galileo-listening-locked.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/PILOT.json",
+    "job": "PILOT-02-galileo-gentle-turn",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "false",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/keyframes/andre/KF-galileo-listening.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "f019e54703a6c0cfcd96c98952c3656f74bc88b9d6ab74204fcef1479432a7df",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/PILOT-02-galileo-gentle-turn.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/PILOT.json",
+    "job": "PILOT-03-oppenheimer-expression",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "false",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/keyframes/andre/KF-oppenheimer-listening.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "0e15934e74bf05f9f01185c61c185c46bf284930919aea7a9cba4d6ad6d09eb9",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/PILOT-03-oppenheimer-expression.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/PILOT.json",
+    "job": "PILOT-04-galileo-speech-native",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "8",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "true",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/keyframes/andre/KF-galileo-speaking.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "be22c1c41b56c14be8bce3746657102455f77a3b15ec60c3465035f198a9c3e3",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/PILOT-04-galileo-speech-native.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/PILOT.json",
+    "job": "PILOT-05-oppenheimer-speech-OL04",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "8",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "true",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/keyframes/andre/KF-oppenheimer-speaking.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "55f87f0f48b7a766fccf91b1b6f1866d0f50783cb08118e48e0dbed03d06f29f",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/PILOT-05-oppenheimer-speech-OL04.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/GALILEO.json",
+    "job": "G-03-eyes-galileo-A",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "localImages": [
+      "02_references/history-eyes/_video-pad/R1-J15-eyes-galileo-weariness_1_eyescrop_pad52.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "a2186cb20755fceb89c72bfd467c752fa0c3fdb246157493605ddefb9e830267",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/G-03-eyes-galileo-A.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/GALILEO.json",
+    "job": "G-05-eyes-galileo-B",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "args": {
+      "duration": "5",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "localImages": [
+      "02_references/history-eyes/_video-pad/R2-J04-eyes-galileo-resolve-B_1_eyescrop_pad52.png"
+    ],
+    "namedInputs": [],
+    "promptSha256": "abb54d9a0e13126ed272ce2388832ccd9d41be357d949708f29e44c747879db6",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/G-05-eyes-galileo-B.prompt.txt",
+    "responseExists": true,
+    "submitExists": false,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/GALILEO.json",
+    "job": "G-01-insert-galileo-v2",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "args": {
+      "duration": "10",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "localImages": [
+      "02_references/inserts/R2-J12-insert-galileo_1.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "55e0a7440d01b216bae25ba6c7eebd84ae74a9f8a85444f468b30e5d013f0e58",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/G-01-insert-galileo-v2.prompt.txt",
+    "responseExists": true,
+    "submitExists": true,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/batches/GALILEO.json",
+    "job": "G-02-andre-GL02",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "12",
+      "resolution": "720p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "true",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "localImages": [
+      "02_references/keyframes/andre/KF-galileo-speaking.jpg"
+    ],
+    "namedInputs": [],
+    "promptSha256": "de8df5bea202dff5e45a762e86f6df52207770062e5b0b846cac274c86d291be",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/G-02-andre-GL02.prompt.txt",
+    "responseExists": true,
+    "submitExists": true,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/requests/AB-MIN-v3-approved.spec.json",
+    "job": "AB-MIN-02-v3_0-3s-720p",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "args": {
+      "duration": "3",
+      "resolution": "720p",
+      "imageCount": "1",
+      "enable_audio": "true",
+      "prefer_multi_shots": "false"
+    },
+    "localImages": [],
+    "namedInputs": [
+      "first_image"
+    ],
+    "promptSha256": "77a4f1e988f7a8dc4016b63ec37e86843c400797199d63690ab349617d60dfd6",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/AB-MIN-02-v3_0-3s-720p.prompt.txt",
+    "responseExists": true,
+    "submitExists": true,
+    "artisticApprovalNotInferred": true
+  },
+  {
+    "source": "projects/andre-time-travel/07_generations/requests/AB-MIN-turbo-approved.spec.json",
+    "job": "AB-MIN-01-turbo-3s-720p",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "args": {
+      "duration": "3",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "localImages": [],
+    "namedInputs": [
+      "first_image"
+    ],
+    "promptSha256": "77a4f1e988f7a8dc4016b63ec37e86843c400797199d63690ab349617d60dfd6",
+    "savedPrompt": "projects/andre-time-travel/07_generations/requests/AB-MIN-01-turbo-3s-720p.prompt.txt",
+    "responseExists": true,
+    "submitExists": true,
+    "artisticApprovalNotInferred": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "captured": {
+    "captured": "2026-10-12T04:07:41.305068+00:00",
+    "command": "kling who_am_i",
+    "sanitized": "identity omitted; capability fields only"
+  },
+  "mcpVersion": "1.3.3",
+  "capabilitySource": "/mnt/data/Projects_SSD/Movies_Projects/docs/kling-manual/snapshots/who_am_i.sanitized.json",
+  "sha256": "3323ae5e3718bcd1585de6e59690be5e8f23e7e43780cec7fc1d0b4f9ae0e577",
+  "toolSource": "/mnt/data/Projects_SSD/Movies_Projects/docs/kling-manual/snapshots/tool_list.json",
+  "toolMeta": {
+    "captured": "2026-10-09",
+    "command": "kling tool_list",
+    "source_sha256": "cab25a342a9abf220c37335d0f46b1252884147546a3d101eed35e387e030eac"
+  },
+  "toolSha256": "50e342a967c5a548478bd0c0bd7e6d51924aeb46d50b5e2c5e7a1dfff70750e8",
+  "freshRemoteCalls": 0
+}

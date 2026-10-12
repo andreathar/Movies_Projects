@@ -19,6 +19,8 @@ import os
 import re
 import struct
 import sys
+import math
+import subprocess
 
 MAX_BYTES = 30 * 1024 * 1024
 MIN_RATIO_WARN = 0.5    # texto das ferramentas: "não mais largo que 1:2"
@@ -110,7 +112,20 @@ def resolve_local(p, root, req_dir):
     return os.path.join(root, p)
 
 
-def check_media(rep, label, ref, root, req_dir, allow_ph):
+def video_facts(path):
+    """Probe a local file only. No provider, URL fetch, model or download."""
+    result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0',
+                             '-show_streams', '-show_format', '-of', 'json', path],
+                            capture_output=True, text=True, timeout=30, check=True)
+    data = json.loads(result.stdout)
+    stream = data['streams'][0]
+    numerator, denominator = stream['avg_frame_rate'].split('/')
+    return {'durationSeconds': float(data['format']['duration']),
+            'width': stream['width'], 'height': stream['height'],
+            'fps': float(numerator) / float(denominator), 'bytes': os.path.getsize(path)}
+
+
+def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False):
     if PLACEHOLDER_RE.match(ref.strip()):
         (rep.warn if allow_ph else rep.err)("PLACEHOLDER", f"{label}: placeholder não resolvido: {ref[:80]}")
         return
@@ -122,12 +137,16 @@ def check_media(rep, label, ref, root, req_dir, allow_ph):
         rep.err("FILE_MISSING", f"{label}: arquivo não encontrado: {ref}")
         return
     size = os.path.getsize(path)
+    if video:
+        if os.path.splitext(path)[1].lower() not in ('.mp4', '.mov'):
+            rep.err('VIDEO_FORMAT', f'{label}: vídeo MP4/MOV obrigatório.')
+        return
     if size > MAX_BYTES:
         rep.err("FILE_SIZE", f"{label}: {size/1e6:.1f} MB > 30 MB: {ref}")
     fmt, w, h = image_info(path)
     ext = os.path.splitext(path)[1].lower()
     if fmt is None:
-        rep.warn("FILE_FORMAT", f"{label}: não reconheci como PNG/JPG (pode ser vídeo/áudio — não validado): {ref}")
+        rep.err("FILE_FORMAT", f"{label}: slot de imagem requer PNG/JPG; arquivo não reconhecido: {ref}")
         return
     if fmt not in ("PNG", "JPEG"):
         rep.err("FILE_FORMAT", f"{label}: formato {fmt} não aceito (só PNG/JPG): {ref}")
@@ -298,10 +317,15 @@ def check_job(job, models, root, req_dir, allow_ph):
     mapping = media_mapping(job, spec, rep)
     for sn, ref in mapping.items():
         if isinstance(ref, str) and ref.strip():
-            check_media(rep, f"slot {sn}", ref, root, req_dir, allow_ph)
-    cap = spec.get("combinedItemCap")
-    if cap:
+            check_media(rep, f"slot {sn}", ref, root, req_dir, allow_ph, video=sn.startswith('video'))
+    caps = ([spec['combinedItemCap']] if spec.get('combinedItemCap') else []) + spec.get('combinedItemCaps', [])
+    for cap in caps:
         try:
+            present = lambda prefixes: any(n.startswith(prefix) for n in mapping for prefix in prefixes)
+            if cap.get('whenAnyInputPrefixes') and not present(cap['whenAnyInputPrefixes']):
+                continue
+            if cap.get('whenNoneInputPrefixes') and present(cap['whenNoneInputPrefixes']):
+                continue
             count = sum(any(n.startswith(p) for p in cap["inputPrefixes"]) for n in mapping)
             for n in cap["arguments"]:
                 val = given.get(n, [])
@@ -333,6 +357,45 @@ def check_job(job, models, root, req_dir, allow_ph):
     elif "<<<" in prompt:
         rep.err("ELEMENT_NOBIND", "prompt usa <<<id>>> mas 'elements' não foi enviado.")
 
+    support = spec.get('elementSupport') or {}
+    if elems and support:
+        types = [e.get('type') for e in elems]
+        if any(t not in {'image', 'video'} for t in types):
+            rep.err('ELEMENT_TYPE_REQUIRED', 'Informe type=image|video conforme element_get; não inferir pelo nome.')
+        for kind in ('image', 'video'):
+            count = types.count(kind)
+            if count and not support.get(kind + 'Elements'):
+                rep.err('ELEMENT_TYPE_UNSUPPORTED', f'Element {kind} não suportado nesta rota.')
+            cap = support.get('max' + kind.title() + 'Elements')
+            if cap is not None and count > cap:
+                rep.err('ELEMENT_TYPE_CAP', f'{count} Elements {kind} excedem {cap}.')
+        if 'video_1' in mapping and types.count('video'):
+            if any(n.startswith('image_') for n in mapping) or 'image' in types:
+                rep.err('VIDEO_ELEMENT_MIX', 'Com video_1, Element de vídeo não combina com imagens/Elements de imagem.')
+            if types.count('video') > support.get('maxVideoElementsWithVideoInput', 0):
+                rep.err('VIDEO_ELEMENT_CAP', 'Quantidade de Elements de vídeo incompatível com video_1.')
+
+    facts_by_slot = job.get('inputFacts') or {}
+    for sn, ref in mapping.items():
+        if not sn.startswith('video') or not isinstance(ref, str):
+            continue
+        facts = facts_by_slot.get(sn, {}) if isinstance(facts_by_slot, dict) else {}
+        if not URL_RE.match(ref) and os.path.isfile(resolve_local(ref, root, req_dir)):
+            try:
+                facts = video_facts(resolve_local(ref, root, req_dir))
+            except (OSError, ValueError, KeyError, IndexError, ZeroDivisionError, subprocess.SubprocessError):
+                rep.err('VIDEO_PROBE', f'{sn}: ffprobe não confirmou vídeo válido.')
+                continue
+        numeric = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v) and v > 0
+        if not isinstance(facts, dict) or not all(numeric(facts.get(k)) for k in ('durationSeconds', 'width', 'height', 'fps', 'bytes')):
+            rep.err('VIDEO_FACTS_REQUIRED', f'{sn}: duração/dimensões/fps/tamanho precisam de evidência; não sondar pagando.')
+            continue
+        if tool == 'omni_ref_video':
+            if not 3 <= facts['durationSeconds'] <= 10 or facts['bytes'] > 200 * 1024 * 1024 or not 24 <= facts['fps'] <= 60 or not (720 <= min(facts['width'], facts['height']) and max(facts['width'], facts['height']) <= 2160):
+                rep.err('VIDEO_LIMIT', 'Contrato desta rota: vídeo 3–10 s, até 200 MiB, 720–2160 px, 24–60 fps.')
+        if tool == 'motion_control' and job.get('referenceDurationSeconds') != facts['durationSeconds']:
+            rep.err('MOTION_DURATION_MISMATCH', 'Duração orçada difere da referência medida; rever antes de enviar.')
+
     # ---- regras por ferramenta
     if tool == "motion_control":
         has_video = "video" in mapping
@@ -340,17 +403,32 @@ def check_job(job, models, root, req_dir, allow_ph):
         if has_video == has_motion:
             rep.err("MOTION_SOURCE", "motion_control exige exatamente UM de: input 'video' ou motionId.")
         seconds = job.get("referenceDurationSeconds")
-        if not isinstance(seconds, (int, float)) or isinstance(seconds, bool) or seconds <= 0:
+        if not isinstance(seconds, (int, float)) or isinstance(seconds, bool) or not math.isfinite(seconds) or seconds <= 0:
             rep.warn("MOTION_DURATION_UNKNOWN", "Duração da referência desconhecida; não orçar como 5 s nem enviar.")
         elif given.get("motionDirection") == "image_direction" and not 3 <= seconds <= 10:
             rep.err("MOTION_DURATION", "image_direction exige referência de 3 a 10 s no contrato atual.")
         else:
             rep.info("MOTION_DURATION", f"Referência informada: {seconds} s; medir/verificar antes do orçamento.")
+        if has_motion and not re.fullmatch(r'[1-9][0-9]*', str(given['motionId'])):
+            rep.err('MOTION_ID', 'motionId precisa ser o ID decimal positivo real da biblioteca.')
+        if elems and given.get('motionDirection') != 'motion_direction':
+            rep.err('MOTION_ELEMENT_DIRECTION', 'Vínculo facial requer direção do vídeo; image_direction não foi qualificado.')
     if tool == "omni_ref_video":
         if cli_value(given.get("enable_audio")) == "true" and cli_value(given.get("keepOriginalSound")) == "true":
             rep.err("OMNI_AUDIO", "enable_audio e keepOriginalSound ambos 'true' — o guia do skill diz usar só um.")
         if "audio_1" not in slot_names:
             rep.info("OMNI_AUDIO_SLOT", "O snapshot não declara áudio independente; a presença de --audio no help não comprova suporte.")
+        if 'video_1' in mapping:
+            if cli_value(given.get('enable_audio')) == 'true':
+                rep.err('OMNI_VIDEO_AUDIO', 'video_1 exige enable_audio=false nesta rota.')
+            if str(given.get('duration', '5')).isdigit() and int(given.get('duration', '5')) > 10:
+                rep.err('OMNI_VIDEO_DURATION', 'Saída acima de 10 s com vídeo não confirmada para esta rota; não usar API distinta como prova.')
+    if tool == 'image_to_video' and model == 'kling-video-v2_6':
+        tail = 'tail_image' in mapping
+        if tail and given.get('resolution', '1080p') != '1080p':
+            rep.err('V26_TAIL_RESOLUTION', 'Cauda no v2.6 exige 1080p.')
+        if cli_value(given.get('enable_audio', 'true')) == 'true' and (tail or given.get('resolution', '1080p') != '1080p'):
+            rep.err('V26_AUDIO', 'Áudio v2.6 exige 1080p e ausência de cauda.')
     if tool in ("image_to_video", "text_to_video") and model == "kling-video-v3_0_turbo":
         rep.info("TURBO", "Use somente os campos declarados neste snapshot; ausência de controle de áudio não garante silêncio.")
     return rep

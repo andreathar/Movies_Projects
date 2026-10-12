@@ -1,0 +1,338 @@
+[
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-hands-v1.png",
+    "exists": true,
+    "expectedSha256": "27cd79f91937757c72496e06a87a52cc6280ada7372dbcc4744e101ca37d1504",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-feet-v1.png",
+    "exists": true,
+    "expectedSha256": "b4330700eb84e1925a833a52b6012de35049b13e1153df7ad81ffb38684cd349",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-back-v1.png",
+    "exists": true,
+    "expectedSha256": "0424a8dad85618f7e776922b21616b20fe8e1bcbfb277185631059281a65f911",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-left-v1.png",
+    "exists": true,
+    "expectedSha256": "1f84b0961c6e489d40a4fd0c5bdc82bc472deaa4aeb69c129ca8fc101e0fcac2",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-right-v1.png",
+    "exists": true,
+    "expectedSha256": "004c7d1cdafb5f423e4f4750bd553f19b12bc0ed73bfc6a5dab36273f1492d6d",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-hands-v1.png",
+    "exists": true,
+    "expectedSha256": "215f4b34744906c618ed75a7dd574920e111b8bf899997e0d32f8fdfc1e67037",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-feet-v1.png",
+    "exists": true,
+    "expectedSha256": "606d06c823187b5ea9a3f7485f68c1a48d4e06f825dc43ae4cacc9fa5331f261",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-back-v1.png",
+    "exists": true,
+    "expectedSha256": "483625ac8d14425f508f5936ea09cb280a09341a9b1e46cd2334f991de33da49",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-shoulder-left-v1.png",
+    "exists": true,
+    "expectedSha256": "1c654f06b02f9a7f227fd3c1fa471e5557d0fefaf646ca9a658b1b9b58403c1a",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/genghis-shoulder-right-v1.png",
+    "exists": true,
+    "expectedSha256": "3dfc890c4798c9239ff2c74251b4b71b2fc2516bf233627b39b4960266a89190",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-feet-v1.png",
+    "exists": true,
+    "expectedSha256": "cc3be18178994de2302a6dfcb02e0d061ed24e469c0e47006c6e81709b65efaa",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-back-v1.png",
+    "exists": true,
+    "expectedSha256": "e9abc8ee5f50ed71341c9f78ea2f50e98b47b11189ab389d9b5cb42aacf62f07",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-left-v1.png",
+    "exists": true,
+    "expectedSha256": "3789e1ae8db3f165e6026f9654067209abc7e1b7ffe2e610c6d6fe3ce67d2660",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-right-v1.png",
+    "exists": true,
+    "expectedSha256": "a8f4c4d9a39e7d62fc9827a93a9009cb26a2179740a6aa0586a6ca23cacfc9a0",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v1.png",
+    "exists": true,
+    "expectedSha256": "ee0bc863b4fc334f5a84efa14d36b19e1cd36fa03a1fc67bf1eebe9c2d5f3b64",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-feet-v1.png",
+    "exists": true,
+    "expectedSha256": "a5257671e06f43b060b95a6efe3a58f6b5cbc4410c5f7a64b5c8db46c02ee2ee",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-back-v1.png",
+    "exists": true,
+    "expectedSha256": "c702d74393b5b765150899194fcc1cee575d5dc2a947b5827fb2aefd5ad05d7d",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-shoulder-left-v1.png",
+    "exists": true,
+    "expectedSha256": "df6d0766eefd45a849c2deecab28e600cea714785bf6ab71ef4f729feb63dc5d",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-shoulder-right-v1.png",
+    "exists": true,
+    "expectedSha256": "77ca6b7b905d19ba9a921874b957ada937e206e3defb949ac911362de12ceaa0",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-hands-v1.png",
+    "exists": true,
+    "expectedSha256": "aa209175caa10b08f43d9819799561d481def79c8f2c817bf870c08314310e81",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-feet-v1.png",
+    "exists": true,
+    "expectedSha256": "4a267f1695c2ff718b50ddb8b4e6e15260ba1405dedb637122c729430fd5e3e6",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-back-v1.png",
+    "exists": true,
+    "expectedSha256": "dceaad60dc718d2a322af8592bbe5dceb4539decaae39e1a3151d08f7d8007e6",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-left-v1.png",
+    "exists": true,
+    "expectedSha256": "a83eb604fac78dd7c285d1135a48c124782cbc70bbf1ec143e16a28b59e8624c",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-right-v1.png",
+    "exists": true,
+    "expectedSha256": "a16107f9bd2b44cb0cae8133b2a821f3f4e41f41d0a3c79739afe3ebfc5f7466",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-feet-v2.png",
+    "exists": true,
+    "expectedSha256": "0d6481cf4b47e0e73d29dc8f54d50b0c2e3d9585f98f57357e9c4b9dcad7b20c",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-left-v2.png",
+    "exists": true,
+    "expectedSha256": "bf76f4dd9101223c3f99b9bbb7cac2d3a037d59cc21db1bb9e58d335d2607c03",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/caesar-shoulder-right-v2.png",
+    "exists": true,
+    "expectedSha256": "669f030ad2c0b7051fd3c921a6afc575603ffd7e9e2336585989639b8459f5f9",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v2.png",
+    "exists": true,
+    "expectedSha256": "30dc8a6a0144cdd6c089e2848dfc168273e9337a8661331715ae403ce2d4f14f",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/oppenheimer-shoulder-right-v2.png",
+    "exists": true,
+    "expectedSha256": "c75c56d036b2ac079d5a22a108c32ca6037cd1deabe4654bd3343a1327d827b1",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/napoleon-hands-v3.png",
+    "exists": true,
+    "expectedSha256": "a7399d48feb59da597e7613c4db3e57af77f69b2994dfc60bc77c9cd66f73505",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-v1.png",
+    "exists": true,
+    "expectedSha256": "4dc9f8905b28ee02f66347c57247a517f11851649c131af4bba8b08ed56d1137",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/detail-studies-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-out-v1.png",
+    "exists": true,
+    "expectedSha256": "bd2ee4259f27a604d3cc501bed361233e176b2e9f1d36c45cd2bfa0ba491b50d",
+    "hashMatches": true,
+    "approval": false
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-in.png",
+    "exists": true,
+    "expectedSha256": "6a194b93459cac2981b2bb34dc547535dcb7205dc050eb4d51ee0296f47bb432",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/01-caesar-out.png",
+    "exists": true,
+    "expectedSha256": "8dda8aa7efda6ac5e8c8b4aec8450968277ccca47612fe000b5b5463f9e0f1be",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-in.png",
+    "exists": true,
+    "expectedSha256": "72ac01cbbc8ff7388aac5934bc7db3a3d0bf2c376461c5c9dd65476970b74098",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/02-genghis-out.png",
+    "exists": true,
+    "expectedSha256": "124803c1fb58cbd745df96fe69285a94d62ca874dc69aa6db26b3b09c88c06f1",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+    "exists": true,
+    "expectedSha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+    "exists": true,
+    "expectedSha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-in.png",
+    "exists": true,
+    "expectedSha256": "be6df991029f5e7f2364c3816936f2492cb034d9e41808c9d4bf91062f8edc7a",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/04-napoleon-out.png",
+    "exists": true,
+    "expectedSha256": "525cd4a5549e0b1a65c58769d1e42767c2353a133ace457e24f99296c37c44ae",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-in.png",
+    "exists": true,
+    "expectedSha256": "22989dfd0f87ac839aedbee11181a7ad249037d976db1e40b6b741b3170026b1",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  },
+  {
+    "manifest": "05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/05-oppenheimer-out.png",
+    "exists": true,
+    "expectedSha256": "1d5025b1a4389124f04e83cdf3c2db36f3fea7400e65e009c52173ca52a6b0ff",
+    "hashMatches": true,
+    "approval": "pending_user_review"
+  }
+]

@@ -1,0 +1,519 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "delegated-kling-executor",
+  "contributorKind": "contributor",
+  "assignment": "Investigar piscadas e áudio do primeiro vídeo e executar o segundo/último Turbo somente após confirmar preço dentro do teto autorizado de 300 por job.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [
+    "W66",
+    "W67"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/00_brief/approvals.json",
+    ".agents/skills/kling-cli/SKILL.md"
+  ],
+  "ownedPaths": [
+    "projects/andre-time-travel/00_brief/approvals.json",
+    "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.json",
+    "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+    "projects/andre-time-travel/07_generations/requests/AB-MIN-01-turbo-3s-720p.prompt.txt",
+    "projects/andre-time-travel/07_generations/requests/AB-MIN-turbo-approved.spec.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.balance.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.intent.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.response.json",
+    "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.submit.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/README.md",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/audio-analysis.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/blink-analysis.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-000-023.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-024-047.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-048-072.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/template-proposals.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo-price-evidence.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/audio-analysis.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/decode.txt",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/ffprobe.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-000-011.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-012-023.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-024-035.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-036-047.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-048-059.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-060-071.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-072-072.png",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/silence-40db.txt",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/technical.json",
+    "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+    "projects/andre-time-travel/credit-ledger.csv",
+    "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+    "projects/andre-time-travel/manifest.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "sites/movies-demandas/app/kling-test-summary.tsx",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/scripts/export-production.mjs",
+    "sites/movies-demandas/tests/model.test.ts"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "74ded1aa96a4f319a7ef4c93d18629410b1ca187c2643494a92a64ff18f27065"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-01-turbo-3s-720p.prompt.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-turbo-approved.spec.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.balance.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.intent.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.response.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.submit.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/README.md",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/audio-analysis.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/blink-analysis.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-000-023.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-024-047.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-048-072.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/template-proposals.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo-price-evidence.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/audio-analysis.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/decode.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/ffprobe.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-000-011.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-012-023.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-024-035.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-036-047.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-048-059.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-060-071.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-072-072.png",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/silence-40db.txt",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/technical.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+      "sha256Before": null
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256Before": "96ed1f26f23383a567c60c8de86ec6489f48871655552a21a5c3d9035b4439c9"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+      "sha256Before": "8c6a86bf1ba89f629e0f0c0df7a6b7d725ef577e08faa2bd3fc9b00e31f24b6f"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256Before": "0c06976d9ba78605b23260af74a79045f91fc14a220c896e65d254286c598648"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "a273b4d3d3d5cf8e4250d2421440eccc5e03ea3ffd4135d7f707a63222e22b9f"
+    },
+    {
+      "path": "sites/movies-demandas/app/kling-test-summary.tsx",
+      "sha256Before": "6b5a8b4c681480a99a653995c665fc476b8c3721316938434605f985cfb0215d"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "0fcde2daa983e08bb467032cdf4b9b721d4d156f68af8873f3d7a5afab373ae6"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "91cf3cef15887fb5631357750d4fc5c4c3e1400af9c1dcf703b58b8c026ec46a"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "748900ba36eef7a85c56a8825562bfcca9a8b33ac807ef3ef23cd069dc274220"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256Before": "6eb1d341b09db973d66ba23018654dd7a79e3a3e2c18bf833c415bbe5ccc66cc"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "c9ee17332fdb4dcf26c5d0ebc4eb850cc0071430fdc0763ebc1be4c4d96753a6"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256After": "c4b859f52011060ce7b6a12bc362c8ab0a44fde1a6e30959911b120e9ac46203",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.json",
+      "sha256After": "f018d5b52add55797bcf92d9ba63d2f28fd589dbed708d1ed3895e29f7c0b01e",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+      "sha256After": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-01-turbo-3s-720p.prompt.txt",
+      "sha256After": "7027f086c94380df26457243d5356a22faab8bb7f0c17dadf114e3e206022fee",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-turbo-approved.spec.json",
+      "sha256After": "6ccde346f3c14699ca0232664b4e0220d46d265fa9249659dca004162f885405",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.balance.json",
+      "sha256After": "a02f6cc1ebd3d560bbe0677270ac52b688825053745ba852ec12c7d8ac640b24",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.intent.json",
+      "sha256After": "495052fb94ff8064ba8fc9d4586a04b89dcff59eba7a58011dfd5e44ddcf8313",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.response.json",
+      "sha256After": "00d544cfe71136c3feb4864b09361a6fcea4d993c4e7c933516562323d851497",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.submit.json",
+      "sha256After": "7bd95875713fed87714b01a7f1af8b7770d30a9a92ca9b6d647c2fff460fa1f7",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/README.md",
+      "sha256After": "4fea2f0e1c8af35e75394a38ea04c625ae56ff9e45c91dc58d20177ac6e51986",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/audio-analysis.json",
+      "sha256After": "3cbac003eba01123ca51b1093ba2741cc1c8ca22b104175f3adc3dbd702069ba",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/blink-analysis.json",
+      "sha256After": "096ffbef860758d5bdbd22d0c37ec24cf73f965d4eda48c2dc60c0b6de6d6b39",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-000-023.png",
+      "sha256After": "596ef851af79129c50362358f2ab292ed579f26eed20dce935f489c0a68459a7",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-024-047.png",
+      "sha256After": "4af62656539a14d020294a44f30b5738c6a6c0ff1947d6ff13fd04d22f7dad87",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-048-072.png",
+      "sha256After": "d06ea76ba0cd42870a7b308ea862cd28a15984098eb52edcd5e5a9c598618e33",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/template-proposals.json",
+      "sha256After": "ea1e1c292282ea62ae6412dbf38e4d4178720de46774e9fb23a8e36ccf0ca261",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo-price-evidence.json",
+      "sha256After": "ad2e0c6587fcc693613f8ee592a697129fc0deb7e924ca24ffbda08a85384940",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/audio-analysis.json",
+      "sha256After": "cb6b7c39e787c1e06bded6da7b4bdbcd9c9eb630c23245b7d897b41557c035b6",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/decode.txt",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/ffprobe.json",
+      "sha256After": "80d4780abc4ef82c2283f8f698d7984bf3db6d09c184771117be4252d474cb77",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-000-011.png",
+      "sha256After": "79f2a8317cec07f6510feee5b1b80d09f7ca916eabdc69fa2cd2514a1dc52779",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-012-023.png",
+      "sha256After": "c1af2e709058854092c8c55cbf8281ad55dddb575ab8143566b3534a84bc4f8c",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-024-035.png",
+      "sha256After": "5756f287fd0d900644630e585a56de0fa34bfa27e3cc0dcd5dd2180670d0f232",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-036-047.png",
+      "sha256After": "7a1b4c526d8e034e1c4f4fc570634844b9518a5e44113ed411ff4285bdca8fd4",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-048-059.png",
+      "sha256After": "bcc9dcf7868df56e2dc085ceecaf8ba65008fdfd3f772cf4177656df2b58c5ab",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-060-071.png",
+      "sha256After": "9f30e75fcfb5102b54d12205d49c88a8ddb9a599eed757999757bc8c62b57e44",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-072-072.png",
+      "sha256After": "1e4425654bfaff1c151453760e96a87f37c3bb7f08c938c0d913bb0d29c57441",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
+      "sha256After": "b88aec7bbe1fa8ab112060ca1e227c8bb737c4a627c50b64e140965e00fa33d0",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/silence-40db.txt",
+      "sha256After": "8a8f7a6b7fa555df50ad582ddd3d525646c519174c02ec867b8e21c5d0560c26",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/technical.json",
+      "sha256After": "681d174a4cfe21dcdc9131fe600880d84786aca16ec1db6c2171a717018883d5",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+      "sha256After": "36657510cf67fc2dce21e7d696e01964e09fd882b06500f55a8a07070dcf20ea",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256After": "c661871f8f4b8d080c854b99d59ca544ecc78018fc1d34a5e10a890ca22f1c40",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo. Terminador da nova linha uniformizado em LF, valores CSV intactos."
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+      "sha256After": "7f6928bfaacd3f3ada4b79ce8fe96bf174886a28f6f08fd049df47fa8073e5d1",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256After": "2c1a3cc7f48c63cb888d92f2ac940e26db28f6915d97f886c7aead25dc4a043b",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "0e7f5b8e0e8953cf22b29e8667e1f8c71ad1a3eb38deff81b9925b19af37100b",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "sites/movies-demandas/app/kling-test-summary.tsx",
+      "sha256After": "5b756f5001f578a06ee94a7db5dc897214153e7dcd93b5b1f0e28c6cd87a4e4a",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "2080becf35399518454a0711c7385527ed5492091356891d88f2929d4e0046a3",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "05a0a9ef93f9efe575988a7cb60edcc9053895145b43e943dafe95a4c30efa1b",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "d8aac4aabae93de55c514fc20d6b55cbfd896b04feb37022e2d40f575f18e819",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256After": "d6a84f7b33855d6388050c5e077322a1e0e640c8585988deaf2c235928516103",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "70c771cc85eda3800f133ff99738a7c6db3dc16651ccf97682010fd53618393d",
+      "reason": "Investigação local e resultado do segundo teste; estado específico e frontend derivados, sem aceite criativo."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "v3_0: cinco ciclos de piscar, áudio RMS -55.38 dBFS; Turbo: dois ciclos, RMS -60.46 dBFS. Dois jobs concluídos por 51 créditos, sem retries.",
+      "evidence": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/README.md",
+      "sha256": "4fea2f0e1c8af35e75394a38ea04c625ae56ff9e45c91dc58d20177ac6e51986"
+    }
+  ],
+  "verification": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -s tests -v",
+      "result": "112 passed; synthetic/offline"
+    },
+    {
+      "command": "node --test --test-isolation=none --test-reporter=tap tests/model.test.ts tests/export.test.mjs",
+      "result": "21 passed"
+    },
+    {
+      "command": "npm run lint; tsc --noEmit --incremental false; npm run build",
+      "result": "passed locally, no deployment"
+    },
+    {
+      "command": "ffprobe; full ffmpeg decode; 73-frame static sheets; float PCM metrics and silencedetect",
+      "result": "Both originals valid H.264 1276x720 24fps 73 frames 3.041995s AAC stereo. No original modification. V3 blink boundaries inspected in numbered eye crops. No agent normal-speed playback or semantic listening; user reports excessive blinking and no audible sound on v3."
+    },
+    {
+      "command": "Official authenticated web form, same input/prompt, Turbo 3s720p1",
+      "result": "24 credits shown before submission; no Generate/Retry clicked; no new login. Official CLI submitted once, declared 24 and completed."
+    }
+  ],
+  "generation": {
+    "job": "AB-MIN-01-turbo-3s-720p",
+    "generationId": "AXzevKy7czPO5xQ2laBr3-5CFDQsa11VPwaJ5Yisumiz6GTCCzRkUodra8W7z3KUlGTi0HKd",
+    "status": "COMPLETED",
+    "creditsConsumed": 24,
+    "chargeBasis": "provider_reported",
+    "jobCreditCeiling": 300,
+    "v3CreditsConsumed": 27,
+    "totalProviderReportedCredits": 51,
+    "totalJobsSubmittedInScope": 2,
+    "retries": 0,
+    "newUploadsThisTurn": 0,
+    "uploadReused": true,
+    "authorization": "APR-kling-ab-min-2026-10-12 / AMD-turbo-300-2026-10-12",
+    "artifact": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+    "sha256": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968"
+  },
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Entregar o Turbo local e revisar ambos os takes com Andre em playback com escuta. Comparação de uma amostra por modelo, sem vencedor geral ou aceite. Os dois jobs autorizados foram consumidos; nenhuma geração adicional. Produtor retém responsabilidade até aceite do próximo revisor.",
+      "readiness": "delivered_pending_review"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Escuta própria do agente, playback integral e avaliação artística/semelhança permanecem pendentes; relato humano sobre v3 está separado das métricas.",
+      "owner": "producer / Andre",
+      "unblockCondition": "Revisão humana do arquivo original Turbo e confronto com v3, sem confundir entrega técnica com aceite."
+    }
+  ],
+  "andreOnlyGates": [
+    "Aprovação de semelhança/arte dos novos takes"
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 1,
+  "canonicalStateChanged": true,
+  "canonicalStateChangeScope": "Amendment de teto específico, resultado Turbo e adendo de investigação v3, segundo take de teste, linha própria do ledger e frontend. Flags globais, shots e 9 takes de produção preservados.",
+  "supersedes": [
+    "2026-10-12-kling-ab-min-v1.json"
+  ],
+  "supersessionScope": "Atualiza estado, teto Turbo, revisão v3 e snapshots do ensaio; todos os arquivos da revisão v1 e originais foram mantidos. V1 permanece prova histórica da entrega anterior e Library do primeiro vídeo.",
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "sourceHeadAtStart": "0592f54cce23f94dd061f1e490ad0b1412e84f77",
+  "commitsByThisExecutor": 0,
+  "publicationByThisExecutor": false,
+  "libraryUploadThisTurn": false
+}

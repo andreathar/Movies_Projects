@@ -1,0 +1,9 @@
+{
+  "balanceBefore": 31594,
+  "balanceAfter": 31570,
+  "creditsDelta": 24,
+  "reconciliation": "immediate",
+  "creditsConsumed": 24.0,
+  "chargeBasis": "provider_reported",
+  "balanceDeltaIsCharge": false
+}

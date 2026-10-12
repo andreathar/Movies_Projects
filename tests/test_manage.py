@@ -69,6 +69,10 @@ class WorkspaceValidationTests(unittest.TestCase):
                 symlinks=True,
                 ignore=shutil.ignore_patterns(
                     ".venv",
+                    "sites",
+                    "node_modules",
+                    "dist",
+                    ".wrangler",
                     ".git",
                     "__pycache__",
                     "inbox",

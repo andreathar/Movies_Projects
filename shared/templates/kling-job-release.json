@@ -1,0 +1,25 @@
+{
+  "id": null,
+  "kind": "kling_job_release",
+  "status": "pending",
+  "decisionEvidence": {"path": null, "sha256": null},
+  "scope": {
+    "job": null,
+    "payloadSha256": null,
+    "schemaSha256": null,
+    "maxJobs": 1,
+    "maxCredits": null,
+    "expiresAt": null,
+    "allowReferenceUploads": false,
+    "quote": {
+      "basis": null,
+      "unit": "Kling credits",
+      "credits": null,
+      "payloadSha256": null,
+      "verifiedAt": null,
+      "expiresAt": null,
+      "evidence": {"path": null, "sha256": null}
+    }
+  },
+  "rule": "Proposta sem autorização. O produtor registra a decisão real e o pedido exato após revisão; implementação, saldo e estimativa não liberam gasto."
+}

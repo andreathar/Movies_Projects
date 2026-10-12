@@ -59,3 +59,8 @@ The user requested local Git versioning on 2026-10-09 and separately authorized 
 
 ## Direção dramática compartilhada do filme ativo
 Antes de planejar, gerar ou revisar encontros, todos os agentes e subagentes devem ler `projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md`. A fala difícil motiva a reação; preservar a perspectiva pessoal de Andre, sua identidade e zero rostos históricos completos. Humor é liberdade dramática, não dispensa de verificar cultura material. Consultar os papéis historian, lighting e dialogue-sound; iluminação será detalhada depois. Estas instruções não iniciam agentes nem autorizam gasto.
+
+## Plano visual ativo e liberação por pedido
+O ponteiro `projects[].productionPlan` em `workspace.json` seleciona a fonte canônica de fichas/referências do reinício visual. O board conserva T01–T21; a fonte visual detalha dependências sem criar outro catálogo de tarefas. Usar `scripts/production_plan.py check --verify-media` e o contrato em `docs/PRODUCTION_PLAN.md`. Proposta, checagem técnica, aprovação do diretor e incorporação artística são estados distintos por versão. Exportações/frontend são derivados e não concedem aceite.
+
+Novos envios pelo runner exigem uma liberação `kling_job_release` ligada a conteúdo, schema, cotação, teto, validade e escopo de upload em `00_brief/approvals.json`. Uma implementação local ou teto histórico não libera gasto. Intenção anterior com o mesmo conteúdo bloqueia reenvio mesmo sob outro nome; `--resume` continua apenas consulta. Esta proteção local verifica consistência documental, não autentica o diretor nem impõe teto no servidor. Não contornar via CLI direta. Detalhes e limites em `docs/PRODUCTION_PLAN.md`.

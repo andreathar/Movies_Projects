@@ -1,0 +1,8 @@
+{
+  "appliesTo": "Future draft only; NOT the authorized unchanged Turbo prompt",
+  "performanceHypothesis": "Replace the blink count with a single playable listening intention; keep gaze settled and lips at rest, without muscle-by-muscle instructions. This is a writing hypothesis, not a verified fix.",
+  "futureVisualPrompt": "The man remains seated, listening attentively to the person outside the frame at camera-right. He maintains a settled gaze and relaxed, closed lips; only gentle breathing changes his posture. Locked camera, one continuous three-second shot. Preserve the reference composition, face, wardrobe, table and light. The space at the right edge stays empty throughout. No speaking or singing.",
+  "audioPolicy": "For picture-only listening tests, prefer enable_audio=false only on models whose live schema supports it and price is rechecked. For an audio test, specify one recognizable, low-level sound with beginning and ending, then check it by ear. Never infer audible content from AAC presence. Turbo exposes no enable_audio switch in the observed contract.",
+  "causalityLimit": "One v3_0 sample shows failure to obey count and mouth constraints; it does not prove that mentioning blinks caused repetition or that audio enabled caused mouth motion.",
+  "englishLanguage": "English retained to preserve exact test wording, not a documented API requirement."
+}

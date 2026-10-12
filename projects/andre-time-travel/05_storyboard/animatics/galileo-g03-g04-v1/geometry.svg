@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-label="Geometria proposta de Galileo">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3z" fill="#dea85c"/></marker></defs>
+<rect width="800" height="640" fill="#142027"/><g font-family="sans-serif" fill="#f2ede3">
+<text x="40" y="45" font-size="24">GALILEO · GEOMETRIA PROPOSTA</text>
+<text x="40" y="76" font-size="15">Vista superior esquemática · D17 pendente · sem escala fotogramétrica</text>
+<rect x="190" y="240" width="330" height="205" rx="8" fill="#a17a48"/><text x="215" y="335" font-size="22">Mesa 120 × 75 cm</text>
+<text x="247" y="366" font-size="16">altura proposta 75 cm</text>
+<circle cx="350" cy="165" r="35" fill="#538b94"/><text x="315" y="116" font-size="21">ANDRE</text>
+<circle cx="350" cy="510" r="35" fill="#68707c"/><text x="285" y="568" font-size="21">GALILEO</text>
+<path d="M350,202 L350,466" stroke="#f2ede3" stroke-dasharray="8 8"/><text x="535" y="340" font-size="15">eixo de conversa</text>
+<path d="M605,509 L377,180" stroke="#dea85c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="585" y="508" width="52" height="34" rx="4" fill="#dea85c"/>
+<text x="575" y="577" font-size="15">Câmera: 50 mm</text><text x="575" y="601" font-size="15">altura 117,5 cm</text>
+<text x="40" y="610" font-size="15">No quadro: Andre à esquerda; só ombro histórico à direita. Cabeça fora.</text>
+</g></svg>

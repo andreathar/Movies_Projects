@@ -303,8 +303,19 @@
       "path": "07_generations/originals/AB-MIN-02-v3_0-3s-720p_1.mp4",
       "credits": 27,
       "chargeBasis": "provider_reported",
-      "status": "qc_failed_prompt_pending_full_playback",
-      "review": "08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
+      "status": "prompt_defects_confirmed_by_user_pending_artistic_acceptance",
+      "review": "08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+      "authorizationRef": "APR-kling-ab-min-2026-10-12"
+    },
+    {
+      "id": "AB-MIN-01-turbo-3s-720p_1",
+      "shotId": "AB-MIN-01-turbo-3s-720p",
+      "phase": "cli_ab_test",
+      "path": "07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+      "credits": 24,
+      "chargeBasis": "provider_reported",
+      "status": "candidate_prompt_count_mismatch_pending_full_playback",
+      "review": "08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
       "authorizationRef": "APR-kling-ab-min-2026-10-12"
     }
   ],
@@ -765,5 +776,6 @@
     "createdAt": "2026-10-09T10:53:02-03:00",
     "credits": 180,
     "decision": "00_brief/decisions/D11-element-and-still-route.json"
-  }
+  },
+  "visualProductionPlan": "05_storyboard/source/production-plan.json"
 }

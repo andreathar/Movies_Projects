@@ -1,0 +1,19 @@
+[
+  {
+    "job": "AB-MIN-01-turbo-3s-720p",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "args": {
+      "duration": "3",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "inputs": {
+      "first_image": "https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWdlbnRfdXBsb2FkLzE3OTE3ODEyNjEvNWJoSHM3WmNuZy9hYi1taW4tc2hhcmVkLWtleWZyYW1lLnBuZw.origin?x-kcdn-pid=112372"
+    },
+    "images": [],
+    "prompt": "The man in the reference image remains seated and quietly listens to the unseen person to camera-right. During this three-second shot he blinks once naturally and breathes gently, keeping his mouth closed. Locked camera, one continuous shot, no cuts. Preserve the face, hair, stubble, jacket, table and lighting from the reference image. Nobody else enters the frame; no hands near his face. No speech or music; subtle quiet room ambience only if audio is generated.",
+    "auth": "APR-kling-ab-min-2026-10-12",
+    "note": "Second and final approved comparison. Same reference and prompt, 3 seconds at 720p, no Elements. Existing uploaded image reused."
+  }
+]

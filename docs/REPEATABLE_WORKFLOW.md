@@ -138,3 +138,7 @@ Regra solicitada por Andre em 2026-10-10: uma entrega verificada termina com pr�
 Antes de despachar, verificar versões/evidências, dependências, disponibilidade e escopo. Consolidar a atribuição, evitar duplicatas e reabrir apenas o que mudou. Gates de gasto, identidade, voz e aceite permanecem separados. Hooks podem notificar; nenhum despachante automático ou despertar da conversa desktop está comprovado por esta regra. Implementação/teste de automação é trabalho separado, sem ativação implícita.
 
 Mapa aplicado ao episódio atual: [organograma, tarefas e dependências](../projects/andre-time-travel/tasks/plans/workflow-map-v1.md). Novos episódios reutilizam a regra, não responsáveis, estados ou autorizações.
+
+## Plano visual e pacote por plano
+
+O contrato operacional implementado está em [PRODUCTION_PLAN.md](PRODUCTION_PLAN.md). `workspace.json` escolhe a fonte, o board continua dono das tarefas, e os exportadores levam apenas metadados ao frontend com hashes. O builder local cria nova revisão do animatic usando mídia existente sem alterar fontes ou aprovações. Capacidade por rota vem do snapshot; preço vem de evidência específica do pedido, nunca de unidades convertidas por inferência.

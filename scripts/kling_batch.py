@@ -35,6 +35,9 @@ GENERATORS = {"text_to_image", "image_to_image", "text_to_video", "image_to_vide
 _spec = importlib.util.spec_from_file_location("kling_preflight", ROOT / "docs/kling-manual/tools/kling_preflight.py")
 pf = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(pf)
+_release = importlib.util.spec_from_file_location("kling_release", ROOT / "scripts/kling_release.py")
+release = importlib.util.module_from_spec(_release)
+_release.loader.exec_module(release)
 
 
 def redact(value, *, urls=True):
@@ -232,7 +235,7 @@ def summary(job: str, gen_id, status: str, balance: dict, works=None, error=None
 def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[str, str],
            images: list[str], auth: str, note: str, poll: int = 300,
            *, submit_only: bool = False, inputs: dict | None = None, elements=None,
-           reference_duration=None, submission_blocked=None) -> dict:
+           reference_duration=None, submission_blocked=None, input_facts=None) -> dict:
     req, res, _ = paths(film, job)
     with locked(film):
         if any((res / f'{job}.{kind}.json').exists() for kind in ('response', 'submit', 'intent')):
@@ -250,10 +253,18 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
             raise SystemExit('prompt must be top-level, not duplicated in args')
         job_spec = {'job': job, 'tool': tool, 'model': model, 'prompt': prompt, 'args': args,
                     'images': images, 'inputs': inputs or {}, 'auth': auth,
-                    'referenceDurationSeconds': reference_duration, 'submissionBlocked': submission_blocked}
+                    'referenceDurationSeconds': reference_duration, 'submissionBlocked': submission_blocked,
+                    'inputFacts': input_facts or {}}
         if submission_blocked:
             raise SystemExit('draft plan is blocked: ' + str(submission_blocked))
+        try:
+            payload_hash = release.reject_duplicate(film, job_spec)
+        except (ValueError, OSError, TypeError) as exc:
+            raise SystemExit(str(exc)) from exc
+        envelope = release.authorize(film, job_spec)
         validation = preflight(job_spec, film)
+        if envelope and validation.get("schemaSha256") != envelope["schemaSha256"]:
+            raise SystemExit("schema mudou desde a liberação; revisar antes de envio")
         args = validation.get('arguments', args)
         cmd = ['kling', tool, '--model', model, '--poll', '0', '-q', *TELEMETRY,
                '--rationale', f'Film reference batch {auth}: {note}']
@@ -285,7 +296,10 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
         before = account(snapshot)
         if before is None:
             raise SystemExit('balance unavailable; no submission made')
-        intent = {'job': job, 'tool': tool, 'model': model, 'prompt': prompt,
+        if envelope and before < envelope['quote']['credits']:
+            raise SystemExit('saldo inferior à cotação; nenhum envio feito')
+        intent = {'payloadSha256': payload_hash, 'release': envelope, 'inputFacts': input_facts or {},
+                  'job': job, 'tool': tool, 'model': model, 'prompt': prompt,
                   'options': args, 'refs': images, 'inputs': inputs or {}, 'validation': validation,
                   'referenceDurationSeconds': reference_duration, 'auth': auth, 'note': note,
                   'balanceBefore': before, 'accountBefore': snapshot, 'command': cmd,
@@ -305,6 +319,9 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
         balance = reconcile(film, job, intent, gen_id, immediate=True)
         result = summary(job, gen_id, 'SUBMITTED' if gen_id else 'SUBMISSION_UNKNOWN', balance,
                          error=None if gen_id else data)
+        if envelope:
+            result['budgetExceeded'] = balance.get('creditsConsumed') is not None and balance['creditsConsumed'] > envelope['maxCredits']
+            result['providerEnforcesCeiling'] = False
     if submit_only or not gen_id:
         return result
     deadline = time.monotonic() + max(poll, 60)
@@ -446,14 +463,18 @@ def main() -> int:
         ap.error('--submit-only requires exactly one selected job')
     for j in selected:
         unknown = set(j) - {'job', 'tool', 'model', 'prompt', 'args', 'images', 'inputs', 'elements',
-                            'auth', 'note', 'referenceDurationSeconds', 'submissionBlocked'}
+                            'auth', 'note', 'referenceDurationSeconds', 'submissionBlocked', 'inputFacts'}
         if unknown:
             ap.error('unknown job fields (not forwarded): ' + ', '.join(sorted(unknown)))
         result = submit(film, j['job'], j['tool'], j['model'], j['prompt'], j.get('args', {}),
                         j.get('images', []), j.get('auth'), j.get('note', ''), submit_only=a.submit_only,
                         inputs=j.get('inputs'), elements=j.get('elements'),
-                        reference_duration=j.get('referenceDurationSeconds'), submission_blocked=j.get('submissionBlocked'))
+                        reference_duration=j.get('referenceDurationSeconds'), submission_blocked=j.get('submissionBlocked'),
+                        input_facts=j.get('inputFacts'))
         print(json.dumps(result))
+        if result.get('budgetExceeded'):
+            print('STOP: cobrança do provedor excedeu o teto local; reconciliar, sem novo envio', file=sys.stderr)
+            return 3
         if result['status'].upper() not in ({'SUBMITTED'} if a.submit_only else {'COMPLETED'}):
             print('STOP: non-completed status; no automatic retry', file=sys.stderr)
             return 2

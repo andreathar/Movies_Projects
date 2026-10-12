@@ -2,7 +2,7 @@
 
 Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume surface. Keep it under ~80 lines: replace stale lines, do not append narrative. History lives in `history/`; full pre-restructure text: `history/STATE-2026-10-09-pre-restructure.md` (sha256 5e426020…27da). Not live data: re-verify against the canonical files below before acting.
 
-Latest verified producer delivery (2026-10-10): research v2 / H01–H06 reviewed; D20 art choices; 25 detail-study slots covered by 26 candidate images. Start from `../agents/handoffs/2026-10-10-producer-detail-studies-v1.json`; gallery: `../05_storyboard/keyframes/detail-studies-v1/index.html`. `RESUME-PRODUCER-2026-10-09.md` holds remaining context; do not repeat completed research.
+Última implementação local (2026-10-12): plano mestre integrado ao board e à fonte `../05_storyboard/source/production-plan.json`. Galileo G-L03/G-L04: fichas, 13 referências candidatas e animatic estático de 16 s em `../05_storyboard/animatics/galileo-g03-g04-v1/`. Andre autorizou implementar; não autorizou novos jobs/vozes/uploads. Skills, originais, roteiro e D14 preservados. Handoff desta implementação aponta verificação e pendências por versão.
 
 ## Read order
 1. `AGENTS.md` (rules) → `workspace.json` → this file.
@@ -23,10 +23,10 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - New, unreviewed by Andre: ten ChatGPT IN/OUT frames (`../05_storyboard/keyframes/chatgpt-in-out-v1/`), ten posters (`../09_delivery/posters/`). Synthetic candidates; no video tested.
 
 ## Money (observation, not live)
-- Último saldo observado pela CLI: 31.594 em 2026-10-12T02:01:50-03:00 (05:01:50 UTC), após o teste v3_0. É observação histórica; consultar novamente antes de gasto futuro.
+- Último saldo observado pela CLI: 31.570 em 2026-10-12 (~05:36 UTC), após o teste Turbo. É observação histórica; consultar novamente antes de gasto futuro.
 - Galileo ledger 348 (cap 900, stop 810), incl. unresolved 80 (lost ID, not recovered). Whole-film authorization is a ceiling, not batch approval.
-- Current plan pointers: `../07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md` (+ `-takes-v3.csv`) and `...piloto-galileu-v2.md`; forecast `../docs/budget-and-envelope-resume-v3.md` (2,129–2,249; estimate only). No external-audio spend authorized.
-- Ledger: `../credit-ledger.csv` (88 linhas); última AB-MIN-02-v3_0-3s-720p, 27 créditos declarados pelo provedor. APR-kling-ab-min-2026-10-12: teto total 200; um job concluído, nenhum retry; Turbo bloqueado por preço não verificado (173 remanescentes condicionais).
+- Histórico de planos (novo ponteiro em `workspace.json` → `productionPlan`): `../07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md` (+ `-takes-v3.csv`) and `...piloto-galileu-v2.md`; forecast `../docs/budget-and-envelope-resume-v3.md` (2,129–2,249; estimate only). No external-audio spend authorized.
+- Ledger: `../credit-ledger.csv` (89 linhas); ensaio mínimo: v3_0 27 + Turbo 24 = 51 créditos declarados. Dois jobs concluídos, nenhum retry; teto revisto de 300 apenas para o único Turbo, já consumido. Sem autorização de terceiro job.
 
 ## Open Andre-only gates and decisions (do not self-approve)
 1. D16 = approval to spend up to 23 Kling credits on Phase A of the Galileo test: 3 reference images for one over-the-shoulder shot (Andre seated, Galileo's blurred back in front, head out of frame). Recorded as "relayed via Grok Architect Bot". Needs Andre's direct confirmation. Do not spend on it as it stands.
@@ -42,7 +42,7 @@ Each figure sits at the table seen from BEHIND, out of focus, while Andre speaks
 - Four shared-skill hash warnings from `validate` are known; do not revert them.
 
 ## Known stale items (fix via proper owners; Phase 2 lint targets)
-- `tasks/board.json` T13 blocker predates the back-view direction, D16 and the Phase A mismatch.
+- Board T10–T13 conciliado com a preparação local do plano mestre; estados de produção e aprovações artísticas não foram promovidos.
 - `manifest.json` `state` string and `manifest.approvals` duplicate `approvals.json` (match today).
 - Scene bibles v1 §3 repeat old dialogue (F05); v2/v3 proposals exist for four chapters, Oppenheimer has no v3. `continuity-matrix.csv` has stale-stage lines (F06).
 - `session-log.json` mixes timezones and lacks entries for several deliveries (see handoffs).
@@ -54,8 +54,9 @@ New detail images are created by Codex in the main desktop conversation. Lanes p
 All agents read `../docs/2026-10-09-direcao-encontros-fala-dificil.md`: personal perspective, difficult line and motivated reaction; historian checks material culture, lighting owns motivated light (detail later), dialogue-sound owns subtle foley and lip sync. Roles configured, not launched; no new spending approval.
 
 ## Next actions
-- Teste CLI mínimo (2026-10-12): um take adicional de teste, fora dos 9 takes de produção, `AB-MIN-02-v3_0-3s-720p_1`, sem aceite. Decode íntegro e 73 quadros inspecionados estaticamente; falhas de prompt (piscar/boca/entrada à direita). Playback com escuta e semelhança por Andre pendentes. Produtor retém a revisão e o bloqueio de preço Turbo; ver `../agents/handoffs/2026-10-12-kling-ab-min-v1.json`.
-- Auditoria CLI (2026-10-12): CLI oficial global 0.2.1 mantida; captura JSON, preflight e contabilidade revisados, skill em português. Consulta autenticada MCP 1.3.3 não listou V4. Planos antigos A/B/motion continuam bloqueados; o novo escopo mínimo separado executou um v3_0 por 27 créditos, com Turbo bloqueado por preço. Ver `../agents/handoffs/2026-10-12-kling-cli-audit-v2.json`; produtor revisa/ingere, permissões globais continuam fora do escopo.
+- Produtor desktop: apresentar pacote Galileo a Andre; decidir semelhança/composição/ritmo. Voz final e revisão integral por ouvido pendentes. Preparar cotação e liberação específica somente depois; nenhum envio adicional autorizado.
+- Teste CLI mínimo (2026-10-12): dois takes adicionais, fora dos 9 de produção, sem aceite. v3_0: cinco piscadas e trilha muito baixa (usuário confirmou); Turbo: duas piscadas, trilha ainda mais baixa. Decode e todos os quadros inspecionados estaticamente; escuta própria/aceite pendentes. Produtor revisa `../agents/handoffs/2026-10-12-kling-ab-min-v2.json`; sem novos envios.
+- Auditoria CLI (2026-10-12): CLI oficial global 0.2.1 mantida; captura JSON, preflight e contabilidade revisados, skill em português. Consulta autenticada MCP 1.3.3 não listou V4. Planos antigos A/B/motion continuam bloqueados; o escopo mínimo separado executou v3_0 por 27 e Turbo por 24, após cotação verificada. Ver `../agents/handoffs/2026-10-12-kling-cli-audit-v2.json`; produtor revisa/ingere, permissões globais continuam fora do escopo.
 - Comprehensive execution plan (planning only): `../tasks/execution-plan-v1/README.md`; 96 work packages, 129 traced requirements, Parley/hook design and staged verification. Producer owns execution kickoff; live audit found both film lanes stopped and native approval setup incomplete. No dispatcher activated or production approval changed.
 - Requested cleanup audit plan: `../tasks/plans/project-cleanup-plan-v1.md`. Preliminary inventory only; execution/retirement/global uninstall/hook activation not performed. Reuse existing Claude consolidation before new auditing.
 - Workflow map: `../tasks/plans/workflow-map-v1.md` covers all 21 board tasks, 68 work packages and the five chapter checklists. Next ready work is independent image continuity review; producer owns dispatch until a reviewer accepts. Map created, no new lane dispatch or automatic hook configured.

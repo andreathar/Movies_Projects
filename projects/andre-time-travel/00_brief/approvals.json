@@ -131,7 +131,7 @@
       "grantedBy": "Andre Athar, direct message 2026-10-12 04:56 UTC; verbatim evidence relayed by parent 01a0ff67-e9e4-75a0-99db-8bf420559029",
       "quote": "Autorizo enviar a imagem KF-galileo-listening, que contém minha aparência, e o prompt ao Kling AI para os dois vídeos de teste, com teto total de 65 créditos pagos, sem compra adicional e sem reenvios. pode usar o turbo com teto de 200 creditos tambem",
       "scope": "At most two sequential image_to_video jobs: kling-video-v3_0 first, kling-video-v3_0_turbo second only after verified current consumer price. Each 3 seconds, 720p, imageCount=1, same KF-galileo-listening bytes and listening prompt, no Elements. One reusable image upload. v3_0 enable_audio=true and prefer_multi_shots=false; Turbo only declared controls.",
-      "ceiling": "200 paid Kling credits TOTAL conservatively interpreted for this two-job batch, not per job. v3_0 planned charge 27 (official 9 credits/s x 3s). Turbo only if verified price fits remaining ceiling before submission. Count failure charges; do not assume refunds.",
+      "ceiling": "Amended 2026-10-12 05:26 UTC: up to 300 paid credits for the single second/final Turbo job, separately from the 27 already charged for v3_0. No third job, retry or purchase. Verified web tariff for this image_to_video configuration: 24 credits; no server max-cost mechanism.",
       "sourceImage": {
         "path": "02_references/keyframes/andre/KF-galileo-listening.jpg",
         "sha256": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866"
@@ -147,25 +147,62 @@
         "publication",
         "creative acceptance"
       ],
-      "status": "v3_completed_turbo_price_blocked",
+      "status": "two_jobs_completed_pending_artistic_review",
       "delegatedExecution": "Execution of this exact approved scope expressly assigned by producer/parent; no authority over other paid work.",
       "providerCannotCancelAfterSubmission": true,
       "globalBatchApprovalUnchanged": true,
       "executionResult": {
-        "recordedAt": "2026-10-12T05:10:30.746348+00:00",
-        "paidJobsSubmitted": 1,
+        "recordedAt": "2026-10-12T05:40:47.795228+00:00",
+        "paidJobsSubmitted": 2,
         "retries": 0,
         "uploads": 1,
         "v3Job": "AB-MIN-02-v3_0-3s-720p",
         "v3Status": "COMPLETED",
         "providerReportedCreditsConsumed": 27,
-        "batchTotalCeiling": 200,
-        "remainingCeilingConditional": 173,
-        "turboSubmitted": false,
-        "turboBlocker": "Preço consumer atual não verificável na CLI; UI disponível sem sessão autenticada (Sign In), sem novo login.",
-        "review": "08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json",
-        "creativeAccepted": false
-      }
+        "turboSubmitted": true,
+        "turboBlocker": null,
+        "review": "08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+        "creativeAccepted": false,
+        "turboJobCeiling": 300,
+        "turboVerifiedPrice": 24,
+        "previousBatchTotalCeiling": 200,
+        "previousRemainingCeilingConditional": 173,
+        "turboStatus": "COMPLETED",
+        "turboJob": "AB-MIN-01-turbo-3s-720p",
+        "turboProviderReportedCreditsConsumed": 24,
+        "totalProviderReportedCreditsConsumed": 51,
+        "turboReview": "08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
+        "userReviewReported": true
+      },
+      "amendments": [
+        {
+          "id": "AMD-turbo-300-2026-10-12",
+          "at": "2026-10-12T05:26:00Z",
+          "grantedBy": "Andre direct message, verbatim evidence relayed by parent",
+          "quote": "piscadas exessivas mesmo e nada no audio. investigue e pode mandar o turbo com teto de 300",
+          "scope": "Second and final job only: same uploaded image, unchanged prompt, image_to_video kling-video-v3_0_turbo, 3s720p, imageCount1, no Elements, no retry or purchases.",
+          "jobCreditCeiling": 300,
+          "previousCeiling": "200 paid Kling credits TOTAL conservatively interpreted for this two-job batch, not per job. v3_0 planned charge 27 (official 9 credits/s x 3s). Turbo only if verified price fits remaining ceiling before submission. Count failure charges; do not assume refunds.",
+          "currentPriceVerified": 24
+        }
+      ]
+    },
+    {
+      "id": "APR-master-plan-local-2026-10-12",
+      "kind": "local_plan_implementation",
+      "status": "approved",
+      "at": "2026-10-12T08:29:50Z",
+      "source": "Andre · Sentinel_f0a1320120308191a8233b16bf8df20c; plano entregue em Sentinel_07f5a2bd366c8191b45ec937bdbb3a8a",
+      "quote": "implemente",
+      "scope": "Implementar plano mestre, controles locais, frontend derivado e pacote Galileo a partir de mídia existente.",
+      "paidJobsAuthorized": 0,
+      "allowUploads": false,
+      "creativeAcceptanceGranted": false,
+      "restrictions": [
+        "Sem novos lotes pagos, upload de aparência/voz, clonagem ou credenciais/grants.",
+        "Sem publicação/push/deploy, troca de fornecedor ou exclusão de materiais.",
+        "Preservar roteiro inglês, encontros, D14, originais e alterações concorrentes."
+      ]
     }
   ],
   "decisionRecords": "00_brief/decisions/"

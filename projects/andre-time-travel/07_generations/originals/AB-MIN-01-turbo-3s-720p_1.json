@@ -1,0 +1,110 @@
+{
+  "job": "AB-MIN-01-turbo-3s-720p",
+  "tool": "image_to_video",
+  "model": "kling-video-v3_0_turbo",
+  "prompt": "The man in the reference image remains seated and quietly listens to the unseen person to camera-right. During this three-second shot he blinks once naturally and breathes gently, keeping his mouth closed. Locked camera, one continuous shot, no cuts. Preserve the face, hair, stubble, jacket, table and lighting from the reference image. Nobody else enters the frame; no hands near his face. No speech or music; subtle quiet room ambience only if audio is generated.",
+  "options": {
+    "duration": "3",
+    "resolution": "720p",
+    "imageCount": "1"
+  },
+  "refs": [],
+  "inputs": {
+    "first_image": "https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWdlbnRfdXBsb2FkLzE3OTE3ODEyNjEvNWJoSHM3WmNuZy9hYi1taW4tc2hhcmVkLWtleWZyYW1lLnBuZw.origin?x-kcdn-pid=112372"
+  },
+  "validation": {
+    "modelSpec": {
+      "model": "kling-video-v3_0_turbo",
+      "alias": "kling3.0-turbo, video-3.0-turbo, v3-turbo, v3-fast, 3.0-fast",
+      "description": "Consistently excellent results, with even better value. First choice for single-image to video generation. For multi-image to video generation, use kling3.0-omni instead.",
+      "arguments": [
+        {
+          "name": "prompt",
+          "required": true,
+          "description": "Text prompt describing the desired motion / scene. The input image is the primary driver. Required; empty string is allowed for pure image animation."
+        },
+        {
+          "name": "duration",
+          "required": false,
+          "default": "5",
+          "allowedValues": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "description": "Video duration in seconds, support 3s to 15s."
+        },
+        {
+          "name": "resolution",
+          "required": false,
+          "default": "1080p",
+          "allowedValues": [
+            "720p",
+            "1080p"
+          ],
+          "description": "Output resolution tier. 720p, 1080p"
+        },
+        {
+          "name": "imageCount",
+          "required": false,
+          "default": "1",
+          "allowedValues": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "description": "Number of videos to generate per request, max to 4."
+        }
+      ],
+      "inputs": [
+        {
+          "name": "first_image",
+          "required": true,
+          "description": "Source image URL used as the first frame to animate. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+        }
+      ]
+    },
+    "arguments": {
+      "duration": "3",
+      "resolution": "720p",
+      "imageCount": "1"
+    },
+    "schemaSha256": "aaaf73c066a3dbb27f9d88e1afcbddf6e0ebbf0fe254a8eb7149dcff3fb32586",
+    "checkedAt": "2026-10-12T05:36:06.842530+00:00",
+    "items": [
+      {
+        "job": "AB-MIN-01-turbo-3s-720p",
+        "level": "INFO",
+        "code": "URL",
+        "msg": "slot first_image: URL externa (n\u00e3o verifiquei o conte\u00fado; URLs podem expirar; prazo n\u00e3o verificado)."
+      },
+      {
+        "job": "AB-MIN-01-turbo-3s-720p",
+        "level": "INFO",
+        "code": "TURBO",
+        "msg": "Use somente os campos declarados neste snapshot; aus\u00eancia de controle de \u00e1udio n\u00e3o garante sil\u00eancio."
+      }
+    ]
+  },
+  "referenceDurationSeconds": null,
+  "auth": "APR-kling-ab-min-2026-10-12",
+  "note": "Second and final approved comparison. Same reference and prompt, 3 seconds at 720p, no Elements. Existing uploaded image reused.",
+  "balanceBefore": 31594,
+  "created": "2026-10-12T02:36:09-03:00",
+  "generationId": "AXzevKy7czPO5xQ2laBr3-5CFDQsa11VPwaJ5Yisumiz6GTCCzRkUodra8W7z3KUlGTi0HKd",
+  "provenance": "synthetic",
+  "approved": false,
+  "sha256": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/9d5306e5-320c-4394-94c1-45d67f08dbfe-OJgen8T99rEumW026dJe5g-output.mp4?x-kcdn-pid=112372"
+}

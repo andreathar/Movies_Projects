@@ -67,11 +67,14 @@
   },
   "guideTimingStatus": "Values copied from existing CSV; no fresh playback or timing measurement. All audio approved flags there are false. Not a new runtime commitment.",
   "deletions": [],
-  "canonicalBoardChanged": false,
-  "newMediaCreated": false,
+  "canonicalBoardChanged": true,
+  "newMediaCreated": true,
   "paidJobsSubmitted": 0,
   "newPaidScope": null,
   "lanesDispatched": false,
   "nextOwner": "desktop/base producer",
-  "nextAction": "Review the new visual proposal, choose a small new Galileo coverage proof and assign bounded research/QC against these exact inputs. No automatic reopening of H01-H06."
+  "nextAction": "Revisar o pacote local Galileo e decidir aparência, geometria e ritmo; produtor prepara liberação financeira somente para pedido fechado.",
+  "implementationPlan": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+  "implementationApprovalId": "APR-master-plan-local-2026-10-12",
+  "newMediaKind": "local_candidate_animatic_from_existing_media"
 }

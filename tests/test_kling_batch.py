@@ -24,6 +24,9 @@ spec.loader.exec_module(k)
 
 class ProducerTests(unittest.TestCase):
     def setUp(self):
+        self.release_patch = patch.object(k.release, 'authorize', return_value={})
+        self.release_patch.start()
+        self.addCleanup(self.release_patch.stop)
         scratch = Path(os.environ.get('TMPDIR', Path.home() / '.hermes/cache/scratch'))
         scratch.mkdir(parents=True, exist_ok=True)
         self.tmp = tempfile.TemporaryDirectory(dir=scratch)

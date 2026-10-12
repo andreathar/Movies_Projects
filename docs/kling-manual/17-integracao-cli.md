@@ -46,11 +46,9 @@ Nenhuma geração foi usada como teste. A listagem pode mudar; não conclui aces
 
 ## Limites e pendências
 
-Preflight não interpreta toda regra escrita em descrição, verifica direitos/aceite,
-mede duração de mídia automaticamente nem prova compatibilidade do tipo de Element.
-O produtor deve conferir `element_get`, descrição da ferramenta, mídia, duração,
-escopo de autorização e custo antes de gastar. `auth` continua referência documental;
-não é um sistema de autorização. `taskTraceId` não é idempotência.
+O preflight agora aplica também limites condicionais e tipos de Element declarados, proíbe áudio nativo com vídeo Omni, verifica v2.6 cauda/áudio/resolução e mede vídeos locais com ffprobe. Não interpreta toda descrição futura, autentica direitos/aceite ou confirma a verdade de metadados declarados de uma URL. O produtor ainda confere Element, referências e preço.
+
+Novos envios exigem liberação documental exata por pedido no formato de `docs/PRODUCTION_PLAN.md`: payload/schema/cotação/teto/validade/escopo de upload. `auth` aponta esse registro, sem autenticar a pessoa que aprovou. Deduplicação por conteúdo recusa renomear um pedido já enviado/incerto. Não há teto imposto pelo servidor ou garantia de idempotência do provedor; `taskTraceId` continua apenas correlação.
 
 Nenhuma segurança global foi alterada. A inspeção **somente de metadados** encontrou
 permissões amplas no arquivo de credenciais e log do CLI (modo 0664; diretórios 0775).
@@ -63,7 +61,6 @@ a captura segura do runner, com timeout de 60 s. Não foi executado contra o ser
 nem baixou mídia nesta auditoria. Falha de consulta continua sem motivar geração nova;
 originais existentes são preservados.
 
-Specs A/B/motion permanecem bloqueados. A/B não isola resolução; 90 créditos eram
-estimativa não cotada. Referência motion de 30 s não pode ser orçada como 5 s.
+Os specs antigos não liberam novos jobs. Os dois A/B posteriores terminaram em 51 créditos declarados, conforme recibos canônicos. A/B antigo não isolava resolução; 90 créditos eram estimativa não cotada. Referência motion de 30 s não pode ser orçada como 5 s.
 Nenhuma aprovação, ledger antigo, mídia, login, grant, pacote global ou publicação
 foi modificado pela revisão.

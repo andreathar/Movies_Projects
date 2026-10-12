@@ -1,0 +1,17 @@
+{
+  "observedAt": "2026-10-12T05:35:47.157073+00:00",
+  "source": "Authenticated official Kling web UI, existing session; no login initiated",
+  "page": "https://kling.ai/app/video/323752797686613?ra=2&editType=edit&ac=5&klingVersion=3.0",
+  "procedure": "Opened completed v3 test details, Edit loaded same first frame/prompt, selected VIDEO 3.0 Turbo; waited for price recalculation. Generate never clicked.",
+  "uiModel": "VIDEO 3.0 Turbo",
+  "tool": "image_to_video",
+  "duration": 3,
+  "resolution": "720p",
+  "imageCount": 1,
+  "elements": false,
+  "displayedConsumerCredits": 24,
+  "buttonText": "24 Generate",
+  "cliBillingParitySource": "https://kling.ai/app/mcp/guide",
+  "bindingMaxCostSupported": false,
+  "referenceSha256": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866"
+}

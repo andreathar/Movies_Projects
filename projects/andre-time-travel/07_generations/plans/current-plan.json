@@ -1,18 +1,24 @@
 {
   "schemaVersion": "1.0",
   "note": "Pointer to the current generation plan; lint verifies path and hash. Update when a newer plan is adopted; keep older plans as history.",
-  "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md",
-  "sha256": "a342d046233187b8d4afcce9231b326d1afb83bbf334368f0db0109b50b43d1b",
-  "companions": [
-    {
-      "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v3.csv",
-      "sha256": "fe999606d21a852054759ca60a4d60a44fb61bfd96e4b872d934a447668b1bbd"
-    }
-  ],
-  "status": "estimate_only_no_batch_approval",
-  "adoptedOn": "2026-10-10",
+  "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+  "sha256": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b",
+  "companions": [],
+  "status": "local_implementation_no_paid_release",
+  "adoptedOn": "2026-10-12",
   "supersedes": [
     "2026-10-09-plano-regeneracao-nova-direcao-v2.md",
     "2026-10-09-plano-regeneracao-nova-direcao.md"
-  ]
+  ],
+  "previousPlanPreserved": {
+    "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-nova-direcao-v3.md",
+    "sha256": "a342d046233187b8d4afcce9231b326d1afb83bbf334368f0db0109b50b43d1b",
+    "companions": [
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/2026-10-09-plano-regeneracao-takes-v3.csv",
+        "sha256": "fe999606d21a852054759ca60a4d60a44fb61bfd96e4b872d934a447668b1bbd"
+      }
+    ],
+    "status": "estimate_only_no_batch_approval"
+  }
 }

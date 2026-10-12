@@ -1,3 +1,5 @@
+> Revisão operacional de 2026-10-12: use `production_plan.py routes` e `docs/PRODUCTION_PLAN.md`. Valores abaixo são histórico/estimativa, não cotação. Turbo não oferece controle explícito de áudio e pode retornar trilha; não prometer silêncio. v2.6: cauda exige 1080p, áudio exige 1080p sem cauda. D14 mantém voz-guia também em inglês. Falas futuras exigem duração medida mais pausas; exemplos de duração fixa não garantem cauda.
+
 # 06 · Imagem → vídeo (`image_to_video`)
 
 Ferramenta central do filme: o quadro (still aprovado) dá o visual; o prompt dá só o movimento.

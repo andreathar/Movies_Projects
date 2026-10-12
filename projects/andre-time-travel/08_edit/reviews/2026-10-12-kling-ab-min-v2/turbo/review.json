@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedAt": "2026-10-12T05:40:47.795228+00:00",
+  "job": "AB-MIN-01-turbo-3s-720p",
+  "generationId": "AXzevKy7czPO5xQ2laBr3-5CFDQsa11VPwaJ5Yisumiz6GTCCzRkUodra8W7z3KUlGTi0HKd",
+  "takeId": "AB-MIN-01-turbo-3s-720p_1",
+  "status": "candidate_prompt_count_mismatch_pending_full_playback",
+  "creativeAccepted": false,
+  "output": {
+    "path": "07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+    "sha256": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968"
+  },
+  "technical": {
+    "sha256": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968",
+    "bytes": 1802051,
+    "duration": "3.041995",
+    "video": {
+      "codec_name": "h264",
+      "width": 1276,
+      "height": 720,
+      "r_frame_rate": "24/1",
+      "nb_read_frames": "73",
+      "duration": "3.041667"
+    },
+    "audio": [
+      {
+        "codec_name": "aac",
+        "sample_rate": "44100",
+        "channels": 2,
+        "duration": "3.041995"
+      }
+    ],
+    "decodeReturnCode": 0
+  },
+  "cost": {
+    "creditsConsumed": 24,
+    "basis": "provider_reported",
+    "jobCeiling": 300,
+    "verifiedPriceBeforeSubmission": 24,
+    "balanceDeltaIsCharge": false
+  },
+  "verified": {
+    "metadata": true,
+    "fullDecode": true,
+    "framesInspected": 73,
+    "allFramesStaticContactSheets": true,
+    "normalSpeedPlaybackWithListening": false,
+    "audioSemanticReview": false
+  },
+  "observations": [
+    "Dois ciclos de piscar visíveis, aproximadamente quadros 5–10 e 61–66; o prompt pedia um.",
+    "Boca aparentemente fechada nos 73 quadros inspecionados nas folhas; sem afirmação sobre fala audível.",
+    "Composição, mesa e roupa parecem estáveis; não observei outro rosto completo nem mãos junto ao rosto. Forma estreita desfocada aparece na extrema borda direita perto do final; natureza não identificada.",
+    "Marca KlingAI preservada."
+  ],
+  "audio": {
+    "channels": [
+      {
+        "channel": 1,
+        "samples": 134144,
+        "nonzero": 134144,
+        "rmsDbFS": -60.45654154432111,
+        "peakDbFS": -43.80758080643673
+      },
+      {
+        "channel": 2,
+        "samples": 134144,
+        "nonzero": 134144,
+        "rmsDbFS": -60.45654154432111,
+        "peakDbFS": -43.80758080643673
+      }
+    ],
+    "agentListeningPerformed": false,
+    "channelsIdentical": true,
+    "silenceDetectMinus40dB": [
+      "[silencedetect @ 0x6507d47b1240] channel: 0 | silence_start: 0",
+      "[silencedetect @ 0x6507d47b1240] channel: 1 | silence_start: 0",
+      "[silencedetect @ 0x6507d47b1240] channel: 0 | silence_end: 3.04181 | silence_duration: 3.04181",
+      "[silencedetect @ 0x6507d47b1240] channel: 1 | silence_end: 3.04181 | silence_duration: 3.04181"
+    ]
+  },
+  "limitations": [
+    "Uma amostra; sem aceite artístico/semelhança ou escuta própria.",
+    "Sem controle explícito de áudio ou multishot no schema Turbo observado."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "channels": [
+    {
+      "channel": 1,
+      "samples": 134144,
+      "nonzero": 134144,
+      "rmsDbFS": -60.45654154432111,
+      "peakDbFS": -43.80758080643673
+    },
+    {
+      "channel": 2,
+      "samples": 134144,
+      "nonzero": 134144,
+      "rmsDbFS": -60.45654154432111,
+      "peakDbFS": -43.80758080643673
+    }
+  ],
+  "agentListeningPerformed": false,
+  "channelsIdentical": true,
+  "silenceDetectMinus40dB": [
+    "[silencedetect @ 0x6507d47b1240] channel: 0 | silence_start: 0",
+    "[silencedetect @ 0x6507d47b1240] channel: 1 | silence_start: 0",
+    "[silencedetect @ 0x6507d47b1240] channel: 0 | silence_end: 3.04181 | silence_duration: 3.04181",
+    "[silencedetect @ 0x6507d47b1240] channel: 1 | silence_end: 3.04181 | silence_duration: 3.04181"
+  ]
+}

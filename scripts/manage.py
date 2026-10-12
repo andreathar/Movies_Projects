@@ -74,6 +74,14 @@ def check_dependencies(tasks: list[dict[str, Any]]) -> None:
         visit(identifier)
 
 
+def production_plan_report(root: Path) -> dict[str, Any]:
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("managed_production_plan", Path(__file__).with_name("production_plan.py"))
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.validate(root)
+
+
 def validate(root: Path) -> dict[str, Any]:
     report: dict[str, Any] = {"status": "ok", "errors": [], "warnings": [], "projects": []}
     try:
@@ -274,6 +282,8 @@ def validate(root: Path) -> dict[str, Any]:
                     "importedSourceSnapshots": len(registry["sources"]) - len(missing_snapshots),
                 }
             )
+        plan_report = production_plan_report(root)
+        require(not plan_report["errors"], "production plan: " + "; ".join(plan_report["errors"]))
     except (OSError, ValueError, KeyError, TypeError) as error:
         report["status"] = "error"
         report["errors"].append(str(error))
@@ -584,6 +594,7 @@ def lint(root: Path) -> dict[str, Any]:
         return report
     report["film"] = project["id"]
     checks = [
+        ("production-plan", lambda: hard.extend(production_plan_report(root)["errors"])),
         ("approvals", lambda: lint_approvals(film, hard, advisory)),
         ("decisions", lambda: lint_decisions(film, hard)),
         ("handoffs", lambda: lint_handoffs(root, film, hard, advisory)),

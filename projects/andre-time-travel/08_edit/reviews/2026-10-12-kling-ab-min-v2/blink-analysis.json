@@ -1,0 +1,73 @@
+{
+  "method": "Inspeção visual dos 73 recortes consecutivos de olhos, numerados 0-72, 24 fps; limites aproximados com incerteza de um quadro. Sem detector automático ou diagnóstico médico.",
+  "expectedCount": 1,
+  "observedCount": 5,
+  "events": [
+    {
+      "event": 1,
+      "onsetFrame": 5,
+      "reopenedFrame": 10,
+      "closedOrAlmostClosedFrames": [
+        6,
+        7
+      ],
+      "startSeconds": 0.2083,
+      "reopenedSeconds": 0.4167,
+      "durationSeconds": 0.2083
+    },
+    {
+      "event": 2,
+      "onsetFrame": 21,
+      "reopenedFrame": 25,
+      "closedOrAlmostClosedFrames": [
+        21,
+        22
+      ],
+      "startSeconds": 0.875,
+      "reopenedSeconds": 1.0417,
+      "durationSeconds": 0.1667
+    },
+    {
+      "event": 3,
+      "onsetFrame": 44,
+      "reopenedFrame": 49,
+      "closedOrAlmostClosedFrames": [
+        44,
+        45
+      ],
+      "startSeconds": 1.8333,
+      "reopenedSeconds": 2.0417,
+      "durationSeconds": 0.2083
+    },
+    {
+      "event": 4,
+      "onsetFrame": 53,
+      "reopenedFrame": 58,
+      "closedOrAlmostClosedFrames": [
+        54,
+        55
+      ],
+      "startSeconds": 2.2083,
+      "reopenedSeconds": 2.4167,
+      "durationSeconds": 0.2083
+    },
+    {
+      "event": 5,
+      "onsetFrame": 61,
+      "reopenedFrame": 66,
+      "closedOrAlmostClosedFrames": [
+        61,
+        62
+      ],
+      "startSeconds": 2.5417,
+      "reopenedSeconds": 2.75,
+      "durationSeconds": 0.2083
+    }
+  ],
+  "lastThreeClusterSeconds": [
+    1.8333333333333333,
+    2.75
+  ],
+  "agentNormalSpeedPlayback": false,
+  "userReportedExcessiveBlinks": true
+}

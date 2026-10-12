@@ -1,3 +1,7 @@
+# Adendo de investigação — v2
+
+A revisão abaixo é histórica. O segundo e último job Turbo foi posteriormente autorizado até 300 créditos, cotado em 24 na UI e concluído por 24; total observado 51. Consulte `../08_edit/reviews/2026-10-12-kling-ab-min-v2/README.md` para piscadas, áudio, comparação e propostas de template. Sem aceite artístico.
+
 # Receita e limites do ensaio mínimo Kling
 
 Evidência desta revisão: `../08_edit/reviews/2026-10-12-kling-ab-min-v1/review.json`. Não é preset artístico aprovado nem conclusão comparativa entre modelos.

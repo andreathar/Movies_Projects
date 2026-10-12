@@ -1,0 +1,22 @@
+{
+  "sha256": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968",
+  "bytes": 1802051,
+  "duration": "3.041995",
+  "video": {
+    "codec_name": "h264",
+    "width": 1276,
+    "height": 720,
+    "r_frame_rate": "24/1",
+    "nb_read_frames": "73",
+    "duration": "3.041667"
+  },
+  "audio": [
+    {
+      "codec_name": "aac",
+      "sample_rate": "44100",
+      "channels": 2,
+      "duration": "3.041995"
+    }
+  ],
+  "decodeReturnCode": 0
+}

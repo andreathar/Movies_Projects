@@ -1,0 +1,776 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "film_visual_production_plan",
+  "production": "andre-time-travel",
+  "revision": "master-v1-local-implementation",
+  "implementationApprovalId": "APR-master-plan-local-2026-10-12",
+  "sourceScope": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+  "preservedSources": [
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+      "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b"
+    }
+  ],
+  "encounters": [
+    "C",
+    "K",
+    "G",
+    "N",
+    "O"
+  ],
+  "constraints": {
+    "historicalFullFaceFrames": 0,
+    "finalVoicePolicy": "D14_guide_only_until_separate_approval",
+    "scriptLanguage": "en",
+    "originalsPreserved": true
+  },
+  "stages": [
+    {
+      "id": "P0",
+      "title": "Integrar escopo e fontes",
+      "taskIds": [
+        "T01",
+        "T05"
+      ],
+      "dependsOn": [],
+      "owner": "producer",
+      "preparation": "local_prepared",
+      "evidence": "Roteiro, encontros e D14 preservados por hash; implementação local autorizada."
+    },
+    {
+      "id": "P1",
+      "title": "Selecionar referências por uso",
+      "taskIds": [
+        "T03",
+        "T12"
+      ],
+      "dependsOn": [
+        "P0"
+      ],
+      "owner": "continuity",
+      "preparation": "local_prepared",
+      "evidence": "13 imagens inspecionadas; seleção candidata de Galileo e lacunas registradas; sem aceite de semelhança."
+    },
+    {
+      "id": "P2",
+      "title": "Animatic e geometria",
+      "taskIds": [
+        "T11"
+      ],
+      "dependsOn": [
+        "P1"
+      ],
+      "owner": "editor",
+      "preparation": "local_prepared",
+      "evidence": "G-L03/G-L04 e guias existentes medidos; corte estático sem acelerar voz; geometria proposta."
+    },
+    {
+      "id": "P3",
+      "title": "Fechar fichas e entradas",
+      "taskIds": [
+        "T12",
+        "T13"
+      ],
+      "dependsOn": [
+        "P2"
+      ],
+      "owner": "storyboard",
+      "preparation": "blocked",
+      "evidence": "Escolha de aparência, espaço e keyframes por versão; tipos de Element/readback ainda pendentes para uso futuro."
+    },
+    {
+      "id": "P4",
+      "title": "Orçar e liberar piloto",
+      "taskIds": [
+        "T10",
+        "T13"
+      ],
+      "dependsOn": [
+        "P3"
+      ],
+      "owner": "producer",
+      "preparation": "blocked",
+      "evidence": "Nenhuma cotação ou nova liberação. Conferir pedido, schema, preço, teto, uploads e validade; enviar uma vez."
+    },
+    {
+      "id": "P5",
+      "title": "Provar Galileo e voz/sync",
+      "taskIds": [
+        "T07",
+        "T09",
+        "T13"
+      ],
+      "dependsOn": [
+        "P4"
+      ],
+      "owner": "qc",
+      "preparation": "blocked",
+      "evidence": "Mídia futura exige decode, quadros integrais, playback/escuta, sync e revisão do diretor; dublagem limitada antes de ampliar fala visível."
+    },
+    {
+      "id": "P6",
+      "title": "Expandir cinco encontros",
+      "taskIds": [
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "dependsOn": [
+        "P5"
+      ],
+      "owner": "producer",
+      "preparation": "blocked",
+      "evidence": "Transferir apenas receita comprovada; novas referências/ângulos têm qualificação própria; lotes pequenos."
+    },
+    {
+      "id": "P7",
+      "title": "Montar e finalizar inglês",
+      "taskIds": [
+        "T18",
+        "T19",
+        "T21"
+      ],
+      "dependsOn": [
+        "P6"
+      ],
+      "owner": "editor",
+      "preparation": "blocked",
+      "evidence": "Diálogo final, ambientes/foley, cor, legendas, créditos, master e revisão exata."
+    },
+    {
+      "id": "P8",
+      "title": "Edição histórica e arquivo",
+      "taskIds": [
+        "T06",
+        "T20",
+        "T21"
+      ],
+      "dependsOn": [
+        "P5"
+      ],
+      "owner": "dialogue-sound",
+      "preparation": "blocked",
+      "evidence": "Revisores de língua e rota viável; não impede preparar/concluir a edição inglesa; masters e fontes preservados."
+    }
+  ],
+  "references": [
+    {
+      "id": "G-ID",
+      "label": "Foto real de identidade",
+      "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+      "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "role": "identity",
+      "provenance": "real_photo_crop",
+      "selection": "comparison_only",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Foto frontal, cabelo curto texturizado, camisa listrada clara e blazer cinza. D01 preservado; referência para comparação, não aprova novo ângulo ou movimento.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-TABLE",
+      "label": "Mesa D04",
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+      "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "role": "table",
+      "provenance": "synthetic",
+      "selection": "anchor_existing_scope",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Tampo claro, anel e lasca na borda próxima visíveis. Contagem de tábuas e dimensões não são prova física do espaço compartilhado. D04 não aprova a nova cena.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-ERA",
+      "label": "Arcetri: contexto",
+      "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+      "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "role": "environment",
+      "provenance": "synthetic",
+      "selection": "context_only",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Janela, alvenaria e madeira. Iluminação e perspectiva da placa não comprovam continuidade com os planos fechados; piso é escolha de arte incerta.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-IN",
+      "label": "Galileo IN",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+      "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+      "role": "composition",
+      "provenance": "synthetic",
+      "selection": "candidate_selected_for_previs",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Andre à esquerda, mão apoiada e boca fechada; ombro/mão do interlocutor à direita, cabeça fora. Anel e lasca visíveis. Cabelo/rosto e escala precisam do julgamento de Andre. Inspeção estática da imagem inteira, sem prova de movimento.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-OUT",
+      "label": "Galileo OUT",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+      "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+      "role": "composition",
+      "provenance": "synthetic",
+      "selection": "candidate_selected_for_previs",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Mesmo arranjo aparente do IN, mão de Andre elevada e boca entreaberta. Fonte para prever fala/gesto; still não comprova sincronismo. Verificar dedos, proporções, mesa e luz na futura animação.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-SHOULDER-L",
+      "label": "Ombro esquerdo",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-left-v1.png",
+      "sha256": "3789e1ae8db3f165e6026f9654067209abc7e1b7ffe2e610c6d6fe3ce67d2660",
+      "role": "composition",
+      "provenance": "synthetic",
+      "selection": "alternate_candidate",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Mantém Andre à esquerda. Mão elevada e enquadramento próximos ao OUT; não necessário para o animatic mínimo, sem gerar duplicata.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-SHOULDER-R",
+      "label": "Ombro direito",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-right-v1.png",
+      "sha256": "a8f4c4d9a39e7d62fc9827a93a9009cb26a2179740a6aa0586a6ca23cacfc9a0",
+      "role": "composition",
+      "provenance": "synthetic",
+      "selection": "excluded_from_current_cut",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Andre à direita, interlocutor à esquerda: inverte o eixo escolhido em D09. Preservado como alternativa, não entra no corte proposto.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-HAND-IN",
+      "label": "Mão: contato",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-v1.png",
+      "sha256": "4dc9f8905b28ee02f66347c57247a517f11851649c131af4bba8b08ed56d1137",
+      "role": "body_prop",
+      "provenance": "synthetic",
+      "selection": "alternate_candidate",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Cabeça ausente. Punho preto/branco, contato sobre madeira mais escura e marcada; não prova anel/lasca/escala da mesa D04 no corte compartilhado.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-HAND-OUT",
+      "label": "Mão: alívio",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-out-v1.png",
+      "sha256": "bd2ee4259f27a604d3cc501bed361233e176b2e9f1d36c45cd2bfa0ba491b50d",
+      "role": "body_prop",
+      "provenance": "synthetic",
+      "selection": "alternate_candidate",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Variação mínima da mão; ligação temporal e material da mesa precisam de revisão. O animatic mínimo não exige este insert.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-OLD-LISTEN",
+      "label": "Escuta antiga",
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+      "sha256": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866",
+      "role": "composition",
+      "provenance": "synthetic",
+      "selection": "excluded_from_current_cut",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Andre está ao lado da mesa, que aparece atrás: não compartilhar com a fala nova. Cabelo/luz/assento diferem. Evitar repetir F01.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-OLD-SPEAK",
+      "label": "Fala antiga",
+      "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-speaking.jpg",
+      "sha256": "5405a8e6c55945e59987e72829abe9cb6578eb82e7cc2ea6c8fea3252b8446df",
+      "role": "composition",
+      "provenance": "synthetic",
+      "selection": "excluded_from_current_cut",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Mesa à frente, janela fria e cabelo/luz diferentes do IN/OUT; não resolve a composição compartilhada da proposta.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-EYE-A",
+      "label": "Olhos: pergunta",
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+      "sha256": "50a8288e93bed03cad5959e738eb11bc372c61baca5650e541df3b997e5bfa12",
+      "role": "historical_eyes",
+      "provenance": "synthetic_crop",
+      "selection": "alternate_candidate",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Recorte de olhos/sobrancelha, sem rosto completo. Evitar inserir como emoção resolvida antes da resposta.",
+      "approvalEvidence": null
+    },
+    {
+      "id": "G-EYE-B",
+      "label": "Olhos: resposta",
+      "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R2-J04-eyes-galileo-resolve-B_1_eyescrop.png",
+      "sha256": "f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215",
+      "role": "historical_eyes",
+      "provenance": "synthetic_crop",
+      "selection": "candidate_selected_for_previs",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Inspecionado inteiro: olhos/sobrancelhas e pele adjacente, sem nariz completo/boca. Olhar e continuidade com espaço ainda candidatos. Reação colocada após G-L04 inteira; não há alinhamento ouvido de palavras.",
+      "approvalEvidence": null
+    }
+  ],
+  "shots": [
+    {
+      "id": "G-MASTER",
+      "title": "Master compartilhado",
+      "encounter": "G",
+      "taskId": "T13",
+      "family": "F1",
+      "lineIds": [],
+      "referenceIds": [
+        "G-ID",
+        "G-TABLE",
+        "G-ERA",
+        "G-IN"
+      ],
+      "dependsOn": [],
+      "intention": "Provar duas pessoas no mesmo espaço sem revelar o rosto histórico.",
+      "action": "Cabeça histórica inteira fora do quadro; Andre à esquerda; ombro/mão à direita.",
+      "camera": "50 mm e altura 117,5 cm são proposta, não EXIF verificado.",
+      "proposedGenerationSeconds": null,
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "pending",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "approvalEvidence": null,
+      "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+      "blockers": [
+        {
+          "description": "Aparência e composição compartilhada ainda candidatas.",
+          "owner": "Andre / director",
+          "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+        }
+      ]
+    },
+    {
+      "id": "G-LISTEN-KF",
+      "title": "Keyframe de escuta",
+      "encounter": "G",
+      "taskId": "T13",
+      "family": "F2",
+      "lineIds": [],
+      "referenceIds": [
+        "G-IN",
+        "G-OUT"
+      ],
+      "dependsOn": [
+        "G-MASTER"
+      ],
+      "intention": "Preservar geometria quando Andre escuta.",
+      "action": "Mudança mínima: boca fechada e mãos em repouso.",
+      "camera": "Mesma câmera, luz, assento e mesa do master.",
+      "proposedGenerationSeconds": null,
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "pending",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "approvalEvidence": null,
+      "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+      "blockers": [
+        {
+          "description": "Aparência e composição compartilhada ainda candidatas.",
+          "owner": "Andre / director",
+          "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+        }
+      ]
+    },
+    {
+      "id": "G-P03",
+      "title": "Escuta durante G-L03",
+      "encounter": "G",
+      "taskId": "T13",
+      "family": "F4",
+      "lineIds": [
+        "G-L03"
+      ],
+      "referenceIds": [
+        "G-IN"
+      ],
+      "dependsOn": [
+        "G-LISTEN-KF"
+      ],
+      "intention": "Andre considera a pergunta; ainda não oferece resolução.",
+      "action": "Respiração discreta; sem fala e sem repetição de piscadas.",
+      "camera": "Câmera fixa; cabeça histórica fora.",
+      "proposedGenerationSeconds": 5,
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "pending",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "approvalEvidence": null,
+      "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+      "blockers": [
+        {
+          "description": "Aparência e composição compartilhada ainda candidatas.",
+          "owner": "Andre / director",
+          "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+        },
+        {
+          "description": "Novas gerações sem preço/cotação e liberação.",
+          "owner": "producer",
+          "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+        }
+      ]
+    },
+    {
+      "id": "G-P04",
+      "title": "Fala G-L04",
+      "encounter": "G",
+      "taskId": "T13",
+      "family": "F3",
+      "lineIds": [
+        "G-L04"
+      ],
+      "referenceIds": [
+        "G-OUT",
+        "G-IN"
+      ],
+      "dependsOn": [
+        "G-MASTER"
+      ],
+      "intention": "Calor e firmeza sem triunfalismo; a pergunta continua aberta.",
+      "action": "Uma fala exata e um gesto baixo; boca fecha após a frase.",
+      "camera": "Câmera fixa; preservar mesa/assento; voz nativa apenas guia D14.",
+      "proposedGenerationSeconds": 11,
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "pending",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "approvalEvidence": null,
+      "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+      "blockers": [
+        {
+          "description": "Aparência e composição compartilhada ainda candidatas.",
+          "owner": "Andre / director",
+          "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+        },
+        {
+          "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+          "owner": "Andre / dialogue-sound",
+          "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+        },
+        {
+          "description": "Novas gerações sem preço/cotação e liberação.",
+          "owner": "producer",
+          "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+        }
+      ]
+    },
+    {
+      "id": "G-REACTION",
+      "title": "Reação após a resposta",
+      "encounter": "G",
+      "taskId": "T13",
+      "family": "F4",
+      "lineIds": [],
+      "referenceIds": [
+        "G-EYE-B"
+      ],
+      "dependsOn": [
+        "G-P04"
+      ],
+      "intention": "A resolução nasce de “does not settle a question”, nunca antes.",
+      "action": "Microalteração de olhos após a fala inteira no animatic; 2 s de edição são proposta local.",
+      "camera": "Crop de olhos sem recuo ou rosto adicional.",
+      "proposedGenerationSeconds": 3,
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "pending",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "approvalEvidence": null,
+      "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+      "blockers": [
+        {
+          "description": "Aparência e composição compartilhada ainda candidatas.",
+          "owner": "Andre / director",
+          "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+        },
+        {
+          "description": "Novas gerações sem preço/cotação e liberação.",
+          "owner": "producer",
+          "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+        }
+      ]
+    },
+    {
+      "id": "G-HAND-OPTION",
+      "title": "Contato de mão opcional",
+      "encounter": "G",
+      "taskId": "T13",
+      "family": "F5",
+      "lineIds": [],
+      "referenceIds": [
+        "G-HAND-IN",
+        "G-HAND-OUT",
+        "G-TABLE"
+      ],
+      "dependsOn": [
+        "G-MASTER"
+      ],
+      "intention": "Alívio físico somente se a montagem precisar.",
+      "action": "Soltar levemente a tensão; contato legível na mesa selecionada.",
+      "camera": "Detalhe fixo; não adicionar ao animatic só por existir.",
+      "proposedGenerationSeconds": 3,
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "pending",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "approvalEvidence": null,
+      "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+      "blockers": [
+        {
+          "description": "Material/mesa não conciliados; insert é opcional.",
+          "owner": "continuity / editor",
+          "unblockCondition": "Comparar marcas e contato com master; usar apenas se necessário à cena."
+        }
+      ]
+    }
+  ],
+  "pilot": {
+    "title": "Galileo · G-L03/G-L04",
+    "status": "candidate_previsualization",
+    "durationSeconds": 16,
+    "timeline": [
+      {
+        "referenceId": "G-IN",
+        "shotId": "G-P03",
+        "startSeconds": 0,
+        "endSeconds": 4.1,
+        "label": "Pergunta e escuta · G-L03"
+      },
+      {
+        "referenceId": "G-OUT",
+        "shotId": "G-P04",
+        "startSeconds": 4.1,
+        "endSeconds": 13.1,
+        "label": "Resposta · G-L04 · voz-guia"
+      },
+      {
+        "referenceId": "G-EYE-B",
+        "shotId": "G-REACTION",
+        "startSeconds": 13.1,
+        "endSeconds": 15.1,
+        "label": "Reação após a frase inteira",
+        "reactionTo": "G-L04"
+      },
+      {
+        "referenceId": "G-IN",
+        "shotId": "G-P03",
+        "startSeconds": 15.1,
+        "endSeconds": 16,
+        "label": "Retorno ao espaço · pausa proposta"
+      }
+    ],
+    "audio": [
+      {
+        "lineId": "G-L03",
+        "path": "projects/andre-time-travel/04_audio/scratch/edge-tts-v2/G-L03.mp3",
+        "sha256": "31a00b1c9e77bebd796d7fabe6f13606ebe2bc3c24f494568cd13fa2639a37a0",
+        "startSeconds": 0.5,
+        "durationSeconds": 2.832,
+        "rate": 1,
+        "role": "scratch_guide",
+        "approved": false,
+        "fullListeningReviewed": false
+      },
+      {
+        "lineId": "G-L04",
+        "path": "projects/andre-time-travel/04_audio/scratch/edge-tts-v2/G-L04.mp3",
+        "sha256": "cf76432da09e6495d90bf63ce185773f7dcb0274a5601dc2ad54cff824d7ea81",
+        "startSeconds": 4.1,
+        "durationSeconds": 8.616,
+        "rate": 1,
+        "role": "scratch_guide",
+        "approved": false,
+        "fullListeningReviewed": false
+      }
+    ],
+    "geometry": {
+      "status": "proposed_not_measured",
+      "tableCm": [
+        120,
+        75,
+        75
+      ],
+      "seatHeightCm": 45,
+      "cameraHeightCm": 117.5,
+      "lensMm": 50,
+      "screenAxis": "Andre à esquerda olhando direita; Galileo à direita olhando esquerda.",
+      "headRule": "Cabeça histórica completamente fora, sem nuca. D18 não decidido.",
+      "light": "Janela à esquerda do quadro; luz suave da mesma direção em todos os planos. Intensidade/cor ainda propostas.",
+      "limitations": [
+        "Dimensões e lente são proposta D17; nenhuma referência comprova calibração física.",
+        "IN/OUT têm geometria visual semelhante, não um master 3D verificado.",
+        "Rosto completo histórico proibido inclusive em reflexos."
+      ]
+    },
+    "limitations": [
+      "Still animatic, sem movimento gerado ou lip-sync.",
+      "Guias edge-tts existentes, não vozes finais nem aprovadas.",
+      "Durações medidas por ffprobe; não houve escuta humana nesta implementação.",
+      "Reação entra depois do fim do arquivo G-L04; palavra a palavra ainda não alinhada/revisada."
+    ],
+    "packagePath": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+    "previewPath": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+    "fullPlaybackReviewed": false,
+    "creativeAccepted": false
+  },
+  "costPolicy": {
+    "newPaidAuthorization": false,
+    "newPaidJobs": 0,
+    "closedABProviderCredits": 51,
+    "estimateIsQuote": false,
+    "balanceDeltaIsCharge": false,
+    "providerEnforcesCeiling": false,
+    "rule": "Cotação ligada ao payload e schema, teto por job, evidência e validade; envio único. Intenção/recibos/ledger existentes são a fonte dos jobs. Nenhum retry incerto."
+  },
+  "blockers": [
+    {
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+      "owner": "Andre / dialogue-sound",
+      "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+    },
+    {
+      "description": "Novas gerações sem preço/cotação e liberação.",
+      "owner": "producer",
+      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+    },
+    {
+      "description": "Atuação de referência e leitura atual do Element não qualificadas.",
+      "owner": "continuity / producer",
+      "unblockCondition": "Triar mídia existente; obter readback autorizado antes de vincular. Nenhuma nova captura ou upload automático."
+    }
+  ],
+  "inventories": [
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/manifest.json",
+      "scope": "Cinco encontros: detalhes candidatos; não replicar catálogo."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/manifest.json",
+      "scope": "IN/OUT candidatos; usar manifestação existente."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+      "scope": "Inventário datado; tipos de mídia e lacunas, não aprovação."
+    }
+  ],
+  "deliverables": [
+    "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+    "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+    "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg"
+  ]
+}
