@@ -1,0 +1,86 @@
+{
+  "readOnlyReview": true,
+  "registryChanged": false,
+  "externalSkillsChanged": false,
+  "records": [
+    {
+      "name": "film-character-continuity",
+      "path": "skills/film-character-continuity",
+      "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
+      "sourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+      "previousSourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+      "rehashedAt": "2026-10-09T11:28:02-03:00",
+      "currentSha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
+      "currentBytes": 11388,
+      "currentMtime": "2026-10-09T16:12:21.643594+00:00",
+      "sourceSha256Recovered": {
+        "path": "/home/athar/.hermes/.curator_backups/blobs/56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+        "verifiedSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+        "bytes": 9242
+      },
+      "previousSourceSha256Recovered": {
+        "path": "/home/athar/.hermes/.curator_backups/blobs/04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+        "verifiedSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+        "bytes": 7624
+      },
+      "diffLinesAdded": 31,
+      "diffLinesRemoved": 3,
+      "diffFile": "film-character-continuity.diff",
+      "diffSha256": "db7f0b17e868dd9b656473e93aec24e50b0cf650b8ff1498ea04017e19b9e040"
+    },
+    {
+      "name": "film-dialogue-localization",
+      "path": "skills/film-dialogue-localization",
+      "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
+      "sourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+      "previousSourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+      "rehashedAt": "2026-10-09T11:28:02-03:00",
+      "currentSha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
+      "currentBytes": 10037,
+      "currentMtime": "2026-10-09T15:06:06.781081+00:00",
+      "sourceSha256Recovered": {
+        "path": "/home/athar/.hermes/.curator_backups/blobs/933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+        "verifiedSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+        "bytes": 8468
+      },
+      "previousSourceSha256Recovered": {
+        "path": "/home/athar/.hermes/.curator_backups/blobs/e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+        "verifiedSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+        "bytes": 7109
+      },
+      "diffLinesAdded": 28,
+      "diffLinesRemoved": 7,
+      "diffFile": "film-dialogue-localization.diff",
+      "diffSha256": "3d5e39b7ee5aa74626ee4ac461163c97c127b4efac8ead193218a1f5cd3eb186"
+    },
+    {
+      "name": "film-editing-qc",
+      "path": "skills/film-editing-qc",
+      "source": "/home/athar/.hermes/skills/creative/film-editing-qc",
+      "sourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+      "previousSourceSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
+      "rehashedAt": "2026-10-09T11:28:02-03:00",
+      "currentSha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
+      "currentBytes": 12159,
+      "currentMtime": "2026-10-09T16:12:21.451695+00:00",
+      "sourceSha256Recovered": {
+        "path": "/home/athar/.hermes/.curator_backups/blobs/68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+        "verifiedSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+        "bytes": 7372
+      },
+      "previousSourceSha256Recovered": {
+        "path": "/home/athar/.hermes/.curator_backups/blobs/582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
+        "verifiedSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
+        "bytes": 5623
+      },
+      "diffLinesAdded": 65,
+      "diffLinesRemoved": 4,
+      "diffFile": "film-editing-qc.diff",
+      "diffSha256": "b5cbb55ff394e444f404602bf54015e46eb0413a5f72f19a873551386915e126"
+    }
+  ],
+  "reviewedAt": "2026-10-12T03:20:11.135123+00:00",
+  "historicalContentRecovered": true,
+  "authorshipOfDeltasVerified": false,
+  "scope": "SKILL.md only; read-only comparison, no provider execution, no approval or registry rehash"
+}

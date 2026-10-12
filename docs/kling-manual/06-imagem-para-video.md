@@ -29,7 +29,7 @@ kling image_to_video --model kling-video-v3_0 \
   --prefer_multi_shots false --enable_audio false \
   --elements '[{"id":"323525046658711","bindName":"Andre"}]' \
   --rationale "Silent listening shot of Andre from approved keyframe, locked camera" \
-  --skill-name kling-cli --skill-version 0.2.0 --poll 180 \
+  --skill-name kling-cli --skill-version 0.2.1 --poll 180 \
   "<<<323525046658711>>> sits listening. He blinks once and breathes slowly. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face."
 ```
 

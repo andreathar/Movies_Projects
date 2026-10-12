@@ -24,7 +24,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TELEMETRY = ["--skill-name", "kling-cli", "--skill-version", "0.2.0"]
+TELEMETRY = ["--skill-name", "kling-cli", "--skill-version", "0.2.1"]
 TERMINAL = {"COMPLETED", "PARTIAL_COMPLETED", "SUCCEED", "FAILED", "CANCELLED"}
 
 

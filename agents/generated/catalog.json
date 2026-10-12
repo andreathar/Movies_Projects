@@ -11,11 +11,11 @@
     },
     {
       "path": "skills/registry.json",
-      "sha256": "8305056660d2b1f4bd4309ff0fbc12288fc64860b77b821ae3e307868234715b"
+      "sha256": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7"
     },
     {
       "path": "skills/kling-cli/SKILL.md",
-      "sha256": "52de319a85d07c34a49170d3de192736f68fc29c2d586a6b19d80381dd7c453d"
+      "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084"
     },
     {
       "path": "skills/film-character-continuity/SKILL.md",
@@ -82,11 +82,12 @@
     {
       "id": "kling-cli",
       "title": "kling-cli",
-      "description": "Skill for using the official Kling AI CLI: image/video generation, reusable Element subjects, and motion control. The CLI talks to Kling through an MCP service: call text_to_image / image_to_image / text_to_video / image_to_video / motion_control (models and parameter specs are declared dynamically by who_am_i), then poll query_tasks with the returned generationId and, once done, extract works[].url to show the user. Commands have no aliases. Trigger words: Kling, Kling AI, text-to-image, image-to-image, reference-image generation, text-to-video, image-to-video, Omni, omni, MCP, generationId, generation_id, polling, credits, inspiration credits, text_to_image, image_to_image, text_to_video, image_to_video, motion_control, motion_library_list, Element, element_create, element_list, element_get, element_update, element_delete, feedback, query_tasks, who_am_i, file_upload, image generation, video generation, kling command, .credentials, China region, mainland site, overseas site, global, international site, region, install.",
+      "description": "可灵 AI（Kling）官方 CLI 的使用技能：图片/视频生成、可复用 Element 主体、动作控制。CLI 通过 MCP 服务与可灵交互： 调用 text_to_image / image_to_image / text_to_video / image_to_video / omni_ref_video / motion_control（模型与参数规格由 who_am_i 动态声明）， 返回 generationId 后用 query_tasks 轮询，完成后提取 works[].url 展示给用户。命令无别名。 触发词：可灵、Kling、文生图、参考图生图、文生视频、图生视频、Omni、omni、MCP、generationId、generation_id、轮询、灵感值、 text_to_image、image_to_image、text_to_video、image_to_video、omni_ref_video、全能参考、关键帧、motion_control、motion_library_list、Element、element_create、element_list、element_get、element_update、element_delete、feedback、query_tasks、who_am_i、file_upload、 image generation、video generation、kling 命令、.credentials、 国内站、海外站、global、海外版、区域、region、安装、install。",
       "path": "skills/kling-cli/SKILL.md",
       "kind": "project",
       "sourceType": "project_vendored",
-      "sha256": "52de319a85d07c34a49170d3de192736f68fc29c2d586a6b19d80381dd7c453d",
+      "effectiveSource": ".agents/skills/kling-cli",
+      "sha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
       "registeredHashMatches": true,
       "available": true,
       "roles": [
@@ -100,6 +101,7 @@
       "path": "skills/film-character-continuity/SKILL.md",
       "kind": "linked",
       "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/film-character-continuity",
       "sha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
       "registeredHashMatches": false,
       "available": true,
@@ -118,6 +120,7 @@
       "path": "skills/film-dialogue-localization/SKILL.md",
       "kind": "linked",
       "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/film-dialogue-localization",
       "sha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
       "registeredHashMatches": false,
       "available": true,
@@ -134,6 +137,7 @@
       "path": "skills/film-editing-qc/SKILL.md",
       "kind": "linked",
       "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/film-editing-qc",
       "sha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
       "registeredHashMatches": false,
       "available": true,
@@ -152,6 +156,7 @@
       "path": "skills/grounded-citations/SKILL.md",
       "kind": "linked",
       "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/grounded-citations",
       "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6",
       "registeredHashMatches": true,
       "available": true,
@@ -166,6 +171,7 @@
       "path": "skills/andre-time-travel/SKILL.md",
       "kind": "project",
       "sourceType": "project_local",
+      "effectiveSource": "skills/andre-time-travel",
       "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
       "registeredHashMatches": true,
       "available": true,

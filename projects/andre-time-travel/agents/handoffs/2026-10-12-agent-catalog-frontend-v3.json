@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor",
+  "contributorKind": "contributor",
+  "assignment": "Corrigir referências antigas do README do frontend e revisar por leitura as três divergências de SKILL.md, preservando hashes registrados, fontes externas e trabalho concorrente. Reconciliação: take-forward do v2 com os hashes de skills/registry.json e agents/generated/catalog.json atualizados após o refresh da skill do Kling (2026-10-12-kling-otimizacao-v1).",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/TOKEN_EFFICIENCY.md",
+    "skills/andre-time-travel/SKILL.md",
+    "docs/AGENT_CATALOG.md"
+  ],
+  "ownedPaths": [
+    "sites/movies-demandas/README.md",
+    "reports/2026-10-12-readme-skill-provenance-review.md",
+    "reports/2026-10-12-skill-provenance-review.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v2.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v3.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "4b5ee2f505bcafaa3d25033cc146690edb6ffd19f8f9bf69384c114898f37b04"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "efc14de38a3d2703e204dc3e1cee836b6e1c2ad748fe16f690baaab22bc1718f",
+      "reason": "Correção documental autorizada ou evidência de revisão histórica somente leitura."
+    },
+    {
+      "path": "reports/2026-10-12-readme-skill-provenance-review.md",
+      "sha256After": "1f89d09be982319f129c2263932993d2a310ef7ea26e8c71303935de9ed73c8f",
+      "reason": "Correção documental autorizada ou evidência de revisão histórica somente leitura."
+    },
+    {
+      "path": "reports/2026-10-12-skill-provenance-review.json",
+      "sha256After": "cccef21fac79bd166c652af9969643ff143fa8bc801ef56d59adca751359525f",
+      "reason": "Correção documental autorizada ou evidência de revisão histórica somente leitura."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "AGENTS.md",
+      "sha256": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "START_HERE.md",
+      "sha256": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "agents/coordinator.md",
+      "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "agents/registry.json",
+      "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": ".agents/plugins/agent-parley/plugin.json",
+      "sha256": "1149a2ae3afe257f039d2b3ea127f29b9691ac048ad764c6bab50ac87b9ac468"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "e9801936734e16a8deb4387cd486df637e3056f64d3dcf7b249b86f19c3ff9f0"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "docs/PLAN-parley-integration-v1.md",
+      "sha256": "5d60f4fd3246f8a1b38a7e41b788e3a4a9d6cc6d08b71c939d6923a8c10ff366"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "reports/2026-10-12-documentation-reconciliation.md",
+      "sha256": "947440143da2da9023c417e7110f414bff33124b0e469d528d251a7c4b4b8ada"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/README.md",
+      "sha256": "5bf84fc03c5552bec2535a8ffd8829e9f2c6c408cfefcc9cf30c3c47a1787825"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
+    },
+    {
+      "statement": "Hash reconciliado: skills/registry.json mudou de 8305056660d2… para d1aa7cd879b8… devido ao refresh da skill do Kling (2026-10-12-kling-otimizacao-v1); demais arquivos preservados.",
+      "sha256": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7",
+      "evidence": "skills/registry.json"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "reports/2026-10-12-agent-catalog-frontend.md",
+      "sha256": "bfa572b9a44a0ac2e664b6a8c54b97c68272695c6d7a2e61a6032fbdc633bd76"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "CLAUDE.md",
+      "sha256": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/README.md",
+      "sha256": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "skills/README.md",
+      "sha256": "44dd4917ff22fb3722fb1b055a0c95d47edb64f70f5b043dc70a29e7d8a15052"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "workspace.json",
+      "sha256": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "docs/AGENT_CATALOG.md",
+      "sha256": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "scripts/agent_catalog.py",
+      "sha256": "51d55d163dffc5d24e7108e27e7703c41ae34576f3c6a6d30b8e2625b4d012a2"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "tests/test_agent_catalog.py",
+      "sha256": "a222696ab674ee9c5b9e2a347409e8202366b5763e287b419f3bf89c5f33816c"
+    },
+    {
+      "statement": "Hash reconciliado: agents/generated/catalog.json mudou de a3199c598fde… para 390c950a8d68… devido ao refresh da skill do Kling (2026-10-12-kling-otimizacao-v1); demais arquivos preservados.",
+      "sha256": "390c950a8d6842235f57c4588a345a5bcdedb6c712c05a092dd13ca5f92ee8df",
+      "evidence": "agents/generated/catalog.json"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/generated/claude/movies-continuity.md",
+      "sha256": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/generated/claude/movies-historian.md",
+      "sha256": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/generated/claude/movies-qc.md",
+      "sha256": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/generated/codex/movies-continuity.toml",
+      "sha256": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/generated/codex/movies-historian.toml",
+      "sha256": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "agents/generated/codex/movies-qc.toml",
+      "sha256": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11"
+    },
+    {
+      "statement": "Versão atual conferida; README corrigido neste complemento documental.",
+      "evidence": "sites/movies-demandas/README.md",
+      "sha256": "efc14de38a3d2703e204dc3e1cee836b6e1c2ad748fe16f690baaab22bc1718f"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256": "f341eb11222b1a3aa1a22ae3f914faab04268cfbe0a40da04760ea11aa257503"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256": "1cd4bc4319e1e9616955e6127b17e48e5a36f800b5d0f2b282dd6645e5e2e279"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256": "d3fe2b37699260c633357bbd3ed27c5eb5fda0c967be7d09db56c65b077887c3"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/lib/model.ts",
+      "sha256": "15116a80ad652a8f57364d794f46b4f78e8a7b108d677c24c1754c39d07088fe"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/package.json",
+      "sha256": "9cbe43b5fb823a488c461cd72aa38516bb4097bcb4260d32a11da3b72e9774ea"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/scripts/export-common.mjs",
+      "sha256": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256": "c7dfb83b75ecc6abe0ac548879d43767a42d2a723163fb373f21bafc1e775389"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256": "df6c0e5125405cd0fd84f0cc3bbde80018d5bbca18d56876671af77a1059767d"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/tests/model.test.ts",
+      "sha256": "4e237a2c781648c126123f8518913e934e81bc43a7164d4d522f01747e559111"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256": "f9dcaba3a6afc9b9ff90569a954f08edb34b0cddec9c6459bc74ff50df45a6a5"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/data/production.json",
+      "sha256": "9cd0b104a8a4d2757261102169fc6cf73cf29fe10ab49f89074db1fd6906cf37"
+    },
+    {
+      "statement": "Versão atual conferida; Preservada em relação ao handoff v1.",
+      "evidence": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256": "0c05dbc2c408815cc0b64a809c8a5ab64d98a57a866a1b880ef7d85cc9d004eb"
+    },
+    {
+      "statement": "Revisão documental e comparação histórica somente leitura, com limites e proveniência registrados.",
+      "evidence": "reports/2026-10-12-readme-skill-provenance-review.md",
+      "sha256": "1f89d09be982319f129c2263932993d2a310ef7ea26e8c71303935de9ed73c8f"
+    },
+    {
+      "statement": "Revisão documental e comparação histórica somente leitura, com limites e proveniência registrados.",
+      "evidence": "reports/2026-10-12-skill-provenance-review.json",
+      "sha256": "cccef21fac79bd166c652af9969643ff143fa8bc801ef56d59adca751359525f"
+    }
+  ],
+  "verification": [
+    "Seis blobs históricos recuperados por hash e conferidos: 3 sourceSha256 e 3 previousSourceSha256.",
+    "Três SKILL.md atuais comparados com versões registradas; fontes externas e registry preservados.",
+    "README conferido com os exportadores; quatro passagens corrigidas com proteção de hash.",
+    "Catálogo, dois exportadores --check, check-data, diff --check e reversibilidade do patch incremental passaram.",
+    "Demais arquivos da entrega v1 e 13 entradas protegidas reconferidos sem alterações."
+  ],
+  "supersedes": [
+    "2026-10-12-agent-catalog-frontend-v2.json"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar README e comparação histórica. Integrar o fechamento e decidir a adoção/proveniência futura das revisões de skills; os avisos foram preservados. Publicação e ativação continuam fora deste lote.",
+      "readiness": "Correção documental e comparação verificável entregues; sem ingestão ou aceite registrado."
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [],
+  "andreOnlyGates": [
+    "Novas mídias exigem os aceites aplicáveis; nenhum aceite ou gasto é concedido pelo catálogo."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

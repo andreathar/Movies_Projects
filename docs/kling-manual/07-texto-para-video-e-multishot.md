@@ -26,7 +26,7 @@ kling text_to_video --model kling-video-v3_0_omni \
   --duration 5 --resolution 720p --aspect_ratio 16:9 --imageCount 1 \
   --prefer_multi_shots false --enable_audio false \
   --rationale "Empty-room atmosphere plate, no people, for edit rhythm" \
-  --skill-name kling-cli --skill-version 0.2.0 --poll 180 \
+  --skill-name kling-cli --skill-version 0.2.1 --poll 180 \
   "A small domestic room at dusk, a pale oak table in the left third, empty chairs, window light slowly dimming. Locked camera, no camera movement, one continuous shot. Dust motes drift in the light. No people, no shadows of people, no reflections of people."
 ```
 (Comando-modelo: **não executado**.)

@@ -6,7 +6,7 @@
 
 | Item | Situação | Por que importa |
 |---|---|---|
-| **`omni_ref_video`** (referências mistas, edição de vídeo, vídeo-Element, voz de Element) | Existe no CLI 0.2.1 e no servidor 1.3.3 [LIVE]. **Não consta** do `skills/kling-cli/SKILL.md` 0.2.0 | A skill do projeto está atrás do CLI. Ver `08` |
+| **`omni_ref_video`** (referências mistas, edição de vídeo, vídeo-Element, voz de Element) | Existe no CLI 0.2.1 e no servidor 1.3.3 [LIVE]. Documentado no `skills/kling-cli/SKILL.md` **0.2.1** (skill atualizada em 2026-10-12) | Resolvido: skill alinhada ao CLI. Ver `08` |
 | Modelos novos: `kling-video-v3_0_turbo`, `kling-video-v3_0_omni`, `kling-image-v3_0_omni`, `gemini-3.1-flash-image`, `gpt-image2` | Na ficha de hoje [LIVE] | `03` |
 | **Lip Sync, Avatar 2.0, extensão de vídeo, upscale, Effects, biblioteca de vozes (Voice Control), Canvas Agent / storyboard** | App web e/ou API do Kling; **nenhuma das 18 ferramentas do CLI** [LIVE] | Dublagem, vídeos longos, acabamento. Só pelo app com o Andre, ou fora das regras (API com chave) |
 | Parâmetros de API não expostos no CLI: `negative_prompt`, `cfg_scale`, `camera_control`, máscaras de movimento (motion brush), `multi_prompt` (plano a plano em JSON), callbacks | Citados por guias de terceiros [TERCEIROS]; **não aparecem** em nenhuma ficha de modelo [LIVE] | O CLI não oferece negative prompt: tudo vai em frases positivas no prompt ("locked camera", "nobody else enters") |

@@ -2,7 +2,7 @@
 
 Ferramenta mais nova e mais flexível: texto + imagens + vídeo(s) + Elements (+ áudio) num único pedido [OFICIAL, descrição da ferramenta]. **Nunca usada no filme** [NÃO TESTADO].
 
-> Achado [LIVE]: `omni_ref_video` existe no CLI 0.2.1 (`kling omni_ref_video --help`) e no servidor 1.3.3, mas **não aparece** nos comandos documentados no `skills/kling-cli/SKILL.md` 0.2.0. A skill do projeto está atrás do CLI. Não é erro de uso: só falta documentação (é o que este guia cobre).
+> Achado [LIVE, 2026-10-09]: `omni_ref_video` existe no CLI 0.2.1 (`kling omni_ref_video --help`) e no servidor 1.3.3. À época **não aparecia** no `skills/kling-cli/SKILL.md` 0.2.0; a skill foi atualizada para **0.2.1** em 2026-10-12 e agora documenta a ferramenta. Este guia cobre o uso.
 
 ## Declaração viva [LIVE]
 
@@ -30,7 +30,7 @@ kling omni_ref_video --model kling-video-v3_0_omni \
   --duration 5 --resolution 720p --aspect_ratio auto --imageCount 1 \
   --prefer_multi_shots false --enable_audio false --keepOriginalSound false \
   --rationale "Edit test: keep camera and motion of the reference clip, restyle with the image" \
-  --skill-name kling-cli --skill-version 0.2.0 --poll 180 \
+  --skill-name kling-cli --skill-version 0.2.1 --poll 180 \
   "<prompt>"
 ```
 

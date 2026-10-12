@@ -7,8 +7,15 @@
       "path": "skills/kling-cli",
       "source": ".agents/skills/kling-cli",
       "type": "project_vendored",
-      "sourceSha256": "52de319a85d07c34a49170d3de192736f68fc29c2d586a6b19d80381dd7c453d",
+      "sourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
       "provenanceHistory": [
+        {
+          "source": "klingai-tech/skills",
+          "type": "github_update",
+          "sourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+          "previousSourceSha256": "52de319a85d07c34a49170d3de192736f68fc29c2d586a6b19d80381dd7c453d",
+          "rehashedAt": "2026-10-12T00:26:45-0300"
+        },
         {
           "source": "/home/athar/.hermes/skills/kling-cli",
           "type": "machine_local_symlink",

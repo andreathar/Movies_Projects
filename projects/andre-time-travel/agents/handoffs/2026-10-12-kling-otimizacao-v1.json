@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Preparar (sem gastar crédito) o pacote de otimização do uso do Kling e EXECUTAR o item sem custo (atualizar a skill 0.2.0→0.2.1 + telemetria + registro). Itens pagos (teste A/B, motion control) ficam apenas preparados, sem submissão.",
+  "parentTask": null,
+  "workPackages": [
+    {
+      "package": "kling-optimization-2026-10-12",
+      "deliverable": "Pacote em 07_generations/plans/2026-10-12-kling-otimizacao/ (preparado) + skill/telemetria/registro alinhados (executado)",
+      "paid": false
+    }
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/kling-manual/12-custos-e-ledger.md",
+    "docs/kling-manual/06-imagem-para-video.md",
+    "docs/kling-manual/09-motion-control.md",
+    "docs/AGENT_CATALOG.md"
+  ],
+  "ownedPaths": [
+    "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-kling-otimizacao-v1.json",
+    ".agents/skills/kling-cli/",
+    "skills/registry.json",
+    "skills-lock.json",
+    "agents/generated/catalog.json",
+    "scripts/kling_batch.py",
+    "scripts/archive_kling_images.py",
+    "docs/kling-manual/"
+  ],
+  "baseFiles": [
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256Before": null
+    },
+    {
+      "path": "docs/kling-manual/03-modelos-ao-vivo.md",
+      "sha256Before": null
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": null
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/00-README.md",
+      "sha256After": "5a46c7a9adeb6c2647aa2630aa05ab5480c49969d3eb031d999bcb81415651e5",
+      "reason": "Índice, custos e ordem de execução do pacote; item 1 marcado feito"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/01-upgrade-skill.md",
+      "sha256After": "42126de305c892e65cf1cc415ec4b7565b7d24a953bbc7b214e8cb6e50194bec",
+      "reason": "Procedimento do item 1 + registro do resultado da execução"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/02-regerar-ficha-modelos.md",
+      "sha256After": "27b84717e6ecbfbca1c32f4e1d80fe9c75c5eeed89330a26a8c6905a87516ecd",
+      "reason": "Conferir/regerar a ficha de modelos; confirmar defaults de resolução"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/03-politica-de-resolucao.md",
+      "sha256After": "82621c432b62b9bdd36b42f0db7acef5566e550956a207b1c861a0d43cde4978",
+      "reason": "Política 720p rascunho / 1080p take / 4K herói"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/04-guia-prompts-motion-control.md",
+      "sha256After": "1ae97d8e361622d4604efd69bc2ad867fe94f2fcdb320344b5bb4b1de29d8565",
+      "reason": "Guia de prompt e ferramenta para movimento de posição A→B"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/ab-teste-resolucao-modelo.json",
+      "sha256After": "c169bc2f785db1b05557a51d95cf03c6b6a6a32e9055e56d33f23e8a3cd4f512",
+      "reason": "Spec preparada do teste A/B (auth placeholder)"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/motion-control-specs.json",
+      "sha256After": "c5805005fc3faafb4f53aa55fc5acd95eba8cbd2bf013313414a3a4cb5441c89",
+      "reason": "Specs preparadas de motion control via motionId"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/2026-10-12-kling-otimizacao/tools/check-kling-drift.sh",
+      "sha256After": "14a150373660dfa1077f7cdf9ba7c2dfaed4f78762bd77df7904b2589dde7f69",
+      "reason": "Verificador read-only de drift CLI×npm×skill"
+    },
+    {
+      "path": ".agents/skills/kling-cli/SKILL.md",
+      "sha256After": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+      "reason": "Skill 0.2.0→0.2.1 (npx skills update); agora documenta omni_ref_video"
+    },
+    {
+      "path": ".agents/skills/kling-cli/reference.md",
+      "sha256After": "c34fe6e201b878e8dbbf259f73ce577805826286396b9ad0c66124a4bbc01837",
+      "reason": "Atualizado junto da skill 0.2.1"
+    },
+    {
+      "path": ".agents/skills/kling-cli/api-examples.md",
+      "sha256After": "b1f5d3ff2c62b35f161fe8e1462a8935e66e5ba770ab934eedaca509197b4809",
+      "reason": "Atualizado junto da skill 0.2.1"
+    },
+    {
+      "path": ".agents/skills/kling-cli/.gitignore",
+      "sha256After": "5ba172f65170fdb4846f8446dcef7cfbfa49c5cc8d4f5ed6bb42e67100858744",
+      "reason": "Atualizado junto da skill 0.2.1 (comentários)"
+    },
+    {
+      "path": "skills-lock.json",
+      "sha256After": "520e5485df8db5bd6ea935492a674f2b1ff518ad28f4db0caf98b4171a782637",
+      "reason": "computedHash da skill atualizado pelo CLI"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256After": "d1aa7cd879b80a6b6973c1102b29d7fc34875efd8647172fe10a5691584a2fe7",
+      "reason": "sourceSha256 da skill re-hasheado + proveniência github_update"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "390c950a8d6842235f57c4588a345a5bcdedb6c712c05a092dd13ca5f92ee8df",
+      "reason": "Derivado regenerado (agent_catalog.py) a partir do registro atualizado"
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256After": "aa99bad4b2564ae5872e10eca7cba1b458137272e376518cf392d44de51c7410",
+      "reason": "TELEMETRY skill-version 0.2.0→0.2.1 (L27)"
+    },
+    {
+      "path": "scripts/archive_kling_images.py",
+      "sha256After": "6e98f08dddad6d2629908afdbb2fe380d7e24e8a75844e6f263a1a2114efa109",
+      "reason": "TELEMETRY skill-version 0.2.0→0.2.1 (L31)"
+    },
+    {
+      "path": "docs/kling-manual/00-regras-do-projeto.md",
+      "sha256After": "1ad50a8d70b2292ea19f22d9cc2750886493db84150d8355a13dfe4a5754f813",
+      "reason": "Telemetria no texto 0.2.0→0.2.1"
+    },
+    {
+      "path": "docs/kling-manual/04-imagens-estaticas.md",
+      "sha256After": "91876fbc89f17a4a11bf8103a73547ba4d79c50517fe6df6d6581749ff7e3484",
+      "reason": "Exemplo de comando: telemetria 0.2.1"
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256After": "31b72e08c4e6f78e5d99515ec0a43ef79f39949b95fcb1c4bb667ea75f9de61a",
+      "reason": "Exemplo de comando: telemetria 0.2.1"
+    },
+    {
+      "path": "docs/kling-manual/07-texto-para-video-e-multishot.md",
+      "sha256After": "a5a241dc5a68f688642a0745526d067bf5912b689b0483ca50e8f6d3d89c94a5",
+      "reason": "Exemplo de comando: telemetria 0.2.1"
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256After": "e2ccf1ce5f3a571b8968c301242bc8ddf65668ae831f0570690595b432355092",
+      "reason": "Exemplo de comando 0.2.1 + nota do achado atualizada (skill agora 0.2.1)"
+    },
+    {
+      "path": "docs/kling-manual/09-motion-control.md",
+      "sha256After": "5fd1b0f9542254c8d47738e92dfb9d5b4d1fccd6304ba38070e504143dc13d07",
+      "reason": "Exemplo de comando: telemetria 0.2.1"
+    },
+    {
+      "path": "docs/kling-manual/15-ferramentas-nao-listadas.md",
+      "sha256After": "79fc39a9288b23c6b30e3d6ce0ee6e04b6725a84f08cd2edba02cfcb5c31bed6",
+      "reason": "Linha de omni_ref_video: lacuna resolvida (skill 0.2.1)"
+    },
+    {
+      "path": "docs/kling-manual/16-fontes.md",
+      "sha256After": "ec2c2299fdc42244719cf764c862be3492161550040d5333c424d2d3caa8fa3e",
+      "reason": "Fonte da skill (0.2.0→0.2.1)"
+    },
+    {
+      "path": "docs/kling-manual/README.md",
+      "sha256After": "3bd257a346c8235d3e93687bd25d357c78ec82d1656eb97996234eab94662293",
+      "reason": "Snapshot: skill kling-cli 0.2.1"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Item 1 EXECUTADO sem crédito: skill kling-cli atualizada de 0.2.0 para 0.2.1 (com omni_ref_video), telemetria --skill-version alinhada e skills/registry.json re-hasheado.",
+      "evidence": "npx skills update kling-cli -p -y; frontmatter SKILL.md version 0.2.1; check-kling-drift.sh (omni_ref_video: present); agent_catalog.py --check changed:[]",
+      "sha256": null
+    },
+    {
+      "statement": "A CLI instalada (0.2.1) é a última publicada nas duas regiões; nada a atualizar aí.",
+      "evidence": "kling --version; npm view @klingai/cli-global|cli-cn version",
+      "sha256": null
+    },
+    {
+      "statement": "Todos os vídeos do projeto foram gerados com resolution=720p (tier std), enquanto o default do servidor e da interface é 1080p (pro).",
+      "evidence": "07_generations/responses/*.intent.json; batches {PILOT,GALILEO}.json; who_am_i ao vivo",
+      "sha256": null
+    },
+    {
+      "statement": "Nenhum crédito foi gasto e nenhuma submissão de geração foi feita por este trabalho.",
+      "evidence": "nenhuma execução de kling_batch.py/kling de geração; apenas docs, skill e registro",
+      "sha256": null
+    },
+    {
+      "statement": "Divergência de hash concorrente reconciliada: criado 2026-10-12-agent-catalog-frontend-v3.json, que supersede o v2 e re-hasheia skills/registry.json e agents/generated/catalog.json (motivo: refresh da skill do Kling). v2 preservado como histórico.",
+      "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v3.json",
+      "sha256": "5b2d7cc569224d49841b25d6d712f0bfb7070c1f03d71984438ff93cb1be7d63"
+    }
+  ],
+  "verification": [
+    "tools/check-kling-drift.sh → skill 0.2.1, omni_ref_video present, telemetria 0.2.1",
+    "scripts/agent_catalog.py --check → changed: []",
+    "manage.py lint → status ok, sem contradições duras (após reconciliar v2 via v3)",
+    "manage.py handoff check <este arquivo> → ok",
+    "JSON de registry.json, specs e deste handoff validados (node JSON.parse)",
+    "92 testes unittest ok; manage.py validate ok"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Item 1 concluído em 2026-10-12 (sem crédito). Nada pendente aqui.",
+      "readiness": "done_2026-10-12"
+    },
+    {
+      "role": "producer",
+      "action": "Após autorização de Andre, rodar o teste A/B (AB-01+AB-02, 90 cr) e o teste mínimo de motion control (MC-01, 45 cr), um job por vez.",
+      "readiness": "blocked_on_andre_approval"
+    },
+    {
+      "role": "director",
+      "action": "Revisar os prompts do guia (item 04) e decidir o padrão de resolução de produção.",
+      "readiness": "ready_now_no_credit"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": "Item 1 (sem crédito) concluído; itens pagos (A/B, motion control) seguem preparados e bloqueados.",
+  "blockers": [
+    {
+      "description": "Geração paga não autorizada",
+      "owner": "Andre Athar",
+      "unblockCondition": "paidGenerationBatchApproved true e um APR com ceiling e saldo ao vivo"
+    },
+    {
+      "description": "Teste A→B por tail_image precisa de keyframes de corpo inteiro de Andre aprovados (A e B)",
+      "owner": "producer",
+      "unblockCondition": "keyframes create aprovados, com sha256 e gate de olhar"
+    }
+  ],
+  "andreOnlyGates": [
+    "Autorização de gasto (paidGenerationBatchApproved)",
+    "Aceite de take final / playback em velocidade real",
+    "Aprovação de likeness e voz"
+  ],
+  "proposedDecisions": [
+    {
+      "decision": "Adotar política de resolução: 720p para rascunho/teste, 1080p para take de produção, 4K só em plano herói.",
+      "rationale": "O projeto produziu tudo em 720p (std) e comparou com o 1080p (pro) da interface."
+    },
+    {
+      "decision": "Para imagem única sem necessidade de Element/áudio, preferir kling-video-v3_0_turbo.",
+      "rationale": "v3_0 é o modelo de multi-shot; a descrição do servidor indica turbo para single-image."
+    },
+    {
+      "decision": "Para movimento de posição A→B, preferir image_to_video com first_image+tail_image; motion_control quando a performance gravada importa.",
+      "rationale": "tail_image ancora início e fim; motion_control transfere o modo do movimento."
+    }
+  ],
+  "mistakes": [
+    {
+      "mistake": "Toda a vídeo-produção foi feita em 720p (std), comparada à interface 1080p (pro)",
+      "detected_by": "investigação de otimização 2026-10-12 (intent.json × who_am_i)",
+      "solution": "política de resolução 720p/1080p/4K + teste A/B antes de mudar a produção",
+      "rule_added": "03-politica-de-resolucao.md (proposta; sujeita a aprovação)"
+    },
+    {
+      "mistake": "Skill do projeto ficou atrás do CLI (faltava omni_ref_video e a telemetria marcava 0.2.0)",
+      "detected_by": "investigação de otimização 2026-10-12; tools/check-kling-drift.sh",
+      "solution": "npx skills update kling-cli -p -y + rehash do registro + regenerar derivados",
+      "rule_added": "01-upgrade-skill.md (executado)"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

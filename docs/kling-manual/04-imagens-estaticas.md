@@ -15,7 +15,7 @@ kling image_to_image --model kling-image-o1 \
   --img_resolution 2k --aspect_ratio 16:9 --imageCount 1 \
   --elements '[{"id":"323525046658711","bindName":"Andre"}]' \
   --rationale "Andre keyframe at the oak table, Arcetri plate, identity from approved cover photo" \
-  --skill-name kling-cli --skill-version 0.2.0 --poll 120 \
+  --skill-name kling-cli --skill-version 0.2.1 --poll 120 \
   "<<<323525046658711>>> with EXACTLY the face of 图片1 ..."
 ```
 

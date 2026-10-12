@@ -26,7 +26,7 @@ kling motion_control --model kling-video-v3_0 \
   --motionDirection image_direction --resolution 720p --keepOriginalSound false \
   --elements '[{"id":"323525046658711","bindName":"Andre"}]' \
   --rationale "Transfer a short hand-press motion onto the approved keyframe" \
-  --skill-name kling-cli --skill-version 0.2.0 --poll 300 \
+  --skill-name kling-cli --skill-version 0.2.1 --poll 300 \
   "<<<323525046658711>>> keep appearance, locked camera"
 ```
 

@@ -1,0 +1,75 @@
+[
+  {
+    "job": "AB-01-turbo-1080p",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0_turbo",
+    "auth": "REPLACE-WITH-AUTHORIZED-APR-ID",
+    "note": "A/B resolution/model on galileo-listening keyframe; turbo 1080p silent (compare vs AB-02 and the existing PILOT-01 720p)",
+    "args": {
+      "duration": "5",
+      "resolution": "1080p",
+      "imageCount": "1"
+    },
+    "images": [
+      "02_references/keyframes/andre/KF-galileo-listening.jpg"
+    ],
+    "prompt": "<<<323525046658711>>> sits still and listens to the unseen person across the table. He blinks once naturally, his chest rises with a slow breath, his eyes stay on the person to camera-right. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face."
+  },
+  {
+    "job": "AB-02-v3_0-1080p",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "auth": "REPLACE-WITH-AUTHORIZED-APR-ID",
+    "note": "A/B resolution/model on galileo-listening keyframe; v3_0 1080p silent, Element bound, multi-shot off (same prompt as PILOT-01, only resolution changes)",
+    "args": {
+      "duration": "5",
+      "resolution": "1080p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "false",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/keyframes/andre/KF-galileo-listening.jpg"
+    ],
+    "prompt": "<<<323525046658711>>> sits still and listens to the unseen person across the table. He blinks once naturally, his chest rises with a slow breath, his eyes stay on the person to camera-right. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face."
+  },
+  {
+    "job": "AB-03-v3_0-4k-hero",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "auth": "REPLACE-WITH-AUTHORIZED-APR-ID",
+    "note": "OPTIONAL hero-shot test; v3_0 4K silent. 150 cr. Ultra allows 4K. Only run if a hero frame justifies it.",
+    "args": {
+      "duration": "5",
+      "resolution": "4k",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "false",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/keyframes/andre/KF-galileo-listening.jpg"
+    ],
+    "prompt": "<<<323525046658711>>> sits still and listens to the unseen person across the table. He blinks once naturally, his chest rises with a slow breath, his eyes stay on the person to camera-right. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face."
+  },
+  {
+    "job": "AB-04-v3_0-1080p-speech",
+    "tool": "image_to_video",
+    "model": "kling-video-v3_0",
+    "auth": "REPLACE-WITH-AUTHORIZED-APR-ID",
+    "note": "OPTIONAL: does 1080p improve native-audio speech? Same GL04 line as PILOT-04, but 1080p. 96 cr.",
+    "args": {
+      "duration": "8",
+      "resolution": "1080p",
+      "imageCount": "1",
+      "prefer_multi_shots": "false",
+      "enable_audio": "true",
+      "elements": "[{\"id\": \"323525046658711\", \"bindName\": \"Andre\"}]"
+    },
+    "images": [
+      "02_references/keyframes/andre/KF-galileo-speaking.jpg"
+    ],
+    "prompt": "<<<323525046658711>>> speaks calmly in English to the unseen person across the table, in a plain, warm, unhurried voice. Andre says: \"Your observations. And one lesson from your trial that people keep relearning: silencing a man does not settle a question.\" He pauses briefly after \"observations\", keeps his eyes on the person to camera-right, and falls silent after the last word. Quiet room tone only, no music. Locked camera, no camera movement, one continuous shot, no cuts. Preserve his face, hair, stubble, jacket, the table and the lighting exactly as in the image. Nobody else enters the frame; no hands near his face."
+  }
+]

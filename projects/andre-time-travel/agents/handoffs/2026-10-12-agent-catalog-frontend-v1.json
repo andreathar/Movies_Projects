@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "editor",
+  "contributorKind": "contributor",
+  "assignment": "Corrigir duplicidade e referências, derivar adaptadores de revisão e alinhar o frontend ao recomeço visual autorizado, preservando acervo e concorrência.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/TOKEN_EFFICIENCY.md",
+    "skills/andre-time-travel/SKILL.md",
+    "docs/AGENT_CATALOG.md"
+  ],
+  "ownedPaths": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "agents/README.md",
+    "skills/README.md",
+    "skills/registry.json",
+    "workspace.json",
+    "docs/AGENT_CATALOG.md",
+    "scripts/agent_catalog.py",
+    "tests/test_agent_catalog.py",
+    "agents/generated/catalog.json",
+    "agents/generated/claude/movies-continuity.md",
+    "agents/generated/claude/movies-historian.md",
+    "agents/generated/claude/movies-qc.md",
+    "agents/generated/codex/movies-continuity.toml",
+    "agents/generated/codex/movies-historian.toml",
+    "agents/generated/codex/movies-qc.toml",
+    "reports/2026-10-12-agent-catalog-frontend.md",
+    "sites/movies-demandas/README.md",
+    "sites/movies-demandas/app/dashboard.tsx",
+    "sites/movies-demandas/app/workspace-reference.tsx",
+    "sites/movies-demandas/app/restart-summary.tsx",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/package.json",
+    "sites/movies-demandas/scripts/export-common.mjs",
+    "sites/movies-demandas/scripts/check-data.mjs",
+    "sites/movies-demandas/scripts/export-workspace.mjs",
+    "sites/movies-demandas/scripts/export-production.mjs",
+    "sites/movies-demandas/tests/model.test.ts",
+    "sites/movies-demandas/tests/export.test.mjs",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-12-agent-catalog-frontend-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "4bfa5e5ae1cb413fe1882dc3f38b237e44eb0a5866bccf3426fe2e250553f4bc"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256Before": "5cc7f9967812f8843ca5ffae774067df6a32f6fcfd0f74a04303ef2f199049fe"
+    },
+    {
+      "path": "agents/README.md",
+      "sha256Before": "49852e7bcf17c164a676e764e78be3023ad3ec1a67250181b29fd7c820276b6b"
+    },
+    {
+      "path": "skills/README.md",
+      "sha256Before": "83cbc4b36d9f53b97cf1dd1a11ee3537fc09f167fde1c8c5baccf072fdaa5b54"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "f82911ffa2226e9b73eeabe5541a48b8d5feae32836b66f9e5ac45e2c02f570e"
+    },
+    {
+      "path": "workspace.json",
+      "sha256Before": "a86816b2b55fa6dd25fa6e2582c49956da0efec8cfb8267d2369e882518e5178"
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "52f7198be345abf9553f6868c45b823039418eab0786ebfdf7b88f88e45fc5c4"
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256Before": "45540dc75a07c1821257349d2470ba4beec4da45adc924e6da44069c9772c5de"
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256Before": "9587cac0a6d17d0dac897a916ba728099c45b8aa4f0dc1dfd13dcd4967426277"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "3049384005baaa53e79cdce1f0b902e6dbe5011baecb9159c63c68481ab80124"
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256Before": "eb7b53ec5bdce1db5a8576b2ffc3b63ddd8c5fdee0f97dcb341674abbf69843a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "04f85bbac4448934401d41ac38028f52b723424f3c525b768092f0c089dedffc"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256Before": "9b5fccc55179320460f49a8147aea7bab6b3567ade8a187814570d52a7089e2d"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "bee3e764111d5406d4e58dbc8ab496837deb5724b7085d4400bdcb7ab8f686ba"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "4ed987d2db92d6c020f32955c19500be9232c3a52be4070ceb9f918a020f91fa"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "b3d56ba8f5080a74233ac0bd477b55e05c8e23f37b1c45ccd02572b839a3cda3"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256After": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256After": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/README.md",
+      "sha256After": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "skills/README.md",
+      "sha256After": "44dd4917ff22fb3722fb1b055a0c95d47edb64f70f5b043dc70a29e7d8a15052",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256After": "8305056660d2b1f4bd4309ff0fbc12288fc64860b77b821ae3e307868234715b",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "workspace.json",
+      "sha256After": "4b3415427bd4af3dc1e823c964a98ba3c66dc5ee584abb56fa9c87a0e44a62a8",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "docs/AGENT_CATALOG.md",
+      "sha256After": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "scripts/agent_catalog.py",
+      "sha256After": "51d55d163dffc5d24e7108e27e7703c41ae34576f3c6a6d30b8e2625b4d012a2",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "tests/test_agent_catalog.py",
+      "sha256After": "a222696ab674ee9c5b9e2a347409e8202366b5763e287b419f3bf89c5f33816c",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "a3199c598fde0059544aa81563d2aa82cee32b3dca7312651afdb2f87b61ff02",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/claude/movies-continuity.md",
+      "sha256After": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/claude/movies-historian.md",
+      "sha256After": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/claude/movies-qc.md",
+      "sha256After": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/codex/movies-continuity.toml",
+      "sha256After": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/codex/movies-historian.toml",
+      "sha256After": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "agents/generated/codex/movies-qc.toml",
+      "sha256After": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "reports/2026-10-12-agent-catalog-frontend.md",
+      "sha256After": "bfa572b9a44a0ac2e664b6a8c54b97c68272695c6d7a2e61a6032fbdc633bd76",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "4b5ee2f505bcafaa3d25033cc146690edb6ffd19f8f9bf69384c114898f37b04",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256After": "f341eb11222b1a3aa1a22ae3f914faab04268cfbe0a40da04760ea11aa257503",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256After": "1cd4bc4319e1e9616955e6127b17e48e5a36f800b5d0f2b282dd6645e5e2e279",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256After": "d3fe2b37699260c633357bbd3ed27c5eb5fda0c967be7d09db56c65b077887c3",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "15116a80ad652a8f57364d794f46b4f78e8a7b108d677c24c1754c39d07088fe",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256After": "9cbe43b5fb823a488c461cd72aa38516bb4097bcb4260d32a11da3b72e9774ea",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-common.mjs",
+      "sha256After": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256After": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256After": "c7dfb83b75ecc6abe0ac548879d43767a42d2a723163fb373f21bafc1e775389",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256After": "df6c0e5125405cd0fd84f0cc3bbde80018d5bbca18d56876671af77a1059767d",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "4e237a2c781648c126123f8518913e934e81bc43a7164d4d522f01747e559111",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256After": "f9dcaba3a6afc9b9ff90569a954f08edb34b0cddec9c6459bc74ff50df45a6a5",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "9cd0b104a8a4d2757261102169fc6cf73cf29fe10ab49f89074db1fd6906cf37",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "0c05dbc2c408815cc0b64a809c8a5ab64d98a57a866a1b880ef7d85cc9d004eb",
+      "reason": "Derivação das fontes, referência efetiva, frontend ou verificação deste lote."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Versão atual conferida. Delta de fonte/contrato descrito no relatório deste lote.",
+      "evidence": "AGENTS.md",
+      "sha256": "9c84e9ac1ebff5c769131150891c91634b481c4513b301bd38e24db2be2f8cf6"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "START_HERE.md",
+      "sha256": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "agents/coordinator.md",
+      "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "agents/registry.json",
+      "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": ".agents/plugins/agent-parley/plugin.json",
+      "sha256": "1149a2ae3afe257f039d2b3ea127f29b9691ac048ad764c6bab50ac87b9ac468"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "docs/PARLEY_PROTOCOL.md",
+      "sha256": "e9801936734e16a8deb4387cd486df637e3056f64d3dcf7b249b86f19c3ff9f0"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "docs/PLAN-parley-integration-v1.md",
+      "sha256": "5d60f4fd3246f8a1b38a7e41b788e3a4a9d6cc6d08b71c939d6923a8c10ff366"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "reports/2026-10-12-documentation-reconciliation.md",
+      "sha256": "947440143da2da9023c417e7110f414bff33124b0e469d528d251a7c4b4b8ada"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/README.md",
+      "sha256": "5bf84fc03c5552bec2535a8ffd8829e9f2c6c408cfefcc9cf30c3c47a1787825"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256": "8fd1a3304f06fad1ed666c1b472154513b77031b3ef7e5b1df1c45eeeefb2c6b"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+    },
+    {
+      "statement": "Versão atual conferida. Preservado byte a byte em relação à entrega documental anterior.",
+      "evidence": "reports/2026-10-11-structure-naming-agents-review.md",
+      "sha256": "6dcc1f3d4e7e6b9ce66f3bb85dae145dc4fd574c286cae5ae7f2b1740e7ab780"
+    },
+    {
+      "statement": "Versão atual conferida. Delta de fonte/contrato descrito no relatório deste lote.",
+      "evidence": "skills/registry.json",
+      "sha256": "8305056660d2b1f4bd4309ff0fbc12288fc64860b77b821ae3e307868234715b"
+    },
+    {
+      "statement": "Implementação local, testes, QA e limites documentados; ativação e publicação pendentes.",
+      "evidence": "reports/2026-10-12-agent-catalog-frontend.md",
+      "sha256": "bfa572b9a44a0ac2e664b6a8c54b97c68272695c6d7a2e61a6032fbdc633bd76"
+    }
+  ],
+  "verification": [
+    "92 testes Python passaram; 8 testes do catálogo afetados passaram novamente após último ajuste.",
+    "19 testes frontend passaram; TypeScript, ESLint e build Vinext passaram.",
+    "manage.py validate ok com 3 avisos preexistentes de skills compartilhadas.",
+    "Catálogo e ambos exportadores --check passaram; snapshots incluídos íntegros.",
+    "QA Chrome local com D1 sintético: cinco encontros, escopo visual, pesquisa Kling, origem e fontes com versões; servidor encerrado.",
+    "Hashes de 13 entradas protegidas comparados com baseline; todos iguais."
+  ],
+  "supersedes": [
+    "2026-10-12-documentation-reconciliation-v1.json"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar o lote em ambos repositórios e atualizar a retomada. Decidir publicação separadamente; conferir registro/carregamento dos adaptadores antes de qualquer ativação. Revisar a proposta visual e atribuir cobertura limitada.",
+      "readiness": "Implementação e QA locais entregues; ingestão, publicação e ativação ainda pendentes."
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [],
+  "andreOnlyGates": [
+    "Novas mídias exigem os aceites aplicáveis; nenhum aceite ou gasto é concedido pelo catálogo."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

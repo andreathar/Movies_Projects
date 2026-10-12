@@ -78,9 +78,9 @@ def render(root):
             raise ValueError(f'Placeholder is not a skill: {s["name"]}')
         actual = digest(raw)
         sources.append({'path': s['path']+'/SKILL.md', 'sha256': actual})
-        skills.append({'id': s['name'], 'title': s['name'], 'description': skill_description(raw.decode()),
+        skills.append({'id': s['name'], 'title': s['name'], 'description': re.split(r'(?<=\.)\s+', skill_description(raw.decode()), maxsplit=1)[0],
             'path': s['path']+'/SKILL.md', 'kind': 'linked' if s['type']=='machine_local_symlink' else 'project',
-            'sourceType': s['type'], 'sha256': actual, 'registeredHashMatches': actual == s.get('sourceSha256', actual),
+            'sourceType': s['type'], 'effectiveSource': s['source'] if s['type']=='project_vendored' else s['path'], 'sha256': actual, 'registeredHashMatches': actual == s.get('sourceSha256', actual),
             'available': True, 'roles': [r['id'] for r in agents['roles'] if s['name'] in r['skills']]})
     roles, outputs = [], {}
     for r in agents['roles']:

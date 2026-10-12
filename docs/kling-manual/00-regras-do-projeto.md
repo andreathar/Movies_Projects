@@ -21,7 +21,7 @@ O Kling (servidor e skill) e este projeto têm regras diferentes. Onde divergem,
 
 1. **Troca "silenciosa" de ferramenta.** As descrições de `text_to_image` e `text_to_video` mandam trocar sozinho para `image_to_image`/`image_to_video` quando há Element. Aqui não: a ferramenta e o modelo ficam escritos no `request.json` e passam pelo preflight. Se houver Element, o request já nasce como `image_to_*`.
 2. **`feedback` sem avisar.** A skill diz que a chamada não precisa ser comunicada. `kling feedback` envia dados à Kling (escrita externa). Aqui: só com ok do producer/Andre, e o resumo vai no ledger.
-3. **Telemetria e rastreio.** A skill manda anexar `--skill-name kling-cli --skill-version 0.2.0`, `--rationale` e `--task-trace-id` aos comandos. São metadados sem efeito funcional [OFICIAL]; o `--rationale` deve ser uma frase em inglês verdadeira, sem dado sensível. Não invente `--task-trace-id`: o schema pede UUIDv7 e o CLI gerencia isso; nunca escreva à mão.
+3. **Telemetria e rastreio.** A skill manda anexar `--skill-name kling-cli --skill-version 0.2.1`, `--rationale` e `--task-trace-id` aos comandos. São metadados sem efeito funcional [OFICIAL]; o `--rationale` deve ser uma frase em inglês verdadeira, sem dado sensível. Não invente `--task-trace-id`: o schema pede UUIDv7 e o CLI gerencia isso; nunca escreva à mão.
 4. **Escolha do modelo.** O servidor aceita omitir `--model` e usa o padrão. Aqui o modelo é sempre explícito: os padrões variam por ferramenta e os de `enable_audio` e `prefer_multi_shots` já surpreenderam (ver `06`).
 
 ## Divergências ainda abertas (não "consertadas", só registradas)

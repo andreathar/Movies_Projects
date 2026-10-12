@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FILM = ROOT / "projects/andre-time-travel"
 GENERATIONS = FILM / "07_generations"
 EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
-TELEMETRY = ["--skill-name", "kling-cli", "--skill-version", "0.2.0"]
+TELEMETRY = ["--skill-name", "kling-cli", "--skill-version", "0.2.1"]
 
 
 def relative(path):

@@ -13,7 +13,7 @@ Data do levantamento: 2026-10-09. Selos como no README. "Li" = abri e usei o con
 
 ## Fontes do projeto (li)
 
-`AGENTS.md`; `skills/kling-cli/{SKILL.md, reference.md, api-examples.md}` (0.2.0); `skills/andre-time-travel/SKILL.md`; `projects/andre-time-travel/docs/prompt-playbook-kling.md`; `projects/andre-time-travel/credit-ledger.csv` (87 linhas); request da Fase A e template do keyframe; `docs/LOCAL_AGENT_HANDOFF.md`.
+`AGENTS.md`; `skills/kling-cli/{SKILL.md, reference.md, api-examples.md}` (0.2.1); `skills/andre-time-travel/SKILL.md`; `projects/andre-time-travel/docs/prompt-playbook-kling.md`; `projects/andre-time-travel/credit-ledger.csv` (87 linhas); request da Fase A e template do keyframe; `docs/LOCAL_AGENT_HANDOFF.md`.
 
 ## Fontes da Kling (confiança alta quando lidas direto; aqui, lidas por via indireta)
 
