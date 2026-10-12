@@ -107,6 +107,77 @@ class ReleaseTests(unittest.TestCase):
                 k.submit(self.film,self.job['job'],self.job['tool'],self.job['model'],self.job['prompt'],self.job['args'],self.job['images'],self.job['auth'],'',submit_only=True)
             run.assert_not_called()
 
+    def run_actual_gates(self):
+        j=self.job
+        return k.submit(self.film,j['job'],j['tool'],j['model'],j['prompt'],
+                        j['args'],j['images'],j['auth'],'',submit_only=True,
+                        inputs=j.get('inputs'),input_facts=j.get('inputFacts'))
+
+    def bind_current_payload(self):
+        fp=r.fingerprint(self.film,self.job)
+        self.entry['scope']['payloadSha256']=fp
+        self.entry['scope']['quote']['payloadSha256']=fp
+        self.save()
+
+    def assert_blocked_before_discovery(self,pattern):
+        with patch.object(k,'preflight') as discovery,patch.object(k,'account') as account,patch.object(k,'run') as run:
+            with self.assertRaisesRegex(SystemExit,pattern):self.run_actual_gates()
+            discovery.assert_not_called();account.assert_not_called();run.assert_not_called()
+
+    def test_absent_reference_blocks_runner_before_discovery(self):
+        self.job['images']=['missing-reference.png']
+        self.assert_blocked_before_discovery('referência local ausente')
+
+    def test_changed_local_reference_blocks_runner_before_discovery(self):
+        ref=self.film/'synthetic-reference.png';ref.write_bytes(b'synthetic version one')
+        self.job['images']=[ref.name];self.entry['scope']['allowReferenceUploads']=True
+        self.bind_current_payload();ref.write_bytes(b'synthetic version two')
+        self.assert_blocked_before_discovery('difere')
+
+    def test_pending_release_blocks_runner_before_discovery(self):
+        self.entry['status']='pending';self.save()
+        self.assert_blocked_before_discovery('não libera')
+
+    def test_expired_quote_blocks_runner_before_discovery(self):
+        self.entry['scope']['quote']['expiresAt']='2020-01-01T00:00:00Z';self.save()
+        self.assert_blocked_before_discovery('cotação vencida')
+
+    def test_renamed_intent_only_blocks_runner_before_discovery(self):
+        folder=self.film/'07_generations/responses';folder.mkdir(parents=True)
+        (folder/'previous.intent.json').write_text(json.dumps({**self.job,'job':'previous','payloadSha256':r.fingerprint(self.film,self.job)}))
+        self.assert_blocked_before_discovery('renomear')
+
+    def test_incompatible_model_blocks_after_only_readonly_discovery(self):
+        self.job['model']='kling-video-v3_0_turbo';self.bind_current_payload()
+        models=json.loads((ROOT/'docs/kling-manual/snapshots/who_am_i.sanitized.json').read_text())['body']['availableModels']
+        with patch.object(k,'run',return_value={'ok':True,'body':{'availableModels':models}}) as run,patch.object(k,'account') as account:
+            with self.assertRaisesRegex(SystemExit,'ARG_UNKNOWN'):self.run_actual_gates()
+            self.assertEqual([call.args[0][1] for call in run.call_args_list],['who_am_i'])
+            account.assert_not_called()
+            self.assertFalse(list((self.film/'07_generations/responses').glob('*.intent.json')))
+
+    def test_uncertain_transport_is_durable_with_actual_release_gate(self):
+        models=json.loads((ROOT/'docs/kling-manual/snapshots/who_am_i.sanitized.json').read_text())['body']['availableModels']
+        import hashlib
+        self.entry['scope']['schemaSha256']=hashlib.sha256(json.dumps(models,sort_keys=True).encode()).hexdigest();self.save()
+        def simulated_transport(cmd):
+            if cmd[1]=='who_am_i':return {'ok':True,'body':{'availableModels':models}}
+            if cmd[1]=='image_to_video':raise TimeoutError('synthetic timeout, no real network')
+            raise AssertionError('unexpected transport: '+cmd[1])
+        with patch.object(k,'run',side_effect=simulated_transport) as run,patch.object(k,'account',side_effect=[100,80]):
+            result=self.run_actual_gates()
+            self.assertEqual(result['status'],'SUBMISSION_UNKNOWN')
+            self.assertEqual([call.args[0][1] for call in run.call_args_list],['who_am_i','image_to_video'])
+        folder=self.film/'07_generations/responses'
+        self.assertTrue((folder/(self.job['job']+'.intent.json')).is_file())
+        self.assertTrue(json.loads((folder/(self.job['job']+'.submit.json')).read_text())['submissionUncertain'])
+        with patch.object(k,'run') as run,patch.object(k,'account') as account:
+            with self.assertRaisesRegex(SystemExit,'never resubmit'):self.run_actual_gates()
+            self.assertEqual(k.resume(self.film,self.job['job'])['status'],'SUBMISSION_UNKNOWN')
+            self.job['job']='RENAMED-UNCERTAIN'
+            with self.assertRaisesRegex(SystemExit,'renomear'):self.run_actual_gates()
+            run.assert_not_called();account.assert_not_called()
+
     def test_readonly_registry_keeps_unknown_charge_and_no_acceptance(self):
         folder=self.film/'07_generations/responses';folder.mkdir(parents=True)
         (folder/'S.intent.json').write_text(json.dumps(self.job))

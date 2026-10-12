@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "scope": "Local implementation of approved master plan; zero paid provider calls or uploads",
+  "rootHead": "0a6a7d33558f9f5110100c89dbaed0fb46897ba0",
+  "siteHead": "dfb945f3aaaf5aaac20ed323cda66dd26d047bb9",
+  "testCounts": {
+    "python": 146,
+    "frontend": 24
+  },
+  "tests": [
+    {
+      "label": "python-final",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/mnt/data/Projects_SSD/Movies_Projects/tests",
+        "-v"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exitCode": 0,
+      "seconds": 12.2
+    },
+    {
+      "label": "frontend-final-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/site-qa",
+      "exitCode": 0,
+      "seconds": 0.62
+    },
+    {
+      "label": "frontend-final-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/site-qa",
+      "exitCode": 0,
+      "seconds": 8.78
+    }
+  ],
+  "logs": [
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/python-final.log",
+      "sha256": "ca973838d5ad5df023119b7eba4ebea8d4fa16588a130194d39d8dc3246ac31d"
+    },
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/frontend-final-tests.log",
+      "sha256": "f66890ff66ae032387bfbd41ddc4d371fba1af604bd592e7f020394324a9e130"
+    },
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/frontend-final-build.log",
+      "sha256": "69f90c8a239848276227e2861e56c1067554ef1413c58a6b62dd996219dbc864"
+    },
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/frontend-lint.log",
+      "sha256": "9d4ed79a683eccf54173b6034d4187b97e629a26e9f9dbedc55bc19d45839445"
+    },
+    {
+      "path": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/frontend-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "snapshotChecks": [
+    {
+      "script": "export-production",
+      "check": false,
+      "exitCode": 0,
+      "output": "{\"contentVersion\":\"6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479\",\"check\":false,\"changed\":true}"
+    },
+    {
+      "script": "export-production",
+      "check": true,
+      "exitCode": 0,
+      "output": "{\"contentVersion\":\"6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479\",\"check\":true,\"changed\":false}"
+    },
+    {
+      "script": "export-workspace",
+      "check": false,
+      "exitCode": 0,
+      "output": "{\"contentVersion\":\"39ce855e272a9e9ba41fc16f81ea3b2008999bcfeb131e0d664d5a13f71b4d6c\",\"check\":false,\"changed\":true}"
+    },
+    {
+      "script": "export-workspace",
+      "check": true,
+      "exitCode": 0,
+      "output": "{\"contentVersion\":\"39ce855e272a9e9ba41fc16f81ea3b2008999bcfeb131e0d664d5a13f71b4d6c\",\"check\":true,\"changed\":false}"
+    }
+  ],
+  "browserQA": {
+    "schemaVersion": 1,
+    "scope": "Browser QA only on isolated localhost copy; no remote application mutation",
+    "url": "http://127.0.0.1:5173/",
+    "nativeDevelopmentIdentity": true,
+    "newIsolatedDatabase": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation/site-qa/.wrangler/state",
+    "existingDatabasesAccessed": false,
+    "screenshotsAvailable": false,
+    "screenshotError": "Browser backend could not capture screenshot",
+    "visualLayoutQAComplete": false,
+    "responsiveViewportTested": false,
+    "checks": [
+      {
+        "action": "Open application and initialize isolated local workspace",
+        "observed": "21 official tasks, 9 existing seed proposals; no console errors"
+      },
+      {
+        "action": "Navigate Pilot, Plans, References, Stages, Routes and templates",
+        "observed": "6 shot cards, 13 references, P0–P8 mapped to existing board; director approvals pending and no incorporation"
+      },
+      {
+        "action": "Search turbo in routes",
+        "observed": "Exactly image_to_video and text_to_video; Elements and audio control not declared"
+      },
+      {
+        "action": "Review refreshed bundled package",
+        "observed": "Dialog lists master plan, source version and hash changes before confirmation"
+      },
+      {
+        "action": "Confirm import in isolated QA database",
+        "observed": "Content version changed from b45cf3044ba74bded94547935347b0d524c1987236e819bff9b9704d28ca724b to 6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479; update banner cleared; 21 tasks and 9 demands preserved"
+      },
+      {
+        "action": "Inspect console",
+        "observed": "No captured error logs"
+      },
+      {
+        "action": "Cleanup",
+        "observed": "Original user tab URL restored; owned dev server exited with code130 after Ctrl-C"
+      }
+    ],
+    "privateMediaUploaded": false,
+    "paidProviderCalls": 0,
+    "publishedSiteChanged": false,
+    "limits": [
+      "No screenshot or mobile layout assertion",
+      "No full animatic listening or lip-sync acceptance",
+      "User data on existing local/hosted instances was not inspected or changed"
+    ]
+  },
+  "planCheck": {
+    "status": "ok",
+    "errors": [],
+    "pending": [
+      {
+        "shotId": "G-MASTER",
+        "description": "Aparência e composição compartilhada ainda candidatas.",
+        "owner": "Andre / director",
+        "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+      },
+      {
+        "shotId": "G-LISTEN-KF",
+        "description": "Aparência e composição compartilhada ainda candidatas.",
+        "owner": "Andre / director",
+        "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+      },
+      {
+        "shotId": "G-P03",
+        "description": "Aparência e composição compartilhada ainda candidatas.",
+        "owner": "Andre / director",
+        "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+      },
+      {
+        "shotId": "G-P03",
+        "description": "Novas gerações sem preço/cotação e liberação.",
+        "owner": "producer",
+        "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+      },
+      {
+        "shotId": "G-P04",
+        "description": "Aparência e composição compartilhada ainda candidatas.",
+        "owner": "Andre / director",
+        "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+      },
+      {
+        "shotId": "G-P04",
+        "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+        "owner": "Andre / dialogue-sound",
+        "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+      },
+      {
+        "shotId": "G-P04",
+        "description": "Novas gerações sem preço/cotação e liberação.",
+        "owner": "producer",
+        "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+      },
+      {
+        "shotId": "G-REACTION",
+        "description": "Aparência e composição compartilhada ainda candidatas.",
+        "owner": "Andre / director",
+        "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+      },
+      {
+        "shotId": "G-REACTION",
+        "description": "Novas gerações sem preço/cotação e liberação.",
+        "owner": "producer",
+        "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+      },
+      {
+        "shotId": "G-HAND-OPTION",
+        "description": "Material/mesa não conciliados; insert é opcional.",
+        "owner": "continuity / editor",
+        "unblockCondition": "Comparar marcas e contato com master; usar apenas se necessário à cena."
+      }
+    ],
+    "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+    "mediaHashesVerified": true,
+    "creativeAcceptanceGranted": false
+  },
+  "render": {
+    "schemaVersion": "1.0",
+    "kind": "local_still_animatic",
+    "sourcePlan": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+    "sourcePlanSha256": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b",
+    "outputSha256": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+    "bytes": 655470,
+    "durationSeconds": 16.0,
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 1280,
+          "coded_height": 720,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 31,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 196608,
+          "duration": "16.000000",
+          "bit_rate": "217049",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "384",
+          "extradata_size": 45,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 768000,
+          "duration": "16.000000",
+          "bit_rate": "104284",
+          "nb_frames": "751",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "16.000000",
+        "size": "655470",
+        "bit_rate": "327735",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf60.16.100"
+        }
+      }
+    },
+    "decodePassed": true,
+    "visualKind": "static_images_with_persistent_labels",
+    "sourceMediaHashesChecked": true,
+    "normalSpeedPlaybackReviewed": false,
+    "fullListeningReviewed": false,
+    "lipSyncTested": false,
+    "creativeAccepted": false,
+    "newPaidJobs": 0,
+    "uploads": 0,
+    "cutsQuantizedToFrameRate": 24,
+    "audioRate": 1,
+    "limitations": [
+      "Still animatic, sem movimento gerado ou lip-sync.",
+      "Guias edge-tts existentes, não vozes finais nem aprovadas.",
+      "Durações medidas por ffprobe; não houve escuta humana nesta implementação.",
+      "Reação entra depois do fim do arquivo G-L04; palavra a palavra ainda não alinhada/revisada."
+    ]
+  },
+  "staticCardReview": {
+    "cards": [
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+        "sha256": "ed0d596e078317f08a841b416af8e7cebe0a77a5adc26e747e009c2d63b266ec"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+        "sha256": "0a53d714b0a2cce16f5c085745da7fb2c5b1c12f95a22c11ce8b823969ce2108"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+        "sha256": "56a0397f9a6fe52cb009499af5f523c29acc9bc82e033290b5c3d7228ee189b9"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+        "sha256": "67cb0902bbd2e5476ab93fda0ff824f57e4a2419dd56f18a55d9f10a55ec84cd"
+      }
+    ],
+    "readableLabels": true,
+    "historicalFullFaceVisible": false,
+    "guideLabelPresent": true,
+    "fullPlaybackWithListening": false,
+    "creativeAccepted": false
+  },
+  "preservedSources": [
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+      "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b"
+    }
+  ],
+  "abHistoricalEvidencePreserved": [
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.json",
+      "sha256": "f018d5b52add55797bcf92d9ba63d2f28fd589dbed708d1ed3895e29f7c0b01e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/AB-MIN-01-turbo-3s-720p_1.mp4",
+      "sha256": "15b7b004e70444d2d85cbc5f8e3b8363a86485629515eedb9ad2b2cc4a66d968"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-01-turbo-3s-720p.prompt.txt",
+      "sha256": "7027f086c94380df26457243d5356a22faab8bb7f0c17dadf114e3e206022fee"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/requests/AB-MIN-turbo-approved.spec.json",
+      "sha256": "6ccde346f3c14699ca0232664b4e0220d46d265fa9249659dca004162f885405"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.balance.json",
+      "sha256": "a02f6cc1ebd3d560bbe0677270ac52b688825053745ba852ec12c7d8ac640b24"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.intent.json",
+      "sha256": "495052fb94ff8064ba8fc9d4586a04b89dcff59eba7a58011dfd5e44ddcf8313"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.response.json",
+      "sha256": "00d544cfe71136c3feb4864b09361a6fcea4d993c4e7c933516562323d851497"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.submit.json",
+      "sha256": "7bd95875713fed87714b01a7f1af8b7770d30a9a92ca9b6d647c2fff460fa1f7"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/README.md",
+      "sha256": "4fea2f0e1c8af35e75394a38ea04c625ae56ff9e45c91dc58d20177ac6e51986"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/audio-analysis.json",
+      "sha256": "3cbac003eba01123ca51b1093ba2741cc1c8ca22b104175f3adc3dbd702069ba"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/blink-analysis.json",
+      "sha256": "096ffbef860758d5bdbd22d0c37ec24cf73f965d4eda48c2dc60c0b6de6d6b39"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-000-023.png",
+      "sha256": "596ef851af79129c50362358f2ab292ed579f26eed20dce935f489c0a68459a7"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-024-047.png",
+      "sha256": "4af62656539a14d020294a44f30b5738c6a6c0ff1947d6ff13fd04d22f7dad87"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/eyes-048-072.png",
+      "sha256": "d06ea76ba0cd42870a7b308ea862cd28a15984098eb52edcd5e5a9c598618e33"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/template-proposals.json",
+      "sha256": "ea1e1c292282ea62ae6412dbf38e4d4178720de46774e9fb23a8e36ccf0ca261"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo-price-evidence.json",
+      "sha256": "ad2e0c6587fcc693613f8ee592a697129fc0deb7e924ca24ffbda08a85384940"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/audio-analysis.json",
+      "sha256": "cb6b7c39e787c1e06bded6da7b4bdbcd9c9eb630c23245b7d897b41557c035b6"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/decode.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/ffprobe.json",
+      "sha256": "80d4780abc4ef82c2283f8f698d7984bf3db6d09c184771117be4252d474cb77"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-000-011.png",
+      "sha256": "79f2a8317cec07f6510feee5b1b80d09f7ca916eabdc69fa2cd2514a1dc52779"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-012-023.png",
+      "sha256": "c1af2e709058854092c8c55cbf8281ad55dddb575ab8143566b3534a84bc4f8c"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-024-035.png",
+      "sha256": "5756f287fd0d900644630e585a56de0fa34bfa27e3cc0dcd5dd2180670d0f232"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-036-047.png",
+      "sha256": "7a1b4c526d8e034e1c4f4fc570634844b9518a5e44113ed411ff4285bdca8fd4"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-048-059.png",
+      "sha256": "bcc9dcf7868df56e2dc085ceecaf8ba65008fdfd3f772cf4177656df2b58c5ab"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-060-071.png",
+      "sha256": "9f30e75fcfb5102b54d12205d49c88a8ddb9a599eed757999757bc8c62b57e44"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/frames-072-072.png",
+      "sha256": "1e4425654bfaff1c151453760e96a87f37c3bb7f08c938c0d913bb0d29c57441"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
+      "sha256": "b88aec7bbe1fa8ab112060ca1e227c8bb737c4a627c50b64e140965e00fa33d0"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/silence-40db.txt",
+      "sha256": "8a8f7a6b7fa555df50ad582ddd3d525646c519174c02ec867b8e21c5d0560c26"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/technical.json",
+      "sha256": "681d174a4cfe21dcdc9131fe600880d84786aca16ec1db6c2171a717018883d5"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+      "sha256": "36657510cf67fc2dce21e7d696e01964e09fd882b06500f55a8a07070dcf20ea"
+    },
+    {
+      "path": "projects/andre-time-travel/credit-ledger.csv",
+      "sha256": "c661871f8f4b8d080c854b99d59ca544ecc78018fc1d34a5e10a890ca22f1c40"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-12-kling-ab-min-aprendizados.md",
+      "sha256": "7f6928bfaacd3f3ada4b79ce8fe96bf174886a28f6f08fd049df47fa8073e5d1"
+    },
+    {
+      "path": "sites/movies-demandas/app/kling-test-summary.tsx",
+      "sha256": "5b756f5001f578a06ee94a7db5dc897214153e7dcd93b5b1f0e28c6cd87a4e4a"
+    }
+  ],
+  "abHandoffPreserved": {
+    "path": "projects/andre-time-travel/agents/handoffs/2026-10-12-kling-ab-min-v2.json",
+    "sha256": "70b7f49b82fcbb33513f87ff4d538a67d880e5a4b82a81a29dae1e1a133d4eb8"
+  },
+  "implementationFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256": "040bedb7d6148d9cb708dd1d146737ff8209cec95f93735ddb5a89142336625e"
+    },
+    {
+      "path": "docs/REPEATABLE_WORKFLOW.md",
+      "sha256": "96393f99f8ccea5d7f563c07894c700a4918df8afdb0ebe66e2bdf297ac1e602"
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256": "4e16448580a53c8eb657649ec97b72bf2843b62756100f6d3c57e72d5a2206da"
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256": "7f76dd24197d6863261bb9c2e80d1114506ace3d17df7a38c2399b2f3b8eb741"
+    },
+    {
+      "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+      "sha256": "6cff2399c3991c450a9085f23ebb843117a2041b71648b98bf6ea2036a66a478"
+    },
+    {
+      "path": "docs/kling-manual/11-receitas-do-filme.md",
+      "sha256": "a8f1e17a88886049307895b58269d6416bf2772bda98217d7b2934b3120fcfed"
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256": "00b3680308b89def64d71f4ad96d474c9799d194bf357a87ada77e22af328cc6"
+    },
+    {
+      "path": "docs/kling-manual/17-integracao-cli.md",
+      "sha256": "ee8e51b684de56ebcef23c69a7f4b1d448ff6f1f741116d360f50f4f68a25759"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256": "3707ff1eaec975a6766015f10a4e4c1307da5ebe31075723957595255cd8ed44"
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256": "e2ab688d90bca0532fdb87167278fb3ae0ae91640d07637e0478bc2815b3aaa5"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+      "sha256": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+      "sha256": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+      "sha256": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+      "sha256": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256": "8efc2ad91d17f62d58d3818602ff19b2ac8994b4810f576e51091d32cf636d80"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "13e2e0dd8dfb658cd25e5b6ddec0e670fc37999100084e806169c0ef8cc7c48f"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+      "sha256": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+      "sha256": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+      "sha256": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f"
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7"
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256": "8f915f396b10600b2b469deb9752e94bceb7d7d8c4084a54f2689f72a4ece774"
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256": "ae587c2688034e0c98835c0711a93b577ca1cd96cf6c27db333895d0d09ffb3b"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256": "a07a1338793317bdc24dc3d5c3ddd5118f1e850145336d43f0cc676119c71974"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256": "b613c8eff4e4448b8179c70f1e812bd28ab1e8b8e3710d64d0e025ae7dda68aa"
+    },
+    {
+      "path": "shared/templates/kling-job-release.json",
+      "sha256": "8176e011b680bdd40307c16d42df3073935a8cf95df9a04794f94ce1f95e0c57"
+    },
+    {
+      "path": "shared/templates/kling-shot-families.json",
+      "sha256": "7af89207f49ad2aad8aa3ad2116d8c1275c09505754fdc67a6087e5e86bc5db9"
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256": "e7d5dc9aa6c3522aa842ee726d3ce2d165ed063a4b8fb7f05e46ef84984a84e1"
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256": "b0d1ce6867f5eedfc57559cc77b30990c8fa1a65738f98545f1d9d0e7f3b7b34"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256": "503286b5b76771e5ef74a7551be50361cb2a206014b30a753739480750956b8a"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256": "276143f201fcb10369516b7bfa8e82caff0bb47e95ea46ce7a3d370b9e26494e"
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256": "5c9d9e2d31b5ea4518298cc69469f8cf7b294ffc293246c024b5828619dfc034"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256": "9763f4b091ad8b6a1d21463ad4c7f985a7f8da292d848da91d97bab34d23b941"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-production.mjs",
+      "sha256": "ad4e7ff47ffdc385de3f9bdd26d8f37bb70e02a90f66f46fa9129bfe1411867e"
+    },
+    {
+      "path": "tests/test_kling_batch.py",
+      "sha256": "9cb66b016b95328143be6581f8e7dc4ca55f90f3496a7a56f222f13e4d53a51e"
+    },
+    {
+      "path": "tests/test_kling_contract.py",
+      "sha256": "b6c1c99c2f52f4ed14d52e2046198fffcf5060f5e3bde73a68c503bb4f39ed33"
+    },
+    {
+      "path": "tests/test_kling_release.py",
+      "sha256": "40dae04e5b06a56574a1bc6fdcda60e1d26e5532b2796504eadd5eae12311c2f"
+    },
+    {
+      "path": "tests/test_manage.py",
+      "sha256": "6fd344aa0116abf401b50fca824637d5caee9fc027309fcca7ba8429fe746c8d"
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256": "66aa6ba844b2c1a83705d63c370cd5b041dd38c0ddeac3e37bc691dc1f75bea3"
+    },
+    {
+      "path": "workspace.json",
+      "sha256": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256": "38cc5d7d9cabe59fe87ad9aee77c3cd50d566f59e24b83c84a6c363c98aec2ce"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256": "32f3e7d2fb37ce52323e240a78506315ee5b51ef9d1c4561e5f906f8130f4f57"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/MATRIZ-SCHEMAS.md",
+      "sha256": "b78abc16495de7d0a0fdbc4d9cf20d142f4a38685338ac3d8cbf86fc25060f09"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-files.json",
+      "sha256": "6b135655e7b6c8dde0ffe95593634903056d7a6292fdcb87cd9b21d61ace3463"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-manifest-checks.json",
+      "sha256": "850c25a6c9a2f25b13aa72517634104f05d49a7591447b0e6910441fd7586f08"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/consumed-specifications.json",
+      "sha256": "cdc31894e5c2b03020d07872811cfcd0b3d28129dbfc55c87de0241cec707ea7"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/counts.json",
+      "sha256": "45fd9ec6241f4966356508228a8de395ffba7434cbab8011a491022cd33e6514"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/detail-studies-summary.json",
+      "sha256": "5260532f06593fefa017b8015e0aed6921f47b317cd977786207f458b31ab085"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/model-contracts.json",
+      "sha256": "9e1397b18e00d46d2e6492167e41696faf8618934737a164c37ba174d63cc1fa"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/prompt-consumption-checks.json",
+      "sha256": "39d68b09e1a656be4a98c2736d24ceabec6428a446e78a21721e47e911978020"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/schema-evidence.json",
+      "sha256": "d89cabc2116fe33025ecc54b0ef74eb4d201c3bc35f7b7b863b4e6d62b05ed48"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/source-hashes.json",
+      "sha256": "36626d57d953249f0dc64ff874a64c9000399821ce26504160383be52fc52601"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/verification.json",
+      "sha256": "262917fa16a0ff4323fbad37ffd895ee2dfd328c3df9589651265cce6e0a1e9c"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256": "654aa9d478dc0755912c272f5befc0df1cf7aa0dfcd41e3f5efd7ffe0a0d4937"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256": "e332cd2e3d51d4ab24b86e976627fb552ce4295fb679d0efe4b0916002879334"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/index.html",
+      "sha256": "1eec08fdaf0e5ce4b3e39ef88408b8522ad60c1525c4804c5bdbe7ce9d4aea52"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/render-evidence.json",
+      "sha256": "80dd96cd60f1d733a19d48414839de6aedde1388be709915068db4e734d5b5cc"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+      "sha256": "ed0d596e078317f08a841b416af8e7cebe0a77a5adc26e747e009c2d63b266ec"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+      "sha256": "56a0397f9a6fe52cb009499af5f523c29acc9bc82e033290b5c3d7228ee189b9"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+      "sha256": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/frames.ffconcat",
+      "sha256": "2a259789cdf90978dc89c42a81cfcb4833db35b9ec360f6512dfcbb8563ae474"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+      "sha256": "67cb0902bbd2e5476ab93fda0ff824f57e4a2419dd56f18a55d9f10a55ec84cd"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+      "sha256": "0a53d714b0a2cce16f5c085745da7fb2c5b1c12f95a22c11ce8b823969ce2108"
+    }
+  ],
+  "workspace": "/home/athar/Documents/Codex/2026-10-12/task/kling-plan-implementation",
+  "paidJobsSubmitted": 0,
+  "newUploads": 0,
+  "commits": 0,
+  "pushes": 0,
+  "deploys": 0,
+  "approvalLimits": [
+    "No creative acceptance granted",
+    "No final voice selection or listening acceptance",
+    "No new quote or paid release",
+    "Local files verify documentary consistency, not identity of approver or atomic provider ceiling"
+  ],
+  "finalManagementChecks": "Recorded after handoff creation in workspace/final-verification.json; not claimed by this pre-handoff record.",
+  "rootHeadAtStart": "0592f54cce23f94dd061f1e490ad0b1412e84f77",
+  "concurrentCommit": {
+    "head": "0a6a7d33558f9f5110100c89dbaed0fb46897ba0",
+    "createdByThisExecutor": false,
+    "sourceContentDrift": false,
+    "snapshots": [
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "beforeHead": "0592f54cce23f94dd061f1e490ad0b1412e84f77",
+        "afterHead": "0a6a7d33558f9f5110100c89dbaed0fb46897ba0",
+        "contentVersionUnchanged": true
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "beforeHead": "0592f54cce23f94dd061f1e490ad0b1412e84f77",
+        "afterHead": "0a6a7d33558f9f5110100c89dbaed0fb46897ba0",
+        "contentVersionUnchanged": true
+      }
+    ],
+    "checks": [
+      {
+        "script": "export-production",
+        "check": false,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479\",\"check\":false,\"changed\":true}"
+      },
+      {
+        "script": "export-production",
+        "check": true,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"6813956e8ad69b4813a82fd9219287dd9d12ea2d02e96b43defc05c960bb3479\",\"check\":true,\"changed\":false}"
+      },
+      {
+        "script": "export-workspace",
+        "check": false,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"39ce855e272a9e9ba41fc16f81ea3b2008999bcfeb131e0d664d5a13f71b4d6c\",\"check\":false,\"changed\":true}"
+      },
+      {
+        "script": "export-workspace",
+        "check": true,
+        "exitCode": 0,
+        "output": "{\"contentVersion\":\"39ce855e272a9e9ba41fc16f81ea3b2008999bcfeb131e0d664d5a13f71b4d6c\",\"check\":true,\"changed\":false}"
+      }
+    ]
+  }
+}
