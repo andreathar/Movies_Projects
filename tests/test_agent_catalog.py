@@ -1,9 +1,9 @@
 import importlib.util
 import json
-from pathlib import Path
 import tempfile
 import tomllib
 import unittest
+from pathlib import Path
 
 spec=importlib.util.spec_from_file_location('agent_catalog',Path(__file__).parents[1]/'scripts/agent_catalog.py')
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
