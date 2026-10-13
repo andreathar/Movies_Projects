@@ -116,3 +116,12 @@ The cache hit is the S7 effect: with memories/plugins off the prefix is byte-sta
 | Reported the Context7 block as duplicated in `~/.codex/AGENTS.md` | The markers delimit one block. Read the file before counting markers. |
 | Used `Respan(app_name=…)` expecting it to set the workflow name | `app_name` → `service.name`. Workflow grouping needs `@respan.workflow(name=…)` around the call. |
 | Tried to verify the SDK tag via `respan traces list` (405) | Attach an in-process OTel `SpanExporter` and read the span attributes locally. |
+
+## 10. Model policy 2026-10-13 15:55 — `docs/MODEL_POLICY.md`
+- OpenCode lanes → **`opencode/big-pickle`** (free). Probe with the lane task (read audit, 3 cited findings): correct output, 41,167+365 tok, **$0.0000**, traced with scene tags. `muse-spark-1.1` had produced `a\nb\nc` on the same kind of task at ~$0.02/turn.
+- Codex film profile now pins `model = "gpt-6.1-sol"` explicitly (was inherited from global config → could drift).
+- Claude lane: user default (`fable`); per-lane override `ANTHROPIC_MODEL` in the lane shell.
+
+| Mistake | Solution |
+|---|---|
+| Let each CLI's global default decide the lane model (OpenCode lane ran muse-spark-1.1 and wasted two paid turns on a placeholder report) | Pin models per lane in version-controlled config (`opencode.json`, `film.config.toml`) and record the pin + probe in `docs/MODEL_POLICY.md`. Free model first. |

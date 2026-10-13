@@ -39,6 +39,10 @@ _release = importlib.util.spec_from_file_location("kling_release", ROOT / "scrip
 release = importlib.util.module_from_spec(_release)
 _release.loader.exec_module(release)
 
+_trace = importlib.util.spec_from_file_location("kling_respan", ROOT / "scripts/kling_respan.py")
+tracing = importlib.util.module_from_spec(_trace)
+_trace.loader.exec_module(tracing)
+
 
 def resolve_media_input(film: Path, ref: str, *, media_root: Path | None = None) -> str:
     """Resolve an explicit canonical input without copying or changing it."""
@@ -304,25 +308,31 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
                   'options': args, 'refs': images, 'inputs': inputs or {}, 'validation': validation,
                   'referenceDurationSeconds': reference_duration, 'auth': auth, 'note': note,
                   'balanceBefore': before, 'accountBefore': snapshot, 'command': cmd,
-                  'created': dt.datetime.now().astimezone().isoformat(timespec='seconds')}
+                  'created': dt.datetime.now().astimezone().isoformat(timespec='seconds'),
+                  'costTrace': tracing.context(film, job, payload_hash)}
         prompt_path = req / f'{job}.prompt.txt'
         if prompt_path.exists() and prompt_path.read_text() != prompt + '\n':
             raise SystemExit('existing prompt differs; refusing overwrite')
         if not prompt_path.exists():
             durable(prompt_path, prompt + '\n')
         save(res / f'{job}.intent.json', intent)
-        try:
-            data = run(cmd)
-        except Exception as exc:
-            data = {'ok': False, 'error': redact(str(exc)), 'submissionUncertain': True}
-        save(res / f'{job}.submit.json', data)
-        gen_id = generation_id(data)
-        balance = reconcile(film, job, intent, gen_id, immediate=True)
-        result = summary(job, gen_id, 'SUBMITTED' if gen_id else 'SUBMISSION_UNKNOWN', balance,
-                         error=None if gen_id else data)
-        if envelope:
-            result['budgetExceeded'] = balance.get('creditsConsumed') is not None and balance['creditsConsumed'] > envelope['maxCredits']
-            result['providerEnforcesCeiling'] = False
+        def submit_and_record():
+            try:
+                data = run(cmd)
+            except Exception as exc:
+                data = {'ok': False, 'error': redact(str(exc)), 'submissionUncertain': True}
+            save(res / f'{job}.submit.json', data)
+            gen_id = generation_id(data)
+            balance = reconcile(film, job, intent, gen_id, immediate=True)
+            result = summary(job, gen_id, 'SUBMITTED' if gen_id else 'SUBMISSION_UNKNOWN', balance,
+                             error=None if gen_id else data)
+            if envelope:
+                result['budgetExceeded'] = balance.get('creditsConsumed') is not None and balance['creditsConsumed'] > envelope['maxCredits']
+                result['providerEnforcesCeiling'] = False
+            return result
+
+        result = tracing.execute(intent["costTrace"], envelope, submit_and_record)
+        gen_id = result["generationId"]
     if submit_only or not gen_id:
         return result
     deadline = time.monotonic() + max(poll, 60)

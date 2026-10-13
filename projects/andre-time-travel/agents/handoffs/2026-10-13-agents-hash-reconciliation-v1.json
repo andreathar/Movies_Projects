@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Conciliação mínima de hash datado de AGENTS no handoff anterior e de seus dois derivados; sem reabrir código/runtime Parley.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "readFirst": [
+    "AGENTS.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-13-parley-shared-media-organization-v1.json",
+    "docs/archive/AGENTS-full-2026-10-13.md",
+    "docs/REPEATABLE_WORKFLOW.md",
+    "docs/AGENT_CATALOG.md"
+  ],
+  "ownedPaths": [
+    "agents/generated/catalog.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-13-agents-hash-reconciliation-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-13-parley-shared-media-organization-v1.json",
+      "sha256Before": "3e41e81e61c6aac64242019aef835e01d2e139dc16783e5f72995233bc6f3f47"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b"
+    },
+    {
+      "path": "docs/archive/AGENTS-full-2026-10-13.md",
+      "sha256Before": "a5d2b5a4a7aad2b3d5ab509ad2fdf74af2d7cb5cca72d3e96a6468d2f17004d0"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256Before": "9dd3e17cf54b6b2b840d2a7b876a8dc55dba06445bd735c505849375c82dc789"
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256Before": "70200899db31fc66d55e23f78e910081780d250c96cad184b93bb0d24995e4bf"
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256Before": "42de2795fc7092521dc9fa8846242dbe3ec914869f8f11476c23c8f6340c4251"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "848cd575d66bb62217d87f0d345e133788eab116d1fde9e05af2e80eac7f3b8f"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "339c20a1182df6130e36c25b1100e2c983b9589afe8013cd34ecaddeca1277eb"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "f54effd1f0f818568c9cf9d05ce2a56dcbde051e995b30971c96a33505e153c9"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "9470af7f00cb4ccc8cd28dac789d2695599df3f669d4830ca5bc501dd2b1fc8f"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256Before": "e969b46323dfc173325b385fca1979c191d743f079e13f83b1a3c7e90078e854"
+    },
+    {
+      "path": "docs/SHARED_MEDIA.md",
+      "sha256Before": "19809aa1a29812b1f790479d5c962e640b9cc5f0116989533efd5342a04e0ebf"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "f20bb2771b9e8c4d7ddf58dd48f40ac7b6ec64a9ccaa824a87808dd3a193af2b"
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "999a923f52492029b95de5717fdec3d6e5ede7e4cd81f5c86de17f190e3c7715"
+    },
+    {
+      "path": "reports/asset-registry/asset-registry-before-20261013.csv",
+      "sha256Before": "2fda88372dd8e843ee6efea74ca772097feafd89d39d76a3c1e5252290ec72f3"
+    },
+    {
+      "path": "reports/asset-registry/repair-20261013.json",
+      "sha256Before": "735244fb97529a0a8df5412ea1f265188d7aa26a071f0210ff8fc36f8a3297a8"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256After": "9dd3e17cf54b6b2b840d2a7b876a8dc55dba06445bd735c505849375c82dc789",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256After": "70200899db31fc66d55e23f78e910081780d250c96cad184b93bb0d24995e4bf",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256After": "42de2795fc7092521dc9fa8846242dbe3ec914869f8f11476c23c8f6340c4251",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "848cd575d66bb62217d87f0d345e133788eab116d1fde9e05af2e80eac7f3b8f",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "cf0e907ea70d75bda586c06a4e7b815fe30fe26d3a7611401aac81adaa42209d",
+      "reason": "Derivado atualizado apenas em hashes/fontes/proveniência, conteúdo semântico preservado.",
+      "writtenByThisDelivery": true,
+      "carriedForward": false
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256After": "f54effd1f0f818568c9cf9d05ce2a56dcbde051e995b30971c96a33505e153c9",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256After": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b",
+      "reason": "Referência ao AGENTS atual do commit 9c0d857; documento do usuário não foi editado.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "9470af7f00cb4ccc8cd28dac789d2695599df3f669d4830ca5bc501dd2b1fc8f",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256After": "e969b46323dfc173325b385fca1979c191d743f079e13f83b1a3c7e90078e854",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "docs/SHARED_MEDIA.md",
+      "sha256After": "19809aa1a29812b1f790479d5c962e640b9cc5f0116989533efd5342a04e0ebf",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "7ccef5af31ae0504f48f6f7c6b19e1969940ce8381fe9aae4c54ca65b8da544a",
+      "reason": "Derivado atualizado apenas em hashes/fontes/proveniência, conteúdo semântico preservado.",
+      "writtenByThisDelivery": true,
+      "carriedForward": false
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256After": "999a923f52492029b95de5717fdec3d6e5ede7e4cd81f5c86de17f190e3c7715",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "reports/asset-registry/asset-registry-before-20261013.csv",
+      "sha256After": "2fda88372dd8e843ee6efea74ca772097feafd89d39d76a3c1e5252290ec72f3",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    },
+    {
+      "path": "reports/asset-registry/repair-20261013.json",
+      "sha256After": "735244fb97529a0a8df5412ea1f265188d7aa26a071f0210ff8fc36f8a3297a8",
+      "reason": "Hash da entrega anterior reconferido; arquivo, autoria e aprovação preservados.",
+      "writtenByThisDelivery": false,
+      "carriedForward": true
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Hash de AGENTS usado pelo handoff anterior corresponde exatamente à cópia arquivada; preservação documental verificada.",
+      "evidence": "docs/archive/AGENTS-full-2026-10-13.md",
+      "sha256": "a5d2b5a4a7aad2b3d5ab509ad2fdf74af2d7cb5cca72d3e96a6468d2f17004d0"
+    },
+    {
+      "statement": "AGENTS atual corresponde ao commit 9c0d857, cuja autoria e committer no Git são Andre Athar; nenhum novo aceite de política é inferido deste metadado.",
+      "evidence": "AGENTS.md",
+      "sha256": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b"
+    },
+    {
+      "statement": "Handoff anterior intacto como entrega histórica; sua divergência continua detectável por handoff check direto.",
+      "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-13-parley-shared-media-organization-v1.json",
+      "sha256": "3e41e81e61c6aac64242019aef835e01d2e139dc16783e5f72995233bc6f3f47"
+    }
+  ],
+  "verification": [
+    "Comparação do diff e metadados do commit 9c0d857; arquivo atual e arquivo arquivado conferidos contra os respectivos hashes.",
+    "Todos os 14 changedFiles do handoff anterior conferidos: apenas AGENTS estava divergente antes da conciliação.",
+    "Regenerador canônico alterou somente o hash de AGENTS no catálogo; nenhum adapter mudou.",
+    "Snapshot workspace atualizado; conteúdo semântico idêntico, somente sources/collectedAt/provenance diferentes.",
+    "24 testes manage_lint e 8 testes agent_catalog passaram; catálogo --check e export-workspace --check passaram.",
+    "83 testes do hook Kling pertencem à etapa anterior documentada; não reexecutados nesta conciliação."
+  ],
+  "supersedes": [
+    "2026-10-13-parley-shared-media-organization-v1.json"
+  ],
+  "supersessionScope": {
+    "scope": "Somente atualização da referência datada a AGENTS e dos hashes derivados. Mantém a cobertura dos 14 changedFiles; não substitui autoria, verificação ou aceite histórico por novos.",
+    "historicalHandoffPath": "projects/andre-time-travel/agents/handoffs/2026-10-13-parley-shared-media-organization-v1.json",
+    "historicalHandoffSha256": "3e41e81e61c6aac64242019aef835e01d2e139dc16783e5f72995233bc6f3f47",
+    "historicalAgentsSha256": "a5d2b5a4a7aad2b3d5ab509ad2fdf74af2d7cb5cca72d3e96a6468d2f17004d0",
+    "historicalAgentsArchive": "docs/archive/AGENTS-full-2026-10-13.md",
+    "currentAgentsSha256": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b",
+    "currentAgentsCommit": "9c0d8579eabee4f9a49a4b65e60eea47e18fadf4",
+    "gitAuthor": "Andre Athar",
+    "gitAuthorIsNotApproval": true,
+    "pendingObligationsFromPriorHandoff": "Preservadas no handoff histórico; estado de sessão/grant não reavaliado nesta tarefa."
+  },
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Revisar e ingerir a conciliação. Conservar revisões e decisões de runtime/grants do handoff anterior com seus donos; validar telemetria real Kling somente em geração separadamente autorizada.",
+      "readiness": "Conciliação documental pronta; produtor mantém responsabilidade até aceite explícito."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Referência datada demonstrada por histórico e arquivo idêntico; derivados mínimos atualizados.",
+  "blockers": [],
+  "andreOnlyGates": [
+    "New OpenCode identity/grant remains pending; no creation/message executed."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "derivedMetadataChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "published": false,
+  "newGrantsCreated": false,
+  "runtimeChanged": false,
+  "localEvidenceDirectory": "/home/athar/Documents/Codex/2026-10-12/task/kling-respan-integration/reconciliation"
+}

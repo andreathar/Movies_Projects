@@ -60,13 +60,13 @@ Re-verify: `respan traces list --limit 5 --json` → expect `claude-code` and `c
 |---|---|
 | `codex exec` hung for 3 min: "Reading additional input from stdin…" | When run from a non-TTY shell (Desktop Commander, cron, hooks) always `codex exec "…" < /dev/null`. |
 | Followed docs page (Python `respan_hook.py` + `.bashrc` env) | `@respan/cli` ships newer Node runtimes in `dist/hooks/`; use those and put `TRACE_TO_RESPAN=true` inline in the hook command instead of shell rc files. |
-| Assumed opencode-otel → Respan would work (the guide implies it) | Check signal types: metrics/logs ≠ traces. OpenCode needs a custom plugin posting to `/api/v2/traces` — see Next. |
+| Assumed opencode-otel → Respan would work (the guide implies it) | Check signal types: metrics/logs ≠ traces. OpenCode needed a custom plugin posting to `/api/v2/traces` (done, see Coding-agent tracing table). |
 | `respan traces list` returned 405 right after verification (ingest still 200, bogus key → 403) | Server-side on Respan, not our config. Verification evidence = hook logs `rejectedSpans: 0` + dumped OTLP payloads in `…/state/respan_spans_turn_1.json`. Retry CLI later. |
 
-### Next
-1. OpenCode: write a small OpenCode plugin (`~/.config/opencode/plugins/respan.ts`) that on `session.idle` posts an OTLP span (model + usage from `session.messages`) to `https://api.respan.ai/api/v2/traces` — closes the 3rd agent.
-2. Tag spans per movie task: set `RESPAN_WORKFLOW_NAME=<scene-id>` / `RESPAN_METADATA` in the Parley launcher so cost rolls up per scene.
-3. Kling calls: wrap `kling_batch.py` / `kling_release.py` with Respan `@workflow`/`@task`.
+### Next (updated 2026-10-13 15:15)
+1. ~~OpenCode plugin~~ — done (`~/.config/opencode/plugins/respan-trace.ts` + worker).
+2. ~~Per-scene tagging~~ — done (`scripts/lane_env.sh`, `.codex/respan.json`, `.claude/respan.json`, Gemini wrapped in `respan.workflow`).
+3. Kling: hook local de submissão implementado em `scripts/kling_batch.py` / `scripts/kling_respan.py`; validação sintética, sem envio real de telemetria. Contrato e limites na seção abaixo; créditos não são moeda.
 | Plugin did async fetch+POST inside the `session.idle` handler → nothing sent | `opencode run` exits right after the reply, killing in-flight work. Spawn a detached worker (`stdio: "ignore", detached: true, unref()`), same as @respan/cli hooks. |
 | Expected OpenCode sessions under `~/.local/share/opencode/storage/` | OpenCode ≥1.18 stores sessions in `opencode.db` (SQLite: `session`, `message`, `part`; JSON in `data` columns). Read with `node:sqlite` (Node 24). |
 | Queried `select data from session` | `session` is a wide table (title, directory, agent, model, tokens_*…); only `message`/`part` have `data`. |
@@ -81,3 +81,123 @@ Audit of per-turn overhead and reduction strategies: `docs/TOKEN_SPEND_AUDIT_202
 | Mistake | Solution |
 |---|---|
 | Looked for a per-lane config knob in the hook runtimes | They already read `RESPAN_WORKFLOW_NAME` / `RESPAN_METADATA` / `RESPAN_CUSTOMER_ID` env and `<cwd>/.codex|.claude/respan.json`; no code change needed, just a sourced env helper. |
+
+## Readiness check 2026-10-13 15:15
+- Respan plan confirmed **Free** (platform billing page: current plan "Free"). Tracing only; gateway unused by decision. Free limits: 100k logs, 7-day retention, 412 logs/min — fine for lane traffic.
+- Symlinks: repo `skills/` (5), `.claude/skills` (1), `.hermes/skills` (5), `.hermes/plans` (1) all resolve; user stores `~/.claude/skills` 7, `~/.hermes/skills` 3, `~/.agents/skills` 1 — 0 broken. `skills/registry.json` matches disk. `manage.py validate` exit 0, unit tests OK.
+- Tracing: Claude Code hook, Codex notify hook, OpenCode plugin, Gemini SDK — all verified today with scene tags.
+- Known: Respan read API (`respan traces list`) 405 since ~13:45; ingest 200; dashboard is the check until it recovers.
+
+
+## Kling: submissão e custos por cena (2026-10-13)
+
+`scripts/kling_batch.py` mantém o envio pela CLI e suas liberações existentes. Após
+salvar a intenção e antes de enviar, o adaptador opcional `scripts/kling_respan.py`
+abre `respan.workflow` com o nome da cena e uma task `kling.submit`. O span inclui a
+submissão única e a persistência/reconciliação; polling, download e `--resume` ficam
+fora dele e não emitem novamente a cobrança.
+
+Ativação segue a chave já configurada no **ambiente do processo** (`RESPAN_API_KEY`).
+`MOVIES_KLING_RESPAN=0` desativa sem importar o SDK. O runner não abre `.env`, cofres,
+credenciais dos hooks ou bancos de sessões: o operador fornece o ambiente pelo seu
+mecanismo existente. Sem chave, funciona sem tracing; sem SDK ou com erro de tracing,
+preserva o resultado do provedor e emite aviso genérico. Não instala nem autentica.
+`RESPAN_GATEWAY` não muda a rota Kling. Não usar os smoke tests pagos para verificar
+este hook.
+
+Tags seguem o padrão existente: `RESPAN_WORKFLOW_NAME` identifica a cena;
+`RESPAN_METADATA` aceita somente `lane`, `role`, `scene`, `task` como identificadores
+curtos. `task` é, por exemplo, `T13`, fornecido explicitamente; não é deduzido do nome
+do job. O episódio vem da pasta do filme; projeto/script são fixos. Valores inválidos
+ou livres são omitidos; workflow prevalece sobre `metadata.scene`. Sem cena válida,
+usa `kling_batch`, sem fingir atribuição a uma cena. A intenção salva `costTrace`
+com esses vínculos, `execution_id`, `job` e `cost_event_id` estável para o registro.
+Isso é correlação declarada pelo operador, não autorização nem aceite artístico.
+
+Os seguintes atributos `respan.metadata.*` de custo pertencem **somente à task**:
+
+| Campo | Fonte / significado |
+|---|---|
+| `cost_provider`, `cost_unit` | `Kling`, `Kling credits` |
+| `credit_quote`, `credit_quote_basis` | `intent.release.quote`: cotação específica validada, `provider_quote` ou `official_panel`; estimativas não são promovidas |
+| `credit_charge`, `credit_charge_basis` | Resultado de `reconcile`, mesmo valor de `*.balance.json`/ledger; só `provider_reported` aceita valor confirmado, inclusive zero |
+| `submission_state`, `generation_id` | Resultado local da submissão / ID retornado; ID ausente ou inválido não é inventado |
+| `cost_event_id`, `execution_id`, `job` | Correlação persistida antes do envio; chave de deduplicação e execução |
+| `currency_conversion` | `none`: nenhuma taxa de conversão foi definida |
+
+Saldo e variação de saldo **não são cobrança por job**. Ausência de cobrança fica
+`unknown` e sem número, não zero. Cotação não se soma à cobrança. Um erro de submissão
+pode ter cobrança confirmada e ela continua visível. ID conhecido não significa job
+concluído. O ledger/recibos são a fonte de verdade; Respan é uma projeção opcional.
+Nenhum segundo ledger, preço, aprovação ou evento contábil é criado pelo tracing.
+
+Para consolidar a cena, agrupar por provedor/unidade e deduplicar por `cost_event_id`
+antes de somar `credit_charge`. Separar cobertura conhecida/desconhecida e mostrar
+cotações à parte. Tokens são uso, créditos Kling são saldo consumido, moeda é custo
+financeiro: não existe um total escalar válido somando os três. O hook não preenche
+campos padrão de custo monetário/LLM do Respan com créditos. Conversão futura exige
+base explícita (compra/plano, moeda, taxa e vigência); não foi implementada aqui.
+
+Falhas do SDK antes/depois do callback, ao anotar ou ao flush não repetem a operação.
+Erros locais de persistência retornam ao chamador, sem vazarem no decorator; cancelamento
+antes do envio não inicia geração. Intenção durável e bloqueio de duplicatas continuam
+valendo. SDK/exportador pode perder spans ou retransmitir o mesmo span: não se promete
+entrega remota exatamente uma vez. Não repetir geração para recuperar telemetria;
+usar recibos e chave do evento. Falha entre envio/recibo/ledger pode deixar tracing
+incompleto; `--resume` conserva a recuperação contábil existente, sem backfill Respan.
+Cobranças reveladas apenas em consultas posteriores continuam dependendo da
+reconciliação existente/manual, não são inventadas nem reaplicadas por este hook.
+
+Privacidade: funções decoradas não recebem argumentos e retornam `None`; payload,
+prompt, imagens, comandos, rationale, respostas brutas, saldo da conta e mensagens
+de erro não são atributos. Auto-instrumentação está desativada explicitamente.
+Correlação usa lista permitida, não exporta todo `RESPAN_METADATA`. Testes usam mocks
+e, para o SDK instalado, exportador em memória com sockets bloqueados. Não houve
+chamada paga, upload ou exportação real nesta validação.
+
+Compatibilidade conferida com `respan-ai 4.2.4` e OpenTelemetry `1.45.1`; API pública
+`Respan`, `workflow`, `task`, `flush` e atributos de span, conforme o
+[repositório oficial](https://github.com/respanai/respan#workflow-and-task-decorators).
+O frontend mantém o contrato existente de recibos/registro; não recebe campos
+monetários novos nem exige refresh de snapshots por este hook.
+
+Antes da primeira geração **separadamente autorizada**, confirmar cena/tarefa no
+ambiente e chave disponível sem imprimi-la. Depois, comparar o ID/quote/charge/unidade
+na task com a intenção e recibo locais, conferir agrupamento da cena e ausência de
+conteúdo sensível. Repetir somente `--resume` do job existente para verificar que não
+aparece novo evento de custo. Essa verificação remota permanece pendente; o teste
+sintético não comprova ingestão, dashboard ou agregação financeira em produção.
+
+## Dashboard reading 2026-10-13 15:30 (Metrics page, Today)
+117 requests, 3 errors (gemini-2.5-flash 404, gateway 401, +1). Top models: **None 109**, gemini/gemini-3.8-flash 5, keywordsai/cache 2 (Respan's own cache marker — Respan = ex-Keywords AI), gemini-2.5-flash 1.
+- "None" = every span from the agent hooks (Codex `gpt-6.1-sol`, Claude Code `claude-fable-5-1`, OpenCode `muse-spark-1.1`). The spans DO carry `gen_ai.request.model` (verified in the dumped payloads) — Respan just doesn't recognise those model IDs in its catalog, so the Metrics page buckets them as None and **computes no $ cost for them**. Token counts are intact. Gemini resolves because its model is in the catalog.
+- Consequence for the per-scene price: tokens per agent/scene are exact; the $ column is only right for Gemini (and OpenCode, whose worker sends OpenCode's own `cost`). Codex/Claude $ must come from a local price table (SQL editor or report script) until Respan maps the models.
+- Logs page: "Oops… something went wrong"; Traces page freezes the tab; CLI `traces list` 405 since ~13:45 — platform-side degradation of the read path; ingest 200 all day. Re-check tomorrow.
+
+| Mistake | Solution |
+|---|---|
+| Assumed Respan would price any model string carried in `gen_ai.request.model` | It prices only catalog models. Check "Top models by requests" after the first run of a new agent/model: a "None" bucket means no $ will be computed → add the model mapping in Respan settings (if offered) or keep a local price table. |
+
+## Real lane test 2026-10-13 15:40–15:55 — scene `s00-respan-lane-test`
+Three Parley lanes launched from the base checkout with `source scripts/lane_env.sh <lane> <role> s00-respan-lane-test` + `agent-parley run <p> --output-task s00-respan-lane-test --task "<read-only smoke task: status, read audit doc, file one 3-finding report, DONE>"`. Roster rebuilt first: `opencode` retired/re-added (worktree was gone), `codex` added on provider **`codex-film`**, `claude` reused (lane-4).
+
+| Lane | Outcome | Respan (scene-tagged, accepted) |
+|---|---|---|
+| codex (codex-film) | report **ready**, 3 findings citing doc lines; Parley MCP `list_participants` worked, `status`/`report` MCP tools absent → used CLI (fine) | 9 spans/turn: `openai.chat` gpt-6.1-sol 40,848 prompt / 5 completion + Reasoning + 6× `Tool: exec` |
+| claude (lane-4) | report **ready**, 3 findings; flagged that the Claude lane carries claude.ai connectors as deferred tools (ElevenLabs ≈200, Cloudflare Dev Platform, Gmail, Swagger, HF, Desktop Commander) | `claude.chat` claude-fable-5-1 162 prompt (cache-read omitted) / 4,112 completion + ToolSearch + 6× Bash |
+| opencode (muse-spark-1.1) | report **partial** with placeholder text `a\nb\nc` — model did not follow the task; stopped | 2 turns captured: 26,851+62 ($0.0051) and 49,863+1,243 ($0.0136) |
+
+Per-scene roll-up works end to end (workflow name + lane/role/scene/episode metadata on every span). Dashboard read path still 405/erroring on Respan's side; evidence from hook logs (`rejectedSpans: 0`) and local payload dumps.
+
+Lane launch recipe that works from a non-TTY shell (Desktop Commander, cron): `script -qfec "agent-parley run <p> …" /tmp/<p>.typescript` under `nohup … &`.
+
+### Mistake / Solution (lane test)
+| Mistake | Solution |
+|---|---|
+| `--output-task S00-…` refused | Task ids must match `[a-z0-9][a-z0-9_-]{0,38}`: lowercase scene ids (`s00-…`). Use the same lowercase id for `RESPAN_WORKFLOW_NAME`. |
+| `agent-parley run codex` → "stdin is not a terminal" | Native TUIs need a pty: wrap in `script -qfec "…" <log>`. |
+| OpenCode lane blocked on "Permission required: access external directory …/Movies_Projects" (lane reads the shared checkout from its worktree) | `permission.external_directory: {"/mnt/data/Projects_SSD/Movies_Projects/**": "allow"}` in `~/.config/opencode/opencode.json` (copied into the lane-private config) and repo `opencode.json`. |
+| `opencode` participant had a dead worktree; `restore` refused while a 16 h idle session was attached | `participant stop` → `retire` (branch had no commits) → `add --provider opencode`. |
+| Tried `agent-parley report show --as <lane>` / `mail list` from base checkout | Reports are read with `participant show <lane>` (Summary / Reported verification); mail only from a lane worktree. |
+| Expected muse-spark-1.1 to follow a 4-step task | It filed `a\nb\nc`. For film lanes pick a stronger OpenCode model or keep OpenCode for mechanical tasks; cost per turn is low but output was useless. |
+| Claude lane audit: assumed only the repo's MCP config mattered | claude.ai connectors sync into Claude Code as deferred tools; review the connector list for the lane account, not just `.mcp.json`. |
