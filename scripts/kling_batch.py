@@ -40,6 +40,13 @@ release = importlib.util.module_from_spec(_release)
 _release.loader.exec_module(release)
 
 
+def resolve_media_input(film: Path, ref: str, *, media_root: Path | None = None) -> str:
+    """Resolve an explicit canonical input without copying or changing it."""
+    if ref.startswith(('http://', 'https://')):
+        return ref
+    return str(release.shared_media.input_path(film, ref, media_root=media_root))
+
+
 def redact(value, *, urls=True):
     """Reduz dados sensíveis no registro do subprocesso; não altera o payload enviado."""
     if isinstance(value, dict):
@@ -269,10 +276,7 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
         cmd = ['kling', tool, '--model', model, '--poll', '0', '-q', *TELEMETRY,
                '--rationale', f'Film reference batch {auth}: {note}']
         def media_path(img):
-            p = None if img.startswith(('http://', 'https://')) else film / img
-            if p is not None and not p.is_file():
-                raise SystemExit(f'missing reference: {img}')
-            return str(p) if p else img
+            return resolve_media_input(film, img)
         for slot, ref in (inputs or {}).items():
             if tool == 'motion_control':
                 if slot not in {'image', 'video'}:
@@ -283,10 +287,7 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
             else:
                 raise SystemExit('named inputs not supported by this CLI command')
         for img in images:
-            p = None if img.startswith(('http://', 'https://')) else film / img
-            if p is not None and not p.is_file():
-                raise SystemExit(f'missing reference: {img}')
-            cmd += ['--image', str(p) if p else img]
+            cmd += ['--image', resolve_media_input(film, img)]
         for key, value in args.items():
             if pf.norm(key) in {'poll', 'model', 'rationale', 'skillname', 'skillversion', 'tasktraceid', 'quiet', 'q', 'help', 'h', 'image', 'input', 'video', 'audio', 'tailimage'}:
                 raise SystemExit(f'reserved option: {key}')
@@ -437,6 +438,8 @@ def resume(film: Path, job: str) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--film', default='projects/andre-time-travel')
+    ap.add_argument('--media-root', type=Path, help='Canonical workspace for read-only reference resolution; no submission grant')
+    ap.add_argument('--resolve-reference', help='Resolve one film-relative input and exit without provider calls')
     ap.add_argument('--spec', help='JSON file with job list (submission only)')
     ap.add_argument('--only', help='comma-separated job ids to run')
     mode = ap.add_mutually_exclusive_group()
@@ -444,6 +447,19 @@ def main() -> int:
     mode.add_argument('--resume', metavar='JOB', help='query one stored job exactly once; never submit')
     a = ap.parse_args()
     film = (ROOT / a.film).resolve()
+    if a.resolve_reference:
+        if not a.media_root:
+            ap.error('--resolve-reference requires --media-root')
+        try:
+            media_film = release.shared_media.scoped(a.media_root, a.film, file=False)
+            path = resolve_media_input(film, a.resolve_reference, media_root=media_film)
+            print(json.dumps({'readOnly': True, 'path': path, 'nativeAccessVerified': None}))
+            return 0
+        except (OSError, ValueError) as error:
+            print(json.dumps({'error': str(error), 'readOnly': True}))
+            return 2
+    if a.media_root:
+        ap.error('shared media submission is not enabled; use the existing canonical producer workflow. No grant, copy or provider call performed')
     if a.resume:
         if a.spec or a.only:
             ap.error('--resume cannot be combined with --spec/--only')

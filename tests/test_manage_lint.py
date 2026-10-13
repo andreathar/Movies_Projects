@@ -6,12 +6,12 @@ import datetime as dt
 import hashlib
 import importlib.util
 import json
-from pathlib import Path
 import subprocess
 import sys
 import tempfile
-from typing import Any
 import unittest
+from pathlib import Path
+from typing import Any
 from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]

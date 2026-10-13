@@ -566,8 +566,15 @@ class SettingsTests(unittest.TestCase):
             if script.name.startswith("_"):
                 continue
             self.assertTrue(any(script.name in command for command in commands), script.name)
+        root_bindings = (
+            "$CLAUDE_PROJECT_DIR",
+            "${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}",
+        )
         for command in commands:
-            self.assertIn("$CLAUDE_PROJECT_DIR", command)
+            self.assertTrue(
+                any(binding in command for binding in root_bindings),
+                command,
+            )
         failure_commands = [
             hook["command"]
             for group in settings["hooks"].get("PostToolUseFailure", [])

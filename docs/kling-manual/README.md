@@ -43,6 +43,8 @@ Objetivo: uma solução por processo que o Kling permite, para o filme *The Tabl
 | 14-erros-e-troubleshooting.md | Erro → causa provável → o que fazer |
 | 15-ferramentas-nao-listadas.md | O que existe fora do registry do projeto (aviso ao Codex) |
 | 16-fontes.md | Links e grau de confiança |
+| 17-integracao-cli.md | Auditoria da integração CLI (2026-10-12) |
+| 18-guia-de-prompts.md | Como escrever prompts que o Kling entende e o filme exige; templates por rota; checklist |
 | snapshots/ | `who_am_i` sanitizado (sem userId), `tool_list`, `--help` de cada comando, com sha256 |
 | tools/ | `kling_model_sheet.py` (gera o 03), `kling_preflight.py` (valida request.json offline) e `test_kling_tools.py` (15 testes: `python3 -I tools/test_kling_tools.py`) |
 

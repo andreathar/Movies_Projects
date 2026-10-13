@@ -9,9 +9,16 @@ from __future__ import annotations
 
 import datetime as dt
 import hashlib
+import importlib.util
 import json
 import math
 from pathlib import Path
+
+_media_spec = importlib.util.spec_from_file_location(
+    "movies_shared_media", Path(__file__).with_name("shared_media.py")
+)
+shared_media = importlib.util.module_from_spec(_media_spec)
+_media_spec.loader.exec_module(shared_media)
 
 
 def digest(value):
@@ -54,7 +61,7 @@ def normalized_args(args):
     return result
 
 
-def fingerprint(film, job):
+def fingerprint(film, job, *, media_root=None):
     """Exclude job name/auth/note; changing those must not conceal a retry."""
     args = dict(job.get('args', job.get('options', {})))
     if job.get('elements') is not None:
@@ -62,9 +69,10 @@ def fingerprint(film, job):
     def media(ref):
         if ref.startswith(('https://', 'http://')):
             return {'url': ref}  # Exact URL only; a URL is not content verification.
-        path = (film / ref).resolve()
-        if not path.is_relative_to(film.resolve()) or not path.is_file():
-            raise ValueError('referência local ausente/fora do filme: ' + ref)
+        try:
+            path = shared_media.input_path(film, ref, media_root=media_root)
+        except ValueError as error:
+            raise ValueError('referência local ausente/fora do filme: ' + ref + '; ' + str(error)) from error
         return {'sha256': file_hash(path)}
     images = job.get('images', job.get('refs', []))
     named = job.get('inputs') or {}

@@ -14,6 +14,7 @@ from collections import Counter
 import csv
 import datetime as dt
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
@@ -21,6 +22,11 @@ from typing import Any
 
 
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
+_media_spec = importlib.util.spec_from_file_location(
+    "movies_shared_media", DEFAULT_ROOT / "scripts/shared_media.py"
+)
+shared_media = importlib.util.module_from_spec(_media_spec)
+_media_spec.loader.exec_module(shared_media)
 TASK_STATES = {"pending", "ready", "blocked", "in_progress", "completed", "cancelled"}
 OPEN_TASK_STATES = {"in_progress", "blocked"}
 GENERIC_BLOCKER = "Awaiting dependency completion and applicable approval"
@@ -848,6 +854,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
     commands = parser.add_subparsers(dest="command", required=True)
+    assets = commands.add_parser("assets", help="Validate or resolve the canonical asset registry without changing it")
+    assets.add_argument("action", choices=("validate", "resolve", "output"))
+    assets.add_argument("--media-root", type=Path, help="Explicit canonical Movies workspace; no grants or writes")
+    assets.add_argument("--film", default="projects/andre-time-travel")
+    assets.add_argument("--asset-id")
+    assets.add_argument("--output-root", type=Path)
+    assets.add_argument("--path")
     commands.add_parser("validate", help="check workspace integrity")
     commands.add_parser("status", help="validate and report pending state")
     commands.add_parser("lint", help="report hard contradictions and advisories")
@@ -865,6 +878,24 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> int:
     arguments = build_parser().parse_args()
     root = arguments.root.resolve()
+    if arguments.command == "assets":
+        media = arguments.media_root.resolve() if arguments.media_root else root
+        try:
+            if arguments.action == "validate":
+                report = shared_media.read_catalog(media, arguments.film)
+            elif arguments.action == "resolve":
+                if not arguments.asset_id:
+                    raise ValueError("assets resolve requires --asset-id")
+                report = {"status": "ok", "read_only": True, **shared_media.resolve_asset(media, arguments.film, arguments.asset_id)}
+            else:
+                if not arguments.output_root or not arguments.path:
+                    raise ValueError("assets output requires --output-root and --path")
+                target = shared_media.output_path(media, arguments.output_root, arguments.path)
+                report = {"status": "ok", "preview": True, "created": False, "path": str(target)}
+        except (OSError, ValueError, csv.Error) as error:
+            report = {"status": "error", "read_only": True, "error": str(error), "action": "Check the canonical root and catalog; originals were not changed"}
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0 if report["status"] == "ok" else 2
     if arguments.command == "resume":
         print(json.dumps(resume(root), ensure_ascii=False, indent=2))
         return 0
