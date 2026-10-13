@@ -47,7 +47,7 @@ Goal: one Respan dashboard with token spend of all 3 agents (Codex, Claude Code,
 |---|---|---|
 | Claude Code 2.1.x | ✓ verified (2 spans accepted, `rejectedSpans: 0`) | `~/.claude/settings.json` → `hooks.Stop` runs `TRACE_TO_RESPAN=true node …/@respan/cli/dist/hooks/claude-code.cjs`. Log: `~/.claude/state/respan_hook.log`. |
 | Codex CLI 0.162 | ✓ verified (2 spans accepted) | `~/.codex/config.toml` → top-level `notify = ["<node>", "…/dist/hooks/codex-cli.cjs"]`. Log: `~/.codex/state/respan_hook.log`. |
-| OpenCode 1.18 | ✗ not possible via Respan today | `opencode-otel` emits OTLP **metrics+logs** only; Respan ingests OTLP **traces** only (`/api/v2/traces`). No trace-emitting OpenCode plugin exists. |
+| OpenCode 1.18 | ✓ verified (custom plugin, spans accepted) | `~/.config/opencode/plugins/respan-trace.ts` spawns detached `~/.config/opencode/respan/worker.cjs` on `session.idle`; worker reads `~/.local/share/opencode/opencode.db` (SQLite, read-only) and POSTs OTLP spans. Log: `~/.config/opencode/state/respan_trace.log`. Backfill: `node ~/.config/opencode/respan/worker.cjs <sessionID> --all`. (`opencode-otel` was unusable: metrics/logs only.) |
 
 Credentials: `~/.respan/credentials.json` (`{"default": {"apiKey": …}}`, chmod 600) — both hook runtimes read it, so no key in agent configs. Backups: `~/.codex/config.toml.bak-respan`, `~/.claude/settings.json.bak-respan`.
 Spans carry `gen_ai.request.model`, `gen_ai.usage.prompt_tokens/completion_tokens`, `llm.usage.total_tokens`. Sample: Codex "say hi" = **32,617 prompt tokens** (system prompt + AGENTS.md); Claude Code = 2 prompt / 8 completion (cache-read tokens not counted — treat Claude numbers as lower bounds).
@@ -67,3 +67,8 @@ Re-verify: `respan traces list --limit 5 --json` → expect `claude-code` and `c
 1. OpenCode: write a small OpenCode plugin (`~/.config/opencode/plugins/respan.ts`) that on `session.idle` posts an OTLP span (model + usage from `session.messages`) to `https://api.respan.ai/api/v2/traces` — closes the 3rd agent.
 2. Tag spans per movie task: set `RESPAN_WORKFLOW_NAME=<scene-id>` / `RESPAN_METADATA` in the Parley launcher so cost rolls up per scene.
 3. Kling calls: wrap `kling_batch.py` / `kling_release.py` with Respan `@workflow`/`@task`.
+| Plugin did async fetch+POST inside the `session.idle` handler → nothing sent | `opencode run` exits right after the reply, killing in-flight work. Spawn a detached worker (`stdio: "ignore", detached: true, unref()`), same as @respan/cli hooks. |
+| Expected OpenCode sessions under `~/.local/share/opencode/storage/` | OpenCode ≥1.18 stores sessions in `opencode.db` (SQLite: `session`, `message`, `part`; JSON in `data` columns). Read with `node:sqlite` (Node 24). |
+| Queried `select data from session` | `session` is a wide table (title, directory, agent, model, tokens_*…); only `message`/`part` have `data`. |
+
+Audit of per-turn overhead and reduction strategies: `docs/TOKEN_SPEND_AUDIT_2026-10-13.md`.

@@ -25,3 +25,5 @@ Uma atualização para descoberta, decisão ou bloqueio real; cumprir as atualiz
 
 ## 8. Avaliar a economia
 Comparar a próxima entrega concluída com uma anterior de escopo semelhante usando contagens disponíveis de mensagens, chamadas, leituras repetidas e testes repetidos. Tokens reais só quando o sistema fornecer medição; chamadas são indicadores, não tokens. Meta qualitativa: mais trabalho útil por troca, preservando revisão e rastreabilidade. Não instalar telemetria, abrir tarefa recorrente ou gastar para medir. Rever a política no encerramento de um lote se houver evidência de desperdício.
+
+Atualização 2026-10-13: a medição real existe — Respan rastreia tokens/custo por turno dos três agentes (`docs/RESPAN_OBSERVABILITY.md`); comparar entregas pelos traces, não por contagem de chamadas. Custo fixo por turno e reduções aplicadas: `docs/TOKEN_SPEND_AUDIT_2026-10-13.md`.
