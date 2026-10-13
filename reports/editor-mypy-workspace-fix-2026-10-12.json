@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "desktop-producer",
+  "assignment": "Repair VS Code Mypy failed to run caused by nonexistent workspace folders",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "Movies_Projects.code-workspace",
+    "reports/editor-mypy-workspace-fix-2026-10-12.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "Movies_Projects.code-workspace",
+      "sha256Before": "31820585d0f27b9e4e1dd84ef8288781a9b2e26183db9216bb9c99dedbdfb497"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Movies_Projects.code-workspace",
+      "sha256After": "47f2f6bdaf08f16ac8e521e44b910c45208f8bb61c073598f71da33a6f35720b",
+      "reason": "Remove nonexistent opencode and copilot-b folders; preserve four existing roots and Makefile configuration"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Failure came from a nonexistent cwd, not a missing bundled mypy",
+      "evidence": "Mypy.log recorded FileNotFoundError for opencode and copilot-b; bundled mypy --version returned mypy 1.15.0",
+      "sha256": null
+    },
+    {
+      "statement": "Active Movies_Projects VS Code window adopted the corrected workspace folder list",
+      "evidence": "code --status after edit lists Movies_Projects, codex, claude, agent-parley; all paths verified as directories",
+      "sha256": null
+    }
+  ],
+  "verification": [
+    "Parsed workspace JSON and verified all remaining roots exist",
+    "Preserved existing workspace settings including makefile.makefilePath",
+    "Ran bundled mypy --version successfully using the extension bundled/libs environment",
+    "manage.py lint passed: zero hard findings, 10 pre-existing advisory findings"
+  ],
+  "nextActions": [],
+  "stageComplete": true,
+  "stageCompleteReason": "Workspace correction applied and verified in the active VS Code window. No production successor; an existing notification can be cleared by Mypy: Restart Server. Fresh post-restart extension log was not observed.",
+  "blockers": [],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "verified_local_editor_fix",
+  "ingest": {
+    "status": "not_applicable",
+    "by": "desktop-producer",
+    "at": null
+  }
+}

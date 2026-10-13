@@ -6,7 +6,7 @@
   "source": {
     "path": "../agent-parley/plugins/agent-parley",
     "repository": "https://github.com/andreathar/agent-parley",
-    "upstream": "https://github.com/suneel944/agent-parley",
+    "upstream": "https://github.com/andreathar/agent-parley",
     "branchAtInstall": "work/linux-isolation",
     "commitAtInstall": "5fd888f",
     "coordinateSkillSha256AtInstall": "3693db0b21a838b019f1a9efef3cab6d7e88ff8144ea2c29b13417c4a394c2e3",

@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/canonical-guard.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/canonical-guard.py",
             "timeout": 5
           }
         ]
@@ -26,17 +26,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/media-guard.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/media-guard.py",
             "timeout": 5
           },
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/kling-preflight.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/kling-preflight.py",
             "timeout": 10
           },
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/no-retry.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/no-retry.py",
             "timeout": 5
           }
         ]
@@ -48,7 +48,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/mistake-capture.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/mistake-capture.py",
             "timeout": 5
           }
         ]
@@ -60,7 +60,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/mistake-capture.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/mistake-capture.py",
             "timeout": 5
           }
         ]
@@ -71,17 +71,17 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/handoff-check.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/handoff-check.py",
             "timeout": 10
           },
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/zero-face-gate.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/zero-face-gate.py",
             "timeout": 10
           },
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/successor-check.py",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/successor-check.py",
             "timeout": 5
           }
         ]
