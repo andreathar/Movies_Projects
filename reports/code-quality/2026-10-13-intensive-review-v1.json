@@ -1,0 +1,216 @@
+{
+  "kind": "local_code_review_evidence",
+  "reviewDate": "2026-10-13",
+  "rootHead": "9e0eb7122fb29d280209cdd4388c41d17a8aac6f",
+  "siteHead": "dfb945f3aaaf5aaac20ed323cda66dd26d047bb9",
+  "siteHasPreexistingUncommittedChanges": true,
+  "sourceVersions": [
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256": "fc6de8e2a231ded093b97b3e99dc8e001173ce7f3cf36dc06bee095d22aed287"
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256": "a718cc78acf3418ad9e7def3f9f071998f042dad026b654cf99216d4b691f81f"
+    },
+    {
+      "path": "scripts/gemini_generate.py",
+      "sha256": "2c7f9fdb86663b0336e9be12c2748c6c66871e22233d6151502193b5ace704a3"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256": "64623718e745fec0385e7b79e61d93ef5367125356fc9c1d04f306523448bed0"
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256": "4593ef34839e67298333f65a45be916fe07ffbbba8fc5816ec9ab5a4dc64a1e0"
+    },
+    {
+      "path": "scripts/shared_media.py",
+      "sha256": "14d70e57ecb6cfb73b4943395c4808a13404b0ffe5683958b9d499e15601a6c8"
+    },
+    {
+      "path": ".claude/hooks/zero-face-gate.py",
+      "sha256": "fbbf4f2278ee4f1170e6891e71b6a8b33d4feb0c416b0b9ece55ca73fd639f53"
+    },
+    {
+      "path": ".claude/hooks/_common.py",
+      "sha256": "4c32f345a3c87d258040d75a64978426867c4f10b185edf29001ca7ae8848185"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256": "86600eb089aa14b1ddf8ea1420cbb82ac2ffb5e4c3d1750930804c8faf4537ae"
+    },
+    {
+      "path": "sites/movies-demandas/app/api/workspace/route.ts",
+      "sha256": "692095c04235d209f15ba03d55c72efe25599214fcf836db10c1b1a992ad2f9a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-common.mjs",
+      "sha256": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256": "f82a1309897e599bca9e255741feff5118dfcab00c469d777d78eb0d3ab4a859"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256": "985c45c8e0a175e5124bd23bb52c15a357b712685a83052a0397abeb4706abcf"
+    }
+  ],
+  "checks": [
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "result": "pass",
+      "tests": 191
+    },
+    {
+      "command": "npm test (site)",
+      "result": "pass",
+      "tests": 26
+    },
+    {
+      "command": "npx tsc --noEmit (site)",
+      "result": "pass"
+    },
+    {
+      "command": "npm run lint (site)",
+      "result": "pass"
+    },
+    {
+      "command": "npm run check:data (site)",
+      "result": "pass"
+    },
+    {
+      "command": ".venv/bin/python scripts/manage.py validate",
+      "result": "pass_with_3_shared_skill_hash_warnings"
+    },
+    {
+      "command": ".venv/bin/python scripts/manage.py lint",
+      "result": "existing_findings",
+      "hard": 10,
+      "advisory": 10
+    },
+    {
+      "command": ".venv/bin/python scripts/production_plan.py check --verify-media",
+      "result": "pass_with_existing_blockers"
+    },
+    {
+      "command": ".venv/bin/python scripts/agent_catalog.py --check",
+      "result": "pass"
+    },
+    {
+      "command": "both site exporters --check",
+      "result": "stale_repository_revision",
+      "listedSourceHashDrift": []
+    }
+  ],
+  "syntheticReproductions": [
+    {
+      "id": "F01",
+      "priority": "P1",
+      "result": {
+        "runnerStatus": "SUBMITTED",
+        "submittedReferenceChanged": true,
+        "payloadMatchesRelease": false,
+        "providerMocked": true
+      }
+    },
+    {
+      "id": "F02",
+      "priority": "P1",
+      "result": {
+        "existingOutputReplaced": true,
+        "providerMocked": true
+      }
+    },
+    {
+      "id": "F03",
+      "priority": "P2",
+      "result": {
+        "alteredStoryboardFlagAccepted": true,
+        "staleContentVersionStored": true
+      }
+    },
+    {
+      "id": "F04",
+      "priority": "P2",
+      "result": {
+        "acyclicTaskCounts": [
+          18,
+          30,
+          38
+        ],
+        "parseMsFor18": 13,
+        "timeoutMsFor30And38": 2000,
+        "timedOutChildrenTerminated": true
+      }
+    },
+    {
+      "id": "F05",
+      "priority": "P2",
+      "result": {
+        "declaredPilotSeconds": 5,
+        "timelineSeconds": 16,
+        "validationErrors": []
+      }
+    },
+    {
+      "id": "F06",
+      "priority": "P2",
+      "result": {
+        "totalCeiling": 40,
+        "providerReportedChargeSum": 51,
+        "schemaAccepted": true
+      }
+    },
+    {
+      "id": "F07",
+      "priority": "P2",
+      "result": {
+        "initialWorkspaceBytes": 87963,
+        "additionalImportsUntilOverLimit": 21,
+        "retainedPackages": 22,
+        "workspaceBytes": 1803065,
+        "apiLimit": 1800000,
+        "databaseWritten": false
+      }
+    },
+    {
+      "id": "F08",
+      "priority": "P2",
+      "result": {
+        "adjacentInvalidJSONAccepted": true,
+        "incorrectHashAndZeroFramesAccepted": true
+      }
+    }
+  ],
+  "realProviderCalls": 0,
+  "sourceCodeModified": false,
+  "canonicalProductionModified": false,
+  "limitations": [
+    "No deployed API/browser or database test",
+    "No production media generated or rendered",
+    "Synthetic results do not establish provider or artistic acceptance"
+  ],
+  "closingCheck": {
+    "reviewedSourceHashesStillMatch": true,
+    "handoffCheck": "pass",
+    "lintHard": 10,
+    "lintAdvisory": 11,
+    "lintNewHardFindings": 0,
+    "newAdvisory": "Review handoff is untracked and remains pending ingestion"
+  }
+}

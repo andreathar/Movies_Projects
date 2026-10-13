@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "qc",
+  "contributorKind": "registry-role",
+  "assignment": "Direct request from Andre: review code quality intensively. Source inspection and offline reproductions only.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/manifest.json",
+    "projects/andre-time-travel/tasks/board.json",
+    "projects/andre-time-travel/00_brief/approvals.json",
+    "skills/andre-time-travel/SKILL.md",
+    "projects/andre-time-travel/tasks/plans/workflow-map-v1.md",
+    "docs/PRODUCTION_PLAN.md",
+    "docs/LOCAL_AGENT_HANDOFF.md"
+  ],
+  "ownedPaths": [
+    "reports/code-quality/2026-10-13-intensive-review-v1.md",
+    "reports/code-quality/2026-10-13-intensive-review-v1.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-13-code-quality-intensive-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256Before": "fc6de8e2a231ded093b97b3e99dc8e001173ce7f3cf36dc06bee095d22aed287"
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256Before": "a718cc78acf3418ad9e7def3f9f071998f042dad026b654cf99216d4b691f81f"
+    },
+    {
+      "path": "scripts/gemini_generate.py",
+      "sha256Before": "2c7f9fdb86663b0336e9be12c2748c6c66871e22233d6151502193b5ace704a3"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": "64623718e745fec0385e7b79e61d93ef5367125356fc9c1d04f306523448bed0"
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256Before": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7"
+    },
+    {
+      "path": "scripts/manage.py",
+      "sha256Before": "4593ef34839e67298333f65a45be916fe07ffbbba8fc5816ec9ab5a4dc64a1e0"
+    },
+    {
+      "path": "scripts/shared_media.py",
+      "sha256Before": "14d70e57ecb6cfb73b4943395c4808a13404b0ffe5683958b9d499e15601a6c8"
+    },
+    {
+      "path": ".claude/hooks/zero-face-gate.py",
+      "sha256Before": "fbbf4f2278ee4f1170e6891e71b6a8b33d4feb0c416b0b9ece55ca73fd639f53"
+    },
+    {
+      "path": ".claude/hooks/_common.py",
+      "sha256Before": "4c32f345a3c87d258040d75a64978426867c4f10b185edf29001ca7ae8848185"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256Before": "86600eb089aa14b1ddf8ea1420cbb82ac2ffb5e4c3d1750930804c8faf4537ae"
+    },
+    {
+      "path": "sites/movies-demandas/app/api/workspace/route.ts",
+      "sha256Before": "692095c04235d209f15ba03d55c72efe25599214fcf836db10c1b1a992ad2f9a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-common.mjs",
+      "sha256Before": "801fa3a533ab04d1ddab678286d7135f624c37d698cc65e5733ce3cb1f89730a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256Before": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "f82a1309897e599bca9e255741feff5118dfcab00c469d777d78eb0d3ab4a859"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "985c45c8e0a175e5124bd23bb52c15a357b712685a83052a0397abeb4706abcf"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "reports/code-quality/2026-10-13-intensive-review-v1.md",
+      "sha256After": "a16385a005fc0570dfaef4b4f2b940ce54570930560fa3354876bf69d95ccd4f",
+      "reason": "New code-review artifact; existing source preserved"
+    },
+    {
+      "path": "reports/code-quality/2026-10-13-intensive-review-v1.json",
+      "sha256After": "0c8143477663aebbeb422ab80338cabe31286db979aa145478224bad51833a7e",
+      "reason": "New code-review artifact; existing source preserved"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Eight defects reproduced locally with synthetic fixtures: two P1 and six P2. No actual provider calls or source repairs.",
+      "evidence": "reports/code-quality/2026-10-13-intensive-review-v1.json",
+      "sha256": "0c8143477663aebbeb422ab80338cabe31286db979aa145478224bad51833a7e"
+    }
+  ],
+  "verification": [
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "result": "pass",
+      "tests": 191
+    },
+    {
+      "command": "npm test (site)",
+      "result": "pass",
+      "tests": 26
+    },
+    {
+      "command": "npx tsc --noEmit (site)",
+      "result": "pass"
+    },
+    {
+      "command": "npm run lint (site)",
+      "result": "pass"
+    },
+    {
+      "command": "npm run check:data (site)",
+      "result": "pass"
+    },
+    {
+      "command": ".venv/bin/python scripts/manage.py validate",
+      "result": "pass_with_3_shared_skill_hash_warnings"
+    },
+    {
+      "command": ".venv/bin/python scripts/manage.py lint",
+      "result": "existing_findings",
+      "hard": 10,
+      "advisory": 10
+    },
+    {
+      "command": ".venv/bin/python scripts/production_plan.py check --verify-media",
+      "result": "pass_with_existing_blockers"
+    },
+    {
+      "command": ".venv/bin/python scripts/agent_catalog.py --check",
+      "result": "pass"
+    },
+    {
+      "command": "both site exporters --check",
+      "result": "stale_repository_revision",
+      "listedSourceHashDrift": []
+    }
+  ],
+  "nextActions": [],
+  "stageComplete": true,
+  "stageCompleteReason": "Requested review is complete. No remediation assignment started; desktop producer retains the findings for review and any separately assigned implementation.",
+  "blockers": [],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

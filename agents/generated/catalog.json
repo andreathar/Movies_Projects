@@ -3,7 +3,7 @@
   "sources": [
     {
       "path": "AGENTS.md",
-      "sha256": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82"
+      "sha256": "a5d2b5a4a7aad2b3d5ab509ad2fdf74af2d7cb5cca72d3e96a6468d2f17004d0"
     },
     {
       "path": "agents/registry.json",

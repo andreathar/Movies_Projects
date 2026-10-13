@@ -46,7 +46,29 @@ def main():
     from google import genai
     from PIL import Image
 
-    client = genai.Client(api_key=api_key)
+    # --- Respan: tracing (observability) + optional gateway ---
+    # Tracing: the instrumentor must be created BEFORE the Gemini client so every
+    # generate_content call is exported as a trace/span to Respan.
+    # Gateway: set RESPAN_GATEWAY=1 to route the call through api.respan.ai instead
+    # of calling Google directly (uses RESPAN_API_KEY; Respan needs Gemini credits/key).
+    respan_api_key = os.environ.get("RESPAN_API_KEY")
+    use_gateway = os.environ.get("RESPAN_GATEWAY", "").strip() in ("1", "true", "yes")
+    if respan_api_key:
+        from respan import Respan
+        from respan_instrumentation_google_genai import GoogleGenAIInstrumentor
+
+        Respan(instrumentations=[GoogleGenAIInstrumentor()])
+    elif use_gateway:
+        print("ERRO: RESPAN_GATEWAY=1 exige RESPAN_API_KEY no .env", file=sys.stderr)
+        sys.exit(1)
+
+    if use_gateway:
+        client = genai.Client(
+            api_key=respan_api_key,
+            http_options={"base_url": "https://api.respan.ai/api/google/gemini"},
+        )
+    else:
+        client = genai.Client(api_key=api_key)
 
     contents = []
     # Anexa fotos de referência para consistência de personagem

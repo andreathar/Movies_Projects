@@ -1,0 +1,746 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "coordinator",
+  "contributorKind": "registry-role",
+  "assignment": "Andre authorized technical catalog repair, shared-media configuration and frontend/source alignment; independent scope complete, native OpenCode grant remains pending.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/AGENT_CATALOG.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/LOCAL_AGENT_HANDOFF.md"
+  ],
+  "ownedPaths": [
+    "sites/movies-demandas/scripts/check-data.mjs",
+    "sites/movies-demandas/tests/export.test.mjs",
+    "sites/movies-demandas/app/workspace-reference.tsx",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/scripts/export-workspace.mjs",
+    "AGENTS.md",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/memory/mistakes.jsonl",
+    "docs/SHARED_MEDIA.md",
+    "agents/generated/catalog.json",
+    "projects/andre-time-travel/asset-registry.csv",
+    "reports/asset-registry/asset-registry-before-20261013.csv",
+    "reports/asset-registry/repair-20261013.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256Before": "b1941cafe68cd49280bd2f0ae5752f3e2e3a677a5b93b42dd39f85d4400b8e45"
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256Before": "bcd98b23fd99c9259089a65c8e427fdac86da84a837d90b01ba2e39aab4608d6"
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256Before": "1cd4bc4319e1e9616955e6127b17e48e5a36f800b5d0f2b282dd6645e5e2e279"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "f82a1309897e599bca9e255741feff5118dfcab00c469d777d78eb0d3ab4a859"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "985c45c8e0a175e5124bd23bb52c15a357b712685a83052a0397abeb4706abcf"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "c7dfb83b75ecc6abe0ac548879d43767a42d2a723163fb373f21bafc1e775389"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "090b26c56914af3e7281a52f29d25443727a0de7bfec49454a88573cf0859462"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256Before": "8b400555a9ea2cf48674e9790ba8034f968439b1e611ab939957cf19d00d8aa0"
+    },
+    {
+      "path": "docs/SHARED_MEDIA.md",
+      "sha256Before": null
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "32f3e7d2fb37ce52323e240a78506315ee5b51ef9d1c4561e5f906f8130f4f57"
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "2fda88372dd8e843ee6efea74ca772097feafd89d39d76a3c1e5252290ec72f3"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/scripts/check-data.mjs",
+      "sha256After": "9dd3e17cf54b6b2b840d2a7b876a8dc55dba06445bd735c505849375c82dc789",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "sites/movies-demandas/tests/export.test.mjs",
+      "sha256After": "70200899db31fc66d55e23f78e910081780d250c96cad184b93bb0d24995e4bf",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256After": "42de2795fc7092521dc9fa8846242dbe3ec914869f8f11476c23c8f6340c4251",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "848cd575d66bb62217d87f0d345e133788eab116d1fde9e05af2e80eac7f3b8f",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "339c20a1182df6130e36c25b1100e2c983b9589afe8013cd34ecaddeca1277eb",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256After": "f54effd1f0f818568c9cf9d05ce2a56dcbde051e995b30971c96a33505e153c9",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256After": "a5d2b5a4a7aad2b3d5ab509ad2fdf74af2d7cb5cca72d3e96a6468d2f17004d0",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "9470af7f00cb4ccc8cd28dac789d2695599df3f669d4830ca5bc501dd2b1fc8f",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256After": "e969b46323dfc173325b385fca1979c191d743f079e13f83b1a3c7e90078e854",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "docs/SHARED_MEDIA.md",
+      "sha256After": "19809aa1a29812b1f790479d5c962e640b9cc5f0116989533efd5342a04e0ebf",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "f20bb2771b9e8c4d7ddf58dd48f40ac7b6ec64a9ccaa824a87808dd3a193af2b",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256After": "999a923f52492029b95de5717fdec3d6e5ede7e4cd81f5c86de17f190e3c7715",
+      "reason": "Verified local catalog/frontend/documentation integration; preserve concurrent work."
+    },
+    {
+      "path": "reports/asset-registry/asset-registry-before-20261013.csv",
+      "sha256After": "2fda88372dd8e843ee6efea74ca772097feafd89d39d76a3c1e5252290ec72f3",
+      "reason": "Exact prior CSV and row/provenance/hash audit; no media copy."
+    },
+    {
+      "path": "reports/asset-registry/repair-20261013.json",
+      "sha256After": "735244fb97529a0a8df5412ea1f265188d7aa26a071f0210ff8fc36f8a3297a8",
+      "reason": "Exact prior CSV and row/provenance/hash audit; no media copy."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "290 stable IDs, active CSV valid, approvals/media unchanged; complete prior rows/proofs retained.",
+      "evidence": "reports/asset-registry/repair-20261013.json",
+      "sha256": "735244fb97529a0a8df5412ea1f265188d7aa26a071f0210ff8fc36f8a3297a8"
+    }
+  ],
+  "verification": [
+    "Fresh streamed file-hash checks and current path containment.",
+    "Movies assets validate, workspace validate and 191 offline tests passed.",
+    "Frontend staged exports/data/types/27 tests/lint/isolated build passed.",
+    "Shared profile active for future lanes only; pool disabled; initializer removed; identities/grants/credential config preserved.",
+    "Existing handoff source hashes compared to current sources; prior file retained verbatim."
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Review technical handoff and decide new opencode-check identity/grant for one bounded native diagnostic. No old lane restore or historical59/65 resend.",
+      "readiness": "blocked_only_on_native_grant_decision"
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Independent catalog/config/frontend implementation complete; native diagnostic is a separate explicitly blocked action.",
+  "blockers": [
+    {
+      "description": "Only OpenCode process uses deleted worktree; no valid session/rebinding. New lightweight identity requires new Parley grant.",
+      "owner": "Andre/producer",
+      "unblockCondition": "Explicitly authorize opencode-check identity/grant in existing movies-lane with current account for one bounded send/ACK/reply diagnostic."
+    }
+  ],
+  "andreOnlyGates": [
+    "New OpenCode identity/grant remains pending; no creation/message executed."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": "Legacy active CSV combined incompatible shapes and duplicate correction history.",
+      "detected_by": "strict validator/hash audit",
+      "solution": "Proof-backed normalization and historical-row archive; no creative decision."
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "supersedes": [
+    "2026-10-12-cinematic-coherence-integration-v1.json"
+  ],
+  "supersessionScope": {
+    "scope": "dated source-hash claims only; not creative acceptance, board state, media provenance or original implementation history",
+    "historicalHandoffPath": "projects/andre-time-travel/agents/handoffs/2026-10-12-cinematic-coherence-integration-v1.json",
+    "historicalHandoffSha256": "c31d98c407d6fd54a66c665127ba9ec149a4eb21f00351317452b2d00fb88cc0",
+    "currentSourceObservations": [
+      {
+        "path": "AGENTS.md",
+        "historical_sha256": "510989b1e966ec2216767bbb6a2a88906d4fb733ea5b0e7d41a038c0e79baf82",
+        "current_sha256": "a5d2b5a4a7aad2b3d5ab509ad2fdf74af2d7cb5cca72d3e96a6468d2f17004d0",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": true
+      },
+      {
+        "path": "docs/PRODUCTION_PLAN.md",
+        "historical_sha256": "3a67382c81087ca4a08ae57db17b636c79787ba46741413241665dd3c98a4fbf",
+        "current_sha256": "3a67382c81087ca4a08ae57db17b636c79787ba46741413241665dd3c98a4fbf",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/REPEATABLE_WORKFLOW.md",
+        "historical_sha256": "96393f99f8ccea5d7f563c07894c700a4918df8afdb0ebe66e2bdf297ac1e602",
+        "current_sha256": "96393f99f8ccea5d7f563c07894c700a4918df8afdb0ebe66e2bdf297ac1e602",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/06-imagem-para-video.md",
+        "historical_sha256": "4e16448580a53c8eb657649ec97b72bf2843b62756100f6d3c57e72d5a2206da",
+        "current_sha256": "4e16448580a53c8eb657649ec97b72bf2843b62756100f6d3c57e72d5a2206da",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+        "historical_sha256": "7f76dd24197d6863261bb9c2e80d1114506ace3d17df7a38c2399b2f3b8eb741",
+        "current_sha256": "7f76dd24197d6863261bb9c2e80d1114506ace3d17df7a38c2399b2f3b8eb741",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+        "historical_sha256": "6cff2399c3991c450a9085f23ebb843117a2041b71648b98bf6ea2036a66a478",
+        "current_sha256": "6cff2399c3991c450a9085f23ebb843117a2041b71648b98bf6ea2036a66a478",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/11-receitas-do-filme.md",
+        "historical_sha256": "a8f1e17a88886049307895b58269d6416bf2772bda98217d7b2934b3120fcfed",
+        "current_sha256": "a8f1e17a88886049307895b58269d6416bf2772bda98217d7b2934b3120fcfed",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/12-custos-e-ledger.md",
+        "historical_sha256": "00b3680308b89def64d71f4ad96d474c9799d194bf357a87ada77e22af328cc6",
+        "current_sha256": "00b3680308b89def64d71f4ad96d474c9799d194bf357a87ada77e22af328cc6",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/17-integracao-cli.md",
+        "historical_sha256": "ee8e51b684de56ebcef23c69a7f4b1d448ff6f1f741116d360f50f4f68a25759",
+        "current_sha256": "ee8e51b684de56ebcef23c69a7f4b1d448ff6f1f741116d360f50f4f68a25759",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "docs/kling-manual/tools/kling_preflight.py",
+        "historical_sha256": "3707ff1eaec975a6766015f10a4e4c1307da5ebe31075723957595255cd8ed44",
+        "current_sha256": "3707ff1eaec975a6766015f10a4e4c1307da5ebe31075723957595255cd8ed44",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+        "historical_sha256": "e2ab688d90bca0532fdb87167278fb3ae0ae91640d07637e0478bc2815b3aaa5",
+        "current_sha256": "e2ab688d90bca0532fdb87167278fb3ae0ae91640d07637e0478bc2815b3aaa5",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/approvals.json",
+        "historical_sha256": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+        "current_sha256": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+        "historical_sha256": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592",
+        "current_sha256": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+        "historical_sha256": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261",
+        "current_sha256": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+        "historical_sha256": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a",
+        "current_sha256": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+        "historical_sha256": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10",
+        "current_sha256": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+        "historical_sha256": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b",
+        "current_sha256": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+        "historical_sha256": "8efc2ad91d17f62d58d3818602ff19b2ac8994b4810f576e51091d32cf636d80",
+        "current_sha256": "8efc2ad91d17f62d58d3818602ff19b2ac8994b4810f576e51091d32cf636d80",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/manifest.json",
+        "historical_sha256": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+        "current_sha256": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/memory/STATE.md",
+        "historical_sha256": "090b26c56914af3e7281a52f29d25443727a0de7bfec49454a88573cf0859462",
+        "current_sha256": "9470af7f00cb4ccc8cd28dac789d2695599df3f669d4830ca5bc501dd2b1fc8f",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": true
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/board.json",
+        "historical_sha256": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a",
+        "current_sha256": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+        "historical_sha256": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda",
+        "current_sha256": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+        "historical_sha256": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39",
+        "current_sha256": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+        "historical_sha256": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f",
+        "current_sha256": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "scripts/build_galileo_animatic.py",
+        "historical_sha256": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7",
+        "current_sha256": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "scripts/kling_batch.py",
+        "historical_sha256": "8f915f396b10600b2b469deb9752e94bceb7d7d8c4084a54f2689f72a4ece774",
+        "current_sha256": "fc6de8e2a231ded093b97b3e99dc8e001173ce7f3cf36dc06bee095d22aed287",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "scripts/kling_release.py",
+        "historical_sha256": "ae587c2688034e0c98835c0711a93b577ca1cd96cf6c27db333895d0d09ffb3b",
+        "current_sha256": "a718cc78acf3418ad9e7def3f9f071998f042dad026b654cf99216d4b691f81f",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "scripts/manage.py",
+        "historical_sha256": "acfd85b03e3581d01f620a2638de3154c8d43b7d83c9bd7d55d8ffc2ed5cfc04",
+        "current_sha256": "4593ef34839e67298333f65a45be916fe07ffbbba8fc5816ec9ab5a4dc64a1e0",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "scripts/production_plan.py",
+        "historical_sha256": "64623718e745fec0385e7b79e61d93ef5367125356fc9c1d04f306523448bed0",
+        "current_sha256": "64623718e745fec0385e7b79e61d93ef5367125356fc9c1d04f306523448bed0",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "shared/templates/kling-job-release.json",
+        "historical_sha256": "8176e011b680bdd40307c16d42df3073935a8cf95df9a04794f94ce1f95e0c57",
+        "current_sha256": "8176e011b680bdd40307c16d42df3073935a8cf95df9a04794f94ce1f95e0c57",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "shared/templates/kling-shot-families.json",
+        "historical_sha256": "7af89207f49ad2aad8aa3ad2116d8c1275c09505754fdc67a6087e5e86bc5db9",
+        "current_sha256": "7af89207f49ad2aad8aa3ad2116d8c1275c09505754fdc67a6087e5e86bc5db9",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/README.md",
+        "historical_sha256": "e7d5dc9aa6c3522aa842ee726d3ce2d165ed063a4b8fb7f05e46ef84984a84e1",
+        "current_sha256": "e7d5dc9aa6c3522aa842ee726d3ce2d165ed063a4b8fb7f05e46ef84984a84e1",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/app/dashboard.tsx",
+        "historical_sha256": "b0d1ce6867f5eedfc57559cc77b30990c8fa1a65738f98545f1d9d0e7f3b7b34",
+        "current_sha256": "b0d1ce6867f5eedfc57559cc77b30990c8fa1a65738f98545f1d9d0e7f3b7b34",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+        "historical_sha256": "503286b5b76771e5ef74a7551be50361cb2a206014b30a753739480750956b8a",
+        "current_sha256": "503286b5b76771e5ef74a7551be50361cb2a206014b30a753739480750956b8a",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+        "historical_sha256": "41390db3c06dae9ffda712aeca0547e253fdc88ca9b7360055d10998514dd20b",
+        "current_sha256": "41390db3c06dae9ffda712aeca0547e253fdc88ca9b7360055d10998514dd20b",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/app/restart-summary.tsx",
+        "historical_sha256": "5c9d9e2d31b5ea4518298cc69469f8cf7b294ffc293246c024b5828619dfc034",
+        "current_sha256": "5c9d9e2d31b5ea4518298cc69469f8cf7b294ffc293246c024b5828619dfc034",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/lib/model.ts",
+        "historical_sha256": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567",
+        "current_sha256": "36f3e89e02106de4742a9edcd09c10929b2937bc77f25737cb2590ea84b63567",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/lib/production-plan.ts",
+        "historical_sha256": "86600eb089aa14b1ddf8ea1420cbb82ac2ffb5e4c3d1750930804c8faf4537ae",
+        "current_sha256": "86600eb089aa14b1ddf8ea1420cbb82ac2ffb5e4c3d1750930804c8faf4537ae",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/scripts/export-production.mjs",
+        "historical_sha256": "ad4e7ff47ffdc385de3f9bdd26d8f37bb70e02a90f66f46fa9129bfe1411867e",
+        "current_sha256": "ad4e7ff47ffdc385de3f9bdd26d8f37bb70e02a90f66f46fa9129bfe1411867e",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_kling_batch.py",
+        "historical_sha256": "9cb66b016b95328143be6581f8e7dc4ca55f90f3496a7a56f222f13e4d53a51e",
+        "current_sha256": "9cb66b016b95328143be6581f8e7dc4ca55f90f3496a7a56f222f13e4d53a51e",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_kling_contract.py",
+        "historical_sha256": "b6c1c99c2f52f4ed14d52e2046198fffcf5060f5e3bde73a68c503bb4f39ed33",
+        "current_sha256": "fe4215bdba71cc49bc7fbb78b9908563041aedc8bb17633823d2b42e41b39f46",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_kling_release.py",
+        "historical_sha256": "868f20c41d26a215f0bb85412590e93d1999eed2dc5fd40aaffa3f3082e06f90",
+        "current_sha256": "3ecdb512417024a290f71a2d848a2838882059f6561067f1a7becc3a9a807ccc",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_manage.py",
+        "historical_sha256": "6fd344aa0116abf401b50fca824637d5caee9fc027309fcca7ba8429fe746c8d",
+        "current_sha256": "1dc68b138cd3283b864e371707999e6850e869233b4c70146af73b35ec499980",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_production_plan.py",
+        "historical_sha256": "66aa6ba844b2c1a83705d63c370cd5b041dd38c0ddeac3e37bc691dc1f75bea3",
+        "current_sha256": "0333616df33821c3bded468012d8a9ebe3ef00e0c2e85d9f0d3a148cc4b461b3",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "workspace.json",
+        "historical_sha256": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+        "current_sha256": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/tests/model.test.ts",
+        "historical_sha256": "58a50f53f042428245187ab3a3e1b21f0a99ddb7cca97a094bea8d7e06a1bc2d",
+        "current_sha256": "58a50f53f042428245187ab3a3e1b21f0a99ddb7cca97a094bea8d7e06a1bc2d",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "agents/generated/catalog.json",
+        "historical_sha256": "32f3e7d2fb37ce52323e240a78506315ee5b51ef9d1c4561e5f906f8130f4f57",
+        "current_sha256": "f20bb2771b9e8c4d7ddf58dd48f40ac7b6ec64a9ccaa824a87808dd3a193af2b",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": true
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/MATRIZ-SCHEMAS.md",
+        "historical_sha256": "b78abc16495de7d0a0fdbc4d9cf20d142f4a38685338ac3d8cbf86fc25060f09",
+        "current_sha256": "b78abc16495de7d0a0fdbc4d9cf20d142f4a38685338ac3d8cbf86fc25060f09",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-files.json",
+        "historical_sha256": "6b135655e7b6c8dde0ffe95593634903056d7a6292fdcb87cd9b21d61ace3463",
+        "current_sha256": "6b135655e7b6c8dde0ffe95593634903056d7a6292fdcb87cd9b21d61ace3463",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/asset-manifest-checks.json",
+        "historical_sha256": "850c25a6c9a2f25b13aa72517634104f05d49a7591447b0e6910441fd7586f08",
+        "current_sha256": "850c25a6c9a2f25b13aa72517634104f05d49a7591447b0e6910441fd7586f08",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/consumed-specifications.json",
+        "historical_sha256": "cdc31894e5c2b03020d07872811cfcd0b3d28129dbfc55c87de0241cec707ea7",
+        "current_sha256": "cdc31894e5c2b03020d07872811cfcd0b3d28129dbfc55c87de0241cec707ea7",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/counts.json",
+        "historical_sha256": "45fd9ec6241f4966356508228a8de395ffba7434cbab8011a491022cd33e6514",
+        "current_sha256": "45fd9ec6241f4966356508228a8de395ffba7434cbab8011a491022cd33e6514",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/detail-studies-summary.json",
+        "historical_sha256": "5260532f06593fefa017b8015e0aed6921f47b317cd977786207f458b31ab085",
+        "current_sha256": "5260532f06593fefa017b8015e0aed6921f47b317cd977786207f458b31ab085",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/model-contracts.json",
+        "historical_sha256": "9e1397b18e00d46d2e6492167e41696faf8618934737a164c37ba174d63cc1fa",
+        "current_sha256": "9e1397b18e00d46d2e6492167e41696faf8618934737a164c37ba174d63cc1fa",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/prompt-consumption-checks.json",
+        "historical_sha256": "39d68b09e1a656be4a98c2736d24ceabec6428a446e78a21721e47e911978020",
+        "current_sha256": "39d68b09e1a656be4a98c2736d24ceabec6428a446e78a21721e47e911978020",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/schema-evidence.json",
+        "historical_sha256": "d89cabc2116fe33025ecc54b0ef74eb4d201c3bc35f7b7b863b4e6d62b05ed48",
+        "current_sha256": "d89cabc2116fe33025ecc54b0ef74eb4d201c3bc35f7b7b863b4e6d62b05ed48",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/source-hashes.json",
+        "historical_sha256": "36626d57d953249f0dc64ff874a64c9000399821ce26504160383be52fc52601",
+        "current_sha256": "36626d57d953249f0dc64ff874a64c9000399821ce26504160383be52fc52601",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/inventory-evidence/verification.json",
+        "historical_sha256": "262917fa16a0ff4323fbad37ffd895ee2dfd328c3df9589651265cce6e0a1e9c",
+        "current_sha256": "262917fa16a0ff4323fbad37ffd895ee2dfd328c3df9589651265cce6e0a1e9c",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "historical_sha256": "ace0d3e355fa061ff4f1d24bc8ee1901ca8c2e771a670a1fce92f5ef37fd40f1",
+        "current_sha256": "848cd575d66bb62217d87f0d345e133788eab116d1fde9e05af2e80eac7f3b8f",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": true
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "historical_sha256": "5087bb2c07c0bfb7b56afb83ee9152232a08f5169a303e160f9d849ce25433b1",
+        "current_sha256": "339c20a1182df6130e36c25b1100e2c983b9589afe8013cd34ecaddeca1277eb",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": true
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/index.html",
+        "historical_sha256": "1eec08fdaf0e5ce4b3e39ef88408b8522ad60c1525c4804c5bdbe7ce9d4aea52",
+        "current_sha256": "1eec08fdaf0e5ce4b3e39ef88408b8522ad60c1525c4804c5bdbe7ce9d4aea52",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/render-evidence.json",
+        "historical_sha256": "80dd96cd60f1d733a19d48414839de6aedde1388be709915068db4e734d5b5cc",
+        "current_sha256": "80dd96cd60f1d733a19d48414839de6aedde1388be709915068db4e734d5b5cc",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-1.png",
+        "historical_sha256": "ed0d596e078317f08a841b416af8e7cebe0a77a5adc26e747e009c2d63b266ec",
+        "current_sha256": "ed0d596e078317f08a841b416af8e7cebe0a77a5adc26e747e009c2d63b266ec",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-3.png",
+        "historical_sha256": "56a0397f9a6fe52cb009499af5f523c29acc9bc82e033290b5c3d7228ee189b9",
+        "current_sha256": "56a0397f9a6fe52cb009499af5f523c29acc9bc82e033290b5c3d7228ee189b9",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+        "historical_sha256": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+        "current_sha256": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/frames.ffconcat",
+        "historical_sha256": "2a259789cdf90978dc89c42a81cfcb4833db35b9ec360f6512dfcbb8563ae474",
+        "current_sha256": "2a259789cdf90978dc89c42a81cfcb4833db35b9ec360f6512dfcbb8563ae474",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-4.png",
+        "historical_sha256": "67cb0902bbd2e5476ab93fda0ff824f57e4a2419dd56f18a55d9f10a55ec84cd",
+        "current_sha256": "67cb0902bbd2e5476ab93fda0ff824f57e4a2419dd56f18a55d9f10a55ec84cd",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/card-2.png",
+        "historical_sha256": "0a53d714b0a2cce16f5c085745da7fb2c5b1c12f95a22c11ce8b823969ce2108",
+        "current_sha256": "0a53d714b0a2cce16f5c085745da7fb2c5b1c12f95a22c11ce8b823969ce2108",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "reports/2026-10-12-master-plan-implementation.md",
+        "historical_sha256": "542cfddf3f7daec51bfe85869a0237a0bdb87fdf01e59f6bf552086c970737ae",
+        "current_sha256": "542cfddf3f7daec51bfe85869a0237a0bdb87fdf01e59f6bf552086c970737ae",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "reports/2026-10-12-master-plan-implementation-checks.json",
+        "historical_sha256": "869b0536e93eb04c83c8174d4cd87bcef8c4d2f90f8989fa3e13ed93562383f2",
+        "current_sha256": "869b0536e93eb04c83c8174d4cd87bcef8c4d2f90f8989fa3e13ed93562383f2",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "reports/2026-10-12-master-plan-safety-review.md",
+        "historical_sha256": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda",
+        "current_sha256": "02a5e79c78e3269bfca2d0c09ac11e2cf68aad130e9c73ff649ad5f0fc0a1dda",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "reports/2026-10-12-master-plan-safety-review-checks.json",
+        "historical_sha256": "16877bdf0126f01e2097505a4239909605353f96f81b8b805ee9f2de4b7887c6",
+        "current_sha256": "16877bdf0126f01e2097505a4239909605353f96f81b8b805ee9f2de4b7887c6",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_manage_lint.py",
+        "historical_sha256": "6c5868694d078e05078d890685ba661ff5e161cd26d427c6fe08cbb13f162859",
+        "current_sha256": "3a3d4afbc914723270c5ae9bf44e1820ea8b66743956587880e1bfb952bddb08",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "tests/test_cinematic_coherence.py",
+        "historical_sha256": "77a58ee4797e2b92d9dcecb7555eab14ae5a30e370ac202e5dde35a7b2999a3c",
+        "current_sha256": "77a58ee4797e2b92d9dcecb7555eab14ae5a30e370ac202e5dde35a7b2999a3c",
+        "changed_since_historical_delivery": false,
+        "written_by_this_delivery": false
+      },
+      {
+        "path": "sites/movies-demandas/tests/export.test.mjs",
+        "historical_sha256": "bcd98b23fd99c9259089a65c8e427fdac86da84a837d90b01ba2e39aab4608d6",
+        "current_sha256": "70200899db31fc66d55e23f78e910081780d250c96cad184b93bb0d24995e4bf",
+        "changed_since_historical_delivery": true,
+        "written_by_this_delivery": true
+      }
+    ],
+    "concurrentSourceMaintenance": "Sources already changed by prior commits/work were preserved and covered by current offline tests. No claim that this delivery edited those unrelated sources."
+  },
+  "nativeMediaReadVerified": null,
+  "readOnlyFilesystemEnforced": false,
+  "consoleStarted": false,
+  "newGrantsCreated": false,
+  "mediaCopied": false,
+  "published": false
+}

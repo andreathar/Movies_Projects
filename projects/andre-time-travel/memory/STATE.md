@@ -4,6 +4,8 @@ Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume s
 
 Última implementação local (2026-10-12): plano mestre integrado ao board e à fonte `../05_storyboard/source/production-plan.json`. Galileo G-L03/G-L04: fichas, 13 referências candidatas e animatic estático de 16 s em `../05_storyboard/animatics/galileo-g03-g04-v1/`. Andre autorizou implementar; não autorizou novos jobs/vozes/uploads. Skills, originais, roteiro e D14 preservados. Handoff desta implementação aponta verificação e pendências por versão. Coerência integrada ao lint/resume e painel em 2026-10-12: câmera temporal, áudio, referências e justificativas por hash; revisão OpenCode pendente (sem ACK/resultado verificado). Ver `../agents/handoffs/2026-10-12-cinematic-coherence-integration-v1.json`; sem novos envios pagos ou aceites artísticos.
 
+Organização Parley (2026-10-13): catálogo validado com 290 IDs existentes e aprovações preservadas; perfil shared-media ativo somente para futuras lanes, sem duplicar mídia. Histórico técnico em `reports/asset-registry/` e procedimento em `docs/SHARED_MEDIA.md`. OpenCode sem sessão válida; nova identidade/grant diagnóstico pendente, sem reenvio59/65.
+
 ## Read order
 1. `AGENTS.md` (rules) → `workspace.json` → this file.
 2. `../manifest.json`, `../tasks/board.json`, `../00_brief/approvals.json`, `../00_brief/decisions/` (D01–D16 and D20; D17–D19 remain proposed topics).
