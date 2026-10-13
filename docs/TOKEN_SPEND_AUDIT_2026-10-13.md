@@ -89,7 +89,7 @@ S4 alone was worth ~1k/turn (the estimate of 4.4k counted all 36 skills; only 10
 - `AGENTS.md` rewritten lean: 11,272 B (≈2.8k tok) → 7,375 B (≈1.8k tok). Every rule kept, narrative compressed, procedure stays in the linked docs. Full previous text: `docs/archive/AGENTS-full-2026-10-13.md`. `manage.py validate` 0, unit tests OK.
 - Codex lane executable: `~/.local/bin/codex-film` (= `codex --profile film "$@"`), registered as Parley provider **`codex-film`** (adapter codex, home env `CODEX_HOME`). New Codex lanes: `agent-parley participant add <name> --provider codex-film`. The existing `codex` participant still uses the stock provider (re-creating it retires its worktree — producer's call).
 - Agent Parley MCP server: nothing to insert anywhere. `agent-parley run <participant>` injects it per lane (Claude `--mcp-config`, Codex `-c mcp_servers.agent_parley.url=…`, OpenCode lane-private config overlay). Verified the `coordinate` skill is still indexed under the film profile (skills root `~/.agents/skills/coordinate` → Parley plugin).
-- Remaining duplicate: `~/.codex/AGENTS.md` contains the Context7 block twice (lines 1 and 19) → ~0.5k/turn, global file, not edited.
+- ~~Remaining duplicate: `~/.codex/AGENTS.md` Context7 block twice~~ — **correction 15:05**: the two `<!-- context7 -->` lines are the open/close markers of one block; nothing duplicated, nothing to cut.
 
 | Probe (one-line reply) | Start of day | End of day |
 |---|---|---|
@@ -104,3 +104,15 @@ The cache hit is the S7 effect: with memories/plugins off the prefix is byte-sta
 |---|---|
 | Nearly reported "6,139 tokens" from Codex's `tokens used` line as the new per-turn cost | That figure excludes cached input. Read `total_token_usage` in the rollout (`input_tokens` vs `cached_input_tokens`) or the Respan span; report both. |
 | Assumed the duplicated Context7 block was in the project AGENTS.md | It is in `~/.codex/AGENTS.md` (global), appearing twice; Codex concatenates global + project instructions. |
+
+## 9. Closing pass 2026-10-13 15:05
+- `~/.claude/skills/.trash` (17 entries, 4.8 MB, indexed by OpenCode with duplicate-name warnings) → `~/_archive/cloudflare-2026-10-13/claude-skills-trash`.
+- The 26 remaining `~/.agents/skills` are generic agent tooling (coordinate, browse, port-guard, secret-vault-injector, create-*…), not Cloudflare; left in place — pruning them is a cross-project decision.
+- `scripts/gemini_generate.py` + `respan_smoke.py`: the Gemini call is wrapped in `respan.workflow(name=RESPAN_WORKFLOW_NAME)` with `customer_identifier="movies-projects"` and `RESPAN_METADATA` → verified locally via a captured span: `traceloop.workflow.name=S00-probe`, same metadata keys as the agent hooks. Image cost now rolls into the scene total.
+- Respan read API (`traces list` / `logs list`) still returns 405 since ~13:45; ingest is 200. Platform-side; dashboard UI unaffected as far as we can tell.
+
+| Mistake | Solution |
+|---|---|
+| Reported the Context7 block as duplicated in `~/.codex/AGENTS.md` | The markers delimit one block. Read the file before counting markers. |
+| Used `Respan(app_name=…)` expecting it to set the workflow name | `app_name` → `service.name`. Workflow grouping needs `@respan.workflow(name=…)` around the call. |
+| Tried to verify the SDK tag via `respan traces list` (405) | Attach an in-process OTel `SpanExporter` and read the span attributes locally. |

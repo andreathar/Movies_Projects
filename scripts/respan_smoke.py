@@ -29,7 +29,12 @@ def main() -> int:
     from respan import Respan
     from respan_instrumentation_google_genai import GoogleGenAIInstrumentor
 
-    Respan(instrumentations=[GoogleGenAIInstrumentor()])
+    import json as _json
+    try: _meta = _json.loads(os.environ.get("RESPAN_METADATA", "") or "{}")
+    except ValueError: _meta = {}
+    Respan(instrumentations=[GoogleGenAIInstrumentor()],
+           app_name=os.environ.get("RESPAN_WORKFLOW_NAME") or "respan_smoke",
+           customer_identifier="movies-projects", metadata=_meta)
 
     if use_gateway:
         client = genai.Client(
@@ -46,10 +51,11 @@ def main() -> int:
         mode = "tracing"
 
     model = os.environ.get("RESPAN_SMOKE_MODEL", "gemini-3.8-flash")
-    response = client.models.generate_content(
-        model=model,
-        contents="Reply with exactly: respan smoke ok",
-    )
+    from respan import workflow as _wf
+    @_wf(name=os.environ.get("RESPAN_WORKFLOW_NAME") or "respan_smoke")
+    def _generate():
+        return client.models.generate_content(model=model, contents="Reply with exactly: respan smoke ok")
+    response = _generate()
     print(f"[{mode}] model={model} response={response.text!r}")
     return 0
 

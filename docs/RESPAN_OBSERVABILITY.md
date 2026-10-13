@@ -72,3 +72,12 @@ Re-verify: `respan traces list --limit 5 --json` → expect `claude-code` and `c
 | Queried `select data from session` | `session` is a wide table (title, directory, agent, model, tokens_*…); only `message`/`part` have `data`. |
 
 Audit of per-turn overhead and reduction strategies: `docs/TOKEN_SPEND_AUDIT_2026-10-13.md`.
+
+## Per-scene cost roll-up (added 2026-10-13 14:55)
+- Lane shell: `source scripts/lane_env.sh <lane> <role> <scene-id> [episode]` → exports `MOVIES_LANE_NAME`, `MOVIES_LANE_ROLE`, `RESPAN_WORKFLOW_NAME=<scene-id>`, `RESPAN_METADATA={lane,role,scene,episode}`. Verified on all three agents: root span `traceloop.workflow.name = <scene-id>`, metadata carries lane/role/scene/episode.
+- Project defaults for the Respan hooks: `.codex/respan.json` and `.claude/respan.json` (`customer_id: movies-projects`, `project`, `episode`) — known keys become span fields, extra keys become metadata. The OpenCode worker gets the same tags from the env vars (it doesn't read those files).
+- In Respan: filter traces by Workflow Name = scene → sum of tokens/cost across Codex, Claude Code and OpenCode turns for that scene. Gemini image calls (`gemini_generate.py`) are not yet tagged — pass `RESPAN_WORKFLOW_NAME` through the SDK init when needed.
+
+| Mistake | Solution |
+|---|---|
+| Looked for a per-lane config knob in the hook runtimes | They already read `RESPAN_WORKFLOW_NAME` / `RESPAN_METADATA` / `RESPAN_CUSTOMER_ID` env and `<cwd>/.codex|.claude/respan.json`; no code change needed, just a sourced env helper. |

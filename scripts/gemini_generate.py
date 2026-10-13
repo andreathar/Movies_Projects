@@ -57,7 +57,21 @@ def main():
         from respan import Respan
         from respan_instrumentation_google_genai import GoogleGenAIInstrumentor
 
-        Respan(instrumentations=[GoogleGenAIInstrumentor()])
+        # Scene/lane tags come from the lane shell (scripts/lane_env.sh), same as the
+        # agent hooks: RESPAN_WORKFLOW_NAME=<scene-id>, RESPAN_METADATA={lane,role,scene,episode}
+        import json as _json
+        try:
+            _meta = _json.loads(os.environ.get("RESPAN_METADATA", "") or "{}")
+        except ValueError:
+            _meta = {}
+        _meta.setdefault("project", "Movies_Projects")
+        _meta.setdefault("script", "gemini_generate.py")
+        Respan(
+            instrumentations=[GoogleGenAIInstrumentor()],
+            app_name=os.environ.get("RESPAN_WORKFLOW_NAME") or "gemini_generate",
+            customer_identifier="movies-projects",
+            metadata=_meta,
+        )
     elif use_gateway:
         print("ERRO: RESPAN_GATEWAY=1 exige RESPAN_API_KEY no .env", file=sys.stderr)
         sys.exit(1)
@@ -85,10 +99,16 @@ def main():
     print(f"Gerando via Gemini ({args.model}) com {len(args.references)} referências...")
     
     # Chama o modelo multimodal de geração de imagem
-    response = client.models.generate_content(
-        model=args.model,
-        contents=contents,
-    )
+    def _generate():
+        return client.models.generate_content(model=args.model, contents=contents)
+
+    if respan_api_key:
+        # Group this call under the scene (RESPAN_WORKFLOW_NAME) like the agent hooks do,
+        # so Respan rolls image cost into the same per-scene total.
+        from respan import workflow as _respan_workflow
+        _generate = _respan_workflow(name=os.environ.get("RESPAN_WORKFLOW_NAME") or "gemini_generate")(_generate)
+
+    response = _generate()
 
     # Procura a imagem gerada no output
     out_path = Path(args.output)
