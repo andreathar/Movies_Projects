@@ -1,0 +1,5 @@
+# preflight de 07_generations/requests/AB-MIN-turbo-approved.spec.json  (raiz de mídia: /mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel)
+INFO  [AB-MIN-01-turbo-3s-720p] URL: slot first_image: URL externa (não verifiquei o conteúdo; URLs podem expirar; prazo não verificado).
+INFO  [AB-MIN-01-turbo-3s-720p] TURBO: Use somente os campos declarados neste snapshot; ausência de controle de áudio não garante silêncio.
+
+resultado: 0 ERROR, 0 WARN em 1 job(s) — ok para pedir autorização (custo NÃO estimado aqui).

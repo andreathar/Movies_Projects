@@ -1,0 +1,4 @@
+# preflight de 07_generations/requests/AB-MIN-v3-approved.spec.json  (raiz de mídia: /mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel)
+INFO  [AB-MIN-02-v3_0-3s-720p] URL: slot first_image: URL externa (não verifiquei o conteúdo; URLs podem expirar; prazo não verificado).
+
+resultado: 0 ERROR, 0 WARN em 1 job(s) — ok para pedir autorização (custo NÃO estimado aqui).

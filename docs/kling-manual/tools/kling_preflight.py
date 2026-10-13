@@ -125,7 +125,7 @@ def video_facts(path):
             'fps': float(numerator) / float(denominator), 'bytes': os.path.getsize(path)}
 
 
-def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False):
+def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False, image_tool=False):
     if PLACEHOLDER_RE.match(ref.strip()):
         (rep.warn if allow_ph else rep.err)("PLACEHOLDER", f"{label}: placeholder não resolvido: {ref[:80]}")
         return
@@ -157,7 +157,9 @@ def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False):
         if max(w, h) >= MAX_SIDE:
             rep.err("FILE_DIMS", f"{label}: {w}x{h} não está abaixo de 4K: {ref}")
         ratio = min(w, h) / max(w, h)
-        if ratio < MIN_RATIO_ERR:
+        if ratio < MIN_RATIO_ERR and image_tool:
+            rep.warn("FILE_ASPECT", f"{label}: {w}x{h} (proporção {ratio:.2f}); em ferramenta de imagem 4:1 foi aceito [PROJETO] (R2-J02..J06 geraram 4128x1024), mas o limite escrito é 1:2: {ref}")
+        elif ratio < MIN_RATIO_ERR:
             rep.err("FILE_ASPECT", f"{label}: {w}x{h} (proporção {ratio:.2f}) é mais extrema que 2,5:1; entrada 4:1 já foi rejeitada: {ref}")
         elif ratio < MIN_RATIO_WARN:
             rep.warn("FILE_ASPECT", f"{label}: {w}x{h} (proporção {ratio:.2f}) passa de 1:2, limite escrito nas ferramentas; 5:2 foi aceito em vídeo no projeto, mas confirme: {ref}")
@@ -317,7 +319,8 @@ def check_job(job, models, root, req_dir, allow_ph):
     mapping = media_mapping(job, spec, rep)
     for sn, ref in mapping.items():
         if isinstance(ref, str) and ref.strip():
-            check_media(rep, f"slot {sn}", ref, root, req_dir, allow_ph, video=sn.startswith('video'))
+            check_media(rep, f"slot {sn}", ref, root, req_dir, allow_ph, video=sn.startswith('video'),
+                        image_tool=str(job.get('tool', '')).endswith('_image'))
     caps = ([spec['combinedItemCap']] if spec.get('combinedItemCap') else []) + spec.get('combinedItemCaps', [])
     for cap in caps:
         try:

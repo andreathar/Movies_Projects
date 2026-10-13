@@ -1,0 +1,91 @@
+{
+  "plan": "implementation-plan",
+  "scene": "G-P03",
+  "task": "T13",
+  "version": 1,
+  "status": "blueprint-not-released",
+  "paidActionsAuthorized": false,
+  "respanWorkflowName": "G-P03",
+  "consumer": "runner-neutral",
+  "inputs": [
+    {
+      "id": "G-IN",
+      "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+      "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4"
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Register G-IN and G-LISTEN-KF in the asset registry",
+      "owner": "producer",
+      "executor": "codex",
+      "gate": "asset_contract.py check exits 0",
+      "command": "python scripts/asset_contract.py check",
+      "humanOrPaidGate": false
+    },
+    {
+      "n": 2,
+      "title": "Director review of G-IN/G-OUT and geometry by hash",
+      "owner": "andre/director",
+      "executor": "human",
+      "gate": "directorApproval=approved with evidence",
+      "command": "decision record",
+      "humanOrPaidGate": true
+    },
+    {
+      "n": 3,
+      "title": "Select keyframe and bind first_image with role binding",
+      "owner": "producer",
+      "executor": "claude",
+      "gate": "no INPUT_ROLE_UNDOCUMENTED",
+      "command": "coherence.referenceBindings",
+      "humanOrPaidGate": false
+    },
+    {
+      "n": 4,
+      "title": "Strict coherence check",
+      "owner": "producer",
+      "executor": "any",
+      "gate": "0 errors, 0 unresolved WARN/INFO",
+      "command": "python scripts/production_plan.py check-coherence --shot G-P03 --strict",
+      "humanOrPaidGate": false
+    },
+    {
+      "n": 5,
+      "title": "Exact request, live schema, price quote, specific ceiling",
+      "owner": "producer",
+      "executor": "claude",
+      "gate": "payloadSha256 set; quote recorded",
+      "command": "production_plan.py check-request --spec <request.json>",
+      "humanOrPaidGate": false
+    },
+    {
+      "n": 6,
+      "title": "Release approval kling_job_release",
+      "owner": "andre",
+      "executor": "human",
+      "gate": "explicit approval bound to payload hash",
+      "command": "approval record",
+      "humanOrPaidGate": true
+    },
+    {
+      "n": 7,
+      "title": "Submit, collect, hash outputs into registry",
+      "owner": "producer",
+      "executor": "kling_batch",
+      "gate": "outputs mapped by asset_contract.py; cost row tagged G-P03",
+      "command": "scripts/kling_batch.py (only after step 6)",
+      "humanOrPaidGate": true
+    },
+    {
+      "n": 8,
+      "title": "Independent review of result",
+      "owner": "qc",
+      "executor": "different-model-than-author",
+      "gate": "findings logged, no self-approval",
+      "command": "handoff record",
+      "humanOrPaidGate": false
+    }
+  ]
+}

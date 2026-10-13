@@ -1,0 +1,7 @@
+# preflight de 07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request.json  (raiz de mídia: /mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel)
+ERROR [G-REF-galileo-pilot-v2] SLOT_COUNT: Imagens excedem os slots não terminais; use inputs para vídeo/cauda.
+WARN  [G-REF-galileo-pilot-v2] EXT_MISMATCH: slot image_1: extensão .png não bate com conteúdo JPEG: 02_references/table/R1-J26-table-anchor_2.png
+INFO  [G-REF-galileo-pilot-v2] FILE_OK: slot image_1: JPEG 2528x1696 0.56 MB
+INFO  [G-REF-galileo-pilot-v2] FILE_OK: slot image_2: PNG 1856x1936 6.18 MB
+
+resultado: 1 ERROR, 1 WARN em 1 job(s) — NÃO enviar.

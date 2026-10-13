@@ -111,6 +111,13 @@ class PreflightTests(unittest.TestCase):
         self.assertEqual(self.codes(job), [])
         self.assertIn("FILE_ASPECT", self.codes(job, "WARN"))
 
+    def test_aspect_extreme_is_warn_for_image_tools(self):
+        job = {"job": "t", "tool": "image_to_image", "model": "gemini-3.1-flash-image", "auth": "X",
+               "args": {"img_resolution": "2k", "aspect_ratio": "4:1", "imageCount": "1"},
+               "images": [self.wide], "prompt": "edit"}
+        self.assertNotIn("FILE_ASPECT", self.codes(job))
+        self.assertIn("FILE_ASPECT", self.codes(job, "WARN"))
+
     def test_missing_file_and_placeholder(self):
         self.assertIn("FILE_MISSING", self.codes(self.base_i2v(images=["nao/existe.png"])))
         self.assertIn("PLACEHOLDER", self.codes(self.base_i2v(images=["<aceito: caminho>"])))

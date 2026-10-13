@@ -183,6 +183,16 @@ class WorkspaceValidationTests(unittest.TestCase):
             self.assertIn("unknown skill", " ".join(json.loads(bad.stdout)["errors"]))
             registry_path.write_text(registry_original)
 
+            registry = json.loads(registry_original)
+            for role in registry["roles"]:
+                if role["id"] == "coordinator":
+                    role["delegatesTo"] = []  # no skills and no delegation: cannot be automated
+            registry_path.write_text(json.dumps(registry))
+            bad = self.run_cli("validate", fixture)
+            self.assertEqual(bad.returncode, 2)
+            self.assertIn("cannot be automated", " ".join(json.loads(bad.stdout)["errors"]))
+            registry_path.write_text(registry_original)
+
             workspace = json.loads((fixture / "workspace.json").read_text())
             workspace["projects"][0]["manifest"] = "/outside-workspace/manifest.json"
             (fixture / "workspace.json").write_text(json.dumps(workspace))

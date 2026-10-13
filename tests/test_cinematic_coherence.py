@@ -217,5 +217,41 @@ class CinematicCoherenceTests(unittest.TestCase):
         self.assertFalse(result['paidReleaseGranted'])
 
 
+    # --- Strict mode: ambiguity is intolerable unless explicitly acknowledged -----------
+    def test_strict_unacknowledged_warn_is_blocking(self):
+        self.job['prompt'] += ' The camera orbits around the subject.'
+        self.assertEqual(self.codes('ERROR'), set())  # lint levels stay documented
+        self.assertIn('CAMERA_MIXED', {i['code'] for i in p.unresolved_ambiguity(self.lint())})
+
+    def test_strict_acknowledged_warn_is_not_blocking(self):
+        self.job['prompt'] = 'Locked camera. Do not use a push-in.'
+        self.override('CAMERA_MIXED')
+        self.assertNotIn('CAMERA_MIXED', {i['code'] for i in p.unresolved_ambiguity(self.lint())})
+
+    def test_strict_declared_segments_resolve_info(self):
+        self.job['prompt'] = 'Locked camera for two seconds, then camera moves slowly.'
+        self.shot['coherence']['segments'] = self.segments()
+        self.binding()
+        self.assertIn('CAMERA_SEGMENTED', self.codes('INFO'))
+        self.assertEqual(p.unresolved_ambiguity(self.lint()), [])
+
+    def test_strict_info_without_declaration_blocks_and_can_be_acknowledged(self):
+        items = [{'level': 'INFO', 'code': 'INSPECTION_LIMIT', 'acknowledged': False}]
+        self.assertEqual(len(p.unresolved_ambiguity(items)), 1)
+        items[0]['acknowledged'] = True
+        self.assertEqual(p.unresolved_ambiguity(items), [])
+
+    def test_strict_error_can_never_be_overridden(self):
+        self.job['args']['duration'] = '5'
+        self.shot['coherence']['overrides'] = [{'code': 'STATE', 'reason': 'x', 'reviewer': 'x', 'subjectSha256': 'x'}]
+        self.assertIn('OVERRIDE_INVALID', self.codes('ERROR'))
+
+    def test_real_plan_strict_report_lists_every_open_ambiguity(self):
+        result = p.coherence_report(ROOT)
+        self.assertEqual(result['errors'], [])
+        self.assertEqual({i['code'] for i in result['unresolved']} - {'INPUT_ROLE_UNDOCUMENTED'}, set(),
+                         'novo aviso não reconhecido no plano real: resolver ou reconhecer com override')
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -13,7 +13,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": true,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "director",
@@ -28,7 +32,11 @@
       "paidSubmissionAuthority": false,
       "paidSubmissionRequiresApprovedShot": true,
       "creativeDecisionAuthority": true,
-      "decisionRecords": "projects/<episode>/00_brief/decisions/"
+      "decisionRecords": "projects/<episode>/00_brief/decisions/",
+      "delegatesTo": [],
+      "escalatesTo": [
+        "human:andre"
+      ]
     },
     {
       "id": "continuity",
@@ -39,7 +47,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "historian",
@@ -50,7 +62,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "dialogue-sound",
@@ -61,7 +77,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "storyboard",
@@ -73,7 +93,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "editor",
@@ -84,7 +108,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "qc",
@@ -97,7 +125,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "lighting",
@@ -108,7 +140,11 @@
       ],
       "running": false,
       "paidSubmissionAuthority": false,
-      "paidSubmissionRequiresApprovedShot": true
+      "paidSubmissionRequiresApprovedShot": true,
+      "delegatesTo": [],
+      "escalatesTo": [
+        "director"
+      ]
     },
     {
       "id": "coordinator",
@@ -121,7 +157,22 @@
       "creativeDecisionAuthority": false,
       "dispatchAuthority": true,
       "canonicalWriteAuthority": false,
-      "notes": "Coordinator is a proposed lane role; discover actual participants before dispatch. Routes work and verifies handoffs. Proposes board, decision and approval changes through handoffs; the producer applies board and approval changes, and the director records decision records. dispatchAuthority is not spending authority and not canonical-write authority. Does not approve work or spend money. The project-local coordinate link was removed. The external skill exists in the sibling source and installed plugin, but is not registered or required for this role; presence on disk does not prove loading in a session. Registry flags describe authority, not live Parley activity."
+      "notes": "Coordinator is a proposed lane role; discover actual participants before dispatch. Routes work and verifies handoffs. Proposes board, decision and approval changes through handoffs; the producer applies board and approval changes, and the director records decision records. dispatchAuthority is not spending authority and not canonical-write authority. Does not approve work or spend money. The project-local coordinate link was removed. The external skill exists in the sibling source and installed plugin, but is not registered or required for this role; presence on disk does not prove loading in a session. Registry flags describe authority, not live Parley activity.",
+      "delegatesTo": [
+        "producer",
+        "director",
+        "continuity",
+        "historian",
+        "dialogue-sound",
+        "storyboard",
+        "editor",
+        "qc",
+        "lighting"
+      ],
+      "escalatesTo": [
+        "human:andre"
+      ]
     }
-  ]
+  ],
+  "actionPathContract": "Every role needs at least one skill link or delegatesTo path, and an escalatesTo target (role id or human:*). Enforced by scripts/manage.py validate."
 }

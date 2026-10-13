@@ -129,6 +129,23 @@ def validate(root: Path) -> dict[str, Any]:
             require(
                 scoped_path(root, role["brief"]).is_file(), f"missing agent brief: {role['id']}"
             )
+        for role in agents["roles"]:
+            delegates = role.get("delegatesTo")
+            escalates = role.get("escalatesTo")
+            require(
+                isinstance(delegates, list) and isinstance(escalates, list) and escalates,
+                f"role {role['id']} needs delegatesTo (list) and a non-empty escalatesTo",
+            )
+            require(
+                bool(role.get("skills")) or bool(delegates),
+                f"role {role['id']} has no skill link or delegation path; it cannot be automated",
+            )
+            for target in delegates + escalates:
+                require(
+                    isinstance(target, str) and target != role["id"]
+                    and (target in roles or target.startswith("human:")),
+                    f"role {role['id']} points to unknown or self target: {target}",
+                )
         skills = read_json(root / "skills/registry.json")
         skill_names = {skill["name"] for skill in skills["skills"]}
         for role in agents["roles"]:

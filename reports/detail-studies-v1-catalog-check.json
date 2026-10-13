@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-13T19:06:37Z",
+  "png_count": 32,
+  "hash_mismatches": [],
+  "missing_in_manifest": [],
+  "not_in_gallery": [
+    "caesar-feet-v1.png",
+    "caesar-shoulder-left-v1.png",
+    "caesar-shoulder-right-v1.png",
+    "napoleon-hands-v1.png",
+    "napoleon-hands-v2.png",
+    "oppenheimer-shoulder-right-v1.png"
+  ],
+  "claim_checks": {
+    "25 slots covered": {
+      "result": "ok",
+      "evidence": "5 characters (caesar, genghis, galileo, napoleon, oppenheimer) x 5 studies (hands, feet, back, shoulder-left, shoulder-right) = 25 base slots; all 25 present in manifest.json. galileo-hands-out-v1 carries an extra 'hands-out' study label and is the 26th candidate, not one of the 25 slots."
+    },
+    "26 gallery candidates": {
+      "result": "ok",
+      "evidence": "index.html contains 26 <figure> blocks and 26 distinct .png references; manifest.json galleryCandidates=26."
+    },
+    "6 superseded images excluded from index.html": {
+      "result": "ok",
+      "evidence": "Exactly 6 manifest entries have status superseded_study: caesar-feet-v1, caesar-shoulder-left-v1, caesar-shoulder-right-v1, napoleon-hands-v1, napoleon-hands-v2, oppenheimer-shoulder-right-v1. None of these 6 is referenced in index.html. manifest.json supersededImagesPreserved=6."
+    },
+    "32 PNGs preserved": {
+      "result": "ok",
+      "evidence": "32 .png files on disk; 32 manifest.json image entries (no duplicates); manifest.json physicalImageCount=32. All 32 recomputed sha256 match the manifest."
+    },
+    "replacement relationships consistent": {
+      "result": "ok",
+      "evidence": "All 6 supersededBy targets exist as manifest entries and are shown in index.html. Edges: caesar-feet-v1->caesar-feet-v2, caesar-shoulder-left-v1->caesar-shoulder-left-v2, caesar-shoulder-right-v1->caesar-shoulder-right-v2, oppenheimer-shoulder-right-v1->oppenheimer-shoulder-right-v2 (each terminal target status candidate); napoleon-hands-v1->napoleon-hands-v2->napoleon-hands-v3 is a valid 2-step chain ending at the candidate v3 shown in index.html. No dangling or cyclic target; no status/supersededBy contradiction."
+    }
+  },
+  "notes": [
+    "Mechanical first pass only: hashes, file inventory and review.md claim cross-checks. No visual/likeness/continuity QC performed; that is not certified by this report.",
+    "All 32 on-disk PNGs are byte-identical to their manifest sha256; 0 hash mismatches.",
+    "not_in_gallery lists the 6 files with no index.html reference; this exactly equals the intended superseded set, so the exclusion is expected, not an orphan.",
+    "napoleon-hands-v1 points to its direct successor v2 (itself superseded by v3). The chain is consistent; if a single 'final' link is preferred, v1 could point directly to v3, but this is a presentation choice, not an inconsistency.",
+    "manifest.json image count 32 = newImagesThisBatch 30 + 2 reused earlier Galileo hand frames (galileo-hands-v1, galileo-hands-out-v1).",
+    "Read-only review: no generation, no paid action, no commits; canonical media untouched."
+  ]
+}

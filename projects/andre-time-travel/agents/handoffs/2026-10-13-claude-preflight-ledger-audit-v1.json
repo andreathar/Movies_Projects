@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "agentRole": "contributor (Claude; Kling specialist, offline audit; no spending authority)",
+  "assignment": "Andre: 'go' on five free batches. After state review only preflight (batch 1) and ledger audit (batch 2) were still useful; skill update, A/B tests and chapter checklists were already done by Codex.",
+  "ownedPaths": [
+    "reports/claude-preflight-2026-10-13/",
+    "docs/kling-manual/tools/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-13-claude-preflight-ledger-audit-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256Before": "3707ff1eaec975a6766015f10a4e4c1307da5ebe31075723957595255cd8ed44"
+    },
+    {
+      "path": "docs/kling-manual/tools/test_kling_tools.py",
+      "sha256Before": "0104022d6b6ed79a424977465e4a8e0e1949a84f9a760398190166bd3baf14ab"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "reports/claude-preflight-2026-10-13/README.md",
+      "sha256After": "ef244fe1be7643aa9a77cff0d283e4fc01b2ca8a5122c329eb56b55ecf274c9e",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "reports/claude-preflight-2026-10-13/ledger-overlap-proposal.csv",
+      "sha256After": "f16785276558840574b1ba33e2207a0b8bd5da4e17e51deb591eddadb0c1f117",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "reports/claude-preflight-2026-10-13/ledger_overlap_audit.py",
+      "sha256After": "4b5d98c801357d7d2ce2a120f9ef3a25dc118f6f3e9da622e6a5dbd342e32ce6",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "reports/claude-preflight-2026-10-13/requests_2026-10-09-galileo-pilot-v2-phase-a_request-gkf.template.json.txt",
+      "sha256After": "9b2e65ec7f55ede401d445be05da17ed127b8f94c5a7dacb77ccf8ec7a21f3fd",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "reports/claude-preflight-2026-10-13/requests_2026-10-09-galileo-pilot-v2-phase-a_request.json.txt",
+      "sha256After": "2b70906b3470977f3699950f755ddd098383eb16fbfa7f24bbee3aa148655893",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "reports/claude-preflight-2026-10-13/requests_AB-MIN-turbo-approved.spec.json.txt",
+      "sha256After": "9fa13a95153a3155d40ba62db30f725c447efd03da978c060275b6db4ea509cb",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "reports/claude-preflight-2026-10-13/requests_AB-MIN-v3-approved.spec.json.txt",
+      "sha256After": "3adb412df079a6e8f6fbdc6306f2e9bd340973b0bbcd6edd1e8d599cd2476c6a",
+      "reason": "new: read-only preflight/ledger audit output"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256After": "ce0affb0c06e346c1a47e75e18860d508f3b2cccab0b3ec559713410647e8b7c",
+      "reason": "FILE_ASPECT extreme ratio is WARN for *_image tools (4:1 proven by R2-J02..J06)"
+    },
+    {
+      "path": "docs/kling-manual/tools/test_kling_tools.py",
+      "sha256After": "b03ba3e5ca8b3c629419f1e6cf7baaff8a480721457def077588fa0c89b92d47",
+      "reason": "added test_aspect_extreme_is_warn_for_image_tools (16 tests)"
+    }
+  ],
+  "verification": [
+    {
+      "command": "python3 -B docs/kling-manual/tools/test_kling_tools.py",
+      "result": "16 passed"
+    },
+    {
+      "command": "kling_preflight over batches/*.json, Phase A request(+template), AB-MIN specs",
+      "result": "39+4 jobs: 0 ERROR except Phase A request.json (5 images vs 2 slots)"
+    },
+    {
+      "command": "ledger_overlap_audit.py credit-ledger.csv",
+      "result": "ledger sum 2351; reconciled rows 2180 vs real window span 1928; 12 overlapping rows flagged"
+    }
+  ],
+  "findings": [
+    "Phase A request.json still 5 images vs gemini-3-pro-image 2 slots (K1).",
+    "Extension mismatches: R1-J26-table-anchor_2.png is JPEG (~25 jobs); KF-*.jpg and R2-J12-insert-galileo_1.jpg are PNG; all accepted historically.",
+    "Ledger double-counts ~252 credits from concurrent-job windows; unrecorded balance jump 5813->31621 remains.",
+    "Preflight false positive on 4:1 image inputs fixed for image tools."
+  ],
+  "pendingDecisions": [
+    {
+      "owner": "producer",
+      "decision": "Adopt shared_window correction for the ledger (proposal in ledger-overlap-proposal.csv); original untouched."
+    },
+    {
+      "owner": "andre",
+      "decision": "Explain/record the 5813->31621 balance jump; decide whether D16/Phase A test is still needed; authorize MC-01 (45 cr) or defer."
+    }
+  ],
+  "canonicalStateChanged": false,
+  "paidJobsSubmitted": 0,
+  "reviewStatus": "pending_producer_review"
+}

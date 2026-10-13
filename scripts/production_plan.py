@@ -316,12 +316,24 @@ def cinematic_lint(shot, references, request=None, mapping=None):
         if not isinstance(override, dict) or any(not isinstance(override.get(k), str) or not override[k].strip() for k in ('code', 'reason', 'reviewer', 'subjectSha256')):
             add('ERROR', 'OVERRIDE_INVALID', 'Override exige código, motivo, revisor e hash.'); continue
         matches = [i for i in items if i['code'] == override['code']]
-        if override['subjectSha256'] != digest or not matches or any(i['level'] != 'WARN' for i in matches):
+        if override['subjectSha256'] != digest or not matches or any(i['level'] not in {'WARN', 'INFO'} for i in matches):
             add('ERROR', 'OVERRIDE_INVALID', 'Override obsoleto, sem aviso correspondente ou tentando dispensar erro.', override['code'])
         else:
             for item in matches:
                 item.update(acknowledged=True, override=copy.deepcopy(override))
     return items
+
+
+# Strict mode ("intolerante a ambiguidade"): um aviso só deixa de bloquear se foi
+# reconhecido por override (código, motivo, revisor, hash). INFO listado abaixo é
+# o recibo de uma declaração explícita que já resolveu a ambiguidade.
+RESOLVED_BY_DECLARATION = {'CAMERA_SEGMENTED'}
+
+
+def unresolved_ambiguity(items):
+    """WARN/INFO sem reconhecimento válido. Em modo estrito, cada um bloqueia como ERROR."""
+    return [i for i in items if i['level'] in {'WARN', 'INFO'} and not i.get('acknowledged')
+            and i['code'] not in RESOLVED_BY_DECLARATION]
 
 
 def coherence_report(root, shot_id=None, request=None):
@@ -353,6 +365,7 @@ def coherence_report(root, shot_id=None, request=None):
         items.extend(cinematic_lint(shot, refs, job, mapping))
         subjects.append({'shotId': shot['id'], 'sha256': coherence_hash(shot, refs, job)})
     return {'path': path, 'items': items, 'errors': [i for i in items if i['level'] == 'ERROR'],
+            'unresolved': unresolved_ambiguity(items),
             'subjects': subjects, 'mediaInspected': False, 'creativeAcceptanceGranted': False,
             'paidReleaseGranted': False}
 
@@ -488,6 +501,7 @@ def main():
     parser.add_argument('--family')
     parser.add_argument('--shot')
     parser.add_argument('--spec', type=Path)
+    parser.add_argument('--strict', action='store_true', help='check-coherence: WARN/INFO sem reconhecimento viram bloqueio')
     args = parser.parse_args()
     if args.command == 'check':
         result = validate(args.root, verify_media=args.verify_media)
@@ -508,6 +522,9 @@ def main():
         if args.spec and not isinstance(job, dict):
             parser.error('check-coherence aceita um pedido objeto')
         result = coherence_report(args.root, args.shot, job)
+        if getattr(args, 'strict', False):
+            result['strict'] = True
+            result['errors'] = result['errors'] + result['unresolved']
     elif args.command == 'check-request':
         if not args.spec:
             parser.error('check-request exige --spec')

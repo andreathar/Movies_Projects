@@ -201,3 +201,23 @@ Lane launch recipe that works from a non-TTY shell (Desktop Commander, cron): `s
 | Tried `agent-parley report show --as <lane>` / `mail list` from base checkout | Reports are read with `participant show <lane>` (Summary / Reported verification); mail only from a lane worktree. |
 | Expected muse-spark-1.1 to follow a 4-step task | It filed `a\nb\nc`. For film lanes pick a stronger OpenCode model or keep OpenCode for mechanical tasks; cost per turn is low but output was useless. |
 | Claude lane audit: assumed only the repo's MCP config mattered | claude.ai connectors sync into Claude Code as deferred tools; review the connector list for the lane account, not just `.mcp.json`. |
+
+## First real chain 2026-10-13 16:01–16:20 — scene `t12-detail-studies-v1-review`
+Workflow-map priority 1 (independent review of detail-studies-v1) dispatched to 3 lanes per `docs/MODEL_POLICY.md`: Big Pickle mechanical pass → Claude materials review → Codex-film continuity review. All three reports `ready`; deliverables + hashes in `projects/andre-time-travel/agents/handoffs/2026-10-13-t12-detail-studies-v1-independent-review-dispatch.md`. Per-scene spans accepted for all three agents (Codex 26 spans/turn, Claude 57 spans/turn).
+
+| Mistake | Solution |
+|---|---|
+| `launch2.sh` set `TASK=` without `export` → `script -c` subshell saw an empty `--task`; all three lanes started with no task (Codex did a generic startup check, muse-spark burned ~$0.016) | `export TASK=…` before `script`. Verify `agent-parley status` TASK column shows the task text within 30 s of launch. |
+| OpenCode lane ran muse-spark despite the repo `opencode.json` pin | Parley copies the **global** `~/.config/opencode/opencode.json` into the lane-private config, and the worktree carries only the *committed* repo config. Pin the model globally (`opencode/big-pickle`) and commit the repo pin. |
+| `pkill -f 'agent-parley run'` killed my own shell (its command line contained the pattern) → fixes silently didn't apply | Use `agent-parley participant stop <p>` only, or `pkill -f` with a pattern that can't match the caller. Re-check each fix with a separate command. |
+| Lanes write to `outputs/<output-task>/…` in their worktree, not to the path given in the task text | That is Parley's shared-media rule (derivatives confined to the lane output root). Read deliverables from `~/.local/state/agent-parley/projects/<id>/<lane>/outputs/<task>/`; the producer integrates. |
+| Lane worktrees have no `.venv` → `manage.py status` exits 2 inside a lane | Tell lanes to run project tools from the shared checkout's `.venv`. |
+
+## Mistake / Solution — production checklist (2026-10-13)
+
+| Mistake | Solution |
+|---|---|
+| Plan was to turn every WARN/INFO into ERROR; `overrides` only dismiss WARN, so this would make documented false positives unfixable and break 8 tests that encode the design. | Added `unresolved_ambiguity()` + `check-coherence --strict`: any WARN/INFO without a valid reviewed override blocks as an error. ERRORs still cannot be overridden. Real plan now reports 6 open `INPUT_ROLE_UNDOCUMENTED`. |
+| Session lost its link to the repo (`/mnt/data/...` not found in the cloud container; no shell tool). | Checked connected folders, listed the path (skeleton), requested folder access once, then used the device shell. Always verify the link before assuming paths. |
+| Registry/hash contract was assumed covered because `production_plan.py` hashes files; 32 detail-study PNGs were absent from the registry. | `scripts/asset_contract.py check` fails until every manifest hash is registered; proposal rows (approved=false) in `reports/detail-studies-v1-registry-proposal.csv`, canonical registry untouched. |
+| Agent roles had skills but no delegation field; coordinator had none at all. | `delegatesTo`/`escalatesTo` per role, enforced by `manage.py validate` ("cannot be automated"). |

@@ -1,0 +1,19 @@
+# preflight de 07_generations/requests/2026-10-09-galileo-pilot-v2-phase-a/request-gkf.template.json  (raiz de mídia: /mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel)
+INFO  [G-KF-M-galileo-pilot-v2-a1] FILE_OK: slot image_1: JPEG 1038x1384 0.52 MB
+WARN  [G-KF-M-galileo-pilot-v2-a1] PLACEHOLDER: slot image_2: placeholder não resolvido: <G-REF-accepted: caminho do download aceito de G-REF-galileo-pilot-v2, com sha25
+WARN  [G-KF-M-galileo-pilot-v2-a1] EXT_MISMATCH: slot image_3: extensão .png não bate com conteúdo JPEG: 02_references/table/R1-J26-table-anchor_2.png
+INFO  [G-KF-M-galileo-pilot-v2-a1] FILE_OK: slot image_3: JPEG 2528x1696 0.56 MB
+INFO  [G-KF-M-galileo-pilot-v2-a1] FILE_OK: slot image_4: PNG 2752x1536 6.49 MB
+WARN  [G-KF-M-galileo-pilot-v2-a1] EXT_MISMATCH: slot image_5: extensão .jpg não bate com conteúdo PNG: 07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg
+INFO  [G-KF-M-galileo-pilot-v2-a1] FILE_OK: slot image_5: PNG 2720x1536 3.79 MB
+INFO  [G-KF-M-galileo-pilot-v2-a2] FILE_OK: slot image_1: JPEG 1038x1384 0.52 MB
+WARN  [G-KF-M-galileo-pilot-v2-a2] PLACEHOLDER: slot image_2: placeholder não resolvido: <G-REF-accepted: caminho do download aceito de G-REF-galileo-pilot-v2, com sha25
+WARN  [G-KF-M-galileo-pilot-v2-a2] EXT_MISMATCH: slot image_3: extensão .png não bate com conteúdo JPEG: 02_references/table/R1-J26-table-anchor_2.png
+INFO  [G-KF-M-galileo-pilot-v2-a2] FILE_OK: slot image_3: JPEG 2528x1696 0.56 MB
+INFO  [G-KF-M-galileo-pilot-v2-a2] FILE_OK: slot image_4: PNG 2752x1536 6.49 MB
+WARN  [G-KF-M-galileo-pilot-v2-a2] EXT_MISMATCH: slot image_5: extensão .jpg não bate com conteúdo PNG: 07_generations/originals/R3-oppenheimer-speaking-o1_1.jpg
+INFO  [G-KF-M-galileo-pilot-v2-a2] FILE_OK: slot image_5: PNG 2720x1536 3.79 MB
+WARN  [G-KF-L-galileo-pilot-v2-a1] PLACEHOLDER: slot image_1: placeholder não resolvido: <G-KF-M-accepted: caminho do download aceito de G-KF-M, com sha256 conferido>
+INFO  [G-KF-L-galileo-pilot-v2-a1] FILE_OK: slot image_2: JPEG 1038x1384 0.52 MB
+
+resultado: 0 ERROR, 7 WARN em 3 job(s) — ok para pedir autorização (custo NÃO estimado aqui).
