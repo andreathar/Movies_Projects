@@ -134,24 +134,13 @@
   "nextActions": [
     {
       "role": "producer",
-      "action": "Após fechar a interface da extensão no Chrome, concluir QA das sete prévias, abrir/fechar por botão/Escape/fundo, navegar repetidamente; conferir review:status após fim da tarefa e revisar esta entrega.",
-      "readiness": "Código e servidor disponíveis; QA visual e persistência pós-turno ainda pendentes."
+      "action": "Manter a responsabilidade pelos próximos passos já registrados na base ativa Galileo: continuidade de referências e timing, depois revisão de Andre e eventual pedido com liberação própria. Este aceite não inicia tarefa sucessora nem autoriza gasto.",
+      "readiness": "Viewer tecnicamente aceito; referências propostas e gates criativos/financeiros pendentes, sem transferência de aprovação."
     }
   ],
-  "stageComplete": false,
-  "stageCompleteReason": "Implementação e checks técnicos entregues, mas QA de navegador solicitado ainda não executado.",
-  "blockers": [
-    {
-      "description": "Outra extensão aberta no Chrome impede automação da página.",
-      "owner": "Andre / usuário no PC",
-      "unblockCondition": "Fechar a interface da extensão e avisar para continuar a checagem visual."
-    },
-    {
-      "description": "Disponibilidade após término da tarefa precisa de check independente.",
-      "owner": "producer",
-      "unblockCondition": "Executar npm run review:status no frontend e confirmar HTTP após receber a entrega."
-    }
-  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Reparo técnico do viewer concluído e aceito após a verificação pós-turno. Conclusão restrita a esta entrega técnica; produção e gates criativos/financeiros permanecem nos estados canônicos existentes.",
+  "blockers": [],
   "andreOnlyGates": [
     "Semelhança, atuação/voz e corte permanecem pendentes; exibição local não aprova referências."
   ],
@@ -159,11 +148,11 @@
   "mistakes": [],
   "paidJobsSubmitted": 0,
   "canonicalStateChanged": false,
-  "reviewStatus": "pending_producer_review",
+  "reviewStatus": "accepted_technical_integration",
   "ingest": {
-    "status": "pending",
-    "by": null,
-    "at": null
+    "status": "ingested",
+    "by": "producer",
+    "at": "2026-10-13T23:29:08-03:00"
   },
   "supersedes": [
     "2026-10-13-galileo-active-baseline-v1.json"
@@ -178,5 +167,63 @@
     "quote": "do it",
     "proposal": "protected viewer limited to the seven selected images and launcher independent of task session",
     "parentThread": "01a0ff67-e9e4-75a0-99db-8bf420559029"
-  }
+  },
+  "technicalAcceptance": {
+    "acceptedBy": "producer",
+    "producerThreadId": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+    "recordedByDelegatedThreadId": "01a12e45-3e61-75cc-910d-9eac6292b03a",
+    "recordedAt": "2026-10-14T02:29:08+00:00",
+    "acceptedHandoffSha256": "c8186cf893188c40fb96c01e3bb5d1bf95ab7658b2d431868d3a15bb405c051e",
+    "scope": "Somente o reparo técnico do viewer desktop e launcher local; dez hashes novamente conferidos. Nenhuma aprovação criativa, incorporação artística ou autorização financeira.",
+    "authorization": {
+      "source": "Andre; evidência textual retransmitida pela conversa produtora nesta delegação",
+      "assistantMessageId": "Sentinel_fa72208d70a8819187edaf22a0ba3aa0",
+      "userMessageId": "Sentinel_d2e9daf65c308191b28be3f720bb0f72",
+      "at": "2026-10-14T02:25:00Z",
+      "quote": "yes",
+      "question": "May I record the verified viewer repair as technically accepted, while leaving every image’s creative approval pending?"
+    },
+    "evidenceReceiptHashes": {
+      "POST-TURN-CHECK.json": "e1e0895098520f78fe6eba1297e981707bbc8270207f9bdfd0f45d253a376870",
+      "POST-TURN-BROWSER.json": "09e2d411847cab715b7effafac00ed64770f3d5b075738d246ed4ee47b3de98a",
+      "DELIVERY-RECEIPT.json": "20cd8343d23d05b159d7e5a949bc0047010322d15584553e64d3affd9ea91a28"
+    },
+    "postTurnVerification": {
+      "checkedAt": "2026-10-14T00:54:16.700406+00:00",
+      "samePid": 3132958,
+      "startTicks": "8760851",
+      "survivedTaskBoundary": true,
+      "restartAttempted": false,
+      "httpImageHashesVerified": 7,
+      "browserCheckedAt": "2026-10-14T00:58:20.204Z",
+      "imagesOpenedAndClosed": 7,
+      "repeatOpen": true,
+      "escape": true,
+      "overviewAndProductionNavigation": true,
+      "limit": "Não comprova reinício do computador, recuperação após falha nem fechamento por clique no fundo."
+    },
+    "resolvedTechnicalBlockers": [
+      {
+        "description": "Outra extensão aberta no Chrome impede automação da página.",
+        "owner": "Andre / usuário no PC",
+        "unblockCondition": "Fechar a interface da extensão e avisar para continuar a checagem visual."
+      },
+      {
+        "description": "Disponibilidade após término da tarefa precisa de check independente.",
+        "owner": "producer",
+        "unblockCondition": "Executar npm run review:status no frontend e confirmar HTTP após receber a entrega."
+      }
+    ],
+    "priorNextActions": [
+      {
+        "role": "producer",
+        "action": "Após fechar a interface da extensão no Chrome, concluir QA das sete prévias, abrir/fechar por botão/Escape/fundo, navegar repetidamente; conferir review:status após fim da tarefa e revisar esta entrega.",
+        "readiness": "Código e servidor disponíveis; QA visual e persistência pós-turno ainda pendentes."
+      }
+    ],
+    "priorStageCompleteReason": "Implementação e checks técnicos entregues, mas QA de navegador solicitado ainda não executado.",
+    "creativeApprovalsChanged": false,
+    "spendingGatesChanged": false
+  },
+  "integrationNote": "Registro técnico autorizado explicitamente por Andre e ingerido por delegação do produtor. Assignment, claims e verification originais descrevem a entrega inicial; technicalAcceptance registra a checagem posterior e resolve suas duas pendências técnicas. Nenhum arquivo entregue, aprovação, decisão, board, mídia ou estado financeiro foi alterado nesta ingestão."
 }
