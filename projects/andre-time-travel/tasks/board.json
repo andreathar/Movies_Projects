@@ -159,7 +159,7 @@
         "T08",
         "T09"
       ],
-      "blocker": "Plano mestre local integrado. Nova cotação/teto por pedido ainda ausentes; A/B de 51 créditos encerrado, sem herdar teto anterior. Próximo: preço após seleção de referências e revisão do piloto.",
+      "blocker": "Base Galileo ativa: próximo gasto proposto é um único G-P04 após referências/timing; sem cotação/liberação atual e sem orçamento herdado.",
       "specification": "specs/production-tasks.md",
       "deliverables": [
         "docs/budget-and-envelope-resume-v3.md",
@@ -167,9 +167,10 @@
         "05_storyboard/animatics/galileo-g03-g04-v1/README.md"
       ],
       "verifiedAt": null,
-      "blockerUpdatedAt": "2026-10-12",
+      "blockerUpdatedAt": "2026-10-13",
       "localPreparation": {
         "plan": "05_storyboard/source/production-plan.json",
+        "baselineId": "galileo-g03-g04-2026-10-13",
         "status": "prepared_candidate",
         "approvalTransferred": false
       }
@@ -184,8 +185,8 @@
         "T07",
         "T10"
       ],
-      "blocker": "Animatic local G-L03/G-L04 de 16 s preparado com guias medidos e candidatos existentes. Revisão integral por ouvido, ritmo e aprovação de storyboard pendentes; voz final não impede esta preparação local.",
-      "blockerUpdatedAt": "2026-10-12",
+      "blocker": "Animatic G-L03/G-L04 de 16 s é evidência histórica de timing. Escuta/playback e ritmo aguardam revisão; guia D14 permite preparação local.",
+      "blockerUpdatedAt": "2026-10-13",
       "specification": "specs/production-tasks.md",
       "deliverables": [
         "05_storyboard/preproduction-atlas-v1/storyboard-cards.pdf",
@@ -196,6 +197,7 @@
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending.",
       "localPreparation": {
         "plan": "05_storyboard/source/production-plan.json",
+        "baselineId": "galileo-g03-g04-2026-10-13",
         "status": "prepared_candidate",
         "approvalTransferred": false
       }
@@ -210,8 +212,8 @@
         "T08",
         "T11"
       ],
-      "blocker": "13 referências de Galileo triadas estaticamente; IN/OUT/olhos selecionados apenas para pré-visualização. Outros encontros usam catálogos existentes. Sem nova aprovação de semelhança, geometria ou envelope temporal.",
-      "blockerUpdatedAt": "2026-10-12",
+      "blocker": "T12 materiais/continuidade consolidados para Galileo na activeBaseline do plano. Sete fontes propostas; faltam corrigir paletó/mesa e obter semelhança de Andre. Sem aceite artístico.",
+      "blockerUpdatedAt": "2026-10-13",
       "specification": "specs/production-tasks.md",
       "deliverables": [
         "02_references/keyframes/andre/",
@@ -223,6 +225,7 @@
       "preproductionNote": "Draft/reference artifacts added by atlas v1. Existing task completion and creative approval gates remain pending.",
       "localPreparation": {
         "plan": "05_storyboard/source/production-plan.json",
+        "baselineId": "galileo-g03-g04-2026-10-13",
         "status": "prepared_candidate",
         "approvalTransferred": false
       }
@@ -237,8 +240,8 @@
         "T10",
         "T12"
       ],
-      "blocker": "Pacote local do novo piloto G-L03/G-L04 preparado; reação após a resposta e mesa compartilhada candidata. Falta decisão de aparência/geometria/ritmo, voz final/sync e liberação de gasto por pedido. Preview antigo e seus limites F01/F03 preservados como histórico.",
-      "blockerUpdatedAt": "2026-10-12",
+      "blocker": "Base ativa Galileo G-L03/G-L04: referências → diálogo/movimento → teste único G-P04 → cobertura → edição → QC. Próximo: continuidade do master. Mídia anterior preservada como história; nenhum novo take aceito ou gasto liberado.",
+      "blockerUpdatedAt": "2026-10-13",
       "specification": "specs/production-tasks.md",
       "deliverables": [
         "08_edit/picture-lock/galileo-en-preview-v1.mp4",
@@ -251,6 +254,7 @@
       "verifiedAt": null,
       "localPreparation": {
         "plan": "05_storyboard/source/production-plan.json",
+        "baselineId": "galileo-g03-g04-2026-10-13",
         "status": "prepared_candidate",
         "approvalTransferred": false
       }

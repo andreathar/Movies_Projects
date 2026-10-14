@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "kind": "film_visual_production_plan",
   "production": "andre-time-travel",
-  "revision": "master-v1-local-implementation",
+  "revision": "galileo-baseline-2026-10-13",
   "implementationApprovalId": "APR-master-plan-local-2026-10-12",
   "sourceScope": "drafts/andre-time-travel-visual-restart-v1/scope.json",
   "preservedSources": [
@@ -33,6 +33,10 @@
     {
       "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
       "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-13-t12-detail-studies-v1-independent-review-dispatch.md",
+      "sha256": "8410cecc04c59646cb8a005c2929b115683476d8de96142c630058c4a939a18a"
     }
   ],
   "encounters": [
@@ -197,6 +201,23 @@
       "approvalEvidence": null
     },
     {
+      "id": "G-WARDROBE",
+      "label": "Foto real de figurino D02",
+      "path": "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+      "sha256": "75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b",
+      "role": "wardrobe",
+      "provenance": "real_photo_crop",
+      "selection": "comparison_only",
+      "states": {
+        "proposal": "proposed",
+        "technicalCheck": "static_checked",
+        "directorApproval": "pending",
+        "incorporation": "not_incorporated"
+      },
+      "notes": "Foto real aberta nesta seleção: paletó cinza de listras discretas e camisa clara listrada. Comparar com as linhas cruzadas mais visíveis dos IN/OUT; nenhuma aprovação nova de aparência.",
+      "approvalEvidence": null
+    },
+    {
       "id": "G-TABLE",
       "label": "Mesa D04",
       "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
@@ -244,7 +265,7 @@
         "directorApproval": "pending",
         "incorporation": "not_incorporated"
       },
-      "notes": "Andre à esquerda, mão apoiada e boca fechada; ombro/mão do interlocutor à direita, cabeça fora. Anel e lasca visíveis. Cabelo/rosto e escala precisam do julgamento de Andre. Inspeção estática da imagem inteira, sem prova de movimento.",
+      "notes": "Andre à esquerda, mão apoiada e boca fechada; ombro/mão do interlocutor à direita, cabeça fora. Anel e lasca visíveis. Cabelo/rosto e escala precisam do julgamento de Andre. Inspeção estática da imagem inteira, sem prova de movimento. Seleção para composição apenas: linhas cruzadas do paletó, lasca profunda junto à emenda e mapeamento do anel precisam ser reconciliados com G-WARDROBE/G-TABLE. IN/OUT não são um par first/tail aprovado.",
       "approvalEvidence": null
     },
     {
@@ -261,7 +282,7 @@
         "directorApproval": "pending",
         "incorporation": "not_incorporated"
       },
-      "notes": "Mesmo arranjo aparente do IN, mão de Andre elevada e boca entreaberta. Fonte para prever fala/gesto; still não comprova sincronismo. Verificar dedos, proporções, mesa e luz na futura animação.",
+      "notes": "Mesmo arranjo aparente do IN, mão de Andre elevada e boca entreaberta. Fonte para prever fala/gesto; still não comprova sincronismo. Verificar dedos, proporções, mesa e luz na futura animação. Seleção para composição apenas: linhas cruzadas do paletó, lasca profunda junto à emenda e mapeamento do anel precisam ser reconciliados com G-WARDROBE/G-TABLE. IN/OUT não são um par first/tail aprovado.",
       "approvalEvidence": null
     },
     {
@@ -730,24 +751,29 @@
   },
   "blockers": [
     {
-      "description": "Aparência e composição compartilhada ainda candidatas.",
-      "owner": "Andre / director",
-      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+      "description": "Continuidade de paletó e mesa ainda não resolvida.",
+      "owner": "Produtor / continuidade",
+      "unblockCondition": "Conferir a composição exata contra G-WARDROBE/G-TABLE; preparar somente as correções necessárias e revisar seus resultados."
     },
     {
-      "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
-      "owner": "Andre / dialogue-sound",
-      "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+      "description": "Semelhança dos novos IN/OUT ainda não aceita.",
+      "owner": "Andre",
+      "unblockCondition": "Julgar a seleção final por arquivo/hash depois das correções; o piloto antigo não aprova estes frames."
     },
     {
-      "description": "Novas gerações sem preço/cotação e liberação.",
-      "owner": "producer",
-      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+      "description": "Timing e atuação ainda sem playback/audição integral registrados.",
+      "owner": "Produtor / diálogo-som / editor",
+      "unblockCondition": "Ouvir G-L03/G-L04 e revisar pausas/gesto/reação. A medição dos arquivos não substitui essa escuta."
     },
     {
-      "description": "Atuação de referência e leitura atual do Element não qualificadas.",
-      "owner": "continuity / producer",
-      "unblockCondition": "Triar mídia existente; obter readback autorizado antes de vincular. Nenhuma nova captura ou upload automático."
+      "description": "Voz final e prova de dublagem/sync pendentes.",
+      "owner": "Andre / diálogo-som",
+      "unblockCondition": "Ouvir os candidatos existentes e escolher a voz; D14 permite guia no teste de imagem, mas não libera master final."
+    },
+    {
+      "description": "Primeiro teste de fala sem liberação paga.",
+      "owner": "Produtor",
+      "unblockCondition": "Fechar referências/pedido, schema e preço atuais, teto, validade e uploads exatos; registrar kling_job_release antes de um único envio."
     }
   ],
   "inventories": [
@@ -772,5 +798,311 @@
     "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
     "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
     "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg"
-  ]
+  ],
+  "activeBaseline": {
+    "id": "galileo-g03-g04-2026-10-13",
+    "title": "Galileo · uma cena completa primeiro",
+    "status": "prepared_not_artistically_approved",
+    "owner": "Produtor desktop",
+    "authorizationSource": "Andre, 2026-10-13 · Sentinel_1f1c130dfa648191aad0d6afc0c49d7b: delegou a escolha da abordagem e do ponto de partida. Escopo local; sem gasto, upload ou aceite artístico.",
+    "goal": "Concluir G-L03/G-L04 com continuidade de espaço, fala e reação; depois completar Galileo e expandir aos demais encontros.",
+    "lineIds": [
+      "G-L03",
+      "G-L04"
+    ],
+    "referenceIds": [
+      "G-ID",
+      "G-WARDROBE",
+      "G-TABLE",
+      "G-ERA",
+      "G-IN",
+      "G-OUT",
+      "G-EYE-B"
+    ],
+    "firstSpeakingShotId": "G-P04",
+    "nextStepId": "references",
+    "steps": [
+      {
+        "id": "references",
+        "title": "Fechar a continuidade das referências",
+        "taskIds": [
+          "T12",
+          "T13"
+        ],
+        "owner": "Produtor · continuidade e iluminação",
+        "dependsOn": [],
+        "state": "ready_local",
+        "referenceIds": [
+          "G-ID",
+          "G-WARDROBE",
+          "G-TABLE",
+          "G-ERA",
+          "G-IN",
+          "G-OUT",
+          "G-EYE-B"
+        ],
+        "inputs": [
+          "Fontes selecionadas por ID/hash; decisões D01/D02/D04/D09/D14/D20; achados T12 consolidados abaixo."
+        ],
+        "output": "Uma composição principal e sua variante mínima de escuta, com funções e limites documentados.",
+        "acceptance": [
+          "Tecido, mesa/anel/lasca, assentos, eixo e luz reconciliados; cabeça histórica totalmente fora.",
+          "Andre julga a própria semelhança na seleção exata. Correções de mídia, se necessárias, recebem escopo separado."
+        ]
+      },
+      {
+        "id": "dialogue",
+        "title": "Fechar intenção, pausas e movimento",
+        "taskIds": [
+          "T07",
+          "T11",
+          "T13"
+        ],
+        "owner": "Produtor · diálogo/som e editor",
+        "dependsOn": [],
+        "state": "ready_local",
+        "referenceIds": [
+          "G-IN",
+          "G-OUT",
+          "G-EYE-B"
+        ],
+        "inputs": [
+          "G-L03/G-L04 do CSV canônico; guias existentes de 2,832 s e 8,616 s; animatic histórico de 16 s."
+        ],
+        "output": "Ficha de atuação e timing revisada com áudio, sem reescrever ou acelerar as falas.",
+        "acceptance": [
+          "Pergunta fora de quadro; resposta integral; reação somente após sua causa; gesto baixo, câmera fixa e cabeça histórica fora.",
+          "Guia identificada sob D14; escolha de voz final por ouvido e prova de dublagem/sync continuam separadas."
+        ]
+      },
+      {
+        "id": "speaking-test",
+        "title": "Testar uma única fala: G-P04",
+        "taskIds": [
+          "T10",
+          "T13"
+        ],
+        "owner": "Produtor; revisão de continuidade e diálogo/som",
+        "dependsOn": [
+          "references",
+          "dialogue"
+        ],
+        "state": "blocked",
+        "referenceIds": [
+          "G-ID",
+          "G-WARDROBE",
+          "G-TABLE",
+          "G-OUT"
+        ],
+        "inputs": [
+          "G-P04/G-L04; referência final aprovada por versão; contrato e cotação atuais; liberação específica."
+        ],
+        "output": "Um take de fala com recibo/ID persistido, custo declarado ou desconhecido e parecer integral.",
+        "acceptance": [
+          "Primeiro teste pago da nova base: G-L04 inteira, aproximadamente 11 s propostos, sem encurtar os 8,616 s de guia para caber. Duração final só após timing/contrato/cotação.",
+          "Inspeção de todos os quadros, playback com som, identidade, boca/dentes/mãos, mesa e ausência de rosto histórico; nenhum reenvio automático."
+        ]
+      },
+      {
+        "id": "coverage",
+        "title": "Completar só a cobertura que faltar",
+        "taskIds": [
+          "T12",
+          "T13"
+        ],
+        "owner": "Produtor · editor",
+        "dependsOn": [
+          "speaking-test"
+        ],
+        "state": "blocked",
+        "referenceIds": [
+          "G-IN",
+          "G-EYE-B"
+        ],
+        "inputs": [
+          "Parecer do G-P04; fichas G-P03 e G-REACTION; lacunas reais do corte."
+        ],
+        "output": "Escuta e reação compatíveis com o teste aceito, sem inserts decorativos.",
+        "acceptance": [
+          "Cada novo pedido tem escopo/custo próprios; reutilização exige aprovação explícita do take e uso.",
+          "Reação de olhos proposta de 2 s apenas neste corte; mãos/pés/costas ficam fora da base inicial."
+        ]
+      },
+      {
+        "id": "edit",
+        "title": "Montar o trecho completo de Galileo",
+        "taskIds": [
+          "T11",
+          "T13"
+        ],
+        "owner": "Editor · diálogo/som",
+        "dependsOn": [
+          "coverage"
+        ],
+        "state": "blocked",
+        "referenceIds": [
+          "G-IN",
+          "G-OUT",
+          "G-EYE-B"
+        ],
+        "inputs": [
+          "Takes aceitos por hash; falas secas/guia identificada; mapa de áudio e pausas."
+        ],
+        "output": "Corte G-L03/G-L04 com timeline reproduzível, diálogo contínuo e legenda correspondente.",
+        "acceptance": [
+          "Mesmo espaço em fala/escuta; reação após a resposta; sem F01/F03. Roteiro inglês preservado.",
+          "Guia provisória visível como tal; cena não é master final até voz, sync e som final aprovados."
+        ]
+      },
+      {
+        "id": "qc",
+        "title": "Revisão independente e aceite da cena",
+        "taskIds": [
+          "T13"
+        ],
+        "owner": "QC independente; Andre para semelhança, voz e corte",
+        "dependsOn": [
+          "edit"
+        ],
+        "state": "blocked",
+        "referenceIds": [],
+        "inputs": [
+          "Arquivo exato do corte, hash, timeline, takes e registros de custo."
+        ],
+        "output": "Parecer do corte e decisão explícita antes de ampliar a produção.",
+        "acceptance": [
+          "Decode, reprodução integral com áudio, sincronismo e todos os quadros de risco/reflexos; limitações e falhas registradas.",
+          "Somente depois do aceite completar o restante de Galileo e transferir a receita aos outros encontros. Nenhuma aprovação por herança."
+        ]
+      }
+    ],
+    "approach": [
+      "Uma composição principal compartilhada; escuta derivada por alteração mínima. IN/OUT atuais são estudos, não endpoints aprovados.",
+      "Câmera fixa, gesto baixo, interlocutor offscreen e cabeça histórica totalmente fora; não usar motion control neste primeiro teste.",
+      "Voz nativa, se confirmada na rota escolhida, apenas como guia D14; dublagem/sync são testes separados antes do master. Element só se readback/compatibilidade/escopo forem confirmados."
+    ],
+    "decisions": [
+      {
+        "description": "Continuidade de paletó e mesa ainda não resolvida.",
+        "owner": "Produtor / continuidade",
+        "unblockCondition": "Conferir a composição exata contra G-WARDROBE/G-TABLE; preparar somente as correções necessárias e revisar seus resultados."
+      },
+      {
+        "description": "Semelhança dos novos IN/OUT ainda não aceita.",
+        "owner": "Andre",
+        "unblockCondition": "Julgar a seleção final por arquivo/hash depois das correções; o piloto antigo não aprova estes frames."
+      },
+      {
+        "description": "Timing e atuação ainda sem playback/audição integral registrados.",
+        "owner": "Produtor / diálogo-som / editor",
+        "unblockCondition": "Ouvir G-L03/G-L04 e revisar pausas/gesto/reação. A medição dos arquivos não substitui essa escuta."
+      },
+      {
+        "description": "Voz final e prova de dublagem/sync pendentes.",
+        "owner": "Andre / diálogo-som",
+        "unblockCondition": "Ouvir os candidatos existentes e escolher a voz; D14 permite guia no teste de imagem, mas não libera master final."
+      },
+      {
+        "description": "Primeiro teste de fala sem liberação paga.",
+        "owner": "Produtor",
+        "unblockCondition": "Fechar referências/pedido, schema e preço atuais, teto, validade e uploads exatos; registrar kling_job_release antes de um único envio."
+      }
+    ],
+    "reviewStatus": "consolidated_for_planning_only",
+    "reviewSources": [
+      {
+        "role": "materiais",
+        "reportId": "e73a2f1dc5cc4ffb",
+        "origin": "Parley claude/outputs/t12-detail-studies-v1-review/projects/andre-time-travel/00_brief/research/detail-studies-v1-materials-review.md",
+        "sha256": "c7d6b835b6de1ec36c582d888a226839f1c765a94d41cfd4ce627494c2f3d568"
+      },
+      {
+        "role": "continuidade",
+        "reportId": "c49282d7872f410b",
+        "origin": "Parley codex/outputs/t12-detail-studies-v1-review/projects/andre-time-travel/08_edit/reviews/detail-studies-v1-independent/continuity-review.md",
+        "sha256": "c7e779aa3fe829ce701d28742784c627867a9f407ba90bdc7209e729c626c279"
+      }
+    ],
+    "findings": [
+      {
+        "subject": "Figurino e mesa no plano principal",
+        "disposition": "Corrigir antes de geração",
+        "action": "T12 de continuidade mantém holds D02/D04. A inspeção direta dos IN/OUT nesta seleção também mostra linhas cruzadas no paletó e lasca mais profunda que a âncora. Usar composição como proposta, não como identidade/mesa aprovada.",
+        "referenceIds": [
+          "G-WARDROBE",
+          "G-TABLE",
+          "G-IN",
+          "G-OUT"
+        ],
+        "reviewRoles": [
+          "continuidade"
+        ]
+      },
+      {
+        "subject": "Mãos e pés de Galileo",
+        "disposition": "Fora da cobertura inicial",
+        "action": "T12 materiais: mãos IN/OUT sem anel/lasca D04 e bainha dos pés contrariando D20. Preservar estudos; corrigir somente se a montagem justificar seu uso. Nenhum par first/tail aprovado.",
+        "referenceIds": [
+          "G-HAND-IN",
+          "G-HAND-OUT"
+        ],
+        "reviewRoles": [
+          "materiais",
+          "continuidade"
+        ]
+      },
+      {
+        "subject": "Costas, cabeça e eixo",
+        "disposition": "Aplicar enquadramento conservador",
+        "action": "T12 não encontrou rosto histórico completo nos stills, mas registrou orelhas e envelope de cabeça pendente. Manter cabeça inteira fora e Andre à esquerda; ombro direito e costas não entram nesta base.",
+        "referenceIds": [
+          "G-SHOULDER-L",
+          "G-SHOULDER-R"
+        ],
+        "reviewRoles": [
+          "continuidade"
+        ]
+      },
+      {
+        "subject": "Materiais e luz de Arcetri",
+        "disposition": "Preservar incertezas",
+        "action": "Materiais do ombro esquerdo passaram no escopo histórico; isso não resolve continuidade/semelhança. Madeira do piso permanece escolha de arte sem prova histórica; usar G-ERA só como contexto. Fixar luz pela composição principal, não misturar a direção da placa.",
+        "referenceIds": [
+          "G-ERA",
+          "G-SHOULDER-L"
+        ],
+        "reviewRoles": [
+          "materiais",
+          "continuidade"
+        ]
+      }
+    ],
+    "inspection": "Sete fontes abertas diretamente em 2026-10-13: fotos G-ID/G-WARDROBE, mesa, placa Arcetri, IN/OUT e olhos B. Inspeção estática das imagens inteiras exibidas; algumas foram redimensionadas pela ferramenta. Sem biometria, playback, audição ou reexecução das revisões T12.",
+    "historyPolicy": "Roteiro inglês e decisões globais preservados. Takes, A/B, estudos e bíblias anteriores permanecem nos caminhos originais como história; nenhum take antigo é entrada ativa ou aceito por esta base.",
+    "historyEvidence": [
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+        "sha256": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+        "role": "Somente timing histórico; still animatic de 16 s, sem atuação/sync/aceite."
+      },
+      {
+        "path": "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v1.mp4",
+        "sha256": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d",
+        "role": "Preview histórico de 42 s; não é take de entrada desta base."
+      }
+    ],
+    "timelineSearch": {
+      "status": "not_found_in_bounded_search",
+      "locations": [
+        "projects/andre-time-travel",
+        "drafts",
+        "reports",
+        "Parley codex/outputs e codex/projects/andre-time-travel/08_edit",
+        "Parley claude/outputs"
+      ],
+      "result": "Galileo v2 é citado no STATE e em coverage-plan.md; timeline/media/technical-qc v2 não encontrados nessas áreas. Não alegar inexistência global. Recuperação posterior não bloqueia esta base; não reconstruir nem substituir v2 por suposição."
+    },
+    "firstPaidApproval": "Nenhum pedido liberado. Após continuidade e timing, propor um único teste de fala G-P04 com preço atual, teto, validade e uploads exatos. Correção de still, se indispensável antes dele, exige escopo próprio. Tetos de D16, Galileo e A/B são história, sem saldo de autorização herdado.",
+    "paidGenerationAuthorized": false
+  }
 }

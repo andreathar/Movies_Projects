@@ -14,6 +14,22 @@ Andre autorizou implementar o plano mestre em 2026-10-12, às 08:29:50 UTC. A ap
 
 O plano mestre entregue e seu anexo ficam em `tasks/plans/master-production-v1/` como proposta datada, com nota da implementação autorizada. Regras em documentos antigos que conflitem com o schema por modelo, D14 ou o contrato atual não liberam pedidos.
 
+## Base ativa Galileo · 2026-10-13
+
+Andre delegou a escolha da abordagem em `Sentinel_1f1c130dfa648191aad0d6afc0c49d7b`.
+`activeBaseline` no plano existente é a única entrada ativa para G-L03/G-L04: sete
+fontes por ID/hash, achados T12 consolidados, seis etapas com responsáveis/entradas/
+dependências/aceite e decisões abertas. A seleção é proposta; não altera aprovações.
+O primeiro teste de fala futuro é G-P04, após continuidade, timing e liberação específica.
+
+O frontend mostra essa base local atual mesmo antes de importar o novo retrato de
+produção; a exibição não modifica demandas, comentários ou aprovações persistidas.
+O fluxo de revisão/importação continua disponível para o restante dos registros.
+Takes anteriores permanecem nos caminhos originais como história. O animatic de 16 s
+é evidência de timing, não atuação. A busca delimitada por Galileo v2 não encontrou
+seus arquivos no projeto/drafts/reports e outputs conhecidos; recuperar se aparecer,
+sem bloquear esta base ou reconstruir uma entrega não localizada por suposição.
+
 ## Comandos locais sem rede
 
 ```sh

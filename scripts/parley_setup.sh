@@ -66,5 +66,5 @@ cat <<EOF
 EOF
 
 step "verify gate (Andre only, when he decides to use participant merge)"
-printf '   agent-parley verify set ".venv/bin/python scripts/manage.py validate && .venv/bin/python -m unittest discover -s tests" --repo "%s"\n' "$REPO"
+printf '   agent-parley verify set ".venv/bin/python -B scripts/parley_verify.py" --repo "%s"\n' "$REPO"
 printf '\nDry run complete. Re-run with --apply to execute the setup steps.\n'

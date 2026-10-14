@@ -370,6 +370,34 @@ def coherence_report(root, shot_id=None, request=None):
             'paidReleaseGranted': False}
 
 
+def validate_baseline(baseline, refs, shots, task_ids, lines, root, verify_media):
+    """Planning only: valid links never release paid work or approve media."""
+    errors = []
+    if baseline.get('status') != 'prepared_not_artistically_approved' or baseline.get('paidGenerationAuthorized') is not False:
+        errors.append('base ativa não concede aceite artístico ou liberação paga')
+    steps = acyclic(baseline['steps'])
+    selected = set(baseline['referenceIds'])
+    if not selected <= refs.keys() or any(refs[r]['selection'] == 'excluded_from_current_cut' for r in selected if r in refs):
+        errors.append('base ativa contém referência ausente ou histórica excluída')
+    if not set(baseline['lineIds']) <= lines.keys() or baseline['firstSpeakingShotId'] not in shots:
+        errors.append('base ativa tem fala/ficha ausente')
+    if baseline['nextStepId'] not in steps:
+        errors.append('base ativa sem próximo responsável')
+    for step in steps.values():
+        if not set(step['taskIds']) <= task_ids or not set(step['referenceIds']) <= refs.keys():
+            errors.append('etapa da base com vínculo ausente: ' + step['id'])
+        if step['state'] not in {'ready_local', 'blocked'} or not all(step.get(k) for k in ('owner', 'inputs', 'output', 'acceptance')):
+            errors.append('etapa da base sem dono, entradas ou aceite: ' + step['id'])
+    for item in baseline['findings']:
+        if not set(item['referenceIds']) <= refs.keys():
+            errors.append('achado da base com referência ausente')
+    if verify_media:
+        for item in baseline['historyEvidence']:
+            if sha(safe(root, item['path'])) != item['sha256']:
+                errors.append('evidência histórica da base mudou: ' + item['path'])
+    return errors
+
+
 def validate(root, *, verify_media=False):
     errors, pending = [], []
     p, path, plan = plan_source(root)
@@ -398,6 +426,8 @@ def validate(root, *, verify_media=False):
         families = {f['id']: f for f in read(root, FAMILIES)['families']}
         with (film / '01_script/dialogue-lines.csv').open(newline='', encoding='utf-8') as stream:
             lines = {row['line_id']: row for row in csv.DictReader(stream)}
+        if plan.get('activeBaseline'):
+            errors.extend(validate_baseline(plan['activeBaseline'], refs, shots, task_ids, lines, root, verify_media))
         for stage in stages.values():
             if not set(stage['taskIds']) <= task_ids or not stage.get('owner'):
                 errors.append(stage['id'] + ': tarefa/dono ausente')
@@ -488,6 +518,7 @@ def export(root):
             'boardIsTaskAuthority': True, 'encounters': plan['encounters'], 'stages': plan['stages'],
             'references': [{k: r[k] for k in ('id', 'label', 'path', 'sha256', 'role', 'provenance', 'selection', 'states', 'notes')} for r in plan['references']],
             'shots': plan['shots'], 'pilot': plan['pilot'], 'constraints': plan['constraints'],
+            **({'activeBaseline': plan['activeBaseline']} if plan.get('activeBaseline') else {}),
             'capabilities': capability, 'costPolicy': plan['costPolicy'], 'blockers': plan['blockers'],
             'families': [{k: f[k] for k in ('id', 'title', 'purpose', 'requiredDecisions')} for f in read(root, FAMILIES)['families']],
             'sourceVersions': [{'path': name, 'sha256': sha(safe(root, name))} for name in dict.fromkeys(source_paths)]}

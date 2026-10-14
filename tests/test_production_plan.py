@@ -96,5 +96,31 @@ class ProductionPlanTests(unittest.TestCase):
         self.assertTrue(any(s['path']==self.path for s in exported['sourceVersions']))
         self.assertFalse(exported['costPolicy']['newPaidAuthorization'])
 
+    def test_baseline_exports_without_approving_old_or_new_media(self):
+        before=copy.deepcopy(self.plan)
+        self.save()
+        exported=p.export(self.root)
+        self.assertEqual(exported['activeBaseline'],self.plan['activeBaseline'])
+        self.assertEqual(self.plan,before)
+        self.assertFalse(exported['activeBaseline']['paidGenerationAuthorized'])
+        self.assertTrue(all(s['state'] in {'ready_local','blocked'} for s in exported['activeBaseline']['steps']))
+
+    def test_baseline_rejects_cycles_missing_links_and_paid_claim(self):
+        original=copy.deepcopy(self.plan['activeBaseline'])
+        mutations=[lambda b:b['steps'][0].update(dependsOn=[b['steps'][0]['id']]),
+                   lambda b:b.update(referenceIds=['MISSING']),
+                   lambda b:b.update(referenceIds=['G-OLD-LISTEN']),
+                   lambda b:b.update(paidGenerationAuthorized=True),
+                   lambda b:b['steps'][0].update(taskIds=['MISSING'])]
+        for mutate in mutations:
+            with self.subTest(mutate=mutate):
+                self.plan['activeBaseline']=copy.deepcopy(original);mutate(self.plan['activeBaseline'])
+                self.assertTrue(self.errors())
+
+    def test_legacy_plan_without_baseline_stays_readable(self):
+        self.plan.pop('activeBaseline',None)
+        self.assertEqual(self.errors(),[])
+        self.assertNotIn('activeBaseline',p.export(self.root))
+
 
 if __name__=='__main__': unittest.main()

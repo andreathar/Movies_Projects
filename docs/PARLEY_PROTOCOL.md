@@ -23,7 +23,7 @@ One mail per finished task, with an idempotency key: handoff path, claims with e
 
 ## Proposed integration gate (Andre runs it; a lane cannot)
 ```bash
-agent-parley verify set ".venv/bin/python scripts/manage.py validate && .venv/bin/python -m unittest discover -s tests"
+agent-parley verify set ".venv/bin/python -B scripts/parley_verify.py"
 ```
 Known baseline: validate reports ok with four shared-skill hash warnings; 29 tests pass. A passing gate is not creative acceptance. Do not run `participant merge` or `participant pr` until Andre asks.
 

@@ -7,7 +7,7 @@
     },
     {
       "path": "agents/registry.json",
-      "sha256": "2f2e7eb2dd24e1ed6f13ca6877901d1ff5085fe5076260b9b111f3bbc5f664f4"
+      "sha256": "322c12abb1fb124462d309ce4743421a95eca2129c1458fb0181d43a64f262c4"
     },
     {
       "path": "skills/registry.json",

@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Implementação local delegada da base ativa Galileo G-L03/G-L04 e do painel existente; roteiro, originais, decisões e integração de custos preservados.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [
+    "T11",
+    "T12",
+    "T13"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "skills/andre-time-travel/SKILL.md",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/tasks/plans/workflow-map-v1.md"
+  ],
+  "ownedPaths": [
+    "tests/test_production_plan.py",
+    "scripts/production_plan.py",
+    "docs/PRODUCTION_PLAN.md",
+    "sites/movies-demandas/tests/model.test.ts",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/lib/production-plan.ts",
+    "sites/movies-demandas/app/production-plan-panel.tsx",
+    "sites/movies-demandas/app/dashboard.tsx",
+    "sites/movies-demandas/app/restart-summary.tsx",
+    "projects/andre-time-travel/tasks/board.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+    "projects/andre-time-travel/07_generations/plans/current-plan.json",
+    "sites/movies-demandas/app/production-plan-panel.module.css",
+    "sites/movies-demandas/data/production.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256Before": "0333616df33821c3bded468012d8a9ebe3ef00e0c2e85d9f0d3a148cc4b461b3"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": "6231eb14b81044d72f14ae1ef8052d5e3b540f1603c022b3a19f2d64919f671b"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256Before": "3a67382c81087ca4a08ae57db17b636c79787ba46741413241665dd3c98a4fbf"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "58a50f53f042428245187ab3a3e1b21f0a99ddb7cca97a094bea8d7e06a1bc2d"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "8bc18eceae2c559db8668f096f65ff646293d7a73b4c1e91cd88e0cddc7d2e57"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256Before": "86600eb089aa14b1ddf8ea1420cbb82ac2ffb5e4c3d1750930804c8faf4537ae"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256Before": "41390db3c06dae9ffda712aeca0547e253fdc88ca9b7360055d10998514dd20b"
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256Before": "e34c94a51338d7b80a4aceb1847eb7889d6f85d3910ab3358f9d8a9b46995b5c"
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256Before": "5c9d9e2d31b5ea4518298cc69469f8cf7b294ffc293246c024b5828619dfc034"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "02a188a27c9f8489d0857533f152625cdb590f32dbef4a1713aa75969d701f4a"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "9470af7f00cb4ccc8cd28dac789d2695599df3f669d4830ca5bc501dd2b1fc8f"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256Before": "87f054237599525879ca068a7653d42f8326b75e0ae10d8d5c7b18f3727cf25b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256Before": "8efc2ad91d17f62d58d3818602ff19b2ac8994b4810f576e51091d32cf636d80"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256Before": "503286b5b76771e5ef74a7551be50361cb2a206014b30a753739480750956b8a"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "67f094e3fb8dcdd692eaff3a2691b7e38bf1f157e329e7f45e0aa3c3eca52370"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256After": "d5fa95158ccf131e1852c7ba94edf671ccaae90a7f473e731d1680566bcf50f4",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256After": "1ecef017347d07d17e75773edb562ee4d3d42256f1fe073b6c9c0f1510b078e4",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256After": "1613833d21686c2da333cc315586a64fb3b7b755183f0cab3558aa4a9d4b853c",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "5a8b6bcf4b83c534581590dc2e34357d13643fb49494d49b2c882706caf68f94",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "2e3cbba238e26f4250aa2504ce6313bedca6ee59dc7d6cdc686756934f2affa0",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256After": "29c8a721eefb7b0b2534255e9a07b7e40c8fdb302bae45d8973e49c049099ade",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256After": "09bdb35673f002f1bd0437e2e105087c939477273922175a9bf593d966fdac8a",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/app/dashboard.tsx",
+      "sha256After": "4e061270abf0cb83e8135106468963c374f18f59074c03c2b7b3d520719695d0",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/app/restart-summary.tsx",
+      "sha256After": "615379c2c6d85b21938e26189fa7db192fb354af6303c4971b4c9c14c13e79b1",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256After": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256After": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256After": "a2a2373f6f97a15640c3f4c4714ce7585b63876d7301fe17c816ab9a3accc0f6",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256After": "78a7523da937729de9dc1e5a77f8cc6be660ab1929d79b32bcecb41cdfa882e0",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256After": "b2ba1bde705aad1d907f05315c844b1b64488d5441a5b4a316d5980a2bc490f7",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "7cead9b65d1941acfa2a2fcc812afa55e2eb87739922d76ee8859dfae8414995",
+      "reason": "Base ativa local, integração derivada ou verificação afetada; sem aceite artístico."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Uma base ativa com sete fontes propostas e seis etapas; achados T12 consolidados somente para planejamento.",
+      "evidence": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256": "a2a2373f6f97a15640c3f4c4714ce7585b63876d7301fe17c816ab9a3accc0f6"
+    }
+  ],
+  "verification": [
+    "68 testes Python: production_plan 15, cinematic_coherence 29, manage_lint 24; todos passaram.",
+    "39 testes frontend passaram; tipos, ESLint, build e check:data passaram.",
+    "production_plan.py check --verify-media: OK; roteiro e mídia histórica verificados por hash.",
+    "Exportadores production e workspace em --check: atuais; workspace-reference não foi reescrito.",
+    "Base ativa vista no Chrome em localhost:5173 com sete fontes, seis etapas e decisões; demandas/comentários/estado persistido não foram modificados.",
+    "Ajuste final de contraste compilado; nova captura visual bloqueada por UI aberta de outra extensão, sem bypass.",
+    "Servidor anterior sem listener confirmado; iniciado o mesmo comando dev em 127.0.0.1:5173, sem alteração de autenticação/configuração."
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Executar activeBaseline.steps.references: reconciliar paletó/mesa da composição proposta e apresentar a seleção final a Andre; em paralelo preparar a revisão por ouvido de G-L03/G-L04.",
+      "readiness": "Preparação local disponível; produtor mantém responsabilidade até aceite de executor. Sem dispatch, geração, uploads ou liberação financeira."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Base local e integração técnica entregues. Etapas de produção e aceites criativos continuam abertos.",
+  "blockers": [
+    {
+      "description": "Continuidade de paletó e mesa ainda não resolvida.",
+      "owner": "Produtor / continuidade",
+      "unblockCondition": "Conferir a composição exata contra G-WARDROBE/G-TABLE; preparar somente as correções necessárias e revisar seus resultados."
+    },
+    {
+      "description": "Semelhança dos novos IN/OUT ainda não aceita.",
+      "owner": "Andre",
+      "unblockCondition": "Julgar a seleção final por arquivo/hash depois das correções; o piloto antigo não aprova estes frames."
+    },
+    {
+      "description": "Timing e atuação ainda sem playback/audição integral registrados.",
+      "owner": "Produtor / diálogo-som / editor",
+      "unblockCondition": "Ouvir G-L03/G-L04 e revisar pausas/gesto/reação. A medição dos arquivos não substitui essa escuta."
+    },
+    {
+      "description": "Voz final e prova de dublagem/sync pendentes.",
+      "owner": "Andre / diálogo-som",
+      "unblockCondition": "Ouvir os candidatos existentes e escolher a voz; D14 permite guia no teste de imagem, mas não libera master final."
+    },
+    {
+      "description": "Primeiro teste de fala sem liberação paga.",
+      "owner": "Produtor",
+      "unblockCondition": "Fechar referências/pedido, schema e preço atuais, teto, validade e uploads exatos; registrar kling_job_release antes de um único envio."
+    }
+  ],
+  "andreOnlyGates": [
+    "Semelhança da seleção final por arquivo/hash",
+    "Escolha de voz por ouvido e aceite do corte"
+  ],
+  "proposedDecisions": [
+    "Composição compartilhada com cabeça histórica fora; IN/OUT não são first/tail aprovados.",
+    "Primeiro teste futuro G-P04; sem motion control, sem teto herdado."
+  ],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "accepted_technical_integration",
+  "ingest": {
+    "status": "ingested",
+    "by": "producer",
+    "at": "2026-10-13T20:10:20-03:00"
+  },
+  "supersedes": [
+    "2026-10-13-costs-panel-reconciliation-v1.json"
+  ],
+  "authorization": {
+    "source": "Andre · Sentinel_1f1c130dfa648191aad0d6afc0c49d7b",
+    "quote": "you decide what is the better aproach. if you want to start over just using the reference images, and a clean initial point for every structure",
+    "interpretation": "Abordagem escolhida: manter roteiro/referências, preservar histórico, preparar Galileo; sem aceites artísticos, gasto ou upload."
+  },
+  "carriedForward": {
+    "handoff": "2026-10-13-costs-panel-reconciliation-v1.json",
+    "sha256": "b76ecbd55c99d7ea6abe33296159141b8dbe3c9d72dea7b9f476ec3012522d2b",
+    "costPayloadUnchanged": true,
+    "catalogUnchanged": true,
+    "workspaceReferenceUnchanged": true,
+    "note": "Supersessão apenas dos hashes de derivados atualizados; resultado da integração de custos continua preservado."
+  },
+  "integrationNote": "Entrega técnica aceita pelo produtor na conversa principal 01a0ff67-e9e4-75a0-99db-8bf420559029, após revisão dos hashes, arquivos protegidos, snapshot canônico e navegador. Registro e ingestão executados por delegação desse aceite, sem transferência de autoria ou responsabilidade. Nenhuma aprovação artística ou liberação financeira concedida.",
+  "operationalNotes": [
+    "Export rejeitado antes de executar por reserva antiga; uma única reconsideração autorizada após verificar transferência explícita/encerramento às 21:09Z.",
+    "Retrato persistido tem data 2099; painel da base exibe a fonte local atual sem reescrever o retrato ou suas demandas.",
+    "Galileo v2 não encontrado na busca delimitada registrada em activeBaseline.timelineSearch; animatic de 16 s é apenas evidência histórica de timing."
+  ],
+  "technicalAcceptance": {
+    "acceptedBy": "producer",
+    "producerThreadId": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+    "recordedByDelegatedThreadId": "01a12e45-3e61-75cc-910d-9eac6292b03a",
+    "recordedAt": "2026-10-13T23:10:20+00:00",
+    "source": "Aceite técnico explícito da conversa principal nesta delegação de fechamento.",
+    "acceptedHandoffSha256": "1a4f972fe6c94e42af30c0cb24e1ff24a42c12031f1ec8fe3f69bafd86f2217c",
+    "closureReceiptSha256": "7b2f21557f2705b84748392e343dbb69a34e73897bcee6c98c3248e0b21a7325",
+    "scope": "Entrega técnica da base ativa e integração derivada; 15/15 hashes conferidos e 97 arquivos protegidos sem drift. Referências, semelhança, atuação/timing, voz/sync, corte e gasto continuam nos estados pendentes existentes."
+  }
+}
