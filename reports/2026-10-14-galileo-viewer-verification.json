@@ -1,0 +1,247 @@
+{
+  "checkedAt": "2026-10-14T00:51:38.626372+00:00",
+  "scope": "Visualizador local das sete referências Galileo e launcher separado do shell.",
+  "authorization": {
+    "source": "Andre, Sentinel_d5fc6d2260b48191a3e455f1f375c51f, 2026-10-14 00:39 UTC",
+    "quote": "do it",
+    "proposal": "protected viewer limited to the seven selected images and launcher independent of task session",
+    "parentThread": "01a0ff67-e9e4-75a0-99db-8bf420559029"
+  },
+  "files": {
+    "sites/movies-demandas/vite.config.ts": "b896ffc341adf26cdd8ccecab2bcdd8cc5fbb783a10a83a738daf3b53d0824a2",
+    "sites/movies-demandas/package.json": "4dd64275675cc1f481657dccf7c88284431d7be449f05a5fceb3583b157b1db4",
+    "sites/movies-demandas/README.md": "9ae41052517c17b1651018a8257d3ac2a8bd49642187e9744617d5d6c03ea57e",
+    "sites/movies-demandas/tests/baseline-media.test.mjs": "84afd0adceab88cc28eb11db752bc634318323eb8561d5f13a11f601aa844dac",
+    "sites/movies-demandas/scripts/baseline-media.mjs": "50597e2bd96eb664965bf944ab9b1325b2aece9687f7e030f5e92e084f7c9cb3",
+    "sites/movies-demandas/scripts/local-review.mjs": "ba4668434246527b0fe8585c23477de1b5eb8912a3b478ba4866fedb60bad72a",
+    "sites/movies-demandas/app/production-plan-panel.tsx": "8f591a665f70fee1ebdb02671021df7109b79bd92aec0abe14569e54e0938fda",
+    "sites/movies-demandas/app/baseline-reference.tsx": "f9745d3528d6ca9eb81137ba9f68bf7bfb10b64e42fbb9958218a67f4f0d955d",
+    "sites/movies-demandas/app/production-plan-panel.module.css": "7f5a30e4e5e68067b30a0760baa8f919ee4e34bdc10062e788390bee1c2b3864"
+  },
+  "http": {
+    "checkedAt": "2026-10-14T00:48:04.663508+00:00",
+    "images": [
+      {
+        "status": 200,
+        "bytes": 516755,
+        "hash": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "mime": "image/jpeg",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-ID"
+      },
+      {
+        "status": 200,
+        "bytes": 534348,
+        "hash": "75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b",
+        "mime": "image/jpeg",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-WARDROBE"
+      },
+      {
+        "status": 200,
+        "bytes": 559804,
+        "hash": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+        "mime": "image/jpeg",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-TABLE"
+      },
+      {
+        "status": 200,
+        "bytes": 6492400,
+        "hash": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+        "mime": "image/png",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-ERA"
+      },
+      {
+        "status": 200,
+        "bytes": 2194215,
+        "hash": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "mime": "image/png",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-IN"
+      },
+      {
+        "status": 200,
+        "bytes": 2044160,
+        "hash": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+        "mime": "image/png",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-OUT"
+      },
+      {
+        "status": 200,
+        "bytes": 8208383,
+        "hash": "f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215",
+        "mime": "image/png",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "id": "G-EYE-B"
+      }
+    ],
+    "controls": [
+      {
+        "status": 401,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "unauthenticated"
+      },
+      {
+        "status": 401,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "forged identity"
+      },
+      {
+        "status": 403,
+        "bytes": 9,
+        "hash": "78342a0905a72ce44da083dcb5d23b8ea0c16992ba2a82eece97e033d76ba3d3",
+        "mime": "text/plain",
+        "cache": null,
+        "corp": null,
+        "case": "cross origin"
+      },
+      {
+        "status": 403,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "cross site"
+      },
+      {
+        "status": 403,
+        "bytes": 148,
+        "hash": "6a87ed5bcf56b248f23fd2f96e4cf117f8d6662e1284a83ea26100910c2d26ab",
+        "mime": "text/plain",
+        "cache": null,
+        "corp": null,
+        "case": "invalid host"
+      },
+      {
+        "status": 404,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "non-baseline"
+      },
+      {
+        "status": 404,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "traversal"
+      },
+      {
+        "status": 404,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "encoded traversal"
+      },
+      {
+        "status": 404,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "arbitrary path"
+      },
+      {
+        "status": 409,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "wrong hash"
+      },
+      {
+        "status": 405,
+        "bytes": 21,
+        "hash": "b37bde4762d1d0577cc5c8d165bed2051bde3a4bbf9fc11e5a295ddca70dd8cd",
+        "mime": "text/plain; charset=utf-8",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "write"
+      },
+      {
+        "status": 200,
+        "bytes": 0,
+        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "mime": "image/jpeg",
+        "cache": "private, no-store",
+        "corp": "same-origin",
+        "case": "HEAD"
+      }
+    ],
+    "launchShellExited": true,
+    "process": "    PID    PPID    PGID     SID STAT                  STARTED COMMAND\n3132958       1 3132958 3132958 Ssl  Tue Oct 13 21:45:41 2026 MainThread\n",
+    "limit": "Post-turn availability still requires separate check."
+  },
+  "verification": {
+    "frontendTests": 47,
+    "types": "passed",
+    "eslint": "passed",
+    "build": "passed",
+    "missingChangedSymlinkEscape": "passed with synthetic fixtures; originals never modified",
+    "browser": "Blocked by another extension UI in Chrome; enlarged open/close, repeated navigation and screenshot remain unverified.",
+    "postTurnAvailability": "Requires separate check; survived launching shell exit and later HTTP/status calls."
+  },
+  "launcher": {
+    "url": "http://127.0.0.1:5173/",
+    "pid": 3132958,
+    "startTicks": "8760851",
+    "processGroup": 3132958,
+    "session": 3132958,
+    "parentPidAfterShell": 1,
+    "statusCommand": "npm run review:status",
+    "stopCommand": "npm run review:stop",
+    "startCommand": "npm run review:start",
+    "workingDirectory": "sites/movies-demandas",
+    "log": "sites/movies-demandas/.sites-runtime/local-review.log",
+    "record": "sites/movies-demandas/.sites-runtime/local-review.json"
+  },
+  "preserved": {
+    "originalMedia": true,
+    "approvals": true,
+    "canonicalPlan": true,
+    "costs": true,
+    "snapshots": true,
+    "authenticationMiddleware": true,
+    "priorHandoffSha256": "53b6d88c998f13c46b501d0d8dc84212cc63bd1daf979000cb0252791256af27"
+  },
+  "boundary": {
+    "uploads": 0,
+    "paidJobs": 0,
+    "publication": false,
+    "bootServiceChanges": false,
+    "newCredentials": false,
+    "newPersistentGrants": false
+  },
+  "navigation": "Visão geral ou Produção do filme → Galileo · uma cena completa primeiro → Base ativa → Referências propostas para esta cena → Ampliar imagem",
+  "pending": [
+    "Fechar a interface da outra extensão no Chrome e concluir QA visual.",
+    "Produtor verificar disponibilidade após esta tarefa e revisar/ingerir o handoff técnico."
+  ]
+}

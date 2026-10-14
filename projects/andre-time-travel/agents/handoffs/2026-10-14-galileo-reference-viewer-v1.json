@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "producer",
+  "contributorKind": "contributor",
+  "assignment": "Reparo desktop delegado: sete prévias protegidas e ampliação no painel existente; launcher local independente do shell. QA visual pendente por bloqueio da extensão Chrome.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [
+    "T12",
+    "T13"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "docs/SHARED_MEDIA.md",
+    "sites/movies-demandas/README.md"
+  ],
+  "ownedPaths": [
+    "sites/movies-demandas/vite.config.ts",
+    "sites/movies-demandas/package.json",
+    "sites/movies-demandas/README.md",
+    "sites/movies-demandas/tests/baseline-media.test.mjs",
+    "sites/movies-demandas/scripts/baseline-media.mjs",
+    "sites/movies-demandas/scripts/local-review.mjs",
+    "sites/movies-demandas/app/production-plan-panel.tsx",
+    "sites/movies-demandas/app/baseline-reference.tsx",
+    "sites/movies-demandas/app/production-plan-panel.module.css",
+    "reports/2026-10-14-galileo-viewer-verification.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "sites/movies-demandas/vite.config.ts",
+      "sha256Before": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256Before": "e3dd62a63c74cfca378e657cc38ad562c5fd887a863ea0a73168135195ab8c12"
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "eb6e7224e2b5d1372e2e5accdcb56aa489a2706fdcd01c6702121f40cc64ba1a"
+    },
+    {
+      "path": "sites/movies-demandas/tests/baseline-media.test.mjs",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/scripts/local-review.mjs",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256Before": "09bdb35673f002f1bd0437e2e105087c939477273922175a9bf593d966fdac8a"
+    },
+    {
+      "path": "sites/movies-demandas/app/baseline-reference.tsx",
+      "sha256Before": null
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256Before": "b2ba1bde705aad1d907f05315c844b1b64488d5441a5b4a316d5980a2bc490f7"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/vite.config.ts",
+      "sha256After": "b896ffc341adf26cdd8ccecab2bcdd8cc5fbb783a10a83a738daf3b53d0824a2",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256After": "4dd64275675cc1f481657dccf7c88284431d7be449f05a5fceb3583b157b1db4",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "9ae41052517c17b1651018a8257d3ac2a8bd49642187e9744617d5d6c03ea57e",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/tests/baseline-media.test.mjs",
+      "sha256After": "84afd0adceab88cc28eb11db752bc634318323eb8561d5f13a11f601aa844dac",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+      "sha256After": "50597e2bd96eb664965bf944ab9b1325b2aece9687f7e030f5e92e084f7c9cb3",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/local-review.mjs",
+      "sha256After": "ba4668434246527b0fe8585c23477de1b5eb8912a3b478ba4866fedb60bad72a",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256After": "8f591a665f70fee1ebdb02671021df7109b79bd92aec0abe14569e54e0938fda",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/app/baseline-reference.tsx",
+      "sha256After": "f9745d3528d6ca9eb81137ba9f68bf7bfb10b64e42fbb9958218a67f4f0d955d",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256After": "7f5a30e4e5e68067b30a0760baa8f919ee4e34bdc10062e788390bee1c2b3864",
+      "reason": "Visualização restrita das referências, ciclo local de execução ou testes/documentação correspondentes."
+    },
+    {
+      "path": "reports/2026-10-14-galileo-viewer-verification.json",
+      "sha256After": "e756eb6a50d913ee8ed4294998052a86afe5da34ecd120462573c998d78e728a",
+      "reason": "Evidência técnica e limites reais da verificação."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Sete imagens reais servidas com hashes exatos; 12 controles HTTP passaram; processo sobreviveu ao shell em sessão própria. Verificação visual e pós-turno não concluídas.",
+      "evidence": "reports/2026-10-14-galileo-viewer-verification.json",
+      "sha256": "e756eb6a50d913ee8ed4294998052a86afe5da34ecd120462573c998d78e728a"
+    }
+  ],
+  "verification": [
+    "47 testes frontend passaram, incluindo 8 testes sintéticos de mídia (acesso, travessia, symlinks, fontes ausentes/alteradas e MIME real).",
+    "Tipos, ESLint e build local passaram.",
+    "HTTP: sete bytes/hashes exatos; 12 cenários de controle passaram.",
+    "Launcher retornou exit 0; PID 3132958 com PPID 1, PGID/SID próprios; status e HTTP posteriores confirmaram resposta.",
+    "101 arquivos protegidos conferidos; só os cinco arquivos existentes previstos mudaram. Autenticação, mídia, plano, custos e snapshots inalterados.",
+    "Chrome bloqueou a automação por interface de outra extensão. Não alegar ampliação/fechamento/navegação ou captura visual verificados."
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Após fechar a interface da extensão no Chrome, concluir QA das sete prévias, abrir/fechar por botão/Escape/fundo, navegar repetidamente; conferir review:status após fim da tarefa e revisar esta entrega.",
+      "readiness": "Código e servidor disponíveis; QA visual e persistência pós-turno ainda pendentes."
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": "Implementação e checks técnicos entregues, mas QA de navegador solicitado ainda não executado.",
+  "blockers": [
+    {
+      "description": "Outra extensão aberta no Chrome impede automação da página.",
+      "owner": "Andre / usuário no PC",
+      "unblockCondition": "Fechar a interface da extensão e avisar para continuar a checagem visual."
+    },
+    {
+      "description": "Disponibilidade após término da tarefa precisa de check independente.",
+      "owner": "producer",
+      "unblockCondition": "Executar npm run review:status no frontend e confirmar HTTP após receber a entrega."
+    }
+  ],
+  "andreOnlyGates": [
+    "Semelhança, atuação/voz e corte permanecem pendentes; exibição local não aprova referências."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "supersedes": [
+    "2026-10-13-galileo-active-baseline-v1.json"
+  ],
+  "carriedForward": {
+    "handoff": "2026-10-13-galileo-active-baseline-v1.json",
+    "sha256": "53b6d88c998f13c46b501d0d8dc84212cc63bd1daf979000cb0252791256af27",
+    "note": "Supersessão somente dos hashes de arquivos frontend alterados; base ativa, integração técnica anterior, custos e todos os gates criativos/financeiros preservados."
+  },
+  "authorization": {
+    "source": "Andre, Sentinel_d5fc6d2260b48191a3e455f1f375c51f, 2026-10-14 00:39 UTC",
+    "quote": "do it",
+    "proposal": "protected viewer limited to the seven selected images and launcher independent of task session",
+    "parentThread": "01a0ff67-e9e4-75a0-99db-8bf420559029"
+  }
+}
