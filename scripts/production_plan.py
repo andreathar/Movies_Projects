@@ -136,14 +136,16 @@ def check_states(item, root, errors):
     for key, values in enums.items():
         if states.get(key) not in values:
             errors.append(f"{item['id']}: estado inválido {key}")
-    if states.get('directorApproval') == 'approved':
-        decision_ref = item.get('approvalEvidence')
+    decision_ref = item.get('approvalEvidence')
+    if states.get('directorApproval') == 'approved' or decision_ref:
         try:
             if not decision_ref or sha(safe(root, decision_ref['path'])) != decision_ref['sha256']:
                 raise ValueError('aprovação sem evidência exata')
             decision = read(root, decision_ref['path'])
-            if decision.get('decision') != 'approved' or decision.get('artifact', {}).get('sha256') != review_hash(item) or not decision.get('scope') or not decision.get('reviewer'):
+            if decision.get('decision') != states.get('directorApproval') or decision.get('artifact', {}).get('sha256') != review_hash(item) or not decision.get('scope') or not decision.get('reviewer'):
                 raise ValueError('aprovação não corresponde ao artefato/uso')
+            if item.get('path') and decision.get('artifact', {}).get('path') != item['path']:
+                raise ValueError('aprovação não corresponde ao caminho do artefato')
             if not item.get('path') and decision.get('artifact', {}).get('selector') != item['id']:
                 raise ValueError('aprovação de ficha exige selector com o ID exato')
         except (OSError, ValueError, KeyError, TypeError) as exc:
@@ -517,10 +519,11 @@ def export(root):
     capability = routes(root)
     source_paths = [path, FAMILIES, SNAPSHOT, 'scripts/production_plan.py', 'scripts/kling_release.py', 'docs/kling-manual/tools/kling_preflight.py', 'docs/PRODUCTION_PLAN.md'] + [s['path'] for s in plan['preservedSources']]
     source_paths.extend(list(plan.get('deliverables', [])))
+    source_paths.extend(r['approvalEvidence']['path'] for r in plan['references'] if r.get('approvalEvidence'))
     return {'path': path, 'revision': plan['revision'], 'implementationApprovalId': plan['implementationApprovalId'],
             'status': 'local_implementation_prepared_creative_review_pending',
             'boardIsTaskAuthority': True, 'encounters': plan['encounters'], 'stages': plan['stages'],
-            'references': [{k: r[k] for k in ('id', 'label', 'path', 'sha256', 'role', 'provenance', 'selection', 'states', 'notes')} for r in plan['references']],
+            'references': [{**{k: r[k] for k in ('id', 'label', 'path', 'sha256', 'role', 'provenance', 'selection', 'states', 'notes')}, 'approvalEvidence': r.get('approvalEvidence')} for r in plan['references']],
             'shots': plan['shots'], 'pilot': plan['pilot'], 'constraints': plan['constraints'],
             **({'activeBaseline': plan['activeBaseline']} if plan.get('activeBaseline') else {}),
             'capabilities': capability, 'costPolicy': plan['costPolicy'], 'blockers': plan['blockers'],

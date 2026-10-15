@@ -30,4 +30,4 @@ Do not add: quick-read facts; generic language/framework knowledge; one-off task
 ## Maintenance Actions
 
 - Renaming memories: References are updated automatically if handled via Serena's memory rename tool.
-- Checking for stale memories (e.g. after deletion): Call `serena memories check` for a report.
+- Check unresolved `mem:` links with `serena memories check`; this does not verify factual freshness. Review source paths/content after refactors. Authored memories require deliberate maintenance; live symbol-index updates do not update these notes.

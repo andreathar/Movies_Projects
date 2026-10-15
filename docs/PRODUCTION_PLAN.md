@@ -178,3 +178,13 @@ tilt/órbita e câmera fixa, texto de 3 s em resultados de 8/10 s, e cabeça já
 na segunda referência mostram por que separar prompt, duração e entradas. A evidência
 original (inclusive chips concatenados da interface e autoria desconhecida) deve ser
 preservada, sem corrigir o texto retrospectivamente ou alegar causalidade pelo idioma.
+
+## Revisão explícita de imagens no servidor local
+
+Em Produção do filme → Base ativa, cada uma das sete referências tem “Revisar imagem”. Ampliar e comentar continuam sem efeito de aprovação. O diretor informa nome, escopo, parecer e decisão, e confirma o hash exato. Aprovar/rejeitar atualiza somente `references[].states.directorApproval` e `approvalEvidence`; solicitar alterações mantém `pending` e registra `gate: image_changes_requested`. Nenhuma dessas ações incorpora a imagem na obra, fecha tarefas, altera aprovações globais ou libera gastos.
+
+O servidor local existente usa identidade local e origem/loopback restritos; a identidade declarada do revisor não é assinatura digital. A rota não é incluída no build publicado. Cada tentativa usa UUID idempotente e hash do plano lido ao abrir a revisão, além do hash dos bytes da imagem. Versão divergente retorna conflito, preserva o parecer e exige nova confirmação após atualização. Uma decisão substituída mantém sua evidência; os novos registros imutáveis ficam em `00_brief/decisions/image-reviews/`, no formato de `shared/templates/review-decision.json`, com hashes do artefato, plano anterior e tentativa. O plano é substituído atomicamente sob lock de revisão; o lock não impede edições externas não cooperantes.
+
+Após salvar, a rota atualiza o export de produção. Se o export falhar, o aviso distingue decisão canônica salva de pacote pendente; a consulta local continua trazendo o registro canônico. A página inteira deve ser recarregada após mudança do arquivo de imagem; alterações de conteúdo nunca herdam a decisão antiga. Não apagar evidências para desfazer uma decisão: registrar uma decisão sucessora explícita; imagens já incorporadas precisam de reconciliação do produtor antes de rejeição ou alteração.
+
+QA de escrita usa fixtures descartáveis, nunca falsas aprovações nos registros de produção. O harness de navegador só existe em dev com `MOVIES_REVIEW_QA=1`, em `/__local/reference-review-fixture`, com mídia e plano sintéticos em diretório temporário. A instância entregue ao diretor deve iniciar sem essa variável.

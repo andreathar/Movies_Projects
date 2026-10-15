@@ -80,6 +80,22 @@ class ProductionPlanTests(unittest.TestCase):
         evidence.write_text(json.dumps(decision));shot['approvalEvidence']['sha256']=p.sha(evidence)
         self.assertTrue(any('selector' in e for e in self.errors()))
 
+    def test_reference_review_evidence_tracks_approved_rejected_and_pending_exact_hash(self):
+        ref = self.plan['references'][0]
+        evidence = self.root / 'synthetic-image-decision.json'
+        for state in ['approved', 'rejected', 'pending']:
+            decision = {'decision': state, 'reviewer': 'Synthetic fixture only',
+                        'scope': 'Disposable test, no real creative approval',
+                        'artifact': {'path': ref['path'], 'sha256': ref['sha256']}}
+            evidence.write_text(json.dumps(decision))
+            ref['states']['directorApproval'] = state
+            ref['approvalEvidence'] = {'path': evidence.name, 'sha256': p.sha(evidence)}
+            self.assertEqual(self.errors(), [])
+            decision['artifact']['sha256'] = '0' * 64
+            evidence.write_text(json.dumps(decision))
+            ref['approvalEvidence']['sha256'] = p.sha(evidence)
+            self.assertTrue(any('não corresponde' in e for e in self.errors()))
+
     def test_wrong_encounters_or_voice_policy_fail(self):
         self.plan['encounters'].pop();self.plan['constraints']['finalVoicePolicy']='approved'
         self.assertEqual(len(self.errors()),2)

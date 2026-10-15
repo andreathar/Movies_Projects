@@ -19,6 +19,9 @@
 
 ## Focused memories
 
+- Refactored frontend entry points and persistence/review boundaries: `mem:frontend_architecture`
+- Canonical data ownership and Python validation/export paths: `mem:production_architecture`
+
 - Stack, versions, dependencies: `mem:tech_stack`
 - Runnable commands (manage/workflow/atlas/site): `mem:suggested_commands`
 - Code/data style, handoff & provenance rules: `mem:conventions`
