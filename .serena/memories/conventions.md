@@ -1,0 +1,10 @@
+# Conventions
+
+- Python: stdlib only for management tools; `from __future__ import annotations`, typed signatures (`dict[str, Any]`, `Path`), argparse CLIs with `main() -> int`, workspace-relative paths enforced (`scoped_path` rejects absolute/`..`/escapes). Ruff line-length 99, py311.
+- One source per topic: workflow=`docs/REPEATABLE_WORKFLOW.md`, handoff/edit=`docs/LOCAL_AGENT_HANDOFF.md`, git=`docs/VERSION_CONTROL.md`, encounter direction=`projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md`, plan=`docs/PRODUCTION_PLAN.md` + film `tasks/plans/workflow-map-v1.md`. Don't duplicate rules into AGENTS.md/skills.
+- Board states: `pending|ready|blocked|in_progress|completed|cancelled`; `dependsOn` checked for unknown IDs/cycles. Keep task/approval/manifest states consistent; update film `memory/STATE.md` after verified changes. Confirmed mistakes → `projects/<episode>/memory/mistakes.jsonl` (solution + rule).
+- Handoffs: `projects/<film>/agents/handoffs/<date>-<role>-<topic>.json` from `shared/templates/agent-handoff-v2.json`, before/after SHA-256 hashes, scope/files/checks-run/dependencies/open-decisions. Existing file/checklist/finished job ≠ approval. Compare diffs+evidence; one delivery per integration.
+- Media categories never mixed: real photos / synthetic variants / style refs / historical casting / UI screenshots; inbox (`inbox/andre-reference-photos`, `andre-voice`, `failed-clips`) is never auto-uploaded/registered/approved; preserve originals.
+- Derived artifacts: render to new versioned folder, never overwrite delivered atlases; exports/frontend are derived and grant no acceptance. `agents/registry.json` + `docs/AGENT_CATALOG.md` are source for derived adapters/frontend metadata — regenerate+check when inputs change.
+- Docs mixed pt-BR/English: keep each file in its existing language. Relative paths in all management data. `.gitkeep` for needed empty dirs; symlinks tracked, external skill contents never copied.
+- Git: stage only assigned paths, inspect staged diff, coordinate shared checkout, no destructive resets/cleanup.

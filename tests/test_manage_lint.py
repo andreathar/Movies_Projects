@@ -183,7 +183,8 @@ class ManageCliMixin:
 
     def run_json(self, root: Path, *arguments: str) -> tuple[int, dict[str, Any]]:
         result = self.run_cli(root, *arguments)
-        self.assertTrue(result.stdout.strip(), result.stderr)
+        if not result.stdout.strip():
+            raise AssertionError(result.stderr)
         return result.returncode, json.loads(result.stdout)
 
 
@@ -326,7 +327,7 @@ class LintTests(ManageCliMixin, unittest.TestCase):
         self.assertNotIn("2026-10-10-missing.json", advisory)
 
     def test_mistakes_without_rules_are_advisory_after_seven_days(self) -> None:
-        today = dt.date.today()
+        today = dt.date.today()  # noqa: DTZ011
         old = (today - dt.timedelta(days=10)).isoformat()
         recent = (today - dt.timedelta(days=1)).isoformat()
         lines = [
