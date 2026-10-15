@@ -1,0 +1,48 @@
+
+> site-creator-vinext-starter@0.1.0 prebuild
+> npm run check:data
+
+
+> site-creator-vinext-starter@0.1.0 check:data
+> node scripts/check-data.mjs
+
+Bundled metadata valid; live freshness requires both exporters --check.
+
+> site-creator-vinext-starter@0.1.0 build
+> node scripts/run-framework.mjs build
+
+
+  vinext build  (Vite 8.0.13)
+
+[1/5] analyze client references...
+[2Ktransforming...✓ 246 modules transformed.
+rendering chunks...
+✓ built in 666ms
+[2/5] analyze server references...
+[2Ktransforming...✓ 187 modules transformed.
+rendering chunks...
+✓ built in 324ms
+[3/5] build rsc environment...
+[2Ktransforming...✓ 243 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 670ms
+[4/5] build client environment...
+[2Ktransforming...✓ 1966 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.29s
+[5/5] build ssr environment...
+[2Ktransforming...✓ 193 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 521ms
+[0m
+  Route (app)
+  ┌ ƒ /             
+  └ λ /api/workspace
+
+  λ API  ƒ Dynamic
+
+  Build complete. Run `vinext start` to start the production server.
+

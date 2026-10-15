@@ -1,0 +1,429 @@
+[
+  {
+    "path": ".serena/memories/core.md",
+    "beforeSha256": "4b135a50f610bd70cc3771e99904cae7b4bd819bee80035dc217059ed9c5d729",
+    "afterSha256": "a88148ab5b6e9b96ceda42497373357995437e10eb5c226603f5f3bb70fe7659",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "a88148ab5b6e9b96ceda42497373357995437e10eb5c226603f5f3bb70fe7659",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": ".serena/memories/frontend_architecture.md",
+    "beforeSha256": null,
+    "afterSha256": "16563f441c6c1aa80a26bbe0334fd4d3517b2efd59c8e49541fac383b4f8292b",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "legacy-fallback-changes.json",
+      "pointer-consistency-changes.json"
+    ],
+    "currentSha256": "16563f441c6c1aa80a26bbe0334fd4d3517b2efd59c8e49541fac383b4f8292b",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": ".serena/memories/memory_maintenance.md",
+    "beforeSha256": "09d514088a02af6dd4487f6538011e398601f5397a8e68b901c0d7cf29a30177",
+    "afterSha256": "2db02402753469d4e2c46ae4590fedd4851704aceab461f7b1b8ddc7f777abdf",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "2db02402753469d4e2c46ae4590fedd4851704aceab461f7b1b8ddc7f777abdf",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": ".serena/memories/production_architecture.md",
+    "beforeSha256": null,
+    "afterSha256": "1eff6440302ac5ec8303f2547fa7988adc4328a02d01d7744a25731e1f482ac7",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "1eff6440302ac5ec8303f2547fa7988adc4328a02d01d7744a25731e1f482ac7",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": ".serena/project.yml",
+    "beforeSha256": "f1a28b5a0bc560b278df957f863f5b463ad87ed047a8bb2c2a12f2b6fe5cea84",
+    "afterSha256": "2451b9f695a688d07740e30c0690417af4f1cf5b10198a7b1a8278dccfbefa34",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "2451b9f695a688d07740e30c0690417af4f1cf5b10198a7b1a8278dccfbefa34",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "docs/PRODUCTION_PLAN.md",
+    "beforeSha256": "1613833d21686c2da333cc315586a64fb3b7b755183f0cab3558aa4a9d4b853c",
+    "afterSha256": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "pointer-consistency-changes.json"
+    ],
+    "currentSha256": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "scripts/production_plan.py",
+    "beforeSha256": "b143061553bf5877d5cfab497e0c22b033c90d0ac575c8fc910190ee067f88f0",
+    "afterSha256": "9e525dcd257dc73b7fd46a3dc93afe1f65b54afdd94397ddcee195fd8db7b09d",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "9e525dcd257dc73b7fd46a3dc93afe1f65b54afdd94397ddcee195fd8db7b09d",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/README.md",
+    "beforeSha256": "caebfcd290be6f5e7d4f8b481cbf685e22e6be747a7614e11d7a10659c8bb006",
+    "afterSha256": "106fef8d53fc98e5016df657c8dfdd9490ee50bd0bc5a793c4f56bf9045259bc",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "106fef8d53fc98e5016df657c8dfdd9490ee50bd0bc5a793c4f56bf9045259bc",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/app/_production-plan/active-baseline-tab.tsx",
+    "beforeSha256": "e0c8cb895831190b8a6d37572e5bf2a5f1f1d63a49e55ff0061cd7dd159b5fc8",
+    "afterSha256": "6eaa2e1e78633a2ebfbea10e81ba4868bc4a9e73a4934ce1a395e15bb1a35118",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "legacy-fallback-changes.json"
+    ],
+    "currentSha256": "6eaa2e1e78633a2ebfbea10e81ba4868bc4a9e73a4934ce1a395e15bb1a35118",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/app/_production-plan/baseline-reference.tsx",
+    "beforeSha256": "3b24071a6a30452b1bf8da38131081b03d543cf0a5a4042fea38d66b6ee2664b",
+    "afterSha256": "dcf458e98ff104c0898ea2fb17758b8403adbbc4691a7c3937f55494b58f6fa6",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "dcf458e98ff104c0898ea2fb17758b8403adbbc4691a7c3937f55494b58f6fa6",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/app/_production-plan/reference-decision.tsx",
+    "beforeSha256": null,
+    "afterSha256": "21292b96051c5e06b17ad5753a6e4c970a8e8551f382ace790bb277ef14b2eef",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "21292b96051c5e06b17ad5753a6e4c970a8e8551f382ace790bb277ef14b2eef",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/app/_production-plan/use-reference-reviews.ts",
+    "beforeSha256": null,
+    "afterSha256": "a5c13ef83347a1ca5de09a172a9ad14f4422ec7ade2b264b2f15ba4b511aaeec",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "a5c13ef83347a1ca5de09a172a9ad14f4422ec7ade2b264b2f15ba4b511aaeec",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+    "beforeSha256": "7f5a30e4e5e68067b30a0760baa8f919ee4e34bdc10062e788390bee1c2b3864",
+    "afterSha256": "2faa1be63689d1f60b1f3a4cc0c65d9548c748590938eeb50a1a80ef0262ef0d",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "2faa1be63689d1f60b1f3a4cc0c65d9548c748590938eeb50a1a80ef0262ef0d",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+    "beforeSha256": "cb0f51d30f8d536ac3be7b0c149ce1c1ed8fcaed60af9a67d3b3a05cdc6bc0a1",
+    "afterSha256": "816251e515880854a7bf81e1ce17d899b4c284ced7d7461e73e8ea8fa84d6dcc",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "816251e515880854a7bf81e1ce17d899b4c284ced7d7461e73e8ea8fa84d6dcc",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/data/production.json",
+    "beforeSha256": "7cead9b65d1941acfa2a2fcc812afa55e2eb87739922d76ee8859dfae8414995",
+    "afterSha256": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "final-snapshot-refresh.json"
+    ],
+    "currentSha256": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/data/workspace-reference.json",
+    "beforeSha256": "b99af74c98be00c7f45ee4eef84efee8aa80762f3fc60d9897e914219cb26126",
+    "afterSha256": "ec36504f051993c28423c6d61dd9e67cc8ee4b3d5460af6cc94fdb2e93a832c4",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "workspace-snapshot-refresh.json",
+      "final-snapshot-refresh.json"
+    ],
+    "currentSha256": "ec36504f051993c28423c6d61dd9e67cc8ee4b3d5460af6cc94fdb2e93a832c4",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/lib/model.ts",
+    "beforeSha256": "438980e58ec455fa56c0f3f8b574123738e53c5780382f6b4168034510180805",
+    "afterSha256": "0c2a4c097661535ee3e2ae16c72b0c4fdcdd8f501667113b0b6d39f179b5a346",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "legacy-fallback-changes.json"
+    ],
+    "currentSha256": "0c2a4c097661535ee3e2ae16c72b0c4fdcdd8f501667113b0b6d39f179b5a346",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/lib/production-plan.ts",
+    "beforeSha256": "633c68f72ffb98a01206227fb102407232375bbe2c61e3068fcd48a4b9de3773",
+    "afterSha256": "295ceca768a0ddbd324584ba3e85b244255869fe6043c076ec020a6046311b61",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "295ceca768a0ddbd324584ba3e85b244255869fe6043c076ec020a6046311b61",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/package.json",
+    "beforeSha256": "7369930dbe8c68350faa66f9789ffeec9bd693aa313f9cc8790fa69707c94d87",
+    "afterSha256": "0b5f24c862d8ce273e9fed65eaff299bf2d3ebfca4804c8389eb2ca9d96c95c5",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "lock-fix-changes.json"
+    ],
+    "currentSha256": "0b5f24c862d8ce273e9fed65eaff299bf2d3ebfca4804c8389eb2ca9d96c95c5",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+    "beforeSha256": "16077ae703172701f1f17e2f8043883cb35d752987ef489868cba7d07fe0793a",
+    "afterSha256": "7ddd00bc6c136cdfa1cd4c9edab522a24d3899f91dbef362b8127d0373faa42a",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "7ddd00bc6c136cdfa1cd4c9edab522a24d3899f91dbef362b8127d0373faa42a",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/local-review.mjs",
+    "beforeSha256": "72731174ed2eef44dbcf434657c4c74320c6179a9b061a47a661cf442ec38f15",
+    "afterSha256": "fc270b7ed90157d3d0310e18e376a69bb07c2d6f5977c78af9cb764086270af9",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "lock-fix-changes.json"
+    ],
+    "currentSha256": "fc270b7ed90157d3d0310e18e376a69bb07c2d6f5977c78af9cb764086270af9",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/reference-review-fixture.mjs",
+    "beforeSha256": null,
+    "afterSha256": "09c2d799814aec26034f0186cb497f0c60a646f02aeaabfdcaca9f378fd16d16",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "09c2d799814aec26034f0186cb497f0c60a646f02aeaabfdcaca9f378fd16d16",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/reference-review-server.mjs",
+    "beforeSha256": null,
+    "afterSha256": "00304ca1337301827900fb8363027c5d8fd8522d0142d3b947912a666f8d7a82",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "00304ca1337301827900fb8363027c5d8fd8522d0142d3b947912a666f8d7a82",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/reference-review-store.mjs",
+    "beforeSha256": null,
+    "afterSha256": "9dcf3bc0db2fd229b20773d9f5757f06bfb3fe9d0258adde7fee23c811249d50",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "pointer-consistency-changes.json"
+    ],
+    "currentSha256": "9dcf3bc0db2fd229b20773d9f5757f06bfb3fe9d0258adde7fee23c811249d50",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/review-readiness.mjs",
+    "beforeSha256": null,
+    "afterSha256": "a8dc890b1e02cd8e869a7118bd285f769bef8b94498630f7aed37bd3a5094d9a",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "a8dc890b1e02cd8e869a7118bd285f769bef8b94498630f7aed37bd3a5094d9a",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/tests/model.test.ts",
+    "beforeSha256": "5a8b6bcf4b83c534581590dc2e34357d13643fb49494d49b2c882706caf68f94",
+    "afterSha256": "aee813e61866bb9ddd66d153dd37776b9c96f6b274af59c40d16c090832ad2cf",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "legacy-fallback-changes.json"
+    ],
+    "currentSha256": "aee813e61866bb9ddd66d153dd37776b9c96f6b274af59c40d16c090832ad2cf",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/tests/reference-review.test.mjs",
+    "beforeSha256": null,
+    "afterSha256": "783fc4aa8ef865e295f5bffa11547d4474e70e1682de882ff284a5db48e4b34a",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "pointer-consistency-changes.json"
+    ],
+    "currentSha256": "783fc4aa8ef865e295f5bffa11547d4474e70e1682de882ff284a5db48e4b34a",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/tests/review-readiness.test.mjs",
+    "beforeSha256": null,
+    "afterSha256": "952b99bf25f20f6d56b0f094cb16a259b73779e5b348d850e92fd451f04b12cf",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "952b99bf25f20f6d56b0f094cb16a259b73779e5b348d850e92fd451f04b12cf",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/vite.config.ts",
+    "beforeSha256": "b896ffc341adf26cdd8ccecab2bcdd8cc5fbb783a10a83a738daf3b53d0824a2",
+    "afterSha256": "07c96c9a74c35bf8ddbb292bccd091c27d8ba5da1bdc089f9c5879887ba36c59",
+    "applied": true,
+    "phases": [
+      "applied-files.json"
+    ],
+    "currentSha256": "920fc59b985300a480393a73b211f3fb3a9339034377dcdb405e2fd410b9b9d1",
+    "matchesAppliedHash": false,
+    "reason": "Applied review plugins retained alongside later concurrent initWranglerEnv/loadCloudflarePlugin refactor; current shared source tested, not reverted."
+  },
+  {
+    "path": "tests/test_production_plan.py",
+    "beforeSha256": "d5fa95158ccf131e1852c7ba94edf671ccaae90a7f473e731d1680566bcf50f4",
+    "afterSha256": "0048422c202e32f19c4f897136e68e872870dee30bf361cdbd67d5aee81a4e8b",
+    "applied": true,
+    "phases": [
+      "applied-files.json",
+      "approved-fixture-repair.json"
+    ],
+    "currentSha256": "0048422c202e32f19c4f897136e68e872870dee30bf361cdbd67d5aee81a4e8b",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+    "beforeSha256": "06bdb084b86c2ac3ee34b7ce4b7b5d27e0263eb19614bdc7480a1b5c241e28d9",
+    "afterSha256": "b9ea573796155331873d27d9e537f75f3e9d40c7d9341de01c9dfd3f83f08bfc",
+    "applied": true,
+    "phases": [
+      "exporter-repair.json"
+    ],
+    "currentSha256": "b9ea573796155331873d27d9e537f75f3e9d40c7d9341de01c9dfd3f83f08bfc",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/scripts/review-lock.mjs",
+    "beforeSha256": null,
+    "afterSha256": "7bc61346d327bb432e11e4126b472383df0dd8e58857fbeb6a6c07a340b4d71c",
+    "applied": true,
+    "phases": [
+      "lock-fix-changes.json"
+    ],
+    "currentSha256": "7bc61346d327bb432e11e4126b472383df0dd8e58857fbeb6a6c07a340b4d71c",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "sites/movies-demandas/tests/review-lock.test.mjs",
+    "beforeSha256": null,
+    "afterSha256": "5d68467c01b41d3e4931cca6f7d92bf9504ec5513279867f5ffa05f08d1e310f",
+    "applied": true,
+    "phases": [
+      "lock-fix-changes.json"
+    ],
+    "currentSha256": "5d68467c01b41d3e4931cca6f7d92bf9504ec5513279867f5ffa05f08d1e310f",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+    "beforeSha256": "78a7523da937729de9dc1e5a77f8cc6be660ab1929d79b32bcecb41cdfa882e0",
+    "afterSha256": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6",
+    "previousPlanHash": "a2a2373f6f97a15640c3f4c4714ce7585b63876d7301fe17c816ab9a3accc0f6",
+    "currentPlanHash": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+    "preservedOtherFields": true,
+    "approvalRecordsChanged": false,
+    "queueOrDispatch": false,
+    "applied": true,
+    "phases": [
+      "pointer-checksum-reconciliation.json"
+    ],
+    "currentSha256": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6",
+    "matchesAppliedHash": true,
+    "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+  }
+]

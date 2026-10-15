@@ -1,0 +1,1 @@
+PASS isolated live HTTP: readiness, unauthenticated denial, fixture/component modules, save/reload persistence, idempotency, stale-plan conflict, cross-origin denial, change request, changed-byte conflict, concurrent repeated clicks, rejection. No production decisions were written.

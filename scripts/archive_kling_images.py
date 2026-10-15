@@ -15,13 +15,13 @@ import html
 import io
 import json
 import os
-from pathlib import Path
 import re
-from kling_batch import run as run_kling
 import urllib.error
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
+from kling_batch import run as run_kling
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]

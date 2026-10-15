@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "episode": "andre-time-travel",
+  "gate": "image_director_review",
+  "artifact": {
+    "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+    "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+    "version": "galileo-baseline-2026-10-13",
+    "selector": "G-IN"
+  },
+  "decision": "approved",
+  "reviewer": "Andre",
+  "reviewedAt": "2026-10-15T05:09:15.396Z",
+  "evidence": [
+    "Aprovado"
+  ],
+  "scope": "Referência G-IN para composition na base ativa de Galileo.",
+  "limitations": [
+    "Only this exact image and declared use. No shot, incorporation, financial release or other asset is approved. Identity is declared by the local reviewer, not cryptographically authenticated."
+  ],
+  "supersedes": null,
+  "rule": "Review applies only to this exact content/version and declared scope; edits require renewed review.",
+  "basePlanSha256": "a2a2373f6f97a15640c3f4c4714ce7585b63876d7301fe17c816ab9a3accc0f6",
+  "requestSha256": "de036af0fbe14b0d2dee94364775076b65296ffbfe1eb14ee5a8fd6b2b393c58"
+}

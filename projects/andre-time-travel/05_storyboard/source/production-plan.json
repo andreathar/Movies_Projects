@@ -262,11 +262,14 @@
       "states": {
         "proposal": "proposed",
         "technicalCheck": "static_checked",
-        "directorApproval": "pending",
+        "directorApproval": "approved",
         "incorporation": "not_incorporated"
       },
       "notes": "Andre à esquerda, mão apoiada e boca fechada; ombro/mão do interlocutor à direita, cabeça fora. Anel e lasca visíveis. Cabelo/rosto e escala precisam do julgamento de Andre. Inspeção estática da imagem inteira, sem prova de movimento. Seleção para composição apenas: linhas cruzadas do paletó, lasca profunda junto à emenda e mapeamento do anel precisam ser reconciliados com G-WARDROBE/G-TABLE. IN/OUT não são um par first/tail aprovado.",
-      "approvalEvidence": null
+      "approvalEvidence": {
+        "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json",
+        "sha256": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c"
+      }
     },
     {
       "id": "G-OUT",
@@ -279,11 +282,14 @@
       "states": {
         "proposal": "proposed",
         "technicalCheck": "static_checked",
-        "directorApproval": "pending",
+        "directorApproval": "approved",
         "incorporation": "not_incorporated"
       },
       "notes": "Mesmo arranjo aparente do IN, mão de Andre elevada e boca entreaberta. Fonte para prever fala/gesto; still não comprova sincronismo. Verificar dedos, proporções, mesa e luz na futura animação. Seleção para composição apenas: linhas cruzadas do paletó, lasca profunda junto à emenda e mapeamento do anel precisam ser reconciliados com G-WARDROBE/G-TABLE. IN/OUT não são um par first/tail aprovado.",
-      "approvalEvidence": null
+      "approvalEvidence": {
+        "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json",
+        "sha256": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2"
+      }
     },
     {
       "id": "G-SHOULDER-L",

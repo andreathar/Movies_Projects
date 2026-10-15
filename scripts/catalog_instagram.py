@@ -5,14 +5,14 @@ Read-only for imported media. Does not contact Instagram, handle authentication,
 generate images, or grant creative approval. Run from the workspace root.
 """
 
-from datetime import datetime, timezone
-from pathlib import Path
 import csv
 import hashlib
 import html
 import json
 import os
 import re
+from datetime import datetime, timezone
+from pathlib import Path
 
 from PIL import Image
 

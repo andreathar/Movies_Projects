@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "note": "Pointer to the current generation plan; lint verifies path and hash. Update when a newer plan is adopted; keep older plans as history.",
   "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
-  "sha256": "a2a2373f6f97a15640c3f4c4714ce7585b63876d7301fe17c816ab9a3accc0f6",
+  "sha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
   "companions": [],
   "status": "local_implementation_no_paid_release",
   "adoptedOn": "2026-10-13",

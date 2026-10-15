@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "qc",
+  "contributorKind": "registry-role",
+  "assignment": "Technical frontend review-control and read-only Serena implementation, verification and human approval preservation; no artistic acceptance or producer ingestion.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/PRODUCTION_PLAN.md",
+    "reports/2026-10-15-reference-review-controls-v1/HANDOFF.md"
+  ],
+  "ownedPaths": [
+    ".serena/memories/core.md",
+    ".serena/memories/frontend_architecture.md",
+    ".serena/memories/memory_maintenance.md",
+    ".serena/memories/production_architecture.md",
+    ".serena/project.yml",
+    "docs/PRODUCTION_PLAN.md",
+    "scripts/production_plan.py",
+    "sites/movies-demandas/README.md",
+    "sites/movies-demandas/app/_production-plan/active-baseline-tab.tsx",
+    "sites/movies-demandas/app/_production-plan/baseline-reference.tsx",
+    "sites/movies-demandas/app/_production-plan/reference-decision.tsx",
+    "sites/movies-demandas/app/_production-plan/use-reference-reviews.ts",
+    "sites/movies-demandas/app/production-plan-panel.module.css",
+    "sites/movies-demandas/app/production-plan-panel.tsx",
+    "sites/movies-demandas/data/production.json",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/lib/production-plan.ts",
+    "sites/movies-demandas/package.json",
+    "sites/movies-demandas/scripts/baseline-media.mjs",
+    "sites/movies-demandas/scripts/local-review.mjs",
+    "sites/movies-demandas/scripts/reference-review-fixture.mjs",
+    "sites/movies-demandas/scripts/reference-review-server.mjs",
+    "sites/movies-demandas/scripts/reference-review-store.mjs",
+    "sites/movies-demandas/scripts/review-readiness.mjs",
+    "sites/movies-demandas/tests/model.test.ts",
+    "sites/movies-demandas/tests/reference-review.test.mjs",
+    "sites/movies-demandas/tests/review-readiness.test.mjs",
+    "sites/movies-demandas/vite.config.ts",
+    "tests/test_production_plan.py",
+    "sites/movies-demandas/scripts/export-workspace.mjs",
+    "sites/movies-demandas/scripts/review-lock.mjs",
+    "sites/movies-demandas/tests/review-lock.test.mjs",
+    "projects/andre-time-travel/07_generations/plans/current-plan.json"
+  ],
+  "baseFiles": [
+    {
+      "path": ".serena/memories/core.md",
+      "sha256Before": "4b135a50f610bd70cc3771e99904cae7b4bd819bee80035dc217059ed9c5d729"
+    },
+    {
+      "path": ".serena/memories/memory_maintenance.md",
+      "sha256Before": "09d514088a02af6dd4487f6538011e398601f5397a8e68b901c0d7cf29a30177"
+    },
+    {
+      "path": ".serena/project.yml",
+      "sha256Before": "f1a28b5a0bc560b278df957f863f5b463ad87ed047a8bb2c2a12f2b6fe5cea84"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256Before": "1613833d21686c2da333cc315586a64fb3b7b755183f0cab3558aa4a9d4b853c"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": "b143061553bf5877d5cfab497e0c22b033c90d0ac575c8fc910190ee067f88f0"
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "caebfcd290be6f5e7d4f8b481cbf685e22e6be747a7614e11d7a10659c8bb006"
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/active-baseline-tab.tsx",
+      "sha256Before": "e0c8cb895831190b8a6d37572e5bf2a5f1f1d63a49e55ff0061cd7dd159b5fc8"
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/baseline-reference.tsx",
+      "sha256Before": "3b24071a6a30452b1bf8da38131081b03d543cf0a5a4042fea38d66b6ee2664b"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256Before": "7f5a30e4e5e68067b30a0760baa8f919ee4e34bdc10062e788390bee1c2b3864"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256Before": "cb0f51d30f8d536ac3be7b0c149ce1c1ed8fcaed60af9a67d3b3a05cdc6bc0a1"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "7cead9b65d1941acfa2a2fcc812afa55e2eb87739922d76ee8859dfae8414995"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "b99af74c98be00c7f45ee4eef84efee8aa80762f3fc60d9897e914219cb26126"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "438980e58ec455fa56c0f3f8b574123738e53c5780382f6b4168034510180805"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256Before": "633c68f72ffb98a01206227fb102407232375bbe2c61e3068fcd48a4b9de3773"
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256Before": "7369930dbe8c68350faa66f9789ffeec9bd693aa313f9cc8790fa69707c94d87"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+      "sha256Before": "16077ae703172701f1f17e2f8043883cb35d752987ef489868cba7d07fe0793a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/local-review.mjs",
+      "sha256Before": "72731174ed2eef44dbcf434657c4c74320c6179a9b061a47a661cf442ec38f15"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "5a8b6bcf4b83c534581590dc2e34357d13643fb49494d49b2c882706caf68f94"
+    },
+    {
+      "path": "sites/movies-demandas/vite.config.ts",
+      "sha256Before": "b896ffc341adf26cdd8ccecab2bcdd8cc5fbb783a10a83a738daf3b53d0824a2"
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256Before": "d5fa95158ccf131e1852c7ba94edf671ccaae90a7f473e731d1680566bcf50f4"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "06bdb084b86c2ac3ee34b7ce4b7b5d27e0263eb19614bdc7480a1b5c241e28d9"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256Before": "78a7523da937729de9dc1e5a77f8cc6be660ab1929d79b32bcecb41cdfa882e0"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": ".serena/memories/core.md",
+      "sha256After": "a88148ab5b6e9b96ceda42497373357995437e10eb5c226603f5f3bb70fe7659",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": ".serena/memories/frontend_architecture.md",
+      "sha256After": "16563f441c6c1aa80a26bbe0334fd4d3517b2efd59c8e49541fac383b4f8292b",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": ".serena/memories/memory_maintenance.md",
+      "sha256After": "2db02402753469d4e2c46ae4590fedd4851704aceab461f7b1b8ddc7f777abdf",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": ".serena/memories/production_architecture.md",
+      "sha256After": "1eff6440302ac5ec8303f2547fa7988adc4328a02d01d7744a25731e1f482ac7",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": ".serena/project.yml",
+      "sha256After": "2451b9f695a688d07740e30c0690417af4f1cf5b10198a7b1a8278dccfbefa34",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256After": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256After": "9e525dcd257dc73b7fd46a3dc93afe1f65b54afdd94397ddcee195fd8db7b09d",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "106fef8d53fc98e5016df657c8dfdd9490ee50bd0bc5a793c4f56bf9045259bc",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/active-baseline-tab.tsx",
+      "sha256After": "6eaa2e1e78633a2ebfbea10e81ba4868bc4a9e73a4934ce1a395e15bb1a35118",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/baseline-reference.tsx",
+      "sha256After": "dcf458e98ff104c0898ea2fb17758b8403adbbc4691a7c3937f55494b58f6fa6",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/reference-decision.tsx",
+      "sha256After": "21292b96051c5e06b17ad5753a6e4c970a8e8551f382ace790bb277ef14b2eef",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/use-reference-reviews.ts",
+      "sha256After": "a5c13ef83347a1ca5de09a172a9ad14f4422ec7ade2b264b2f15ba4b511aaeec",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256After": "2faa1be63689d1f60b1f3a4cc0c65d9548c748590938eeb50a1a80ef0262ef0d",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256After": "816251e515880854a7bf81e1ce17d899b4c284ced7d7461e73e8ea8fa84d6dcc",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "ec36504f051993c28423c6d61dd9e67cc8ee4b3d5460af6cc94fdb2e93a832c4",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "0c2a4c097661535ee3e2ae16c72b0c4fdcdd8f501667113b0b6d39f179b5a346",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256After": "295ceca768a0ddbd324584ba3e85b244255869fe6043c076ec020a6046311b61",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256After": "0b5f24c862d8ce273e9fed65eaff299bf2d3ebfca4804c8389eb2ca9d96c95c5",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+      "sha256After": "7ddd00bc6c136cdfa1cd4c9edab522a24d3899f91dbef362b8127d0373faa42a",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/local-review.mjs",
+      "sha256After": "fc270b7ed90157d3d0310e18e376a69bb07c2d6f5977c78af9cb764086270af9",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-fixture.mjs",
+      "sha256After": "09c2d799814aec26034f0186cb497f0c60a646f02aeaabfdcaca9f378fd16d16",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-server.mjs",
+      "sha256After": "00304ca1337301827900fb8363027c5d8fd8522d0142d3b947912a666f8d7a82",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-store.mjs",
+      "sha256After": "9dcf3bc0db2fd229b20773d9f5757f06bfb3fe9d0258adde7fee23c811249d50",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/review-readiness.mjs",
+      "sha256After": "a8dc890b1e02cd8e869a7118bd285f769bef8b94498630f7aed37bd3a5094d9a",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "aee813e61866bb9ddd66d153dd37776b9c96f6b274af59c40d16c090832ad2cf",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/tests/reference-review.test.mjs",
+      "sha256After": "783fc4aa8ef865e295f5bffa11547d4474e70e1682de882ff284a5db48e4b34a",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/tests/review-readiness.test.mjs",
+      "sha256After": "952b99bf25f20f6d56b0f094cb16a259b73779e5b348d850e92fd451f04b12cf",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/vite.config.ts",
+      "sha256After": "920fc59b985300a480393a73b211f3fb3a9339034377dcdb405e2fd410b9b9d1",
+      "reason": "Applied review plugins retained alongside later concurrent initWranglerEnv/loadCloudflarePlugin refactor; current shared source tested, not reverted."
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256After": "0048422c202e32f19c4f897136e68e872870dee30bf361cdbd67d5aee81a4e8b",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256After": "b9ea573796155331873d27d9e537f75f3e9d40c7d9341de01c9dfd3f83f08bfc",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/review-lock.mjs",
+      "sha256After": "7bc61346d327bb432e11e4126b472383df0dd8e58857fbeb6a6c07a340b4d71c",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "sites/movies-demandas/tests/review-lock.test.mjs",
+      "sha256After": "5d68467c01b41d3e4931cca6f7d92bf9504ec5513279867f5ffa05f08d1e310f",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256After": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6",
+      "reason": "Scoped implementation or targeted regression repair; surrounding concurrent changes preserved."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Applied implementation; 225 Python and 86 frontend tests, lint/types/build/data/freshness/plan-media gates passed. No own commits, paid jobs or dispatch.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v1/final-status.json",
+      "sha256": "c5344a528af05430e7eceea571a5743a763aed2c5a4d32a304b5902c1063dd56"
+    },
+    {
+      "statement": "Read-only final HTTP check: ready, seven exact-hash media responses, QA fixture disabled, plan/pointer match and two real approved records.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v1/runtime-delivery-check.json",
+      "sha256": "7be11bda22cd4e2c0c3ba4eb5c1b05879b74de9b889a5d944309ec6f3fa4dcb3"
+    },
+    {
+      "statement": "Andre G-IN/G-OUT exact-version decisions preserved. Local saves trigger no queue, Parley notification or generation. No task/comment approvals inferred.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v1/user-two-approvals-verification.json",
+      "sha256": "bdd49a84bd7e779bc7bfb6c57dcbc1b657713e0257d3d086664c7b4bf99a3f3b"
+    }
+  ],
+  "verification": [
+    "Project .venv Python suite: 225 passed.",
+    "Frontend npm test: 86 passed with normal isolated workers.",
+    "npm lint, tsc --noEmit --incremental false, check:data, fresh build passed.",
+    "Both exporter --check freshness gates passed; plan check --verify-media and manage validate passed; three existing shared-skill warnings.",
+    "manage lint zero hard findings and resume completed before this pending handoff; run again on delivery.",
+    "Isolated live HTTP synthetic workflow passed; live browser enlargement, form guard/cancel/Escape and persisted summary checks passed.",
+    "Chrome blocked synthetic fixture browser route; no bypass or real production submission by this task.",
+    "Installed Serena configuration model accepted read-only fixed tools; live MCP navigation and active-client reload unverified."
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Review this technical delivery and ingest only after checking the evidence and current hashes. Preserve human decisions and concurrent edits.",
+      "readiness": "ready_for_review"
+    },
+    {
+      "role": "qc",
+      "action": "If desired, finish synthetic browser submit/error/stale/reject/change-request and mobile/screenreader checks through an ordinarily permitted browser route; no production decision replay.",
+      "readiness": "browser_fixture_blocked"
+    },
+    {
+      "role": "producer",
+      "action": "On normal Serena project reload, smoke-test one Python and one TSX navigation query. Keep memories as links to canonical authorities.",
+      "readiness": "not_required_for_frontend_runtime"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Synthetic QA route blocked by Chrome ERR_BLOCKED_BY_CLIENT; full interactive/error/mobile/screenreader coverage unclaimed.",
+      "owner": "producer / qc",
+      "unblockCondition": "Use a normally permitted browser test environment without weakening protections."
+    }
+  ],
+  "andreOnlyGates": [
+    "Remaining exact-version director decisions, incorporation, financial release and publication remain their existing separate gates."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": true,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "canonicalStateChangeExplanation": "Task synchronized only current-plan pointer checksum after real user decisions. The user authored the two canonical image approvals via the UI; automated checks authored no approval. Board, manifest, approvals and shared media preserved.",
+  "concurrentChanges": "Current hashes describe shared integrated sources, not exclusive authorship. Vite init refactor and parent optimize commit preserved; no whole-file rollback authorized."
+}

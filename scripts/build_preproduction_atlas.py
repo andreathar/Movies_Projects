@@ -16,7 +16,6 @@ from zoneinfo import ZoneInfo
 
 from atlas_inputs import load_inputs
 from manage import require, scoped_path
-
 from PIL import Image, ImageOps
 from reportlab.lib.colors import HexColor
 from reportlab.lib.utils import ImageReader

@@ -1,0 +1,74 @@
+{
+  "capturedAt": "2026-10-15T05:33:15.527099+00:00",
+  "origin": "http://127.0.0.1:5173",
+  "ready": {
+    "application": "movies-demandas",
+    "ready": true
+  },
+  "authenticatedReviewGET": 200,
+  "mediaHEAD": [
+    {
+      "id": "G-ID",
+      "status": 200,
+      "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+    },
+    {
+      "id": "G-WARDROBE",
+      "status": 200,
+      "sha256": "75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b"
+    },
+    {
+      "id": "G-TABLE",
+      "status": 200,
+      "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b"
+    },
+    {
+      "id": "G-ERA",
+      "status": 200,
+      "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3"
+    },
+    {
+      "id": "G-IN",
+      "status": 200,
+      "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4"
+    },
+    {
+      "id": "G-OUT",
+      "status": 200,
+      "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf"
+    },
+    {
+      "id": "G-EYE-B",
+      "status": 200,
+      "sha256": "f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215"
+    }
+  ],
+  "qaFixtureStatus": 404,
+  "canonicalPlanSha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+  "pointerMatches": true,
+  "reviewEvents": [
+    {
+      "id": "G-IN",
+      "review": {
+        "action": "approved",
+        "reviewer": "Andre",
+        "scope": "Refer\u00eancia G-IN para composition na base ativa de Galileo.",
+        "notes": "Aprovado",
+        "reviewedAt": "2026-10-15T05:09:15.396Z",
+        "evidencePath": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json"
+      }
+    },
+    {
+      "id": "G-OUT",
+      "review": {
+        "action": "approved",
+        "reviewer": "Andre",
+        "scope": "Refer\u00eancia G-OUT para composition na base ativa de Galileo.",
+        "notes": "Aprovado",
+        "reviewedAt": "2026-10-15T05:09:59.665Z",
+        "evidencePath": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json"
+      }
+    }
+  ],
+  "writesOrSubmissionsByThisCheck": false
+}

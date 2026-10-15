@@ -3,9 +3,9 @@
 import argparse
 import hashlib
 import json
-from pathlib import Path
 import re
 import sys
+from pathlib import Path
 
 REVIEWERS = ('historian', 'continuity', 'qc')
 

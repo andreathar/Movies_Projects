@@ -1,0 +1,54 @@
+{
+  "verifiedAt": "2026-10-15T05:17:36.679294+00:00",
+  "ui": "New local image-review controls; no recent site-task acceptance changes",
+  "origin": "http://127.0.0.1:5173/",
+  "browserAttribution": "User reports built-in browser; canonical evidence does not store a browser identity or build hash",
+  "events": [
+    {
+      "referenceId": "G-IN",
+      "reviewedAt": "2026-10-15T05:09:15.396Z",
+      "reviewer": "Andre",
+      "decision": "approved",
+      "scope": "Refer\u00eancia G-IN para composition na base ativa de Galileo.",
+      "assetSha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+      "evidencePath": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json",
+      "evidenceSha256": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c",
+      "notes": [
+        "Aprovado"
+      ]
+    },
+    {
+      "referenceId": "G-OUT",
+      "reviewedAt": "2026-10-15T05:09:59.665Z",
+      "reviewer": "Andre",
+      "decision": "approved",
+      "scope": "Refer\u00eancia G-OUT para composition na base ativa de Galileo.",
+      "assetSha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+      "evidencePath": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json",
+      "evidenceSha256": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2",
+      "notes": [
+        "Aprovado"
+      ]
+    }
+  ],
+  "canonicalPlanSha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+  "taskBoardManifestAndGlobalApprovalsUnchanged": true,
+  "siteWorkspace": {
+    "revision": 9,
+    "taskCount": 20,
+    "commentCount": 1,
+    "latestHistoryAt": "2026-10-10T15:23:57.880Z",
+    "recentTaskHistorySinceApprovalFeature": []
+  },
+  "downstream": {
+    "localSave": "verified",
+    "localDerivedExport": "verified",
+    "workQueuedByHandler": false,
+    "parleyMessageSentByHandler": false,
+    "agentDispatchedByHandler": false,
+    "peerAcknowledgement": null,
+    "generationOrPaidJobExecutedByHandler": false,
+    "externalProviderRequestByHandler": false
+  },
+  "limits": "No global claim about unrelated concurrent Parley activity; the image-save path has no queue/dispatch/notification integration. Parley issue list returned empty. Exact author identity is locally declared."
+}

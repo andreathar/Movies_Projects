@@ -14,6 +14,7 @@ import os
 import sys
 from pathlib import Path
 
+
 # Carrega .env se existir
 def load_env():
     env_path = Path(__file__).resolve().parent.parent / ".env"
@@ -54,12 +55,12 @@ def main():
     respan_api_key = os.environ.get("RESPAN_API_KEY")
     use_gateway = os.environ.get("RESPAN_GATEWAY", "").strip() in ("1", "true", "yes")
     if respan_api_key:
-        from respan import Respan
-        from respan_instrumentation_google_genai import GoogleGenAIInstrumentor
-
         # Scene/lane tags come from the lane shell (scripts/lane_env.sh), same as the
         # agent hooks: RESPAN_WORKFLOW_NAME=<scene-id>, RESPAN_METADATA={lane,role,scene,episode}
         import json as _json
+
+        from respan import Respan
+        from respan_instrumentation_google_genai import GoogleGenAIInstrumentor
         try:
             _meta = _json.loads(os.environ.get("RESPAN_METADATA", "") or "{}")
         except ValueError:

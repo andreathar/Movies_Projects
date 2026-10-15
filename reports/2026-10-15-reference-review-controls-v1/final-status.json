@@ -1,0 +1,51 @@
+{
+  "capturedAt": "2026-10-15T05:34:21.719949+00:00",
+  "status": "applied_and_verified",
+  "authorization": "Parent corroborated the original concrete proposal plus user approval; normal escalated retry was accepted. Earlier rejection is historical and resolved.",
+  "productionSourceWritesByThisTask": true,
+  "filesInIntegratedManifest": 34,
+  "parentBranch": "main",
+  "parentHead": "b2aca0d5e4d70d40cf4d7d13d0af88249e37684f",
+  "frontendBranch": "main",
+  "frontendHead": "dfb945f3aaaf5aaac20ed323cda66dd26d047bb9",
+  "parleyBranch": "movie-parley",
+  "commitsOrPushesByThisTask": false,
+  "canonicalPlanSha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+  "frontendTestsPassed": 86,
+  "pythonTestsPassed": 225,
+  "lint": "passed",
+  "types": "passed",
+  "build": "passed",
+  "data": "passed",
+  "exportFreshness": "both passed",
+  "workspaceValidation": "passed, three preexisting shared-skill hash warnings",
+  "productionPlanMediaValidation": "passed; creative acceptance not granted by checks",
+  "managementLint": "passed, zero hard findings; advisories retained",
+  "liveFixtureHTTP": "passed on isolated temporary records",
+  "browserUI": "Live app enlargement, review form labels, disabled submit, Escape/cancel, double-open reset and saved approval summaries verified. Synthetic fixture browser route blocked by Chrome ERR_BLOCKED_BY_CLIENT; no bypass.",
+  "runtime": {
+    "url": "http://127.0.0.1:5173",
+    "pid": 1150804,
+    "ready": true,
+    "qaFixtureDisabled": true,
+    "sevenImagesHTTP": 200
+  },
+  "humanDecisionsPreserved": [
+    "G-IN approved 2026-10-15T05:09:15.396Z",
+    "G-OUT approved 2026-10-15T05:09:59.665Z"
+  ],
+  "downstreamFromApprovalHandler": {
+    "queue": false,
+    "parleyMessage": false,
+    "agentDispatch": false,
+    "externalProviderOrPaidGeneration": false
+  },
+  "serena": "Read-only fixed navigation profile and curated architecture memories applied; installed model accepted settings. Existing clients not restarted and actual MCP navigation not tested.",
+  "remainingGaps": [
+    "Synthetic browser save/error/stale/reject/change-request interactions and full mobile/screenreader audit",
+    "Producer review/ingestion of technical handoff",
+    "Serena Python+TSX live navigation after normal project reload"
+  ],
+  "historicalPatch": "proposed-changes.patch is preapplication historical evidence; do not apply again",
+  "rollback": "Selective source inverse only after current hash check; preserve concurrent edits, canonical human decisions, immutable evidence, shared media and pointer consistency."
+}
