@@ -17,6 +17,8 @@ from pathlib import Path
 _media_spec = importlib.util.spec_from_file_location(
     "movies_shared_media", Path(__file__).with_name("shared_media.py")
 )
+if _media_spec is None or _media_spec.loader is None:
+    raise ImportError("could not load shared_media.py")
 shared_media = importlib.util.module_from_spec(_media_spec)
 _media_spec.loader.exec_module(shared_media)
 
@@ -101,7 +103,7 @@ def verified_evidence(film, evidence):
 
 
 def moment(value):
-    result = dt.datetime.fromisoformat(value.replace('Z', '+00:00'))
+    result = dt.datetime.fromisoformat(value)
     if result.tzinfo is None:
         raise ValueError('data precisa de fuso horário')
     return result
@@ -125,7 +127,7 @@ def authorize(film, job, *, now=None):
         payload_hash = fingerprint(film, job)
         if scope.get('job') != job['job'] or scope.get('payloadSha256') != payload_hash or scope.get('maxJobs') != 1:
             raise ValueError('pedido difere do conteúdo e job liberados')
-        now = now or dt.datetime.now(dt.timezone.utc)
+        now = now or dt.datetime.now(dt.UTC)
         if moment(scope['expiresAt']) <= now:
             raise ValueError('liberação expirada')
         verified_evidence(film, entry['decisionEvidence'])
@@ -188,15 +190,18 @@ def registry(film):
         submit = read('.submit.json').get('body') or {}
         response = read('.response.json').get('body') or {}
         balance = read('.balance.json')
+        release = intent.get('release')
+        quote = release.get('quote') if isinstance(release, dict) else None
         def generation(body):
             nested = body.get('generations') or []
             return nested[0] if nested and isinstance(nested[0], dict) else body
         sent, observed = generation(submit), generation(response)
-        gen_id = sent.get('generationId') or sent.get('generation_id')
+        gen_id = (sent.get('generationId') or sent.get('generation_id')) if isinstance(sent, dict) else None
         result.append({'job': job, 'model': intent.get('model'), 'generationId': gen_id,
-                       'status': observed.get('status', 'SUBMITTED' if gen_id else 'SUBMISSION_UNKNOWN'),
+                       'status': observed.get('status', 'SUBMITTED' if gen_id else 'SUBMISSION_UNKNOWN')
+                       if isinstance(observed, dict) else ('SUBMITTED' if gen_id else 'SUBMISSION_UNKNOWN'),
                        'payloadSha256': intent.get('payloadSha256'),
-                       'estimate': None, 'quote': (intent.get('release') or {}).get('quote'),
+                       'estimate': None, 'quote': quote,
                        'providerReportedCredits': balance.get('creditsConsumed'),
                        'chargeBasis': balance.get('chargeBasis', 'unknown'),
                        'balanceDelta': balance.get('creditsDelta'), 'balanceDeltaIsCharge': False,

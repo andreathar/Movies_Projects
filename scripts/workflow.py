@@ -5,9 +5,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-from datetime import datetime, timezone
-from pathlib import Path
 import re
+from datetime import UTC, datetime
+from pathlib import Path
 
 from manage import DEFAULT_ROOT, require, scoped_path
 
@@ -21,7 +21,7 @@ SKIP_PARTS = {"__pycache__", ".ruff_cache", ".pytest_cache", ".venv", ".git"}
 
 
 def now() -> str:
-    return datetime.now(timezone.utc).isoformat()
+    return datetime.now(UTC).isoformat()
 
 
 def digest(path: Path) -> str:

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Validate and export the visual plan selected by workspace.json, entirely offline.
 
 The board owns task status; this source owns shot proposals and references. Provider
@@ -24,6 +23,8 @@ FAMILIES = 'shared/templates/kling-shot-families.json'
 
 def module(name, path):
     spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise ImportError('não foi possível carregar o módulo: ' + str(path))
     value = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(value)
     return value
@@ -339,6 +340,8 @@ def unresolved_ambiguity(items):
 def coherence_report(root, shot_id=None, request=None):
     """Reuse canonical plan/templates and provider slot mapping; never submit."""
     p, path, plan = plan_source(root)
+    if plan is None:
+        raise ValueError('plano de produção ausente para o projeto ativo')
     refs = {r['id']: r for r in plan['references']}
     shots = [s for s in plan['shots'] if shot_id is None or s['id'] == shot_id]
     if not shots or request is not None and len(shots) != 1:
@@ -491,6 +494,8 @@ def template(root, family_id, shot_id=None):
     request['prompt'] = family['promptTemplate']
     if shot_id:
         p, _, plan = plan_source(root)
+        if plan is None:
+            raise ValueError('plano de produção não encontrado')
         shot = next(s for s in plan['shots'] if s['id'] == shot_id)
         if shot['family'] != family_id:
             raise ValueError('família não corresponde à ficha')
@@ -511,8 +516,7 @@ def export(root):
         return None
     capability = routes(root)
     source_paths = [path, FAMILIES, SNAPSHOT, 'scripts/production_plan.py', 'scripts/kling_release.py', 'docs/kling-manual/tools/kling_preflight.py', 'docs/PRODUCTION_PLAN.md'] + [s['path'] for s in plan['preservedSources']]
-    for evidence in plan.get('deliverables', []):
-        source_paths.append(evidence)
+    source_paths.extend(list(plan.get('deliverables', [])))
     return {'path': path, 'revision': plan['revision'], 'implementationApprovalId': plan['implementationApprovalId'],
             'status': 'local_implementation_prepared_creative_review_pending',
             'boardIsTaskAuthority': True, 'encounters': plan['encounters'], 'stages': plan['stages'],

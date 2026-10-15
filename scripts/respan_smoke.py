@@ -25,11 +25,11 @@ def main() -> int:
         return 1
     use_gateway = os.environ.get("RESPAN_GATEWAY", "").strip() in ("1", "true", "yes")
 
+    import json as _json
+
     from google import genai
     from respan import Respan
     from respan_instrumentation_google_genai import GoogleGenAIInstrumentor
-
-    import json as _json
     try: _meta = _json.loads(os.environ.get("RESPAN_METADATA", "") or "{}")
     except ValueError: _meta = {}
     Respan(instrumentations=[GoogleGenAIInstrumentor()],

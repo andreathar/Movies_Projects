@@ -4,12 +4,12 @@ from __future__ import annotations
 
 import argparse
 import csv
-from html.parser import HTMLParser
 import json
-from pathlib import Path
 import re
 import subprocess
 import sys
+from html.parser import HTMLParser
+from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from manage import DEFAULT_ROOT, require, scoped_path, validate
@@ -65,7 +65,7 @@ def verify(root: Path, atlas_relative: str) -> dict:
                      ("performance-cards.pdf", "performanceCards")):
         result = subprocess.run(["pdfinfo", str(atlas / pdf)], capture_output=True,
                                 text=True, check=True)
-        count = int(re.search(r"^Pages:\s+(\d+)", result.stdout, re.M)[1])
+        count = int(re.search(r"^Pages:\s+(\d+)", result.stdout, re.MULTILINE)[1])
         require(count == catalog["counts"][key], f"PDF page count differs: {pdf}")
         pdf_pages[pdf] = count
     original = json.loads((root / "reports/workflow-v1/originals-before.json").read_text())

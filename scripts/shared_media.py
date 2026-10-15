@@ -7,9 +7,9 @@ an asset. Hashes in legacy source text are proposals, never fresh verification.
 from __future__ import annotations
 
 import csv
-from collections import Counter
 import hashlib
 import re
+from collections import Counter
 from pathlib import Path
 
 HEADER = [

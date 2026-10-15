@@ -68,8 +68,8 @@ def cost_attributes(envelope, result):
 
 def load_sdk():
     # Explicit instrumentations=[] prevents tracing other SDKs or request bodies.
-    from respan import Respan, workflow, task
     from opentelemetry import trace
+    from respan import Respan, task, workflow
     client = Respan(app_name='kling_batch', instrumentations=[], is_auto_instrument=False,
                     customer_identifier='movies-projects', auto_flush='off')
     return client, workflow, task, trace.get_current_span
