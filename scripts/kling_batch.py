@@ -12,18 +12,18 @@ import csv
 import datetime as dt
 import fcntl
 import hashlib
-import io
 import importlib.util
-import re
-import math
+import io
 import json
+import math
 import os
+import re
 import subprocess
 import sys
 import tempfile
 import time
-import urllib.request
 import urllib.parse
+import urllib.request
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -33,13 +33,19 @@ SUCCESS = {"COMPLETED", "PARTIAL_COMPLETED", "SUCCEED", "SUCCEEDED", "SUCCESS"}
 TERMINAL = SUCCESS | {"FAILED", "CANCELLED", "CANCELED", "QUERY_UNKNOWN", "QUERY_ERROR", "RESULT_EMPTY"}
 GENERATORS = {"text_to_image", "image_to_image", "text_to_video", "image_to_video", "omni_ref_video", "motion_control"}
 _spec = importlib.util.spec_from_file_location("kling_preflight", ROOT / "docs/kling-manual/tools/kling_preflight.py")
+if _spec is None or _spec.loader is None:
+    raise ImportError("Cannot load docs/kling-manual/tools/kling_preflight.py")
 pf = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(pf)
 _release = importlib.util.spec_from_file_location("kling_release", ROOT / "scripts/kling_release.py")
+if _release is None or _release.loader is None:
+    raise ImportError("Cannot load scripts/kling_release.py")
 release = importlib.util.module_from_spec(_release)
 _release.loader.exec_module(release)
 
 _trace = importlib.util.spec_from_file_location("kling_respan", ROOT / "scripts/kling_respan.py")
+if _trace is None or _trace.loader is None:
+    raise ImportError("Cannot load scripts/kling_respan.py")
 tracing = importlib.util.module_from_spec(_trace)
 _trace.loader.exec_module(tracing)
 
@@ -83,7 +89,7 @@ def preflight(job, film):
     canonical = {pf.norm(a['name']): a['name'] for a in spec.get('arguments', [])}
     arguments = {canonical[pf.norm(name)]: pf.cli_value(value) for name, value in job['args'].items()}
     return {'modelSpec': spec, 'arguments': arguments, 'schemaSha256': hashlib.sha256(json.dumps(models, sort_keys=True).encode()).hexdigest(),
-            'checkedAt': dt.datetime.now(dt.timezone.utc).isoformat(), 'items': report.items}
+            'checkedAt': dt.datetime.now(dt.UTC).isoformat(), 'items': report.items}
 
 
 
@@ -103,7 +109,7 @@ def run(cmd: list[str], *, timeout: int = 180) -> dict:
         stdout = proc.stdout if isinstance(proc.stdout, str) else out.read()
         stderr = proc.stderr if isinstance(proc.stderr, str) else err.read()
     try:
-        data = json.loads(stdout)
+        data: dict[str, object] = json.loads(stdout)
         if not isinstance(data, dict):
             data = {"ok": False, "parsed": data}
     except json.JSONDecodeError:
@@ -114,7 +120,9 @@ def run(cmd: list[str], *, timeout: int = 180) -> dict:
         data['ok'] = False
     if timed_out:
         data['submissionUncertain'] = True
-    return redact(data, urls=False)
+    cleaned = redact(data, urls=False)
+    assert isinstance(cleaned, dict)
+    return cleaned
 
 
 def account(snapshot: dict | None = None) -> int | None:
@@ -166,7 +174,8 @@ def save(path: Path, data: dict) -> None:
 def paths(film: Path, job: str) -> tuple[Path, Path, Path]:
     if not job or job in {'.', '..'} or Path(job).name != job or '\\' in job:
         raise SystemExit('job must be a single filename identifier')
-    return tuple(film / '07_generations' / folder for folder in ('requests', 'responses', 'originals'))
+    base = film / '07_generations'
+    return base / 'requests', base / 'responses', base / 'originals'
 
 
 @contextmanager

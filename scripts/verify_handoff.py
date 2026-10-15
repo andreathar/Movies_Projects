@@ -65,7 +65,10 @@ def verify(root: Path, atlas_relative: str) -> dict:
                      ("performance-cards.pdf", "performanceCards")):
         result = subprocess.run(["pdfinfo", str(atlas / pdf)], capture_output=True,
                                 text=True, check=True)
-        count = int(re.search(r"^Pages:\s+(\d+)", result.stdout, re.MULTILINE)[1])
+        match = re.search(r"^Pages:\s+(\d+)", result.stdout, re.MULTILINE)
+        if match is None:
+            raise ValueError(f"PDF page count missing: {pdf}")
+        count = int(match.group(1))
         require(count == catalog["counts"][key], f"PDF page count differs: {pdf}")
         pdf_pages[pdf] = count
     original = json.loads((root / "reports/workflow-v1/originals-before.json").read_text())
