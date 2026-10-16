@@ -1,5 +1,7 @@
 # 11 · Receitas de preparação do filme
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 A fonte ativa é `workspace.json` → `productionPlan`. O plano mantém roteiro inglês, cinco encontros, identidade por uso, mesa D04, D09, zero rostos históricos completos e D14. As receitas anteriores continuam no histórico Git; os valores antigos eram observações/estimativas, não cotações de novos pedidos.
 
 As sete famílias editáveis ficam em `shared/templates/kling-shot-families.json`, validadas pelo mesmo preflight do runner. `production_plan.py template --family F3 --shot G-P04` produz um spec bloqueado para envio, lendo a linha exata do CSV. Não remover o bloqueio sem fechar referências, schema, cotação e liberação do pedido.

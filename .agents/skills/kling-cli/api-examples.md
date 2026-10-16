@@ -136,3 +136,7 @@ A CLI administra OAuth e renovação. Não leia tokens ou `.credentials`, não f
 login/logout como diagnóstico incidental. Captura local pode conter dados da conta;
 compartilhe só capacidades sanitizadas. Veja [reference.md](reference.md) para os
 campos e [SKILL.md](SKILL.md) para o fluxo completo.
+
+## Contrato V4 datado
+
+Consultar `docs/kling-manual/19-kling4-migration.md` e `shared/kling-capabilities.json`. Exemplos legados não autorizam flags em outra rota. V4 exige shotContract local; o runner preserva o contrato no fingerprint/intent e não o envia como argumento. F8/F9 são propostas bloqueadas; 4K/HDR/extensão não estão liberados nesta CLI.

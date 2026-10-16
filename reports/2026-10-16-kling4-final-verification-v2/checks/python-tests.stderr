@@ -1,0 +1,32 @@
+...............................................................................................usage: runner [-h] [--film FILM] [--media-root MEDIA_ROOT]
+              [--resolve-reference RESOLVE_REFERENCE] [--spec SPEC]
+              [--only ONLY] [--submit-only | --resume JOB]
+runner: error: --submit-only requires exactly one selected job
+................................................................................................................
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+F
+======================================================================
+FAIL: test_gate (test_fixture.Fixture.test_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmp9zuylmzl/tests/test_fixture.py", line 6, in test_gate
+    self.assertFalse(True)
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+.......................................
+----------------------------------------------------------------------
+Ran 245 tests in 10.973s
+
+OK

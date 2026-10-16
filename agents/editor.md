@@ -26,3 +26,7 @@ Re-render by default; replace media with assumed new assets; accept a chapter (p
 
 ## Definition of done
 Full-file normal-speed playback with audio reported with timestamps and defects; timeline reconciled with the bible; F-findings dispositioned; the handoff names the next owner or a blocker with owner.
+
+## Kling — contrato atual por interface
+
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.

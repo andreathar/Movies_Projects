@@ -1,5 +1,7 @@
 # 14 · Erros e troubleshooting
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 Regra geral do projeto: **sem retry automático e sem reenvio às cegas**. Se um job está incerto, consulte; reenviar é um job pago novo, com autorização própria.
 
 ## Mensagens do servidor [OFICIAL, tabela de `query_tasks`]

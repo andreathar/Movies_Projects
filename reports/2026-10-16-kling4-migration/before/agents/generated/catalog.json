@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256": "322c12abb1fb124462d309ce4743421a95eca2129c1458fb0181d43a64f262c4"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707"
+    },
+    {
+      "path": "skills/kling-cli/SKILL.md",
+      "sha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7"
+    },
+    {
+      "path": "skills/film-character-continuity/SKILL.md",
+      "sha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd"
+    },
+    {
+      "path": "skills/film-dialogue-localization/SKILL.md",
+      "sha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf"
+    },
+    {
+      "path": "skills/film-editing-qc/SKILL.md",
+      "sha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17"
+    },
+    {
+      "path": "skills/grounded-citations/SKILL.md",
+      "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6"
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256": "302d38cc6e61b14b15bd99c7131c82af7756ccd5fd018dcf5f20106a59ccf9c0"
+    },
+    {
+      "path": "agents/director.md",
+      "sha256": "5905a3a219d7dca6709f24789564eb4a42e6d616e8372ccd2aedcb9f11706dfe"
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256": "8df9a6ebd92e848302517585ed169a0177cacc330340daf4f8d9fafd96eee57f"
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256": "1a69d90032c56acc9cb2bbf72bf66918fd018efa0f95cef0b04ea69377868dab"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256": "23dfedf2334b10a3a04943d5e2c6e7988217209229bc8d29e7049c2f06539535"
+    },
+    {
+      "path": "agents/storyboard.md",
+      "sha256": "5872f67b48499ba312e4210f64f744c81bfeee933790b2899463c6e11000b769"
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256": "2fb05ca6376857757f689c2c4b339caff0381487a4ddcf63659d990625897c2b"
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256": "327bd48a19460ca87e76a7ab4aa5cd165269193d9b45fd3a59ad9f5ba65f8559"
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256": "8c2c8c02eae67bfba98a3a758d0057f271bc1e204d910b5564e9e88749750e1c"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+    }
+  ],
+  "skills": [
+    {
+      "id": "kling-cli",
+      "title": "kling-cli",
+      "description": "Use a CLI oficial do Kling para descobrir modelos, gerar imagens e vídeos, gerenciar Elements e aplicar motion control.",
+      "path": "skills/kling-cli/SKILL.md",
+      "kind": "project",
+      "sourceType": "project_vendored",
+      "effectiveSource": ".agents/skills/kling-cli",
+      "sha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+      "registeredHashMatches": true,
+      "available": true,
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "id": "film-character-continuity",
+      "title": "film-character-continuity",
+      "description": "Use when preserving a film character across shots.",
+      "path": "skills/film-character-continuity/SKILL.md",
+      "kind": "linked",
+      "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/film-character-continuity",
+      "sha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
+      "registeredHashMatches": false,
+      "available": true,
+      "roles": [
+        "director",
+        "continuity",
+        "storyboard",
+        "qc",
+        "lighting"
+      ]
+    },
+    {
+      "id": "film-dialogue-localization",
+      "title": "film-dialogue-localization",
+      "description": "Use when scripting and localizing film dialogue.",
+      "path": "skills/film-dialogue-localization/SKILL.md",
+      "kind": "linked",
+      "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/film-dialogue-localization",
+      "sha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
+      "registeredHashMatches": false,
+      "available": true,
+      "roles": [
+        "director",
+        "dialogue-sound",
+        "qc"
+      ]
+    },
+    {
+      "id": "film-editing-qc",
+      "title": "film-editing-qc",
+      "description": "Use when assembling and verifying generated films.",
+      "path": "skills/film-editing-qc/SKILL.md",
+      "kind": "linked",
+      "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/film-editing-qc",
+      "sha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
+      "registeredHashMatches": false,
+      "available": true,
+      "roles": [
+        "producer",
+        "director",
+        "storyboard",
+        "editor",
+        "qc"
+      ]
+    },
+    {
+      "id": "grounded-citations",
+      "title": "grounded-citations",
+      "description": "Ground answers and documents in cited, verifiable sources.",
+      "path": "skills/grounded-citations/SKILL.md",
+      "kind": "linked",
+      "sourceType": "machine_local_symlink",
+      "effectiveSource": "skills/grounded-citations",
+      "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6",
+      "registeredHashMatches": true,
+      "available": true,
+      "roles": [
+        "historian"
+      ]
+    },
+    {
+      "id": "andre-time-travel",
+      "title": "andre-time-travel",
+      "description": "Use when managing Andre's time-travel film project.",
+      "path": "skills/andre-time-travel/SKILL.md",
+      "kind": "project",
+      "sourceType": "project_local",
+      "effectiveSource": "skills/andre-time-travel",
+      "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+      "registeredHashMatches": true,
+      "available": true,
+      "roles": []
+    }
+  ],
+  "roles": [
+    {
+      "id": "producer",
+      "name": "Producer",
+      "brief": "agents/producer.md",
+      "skills": [
+        "kling-cli",
+        "film-editing-qc"
+      ],
+      "summary": "Own task order, user approvals, actual credit reconciliation and the single paid-submission boundary.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": true,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "director",
+      "name": "Director / art director",
+      "brief": "agents/director.md",
+      "skills": [
+        "film-character-continuity",
+        "film-dialogue-localization",
+        "film-editing-qc"
+      ],
+      "summary": "Own creative decisions (identity set, wardrobe, grooming, table rule, eye bases, screen axis, script integration, chapter allocation) and record each as a review-decision in `00_brief/decisions/`. Keep documents honest: PROPOSED until decided.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": true
+    },
+    {
+      "id": "continuity",
+      "name": "Character continuity reviewer",
+      "brief": "agents/continuity.md",
+      "skills": [
+        "film-character-continuity"
+      ],
+      "summary": "Audit references, lock the approved character/table bible, review every face-bearing take and diagnose the exact failure window.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "historian",
+      "name": "Historical research reviewer",
+      "brief": "agents/historian.md",
+      "skills": [
+        "grounded-citations"
+      ],
+      "summary": "Check consequence claims, chronology, quotations and contested reputation language; keep fiction distinct from evidence.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "dialogue-sound",
+      "name": "Dialogue, localization and sound",
+      "brief": "agents/dialogue-sound.md",
+      "skills": [
+        "film-dialogue-localization"
+      ],
+      "summary": "Maintain stable line IDs, consented voices, native-language targets, measured timing, pronunciation reviews, stems and a proven speech route.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "storyboard",
+      "name": "Storyboard and shot designer",
+      "brief": "agents/storyboard.md",
+      "skills": [
+        "film-character-continuity",
+        "film-editing-qc"
+      ],
+      "summary": "Approve keyframes and an audio-first animatic; enforce the eyes-only contract and tested camera/motion envelope.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "editor",
+      "name": "Editor / finisher",
+      "brief": "agents/editor.md",
+      "skills": [
+        "film-editing-qc"
+      ],
+      "summary": "Assemble accepted originals, maintain eyelines and table transitions, normalize streams and finish both editions with separate stems/captions.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "qc",
+      "name": "Independent final reviewer",
+      "brief": "agents/qc.md",
+      "skills": [
+        "film-character-continuity",
+        "film-dialogue-localization",
+        "film-editing-qc"
+      ],
+      "summary": "Inspect the actual final files end to end; reject face damage, any historical full-face reveal, sync failures and unreviewed language claims.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "lighting",
+      "name": "Lighting and light continuity reviewer",
+      "brief": "agents/lighting.md",
+      "skills": [
+        "film-character-continuity"
+      ],
+      "summary": "Traduzir emoção e época em luz coerente com o espaço compartilhado. Ler AGENTS.md, estado do filme e a direção de encontros. O detalhamento foi adiado por Andre; preparar apenas quando houver uma atribuição específica.",
+      "dispatchAuthority": false,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    },
+    {
+      "id": "coordinator",
+      "name": "Coordinator / dispatcher",
+      "brief": "agents/coordinator.md",
+      "skills": [],
+      "summary": "Organize and route work between film production roles. Read task board state, dependency map and deliveries. Dispatch bounded assignments to available lanes with exact inputs, outputs, verification requirements and blocking conditions. Track acceptance and unblock dependent tasks. Record routing decisions as proposals in its integration handoffs; the producer (director for decision records) writes them to the project decision store.",
+      "dispatchAuthority": true,
+      "paidSubmissionAuthority": false,
+      "creativeDecisionAuthority": false
+    }
+  ],
+  "automaticSkillDiscovery": false,
+  "coordinateRegistered": false,
+  "adapters": {
+    "status": "prepared_activation_pending",
+    "roles": [
+      "historian",
+      "continuity",
+      "qc"
+    ],
+    "artifacts": [
+      {
+        "path": "agents/generated/claude/movies-continuity.md",
+        "sha256": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1"
+      },
+      {
+        "path": "agents/generated/codex/movies-continuity.toml",
+        "sha256": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b"
+      },
+      {
+        "path": "agents/generated/claude/movies-historian.md",
+        "sha256": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250"
+      },
+      {
+        "path": "agents/generated/codex/movies-historian.toml",
+        "sha256": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7"
+      },
+      {
+        "path": "agents/generated/claude/movies-qc.md",
+        "sha256": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2"
+      },
+      {
+        "path": "agents/generated/codex/movies-qc.toml",
+        "sha256": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11"
+      }
+    ],
+    "runtimeVerified": false
+  }
+}

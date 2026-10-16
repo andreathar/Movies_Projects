@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-16T08:14:27.220577+00:00",
+  "browserAvailable": true,
+  "browser": "supported CUA Chrome",
+  "target": "http://localhost:5173",
+  "browserResult": "net::ERR_CONNECTION_REFUSED",
+  "httpResult": "[Errno 111] Connection refused",
+  "serviceStartedOrRestarted": false,
+  "visualRuntimeVerified": false,
+  "readOnlyCompiledAssets": [
+    {
+      "path": "sites/movies-demandas/dist/server/ssr/_next/static/dashboard-D8yCndda.js",
+      "sha256": "2400ab459fa445c4d0567a149246c87fe1d3ad8b4f11aa4a114e840e614fdd3b",
+      "containsV4Model": true,
+      "containsV4Display": true,
+      "containsApprovalScope": true
+    },
+    {
+      "path": "sites/movies-demandas/dist/server/_next/static/workspace-store-C35ou9MT.js",
+      "sha256": "9826046944ed7dd95ae171a4995238d7fc841a4d10dbad54b435b40fe35ce696",
+      "containsV4Model": true,
+      "containsV4Display": false,
+      "containsApprovalScope": true
+    },
+    {
+      "path": "sites/movies-demandas/dist/client/_next/static/chunks/dashboard-DYSHQ_rT.js",
+      "sha256": "addbab7e8f1ab23f83100d1d1887acb3dfe42180fc18704f7f4c5895091b2656",
+      "containsV4Model": true,
+      "containsV4Display": true,
+      "containsApprovalScope": true
+    }
+  ],
+  "exportedApprovals": [
+    {
+      "id": "G-ID",
+      "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "directorApproval": "pending",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": null,
+      "evidenceHashMatches": null
+    },
+    {
+      "id": "G-WARDROBE",
+      "sha256": "75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b",
+      "directorApproval": "pending",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": null,
+      "evidenceHashMatches": null
+    },
+    {
+      "id": "G-TABLE",
+      "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "directorApproval": "pending",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": null,
+      "evidenceHashMatches": null
+    },
+    {
+      "id": "G-ERA",
+      "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "directorApproval": "pending",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": null,
+      "evidenceHashMatches": null
+    },
+    {
+      "id": "G-IN",
+      "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+      "directorApproval": "approved",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": {
+        "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json",
+        "sha256": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c"
+      },
+      "evidenceHashMatches": true
+    },
+    {
+      "id": "G-OUT",
+      "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+      "directorApproval": "approved",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": {
+        "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json",
+        "sha256": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2"
+      },
+      "evidenceHashMatches": true
+    },
+    {
+      "id": "G-EYE-B",
+      "sha256": "f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215",
+      "directorApproval": "pending",
+      "incorporation": "not_incorporated",
+      "approvalEvidence": null,
+      "evidenceHashMatches": null
+    }
+  ],
+  "v4Export": {
+    "cliVersion": "0.2.3",
+    "access": "listed_for_current_account",
+    "generationTested": false,
+    "price": {
+      "status": "unknown",
+      "unit": "Kling credits",
+      "creditsPerSecond": null,
+      "inputVideoDurationIncluded": true
+    }
+  },
+  "blockedAction": {
+    "action": "Read-only visual verification of running Movies frontend",
+    "target": "http://localhost:5173",
+    "reason": "No listener; both browser and HTTP refuse connection",
+    "state": "not_executed_service_unavailable",
+    "unblockCondition": "User/producer starts the existing frontend under a separately authorized service action, then read-only verification can resume."
+  }
+}

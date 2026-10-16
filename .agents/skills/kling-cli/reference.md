@@ -79,3 +79,7 @@ não os invente nem compre automaticamente.
 `--generationId`, `--modelVersion`, `--relatedTaskTraceId`.
 `logout` tenta o logout no servidor e só então remove a sessão local; falha interrompe
 a troca de conta.
+
+## Contrato V4 datado
+
+Consultar `docs/kling-manual/19-kling4-migration.md` e `shared/kling-capabilities.json`. Exemplos legados não autorizam flags em outra rota. V4 exige shotContract local; o runner preserva o contrato no fingerprint/intent e não o envia como argumento. F8/F9 são propostas bloqueadas; 4K/HDR/extensão não estão liberados nesta CLI.

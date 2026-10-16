@@ -1,0 +1,14 @@
+[
+  "docs/kling-manual/snapshots/2026-10-16-cli023-who_am_i.sanitized.json",
+  "docs/kling-manual/snapshots/2026-10-16-cli023-tool_list.json",
+  "shared/kling-capabilities.json",
+  "scripts/production_plan.py",
+  "tests/test_production_plan.py",
+  "docs/kling-manual/tools/kling_preflight.py",
+  "docs/kling-manual/19-kling4-migration.md",
+  "docs/kling-manual/README.md",
+  ".agents/skills/kling-cli/SKILL.md",
+  "skills/registry.json",
+  "sites/movies-demandas/tests/kling-capabilities.test.mjs",
+  "docs/kling-manual/20-kling4-features-cli-023.md"
+]

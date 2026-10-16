@@ -1,5 +1,7 @@
 # 18 · Guia de prompts: o que o Kling entende e o que este filme exige
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 Pesquisa de 2026-10-13 (Claude, lane de preparação). Reúne a documentação oficial do Kling, as regras que os guias de terceiros concordam entre si e, acima de tudo, os prompts **já pagos e revisados neste projeto**. Nada aqui autoriza gasto, upload, Element ou aceite. Selos como no `README.md`: [LIVE] = schema do snapshot `who_am_i` 2026-10-12; [PROJETO] = job pago com ID no ledger; [OFICIAL] = kling.ai; [TERCEIROS] = tutoriais; [INFERÊNCIA] = conclusão minha.
 
 ## 1. Oito regras que valem para todos os modelos

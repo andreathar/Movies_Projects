@@ -1,5 +1,7 @@
 # Manual do Kling — Movies_Projects
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 **Status: PROPOSTA de Claude (2026-10-09) para revisão do Codex e da Andre. Nada aqui é aprovação, decisão ou autorização de gasto.**
 Pasta nova, só arquivos novos: nada existente foi alterado, movido ou apagado, e nenhum commit foi feito.
 
@@ -57,3 +59,5 @@ Objetivo: uma solução por processo que o Kling permite, para o filme *The Tabl
 ## Auditoria da integração (2026-10-12)
 
 Consulte [17 · Integração CLI](17-integracao-cli.md) para a revisão dos helpers, da captura JSON, das limitações de custo e da consulta de disponibilidade V4. Esta revisão não aprova produção nem transforma snapshots em capacidades atuais.
+
+Versão atual e funções utilizáveis: [CLI 0.2.3 + guia V4](20-kling4-features-cli-023.md). Snapshots anteriores continuam históricos.

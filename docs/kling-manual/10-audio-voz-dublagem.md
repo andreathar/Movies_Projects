@@ -1,5 +1,7 @@
 # 10 · Áudio, voz e sincronismo
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 **D14 vale também para o inglês:** a voz Kling foi rejeitada como voz final e permanece guia. A edição inglesa vem primeiro; a edição histórica tem revisão e timing próprios. Capacidade de produzir uma trilha, áudio não nulo e voz vinculada ao Element não equivalem à aprovação por ouvido.
 
 | Recurso | Contrato local |

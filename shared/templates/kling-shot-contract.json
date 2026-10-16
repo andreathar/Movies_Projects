@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "provider": "kling-global",
+  "interface": "cli",
+  "references": [
+    {
+      "target": "image_1",
+      "kind": "image",
+      "source": "<CAMINHO_CANONICO_RELATIVO_AO_FILME>",
+      "sha256": "<SHA256_EXATO>",
+      "provenance": "<FONTE_REAL_OU_SINTETICA_E_VERSAO>",
+      "use": "identity",
+      "review": {
+        "status": "pending",
+        "scope": "identity"
+      },
+      "reviewEvidence": {
+        "path": "<DECISAO_POR_USO>",
+        "sha256": "<SHA256_DA_DECISAO>"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "start": 0,
+      "end": 5,
+      "action": "<ACAO_REVISADA_DEPOIS_DA_CAUSA>"
+    }
+  ],
+  "continuity": {
+    "cast": "<ANDRE_E_COMPANHEIROS_PRESERVADOS>",
+    "wardrobe": "<VERSAO_EXATA>",
+    "table": "<D04_2_NAO_TABLE_1_4_ALT>",
+    "screenAxis": "<EIXO>",
+    "historicalFaceExclusion": "Zero full historical faces, including reflections and all intermediate frames.",
+    "cameraMode": "<REVISAR_MULTISHOT>"
+  },
+  "audio": {
+    "strategy": "postproduction"
+  },
+  "billing": {
+    "inputVideoSeconds": 0,
+    "inputVideoDurationIncluded": true
+  },
+  "rule": "Proposta bloqueada. Um registro por slot/Element; Element exige target element:ID e elementEvidence path/sha256 do element_get. Áudio usa voiceContentReview reviewed_voice_only; vídeo facts mede durationSeconds/bytes/width/height/hasAudio. Links remotos exigem localEvidence com o mesmo sha256. Aprovação financeira e autoria humana são gates separados."
+}

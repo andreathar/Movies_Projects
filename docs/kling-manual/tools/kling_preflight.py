@@ -114,18 +114,21 @@ def resolve_local(p, root, req_dir):
 
 def video_facts(path):
     """Probe a local file only. No provider, URL fetch, model or download."""
-    result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0',
+    result = subprocess.run(['ffprobe', '-v', 'error',
                              '-show_streams', '-show_format', '-of', 'json', path],
                             capture_output=True, text=True, timeout=30, check=True)
     data = json.loads(result.stdout)
-    stream = data['streams'][0]
+    stream = next((s for s in data['streams'] if s.get('codec_type') == 'video'), None)
+    if stream is None:
+        raise ValueError('sem stream de vídeo')
     numerator, denominator = stream['avg_frame_rate'].split('/')
     return {'durationSeconds': float(data['format']['duration']),
             'width': stream['width'], 'height': stream['height'],
-            'fps': float(numerator) / float(denominator), 'bytes': os.path.getsize(path)}
+            'fps': float(numerator) / float(denominator), 'bytes': os.path.getsize(path),
+            'hasAudio': any(s.get('codec_type') == 'audio' for s in data['streams'])}
 
 
-def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False, image_tool=False):
+def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False, image_tool=False, v4=False):
     if PLACEHOLDER_RE.match(ref.strip()):
         (rep.warn if allow_ph else rep.err)("PLACEHOLDER", f"{label}: placeholder não resolvido: {ref[:80]}")
         return
@@ -141,7 +144,8 @@ def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False, image_
         if os.path.splitext(path)[1].lower() not in ('.mp4', '.mov'):
             rep.err('VIDEO_FORMAT', f'{label}: vídeo MP4/MOV obrigatório.')
         return
-    if size > MAX_BYTES:
+    limit = 30_000_000 if v4 else MAX_BYTES
+    if size > limit:
         rep.err("FILE_SIZE", f"{label}: {size/1e6:.1f} MB > 30 MB: {ref}")
     fmt, w, h = image_info(path)
     ext = os.path.splitext(path)[1].lower()
@@ -154,12 +158,14 @@ def check_media(rep, label, ref, root, req_dir, allow_ph, *, video=False, image_
     if (fmt == "PNG" and ext != ".png") or (fmt == "JPEG" and ext not in (".jpg", ".jpeg")):
         rep.warn("EXT_MISMATCH", f"{label}: extensão {ext} não bate com conteúdo {fmt}: {ref}")
     if w and h:
-        if max(w, h) >= MAX_SIDE:
+        if not v4 and max(w, h) >= MAX_SIDE:
             rep.err("FILE_DIMS", f"{label}: {w}x{h} não está abaixo de 4K: {ref}")
         ratio = min(w, h) / max(w, h)
-        if ratio < MIN_RATIO_ERR and image_tool:
+        if v4 and ratio < 0.4:
+            rep.err("FILE_ASPECT", f"{label}: V4 exige proporção 2:5–5:2, sem tolerância legada: {ref}")
+        elif not v4 and ratio < MIN_RATIO_ERR and image_tool:
             rep.warn("FILE_ASPECT", f"{label}: {w}x{h} (proporção {ratio:.2f}); em ferramenta de imagem 4:1 foi aceito [PROJETO] (R2-J02..J06 geraram 4128x1024), mas o limite escrito é 1:2: {ref}")
-        elif ratio < MIN_RATIO_ERR:
+        elif not v4 and ratio < MIN_RATIO_ERR:
             rep.err("FILE_ASPECT", f"{label}: {w}x{h} (proporção {ratio:.2f}) é mais extrema que 2,5:1; entrada 4:1 já foi rejeitada: {ref}")
         elif ratio < MIN_RATIO_WARN:
             rep.warn("FILE_ASPECT", f"{label}: {w}x{h} (proporção {ratio:.2f}) passa de 1:2, limite escrito nas ferramentas; 5:2 foi aceito em vídeo no projeto, mas confirme: {ref}")
@@ -318,9 +324,15 @@ def check_job(job, models, root, req_dir, allow_ph):
     # ---- inputs
     mapping = media_mapping(job, spec, rep)
     for sn, ref in mapping.items():
-        if isinstance(ref, str) and ref.strip():
-            check_media(rep, f"slot {sn}", ref, root, req_dir, allow_ph, video=sn.startswith('video'),
-                        image_tool=str(job.get('tool', '')).endswith('_image'))
+        if isinstance(ref, str) and ref.strip() and not sn.startswith("audio_"):
+            inspected_ref = ref
+            if model == 'kling-video-v4_0' and URL_RE.match(ref) and not sn.startswith('video'):
+                contract = job.get('shotContract') or {}
+                references = contract.get('references', []) if isinstance(contract, dict) else []
+                evidence = next((r for r in references if isinstance(r, dict) and r.get('target') == sn), {})
+                inspected_ref = evidence.get('localEvidence') or ref
+            check_media(rep, f"slot {sn}", inspected_ref, root, req_dir, allow_ph, video=sn.startswith('video'),
+                        image_tool=str(job.get('tool', '')).endswith('_image'), v4=model == 'kling-video-v4_0')
     caps = ([spec['combinedItemCap']] if spec.get('combinedItemCap') else []) + spec.get('combinedItemCaps', [])
     for cap in caps:
         try:
@@ -372,7 +384,7 @@ def check_job(job, models, root, req_dir, allow_ph):
             cap = support.get('max' + kind.title() + 'Elements')
             if cap is not None and count > cap:
                 rep.err('ELEMENT_TYPE_CAP', f'{count} Elements {kind} excedem {cap}.')
-        if 'video_1' in mapping and types.count('video'):
+        if model != 'kling-video-v4_0' and 'video_1' in mapping and types.count('video'):
             if any(n.startswith('image_') for n in mapping) or 'image' in types:
                 rep.err('VIDEO_ELEMENT_MIX', 'Com video_1, Element de vídeo não combina com imagens/Elements de imagem.')
             if types.count('video') > support.get('maxVideoElementsWithVideoInput', 0):
@@ -380,7 +392,7 @@ def check_job(job, models, root, req_dir, allow_ph):
 
     facts_by_slot = job.get('inputFacts') or {}
     for sn, ref in mapping.items():
-        if not sn.startswith('video') or not isinstance(ref, str):
+        if model == 'kling-video-v4_0' or not sn.startswith('video') or not isinstance(ref, str):
             continue
         facts = facts_by_slot.get(sn, {}) if isinstance(facts_by_slot, dict) else {}
         if not URL_RE.match(ref) and os.path.isfile(resolve_local(ref, root, req_dir)):
@@ -421,7 +433,7 @@ def check_job(job, models, root, req_dir, allow_ph):
             rep.err("OMNI_AUDIO", "enable_audio e keepOriginalSound ambos 'true' — o guia do skill diz usar só um.")
         if "audio_1" not in slot_names:
             rep.info("OMNI_AUDIO_SLOT", "O snapshot não declara áudio independente; a presença de --audio no help não comprova suporte.")
-        if 'video_1' in mapping:
+        if model != 'kling-video-v4_0' and 'video_1' in mapping:
             if cli_value(given.get('enable_audio')) == 'true':
                 rep.err('OMNI_VIDEO_AUDIO', 'video_1 exige enable_audio=false nesta rota.')
             if str(given.get('duration', '5')).isdigit() and int(given.get('duration', '5')) > 10:
@@ -434,6 +446,14 @@ def check_job(job, models, root, req_dir, allow_ph):
             rep.err('V26_AUDIO', 'Áudio v2.6 exige 1080p e ausência de cauda.')
     if tool in ("image_to_video", "text_to_video") and model == "kling-video-v3_0_turbo":
         rep.info("TURBO", "Use somente os campos declarados neste snapshot; ausência de controle de áudio não garante silêncio.")
+    # Local production metadata is checked separately and never forwarded as API flags.
+    import importlib.util
+    from pathlib import Path
+    contract_path = Path(__file__).resolve().parents[3] / 'scripts/kling_contract.py'
+    contract_spec = importlib.util.spec_from_file_location('kling_production_contract', contract_path)
+    contract = importlib.util.module_from_spec(contract_spec)
+    contract_spec.loader.exec_module(contract)
+    contract.check(job, spec, mapping, given, elems, root, rep, video_facts, allow_ph)
     return rep
 
 
@@ -441,7 +461,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("request")
     here = os.path.dirname(os.path.abspath(__file__))
-    ap.add_argument("--snapshot", default=os.path.join(here, "..", "snapshots", "who_am_i.sanitized.json"))
+    ap.add_argument("--snapshot", default=os.path.join(here, "..", "snapshots", "2026-10-16-cli023-who_am_i.sanitized.json"))
     ap.add_argument("--root")
     ap.add_argument("--allow-placeholders", action="store_true")
     ap.add_argument("--json", action="store_true")

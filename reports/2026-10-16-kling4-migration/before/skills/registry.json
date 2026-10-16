@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "automaticProjectDiscoveryConfigured": false,
+  "skills": [
+    {
+      "name": "kling-cli",
+      "path": "skills/kling-cli",
+      "source": ".agents/skills/kling-cli",
+      "type": "project_vendored",
+      "sourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+      "provenanceHistory": [
+        {
+          "source": "klingai-tech/skills",
+          "type": "github_update",
+          "sourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+          "previousSourceSha256": "52de319a85d07c34a49170d3de192736f68fc29c2d586a6b19d80381dd7c453d",
+          "rehashedAt": "2026-10-12T00:26:45-0300"
+        },
+        {
+          "source": "/home/athar/.hermes/skills/kling-cli",
+          "type": "machine_local_symlink",
+          "sourceSha256": "7562b79b4ad98746f8d65bcb9d25e34913530cc39d4b8d393bac6dcdc74efc14",
+          "previousSourceSha256": "0f9fb6388f182e6af433b952d3ae222347d7346af3b532700d011ae08b53df36",
+          "rehashedAt": "2026-10-09T11:28:02-03:00"
+        },
+        {
+          "source": "klingai-tech/skills",
+          "type": "project_translation_and_contract_revision",
+          "upstreamVersion": "0.2.1",
+          "localRevision": "2026-10-12-contract-audit",
+          "previousSourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
+          "sourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+          "rehashedAt": "2026-10-12T04:15:12.634163+00:00"
+        }
+      ]
+    },
+    {
+      "name": "film-character-continuity",
+      "path": "skills/film-character-continuity",
+      "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
+      "type": "machine_local_symlink",
+      "sourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
+    },
+    {
+      "name": "film-dialogue-localization",
+      "path": "skills/film-dialogue-localization",
+      "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
+      "type": "machine_local_symlink",
+      "sourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
+    },
+    {
+      "name": "film-editing-qc",
+      "path": "skills/film-editing-qc",
+      "source": "/home/athar/.hermes/skills/creative/film-editing-qc",
+      "type": "machine_local_symlink",
+      "sourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+      "alreadyInstalledInActiveProfile": true,
+      "previousSourceSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
+      "rehashedAt": "2026-10-09T11:28:02-03:00"
+    },
+    {
+      "name": "grounded-citations",
+      "path": "skills/grounded-citations",
+      "source": "/home/athar/.hermes/skills/research/grounded-citations",
+      "type": "machine_local_symlink",
+      "sourceSha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6",
+      "alreadyInstalledInActiveProfile": true
+    },
+    {
+      "name": "andre-time-travel",
+      "path": "skills/andre-time-travel",
+      "source": "project_canonical",
+      "type": "project_local",
+      "alreadyInstalledInActiveProfile": false
+    }
+  ]
+}

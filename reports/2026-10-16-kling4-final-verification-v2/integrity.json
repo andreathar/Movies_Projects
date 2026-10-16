@@ -1,0 +1,9 @@
+{
+  "installedVersion": "0.2.3",
+  "latestVersion": "0.2.3",
+  "tarballIntegrityMatchesOfficialRegistry": true,
+  "installedBundleMatchesOfficialTarball": true,
+  "bundleSha256": "fc18484f95e99453359ed64d13417106f97289b76c543691a80e1aae1f538e28",
+  "packageHasLifecycleScripts": false,
+  "source": "https://registry.npmjs.org/@klingai%2fcli-global"
+}

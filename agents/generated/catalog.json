@@ -6,16 +6,20 @@
       "sha256": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b"
     },
     {
+      "path": "shared/kling-capabilities.json",
+      "sha256": "b3c359648c75bd7fb2ae5d46b29c812687b26c1ee32806fe5affb4f6a3fbe16d"
+    },
+    {
       "path": "agents/registry.json",
-      "sha256": "322c12abb1fb124462d309ce4743421a95eca2129c1458fb0181d43a64f262c4"
+      "sha256": "9b5d013a3a2e23964aa3a9a48613627342292bc4d2be1a2ea6b302bd631954f6"
     },
     {
       "path": "skills/registry.json",
-      "sha256": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707"
+      "sha256": "060b8f37c8d1f097772f7abbfbae51aa3c0b2ea891458cba65fe320bf43a320e"
     },
     {
       "path": "skills/kling-cli/SKILL.md",
-      "sha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7"
+      "sha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c"
     },
     {
       "path": "skills/film-character-continuity/SKILL.md",
@@ -35,47 +39,47 @@
     },
     {
       "path": "skills/andre-time-travel/SKILL.md",
-      "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213"
+      "sha256": "67416af5e18bd67db9905323a358f427cc72271153248d1d8697b9b5989188e0"
     },
     {
       "path": "agents/producer.md",
-      "sha256": "302d38cc6e61b14b15bd99c7131c82af7756ccd5fd018dcf5f20106a59ccf9c0"
+      "sha256": "52b9a676847ac48c41f565fa0193b51f14c4aa193cc852570fb2112e30354cd3"
     },
     {
       "path": "agents/director.md",
-      "sha256": "5905a3a219d7dca6709f24789564eb4a42e6d616e8372ccd2aedcb9f11706dfe"
+      "sha256": "dda3f19a222511b005a2314a46b720d48b437d27094ed8cc9349f4018d48f037"
     },
     {
       "path": "agents/continuity.md",
-      "sha256": "8df9a6ebd92e848302517585ed169a0177cacc330340daf4f8d9fafd96eee57f"
+      "sha256": "5022de556283ad1f425b6fc049b27a2e8f250373c896b884117147fed53f528f"
     },
     {
       "path": "agents/historian.md",
-      "sha256": "1a69d90032c56acc9cb2bbf72bf66918fd018efa0f95cef0b04ea69377868dab"
+      "sha256": "39268671d86e73d1c0cbe6d742195f36e0033d04c14b41d6c42e0f681233f40a"
     },
     {
       "path": "agents/dialogue-sound.md",
-      "sha256": "23dfedf2334b10a3a04943d5e2c6e7988217209229bc8d29e7049c2f06539535"
+      "sha256": "035542f4355b1f6549d98a8eccd2d48ae6f24c5acb35ea2598d49e596da81f92"
     },
     {
       "path": "agents/storyboard.md",
-      "sha256": "5872f67b48499ba312e4210f64f744c81bfeee933790b2899463c6e11000b769"
+      "sha256": "36fe02c5817dd0ff0c78ecc2fd82d5ce8a1aca8e86857e2be1315987c803d378"
     },
     {
       "path": "agents/editor.md",
-      "sha256": "2fb05ca6376857757f689c2c4b339caff0381487a4ddcf63659d990625897c2b"
+      "sha256": "71e57baeb59b02a3293294645dc51edb630b67ef840a90df6f5d28ca34cfaf01"
     },
     {
       "path": "agents/qc.md",
-      "sha256": "327bd48a19460ca87e76a7ab4aa5cd165269193d9b45fd3a59ad9f5ba65f8559"
+      "sha256": "c3f97f0d18c29aaee36fc7aca475daf2a3cf000b2c30ed44ad0489d679cef676"
     },
     {
       "path": "agents/lighting.md",
-      "sha256": "8c2c8c02eae67bfba98a3a758d0057f271bc1e204d910b5564e9e88749750e1c"
+      "sha256": "b6907966668b9eaa80384348c8a1c67d5ee18aca2ab83c29cedbbb9bf257a5eb"
     },
     {
       "path": "agents/coordinator.md",
-      "sha256": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5"
+      "sha256": "3b8238eff3113a1decb5bd0eaf46e9d5ec5c583b058f501abffcd3ba15975b37"
     }
   ],
   "skills": [
@@ -87,7 +91,7 @@
       "kind": "project",
       "sourceType": "project_vendored",
       "effectiveSource": ".agents/skills/kling-cli",
-      "sha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+      "sha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
       "registeredHashMatches": true,
       "available": true,
       "roles": [
@@ -172,7 +176,7 @@
       "kind": "project",
       "sourceType": "project_local",
       "effectiveSource": "skills/andre-time-travel",
-      "sha256": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+      "sha256": "67416af5e18bd67db9905323a358f427cc72271153248d1d8697b9b5989188e0",
       "registeredHashMatches": true,
       "available": true,
       "roles": []
@@ -316,27 +320,27 @@
     "artifacts": [
       {
         "path": "agents/generated/claude/movies-continuity.md",
-        "sha256": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1"
+        "sha256": "317aacf9aac2b8e34543eb3b3c360494ea6d02c29bba6623a3f4ff4e8dad19a2"
       },
       {
         "path": "agents/generated/codex/movies-continuity.toml",
-        "sha256": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b"
+        "sha256": "ceaa29def002bd9e016405d7dccc8b866398f92e1fe1c3a3af05403f3d3cfb5a"
       },
       {
         "path": "agents/generated/claude/movies-historian.md",
-        "sha256": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250"
+        "sha256": "49ddac35def29c27575305377819a927cc7d07f932d0207c2b3f4157f20c25ab"
       },
       {
         "path": "agents/generated/codex/movies-historian.toml",
-        "sha256": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7"
+        "sha256": "9ca3cb76de436b680855e450a7eaa3798d556d07d9ce1b0bd7f25ce0f4bea7be"
       },
       {
         "path": "agents/generated/claude/movies-qc.md",
-        "sha256": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2"
+        "sha256": "1f717e7d4b9bf408023a5eb68a374da618d3c22fe3923c61032455797af25be3"
       },
       {
         "path": "agents/generated/codex/movies-qc.toml",
-        "sha256": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11"
+        "sha256": "fff61059928f770b1f99275d134cbdfff93477019b533f10a9de0fa619c50ce3"
       }
     ],
     "runtimeVerified": false

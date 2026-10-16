@@ -1,5 +1,7 @@
 # 17 · Auditoria da integração CLI — 2026-10-12
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 A instalação efetiva é `@klingai/cli-global` **0.2.1**: executável `kling`, bundle
 JavaScript `dist/cli.js`, cliente fino sobre MCP via Streamable HTTP e OAuth.
 O pacote aponta para repositório corporativo da Kuaishou; não há source TypeScript

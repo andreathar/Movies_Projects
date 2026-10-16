@@ -1,0 +1,281 @@
+Browser tab: 866354837, Title: "Movies_Projects · Central de Demandas", URL: "http://127.0.0.1:5173/".
+0 AXWebArea Movies_Projects · Central de Demandas, URL: 127.0.0.1:5173/
+	1 container
+		2 link Description: Ir para o conteúdo, Value: 127.0.0.1:5173/#main
+		3 container workspace-navigation
+			4 button Movies Projects
+				5 text Movies
+				6 text Projects
+			7 text ESPAÇO DE TRABALHO
+			8 container Navegação principal
+				9 button Visão geral
+				10 button Demandas do workspace 20
+					11 text Demandas do workspace
+					12 text 20
+				13 button Produção do filme
+				14 button Agenda e ciclos
+				15 button Fontes e histórico
+				16 button Organização
+				17 button Skills e papéis
+			18 text PROJETO EM FOCO
+			19 button The Table Between Centuries
+				20 text The Table
+				21 text Between Centuries
+			22 text Workspace privado AA
+			23 text Andre Athar
+			24 text Direção & produção
+			25 link Description: Abrir página Movies_Projects, Value: chatgpt.com/space/page_6ac9adf8b0f0819195bd752c10fe30cc
+		26 text Workspace /
+		27 text Organização
+		28 text Só você
+		29 button Description: Atualizar dados, Help: Atualizar dados do site
+		30 text AA
+		31 container main
+			370 text REFERÊNCIA DO WORKSPACE
+			371 heading Cada coisa no seu lugar., Value: 1
+				372 text Cada coisa no seu lugar.
+			373 text A estrutura do filme, os nomes e os caminhos para encontrar o que você precisa.
+			374 text Coleta ·  16/10/2026, 05:12
+			375 container Capacidades Kling por interface
+				376 container
+					377 text KLING GLOBAL · CLI  0.2.3
+				378 heading Kling 4 listado na conta, Value: 2
+					379 text Kling 4 listado na conta
+				380 container
+					381 text Descoberta de  2026-10-16 . Geração e qualidade ainda não testadas nesta migração.
+				382 container
+					383 text Preço atual desconhecido.  Vídeos de entrada compõem a duração cobrada. Cada pedido precisa de cotação e liberação financeira próprias.
+				384 container
+					385 heading image_to_video, Value: 3
+						386 text image_to_video
+					387 text kling-video-v4_0 Resolução:  720p / 1080p . Duração: 3–30 s. Até 10 imagens/keyframes. Sem controles declarados de Element ou áudio.
+				388 container
+					389 heading text_to_video, Value: 3
+						390 text text_to_video
+					391 text kling-video-v4_0 Resolução:  720p / 1080p . Duração: 3–30 s. Sem referências de identidade; proporção deve ser escolhida explicitamente.
+				392 container
+					393 heading omni_ref_video, Value: 3
+						394 text omni_ref_video
+					395 text kling-video-v4_0 Resolução:  720p / 1080p . Duração: 3–30 s. Referências mistas, Elements e áudio. Multi-shot obrigatório; câmera fixa ainda não qualificada.
+				396 text G-IN/G-OUT: aprovação de composição. Identidade, figurino, mesa, voz, idioma e gasto têm revisões separadas. Cinco referências seguem pendentes.
+				397 text 4K anunciado ainda indisponível nesta CLI. HDR e extensão são futuros. Higgsfield Cinema Studio 4.0 usa outra interface. Rotas V3 continuam disponíveis por escolha explícita.
+			398 container Tipos de trabalho
+				399 container
+					400 text SITE
+					401 heading Demanda, Value: 2
+						402 text Demanda
+					403 text Planejamento editável entre as seis frentes do workspace. Comentários e prazos ficam nesta Central.
+				404 container
+					405 text T01–T21
+					406 heading Tarefa oficial, Value: 2
+						407 text Tarefa oficial
+					408 text Seu estado vem de 
+					409 text board.json
+					410 text . O produtor integra mudanças após conferir as evidências.
+				411 container
+					412 text W01–W68
+					413 heading Pacote de trabalho, Value: 2
+						414 text Pacote de trabalho
+					415 text Detalha uma tarefa no mapa de workflow. É uma unidade de planejamento, sem estado oficial próprio.
+				416 container
+					417 text AGENT PARLEY
+					418 heading Atribuição, Value: 2
+						419 text Atribuição
+					420 text Registra escopo, destinatário e arquivos reservados. Pronto para revisão ainda exige aceite.
+			421 container Catálogo de mídia canônica
+				422 heading Catálogo de mídia, Value: 2
+					423 text Catálogo de mídia
+				424 container
+					425 text 324  IDs existentes ·  321  referências locais em  307  caminhos ·  3  referências de provedor. Os arquivos continuam na raiz canônica de Movies.
+				426 text projects/andre-time-travel/asset-registry.csv
+				427 button Copiar caminho projects/andre-time-travel/asset-registry.csv
+				428 container
+					429 text Os indicadores do catálogo não substituem aprovações por versão.  4  literais históricos de origem aguardam confirmação; os arquivos atuais estão resolvidos.
+				430 text SHA-256 
+				431 text 8418af693cef58b0ba08f299bc7bee6d470dce6b437c90046cefa7e7d9f971c7
+			432 container
+				433 heading Mapa do filme, Value: 2
+					434 text Mapa do filme
+				435 text projects/ andre-time-travel / · dez etapas de organização 00
+				436 heading Briefing e decisões, Value: 3
+					437 text Briefing e decisões
+				438 text Escopo, aprovações, decisões e pesquisa.
+				439 text projects/andre-time-travel/00_brief/
+				440 button Copiar caminho projects/andre-time-travel/00_brief/
+				441 text 01
+				442 heading Roteiro e idiomas, Value: 3
+					443 text Roteiro e idiomas
+				444 text Texto em inglês, IDs de falas e traduções.
+				445 text projects/andre-time-travel/01_script/
+				446 button Copiar caminho projects/andre-time-travel/01_script/
+				447 text 02
+				448 heading Referências visuais, Value: 3
+					449 text Referências visuais
+				450 text Originais, seleção, sintéticos, identidade, mesa e figurino.
+				451 text projects/andre-time-travel/02_references/
+				452 button Copiar caminho projects/andre-time-travel/02_references/
+				453 text 03
+				454 heading Bíblias e continuidade, Value: 3
+					455 text Bíblias e continuidade
+				456 text Regras de personagem, câmera, luz e cenas.
+				457 text projects/andre-time-travel/03_bibles/
+				458 button Copiar caminho projects/andre-time-travel/03_bibles/
+				459 text 04
+				460 heading Áudio e vozes, Value: 3
+					461 text Áudio e vozes
+				462 text Falas, testes de voz e pistas de som.
+				463 text projects/andre-time-travel/04_audio/
+				464 button Copiar caminho projects/andre-time-travel/04_audio/
+				465 text 05
+				466 heading Storyboard e animatic, Value: 3
+					467 text Storyboard e animatic
+				468 text Fontes editáveis, keyframes, planos e animatics.
+				469 text projects/andre-time-travel/05_storyboard/
+				470 button Copiar caminho projects/andre-time-travel/05_storyboard/
+				471 text 06
+				472 heading Piloto e testes, Value: 3
+					473 text Piloto e testes
+				474 text Clipes de teste, variantes e revisões.
+				475 text projects/andre-time-travel/06_pilot/
+				476 button Copiar caminho projects/andre-time-travel/06_pilot/
+				477 text 07
+				478 heading Geração de planos, Value: 3
+					479 text Geração de planos
+				480 text Solicitações, respostas do provedor e takes com proveniência.
+				481 text projects/andre-time-travel/07_generations/
+				482 button Copiar caminho projects/andre-time-travel/07_generations/
+				483 text 08
+				484 heading Montagem e revisão, Value: 3
+					485 text Montagem e revisão
+				486 text Timelines, legendas, revisões e candidatos à imagem final.
+				487 text projects/andre-time-travel/08_edit/
+				488 button Copiar caminho projects/andre-time-travel/08_edit/
+				489 text 09
+				490 heading Entrega e qualidade, Value: 3
+					491 text Entrega e qualidade
+				492 text Masters, legendas, pistas e revisão final.
+				493 text projects/andre-time-travel/09_delivery/
+				494 button Copiar caminho projects/andre-time-travel/09_delivery/
+			495 container
+				496 heading Pontos de entrada, Value: 2
+					497 text Pontos de entrada
+				498 heading Regras do workspace, Value: 3
+					499 text Regras do workspace
+				500 text Contrato obrigatório de escopo, autoridade e revisão.
+				501 text AGENTS.md
+				502 button Copiar caminho AGENTS.md
+				503 heading Retomada do filme, Value: 3
+					504 text Retomada do filme
+				505 text Ponto único de retomada; conferir com os registros oficiais.
+				506 text projects/andre-time-travel/memory/STATE.md
+				507 button Copiar caminho projects/andre-time-travel/memory/STATE.md
+				508 heading Quadro oficial, Value: 3
+					509 text Quadro oficial
+				510 text T01–T21: única fonte de situação das tarefas de produção.
+				511 text projects/andre-time-travel/tasks/board.json
+				512 button Copiar caminho projects/andre-time-travel/tasks/board.json
+				513 heading Especificações, Value: 3
+					514 text Especificações
+				515 text O que entregar e como verificar cada tarefa.
+				516 text projects/andre-time-travel/tasks/specs/
+				517 button Copiar caminho projects/andre-time-travel/tasks/specs/
+				518 heading Planos e workflow, Value: 3
+					519 text Planos e workflow
+				520 text Mapas e planos datados; W01–W68 detalham o trabalho.
+				521 text projects/andre-time-travel/tasks/plans/
+				522 button Copiar caminho projects/andre-time-travel/tasks/plans/
+				523 heading Plano de execução, Value: 3
+					524 text Plano de execução
+				525 text Planejamento detalhado; não constitui execução ou aceite.
+				526 text projects/andre-time-travel/tasks/execution-plan-v1/
+				527 button Copiar caminho projects/andre-time-travel/tasks/execution-plan-v1/
+				528 heading Aprovações, Value: 3
+					529 text Aprovações
+				530 text Escopos de aprovação registrados pelo produtor.
+				531 text projects/andre-time-travel/00_brief/approvals.json
+				532 button Copiar caminho projects/andre-time-travel/00_brief/approvals.json
+				533 heading Decisões, Value: 3
+					534 text Decisões
+				535 text Registros D: referência para as escolhas do filme.
+				536 text projects/andre-time-travel/00_brief/decisions/
+				537 button Copiar caminho projects/andre-time-travel/00_brief/decisions/
+				538 heading Catálogo de mídia, Value: 3
+					539 text Catálogo de mídia
+				540 text IDs estáveis, caminhos canônicos, hashes e proveniência; os indicadores do registro não aprovam novos usos.
+				541 text projects/andre-time-travel/asset-registry.csv
+				542 button Copiar caminho projects/andre-time-travel/asset-registry.csv
+				543 heading Experimentos Kling, Value: 3
+					544 text Experimentos Kling
+				545 text Arquivo local de testes, nomes e proveniência; candidatos e previews sem aceite de produção.
+				546 text projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/index.html
+				547 button Copiar caminho projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/index.html
+				548 heading Lições de Elements, Value: 3
+					549 text Lições de Elements
+				550 text Método proposto, nomes originais, observações e templates; sem nova geração.
+				551 text projects/andre-time-travel/docs/kling-element-experiments-20261015-v2.md
+				552 button Copiar caminho projects/andre-time-travel/docs/kling-element-experiments-20261015-v2.md
+				553 heading Papéis, Value: 3
+					554 text Papéis
+				555 text Responsabilidades e skills; não indica sessões ativas.
+				556 text agents/registry.json
+				557 button Copiar caminho agents/registry.json
+				558 heading Skills, Value: 3
+					559 text Skills
+				560 text Procedimento local e vínculos com fontes compartilhadas.
+				561 text skills/registry.json
+				562 button Copiar caminho skills/registry.json
+				563 heading Entregas entre agentes, Value: 3
+					564 text Entregas entre agentes
+				565 text Escopo, hashes, verificações, limites e próximo responsável.
+				566 text shared/templates/agent-handoff-v2.json
+				567 button Copiar caminho shared/templates/agent-handoff-v2.json
+				568 heading Série e continuação, Value: 3
+					569 text Série e continuação
+				570 text Regras reutilizáveis; sem herdar aprovações ou gastos.
+				571 text series/andre-time-travel/series.json
+				572 button Copiar caminho series/andre-time-travel/series.json
+			573 container
+				574 heading Nomes e caminhos atuais, Value: 2
+					575 text Nomes e caminhos atuais
+				576 text Documentos já entregues mantêm as referências originais como proveniência. Referência anterior
+				577 text tasks/production-tasks.md
+				578 text Caminho atual
+				579 text projects/andre-time-travel/tasks/specs/production-tasks.md
+				580 button Copiar caminho projects/andre-time-travel/tasks/specs/production-tasks.md
+				581 text Referência anterior
+				582 text tasks/scene-detail-assets-v1.md
+				583 text Caminho atual
+				584 text projects/andre-time-travel/tasks/specs/scene-detail-assets-v1.md
+				585 button Copiar caminho projects/andre-time-travel/tasks/specs/scene-detail-assets-v1.md
+				586 text Referência anterior
+				587 text tasks/workflow-map-v1.md
+				588 text Caminho atual
+				589 text projects/andre-time-travel/tasks/plans/workflow-map-v1.md
+				590 button Copiar caminho projects/andre-time-travel/tasks/plans/workflow-map-v1.md
+				591 text Referência anterior
+				592 text tasks/project-cleanup-plan-v1.md
+				593 text Caminho atual
+				594 text projects/andre-time-travel/tasks/plans/project-cleanup-plan-v1.md
+				595 button Copiar caminho projects/andre-time-travel/tasks/plans/project-cleanup-plan-v1.md
+				596 text Novos documentos:
+				597 text AAAA-MM-DD-assunto-vN
+				598 text . Os identificadores T, W e D permanecem distintos.
+				599 text Galileo / Galileu:
+				600 text  a chave do capítulo é 
+				601 text galileo
+				602 text ; nomes de arquivos já citados são preservados.
+				603 text Candidato, entregue, revisado e aprovado:
+				604 text  o nome da pasta ou a existência do arquivo não define o aceite.
+			605 button (collapsed) Fontes desta referência · coleta de 16/10/2026, 05:12, Secondary Actions: Expand
+				606 text Fontes desta referência · coleta de 
+				607 text 16/10/2026, 05:12
+			362 container
+				363 text Central de Demandas · Movies_Projects Produção coletada em  31/12/2098, 21:00 |  Importação preserva escopos de aceite
+	364 container
+		365 button logo icon
+			366 image logo icon
+			367 image
+		368 container
+			369 button
+
+The focused UI element is 16 button Organização

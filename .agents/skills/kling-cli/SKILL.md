@@ -2,7 +2,7 @@
 name: kling-cli
 version: 0.2.1
 localization: pt-BR
-localRevision: 2026-10-12-contract-audit
+localRevision: 2026-10-16-cli023-validation
 description: >-
   Use a CLI oficial do Kling para descobrir modelos, gerar imagens e vídeos,
   gerenciar Elements e aplicar motion control. Exige modelo explícito e contratos
@@ -111,9 +111,23 @@ Consulta de capacidades não gera mídia; pode usar/renovar a sessão existente.
 faça uma geração vazia como teste de acesso. Salve apenas capacidades sanitizadas ao
 criar snapshot; remova identidade e segredos.
 
-Documentação menciona V4 Preview, mas isso não garante acesso nesta conta. A consulta
-de 2026-10-12, MCP 1.3.3, não listou V4. Essa observação é datada; só o catálogo
-atual pode confirmar que um modelo está listado, e listagem não é teste de geração.
+A descoberta de 16/10/2026 na CLI Global instalada 0.2.1, MCP 1.3.3, lista
+`kling-video-v4_0` em image_to_video/text_to_video/omni_ref_video. Nenhuma geração
+foi testada nesta migração. `shared/kling-capabilities.json` e
+`docs/kling-manual/19-kling4-migration.md` separam anúncio, interface, conta e teste.
+Não instalar a CLI 0.2.0 do plugin externo sobre esta adaptação local.
+
+V4 keyframes não declara Elements/enable_audio/multi-shot: nunca remover vínculo
+facial nem prometer silêncio para trocar de modelo. V4 Omni aceita referências
+mistas/áudio e Elements, mas exige prefer_multi_shots=true; câmera fixa e versões
+já aprovadas exigem revisão própria. Só 720p/1080p nesta interface; 4K anunciado
+não está habilitado. Preservar F1–F7 e escolher fallback explicitamente.
+
+V4 exige `shotContract` local com manifesto tipado por uso/hash/proveniência,
+evidência de review e element_get, beats temporais, elenco/companheiros/figurino/
+mesa/eixo e plano de áudio. Metadados locais nunca viram flags. Vídeos diretos mais
+video Elements compartilham 30 s; duração de entrada entra na cobrança. Preço/FPS/
+Flash não verificados; HDR/extensão são futuros. Renovar schema e cotação por pedido.
 
 | Intenção | Comando |
 |---|---|
@@ -237,3 +251,7 @@ formato declarado, sem presumir UUIDv7 ou idempotência.
 Campos: [reference.md](reference.md). Exemplos e contrato local:
 [api-examples.md](api-examples.md). Regras/custos do projeto:
 `docs/kling-manual/00-regras-do-projeto.md` e `12-custos-e-ledger.md`.
+
+## Atualização autorizada da CLI em 16/10
+
+CLI Global instalada atualizada de 0.2.1 para 0.2.3, versão latest no npm oficial. Skill upstream/telemetria continua 0.2.1; executável, skill e plugin têm versões independentes. Nenhuma credencial lida, login ou grant novo. who_am_i/tool_list pós-update tiveram os mesmos corpos do catálogo anterior; V4 listado não é geração testada. Novas declarações tipadas/limites combinados, ajuda por modelo e áudio WAV foram inspecionados no bundle oficial. Guia: `docs/kling-manual/20-kling4-features-cli-023.md`.

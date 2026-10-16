@@ -1,0 +1,21 @@
+# 19 · Kling 4: contrato por rota e migração
+
+Fonte atual: `shared/kling-capabilities.json`; snapshots datados de 16/10 no mesmo diretório de snapshots. CLI Global instalada 0.2.1, MCP 1.3.3, acesso autenticado listado. **Sem geração de teste ou aceite de produção.** Snapshot 12/10 permanece histórico. A skill/plugin externa 1.0.5 fixa CLI 0.2.0; não é a adaptação local 0.2.1, não foi reinstalada.
+
+| Rota V4 descoberta | Uso possível | Limitação atual |
+|---|---|---|
+| image_to_video | Primeiro/último/intermediários, até 10 imagens combinadas | Sem Element, áudio ou multi-shot declarados; sem promessa de silêncio/identidade vinculada |
+| text_to_video | Ideação sem referências | Sem vínculo de identidade; proporção explícita porque default/descrição divergem |
+| omni_ref_video | Imagens, vídeo, áudio e Elements | Multi-shot deve ser true, câmera fixa não qualificada; 15 recursos combinados |
+
+Todas listam 3–30 s e 720p/1080p. Modelo exato `kling-video-v4_0`, escolhido explicitamente; não inventar Flash nem ID de Higgsfield. Omni: até 10 imagens, 5 vídeos, 7 Elements (até 3 vídeo), 3 áudios dentro do total 15. Vídeo direto mais video Elements somam até 30 s; entradas individuais 3–30 s/300 MB e proporção 2:5–5:2. Voz de referência: 5–30 s/50 MB; música não vira voz: exigir voiceContentReview=reviewed_voice_only. Reter som exige stream de áudio confirmado no vídeo principal, nunca presumido pelo prompt. Element usa ID/type/resources de element_get e marcador <<<id>>> mais argumento elements. Tags vêm do catálogo regional sem tradução. Não criar/alterar Elements nesta migração.
+
+Não aplicar regras antigas de omni_ref_video (um vídeo de 3–10 s/sem áudio independente) a V4. Não aplicar limites V4 a V3. F1–F7 ficam disponíveis para seleção explícita com schema/release atuais; F8/F9 são propostas bloqueadas. O fluxo de identidade com V3 continua útil se V4 não satisfaz os requisitos do plano; a troca exige decisão, sem fallback silencioso.
+
+`shotContract` v1 é metadado local: provider/interface; referências target/kind/source/sha256/provenance/use/review/reviewEvidence; Element usa elementEvidence; beats start/end/action; continuidade cast/wardrobe/table/screenAxis/historicalFaceExclusion; estratégia de som e fala medida/revisada. URL tem bytes locais como evidência; nome de Element sozinho não confirma recurso. A verificação de hash prova integridade, não autentica autoria de decisão humana. A aprovação financeira continua em approvals.json e liga payload/schema/cotação. Novo contrato integra o fingerprint, sem reescrever fingerprints históricos.
+
+Estratégias de áudio: native_guide (fala exata + measuredSeconds + languageReview=reviewed; nunca voz final automaticamente), retain_source (som do vídeo), postproduction (controles false), uncontrolled_review_required (rota sem controles, revisão posterior obrigatória). Plano de som não prova escuta nem sync. Custos: preço atual desconhecido; vídeo de entrada compõe duração cobrada, registrar billing.inputVideoSeconds e inputVideoDurationIncluded=true. Não converter saldo em cobrança nem reaproveitar teto histórico.
+
+G-IN/G-OUT aprovados só para composição; cinco referências pendentes. D04 _2 difere do Element “table 1” _4_alt. Manter companheiros em edições de figurino; registrar qualquer remoção como falha. Fight local não tem áudio; ProduceID diverge, prompt original não conhecido. Reutilizar downloads canônicos, sem duplicar mídia por lane. Revisão de 1.636 quadros em tiles não é reprodução com escuta. Handoffs 15/10 continuam pending_producer_review, sem ingest automático.
+
+[Anúncio oficial de 30/09](https://kling.ai/blog/kling-4-ai-video-model) descreve capacidades do full model, incluindo 4K e prompts em tokens. Não são schema/entitlement da CLI. HDR/extensão são futuros; preço/FPS/Flash não verificados. [Página developer](https://kling.ai/dev/model-release/kling-4) retornou shell nesta auditoria. Higgsfield Cinema Studio 4.0 é provider/interface distinto. Guia Qingque 1.5 Custom Face é legado. O plano completo, guards e resultados ficam em `reports/2026-10-16-kling4-migration/`.

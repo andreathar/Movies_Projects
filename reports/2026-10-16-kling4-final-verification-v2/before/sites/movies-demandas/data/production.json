@@ -1,0 +1,5186 @@
+{
+  "schemaVersion": 1,
+  "sceneCosts": {
+    "coverage": "partial",
+    "agents": "not_available",
+    "gemini": "not_available",
+    "legacyResponseCount": 84,
+    "jobs": [
+      {
+        "job": "AB-MIN-01-turbo-3s-720p",
+        "scene": null,
+        "model": "kling-video-v3_0_turbo",
+        "generationId": "AXzevKy7czPO5xQ2laBr3-5CFDQsa11VPwaJ5Yisumiz6GTCCzRkUodra8W7z3KUlGTi0HKd",
+        "costEventId": null,
+        "quote": null,
+        "charge": {
+          "credits": 24,
+          "unit": "Kling credits",
+          "basis": "provider_reported"
+        },
+        "evidence": {
+          "intent": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.intent.json",
+          "submission": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.submit.json",
+          "charge": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.balance.json"
+        }
+      },
+      {
+        "job": "AB-MIN-02-v3_0-3s-720p",
+        "scene": null,
+        "model": "kling-video-v3_0",
+        "generationId": "AZwN8R5A6vdmIfvpj_8CC4b8AsSai4bKKRtxq0vya7d9cLBe4CKqVQA_fsgXVBnzBM8fm7eQ",
+        "costEventId": null,
+        "quote": null,
+        "charge": {
+          "credits": 27,
+          "unit": "Kling credits",
+          "basis": "provider_reported"
+        },
+        "evidence": {
+          "intent": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.intent.json",
+          "submission": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.submit.json",
+          "charge": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.balance.json"
+        }
+      },
+      {
+        "job": "G-01-insert-galileo-v2",
+        "scene": null,
+        "model": "kling-video-v3_0_turbo",
+        "generationId": "AUPaMqanR-UBc28psRG0Hxs9AiBGZ0yDa22LoaS7XkjG8UmnUdGDVBDxZ9Uw_Bb7lmBdFD53",
+        "costEventId": null,
+        "quote": null,
+        "charge": null,
+        "evidence": {
+          "intent": "projects/andre-time-travel/07_generations/responses/G-01-insert-galileo-v2.intent.json",
+          "submission": "projects/andre-time-travel/07_generations/responses/G-01-insert-galileo-v2.submit.json",
+          "charge": "projects/andre-time-travel/07_generations/responses/G-01-insert-galileo-v2.balance.json"
+        }
+      },
+      {
+        "job": "G-02-andre-GL02",
+        "scene": null,
+        "model": "kling-video-v3_0",
+        "generationId": "AYFTgg8vK-N6Ifvl8ZxCK001kK1fkd9ruOCZtbm4a-Ecb9IHq5XSMB69yhQ-xj3cjeCBpWXw",
+        "costEventId": null,
+        "quote": null,
+        "charge": null,
+        "evidence": {
+          "intent": "projects/andre-time-travel/07_generations/responses/G-02-andre-GL02.intent.json",
+          "submission": "projects/andre-time-travel/07_generations/responses/G-02-andre-GL02.submit.json",
+          "charge": "projects/andre-time-travel/07_generations/responses/G-02-andre-GL02.balance.json"
+        }
+      }
+    ]
+  },
+  "projectId": "andre-time-travel",
+  "title": "The Table Between Centuries",
+  "sourcePage": "https://chatgpt.com/space/page_6ac9adf8b0f0819195bd752c10fe30cc",
+  "sources": [
+    {
+      "path": "workspace.json",
+      "sha256": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/workflow-map-v1.md",
+      "sha256": "d4fa69a6f561ab82d92d911ad8f6b84cfafd50fe5007e9e5c912dc1b80f74daa"
+    },
+    {
+      "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+      "sha256": "e2ab688d90bca0532fdb87167278fb3ae0ae91640d07637e0478bc2815b3aaa5"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+    },
+    {
+      "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+      "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+      "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e"
+    },
+    {
+      "path": "shared/templates/kling-shot-families.json",
+      "sha256": "4cf8b402d058ff2c7b4a7086426257dd6c8f75707ea30bd249d898445c0607d6"
+    },
+    {
+      "path": "docs/kling-manual/snapshots/2026-10-16-who_am_i.sanitized.json",
+      "sha256": "ad39ca68ec2692f57568780e2d8f98965aa8a53e395998da57b8a85ebe02c8a7"
+    },
+    {
+      "path": "shared/kling-capabilities.json",
+      "sha256": "138995f58831337fdbe007cce6669e6590d6442840a949e80c6e8386c9386098"
+    },
+    {
+      "path": "docs/kling-manual/snapshots/2026-10-16-tool_list.json",
+      "sha256": "6697e79339db5791289f7e787cfc4a26111ea21fae77d3d84e72b646a7addc6a"
+    },
+    {
+      "path": "scripts/kling_contract.py",
+      "sha256": "02cb557a039d8b99702caaa983f7d166b92f2d625d2fd9c5a138befd3de96791"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256": "a8c1569cac0cbaac0d19257a863d64b6b57958e091d50de92fbf3f9d0d408da2"
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256": "807201942a6a20097179d298d15c693e929ad1880c2e3cc560d0a70f974eee6c"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256": "b896711f0b1bf753152106891b952135418a550074c22d3830c30db48c46f4a9"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+      "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-13-t12-detail-studies-v1-independent-review-dispatch.md",
+      "sha256": "8410cecc04c59646cb8a005c2929b115683476d8de96142c630058c4a939a18a"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+      "sha256": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+      "sha256": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+      "sha256": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+      "sha256": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+      "sha256": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+      "sha256": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+      "sha256": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json",
+      "sha256": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json",
+      "sha256": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+      "sha256": "36657510cf67fc2dce21e7d696e01964e09fd882b06500f55a8a07070dcf20ea"
+    },
+    {
+      "path": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json",
+      "sha256": "b88aec7bbe1fa8ab112060ca1e227c8bb737c4a627c50b64e140965e00fa33d0"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.intent.json",
+      "sha256": "495052fb94ff8064ba8fc9d4586a04b89dcff59eba7a58011dfd5e44ddcf8313"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.submit.json",
+      "sha256": "7bd95875713fed87714b01a7f1af8b7770d30a9a92ca9b6d647c2fff460fa1f7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-01-turbo-3s-720p.balance.json",
+      "sha256": "a02f6cc1ebd3d560bbe0677270ac52b688825053745ba852ec12c7d8ac640b24"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.intent.json",
+      "sha256": "ffc502ad6af1d65d1719290e1cf67733056d27ca3726cb68e7bdc07fb68cf85f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.submit.json",
+      "sha256": "d4e0e15bc032a174475819007e5e27ab6ab959d3552a2dc48b746d73c79d8fc6"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/AB-MIN-02-v3_0-3s-720p.balance.json",
+      "sha256": "93688775a40e5673d8c277dd513d659ea19fabf33564106ce21c21478f8b34ce"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/G-01-insert-galileo-v2.intent.json",
+      "sha256": "b45835c78c15704dcbf0eb6e32f45693df86c5b1588a70ac9d639b5bb0769e53"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/G-01-insert-galileo-v2.submit.json",
+      "sha256": "942284b6664b484ce383e1f3a2e4618aed973a5d0b24105791daf685d5100ca1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/G-01-insert-galileo-v2.balance.json",
+      "sha256": "6879bafbcabba9494410d59e35428cc4db948a942c88939bb5efb6da800e3bea"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/G-02-andre-GL02.intent.json",
+      "sha256": "fb92a47caae43c65a5dca9f3255d0e95daf846a6ce072e1c594437486ae78ead"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/G-02-andre-GL02.submit.json",
+      "sha256": "0b22e7af5d99b237dfb1b52a48b489a9e8c9c2a6510ccf27ace330e4e37f389d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/responses/G-02-andre-GL02.balance.json",
+      "sha256": "291a87b20088ae5261468b7a4e3f0974fa812f08410a3ace195297e6ac418f02"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Freeze the brief and spending boundaries",
+      "ownerRole": "producer",
+      "status": "completed",
+      "dependsOn": [],
+      "blocker": null,
+      "deliverables": [
+        "docs/budget-plan-v2.md",
+        "00_brief/approvals.json",
+        "00_brief/decisions/D04-table.json"
+      ],
+      "verifiedAt": "2026-10-09T09:23:16-03:00"
+    },
+    {
+      "id": "T02",
+      "title": "Receive references and the failed scene",
+      "ownerRole": "continuity",
+      "status": "completed",
+      "dependsOn": [],
+      "blocker": null,
+      "deliverables": [
+        "00_brief/decisions/D01-identity-set.json",
+        "docs/photo-session-spec.md"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00"
+    },
+    {
+      "id": "T03",
+      "title": "Lock the character and table bibles",
+      "ownerRole": "continuity",
+      "status": "completed",
+      "dependsOn": [
+        "T02"
+      ],
+      "blocker": null,
+      "deliverables": [
+        "03_bibles/continuity-matrix.csv",
+        "00_brief/decisions/D04-table.json",
+        "00_brief/decisions/D05-eye-bases.json"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00"
+    },
+    {
+      "id": "T04",
+      "title": "Create and verify the new Andre Element",
+      "ownerRole": "producer",
+      "status": "completed",
+      "dependsOn": [
+        "T01",
+        "T03"
+      ],
+      "blocker": null,
+      "deliverables": [
+        "00_brief/decisions/D11-element-and-still-route.json"
+      ],
+      "verifiedAt": "2026-10-09T10:53:02-03:00"
+    },
+    {
+      "id": "T05",
+      "title": "Fact-check and approve the English script",
+      "ownerRole": "historian",
+      "status": "completed",
+      "dependsOn": [],
+      "blocker": null,
+      "deliverables": [
+        "01_script/script-en.md",
+        "00_brief/research/historian-review-v2.md",
+        "00_brief/research/snapshots/source-20.md"
+      ],
+      "verifiedAt": "2026-10-09T09:28:09-03:00"
+    },
+    {
+      "id": "T06",
+      "title": "Resolve historical-language targets and reviewers",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T05"
+      ],
+      "blocker": "Script v2 approved (T05), but Latin and Corsican are absent from the ElevenLabs language lists, earlier translations are superseded and must restart from script v2, and no qualified language reviewer is named. Unblock: Andre names reviewers per language and the dialogue-sound role records the feasible route per language (R03). Does not block the English edition.",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T07",
+      "title": "Approve voice samples and dry dialogue",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T01",
+        "T05"
+      ],
+      "blocker": "Andre approved likeness but rejected native voice; temporary guide authorized by D14. Final dubbing/ear approval remains pending.",
+      "deliverables": [
+        "04_audio/voice-tests/codex-opening-v1/provenance.json"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T08",
+      "title": "Approve a restrained four-shot identity pilot",
+      "ownerRole": "continuity",
+      "status": "completed",
+      "dependsOn": [
+        "T03",
+        "T04"
+      ],
+      "blocker": null,
+      "deliverables": [
+        "06_pilot/reviews/PILOT-01-galileo-listening-locked.json",
+        "00_brief/decisions/D13-speech-route.json"
+      ],
+      "verifiedAt": "2026-10-09T11:35:30-03:00"
+    },
+    {
+      "id": "T09",
+      "title": "Prove the speech route in both edition strategies",
+      "ownerRole": "dialogue-sound",
+      "status": "completed",
+      "dependsOn": [
+        "T07",
+        "T08"
+      ],
+      "blocker": null,
+      "deliverables": [
+        "00_brief/decisions/D13-speech-route.json",
+        "00_brief/decisions/D14-dub-strategy.json"
+      ],
+      "verifiedAt": "2026-10-09T11:35:30-03:00"
+    },
+    {
+      "id": "T10",
+      "title": "Reforecast costs and freeze the production envelope",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "dependsOn": [
+        "T08",
+        "T09"
+      ],
+      "blocker": "Base Galileo ativa: próximo gasto proposto é um único G-P04 após referências/timing; sem cotação/liberação atual e sem orçamento herdado.",
+      "deliverables": [
+        "docs/budget-and-envelope-resume-v3.md",
+        "05_storyboard/source/production-plan.json",
+        "05_storyboard/animatics/galileo-g03-g04-v1/README.md"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T11",
+      "title": "Approve the storyboard and audio-first animatic",
+      "ownerRole": "storyboard",
+      "status": "blocked",
+      "dependsOn": [
+        "T05",
+        "T07",
+        "T10"
+      ],
+      "blocker": "Animatic G-L03/G-L04 de 16 s é evidência histórica de timing. Escuta/playback e ritmo aguardam revisão; guia D14 permite preparação local.",
+      "deliverables": [
+        "05_storyboard/preproduction-atlas-v1/storyboard-cards.pdf",
+        "05_storyboard/source/production-plan.json",
+        "05_storyboard/animatics/galileo-g03-g04-v1/README.md"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T12",
+      "title": "Approve era and eye keyframes",
+      "ownerRole": "storyboard",
+      "status": "in_progress",
+      "dependsOn": [
+        "T03",
+        "T08",
+        "T11"
+      ],
+      "blocker": "T12 materiais/continuidade consolidados para Galileo na activeBaseline do plano. Sete fontes propostas; faltam corrigir paletó/mesa e obter semelhança de Andre. Sem aceite artístico.",
+      "deliverables": [
+        "02_references/keyframes/andre/",
+        "00_brief/decisions/D12-era-keyframes.json",
+        "05_storyboard/source/production-plan.json",
+        "05_storyboard/animatics/galileo-g03-g04-v1/README.md"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T13",
+      "title": "Produce Galileo as the first complete chapter",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "dependsOn": [
+        "T09",
+        "T10",
+        "T12"
+      ],
+      "blocker": "Base ativa Galileo G-L03/G-L04: referências → diálogo/movimento → teste único G-P04 → cobertura → edição → QC. Próximo: continuidade do master. Mídia anterior preservada como história; nenhum novo take aceito ou gasto liberado.",
+      "deliverables": [
+        "08_edit/picture-lock/galileo-en-preview-v1.mp4",
+        "08_edit/timelines/galileo-en-v1.json",
+        "08_edit/reviews/galileo-en-v1/review.md",
+        "08_edit/reviews/galileo-en-v1/technical-qc.json",
+        "05_storyboard/source/production-plan.json",
+        "05_storyboard/animatics/galileo-g03-g04-v1/README.md"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "T14",
+      "title": "Produce Caesar coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T15",
+      "title": "Produce Genghis Khan coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T16",
+      "title": "Produce Napoleon coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T17",
+      "title": "Produce Oppenheimer coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T13"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T18",
+      "title": "Produce opening/ending and lock the English picture",
+      "ownerRole": "editor",
+      "status": "blocked",
+      "dependsOn": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T19",
+      "title": "Spend the correction reserve on measured gaps",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "dependsOn": [
+        "T18"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T20",
+      "title": "Assemble and verify the historical-language edition",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "dependsOn": [
+        "T06",
+        "T07",
+        "T19"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "T21",
+      "title": "Finish, deliver, and independently verify both masters",
+      "ownerRole": "qc",
+      "status": "blocked",
+      "dependsOn": [
+        "T19",
+        "T20"
+      ],
+      "blocker": "Awaiting dependency completion and applicable approval",
+      "deliverables": [],
+      "verifiedAt": null
+    }
+  ],
+  "chapters": [
+    {
+      "id": "C",
+      "key": "caesar",
+      "person": "Julius Caesar",
+      "setting": "Rome, early 44 BCE",
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "K",
+      "key": "genghis",
+      "person": "Genghis Khan",
+      "setting": "Campaign tent, 1227",
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "G",
+      "key": "galileo",
+      "person": "Galileo Galilei",
+      "setting": "Arcetri, 1634",
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "N",
+      "key": "napoleon",
+      "person": "Napoleon Bonaparte",
+      "setting": "Saint Helena, 1816",
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    },
+    {
+      "id": "O",
+      "key": "oppenheimer",
+      "person": "J. Robert Oppenheimer",
+      "setting": "Fictional room near Trinity, July 15, 1945",
+      "languageReview": "pending",
+      "acceptedTakeId": null
+    }
+  ],
+  "approvals": {
+    "characterReferences": true,
+    "productionElement": true,
+    "screenplay": true,
+    "voiceTests": false,
+    "speechRoute": true,
+    "pilot": true,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "finalMovieVerified": false,
+  "workflow": [
+    {
+      "reference": "W01",
+      "taskIds": [
+        "T01"
+      ],
+      "title": "Confirm brief, runtime, editions and boundaries",
+      "owner": "producer",
+      "evidence": "Earlier freeze recorded; future changes need a scoped decision → chapter briefs"
+    },
+    {
+      "reference": "W02",
+      "taskIds": [
+        "T01"
+      ],
+      "title": "Maintain single resume surface and decision references",
+      "owner": "producer",
+      "evidence": "STATE updated for delivered images → subsequent agents read current handoff"
+    },
+    {
+      "reference": "W03",
+      "taskIds": [
+        "T01",
+        "T03"
+      ],
+      "title": "Reconcile stale board blockers, bible variants and approval scopes",
+      "owner": "producer",
+      "evidence": "READY: known mismatches, including T09/T07 and old keyframes → reliable dispatch conditions"
+    },
+    {
+      "reference": "W04",
+      "taskIds": [
+        "T02"
+      ],
+      "title": "Inventory real photos, synthetic variants, source rights and failed clips",
+      "owner": "continuity",
+      "evidence": "Earlier inventory recorded; unresolved failed-clip evidence stays explicit → identity packet"
+    },
+    {
+      "reference": "W05",
+      "taskIds": [
+        "T02",
+        "T03"
+      ],
+      "title": "Keep dark wardrobe retired without deleting originals",
+      "owner": "continuity",
+      "evidence": "Earlier logical retirement delivered → grey/white references only"
+    },
+    {
+      "reference": "W06",
+      "taskIds": [
+        "T03"
+      ],
+      "title": "Lock current Andre grooming, posture, wardrobe and table anchors",
+      "owner": "continuity + producer",
+      "evidence": "Prior decisions exist; new shot geometry needs comparison → selected reference packet"
+    },
+    {
+      "reference": "W07",
+      "taskIds": [
+        "T04"
+      ],
+      "title": "Check existing Element resources and route compatibility",
+      "owner": "producer",
+      "evidence": "Existing Element recorded; no automatic recreation → only compatible shot requests"
+    },
+    {
+      "reference": "W08",
+      "taskIds": [
+        "T05"
+      ],
+      "title": "Maintain English script, line IDs and factual anchors",
+      "owner": "historian + director",
+      "evidence": "Earlier script approval recorded → any changed line requires proportionate review"
+    },
+    {
+      "reference": "W09",
+      "taskIds": [
+        "T05",
+        "T11"
+      ],
+      "title": "Fill difficult line, trigger word, prior emotion, reaction and consequence per encounter",
+      "owner": "director + editor",
+      "evidence": "Coverage proposals exist; exact performance/timing not locked → chapter animatic"
+    },
+    {
+      "reference": "W10",
+      "taskIds": [
+        "T05",
+        "T12"
+      ],
+      "title": "Adopt historical research and resolve H01–H06",
+      "owner": "historian + producer",
+      "evidence": "REVIEWED: v2 adopted, uncertainty preserved → D20 candidate design"
+    },
+    {
+      "reference": "W11",
+      "taskIds": [
+        "T03",
+        "T12"
+      ],
+      "title": "Record floor, room, coat, hair, shoe and accessory choices",
+      "owner": "director",
+      "evidence": "REVIEWED: D20 for new still candidates → new-bible reconciliation"
+    },
+    {
+      "reference": "W12",
+      "taskIds": [
+        "T03",
+        "T12"
+      ],
+      "title": "Review and integrate four revised bibles and continuity matrix",
+      "owner": "producer + continuity",
+      "evidence": "Reported lane deliveries; full integration/acceptance not established by image review → current bible per chapter"
+    },
+    {
+      "reference": "W13",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Create five detail studies for each historical figure",
+      "owner": "desktop storyboard",
+      "evidence": "DELIVERED: 25 slots, 26 candidates → independent still review"
+    },
+    {
+      "reference": "W14",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Review historical material, costume and uncertainty against images",
+      "owner": "historian / Claude intended",
+      "evidence": "READY: catalog plus v2/D20 → findings only, no substitute generation"
+    },
+    {
+      "reference": "W15",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Review likeness evidence, proportions, expression and grooming",
+      "owner": "continuity / terminal Codex intended",
+      "evidence": "READY: current still catalog → shortlist and Andre likeness gate"
+    },
+    {
+      "reference": "W16",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Review table, chairs, eye line, camera axis and physical placement",
+      "owner": "continuity + editor",
+      "evidence": "READY: exact cross-angle geometry not proven → principal-angle selection"
+    },
+    {
+      "reference": "W17",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Review hands, fingers, footwear contact and rear-head facial safety",
+      "owner": "continuity + QC",
+      "evidence": "Producer static check delivered; independent check READY → correction list"
+    },
+    {
+      "reference": "W18",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Review motivated light source, direction, shadows and era plausibility",
+      "owner": "lighting",
+      "evidence": "Initial choices exist; final matching WAITING on selected shots → lighting sheet"
+    },
+    {
+      "reference": "W19",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Apply bounded image corrections and re-review only changed outputs",
+      "owner": "desktop storyboard",
+      "evidence": "Six superseded variants preserved; further corrections conditional on findings → refreshed packet"
+    },
+    {
+      "reference": "W20",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Approve Andre likeness on selected new stills",
+      "owner": "Andre",
+      "evidence": "WAITING: final new-image likeness approval → approved identity basis for animation"
+    },
+    {
+      "reference": "W21",
+      "taskIds": [
+        "T11",
+        "T12"
+      ],
+      "title": "Choose only required coverage and map images to actual shot slots",
+      "owner": "director + editor",
+      "evidence": "READY after visual findings; 25 studies are not 25 mandatory cuts → animatic/shot packet"
+    },
+    {
+      "reference": "W22",
+      "taskIds": [
+        "T12"
+      ],
+      "title": "Review existing eyes-only references and needed reaction states",
+      "owner": "continuity",
+      "evidence": "Existing references remain candidates in current recipe → selected safe eye shot if needed"
+    },
+    {
+      "reference": "W23",
+      "taskIds": [
+        "T11"
+      ],
+      "title": "Resolve timeline/bible timing differences without imposing global eye duration",
+      "owner": "producer + editor",
+      "evidence": "READY: Galileo two-second choice is local → agreed shot timing"
+    },
+    {
+      "reference": "W24",
+      "taskIds": [
+        "T07",
+        "T11"
+      ],
+      "title": "Measure guide dialogue and pauses; build local scratch/animatic",
+      "owner": "dialogue-sound + editor",
+      "evidence": "Reuse existing tracks; final voice not required for every local preparation step → audio-led pacing test"
+    },
+    {
+      "reference": "W25",
+      "taskIds": [
+        "T07"
+      ],
+      "title": "Choose Andre recording/dubbing route and short voice samples",
+      "owner": "dialogue-sound + Andre",
+      "evidence": "Guide accepted only provisionally; final voice by ear WAITING → dry final lines"
+    },
+    {
+      "reference": "W26",
+      "taskIds": [
+        "T07"
+      ],
+      "title": "Prepare sparse historical-character voices and dry line tracks",
+      "owner": "dialogue-sound",
+      "evidence": "Approved text and applicable audio scope required → measured tracks"
+    },
+    {
+      "reference": "W27",
+      "taskIds": [
+        "T07",
+        "T09"
+      ],
+      "title": "Measure final dialogue duration and reconcile dubbing with visible speech",
+      "owner": "dialogue-sound + editor",
+      "evidence": "WAITING on recordings → tested sync or deliberate offscreen/L-cut route"
+    },
+    {
+      "reference": "W28",
+      "taskIds": [
+        "T06"
+      ],
+      "title": "Confirm historical-language targets, feasible route and qualified reviewers",
+      "owner": "dialogue-sound",
+      "evidence": "Board blocked; never silently substitute a language → reviewed translations"
+    },
+    {
+      "reference": "W29",
+      "taskIds": [
+        "T06"
+      ],
+      "title": "Translate, back-translate and review pronunciation/meaning",
+      "owner": "qualified language reviewers",
+      "evidence": "WAITING on target selection; can proceed independently of English picture where appropriate → historical dialogue"
+    },
+    {
+      "reference": "W30",
+      "taskIds": [
+        "T09"
+      ],
+      "title": "Test visible speech, mouth motion and likeness on intended route",
+      "owner": "continuity + dialogue-sound",
+      "evidence": "Prior pilot route exists; changed image/angle can require bounded new proof → shot recipe"
+    },
+    {
+      "reference": "W31",
+      "taskIds": [
+        "T08"
+      ],
+      "title": "Check existing pilot evidence against new camera/costume references",
+      "owner": "producer + continuity",
+      "evidence": "Earlier approval is scoped; do not repeat pilot without a specific gap → accepted operating envelope"
+    },
+    {
+      "reference": "W32",
+      "taskIds": [
+        "T10"
+      ],
+      "title": "Evaluate operator access and visual-review capability separately",
+      "owner": "producer",
+      "evidence": "Future operator choice not settled by model name; roles remain producer-controlled → bounded production assignment"
+    },
+    {
+      "reference": "W33",
+      "taskIds": [
+        "T10"
+      ],
+      "title": "Refresh balance/capabilities and forecast accepted seconds, chapter caps and reserve",
+      "owner": "producer",
+      "evidence": "Only before applicable paid work; historical snapshots not live → written shot/batch envelope"
+    },
+    {
+      "reference": "W34",
+      "taskIds": [
+        "T11"
+      ],
+      "title": "Build/review English audio-led animatic and approval package",
+      "owner": "storyboard + editor",
+      "evidence": "Waiting on selected coverage and measured guide timing; not blocked by all final dubbing work → storyboard gate"
+    },
+    {
+      "reference": "W35",
+      "taskIds": [
+        "T12",
+        "T13"
+      ],
+      "title": "Build reference packet with roles and tested first/last versus multi-reference route",
+      "owner": "producer",
+      "evidence": "Waiting on selection; no assumption that second reference is an OUT frame → exact request"
+    },
+    {
+      "reference": "W36",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Define safe motion, camera limits, face exclusions and reaction causality",
+      "owner": "director + continuity",
+      "evidence": "Per selected shot; still safety alone insufficient → generation preflight"
+    },
+    {
+      "reference": "W37",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Verify approved request, schema, output settings and spending limits",
+      "owner": "producer",
+      "evidence": "Gate before each paid submission; unresolved scope blocks only affected paid action → submit once"
+    },
+    {
+      "reference": "W38",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Submit approved shot and persist returned job/charge immediately",
+      "owner": "producer",
+      "evidence": "WAITING on preflight; one producer only → resume existing job"
+    },
+    {
+      "reference": "W39",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Resume job, recover/download output, preserve originals and provenance",
+      "owner": "producer",
+      "evidence": "No blind resubmission or automatic paid retries → full-clip QC"
+    },
+    {
+      "reference": "W40",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Inspect every frame for historic faces, identity, anatomy and contact",
+      "owner": "QC",
+      "evidence": "Per actual output, including reflections and intermediate frames → accept/reject evidence"
+    },
+    {
+      "reference": "W41",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Inspect sync, reaction timing, sound and technical decode",
+      "owner": "editor + QC",
+      "evidence": "Per actual output; contact sheets do not replace playback → usable-take decision"
+    },
+    {
+      "reference": "W42",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Register take disposition and reconcile actual charges",
+      "owner": "producer",
+      "evidence": "Evidence-based only; no successful-job-to-acceptance shortcut → chapter assembly"
+    },
+    {
+      "reference": "W43",
+      "taskIds": [
+        "T13"
+      ],
+      "title": "Locate and play exact Galileo v2 with full audio",
+      "owner": "editor + producer",
+      "evidence": "Existing candidate reported delivered; full playback/acceptance WAITING → first complete recipe"
+    },
+    {
+      "reference": "W44",
+      "taskIds": [
+        "T13"
+      ],
+      "title": "Compare Galileo timeline with bible and replace only verified gaps",
+      "owner": "editor + producer",
+      "evidence": "Do not rerender by default or require unused detail images → reviewed chapter"
+    },
+    {
+      "reference": "W45",
+      "taskIds": [
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Assemble and review each complete chapter",
+      "owner": "editor + QC",
+      "evidence": "Galileo first; other generation gated on accepted recipe → full film"
+    },
+    {
+      "reference": "W46",
+      "taskIds": [
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "title": "Transfer recipe to Caesar, Genghis, Napoleon and Oppenheimer",
+      "owner": "producer",
+      "evidence": "Board blocked on Galileo; research/still preparation already advanced → four reviewed chapters"
+    },
+    {
+      "reference": "W47",
+      "taskIds": [
+        "T18"
+      ],
+      "title": "Prepare and produce opening and ending under approved script",
+      "owner": "director + producer",
+      "evidence": "Existing six slot plans; unapproved future ending ideas excluded → full cut"
+    },
+    {
+      "reference": "W48",
+      "taskIds": [
+        "T18"
+      ],
+      "title": "Normalize accepted sources and edit table transitions",
+      "owner": "editor",
+      "evidence": "Only accepted/explicitly candidate inputs with labels → rough cut"
+    },
+    {
+      "reference": "W49",
+      "taskIds": [
+        "T18"
+      ],
+      "title": "Review complete English rough cut for story, pacing and continuity",
+      "owner": "director + QC",
+      "evidence": "WAITING on usable chapter coverage → prioritized gap list"
+    },
+    {
+      "reference": "W50",
+      "taskIds": [
+        "T18",
+        "T19"
+      ],
+      "title": "Create foley, room tone, ambience and optional music under applicable scope",
+      "owner": "dialogue-sound",
+      "evidence": "Cue specification delivered; actual media not produced by that document → layered sound edit"
+    },
+    {
+      "reference": "W51",
+      "taskIds": [
+        "T18",
+        "T19"
+      ],
+      "title": "Sync contact sounds and preserve meaningful silence",
+      "owner": "dialogue-sound + editor",
+      "evidence": "Actual frame contact and selected materials, including rug versus wood → mix"
+    },
+    {
+      "reference": "W52",
+      "taskIds": [
+        "T19"
+      ],
+      "title": "Rank corrections and approve only measured replacement hypotheses",
+      "owner": "producer + QC",
+      "evidence": "Likeness/facial safety/sync/story before polish → bounded correction request"
+    },
+    {
+      "reference": "W53",
+      "taskIds": [
+        "T19"
+      ],
+      "title": "Reinspect replacements and reconcile reserve/ledger",
+      "owner": "producer + QC",
+      "evidence": "No automatic reruns; keep originals → stable final picture"
+    },
+    {
+      "reference": "W54",
+      "taskIds": [
+        "T18",
+        "T19"
+      ],
+      "title": "Conform final dialogue, color and shot-to-shot light; lock picture",
+      "owner": "editor + lighting",
+      "evidence": "After resolved gaps; final voice timing must fit or sync must be revised → master mix"
+    },
+    {
+      "reference": "W55",
+      "taskIds": [
+        "T21"
+      ],
+      "title": "Mix dialogue/foley/ambience/music and measure loudness/true peak",
+      "owner": "dialogue-sound",
+      "evidence": "Targets are not measurements → technical QC"
+    },
+    {
+      "reference": "W56",
+      "taskIds": [
+        "T20"
+      ],
+      "title": "Assemble historical-language edition with reviewed audio and speech variants",
+      "owner": "dialogue-sound + editor",
+      "evidence": "WAITING on languages and suitable picture; do not stretch faces to fit → historical cut"
+    },
+    {
+      "reference": "W57",
+      "taskIds": [
+        "T20",
+        "T21"
+      ],
+      "title": "Create and review subtitles/captions against actual audio in both editions",
+      "owner": "dialogue-sound + language reviewers",
+      "evidence": "Meaning, speaker, timing and spelling → delivery captions"
+    },
+    {
+      "reference": "W58",
+      "taskIds": [
+        "T21"
+      ],
+      "title": "Export exact English and historical masters and stems",
+      "owner": "editor",
+      "evidence": "Chosen delivery target in task spec; source resolution not assumed → independent final QC"
+    },
+    {
+      "reference": "W59",
+      "taskIds": [
+        "T21"
+      ],
+      "title": "Decode and inspect stream metadata, joins, frames, captions and full audio playback",
+      "owner": "independent QC",
+      "evidence": "Both exact exported files, not only timeline/source clips → evidence report"
+    },
+    {
+      "reference": "W60",
+      "taskIds": [
+        "T21"
+      ],
+      "title": "Obtain final likeness, performance, voice and story acceptance",
+      "owner": "Andre",
+      "evidence": "Separate human acceptance gates → final delivery"
+    },
+    {
+      "reference": "W61",
+      "taskIds": [
+        "T21"
+      ],
+      "title": "Package local masters, captions, stems, sources, rights notes and ledger",
+      "owner": "producer",
+      "evidence": "Preserve working originals and provenance → archive"
+    },
+    {
+      "reference": "W62",
+      "taskIds": [
+        "T21"
+      ],
+      "title": "Archive episode and start clean continuation planning when requested",
+      "owner": "producer",
+      "evidence": "No inherited approvals/budget/jobs; reusable method only → next episode draft"
+    },
+    {
+      "reference": "W63",
+      "taskIds": [],
+      "title": "Accept next owner or retain a named blocker on every delivery",
+      "owner": "producer",
+      "evidence": "Operational rule recorded here; not automated → no orphaned ready task"
+    },
+    {
+      "reference": "W64",
+      "taskIds": [],
+      "title": "Review documentation consolidation and remove active duplication by reference",
+      "owner": "producer / Claude delivery",
+      "evidence": "Reported consolidation pending integration review → one source per rule"
+    },
+    {
+      "reference": "W65",
+      "taskIds": [],
+      "title": "Audit unused skills/plugins with project/global separation",
+      "owner": "producer",
+      "evidence": "Inventory exists; no blanket removal authorized → bounded cleanup decision"
+    },
+    {
+      "reference": "W66",
+      "taskIds": [],
+      "title": "Integrate one delivery at a time; verify hashes and concurrent changes",
+      "owner": "producer",
+      "evidence": "Local files can be reviewed without commits; Git integration needs its own scope → verified base"
+    },
+    {
+      "reference": "W67",
+      "taskIds": [],
+      "title": "Record checkpoints, validation and next dependency without repeated histories",
+      "owner": "producer",
+      "evidence": "Group checks after management changes; communicate meaningful changes → next assignment"
+    },
+    {
+      "reference": "W68",
+      "taskIds": [],
+      "title": "Design/test optional automatic dispatcher only under separate implementation scope",
+      "owner": "producer",
+      "evidence": "Not installed; hooks alone are insufficient → tested event/owner/gate handling"
+    }
+  ],
+  "reconciliation": [
+    {
+      "taskIds": [
+        "T09",
+        "T07"
+      ],
+      "message": "T09 está completed no board, com dependências ainda não concluídas: T07. O escopo deve ser conciliado pelo produtor."
+    },
+    {
+      "taskIds": [
+        "T12",
+        "T11"
+      ],
+      "message": "T12 está in_progress no board, com dependências ainda não concluídas: T11. O escopo deve ser conciliado pelo produtor."
+    },
+    {
+      "taskIds": [
+        "T13",
+        "T10",
+        "T12"
+      ],
+      "message": "T13 está in_progress no board, com dependências ainda não concluídas: T10, T12. O escopo deve ser conciliado pelo produtor."
+    },
+    {
+      "taskIds": [
+        "T12",
+        "T13"
+      ],
+      "message": "O mapa de workflow descreve novas entregas e um candidato Galileo v2; o board ainda referencia etapas e arquivos anteriores. Entregas e aceites precisam de conciliação pelo produtor."
+    }
+  ],
+  "productionPlan": {
+    "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+    "revision": "galileo-baseline-2026-10-13",
+    "implementationApprovalId": "APR-master-plan-local-2026-10-12",
+    "status": "local_implementation_prepared_creative_review_pending",
+    "boardIsTaskAuthority": true,
+    "encounters": [
+      "C",
+      "K",
+      "G",
+      "N",
+      "O"
+    ],
+    "stages": [
+      {
+        "id": "P0",
+        "title": "Integrar escopo e fontes",
+        "taskIds": [
+          "T01",
+          "T05"
+        ],
+        "dependsOn": [],
+        "owner": "producer",
+        "preparation": "local_prepared",
+        "evidence": "Roteiro, encontros e D14 preservados por hash; implementação local autorizada."
+      },
+      {
+        "id": "P1",
+        "title": "Selecionar referências por uso",
+        "taskIds": [
+          "T03",
+          "T12"
+        ],
+        "dependsOn": [
+          "P0"
+        ],
+        "owner": "continuity",
+        "preparation": "local_prepared",
+        "evidence": "13 imagens inspecionadas; seleção candidata de Galileo e lacunas registradas; sem aceite de semelhança."
+      },
+      {
+        "id": "P2",
+        "title": "Animatic e geometria",
+        "taskIds": [
+          "T11"
+        ],
+        "dependsOn": [
+          "P1"
+        ],
+        "owner": "editor",
+        "preparation": "local_prepared",
+        "evidence": "G-L03/G-L04 e guias existentes medidos; corte estático sem acelerar voz; geometria proposta."
+      },
+      {
+        "id": "P3",
+        "title": "Fechar fichas e entradas",
+        "taskIds": [
+          "T12",
+          "T13"
+        ],
+        "dependsOn": [
+          "P2"
+        ],
+        "owner": "storyboard",
+        "preparation": "blocked",
+        "evidence": "Escolha de aparência, espaço e keyframes por versão; tipos de Element/readback ainda pendentes para uso futuro."
+      },
+      {
+        "id": "P4",
+        "title": "Orçar e liberar piloto",
+        "taskIds": [
+          "T10",
+          "T13"
+        ],
+        "dependsOn": [
+          "P3"
+        ],
+        "owner": "producer",
+        "preparation": "blocked",
+        "evidence": "Nenhuma cotação ou nova liberação. Conferir pedido, schema, preço, teto, uploads e validade; enviar uma vez."
+      },
+      {
+        "id": "P5",
+        "title": "Provar Galileo e voz/sync",
+        "taskIds": [
+          "T07",
+          "T09",
+          "T13"
+        ],
+        "dependsOn": [
+          "P4"
+        ],
+        "owner": "qc",
+        "preparation": "blocked",
+        "evidence": "Mídia futura exige decode, quadros integrais, playback/escuta, sync e revisão do diretor; dublagem limitada antes de ampliar fala visível."
+      },
+      {
+        "id": "P6",
+        "title": "Expandir cinco encontros",
+        "taskIds": [
+          "T14",
+          "T15",
+          "T16",
+          "T17"
+        ],
+        "dependsOn": [
+          "P5"
+        ],
+        "owner": "producer",
+        "preparation": "blocked",
+        "evidence": "Transferir apenas receita comprovada; novas referências/ângulos têm qualificação própria; lotes pequenos."
+      },
+      {
+        "id": "P7",
+        "title": "Montar e finalizar inglês",
+        "taskIds": [
+          "T18",
+          "T19",
+          "T21"
+        ],
+        "dependsOn": [
+          "P6"
+        ],
+        "owner": "editor",
+        "preparation": "blocked",
+        "evidence": "Diálogo final, ambientes/foley, cor, legendas, créditos, master e revisão exata."
+      },
+      {
+        "id": "P8",
+        "title": "Edição histórica e arquivo",
+        "taskIds": [
+          "T06",
+          "T20",
+          "T21"
+        ],
+        "dependsOn": [
+          "P5"
+        ],
+        "owner": "dialogue-sound",
+        "preparation": "blocked",
+        "evidence": "Revisores de língua e rota viável; não impede preparar/concluir a edição inglesa; masters e fontes preservados."
+      }
+    ],
+    "references": [
+      {
+        "id": "G-ID",
+        "label": "Foto real de identidade",
+        "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+        "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+        "role": "identity",
+        "provenance": "real_photo_crop",
+        "selection": "comparison_only",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Foto frontal, cabelo curto texturizado, camisa listrada clara e blazer cinza. D01 preservado; referência para comparação, não aprova novo ângulo ou movimento.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-WARDROBE",
+        "label": "Foto real de figurino D02",
+        "path": "projects/andre-time-travel/02_references/andre/approved/sec2_20240202_015421_hs34.jpg",
+        "sha256": "75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b",
+        "role": "wardrobe",
+        "provenance": "real_photo_crop",
+        "selection": "comparison_only",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Foto real aberta nesta seleção: paletó cinza de listras discretas e camisa clara listrada. Comparar com as linhas cruzadas mais visíveis dos IN/OUT; nenhuma aprovação nova de aparência.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-TABLE",
+        "label": "Mesa D04",
+        "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+        "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+        "role": "table",
+        "provenance": "synthetic",
+        "selection": "anchor_existing_scope",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Tampo claro, anel e lasca na borda próxima visíveis. Contagem de tábuas e dimensões não são prova física do espaço compartilhado. D04 não aprova a nova cena.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-ERA",
+        "label": "Arcetri: contexto",
+        "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+        "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+        "role": "environment",
+        "provenance": "synthetic",
+        "selection": "context_only",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Janela, alvenaria e madeira. Iluminação e perspectiva da placa não comprovam continuidade com os planos fechados; piso é escolha de arte incerta.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-IN",
+        "label": "Galileo IN",
+        "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+        "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+        "role": "composition",
+        "provenance": "synthetic",
+        "selection": "candidate_selected_for_previs",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "approved",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Andre à esquerda, mão apoiada e boca fechada; ombro/mão do interlocutor à direita, cabeça fora. Anel e lasca visíveis. Cabelo/rosto e escala precisam do julgamento de Andre. Inspeção estática da imagem inteira, sem prova de movimento. Seleção para composição apenas: linhas cruzadas do paletó, lasca profunda junto à emenda e mapeamento do anel precisam ser reconciliados com G-WARDROBE/G-TABLE. IN/OUT não são um par first/tail aprovado.",
+        "approvalEvidence": {
+          "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json",
+          "sha256": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c"
+        }
+      },
+      {
+        "id": "G-OUT",
+        "label": "Galileo OUT",
+        "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+        "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+        "role": "composition",
+        "provenance": "synthetic",
+        "selection": "candidate_selected_for_previs",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "approved",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Mesmo arranjo aparente do IN, mão de Andre elevada e boca entreaberta. Fonte para prever fala/gesto; still não comprova sincronismo. Verificar dedos, proporções, mesa e luz na futura animação. Seleção para composição apenas: linhas cruzadas do paletó, lasca profunda junto à emenda e mapeamento do anel precisam ser reconciliados com G-WARDROBE/G-TABLE. IN/OUT não são um par first/tail aprovado.",
+        "approvalEvidence": {
+          "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json",
+          "sha256": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2"
+        }
+      },
+      {
+        "id": "G-SHOULDER-L",
+        "label": "Ombro esquerdo",
+        "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-left-v1.png",
+        "sha256": "3789e1ae8db3f165e6026f9654067209abc7e1b7ffe2e610c6d6fe3ce67d2660",
+        "role": "composition",
+        "provenance": "synthetic",
+        "selection": "alternate_candidate",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Mantém Andre à esquerda. Mão elevada e enquadramento próximos ao OUT; não necessário para o animatic mínimo, sem gerar duplicata.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-SHOULDER-R",
+        "label": "Ombro direito",
+        "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-shoulder-right-v1.png",
+        "sha256": "a8f4c4d9a39e7d62fc9827a93a9009cb26a2179740a6aa0586a6ca23cacfc9a0",
+        "role": "composition",
+        "provenance": "synthetic",
+        "selection": "excluded_from_current_cut",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Andre à direita, interlocutor à esquerda: inverte o eixo escolhido em D09. Preservado como alternativa, não entra no corte proposto.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-HAND-IN",
+        "label": "Mão: contato",
+        "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-v1.png",
+        "sha256": "4dc9f8905b28ee02f66347c57247a517f11851649c131af4bba8b08ed56d1137",
+        "role": "body_prop",
+        "provenance": "synthetic",
+        "selection": "alternate_candidate",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Cabeça ausente. Punho preto/branco, contato sobre madeira mais escura e marcada; não prova anel/lasca/escala da mesa D04 no corte compartilhado.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-HAND-OUT",
+        "label": "Mão: alívio",
+        "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-out-v1.png",
+        "sha256": "bd2ee4259f27a604d3cc501bed361233e176b2e9f1d36c45cd2bfa0ba491b50d",
+        "role": "body_prop",
+        "provenance": "synthetic",
+        "selection": "alternate_candidate",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Variação mínima da mão; ligação temporal e material da mesa precisam de revisão. O animatic mínimo não exige este insert.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-OLD-LISTEN",
+        "label": "Escuta antiga",
+        "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-listening.jpg",
+        "sha256": "9245c1d3b9019b1ac0749ec455a2b9eca6934e332d96e8d9c6e792e6cb3cc866",
+        "role": "composition",
+        "provenance": "synthetic",
+        "selection": "excluded_from_current_cut",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Andre está ao lado da mesa, que aparece atrás: não compartilhar com a fala nova. Cabelo/luz/assento diferem. Evitar repetir F01.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-OLD-SPEAK",
+        "label": "Fala antiga",
+        "path": "projects/andre-time-travel/02_references/keyframes/andre/KF-galileo-speaking.jpg",
+        "sha256": "5405a8e6c55945e59987e72829abe9cb6578eb82e7cc2ea6c8fea3252b8446df",
+        "role": "composition",
+        "provenance": "synthetic",
+        "selection": "excluded_from_current_cut",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Mesa à frente, janela fria e cabelo/luz diferentes do IN/OUT; não resolve a composição compartilhada da proposta.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-EYE-A",
+        "label": "Olhos: pergunta",
+        "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R1-J15-eyes-galileo-weariness_1_eyescrop.png",
+        "sha256": "50a8288e93bed03cad5959e738eb11bc372c61baca5650e541df3b997e5bfa12",
+        "role": "historical_eyes",
+        "provenance": "synthetic_crop",
+        "selection": "alternate_candidate",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Recorte de olhos/sobrancelha, sem rosto completo. Evitar inserir como emoção resolvida antes da resposta.",
+        "approvalEvidence": null
+      },
+      {
+        "id": "G-EYE-B",
+        "label": "Olhos: resposta",
+        "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R2-J04-eyes-galileo-resolve-B_1_eyescrop.png",
+        "sha256": "f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215",
+        "role": "historical_eyes",
+        "provenance": "synthetic_crop",
+        "selection": "candidate_selected_for_previs",
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "static_checked",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "notes": "Inspecionado inteiro: olhos/sobrancelhas e pele adjacente, sem nariz completo/boca. Olhar e continuidade com espaço ainda candidatos. Reação colocada após G-L04 inteira; não há alinhamento ouvido de palavras.",
+        "approvalEvidence": null
+      }
+    ],
+    "shots": [
+      {
+        "id": "G-MASTER",
+        "title": "Master compartilhado",
+        "encounter": "G",
+        "taskId": "T13",
+        "family": "F1",
+        "lineIds": [],
+        "referenceIds": [
+          "G-ID",
+          "G-TABLE",
+          "G-ERA",
+          "G-IN"
+        ],
+        "dependsOn": [],
+        "intention": "Provar duas pessoas no mesmo espaço sem revelar o rosto histórico.",
+        "action": "Cabeça histórica inteira fora do quadro; Andre à esquerda; ombro/mão à direita.",
+        "camera": "50 mm e altura 117,5 cm são proposta, não EXIF verificado.",
+        "proposedGenerationSeconds": null,
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "pending",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "approvalEvidence": null,
+        "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+        "blockers": [
+          {
+            "description": "Aparência e composição compartilhada ainda candidatas.",
+            "owner": "Andre / director",
+            "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+          }
+        ]
+      },
+      {
+        "id": "G-LISTEN-KF",
+        "title": "Keyframe de escuta",
+        "encounter": "G",
+        "taskId": "T13",
+        "family": "F2",
+        "lineIds": [],
+        "referenceIds": [
+          "G-IN",
+          "G-OUT"
+        ],
+        "dependsOn": [
+          "G-MASTER"
+        ],
+        "intention": "Preservar geometria quando Andre escuta.",
+        "action": "Mudança mínima: boca fechada e mãos em repouso.",
+        "camera": "Mesma câmera, luz, assento e mesa do master.",
+        "proposedGenerationSeconds": null,
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "pending",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "approvalEvidence": null,
+        "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+        "blockers": [
+          {
+            "description": "Aparência e composição compartilhada ainda candidatas.",
+            "owner": "Andre / director",
+            "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+          }
+        ]
+      },
+      {
+        "id": "G-P03",
+        "title": "Escuta durante G-L03",
+        "encounter": "G",
+        "taskId": "T13",
+        "family": "F4",
+        "lineIds": [
+          "G-L03"
+        ],
+        "referenceIds": [
+          "G-IN"
+        ],
+        "dependsOn": [
+          "G-LISTEN-KF"
+        ],
+        "intention": "Andre considera a pergunta; ainda não oferece resolução.",
+        "action": "Respiração discreta; sem fala e sem repetição de piscadas.",
+        "camera": "Câmera fixa; cabeça histórica fora.",
+        "proposedGenerationSeconds": 5,
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "pending",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "approvalEvidence": null,
+        "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+        "blockers": [
+          {
+            "description": "Aparência e composição compartilhada ainda candidatas.",
+            "owner": "Andre / director",
+            "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+          },
+          {
+            "description": "Novas gerações sem preço/cotação e liberação.",
+            "owner": "producer",
+            "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+          }
+        ]
+      },
+      {
+        "id": "G-P04",
+        "title": "Fala G-L04",
+        "encounter": "G",
+        "taskId": "T13",
+        "family": "F3",
+        "lineIds": [
+          "G-L04"
+        ],
+        "referenceIds": [
+          "G-OUT",
+          "G-IN"
+        ],
+        "dependsOn": [
+          "G-MASTER"
+        ],
+        "intention": "Calor e firmeza sem triunfalismo; a pergunta continua aberta.",
+        "action": "Uma fala exata e um gesto baixo; boca fecha após a frase.",
+        "camera": "Câmera fixa; preservar mesa/assento; voz nativa apenas guia D14.",
+        "proposedGenerationSeconds": 11,
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "pending",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "approvalEvidence": null,
+        "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+        "blockers": [
+          {
+            "description": "Aparência e composição compartilhada ainda candidatas.",
+            "owner": "Andre / director",
+            "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+          },
+          {
+            "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+            "owner": "Andre / dialogue-sound",
+            "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+          },
+          {
+            "description": "Novas gerações sem preço/cotação e liberação.",
+            "owner": "producer",
+            "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+          }
+        ]
+      },
+      {
+        "id": "G-REACTION",
+        "title": "Reação após a resposta",
+        "encounter": "G",
+        "taskId": "T13",
+        "family": "F4",
+        "lineIds": [],
+        "referenceIds": [
+          "G-EYE-B"
+        ],
+        "dependsOn": [
+          "G-P04"
+        ],
+        "intention": "A resolução nasce de “does not settle a question”, nunca antes.",
+        "action": "Microalteração de olhos após a fala inteira no animatic; 2 s de edição são proposta local.",
+        "camera": "Crop de olhos sem recuo ou rosto adicional.",
+        "proposedGenerationSeconds": 3,
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "pending",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "approvalEvidence": null,
+        "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+        "blockers": [
+          {
+            "description": "Aparência e composição compartilhada ainda candidatas.",
+            "owner": "Andre / director",
+            "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+          },
+          {
+            "description": "Novas gerações sem preço/cotação e liberação.",
+            "owner": "producer",
+            "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+          }
+        ]
+      },
+      {
+        "id": "G-HAND-OPTION",
+        "title": "Contato de mão opcional",
+        "encounter": "G",
+        "taskId": "T13",
+        "family": "F5",
+        "lineIds": [],
+        "referenceIds": [
+          "G-HAND-IN",
+          "G-HAND-OUT",
+          "G-TABLE"
+        ],
+        "dependsOn": [
+          "G-MASTER"
+        ],
+        "intention": "Alívio físico somente se a montagem precisar.",
+        "action": "Soltar levemente a tensão; contato legível na mesa selecionada.",
+        "camera": "Detalhe fixo; não adicionar ao animatic só por existir.",
+        "proposedGenerationSeconds": 3,
+        "states": {
+          "proposal": "proposed",
+          "technicalCheck": "pending",
+          "directorApproval": "pending",
+          "incorporation": "not_incorporated"
+        },
+        "approvalEvidence": null,
+        "submissionBlocked": "Revisão criativa, entradas fechadas e liberação financeira pendentes.",
+        "blockers": [
+          {
+            "description": "Material/mesa não conciliados; insert é opcional.",
+            "owner": "continuity / editor",
+            "unblockCondition": "Comparar marcas e contato com master; usar apenas se necessário à cena."
+          }
+        ]
+      }
+    ],
+    "pilot": {
+      "title": "Galileo · G-L03/G-L04",
+      "status": "candidate_previsualization",
+      "durationSeconds": 16,
+      "timeline": [
+        {
+          "referenceId": "G-IN",
+          "shotId": "G-P03",
+          "startSeconds": 0,
+          "endSeconds": 4.1,
+          "label": "Pergunta e escuta · G-L03"
+        },
+        {
+          "referenceId": "G-OUT",
+          "shotId": "G-P04",
+          "startSeconds": 4.1,
+          "endSeconds": 13.1,
+          "label": "Resposta · G-L04 · voz-guia"
+        },
+        {
+          "referenceId": "G-EYE-B",
+          "shotId": "G-REACTION",
+          "startSeconds": 13.1,
+          "endSeconds": 15.1,
+          "label": "Reação após a frase inteira",
+          "reactionTo": "G-L04"
+        },
+        {
+          "referenceId": "G-IN",
+          "shotId": "G-P03",
+          "startSeconds": 15.1,
+          "endSeconds": 16,
+          "label": "Retorno ao espaço · pausa proposta"
+        }
+      ],
+      "audio": [
+        {
+          "lineId": "G-L03",
+          "path": "projects/andre-time-travel/04_audio/scratch/edge-tts-v2/G-L03.mp3",
+          "sha256": "31a00b1c9e77bebd796d7fabe6f13606ebe2bc3c24f494568cd13fa2639a37a0",
+          "startSeconds": 0.5,
+          "durationSeconds": 2.832,
+          "rate": 1,
+          "role": "scratch_guide",
+          "approved": false,
+          "fullListeningReviewed": false
+        },
+        {
+          "lineId": "G-L04",
+          "path": "projects/andre-time-travel/04_audio/scratch/edge-tts-v2/G-L04.mp3",
+          "sha256": "cf76432da09e6495d90bf63ce185773f7dcb0274a5601dc2ad54cff824d7ea81",
+          "startSeconds": 4.1,
+          "durationSeconds": 8.616,
+          "rate": 1,
+          "role": "scratch_guide",
+          "approved": false,
+          "fullListeningReviewed": false
+        }
+      ],
+      "geometry": {
+        "status": "proposed_not_measured",
+        "tableCm": [
+          120,
+          75,
+          75
+        ],
+        "seatHeightCm": 45,
+        "cameraHeightCm": 117.5,
+        "lensMm": 50,
+        "screenAxis": "Andre à esquerda olhando direita; Galileo à direita olhando esquerda.",
+        "headRule": "Cabeça histórica completamente fora, sem nuca. D18 não decidido.",
+        "light": "Janela à esquerda do quadro; luz suave da mesma direção em todos os planos. Intensidade/cor ainda propostas.",
+        "limitations": [
+          "Dimensões e lente são proposta D17; nenhuma referência comprova calibração física.",
+          "IN/OUT têm geometria visual semelhante, não um master 3D verificado.",
+          "Rosto completo histórico proibido inclusive em reflexos."
+        ]
+      },
+      "limitations": [
+        "Still animatic, sem movimento gerado ou lip-sync.",
+        "Guias edge-tts existentes, não vozes finais nem aprovadas.",
+        "Durações medidas por ffprobe; não houve escuta humana nesta implementação.",
+        "Reação entra depois do fim do arquivo G-L04; palavra a palavra ainda não alinhada/revisada."
+      ],
+      "packagePath": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+      "previewPath": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+      "fullPlaybackReviewed": false,
+      "creativeAccepted": false
+    },
+    "constraints": {
+      "historicalFullFaceFrames": 0,
+      "finalVoicePolicy": "D14_guide_only_until_separate_approval",
+      "scriptLanguage": "en",
+      "originalsPreserved": true
+    },
+    "activeBaseline": {
+      "id": "galileo-g03-g04-2026-10-13",
+      "title": "Galileo · uma cena completa primeiro",
+      "status": "prepared_not_artistically_approved",
+      "owner": "Produtor desktop",
+      "authorizationSource": "Andre, 2026-10-13 · Sentinel_1f1c130dfa648191aad0d6afc0c49d7b: delegou a escolha da abordagem e do ponto de partida. Escopo local; sem gasto, upload ou aceite artístico.",
+      "goal": "Concluir G-L03/G-L04 com continuidade de espaço, fala e reação; depois completar Galileo e expandir aos demais encontros.",
+      "lineIds": [
+        "G-L03",
+        "G-L04"
+      ],
+      "referenceIds": [
+        "G-ID",
+        "G-WARDROBE",
+        "G-TABLE",
+        "G-ERA",
+        "G-IN",
+        "G-OUT",
+        "G-EYE-B"
+      ],
+      "firstSpeakingShotId": "G-P04",
+      "nextStepId": "references",
+      "steps": [
+        {
+          "id": "references",
+          "title": "Fechar a continuidade das referências",
+          "taskIds": [
+            "T12",
+            "T13"
+          ],
+          "owner": "Produtor · continuidade e iluminação",
+          "dependsOn": [],
+          "state": "ready_local",
+          "referenceIds": [
+            "G-ID",
+            "G-WARDROBE",
+            "G-TABLE",
+            "G-ERA",
+            "G-IN",
+            "G-OUT",
+            "G-EYE-B"
+          ],
+          "inputs": [
+            "Fontes selecionadas por ID/hash; decisões D01/D02/D04/D09/D14/D20; achados T12 consolidados abaixo."
+          ],
+          "output": "Uma composição principal e sua variante mínima de escuta, com funções e limites documentados.",
+          "acceptance": [
+            "Tecido, mesa/anel/lasca, assentos, eixo e luz reconciliados; cabeça histórica totalmente fora.",
+            "Andre julga a própria semelhança na seleção exata. Correções de mídia, se necessárias, recebem escopo separado."
+          ]
+        },
+        {
+          "id": "dialogue",
+          "title": "Fechar intenção, pausas e movimento",
+          "taskIds": [
+            "T07",
+            "T11",
+            "T13"
+          ],
+          "owner": "Produtor · diálogo/som e editor",
+          "dependsOn": [],
+          "state": "ready_local",
+          "referenceIds": [
+            "G-IN",
+            "G-OUT",
+            "G-EYE-B"
+          ],
+          "inputs": [
+            "G-L03/G-L04 do CSV canônico; guias existentes de 2,832 s e 8,616 s; animatic histórico de 16 s."
+          ],
+          "output": "Ficha de atuação e timing revisada com áudio, sem reescrever ou acelerar as falas.",
+          "acceptance": [
+            "Pergunta fora de quadro; resposta integral; reação somente após sua causa; gesto baixo, câmera fixa e cabeça histórica fora.",
+            "Guia identificada sob D14; escolha de voz final por ouvido e prova de dublagem/sync continuam separadas."
+          ]
+        },
+        {
+          "id": "speaking-test",
+          "title": "Testar uma única fala: G-P04",
+          "taskIds": [
+            "T10",
+            "T13"
+          ],
+          "owner": "Produtor; revisão de continuidade e diálogo/som",
+          "dependsOn": [
+            "references",
+            "dialogue"
+          ],
+          "state": "blocked",
+          "referenceIds": [
+            "G-ID",
+            "G-WARDROBE",
+            "G-TABLE",
+            "G-OUT"
+          ],
+          "inputs": [
+            "G-P04/G-L04; referência final aprovada por versão; contrato e cotação atuais; liberação específica."
+          ],
+          "output": "Um take de fala com recibo/ID persistido, custo declarado ou desconhecido e parecer integral.",
+          "acceptance": [
+            "Primeiro teste pago da nova base: G-L04 inteira, aproximadamente 11 s propostos, sem encurtar os 8,616 s de guia para caber. Duração final só após timing/contrato/cotação.",
+            "Inspeção de todos os quadros, playback com som, identidade, boca/dentes/mãos, mesa e ausência de rosto histórico; nenhum reenvio automático."
+          ]
+        },
+        {
+          "id": "coverage",
+          "title": "Completar só a cobertura que faltar",
+          "taskIds": [
+            "T12",
+            "T13"
+          ],
+          "owner": "Produtor · editor",
+          "dependsOn": [
+            "speaking-test"
+          ],
+          "state": "blocked",
+          "referenceIds": [
+            "G-IN",
+            "G-EYE-B"
+          ],
+          "inputs": [
+            "Parecer do G-P04; fichas G-P03 e G-REACTION; lacunas reais do corte."
+          ],
+          "output": "Escuta e reação compatíveis com o teste aceito, sem inserts decorativos.",
+          "acceptance": [
+            "Cada novo pedido tem escopo/custo próprios; reutilização exige aprovação explícita do take e uso.",
+            "Reação de olhos proposta de 2 s apenas neste corte; mãos/pés/costas ficam fora da base inicial."
+          ]
+        },
+        {
+          "id": "edit",
+          "title": "Montar o trecho completo de Galileo",
+          "taskIds": [
+            "T11",
+            "T13"
+          ],
+          "owner": "Editor · diálogo/som",
+          "dependsOn": [
+            "coverage"
+          ],
+          "state": "blocked",
+          "referenceIds": [
+            "G-IN",
+            "G-OUT",
+            "G-EYE-B"
+          ],
+          "inputs": [
+            "Takes aceitos por hash; falas secas/guia identificada; mapa de áudio e pausas."
+          ],
+          "output": "Corte G-L03/G-L04 com timeline reproduzível, diálogo contínuo e legenda correspondente.",
+          "acceptance": [
+            "Mesmo espaço em fala/escuta; reação após a resposta; sem F01/F03. Roteiro inglês preservado.",
+            "Guia provisória visível como tal; cena não é master final até voz, sync e som final aprovados."
+          ]
+        },
+        {
+          "id": "qc",
+          "title": "Revisão independente e aceite da cena",
+          "taskIds": [
+            "T13"
+          ],
+          "owner": "QC independente; Andre para semelhança, voz e corte",
+          "dependsOn": [
+            "edit"
+          ],
+          "state": "blocked",
+          "referenceIds": [],
+          "inputs": [
+            "Arquivo exato do corte, hash, timeline, takes e registros de custo."
+          ],
+          "output": "Parecer do corte e decisão explícita antes de ampliar a produção.",
+          "acceptance": [
+            "Decode, reprodução integral com áudio, sincronismo e todos os quadros de risco/reflexos; limitações e falhas registradas.",
+            "Somente depois do aceite completar o restante de Galileo e transferir a receita aos outros encontros. Nenhuma aprovação por herança."
+          ]
+        }
+      ],
+      "approach": [
+        "Uma composição principal compartilhada; escuta derivada por alteração mínima. IN/OUT atuais são estudos, não endpoints aprovados.",
+        "Câmera fixa, gesto baixo, interlocutor offscreen e cabeça histórica totalmente fora; não usar motion control neste primeiro teste.",
+        "Voz nativa, se confirmada na rota escolhida, apenas como guia D14; dublagem/sync são testes separados antes do master. Element só se readback/compatibilidade/escopo forem confirmados."
+      ],
+      "decisions": [
+        {
+          "description": "Continuidade de paletó e mesa ainda não resolvida.",
+          "owner": "Produtor / continuidade",
+          "unblockCondition": "Conferir a composição exata contra G-WARDROBE/G-TABLE; preparar somente as correções necessárias e revisar seus resultados."
+        },
+        {
+          "description": "Semelhança dos novos IN/OUT ainda não aceita.",
+          "owner": "Andre",
+          "unblockCondition": "Julgar a seleção final por arquivo/hash depois das correções; o piloto antigo não aprova estes frames."
+        },
+        {
+          "description": "Timing e atuação ainda sem playback/audição integral registrados.",
+          "owner": "Produtor / diálogo-som / editor",
+          "unblockCondition": "Ouvir G-L03/G-L04 e revisar pausas/gesto/reação. A medição dos arquivos não substitui essa escuta."
+        },
+        {
+          "description": "Voz final e prova de dublagem/sync pendentes.",
+          "owner": "Andre / diálogo-som",
+          "unblockCondition": "Ouvir os candidatos existentes e escolher a voz; D14 permite guia no teste de imagem, mas não libera master final."
+        },
+        {
+          "description": "Primeiro teste de fala sem liberação paga.",
+          "owner": "Produtor",
+          "unblockCondition": "Fechar referências/pedido, schema e preço atuais, teto, validade e uploads exatos; registrar kling_job_release antes de um único envio."
+        }
+      ],
+      "reviewStatus": "consolidated_for_planning_only",
+      "reviewSources": [
+        {
+          "role": "materiais",
+          "reportId": "e73a2f1dc5cc4ffb",
+          "origin": "Parley claude/outputs/t12-detail-studies-v1-review/projects/andre-time-travel/00_brief/research/detail-studies-v1-materials-review.md",
+          "sha256": "c7d6b835b6de1ec36c582d888a226839f1c765a94d41cfd4ce627494c2f3d568"
+        },
+        {
+          "role": "continuidade",
+          "reportId": "c49282d7872f410b",
+          "origin": "Parley codex/outputs/t12-detail-studies-v1-review/projects/andre-time-travel/08_edit/reviews/detail-studies-v1-independent/continuity-review.md",
+          "sha256": "c7e779aa3fe829ce701d28742784c627867a9f407ba90bdc7209e729c626c279"
+        }
+      ],
+      "findings": [
+        {
+          "subject": "Figurino e mesa no plano principal",
+          "disposition": "Corrigir antes de geração",
+          "action": "T12 de continuidade mantém holds D02/D04. A inspeção direta dos IN/OUT nesta seleção também mostra linhas cruzadas no paletó e lasca mais profunda que a âncora. Usar composição como proposta, não como identidade/mesa aprovada.",
+          "referenceIds": [
+            "G-WARDROBE",
+            "G-TABLE",
+            "G-IN",
+            "G-OUT"
+          ],
+          "reviewRoles": [
+            "continuidade"
+          ]
+        },
+        {
+          "subject": "Mãos e pés de Galileo",
+          "disposition": "Fora da cobertura inicial",
+          "action": "T12 materiais: mãos IN/OUT sem anel/lasca D04 e bainha dos pés contrariando D20. Preservar estudos; corrigir somente se a montagem justificar seu uso. Nenhum par first/tail aprovado.",
+          "referenceIds": [
+            "G-HAND-IN",
+            "G-HAND-OUT"
+          ],
+          "reviewRoles": [
+            "materiais",
+            "continuidade"
+          ]
+        },
+        {
+          "subject": "Costas, cabeça e eixo",
+          "disposition": "Aplicar enquadramento conservador",
+          "action": "T12 não encontrou rosto histórico completo nos stills, mas registrou orelhas e envelope de cabeça pendente. Manter cabeça inteira fora e Andre à esquerda; ombro direito e costas não entram nesta base.",
+          "referenceIds": [
+            "G-SHOULDER-L",
+            "G-SHOULDER-R"
+          ],
+          "reviewRoles": [
+            "continuidade"
+          ]
+        },
+        {
+          "subject": "Materiais e luz de Arcetri",
+          "disposition": "Preservar incertezas",
+          "action": "Materiais do ombro esquerdo passaram no escopo histórico; isso não resolve continuidade/semelhança. Madeira do piso permanece escolha de arte sem prova histórica; usar G-ERA só como contexto. Fixar luz pela composição principal, não misturar a direção da placa.",
+          "referenceIds": [
+            "G-ERA",
+            "G-SHOULDER-L"
+          ],
+          "reviewRoles": [
+            "materiais",
+            "continuidade"
+          ]
+        }
+      ],
+      "inspection": "Sete fontes abertas diretamente em 2026-10-13: fotos G-ID/G-WARDROBE, mesa, placa Arcetri, IN/OUT e olhos B. Inspeção estática das imagens inteiras exibidas; algumas foram redimensionadas pela ferramenta. Sem biometria, playback, audição ou reexecução das revisões T12.",
+      "historyPolicy": "Roteiro inglês e decisões globais preservados. Takes, A/B, estudos e bíblias anteriores permanecem nos caminhos originais como história; nenhum take antigo é entrada ativa ou aceito por esta base.",
+      "historyEvidence": [
+        {
+          "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/animatic.mp4",
+          "sha256": "5736a16f6fbdb6dcfe3b1b7fa1d62f0f7cb7963113990a056994124d18d6511b",
+          "role": "Somente timing histórico; still animatic de 16 s, sem atuação/sync/aceite."
+        },
+        {
+          "path": "projects/andre-time-travel/08_edit/picture-lock/galileo-en-preview-v1.mp4",
+          "sha256": "b008ed2bc030945f2248bc75a063b96ccf766a8347d27f87a54c15763d14b10d",
+          "role": "Preview histórico de 42 s; não é take de entrada desta base."
+        }
+      ],
+      "timelineSearch": {
+        "status": "not_found_in_bounded_search",
+        "locations": [
+          "projects/andre-time-travel",
+          "drafts",
+          "reports",
+          "Parley codex/outputs e codex/projects/andre-time-travel/08_edit",
+          "Parley claude/outputs"
+        ],
+        "result": "Galileo v2 é citado no STATE e em coverage-plan.md; timeline/media/technical-qc v2 não encontrados nessas áreas. Não alegar inexistência global. Recuperação posterior não bloqueia esta base; não reconstruir nem substituir v2 por suposição."
+      },
+      "firstPaidApproval": "Nenhum pedido liberado. Após continuidade e timing, propor um único teste de fala G-P04 com preço atual, teto, validade e uploads exatos. Correção de still, se indispensável antes dele, exige escopo próprio. Tetos de D16, Galileo e A/B são história, sem saldo de autorização herdado.",
+      "paidGenerationAuthorized": false
+    },
+    "capabilities": {
+      "snapshotPath": "docs/kling-manual/snapshots/2026-10-16-who_am_i.sanitized.json",
+      "snapshotSha256": "ad39ca68ec2692f57568780e2d8f98965aa8a53e395998da57b8a85ebe02c8a7",
+      "status": "dated_snapshot_not_live",
+      "routes": [
+        {
+          "tool": "motion_control",
+          "model": "kling-video-v2_6",
+          "inputs": [
+            "image",
+            "video"
+          ],
+          "requiredInputs": [
+            "image"
+          ],
+          "parameters": [
+            {
+              "name": "motionId",
+              "required": false,
+              "allowedValues": [],
+              "default": null
+            },
+            {
+              "name": "motionDirection",
+              "required": true,
+              "allowedValues": [
+                "image_direction",
+                "motion_direction"
+              ],
+              "default": null
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "720p"
+            },
+            {
+              "name": "keepOriginalSound",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Uma fonte: video ou motionId. Medir referência; motion_direction acompanha sua duração. image_direction: 3–10 s. Vínculo facial v3 limitado a um Element e direção do vídeo."
+          ]
+        },
+        {
+          "tool": "motion_control",
+          "model": "kling-video-v3_0",
+          "inputs": [
+            "image",
+            "video"
+          ],
+          "requiredInputs": [
+            "image"
+          ],
+          "parameters": [
+            {
+              "name": "motionId",
+              "required": false,
+              "allowedValues": [],
+              "default": null
+            },
+            {
+              "name": "motionDirection",
+              "required": true,
+              "allowedValues": [
+                "image_direction",
+                "motion_direction"
+              ],
+              "default": null
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "720p"
+            },
+            {
+              "name": "keepOriginalSound",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": true,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Uma fonte: video ou motionId. Medir referência; motion_direction acompanha sua duração. image_direction: 3–10 s. Vínculo facial v3 limitado a um Element e direção do vídeo."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-v2_5",
+          "inputs": [
+            "first_image",
+            "tail_image"
+          ],
+          "requiredInputs": [
+            "first_image"
+          ],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "5",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "enable_asmr",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            },
+            {
+              "name": "audio_prompt",
+              "required": false,
+              "allowedValues": [],
+              "default": null
+            },
+            {
+              "name": "music_prompt",
+              "required": false,
+              "allowedValues": [],
+              "default": null
+            }
+          ],
+          "elements": false,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-v2_6",
+          "inputs": [
+            "first_image",
+            "tail_image"
+          ],
+          "requiredInputs": [
+            "first_image"
+          ],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "5",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": false,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Cauda exige 1080p. Áudio exige 1080p sem cauda."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-o1",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": true,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-v3_0_omni",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p",
+                "4k"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "prefer_multi_shots",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": true,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": true,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Somente imagens nesta rota. O rótulo first-tail não declara slot tail_image; não inventar cauda."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-v3_0",
+          "inputs": [
+            "first_image",
+            "tail_image"
+          ],
+          "requiredInputs": [
+            "first_image"
+          ],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p",
+                "4k"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "prefer_multi_shots",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": true,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": true,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-v3_0_turbo",
+          "inputs": [
+            "first_image"
+          ],
+          "requiredInputs": [
+            "first_image"
+          ],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Sem Elements, cauda ou controle explícito de áudio nesta rota; ausência do controle não garante silêncio."
+          ]
+        },
+        {
+          "tool": "image_to_video",
+          "model": "kling-video-v4_0",
+          "inputs": [
+            "first_image",
+            "tail_image",
+            "keyframe_1",
+            "keyframe_2",
+            "keyframe_3",
+            "keyframe_4",
+            "keyframe_5",
+            "keyframe_6",
+            "keyframe_7",
+            "keyframe_8",
+            "keyframe_9",
+            "keyframe_10"
+          ],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30"
+              ],
+              "default": "10"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "720p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1",
+                "21:9"
+              ],
+              "default": null
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [
+            {
+              "maxItems": 10,
+              "arguments": [],
+              "inputPrefixes": [
+                "first_image",
+                "tail_image",
+                "keyframe_"
+              ]
+            }
+          ],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Descoberta CLI Global 0.2.1 em 16/10; listado, sem geração testada; somente 720p/1080p.",
+            "Keyframes: até 10 imagens; sem Element/áudio declarado. Omni: 15 recursos incluindo áudio/Elements, até 3 video Elements; multi-shot=true obrigatório.",
+            "Vídeos diretos + video Elements: até 30 s; duração de entrada entra na cobrança. Preço não verificado; liberação antiga não migra."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-v2_5",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "5",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "enable_asmr",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            },
+            {
+              "name": "audio_prompt",
+              "required": false,
+              "allowedValues": [],
+              "default": null
+            },
+            {
+              "name": "music_prompt",
+              "required": false,
+              "allowedValues": [],
+              "default": null
+            }
+          ],
+          "elements": false,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-v2_6",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "5",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": false,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-o1",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-v3_0_omni",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p",
+                "4k"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "prefer_multi_shots",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": false,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": true,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-v3_0",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p",
+                "4k"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "prefer_multi_shots",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            }
+          ],
+          "elements": false,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": true,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-v3_0_turbo",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Sem Elements, cauda ou controle explícito de áudio nesta rota; ausência do controle não garante silêncio."
+          ]
+        },
+        {
+          "tool": "text_to_video",
+          "model": "kling-video-v4_0",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30"
+              ],
+              "default": "10"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "720p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1",
+                "21:9"
+              ],
+              "default": "16:9"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Descoberta CLI Global 0.2.1 em 16/10; listado, sem geração testada; somente 720p/1080p.",
+            "Keyframes: até 10 imagens; sem Element/áudio declarado. Omni: 15 recursos incluindo áudio/Elements, até 3 video Elements; multi-shot=true obrigatório.",
+            "Vídeos diretos + video Elements: até 30 s; duração de entrada entra na cobrança. Preço não verificado; liberação antiga não migra."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "gemini-3.1-flash-image",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "image_8",
+            "image_9",
+            "image_10"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "0.5k",
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "1:1",
+                "1:4",
+                "1:8",
+                "2:3",
+                "3:2",
+                "3:4",
+                "4:1",
+                "4:3",
+                "4:5",
+                "5:4",
+                "8:1",
+                "9:16",
+                "16:9",
+                "21:9"
+              ],
+              "default": null
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "gpt-image2",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "image_8",
+            "image_9",
+            "image_10"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "quality",
+              "required": false,
+              "allowedValues": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "default": "medium"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "1:1",
+                "2:3",
+                "3:2",
+                "3:4",
+                "4:3",
+                "4:5",
+                "5:4",
+                "9:16",
+                "16:9",
+                "21:9"
+              ],
+              "default": "1:1"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "gemini-3-pro-image",
+          "inputs": [
+            "image_1",
+            "image_2"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "1:1",
+                "2:3",
+                "3:2",
+                "3:4",
+                "4:3",
+                "4:5",
+                "5:4",
+                "9:16",
+                "16:9",
+                "21:9"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "img_resolution",
+              "required": true,
+              "allowedValues": [
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": null
+            },
+            {
+              "name": "image_count",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "kling-image-v3_0_omni",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "image_8",
+            "image_9",
+            "image_10"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": "4k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "auto",
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "3:4"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "-1",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "story_mode",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            }
+          ],
+          "elements": true,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "kling-image-o1",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "image_8",
+            "image_9",
+            "image_10"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "auto",
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "3:4"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": true,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "kling-image-v3_0",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "image_8",
+            "image_9",
+            "image_10"
+          ],
+          "requiredInputs": [
+            "image_1"
+          ],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k"
+              ],
+              "default": "1k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "auto",
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "3:4"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": true,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "image_to_image",
+          "model": "kling-image-v2_1",
+          "inputs": [
+            "subject_image_0",
+            "subject_image_1",
+            "subject_image_2",
+            "subject_image_3",
+            "scene_image",
+            "style_image"
+          ],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "1:1"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "gemini-3.1-flash-image",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "0.5k",
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "1:1",
+                "1:4",
+                "1:8",
+                "2:3",
+                "3:2",
+                "3:4",
+                "4:1",
+                "4:3",
+                "4:5",
+                "5:4",
+                "8:1",
+                "9:16",
+                "16:9",
+                "21:9"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "gpt-image-2",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "quality",
+              "required": false,
+              "allowedValues": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "default": "medium"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "1:1",
+                "2:3",
+                "3:2",
+                "3:4",
+                "4:3",
+                "4:5",
+                "5:4",
+                "9:16",
+                "16:9",
+                "21:9"
+              ],
+              "default": "1:1"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "gemini-3-pro-image",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "1:1",
+                "2:3",
+                "3:2",
+                "3:4",
+                "4:3",
+                "4:5",
+                "5:4",
+                "9:16",
+                "16:9",
+                "21:9"
+              ],
+              "default": "1:1"
+            },
+            {
+              "name": "img_resolution",
+              "required": true,
+              "allowedValues": [
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": null
+            },
+            {
+              "name": "image_count",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "kling-image-v3_0_omni",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k",
+                "4k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "auto",
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "auto"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "kling-image-o1",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "1:1"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "kling-image-v3_0",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "1:1"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "text_to_image",
+          "model": "kling-image-v2_1",
+          "inputs": [],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "img_resolution",
+              "required": false,
+              "allowedValues": [
+                "1k",
+                "2k"
+              ],
+              "default": "2k"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "9:16",
+                "2:3",
+                "3:4",
+                "1:1",
+                "4:3",
+                "3:2",
+                "16:9",
+                "21:9"
+              ],
+              "default": "3:4"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": false,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [],
+          "elementSupport": {},
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução."
+          ]
+        },
+        {
+          "tool": "omni_ref_video",
+          "model": "kling-video-v4_0",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "image_8",
+            "image_9",
+            "image_10",
+            "video_1",
+            "video_2",
+            "video_3",
+            "video_4",
+            "video_5",
+            "audio_1",
+            "audio_2",
+            "audio_3"
+          ],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30"
+              ],
+              "default": "10"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "auto",
+                "21:9",
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "auto"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "720p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "prefer_multi_shots",
+              "required": false,
+              "allowedValues": [
+                "true"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "keepOriginalSound",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            }
+          ],
+          "elements": true,
+          "audioControl": true,
+          "externalAudio": true,
+          "multiShotControl": true,
+          "combinedCaps": [
+            {
+              "maxItems": 15,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_",
+                "video_",
+                "audio_"
+              ]
+            }
+          ],
+          "elementSupport": {
+            "imageElements": true,
+            "videoElements": true,
+            "maxImageElements": 7,
+            "maxVideoElements": 3,
+            "maxTotalElements": 7
+          },
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Descoberta CLI Global 0.2.1 em 16/10; listado, sem geração testada; somente 720p/1080p.",
+            "Keyframes: até 10 imagens; sem Element/áudio declarado. Omni: 15 recursos incluindo áudio/Elements, até 3 video Elements; multi-shot=true obrigatório.",
+            "Vídeos diretos + video Elements: até 30 s; duração de entrada entra na cobrança. Preço não verificado; liberação antiga não migra."
+          ]
+        },
+        {
+          "tool": "omni_ref_video",
+          "model": "kling-video-o1",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "video_1"
+          ],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "16:9"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            }
+          ],
+          "elements": true,
+          "audioControl": false,
+          "externalAudio": false,
+          "multiShotControl": false,
+          "combinedCaps": [
+            {
+              "maxItems": 8,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_",
+                "video_"
+              ]
+            },
+            {
+              "maxItems": 4,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_"
+              ],
+              "whenAnyInputPrefixes": [
+                "video_"
+              ]
+            },
+            {
+              "maxItems": 7,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_"
+              ],
+              "whenNoneInputPrefixes": [
+                "video_"
+              ]
+            }
+          ],
+          "elementSupport": {
+            "imageElements": true,
+            "videoElements": false,
+            "maxImageElements": 7,
+            "maxTotalElements": 7
+          },
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Com video_1: imagens + Elements ≤4; sem vídeo ≤7. Referência de vídeo: 3–10 s, 720–2160 px, 24–60 fps, até 200 MiB. Sem áudio independente."
+          ]
+        },
+        {
+          "tool": "omni_ref_video",
+          "model": "kling-video-v3_0_omni",
+          "inputs": [
+            "image_1",
+            "image_2",
+            "image_3",
+            "image_4",
+            "image_5",
+            "image_6",
+            "image_7",
+            "video_1"
+          ],
+          "requiredInputs": [],
+          "parameters": [
+            {
+              "name": "duration",
+              "required": false,
+              "allowedValues": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+              ],
+              "default": "5"
+            },
+            {
+              "name": "aspect_ratio",
+              "required": false,
+              "allowedValues": [
+                "auto",
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "default": "auto"
+            },
+            {
+              "name": "resolution",
+              "required": false,
+              "allowedValues": [
+                "720p",
+                "1080p",
+                "4k"
+              ],
+              "default": "1080p"
+            },
+            {
+              "name": "imageCount",
+              "required": false,
+              "allowedValues": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "default": "1"
+            },
+            {
+              "name": "prefer_multi_shots",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            },
+            {
+              "name": "enable_audio",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "keepOriginalSound",
+              "required": false,
+              "allowedValues": [
+                "true",
+                "false"
+              ],
+              "default": "false"
+            }
+          ],
+          "elements": true,
+          "audioControl": true,
+          "externalAudio": false,
+          "multiShotControl": true,
+          "combinedCaps": [
+            {
+              "maxItems": 8,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_",
+                "video_"
+              ]
+            },
+            {
+              "maxItems": 4,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_"
+              ],
+              "whenAnyInputPrefixes": [
+                "video_"
+              ]
+            },
+            {
+              "maxItems": 7,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_"
+              ],
+              "whenNoneInputPrefixes": [
+                "video_"
+              ]
+            }
+          ],
+          "elementSupport": {
+            "imageElements": true,
+            "videoElements": true,
+            "maxImageElements": 7,
+            "maxVideoElements": 3,
+            "maxTotalElements": 7,
+            "voiceConsistency": true,
+            "maxVideoElementsWithVideoInput": 1
+          },
+          "notes": [
+            "Disponibilidade e preço atuais requerem consulta antes de execução.",
+            "Com video_1: imagens + Elements ≤4; sem vídeo ≤7. Referência de vídeo: 3–10 s, 720–2160 px, 24–60 fps, até 200 MiB. Sem áudio independente.",
+            "video_1 exige enable_audio=false. Element de vídeo não equivale a vídeo direto; com vídeo direto, só um Element de vídeo e nenhuma imagem/Element de imagem."
+          ]
+        }
+      ]
+    },
+    "costPolicy": {
+      "newPaidAuthorization": false,
+      "newPaidJobs": 0,
+      "closedABProviderCredits": 51,
+      "estimateIsQuote": false,
+      "balanceDeltaIsCharge": false,
+      "providerEnforcesCeiling": false,
+      "rule": "Cotação ligada ao payload e schema, teto por job, evidência e validade; envio único. Intenção/recibos/ledger existentes são a fonte dos jobs. Nenhum retry incerto."
+    },
+    "blockers": [
+      {
+        "description": "Continuidade de paletó e mesa ainda não resolvida.",
+        "owner": "Produtor / continuidade",
+        "unblockCondition": "Conferir a composição exata contra G-WARDROBE/G-TABLE; preparar somente as correções necessárias e revisar seus resultados."
+      },
+      {
+        "description": "Semelhança dos novos IN/OUT ainda não aceita.",
+        "owner": "Andre",
+        "unblockCondition": "Julgar a seleção final por arquivo/hash depois das correções; o piloto antigo não aprova estes frames."
+      },
+      {
+        "description": "Timing e atuação ainda sem playback/audição integral registrados.",
+        "owner": "Produtor / diálogo-som / editor",
+        "unblockCondition": "Ouvir G-L03/G-L04 e revisar pausas/gesto/reação. A medição dos arquivos não substitui essa escuta."
+      },
+      {
+        "description": "Voz final e prova de dublagem/sync pendentes.",
+        "owner": "Andre / diálogo-som",
+        "unblockCondition": "Ouvir os candidatos existentes e escolher a voz; D14 permite guia no teste de imagem, mas não libera master final."
+      },
+      {
+        "description": "Primeiro teste de fala sem liberação paga.",
+        "owner": "Produtor",
+        "unblockCondition": "Fechar referências/pedido, schema e preço atuais, teto, validade e uploads exatos; registrar kling_job_release antes de um único envio."
+      }
+    ],
+    "families": [
+      {
+        "id": "F1",
+        "title": "Composição compartilhada",
+        "purpose": "Propor o master espacial antes de animar.",
+        "requiredDecisions": [
+          "Conjunto de aparência por uso",
+          "Geometria D17 proposta",
+          "Luz e escala",
+          "Sem cabeça histórica no enquadramento"
+        ]
+      },
+      {
+        "id": "F2",
+        "title": "Variante mínima de keyframe",
+        "purpose": "Derivar escuta/fala do mesmo master selecionado.",
+        "requiredDecisions": [
+          "Master selecionado e versão",
+          "Mudança única necessária"
+        ]
+      },
+      {
+        "id": "F3",
+        "title": "Fala visível com voz-guia",
+        "purpose": "Uma fala inglesa exata; D14 mantém voz como guia.",
+        "requiredDecisions": [
+          "Fala e duração real",
+          "Likeness no ângulo escolhido",
+          "Plano de dublagem/sync separado",
+          "Preço por pedido"
+        ]
+      },
+      {
+        "id": "F4",
+        "title": "Escuta ou reação motivada",
+        "purpose": "Uma reação após a ideia que a provoca; sem inventar silêncio de áudio.",
+        "requiredDecisions": [
+          "Palavra/ideia causadora e janela",
+          "Recorte seguro em todos os quadros",
+          "Áudio explicitamente desligado quando declarado"
+        ]
+      },
+      {
+        "id": "F5",
+        "title": "Contato e detalhe",
+        "purpose": "Mãos, mesa ou pés; não pressupõe Element facial.",
+        "requiredDecisions": [
+          "Contato e causalidade",
+          "Continuidade do material",
+          "Som de contato posterior"
+        ]
+      },
+      {
+        "id": "F6",
+        "title": "Atuação por motion control",
+        "purpose": "Imagem define aparência; referência qualificada fornece movimento.",
+        "requiredDecisions": [
+          "Vídeo real/guia qualificado e direitos",
+          "Duração medida, não 5 s presumidos",
+          "Direção da imagem ou do vídeo",
+          "Vínculo facial requer rota/direção compatível"
+        ]
+      },
+      {
+        "id": "F7",
+        "title": "Primeiro e último quadro",
+        "purpose": "Transição limitada entre dois keyframes compatíveis.",
+        "requiredDecisions": [
+          "Compatibilidade geométrica IN/OUT",
+          "Duração suficiente",
+          "Sem confundir referências Omni com cauda nomeada"
+        ]
+      },
+      {
+        "id": "F8",
+        "title": "V4 · estados de keyframe",
+        "purpose": "Proposta V4 com contrato específico de rota; não substitui silenciosamente F1–F7.",
+        "requiredDecisions": [
+          "Preencher references com target/kind/source/sha256/provenance/use/review e reviewEvidence; Element usa elementEvidence real.",
+          "IN/OUT apenas composição; identidade/mesa/figurino/som exigem escopos próprios.",
+          "Omni exige multi-shot=true; não qualificado para locked_single_shot.",
+          "Beat por janela, causa antes da reação, fala medida e revisão de idioma.",
+          "Preço atual por payload; vídeo de entrada entra na cobrança; liberação financeira nova."
+        ]
+      },
+      {
+        "id": "F9",
+        "title": "V4 · referências com papéis explícitos",
+        "purpose": "Proposta V4 com contrato específico de rota; não substitui silenciosamente F1–F7.",
+        "requiredDecisions": [
+          "Preencher references com target/kind/source/sha256/provenance/use/review e reviewEvidence; Element usa elementEvidence real.",
+          "IN/OUT apenas composição; identidade/mesa/figurino/som exigem escopos próprios.",
+          "Omni exige multi-shot=true; não qualificado para locked_single_shot.",
+          "Beat por janela, causa antes da reação, fala medida e revisão de idioma.",
+          "Preço atual por payload; vídeo de entrada entra na cobrança; liberação financeira nova."
+        ]
+      }
+    ],
+    "sourceVersions": [
+      {
+        "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+        "sha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e"
+      },
+      {
+        "path": "shared/templates/kling-shot-families.json",
+        "sha256": "4cf8b402d058ff2c7b4a7086426257dd6c8f75707ea30bd249d898445c0607d6"
+      },
+      {
+        "path": "docs/kling-manual/snapshots/2026-10-16-who_am_i.sanitized.json",
+        "sha256": "ad39ca68ec2692f57568780e2d8f98965aa8a53e395998da57b8a85ebe02c8a7"
+      },
+      {
+        "path": "shared/kling-capabilities.json",
+        "sha256": "138995f58831337fdbe007cce6669e6590d6442840a949e80c6e8386c9386098"
+      },
+      {
+        "path": "docs/kling-manual/snapshots/2026-10-16-tool_list.json",
+        "sha256": "6697e79339db5791289f7e787cfc4a26111ea21fae77d3d84e72b646a7addc6a"
+      },
+      {
+        "path": "scripts/kling_contract.py",
+        "sha256": "02cb557a039d8b99702caaa983f7d166b92f2d625d2fd9c5a138befd3de96791"
+      },
+      {
+        "path": "scripts/production_plan.py",
+        "sha256": "a8c1569cac0cbaac0d19257a863d64b6b57958e091d50de92fbf3f9d0d408da2"
+      },
+      {
+        "path": "scripts/kling_release.py",
+        "sha256": "807201942a6a20097179d298d15c693e929ad1880c2e3cc560d0a70f974eee6c"
+      },
+      {
+        "path": "docs/kling-manual/tools/kling_preflight.py",
+        "sha256": "b896711f0b1bf753152106891b952135418a550074c22d3830c30db48c46f4a9"
+      },
+      {
+        "path": "docs/PRODUCTION_PLAN.md",
+        "sha256": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb"
+      },
+      {
+        "path": "projects/andre-time-travel/01_script/script-en.md",
+        "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1"
+      },
+      {
+        "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+        "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6"
+      },
+      {
+        "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+        "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44"
+      },
+      {
+        "path": "projects/andre-time-travel/03_bibles/detail-planning/historical-details-v2.md",
+        "sha256": "0eda5265d86d4908d99b5daa2d7b6fef7c2c877d49c1cf917588818d6be133a5"
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/decisions/D20-detail-studies-art.json",
+        "sha256": "7566d95dae689c9985f649a266542fc8fc60b227441989d074663e27bf6f5b54"
+      },
+      {
+        "path": "series/andre-time-travel/FRAMEWORK.md",
+        "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef"
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/decisions/D14-dub-strategy.json",
+        "sha256": "e97164300fe3523d4e3d8c7195283652953b3492b920fea91e730498240a390b"
+      },
+      {
+        "path": "projects/andre-time-travel/agents/handoffs/2026-10-13-t12-detail-studies-v1-independent-review-dispatch.md",
+        "sha256": "8410cecc04c59646cb8a005c2929b115683476d8de96142c630058c4a939a18a"
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/PLANO-MESTRE.md",
+        "sha256": "d682de3c1a6d250559401999eb4c146320c6fb64eb204c137db5b2d897a5ef39"
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/ANEXO-PROMPTS-PROPOSTOS.md",
+        "sha256": "33dd7d0ea583790adaf2c4cd7e91bb41f3e92b3e773aec1020aa2beebc922bda"
+      },
+      {
+        "path": "projects/andre-time-travel/tasks/plans/master-production-v1/reference-inventory.md",
+        "sha256": "785db105251a3847c1b217c0fd575cc814cdf75c787834c0bf7e5fd6925f3c7f"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/README.md",
+        "sha256": "039fce7a266d39e3532b23bcb9865347373a860f9cbe798da6a8ef1faf15a592"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/visual-review.md",
+        "sha256": "fbd5c929384c4fe5ebe0c734fec93ced56e9ff6e161e4bf95a33a4ea35bf6f10"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/guide-measurements.json",
+        "sha256": "96202bc4a445a983592178eaa0ddd20f8fb0f84c6cc78dfff990b7e3c592aa6a"
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard/animatics/galileo-g03-g04-v1/geometry.svg",
+        "sha256": "cfb5d419dd618df5afd881ac7068086e1baaa2215aec5a79f8d362d5a5efd261"
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json",
+        "sha256": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c"
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json",
+        "sha256": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2"
+      }
+    ]
+  },
+  "visualRestart": {
+    "path": "drafts/andre-time-travel-visual-restart-v1/scope.json",
+    "status": "scope_confirmed_visual_proposal",
+    "decisions": [
+      "Recomeçar a produção; preservar originais, decisões e entregas existentes até fechar o novo escopo (recomendado)",
+      "Manter roteiro e cinco encontros; refazer o planejamento visual e as cenas"
+    ],
+    "encounters": [
+      "C",
+      "K",
+      "G",
+      "N",
+      "O"
+    ],
+    "nextOwner": "desktop/base producer",
+    "nextAction": "Revisar o pacote local Galileo e decidir aparência, geometria e ritmo; produtor prepara liberação financeira somente para pedido fechado.",
+    "registeredProduction": false,
+    "newMediaCreated": true,
+    "paidJobsSubmitted": 0,
+    "lanesDispatched": false
+  },
+  "klingTest": {
+    "approvalId": "APR-kling-ab-min-2026-10-12",
+    "reviewPath": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/v3-review.json",
+    "model": "kling-video-v3_0",
+    "status": "COMPLETED",
+    "creditsConsumed": 27,
+    "chargeBasis": "provider_reported",
+    "totalCeiling": 327,
+    "turboStatus": "completed",
+    "turboReason": null,
+    "fullPlaybackReviewed": false,
+    "creativeAccepted": false,
+    "abComplete": false,
+    "userReviewReported": true,
+    "turboJobCeiling": 300,
+    "turboCreditsConsumed": 24,
+    "turboReviewPath": "projects/andre-time-travel/08_edit/reviews/2026-10-12-kling-ab-min-v2/turbo/review.json"
+  },
+  "collectedAt": "2026-10-16T08:01:46.855Z",
+  "provenance": {
+    "contentVersion": "a8d5f9d471413434b33ec5e70bfc0706399df535e032fb4812004cf6f78cc698",
+    "repositoryHead": "629c23d39654f1ba0cc9159111bd172ba8d36425"
+  }
+}

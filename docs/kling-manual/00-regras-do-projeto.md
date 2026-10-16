@@ -1,5 +1,7 @@
 # 00 · Regras do projeto e conflitos conhecidos
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 O Kling (servidor e skill) e este projeto têm regras diferentes. Onde divergem, **vale o projeto** (AGENTS.md). Este arquivo só resume o que afeta o uso do Kling; a fonte é sempre o AGENTS.md.
 
 ## Limites que valem para qualquer processo [PROJETO]

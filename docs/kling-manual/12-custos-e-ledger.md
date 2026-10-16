@@ -1,5 +1,7 @@
 > **Contrato vigente para novos pedidos:** `docs/PRODUCTION_PLAN.md` e `shared/templates/kling-job-release.json`. Tabelas/valores abaixo são histórico e estimativa; nenhuma conversão de unidades de outra API comprova preço em créditos desta conta. O runner exige cotação documentada do pedido exato, teto e validade; saldo/delta não substituem cobrança declarada. A/B encerrado em 51 créditos, sem novo teto herdado. A implementação local atual não autoriza gasto. O teto é checagem local e não é imposto pelo servidor.
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 # 12 · Custos e ledger
 
 ## Estado da evidência (revisão 2026-10-12)

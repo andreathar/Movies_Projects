@@ -1,5 +1,7 @@
 # 03 · Modelos observados [SNAPSHOT]
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 > Gerado por `tools/kling_model_sheet.py` — **não editar à mão**.
 > Fonte: `snapshots/who_am_i.sanitized.json` (sha256 `3323ae5e3718bcd1585de6e59690be5e8f23e7e43780cec7fc1d0b4f9ae0e577`), capturado em 2026-10-12T04:07:41.305068+00:00 via `kling who_am_i`; `mcpVersion` 1.3.3.
 > Snapshot datado, não cotação nem promessa de acesso futuro. Antes de produzir, consulte `kling who_am_i`, remova identidade e segredos e gere nova ficha.

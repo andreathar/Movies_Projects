@@ -178,6 +178,118 @@
         "Duração suficiente",
         "Sem confundir referências Omni com cauda nomeada"
       ]
+    },
+    {
+      "id": "F8",
+      "title": "V4 · estados de keyframe",
+      "purpose": "Proposta V4 com contrato específico de rota; não substitui silenciosamente F1–F7.",
+      "request": {
+        "tool": "image_to_video",
+        "model": "kling-video-v4_0",
+        "args": {
+          "duration": "5",
+          "resolution": "720p",
+          "imageCount": "1"
+        },
+        "inputs": {
+          "first_image": "<IN_SELECIONADO>",
+          "tail_image": "<OUT_COMPATIVEL>"
+        },
+        "shotContract": {
+          "version": 1,
+          "provider": "kling-global",
+          "interface": "cli",
+          "references": [],
+          "beats": [
+            {
+              "start": 0,
+              "end": 5,
+              "action": "<ACAO_REVISADA_DEPOIS_DA_CAUSA>"
+            }
+          ],
+          "continuity": {
+            "cast": "<ANDRE_E_COMPANHEIROS_PRESERVADOS>",
+            "wardrobe": "<VERSAO_EXATA>",
+            "table": "<D04_2_NAO_TABLE_1_4_ALT>",
+            "screenAxis": "<EIXO>",
+            "historicalFaceExclusion": "Zero full historical faces, including reflections and all intermediate frames.",
+            "cameraMode": "<REVISAR_MULTISHOT>"
+          },
+          "audio": {
+            "strategy": "uncontrolled_review_required"
+          },
+          "billing": {
+            "inputVideoSeconds": 0,
+            "inputVideoDurationIncluded": true
+          }
+        }
+      },
+      "promptTemplate": "{timed_beats}. Preserve the exact selected identity, companions, wardrobe, table marks, screen axis and lighting. No historical full face, profile or reflection in any frame. Do not add people or remove companions. Dialogue is fictional and must remain verbatim when approved.",
+      "requiredDecisions": [
+        "Preencher references com target/kind/source/sha256/provenance/use/review e reviewEvidence; Element usa elementEvidence real.",
+        "IN/OUT apenas composição; identidade/mesa/figurino/som exigem escopos próprios.",
+        "Omni exige multi-shot=true; não qualificado para locked_single_shot.",
+        "Beat por janela, causa antes da reação, fala medida e revisão de idioma.",
+        "Preço atual por payload; vídeo de entrada entra na cobrança; liberação financeira nova."
+      ]
+    },
+    {
+      "id": "F9",
+      "title": "V4 · referências com papéis explícitos",
+      "purpose": "Proposta V4 com contrato específico de rota; não substitui silenciosamente F1–F7.",
+      "request": {
+        "tool": "omni_ref_video",
+        "model": "kling-video-v4_0",
+        "args": {
+          "duration": "5",
+          "resolution": "720p",
+          "imageCount": "1",
+          "aspect_ratio": "16:9",
+          "prefer_multi_shots": true,
+          "enable_audio": false,
+          "keepOriginalSound": false
+        },
+        "inputs": {
+          "image_1": "<IDENTIDADE_APROVADA>",
+          "image_2": "<MESA_D04_2>"
+        },
+        "shotContract": {
+          "version": 1,
+          "provider": "kling-global",
+          "interface": "cli",
+          "references": [],
+          "beats": [
+            {
+              "start": 0,
+              "end": 5,
+              "action": "<ACAO_REVISADA_DEPOIS_DA_CAUSA>"
+            }
+          ],
+          "continuity": {
+            "cast": "<ANDRE_E_COMPANHEIROS_PRESERVADOS>",
+            "wardrobe": "<VERSAO_EXATA>",
+            "table": "<D04_2_NAO_TABLE_1_4_ALT>",
+            "screenAxis": "<EIXO>",
+            "historicalFaceExclusion": "Zero full historical faces, including reflections and all intermediate frames.",
+            "cameraMode": "<REVISAR_MULTISHOT>"
+          },
+          "audio": {
+            "strategy": "postproduction"
+          },
+          "billing": {
+            "inputVideoSeconds": 0,
+            "inputVideoDurationIncluded": true
+          }
+        }
+      },
+      "promptTemplate": "{timed_beats}. Preserve the exact selected identity, companions, wardrobe, table marks, screen axis and lighting. No historical full face, profile or reflection in any frame. Do not add people or remove companions. Dialogue is fictional and must remain verbatim when approved.",
+      "requiredDecisions": [
+        "Preencher references com target/kind/source/sha256/provenance/use/review e reviewEvidence; Element usa elementEvidence real.",
+        "IN/OUT apenas composição; identidade/mesa/figurino/som exigem escopos próprios.",
+        "Omni exige multi-shot=true; não qualificado para locked_single_shot.",
+        "Beat por janela, causa antes da reação, fala medida e revisão de idioma.",
+        "Preço atual por payload; vídeo de entrada entra na cobrança; liberação financeira nova."
+      ]
     }
   ]
 }

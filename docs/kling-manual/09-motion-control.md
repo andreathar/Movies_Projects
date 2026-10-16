@@ -1,5 +1,7 @@
 # 09 · Motion Control (`motion_control`)
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 Pega o movimento de um vídeo (ou de um movimento salvo na biblioteca) e aplica a uma **imagem de sujeito**. Nunca usado no filme [NÃO TESTADO].
 
 ## Declaração viva [LIVE]

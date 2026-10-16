@@ -7,7 +7,7 @@
       "path": "skills/kling-cli",
       "source": ".agents/skills/kling-cli",
       "type": "project_vendored",
-      "sourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+      "sourceSha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
       "provenanceHistory": [
         {
           "source": "klingai-tech/skills",
@@ -31,6 +31,23 @@
           "previousSourceSha256": "878472489b25ff7a64c5e79f8d420bf6f5b4d5b5a651c18df777b8262b2ee084",
           "sourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
           "rehashedAt": "2026-10-12T04:15:12.634163+00:00"
+        },
+        {
+          "source": ".agents/skills/kling-cli",
+          "type": "project_kling4_contract_revision",
+          "localRevision": "2026-10-16-kling4-contract",
+          "previousSourceSha256": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+          "sourceSha256": "aa5406bf12bef96d2c7e028d1c0967760fdf359697861c687e3297b5a0b45d18",
+          "rehashedAt": "2026-10-16T07:52:13.650073+00:00"
+        },
+        {
+          "source": ".agents/skills/kling-cli",
+          "type": "authorized_official_cli_update_validation",
+          "localRevision": "2026-10-16-cli023-validation",
+          "previousSourceSha256": "aa5406bf12bef96d2c7e028d1c0967760fdf359697861c687e3297b5a0b45d18",
+          "sourceSha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
+          "cliVersion": "0.2.3",
+          "rehashedAt": "2026-10-16T08:11:31.304737+00:00"
         }
       ]
     },

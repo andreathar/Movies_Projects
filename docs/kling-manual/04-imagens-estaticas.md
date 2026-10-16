@@ -1,5 +1,7 @@
 # 04 · Imagens estáticas: `text_to_image` e `image_to_image`
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 ## Quando cada uma
 
 - `text_to_image`: nasce só de texto. **Não aceita Element** (nem `<<<id>>>`) [OFICIAL].

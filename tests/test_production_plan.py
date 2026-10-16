@@ -17,7 +17,7 @@ class ProductionPlanTests(unittest.TestCase):
         self.root=Path(self.temp.name)
         project,path,plan=p.plan_source(ROOT)
         self.path=path;self.plan=copy.deepcopy(plan)
-        names=['workspace.json',path,project['manifest'],project['tasks'],project['root']+'/00_brief/approvals.json',p.SNAPSHOT,p.FAMILIES,'scripts/production_plan.py','scripts/kling_release.py','docs/kling-manual/tools/kling_preflight.py','docs/PRODUCTION_PLAN.md']+[s['path'] for s in plan['preservedSources']]+plan['deliverables']
+        names=['workspace.json',path,project['manifest'],project['tasks'],project['root']+'/00_brief/approvals.json',p.SNAPSHOT,p.FAMILIES,'shared/kling-capabilities.json',p.TOOL_SNAPSHOT,'scripts/kling_contract.py','scripts/production_plan.py','scripts/kling_release.py','docs/kling-manual/tools/kling_preflight.py','docs/PRODUCTION_PLAN.md']+[s['path'] for s in plan['preservedSources']]+plan['deliverables']
         names += [item['approvalEvidence']['path'] for item in plan['references'] + plan['shots'] if item.get('approvalEvidence')]
         for name in dict.fromkeys(names):
             dest=self.root/name;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes((ROOT/name).read_bytes())

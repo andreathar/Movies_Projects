@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "offline_proposal_templates",
+  "rule": "Templates não são liberação. Tokens da API preservados. Nenhum template envia mídia; use production_plan.py template.",
+  "families": [
+    {
+      "id": "F1",
+      "title": "Composição compartilhada",
+      "purpose": "Propor o master espacial antes de animar.",
+      "request": {
+        "tool": "image_to_image",
+        "model": "kling-image-v3_0",
+        "args": {
+          "img_resolution": "1k",
+          "aspect_ratio": "16:9",
+          "imageCount": "1"
+        },
+        "images": [
+          "<FOTO_REAL_SELECIONADA>",
+          "<MESA_D04>",
+          "<CONTEXTO_ARCETRI>"
+        ]
+      },
+      "promptTemplate": "Single cinematic still. Andre screen-left, looking camera-right, seated across the same pale oak table. Image 1 is the real identity reference; image 2 is the table with its ring and chipped corner; image 3 is environment context. Historical interlocutor: only blurred shoulder and sleeve in the right foreground; entire head beyond the frame. Medium shot, fixed proposed 50 mm lens, seated eye level. Grey pinstripe jacket, open white striped shirt. {geometry} No historical face, head, profile, ear or reflection in frame. No extra person, readable text, camera cut or orbit.",
+      "requiredDecisions": [
+        "Conjunto de aparência por uso",
+        "Geometria D17 proposta",
+        "Luz e escala",
+        "Sem cabeça histórica no enquadramento"
+      ]
+    },
+    {
+      "id": "F2",
+      "title": "Variante mínima de keyframe",
+      "purpose": "Derivar escuta/fala do mesmo master selecionado.",
+      "request": {
+        "tool": "image_to_image",
+        "model": "kling-image-v3_0",
+        "args": {
+          "img_resolution": "1k",
+          "aspect_ratio": "16:9",
+          "imageCount": "1"
+        },
+        "images": [
+          "<MASTER_ESPACIAL_SELECIONADO>"
+        ]
+      },
+      "promptTemplate": "Preserve the exact composition, identity, seat, oak table, marks, wardrobe and light of image 1. Change only {minimal_change}. Do not add a character or recompose. No historical face, head, profile, ear or reflection in frame. No extra person, readable text, camera cut or orbit.",
+      "requiredDecisions": [
+        "Master selecionado e versão",
+        "Mudança única necessária"
+      ]
+    },
+    {
+      "id": "F3",
+      "title": "Fala visível com voz-guia",
+      "purpose": "Uma fala inglesa exata; D14 mantém voz como guia.",
+      "request": {
+        "tool": "image_to_video",
+        "model": "kling-video-v3_0",
+        "args": {
+          "duration": "11",
+          "resolution": "720p",
+          "imageCount": "1",
+          "enable_audio": true,
+          "prefer_multi_shots": false
+        },
+        "inputs": {
+          "first_image": "<KEYFRAME_FALA_SELECIONADO>"
+        }
+      },
+      "promptTemplate": "Locked camera. Andre speaks the exact English line once: \"{canonical_dialogue}\". Calm, warm delivery, one small grounded gesture away from the face, then mouth closes and he listens. Keep the selected identity, wardrobe, table, seat and light. No extra words or voice-over. Native sound is guide only, not the approved final voice. No historical face, head, profile, ear or reflection in frame. No extra person, readable text, camera cut or orbit.",
+      "requiredDecisions": [
+        "Fala e duração real",
+        "Likeness no ângulo escolhido",
+        "Plano de dublagem/sync separado",
+        "Preço por pedido"
+      ]
+    },
+    {
+      "id": "F4",
+      "title": "Escuta ou reação motivada",
+      "purpose": "Uma reação após a ideia que a provoca; sem inventar silêncio de áudio.",
+      "request": {
+        "tool": "image_to_video",
+        "model": "kling-video-v3_0",
+        "args": {
+          "duration": "5",
+          "resolution": "720p",
+          "imageCount": "1",
+          "enable_audio": false,
+          "prefer_multi_shots": false
+        },
+        "inputs": {
+          "first_image": "<KEYFRAME_REACAO_SELECIONADO>"
+        }
+      },
+      "promptTemplate": "Locked framing from the input. {reaction_after_cause}. One restrained change, natural stillness, no repeated blinking, no speech. Maintain the selected crop throughout. No pullback, cut or new face. Eyes-only crop must never reveal the rest of the face.",
+      "requiredDecisions": [
+        "Palavra/ideia causadora e janela",
+        "Recorte seguro em todos os quadros",
+        "Áudio explicitamente desligado quando declarado"
+      ]
+    },
+    {
+      "id": "F5",
+      "title": "Contato e detalhe",
+      "purpose": "Mãos, mesa ou pés; não pressupõe Element facial.",
+      "request": {
+        "tool": "image_to_video",
+        "model": "kling-video-v3_0",
+        "args": {
+          "duration": "5",
+          "resolution": "720p",
+          "imageCount": "1",
+          "enable_audio": false,
+          "prefer_multi_shots": false
+        },
+        "inputs": {
+          "first_image": "<DETALHE_SELECIONADO>"
+        }
+      },
+      "promptTemplate": "Locked detail. {one_contact_action}. Keep anatomy, cloth, table grain, ring stain, chipped corner and light unchanged. No head, face, reflected face or pullback. No speech.",
+      "requiredDecisions": [
+        "Contato e causalidade",
+        "Continuidade do material",
+        "Som de contato posterior"
+      ]
+    },
+    {
+      "id": "F6",
+      "title": "Atuação por motion control",
+      "purpose": "Imagem define aparência; referência qualificada fornece movimento.",
+      "request": {
+        "tool": "motion_control",
+        "model": "kling-video-v3_0",
+        "args": {
+          "motionDirection": "image_direction",
+          "resolution": "720p",
+          "keepOriginalSound": false
+        },
+        "inputs": {
+          "image": "<SUJEITO_SELECIONADO>",
+          "video": "<VIDEO_ATUACAO_QUALIFICADO>"
+        },
+        "referenceDurationSeconds": 5
+      },
+      "promptTemplate": "Transfer only the selected performance to the subject image. Preserve identity, costume, framing and environment. {performance_intention}. No historical face, head, profile, ear or reflection in frame. No extra person, readable text, camera cut or orbit.",
+      "requiredDecisions": [
+        "Vídeo real/guia qualificado e direitos",
+        "Duração medida, não 5 s presumidos",
+        "Direção da imagem ou do vídeo",
+        "Vínculo facial requer rota/direção compatível"
+      ]
+    },
+    {
+      "id": "F7",
+      "title": "Primeiro e último quadro",
+      "purpose": "Transição limitada entre dois keyframes compatíveis.",
+      "request": {
+        "tool": "image_to_video",
+        "model": "kling-video-v3_0",
+        "args": {
+          "duration": "5",
+          "resolution": "720p",
+          "imageCount": "1",
+          "enable_audio": false,
+          "prefer_multi_shots": false
+        },
+        "inputs": {
+          "first_image": "<PRIMEIRO_KEYFRAME>",
+          "tail_image": "<ULTIMO_KEYFRAME>"
+        }
+      },
+      "promptTemplate": "Locked camera. Begin exactly in the first frame and make only {minimal_transition}, ending at the tail frame. Preserve character, table, seat and light. No historical face, head, profile, ear or reflection in frame. No extra person, readable text, camera cut or orbit.",
+      "requiredDecisions": [
+        "Compatibilidade geométrica IN/OUT",
+        "Duração suficiente",
+        "Sem confundir referências Omni com cauda nomeada"
+      ]
+    }
+  ]
+}

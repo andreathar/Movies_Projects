@@ -1,0 +1,13 @@
+# Frontend verificado em execução · 16/10/2026
+
+Lacuna de runtime encerrada com autorização explícita posterior. Launcher documentado inspecionado: npm run review:start, perfil portable, host 127.0.0.1, porta 5173 strictPort, PID/log/caches locais. Sem scan de agentes, chamadas externas, geração/dispatch ou escrita automática de registros. Workspace existente confirmado em leitura antes de abrir; não precisou inicialização. QA fixture desligada. Nenhum serviço de sistema, configuração de rede ou segurança alterado.
+
+Servidor iniciado e deixado disponível em **http://127.0.0.1:5173/**, readiness GET 200/application=movies-demandas/ready=true. Navegador Chrome suportado abriu a UI existente autenticada localmente; nenhuma credencial lida ou login novo. Aba deixada em Organização e marcada como entrega.
+
+Observado visualmente: painel Kling 4 listado na conta, CLI 0.2.3, as três rotas V4, 720p/1080p e 3–30 s; Element/áudio/multi-shot distinguem rotas, preço desconhecido e limites de 4K/HDR/extensão explícitos. G-IN/G-OUT aprovados por Andre apenas para composição, não como par first/tail; G-ID/G-WARDROBE/G-TABLE/G-ERA/G-EYE-B pendentes. A tela mantém continuidade/timing/voz/idioma/sync e liberação financeira como pré-requisitos. “Nenhum pedido liberado” e zero novos jobs pagos visíveis. Não foram abertos controles de revisão/aprovação, importação ou dispatch.
+
+As sete imagens canônicas carregaram, com IDs e SHA-256 na rota local restrita. Layout observado em 1920×992: cartões e textos legíveis, sem sobreposição ou overflow horizontal observado. Console sem erro/warning. Screenshots e snapshots de acessibilidade preservados aqui; não são aprovação artística nem novo julgamento das mídias.
+
+Antes/depois: workspace local revisão 9, mesmo hash de dados e timestamp; fontes canônicas protegidas sem delta. Exports --check, check:data e manage.py validate passaram. Código e dados de produção não alterados nesta continuação; suíte completa anterior permanece 245 Python, 16 manual, 87 frontend e 7 probes vendor, sem rerun desnecessário. Estado persistido antigo do workspace segue preservado; nenhuma atualização foi importada automaticamente. O painel usa a consulta atual do plano, explicitamente identificada na UI.
+
+V3 reconcilia o inventário completo de V2 e substitui apenas a condição operacional atual de frontend indisponível por runtime verificado. Evidência V2 de conexão recusada permanece histórica. Reviews, ingest e gates artísticos/proveniência continuam pendentes. CLI permanece 0.2.3 e HEAD preexistente 629c23d; nenhum commit, geração, upload ou gasto. Próximo dono: produtor desktop revisa a entrega e pendências do filme. Não há bloqueio remanescente de runtime frontend.

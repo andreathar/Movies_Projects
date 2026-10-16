@@ -1,5 +1,7 @@
 # 08 · Referências mistas e edição: contrato por rota
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 Fonte operacional: snapshot `who_am_i.sanitized.json` de 2026-10-12, MCP 1.3.3. A descrição genérica de ferramentas não substitui os campos de cada modelo. Nenhum teste pago qualifica esta rota para o filme.
 
 | Campo | `kling-video-v3_0_omni` | `kling-video-o1` |

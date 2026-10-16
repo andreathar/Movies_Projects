@@ -26,3 +26,7 @@ Regenerate the full batch without findings; treat 25 studies as 25 mandatory cut
 
 ## Definition of done
 Coverage mapped to slot IDs with alternatives labelled; the animatic revision built from measured guide timing; the handoff names the next owner or a blocker with owner.
+
+## Kling — contrato atual por interface
+
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.

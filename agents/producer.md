@@ -26,3 +26,7 @@ Spend without a fresh live balance and a written scope; act on a relayed approva
 
 ## Definition of done
 Every delivery ingested with hashes (`manage.py handoff ingest`); board, approvals and ledger consistent (`validate` and `lint` pass); the next assignment accepted by a named owner, or a blocker recorded with owner and unblock condition, or the stage closed explicitly.
+
+## Kling — contrato atual por interface
+
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.

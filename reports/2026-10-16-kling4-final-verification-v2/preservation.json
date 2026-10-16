@@ -1,0 +1,12 @@
+{
+  "head": "629c23d39654f1ba0cc9159111bd172ba8d36425",
+  "existingHeadNotNewCommit": true,
+  "protectedFiles": 792,
+  "changedProtected": [],
+  "priorHandoffSha256": "e59366066237d510f070a2a25646e351c6cf24c3b9cf33a8f7325393af4376bd",
+  "priorHandoffIngest": "pending",
+  "noGenerationsUploadsOrSpend": true,
+  "noLoginOrNewGrants": true,
+  "cliBefore": "0.2.1",
+  "cliInstalledAndLatest": "0.2.3"
+}

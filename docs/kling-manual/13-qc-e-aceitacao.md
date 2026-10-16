@@ -1,5 +1,7 @@
 # 13 · QC e aceitação de um take
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 Princípio do projeto: arquivo gerado **não** é take aceito. Nada abaixo substitui o gate humano (reprodução em velocidade normal, aprovação de semelhança e de voz do Andre, revisão de idioma). Protocolo-base: `prompt-playbook-kling.md` §4 [PROJETO]. Os comandos são ffmpeg/ffprobe padrão; a máquina tem ambos (`/usr/bin`) [LIVE].
 
 ## 0. Baixar a tempo e fixar

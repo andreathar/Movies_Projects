@@ -1,0 +1,5 @@
+
+> site-creator-vinext-starter@0.1.0 check:data
+> node scripts/check-data.mjs
+
+Bundled metadata valid; live freshness requires both exporters --check.

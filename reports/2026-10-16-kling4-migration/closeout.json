@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-16T08:04:47.788880+00:00",
+  "checks": [
+    {
+      "check": "handoff-check",
+      "exitCode": 0
+    },
+    {
+      "check": "management-lint",
+      "exitCode": 0
+    },
+    {
+      "check": "resume",
+      "exitCode": 0
+    },
+    {
+      "check": "final-production-freshness",
+      "exitCode": 0
+    },
+    {
+      "check": "final-workspace-freshness",
+      "exitCode": 0
+    }
+  ],
+  "handoff": "projects/andre-time-travel/agents/handoffs/2026-10-16-kling4-migration-v1.json",
+  "ingest": "pending",
+  "generationValidation": "not_performed",
+  "blockedImplementationActions": []
+}

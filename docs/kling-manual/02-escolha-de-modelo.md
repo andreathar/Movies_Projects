@@ -1,5 +1,7 @@
 # 02 · Escolha de modelo: "quero X → use Y"
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 Colunas de evidência: **[PROJETO]** = já pago e verificado aqui; **[LIVE]** = só existe na ficha de hoje; **[NÃO TESTADO]** = plausível, nunca rodado no filme.
 Confirme sempre na ficha `03-modelos-ao-vivo.md`: este arquivo resume, não substitui.
 

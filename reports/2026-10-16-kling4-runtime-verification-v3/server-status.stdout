@@ -1,0 +1,12 @@
+{
+  "running": true,
+  "ready": true,
+  "url": "http://127.0.0.1:5173",
+  "pid": 160485,
+  "startTicks": "714013",
+  "processGroup": 160485,
+  "session": 160485,
+  "site": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+  "startedAt": "2026-10-16T08:17:31.120Z",
+  "log": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/.sites-runtime/local-review.log"
+}

@@ -1,0 +1,59 @@
+{
+  "bodyWidth": 1905,
+  "documentWidth": 1905,
+  "images": [
+    {
+      "alt": "G-ID · Foto real de identidade",
+      "complete": true,
+      "height": 1384,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-ID?sha256=fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5",
+      "width": 1038
+    },
+    {
+      "alt": "G-WARDROBE · Foto real de figurino D02",
+      "complete": true,
+      "height": 1384,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-WARDROBE?sha256=75c3783dbd5c11551408d7ca65b5199924569f5041e8955a51d20869e86d6d1b",
+      "width": 1038
+    },
+    {
+      "alt": "G-TABLE · Mesa D04",
+      "complete": true,
+      "height": 1696,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-TABLE?sha256=3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b",
+      "width": 2528
+    },
+    {
+      "alt": "G-ERA · Arcetri: contexto",
+      "complete": true,
+      "height": 1536,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-ERA?sha256=09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3",
+      "width": 2752
+    },
+    {
+      "alt": "G-IN · Galileo IN",
+      "complete": true,
+      "height": 941,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-IN?sha256=4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4",
+      "width": 1672
+    },
+    {
+      "alt": "G-OUT · Galileo OUT",
+      "complete": true,
+      "height": 941,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-OUT?sha256=106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf",
+      "width": 1672
+    },
+    {
+      "alt": "G-EYE-B · Olhos: resposta",
+      "complete": true,
+      "height": 1024,
+      "src": "http://127.0.0.1:5173/__local/galileo-reference/G-EYE-B?sha256=f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215",
+      "width": 4128
+    }
+  ],
+  "viewport": {
+    "height": 992,
+    "width": 1920
+  }
+}

@@ -174,5 +174,6 @@
       ]
     }
   ],
-  "actionPathContract": "Every role needs at least one skill link or delegatesTo path, and an escalatesTo target (role id or human:*). Enforced by scripts/manage.py validate."
+  "actionPathContract": "Every role needs at least one skill link or delegatesTo path, and an escalatesTo target (role id or human:*). Enforced by scripts/manage.py validate.",
+  "capabilityContract": "shared/kling-capabilities.json"
 }

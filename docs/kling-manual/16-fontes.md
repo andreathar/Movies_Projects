@@ -1,5 +1,7 @@
 # 16 · Fontes e grau de confiança
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 Data do levantamento: 2026-10-09. Selos como no README. "Li" = abri e usei o conteúdo; "só título" = apareceu em busca, **não li**.
 
 ## Fonte primária: o próprio CLI (confiança máxima, mas datada)

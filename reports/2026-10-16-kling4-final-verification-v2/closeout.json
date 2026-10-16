@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-16T08:15:04.926552+00:00",
+  "checks": [
+    {
+      "check": "handoff-check",
+      "exitCode": 0
+    },
+    {
+      "check": "management-lint",
+      "exitCode": 0
+    },
+    {
+      "check": "resume",
+      "exitCode": 0
+    },
+    {
+      "check": "production-freshness",
+      "exitCode": 0
+    },
+    {
+      "check": "workspace-freshness",
+      "exitCode": 0
+    }
+  ],
+  "cliInstalled": "0.2.3",
+  "latestOfficial": "0.2.3",
+  "headExisting": "629c23d39654f1ba0cc9159111bd172ba8d36425",
+  "ingest": "pending",
+  "runtimeFrontend": "connection_refused_not_started",
+  "generations": 0,
+  "uploads": 0,
+  "newAuthGrants": 0
+}

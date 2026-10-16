@@ -86,10 +86,37 @@ def preflight(job, film):
     blocking = [x for x in report.items if x['level'] == 'ERROR' or x['code'] in {'DEFAULT', 'MOTION_DURATION_UNKNOWN'}]
     if blocking:
         raise SystemExit('preflight bloqueou: ' + '; '.join(x['code'] + ': ' + x['msg'] for x in blocking))
+    tool_evidence = None
+    if job['model'] == 'kling-video-v4_0':
+        tool_discovery = run(['kling', 'tool_list', '-q', *TELEMETRY])
+        if tool_discovery.get('ok') is not True:
+            raise SystemExit('tool_list ao vivo indisponível; nenhum envio feito')
+        tool_evidence = next((t for t in tool_discovery.get('body', {}).get('tools', []) if t.get('name') == job['tool']), None)
+        schema = tool_evidence.get('inputSchema', {}) if tool_evidence else {}
+        if not {'model', 'arguments'} <= set(schema.get('properties', {})):
+            raise SystemExit('contrato da ferramenta ausente; nenhum envio feito')
+        if job.get('inputs') and 'inputs' not in schema.get('properties', {}):
+            raise SystemExit('inputs não declarados na ferramenta; nenhum envio feito')
+    if job['model'] == 'kling-video-v4_0':
+        # A saved name or yesterday's Element snapshot is not current binding evidence.
+        bound = pf.parse_elements(report, job.get('elements', job.get('args', {}).get('elements')))
+        for element in bound:
+            current = run(['kling', 'element_get', str(element['id']), '-q', *TELEMETRY])
+            ref = next(r for r in job['shotContract']['references'] if r['target'] == 'element:' + str(element['id']))
+            prior = json.loads(release.local_path(film, ref['elementEvidence']['path']).read_text())
+            prior = prior.get('body', prior)
+            prior = prior.get('element', prior)
+            now = current.get('body') or {}
+            now = now.get('element', now)
+            identity = lambda value: {name: value.get(name) for name in ('id', 'type', 'resource')}
+            if current.get('ok') is not True or identity(now) != identity(prior):
+                raise SystemExit('Element mudou ou indisponível; revisar ID/type/resources antes de envio')
     canonical = {pf.norm(a['name']): a['name'] for a in spec.get('arguments', [])}
     arguments = {canonical[pf.norm(name)]: pf.cli_value(value) for name, value in job['args'].items()}
-    return {'modelSpec': spec, 'arguments': arguments, 'schemaSha256': hashlib.sha256(json.dumps(models, sort_keys=True).encode()).hexdigest(),
-            'checkedAt': dt.datetime.now(dt.UTC).isoformat(), 'items': report.items}
+    return {'modelSpec': spec, 'arguments': arguments, 'schemaSha256': hashlib.sha256(json.dumps({'models': models, 'tool': tool_evidence} if tool_evidence else models, sort_keys=True).encode()).hexdigest(),
+            'checkedAt': dt.datetime.now(dt.UTC).isoformat(), 'items': report.items,
+            'provider': 'kling-global', 'interface': 'installed_cli', 'toolSchema': tool_evidence,
+            'toolSchemaSha256': release.digest(tool_evidence) if tool_evidence else None, 'generationTested': False}
 
 
 
@@ -255,7 +282,7 @@ def summary(job: str, gen_id, status: str, balance: dict, works=None, error=None
 def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[str, str],
            images: list[str], auth: str, note: str, poll: int = 300,
            *, submit_only: bool = False, inputs: dict | None = None, elements=None,
-           reference_duration=None, submission_blocked=None, input_facts=None) -> dict:
+           reference_duration=None, submission_blocked=None, input_facts=None, shot_contract=None) -> dict:
     req, res, _ = paths(film, job)
     with locked(film):
         if any((res / f'{job}.{kind}.json').exists() for kind in ('response', 'submit', 'intent')):
@@ -274,7 +301,7 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
         job_spec = {'job': job, 'tool': tool, 'model': model, 'prompt': prompt, 'args': args,
                     'images': images, 'inputs': inputs or {}, 'auth': auth,
                     'referenceDurationSeconds': reference_duration, 'submissionBlocked': submission_blocked,
-                    'inputFacts': input_facts or {}}
+                    'inputFacts': input_facts or {}, **({'shotContract': shot_contract} if shot_contract is not None else {})}
         if submission_blocked:
             raise SystemExit('draft plan is blocked: ' + str(submission_blocked))
         try:
@@ -317,6 +344,7 @@ def submit(film: Path, job: str, tool: str, model: str, prompt: str, args: dict[
                   'options': args, 'refs': images, 'inputs': inputs or {}, 'validation': validation,
                   'referenceDurationSeconds': reference_duration, 'auth': auth, 'note': note,
                   'balanceBefore': before, 'accountBefore': snapshot, 'command': cmd,
+                  **({'shotContract': shot_contract} if shot_contract is not None else {}),
                   'created': dt.datetime.now().astimezone().isoformat(timespec='seconds'),
                   'costTrace': tracing.context(film, job, payload_hash)}
         prompt_path = req / f'{job}.prompt.txt'
@@ -498,14 +526,14 @@ def main() -> int:
         ap.error('--submit-only requires exactly one selected job')
     for j in selected:
         unknown = set(j) - {'job', 'tool', 'model', 'prompt', 'args', 'images', 'inputs', 'elements',
-                            'auth', 'note', 'referenceDurationSeconds', 'submissionBlocked', 'inputFacts'}
+                            'auth', 'note', 'referenceDurationSeconds', 'submissionBlocked', 'inputFacts', 'shotContract'}
         if unknown:
             ap.error('unknown job fields (not forwarded): ' + ', '.join(sorted(unknown)))
         result = submit(film, j['job'], j['tool'], j['model'], j['prompt'], j.get('args', {}),
                         j.get('images', []), j.get('auth'), j.get('note', ''), submit_only=a.submit_only,
                         inputs=j.get('inputs'), elements=j.get('elements'),
                         reference_duration=j.get('referenceDurationSeconds'), submission_blocked=j.get('submissionBlocked'),
-                        input_facts=j.get('inputFacts'))
+                        input_facts=j.get('inputFacts'), shot_contract=j.get('shotContract'))
         print(json.dumps(result))
         if result.get('budgetExceeded'):
             print('STOP: cobrança do provedor excedeu o teto local; reconciliar, sem novo envio', file=sys.stderr)

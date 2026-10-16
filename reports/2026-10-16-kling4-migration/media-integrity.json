@@ -1,0 +1,146 @@
+[
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-cover.jpg",
+    "sha256": "c5ca1001d6098513b49db7d0abd808abf6025ebffda990ce5a841061d6ecdb1e",
+    "expected": "c5ca1001d6098513b49db7d0abd808abf6025ebffda990ce5a841061d6ecdb1e",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4",
+    "sha256": "da3d90a0d5b6aeba422f78f29e3ed5064ed20a216050e05f069ecf27d3ff70a7",
+    "expected": "da3d90a0d5b6aeba422f78f29e3ed5064ed20a216050e05f069ecf27d3ff70a7",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-cover.jpg",
+    "sha256": "4e1f48c5bba9c9b4ea7cc024cd4fbdb1e301345222756197b22c03e209ed28af",
+    "expected": "4e1f48c5bba9c9b4ea7cc024cd4fbdb1e301345222756197b22c03e209ed28af",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-1.png",
+    "sha256": "f89b77f7e503925a1f483acefc0ea8cab55db3ca4c08827e73b0e8f8b998533b",
+    "expected": "f89b77f7e503925a1f483acefc0ea8cab55db3ca4c08827e73b0e8f8b998533b",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-2.png",
+    "sha256": "4b551239b3c80269c4be28e002b5312753fd0f4571dec6284ad6d63e29c22b03",
+    "expected": "4b551239b3c80269c4be28e002b5312753fd0f4571dec6284ad6d63e29c22b03",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-3.png",
+    "sha256": "82004c96f0afa05808ffc7a56140dc2f7babd5fe859cd2ff569f5690f93eee84",
+    "expected": "82004c96f0afa05808ffc7a56140dc2f7babd5fe859cd2ff569f5690f93eee84",
+    "matches": true
+  },
+  {
+    "path": "inbox/andre-voice/ElevenLabs_2026-10-09T10_42_57_Athar_pvc_sp100_s50_sb75_v4.mp3",
+    "sha256": "d8e5e20a16b103b363a52975d6c560c3a6ba1de116b501fc19d8bee3b44e3de8",
+    "expected": "d8e5e20a16b103b363a52975d6c560c3a6ba1de116b501fc19d8bee3b44e3de8",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/R1-J25-costume-oppenheimer_1.png",
+    "sha256": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d",
+    "expected": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-1.png",
+    "sha256": "468229d3dabf0b8511b3b17964cada373e718f4bb4346b6ee08424452175dc5b",
+    "expected": "468229d3dabf0b8511b3b17964cada373e718f4bb4346b6ee08424452175dc5b",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-2.png",
+    "sha256": "5d4d1e01e0735b23d984ae0a6007d0b93a706c84e07d7f4201706da32e3536da",
+    "expected": "5d4d1e01e0735b23d984ae0a6007d0b93a706c84e07d7f4201706da32e3536da",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-3.png",
+    "sha256": "1ba45919d901bf75f90c97b0e56a465c089ac6620d9364ae0a82d12682de6acc",
+    "expected": "1ba45919d901bf75f90c97b0e56a465c089ac6620d9364ae0a82d12682de6acc",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_4_alt.png",
+    "sha256": "629651c09beef771aa9ecd3379e64139db4e2b63f0e93346fe708abb05caf82d",
+    "expected": "629651c09beef771aa9ecd3379e64139db4e2b63f0e93346fe708abb05caf82d",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-1.png",
+    "sha256": "6ff62d00920ab6c9171544902f536a447cd10ba09ff531b7b31ed17dc5b68e13",
+    "expected": "6ff62d00920ab6c9171544902f536a447cd10ba09ff531b7b31ed17dc5b68e13",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-2.png",
+    "sha256": "8465a491e4cf03e1c4af09149eeef40ac8c07543cc9a2b431b75d2beb82b838f",
+    "expected": "8465a491e4cf03e1c4af09149eeef40ac8c07543cc9a2b431b75d2beb82b838f",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-3.png",
+    "sha256": "ab6cf4538d5a69006761065fcbc6df44168456d4ad9251575ff71ff900dd72ca",
+    "expected": "ab6cf4538d5a69006761065fcbc6df44168456d4ad9251575ff71ff900dd72ca",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4",
+    "sha256": "f67aa96db1b5d785c0de72011a94aa4549732741f0da8fd533c5ee0c936dc488",
+    "expected": "f67aa96db1b5d785c0de72011a94aa4549732741f0da8fd533c5ee0c936dc488",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323868230505094-result.mp4",
+    "sha256": "124c8e36a91f9643ef28b562c60cffd3b6d1ffe950c61f6b4922cacd3ed670f1",
+    "expected": "124c8e36a91f9643ef28b562c60cffd3b6d1ffe950c61f6b4922cacd3ed670f1",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4",
+    "sha256": "e92ede9824636ed255ffd6512ebd86214a2ad19c8ea825c2f4b20fed016dd100",
+    "expected": "e92ede9824636ed255ffd6512ebd86214a2ad19c8ea825c2f4b20fed016dd100",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-cover.jpg",
+    "sha256": "7e6745181b62233f334e4e335b18105506d007741b23c3332f6a0b29d68aefdf",
+    "expected": "7e6745181b62233f334e4e335b18105506d007741b23c3332f6a0b29d68aefdf",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-1.png",
+    "sha256": "0e28eca42e057dd8d8e9c67c58892f66c791002901721707e9cf4faa2b60989a",
+    "expected": "0e28eca42e057dd8d8e9c67c58892f66c791002901721707e9cf4faa2b60989a",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-2.png",
+    "sha256": "4edb55726313ecce39a26dc65626fd5ec58b29876890bff6cb5a4f5e2c50236e",
+    "expected": "4edb55726313ecce39a26dc65626fd5ec58b29876890bff6cb5a4f5e2c50236e",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-3.png",
+    "sha256": "b638cd7f2644585036a91c07507886f53d7edd72233b7fc32276e5c0dc59bfac",
+    "expected": "b638cd7f2644585036a91c07507886f53d7edd72233b7fc32276e5c0dc59bfac",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-W324018500523155-local.mp4",
+    "sha256": "5abcbde40437210d7373e708f4c3161bd728b8ab96acac6f712e538ad03a1f88",
+    "expected": "5abcbde40437210d7373e708f4c3161bd728b8ab96acac6f712e538ad03a1f88",
+    "matches": true
+  },
+  {
+    "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-local-source-candidate.jpg",
+    "sha256": "8c56b59a261e1af244383a3e41ed5cd149e9f37bfc3247ad214e1d70482d8473",
+    "expected": "8c56b59a261e1af244383a3e41ed5cd149e9f37bfc3247ad214e1d70482d8473",
+    "matches": true
+  }
+]

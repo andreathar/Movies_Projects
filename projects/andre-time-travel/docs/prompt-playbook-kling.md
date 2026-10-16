@@ -1,6 +1,8 @@
 # Kling prompt playbook — The Table Between Centuries (v1, 2026-10-09)
 
-Evidence-based: every rule below either comes from Kling's official docs (cited) or from a paid test in this workspace (job ID in `07_generations/`). Refresh `kling who_am_i` before each batch; tokens below are live as of today.
+Evidence-based: every rule below either comes from Kling's official docs (cited) or from a paid test in this workspace (job ID in `07_generations/`). Refresh `kling who_am_i` before each batch; model tokens below describe the historical 2026-10-09/12 experiments.
+
+Current V4 planning: `docs/kling-manual/19-kling4-migration.md`, `shared/kling-capabilities.json`, F8/F9 and `shotContract`. These new routes do not change the historical prompts/results below. Exact reference roles/hashes, companion retention, D04 table marks, timed cause/reaction beats and audio strategy must survive any model change. G-IN/G-OUT cover composition only; identity, voice, language and spending require their own decisions.
 
 Sources: Kling VIDEO 3.0 User Guide (kling.ai/quickstart/klingai-video-3-model-user-guide, Feb 2026) · Kling AI Prompt Guide (kling.ai/blog/kling-ai-prompt-guide, Aug 2026) · `kling-cli` skill `references/filmmaking-workflow.md` · live `who_am_i` snapshot `logs/kling-discovery-2026-10-09/`.
 

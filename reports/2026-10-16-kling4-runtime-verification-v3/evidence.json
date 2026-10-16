@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-16T08:21:32.910682+00:00",
+  "launcher": "npm run review:start → node scripts/local-review.mjs start",
+  "inspectedStartup": {
+    "profile": "portable",
+    "loopback": "127.0.0.1:5173",
+    "generationOrDispatchOnStart": false,
+    "externalRequestsOnStart": false,
+    "automaticApplicationWritesNeeded": false,
+    "qaFixtureEnabled": false,
+    "newSystemService": false,
+    "networkOrSecuritySettingsChanged": false,
+    "ordinaryRuntimeWrites": [
+      "local PID/start identity record",
+      "local development log",
+      "Vite/Miniflare caches"
+    ]
+  },
+  "running": {
+    "running": true,
+    "ready": true,
+    "url": "http://127.0.0.1:5173",
+    "pid": 160485,
+    "startTicks": "714013",
+    "processGroup": 160485,
+    "session": 160485,
+    "site": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:17:31.120Z",
+    "log": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/.sites-runtime/local-review.log"
+  },
+  "httpReadiness": {
+    "status": 200,
+    "body": {
+      "application": "movies-demandas",
+      "ready": true
+    }
+  },
+  "browser": {
+    "tool": "supported CUA Chrome",
+    "url": "http://127.0.0.1:5173/",
+    "verified": true,
+    "leftOn": "Organização",
+    "visibleV4": "Kling 4 listado na conta",
+    "cliVersion": "0.2.3",
+    "routes": [
+      "image_to_video",
+      "text_to_video",
+      "omni_ref_video"
+    ],
+    "price": "unknown",
+    "approvalScopes": "G-IN/G-OUT composition only; identity, wardrobe/table, audio/language and spending separate",
+    "pendingReferenceIds": [
+      "G-ID",
+      "G-WARDROBE",
+      "G-TABLE",
+      "G-ERA",
+      "G-EYE-B"
+    ],
+    "paidRequestReleased": false,
+    "consoleErrorsOrWarnings": [],
+    "layout": "No observed clipping or horizontal overflow at 1920×992; seven original reference images loaded",
+    "imagesLoaded": 7,
+    "allImagesComplete": true,
+    "actions": "Read-only navigation and scrolling only; no review, approval, import or dispatch"
+  },
+  "workspaceBefore": {
+    "workspaceExists": true,
+    "revision": 9,
+    "dataSha256": "609b21c5151ec78266a241ea2a503614a19989ac97e3f24aa0fedcc0c42ef49f",
+    "updatedAt": "2026-10-10T15:23:57.881Z",
+    "automaticInitializationWouldBeNeeded": false
+  },
+  "workspaceAfter": {
+    "workspaceExists": true,
+    "revision": 9,
+    "dataSha256": "609b21c5151ec78266a241ea2a503614a19989ac97e3f24aa0fedcc0c42ef49f",
+    "updatedAt": "2026-10-10T15:23:57.881Z",
+    "automaticInitializationWouldBeNeeded": false
+  },
+  "workspaceDataUnchanged": true,
+  "protectedCount": 792,
+  "changedProtected": [],
+  "dataChecks": [
+    {
+      "check": "data",
+      "exitCode": 0
+    },
+    {
+      "check": "production-freshness",
+      "exitCode": 0
+    },
+    {
+      "check": "workspace-freshness",
+      "exitCode": 0
+    },
+    {
+      "check": "validate",
+      "exitCode": 0
+    }
+  ],
+  "newGenerations": 0,
+  "uploads": 0,
+  "newApprovalDecisions": 0,
+  "commits": 0
+}

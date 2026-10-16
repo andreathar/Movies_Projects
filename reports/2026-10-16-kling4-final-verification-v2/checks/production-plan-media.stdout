@@ -1,0 +1,69 @@
+{
+  "status": "ok",
+  "errors": [],
+  "pending": [
+    {
+      "shotId": "G-MASTER",
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "shotId": "G-LISTEN-KF",
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "shotId": "G-P03",
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "shotId": "G-P03",
+      "description": "Novas gerações sem preço/cotação e liberação.",
+      "owner": "producer",
+      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+    },
+    {
+      "shotId": "G-P04",
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "shotId": "G-P04",
+      "description": "Voz final e prova de dublagem/sync pendentes; D14 vigente.",
+      "owner": "Andre / dialogue-sound",
+      "unblockCondition": "Ouvir candidatos existentes, escolher rota compatível e autorizar teste limitado se necessário."
+    },
+    {
+      "shotId": "G-P04",
+      "description": "Novas gerações sem preço/cotação e liberação.",
+      "owner": "producer",
+      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+    },
+    {
+      "shotId": "G-REACTION",
+      "description": "Aparência e composição compartilhada ainda candidatas.",
+      "owner": "Andre / director",
+      "unblockCondition": "Revisar G-IN/G-OUT e geometria; registrar decisão por hash e uso."
+    },
+    {
+      "shotId": "G-REACTION",
+      "description": "Novas gerações sem preço/cotação e liberação.",
+      "owner": "producer",
+      "unblockCondition": "Selecionar pedido exato, consultar schema e preço, registrar teto específico; nenhuma herança do A/B."
+    },
+    {
+      "shotId": "G-HAND-OPTION",
+      "description": "Material/mesa não conciliados; insert é opcional.",
+      "owner": "continuity / editor",
+      "unblockCondition": "Comparar marcas e contato com master; usar apenas se necessário à cena."
+    }
+  ],
+  "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+  "mediaHashesVerified": true,
+  "creativeAcceptanceGranted": false
+}

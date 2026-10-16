@@ -1,5 +1,7 @@
 # 15 · Ferramentas úteis que não estão listadas no projeto (aviso ao Codex)
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 "Listado" = presente em `skills/registry.json` (kling-cli, film-character-continuity, film-dialogue-localization, film-editing-qc, grounded-citations, andre-time-travel) ou nos docs do projeto. Tudo abaixo está **fora** disso. Nada foi chamado, comprado ou enviado: li só descrições/schemas. Qualquer uso respeita o AGENTS.md: escopo próprio para qualquer serviço que não seja o CLI do Kling, e nenhum upload de mídia do filme a terceiros sem autorização do Andre.
 
 ## A. Lacunas dentro do próprio Kling

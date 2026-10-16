@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "provider": "kling-global",
+  "interface": "installed_cli",
+  "cli": {
+    "package": "@klingai/cli-global",
+    "version": "0.2.3",
+    "nodeVersion": "24.18.0",
+    "pluginContract": {
+      "packageVersion": "0.2.0",
+      "skillVersion": "1.0.5",
+      "appliesTo": "external plugin only; no automatic reinstall"
+    },
+    "previousVersion": "0.2.1",
+    "latestOfficialVersion": "0.2.3",
+    "registrySource": "https://registry.npmjs.org/@klingai%2fcli-global"
+  },
+  "discoveredAt": "2026-10-16T08:09:23.608779+00:00",
+  "snapshotPath": "docs/kling-manual/snapshots/2026-10-16-cli023-who_am_i.sanitized.json",
+  "toolsPath": "docs/kling-manual/snapshots/2026-10-16-cli023-tool_list.json",
+  "access": "listed_for_current_account",
+  "generationTested": false,
+  "preferredVideoModel": "kling-video-v4_0",
+  "automaticFallback": false,
+  "price": {
+    "status": "unknown",
+    "unit": "Kling credits",
+    "creditsPerSecond": null,
+    "inputVideoDurationIncluded": true
+  },
+  "announcedFullModel": {
+    "status": "announced_not_account_entitlement",
+    "source": "https://kling.ai/blog/kling-4-ai-video-model",
+    "publishedAt": "2026-09-30",
+    "notWireSchema": true,
+    "summary": "Full model announces 4K, longer scenes and multimodal references; live CLI allowlists remain authoritative.",
+    "limits": {
+      "durationSeconds": {
+        "min": 3,
+        "max": 30
+      },
+      "maxKeyframes": 10,
+      "maxPromptTokens": 8000,
+      "maxCombinedReferences": 15,
+      "maxImages": 10,
+      "maxVideos": 5,
+      "maxCombinedVideoSeconds": 30,
+      "maxElements": 7,
+      "maxVideoElements": 3,
+      "maxEditingVideos": 5,
+      "primaryEditingVideos": 1
+    },
+    "additionalSource": "https://kling.ai/blog/kling40-kling-visual-realism-creative-control-introducing-storytelling?tab=all"
+  },
+  "unavailable": [
+    "4k_on_current_cli_v4_routes",
+    "10_bit_hdr_coming_soon",
+    "two_minute_extension_coming_soon"
+  ],
+  "unverified": [
+    "fps",
+    "flash_parity",
+    "current_price",
+    "generation_quality",
+    "public_api_wire_schema"
+  ],
+  "separateInterfaces": [
+    "kling_web",
+    "kling_developer_api",
+    "higgsfield_cinema_studio_4_0"
+  ],
+  "reviewGates": [
+    "composition",
+    "identity",
+    "wardrobe_and_companions",
+    "table_D04_exact_version",
+    "audio_voice_language_sync",
+    "every_frame_historical_face_safety",
+    "exact_payload_financial_release"
+  ],
+  "notes": [
+    "Keyframe V4: no Element/audio/multi-shot flags; do not drop an identity binding to switch models.",
+    "Omni V4: multi-shot must stay true; not qualified for a locked single shot.",
+    "V3 routes retained by explicit selection and fresh schema/release review.",
+    "G-IN/G-OUT approvals cover composition only; five other references remain pending.",
+    "table 1 points to _4_alt; D04 approves _2. No silent equivalence."
+  ],
+  "featureGuide": "docs/kling-manual/20-kling4-features-cli-023.md"
+}

@@ -94,6 +94,8 @@ def fingerprint(film, job, *, media_root=None):
                'inputs': {key: media(value) for key, value in named.items()},
                'referenceDurationSeconds': job.get('referenceDurationSeconds'),
                'inputFacts': job.get('inputFacts') or {}}
+    if 'shotContract' in job:
+        payload['shotContract'] = job['shotContract']
     return digest(payload)
 
 

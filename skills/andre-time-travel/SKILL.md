@@ -36,3 +36,6 @@ Read `series/andre-time-travel/FRAMEWORK.md` (scene grammar, gates, asset requir
 
 ## Local handoff and future episodes
 Read `START_HERE.md` and `docs/REPEATABLE_WORKFLOW.md`. Directions for this episode's atlas are editable in `05_storyboard/source/atlas.json`; build a new output revision instead of replacing V1. Local edits must follow `docs/LOCAL_AGENT_HANDOFF.md` and preserve source/version hashes. The five encounters in step 4 belong to this film. New continuations start from `shared/templates/continuation.json` and choose their own structure; no approval, job or spending ceiling carries over automatically.
+
+## Mudança de modelo Kling
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md`. V4 listado não é take testado/aprovado; G-IN/G-OUT têm escopo só de composição. Preservar companions e versões de figurino/mesa. Contrato, orçamento, voz/idioma e QC temporal são por pedido; não herdar liberação de V3.

@@ -12,6 +12,7 @@ class CatalogTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup);self.root=Path(self.temp.name)
         self.write('AGENTS.md','contract')
+        self.write('shared/kling-capabilities.json',{'schemaVersion':1,'generationTested':False})
         self.roles=[{'id':r,'name':r,'brief':f'agents/{r}.md','skills':['sample']} for r in m.REVIEWERS]
         for r in self.roles:self.write(r['brief'],'# Review\n\n## Mission\nInspect the source.\n\n## Authority\nRead only.\n')
         self.write('agents/registry.json',{'roles':self.roles})

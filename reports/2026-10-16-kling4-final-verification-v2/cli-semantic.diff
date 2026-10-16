@@ -1,0 +1,1052 @@
+--- 
+
++++ 
+
+@@ -3539,5 +3539,5 @@
+
+       return urnComponent;
+     }
+-    var http = (
++    var http2 = (
+       /** @type {SchemeHandler} */
+       {
+@@ -3548,9 +3548,9 @@
+
+       }
+     );
+-    var https = (
++    var https2 = (
+       /** @type {SchemeHandler} */
+       {
+         scheme: "https",
+-        domainHost: http.domainHost,
++        domainHost: http2.domainHost,
+         parse: httpParse,
+         serialize: httpSerialize
+@@ -3596,6 +3596,6 @@
+
+       /** @type {Record<SchemeName, SchemeHandler>} */
+       {
+-        http,
+-        https,
++        http: http2,
++        https: https2,
+         ws,
+         wss,
+@@ -18119,15 +18119,36 @@
+
+   return field(whoAmIBody, "availableModels", "available_models")?.[tool];
+ }
+-function parseCombinedItemCap(raw) {
++function parseCombinedItemCap(raw, label = "combinedItemCap") {
+   if (raw === void 0 || raw === null) return void 0;
+   const cap = raw && typeof raw === "object" ? raw : void 0;
+   const strings = (value) => Array.isArray(value) && value.every((item) => typeof item === "string");
+-  if (!cap || typeof cap.maxItems !== "number" || !Number.isSafeInteger(cap.maxItems) || cap.maxItems < 0 || !strings(cap.arguments) || !strings(cap.inputPrefixes)) {
++  if (!cap || typeof cap.maxItems !== "number" || !Number.isSafeInteger(cap.maxItems) || cap.maxItems < 0 || !strings(cap.arguments) || !strings(cap.inputPrefixes) || cap.whenAnyInputPrefixes !== void 0 && !strings(cap.whenAnyInputPrefixes) || cap.whenNoneInputPrefixes !== void 0 && !strings(cap.whenNoneInputPrefixes)) {
+     throw new ValidationError(msg(
+-      "who_am_i \u8FD4\u56DE\u4E86\u65E0\u6548\u7684 combinedItemCap\uFF1AmaxItems \u987B\u4E3A\u975E\u8D1F\u6574\u6570\uFF0Carguments \u548C inputPrefixes \u987B\u4E3A\u5B57\u7B26\u4E32\u6570\u7EC4\u3002\u8BF7\u8054\u7CFB\u670D\u52A1\u7AEF\u786E\u8BA4\u58F0\u660E\u3002",
+-      "who_am_i returned an invalid combinedItemCap: maxItems must be a non-negative integer; arguments and inputPrefixes must be string arrays. Contact the server owner to correct the declaration."
++      `who_am_i \u8FD4\u56DE\u4E86\u65E0\u6548\u7684 ${label}\uFF1AmaxItems \u987B\u4E3A\u975E\u8D1F\u6574\u6570\uFF0Carguments\u3001inputPrefixes \u548C\u53EF\u9009\u6761\u4EF6\u987B\u4E3A\u5B57\u7B26\u4E32\u6570\u7EC4\u3002\u8BF7\u8054\u7CFB\u670D\u52A1\u7AEF\u786E\u8BA4\u58F0\u660E\u3002`,
++      `who_am_i returned an invalid ${label}: maxItems must be a non-negative integer; arguments, inputPrefixes and optional conditions must be string arrays. Contact the server owner to correct the declaration.`
+     ));
+   }
+-  return { maxItems: cap.maxItems, arguments: cap.arguments, inputPrefixes: cap.inputPrefixes };
++  return {
++    maxItems: cap.maxItems,
++    arguments: cap.arguments,
++    inputPrefixes: cap.inputPrefixes,
++    ...cap.whenAnyInputPrefixes !== void 0 ? { whenAnyInputPrefixes: cap.whenAnyInputPrefixes } : {},
++    ...cap.whenNoneInputPrefixes !== void 0 ? { whenNoneInputPrefixes: cap.whenNoneInputPrefixes } : {}
++  };
++}
++function parseCombinedItemCaps(raw) {
++  if (raw === void 0 || raw === null) return void 0;
++  if (!Array.isArray(raw)) throw new ValidationError(msg(
++    "who_am_i.combinedItemCaps \u5FC5\u987B\u4E3A\u6570\u7EC4\u3002",
++    "who_am_i.combinedItemCaps must be an array."
++  ));
++  return raw.map((item) => {
++    const cap = parseCombinedItemCap(item, "combinedItemCaps");
++    if (!cap) throw new ValidationError(msg(
++      "who_am_i.combinedItemCaps \u7684\u5143\u7D20\u5FC5\u987B\u4E3A\u5BF9\u8C61\u3002",
++      "who_am_i.combinedItemCaps entries must be objects."
++    ));
++    return cap;
++  });
+ }
+ function normalizeModel(raw) {
+@@ -18145,9 +18166,12 @@
+
+         default: typeof ar.default === "string" ? ar.default : void 0,
+         allowedValues: field(ar, "allowedValues", "allowed_values"),
+-        description: typeof ar.description === "string" ? ar.description : void 0
++        description: typeof ar.description === "string" ? ar.description : void 0,
++        maxItems: typeof ar.maxItems === "number" ? ar.maxItems : void 0
+       };
+     }),
+     inputs: Array.isArray(rec.inputs) ? rec.inputs : void 0,
+-    combinedItemCap: parseCombinedItemCap(rec.combinedItemCap)
++    combinedItemCap: parseCombinedItemCap(rec.combinedItemCap),
++    combinedItemCaps: parseCombinedItemCaps(rec.combinedItemCaps),
++    elementSupport: rec.elementSupport
+   };
+ }
+@@ -18378,26 +18402,31 @@
+
+ }
+ function assertCombinedItemCap(spec, inputNames, flags = {}) {
+-  const cap = spec.combinedItemCap;
+-  if (!cap) return;
+-  let count = inputNames.filter((name) => cap.inputPrefixes.some((prefix) => name.startsWith(prefix))).length;
+-  for (const name of cap.arguments) {
+-    const value = flags[name] ?? flags[camelOf(name)];
+-    if (value === void 0) continue;
+-    let items;
+-    try {
+-      items = JSON.parse(value);
+-    } catch {
+-      throw new ValidationError(msg(`--${name} \u5FC5\u987B\u662F JSON \u6570\u7EC4\u3002`, `--${name} must be a JSON array.`));
+-    }
+-    if (!Array.isArray(items)) {
+-      throw new ValidationError(msg(`--${name} \u5FC5\u987B\u662F JSON \u6570\u7EC4\u3002`, `--${name} must be a JSON array.`));
+-    }
+-    count += items.length;
+-  }
+-  if (count > cap.maxItems) {
+-    throw new ValidationError(msg(
+-      `\u6A21\u578B ${spec.model} \u7684\u7D20\u6750\u5408\u8BA1\u4E0A\u9650\u4E3A ${cap.maxItems}\uFF0C\u4F46\u63D0\u4F9B\u4E86 ${count} \u4E2A\u3002\u8BF7\u6309 who_am_i \u7684 combinedItemCap \u51CF\u5C11\u7D20\u6750\u3002`,
+-      `Model ${spec.model} has a combined reference limit of ${cap.maxItems}, but ${count} were provided. Reduce references according to who_am_i.combinedItemCap.`
+-    ));
++  const caps = [...spec.combinedItemCap ? [spec.combinedItemCap] : [], ...spec.combinedItemCaps ?? []];
++  for (const cap of caps) {
++    const hasPrefix = (prefix) => inputNames.some((name) => name.startsWith(prefix));
++    if (cap.whenAnyInputPrefixes && !cap.whenAnyInputPrefixes.some(hasPrefix)) continue;
++    if (cap.whenNoneInputPrefixes?.some(hasPrefix)) continue;
++    let count = inputNames.filter((name) => cap.inputPrefixes.some((prefix) => name.startsWith(prefix))).length;
++    for (const name of cap.arguments) {
++      const value = flags[name] ?? flags[camelOf(name)];
++      if (value === void 0) continue;
++      let items;
++      try {
++        items = JSON.parse(value);
++      } catch {
++        throw new ValidationError(msg(`--${name} \u5FC5\u987B\u662F JSON \u6570\u7EC4\u3002`, `--${name} must be a JSON array.`));
++      }
++      if (!Array.isArray(items)) {
++        throw new ValidationError(msg(`--${name} \u5FC5\u987B\u662F JSON \u6570\u7EC4\u3002`, `--${name} must be a JSON array.`));
++      }
++      count += items.length;
++    }
++    if (count > cap.maxItems) {
++      const declaration = spec.combinedItemCaps?.includes(cap) ? "combinedItemCaps" : "combinedItemCap";
++      throw new ValidationError(msg(
++        `\u6A21\u578B ${spec.model} \u7684\u7D20\u6750\u5408\u8BA1\u4E0A\u9650\u4E3A ${cap.maxItems}\uFF0C\u4F46\u63D0\u4F9B\u4E86 ${count} \u4E2A\u3002\u8BF7\u6309 who_am_i \u7684 ${declaration} \u51CF\u5C11\u7D20\u6750\u3002`,
++        `Model ${spec.model} has a combined reference limit of ${cap.maxItems}, but ${count} were provided. Reduce references according to who_am_i.${declaration}.`
++      ));
++    }
+   }
+ }
+@@ -18540,5 +18569,11 @@
+
+ 
+ import { readFile as readFile2 } from "node:fs/promises";
++import http from "node:http";
++import https from "node:https";
+ import { basename as basename3, extname, resolve as resolve4 } from "node:path";
++import { Readable } from "node:stream";
++import { pipeline } from "node:stream/promises";
++var UPLOAD_BASE_TIMEOUT_MS = 12e4;
++var UPLOAD_BYTES_PER_SECOND = 64 * 1024;
+ var MIME_BY_EXT = {
+   ".jpg": "image/jpeg",
+@@ -18549,5 +18584,6 @@
+
+   ".mp4": "video/mp4",
+   ".mov": "video/quicktime",
+-  ".mp3": "audio/mpeg"
++  ".mp3": "audio/mpeg",
++  ".wav": "audio/wav"
+ };
+ function contentTypeFor(filePath) {
+@@ -18607,8 +18643,46 @@
+
+   });
+   const t0 = Date.now();
+-  let res;
++  const timeoutMs = UPLOAD_BASE_TIMEOUT_MS + Math.ceil(fileBuffer.length / UPLOAD_BYTES_PER_SECOND) * 1e3;
++  const signal = AbortSignal.timeout(timeoutMs);
++  let text;
++  let status;
+   try {
+-    res = await fetch(uploadUrl, { method: "POST", body: formData, signal: AbortSignal.timeout(DEFAULT_TIMEOUT_MS * 4) });
++    const encoded = new Request(uploadUrl, { method: "POST", body: formData });
++    const url3 = new URL(uploadUrl);
++    const req = (url3.protocol === "https:" ? https : http).request(url3, {
++      method: "POST",
++      headers: Object.fromEntries(encoded.headers),
++      agent: false,
++      signal
++    });
++    const response = new Promise((resolve6, reject) => {
++      req.once("response", resolve6);
++      req.once("error", reject);
++    });
++    const sending = pipeline(Readable.from(encoded.body.values({ preventCancel: true })), req, { signal }).then(() => void 0, (error2) => error2);
++    const res = await response;
++    status = res.statusCode;
++    const chunks = [];
++    for await (const chunk of res) chunks.push(Buffer.from(chunk));
++    const sendError = await sending;
++    if (sendError && !res.complete) throw sendError;
++    text = Buffer.concat(chunks).toString("utf8");
+   } catch (err) {
++    await httpLog({
++      ts: (/* @__PURE__ */ new Date()).toISOString(),
++      direction: "RES",
++      method: "POST",
++      url: uploadUrl,
++      status,
++      headers: {},
++      durationMs: Date.now() - t0,
++      error: err instanceof Error ? err.message : String(err)
++    });
++    if (signal.aborted) {
++      throw new KlingError(msg(
++        `\u5BA2\u6237\u7AEF\u6587\u4EF6\u4E0A\u4F20\u8D85\u65F6\uFF08${timeoutMs / 1e3}s\uFF0C${fileBuffer.length} \u5B57\u8282\uFF09\uFF0C\u672A\u6536\u5230\u5B8C\u6574\u4E0A\u4F20\u54CD\u5E94\u3002\u8BF7\u68C0\u67E5\u7F51\u7EDC\u540E\u91CD\u8BD5\u3002`,
++        `Client file upload timed out after ${timeoutMs / 1e3}s (${fileBuffer.length} bytes) without a complete upload response. Check your network and try again.`
++      ));
++    }
+     throw new KlingError(msg(
+       `\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25\uFF08${uploadUrl}\uFF09\uFF1A${err instanceof Error ? err.message : String(err)}`,
+@@ -18616,5 +18690,4 @@
+
+     ));
+   }
+-  const text = await res.text();
+   let parsed;
+   try {
+@@ -18628,5 +18701,5 @@
+
+     method: "POST",
+     url: uploadUrl,
+-    status: res.status,
++    status,
+     headers: {},
+     responseBody: parsed,
+@@ -18635,5 +18708,5 @@
+
+   const url2 = extractUploadedUrl(parsed);
+   const body = url2 && parsed && typeof parsed === "object" ? { ...parsed, url: url2 } : parsed;
+-  return { ok: res.ok, status: res.status, body };
++  return { ok: status !== void 0 && status >= 200 && status < 300 && Boolean(url2), status: status ?? 0, body };
+ }
+ async function resolveFileUrl(file, opts = {}) {
+@@ -18897,4 +18970,12 @@
+
+ }
+ 
++var GENERATION_COMMANDS = /* @__PURE__ */ new Set([
++  "text_to_image",
++  "image_to_image",
++  "text_to_video",
++  "image_to_video",
++  "omni_ref_video",
++  "motion_control"
++]);
+ var COMMAND_TO_MCP_TOOL = {
+   account: "query_membership_and_credits"
+@@ -18907,9 +18988,71 @@
+
+   return JSON.stringify(schema, null, 2);
+ }
++function modelHelp(model, command) {
++  const lines = ["", `${msg("\u6A21\u578B", "Model")}: ${model.model}`];
++  lines.push(`  ${msg("\u751F\u6210\u53C2\u6570\uFF08MCP \u540D\u79F0\uFF09", "Generation arguments (MCP names)")}:`);
++  for (const arg of model.arguments ?? []) {
++    const details = [arg.required ? msg("\u5B57\u6BB5\u5FC5\u586B", "required field") : msg("\u53EF\u9009", "optional")];
++    if (arg.default !== void 0) details.push(`${msg("\u9ED8\u8BA4", "default")}=${JSON.stringify(arg.default)}`);
++    if (arg.allowedValues?.length) details.push(`${msg("\u53EF\u9009\u503C", "allowed")}=${arg.allowedValues.map((v) => JSON.stringify(v)).join("|")}`);
++    if (arg.maxItems !== void 0) details.push(`maxItems=${arg.maxItems}`);
++    lines.push(`    ${arg.name}: ${details.join("; ")}`);
++    if (arg.description) lines.push(...arg.description.split("\n").map((line) => `      ${line}`));
++  }
++  if (!model.arguments?.length) lines.push(`    ${msg("\u672A\u58F0\u660E", "none declared")}`);
++  const inputs = model.inputs ?? [];
++  if (command === "omni_ref_video") {
++    const counts = ["image", "video", "audio"].map((type) => {
++      const pattern = new RegExp(`^${type}_\\d+$`);
++      return `${type}_N=${inputs.filter((i) => pattern.test(i.name)).length}`;
++    });
++    lines.push(`  ${msg("\u58F0\u660E\u7684\u7D20\u6750\u69FD\u4F4D\u6570", "Declared reference slot counts")}: ${counts.join(", ")}`);
++  }
++  lines.push(`  ${msg("\u8F93\u5165\u69FD\u4F4D\uFF08\u6309\u58F0\u660E\u987A\u5E8F\uFF09", "Input slots (in declared order)")}:`);
++  for (const input of inputs) {
++    lines.push(`    ${input.name}: ${input.required ? msg("\u5FC5\u586B", "required") : msg("\u53EF\u9009", "optional")}`);
++    if (input.description) lines.push(...input.description.split("\n").map((line) => `      ${line}`));
++  }
++  if (!inputs.length) lines.push(`    ${msg("\u672A\u58F0\u660E", "none declared")}`);
++  const cap = model.combinedItemCap;
++  if (cap) {
++    lines.push(`  combinedItemCap: ${JSON.stringify(cap)}`);
++  }
++  if (model.combinedItemCaps?.length) lines.push(`  combinedItemCaps: ${JSON.stringify(model.combinedItemCaps)}`);
++  if (model.elementSupport) lines.push(`  elementSupport: ${JSON.stringify(model.elementSupport)}`);
++  return lines;
++}
+ function formatDynamicHelp(opts) {
+   const mcpToolName = mcpToolForCommand(opts.command);
+   const lines = [opts.staticUsage.trimEnd()];
+   lines.push("");
++  if (GENERATION_COMMANDS.has(opts.command)) {
++    lines.push(msg("--- \u5B9E\u65F6\u6A21\u578B\u58F0\u660E\uFF08who_am_i\uFF09---", "--- Live model declarations (who_am_i) ---"));
++    lines.push(msg(
++      "\u4EC5\u652F\u6301\u6240\u9009\u6A21\u578B\u5217\u51FA\u7684\u53C2\u6570\u548C\u8F93\u5165\u69FD\u4F4D\uFF1B\u6CA1\u6709\u58F0\u660E\u7684\u7D20\u6750\u7C7B\u578B\u4E0D\u80FD\u7531\u901A\u7528\u5DE5\u5177\u8BF4\u660E\u63A8\u65AD\u4E3A\u652F\u6301\u3002",
++      "Use only arguments and input slots declared by the chosen model; generic tool prose does not enable undeclared media types."
++    ));
++    lines.push(msg(
++      "\u5B57\u6BB5\u5FC5\u586B\u4E0D\u7B49\u4E8E\u5FC5\u987B\u975E\u7A7A\uFF0C\u4E5F\u4E0D\u8868\u793A CLI \u4F1A\u81EA\u52A8\u586B\u503C\u3002\u8BF7\u540C\u65F6\u9075\u5B88\u4E0B\u65B9\u53C2\u6570\u548C\u69FD\u4F4D\u8BF4\u660E\u4E2D\u7684\u7EA6\u675F\uFF1B\u66F4\u591A\u6A21\u578B\u8BF4\u660E\u89C1 kling who_am_i\u3002",
++      "A required field is not necessarily non-empty, and the CLI does not automatically fill it. Follow the argument and slot constraints below; see kling who_am_i for further model details."
++    ));
++    lines.push(msg(
++      "\u672A\u58F0\u660E\u9ED8\u8BA4\u503C\u4E0D\u4EE3\u8868\u53C2\u6570\u53EF\u7701\u7565\uFF1B\u672A\u58F0\u660E\u5408\u8BA1\u4E0A\u9650\u4E5F\u4E0D\u4EE3\u8868\u7D20\u6750\u6570\u91CF\u65E0\u9650\u5236\u3002",
++      "No declared default does not guarantee an argument can be omitted; no declared combined cap does not mean unlimited references."
++    ));
++    if (!opts.models?.length) {
++      lines.push(msg("\u672A\u8FD4\u56DE\u53EF\u7528\u6A21\u578B\uFF0C\u4E0D\u80FD\u786E\u8BA4\u5F53\u524D\u80FD\u529B\u3002", "No available models returned; current capabilities are unconfirmed."));
++    }
++    for (const model of opts.models ?? []) lines.push(...modelHelp(model, opts.command));
++    return lines.join("\n");
++  }
+   lines.push(msg("--- \u5B9E\u65F6\u670D\u52A1\u7AEF\u58F0\u660E\uFF08tools/list\uFF09---", "--- Live server declaration (tools/list) ---"));
++  lines.push(msg(
++    "\u4EE5\u4E0B\u4E3A MCP \u8BF7\u6C42\u7ED3\u6784\uFF0C\u4E0D\u662F CLI \u53C2\u6570\u8BED\u6CD5\uFF1BCLI \u7528\u6CD5\u89C1\u4E0A\u65B9\uFF0C\u6A21\u578B\u53C2\u6570\u4E0E\u8F93\u5165\u69FD\u4F4D\u89C1 kling who_am_i\u3002",
++    "This is the MCP request structure, not CLI flag syntax; see above for CLI usage and kling who_am_i for model arguments and input slots."
++  ));
++  lines.push(msg(
++    "schema.required \u4EC5\u63CF\u8FF0 MCP \u8BF7\u6C42\uFF0C\u4E0D\u4F1A\u53D6\u6D88\u4E0A\u65B9 CLI \u6807\u6CE8\u7684\u5FC5\u586B\u53C2\u6570\u3002",
++    "schema.required describes the MCP request; it does not waive required CLI arguments shown above."
++  ));
+   lines.push(`${msg("MCP \u5DE5\u5177", "MCP tool")}: ${mcpToolName}`);
+   if (!opts.tool) {
+@@ -18917,13 +19060,16 @@
+
+     return lines.join("\n");
+   }
+-  if (opts.tool.description) lines.push("", `${msg("\u8BF4\u660E", "Description")}:`, opts.tool.description);
+   const schema = stringifySchema(opts.tool.inputSchema);
+   if (schema) lines.push("", "inputSchema:", schema);
+   return lines.join("\n");
+ }
+-async function dynamicHelp({ command, staticUsage }) {
++async function dynamicHelp({ command, staticUsage }, connection = {}) {
+   try {
++    if (GENERATION_COMMANDS.has(command)) {
++      const models = await discoverModelsForTool(command, connection);
++      return formatDynamicHelp({ command, staticUsage, models });
++    }
+     const mcpToolName = mcpToolForCommand(command);
+-    const tools = await listMcpTools({});
++    const tools = await listMcpTools(connection);
+     return formatDynamicHelp({
+       command,
+@@ -18937,5 +19083,10 @@
+
+       `[kling] Could not fetch the live server declaration; showing local static usage: ${reason}`
+     ));
+-    return staticUsage;
++    return `${staticUsage}
++
++${msg(
++      "\u5B9E\u65F6\u58F0\u660E\u4E0D\u53EF\u7528\uFF1A\u4EE5\u4E0A\u4EC5\u4E3A\u672C\u5730 CLI \u7528\u6CD5\uFF0C\u672A\u786E\u8BA4\u5F53\u524D\u6A21\u578B\u3001\u53C2\u6570\u6216\u7D20\u6750\u652F\u6301\u3002",
++      "Live declarations unavailable: this is local CLI usage only; current models, parameters and media support are unconfirmed."
++    )}`;
+   }
+ }
+@@ -18944,27 +19095,63 @@
+
+ }
+ 
+-var GENERATE_USAGE = `Usage: kling text_to_image [options] <prompt>
++var GENERATE_USAGE = `Usage: kling text_to_image --model <model> [options] <prompt>
+ Client options:
+-  --model            Model name (required; from \`kling who_am_i\`)
+-  --poll             Wait up to N seconds for results before returning (0=off; bare flag=60)
++  --model <model>     Required model name from \`kling who_am_i\`; the CLI does not auto-select a model
++  --poll [N]          Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
+ Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
+-  any --<name> the model declares, snake_case or camelCase, e.g.
+-  --aspectRatio 16:9 --imgResolution 1k --imageCount 2
+-Omitted parameters use the server-declared defaults.`;
+-var REF_USAGE = msg(`Usage: kling image_to_image --image <url|path> [--image ...] [options] <prompt>
++  --<name> <value>    Use a declared argument name or its camelCase form
++Provide a non-empty prompt positionally or with --prompt; --prompt takes precedence.
++Parameter requirements, allowed values and defaults depend on the model.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Example (replace MODEL with a model from who_am_i):
++  kling text_to_image --model MODEL "A cat in watercolor" --poll=60`;
++var REF_USAGE = msg(`Usage: kling image_to_image --model <model> [--image <url|path> ... | --input <name>=<url|path> ...] [options] [prompt]
+ Client options:
+-  --image            Reference image URL or local path (repeatable; local files auto-uploaded)
+-  --model            Model name (required; from \`kling who_am_i\`)
+-  --poll             Wait up to N seconds for results before returning (0=off; bare flag=60)
++  --image <url|path>  Fill image slots in declared order (repeatable; local files auto-uploaded)
++  --input <name>=<url|path>
++                     Fill declared slots by name (repeatable; declared names or camelCase);
++                     use for scene/style/subject roles. Cannot be combined with --image.
++  --prompt <text>    Explicit prompt value; --prompt "" sends an empty string and overrides
++                     a positional prompt. An explicit empty positional prompt is also preserved.
++  --model <model>     Required model name from \`kling who_am_i\`; the CLI does not auto-select a model
++  --poll [N]          Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
+ Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
+-  any --<name> the model declares, snake_case or camelCase.
+-Prompt may reference inputs as \u56FE\u72471/\u56FE\u7247N per the model's input declaration.`, `Usage: kling image_to_image --image <url|path> [--image ...] [options] <prompt>
++  --<name> <value>    Use a declared argument name or its camelCase form
++Provide a positional prompt or --prompt; an omitted prompt is different from an explicit empty value.
++Whether an empty prompt or an input combination is accepted follows the model declaration.
++Required slots must be filled; other combination rules are validated by the server.
++HTTP(S) URLs are passed through. Accepted sources and media formats follow the model declaration.
++Prompt reference names depend on the model (e.g. \u56FE\u72471 for image_1); not all models use image_N slots.
++Parameter requirements, allowed values and defaults depend on the model.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Example (replace MODEL with a model from who_am_i):
++  kling image_to_image --model MODEL --image ./reference.png "\u6539\u6210\u6C34\u5F69\u98CE\u683C" --poll=60
++Example (confirm this model and these slots with who_am_i; no text guidance):
++  kling image_to_image --model kling-image-v2_1 --input scene_image=./scene.png --input style_image=./style.png --prompt "" --poll=60`, `Usage: kling image_to_image --model <model> [--image <url|path> ... | --input <name>=<url|path> ...] [options] [prompt]
+ Client options:
+-  --image            Reference image URL or local path (repeatable; local files auto-uploaded)
+-  --model            Model name (required; from \`kling who_am_i\`)
+-  --poll             Wait up to N seconds for results before returning (0=off; bare flag=60)
++  --image <url|path>  Fill image slots in declared order (repeatable; local files auto-uploaded)
++  --input <name>=<url|path>
++                     Fill declared slots by name (repeatable; declared names or camelCase);
++                     use for scene/style/subject roles. Cannot be combined with --image.
++  --prompt <text>    Explicit prompt value; --prompt "" sends an empty string and overrides
++                     a positional prompt. An explicit empty positional prompt is also preserved.
++  --model <model>     Required model name from \`kling who_am_i\`; the CLI does not auto-select a model
++  --poll [N]          Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
+ Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
+-  any --<name> the model declares, snake_case or camelCase.
+-Prompt may reference inputs as image 1/image N per the model's input declaration.`);
++  --<name> <value>    Use a declared argument name or its camelCase form
++Provide a positional prompt or --prompt; an omitted prompt is different from an explicit empty value.
++Whether an empty prompt or an input combination is accepted follows the model declaration.
++Required slots must be filled; other combination rules are validated by the server.
++HTTP(S) URLs are passed through. Accepted sources and media formats follow the model declaration.
++Prompt reference names depend on the model; not all models use image_N slots or the same reference syntax.
++Parameter requirements, allowed values and defaults depend on the model.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Example (replace MODEL with a model from who_am_i):
++  kling image_to_image --model MODEL --image ./reference.png "Restyle in watercolor" --poll=60
++Example (confirm this model and these slots with who_am_i; no text guidance):
++  kling image_to_image --model kling-image-v2_1 --input scene_image=./scene.png --input style_image=./style.png --prompt "" --poll=60`);
+ var generateAction = {
+   id: "text_to_image",
+@@ -18978,5 +19165,5 @@
+
+     const authCode = await ensureAuthReady();
+     if (authCode !== 0) return authCode;
+-    const prompt = await requireArg(positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
++    const prompt = await requireArg(flags.prompt ?? positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
+     if (!prompt) {
+       console.error(GENERATE_USAGE);
+@@ -19000,24 +19187,48 @@
+
+     const { flags, multiFlags, booleans, positional } = parseFlags(args, {
+       booleans: ["omni", "flash"],
+-      multi: ["image"]
++      multi: ["image", "input"]
+     });
+     assertNoFamilyFlags(booleans, flags);
+     assertInt("--poll", flags.poll, 0, 3600);
+     const images = multiFlags.image ?? [];
++    const assignments = multiFlags.input ?? [];
++    if (["image", "input", "prompt"].some((name) => booleans.has(name)) || images.some((image) => !image.trim())) {
++      throw new ValidationError(msg(
++        '--image / --input \u5FC5\u987B\u63D0\u4F9B\u503C\uFF1B\u7A7A\u63D0\u793A\u8BCD\u8BF7\u663E\u5F0F\u4F20 --prompt ""\u3002',
++        '--image / --input require values; for an empty prompt, explicitly pass --prompt "".'
++      ));
++    }
++    if (images.length > 0 && assignments.length > 0) {
++      throw new ValidationError(msg(
++        "--input \u4E0D\u80FD\u4E0E --image \u6DF7\u7528\u3002\u8BF7\u7528 --input \u9010\u4E2A\u5199\u660E\u5168\u90E8\u8F93\u5165\u69FD\u4F4D\u3002",
++        "--input cannot be combined with --image. Name every input slot with --input."
++      ));
++    }
+     const authCode = await ensureAuthReady();
+     if (authCode !== 0) return authCode;
+-    const prompt = await requireArg(positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
+-    if (!prompt || images.length === 0) {
++    const spec = await resolveModel("image_to_image", flags.model);
++    const hasPrompt = flags.prompt !== void 0 || positional.length > 0;
++    const prompt = hasPrompt ? flags.prompt ?? positional.join(" ").trim() : await requireArg("", msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
++    if (!hasPrompt && !prompt) {
+       console.error(REF_USAGE);
+       return 1;
+     }
+-    const resolved = [];
+-    for (const img of images) resolved.push(await resolveImageUrl(img));
++    if (assignments.length === 0) assertInputCount(spec, images.length);
++    const slots = assignments.length > 0 ? resolveInputAssignments(spec, assignments) : images.map((value, i) => ({ name: spec.inputs?.[i]?.name ?? "input", value }));
++    const names = slots.map((slot) => slot.name);
++    assertRequiredInputNames(spec, names);
++    const generationFlags = { ...flags, prompt };
++    matchDeclaredArguments(spec, generationFlags);
++    assertCombinedItemCap(spec, names, generationFlags);
++    const namedInputs = [];
++    for (const { name, value } of slots) namedInputs.push({ name, url: await resolveImageUrl(value) });
+     const result = await submitGeneration({
+       tool: "image_to_image",
+-      model: flags.model,
++      model: spec.model,
+       prompt,
+-      flags,
+-      inputUrls: resolved
++      promptRequired: false,
++      flags: generationFlags,
++      namedInputs,
++      spec
+     });
+     return emitSubmitMaybePoll(result, parsePollSeconds(flags, booleans), ctx);
+@@ -19025,39 +19236,86 @@
+
+ };
+ 
+-var MODEL_PICK = `  --model            Model name (required; from \`kling who_am_i\`)`;
+-var GENERATE_USAGE2 = `Usage: kling text_to_video [options] <prompt>
++var MODEL_PICK = `  --model <model>     Required model name from \`kling who_am_i\`; the CLI does not auto-select a model`;
++var GENERATE_USAGE2 = `Usage: kling text_to_video --model <model> [options] <prompt>
+ Client options:
+ ${MODEL_PICK}
+-  --poll             Wait up to N seconds for results before returning (0=off; bare flag=60)
++  --poll [N]          Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
+ Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
+-  any --<name> the model declares, snake_case or camelCase, e.g. --duration 10
+-Omitted parameters use the server-declared defaults.`;
+-var IMG_USAGE = `Usage: kling image_to_video [--image <url|path> | --input <name>=<url|path>] [options] [prompt]
++  --<name> <value>    Use a declared argument name or its camelCase form
++Provide a non-empty prompt positionally or with --prompt; --prompt takes precedence.
++Parameter requirements, allowed values and defaults depend on the model.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Example (replace MODEL with a model from who_am_i):
++  kling text_to_video --model MODEL "Sunset over the sea" --poll=60`;
++var IMG_USAGE = `Usage: kling image_to_video --model <model> [options] [prompt]
+ Client options:
+-  --image            Reference image URL or local path (repeatable; local files auto-uploaded)
+-  --tailImage        Tail-frame image URL or local path (fills the model's declared tail slot)
+-  --input            Fill one declared input slot as <name>=<url|path> (repeatable), e.g.
+-                     --input tail_image=./last.png. Slot names come from \`kling who_am_i\`;
+-                     use it to address keyframes in any position. Not combinable with
+-                     --image / --tailImage.
++  --image <url|path>  Fill non-tail frame slots in the model's declared order (repeatable)
++  --tailImage <url|path>
++                     Fill the declared tail_image / tailImage slot; requires model support
++  --input <name>=<url|path>
++                     Fill a declared frame slot by name (repeatable), e.g.
++                     --input tail_image=./last.png. Names come from \`kling who_am_i\`;
++                     declared names or their camelCase forms are accepted.
++                     Cannot be combined with --image / --tailImage.
+ ${MODEL_PICK}
+-  --poll             Wait up to N seconds for results before returning (0=off; bare flag=60)
++  --poll [N]          Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
++The CLI uploads local frames and passes HTTP(S) URLs unchanged; accepted sources and formats follow the model declaration.
+ Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
+-  any --<name> the model declares, snake_case or camelCase.
+-Prompt is optional when the chosen model declares it optional; frames are optional when the
+-model declares every frame slot optional. The server validates the submitted input combination.`;
+-var OMNI_REF_USAGE = `Usage: kling omni_ref_video [options] <prompt>
++  --<name> <value>    Use a declared argument name or its camelCase form
++Provide text positionally or with --prompt. Omitting both is allowed only if the model permits it.
++If the model requires the prompt field but allows an empty value, use --prompt "" explicitly.
++Missing required prompt fields are checked before upload.
++Required frame slots must be filled. For text-only generation, use text_to_video.
++--tailImage may be used alone only if no other slot is required and the server accepts the combination.
++All frame slots being optional does not guarantee a request without frames is valid;
++the server validates the submitted input combination.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Examples (replace MODEL and slot names with declarations from who_am_i):
++  kling image_to_video --model MODEL --image ./first.png "Gentle camera movement" --poll=60
++  kling image_to_video --model MODEL --image ./first.png --tailImage ./last.png "Smooth transition"
++  kling image_to_video --model MODEL --input keyframe_1=./middle.png "Camera follows the subject"`;
++var OMNI_REF_USAGE = `Usage: kling omni_ref_video --model <model> [options] <prompt>
+ Client options:
+-  --image            Reference image URL or local path (repeatable -> image_1..)
+-  --video            Reference video URL or local path (repeatable -> video_1..)
+-  --audio            Reference audio URL or local path (repeatable -> audio_1..)
+-  --elements         JSON array string of Element bindings from who_am_i
+-  --input            Fill one declared input slot as <name>=<url|path> (repeatable), for slots
+-                     outside the image_N / video_N / audio_N naming (names from \`kling who_am_i\`)
++  --image <url|path>  Fill declared image_N slots in order (repeatable)
++  --video <url|path>  Fill declared video_N slots in order (repeatable; count depends on model)
++  --audio <url|path>  Fill audio_N slots only if the model declares them (repeatable);
++                     the presence of this CLI flag does not imply model support
++  --input <name>=<url|path>
++                     Fill any declared input slot by name (repeatable; declared names or
++                     their camelCase forms). May accompany --image / --video / --audio,
++                     but each slot can only be filled once. Names come from \`kling who_am_i\`.
+ ${MODEL_PICK}
+-  --poll             Wait up to N seconds for results before returning (0=off; bare flag=60)
++  --poll [N]          Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
++The CLI uploads local references and passes HTTP(S) URLs unchanged; accepted sources and formats follow the model declaration.
+ Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
+-  any --<name> the model declares, snake_case or camelCase.
+-References are optional: a text-only prompt is valid when the model declares no required input.`;
++  --<name> <value>    Use a declared argument name or its camelCase form
++  --elements <json>  Element bindings as a JSON array, only if declared by the chosen model;
++                     each item is {id, bindName, type}. Get id/type with element_get;
++                     supported types and limits follow the model declaration.
++Find an existing subject with \`kling element_list\`, then inspect it with \`kling element_get ELEMENT_ID\`.
++Quote the JSON array as one argument. Reference each bound subject as <<<id>>> in the prompt;
++the id must match an entry in --elements. Element IDs are not image/video URLs or input slots.
++Provide a non-empty prompt positionally or with --prompt; --prompt takes precedence.
++Supported reference types, slots and limits depend on the model.
++Audio reference counts come from audio_N slots, not the enable_audio argument.
++When audio slots are declared, local audio is uploaded before submission; the MCP receives a URL.
++Follow combinedItemCap / conditional combinedItemCaps and Element type/quantity declarations.
++Read argument descriptions for input-dependent restrictions; defaults may need explicit overrides.
++enable_audio generates synced audio; keepOriginalSound controls source sound. Neither enables audio_N inputs.
++Subject voice resources are distinct from standalone audio_N reference inputs.
++Required input slots must be filled. No required slots does not guarantee a text-only request
++is valid; the server validates the submitted input combination.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Example (confirm this model is available with who_am_i; keeps the reference video's sound):
++  kling omni_ref_video --model kling-video-v3_0_omni --image ./reference.png --video ./clip.mp4 --aspectRatio 16:9 --enable_audio false --keepOriginalSound true "Continue the scene" --poll=60
++Audio example (only if who_am_i declares audio_1 and audio_2 for this model):
++  kling omni_ref_video --model kling-video-v4_0 --image ./reference.png --audio ./voice.mp3 --audio ./music.mp3 "\u56FE\u72471\u7684\u89D2\u8272\u6309\u97F3\u98911\u8BF4\u8BDD\uFF0C\u4F7F\u7528\u97F3\u98912\u7684\u97F3\u4E50" --poll=60
++Element example (replace ELEMENT_ID and type with element_get values; confirm model support):
++  kling omni_ref_video --model kling-video-v4_0 --elements '[{"id":"ELEMENT_ID","bindName":"Alice","type":"image"}]' --aspectRatio 16:9 "<<<ELEMENT_ID>>> walks along the beach" --poll=60
++Elements may accompany image/video references. With Elements alone, choose an explicit aspect ratio
++from the model declaration instead of auto when auto requires an image/video input.`;
+ var generateAction2 = {
+   id: "text_to_video",
+@@ -19071,5 +19329,5 @@
+
+     const authCode = await ensureAuthReady();
+     if (authCode !== 0) return authCode;
+-    const prompt = await requireArg(positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
++    const prompt = await requireArg(flags.prompt ?? positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
+     if (!prompt) {
+       console.error(GENERATE_USAGE2);
+@@ -19099,8 +19357,15 @@
+
+     const images = multiFlags.image ?? [];
+     const assignments = multiFlags.input ?? [];
++    if (["image", "input", "tailImage"].some((name) => booleans.has(name)) || [...images, ...assignments].some((value) => !value.trim()) || flags.tailImage !== void 0 && !flags.tailImage.trim()) {
++      throw new ValidationError(msg(
++        "--image / --input / --tailImage \u5FC5\u987B\u63D0\u4F9B\u975E\u7A7A\u503C\u3002",
++        "--image / --input / --tailImage require non-empty values."
++      ));
++    }
+     const prompt = positional.join(" ").trim();
++    const hasPrompt = flags.prompt !== void 0 || positional.length > 0;
+     const authCode = await ensureAuthReady();
+     if (authCode !== 0) return authCode;
+-    if (images.length === 0 && assignments.length === 0 && !flags.tailImage && !prompt) {
++    if (images.length === 0 && assignments.length === 0 && !flags.tailImage && !hasPrompt) {
+       console.error(IMG_USAGE);
+       return 1;
+@@ -19114,4 +19379,16 @@
+
+     const spec = await resolveModel("image_to_video", flags.model);
+     assertTailImageSupported(spec, flags);
++    if (flags.prompt === void 0 && hasPrompt) flags.prompt = prompt;
++    const promptSpec = spec.arguments?.find((arg) => arg.name === "prompt");
++    if (promptSpec?.required && promptSpec.default === void 0 && flags.prompt === void 0) {
++      const supplied = await requireArg("", msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
++      if (!supplied) {
++        throw new ValidationError(msg(
++          '\u6A21\u578B\u8981\u6C42\u63D0\u4F9B prompt \u5B57\u6BB5\uFF1B\u8BF7\u4F20\u63D0\u793A\u8BCD\u6216\u663E\u5F0F --prompt ""\uFF08\u7A7A\u503C\u662F\u5426\u5141\u8BB8\u4EE5\u6A21\u578B\u4E3A\u51C6\uFF09\u3002\u5C1A\u672A\u4E0A\u4F20\u7D20\u6750\u6216\u63D0\u4EA4\u751F\u6210\u3002',
++          'The model requires a prompt field. Provide text or explicit --prompt "" if the model allows empty text; no files were uploaded and no generation was submitted.'
++        ));
++      }
++      flags.prompt = supplied;
++    }
+     let inputUrls;
+     let namedInputs;
+@@ -19177,7 +19454,13 @@
+
+     const audios = multiFlags.audio ?? [];
+     const assignments = multiFlags.input ?? [];
++    if (["image", "video", "audio", "input"].some((name) => booleans.has(name)) || [...images, ...videos, ...audios, ...assignments].some((value) => !value.trim())) {
++      throw new ValidationError(msg(
++        "--image / --video / --audio / --input \u5FC5\u987B\u63D0\u4F9B\u975E\u7A7A\u503C\u3002",
++        "--image / --video / --audio / --input require non-empty values."
++      ));
++    }
+     const authCode = await ensureAuthReady();
+     if (authCode !== 0) return authCode;
+-    const prompt = await requireArg(positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
++    const prompt = await requireArg(flags.prompt ?? positional.join(" ").trim(), msg("\u8BF7\u8F93\u5165\u63D0\u793A\u8BCD prompt\uFF1A", "Enter prompt: "));
+     if (!prompt) {
+       console.error(OMNI_REF_USAGE);
+@@ -19221,7 +19504,14 @@
+
+ };
+ 
+-var QUERY_USAGE = `Usage: kling query_tasks [--poll N] <generationId>
++var QUERY_USAGE = `Usage: kling query_tasks [--poll [N]] <generationId>
+ Options:
+-  --poll             Poll up to N seconds until the generation is terminal (0=off; bare flag=60)`;
++  --poll [N]         Poll until terminal or the polling budget expires
++                     (integer seconds: 0-3600; omitted=off; bare=60)
++Accepts one generationId returned by a generation command. Login required.
++Without polling, queries once. With polling, outputs the latest results and timedOut flag;
++returns a non-zero exit code on timeout or unsuccessful completion. Timeout does not cancel the task.
++Result URLs expire; download completed media promptly.
++Put a bare --poll last so it cannot consume generationId, or use --poll=N.
++Example: kling query_tasks GENERATION_ID --poll=60`;
+ var queryAction = {
+   id: "query_tasks",
+@@ -19259,13 +19549,16 @@
+
+ var LOGIN_USAGE = `Usage: kling login
+ Opens a browser for OAuth authorization (PKCE) and saves access/refresh tokens
+-to .credentials. Any existing local login state for this endpoint is cleared
++to ~/.kling/.credentials (or $KLING_HOME/.credentials when KLING_HOME is set).
++Any existing local login state for this service is cleared
+ first. To switch accounts, run kling logout first and continue only if it
+ succeeds; then run kling login and authorize the target account. If login
+-fails, stop and report the error; do not continue to kling who_am_i.`;
++fails, stop and report the error; do not continue to kling who_am_i.
++Browser authorization must finish within 5 minutes. In a headless environment,
++open the printed authorization URL in a browser. Tokens are never printed.`;
+ var LOGOUT_USAGE = `Usage: kling logout
+ Logs out through the backend MCP server first, then revokes the OAuth refresh
+ token (best-effort) and removes the saved credentials. For account switching,
+ run kling login only after this command succeeds, then verify with kling
+-who_am_i.`;
++who_am_i. If server logout fails, the local credentials are retained.`;
+ var loginAction = {
+   id: "login",
+@@ -19292,5 +19585,6 @@
+
+ 
+ var INFO_USAGE = `Usage: kling account
+-Queries membership type and available points (query_membership_and_credits).`;
++Queries the logged-in account's membership type and available points
++(MCP query_membership_and_credits). Login required; no account ID argument is needed.`;
+ var infoAction = {
+   id: "account",
+@@ -19306,5 +19600,14 @@
+
+ };
+ 
+-var UPLOAD_USAGE = `Usage: kling file_upload <filePath>`;
++var UPLOAD_USAGE = `Usage: kling file_upload <filePath>
++Uploads one local file and returns the upload result with its public URL.
++filePath must be a readable local path, not a URL. Quote paths containing spaces.
++Login required. The CLI obtains the upload ticket and sends the file bytes automatically.
++Upload time budget grows with file size: 120 seconds plus transfer time at 64 KiB/s
++(50 MiB: 920 seconds). The budget includes reading the upload response; no automatic retry.
++A successful upload does not guarantee a generation model accepts that media type.
++Accepted formats, sizes and URL sources depend on the upload service and consuming model.
++Generation commands that accept media paths auto-upload local files; manual upload is optional.
++Example: kling file_upload "./reference image.png"`;
+ var uploadAction = {
+   id: "file_upload",
+@@ -19326,8 +19629,16 @@
+
+ };
+ 
+-var USAGE = `Usage: kling who_am_i
++var USAGE = `Usage: kling who_am_i [--tools <tool> ...]
++Options:
++  --tools <tool>  Inspect one generation tool (repeatable; values are trimmed and deduplicated)
++                 Omit to fetch all tools. Empty values are rejected; tool names are validated by the server.
+ Capability discovery: returns the current identity plus each generation
+-tool's available models and parameter specs. Call it first in a new session.
+-For a single command's live inputSchema, use \`kling <command> --help\`.`;
++tool's available models, generation arguments, input slots and declared limits.
++Login required. Call it first after login in a new session, then choose a model
++from the relevant tool's catalog with --model. Requirements differ by model.
++Generation command help shows a structured model summary; use this command for full
++model descriptions and cross-argument constraints. Other command help shows the MCP
++request schema, which describes the server request rather than CLI flag syntax.
++Example: kling who_am_i --tools image_to_image --tools motion_control`;
+ var whoAmIAction = {
+   id: "who_am_i",
+@@ -19335,8 +19646,16 @@
+
+   usage: USAGE,
+   help: mcpBackedHelp("who_am_i", USAGE),
+-  async run(_args, ctx) {
++  async run(args, ctx) {
++    const { flags, multiFlags, booleans, positional } = parseFlags(args, { multi: ["tools"] });
++    const tools = multiFlags.tools;
++    if (booleans.has("tools") || tools?.some((tool) => !tool.trim())) {
++      throw new ValidationError(msg("--tools \u5FC5\u987B\u63D0\u4F9B\u975E\u7A7A\u5DE5\u5177\u540D\uFF0C\u53EF\u91CD\u590D\u4F20\u5165\u3002", "--tools requires a non-empty tool name and may be repeated."));
++    }
++    if (Object.keys(flags).length || booleans.size || positional.length) {
++      throw new ValidationError(msg("who_am_i \u4EC5\u63A5\u53D7\u53EF\u91CD\u590D\u7684 --tools <\u5DE5\u5177\u540D>\u3002", "who_am_i accepts only repeatable --tools <tool> options."));
++    }
+     const authCode = await ensureAuthReady();
+     if (authCode !== 0) return authCode;
+-    return emitResult(await whoAmI(), ctx);
++    return emitResult(await whoAmI({ tools }), ctx);
+   }
+ };
+@@ -19345,5 +19664,8 @@
+
+ Lists the tools advertised by the backend MCP server (tools/list discovery):
+ each tool's name, description, and input schema. Useful to verify which tools
+-the server currently exposes.`;
++the server currently exposes. Login required.
++These are MCP request schemas, not CLI flags. Use \`kling <command> --help\`
++for CLI syntax and \`kling who_am_i\` for per-model generation parameters.
++The CLI exposes its registered commands; discovery does not add new commands automatically.`;
+ var toolListAction = {
+   id: "tool_list",
+@@ -19450,18 +19772,44 @@
+
+   --secondary <file>   Replace secondary images (repeat 1-3 times)
+   --video <file>       Replace the video of a video element
+-  --voice <file>       Replace the optional .mp3 voice`;
++  --voice <file>       Replace the optional .mp3 voice; --voice "" clears it without uploading`;
+ var CREATE_USAGE = `Usage: kling element_create --name <name> --description <text> --tag <tag> [options]
++Required metadata:
++  --name <name>        Non-empty Element name
++  --description <text> Non-empty description
++  --tag <tag>          At least one tag from the live tag catalog (repeatable)
+ ${RESOURCE_OPTIONS}
+-Use either --video, or --cover plus 1-3 --secondary values. --tag is repeatable.`;
+-var LIST_USAGE = "Usage: kling element_list";
+-var GET_USAGE = "Usage: kling element_get <elementId>";
+-var DELETE_USAGE = "Usage: kling element_delete <elementId>";
++Use either --video, or --cover plus 1-3 --secondary values; these resource types cannot be mixed.
++Public HTTP(S) URLs are passed through. Media format and size requirements follow the server declaration.
++Returns the created Element ID. Find the current tag catalog in element_create via kling tool_list.
++An Element voice resource does not imply support for standalone audio references in generation tools.
++Example:
++  kling element_create --name "My character" --description "Character reference" --tag \u89D2\u8272 --cover ./front.png --secondary ./side.png`;
++var LIST_USAGE = `Usage: kling element_list
++Lists only id and name for the current account's Elements. Use a returned ID with element_get,
++element_update or element_delete. Call element_get before binding to inspect the resource type. Login required.`;
++var GET_USAGE = `Usage: kling element_get <elementId>
++Returns the full Element, including its resource type and media references.
++Find elementId with \`kling element_list\`. Login required.
++Example: kling element_get ELEMENT_ID`;
++var DELETE_USAGE = `Usage: kling element_delete <elementId>
++Deletes the Element identified by elementId. Find the ID with \`kling element_list\`.
++Login required; this command submits the deletion without a confirmation prompt.
++Example: kling element_delete ELEMENT_ID`;
+ var UPDATE_USAGE = `Usage: kling element_update <elementId> [options]
+ Update options (provide at least one; omitted fields are preserved):
+   --name <name>        Replace the name
+   --description <text> Replace the description
+-  --tag <tag>          Replace all tags (repeatable)
++  --tag <tag>          Replace all tags with names from the live tag catalog (repeatable)
+ ${UPDATE_RESOURCE_OPTIONS}
+-The CLI reads the current Element and submits a full payload. Image covers are preserved automatically.`;
++--secondary applies only to image Elements; --video applies only to video Elements.
++The Element type cannot be changed. --cover is not supported; the original cover is preserved.
++The CLI reads the current Element and submits a full payload. Tags and secondary images,
++when provided, replace their whole lists; omitted fields are preserved.
++Only the optional voice accepts an empty string for clearing; a bare --voice is a missing-value error.
++Required name, description, tags and subject media cannot be cleared.
++Tag names come from the element_update catalog in kling tool_list.
++Examples:
++  kling element_update ELEMENT_ID --name "Updated name" --tag \u89D2\u8272
++  kling element_update ELEMENT_ID --voice ""`;
+ function parseElementArgs(args) {
+   const { flags, multiFlags, booleans, positional } = parseFlags(args, { multi: ["tag", "secondary"] });
+@@ -19548,7 +19896,4 @@
+
+     throw new ValidationError(msg("--video \u4E0D\u80FD\u4E3A\u7A7A\u3002", "--video cannot be empty."));
+   }
+-  if (parsed.voice !== void 0 && !parsed.voice) {
+-    throw new ValidationError(msg("--voice \u4E0D\u80FD\u4E3A\u7A7A\u3002", "--voice cannot be empty."));
+-  }
+   if (parsed.video && parsed.secondary !== void 0) {
+     throw new ValidationError(msg(
+@@ -19609,5 +19954,5 @@
+
+   }
+   if (resource?.video !== void 0) resource.video = await resolveUrl(resource.video);
+-  if (resource?.voice !== void 0) resource.voice = await resolveUrl(resource.voice);
++  if (resource?.voice) resource.voice = await resolveUrl(resource.voice);
+   return patch;
+ }
+@@ -19696,13 +20041,30 @@
+
+ }
+ 
+-var LIST_USAGE2 = "Usage: kling motion_library_list";
++var LIST_USAGE2 = `Usage: kling motion_library_list
++Lists the current account's saved motion assets, newest first, including duration in milliseconds.
++Use a returned motion ID with
++\`kling motion_control --motionId <id>\`. Login required.`;
+ var CONTROL_USAGE = `Usage: kling motion_control --model <model> --image <url|path> (--video <url|path> | --motionId <id>) [options] [prompt]
+ Client options:
+-  --image            Subject image (required; local files auto-uploaded)
+-  --video            Motion-source video; mutually exclusive with --motionId
+-  --model            Model name (required; from kling who_am_i)
+-  --poll             Wait up to N seconds for results (0=off; bare flag=60)
+-Generation parameters are declared by who_am_i and may be passed as --<name>.
+-In an interactive terminal, missing required values are prompted before any upload.`;
++  --image <url|path>  Required subject image
++  --video <url|path>  Motion-source video; provide exactly one of --video / --motionId
++  --motionId <id>    Saved motion ID from \`kling motion_library_list\` (--motion_id also accepted);
++                     the chosen model must declare the motion ID argument
++  --model <model>    Required model name from \`kling who_am_i\`; the CLI does not auto-select a model
++  --poll [N]         Poll after submission (integer seconds: 0-3600; omitted=off; bare=60)
++The CLI uploads local media and passes HTTP(S) URLs unchanged; accepted sources and formats follow the model declaration.
++Generation parameters (declared per model by the server \u2014 see \`kling who_am_i\`):
++  --<name> <value>   Use a declared argument name or its camelCase form
++Provide text positionally or with --prompt. Omitting both is allowed only if the model permits it.
++If the model requires the prompt field but allows an empty value, use --prompt "" explicitly.
++  --motionDirection <value>  Direction reference, when declared; use the model's allowed values
++In an interactive terminal, missing image, motion source, model and required
++generation parameters without defaults are prompted before upload. Non-interactive callers
++must provide them explicitly.
++Without polling, returns a submitted task; use \`kling query_tasks <generationId>\` to retrieve results.
++Polling timeout does not cancel the task. Put a bare --poll last so it cannot consume the prompt.
++Example (use a model declaring motionDirection=motion_direction):
++  kling motion_control --model MODEL --image ./subject.png --video ./motion.mp4 --motionDirection motion_direction "Follow the reference motion" --poll=60
++Add any other required generation parameters declared by that model.`;
+ function camelOf2(snake) {
+   return snake.replace(/_([a-z0-9])/g, (_, c) => c.toUpperCase());
+@@ -19712,5 +20074,5 @@
+
+ }
+ async function completeRequiredMotionArguments(spec, flags, io = {}) {
+-  const missing = (spec.arguments ?? []).filter((arg) => arg.name !== "prompt" && arg.required && arg.default === void 0 && !argumentValue(flags, arg.name)?.trim());
++  const missing = (spec.arguments ?? []).filter((arg) => arg.required && arg.default === void 0 && (arg.name === "prompt" ? argumentValue(flags, arg.name) === void 0 : !argumentValue(flags, arg.name)?.trim()));
+   if (missing.length === 0) return;
+   const interactive = io.interactive ?? isInteractive();
+@@ -19813,4 +20175,5 @@
+
+     flags.model = spec.model;
+     if (motionId) flags.motionId = motionId;
++    if (flags.prompt === void 0 && positional.length > 0) flags.prompt = positional.join(" ").trim();
+     await completeRequiredMotionArguments(spec, flags);
+     const inputUrls = [await resolveFileUrl(image)];
+@@ -19838,9 +20201,17 @@
+
+ var USAGE3 = `Usage: kling feedback --summary <text> --category <category> [options]
+ Options:
+-  --triggerMode <mode>          agent_initiated or user_initiated
++  --summary <text>              Required non-empty feedback summary
++  --category <category>         Required non-empty category; allowed values follow the server declaration
++  --triggerMode <mode>          agent_initiated or user_initiated (optional; not sent when omitted)
+   --tool <name>                 Tool chain item (repeatable, ordered)
+   --generationId <id>           Related generation id (repeatable)
+   --modelVersion <model>        Related model (repeatable)
+-  --relatedTaskTraceId <id>     Related task trace id (repeatable)`;
++  --relatedTaskTraceId <id>     Related task trace id (repeatable)
++triggerMode describes who initiated the feedback itself, not who requested the original task.
++Use user_initiated only when the user independently requested feedback; otherwise agent_initiated.
++Login required. Related task trace IDs are sent in feedback.extra.taskTraceId.
++Each related ID/model list keeps at most 50 items on the server. Feedback does not retry or refund a task.
++Example (replace CATEGORY with a category from the live server declaration):
++  kling feedback --summary "Task returned an unexpected result" --category CATEGORY --generationId GENERATION_ID`;
+ var TRIGGER_MODES = ["agent_initiated", "user_initiated"];
+ function buildFeedbackPayload(args) {
+@@ -19954,4 +20325,18 @@
+
+   );
+ }
++function globalHelp() {
++  return [
++    "Global flags:",
++    "  --skill-name <n> / --skill-version <v>  Optional telemetry: identify the calling skill",
++    "  --quiet, -q   Compact single-line JSON output (help remains plain text)",
++    "  --help, -h    Show help (top-level or per command)",
++    "  --version, -v Print CLI version; use as the first argument: kling --version",
++    "",
++    "Login is required to run commands other than login; help is available without login.",
++    "Generation help reads live who_am_i model declarations; other MCP help reads tools/list.",
++    "Offline or logged out, help falls back to local usage without confirming current server capabilities.",
++    "Quote values containing spaces. Use --name=value when a value begins with --."
++  ].join("\n");
++}
+ function topHelp() {
+   const lines = [
+@@ -19965,6 +20350,6 @@
+
+     msg("\u5FEB\u901F\u4E0A\u624B\uFF08\u5EFA\u8BAE\u6309\u987A\u5E8F\uFF09\uFF1A", "Getting started (recommended order):"),
+     msg("  1. kling login        \u5148\u767B\u5F55\uFF08\u6D4F\u89C8\u5668 OAuth \u6388\u6743\uFF09", "  1. kling login        Log in first (browser OAuth)"),
+-    msg("  2. kling tool_list    \u67E5\u770B\u670D\u52A1\u7AEF\u5F53\u524D\u53EF\u7528\u7684\u5DE5\u5177\uFF08\u9700\u5DF2\u767B\u5F55\uFF09", "  2. kling tool_list    See which tools the server currently offers (login required)"),
+-    msg("  3. kling <command>    \u6267\u884C\u5177\u4F53\u547D\u4EE4\uFF08\u5982 text_to_image\uFF09", "  3. kling <command>    Run a specific command (e.g. text_to_image)"),
++    msg("  2. kling who_am_i     \u67E5\u770B\u53EF\u7528\u6A21\u578B\u3001\u53C2\u6570\u4E0E\u8F93\u5165\u69FD\u4F4D\uFF08\u9700\u5DF2\u767B\u5F55\uFF09", "  2. kling who_am_i     Discover available models, arguments and input slots (login required)"),
++    msg("  3. kling <command> --help  \u67E5\u770B\u7528\u6CD5\u540E\u6267\u884C\u5177\u4F53\u547D\u4EE4", "  3. kling <command> --help  Read usage before running a command"),
+     "",
+     "Usage:",
+@@ -19981,9 +20366,5 @@
+
+   }
+   lines.push("");
+-  lines.push("Global flags:");
+-  lines.push("  --skill-name <n> / --skill-version <v>  Optional telemetry: identify the calling skill");
+-  lines.push("  --quiet, -q  Compact single-line JSON output");
+-  lines.push("  --help,  -h  Show help (top-level or per command)");
+-  lines.push("  --version,-v Print CLI version");
++  lines.push(globalHelp());
+   return lines.join("\n");
+ }
+@@ -20017,5 +20398,5 @@
+
+   if (argv[0] === "--version" || argv[0] === "-v") {
+     console.log(`kling-cli ${cliVersion()}`);
+-    process.exit(0);
++    return;
+   }
+   const skillName = extractValueFlag(argv, "--skill-name");
+@@ -20032,23 +20413,27 @@
+
+   if (resolved.kind === "help") {
+     console.log(topHelp());
+-    process.exit(0);
++    return;
+   }
+   if (resolved.kind === "unknown") {
+     if (wantsHelp) {
+       console.log(topHelp());
+-      process.exit(0);
++      return;
+     }
+     console.error(`Unknown command: ${resolved.command}
+ `);
+     console.error(topHelp());
+-    process.exit(1);
++    process.exitCode = 1;
++    return;
+   }
+   if (wantsHelp) {
+-    console.log(await (resolved.action.help?.() ?? Promise.resolve(resolved.action.usage)));
+-    process.exit(0);
++    const help = await (resolved.action.help?.() ?? Promise.resolve(resolved.action.usage));
++    console.log(`${help}
++
++${globalHelp()}`);
++    return;
+   }
+   const code = await resolved.action.run(resolved.args, { quiet });
+   if (code !== 0) await maybeNotifyUpgrade();
+-  process.exit(code);
++  process.exitCode = code;
+ }
+ function isCliEntry() {
+@@ -20069,5 +20454,6 @@
+
+   main().catch(async (err) => {
+     if (isUserCancel(err)) {
+-      process.exit(130);
++      process.exitCode = 130;
++      return;
+     }
+     if (err instanceof KlingError) {
+@@ -20077,5 +20463,6 @@
+
+     }
+     await maybeNotifyUpgrade();
+-    process.exit(1);
++    process.exitCode = 1;
++    return;
+   });
+ }

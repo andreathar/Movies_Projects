@@ -29,3 +29,7 @@ Durations measured from real files; the sync route tested on the exact clip; tra
 
 ## Foley, ambiência e reação
 Ler a direção de encontros apontada em AGENTS.md. Além das falas, preparar por take uma lista de sons: gesto causador, superfície/material, instante de contato, intensidade relativa, perspectiva/distância, ambiência e silêncio. Priorizar nuances de pé no piso, dedo/mão na mesa, roupa e respiração; não inserir todos os sons em todas as cenas. Sincronizar contatos e preservar inteligibilidade da fala. Conferir plausibilidade com o historiador. Voz-guia deve sustentar ritmo/lip sync; dublagem posterior exige texto, pausas e duração compatíveis ou novo ajuste. Nenhuma compra ou geração de áudio sem escopo próprio.
+
+## Kling — contrato atual por interface
+
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.

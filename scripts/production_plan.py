@@ -17,7 +17,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SNAPSHOT = 'docs/kling-manual/snapshots/who_am_i.sanitized.json'
+SNAPSHOT = 'docs/kling-manual/snapshots/2026-10-16-cli023-who_am_i.sanitized.json'
+TOOL_SNAPSHOT = 'docs/kling-manual/snapshots/2026-10-16-cli023-tool_list.json'
 FAMILIES = 'shared/templates/kling-shot-families.json'
 
 
@@ -89,7 +90,9 @@ def route_notes(tool, model):
     notes = ['Disponibilidade e preço atuais requerem consulta antes de execução.']
     if model == 'kling-video-v3_0_turbo':
         notes.append('Sem Elements, cauda ou controle explícito de áudio nesta rota; ausência do controle não garante silêncio.')
-    if tool == 'omni_ref_video':
+    if model == 'kling-video-v4_0':
+        notes += ['Descoberta CLI Global 0.2.1 em 16/10; listado, sem geração testada; somente 720p/1080p.', 'Keyframes: até 10 imagens; sem Element/áudio declarado. Omni: 15 recursos incluindo áudio/Elements, até 3 video Elements; multi-shot=true obrigatório.', 'Vídeos diretos + video Elements: até 30 s; duração de entrada entra na cobrança. Preço não verificado; liberação antiga não migra.']
+    if tool == 'omni_ref_video' and model != 'kling-video-v4_0':
         notes.append('Com video_1: imagens + Elements ≤4; sem vídeo ≤7. Referência de vídeo: 3–10 s, 720–2160 px, 24–60 fps, até 200 MiB. Sem áudio independente.')
         if model == 'kling-video-v3_0_omni':
             notes.append('video_1 exige enable_audio=false. Element de vídeo não equivale a vídeo direto; com vídeo direto, só um Element de vídeo e nenhuma imagem/Element de imagem.')
@@ -517,7 +520,7 @@ def export(root):
     if not plan:
         return None
     capability = routes(root)
-    source_paths = [path, FAMILIES, SNAPSHOT, 'scripts/production_plan.py', 'scripts/kling_release.py', 'docs/kling-manual/tools/kling_preflight.py', 'docs/PRODUCTION_PLAN.md'] + [s['path'] for s in plan['preservedSources']]
+    source_paths = [path, FAMILIES, SNAPSHOT, 'shared/kling-capabilities.json', TOOL_SNAPSHOT, 'scripts/kling_contract.py', 'scripts/production_plan.py', 'scripts/kling_release.py', 'docs/kling-manual/tools/kling_preflight.py', 'docs/PRODUCTION_PLAN.md'] + [s['path'] for s in plan['preservedSources']]
     source_paths.extend(list(plan.get('deliverables', [])))
     source_paths.extend(r['approvalEvidence']['path'] for r in plan['references'] if r.get('approvalEvidence'))
     return {'path': path, 'revision': plan['revision'], 'implementationApprovalId': plan['implementationApprovalId'],
@@ -577,6 +580,10 @@ def main():
         models = read(args.root, SNAPSHOT)['body']['availableModels']
         check = pf.check_job(job, models, str(film), str(film), False)
         result = {'errors': [i for i in check.items if i['level'] == 'ERROR'], 'items': check.items, 'schemaSha256': hashlib.sha256(json.dumps(models, sort_keys=True).encode()).hexdigest(), 'payloadSha256': None, 'paidReleaseGranted': False}
+        if job.get('model') == 'kling-video-v4_0':
+            tools = read(args.root, TOOL_SNAPSHOT)['body']['tools']
+            tool_schema = next(t for t in tools if t['name'] == job['tool'])
+            result['schemaSha256'] = hashlib.sha256(json.dumps({'models': models, 'tool': tool_schema}, sort_keys=True).encode()).hexdigest()
         if not result['errors']:
             result['payloadSha256'] = release.fingerprint(film, job)
     else:

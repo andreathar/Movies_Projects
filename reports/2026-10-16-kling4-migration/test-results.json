@@ -1,0 +1,272 @@
+[
+  {
+    "check": "catalog-sync",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "scripts/agent_catalog.py"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:01:46.472796+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/catalog-sync.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/catalog-sync.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "workspace-export",
+    "command": [
+      "node",
+      "scripts/export-workspace.mjs",
+      "../.."
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:01:46.504101+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/workspace-export.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/workspace-export.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "production-export",
+    "command": [
+      "node",
+      "scripts/export-production.mjs",
+      "../.."
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:01:46.652062+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/production-export.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/production-export.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "python-tests",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:01:46.864268+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/python-tests.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/python-tests.stderr",
+    "type": "synthetic"
+  },
+  {
+    "check": "manual-tool-tests",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "docs/kling-manual/tools",
+      "-p",
+      "test_*.py"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:01:58.162201+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/manual-tool-tests.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/manual-tool-tests.stderr",
+    "type": "synthetic"
+  },
+  {
+    "check": "frontend-tests",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:01:58.295207+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/frontend-tests.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/frontend-tests.stderr",
+    "type": "synthetic"
+  },
+  {
+    "check": "frontend-lint",
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:01:59.406598+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/frontend-lint.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/frontend-lint.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "frontend-types",
+    "command": [
+      "npx",
+      "--no-install",
+      "tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:02:03.997194+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/frontend-types.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/frontend-types.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "frontend-data",
+    "command": [
+      "npm",
+      "run",
+      "check:data"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:02:08.913839+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/frontend-data.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/frontend-data.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "catalog-check",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "scripts/agent_catalog.py",
+      "--check"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:02:09.078174+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/catalog-check.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/catalog-check.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "workspace-export-check",
+    "command": [
+      "node",
+      "scripts/export-workspace.mjs",
+      "../..",
+      "--check"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:02:09.109838+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/workspace-export-check.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/workspace-export-check.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "production-export-check",
+    "command": [
+      "node",
+      "scripts/export-production.mjs",
+      "../..",
+      "--check"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:02:09.255979+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/production-export-check.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/production-export-check.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "assets",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "scripts/manage.py",
+      "assets",
+      "validate"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:02:09.471120+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/assets.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/assets.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "production-plan-media",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "scripts/production_plan.py",
+      "check",
+      "--verify-media"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:02:09.546027+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/production-plan-media.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/production-plan-media.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "workspace-validate",
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "scripts/manage.py",
+      "validate"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:02:09.743523+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/workspace-validate.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/workspace-validate.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "diff-check",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+    "startedAt": "2026-10-16T08:02:09.829706+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/diff-check.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/diff-check.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "frontend-diff-check",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-16T08:02:09.838853+00:00",
+    "exitCode": 0,
+    "stdout": "reports/2026-10-16-kling4-migration/checks/frontend-diff-check.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/frontend-diff-check.stderr",
+    "type": "local_validation"
+  },
+  {
+    "check": "frontend-build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "type": "local_build",
+    "stdout": "reports/2026-10-16-kling4-migration/checks/frontend-build.stdout",
+    "stderr": "reports/2026-10-16-kling4-migration/checks/frontend-build.stderr"
+  }
+]

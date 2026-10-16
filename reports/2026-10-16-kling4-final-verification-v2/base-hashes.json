@@ -1,0 +1,13 @@
+{
+  "docs/kling-manual/tools/kling_preflight.py": "b896711f0b1bf753152106891b952135418a550074c22d3830c30db48c46f4a9",
+  "tests/test_kling4.py": "0eebd39c6ea46f5bea3f8ab99273f4d31d992018781f60d6e6219232736751e9",
+  "sites/movies-demandas/data/production.json": "01abf09e08388fb7113f6c3f501a8ca781b50ab80d5526e3ec06e16cb5bb0850",
+  "shared/kling-capabilities.json": "138995f58831337fdbe007cce6669e6590d6442840a949e80c6e8386c9386098",
+  "scripts/production_plan.py": "a8c1569cac0cbaac0d19257a863d64b6b57958e091d50de92fbf3f9d0d408da2",
+  "tests/test_production_plan.py": "d38342ab974fb5360c0880544e065d3f085dd7e54241d1000eff41a42096c942",
+  "docs/kling-manual/19-kling4-migration.md": "4465c836babf74d41c2941f39c6e1fb18a984050d273cf37a682e5dba3f7badd",
+  "docs/kling-manual/README.md": "cf22936d60ffd1812441b360890c0312a97418857f771a927e9fc0b35c3f454f",
+  ".agents/skills/kling-cli/SKILL.md": "aa5406bf12bef96d2c7e028d1c0967760fdf359697861c687e3297b5a0b45d18",
+  "skills/registry.json": "c5d44a8a7f1e53b0d560f3b1fcab52ba8c29177c79f6f77a36d087beac0e3a62",
+  "sites/movies-demandas/tests/kling-capabilities.test.mjs": "afec4718a3498091a422abe917c23900d5bb19dc776dcdaaeedf8f46b5a46d0b"
+}

@@ -54,6 +54,7 @@ def render(root):
         sources.append({'path': path, 'sha256': digest(raw)})
         return raw.decode()
     read('AGENTS.md')
+    read('shared/kling-capabilities.json')
     agents = json.loads(read('agents/registry.json'))
     registry = json.loads(read('skills/registry.json'))
     role_ids = unique(agents['roles'], 'id')

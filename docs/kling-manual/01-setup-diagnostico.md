@@ -1,5 +1,7 @@
 # 01 · Setup e diagnóstico sem custo
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json`. Evidências anteriores são datadas; anúncio não amplia a CLI atual.
+
 Tudo aqui é leitura. Nenhum comando desta página gera mídia nem consome crédito.
 
 ## Os comandos (CLI `kling` 0.2.1) [LIVE]

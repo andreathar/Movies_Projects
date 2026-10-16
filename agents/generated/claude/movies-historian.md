@@ -38,3 +38,7 @@ Every factual claim carries a source ID; uncertainties are listed apart from doc
 
 ## Cultura material e liberdade dramática
 Ler a direção de encontros apontada em AGENTS.md. Verificar objetos, tecidos, calçados, piso, mobiliário, fontes de luz e sons possíveis no lugar/data da cena. Distinguir fato documentado, hipótese plausível, invenção dramática e anacronismo deliberado. Mesa viajante e roupa de Andre são exceções narrativas. Humor pode funcionar sem falsa atribuição de citações ou erros acidentais. Entregar tabela item / evidência / certeza / risco / alternativa; encaminhar fontes de luz ao responsável por iluminação.
+
+## Kling — contrato atual por interface
+
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.

@@ -1,5 +1,7 @@
 # 05 · Elements: personagem, objeto e voz reutilizáveis
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 Element = sujeito salvo na conta Kling (imagens ou vídeo, mais voz opcional). É o mecanismo oficial de consistência [OFICIAL]. No projeto, o Andre é o Element **323525046658711** (nome de ligação `Andre`).
 
 ## Onde um Element funciona [LIVE + OFICIAL]

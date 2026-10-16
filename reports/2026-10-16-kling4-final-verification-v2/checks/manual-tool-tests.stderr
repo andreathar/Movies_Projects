@@ -1,0 +1,11 @@
+/mnt/data/Projects_SSD/Movies_Projects/docs/kling-manual/tools/test_kling_tools.py:35: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/data/Projects_SSD/Movies_Projects/docs/kling-manual/tools/../snapshots/who_am_i.sanitized.json' mode='r' encoding='utf-8'>
+  cls.models = json.load(open(SNAP, encoding="utf-8"))["body"]["availableModels"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.............../mnt/data/Projects_SSD/Movies_Projects/docs/kling-manual/tools/test_kling_tools.py:142: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/data/Projects_SSD/Movies_Projects/docs/kling-manual/tools/../snapshots/who_am_i.sanitized.json' mode='r' encoding='utf-8'>
+  models = json.load(open(SNAP, encoding="utf-8"))["body"]["availableModels"]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.
+----------------------------------------------------------------------
+Ran 16 tests in 0.066s
+
+OK

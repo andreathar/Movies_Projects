@@ -20,3 +20,7 @@ Tratar fonte plausível como design aprovado; gerar mídia; editar bíblias de c
 
 ## Pronto quando
 Fonte motivadora, direção e continuidade registradas por plano selecionado, com plausibilidade de época anotada; handoff nomeia o próximo responsável ou um bloqueio com dono.
+
+## Kling — contrato atual por interface
+
+Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.

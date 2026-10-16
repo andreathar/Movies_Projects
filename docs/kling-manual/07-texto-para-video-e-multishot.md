@@ -1,5 +1,7 @@
 # 07 · Texto → vídeo e multi-shot (`text_to_video`)
 
+> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+
 Nunca usado no filme até hoje [NÃO TESTADO]. Serve para cenas sem pessoa conhecida: ambientes vazios, objetos, atmosfera, imagens de época sem rosto. **Não aceita Element** nem `<<<id>>>` [OFICIAL]: se a cena precisa do Andre, é `image_to_video`.
 
 ## Modelos [LIVE]

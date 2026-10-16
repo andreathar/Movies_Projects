@@ -1,0 +1,347 @@
+{
+  "protectedCount": 794,
+  "changedProtected": [],
+  "changedOriginalTextSources": 57,
+  "authoredFiles": [
+    {
+      "path": ".agents/skills/kling-cli/README.md",
+      "sha256Before": "8e8a04582eaac66c03e6d78667aebe7cee0a4cdc17bfd0350d5560ae09177a5c",
+      "sha256After": "95a04b030b432de4e7e436fe3e19403abb6a52b79e64ba8d4ee51774a6d7917b"
+    },
+    {
+      "path": ".agents/skills/kling-cli/SKILL.md",
+      "sha256Before": "34d5e56652037e00a4409d1d0e89b6c004e64afc7896457bafa319b35c809ba7",
+      "sha256After": "aa5406bf12bef96d2c7e028d1c0967760fdf359697861c687e3297b5a0b45d18"
+    },
+    {
+      "path": ".agents/skills/kling-cli/api-examples.md",
+      "sha256Before": "5033062d9395e2ceb8bd11e88722b43f413f9700becd8e76bc8858e73f4ac3e3",
+      "sha256After": "acc2084b97204d8067d46ac38ed8dd676990cfee30fa741eeeee78c48390b822"
+    },
+    {
+      "path": ".agents/skills/kling-cli/reference.md",
+      "sha256Before": "ed91d6c8406a1e8466434db2cdb35149fa435ad78bfd4793f2a9318e58ecb486",
+      "sha256After": "37087aefbd2e0b03383e3548ef75062d2f1e68f662f1ddb18cc5a43d0cb97974"
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256Before": "8df9a6ebd92e848302517585ed169a0177cacc330340daf4f8d9fafd96eee57f",
+      "sha256After": "5022de556283ad1f425b6fc049b27a2e8f250373c896b884117147fed53f528f"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "eb4122374da37cd414c1512fc440d89e5f1c073f384b90307f08326e0f8912d5",
+      "sha256After": "3b8238eff3113a1decb5bd0eaf46e9d5ec5c583b058f501abffcd3ba15975b37"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256Before": "23dfedf2334b10a3a04943d5e2c6e7988217209229bc8d29e7049c2f06539535",
+      "sha256After": "035542f4355b1f6549d98a8eccd2d48ae6f24c5acb35ea2598d49e596da81f92"
+    },
+    {
+      "path": "agents/director.md",
+      "sha256Before": "5905a3a219d7dca6709f24789564eb4a42e6d616e8372ccd2aedcb9f11706dfe",
+      "sha256After": "dda3f19a222511b005a2314a46b720d48b437d27094ed8cc9349f4018d48f037"
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256Before": "2fb05ca6376857757f689c2c4b339caff0381487a4ddcf63659d990625897c2b",
+      "sha256After": "71e57baeb59b02a3293294645dc51edb630b67ef840a90df6f5d28ca34cfaf01"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "519a0e961b78a7fe52825631972c622996e45b2172f4754bca6cc6105ec9689a",
+      "sha256After": "98835559f7fd8a4778ffaddde9692bc0ae410212bb9a6871fd416b775baf5d47"
+    },
+    {
+      "path": "agents/generated/claude/movies-continuity.md",
+      "sha256Before": "40f1aa3c5c0560d3807b6b6badc4db4a9367264d0811b746a5dc00b8a1df42d1",
+      "sha256After": "317aacf9aac2b8e34543eb3b3c360494ea6d02c29bba6623a3f4ff4e8dad19a2"
+    },
+    {
+      "path": "agents/generated/claude/movies-historian.md",
+      "sha256Before": "bb218e11106e87248a29e68af1787c0bb5d1f1972ccad61476718bdd00aaf250",
+      "sha256After": "49ddac35def29c27575305377819a927cc7d07f932d0207c2b3f4157f20c25ab"
+    },
+    {
+      "path": "agents/generated/claude/movies-qc.md",
+      "sha256Before": "96806c8c4386303002527050caeebee389a47090df631abb6c4562515d879cc2",
+      "sha256After": "1f717e7d4b9bf408023a5eb68a374da618d3c22fe3923c61032455797af25be3"
+    },
+    {
+      "path": "agents/generated/codex/movies-continuity.toml",
+      "sha256Before": "179ccbce247753cd653e0ebdefe03832481d64994c0296b5068cb67c75dd791b",
+      "sha256After": "ceaa29def002bd9e016405d7dccc8b866398f92e1fe1c3a3af05403f3d3cfb5a"
+    },
+    {
+      "path": "agents/generated/codex/movies-historian.toml",
+      "sha256Before": "6451438fbef28969ed4205cf774c2544953658e8d6449693451f7134af71a3c7",
+      "sha256After": "9ca3cb76de436b680855e450a7eaa3798d556d07d9ce1b0bd7f25ce0f4bea7be"
+    },
+    {
+      "path": "agents/generated/codex/movies-qc.toml",
+      "sha256Before": "e8d33822b9caf1713a9afe0d83271cbdc2eb1feab8b9c866e19ecbdd0ab20a11",
+      "sha256After": "fff61059928f770b1f99275d134cbdfff93477019b533f10a9de0fa619c50ce3"
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256Before": "1a69d90032c56acc9cb2bbf72bf66918fd018efa0f95cef0b04ea69377868dab",
+      "sha256After": "39268671d86e73d1c0cbe6d742195f36e0033d04c14b41d6c42e0f681233f40a"
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256Before": "8c2c8c02eae67bfba98a3a758d0057f271bc1e204d910b5564e9e88749750e1c",
+      "sha256After": "b6907966668b9eaa80384348c8a1c67d5ee18aca2ab83c29cedbbb9bf257a5eb"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256Before": "302d38cc6e61b14b15bd99c7131c82af7756ccd5fd018dcf5f20106a59ccf9c0",
+      "sha256After": "52b9a676847ac48c41f565fa0193b51f14c4aa193cc852570fb2112e30354cd3"
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256Before": "327bd48a19460ca87e76a7ab4aa5cd165269193d9b45fd3a59ad9f5ba65f8559",
+      "sha256After": "c3f97f0d18c29aaee36fc7aca475daf2a3cf000b2c30ed44ad0489d679cef676"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "322c12abb1fb124462d309ce4743421a95eca2129c1458fb0181d43a64f262c4",
+      "sha256After": "9b5d013a3a2e23964aa3a9a48613627342292bc4d2be1a2ea6b302bd631954f6"
+    },
+    {
+      "path": "agents/storyboard.md",
+      "sha256Before": "5872f67b48499ba312e4210f64f744c81bfeee933790b2899463c6e11000b769",
+      "sha256After": "36fe02c5817dd0ff0c78ecc2fd82d5ce8a1aca8e86857e2be1315987c803d378"
+    },
+    {
+      "path": "docs/kling-manual/00-regras-do-projeto.md",
+      "sha256Before": "17eb36efa2add9871a57d90bc5bfc4a8582a0fe54ac305c568e80b897d66dd64",
+      "sha256After": "a1f2270e42a1e58c4282118bd5910befb23b5a8e87dbb56ce39ab8bd66280dbd"
+    },
+    {
+      "path": "docs/kling-manual/01-setup-diagnostico.md",
+      "sha256Before": "d9dcd553674a245c56d3034d2fe22394fd677de4fa85e8bf0c861b502be7258b",
+      "sha256After": "1649a60e54176259e35a0878c28a8b3c205499442398b4a399fcde1c91b499fe"
+    },
+    {
+      "path": "docs/kling-manual/02-escolha-de-modelo.md",
+      "sha256Before": "23a9f273cfa294aee120aedecb8af74d14bb96e224379d00421b0a1fb98baf4d",
+      "sha256After": "28419621a0a14fcd141ddff3b50cb991f28abcbc6fba86647dddd3e2dc23c4c7"
+    },
+    {
+      "path": "docs/kling-manual/03-modelos-ao-vivo.md",
+      "sha256Before": "0864ae324492c753e1477f717c67d70265dc70bdf65876a386d1923ed09ae75a",
+      "sha256After": "db8a6483583596ae3cb7c2b2e4da446500cb99520b522bed2d093a189b48ea21"
+    },
+    {
+      "path": "docs/kling-manual/04-imagens-estaticas.md",
+      "sha256Before": "91876fbc89f17a4a11bf8103a73547ba4d79c50517fe6df6d6581749ff7e3484",
+      "sha256After": "d91bca5366d35155d9bcd0acf58e0b9b694fcd678eeed94030f36e36e5f107f2"
+    },
+    {
+      "path": "docs/kling-manual/05-elements.md",
+      "sha256Before": "a940dd935f90d4490c239d0ef914c29e3cc3285c38b5b457bc43587d0a43c944",
+      "sha256After": "ed3abdd0155300f18ce90f27f44b710e745cedd08aee822366842bbe678ca0c7"
+    },
+    {
+      "path": "docs/kling-manual/06-imagem-para-video.md",
+      "sha256Before": "4e16448580a53c8eb657649ec97b72bf2843b62756100f6d3c57e72d5a2206da",
+      "sha256After": "fbd5fd0583f65e246721f7d8213dfd23eb16eda94ae8d4b6b37184d5651d6fd2"
+    },
+    {
+      "path": "docs/kling-manual/07-texto-para-video-e-multishot.md",
+      "sha256Before": "a5a241dc5a68f688642a0745526d067bf5912b689b0483ca50e8f6d3d89c94a5",
+      "sha256After": "226dd37af44b963579535e3bf6e93fdd22be25c4b119513c798c44904c18453d"
+    },
+    {
+      "path": "docs/kling-manual/08-omni-ref-video-e-edicao.md",
+      "sha256Before": "7f76dd24197d6863261bb9c2e80d1114506ace3d17df7a38c2399b2f3b8eb741",
+      "sha256After": "1efb2cc716130649b3a5ffff9be2aac244ee07320b9ba10763ed4370ebbd2188"
+    },
+    {
+      "path": "docs/kling-manual/09-motion-control.md",
+      "sha256Before": "5fd1b0f9542254c8d47738e92dfb9d5b4d1fccd6304ba38070e504143dc13d07",
+      "sha256After": "223d93309fbeb8e3122d5b39af73bd743a995aae556c24d467894c51e4c8e55a"
+    },
+    {
+      "path": "docs/kling-manual/10-audio-voz-dublagem.md",
+      "sha256Before": "6cff2399c3991c450a9085f23ebb843117a2041b71648b98bf6ea2036a66a478",
+      "sha256After": "1511a6a4e23b964b18dd9d46e2faaac1afbcf3a93dd4172d05d4354e90e08e26"
+    },
+    {
+      "path": "docs/kling-manual/11-receitas-do-filme.md",
+      "sha256Before": "a8f1e17a88886049307895b58269d6416bf2772bda98217d7b2934b3120fcfed",
+      "sha256After": "7f442ab0fd82427fe797e5a93678f8f163f4c623667a0ccb85555e4f5884afce"
+    },
+    {
+      "path": "docs/kling-manual/12-custos-e-ledger.md",
+      "sha256Before": "00b3680308b89def64d71f4ad96d474c9799d194bf357a87ada77e22af328cc6",
+      "sha256After": "b0685e37b2bc337486838f944328a1120d7a24289f4aebbaba22a95646ee972e"
+    },
+    {
+      "path": "docs/kling-manual/13-qc-e-aceitacao.md",
+      "sha256Before": "0b34a3a36ef9af0eca6e3d129143b70d275bfc3bf6f0d6c57352551fd92a4aa3",
+      "sha256After": "578c3460998fd52782728256bb7b08a9595e99864de26d31a5b92c0ba68f2d49"
+    },
+    {
+      "path": "docs/kling-manual/14-erros-e-troubleshooting.md",
+      "sha256Before": "a581861db4457fdb9185278940ed4eed141dac57f4a5f6792a3e4698890d4b5d",
+      "sha256After": "00d8b015b5e075caf2fb255a974dffd4bc45e10e4fbe9ae517c75d6dac6ddb71"
+    },
+    {
+      "path": "docs/kling-manual/15-ferramentas-nao-listadas.md",
+      "sha256Before": "79fc39a9288b23c6b30e3d6ce0ee6e04b6725a84f08cd2edba02cfcb5c31bed6",
+      "sha256After": "9c739d95590878b750ae5412701fb5b4492252de3e252d340b217af5e710fd5b"
+    },
+    {
+      "path": "docs/kling-manual/16-fontes.md",
+      "sha256Before": "ec2c2299fdc42244719cf764c862be3492161550040d5333c424d2d3caa8fa3e",
+      "sha256After": "1bc365ad148114a80997df679f3c4ab7fb8807722e4fb149d241ddfe5b914213"
+    },
+    {
+      "path": "docs/kling-manual/17-integracao-cli.md",
+      "sha256Before": "ee8e51b684de56ebcef23c69a7f4b1d448ff6f1f741116d360f50f4f68a25759",
+      "sha256After": "77656672c8e1e4e47781e7d78c60fc62d25963dc1f840b00d1b21434578ee9db"
+    },
+    {
+      "path": "docs/kling-manual/18-guia-de-prompts.md",
+      "sha256Before": "711db5fa84604eb34c641a90147dab8873682f1ca8ba292d013d57978c8f38e2",
+      "sha256After": "54e48f7e88b10bc62b1cb80d8b15fb409f63e3e4b8d7fdf2645bd385181d26ef"
+    },
+    {
+      "path": "docs/kling-manual/19-kling4-migration.md",
+      "sha256Before": null,
+      "sha256After": "4465c836babf74d41c2941f39c6e1fb18a984050d273cf37a682e5dba3f7badd"
+    },
+    {
+      "path": "docs/kling-manual/README.md",
+      "sha256Before": "92cf73dc5ddaf0554fef62d96c2599f76ca9ad807dede977b8f245eec8fafee9",
+      "sha256After": "cf22936d60ffd1812441b360890c0312a97418857f771a927e9fc0b35c3f454f"
+    },
+    {
+      "path": "docs/kling-manual/snapshots/2026-10-16-tool_list.json",
+      "sha256Before": null,
+      "sha256After": "6697e79339db5791289f7e787cfc4a26111ea21fae77d3d84e72b646a7addc6a"
+    },
+    {
+      "path": "docs/kling-manual/snapshots/2026-10-16-who_am_i.sanitized.json",
+      "sha256Before": null,
+      "sha256After": "ad39ca68ec2692f57568780e2d8f98965aa8a53e395998da57b8a85ebe02c8a7"
+    },
+    {
+      "path": "docs/kling-manual/tools/kling_preflight.py",
+      "sha256Before": "ce0affb0c06e346c1a47e75e18860d508f3b2cccab0b3ec559713410647e8b7c",
+      "sha256After": "b896711f0b1bf753152106891b952135418a550074c22d3830c30db48c46f4a9"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/prompt-playbook-kling.md",
+      "sha256Before": "0ff930db5d626cf811b54d28ca1d898dec73c4255e91808124e22e7f5cb0c74c",
+      "sha256After": "f64cc271bb5b3a98df9985c8d8d0c5fc856f02b05547d94aaf45766ceafebca3"
+    },
+    {
+      "path": "scripts/agent_catalog.py",
+      "sha256Before": "2fa2576fcd5632476b1a7b6cf1aff44b3bdf941b814ac65ca2fc06aaca2354bf",
+      "sha256After": "d479dd9c29857ade506c3185be84b92b0b350b9a1c913986d89915bb1f7fb83b"
+    },
+    {
+      "path": "scripts/kling_batch.py",
+      "sha256Before": "4a8de66e72545a30204f520271fd9c8efb85b573196ddbe94bb0a8291b1e099c",
+      "sha256After": "50e80555303dd5d559465e48ccf1619a4533393a1d080e0db064621ec067a5d8"
+    },
+    {
+      "path": "scripts/kling_contract.py",
+      "sha256Before": null,
+      "sha256After": "02cb557a039d8b99702caaa983f7d166b92f2d625d2fd9c5a138befd3de96791"
+    },
+    {
+      "path": "scripts/kling_release.py",
+      "sha256Before": "44ffe5fac53d232c0b44c5526f7f6205b972310e1c92ac05a572b46d4b5c684a",
+      "sha256After": "807201942a6a20097179d298d15c693e929ad1880c2e3cc560d0a70f974eee6c"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": "9e525dcd257dc73b7fd46a3dc93afe1f65b54afdd94397ddcee195fd8db7b09d",
+      "sha256After": "a8c1569cac0cbaac0d19257a863d64b6b57958e091d50de92fbf3f9d0d408da2"
+    },
+    {
+      "path": "shared/kling-capabilities.json",
+      "sha256Before": null,
+      "sha256After": "138995f58831337fdbe007cce6669e6590d6442840a949e80c6e8386c9386098"
+    },
+    {
+      "path": "shared/templates/kling-shot-contract.json",
+      "sha256Before": null,
+      "sha256After": "ae1ec7fc84d0a31e7d9d620f1a2fbda50f964ef93de332871a79de421bb193e4"
+    },
+    {
+      "path": "shared/templates/kling-shot-families.json",
+      "sha256Before": "7af89207f49ad2aad8aa3ad2116d8c1275c09505754fdc67a6087e5e86bc5db9",
+      "sha256After": "4cf8b402d058ff2c7b4a7086426257dd6c8f75707ea30bd249d898445c0607d6"
+    },
+    {
+      "path": "sites/movies-demandas/app/kling-capabilities.tsx",
+      "sha256Before": null,
+      "sha256After": "d3bb3250f316cde7df7b0c3cd2f9aa0d156a88cd81aad414fe08270459209a34"
+    },
+    {
+      "path": "sites/movies-demandas/app/workspace-reference.tsx",
+      "sha256Before": "58128c250fb94c3ccda5e59bebff037edecb938bd933b10ac8784be737b6c6cf",
+      "sha256After": "2185dc86dbc9c1092c658b112d80efb3221b9e0ba6f3b4bd0991c1a5fbd7ea79"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+      "sha256After": "01abf09e08388fb7113f6c3f501a8ca781b50ab80d5526e3ec06e16cb5bb0850"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "b4b778ae3303c91713e1ea0140fe8d8a3c6505e74b9bca1b90c9c5c1a7230cfe",
+      "sha256After": "57d836ec516e722cb801b7239a2e9e6e1f06a776931ade9fcd79228526a6e388"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "4edb8ad5190674f03467f0006c1543d23755fa6944b8dda98400a8dba0cc315b",
+      "sha256After": "404f25e140aebcca971ef72123772b24c52632f7b077d948925e3b2988993054"
+    },
+    {
+      "path": "sites/movies-demandas/tests/kling-capabilities.test.mjs",
+      "sha256Before": null,
+      "sha256After": "afec4718a3498091a422abe917c23900d5bb19dc776dcdaaeedf8f46b5a46d0b"
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "sha256Before": "1b64841231c829dc396fbc9f9d59c99cfcd6cd4840b9657cae116f091cb20213",
+      "sha256After": "67416af5e18bd67db9905323a358f427cc72271153248d1d8697b9b5989188e0"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "b80f751896ffc520b1e31920e5373451f1430827271c527c0585a17d01113707",
+      "sha256After": "c5d44a8a7f1e53b0d560f3b1fcab52ba8c29177c79f6f77a36d087beac0e3a62"
+    },
+    {
+      "path": "tests/test_agent_catalog.py",
+      "sha256Before": "6eae7ddda25b73228e06f41c3dbbfc9caec3c3a5c69ed991deae022c78180a8e",
+      "sha256After": "941c3db36469db0c0a974c6b410c35bcce931efca747846a9503284dba10bbb8"
+    },
+    {
+      "path": "tests/test_kling4.py",
+      "sha256Before": null,
+      "sha256After": "0eebd39c6ea46f5bea3f8ab99273f4d31d992018781f60d6e6219232736751e9"
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256Before": "0048422c202e32f19c4f897136e68e872870dee30bf361cdbd67d5aee81a4e8b",
+      "sha256After": "d38342ab974fb5360c0880544e065d3f085dd7e54241d1000eff41a42096c942"
+    }
+  ],
+  "head": "629c23d39654f1ba0cc9159111bd172ba8d36425",
+  "mediaHashesChecked": 24,
+  "historicalPendingReviewUnchanged": true,
+  "paidJobs": 0,
+  "uploads": 0,
+  "elementMutations": 0,
+  "authChanges": 0,
+  "serviceRestarts": 0,
+  "commits": 0,
+  "publishing": 0
+}
