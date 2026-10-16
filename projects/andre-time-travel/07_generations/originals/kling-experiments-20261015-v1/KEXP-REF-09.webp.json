@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-REF-09",
+  "elementId": null,
+  "referenceName": "Stellar Black Hole",
+  "resourceName": "cover",
+  "role": "reference_preview",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBola2xpbmcvZWxlbWVudC_omavmtJ4t5Li76KaB5Y-C6ICDLnBuZw:240x240.webp?x-kcdn-pid=112372",
+  "quality": "web_preview_only_original_missing",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-09.webp",
+  "sha256": "7f8e113f834ccbe4b4314d15ebe53e36a61871654aa89aa79763c72e3b19cbbb",
+  "bytes": 9844,
+  "contentType": "image/webp",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:10:47.276680+00:00",
+  "dimensions": [
+    320,
+    240
+  ],
+  "approved": false,
+  "provenance": "web_reference_preview",
+  "catalogAssetId": "KEXP-REF-09",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

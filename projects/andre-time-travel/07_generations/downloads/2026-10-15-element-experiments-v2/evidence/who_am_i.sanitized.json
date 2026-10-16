@@ -1,0 +1,2656 @@
+{
+  "ok": true,
+  "status": 200,
+  "body": {
+    "mcpVersion": "1.3.3",
+    "availableModels": {
+      "motion_control": {
+        "defaultModel": "kling-video-v3_0",
+        "models": [
+          {
+            "model": "kling-video-v2_6",
+            "alias": "可灵 2.6 动作控制, Kling 2.6 Motion Control",
+            "description": "Apply an uploaded or saved motion to a subject image with precise action and expression control. To use motion control, refer to the tool motion_control. If no motion‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Prompt describing the desired scene, motion, or expression. Required; empty string is allowed for no text guidance."
+              },
+              {
+                "name": "motionId",
+                "required": false,
+                "description": "Positive decimal motion ID returned by motion_library_list. Provide either motionId or a video input, but not both."
+              },
+              {
+                "name": "motionDirection",
+                "required": true,
+                "allowedValues": [
+                  "image_direction",
+                  "motion_direction"
+                ],
+                "description": "Direction reference. image_direction follows the subject image and only supports motions from 3 to 10 seconds; motion_direction follows the motion video."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "720p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Output quality. 720p maps to std; 1080p maps to pro."
+              },
+              {
+                "name": "keepOriginalSound",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to retain the original sound from the motion video."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image",
+                "required": true,
+                "description": "Subject image URL containing a clear person or animal."
+              },
+              {
+                "name": "video",
+                "required": false,
+                "description": "Motion-source video URL. Provide either this input or motionId, but not both."
+              }
+            ]
+          },
+          {
+            "model": "kling-video-v3_0",
+            "alias": "可灵 3.0 动作控制, Kling 3.0 Motion Control",
+            "description": "Apply an uploaded or saved motion to a subject image using Kling 3.0 for precise action and expression control. To use motion control, refer to the tool motion_control. If no motion‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Prompt describing the desired scene, motion, or expression. Required; empty string is allowed for no text guidance. To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "motionId",
+                "required": false,
+                "description": "Positive decimal motion ID returned by motion_library_list. Provide either motionId or a video input, but not both."
+              },
+              {
+                "name": "motionDirection",
+                "required": true,
+                "allowedValues": [
+                  "image_direction",
+                  "motion_direction"
+                ],
+                "description": "Direction reference. image_direction follows the subject image and only supports motions from 3 to 10 seconds; motion_direction follows the motion video."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "720p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Output quality. 720p maps to std; 1080p maps to pro."
+              },
+              {
+                "name": "keepOriginalSound",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to retain the original sound from the motion video."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 1,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image",
+                "required": true,
+                "description": "Subject image URL containing a clear person or animal."
+              },
+              {
+                "name": "video",
+                "required": false,
+                "description": "Motion-source video URL. Provide either this input or motionId, but not both."
+              }
+            ]
+          }
+        ]
+      },
+      "image_to_video": {
+        "defaultModel": "kling-video-v3_0",
+        "models": [
+          {
+            "model": "kling-video-v2_5",
+            "alias": "可灵2.5, Video2.5, v2.5Turbo",
+            "description": "This model is a great value and generate videos quickly",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the desired motion / scene. The input image is the primary driver. Required; empty string is allowed for pure image animation."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "5",
+                  "10"
+                ],
+                "description": "Video duration in seconds, support only 5s or 10s."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Output resolution tier. 720p = std, 1080p = pro"
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              },
+              {
+                "name": "enable_asmr",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable ASMR mode for enhanced detail sound effects; suited to highly immersive content. Takes effect when enable_audio is 'true'."
+              },
+              {
+                "name": "audio_prompt",
+                "required": false,
+                "description": "Sound-effect description, e.g. 木船吱呀声 (a creaking wooden boat). Takes effect when enable_audio is 'true'."
+              },
+              {
+                "name": "music_prompt",
+                "required": false,
+                "description": "Background-music description, e.g. 悠远长笛旋律 (a distant flute melody). Takes effect when enable_audio is 'true'."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "first_image",
+                "required": true,
+                "description": "Source image URL used as the first frame to animate. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              },
+              {
+                "name": "tail_image",
+                "required": false,
+                "description": "Optional tail (last-frame) image URL; when provided, the generated video transitions toward this frame. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              }
+            ]
+          },
+          {
+            "model": "kling-video-v2_6",
+            "alias": "可灵2.6, Video2.6, v2.6",
+            "description": "Video and sound generation model",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the desired motion / scene. The input image is the primary driver. Required; empty string is allowed for pure image animation."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "5",
+                  "10"
+                ],
+                "description": "Video duration in seconds. only support 5s or 10s"
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Quality tier. 720p=std, 1080p=pro. Tail image requires 1080p."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Produce a work that includes audio. Only at resolution=1080p; not supported with a tail image."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "first_image",
+                "required": true,
+                "description": "Source image URL used as the first frame to animate. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              },
+              {
+                "name": "tail_image",
+                "required": false,
+                "description": "Tail (last-frame) image URL; when provided, the generated video transitions toward this frame. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              }
+            ]
+          },
+          {
+            "model": "kling-video-o1",
+            "alias": "omni1, 可灵o1, o1-omni, video-o1",
+            "description": "Unified video model with all-in-one multimodal instructions and exceptional consistency. To use features related to subject/element, refer to tools such as element_create. If no element‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate. To reference an input image, write 图片X in the prompt (图片1 = image_1, 图片2 = image_2, ...). up to 7 images are supported. To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10"
+                ],
+                "description": "Video duration in seconds, support 3s to 10s."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Quality tier (member: up to 1080p)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 7,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 7 reference images are supported, named image_1 .. image_7, indexed from 1. Reference it in the prompt as 图片1."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional). Up to 7 reference images (image_1 .. image_7). Reference it in the prompt as 图片2."
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional). Reference it in the prompt as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional). Reference it in the prompt as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional). Reference it in the prompt as 图片5."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional). Reference it in the prompt as 图片6."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional, max). Reference it in the prompt as 图片7."
+              }
+            ]
+          },
+          {
+            "model": "kling-video-v3_0_omni",
+            "alias": "kling3.0-omni, 可灵o3, v3-omni, omni3, video-o3",
+            "description": "All-in-one multimodal input, voice-driven characters, and native audio output. Default model for multi-image to video generation (first-tail and multi image ref). For single-image to video generation, use kling3.0-turbo instead. Image-to-video only — no video input. For video-to-video (v2v), use omni_ref_video.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate. To reference an input image, write 图片X in the prompt (图片1 = image_1, 图片2 = image_2, ...). up to 7 images are supported. To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Video duration in seconds, support 3s to 15s"
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p",
+                  "4k"
+                ],
+                "description": "Quality tier. 720p=std, 1080p=pro. 4k for members."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request. max to 4"
+              },
+              {
+                "name": "prefer_multi_shots",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable smart multi-shot splitting (intelligent shot composition)."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 7,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 7 reference images are supported, named image_1 .. image_7, indexed from 1. Reference it in the prompt as 图片1."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional). Up to 7 reference images (image_1 .. image_7). Reference it in the prompt as 图片2."
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional). Reference it in the prompt as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional). Reference it in the prompt as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional). Reference it in the prompt as 图片5."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional). Reference it in the prompt as 图片6."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional, max). Reference it in the prompt as 图片7."
+              }
+            ]
+          },
+          {
+            "model": "kling-video-v3_0",
+            "alias": "kling3.0, 可灵3.0, 视频3.0",
+            "description": "Enhanced native audio, improved element consistency, and support for multi-shot storytelling. To use features related to subject/element, refer to tools such as element_create. If no element‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the desired motion / scene. The input image is the primary driver. Required; empty string is allowed for pure image animation. To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Video duration in seconds, support 3s to 15s. Longer durations may require prefer_multi_shots."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p",
+                  "4k"
+                ],
+                "description": "Quality tier (member: up to 4k)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Quality tier (member: up to 4)."
+              },
+              {
+                "name": "prefer_multi_shots",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable smart multi-shot splitting (intelligent shot composition)."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 3,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "first_image",
+                "required": true,
+                "description": "Source image URL used as the first frame to animate. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              },
+              {
+                "name": "tail_image",
+                "required": false,
+                "description": "Optional tail (last-frame) image URL; when provided, the generated video transitions toward this frame. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              }
+            ]
+          },
+          {
+            "model": "kling-video-v3_0_turbo",
+            "alias": "kling3.0-turbo, video-3.0-turbo, v3-turbo, v3-fast, 3.0-fast",
+            "description": "Consistently excellent results, with even better value. First choice for single-image to video generation. For multi-image to video generation, use kling3.0-omni instead.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the desired motion / scene. The input image is the primary driver. Required; empty string is allowed for pure image animation."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Video duration in seconds, support 3s to 15s."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Output resolution tier. 720p, 1080p"
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "first_image",
+                "required": true,
+                "description": "Source image URL used as the first frame to animate. (Must be url returned by file_upload tool, or a publicly accessible external file URL. No local file path.)"
+              }
+            ]
+          }
+        ]
+      },
+      "text_to_video": {
+        "defaultModel": "kling-video-v3_0_omni",
+        "models": [
+          {
+            "model": "kling-video-v2_5",
+            "alias": "可灵2.5, Video2.5, v2.5Turbo",
+            "description": "This model is a great value and generate videos quickly",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "5",
+                  "10"
+                ],
+                "description": "Video duration in seconds, support only 5s or 10s."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Output resolution tier. 720p = std, 1080p = pro"
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              },
+              {
+                "name": "enable_asmr",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable ASMR mode for enhanced detail sound effects; suited to highly immersive content. Takes effect when enable_audio is 'true'."
+              },
+              {
+                "name": "audio_prompt",
+                "required": false,
+                "description": "Sound-effect description, e.g. 木船吱呀声 (a creaking wooden boat). Takes effect when enable_audio is 'true'."
+              },
+              {
+                "name": "music_prompt",
+                "required": false,
+                "description": "Background-music description, e.g. 悠远长笛旋律 (a distant flute melody). Takes effect when enable_audio is 'true'."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-video-v2_6",
+            "alias": "可灵2.6, Video2.6, v2.6",
+            "description": "Video and sound generation model",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "5",
+                  "10"
+                ],
+                "description": "Video duration in seconds."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Quality tier. 720p=std, 1080p=pro. Tail image requires 1080p."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-video-o1",
+            "alias": "omni1, 可灵o1, o1-omni, video-o1",
+            "description": "Unified video model with all-in-one multimodal instructions and exceptional consistency.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10"
+                ],
+                "description": "Video duration in seconds."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Quality tier (member: up to 1080p)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-video-v3_0_omni",
+            "alias": "kling3.0-omni, 可灵o3, v3-omni, omni3, video-o3",
+            "description": "All-in-one multimodal input, voice-driven characters, and native audio output.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Video duration in seconds, support 3s to 15s"
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p",
+                  "4k"
+                ],
+                "description": "Quality tier. 720p=std, 1080p=pro. 4k for members."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request. max to 4"
+              },
+              {
+                "name": "prefer_multi_shots",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable smart multi-shot splitting (intelligent shot composition)."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-video-v3_0",
+            "alias": "kling3.0, 可灵3.0, 视频3.0",
+            "description": "Enhanced native audio, improved element consistency, and support for multi-shot storytelling.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Video duration in seconds, support 3s to 15s."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output aspect ratio."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p",
+                  "4k"
+                ],
+                "description": "Quality tier (member: up to 4k)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Quality tier (member: up to 4)."
+              },
+              {
+                "name": "prefer_multi_shots",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable smart multi-shot splitting (intelligent shot composition)."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable audio-video sync. When 'true', the model directly produces a work that includes audio."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-video-v3_0_turbo",
+            "alias": "kling3.0-turbo, video-3.0-turbo, v3-turbo, v3-fast, 3.0-fast",
+            "description": "Consistently excellent results, with even better value.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the video to generate."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Video duration in seconds, support 3s to 15s."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Output resolution tier. 720p, 1080p"
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio."
+              }
+            ],
+            "inputs": []
+          }
+        ]
+      },
+      "image_to_image": {
+        "models": [
+          {
+            "model": "gemini-3.1-flash-image",
+            "alias": "Nano Banana 2",
+            "description": "Nano Banana 2 Flash (Gemini 3.1 Flash) image-to-image; single or multi-image reference (up to 10 via URL).",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Prompt for editing or composition."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "0.5k",
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution. max to 4k"
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "allowedValues": [
+                  "1:1",
+                  "1:4",
+                  "1:8",
+                  "2:3",
+                  "3:2",
+                  "3:4",
+                  "4:1",
+                  "4:3",
+                  "4:5",
+                  "5:4",
+                  "8:1",
+                  "9:16",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output aspect ratio. Omit to keep the reference image ratio (auto)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images per request (max 9)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 10 via URL."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_8",
+                "required": false,
+                "description": "Reference image #8 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_9",
+                "required": false,
+                "description": "Reference image #9 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_10",
+                "required": false,
+                "description": "Reference image #10 (optional; triggers multi-image mode)."
+              }
+            ]
+          },
+          {
+            "model": "gpt-image2",
+            "alias": "GPT-Image2",
+            "description": "GPT-Image2 image-to-image; single or multi-image reference (up to 10, total ≤ 50 MB).",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Prompt for editing or composition."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution."
+              },
+              {
+                "name": "quality",
+                "required": false,
+                "default": "medium",
+                "allowedValues": [
+                  "low",
+                  "medium",
+                  "high"
+                ],
+                "description": "Image quality tier; affects pricing."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "1:1",
+                "allowedValues": [
+                  "1:1",
+                  "2:3",
+                  "3:2",
+                  "3:4",
+                  "4:3",
+                  "4:5",
+                  "5:4",
+                  "9:16",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images per request (max 9)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 10 total, ≤ 50 MB."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_8",
+                "required": false,
+                "description": "Reference image #8 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_9",
+                "required": false,
+                "description": "Reference image #9 (optional; triggers multi-image mode)."
+              },
+              {
+                "name": "image_10",
+                "required": false,
+                "description": "Reference image #10 (optional; triggers multi-image mode)."
+              }
+            ]
+          },
+          {
+            "model": "gemini-3-pro-image",
+            "alias": "Nano Banana Pro, Gemini 3 Pro Image",
+            "description": "Higher-fidelity edit / blend / restyle from reference images with Gemini 3 Pro (Nano Banana Pro). Supports up to 4K.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Describe the edits / target image."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "1:1",
+                  "2:3",
+                  "3:2",
+                  "3:4",
+                  "4:3",
+                  "4:5",
+                  "5:4",
+                  "9:16",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output aspect ratio. Omit to keep the reference image ratio (auto)."
+              },
+              {
+                "name": "img_resolution",
+                "required": true,
+                "allowedValues": [
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution tier (up to 4K)."
+              },
+              {
+                "name": "image_count",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate (1-9)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required)."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional) — switches to multi-image mode."
+              }
+            ]
+          },
+          {
+            "model": "kling-image-v3_0_omni",
+            "alias": "kling3.0-omni, 可灵o3, v3-omni, omni3, image-o3",
+            "description": "Enhanced narrative expression, native 2K/4K ultra-high definition output, and image series generation. Default model for image to image generation (single or multi image ref). To use features related to subject/element, refer to tools such as element_create. If no element‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Prompt describing the target image or edits. To reference an input image, write 图片X in the prompt (图片1 = image_1, 图片2 = image_2, ...). To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "4k",
+                "allowedValues": [
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution (member: up to 4k)."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "3:4",
+                "allowedValues": [
+                  "auto",
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio. Set to 'auto' to let the model infer the aspect ratio from the input image."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "-1",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate per request (max 9). Default set to `-1` when `story_mode` is `true` and to let the model infer the count from the prompt."
+              },
+              {
+                "name": "story_mode",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Story / group-image mode. Generate multiple image series which may be different depends on the prompt. (Different from imageCount, which will generate same contents.) When 'true', the model infers the number of output images from the prompt and imageCount is ignored; defaults to 'false' (single composition)."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 10,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 10 reference images are supported, named image_1 .. image_10, indexed from 1. Reference it in the prompt as 图片1. (Must be url returned by file_upload tool, no local file path or external url allowed.)"
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional). Up to 10 reference images (image_1 .. image_10). Reference it in the prompt as 图片2. (Must be url returned by file_upload tool, no local file path or external url allowed.)"
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional). Reference it in the prompt as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional). Reference it in the prompt as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional). Reference it in the prompt as 图片5."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional). Reference it in the prompt as 图片6."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional). Reference it in the prompt as 图片7."
+              },
+              {
+                "name": "image_8",
+                "required": false,
+                "description": "Reference image #8 (optional). Reference it in the prompt as 图片8."
+              },
+              {
+                "name": "image_9",
+                "required": false,
+                "description": "Reference image #9 (optional). Reference it in the prompt as 图片9."
+              },
+              {
+                "name": "image_10",
+                "required": false,
+                "description": "Reference image #10 (optional, max). Reference it in the prompt as 图片10."
+              }
+            ]
+          },
+          {
+            "model": "kling-image-o1",
+            "alias": "omni1, 可灵o1, o1-omni, image-o1",
+            "description": "High feature consistency with precise detail editing and accurate style transfer. To use features related to subject/element, refer to tools such as element_create. If no element‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Prompt describing the target image or edits. To reference an input image, write 图片X in the prompt (图片1 = image_1, 图片2 = image_2, ...). To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k"
+                ],
+                "description": "Output image resolution tier."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "3:4",
+                "allowedValues": [
+                  "auto",
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate per request."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 10,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 10 reference images are supported, named image_1 .. image_10, indexed from 1. Reference it in the prompt as 图片1. (Must be url returned by file_upload tool, no local file path or external url allowed.)"
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional). Up to 10 reference images (image_1 .. image_10). Reference it in the prompt as 图片2. (Must be url returned by file_upload tool, no local file path or external url allowed.)"
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional). Reference it in the prompt as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional). Reference it in the prompt as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional). Reference it in the prompt as 图片5."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional). Reference it in the prompt as 图片6."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional). Reference it in the prompt as 图片7."
+              },
+              {
+                "name": "image_8",
+                "required": false,
+                "description": "Reference image #8 (optional). Reference it in the prompt as 图片8."
+              },
+              {
+                "name": "image_9",
+                "required": false,
+                "description": "Reference image #9 (optional). Reference it in the prompt as 图片9."
+              },
+              {
+                "name": "image_10",
+                "required": false,
+                "description": "Reference image #10 (optional, max). Reference it in the prompt as 图片10."
+              }
+            ]
+          },
+          {
+            "model": "kling-image-v3_0",
+            "alias": "kling3.0, 可灵3.0, image3.0",
+            "description": "Strengthen consistency, free multi-reference images, comprehensive effect upgrade. To use features related to subject/element, refer to tools such as element_create. If no element‑related tools appear in tool/lists, reconnect to the MCP server to refresh most updated tools by instruct the user to restart the current host and start a new session.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Image generation prompt. Use 图片1/图片N (image 1/N) to refer to the input reference image(s); describe the target image or the edits to apply. To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "1k",
+                "allowedValues": [
+                  "1k",
+                  "2k"
+                ],
+                "description": "Output image resolution tier."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "3:4",
+                "allowedValues": [
+                  "auto",
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate per request."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 10,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\"}]. 'id' from element_create/element_list. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": true,
+                "description": "Reference image #1 (required). Up to 10 reference images are supported, named image_1 .. image_10, indexed from 1. Reference it in the prompt as 图片1. (Must be url returned by file_upload tool, no local file path or external url allowed.)"
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2 (optional). Up to 10 reference images (image_1 .. image_10). Reference it in the prompt as 图片2. (Must be url returned by file_upload tool, no local file path or external url allowed.)"
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3 (optional). Reference it in the prompt as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4 (optional). Reference it in the prompt as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5 (optional). Reference it in the prompt as 图片5."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6 (optional). Reference it in the prompt as 图片6."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7 (optional). Reference it in the prompt as 图片7."
+              },
+              {
+                "name": "image_8",
+                "required": false,
+                "description": "Reference image #8 (optional). Reference it in the prompt as 图片8."
+              },
+              {
+                "name": "image_9",
+                "required": false,
+                "description": "Reference image #9 (optional). Reference it in the prompt as 图片9."
+              },
+              {
+                "name": "image_10",
+                "required": false,
+                "description": "Reference image #10 (optional, max). Reference it in the prompt as 图片10."
+              }
+            ]
+          },
+          {
+            "model": "kling-image-v2_1",
+            "alias": "kling2.1, 可灵2.1, image2.1",
+            "description": "Superb prompt adherence & reliable output.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the desired composition or edits. Required; empty string is allowed if no text guidance is needed."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "1:1",
+                "allowedValues": [
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate per request."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "subject_image_0",
+                "required": false,
+                "description": "Subject reference image #0 (main subject to preserve). Subject images support indices 0-3 (up to 4)."
+              },
+              {
+                "name": "subject_image_1",
+                "required": false,
+                "description": "Subject reference image #1 (optional additional subject, indices 0-3, up to 4)."
+              },
+              {
+                "name": "subject_image_2",
+                "required": false,
+                "description": "Subject reference image #2 (optional additional subject, indices 0-3, up to 4)."
+              },
+              {
+                "name": "subject_image_3",
+                "required": false,
+                "description": "Subject reference image #3 (optional additional subject, indices 0-3, up to 4)."
+              },
+              {
+                "name": "scene_image",
+                "required": false,
+                "description": "Scene reference image (background / scene to compose into). Across all reference types (subject / scene / style), at least 2 reference images in total are required."
+              },
+              {
+                "name": "style_image",
+                "required": false,
+                "description": "Style reference image (visual style to apply). Across all reference types (subject / scene / style), at least 2 reference images in total are required."
+              }
+            ]
+          }
+        ]
+      },
+      "text_to_image": {
+        "defaultModel": "kling-image-v3_0_omni",
+        "models": [
+          {
+            "model": "gemini-3.1-flash-image",
+            "alias": "Nano Banana 2",
+            "description": "Nano Banana 2 Flash (Gemini 3.1 Flash) text-to-image generation.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "0.5k",
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "1:1",
+                  "1:4",
+                  "1:8",
+                  "2:3",
+                  "3:2",
+                  "3:4",
+                  "4:1",
+                  "4:3",
+                  "4:5",
+                  "5:4",
+                  "8:1",
+                  "9:16",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output aspect ratio. Omit to keep the reference image ratio (auto)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images per request (max 9)."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "gpt-image-2",
+            "alias": "GPT-Image-2",
+            "description": "GPT-Image-2 text-to-image generation.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution."
+              },
+              {
+                "name": "quality",
+                "required": false,
+                "default": "medium",
+                "allowedValues": [
+                  "low",
+                  "medium",
+                  "high"
+                ],
+                "description": "Image quality tier; affects pricing."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "1:1",
+                "allowedValues": [
+                  "1:1",
+                  "2:3",
+                  "3:2",
+                  "3:4",
+                  "4:3",
+                  "4:5",
+                  "5:4",
+                  "9:16",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images per request (max 9)."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "gemini-3-pro-image",
+            "alias": "Nano Banana Pro, Gemini 3 Pro Image",
+            "description": "Google Gemini 3 Pro image model (Nano Banana Pro). Higher fidelity and complex-scene/text rendering. Supports up to 4K.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "1:1",
+                "allowedValues": [
+                  "1:1",
+                  "2:3",
+                  "3:2",
+                  "3:4",
+                  "4:3",
+                  "4:5",
+                  "5:4",
+                  "9:16",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio."
+              },
+              {
+                "name": "img_resolution",
+                "required": true,
+                "allowedValues": [
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution tier (up to 4K)."
+              },
+              {
+                "name": "image_count",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate (1-9)."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-image-v3_0_omni",
+            "alias": "kling3.0-omni, 可灵o3, v3-omni, omni3, image-o3",
+            "description": "Enhanced narrative expression, native 2K/4K ultra-high definition output, and image series generation.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k",
+                  "4k"
+                ],
+                "description": "Output resolution (member: up to 4k)."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "auto",
+                "allowedValues": [
+                  "auto",
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio. Set to 'auto' to let the model infer the aspect ratio from the prompt."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate per request. max to 9"
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-image-o1",
+            "alias": "omni1, 可灵o1, o1-omni, image-o1",
+            "description": "High feature consistency with precise detail editing and accurate style transfer.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k"
+                ],
+                "description": "Output image resolution tier, e.g. 1k / 2k."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "1:1",
+                "allowedValues": [
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate per request."
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-image-v3_0",
+            "alias": "kling3.0, 可灵3.0, image3.0",
+            "description": "Strengthen consistency, free multi-reference images, comprehensive effect upgrade.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k"
+                ],
+                "description": "Output image resolution, e.g. 1k / 2k"
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "1:1",
+                "allowedValues": [
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio, e.g. 1:1 / 3:4 / 16:9"
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate, max to 9"
+              }
+            ],
+            "inputs": []
+          },
+          {
+            "model": "kling-image-v2_1",
+            "alias": "kling2.1, 可灵2.1, image2.1",
+            "description": "Superb prompt adherence & reliable output.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt describing the image to generate."
+              },
+              {
+                "name": "img_resolution",
+                "required": false,
+                "default": "2k",
+                "allowedValues": [
+                  "1k",
+                  "2k"
+                ],
+                "description": "Output image resolution tier."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "3:4",
+                "allowedValues": [
+                  "9:16",
+                  "2:3",
+                  "3:4",
+                  "1:1",
+                  "4:3",
+                  "3:2",
+                  "16:9",
+                  "21:9"
+                ],
+                "description": "Output image aspect ratio."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9"
+                ],
+                "description": "Number of images to generate, max 9."
+              }
+            ],
+            "inputs": []
+          }
+        ]
+      },
+      "omni_ref_video": {
+        "defaultModel": "kling-video-v3_0_omni",
+        "models": [
+          {
+            "model": "kling-video-o1",
+            "alias": "omni1, 可灵o1, o1-omni, video-o1",
+            "description": "mix text, images, one reference video and image Element ids. Without video_1: up to 7 images, images+elements ≤7. With video_1: count provided image_* (any slots), images+elements ≤4. 1 video max. Image Elements ≤7; no video type Elements.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt. Reference an input image as 图片X (图片1=image_1, ...), the reference video as 视频1 (video_1). To reference a reusable image subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times). Video subjects are not supported."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 7,
+                "description": "Optional reusable image subjects (Elements). JSON array string of {id, bindName, type}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\",\"type\":\"image\"}]. 'id' and 'type' from element_get; type must be image (video subjects are not supported). At most 7 image subjects. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times). Without video_1, images+elements ≤7; with video_1, images+elements ≤4 (counted by how many image_* are provided, any slots). "
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10"
+                ],
+                "description": "Output video duration in seconds (3 to 10). With a base/edit reference video, output duration may follow the input video (enforced downstream)."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "16:9",
+                "allowedValues": [
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p"
+                ],
+                "description": "Quality tier (member: up to 1080p)."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request, max to 4."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": false,
+                "description": "Reference image #1. Counted toward images+elements (≤7 without video_1, ≤4 with video_1). Any image_* slots may be used; the limit is the number provided, not the highest index. Ref as 图片1."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2. Ref as 图片2."
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3. Ref as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4. Ref as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5. Ref as 图片5. Counted toward images+elements (≤7 without video_1, ≤4 with video_1)."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6. Ref as 图片6. Counted toward images+elements (≤7 without video_1, ≤4 with video_1)."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7. Ref as 图片7. Counted toward images+elements (≤7 without video_1, ≤4 with video_1)."
+              },
+              {
+                "name": "video_1",
+                "required": false,
+                "description": "Reference video #1 (max 1). This is the v2v input — use omni_ref_video, not image_to_video. MP4/MOV, 3–10s, ≤200MB, 720–2160px, 24–60fps (duration/size/aspect enforced downstream). With this video, images+elements ≤4 (count of provided image_* plus elements, any slots). Ref as 视频1."
+              }
+            ],
+            "combinedItemCap": {
+              "maxItems": 8,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_",
+                "video_"
+              ]
+            },
+            "combinedItemCaps": [
+              {
+                "maxItems": 4,
+                "arguments": [
+                  "elements"
+                ],
+                "inputPrefixes": [
+                  "image_"
+                ],
+                "whenAnyInputPrefixes": [
+                  "video_"
+                ]
+              },
+              {
+                "maxItems": 7,
+                "arguments": [
+                  "elements"
+                ],
+                "inputPrefixes": [
+                  "image_"
+                ],
+                "whenNoneInputPrefixes": [
+                  "video_"
+                ]
+              }
+            ],
+            "elementSupport": {
+              "imageElements": true,
+              "videoElements": false,
+              "maxImageElements": 7,
+              "maxTotalElements": 7
+            }
+          },
+          {
+            "model": "kling-video-v3_0_omni",
+            "alias": "kling3.0-omni, 可灵o3, v3-omni, omni3, video-o3",
+            "description": "mix text, images, one reference video and image/video Element ids. Without video_1: up to 7 images, images+elements ≤7, video subjects ≤3. With video_1: count provided image_* (any slots), images+elements ≤4; video subjects allowed only when there are no images or image subjects, at most 1. 1 video max. Image+video Elements ≤7. Audio-video sync and multi-shot supported.",
+            "arguments": [
+              {
+                "name": "prompt",
+                "required": true,
+                "description": "Text prompt. Reference an input image as 图片X (图片1=image_1, ...), the reference video as 视频1 (video_1). To reference a reusable subject (Element), write <<<id>>> in the prompt and list that id in the 'elements' argument (an id may be referenced multiple times)."
+              },
+              {
+                "name": "elements",
+                "required": false,
+                "maxItems": 7,
+                "description": "Optional reusable subjects (Elements). JSON array string of {id, bindName, type}, e.g. [{\"id\":\"12345\",\"bindName\":\"Alice\",\"type\":\"image\"}]. 'id' and 'type' from element_get (type is image or video). At most 7 image+video subjects combined; at most 3 may be video. Without video_1, images+elements ≤7. With video_1, images+elements ≤4 (count of provided image_* plus elements, any slots); video subjects are allowed only when there are no images or image subjects, at most 1. Write <<<id>>> in the prompt where each subject should appear (an id may be referenced multiple times)."
+              },
+              {
+                "name": "duration",
+                "required": false,
+                "default": "5",
+                "allowedValues": [
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ],
+                "description": "Output video duration in seconds (3 to 15). With video_1, the official panel typically limits duration to 3–10 (11–15 may be grey-gated downstream). With a base/edit reference video, output duration may follow the input video (enforced downstream)."
+              },
+              {
+                "name": "aspect_ratio",
+                "required": false,
+                "default": "auto",
+                "allowedValues": [
+                  "auto",
+                  "16:9",
+                  "9:16",
+                  "1:1"
+                ],
+                "description": "Output video aspect ratio. Use auto when at least one image_* is provided (follow the input), or for a video-edit task whose video_1 is the base video. When video_1 is a reference video, pass a specific ratio: 16:9, 9:16 or 1:1. For text-only, pass 16:9, 9:16 or 1:1."
+              },
+              {
+                "name": "resolution",
+                "required": false,
+                "default": "1080p",
+                "allowedValues": [
+                  "720p",
+                  "1080p",
+                  "4k"
+                ],
+                "description": "Quality tier. 720p=std, 1080p=pro. 4k for members."
+              },
+              {
+                "name": "imageCount",
+                "required": false,
+                "default": "1",
+                "allowedValues": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ],
+                "description": "Number of videos to generate per request. max to 4"
+              },
+              {
+                "name": "prefer_multi_shots",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Whether to enable smart multi-shot splitting (intelligent shot composition). Downstream may force false for base-video edit and true for reference-video."
+              },
+              {
+                "name": "enable_audio",
+                "required": false,
+                "default": "true",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Generate new synced audio (音画同步). Only one of enable_audio and keepOriginalSound may be true. For new audio use enable_audio=true and keepOriginalSound=false. When video_1 is provided, enable_audio must be false."
+              },
+              {
+                "name": "keepOriginalSound",
+                "required": false,
+                "default": "false",
+                "allowedValues": [
+                  "true",
+                  "false"
+                ],
+                "description": "Keep the original sound of the reference video. Only one of enable_audio and keepOriginalSound may be true. To keep the source sound use keepOriginalSound=true and enable_audio=false."
+              }
+            ],
+            "inputs": [
+              {
+                "name": "image_1",
+                "required": false,
+                "description": "Reference image #1. Counted toward images+elements (≤7 without video_1, ≤4 with video_1). Any image_* slots may be used; the limit is the number provided, not the highest index. Video-only v2v is allowed. Ref as 图片1."
+              },
+              {
+                "name": "image_2",
+                "required": false,
+                "description": "Reference image #2. Ref as 图片2."
+              },
+              {
+                "name": "image_3",
+                "required": false,
+                "description": "Reference image #3. Ref as 图片3."
+              },
+              {
+                "name": "image_4",
+                "required": false,
+                "description": "Reference image #4. Ref as 图片4."
+              },
+              {
+                "name": "image_5",
+                "required": false,
+                "description": "Reference image #5. Ref as 图片5. Counted toward images+elements (≤7 without video_1, ≤4 with video_1)."
+              },
+              {
+                "name": "image_6",
+                "required": false,
+                "description": "Reference image #6. Ref as 图片6. Counted toward images+elements (≤7 without video_1, ≤4 with video_1)."
+              },
+              {
+                "name": "image_7",
+                "required": false,
+                "description": "Reference image #7. Ref as 图片7. Counted toward images+elements (≤7 without video_1, ≤4 with video_1)."
+              },
+              {
+                "name": "video_1",
+                "required": false,
+                "description": "Reference video #1 (max 1). This is the v2v input — use omni_ref_video, not image_to_video. MP4/MOV, 3–10s, ≤200MB, 720–2160px, 24–60fps (duration/size/aspect enforced downstream). With this video, images+elements ≤4 (count of provided image_* plus elements, any slots), and enable_audio must be false. Video subjects are allowed only when there are no images or image subjects, at most 1. Ref as 视频1."
+              }
+            ],
+            "combinedItemCap": {
+              "maxItems": 8,
+              "arguments": [
+                "elements"
+              ],
+              "inputPrefixes": [
+                "image_",
+                "video_"
+              ]
+            },
+            "combinedItemCaps": [
+              {
+                "maxItems": 4,
+                "arguments": [
+                  "elements"
+                ],
+                "inputPrefixes": [
+                  "image_"
+                ],
+                "whenAnyInputPrefixes": [
+                  "video_"
+                ]
+              },
+              {
+                "maxItems": 7,
+                "arguments": [
+                  "elements"
+                ],
+                "inputPrefixes": [
+                  "image_"
+                ],
+                "whenNoneInputPrefixes": [
+                  "video_"
+                ]
+              }
+            ],
+            "elementSupport": {
+              "imageElements": true,
+              "videoElements": true,
+              "maxImageElements": 7,
+              "maxVideoElements": 3,
+              "maxTotalElements": 7,
+              "voiceConsistency": true,
+              "maxVideoElementsWithVideoInput": 1
+            }
+          }
+        ]
+      }
+    },
+    "authMode": "oauth",
+    "message": "Authenticated via OAuth; identity from access token subject. The MCP tool list has been updated. New tools are available; please reconnect the Kling MCP server or restart your host app."
+  }
+}

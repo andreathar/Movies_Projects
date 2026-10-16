@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-REF-08",
+  "elementId": null,
+  "referenceName": "Snowflake",
+  "resourceName": "cover",
+  "role": "reference_preview",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBola2xpbmcvZWxlbWVudC_pm6roirEt5Li76KaB5Y-C6ICDLnBuZw:240x240.webp?x-kcdn-pid=112372",
+  "quality": "web_preview_only_original_missing",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-08.webp",
+  "sha256": "c6f164ff368b4ba6d021008b84dff9696676ec0689da3f91eec0ac1db7e7aa4e",
+  "bytes": 30680,
+  "contentType": "image/webp",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:10:46.790042+00:00",
+  "dimensions": [
+    240,
+    320
+  ],
+  "approved": false,
+  "provenance": "web_reference_preview",
+  "catalogAssetId": "KEXP-REF-08",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

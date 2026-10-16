@@ -1,0 +1,23 @@
+{
+  "newMediaRehashed": 6,
+  "newMediaBytes": 14641524,
+  "newRegistryRows": 6,
+  "originalRegistryRowsPreserved": 318,
+  "galleryLinksChecked": 115,
+  "missingLinks": [],
+  "guards": 177,
+  "protectedUnchanged": 174,
+  "allowedMutable": [
+    "projects/andre-time-travel/asset-registry.csv",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/scripts/export-workspace.mjs"
+  ],
+  "productionSnapshotSHA256": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+  "audioListening": false,
+  "normalSpeedPlayback": false,
+  "frameTilesInspected": 1636,
+  "sheetsInspected": 45,
+  "paidJobs": 0,
+  "dispatch": 0,
+  "ingestion": false
+}

@@ -1,0 +1,46 @@
+{
+  "before": {
+    "projects/andre-time-travel/asset-registry.csv": "999a923f52492029b95de5717fdec3d6e5ede7e4cd81f5c86de17f190e3c7715",
+    "projects/andre-time-travel/docs/prompt-playbook-kling.md": "6d1619dd50dafb23043d73d7b018ed7390c2975223bf77d938777f7b38815af8",
+    "docs/SHARED_MEDIA.md": "19809aa1a29812b1f790479d5c962e640b9cc5f0116989533efd5342a04e0ebf",
+    "sites/movies-demandas/scripts/export-workspace.mjs": "b9ea573796155331873d27d9e537f75f3e9d40c7d9341de01c9dfd3f83f08bfc",
+    "sites/movies-demandas/data/workspace-reference.json": "ec36504f051993c28423c6d61dd9e67cc8ee4b3d5460af6cc94fdb2e93a832c4"
+  },
+  "after": {
+    "projects/andre-time-travel/asset-registry.csv": "0d3d99d1e856d66a6049efbdd75577785633c32d221578dd5a96c2ff0b30d2b2",
+    "projects/andre-time-travel/docs/prompt-playbook-kling.md": "0ff930db5d626cf811b54d28ca1d898dec73c4255e91808124e22e7f5cb0c74c",
+    "docs/SHARED_MEDIA.md": "7c039004f833224755110d7cce97a0cfef7b66bd83ff0c2b76964416125e2482",
+    "sites/movies-demandas/scripts/export-workspace.mjs": "aecd2a657eb0bcf8d9073ae37024178fe3dfdeaff390d1707068af7f1b823d29"
+  },
+  "newRegistryIDs": [
+    "KEXP-E324018220506771-cover",
+    "KEXP-E324018220506771-video",
+    "KEXP-E324018220506771-voice",
+    "KEXP-E323980733525179-cover",
+    "KEXP-E323980733525179-secondary-1",
+    "KEXP-E323980733525179-secondary-2",
+    "KEXP-E323980733525179-secondary-3",
+    "KEXP-E323980733525179-voice",
+    "KEXP-E323867570654831-cover",
+    "KEXP-E323867570654831-secondary-1",
+    "KEXP-E323867570654831-secondary-2",
+    "KEXP-E323867570654831-secondary-3",
+    "KEXP-E323854711683871-cover",
+    "KEXP-E323854711683871-secondary-1",
+    "KEXP-E323854711683871-secondary-2",
+    "KEXP-E323854711683871-secondary-3",
+    "KEXP-W323869015528491-result",
+    "KEXP-W323868230505094-result",
+    "KEXP-W323866270650569-result",
+    "KEXP-REF-01",
+    "KEXP-REF-02",
+    "KEXP-REF-03",
+    "KEXP-REF-04",
+    "KEXP-REF-05",
+    "KEXP-REF-06",
+    "KEXP-REF-07",
+    "KEXP-REF-08",
+    "KEXP-REF-09"
+  ],
+  "previousRowsPreserved": true
+}

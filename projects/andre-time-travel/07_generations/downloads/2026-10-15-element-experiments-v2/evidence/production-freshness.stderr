@@ -1,0 +1,9 @@
+file:///mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/scripts/export-common.mjs:64
+  if(!previous||JSON.stringify(previous)!==JSON.stringify(payload))throw Error(`Snapshot desatualizado: ${output}`);
+                                                                         ^
+
+Error: Snapshot desatualizado: /mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/data/production.json
+    at emit (file:///mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/scripts/export-common.mjs:64:74)
+    at async file:///mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/scripts/export-production.mjs:67:28
+
+Node.js v24.18.0

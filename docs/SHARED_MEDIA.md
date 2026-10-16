@@ -1,6 +1,6 @@
 # Mídia canônica, catálogo e lanes leves
 
-`projects/andre-time-travel/asset-registry.csv` é o único catálogo ativo de mídia. IDs, tipos e estados de aprovação existentes foram preservados. O catálogo contém 290 IDs; referências distintas podem apontar ao mesmo arquivo canônico sem criar outra cópia. Aprovação de registro não aprova novos usos, derivados ou jobs.
+`projects/andre-time-travel/asset-registry.csv` é o único catálogo ativo de mídia. IDs, tipos e estados de aprovação existentes foram preservados. O catálogo continha 290 IDs na reconciliação de 2026-10-13; referências distintas podem apontar ao mesmo arquivo canônico sem criar outra cópia. Aprovação de registro não aprova novos usos, derivados ou jobs.
 
 A reparação técnica de 2026-10-13 normalizou campos e caminhos e consolidou 16 correções de hash já documentadas. O CSV integral anterior e todos os valores/provas estão em `reports/asset-registry/asset-registry-before-20261013.csv` e `repair-20261013.json`. Registros históricos não participam da resolução corrente. Quatro literais históricos de origem com extensão duplicada permanecem preservados, sem afirmar uma origem ainda não comprovada; os caminhos/hashes dos recortes atuais foram verificados.
 
@@ -34,3 +34,7 @@ agent-parley media doctor --repo /CAMINHO/Movies_Projects --sample inbox/andre-r
 O painel Movies exporta somente resumo, caminhos e hash do catálogo, usando `manage.py assets validate`; não mantém catálogo paralelo nem consulta credenciais. Contagens de referências e caminhos são separadas. `--check`, testes, tipos e build validam derivados; importação do pacote de produção no banco, publicação e aceites continuam etapas próprias. A aba Agents do console Parley usa estado do coordenador e distingue configuração e prova nativa; esse console não foi iniciado por esta entrega.
 
 Rollback é seletivo e recusa drift. O backup do CSV restaura a forma histórica inválida apenas sob revisão; não rebobina imagens ou aprovações. O rollback de configuração remove o perfil futuro e restaura apenas o inicializador anterior, preservando identidades, grants e demais campos. A auditoria e handoff contêm hashes e limites. Não restaurar cegamente uma base inteira de coordenação.
+
+## Arquivo delimitado de experimentos Kling — 2026-10-15
+
+O catálogo recebeu 28 referências experimentais, todas com `approved=false`, mantendo as 290 linhas anteriores literalmente. [Galeria e proveniência](../projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/index.html): 27 arquivos únicos, 24 novos (59.860.079 bytes), três locais reutilizados por hash; nove são previews sem originais. As capas da mesa/figurino apontam aos arquivos anteriores, sem nova cópia nem aceite. Os 318 IDs atuais são verificáveis por `manage.py assets validate`; contagem futura deve vir do catálogo. O painel exporta somente metadados/caminhos, sem mídia ou prompts.

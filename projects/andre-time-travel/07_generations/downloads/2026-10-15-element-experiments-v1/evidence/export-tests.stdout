@@ -1,0 +1,13 @@
+✔ missing sources, traversal and external links fail closed (9.592599ms)
+✔ duplicate identifiers rejected (0.278595ms)
+✔ exports are idempotent; check detects drift and never writes (13.298518ms)
+✔ catalog drift and broken adapters are not reported current (6.608893ms)
+✔ asset summary remains source-backed and cannot become creative approval (369.315743ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 446.453531

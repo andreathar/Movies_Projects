@@ -1,0 +1,15 @@
+{
+  "projects/andre-time-travel/asset-registry.csv": "0d3d99d1e856d66a6049efbdd75577785633c32d221578dd5a96c2ff0b30d2b2",
+  "sites/movies-demandas/scripts/export-workspace.mjs": "aecd2a657eb0bcf8d9073ae37024178fe3dfdeaff390d1707068af7f1b823d29",
+  "sites/movies-demandas/data/workspace-reference.json": "00ad8d03e30d88c0ae8e95392c98e7955aa5d94017a67353919145d40d9e3ad5",
+  "projects/andre-time-travel/05_storyboard/source/production-plan.json": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+  "projects/andre-time-travel/00_brief/approvals.json": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+  "projects/andre-time-travel/07_generations/plans/current-plan.json": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6",
+  "projects/andre-time-travel/tasks/board.json": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+  "projects/andre-time-travel/memory/STATE.md": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03",
+  "projects/andre-time-travel/manifest.json": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+  "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v1.json": "308ac4cfa1b9572dec248371e9c93140e1af3846dc554ff3f98b35580d44a527",
+  "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json": "bcc8c6af058039132c78ebdb25a0f02967974bedd33cb8d2aca3f41f66d1a0fd",
+  "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v2-reconciliation.json": "9102bd74de281028b3bbc9f5f381ba85cb5ba2a7478ec01db0fc83636a4cea25",
+  "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v1.json": "c6674e66ae46d0f82073f8b0e275d87517dd0392c89fffc2930887f5740867c5"
+}

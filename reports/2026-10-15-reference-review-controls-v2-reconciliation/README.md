@@ -1,0 +1,17 @@
+# Reference review controls — delivery reconciliation v2
+
+This narrow reconciliation preserves the existing `.serena/project.yml` correction and supersedes only the earlier delivery's current-tree hash claims. No application source, configuration, approvals, media, board, STATE or historical handoff/report is edited. No producer ingestion, service change, grant or paid job occurs.
+
+The five entries moved under the real `ignored_paths` key are Serena cache/logs, storyboard keyframes/contact sheets and frontend `.next`. **This also repairs historical invalid YAML:** the old five bare sequence entries were outside their mapping key. The old committed file fails the installed safe YAML parser; the preserved current file parses and is accepted by the installed `ProjectConfig` and `ToolInclusionDefinition` models. The earlier tool-inclusion-only validation did not establish whole-file YAML validity. Do not restore the malformed historical file to make its hash match.
+
+Exact text comparison proves that moving those five lines is the entire configuration diff. All remaining configuration text is unchanged. Positive pathspec checks exclude the five target categories; negative controls keep management/plan source, frontend model/dashboard, the two architecture memories and canonical planning JSON outside these explicit exclusions. Other global or Git ignore rules still apply. The present project-local YAML file parses to an empty mapping and supplies no overrides; its hash is guarded without copying its contents.
+
+Current configuration hash: `ace245eebe8ac62be16a82bccd324642c4f16100c264c7646646809aad940e48`. Historical delivered hash: `2451b9f695a688d07740e30c0690417af4f1cf5b10198a7b1a8278dccfbefa34`.
+
+Current safeguards remain `read_only:true`, a fixed16-tool navigation/read allowlist, no incremental extra tools and read-only memory pattern `.*`. No editor, shell, memory writer, REPL or cross-project query is in that allowlist. The previous live dashboard confirmed16 active tools and readable architecture memories; its broader startup advertisement versus active tool distinction remains documented in the previous follow-up. This reconciliation tests on-disk configuration only; it neither reloads nor claims to update an already-active client.
+
+All34 prior changed-file paths were rehashed. Only this configuration hash differs; the other33 and historical claim evidence match their delivery. The new handoff carries the complete integrated file/evidence inventory, identifies old225 Python/86 frontend test results as historical, and does not claim fresh application tests. Only configuration/parser/pathspec checks and repository handoff/management checks are relevant to this record-only reconciliation.
+
+Historical handoff v1 and its reports remain byte-for-byte intact. Per `manage.py` semantics, checking v1 directly will continue to show its obsolete hash mismatch; current lint recognizes the new handoff's explicit `supersedes` and checks v2's current hashes. Final checker/lint/resume/validation results and protected-file comparisons are recorded separately in `closeout.json` after creation.
+
+Producer remains next owner for review and any authorized ingestion. Live MCP caller verification and synthetic browser workflow coverage remain their documented gaps; no repeated probe or installation is requested here. Creative decisions, G-IN/G-OUT composition approvals, incorporation and paid-release gates remain unchanged.

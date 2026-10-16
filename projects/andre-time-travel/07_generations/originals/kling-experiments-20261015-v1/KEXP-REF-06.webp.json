@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-REF-06",
+  "elementId": null,
+  "referenceName": "Sarah",
+  "resourceName": "cover",
+  "role": "reference_preview",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoka2xpbmcvZWxlbWVudC9TYXJhaC3kuLvopoHlj4LogIMucG5n:240x240.webp?x-kcdn-pid=112372",
+  "quality": "web_preview_only_original_missing",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-06.webp",
+  "sha256": "34e1f72dad9da6c38f1149768f54161df7ddab4e43661e1910863fc79db71784",
+  "bytes": 6730,
+  "contentType": "image/webp",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:10:45.750407+00:00",
+  "dimensions": [
+    240,
+    425
+  ],
+  "approved": false,
+  "provenance": "web_reference_preview",
+  "catalogAssetId": "KEXP-REF-06",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

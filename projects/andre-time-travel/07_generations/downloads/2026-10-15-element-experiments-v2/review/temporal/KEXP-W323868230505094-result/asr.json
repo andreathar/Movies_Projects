@@ -1,0 +1,259 @@
+{
+  "model": "cached faster-whisper base.en",
+  "offline": true,
+  "actualListening": false,
+  "language": "en",
+  "languageProbability": 1,
+  "segments": [
+    {
+      "start": 0.7600000000000007,
+      "end": 3.08,
+      "text": " We're at a break and we're going to feed this hike better.",
+      "avg_logprob": -0.7312931779955254,
+      "no_speech_prob": 0.020995747298002243,
+      "words": [
+        {
+          "start": 0.7600000000000007,
+          "end": 1.12,
+          "word": " We're",
+          "probability": 0.2413860596716404
+        },
+        {
+          "start": 1.12,
+          "end": 1.14,
+          "word": " at",
+          "probability": 0.5333415865898132
+        },
+        {
+          "start": 1.14,
+          "end": 1.24,
+          "word": " a",
+          "probability": 0.6255488991737366
+        },
+        {
+          "start": 1.24,
+          "end": 1.5,
+          "word": " break",
+          "probability": 0.8392442464828491
+        },
+        {
+          "start": 1.5,
+          "end": 1.9,
+          "word": " and",
+          "probability": 0.7375943064689636
+        },
+        {
+          "start": 1.9,
+          "end": 2.16,
+          "word": " we're",
+          "probability": 0.40919721871614456
+        },
+        {
+          "start": 2.16,
+          "end": 2.2,
+          "word": " going",
+          "probability": 0.570388913154602
+        },
+        {
+          "start": 2.2,
+          "end": 2.24,
+          "word": " to",
+          "probability": 0.9913370609283447
+        },
+        {
+          "start": 2.24,
+          "end": 2.4,
+          "word": " feed",
+          "probability": 0.9429061412811279
+        },
+        {
+          "start": 2.4,
+          "end": 2.62,
+          "word": " this",
+          "probability": 0.7227687239646912
+        },
+        {
+          "start": 2.62,
+          "end": 2.76,
+          "word": " hike",
+          "probability": 0.8688957691192627
+        },
+        {
+          "start": 2.76,
+          "end": 3.08,
+          "word": " better.",
+          "probability": 0.9816300868988037
+        }
+      ]
+    },
+    {
+      "start": 3.76,
+      "end": 6.56,
+      "text": " We need to be cleansed, we're a bekeetle, seeding the bake.",
+      "avg_logprob": -0.7312931779955254,
+      "no_speech_prob": 0.020995747298002243,
+      "words": [
+        {
+          "start": 3.76,
+          "end": 3.78,
+          "word": " We",
+          "probability": 0.9618192911148071
+        },
+        {
+          "start": 3.78,
+          "end": 3.9,
+          "word": " need",
+          "probability": 0.9704709053039551
+        },
+        {
+          "start": 3.9,
+          "end": 3.98,
+          "word": " to",
+          "probability": 0.9895439147949219
+        },
+        {
+          "start": 3.98,
+          "end": 4.08,
+          "word": " be",
+          "probability": 0.9722723364830017
+        },
+        {
+          "start": 4.08,
+          "end": 4.58,
+          "word": " cleansed,",
+          "probability": 0.2584136351943016
+        },
+        {
+          "start": 4.98,
+          "end": 5.32,
+          "word": " we're",
+          "probability": 0.8453441560268402
+        },
+        {
+          "start": 5.32,
+          "end": 5.38,
+          "word": " a",
+          "probability": 0.23473766446113586
+        },
+        {
+          "start": 5.38,
+          "end": 5.9,
+          "word": " bekeetle,",
+          "probability": 0.41033579409122467
+        },
+        {
+          "start": 6.04,
+          "end": 6.22,
+          "word": " seeding",
+          "probability": 0.5120450556278229
+        },
+        {
+          "start": 6.22,
+          "end": 6.38,
+          "word": " the",
+          "probability": 0.8960854411125183
+        },
+        {
+          "start": 6.38,
+          "end": 6.56,
+          "word": " bake.",
+          "probability": 0.3041993975639343
+        }
+      ]
+    },
+    {
+      "start": 7.32,
+      "end": 11.98,
+      "text": " Day this, do this, mate, and we and you'll sit us and try this.",
+      "avg_logprob": -0.7312931779955254,
+      "no_speech_prob": 0.020995747298002243,
+      "words": [
+        {
+          "start": 7.32,
+          "end": 7.6,
+          "word": " Day",
+          "probability": 0.4406583607196808
+        },
+        {
+          "start": 7.6,
+          "end": 7.86,
+          "word": " this,",
+          "probability": 0.9477750062942505
+        },
+        {
+          "start": 8.12,
+          "end": 8.3,
+          "word": " do",
+          "probability": 0.9836469292640686
+        },
+        {
+          "start": 8.3,
+          "end": 8.6,
+          "word": " this,",
+          "probability": 0.9961353540420532
+        },
+        {
+          "start": 8.74,
+          "end": 8.82,
+          "word": " mate,",
+          "probability": 0.12148229032754898
+        },
+        {
+          "start": 8.98,
+          "end": 9.08,
+          "word": " and",
+          "probability": 0.27588751912117004
+        },
+        {
+          "start": 9.08,
+          "end": 10.8,
+          "word": " we",
+          "probability": 0.7135419845581055
+        },
+        {
+          "start": 10.8,
+          "end": 10.98,
+          "word": " and",
+          "probability": 0.31500765681266785
+        },
+        {
+          "start": 10.98,
+          "end": 11.16,
+          "word": " you'll",
+          "probability": 0.2634768560528755
+        },
+        {
+          "start": 11.16,
+          "end": 11.3,
+          "word": " sit",
+          "probability": 0.8347956538200378
+        },
+        {
+          "start": 11.3,
+          "end": 11.44,
+          "word": " us",
+          "probability": 0.9328103065490723
+        },
+        {
+          "start": 11.44,
+          "end": 11.56,
+          "word": " and",
+          "probability": 0.981754720211029
+        },
+        {
+          "start": 11.56,
+          "end": 11.74,
+          "word": " try",
+          "probability": 0.9937580823898315
+        },
+        {
+          "start": 11.74,
+          "end": 11.98,
+          "word": " this.",
+          "probability": 0.9982929825782776
+        }
+      ]
+    }
+  ],
+  "limitation": "Automatic English-only transcript; noise/music can yield false words. No ear validation or claim of speaker/voice likeness."
+}

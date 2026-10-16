@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "qc",
+  "contributorKind": "registry-role",
+  "assignment": "Narrow current-tree hash reconciliation after authorized Kling catalog/export update; preserve all historical evidence and verify actual frontend metadata discoverability, without producer ingestion or source edits.",
+  "parentTask": "Kling archive consistency follow-up",
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v1.json",
+    "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/README.md"
+  ],
+  "ownedPaths": [
+    "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/",
+    "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json"
+  ],
+  "baseFiles": [
+    {
+      "path": ".serena/memories/core.md",
+      "sha256Before": "a88148ab5b6e9b96ceda42497373357995437e10eb5c226603f5f3bb70fe7659"
+    },
+    {
+      "path": ".serena/memories/frontend_architecture.md",
+      "sha256Before": "16563f441c6c1aa80a26bbe0334fd4d3517b2efd59c8e49541fac383b4f8292b"
+    },
+    {
+      "path": ".serena/memories/memory_maintenance.md",
+      "sha256Before": "2db02402753469d4e2c46ae4590fedd4851704aceab461f7b1b8ddc7f777abdf"
+    },
+    {
+      "path": ".serena/memories/production_architecture.md",
+      "sha256Before": "1eff6440302ac5ec8303f2547fa7988adc4328a02d01d7744a25731e1f482ac7"
+    },
+    {
+      "path": ".serena/project.yml",
+      "sha256Before": "ace245eebe8ac62be16a82bccd324642c4f16100c264c7646646809aad940e48"
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256Before": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb"
+    },
+    {
+      "path": "docs/SHARED_MEDIA.md",
+      "sha256Before": "7c039004f833224755110d7cce97a0cfef7b66bd83ff0c2b76964416125e2482"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256Before": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/README.md",
+      "sha256Before": "0e858bc42a8a5e60dc1e0055ab31b1b08c2e68c3f39e012d4dcf96ab924dafa8"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/SHA256SUMS.txt",
+      "sha256Before": "f61848d5f7767ac1c22437ba80af363da4bf8c8e358d529263f9a8a35c850ee5"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/assets.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/assets.stdout",
+      "sha256Before": "dafbf3331305f769b6f1579ea5653f66cb6dda25e877a95e101f6df3f2989ab8"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/base-hashes.json",
+      "sha256Before": "1bcadadadeb6e2a74af2a2b05f9afc3bc1c3d51fc47703b035bd104dc8acea64"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/data-check.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/data-check.stdout",
+      "sha256Before": "7ebd10be672c78c909f53e8250e6b05d0c19ac271f29a137357a352be2907e06"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/decode.json",
+      "sha256Before": "f80675a0101e2a18d4f258037c46659f9941c2b53cab3970a0637c0710d47216"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_get-323525046658711.json",
+      "sha256Before": "8c5b635bd3802387a696dcbbd0e1063764855f303bfaf2e39f3d56417f9b6dbe"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_get-323854711683871.json",
+      "sha256Before": "019defbedf065404696c2f983228cbe2cbd88f69315de397748fbecd2ed23e72"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_get-323867570654831.json",
+      "sha256Before": "7d425a4cef69a3549d7d2114c4c0151cf3e61fa23701eec6df9cced7e76a3a83"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_get-323980733525179.json",
+      "sha256Before": "b109fc7649fa4ee4ffb28e2eec990e4a5ebbd5c9c781e368b11c2f8b046af74d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_get-324018220506771.json",
+      "sha256Before": "07d62cebca4edb502a2d4fc0714ac20f76fd6bddc60b2a786a7b5ce7a3919028"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_list-end.json",
+      "sha256Before": "61c54b7c62d70006121166e3c89a60a14184bb407771d71edf7774e27f422903"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/element_list.json",
+      "sha256Before": "e9ffd12fcc7470c59ef3826f5680befc6a6325db276cda7cbcee0c9f3d09cdce"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/export-check.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/export-check.stdout",
+      "sha256Before": "41f312d92762b8f97b529fb960c3853c92ed5fddf13f12eefbd8aa6c3a34c54a"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/export-tests.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/export-tests.stdout",
+      "sha256Before": "d408cae848558f7191fd731e0221f65af125420a5a4fd210b49fe483c0de68b6"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/integration-before/0-asset-registry.csv",
+      "sha256Before": "999a923f52492029b95de5717fdec3d6e5ede7e4cd81f5c86de17f190e3c7715"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/integration-before/1-prompt-playbook-kling.md",
+      "sha256Before": "6d1619dd50dafb23043d73d7b018ed7390c2975223bf77d938777f7b38815af8"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/integration-before/2-SHARED_MEDIA.md",
+      "sha256Before": "19809aa1a29812b1f790479d5c962e640b9cc5f0116989533efd5342a04e0ebf"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/integration-before/3-export-workspace.mjs",
+      "sha256Before": "b9ea573796155331873d27d9e537f75f3e9d40c7d9341de01c9dfd3f83f08bfc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/integration-before/4-workspace-reference.json",
+      "sha256Before": "ec36504f051993c28423c6d61dd9e67cc8ee4b3d5460af6cc94fdb2e93a832c4"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/integration-hashes.json",
+      "sha256Before": "1712b5deb0db2fe749dc3650d65af484af07cfb81b24fe3f80c7cfd897f9e191"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/lint.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/lint.stdout",
+      "sha256Before": "49c3b6f683174ef7312e4fd1c433cc239eb3778a0ea01cc2f1b8b379362f1424"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/plan-check.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/plan-check.stdout",
+      "sha256Before": "7a06614577ceeb67d841f35ff50c99236b49ee001a98b73a912edac6a1473cb4"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/query_tasks-323866270650569.json",
+      "sha256Before": "6e965d22e77fb1956b5a6301e912c4d7428bd8115e55b9ad2138a2e07338156d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/query_tasks-323868230505094.json",
+      "sha256Before": "6e965d22e77fb1956b5a6301e912c4d7428bd8115e55b9ad2138a2e07338156d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/query_tasks-323869015528491.json",
+      "sha256Before": "6e965d22e77fb1956b5a6301e912c4d7428bd8115e55b9ad2138a2e07338156d"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/resume.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/resume.stdout",
+      "sha256Before": "611e4970d9a98bc408e2693f9dd69eb0c483129d3f1eda1061358ed1191134e4"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/retrieve.executed.py",
+      "sha256Before": "f6bb28ddac297b56c6104c491b7bff26f3541da7afa456abf7223a4942619422"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/shared-media-tests.stderr",
+      "sha256Before": "4557fa8df8c747e9f8712301ed03eef6a65a80ce4b33f72f74993a49cedf564c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/shared-media-tests.stdout",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/storage.json",
+      "sha256Before": "0fd64e08846bbed1a976cbba247d6316701aa5091f7d7e80d349ab1b1b770ff7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/tool_list.json",
+      "sha256Before": "a0a0300b45b0bd459d216ddb9365ef7d79b1d967718a8c72b8cec214e6ca80eb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/transient-dedup.json",
+      "sha256Before": "0d9a057716219557c331d63b837a6f58d39e2e9400b1b29cf072776b30ac85bb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/validate.stderr",
+      "sha256Before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/validate.stdout",
+      "sha256Before": "3b3759f6a10ad3aea7d8241c422c088ee62dcda841e49fd00a0310a90b3ad829"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/verification.json",
+      "sha256Before": "61ffbc67bcef33e4a37625ca209c05541b93022e38dc76d79d0854d00b46d266"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/evidence/who_am_i.sanitized.json",
+      "sha256Before": "556059de0b3a9c905fbf628c69b181060556e8e8f091edff797d14dfa2c97ac2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/index.html",
+      "sha256Before": "ef5e8bc65bafa0b06041dbef8470d7357e132c56e7b92085de8b30a8ca01b422"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json",
+      "sha256Before": "34ff1dd695d3d12e5b0763354ea9fdd8d052c6df98371433ad217b77763bb204"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/next-batch-inventory.json",
+      "sha256Before": "4858dee19bd3753ecd9a89219ccf52ad139265b823e63aa3bc4ea908004d896c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/prompts.json",
+      "sha256Before": "1bb50519e4237241684e3b52c2c572b4bcd45f5921d3b8801c9a844ec9f12675"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/resources.csv",
+      "sha256Before": "3e3bd79d91f139f412b946c132fa7a63c6290dc2e5277fb6c9afa1c4aa06b691"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/review/KEXP-E324018220506771-video-triage.jpg",
+      "sha256Before": "affd265ebc3e15ac73ad7c70f2c8faf994ca23d8a035f3e2c380f68e2071c9fd"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/review/KEXP-W323866270650569-result-triage.jpg",
+      "sha256Before": "cd3fd3360e9c62bfc9e36bff58482195fae3db8b7de571b7454f568e0db9bf20"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/review/KEXP-W323868230505094-result-triage.jpg",
+      "sha256Before": "951db8d18636ce3be3841447e92ab1661c80c3492cd2b62a58b55589de4b79a2"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/review/KEXP-W323869015528491-result-triage.jpg",
+      "sha256Before": "921e95311309b5ada30dfd1972a04ecf83bc06ccf6c513c0e1d6f047b077b3d3"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/review/references-1.jpg",
+      "sha256Before": "aecdbff1470ed3b53c27ebb0da71b1cb1baf3d8dcea68da755d1cdac4d3741cf"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/review/references-2.jpg",
+      "sha256Before": "a9c477149f0bbbadfa58c80b9727290b30a3c10043bbd0a4d5acd40c00153623"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-1.png",
+      "sha256Before": "6ff62d00920ab6c9171544902f536a447cd10ba09ff531b7b31ed17dc5b68e13"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-1.png.json",
+      "sha256Before": "bf931b0aa802619578963621b46d924b2298da87d69eed20ff4f8f6644244043"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-2.png",
+      "sha256Before": "8465a491e4cf03e1c4af09149eeef40ac8c07543cc9a2b431b75d2beb82b838f"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-2.png.json",
+      "sha256Before": "2373b2326ba01f8231c950dc2ac6d8ec3dcb76f3e0dee4509c96f06b13afcc97"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-3.png",
+      "sha256Before": "ab6cf4538d5a69006761065fcbc6df44168456d4ad9251575ff71ff900dd72ca"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-3.png.json",
+      "sha256Before": "18573873723128fd8ff3140271022d5b43cc8e6ef8a5088511e35be2750b666b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-1.png",
+      "sha256Before": "468229d3dabf0b8511b3b17964cada373e718f4bb4346b6ee08424452175dc5b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-1.png.json",
+      "sha256Before": "f3248cd9e62a2466e12a10da6bae3ff9d0368b1b3120ad3fe17874244e8acb53"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-2.png",
+      "sha256Before": "5d4d1e01e0735b23d984ae0a6007d0b93a706c84e07d7f4201706da32e3536da"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-2.png.json",
+      "sha256Before": "21fd8129e8ea3d52c3e10081b03790fa107e48f3b3a42a35ab44efc2e9f18121"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-3.png",
+      "sha256Before": "1ba45919d901bf75f90c97b0e56a465c089ac6620d9364ae0a82d12682de6acc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-3.png.json",
+      "sha256Before": "488e3b15f60d3889ce78eca4d54d35b2a3760200f9ccea3994222c85533444b0"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-cover.jpg",
+      "sha256Before": "4e1f48c5bba9c9b4ea7cc024cd4fbdb1e301345222756197b22c03e209ed28af"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-cover.jpg.json",
+      "sha256Before": "bbc0dcaa2454f674a1cd3d2c4068e507cf9d69bd378169ae8fd64d5e36241b2e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-1.png",
+      "sha256Before": "f89b77f7e503925a1f483acefc0ea8cab55db3ca4c08827e73b0e8f8b998533b"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-1.png.json",
+      "sha256Before": "80b18e235b3e42613441888dd1f62a87d351c99db9f85908a5703f43696cc265"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-2.png",
+      "sha256Before": "4b551239b3c80269c4be28e002b5312753fd0f4571dec6284ad6d63e29c22b03"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-2.png.json",
+      "sha256Before": "95ef1b5b584d3bab65f35b7f6d678a756649341b2280984d858e6ffb374fd4b6"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-3.png",
+      "sha256Before": "82004c96f0afa05808ffc7a56140dc2f7babd5fe859cd2ff569f5690f93eee84"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-3.png.json",
+      "sha256Before": "a916c0f4d79daf14623610bc4225ff70a96a1f9da38d7a4754acbd89312a2b45"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-cover.jpg",
+      "sha256Before": "c5ca1001d6098513b49db7d0abd808abf6025ebffda990ce5a841061d6ecdb1e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-cover.jpg.json",
+      "sha256Before": "39427a44ffb1cbb2fb7d5cd546e8ac5b44adcde8256c906b0c0281487431ac26"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4",
+      "sha256Before": "da3d90a0d5b6aeba422f78f29e3ed5064ed20a216050e05f069ecf27d3ff70a7"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4.json",
+      "sha256Before": "d5972c3f565892a80b2bce657fd4286d3365f3bbe72b770109e144aa765e5706"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-01.webp",
+      "sha256Before": "3e5eafd401fc59a50594d10e05722d7d54e0a22325ab25385c88cc2d0f17a4fc"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-01.webp.json",
+      "sha256Before": "e1537f53f44dbe0540040a278c262ff6592f22fa1e2eb0b1313f4cc0b7f221c1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-02.webp",
+      "sha256Before": "ce6066d1536d250664c2e854f28dfd0824d30c92c1b7119b6e0556fe68ae6437"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-02.webp.json",
+      "sha256Before": "a418cf230cb3583891fa5768b06394bef6561f062c46dc1440aafc575a12e907"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-03.webp",
+      "sha256Before": "71c786096ee4b233a53d866af7d6442e4216ea582c058b8c61bebc040a5b3254"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-03.webp.json",
+      "sha256Before": "4082f8e0fe74cd70c15481c06e4950073c3ebfd79541488fd092ea8e75897d48"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-04.webp",
+      "sha256Before": "083f410830d479a6db1fd11b67a7f023c562912bb8f57ac242006caee1c6b2ed"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-04.webp.json",
+      "sha256Before": "f4d65ad3eb67cd22f9ff708058a8a6fe172c2f96dc9828dad53ef85c41a4d078"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-05.webp",
+      "sha256Before": "0f6aba36a2644f10f97674c5a2e157e5810c14c31f852641220b8cf040643b50"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-05.webp.json",
+      "sha256Before": "32b4a697b944d6e981115aecc8d34071722454d10da14d70acb5cf79a9f382cb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-06.webp",
+      "sha256Before": "34e1f72dad9da6c38f1149768f54161df7ddab4e43661e1910863fc79db71784"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-06.webp.json",
+      "sha256Before": "bec56aef17f549d1647516070f36b96ac412011dfd2e54eeb9a6ce322cfaee3c"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-07.webp",
+      "sha256Before": "163bcdb7a93f339e3cb2b22492c6a6566b82fa950267d7c58592246dd61c3e5a"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-07.webp.json",
+      "sha256Before": "e3c24a9cb46be4800c2f232cadebe7d93541ac68b448c1457ccbaa78713cad56"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-08.webp",
+      "sha256Before": "c6f164ff368b4ba6d021008b84dff9696676ec0689da3f91eec0ac1db7e7aa4e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-08.webp.json",
+      "sha256Before": "88f194bd74d4709e6e531a376d0ffdc602c6156517aef6fab37c6992c4952e66"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-09.webp",
+      "sha256Before": "7f8e113f834ccbe4b4314d15ebe53e36a61871654aa89aa79763c72e3b19cbbb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-09.webp.json",
+      "sha256Before": "8212a43364caf9533268cbe6e9bdd90e5a5977746c450e23e138c986c7cc2df1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4",
+      "sha256Before": "e92ede9824636ed255ffd6512ebd86214a2ad19c8ea825c2f4b20fed016dd100"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4.json",
+      "sha256Before": "bbe1a14320835f3c9768ecf6b6018f6292a31d4a7350aff850ebc1c312dbe450"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323868230505094-result.mp4",
+      "sha256Before": "124c8e36a91f9643ef28b562c60cffd3b6d1ffe950c61f6b4922cacd3ed670f1"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323868230505094-result.mp4.json",
+      "sha256Before": "fd9e20051a940436b49109c50f4502fa4a140224997d99ca166183c5efdf24b9"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4",
+      "sha256Before": "f67aa96db1b5d785c0de72011a94aa4549732741f0da8fd533c5ee0c936dc488"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4.json",
+      "sha256Before": "1b3b2d6735aac489a6b4f02802e70b35b5ee14347df67b7723eedfc39b2b88ff"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256Before": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v1.json",
+      "sha256Before": "c6674e66ae46d0f82073f8b0e275d87517dd0392c89fffc2930887f5740867c5"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+      "sha256Before": "9102bd74de281028b3bbc9f5f381ba85cb5ba2a7478ec01db0fc83636a4cea25"
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "0d3d99d1e856d66a6049efbdd75577785633c32d221578dd5a96c2ff0b30d2b2"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/kling-element-experiments-20261015-v1.md",
+      "sha256Before": "c840a8eec59584d54d76ae33e01d6e6beab30ccc821f54cf915032b26f173f16"
+    },
+    {
+      "path": "projects/andre-time-travel/docs/prompt-playbook-kling.md",
+      "sha256Before": "0ff930db5d626cf811b54d28ca1d898dec73c4255e91808124e22e7f5cb0c74c"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/mistakes.jsonl",
+      "sha256Before": "48bef28b824c0bed49b2d27151f1212c1788c8914275378f37d7098980675f30"
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v1/final-status.json",
+      "sha256Before": "c5344a528af05430e7eceea571a5743a763aed2c5a4d32a304b5902c1063dd56"
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v1/runtime-delivery-check.json",
+      "sha256Before": "7be11bda22cd4e2c0c3ba4eb5c1b05879b74de9b889a5d944309ec6f3fa4dcb3"
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v1/user-two-approvals-verification.json",
+      "sha256Before": "bdd49a84bd7e779bc7bfb6c57dcbc1b657713e0257d3d086664c7b4bf99a3f3b"
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v2-reconciliation/config-validation.json",
+      "sha256Before": "86148bda10311915514d1d705c5fc68915f26f9f0f67d8ca53f2e89f40878830"
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v2-reconciliation/reconciled-files.json",
+      "sha256Before": "8150ee5cfb99ec111fca78a86c06417a01f4aa3b0008473082b2a8d9ef566ecd"
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256Before": "9e525dcd257dc73b7fd46a3dc93afe1f65b54afdd94397ddcee195fd8db7b09d"
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256Before": "106fef8d53fc98e5016df657c8dfdd9490ee50bd0bc5a793c4f56bf9045259bc"
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/active-baseline-tab.tsx",
+      "sha256Before": "6eaa2e1e78633a2ebfbea10e81ba4868bc4a9e73a4934ce1a395e15bb1a35118"
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/baseline-reference.tsx",
+      "sha256Before": "dcf458e98ff104c0898ea2fb17758b8403adbbc4691a7c3937f55494b58f6fa6"
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/reference-decision.tsx",
+      "sha256Before": "21292b96051c5e06b17ad5753a6e4c970a8e8551f382ace790bb277ef14b2eef"
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/use-reference-reviews.ts",
+      "sha256Before": "a5c13ef83347a1ca5de09a172a9ad14f4422ec7ade2b264b2f15ba4b511aaeec"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256Before": "2faa1be63689d1f60b1f3a4cc0c65d9548c748590938eeb50a1a80ef0262ef0d"
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256Before": "816251e515880854a7bf81e1ce17d899b4c284ced7d7461e73e8ea8fa84d6dcc"
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256Before": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "00ad8d03e30d88c0ae8e95392c98e7955aa5d94017a67353919145d40d9e3ad5"
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256Before": "0c2a4c097661535ee3e2ae16c72b0c4fdcdd8f501667113b0b6d39f179b5a346"
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256Before": "295ceca768a0ddbd324584ba3e85b244255869fe6043c076ec020a6046311b61"
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256Before": "0b5f24c862d8ce273e9fed65eaff299bf2d3ebfca4804c8389eb2ca9d96c95c5"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+      "sha256Before": "7ddd00bc6c136cdfa1cd4c9edab522a24d3899f91dbef362b8127d0373faa42a"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "aecd2a657eb0bcf8d9073ae37024178fe3dfdeaff390d1707068af7f1b823d29"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/local-review.mjs",
+      "sha256Before": "fc270b7ed90157d3d0310e18e376a69bb07c2d6f5977c78af9cb764086270af9"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-fixture.mjs",
+      "sha256Before": "09c2d799814aec26034f0186cb497f0c60a646f02aeaabfdcaca9f378fd16d16"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-server.mjs",
+      "sha256Before": "00304ca1337301827900fb8363027c5d8fd8522d0142d3b947912a666f8d7a82"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-store.mjs",
+      "sha256Before": "9dcf3bc0db2fd229b20773d9f5757f06bfb3fe9d0258adde7fee23c811249d50"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/review-lock.mjs",
+      "sha256Before": "7bc61346d327bb432e11e4126b472383df0dd8e58857fbeb6a6c07a340b4d71c"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/review-readiness.mjs",
+      "sha256Before": "a8dc890b1e02cd8e869a7118bd285f769bef8b94498630f7aed37bd3a5094d9a"
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256Before": "aee813e61866bb9ddd66d153dd37776b9c96f6b274af59c40d16c090832ad2cf"
+    },
+    {
+      "path": "sites/movies-demandas/tests/reference-review.test.mjs",
+      "sha256Before": "783fc4aa8ef865e295f5bffa11547d4474e70e1682de882ff284a5db48e4b34a"
+    },
+    {
+      "path": "sites/movies-demandas/tests/review-lock.test.mjs",
+      "sha256Before": "5d68467c01b41d3e4931cca6f7d92bf9504ec5513279867f5ffa05f08d1e310f"
+    },
+    {
+      "path": "sites/movies-demandas/tests/review-readiness.test.mjs",
+      "sha256Before": "952b99bf25f20f6d56b0f094cb16a259b73779e5b348d850e92fd451f04b12cf"
+    },
+    {
+      "path": "sites/movies-demandas/vite.config.ts",
+      "sha256Before": "920fc59b985300a480393a73b211f3fb3a9339034377dcdb405e2fd410b9b9d1"
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256Before": "0048422c202e32f19c4f897136e68e872870dee30bf361cdbd67d5aee81a4e8b"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": ".serena/memories/core.md",
+      "sha256After": "a88148ab5b6e9b96ceda42497373357995437e10eb5c226603f5f3bb70fe7659",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": ".serena/memories/frontend_architecture.md",
+      "sha256After": "16563f441c6c1aa80a26bbe0334fd4d3517b2efd59c8e49541fac383b4f8292b",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": ".serena/memories/memory_maintenance.md",
+      "sha256After": "2db02402753469d4e2c46ae4590fedd4851704aceab461f7b1b8ddc7f777abdf",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": ".serena/memories/production_architecture.md",
+      "sha256After": "1eff6440302ac5ec8303f2547fa7988adc4328a02d01d7744a25731e1f482ac7",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": ".serena/project.yml",
+      "sha256After": "ace245eebe8ac62be16a82bccd324642c4f16100c264c7646646809aad940e48",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "docs/PRODUCTION_PLAN.md",
+      "sha256After": "c11ebc69539df03eb5b3315e4ca34c161482603b89477e6f30e9c000855d74cb",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "scripts/production_plan.py",
+      "sha256After": "9e525dcd257dc73b7fd46a3dc93afe1f65b54afdd94397ddcee195fd8db7b09d",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/README.md",
+      "sha256After": "106fef8d53fc98e5016df657c8dfdd9490ee50bd0bc5a793c4f56bf9045259bc",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/active-baseline-tab.tsx",
+      "sha256After": "6eaa2e1e78633a2ebfbea10e81ba4868bc4a9e73a4934ce1a395e15bb1a35118",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/baseline-reference.tsx",
+      "sha256After": "dcf458e98ff104c0898ea2fb17758b8403adbbc4691a7c3937f55494b58f6fa6",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/reference-decision.tsx",
+      "sha256After": "21292b96051c5e06b17ad5753a6e4c970a8e8551f382ace790bb277ef14b2eef",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/app/_production-plan/use-reference-reviews.ts",
+      "sha256After": "a5c13ef83347a1ca5de09a172a9ad14f4422ec7ade2b264b2f15ba4b511aaeec",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.module.css",
+      "sha256After": "2faa1be63689d1f60b1f3a4cc0c65d9548c748590938eeb50a1a80ef0262ef0d",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/app/production-plan-panel.tsx",
+      "sha256After": "816251e515880854a7bf81e1ce17d899b4c284ced7d7461e73e8ea8fa84d6dcc",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/data/production.json",
+      "sha256After": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256After": "00ad8d03e30d88c0ae8e95392c98e7955aa5d94017a67353919145d40d9e3ad5",
+      "reason": "Reconciles authorized Kling catalog update; old bytes/hash preserved in archive evidence."
+    },
+    {
+      "path": "sites/movies-demandas/lib/model.ts",
+      "sha256After": "0c2a4c097661535ee3e2ae16c72b0c4fdcdd8f501667113b0b6d39f179b5a346",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/lib/production-plan.ts",
+      "sha256After": "295ceca768a0ddbd324584ba3e85b244255869fe6043c076ec020a6046311b61",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256After": "0b5f24c862d8ce273e9fed65eaff299bf2d3ebfca4804c8389eb2ca9d96c95c5",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/baseline-media.mjs",
+      "sha256After": "7ddd00bc6c136cdfa1cd4c9edab522a24d3899f91dbef362b8127d0373faa42a",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/local-review.mjs",
+      "sha256After": "fc270b7ed90157d3d0310e18e376a69bb07c2d6f5977c78af9cb764086270af9",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-fixture.mjs",
+      "sha256After": "09c2d799814aec26034f0186cb497f0c60a646f02aeaabfdcaca9f378fd16d16",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-server.mjs",
+      "sha256After": "00304ca1337301827900fb8363027c5d8fd8522d0142d3b947912a666f8d7a82",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/reference-review-store.mjs",
+      "sha256After": "9dcf3bc0db2fd229b20773d9f5757f06bfb3fe9d0258adde7fee23c811249d50",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/review-readiness.mjs",
+      "sha256After": "a8dc890b1e02cd8e869a7118bd285f769bef8b94498630f7aed37bd3a5094d9a",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/tests/model.test.ts",
+      "sha256After": "aee813e61866bb9ddd66d153dd37776b9c96f6b274af59c40d16c090832ad2cf",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/tests/reference-review.test.mjs",
+      "sha256After": "783fc4aa8ef865e295f5bffa11547d4474e70e1682de882ff284a5db48e4b34a",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/tests/review-readiness.test.mjs",
+      "sha256After": "952b99bf25f20f6d56b0f094cb16a259b73779e5b348d850e92fd451f04b12cf",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/vite.config.ts",
+      "sha256After": "920fc59b985300a480393a73b211f3fb3a9339034377dcdb405e2fd410b9b9d1",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "tests/test_production_plan.py",
+      "sha256After": "0048422c202e32f19c4f897136e68e872870dee30bf361cdbd67d5aee81a4e8b",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256After": "aecd2a657eb0bcf8d9073ae37024178fe3dfdeaff390d1707068af7f1b823d29",
+      "reason": "Reconciles authorized Kling catalog update; old bytes/hash preserved in archive evidence."
+    },
+    {
+      "path": "sites/movies-demandas/scripts/review-lock.mjs",
+      "sha256After": "7bc61346d327bb432e11e4126b472383df0dd8e58857fbeb6a6c07a340b4d71c",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "sites/movies-demandas/tests/review-lock.test.mjs",
+      "sha256After": "5d68467c01b41d3e4931cca6f7d92bf9504ec5513279867f5ffa05f08d1e310f",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/plans/current-plan.json",
+      "sha256After": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6",
+      "reason": "Inherited current-tree path rehashed unchanged; no source edit or new claim of old application-test execution."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/README.md",
+      "sha256After": "4aa6ffd864d6ead467f889059980fceea95f542d7502007e9c8749245a1a2a9a",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/assets.stderr",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/assets.stdout",
+      "sha256After": "dafbf3331305f769b6f1579ea5653f66cb6dda25e877a95e101f6df3f2989ab8",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/audit-before.json",
+      "sha256After": "ae3b503db5e8cc8c5c3e5341840264bdf92c0b2ab371560c1687ded1143da080",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/data-check.stderr",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/data-check.stdout",
+      "sha256After": "7ebd10be672c78c909f53e8250e6b05d0c19ac271f29a137357a352be2907e06",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/export-delta.json",
+      "sha256After": "2d4d2a75c00c320722808d4c927cdd3da3c43d4cf4c274eba809caa38c3a9652",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/export-production-check.stderr",
+      "sha256After": "fa001d6ebc3cf2d9469e01726af22bea3dea5055931c755e30479f1a09f65044",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/export-production-check.stdout",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/export-workspace-check.stderr",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/export-workspace-check.stdout",
+      "sha256After": "41f312d92762b8f97b529fb960c3853c92ed5fddf13f12eefbd8aa6c3a34c54a",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/exporter.diff",
+      "sha256After": "104fb210bb63b4ee7299aff9d564c6c0ec45dfeca37ac41d4665bba6d51dd79a",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/frontend-navigation.json",
+      "sha256After": "4016d105ee79878a470732152d38996b90f04e79a32f00a7b31891dfd6021f5f",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/gallery-http.json",
+      "sha256After": "5f5e398fa47f465612e438fafe71aa6540d8f34d3713a25cc82dd86647463367",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/guards.json",
+      "sha256After": "2ed22ec590596ab1cac927c5f0cd5b958b36c6b299cbff2cb73be7fd6aab9d22",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/manage-tests.stderr",
+      "sha256After": "96782816f1be14a8da3bf2dc512c2dfdac9350397f01a7a71e7a91669a9f176d",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/manage-tests.stdout",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/production-freshness-diff.json",
+      "sha256After": "05bd32902f7ea3ba4298909ae6968a3139f4f0dd21697ff8b4c161b85f91bf82",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/validate.stderr",
+      "sha256After": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/validate.stdout",
+      "sha256After": "3b3759f6a10ad3aea7d8241c422c088ee62dcda841e49fd00a0310a90b3ad829",
+      "reason": "New reconciliation evidence only."
+    },
+    {
+      "path": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/closeout.json",
+      "sha256After": "4b5019f11eb362396a360ba0231b06d2d13f6a5de55050bb05e5bcd8855aa74a",
+      "reason": "Post-creation handoff/lint/management results; current pending record only."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Historical evidence from v2 remains hash-valid; not a fresh execution or current acceptance: Applied implementation; 225 Python and 86 frontend tests, lint/types/build/data/freshness/plan-media gates passed. No own commits, paid jobs or dispatch.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v1/final-status.json",
+      "sha256": "c5344a528af05430e7eceea571a5743a763aed2c5a4d32a304b5902c1063dd56"
+    },
+    {
+      "statement": "Historical evidence from v2 remains hash-valid; not a fresh execution or current acceptance: Read-only final HTTP check: ready, seven exact-hash media responses, QA fixture disabled, plan/pointer match and two real approved records.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v1/runtime-delivery-check.json",
+      "sha256": "7be11bda22cd4e2c0c3ba4eb5c1b05879b74de9b889a5d944309ec6f3fa4dcb3"
+    },
+    {
+      "statement": "Historical evidence from v2 remains hash-valid; not a fresh execution or current acceptance: Andre G-IN/G-OUT exact-version decisions preserved. Local saves trigger no queue, Parley notification or generation. No task/comment approvals inferred.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v1/user-two-approvals-verification.json",
+      "sha256": "bdd49a84bd7e779bc7bfb6c57dcbc1b657713e0257d3d086664c7b4bf99a3f3b"
+    },
+    {
+      "statement": "Historical evidence from v2 remains hash-valid; not a fresh execution or current acceptance: Installed safe YAML parser, ProjectConfig and fixed-tool model accept current configuration; five exclusion positives and seven navigation negatives pass; only configuration differs in34-path inventory. Prior test claims above remain historical evidence, not fresh runs.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v2-reconciliation/config-validation.json",
+      "sha256": "86148bda10311915514d1d705c5fc68915f26f9f0f67d8ca53f2e89f40878830"
+    },
+    {
+      "statement": "Historical evidence from v2 remains hash-valid; not a fresh execution or current acceptance: Full prior delivery current-tree file inventory rehashed and preserved, except explicitly reconciled configuration hash.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v2-reconciliation/reconciled-files.json",
+      "sha256": "8150ee5cfb99ec111fca78a86c06417a01f4aa3b0008473082b2a8d9ef566ecd"
+    },
+    {
+      "statement": "All prior file/hash claims checked, with exactly two current-tree deltas tied to the catalog update.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/audit-before.json",
+      "sha256": "ae3b503db5e8cc8c5c3e5341840264bdf92c0b2ab371560c1687ded1143da080"
+    },
+    {
+      "statement": "Running frontend shows catalog metadata and copy-path; it does not link or serve the HTML gallery.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/frontend-navigation.json",
+      "sha256": "4016d105ee79878a470732152d38996b90f04e79a32f00a7b31891dfd6021f5f"
+    },
+    {
+      "statement": "Production freshness difference is only collectedAt and repositoryHead; unchanged production snapshot retained.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/production-freshness-diff.json",
+      "sha256": "05bd32902f7ea3ba4298909ae6968a3139f4f0dd21697ff8b4c161b85f91bf82"
+    },
+    {
+      "statement": "Current superseding handoff, archive handoff, workspace validation, lint and resume passed; historical records and guarded files untouched.",
+      "evidence": "reports/2026-10-15-reference-review-controls-v3-kling-reconciliation/closeout.json",
+      "sha256": "4b5019f11eb362396a360ba0231b06d2d13f6a5de55050bb05e5bcd8855aa74a"
+    }
+  ],
+  "verification": [
+    "Rehashed all 34 prior current-file claims and all five historical claim evidence files; exactly the two authorized catalog exporter paths differ.",
+    "Rehashed all 110 archive-v1 changed-file paths and both claims; zero divergence.",
+    "Archive before-copies match the two prior v2 SHA values; exporter diff adds exactly two paths.",
+    "Running browser: Organização > Pontos de entrada > Experimentos Kling is visible at root URL, with copy-path control only; no gallery anchor.",
+    "Read-only localhost gallery path check returned 404; no serving route added.",
+    "Workspace exporter --check and bundled data check passed. Production exporter --check remains stale only on collectedAt/HEAD; semantic production comparison is identical.",
+    "Relevant management tests, workspace validation and asset catalog validation rerun; final handoff/lint/resume results saved in closeout.json."
+  ],
+  "nextActions": [
+    {
+      "role": "producer desktop",
+      "action": "Review the v3 evidence and decide any ingestion. If desired, refresh production export Git provenance separately after guarding concurrent changes; no creative/media action is authorized by this reconciliation.",
+      "readiness": "pending_producer_review"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "Production exporter freshness check records an older Git HEAD; no production content or source-hash mismatch.",
+      "owner": "producer",
+      "unblockCondition": "Decide a separately guarded provenance-only refresh, if needed; file kept intact here."
+    },
+    {
+      "description": "HTML gallery is local only, not linked/served by running frontend.",
+      "owner": "producer",
+      "unblockCondition": "Use the existing local HTML or authorize a separate gallery-serving implementation if desired."
+    }
+  ],
+  "andreOnlyGates": [
+    "Remaining exact-version director decisions, incorporation, financial release and publication remain their existing separate gates."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "supersedes": [
+    "2026-10-15-qc-reference-review-controls-v2-reconciliation.json"
+  ],
+  "historicalVerification": [
+    "Installed safe YAML parser and ProjectConfig._from_dict accepted current project configuration without starting/saving a project.",
+    "ToolInclusionDefinition confirms fixed16 navigation/read tools, read_only true and protected memory pattern .*; no extra incremental tools.",
+    "Five pathspec positive exclusions and seven source/memory/planning negative controls passed.",
+    "Exact five-line move accounts for all configuration text change; old committed YAML raises ParserError.",
+    "Rehashed34 prior changed paths; only .serena/project.yml differs. Historical claims remain hash-valid.",
+    "Prior v1 application tests225 Python/86 frontend are historical only; no code change warrants repeating them.",
+    "Repository handoff check, validate, lint and resume are run after record creation, with results in the new report closeout.json."
+  ],
+  "reconciliationScope": "Only new report and superseding record written. Prior v2 and archive v1 stay byte-identical and pending; no production/source/configuration/media edits.",
+  "knownLimitations": [
+    "No live MCP caller query repeated; delegated session lacks Serena tools.",
+    "Previous live startup tool advertisement is broader than active project tool execution; no permission change or service reload.",
+    "Synthetic browser submission/accessibility coverage remains unverified as documented in v1.",
+    "No claim of both exporters being fresh; production snapshot differs only by pre-existing Git provenance.",
+    "Frontend exposes metadata/copy-path only; gallery URL returns 404."
+  ],
+  "historicalHandoffsPreserved": [
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+      "sha256": "9102bd74de281028b3bbc9f5f381ba85cb5ba2a7478ec01db0fc83636a4cea25"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v1.json",
+      "sha256": "c6674e66ae46d0f82073f8b0e275d87517dd0392c89fffc2930887f5740867c5"
+    }
+  ]
+}

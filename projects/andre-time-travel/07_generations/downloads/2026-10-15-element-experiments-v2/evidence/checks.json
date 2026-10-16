@@ -1,0 +1,144 @@
+{
+  "assets": {
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "assets",
+      "validate"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "assets.stdout",
+    "stderrFile": "assets.stderr"
+  },
+  "validate": {
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "validate"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "validate.stdout",
+    "stderrFile": "validate.stderr"
+  },
+  "handoff": {
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "handoff",
+      "check",
+      "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v2-reconciliation.json"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "handoff.stdout",
+    "stderrFile": "handoff.stderr"
+  },
+  "lint": {
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "lint"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "lint.stdout",
+    "stderrFile": "lint.stderr"
+  },
+  "resume": {
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "resume"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "resume.stdout",
+    "stderrFile": "resume.stderr"
+  },
+  "plan-media": {
+    "command": [
+      ".venv/bin/python",
+      "scripts/production_plan.py",
+      "check",
+      "--verify-media"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "plan-media.stdout",
+    "stderrFile": "plan-media.stderr"
+  },
+  "management-tests": {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_manage.py"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "management-tests.stdout",
+    "stderrFile": "management-tests.stderr"
+  },
+  "shared-media-tests": {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_shared_media.py"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "shared-media-tests.stdout",
+    "stderrFile": "shared-media-tests.stderr"
+  },
+  "export-tests": {
+    "command": [
+      "node",
+      "--test",
+      "sites/movies-demandas/tests/export.test.mjs"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "export-tests.stdout",
+    "stderrFile": "export-tests.stderr"
+  },
+  "workspace-freshness": {
+    "command": [
+      "node",
+      "sites/movies-demandas/scripts/export-workspace.mjs",
+      "/mnt/data/Projects_SSD/Movies_Projects",
+      "--check"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "workspace-freshness.stdout",
+    "stderrFile": "workspace-freshness.stderr"
+  },
+  "data-check": {
+    "command": [
+      "node",
+      "scripts/check-data.mjs"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "data-check.stdout",
+    "stderrFile": "data-check.stderr"
+  },
+  "production-freshness": {
+    "command": [
+      "node",
+      "sites/movies-demandas/scripts/export-production.mjs",
+      "/mnt/data/Projects_SSD/Movies_Projects",
+      "--check"
+    ],
+    "exitCode": 1,
+    "stdoutFile": "production-freshness.stdout",
+    "stderrFile": "production-freshness.stderr"
+  },
+  "local-integrity": {
+    "exitCode": 0,
+    "galleryLinksChecked": 114,
+    "missingLinks": [],
+    "newMediaRehashed": 5,
+    "oldRegistryBytesPreserved": 148236
+  }
+}

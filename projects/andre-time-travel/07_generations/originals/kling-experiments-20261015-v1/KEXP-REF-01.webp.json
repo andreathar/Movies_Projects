@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-REF-01",
+  "elementId": null,
+  "referenceName": "Andre Athar",
+  "resourceName": "cover",
+  "role": "reference_preview",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTE1LzY0MTllODU3LTc3ZWItNGE5MS04MTkxLWFmMjNjOTcxZDkwMC5wbmc:360x475.webp?x-kcdn-pid=112372",
+  "quality": "web_preview_only_original_missing",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-01.webp",
+  "sha256": "3e5eafd401fc59a50594d10e05722d7d54e0a22325ab25385c88cc2d0f17a4fc",
+  "bytes": 13596,
+  "contentType": "image/webp",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:10:43.165515+00:00",
+  "dimensions": [
+    360,
+    540
+  ],
+  "approved": false,
+  "provenance": "web_reference_preview",
+  "catalogAssetId": "KEXP-REF-01",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

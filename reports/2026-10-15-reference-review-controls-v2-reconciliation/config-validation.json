@@ -1,0 +1,76 @@
+{
+  "capturedAt": "2026-10-15T06:30:23.053621+00:00",
+  "status": "passed",
+  "project": "Movies_Projects",
+  "root": "/mnt/data/Projects_SSD/Movies_Projects",
+  "configurationSha256": "ace245eebe8ac62be16a82bccd324642c4f16100c264c7646646809aad940e48",
+  "historicalHandoffSha256": "308ac4cfa1b9572dec248371e9c93140e1af3846dc554ff3f98b35580d44a527",
+  "readOnly": true,
+  "protectedMemories": [
+    ".*"
+  ],
+  "fixedNavigationTools": [
+    "list_dir",
+    "find_file",
+    "read_file",
+    "search_for_pattern",
+    "get_symbols_overview",
+    "find_symbol",
+    "find_referencing_symbols",
+    "find_implementations",
+    "find_declaration",
+    "get_diagnostics_for_file",
+    "get_diagnostics_for_symbol",
+    "read_memory",
+    "list_memories",
+    "get_current_config",
+    "initial_instructions",
+    "serena_info"
+  ],
+  "activatedPatterns": [
+    ".serena/cache/**",
+    ".serena/logs/**",
+    "projects/**/05_storyboard/keyframes/**",
+    "projects/**/05_storyboard/contact-sheets/**",
+    "sites/movies-demandas/.next/**"
+  ],
+  "removedPatterns": [],
+  "otherConfigurationTextUnchanged": true,
+  "historicalCommittedConfigurationParseable": false,
+  "historicalParseError": "ParserError",
+  "correction": "Move five misplaced bare YAML sequence entries under the actual ignored_paths key; fixes historical YAML syntax as well as activating exclusions.",
+  "positiveIgnoredPathSamples": [
+    ".serena/cache/symbols.bin",
+    ".serena/logs/check.log",
+    "projects/andre-time-travel/05_storyboard/keyframes/example.png",
+    "projects/andre-time-travel/05_storyboard/contact-sheets/example.jpg",
+    "sites/movies-demandas/.next/server/app.js"
+  ],
+  "negativeReadablePathSamples": [
+    "scripts/manage.py",
+    "scripts/production_plan.py",
+    "sites/movies-demandas/lib/model.ts",
+    "sites/movies-demandas/app/dashboard.tsx",
+    ".serena/memories/frontend_architecture.md",
+    ".serena/memories/production_architecture.md",
+    "projects/andre-time-travel/05_storyboard/source/production-plan.json"
+  ],
+  "installedModel": "ProjectConfig._from_dict + ToolInclusionDefinition; no load/save/server activation",
+  "projectLocalFilePresent": true,
+  "projectLocalOverrides": [],
+  "projectLocalSha256": "7b5753e9fcf8348db026f8d23ff601b1cf90d9543532fe979f31650e27b15d2b",
+  "previousDeliveryPathCount": 34,
+  "deliveryDrift": [
+    ".serena/project.yml"
+  ],
+  "protectedFileHashes": {
+    "projects/andre-time-travel/05_storyboard/source/production-plan.json": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+    "projects/andre-time-travel/07_generations/plans/current-plan.json": "c3cce6602b47dbc83e4ff8947d36b608dfbe9f43ea37a0d84a13473c0eafd7f6",
+    "projects/andre-time-travel/00_brief/approvals.json": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+    "projects/andre-time-travel/tasks/board.json": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+    "projects/andre-time-travel/manifest.json": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+    "projects/andre-time-travel/00_brief/decisions/image-reviews/3a449942-8116-48fb-8e21-1843d81cba43.json": "2367ff1d82be29beb9fb2407a27c0885703acea2d1b1ecddef3e6d538ac3f99c",
+    "projects/andre-time-travel/00_brief/decisions/image-reviews/46ac606a-cfc0-4756-8c19-7f8fcf296cac.json": "09f1e22eb80bf412f60082902c59c69b1ed3b47db504d80b667c4a82c3f8f4d2"
+  },
+  "liveMCPExposure": "No new probe; previous live dashboard verifies 16 active tools, startup advertisement overlap differs. No service/client/security change."
+}

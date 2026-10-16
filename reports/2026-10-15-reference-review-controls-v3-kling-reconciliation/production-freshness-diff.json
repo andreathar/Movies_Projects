@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/collectedAt",
+    "before": "2026-10-15T05:23:07.974Z",
+    "after": "2026-10-15T07:25:54.085Z"
+  },
+  {
+    "path": "/provenance/repositoryHead",
+    "before": "b2aca0d5e4d70d40cf4d7d13d0af88249e37684f",
+    "after": "3f1461118e8f8236b8179209f20ef56e97c991c2"
+  }
+]

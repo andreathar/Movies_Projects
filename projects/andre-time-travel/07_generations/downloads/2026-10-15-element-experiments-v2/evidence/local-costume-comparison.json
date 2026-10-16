@@ -1,0 +1,15 @@
+{
+  "sourceDimensions": [
+    768,
+    1376
+  ],
+  "coverDimensions": [
+    768,
+    1376
+  ],
+  "sourceSHA256": "8c56b59a261e1af244383a3e41ed5cd149e9f37bfc3247ad214e1d70482d8473",
+  "existingRegistryMatch": false,
+  "meanAbsolutePixelDifference": 0.6040187313267119,
+  "RMSE": 1.129852300984751,
+  "pixelIdentical": false
+}

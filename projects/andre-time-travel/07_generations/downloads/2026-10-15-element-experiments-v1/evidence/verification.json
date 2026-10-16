@@ -1,0 +1,22 @@
+{
+  "rehashedResourceRoles": 28,
+  "uniqueMediaFiles": 27,
+  "originalRegistryRowsBytePreserved": 290,
+  "assetsValidate": "pass",
+  "manageValidate": "pass with existing shared-skill warnings",
+  "resume": "executed",
+  "lintExit": 2,
+  "lintHard": [
+    "2026-10-15-qc-reference-review-controls-v2-reconciliation.json: changedFiles sha256 mismatch: sites/movies-demandas/data/workspace-reference.json",
+    "2026-10-15-qc-reference-review-controls-v2-reconciliation.json: changedFiles sha256 mismatch: sites/movies-demandas/scripts/export-workspace.mjs"
+  ],
+  "sharedMediaTests": 13,
+  "exportTests": 5,
+  "exportCheck": "pass",
+  "dataCheck": "pass",
+  "productionPlanMediaCheck": "pass",
+  "baselineApprovalHashesUnchanged": true,
+  "fullTemporalReview": false,
+  "audioListening": false,
+  "creativeAcceptance": false
+}

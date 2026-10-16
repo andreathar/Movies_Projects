@@ -1,0 +1,158 @@
+{
+  "activeFilm": "andre-time-travel",
+  "readOrder": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "projects/andre-time-travel/manifest.json",
+    "projects/andre-time-travel/tasks/board.json",
+    "projects/andre-time-travel/00_brief/approvals.json",
+    "projects/andre-time-travel/00_brief/decisions/",
+    "projects/andre-time-travel/tasks/plans/workflow-map-v1.md"
+  ],
+  "stateHeadline": "Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume surface. Keep it under ~80 lines: replace stale lines, do not append narrative. History lives in `history/`; full pre-restructure text: `history/STATE-2026-10-09-pre-restructure.md` (sha256 5e426020…27da). Not live data: re-verify against the canonical files below before acting.",
+  "taskCounts": {
+    "completed": 7,
+    "blocked": 11,
+    "in_progress": 3
+  },
+  "openTasks": [
+    {
+      "id": "T06",
+      "title": "Resolve historical-language targets and reviewers",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "blocker": "Script v2 approved (T05), but Latin and Corsican are absent from the ElevenLabs language lists, earlier translations are superseded and must restart from script v2, and no qualified language reviewer is named. Unblock: Andre names reviewers per language and the dialogue-sound role records the feasible route per language (R03). Does not block the English edition."
+    },
+    {
+      "id": "T07",
+      "title": "Approve voice samples and dry dialogue",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "blocker": "Andre approved likeness but rejected native voice; temporary guide authorized by D14. Final dubbing/ear approval remains pending."
+    },
+    {
+      "id": "T10",
+      "title": "Reforecast costs and freeze the production envelope",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "blocker": "Base Galileo ativa: próximo gasto proposto é um único G-P04 após referências/timing; sem cotação/liberação atual e sem orçamento herdado."
+    },
+    {
+      "id": "T11",
+      "title": "Approve the storyboard and audio-first animatic",
+      "ownerRole": "storyboard",
+      "status": "blocked",
+      "blocker": "Animatic G-L03/G-L04 de 16 s é evidência histórica de timing. Escuta/playback e ritmo aguardam revisão; guia D14 permite preparação local."
+    },
+    {
+      "id": "T12",
+      "title": "Approve era and eye keyframes",
+      "ownerRole": "storyboard",
+      "status": "in_progress",
+      "blocker": "T12 materiais/continuidade consolidados para Galileo na activeBaseline do plano. Sete fontes propostas; faltam corrigir paletó/mesa e obter semelhança de Andre. Sem aceite artístico."
+    },
+    {
+      "id": "T13",
+      "title": "Produce Galileo as the first complete chapter",
+      "ownerRole": "producer",
+      "status": "in_progress",
+      "blocker": "Base ativa Galileo G-L03/G-L04: referências → diálogo/movimento → teste único G-P04 → cobertura → edição → QC. Próximo: continuidade do master. Mídia anterior preservada como história; nenhum novo take aceito ou gasto liberado."
+    },
+    {
+      "id": "T14",
+      "title": "Produce Caesar coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T15",
+      "title": "Produce Genghis Khan coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T16",
+      "title": "Produce Napoleon coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T17",
+      "title": "Produce Oppenheimer coverage",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T18",
+      "title": "Produce opening/ending and lock the English picture",
+      "ownerRole": "editor",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T19",
+      "title": "Spend the correction reserve on measured gaps",
+      "ownerRole": "producer",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T20",
+      "title": "Assemble and verify the historical-language edition",
+      "ownerRole": "dialogue-sound",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    },
+    {
+      "id": "T21",
+      "title": "Finish, deliver, and independently verify both masters",
+      "ownerRole": "qc",
+      "status": "blocked",
+      "blocker": "Awaiting dependency completion and applicable approval"
+    }
+  ],
+  "creativeApprovals": {
+    "characterReferences": true,
+    "productionElement": true,
+    "screenplay": true,
+    "voiceTests": false,
+    "speechRoute": true,
+    "pilot": true,
+    "storyboard": false,
+    "paidBatch": false,
+    "finalPicture": false
+  },
+  "andreOnlyGates": [],
+  "balance": {
+    "snapshot": 6981,
+    "observedDate": "2026-10-09",
+    "isLive": false
+  },
+  "recentHandoffs": [
+    {
+      "name": "2026-10-15-qc-reference-review-controls-v1.json",
+      "reviewStatus": "pending_producer_review",
+      "ingest": "pending"
+    },
+    {
+      "name": "2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+      "reviewStatus": "pending_producer_review",
+      "ingest": "pending"
+    },
+    {
+      "name": "2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json",
+      "reviewStatus": "pending_producer_review",
+      "ingest": "pending"
+    }
+  ],
+  "openMistakes": 1,
+  "lint": {
+    "hard": 0,
+    "advisory": 11
+  }
+}

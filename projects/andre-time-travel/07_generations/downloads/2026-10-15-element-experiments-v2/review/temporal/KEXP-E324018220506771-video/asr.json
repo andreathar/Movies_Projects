@@ -1,0 +1,109 @@
+{
+  "model": "cached faster-whisper base.en",
+  "offline": true,
+  "actualListening": false,
+  "language": "en",
+  "languageProbability": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.42,
+      "text": " Every project begins with clarity.",
+      "avg_logprob": -0.355023056268692,
+      "no_speech_prob": 0.06549635529518127,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 1.04,
+          "word": " Every",
+          "probability": 0.9096434116363525
+        },
+        {
+          "start": 1.04,
+          "end": 1.54,
+          "word": " project",
+          "probability": 0.9977598190307617
+        },
+        {
+          "start": 1.54,
+          "end": 1.9,
+          "word": " begins",
+          "probability": 0.9973216652870178
+        },
+        {
+          "start": 1.9,
+          "end": 2.2,
+          "word": " with",
+          "probability": 0.9991087317466736
+        },
+        {
+          "start": 2.2,
+          "end": 2.42,
+          "word": " clarity.",
+          "probability": 0.9705453515052795
+        }
+      ]
+    },
+    {
+      "start": 4.22,
+      "end": 5.94,
+      "text": " Now we simply execute the standard.",
+      "avg_logprob": -0.355023056268692,
+      "no_speech_prob": 0.06549635529518127,
+      "words": [
+        {
+          "start": 4.22,
+          "end": 4.36,
+          "word": " Now",
+          "probability": 0.9873821139335632
+        },
+        {
+          "start": 4.36,
+          "end": 4.52,
+          "word": " we",
+          "probability": 0.8988033533096313
+        },
+        {
+          "start": 4.52,
+          "end": 4.82,
+          "word": " simply",
+          "probability": 0.9951863884925842
+        },
+        {
+          "start": 4.82,
+          "end": 5.12,
+          "word": " execute",
+          "probability": 0.9990366697311401
+        },
+        {
+          "start": 5.12,
+          "end": 5.54,
+          "word": " the",
+          "probability": 0.996669590473175
+        },
+        {
+          "start": 5.54,
+          "end": 5.94,
+          "word": " standard.",
+          "probability": 0.9808145761489868
+        }
+      ]
+    },
+    {
+      "start": 7.38,
+      "end": 7.98,
+      "text": " Flawless...",
+      "avg_logprob": -0.355023056268692,
+      "no_speech_prob": 0.06549635529518127,
+      "words": [
+        {
+          "start": 7.38,
+          "end": 7.98,
+          "word": " Flawless...",
+          "probability": 0.6717469282448292
+        }
+      ]
+    }
+  ],
+  "limitation": "Automatic English-only transcript; noise/music can yield false words. No ear validation or claim of speaker/voice likeness."
+}

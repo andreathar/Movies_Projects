@@ -1,0 +1,16 @@
+[
+  {
+    "path": "shared/kling_20261013_VIDEO_Andre_Atha_5453_0 (1).mp4",
+    "removedBytes": 13960407,
+    "canonicalPath": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4",
+    "sha256": "f67aa96db1b5d785c0de72011a94aa4549732741f0da8fd533c5ee0c936dc488",
+    "reason": "Browser download created during this task; identical canonical bytes verified before removing duplicate."
+  },
+  {
+    "path": "shared/kling_20261013_VIDEO_Andre_Atha_5250_0.mp4",
+    "removedBytes": 7937685,
+    "canonicalPath": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4",
+    "sha256": "e92ede9824636ed255ffd6512ebd86214a2ad19c8ea825c2f4b20fed016dd100",
+    "reason": "Second browser download from this task; hash verified before removing duplicate."
+  }
+]

@@ -1,0 +1,247 @@
+{
+  "model": "cached faster-whisper base.en",
+  "offline": true,
+  "actualListening": false,
+  "language": "en",
+  "languageProbability": 1,
+  "segments": [
+    {
+      "start": 0.7399999999999993,
+      "end": 4.08,
+      "text": " We're at a break and then a feed this hike better. We need to be",
+      "avg_logprob": -0.717265669788633,
+      "no_speech_prob": 0.02281663939356804,
+      "words": [
+        {
+          "start": 0.7399999999999993,
+          "end": 1.12,
+          "word": " We're",
+          "probability": 0.25622712448239326
+        },
+        {
+          "start": 1.12,
+          "end": 1.14,
+          "word": " at",
+          "probability": 0.4502517879009247
+        },
+        {
+          "start": 1.14,
+          "end": 1.24,
+          "word": " a",
+          "probability": 0.6079766154289246
+        },
+        {
+          "start": 1.24,
+          "end": 1.5,
+          "word": " break",
+          "probability": 0.8381056785583496
+        },
+        {
+          "start": 1.5,
+          "end": 1.9,
+          "word": " and",
+          "probability": 0.7189125418663025
+        },
+        {
+          "start": 1.9,
+          "end": 2.16,
+          "word": " then",
+          "probability": 0.3306334912776947
+        },
+        {
+          "start": 2.16,
+          "end": 2.22,
+          "word": " a",
+          "probability": 0.5837600231170654
+        },
+        {
+          "start": 2.22,
+          "end": 2.4,
+          "word": " feed",
+          "probability": 0.6627967953681946
+        },
+        {
+          "start": 2.4,
+          "end": 2.58,
+          "word": " this",
+          "probability": 0.5471003651618958
+        },
+        {
+          "start": 2.58,
+          "end": 2.76,
+          "word": " hike",
+          "probability": 0.8835411071777344
+        },
+        {
+          "start": 2.76,
+          "end": 3.06,
+          "word": " better.",
+          "probability": 0.9787327647209167
+        },
+        {
+          "start": 3.76,
+          "end": 3.78,
+          "word": " We",
+          "probability": 0.9466179013252258
+        },
+        {
+          "start": 3.78,
+          "end": 3.9,
+          "word": " need",
+          "probability": 0.9617432951927185
+        },
+        {
+          "start": 3.9,
+          "end": 3.98,
+          "word": " to",
+          "probability": 0.9902340173721313
+        },
+        {
+          "start": 3.98,
+          "end": 4.08,
+          "word": " be",
+          "probability": 0.9731088280677795
+        }
+      ]
+    },
+    {
+      "start": 4.08,
+      "end": 6.54,
+      "text": " princess. We're a bekeetle, seeding the bake.",
+      "avg_logprob": -0.717265669788633,
+      "no_speech_prob": 0.02281663939356804,
+      "words": [
+        {
+          "start": 4.08,
+          "end": 4.42,
+          "word": " princess.",
+          "probability": 0.04138042777776718
+        },
+        {
+          "start": 5.22,
+          "end": 5.34,
+          "word": " We're",
+          "probability": 0.9629170894622803
+        },
+        {
+          "start": 5.34,
+          "end": 5.38,
+          "word": " a",
+          "probability": 0.4244109094142914
+        },
+        {
+          "start": 5.38,
+          "end": 5.88,
+          "word": " bekeetle,",
+          "probability": 0.4604827091097832
+        },
+        {
+          "start": 6.02,
+          "end": 6.22,
+          "word": " seeding",
+          "probability": 0.5568311214447021
+        },
+        {
+          "start": 6.22,
+          "end": 6.38,
+          "word": " the",
+          "probability": 0.9216141700744629
+        },
+        {
+          "start": 6.38,
+          "end": 6.54,
+          "word": " bake.",
+          "probability": 0.4284594655036926
+        }
+      ]
+    },
+    {
+      "start": 7.3,
+      "end": 11.98,
+      "text": " Day this, do this, mate. We and yours hit us and try this.",
+      "avg_logprob": -0.717265669788633,
+      "no_speech_prob": 0.02281663939356804,
+      "words": [
+        {
+          "start": 7.3,
+          "end": 7.6,
+          "word": " Day",
+          "probability": 0.39483097195625305
+        },
+        {
+          "start": 7.6,
+          "end": 7.84,
+          "word": " this,",
+          "probability": 0.9526543021202087
+        },
+        {
+          "start": 8.12,
+          "end": 8.3,
+          "word": " do",
+          "probability": 0.9818410277366638
+        },
+        {
+          "start": 8.3,
+          "end": 8.6,
+          "word": " this,",
+          "probability": 0.9969205856323242
+        },
+        {
+          "start": 8.6,
+          "end": 8.82,
+          "word": " mate.",
+          "probability": 0.12483445554971695
+        },
+        {
+          "start": 9.5,
+          "end": 9.88,
+          "word": " We",
+          "probability": 0.35633397102355957
+        },
+        {
+          "start": 9.88,
+          "end": 10.98,
+          "word": " and",
+          "probability": 0.6662527918815613
+        },
+        {
+          "start": 10.98,
+          "end": 11.14,
+          "word": " yours",
+          "probability": 0.36642900109291077
+        },
+        {
+          "start": 11.14,
+          "end": 11.32,
+          "word": " hit",
+          "probability": 0.27746206521987915
+        },
+        {
+          "start": 11.32,
+          "end": 11.44,
+          "word": " us",
+          "probability": 0.9992659687995911
+        },
+        {
+          "start": 11.44,
+          "end": 11.56,
+          "word": " and",
+          "probability": 0.9642216563224792
+        },
+        {
+          "start": 11.56,
+          "end": 11.72,
+          "word": " try",
+          "probability": 0.9693058133125305
+        },
+        {
+          "start": 11.72,
+          "end": 11.98,
+          "word": " this.",
+          "probability": 0.9983882904052734
+        }
+      ]
+    }
+  ],
+  "limitation": "Automatic English-only transcript; noise/music can yield false words. No ear validation or claim of speaker/voice likeness."
+}

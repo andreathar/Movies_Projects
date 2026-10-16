@@ -1,0 +1,2048 @@
+{
+  "asset_id": "KEXP2-W324018500523155-local",
+  "sourcePath": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-W324018500523155-local.mp4",
+  "sourceSHA256": "5abcbde40437210d7373e708f4c3161bd728b8ab96acac6f712e538ad03a1f88",
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "Main",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1280,
+        "height": 720,
+        "coded_width": 1280,
+        "coded_height": 720,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 184832,
+        "duration": "15.041667",
+        "bit_rate": "5877306",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "361",
+        "nb_read_frames": "361",
+        "extradata_size": 39,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 h264_slapi"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-W324018500523155-local.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "15.041667",
+      "size": "11053435",
+      "bit_rate": "5878835",
+      "probe_score": 100,
+      "tags": {
+        "minor_version": "512",
+        "major_brand": "isom",
+        "compatible_brands": "isomiso2avc1mp41",
+        "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"kling\",\"ProduceID\":\"SGP_PROD_ai_web_324018500523155\",\"ReservedCode1\":null,\"ContentPropagator\":\"kling\",\"PropagateID\":\"SGP_PROD_ai_web_324018500523155\",\"ReservedCode2\":null}",
+        "encoder": "Lavf60.16.100"
+      }
+    }
+  },
+  "decodedFrames": 361,
+  "allFramesRepresented": true,
+  "sheets": [
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-000-039.jpg",
+      "firstFrame": 0,
+      "lastFrame": 39,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-040-079.jpg",
+      "firstFrame": 40,
+      "lastFrame": 79,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-080-119.jpg",
+      "firstFrame": 80,
+      "lastFrame": 119,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-120-159.jpg",
+      "firstFrame": 120,
+      "lastFrame": 159,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-160-199.jpg",
+      "firstFrame": 160,
+      "lastFrame": 199,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-200-239.jpg",
+      "firstFrame": 200,
+      "lastFrame": 239,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-240-279.jpg",
+      "firstFrame": 240,
+      "lastFrame": 279,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-280-319.jpg",
+      "firstFrame": 280,
+      "lastFrame": 319,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-320-359.jpg",
+      "firstFrame": 320,
+      "lastFrame": 359,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 40
+    },
+    {
+      "path": "temporal/KEXP2-W324018500523155-local/frames-360-360.jpg",
+      "firstFrame": 360,
+      "lastFrame": 360,
+      "tileResolution": [
+        256,
+        144
+      ],
+      "populatedTiles": 1
+    }
+  ],
+  "frameDifferenceScores": [
+    {
+      "frame": 1,
+      "seconds": 0.041666666666666664,
+      "meanAbsoluteDifference": 0.09038628472222222
+    },
+    {
+      "frame": 2,
+      "seconds": 0.08333333333333333,
+      "meanAbsoluteDifference": 0.11732770799291939
+    },
+    {
+      "frame": 3,
+      "seconds": 0.125,
+      "meanAbsoluteDifference": 0.11101058261846405
+    },
+    {
+      "frame": 4,
+      "seconds": 0.16666666666666666,
+      "meanAbsoluteDifference": 0.09752253114787582
+    },
+    {
+      "frame": 5,
+      "seconds": 0.20833333333333334,
+      "meanAbsoluteDifference": 0.1053719447848584
+    },
+    {
+      "frame": 6,
+      "seconds": 0.25,
+      "meanAbsoluteDifference": 0.10380465771377996
+    },
+    {
+      "frame": 7,
+      "seconds": 0.2916666666666667,
+      "meanAbsoluteDifference": 0.1200963371459695
+    },
+    {
+      "frame": 8,
+      "seconds": 0.3333333333333333,
+      "meanAbsoluteDifference": 0.10194269982298475
+    },
+    {
+      "frame": 9,
+      "seconds": 0.375,
+      "meanAbsoluteDifference": 0.09116051368464052
+    },
+    {
+      "frame": 10,
+      "seconds": 0.4166666666666667,
+      "meanAbsoluteDifference": 0.06138025088507625
+    },
+    {
+      "frame": 11,
+      "seconds": 0.4583333333333333,
+      "meanAbsoluteDifference": 0.04891556883169935
+    },
+    {
+      "frame": 12,
+      "seconds": 0.5,
+      "meanAbsoluteDifference": 0.05708061002178649
+    },
+    {
+      "frame": 13,
+      "seconds": 0.5416666666666666,
+      "meanAbsoluteDifference": 0.06543596388208062
+    },
+    {
+      "frame": 14,
+      "seconds": 0.5833333333333334,
+      "meanAbsoluteDifference": 0.06659241387527233
+    },
+    {
+      "frame": 15,
+      "seconds": 0.625,
+      "meanAbsoluteDifference": 0.07050472749863834
+    },
+    {
+      "frame": 16,
+      "seconds": 0.6666666666666666,
+      "meanAbsoluteDifference": 0.0736532373366013
+    },
+    {
+      "frame": 17,
+      "seconds": 0.7083333333333334,
+      "meanAbsoluteDifference": 0.07651835256672114
+    },
+    {
+      "frame": 18,
+      "seconds": 0.75,
+      "meanAbsoluteDifference": 0.07300208929057733
+    },
+    {
+      "frame": 19,
+      "seconds": 0.7916666666666666,
+      "meanAbsoluteDifference": 0.07637484681372549
+    },
+    {
+      "frame": 20,
+      "seconds": 0.8333333333333334,
+      "meanAbsoluteDifference": 0.09459582226988017
+    },
+    {
+      "frame": 21,
+      "seconds": 0.875,
+      "meanAbsoluteDifference": 0.10031647858796297
+    },
+    {
+      "frame": 22,
+      "seconds": 0.9166666666666666,
+      "meanAbsoluteDifference": 0.11000699976171024
+    },
+    {
+      "frame": 23,
+      "seconds": 0.9583333333333334,
+      "meanAbsoluteDifference": 0.11051262084694989
+    },
+    {
+      "frame": 24,
+      "seconds": 1.0,
+      "meanAbsoluteDifference": 0.11066453056917211
+    },
+    {
+      "frame": 25,
+      "seconds": 1.0416666666666667,
+      "meanAbsoluteDifference": 0.10817259412445533
+    },
+    {
+      "frame": 26,
+      "seconds": 1.0833333333333333,
+      "meanAbsoluteDifference": 0.0913922079248366
+    },
+    {
+      "frame": 27,
+      "seconds": 1.125,
+      "meanAbsoluteDifference": 0.06266371783088236
+    },
+    {
+      "frame": 28,
+      "seconds": 1.1666666666666667,
+      "meanAbsoluteDifference": 0.05750985072848584
+    },
+    {
+      "frame": 29,
+      "seconds": 1.2083333333333333,
+      "meanAbsoluteDifference": 0.06672421789896514
+    },
+    {
+      "frame": 30,
+      "seconds": 1.25,
+      "meanAbsoluteDifference": 0.06453344141476035
+    },
+    {
+      "frame": 31,
+      "seconds": 1.2916666666666667,
+      "meanAbsoluteDifference": 0.0728095426538671
+    },
+    {
+      "frame": 32,
+      "seconds": 1.3333333333333333,
+      "meanAbsoluteDifference": 0.07347292432598039
+    },
+    {
+      "frame": 33,
+      "seconds": 1.375,
+      "meanAbsoluteDifference": 0.08372257540168845
+    },
+    {
+      "frame": 34,
+      "seconds": 1.4166666666666667,
+      "meanAbsoluteDifference": 0.09285279650054466
+    },
+    {
+      "frame": 35,
+      "seconds": 1.4583333333333333,
+      "meanAbsoluteDifference": 0.07434215005446623
+    },
+    {
+      "frame": 36,
+      "seconds": 1.5,
+      "meanAbsoluteDifference": 0.06659709456699346
+    },
+    {
+      "frame": 37,
+      "seconds": 1.5416666666666667,
+      "meanAbsoluteDifference": 0.07195010382625272
+    },
+    {
+      "frame": 38,
+      "seconds": 1.5833333333333333,
+      "meanAbsoluteDifference": 0.07121672453703703
+    },
+    {
+      "frame": 39,
+      "seconds": 1.625,
+      "meanAbsoluteDifference": 0.081864447167756
+    },
+    {
+      "frame": 40,
+      "seconds": 1.6666666666666667,
+      "meanAbsoluteDifference": 0.07718215975626361
+    },
+    {
+      "frame": 41,
+      "seconds": 1.7083333333333333,
+      "meanAbsoluteDifference": 0.07322027335239652
+    },
+    {
+      "frame": 42,
+      "seconds": 1.75,
+      "meanAbsoluteDifference": 0.07433353332652505
+    },
+    {
+      "frame": 43,
+      "seconds": 1.7916666666666667,
+      "meanAbsoluteDifference": 0.07084152454384532
+    },
+    {
+      "frame": 44,
+      "seconds": 1.8333333333333333,
+      "meanAbsoluteDifference": 0.06966805385348585
+    },
+    {
+      "frame": 45,
+      "seconds": 1.875,
+      "meanAbsoluteDifference": 0.07691738153594772
+    },
+    {
+      "frame": 46,
+      "seconds": 1.9166666666666667,
+      "meanAbsoluteDifference": 0.08083256740196078
+    },
+    {
+      "frame": 47,
+      "seconds": 1.9583333333333333,
+      "meanAbsoluteDifference": 0.07967590465005447
+    },
+    {
+      "frame": 48,
+      "seconds": 2.0,
+      "meanAbsoluteDifference": 0.07985281352124184
+    },
+    {
+      "frame": 49,
+      "seconds": 2.0416666666666665,
+      "meanAbsoluteDifference": 0.07235062210648148
+    },
+    {
+      "frame": 50,
+      "seconds": 2.0833333333333335,
+      "meanAbsoluteDifference": 0.0632947601783769
+    },
+    {
+      "frame": 51,
+      "seconds": 2.125,
+      "meanAbsoluteDifference": 0.0706468503199891
+    },
+    {
+      "frame": 52,
+      "seconds": 2.1666666666666665,
+      "meanAbsoluteDifference": 0.07651058687363835
+    },
+    {
+      "frame": 53,
+      "seconds": 2.2083333333333335,
+      "meanAbsoluteDifference": 0.07753608387799564
+    },
+    {
+      "frame": 54,
+      "seconds": 2.25,
+      "meanAbsoluteDifference": 0.06280945755038127
+    },
+    {
+      "frame": 55,
+      "seconds": 2.2916666666666665,
+      "meanAbsoluteDifference": 0.04475954010076253
+    },
+    {
+      "frame": 56,
+      "seconds": 2.3333333333333335,
+      "meanAbsoluteDifference": 0.04350841247957516
+    },
+    {
+      "frame": 57,
+      "seconds": 2.375,
+      "meanAbsoluteDifference": 0.05537673185593682
+    },
+    {
+      "frame": 58,
+      "seconds": 2.4166666666666665,
+      "meanAbsoluteDifference": 0.04553355630446623
+    },
+    {
+      "frame": 59,
+      "seconds": 2.4583333333333335,
+      "meanAbsoluteDifference": 0.03808732043164488
+    },
+    {
+      "frame": 60,
+      "seconds": 2.5,
+      "meanAbsoluteDifference": 0.03065906267020697
+    },
+    {
+      "frame": 61,
+      "seconds": 2.5416666666666665,
+      "meanAbsoluteDifference": 0.050562427662037036
+    },
+    {
+      "frame": 62,
+      "seconds": 2.5833333333333335,
+      "meanAbsoluteDifference": 0.0622837307666122
+    },
+    {
+      "frame": 63,
+      "seconds": 2.625,
+      "meanAbsoluteDifference": 0.07004272194989107
+    },
+    {
+      "frame": 64,
+      "seconds": 2.6666666666666665,
+      "meanAbsoluteDifference": 0.06256776365059913
+    },
+    {
+      "frame": 65,
+      "seconds": 2.7083333333333335,
+      "meanAbsoluteDifference": 0.06526522501361655
+    },
+    {
+      "frame": 66,
+      "seconds": 2.75,
+      "meanAbsoluteDifference": 0.06811725558278867
+    },
+    {
+      "frame": 67,
+      "seconds": 2.7916666666666665,
+      "meanAbsoluteDifference": 0.07380589171432463
+    },
+    {
+      "frame": 68,
+      "seconds": 2.8333333333333335,
+      "meanAbsoluteDifference": 0.07027409705201525
+    },
+    {
+      "frame": 69,
+      "seconds": 2.875,
+      "meanAbsoluteDifference": 0.05918128319035947
+    },
+    {
+      "frame": 70,
+      "seconds": 2.9166666666666665,
+      "meanAbsoluteDifference": 0.07833680130038126
+    },
+    {
+      "frame": 71,
+      "seconds": 2.9583333333333335,
+      "meanAbsoluteDifference": 0.09271641816448802
+    },
+    {
+      "frame": 72,
+      "seconds": 3.0,
+      "meanAbsoluteDifference": 0.07289007182734204
+    },
+    {
+      "frame": 73,
+      "seconds": 3.0416666666666665,
+      "meanAbsoluteDifference": 0.07397226902913943
+    },
+    {
+      "frame": 74,
+      "seconds": 3.0833333333333335,
+      "meanAbsoluteDifference": 0.06382740162037036
+    },
+    {
+      "frame": 75,
+      "seconds": 3.125,
+      "meanAbsoluteDifference": 0.05662424257897604
+    },
+    {
+      "frame": 76,
+      "seconds": 3.1666666666666665,
+      "meanAbsoluteDifference": 0.052209605630446625
+    },
+    {
+      "frame": 77,
+      "seconds": 3.2083333333333335,
+      "meanAbsoluteDifference": 0.04712797011165577
+    },
+    {
+      "frame": 78,
+      "seconds": 3.25,
+      "meanAbsoluteDifference": 0.05181174683415033
+    },
+    {
+      "frame": 79,
+      "seconds": 3.2916666666666665,
+      "meanAbsoluteDifference": 0.06383272058823529
+    },
+    {
+      "frame": 80,
+      "seconds": 3.3333333333333335,
+      "meanAbsoluteDifference": 0.06478917738970588
+    },
+    {
+      "frame": 81,
+      "seconds": 3.375,
+      "meanAbsoluteDifference": 0.058325993157679744
+    },
+    {
+      "frame": 82,
+      "seconds": 3.4166666666666665,
+      "meanAbsoluteDifference": 0.05539970979711329
+    },
+    {
+      "frame": 83,
+      "seconds": 3.4583333333333335,
+      "meanAbsoluteDifference": 0.048161977464596946
+    },
+    {
+      "frame": 84,
+      "seconds": 3.5,
+      "meanAbsoluteDifference": 0.051101026348039216
+    },
+    {
+      "frame": 85,
+      "seconds": 3.5416666666666665,
+      "meanAbsoluteDifference": 0.06386218767020697
+    },
+    {
+      "frame": 86,
+      "seconds": 3.5833333333333335,
+      "meanAbsoluteDifference": 0.07157618038534859
+    },
+    {
+      "frame": 87,
+      "seconds": 3.625,
+      "meanAbsoluteDifference": 0.07087620421432463
+    },
+    {
+      "frame": 88,
+      "seconds": 3.6666666666666665,
+      "meanAbsoluteDifference": 0.06313678683278867
+    },
+    {
+      "frame": 89,
+      "seconds": 3.7083333333333335,
+      "meanAbsoluteDifference": 0.05860491983251634
+    },
+    {
+      "frame": 90,
+      "seconds": 3.75,
+      "meanAbsoluteDifference": 0.06445706103622004
+    },
+    {
+      "frame": 91,
+      "seconds": 3.7916666666666665,
+      "meanAbsoluteDifference": 0.06268361077069717
+    },
+    {
+      "frame": 92,
+      "seconds": 3.8333333333333335,
+      "meanAbsoluteDifference": 0.057147309878812634
+    },
+    {
+      "frame": 93,
+      "seconds": 3.875,
+      "meanAbsoluteDifference": 0.050201695261437904
+    },
+    {
+      "frame": 94,
+      "seconds": 3.9166666666666665,
+      "meanAbsoluteDifference": 0.048313674428104574
+    },
+    {
+      "frame": 95,
+      "seconds": 3.9583333333333335,
+      "meanAbsoluteDifference": 0.06194001906318083
+    },
+    {
+      "frame": 96,
+      "seconds": 4.0,
+      "meanAbsoluteDifference": 0.06367538551879086
+    },
+    {
+      "frame": 97,
+      "seconds": 4.041666666666667,
+      "meanAbsoluteDifference": 0.08155488323801742
+    },
+    {
+      "frame": 98,
+      "seconds": 4.083333333333333,
+      "meanAbsoluteDifference": 0.09379680691721133
+    },
+    {
+      "frame": 99,
+      "seconds": 4.125,
+      "meanAbsoluteDifference": 0.08375353179466231
+    },
+    {
+      "frame": 100,
+      "seconds": 4.166666666666667,
+      "meanAbsoluteDifference": 0.06365974775326796
+    },
+    {
+      "frame": 101,
+      "seconds": 4.208333333333333,
+      "meanAbsoluteDifference": 0.050269884429466234
+    },
+    {
+      "frame": 102,
+      "seconds": 4.25,
+      "meanAbsoluteDifference": 0.05255672147331155
+    },
+    {
+      "frame": 103,
+      "seconds": 4.291666666666667,
+      "meanAbsoluteDifference": 0.05582235498366013
+    },
+    {
+      "frame": 104,
+      "seconds": 4.333333333333333,
+      "meanAbsoluteDifference": 0.05325839971405229
+    },
+    {
+      "frame": 105,
+      "seconds": 4.375,
+      "meanAbsoluteDifference": 0.050267650462962964
+    },
+    {
+      "frame": 106,
+      "seconds": 4.416666666666667,
+      "meanAbsoluteDifference": 0.0448310270288671
+    },
+    {
+      "frame": 107,
+      "seconds": 4.458333333333333,
+      "meanAbsoluteDifference": 0.04369691670070806
+    },
+    {
+      "frame": 108,
+      "seconds": 4.5,
+      "meanAbsoluteDifference": 0.05130804057734204
+    },
+    {
+      "frame": 109,
+      "seconds": 4.541666666666667,
+      "meanAbsoluteDifference": 0.07733226102941176
+    },
+    {
+      "frame": 110,
+      "seconds": 4.583333333333333,
+      "meanAbsoluteDifference": 0.08706352549700436
+    },
+    {
+      "frame": 111,
+      "seconds": 4.625,
+      "meanAbsoluteDifference": 0.07705386625136165
+    },
+    {
+      "frame": 112,
+      "seconds": 4.666666666666667,
+      "meanAbsoluteDifference": 0.0623538347630719
+    },
+    {
+      "frame": 113,
+      "seconds": 4.708333333333333,
+      "meanAbsoluteDifference": 0.07041515607979303
+    },
+    {
+      "frame": 114,
+      "seconds": 4.75,
+      "meanAbsoluteDifference": 0.08617781096813726
+    },
+    {
+      "frame": 115,
+      "seconds": 4.791666666666667,
+      "meanAbsoluteDifference": 0.0959396063112745
+    },
+    {
+      "frame": 116,
+      "seconds": 4.833333333333333,
+      "meanAbsoluteDifference": 0.09828186700027232
+    },
+    {
+      "frame": 117,
+      "seconds": 4.875,
+      "meanAbsoluteDifference": 0.09428019471677561
+    },
+    {
+      "frame": 118,
+      "seconds": 4.916666666666667,
+      "meanAbsoluteDifference": 0.08769382318899782
+    },
+    {
+      "frame": 119,
+      "seconds": 4.958333333333333,
+      "meanAbsoluteDifference": 0.07478234783496733
+    },
+    {
+      "frame": 120,
+      "seconds": 5.0,
+      "meanAbsoluteDifference": 0.07202712248093682
+    },
+    {
+      "frame": 121,
+      "seconds": 5.041666666666667,
+      "meanAbsoluteDifference": 0.07451491013071895
+    },
+    {
+      "frame": 122,
+      "seconds": 5.083333333333333,
+      "meanAbsoluteDifference": 0.08359034586056645
+    },
+    {
+      "frame": 123,
+      "seconds": 5.125,
+      "meanAbsoluteDifference": 0.08280803206699346
+    },
+    {
+      "frame": 124,
+      "seconds": 5.166666666666667,
+      "meanAbsoluteDifference": 0.06898318355119826
+    },
+    {
+      "frame": 125,
+      "seconds": 5.208333333333333,
+      "meanAbsoluteDifference": 0.06574882557189542
+    },
+    {
+      "frame": 126,
+      "seconds": 5.25,
+      "meanAbsoluteDifference": 0.06291604966639434
+    },
+    {
+      "frame": 127,
+      "seconds": 5.291666666666667,
+      "meanAbsoluteDifference": 0.055674594056372546
+    },
+    {
+      "frame": 128,
+      "seconds": 5.333333333333333,
+      "meanAbsoluteDifference": 0.06154471337145969
+    },
+    {
+      "frame": 129,
+      "seconds": 5.375,
+      "meanAbsoluteDifference": 0.06366176896105664
+    },
+    {
+      "frame": 130,
+      "seconds": 5.416666666666667,
+      "meanAbsoluteDifference": 0.054867281113834425
+    },
+    {
+      "frame": 131,
+      "seconds": 5.458333333333333,
+      "meanAbsoluteDifference": 0.042990451388888885
+    },
+    {
+      "frame": 132,
+      "seconds": 5.5,
+      "meanAbsoluteDifference": 0.039784922215413944
+    },
+    {
+      "frame": 133,
+      "seconds": 5.541666666666667,
+      "meanAbsoluteDifference": 0.043331397229030504
+    },
+    {
+      "frame": 134,
+      "seconds": 5.583333333333333,
+      "meanAbsoluteDifference": 0.05693338099128541
+    },
+    {
+      "frame": 135,
+      "seconds": 5.625,
+      "meanAbsoluteDifference": 0.061759280535130724
+    },
+    {
+      "frame": 136,
+      "seconds": 5.666666666666667,
+      "meanAbsoluteDifference": 0.060051679091775605
+    },
+    {
+      "frame": 137,
+      "seconds": 5.708333333333333,
+      "meanAbsoluteDifference": 0.059659352022058826
+    },
+    {
+      "frame": 138,
+      "seconds": 5.75,
+      "meanAbsoluteDifference": 0.05843822337962963
+    },
+    {
+      "frame": 139,
+      "seconds": 5.791666666666667,
+      "meanAbsoluteDifference": 0.05834631161492375
+    },
+    {
+      "frame": 140,
+      "seconds": 5.833333333333333,
+      "meanAbsoluteDifference": 0.0568426393995098
+    },
+    {
+      "frame": 141,
+      "seconds": 5.875,
+      "meanAbsoluteDifference": 0.04242898114106754
+    },
+    {
+      "frame": 142,
+      "seconds": 5.916666666666667,
+      "meanAbsoluteDifference": 0.04207026994825708
+    },
+    {
+      "frame": 143,
+      "seconds": 5.958333333333333,
+      "meanAbsoluteDifference": 0.04633065682870371
+    },
+    {
+      "frame": 144,
+      "seconds": 6.0,
+      "meanAbsoluteDifference": 0.0574499591503268
+    },
+    {
+      "frame": 145,
+      "seconds": 6.041666666666667,
+      "meanAbsoluteDifference": 0.06156641476034858
+    },
+    {
+      "frame": 146,
+      "seconds": 6.083333333333333,
+      "meanAbsoluteDifference": 0.06169513378267974
+    },
+    {
+      "frame": 147,
+      "seconds": 6.125,
+      "meanAbsoluteDifference": 0.05798387714460784
+    },
+    {
+      "frame": 148,
+      "seconds": 6.166666666666667,
+      "meanAbsoluteDifference": 0.05778888378267974
+    },
+    {
+      "frame": 149,
+      "seconds": 6.208333333333333,
+      "meanAbsoluteDifference": 0.05603553921568628
+    },
+    {
+      "frame": 150,
+      "seconds": 6.25,
+      "meanAbsoluteDifference": 0.06645380157271243
+    },
+    {
+      "frame": 151,
+      "seconds": 6.291666666666667,
+      "meanAbsoluteDifference": 0.05709582226988018
+    },
+    {
+      "frame": 152,
+      "seconds": 6.333333333333333,
+      "meanAbsoluteDifference": 0.047631889127178646
+    },
+    {
+      "frame": 153,
+      "seconds": 6.375,
+      "meanAbsoluteDifference": 0.05492398131127451
+    },
+    {
+      "frame": 154,
+      "seconds": 6.416666666666667,
+      "meanAbsoluteDifference": 0.0618374693627451
+    },
+    {
+      "frame": 155,
+      "seconds": 6.458333333333333,
+      "meanAbsoluteDifference": 0.06956199363425926
+    },
+    {
+      "frame": 156,
+      "seconds": 6.5,
+      "meanAbsoluteDifference": 0.059733072916666664
+    },
+    {
+      "frame": 157,
+      "seconds": 6.541666666666667,
+      "meanAbsoluteDifference": 0.04880929585375817
+    },
+    {
+      "frame": 158,
+      "seconds": 6.583333333333333,
+      "meanAbsoluteDifference": 0.05410294543164488
+    },
+    {
+      "frame": 159,
+      "seconds": 6.625,
+      "meanAbsoluteDifference": 0.04503208401416122
+    },
+    {
+      "frame": 160,
+      "seconds": 6.666666666666667,
+      "meanAbsoluteDifference": 0.0340888395288671
+    },
+    {
+      "frame": 161,
+      "seconds": 6.708333333333333,
+      "meanAbsoluteDifference": 0.04491527947984749
+    },
+    {
+      "frame": 162,
+      "seconds": 6.75,
+      "meanAbsoluteDifference": 0.046864681202342044
+    },
+    {
+      "frame": 163,
+      "seconds": 6.791666666666667,
+      "meanAbsoluteDifference": 0.050071380548747275
+    },
+    {
+      "frame": 164,
+      "seconds": 6.833333333333333,
+      "meanAbsoluteDifference": 0.0505374285130719
+    },
+    {
+      "frame": 165,
+      "seconds": 6.875,
+      "meanAbsoluteDifference": 0.05210609851579521
+    },
+    {
+      "frame": 166,
+      "seconds": 6.916666666666667,
+      "meanAbsoluteDifference": 0.05274660862608933
+    },
+    {
+      "frame": 167,
+      "seconds": 6.958333333333333,
+      "meanAbsoluteDifference": 0.05360381348720043
+    },
+    {
+      "frame": 168,
+      "seconds": 7.0,
+      "meanAbsoluteDifference": 0.0554967277709695
+    },
+    {
+      "frame": 169,
+      "seconds": 7.041666666666667,
+      "meanAbsoluteDifference": 0.053199784688180825
+    },
+    {
+      "frame": 170,
+      "seconds": 7.083333333333333,
+      "meanAbsoluteDifference": 0.0435688359545207
+    },
+    {
+      "frame": 171,
+      "seconds": 7.125,
+      "meanAbsoluteDifference": 0.04693223209422658
+    },
+    {
+      "frame": 172,
+      "seconds": 7.166666666666667,
+      "meanAbsoluteDifference": 0.043974460443899785
+    },
+    {
+      "frame": 173,
+      "seconds": 7.208333333333333,
+      "meanAbsoluteDifference": 0.056456269573801746
+    },
+    {
+      "frame": 174,
+      "seconds": 7.25,
+      "meanAbsoluteDifference": 0.06017178138616557
+    },
+    {
+      "frame": 175,
+      "seconds": 7.291666666666667,
+      "meanAbsoluteDifference": 0.05599256195533769
+    },
+    {
+      "frame": 176,
+      "seconds": 7.333333333333333,
+      "meanAbsoluteDifference": 0.05424868515114379
+    },
+    {
+      "frame": 177,
+      "seconds": 7.375,
+      "meanAbsoluteDifference": 0.05954361128131808
+    },
+    {
+      "frame": 178,
+      "seconds": 7.416666666666667,
+      "meanAbsoluteDifference": 0.044691563691448805
+    },
+    {
+      "frame": 179,
+      "seconds": 7.458333333333333,
+      "meanAbsoluteDifference": 0.037759672011165576
+    },
+    {
+      "frame": 180,
+      "seconds": 7.5,
+      "meanAbsoluteDifference": 0.034938278696895426
+    },
+    {
+      "frame": 181,
+      "seconds": 7.541666666666667,
+      "meanAbsoluteDifference": 0.04227207158905229
+    },
+    {
+      "frame": 182,
+      "seconds": 7.583333333333333,
+      "meanAbsoluteDifference": 0.048631748706427017
+    },
+    {
+      "frame": 183,
+      "seconds": 7.625,
+      "meanAbsoluteDifference": 0.05625255310457516
+    },
+    {
+      "frame": 184,
+      "seconds": 7.666666666666667,
+      "meanAbsoluteDifference": 0.05308074618736384
+    },
+    {
+      "frame": 185,
+      "seconds": 7.708333333333333,
+      "meanAbsoluteDifference": 0.0567308346949891
+    },
+    {
+      "frame": 186,
+      "seconds": 7.75,
+      "meanAbsoluteDifference": 0.03896197150735294
+    },
+    {
+      "frame": 187,
+      "seconds": 7.791666666666667,
+      "meanAbsoluteDifference": 0.03724437040441177
+    },
+    {
+      "frame": 188,
+      "seconds": 7.833333333333333,
+      "meanAbsoluteDifference": 0.034334575844226584
+    },
+    {
+      "frame": 189,
+      "seconds": 7.875,
+      "meanAbsoluteDifference": 0.04470209524782135
+    },
+    {
+      "frame": 190,
+      "seconds": 7.916666666666667,
+      "meanAbsoluteDifference": 0.044866983251633984
+    },
+    {
+      "frame": 191,
+      "seconds": 7.958333333333333,
+      "meanAbsoluteDifference": 0.04588173594090414
+    },
+    {
+      "frame": 192,
+      "seconds": 8.0,
+      "meanAbsoluteDifference": 0.043884995404411764
+    },
+    {
+      "frame": 193,
+      "seconds": 8.041666666666666,
+      "meanAbsoluteDifference": 0.054096562670206974
+    },
+    {
+      "frame": 194,
+      "seconds": 8.083333333333334,
+      "meanAbsoluteDifference": 0.06334050330201525
+    },
+    {
+      "frame": 195,
+      "seconds": 8.125,
+      "meanAbsoluteDifference": 0.07394897194989107
+    },
+    {
+      "frame": 196,
+      "seconds": 8.166666666666666,
+      "meanAbsoluteDifference": 0.08413660386029412
+    },
+    {
+      "frame": 197,
+      "seconds": 8.208333333333334,
+      "meanAbsoluteDifference": 0.07992898114106753
+    },
+    {
+      "frame": 198,
+      "seconds": 8.25,
+      "meanAbsoluteDifference": 0.06945508238017428
+    },
+    {
+      "frame": 199,
+      "seconds": 8.291666666666666,
+      "meanAbsoluteDifference": 0.060681764025054465
+    },
+    {
+      "frame": 200,
+      "seconds": 8.333333333333334,
+      "meanAbsoluteDifference": 0.05798908973311547
+    },
+    {
+      "frame": 201,
+      "seconds": 8.375,
+      "meanAbsoluteDifference": 0.0514228239038671
+    },
+    {
+      "frame": 202,
+      "seconds": 8.416666666666666,
+      "meanAbsoluteDifference": 0.0351004008374183
+    },
+    {
+      "frame": 203,
+      "seconds": 8.458333333333334,
+      "meanAbsoluteDifference": 0.042148990672657954
+    },
+    {
+      "frame": 204,
+      "seconds": 8.5,
+      "meanAbsoluteDifference": 0.05144697201797386
+    },
+    {
+      "frame": 205,
+      "seconds": 8.541666666666666,
+      "meanAbsoluteDifference": 0.06315742442810458
+    },
+    {
+      "frame": 206,
+      "seconds": 8.583333333333334,
+      "meanAbsoluteDifference": 0.06910988136574074
+    },
+    {
+      "frame": 207,
+      "seconds": 8.625,
+      "meanAbsoluteDifference": 0.07606379357298475
+    },
+    {
+      "frame": 208,
+      "seconds": 8.666666666666666,
+      "meanAbsoluteDifference": 0.07334526909722222
+    },
+    {
+      "frame": 209,
+      "seconds": 8.708333333333334,
+      "meanAbsoluteDifference": 0.06696197576252723
+    },
+    {
+      "frame": 210,
+      "seconds": 8.75,
+      "meanAbsoluteDifference": 0.06243861911083878
+    },
+    {
+      "frame": 211,
+      "seconds": 8.791666666666666,
+      "meanAbsoluteDifference": 0.06195842269199347
+    },
+    {
+      "frame": 212,
+      "seconds": 8.833333333333334,
+      "meanAbsoluteDifference": 0.057777926708878
+    },
+    {
+      "frame": 213,
+      "seconds": 8.875,
+      "meanAbsoluteDifference": 0.04966362847222222
+    },
+    {
+      "frame": 214,
+      "seconds": 8.916666666666666,
+      "meanAbsoluteDifference": 0.04038181678921569
+    },
+    {
+      "frame": 215,
+      "seconds": 8.958333333333334,
+      "meanAbsoluteDifference": 0.04899705541938998
+    },
+    {
+      "frame": 216,
+      "seconds": 9.0,
+      "meanAbsoluteDifference": 0.0579519633374183
+    },
+    {
+      "frame": 217,
+      "seconds": 9.041666666666666,
+      "meanAbsoluteDifference": 0.05605798526007626
+    },
+    {
+      "frame": 218,
+      "seconds": 9.083333333333334,
+      "meanAbsoluteDifference": 0.05128921143110022
+    },
+    {
+      "frame": 219,
+      "seconds": 9.125,
+      "meanAbsoluteDifference": 0.05016988783360567
+    },
+    {
+      "frame": 220,
+      "seconds": 9.166666666666666,
+      "meanAbsoluteDifference": 0.05681551266339869
+    },
+    {
+      "frame": 221,
+      "seconds": 9.208333333333334,
+      "meanAbsoluteDifference": 0.06640784569035948
+    },
+    {
+      "frame": 222,
+      "seconds": 9.25,
+      "meanAbsoluteDifference": 0.06665890097358387
+    },
+    {
+      "frame": 223,
+      "seconds": 9.291666666666666,
+      "meanAbsoluteDifference": 0.05230438963779956
+    },
+    {
+      "frame": 224,
+      "seconds": 9.333333333333334,
+      "meanAbsoluteDifference": 0.04812495744825708
+    },
+    {
+      "frame": 225,
+      "seconds": 9.375,
+      "meanAbsoluteDifference": 0.06119153390522876
+    },
+    {
+      "frame": 226,
+      "seconds": 9.416666666666666,
+      "meanAbsoluteDifference": 0.07002804159858388
+    },
+    {
+      "frame": 227,
+      "seconds": 9.458333333333334,
+      "meanAbsoluteDifference": 0.07351664624183007
+    },
+    {
+      "frame": 228,
+      "seconds": 9.5,
+      "meanAbsoluteDifference": 0.072969537207244
+    },
+    {
+      "frame": 229,
+      "seconds": 9.541666666666666,
+      "meanAbsoluteDifference": 0.07761342167075164
+    },
+    {
+      "frame": 230,
+      "seconds": 9.583333333333334,
+      "meanAbsoluteDifference": 0.06715537343409586
+    },
+    {
+      "frame": 231,
+      "seconds": 9.625,
+      "meanAbsoluteDifference": 0.06457556764025055
+    },
+    {
+      "frame": 232,
+      "seconds": 9.666666666666666,
+      "meanAbsoluteDifference": 0.06523107723992376
+    },
+    {
+      "frame": 233,
+      "seconds": 9.708333333333334,
+      "meanAbsoluteDifference": 0.06310976647603486
+    },
+    {
+      "frame": 234,
+      "seconds": 9.75,
+      "meanAbsoluteDifference": 0.06463450180419389
+    },
+    {
+      "frame": 235,
+      "seconds": 9.791666666666666,
+      "meanAbsoluteDifference": 0.06430951286764706
+    },
+    {
+      "frame": 236,
+      "seconds": 9.833333333333334,
+      "meanAbsoluteDifference": 0.052400450197440086
+    },
+    {
+      "frame": 237,
+      "seconds": 9.875,
+      "meanAbsoluteDifference": 0.06403856464460785
+    },
+    {
+      "frame": 238,
+      "seconds": 9.916666666666666,
+      "meanAbsoluteDifference": 0.07487798287717866
+    },
+    {
+      "frame": 239,
+      "seconds": 9.958333333333334,
+      "meanAbsoluteDifference": 0.07384599673202615
+    },
+    {
+      "frame": 240,
+      "seconds": 10.0,
+      "meanAbsoluteDifference": 0.07107672930283224
+    },
+    {
+      "frame": 241,
+      "seconds": 10.041666666666666,
+      "meanAbsoluteDifference": 0.08025439559504358
+    },
+    {
+      "frame": 242,
+      "seconds": 10.083333333333334,
+      "meanAbsoluteDifference": 0.0751255276416122
+    },
+    {
+      "frame": 243,
+      "seconds": 10.125,
+      "meanAbsoluteDifference": 0.08262750629765796
+    },
+    {
+      "frame": 244,
+      "seconds": 10.166666666666666,
+      "meanAbsoluteDifference": 0.07703524986383442
+    },
+    {
+      "frame": 245,
+      "seconds": 10.208333333333334,
+      "meanAbsoluteDifference": 0.059023097086056645
+    },
+    {
+      "frame": 246,
+      "seconds": 10.25,
+      "meanAbsoluteDifference": 0.060243800211056645
+    },
+    {
+      "frame": 247,
+      "seconds": 10.291666666666666,
+      "meanAbsoluteDifference": 0.061341847937091507
+    },
+    {
+      "frame": 248,
+      "seconds": 10.333333333333334,
+      "meanAbsoluteDifference": 0.06320274203431372
+    },
+    {
+      "frame": 249,
+      "seconds": 10.375,
+      "meanAbsoluteDifference": 0.04693978502859477
+    },
+    {
+      "frame": 250,
+      "seconds": 10.416666666666666,
+      "meanAbsoluteDifference": 0.03306281062772331
+    },
+    {
+      "frame": 251,
+      "seconds": 10.458333333333334,
+      "meanAbsoluteDifference": 0.03933568218954248
+    },
+    {
+      "frame": 252,
+      "seconds": 10.5,
+      "meanAbsoluteDifference": 0.04210675806781045
+    },
+    {
+      "frame": 253,
+      "seconds": 10.541666666666666,
+      "meanAbsoluteDifference": 0.03780328754765796
+    },
+    {
+      "frame": 254,
+      "seconds": 10.583333333333334,
+      "meanAbsoluteDifference": 0.042701525054466234
+    },
+    {
+      "frame": 255,
+      "seconds": 10.625,
+      "meanAbsoluteDifference": 0.042622485191993464
+    },
+    {
+      "frame": 256,
+      "seconds": 10.666666666666666,
+      "meanAbsoluteDifference": 0.041882935900054465
+    },
+    {
+      "frame": 257,
+      "seconds": 10.708333333333334,
+      "meanAbsoluteDifference": 0.03661811512799564
+    },
+    {
+      "frame": 258,
+      "seconds": 10.75,
+      "meanAbsoluteDifference": 0.028750617000272333
+    },
+    {
+      "frame": 259,
+      "seconds": 10.791666666666666,
+      "meanAbsoluteDifference": 0.018648939610566448
+    },
+    {
+      "frame": 260,
+      "seconds": 10.833333333333334,
+      "meanAbsoluteDifference": 0.01410579639842048
+    },
+    {
+      "frame": 261,
+      "seconds": 10.875,
+      "meanAbsoluteDifference": 0.024864259940087147
+    },
+    {
+      "frame": 262,
+      "seconds": 10.916666666666666,
+      "meanAbsoluteDifference": 0.03684332022739651
+    },
+    {
+      "frame": 263,
+      "seconds": 10.958333333333334,
+      "meanAbsoluteDifference": 0.04425732315495643
+    },
+    {
+      "frame": 264,
+      "seconds": 11.0,
+      "meanAbsoluteDifference": 0.044084243940631804
+    },
+    {
+      "frame": 265,
+      "seconds": 11.041666666666666,
+      "meanAbsoluteDifference": 0.049680223651960786
+    },
+    {
+      "frame": 266,
+      "seconds": 11.083333333333334,
+      "meanAbsoluteDifference": 0.04535303053513072
+    },
+    {
+      "frame": 267,
+      "seconds": 11.125,
+      "meanAbsoluteDifference": 0.0470349945533769
+    },
+    {
+      "frame": 268,
+      "seconds": 11.166666666666666,
+      "meanAbsoluteDifference": 0.04128572218818083
+    },
+    {
+      "frame": 269,
+      "seconds": 11.208333333333334,
+      "meanAbsoluteDifference": 0.03479956001497821
+    },
+    {
+      "frame": 270,
+      "seconds": 11.25,
+      "meanAbsoluteDifference": 0.028985609000544664
+    },
+    {
+      "frame": 271,
+      "seconds": 11.291666666666666,
+      "meanAbsoluteDifference": 0.03214805453431373
+    },
+    {
+      "frame": 272,
+      "seconds": 11.333333333333334,
+      "meanAbsoluteDifference": 0.03913419968681917
+    },
+    {
+      "frame": 273,
+      "seconds": 11.375,
+      "meanAbsoluteDifference": 0.04574546398420479
+    },
+    {
+      "frame": 274,
+      "seconds": 11.416666666666666,
+      "meanAbsoluteDifference": 0.03980258118872549
+    },
+    {
+      "frame": 275,
+      "seconds": 11.458333333333334,
+      "meanAbsoluteDifference": 0.03957344005310457
+    },
+    {
+      "frame": 276,
+      "seconds": 11.5,
+      "meanAbsoluteDifference": 0.045543130446623094
+    },
+    {
+      "frame": 277,
+      "seconds": 11.541666666666666,
+      "meanAbsoluteDifference": 0.044755072167755997
+    },
+    {
+      "frame": 278,
+      "seconds": 11.583333333333334,
+      "meanAbsoluteDifference": 0.04583833316312636
+    },
+    {
+      "frame": 279,
+      "seconds": 11.625,
+      "meanAbsoluteDifference": 0.060249225558278864
+    },
+    {
+      "frame": 280,
+      "seconds": 11.666666666666666,
+      "meanAbsoluteDifference": 0.07159043521922659
+    },
+    {
+      "frame": 281,
+      "seconds": 11.708333333333334,
+      "meanAbsoluteDifference": 0.08154690478622004
+    },
+    {
+      "frame": 282,
+      "seconds": 11.75,
+      "meanAbsoluteDifference": 0.0789409296704793
+    },
+    {
+      "frame": 283,
+      "seconds": 11.791666666666666,
+      "meanAbsoluteDifference": 0.08097426470588236
+    },
+    {
+      "frame": 284,
+      "seconds": 11.833333333333334,
+      "meanAbsoluteDifference": 0.08565867970452071
+    },
+    {
+      "frame": 285,
+      "seconds": 11.875,
+      "meanAbsoluteDifference": 0.10625446793300654
+    },
+    {
+      "frame": 286,
+      "seconds": 11.916666666666666,
+      "meanAbsoluteDifference": 0.0957802500340414
+    },
+    {
+      "frame": 287,
+      "seconds": 11.958333333333334,
+      "meanAbsoluteDifference": 0.09186304296023964
+    },
+    {
+      "frame": 288,
+      "seconds": 12.0,
+      "meanAbsoluteDifference": 0.09418583622685185
+    },
+    {
+      "frame": 289,
+      "seconds": 12.041666666666666,
+      "meanAbsoluteDifference": 0.10094496783088236
+    },
+    {
+      "frame": 290,
+      "seconds": 12.083333333333334,
+      "meanAbsoluteDifference": 0.09270503557325709
+    },
+    {
+      "frame": 291,
+      "seconds": 12.125,
+      "meanAbsoluteDifference": 0.07755204078159042
+    },
+    {
+      "frame": 292,
+      "seconds": 12.166666666666666,
+      "meanAbsoluteDifference": 0.07604858132489106
+    },
+    {
+      "frame": 293,
+      "seconds": 12.208333333333334,
+      "meanAbsoluteDifference": 0.0767299411083878
+    },
+    {
+      "frame": 294,
+      "seconds": 12.25,
+      "meanAbsoluteDifference": 0.0702566508374183
+    },
+    {
+      "frame": 295,
+      "seconds": 12.291666666666666,
+      "meanAbsoluteDifference": 0.07935187312772331
+    },
+    {
+      "frame": 296,
+      "seconds": 12.333333333333334,
+      "meanAbsoluteDifference": 0.08101841213916122
+    },
+    {
+      "frame": 297,
+      "seconds": 12.375,
+      "meanAbsoluteDifference": 0.08189604183687364
+    },
+    {
+      "frame": 298,
+      "seconds": 12.416666666666666,
+      "meanAbsoluteDifference": 0.07710088592728757
+    },
+    {
+      "frame": 299,
+      "seconds": 12.458333333333334,
+      "meanAbsoluteDifference": 0.08720479728349674
+    },
+    {
+      "frame": 300,
+      "seconds": 12.5,
+      "meanAbsoluteDifference": 0.08991247106481481
+    },
+    {
+      "frame": 301,
+      "seconds": 12.541666666666666,
+      "meanAbsoluteDifference": 0.11082378046704792
+    },
+    {
+      "frame": 302,
+      "seconds": 12.583333333333334,
+      "meanAbsoluteDifference": 0.11199565546704793
+    },
+    {
+      "frame": 303,
+      "seconds": 12.625,
+      "meanAbsoluteDifference": 0.11630540236928105
+    },
+    {
+      "frame": 304,
+      "seconds": 12.666666666666666,
+      "meanAbsoluteDifference": 0.09769369553376907
+    },
+    {
+      "frame": 305,
+      "seconds": 12.708333333333334,
+      "meanAbsoluteDifference": 0.07854275173611111
+    },
+    {
+      "frame": 306,
+      "seconds": 12.75,
+      "meanAbsoluteDifference": 0.05571437993600218
+    },
+    {
+      "frame": 307,
+      "seconds": 12.791666666666666,
+      "meanAbsoluteDifference": 0.05428570516748366
+    },
+    {
+      "frame": 308,
+      "seconds": 12.833333333333334,
+      "meanAbsoluteDifference": 0.08278058619281047
+    },
+    {
+      "frame": 309,
+      "seconds": 12.875,
+      "meanAbsoluteDifference": 0.10189323342184095
+    },
+    {
+      "frame": 310,
+      "seconds": 12.916666666666666,
+      "meanAbsoluteDifference": 0.10726390165441177
+    },
+    {
+      "frame": 311,
+      "seconds": 12.958333333333334,
+      "meanAbsoluteDifference": 0.09657543572984749
+    },
+    {
+      "frame": 312,
+      "seconds": 13.0,
+      "meanAbsoluteDifference": 0.08211826831427016
+    },
+    {
+      "frame": 313,
+      "seconds": 13.041666666666666,
+      "meanAbsoluteDifference": 0.08390395220588236
+    },
+    {
+      "frame": 314,
+      "seconds": 13.083333333333334,
+      "meanAbsoluteDifference": 0.08008908207380173
+    },
+    {
+      "frame": 315,
+      "seconds": 13.125,
+      "meanAbsoluteDifference": 0.06247021377995643
+    },
+    {
+      "frame": 316,
+      "seconds": 13.166666666666666,
+      "meanAbsoluteDifference": 0.06898924717456427
+    },
+    {
+      "frame": 317,
+      "seconds": 13.208333333333334,
+      "meanAbsoluteDifference": 0.09547802627995643
+    },
+    {
+      "frame": 318,
+      "seconds": 13.25,
+      "meanAbsoluteDifference": 0.07895390795206972
+    },
+    {
+      "frame": 319,
+      "seconds": 13.291666666666666,
+      "meanAbsoluteDifference": 0.0660147739651416
+    },
+    {
+      "frame": 320,
+      "seconds": 13.333333333333334,
+      "meanAbsoluteDifference": 0.06544107009123094
+    },
+    {
+      "frame": 321,
+      "seconds": 13.375,
+      "meanAbsoluteDifference": 0.09064319087009803
+    },
+    {
+      "frame": 322,
+      "seconds": 13.416666666666666,
+      "meanAbsoluteDifference": 0.08048364311002179
+    },
+    {
+      "frame": 323,
+      "seconds": 13.458333333333334,
+      "meanAbsoluteDifference": 0.07316016901552287
+    },
+    {
+      "frame": 324,
+      "seconds": 13.5,
+      "meanAbsoluteDifference": 0.07408120149101306
+    },
+    {
+      "frame": 325,
+      "seconds": 13.541666666666666,
+      "meanAbsoluteDifference": 0.06740419475081699
+    },
+    {
+      "frame": 326,
+      "seconds": 13.583333333333334,
+      "meanAbsoluteDifference": 0.054748136233660136
+    },
+    {
+      "frame": 327,
+      "seconds": 13.625,
+      "meanAbsoluteDifference": 0.048516859000544664
+    },
+    {
+      "frame": 328,
+      "seconds": 13.666666666666666,
+      "meanAbsoluteDifference": 0.04897811989379085
+    },
+    {
+      "frame": 329,
+      "seconds": 13.708333333333334,
+      "meanAbsoluteDifference": 0.04659032883986928
+    },
+    {
+      "frame": 330,
+      "seconds": 13.75,
+      "meanAbsoluteDifference": 0.03956035539215686
+    },
+    {
+      "frame": 331,
+      "seconds": 13.791666666666666,
+      "meanAbsoluteDifference": 0.05057827818627451
+    },
+    {
+      "frame": 332,
+      "seconds": 13.833333333333334,
+      "meanAbsoluteDifference": 0.050593064916939
+    },
+    {
+      "frame": 333,
+      "seconds": 13.875,
+      "meanAbsoluteDifference": 0.05261171960103486
+    },
+    {
+      "frame": 334,
+      "seconds": 13.916666666666666,
+      "meanAbsoluteDifference": 0.05758676300381263
+    },
+    {
+      "frame": 335,
+      "seconds": 13.958333333333334,
+      "meanAbsoluteDifference": 0.04811570244417211
+    },
+    {
+      "frame": 336,
+      "seconds": 14.0,
+      "meanAbsoluteDifference": 0.04872951133578431
+    },
+    {
+      "frame": 337,
+      "seconds": 14.041666666666666,
+      "meanAbsoluteDifference": 0.07960154547930283
+    },
+    {
+      "frame": 338,
+      "seconds": 14.083333333333334,
+      "meanAbsoluteDifference": 0.07903975609340957
+    },
+    {
+      "frame": 339,
+      "seconds": 14.125,
+      "meanAbsoluteDifference": 0.06700974009395425
+    },
+    {
+      "frame": 340,
+      "seconds": 14.166666666666666,
+      "meanAbsoluteDifference": 0.07159117987472767
+    },
+    {
+      "frame": 341,
+      "seconds": 14.208333333333334,
+      "meanAbsoluteDifference": 0.0530972349877451
+    },
+    {
+      "frame": 342,
+      "seconds": 14.25,
+      "meanAbsoluteDifference": 0.06860936648965141
+    },
+    {
+      "frame": 343,
+      "seconds": 14.291666666666666,
+      "meanAbsoluteDifference": 0.06546170768654684
+    },
+    {
+      "frame": 344,
+      "seconds": 14.333333333333334,
+      "meanAbsoluteDifference": 0.06379261557053377
+    },
+    {
+      "frame": 345,
+      "seconds": 14.375,
+      "meanAbsoluteDifference": 0.08863964205473855
+    },
+    {
+      "frame": 346,
+      "seconds": 14.416666666666666,
+      "meanAbsoluteDifference": 0.06621412888071895
+    },
+    {
+      "frame": 347,
+      "seconds": 14.458333333333334,
+      "meanAbsoluteDifference": 0.08058374608523965
+    },
+    {
+      "frame": 348,
+      "seconds": 14.5,
+      "meanAbsoluteDifference": 0.08000238289760349
+    },
+    {
+      "frame": 349,
+      "seconds": 14.541666666666666,
+      "meanAbsoluteDifference": 0.07500627638208061
+    },
+    {
+      "frame": 350,
+      "seconds": 14.583333333333334,
+      "meanAbsoluteDifference": 0.071016412207244
+    },
+    {
+      "frame": 351,
+      "seconds": 14.625,
+      "meanAbsoluteDifference": 0.062197776245915035
+    },
+    {
+      "frame": 352,
+      "seconds": 14.666666666666666,
+      "meanAbsoluteDifference": 0.060801547181372546
+    },
+    {
+      "frame": 353,
+      "seconds": 14.708333333333334,
+      "meanAbsoluteDifference": 0.059235749421296294
+    },
+    {
+      "frame": 354,
+      "seconds": 14.75,
+      "meanAbsoluteDifference": 0.05491270509940087
+    },
+    {
+      "frame": 355,
+      "seconds": 14.791666666666666,
+      "meanAbsoluteDifference": 0.05382752927559913
+    },
+    {
+      "frame": 356,
+      "seconds": 14.833333333333334,
+      "meanAbsoluteDifference": 0.05475590192674292
+    },
+    {
+      "frame": 357,
+      "seconds": 14.875,
+      "meanAbsoluteDifference": 0.059424253642429196
+    },
+    {
+      "frame": 358,
+      "seconds": 14.916666666666666,
+      "meanAbsoluteDifference": 0.05924096200980392
+    },
+    {
+      "frame": 359,
+      "seconds": 14.958333333333334,
+      "meanAbsoluteDifference": 0.05351711431100218
+    },
+    {
+      "frame": 360,
+      "seconds": 15.0,
+      "meanAbsoluteDifference": 0.04400499131944444
+    }
+  ],
+  "highDifferenceCandidates": [
+    {
+      "frame": 7,
+      "seconds": 0.2916666666666667,
+      "meanAbsoluteDifference": 0.1200963371459695
+    },
+    {
+      "frame": 2,
+      "seconds": 0.08333333333333333,
+      "meanAbsoluteDifference": 0.11732770799291939
+    },
+    {
+      "frame": 303,
+      "seconds": 12.625,
+      "meanAbsoluteDifference": 0.11630540236928105
+    },
+    {
+      "frame": 302,
+      "seconds": 12.583333333333334,
+      "meanAbsoluteDifference": 0.11199565546704793
+    },
+    {
+      "frame": 3,
+      "seconds": 0.125,
+      "meanAbsoluteDifference": 0.11101058261846405
+    },
+    {
+      "frame": 301,
+      "seconds": 12.541666666666666,
+      "meanAbsoluteDifference": 0.11082378046704792
+    },
+    {
+      "frame": 24,
+      "seconds": 1.0,
+      "meanAbsoluteDifference": 0.11066453056917211
+    },
+    {
+      "frame": 23,
+      "seconds": 0.9583333333333334,
+      "meanAbsoluteDifference": 0.11051262084694989
+    }
+  ],
+  "hasEmbeddedAudio": false,
+  "audioSummary": "No embedded audio stream",
+  "audioSilenceLog": "silencedetect.txt",
+  "sceneCandidateLog": "scene-candidates.txt",
+  "audioPerception": {
+    "actualListening": false,
+    "reason": "Audio input unsupported: tool returned audio content omitted because you do not support audio input."
+  },
+  "normalSpeedPlaybackWatched": false,
+  "reviewMethod": "Every decoded frame represented in consecutive static sheets; computational differences and scene candidates; separate local ASR/metrics. Visual inspection coverage recorded separately."
+}

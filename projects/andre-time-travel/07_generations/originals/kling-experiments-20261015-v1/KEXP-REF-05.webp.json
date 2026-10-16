@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-REF-05",
+  "elementId": null,
+  "referenceName": "Blonde Lady",
+  "resourceName": "cover",
+  "role": "reference_preview",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqa2xpbmcvZWxlbWVudC9CbG9uZGUtTGFkeS3kuLvopoHlj4LogIMucG5n:240x240.webp?x-kcdn-pid=112372",
+  "quality": "web_preview_only_original_missing",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-05.webp",
+  "sha256": "0f6aba36a2644f10f97674c5a2e157e5810c14c31f852641220b8cf040643b50",
+  "bytes": 7136,
+  "contentType": "image/webp",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:10:45.243690+00:00",
+  "dimensions": [
+    240,
+    425
+  ],
+  "approved": false,
+  "provenance": "web_reference_preview",
+  "catalogAssetId": "KEXP-REF-05",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

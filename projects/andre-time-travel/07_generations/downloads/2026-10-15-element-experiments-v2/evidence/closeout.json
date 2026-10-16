@@ -1,0 +1,250 @@
+{
+  "capturedAt": "2026-10-15T09:21:19.420183+00:00",
+  "checks": {
+    "export-update-final": {
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-workspace.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects"
+      ],
+      "exitCode": 0
+    },
+    "management-lint-tests": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_manage_lint.py"
+      ],
+      "exitCode": 0
+    },
+    "assets-final": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "exitCode": 0
+    },
+    "validate-final": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exitCode": 0
+    },
+    "handoff-final": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "handoff",
+        "check",
+        "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v2-reconciliation.json"
+      ],
+      "exitCode": 0
+    },
+    "lint-final": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "exitCode": 0
+    },
+    "resume-final": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "exitCode": 0
+    },
+    "workspace-freshness-final": {
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-workspace.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "exitCode": 0
+    },
+    "data-final": {
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "exitCode": 0
+    }
+  },
+  "earlierChecks": {
+    "assets": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "assets.stdout",
+      "stderrFile": "assets.stderr"
+    },
+    "validate": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "validate.stdout",
+      "stderrFile": "validate.stderr"
+    },
+    "handoff": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "handoff",
+        "check",
+        "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v2-reconciliation.json"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "handoff.stdout",
+      "stderrFile": "handoff.stderr"
+    },
+    "lint": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "lint.stdout",
+      "stderrFile": "lint.stderr"
+    },
+    "resume": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "resume.stdout",
+      "stderrFile": "resume.stderr"
+    },
+    "plan-media": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "plan-media.stdout",
+      "stderrFile": "plan-media.stderr"
+    },
+    "management-tests": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_manage.py"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "management-tests.stdout",
+      "stderrFile": "management-tests.stderr"
+    },
+    "shared-media-tests": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_shared_media.py"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "shared-media-tests.stdout",
+      "stderrFile": "shared-media-tests.stderr"
+    },
+    "export-tests": {
+      "command": [
+        "node",
+        "--test",
+        "sites/movies-demandas/tests/export.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "export-tests.stdout",
+      "stderrFile": "export-tests.stderr"
+    },
+    "workspace-freshness": {
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-workspace.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "workspace-freshness.stdout",
+      "stderrFile": "workspace-freshness.stderr"
+    },
+    "data-check": {
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "exitCode": 0,
+      "stdoutFile": "data-check.stdout",
+      "stderrFile": "data-check.stderr"
+    },
+    "production-freshness": {
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-production.mjs",
+        "/mnt/data/Projects_SSD/Movies_Projects",
+        "--check"
+      ],
+      "exitCode": 1,
+      "stdoutFile": "production-freshness.stdout",
+      "stderrFile": "production-freshness.stderr"
+    },
+    "local-integrity": {
+      "exitCode": 0,
+      "galleryLinksChecked": 114,
+      "missingLinks": [],
+      "newMediaRehashed": 5,
+      "oldRegistryBytesPreserved": 148236
+    }
+  },
+  "testCounts": {
+    "management": 2,
+    "managementLint": 24,
+    "sharedMedia": 13,
+    "export": 5,
+    "total": 44
+  },
+  "storage": {
+    "originalMediaBytes": 14641524,
+    "catalogAndReviewBytesBeforeCloseout": 26824776,
+    "sourceSidecarsBytes": 9727,
+    "freeBytes": 597475737600
+  },
+  "knownBlockers": [
+    "Authenticated web history unavailable; local kung-fu ProduceID relationship unconfirmed.",
+    "Costume source prompts unknown; local JPEG upload relationship unconfirmed.",
+    "Audio listening and normal-speed playback not performed.",
+    "Production freshness only collectedAt/repositoryHead; snapshot preserved."
+  ],
+  "ingestionPerformed": false,
+  "creativeAcceptance": false
+}

@@ -1,0 +1,38 @@
+{
+  "guardedFiles": 177,
+  "unchangedProtected": 174,
+  "exactDeltas": [
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "0d3d99d1e856d66a6049efbdd75577785633c32d221578dd5a96c2ff0b30d2b2",
+      "sha256After": "8418af693cef58b0ba08f299bc7bee6d470dce6b437c90046cefa7e7d9f971c7"
+    },
+    {
+      "path": "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sha256Before": "aecd2a657eb0bcf8d9073ae37024178fe3dfdeaff390d1707068af7f1b823d29",
+      "sha256After": "4edb8ad5190674f03467f0006c1543d23755fa6944b8dda98400a8dba0cc315b"
+    },
+    {
+      "path": "sites/movies-demandas/data/workspace-reference.json",
+      "sha256Before": "00ad8d03e30d88c0ae8e95392c98e7955aa5d94017a67353919145d40d9e3ad5",
+      "sha256After": "b4b778ae3303c91713e1ea0140fe8d8a3c6505e74b9bca1b90c9c5c1a7230cfe"
+    }
+  ],
+  "allowedMutable": [
+    "projects/andre-time-travel/asset-registry.csv",
+    "sites/movies-demandas/data/workspace-reference.json",
+    "sites/movies-demandas/scripts/export-workspace.mjs"
+  ],
+  "historicalHandoffsPreserved": [
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v1.json",
+      "sha256": "c6674e66ae46d0f82073f8b0e275d87517dd0392c89fffc2930887f5740867c5"
+    },
+    {
+      "path": "projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json",
+      "sha256": "bcc8c6af058039132c78ebdb25a0f02967974bedd33cb8d2aca3f41f66d1a0fd"
+    }
+  ],
+  "ingestionPerformed": false,
+  "scope": "Five new original media/sidecars, new archive/guide, append-only registry and two existing discoverability paths. Coalesced current hashes; no production acceptance."
+}

@@ -1,0 +1,11 @@
+--- before-catalog-update
++++ current
+@@ -36,6 +36,8 @@
+  ['Aprovações',`projects/${workspace.activeFilm}/00_brief/approvals.json`,'Escopos de aprovação registrados pelo produtor.'],
+  ['Decisões',`projects/${workspace.activeFilm}/00_brief/decisions/`,'Registros D: referência para as escolhas do filme.'],
+  ['Catálogo de mídia',assetPath,'IDs estáveis, caminhos canônicos, hashes e proveniência; os indicadores do registro não aprovam novos usos.'],
++ ['Experimentos Kling',`projects/${workspace.activeFilm}/07_generations/downloads/2026-10-15-element-experiments-v1/index.html`,'Arquivo local de testes, nomes e proveniência; candidatos e previews sem aceite de produção.'],
++ ['Lições de Elements',`projects/${workspace.activeFilm}/docs/kling-element-experiments-20261015-v1.md`,'Método proposto, nomes originais, observações e templates; sem nova geração.'],
+  ['Papéis','agents/registry.json','Responsabilidades e skills; não indica sessões ativas.'],
+  ['Skills','skills/registry.json','Procedimento local e vínculos com fontes compartilhadas.'],
+  ['Entregas entre agentes','shared/templates/agent-handoff-v2.json','Escopo, hashes, verificações, limites e próximo responsável.'],

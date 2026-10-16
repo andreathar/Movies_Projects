@@ -1,0 +1,47 @@
+{
+  "topLevelKeysChanged": [
+    "sources",
+    "assetCatalog",
+    "paths",
+    "collectedAt",
+    "provenance"
+  ],
+  "newPaths": [
+    {
+      "title": "Experimentos Kling",
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/index.html",
+      "description": "Arquivo local de testes, nomes e proveniência; candidatos e previews sem aceite de produção."
+    },
+    {
+      "title": "Lições de Elements",
+      "path": "projects/andre-time-travel/docs/kling-element-experiments-20261015-v1.md",
+      "description": "Método proposto, nomes originais, observações e templates; sem nova geração."
+    }
+  ],
+  "oldCatalog": {
+    "path": "projects/andre-time-travel/asset-registry.csv",
+    "sha256": "999a923f52492029b95de5717fdec3d6e5ede7e4cd81f5c86de17f190e3c7715",
+    "recordCount": 290,
+    "uniqueIdCount": 290,
+    "localReferenceCount": 287,
+    "uniqueLocalPathCount": 277,
+    "providerReferenceCount": 3,
+    "historicalOriginLiteralsPending": 4,
+    "approvalScope": "catalog_flags_only"
+  },
+  "newCatalog": {
+    "path": "projects/andre-time-travel/asset-registry.csv",
+    "sha256": "0d3d99d1e856d66a6049efbdd75577785633c32d221578dd5a96c2ff0b30d2b2",
+    "recordCount": 318,
+    "uniqueIdCount": 318,
+    "localReferenceCount": 315,
+    "uniqueLocalPathCount": 301,
+    "providerReferenceCount": 3,
+    "historicalOriginLiteralsPending": 4,
+    "approvalScope": "catalog_flags_only"
+  },
+  "oldSnapshotsMatchV2": true,
+  "scriptChange": "Only two new paths added; see exporter.diff",
+  "productionContentChanged": false,
+  "productionFreshnessIssue": "Only collectedAt and repositoryHead differ; kept pre-existing snapshot."
+}

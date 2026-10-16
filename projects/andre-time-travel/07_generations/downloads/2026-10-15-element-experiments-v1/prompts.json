@@ -1,0 +1,344 @@
+[
+  {
+    "webHistoryId": "323866270650569",
+    "name": "kling_20261013_VIDEO_Andre Atha_5250_0",
+    "createdAtDisplayed": "10/13/2026, 9:33:09 AM",
+    "resolution": "720p",
+    "segments": [
+      {
+        "kind": "reference",
+        "text": "Andre Athar"
+      },
+      {
+        "kind": "text",
+        "text": "sit at "
+      },
+      {
+        "kind": "reference",
+        "text": "table 1"
+      },
+      {
+        "kind": "text",
+        "text": "with "
+      },
+      {
+        "kind": "reference",
+        "text": "Blonde Lady"
+      },
+      {
+        "kind": "text",
+        "text": "and "
+      },
+      {
+        "kind": "reference",
+        "text": "Sarah"
+      },
+      {
+        "kind": "text",
+        "text": ".they keep looking at each other faces . "
+      }
+    ],
+    "asset_id": "KEXP-W323866270650569-result",
+    "generationId": null,
+    "workIndex": null,
+    "modelLabel": "VIDEO 3.0 Omni",
+    "canonicalModel": "kling-video-v3_0_omni",
+    "canonicalModelEvidence": "label mapping to live capability catalog; original request unavailable",
+    "durationDisplayedSeconds": 15,
+    "displayedTimeZone": null,
+    "promptEvidence": "Ordered DOM children of #work-detail-comment-content-id .prompt-render; exact text segments and reference names; spaces between inline chips are rendering, not serialized request.",
+    "serializedProviderPrompt": null,
+    "settingsUnknown": [
+      "seed",
+      "nativeAudioFlag",
+      "prefer_multi_shots",
+      "customMultiShot",
+      "creditCharge",
+      "originalTool",
+      "originalRequestBindings"
+    ],
+    "approved": false,
+    "promptReadable": "[@Andre Athar] sit at [@table 1] with [@Blonde Lady] and [@Sarah] .they keep looking at each other faces . ",
+    "inputs": [
+      {
+        "referenceName": "Andre Athar",
+        "assetIds": [
+          "KEXP-REF-01",
+          "KEXP-REF-02",
+          "KEXP-REF-03",
+          "KEXP-REF-04"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "table 1",
+        "assetIds": [
+          "KEXP-E323854711683871-cover"
+        ],
+        "elementId": "323854711683871",
+        "bindingEvidence": "Exact observed cover URL matches element_get"
+      },
+      {
+        "referenceName": "Blonde Lady",
+        "assetIds": [
+          "KEXP-REF-05"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "Sarah",
+        "assetIds": [
+          "KEXP-REF-06"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      }
+    ]
+  },
+  {
+    "webHistoryId": "323868230505094",
+    "name": "kling_20261013_VIDEO_on @Videop_5404_0",
+    "createdAtDisplayed": "10/13/2026, 10:05:48 AM",
+    "resolution": "1080p",
+    "segments": [
+      {
+        "kind": "text",
+        "text": "on "
+      },
+      {
+        "kind": "reference",
+        "text": "Video1"
+      },
+      {
+        "kind": "text",
+        "text": "put this clothes "
+      },
+      {
+        "kind": "reference",
+        "text": "Costume 1"
+      },
+      {
+        "kind": "text",
+        "text": "on "
+      },
+      {
+        "kind": "reference",
+        "text": "Andre Athar"
+      },
+      {
+        "kind": "text",
+        "text": "and make the ambience like "
+      },
+      {
+        "kind": "reference",
+        "text": "Zen-style Café"
+      },
+      {
+        "kind": "text",
+        "text": "with "
+      },
+      {
+        "kind": "reference",
+        "text": "Stellar Black Hole"
+      }
+    ],
+    "asset_id": "KEXP-W323868230505094-result",
+    "generationId": null,
+    "workIndex": null,
+    "modelLabel": "VIDEO 3.0 Omni",
+    "canonicalModel": "kling-video-v3_0_omni",
+    "canonicalModelEvidence": "label mapping to live capability catalog; original request unavailable",
+    "durationDisplayedSeconds": 15,
+    "displayedTimeZone": null,
+    "promptEvidence": "Ordered DOM children of #work-detail-comment-content-id .prompt-render; exact text segments and reference names; spaces between inline chips are rendering, not serialized request.",
+    "serializedProviderPrompt": null,
+    "settingsUnknown": [
+      "seed",
+      "nativeAudioFlag",
+      "prefer_multi_shots",
+      "customMultiShot",
+      "creditCharge",
+      "originalTool",
+      "originalRequestBindings"
+    ],
+    "approved": false,
+    "promptReadable": "on [@Video1] put this clothes [@Costume 1] on [@Andre Athar] and make the ambience like [@Zen-style Café] with [@Stellar Black Hole] ",
+    "inputs": [
+      {
+        "referenceName": "Video1",
+        "assetIds": [
+          "KEXP-W323866270650569-result"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Input thumbnail matches base-result thumbnail"
+      },
+      {
+        "referenceName": "Costume 1",
+        "assetIds": [
+          "KEXP-E323867570654831-cover"
+        ],
+        "elementId": "323867570654831",
+        "bindingEvidence": "Exact observed cover URL matches element_get"
+      },
+      {
+        "referenceName": "Andre Athar",
+        "assetIds": [
+          "KEXP-REF-01",
+          "KEXP-REF-02",
+          "KEXP-REF-03",
+          "KEXP-REF-04"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "Zen-style Café",
+        "assetIds": [
+          "KEXP-REF-07"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "Stellar Black Hole",
+        "assetIds": [
+          "KEXP-REF-09"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      }
+    ]
+  },
+  {
+    "webHistoryId": "323869015528491",
+    "name": "kling_20261013_VIDEO_Andre Atha_5453_0",
+    "createdAtDisplayed": "10/13/2026, 10:18:54 AM",
+    "resolution": "720p",
+    "segments": [
+      {
+        "kind": "reference",
+        "text": "Andre Athar"
+      },
+      {
+        "kind": "text",
+        "text": "sit at "
+      },
+      {
+        "kind": "reference",
+        "text": "table 1"
+      },
+      {
+        "kind": "text",
+        "text": "with "
+      },
+      {
+        "kind": "reference",
+        "text": "Blonde Lady"
+      },
+      {
+        "kind": "text",
+        "text": "and "
+      },
+      {
+        "kind": "reference",
+        "text": "Sarah"
+      },
+      {
+        "kind": "text",
+        "text": "at "
+      },
+      {
+        "kind": "reference",
+        "text": "Zen-style Café"
+      },
+      {
+        "kind": "text",
+        "text": ".they keep looking at each other faces . while"
+      },
+      {
+        "kind": "reference",
+        "text": "Snowflake"
+      },
+      {
+        "kind": "text",
+        "text": "keeps falling inside the place. "
+      }
+    ],
+    "asset_id": "KEXP-W323869015528491-result",
+    "generationId": null,
+    "workIndex": null,
+    "modelLabel": "VIDEO 3.0 Omni",
+    "canonicalModel": "kling-video-v3_0_omni",
+    "canonicalModelEvidence": "label mapping to live capability catalog; original request unavailable",
+    "durationDisplayedSeconds": 15,
+    "displayedTimeZone": null,
+    "promptEvidence": "Ordered DOM children of #work-detail-comment-content-id .prompt-render; exact text segments and reference names; spaces between inline chips are rendering, not serialized request.",
+    "serializedProviderPrompt": null,
+    "settingsUnknown": [
+      "seed",
+      "nativeAudioFlag",
+      "prefer_multi_shots",
+      "customMultiShot",
+      "creditCharge",
+      "originalTool",
+      "originalRequestBindings"
+    ],
+    "approved": false,
+    "promptReadable": "[@Andre Athar] sit at [@table 1] with [@Blonde Lady] and [@Sarah] at [@Zen-style Café] .they keep looking at each other faces . while[@Snowflake] keeps falling inside the place. ",
+    "inputs": [
+      {
+        "referenceName": "Andre Athar",
+        "assetIds": [
+          "KEXP-REF-01",
+          "KEXP-REF-02",
+          "KEXP-REF-03",
+          "KEXP-REF-04"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "table 1",
+        "assetIds": [
+          "KEXP-E323854711683871-cover"
+        ],
+        "elementId": "323854711683871",
+        "bindingEvidence": "Exact observed cover URL matches element_get"
+      },
+      {
+        "referenceName": "Blonde Lady",
+        "assetIds": [
+          "KEXP-REF-05"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "Sarah",
+        "assetIds": [
+          "KEXP-REF-06"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "Zen-style Café",
+        "assetIds": [
+          "KEXP-REF-07"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      },
+      {
+        "referenceName": "Snowflake",
+        "assetIds": [
+          "KEXP-REF-08"
+        ],
+        "elementId": null,
+        "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+      }
+    ]
+  }
+]

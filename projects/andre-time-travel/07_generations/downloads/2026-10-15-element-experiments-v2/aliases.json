@@ -1,0 +1,52 @@
+{
+  "scope": "Local proposals only. No provider name, description or binding changed.",
+  "elements": [
+    {
+      "elementId": "323980733525179",
+      "originalName": "Andre_Athar_Element",
+      "proposedLocalAlias": "AA-ID-20261014-v01"
+    },
+    {
+      "elementId": "324018220506771",
+      "originalName": "Andre Athar_vr",
+      "proposedLocalAlias": "AA-VIDREF-v01"
+    },
+    {
+      "elementId": "323867570654831",
+      "originalName": "Costume 1",
+      "proposedLocalAlias": "WD-GREYTIE-v01"
+    },
+    {
+      "elementId": "323854711683871",
+      "originalName": "table 1",
+      "proposedLocalAlias": "TB-J26ALT4-v01"
+    },
+    {
+      "elementId": "324019350521447",
+      "originalName": "Costumes_Athar_2",
+      "proposedLocalAlias": "WD-GREENCHK-v01"
+    }
+  ],
+  "results": [
+    {
+      "asset_id": "KEXP-E324018220506771-video",
+      "alias": "AA-VIDREF-v01"
+    },
+    {
+      "asset_id": "KEXP-W323866270650569-result",
+      "alias": "EXP-3CAST-TABLE-01"
+    },
+    {
+      "asset_id": "KEXP-W323868230505094-result",
+      "alias": "EXP-GREYTIE-ZEN-01"
+    },
+    {
+      "asset_id": "KEXP-W323869015528491-result",
+      "alias": "EXP-ZEN-SNOW-01"
+    },
+    {
+      "asset_id": "KEXP2-W324018500523155-local",
+      "alias": "EXP-KF-LOCAL-v01"
+    }
+  ]
+}

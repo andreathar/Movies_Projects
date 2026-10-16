@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-E323854711683871-secondary-2",
+  "elementId": "323854711683871",
+  "referenceName": "table 1",
+  "resourceName": "back",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzJhYzY5MzYwYTgzMGU0NGIxZDVlYTI2YmI0ZWQwMTVla3FucjcucG5n.origin?x-kcdn-pid=112372",
+  "role": "secondary",
+  "quality": "provider_original_resource",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-2.png",
+  "sha256": "8465a491e4cf03e1c4af09149eeef40ac8c07543cc9a2b431b75d2beb82b838f",
+  "bytes": 1737870,
+  "contentType": "image/png",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:07:38.422661+00:00",
+  "dimensions": [
+    880,
+    1168
+  ],
+  "approved": false,
+  "provenance": "provider_reference_origin_unverified",
+  "catalogAssetId": "KEXP-E323854711683871-secondary-2",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

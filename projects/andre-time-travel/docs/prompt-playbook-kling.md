@@ -47,3 +47,7 @@ Envelope proven (PILOT-01/02/03): still listening with blink/breath; a few-degre
 
 ## 4. Review protocol used (and required)
 `ffprobe` + full decode; first/mid/last frame triptych; all-frame face-crop grid (11×11 for 5 s) — a sampled strip is triage, the full grid is the gate for face-bearing shots; STT transcript (faster-whisper base.en, in `.venv`) for every speech take, compared to `dialogue-lines.csv`; loudness via `ebur128`. Human full-speed playback + Andre's likeness/voice approval remain separate gates.
+
+## Adendo de referências e nomes — 2026-10-15
+
+[Experimentos, lições e templates de Elements](kling-element-experiments-20261015-v1.md): três testes de Andre arquivados com prompts, inputs, nomes literais e hashes. Proposta de método; sem nova aprovação de rosto, roupa, mesa, composição, voz ou gasto.

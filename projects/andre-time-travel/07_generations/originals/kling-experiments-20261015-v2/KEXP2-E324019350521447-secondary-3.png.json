@@ -1,0 +1,20 @@
+{
+  "asset_id": "KEXP2-E324019350521447-secondary-3",
+  "resourceName": "closeUp",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzE0YWYxNmM4OGNiYzcxODVmMDJlMDliYjEyNmM2ZTc4OWUwem0ucG5n.origin?x-kcdn-pid=112372",
+  "elementId": "324019350521447",
+  "originalName": "Costumes_Athar_2",
+  "quality": "provider_original_resource",
+  "sourcePrompt": null,
+  "sourcePromptGap": "element_get exposes reference resources and description, not their source generation prompts",
+  "approved": false,
+  "retrieval": "downloaded",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-3.png",
+  "sha256": "b638cd7f2644585036a91c07507886f53d7edd72233b7fc32276e5c0dc59bfac",
+  "bytes": 1962491,
+  "contentType": "image/png",
+  "retrievedAt": "2026-10-15T08:58:32.303741+00:00",
+  "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+  "proposedLocalAlias": "WD-GREENCHK-v01",
+  "role": "costume_reference"
+}

@@ -1,0 +1,22 @@
+{
+  "asset_id": "KEXP2-E324019350521447-local-source-candidate",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-local-source-candidate.jpg",
+  "sha256": "8c56b59a261e1af244383a3e41ed5cd149e9f37bfc3247ad214e1d70482d8473",
+  "bytes": 145424,
+  "role": "local_costume_source_candidate",
+  "elementId": "324019350521447",
+  "originalName": "Costumes_Athar_2",
+  "resourceName": "local_source_candidate",
+  "retrieval": "local_original_copied_once",
+  "sourcePath": "/home/athar/Downloads/Photos_Andre/20261014_133324-IMG_STYLE.jpg",
+  "sourceFilename": "20261014_133324-IMG_STYLE.jpg",
+  "contentType": "image/jpeg",
+  "quality": "local_source_candidate_not_byte_identical_to_provider_cover",
+  "sourcePrompt": null,
+  "sourcePromptGap": "No source prompt/model/settings established from Element metadata or local JPEG tags.",
+  "relationship": "Filename stem matches provider cover upload filename; same dimensions and observed content, mean absolute pixel difference 0.604/255 and RMSE 1.130/255. Strong visual correspondence, not proof of exact uploaded bytes.",
+  "relationshipConfirmed": false,
+  "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+  "proposedLocalAlias": "WD-GREENCHK-v01",
+  "approved": false
+}

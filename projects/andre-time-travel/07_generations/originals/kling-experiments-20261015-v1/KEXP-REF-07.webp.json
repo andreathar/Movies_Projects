@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-REF-07",
+  "elementId": null,
+  "referenceName": "Zen-style Café",
+  "resourceName": "cover",
+  "role": "reference_preview",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qSgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBowa2xpbmcvZWxlbWVudC9aZW4tc3R5bGUtQ2FmZcyBLeS4u-imgeWPguiAgy5qcGVn:240x240.webp?x-kcdn-pid=112372",
+  "quality": "web_preview_only_original_missing",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-07.webp",
+  "sha256": "163bcdb7a93f339e3cb2b22492c6a6566b82fa950267d7c58592246dd61c3e5a",
+  "bytes": 7974,
+  "contentType": "image/webp",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:10:46.268043+00:00",
+  "dimensions": [
+    416,
+    240
+  ],
+  "approved": false,
+  "provenance": "web_reference_preview",
+  "catalogAssetId": "KEXP-REF-07",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

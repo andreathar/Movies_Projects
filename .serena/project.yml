@@ -114,17 +114,17 @@ ls_additional_workspace_folders: []
 # Important: quote patterns that start with `*`, otherwise YAML treats them as aliases.
 # Example:
 #   ignored_paths:
-- ".serena/cache/**"
-- ".serena/logs/**"
-- "projects/**/05_storyboard/keyframes/**"
-- "projects/**/05_storyboard/contact-sheets/**"
-- "sites/movies-demandas/.next/**"
 #     - "examples/**"
 #     - ".worktrees/**"
 #     - "**/bin/**"
 #     - "**/obj/**"
 # Note: global ignored_paths from serena_config.yml are also applied additively.
 ignored_paths:
+- ".serena/cache/**"
+- ".serena/logs/**"
+- "projects/**/05_storyboard/keyframes/**"
+- "projects/**/05_storyboard/contact-sheets/**"
+- "sites/movies-demandas/.next/**"
 - "projects/**/02_references/**"
 - "projects/**/04_audio/**"
 - "projects/**/05_storyboard/preproduction-atlas-*/**"

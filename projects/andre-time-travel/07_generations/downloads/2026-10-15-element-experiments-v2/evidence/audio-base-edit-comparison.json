@@ -1,0 +1,12 @@
+{
+  "method": "Pearson correlation on decoded mono 16 kHz PCM samples; no auditory inference",
+  "samples": 240745,
+  "seconds": 15.0465625,
+  "pearson": 0.9999733962252226,
+  "rmsePCM": 8.285007341764862,
+  "baseRMS": 1133.2757345184798,
+  "editRMS": 1132.6897520642854,
+  "maxAbsDifferencePCM": 166.0,
+  "exactSampleIdentity": false,
+  "actualListening": false
+}

@@ -1,0 +1,23 @@
+{
+  "asset_id": "KEXP-E323867570654831-secondary-3",
+  "elementId": "323867570654831",
+  "referenceName": "Costume 1",
+  "resourceName": "closeUp",
+  "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2I5YTJhMTNiNDEzNTY1MmQyNzdkM2YyN2E1YmUwYzZmaHN0b3IucG5n.origin?x-kcdn-pid=112372",
+  "role": "secondary",
+  "quality": "provider_original_resource",
+  "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-3.png",
+  "sha256": "1ba45919d901bf75f90c97b0e56a465c089ac6620d9364ae0a82d12682de6acc",
+  "bytes": 1469397,
+  "contentType": "image/png",
+  "retrieval": "downloaded",
+  "retrievedAt": "2026-10-15T07:07:35.990703+00:00",
+  "dimensions": [
+    880,
+    1168
+  ],
+  "approved": false,
+  "provenance": "provider_reference_origin_unverified",
+  "catalogAssetId": "KEXP-E323867570654831-secondary-3",
+  "catalogPath": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json"
+}

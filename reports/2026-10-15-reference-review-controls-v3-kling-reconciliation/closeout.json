@@ -1,0 +1,251 @@
+{
+  "capturedAt": "2026-10-15T07:29:12.697533+00:00",
+  "checks": {
+    "handoff": {
+      "exitCode": 0,
+      "result": {
+        "status": "ok",
+        "version": "2.0",
+        "errors": [],
+        "advisory": []
+      },
+      "stderr": ""
+    },
+    "archive-handoff": {
+      "exitCode": 0,
+      "result": {
+        "status": "ok",
+        "version": "2.0",
+        "errors": [],
+        "advisory": []
+      },
+      "stderr": ""
+    },
+    "validate": {
+      "exitCode": 0,
+      "result": {
+        "status": "ok",
+        "errors": [],
+        "warnings": [
+          "shared skill changed since linking: film-character-continuity",
+          "shared skill changed since linking: film-dialogue-localization",
+          "shared skill changed since linking: film-editing-qc"
+        ],
+        "projects": [
+          {
+            "id": "andre-time-travel",
+            "chapters": 5,
+            "storyboardSlots": 41,
+            "targetSeconds": 240,
+            "budgetCeiling": 6981,
+            "productionTasks": 21,
+            "taskStates": {
+              "completed": 7,
+              "blocked": 11,
+              "in_progress": 3
+            },
+            "recordedTakes": 11,
+            "finalMovieVerified": false,
+            "registeredSources": 20,
+            "importedSourceSnapshots": 20
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    "lint": {
+      "exitCode": 0,
+      "result": {
+        "status": "ok",
+        "hard": [],
+        "advisory": [
+          "coherence G-MASTER INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+          "coherence G-LISTEN-KF INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+          "coherence G-P03 INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+          "coherence G-P04 INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+          "coherence G-REACTION INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+          "coherence G-HAND-OPTION INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+          "approval flags duplicated in manifest.json and approvals.json (R06)",
+          "5 handoff(s) not ingested: 2026-10-10-execution-plan-v1.json, 2026-10-13-claude-preflight-ledger-audit-v1.json, 2026-10-13-code-quality-intensive-v1.json, 2026-10-15-kling-element-experiments-v1.json, 2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json",
+          "22 handoff(s) superseded; stored hashes kept as history: 2026-10-11-claude-mistakes-promotion-v1.json, 2026-10-11-claude-repo-cleanup-v1.json, 2026-10-11-structure-naming-agents-implementation.json, 2026-10-11-structure-naming-merge-v1.json, 2026-10-12-agent-catalog-frontend-v1.json, 2026-10-12-agent-catalog-frontend-v2.json, 2026-10-12-agent-catalog-frontend-v3.json, 2026-10-12-agent-catalog-frontend-v4.json, 2026-10-12-cinematic-coherence-integration-v1.json, 2026-10-12-documentation-reconciliation-v1.json, 2026-10-12-kling-ab-min-v1.json, 2026-10-12-kling-ab-min-v2.json, 2026-10-12-kling-cli-audit-v2.json, 2026-10-12-kling-otimizacao-v1.json, 2026-10-12-master-plan-implementation-v1.json, 2026-10-12-master-plan-implementation-v2.json, 2026-10-13-agents-hash-reconciliation-v1.json, 2026-10-13-costs-panel-reconciliation-v1.json, 2026-10-13-galileo-active-baseline-v1.json, 2026-10-13-parley-shared-media-organization-v1.json, 2026-10-15-qc-reference-review-controls-v1.json, 2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+          "session-log.json entries use 2 UTC offsets: +0000, -0300",
+          "9 untracked or modified path(s) under projects/andre-time-travel:  M projects/andre-time-travel/asset-registry.csv;  M projects/andre-time-travel/docs/prompt-playbook-kling.md;  M projects/andre-time-travel/memory/mistakes.jsonl; ?? projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/; ?? projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/; ?? projects/andre-time-travel/agents/handoffs/2026-10-15-kling-element-experiments-v1.json; ?? projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v2-reconciliation.json; ?? projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json; ?? projects/andre-time-travel/docs/kling-element-experiments-20261015-v1.md"
+        ],
+        "film": "andre-time-travel"
+      },
+      "stderr": ""
+    },
+    "resume": {
+      "exitCode": 0,
+      "result": {
+        "activeFilm": "andre-time-travel",
+        "readOrder": [
+          "AGENTS.md",
+          "workspace.json",
+          "projects/andre-time-travel/memory/STATE.md",
+          "projects/andre-time-travel/manifest.json",
+          "projects/andre-time-travel/tasks/board.json",
+          "projects/andre-time-travel/00_brief/approvals.json",
+          "projects/andre-time-travel/00_brief/decisions/",
+          "projects/andre-time-travel/tasks/plans/workflow-map-v1.md"
+        ],
+        "stateHeadline": "Reconciled 2026-10-09 (memory restructure, Phase 0). This is the single resume surface. Keep it under ~80 lines: replace stale lines, do not append narrative. History lives in `history/`; full pre-restructure text: `history/STATE-2026-10-09-pre-restructure.md` (sha256 5e426020…27da). Not live data: re-verify against the canonical files below before acting.",
+        "taskCounts": {
+          "completed": 7,
+          "blocked": 11,
+          "in_progress": 3
+        },
+        "openTasks": [
+          {
+            "id": "T06",
+            "title": "Resolve historical-language targets and reviewers",
+            "ownerRole": "dialogue-sound",
+            "status": "blocked",
+            "blocker": "Script v2 approved (T05), but Latin and Corsican are absent from the ElevenLabs language lists, earlier translations are superseded and must restart from script v2, and no qualified language reviewer is named. Unblock: Andre names reviewers per language and the dialogue-sound role records the feasible route per language (R03). Does not block the English edition."
+          },
+          {
+            "id": "T07",
+            "title": "Approve voice samples and dry dialogue",
+            "ownerRole": "dialogue-sound",
+            "status": "blocked",
+            "blocker": "Andre approved likeness but rejected native voice; temporary guide authorized by D14. Final dubbing/ear approval remains pending."
+          },
+          {
+            "id": "T10",
+            "title": "Reforecast costs and freeze the production envelope",
+            "ownerRole": "producer",
+            "status": "in_progress",
+            "blocker": "Base Galileo ativa: próximo gasto proposto é um único G-P04 após referências/timing; sem cotação/liberação atual e sem orçamento herdado."
+          },
+          {
+            "id": "T11",
+            "title": "Approve the storyboard and audio-first animatic",
+            "ownerRole": "storyboard",
+            "status": "blocked",
+            "blocker": "Animatic G-L03/G-L04 de 16 s é evidência histórica de timing. Escuta/playback e ritmo aguardam revisão; guia D14 permite preparação local."
+          },
+          {
+            "id": "T12",
+            "title": "Approve era and eye keyframes",
+            "ownerRole": "storyboard",
+            "status": "in_progress",
+            "blocker": "T12 materiais/continuidade consolidados para Galileo na activeBaseline do plano. Sete fontes propostas; faltam corrigir paletó/mesa e obter semelhança de Andre. Sem aceite artístico."
+          },
+          {
+            "id": "T13",
+            "title": "Produce Galileo as the first complete chapter",
+            "ownerRole": "producer",
+            "status": "in_progress",
+            "blocker": "Base ativa Galileo G-L03/G-L04: referências → diálogo/movimento → teste único G-P04 → cobertura → edição → QC. Próximo: continuidade do master. Mídia anterior preservada como história; nenhum novo take aceito ou gasto liberado."
+          },
+          {
+            "id": "T14",
+            "title": "Produce Caesar coverage",
+            "ownerRole": "producer",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T15",
+            "title": "Produce Genghis Khan coverage",
+            "ownerRole": "producer",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T16",
+            "title": "Produce Napoleon coverage",
+            "ownerRole": "producer",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T17",
+            "title": "Produce Oppenheimer coverage",
+            "ownerRole": "producer",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T18",
+            "title": "Produce opening/ending and lock the English picture",
+            "ownerRole": "editor",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T19",
+            "title": "Spend the correction reserve on measured gaps",
+            "ownerRole": "producer",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T20",
+            "title": "Assemble and verify the historical-language edition",
+            "ownerRole": "dialogue-sound",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          },
+          {
+            "id": "T21",
+            "title": "Finish, deliver, and independently verify both masters",
+            "ownerRole": "qc",
+            "status": "blocked",
+            "blocker": "Awaiting dependency completion and applicable approval"
+          }
+        ],
+        "creativeApprovals": {
+          "characterReferences": true,
+          "productionElement": true,
+          "screenplay": true,
+          "voiceTests": false,
+          "speechRoute": true,
+          "pilot": true,
+          "storyboard": false,
+          "paidBatch": false,
+          "finalPicture": false
+        },
+        "andreOnlyGates": [],
+        "balance": {
+          "snapshot": 6981,
+          "observedDate": "2026-10-09",
+          "isLive": false
+        },
+        "recentHandoffs": [
+          {
+            "name": "2026-10-15-qc-reference-review-controls-v1.json",
+            "reviewStatus": "pending_producer_review",
+            "ingest": "pending"
+          },
+          {
+            "name": "2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+            "reviewStatus": "pending_producer_review",
+            "ingest": "pending"
+          },
+          {
+            "name": "2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json",
+            "reviewStatus": "pending_producer_review",
+            "ingest": "pending"
+          }
+        ],
+        "openMistakes": 1,
+        "lint": {
+          "hard": 0,
+          "advisory": 11
+        }
+      },
+      "stderr": ""
+    }
+  },
+  "guardedFilesUnchanged": 151,
+  "historicalEvidenceRewritten": false,
+  "sourceMediaOrApprovalsChanged": false,
+  "ingestionPerformed": false,
+  "workspaceExporterFresh": true,
+  "productionExporterFresh": false,
+  "productionSemanticContentIdentical": true,
+  "galleryServed": false,
+  "metadataVisibleInFrontend": true,
+  "nextOwner": "producer desktop"
+}

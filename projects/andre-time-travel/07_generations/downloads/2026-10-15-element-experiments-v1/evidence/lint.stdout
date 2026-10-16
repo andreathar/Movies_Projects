@@ -1,0 +1,21 @@
+{
+  "status": "error",
+  "hard": [
+    "2026-10-15-qc-reference-review-controls-v2-reconciliation.json: changedFiles sha256 mismatch: sites/movies-demandas/data/workspace-reference.json",
+    "2026-10-15-qc-reference-review-controls-v2-reconciliation.json: changedFiles sha256 mismatch: sites/movies-demandas/scripts/export-workspace.mjs"
+  ],
+  "advisory": [
+    "coherence G-MASTER INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-LISTEN-KF INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-P03 INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-P04 INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-REACTION INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-HAND-OPTION INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "approval flags duplicated in manifest.json and approvals.json (R06)",
+    "4 handoff(s) not ingested: 2026-10-10-execution-plan-v1.json, 2026-10-13-claude-preflight-ledger-audit-v1.json, 2026-10-13-code-quality-intensive-v1.json, 2026-10-15-qc-reference-review-controls-v2-reconciliation.json",
+    "21 handoff(s) superseded; stored hashes kept as history: 2026-10-11-claude-mistakes-promotion-v1.json, 2026-10-11-claude-repo-cleanup-v1.json, 2026-10-11-structure-naming-agents-implementation.json, 2026-10-11-structure-naming-merge-v1.json, 2026-10-12-agent-catalog-frontend-v1.json, 2026-10-12-agent-catalog-frontend-v2.json, 2026-10-12-agent-catalog-frontend-v3.json, 2026-10-12-agent-catalog-frontend-v4.json, 2026-10-12-cinematic-coherence-integration-v1.json, 2026-10-12-documentation-reconciliation-v1.json, 2026-10-12-kling-ab-min-v1.json, 2026-10-12-kling-ab-min-v2.json, 2026-10-12-kling-cli-audit-v2.json, 2026-10-12-kling-otimizacao-v1.json, 2026-10-12-master-plan-implementation-v1.json, 2026-10-12-master-plan-implementation-v2.json, 2026-10-13-agents-hash-reconciliation-v1.json, 2026-10-13-costs-panel-reconciliation-v1.json, 2026-10-13-galileo-active-baseline-v1.json, 2026-10-13-parley-shared-media-organization-v1.json, 2026-10-15-qc-reference-review-controls-v1.json",
+    "session-log.json entries use 2 UTC offsets: +0000, -0300",
+    "7 untracked or modified path(s) under projects/andre-time-travel:  M projects/andre-time-travel/asset-registry.csv;  M projects/andre-time-travel/docs/prompt-playbook-kling.md;  M projects/andre-time-travel/memory/mistakes.jsonl; ?? projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/; ?? projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/; ?? projects/andre-time-travel/agents/handoffs/2026-10-15-qc-reference-review-controls-v2-reconciliation.json; ?? projects/andre-time-travel/docs/kling-element-experiments-20261015-v1.md"
+  ],
+  "film": "andre-time-travel"
+}

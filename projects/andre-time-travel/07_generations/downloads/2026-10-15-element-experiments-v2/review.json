@@ -1,0 +1,54 @@
+{
+  "method": "All decoded frames viewed as consecutive 256×144 static tiles, 40/tile sheet (last padded). 45 sheets / 1636 populated tiles. Computational scene/difference metrics and offline ASR are supporting data, not perception.",
+  "framesInspected": 1636,
+  "sheetsInspected": 45,
+  "normalSpeedPlaybackWatched": false,
+  "actualAudioListening": false,
+  "audioInputLimitation": "Tool explicitly omitted audio because this model does not support audio input.",
+  "observations": [
+    {
+      "asset_id": "KEXP-E324018220506771-video",
+      "frames": 192,
+      "observed": "Split screen throughout. Left body approaches then turns profile/back near 5.5–7.1s; right portrait articulates/blinks. Broad longer hair/beard, pinstripe jacket and black shirt persist in these thumbnails. Two simultaneous views remain, so this is a composite reference, not a clean single-subject shot.",
+      "limits": "No normal-speed playback or heard speech; no full-resolution facial/voice acceptance."
+    },
+    {
+      "asset_id": "KEXP-W323866270650569-result",
+      "frames": 361,
+      "observed": "Three cast members persist: realistic woman left, short-haired man center, cartoon Sarah right. Hard cut f170→171 at 7.125s changes height/framing. Mouth and hand activity exceeds a simple silent gaze; gaze also goes toward camera.",
+      "limits": "Table perspective changes; no metric proof of table geometry or exact facial likeness."
+    },
+    {
+      "asset_id": "KEXP-W323868230505094-result",
+      "frames": 361,
+      "observed": "Both companions are absent throughout all 361 static thumbnails. Solo short-haired man wears grey jacket/white shirt/tie in café; purple black-hole effect appears around 1.5s. Pose/framing/effect jumps f170→171 near 7.125s; automated scene threshold misses it.",
+      "limits": "Compared to the archived base sequence, visual cast is not retained. Audio similarity is measured separately, not heard."
+    },
+    {
+      "asset_id": "KEXP-W323869015528491-result",
+      "frames": 361,
+      "observed": "Three people persist, kneeling around a low table in café. Sarah is on screen left, realistic woman right. Hard cut f182→183 at 7.625s goes wide→close. Snow increases; a large foreground flake occludes the man’s face around 10.83–11.25s.",
+      "limits": "This is a separate generation; an unspecified previous seating arrangement cannot be assumed. Face continuity cannot be assessed while occluded."
+    },
+    {
+      "asset_id": "KEXP2-W324018500523155-local",
+      "frames": 361,
+      "observed": "Opening portrait widens into two-person kung-fu choreography on white background. Longer-haired man in grey pinstripe jacket/black shirt and second dark-haired man in black remain broadly distinguishable. Camera framing and screen positions change as bodies move; limbs/faces overlap during blocks and kicks.",
+      "limits": "Every frame inspected as a 256×144 static tile; blur/occlusion prevents certifying hands, contact physics or exact identity. No inferred opponent identity, 200mm focal-length verification or binding to the inventoried web item. Local artifact has zero audio streams."
+    }
+  ],
+  "audio": {
+    "baseEditPearsonMono16k": 0.9999733962252226,
+    "baseEditInterpretation": "Strong numerical similarity after decoding; sample arrays are not identical. Does not establish perceived intelligibility, speaker match or lip sync.",
+    "rawComparison": "evidence/audio-base-edit-comparison.json",
+    "ASR": "Local cached faster-whisper-base.en, CPU int8, no downloads. Raw English hypotheses contain implausible text and are not trusted transcripts or language judgments.",
+    "needsHumanListening": [
+      "intelligibility and language",
+      "voice identity",
+      "lip sync and off-screen speech",
+      "hit sounds and original kung-fu audio",
+      "end truncation in 8-second reference"
+    ]
+  },
+  "andreJudgments": "Andre described naming references as a successful strategy. No individual sample approval/judgment supplied. All observations here are the archivist’s."
+}

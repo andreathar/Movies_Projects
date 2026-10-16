@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-15T07:29:11.824783+00:00",
+  "method": "Supported CUA browser DOM/AX observation in existing running frontend tab",
+  "url": "http://127.0.0.1:5173/",
+  "navigation": [
+    "Organização",
+    "Pontos de entrada",
+    "Experimentos Kling"
+  ],
+  "secondaryEntry": "Lições de Elements",
+  "catalogCountDisplayed": 318,
+  "catalogSHA256Displayed": "0d3d99d1e856d66a6049efbdd75577785633c32d221578dd5a96c2ff0b30d2b2",
+  "catalogEntryTitleCount": 1,
+  "pathDisplayed": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/index.html",
+  "entryControl": "Copiar caminho projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/index.html",
+  "anchorLinksObserved": [
+    {
+      "text": "Ir para o conteúdo",
+      "href": "#main"
+    },
+    {
+      "text": "",
+      "href": "https://chatgpt.com/space/page_6ac9adf8b0f0819195bd752c10fe30cc"
+    }
+  ],
+  "galleryAnchorPresent": false,
+  "galleryServed": false,
+  "correspondingHTTPStatus": 404,
+  "metadataDiscoverabilityOnly": true,
+  "tabNavigationPersistsInURL": false,
+  "sourceEvidence": [
+    "sites/movies-demandas/app/workspace-reference.tsx",
+    "sites/movies-demandas/app/dashboard.tsx",
+    "sites/movies-demandas/app/_dashboard/navigation.ts"
+  ]
+}

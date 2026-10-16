@@ -1,0 +1,1778 @@
+{
+  "schemaVersion": "1.0",
+  "scope": "Archive and observations of three October 13 tests, four recent owned Elements and their associated reference previews. No creative acceptance.",
+  "createdAt": "2026-10-15T07:15:47.015238+00:00",
+  "summary": {
+    "resourceRecords": 28,
+    "uniqueMediaFiles": 27,
+    "newCanonicalMediaFiles": 24,
+    "newCanonicalMediaBytes": 59860079,
+    "reusedExistingFiles": 3,
+    "duplicateURLRolesReused": 1,
+    "transferBytes": 68098885,
+    "transferBudgetBytes": 314572800,
+    "resultVideos": 3,
+    "videoElementSources": 1,
+    "referenceImages": 22,
+    "expiredURLs": 0,
+    "sourcePreviewsWithoutOriginals": 9,
+    "paidJobsSubmitted": 0,
+    "uploads": 0,
+    "elementMutations": 0,
+    "newReviewDerivatives": 6,
+    "reviewDerivativeBytes": 438717,
+    "transientBrowserDuplicatesRemoved": 2,
+    "transientBrowserDuplicateBytes": 21898092,
+    "knownTransferBytesIncludingRemovedBrowserDuplicates": 89996977,
+    "unmeasuredBrowserTransferOverhead": true
+  },
+  "elements": [
+    {
+      "id": "324018220506771",
+      "name": "Andre Athar_vr",
+      "description": "A man with shoulder-length wavy brown hair and a beard, wearing a dark pinstripe suit over a black shirt, is shown in two views: walking toward the camera in a full-body shot against a plain white background, and in a close-up portrait shot focusing on his face and upper torso.",
+      "type": "video",
+      "resource": {
+        "cover": "https://s15-kling.klingai.com/kimg/EMXN1y8qPgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBokMTNjOGExZjAtODI5OS00ZjExLTlkNzUtMWQ2MWNlYThjYTk4.origin?x-kcdn-pid=112372",
+        "video": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ai_portal/1792046666/haGNQlyPnC/andre_video_reference_du8_24fps.mp4?x-kcdn-pid=112372",
+        "voice": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ai_portal/1792046666/haGNQlyPnC/andre_video_reference_du8_24fps.mp4?x-kcdn-pid=112372"
+      },
+      "tags": [
+        "Characters"
+      ]
+    },
+    {
+      "id": "323980733525179",
+      "name": "Andre_Athar_Element",
+      "description": "A man with shoulder-length wavy brown hair and a beard, standing upright against a plain white background, wearing a grey pinstripe suit with a black button-up shirt, a brown leather belt with a silver buckle, and brown leather dress shoes.",
+      "type": "image",
+      "resource": {
+        "cover": "https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWlfcG9ydGFsLzE3OTIwMDcwMTkvN2lVYmJhRFhGai8yMDI2MTAxNF8xMzMwMDMtaW1nX3N0eWxlLmpwZw.origin?x-kcdn-pid=112372",
+        "secondary": [
+          {
+            "name": "sideHalf",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzdhYTJiOTJjNjJhNTc5OTYwMWYwZjczNDIxMTEyYjBhdjl5OGMucG5n.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "closeUp",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2M1OTdlOTkyZmI3NmJjZjdjNjZjMjQxMjM2Y2QyNDg5NmZnZDkucG5n.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "backWhole",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2E1MTI3MGI4YTM3NTEzMGJkMjBhYzE2Nzg4MGQxODc3OGZrazIucG5n.origin?x-kcdn-pid=112372"
+          }
+        ],
+        "voice": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/agent_upload/1791554368/2TrBGsp9XS/elevenlabs_2026-10-09t10_42_57.mp3?x-kcdn-pid=112372"
+      },
+      "tags": [
+        "Characters"
+      ]
+    },
+    {
+      "id": "323867570654831",
+      "name": "Costume 1",
+      "description": "A gray textured blazer over a white shirt and dark blue tie. ",
+      "type": "image",
+      "resource": {
+        "cover": "https://s15-kling.klingai.com/kimg/EMXN1y8qUAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo2c3RhcmdhdGUvMTE0Lzc5NzlhZWIwLTUyMTEtNDA1Ni1hNGFhLTU0ZWM0YjAxMzY0OC5qcGVn.origin?x-kcdn-pid=112372",
+        "secondary": [
+          {
+            "name": "front",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzVhYmQ1ODVhMGViN2RmZjdiZDM0NDkyMDEzYThlZjljcDBiMjAucG5n.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "side",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzE1NDE4ZDdhNWQ3OGNkNzQzYzdiZWZlNzU2NmQ0ZGQyeDN3dmEucG5n.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "closeUp",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2I5YTJhMTNiNDEzNTY1MmQyNzdkM2YyN2E1YmUwYzZmaHN0b3IucG5n.origin?x-kcdn-pid=112372"
+          }
+        ]
+      },
+      "tags": [
+        "Costumes"
+      ]
+    },
+    {
+      "id": "323854711683871",
+      "name": "table 1",
+      "description": "A rustic wooden table constructed from multiple planks, featuring a visible grain, knots, and a circular white mark on its surface, supported by sturdy legs with horizontal braces, set against a dark, textured wall and stone pillar.",
+      "type": "image",
+      "resource": {
+        "cover": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzM5MDViOGY0LWI2OGQtNDdjYS05OWNiLWI3YzRlYjI1OWQ1OC5wbmc.origin?x-kcdn-pid=112372",
+        "secondary": [
+          {
+            "name": "front",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzRkY2Y2YmM5OWIzZDQwNGJjMGE0NjE3MTMxODkwMGRhM3pmZXIucG5n.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "back",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzJhYzY5MzYwYTgzMGU0NGIxZDVlYTI2YmI0ZWQwMTVla3FucjcucG5n.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "side",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2E5MjZiODc5NGE4NDRhZTY2NWM3MzI3MGZjMDlkMmM3dzgwZWEucG5n.origin?x-kcdn-pid=112372"
+          }
+        ]
+      },
+      "tags": [
+        "Items"
+      ]
+    },
+    {
+      "id": "323525046658711",
+      "name": "Andre Athar - grey suit - identity v2 20261009",
+      "description": "Andre Athar, lead of The Table Between Centuries. Real 2024 photographs, frontal set: short textured dark-brown hair, light stubble, grey pinstripe suit jacket, white striped open-collar shirt. Use for all Andre keyframes and video; wardrobe invariant across eras.",
+      "type": "image",
+      "resource": {
+        "cover": "https://s15-kling.klingai.com/kimg/EMXN1y8qWwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpBYWdlbnRfdXBsb2FkLzE3OTE1NTM1NTAvaG8xRmJYTXR1bi9jb3Zlcl8yMDI0MDIwMl8wMTUzNDFfaHMzNC5qcGc.origin?x-kcdn-pid=112372",
+        "secondary": [
+          {
+            "name": "secondary_1",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qWgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpAYWdlbnRfdXBsb2FkLzE3OTE1NTM1NTQvdWF2cEE5WWdJQy9zZWMxXzIwMjQwMjAyXzAxNTM0N19oczM0LmpwZw.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "secondary_2",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qWgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpAYWdlbnRfdXBsb2FkLzE3OTE1NTM1NTgvcWRPbWRTOGEwNS9zZWMyXzIwMjQwMjAyXzAxNTQyMV9oczM0LmpwZw.origin?x-kcdn-pid=112372"
+          },
+          {
+            "name": "secondary_3",
+            "inputType": "URL",
+            "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qWgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBpAYWdlbnRfdXBsb2FkLzE3OTE1NTM1NjIvaUk3SExVaWNMTS9zZWMzXzIwMjQwMjAyXzAxNTMyOF9oczM0LmpwZw.origin?x-kcdn-pid=112372"
+          }
+        ],
+        "voice": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/agent_upload/1791554368/2TrBGsp9XS/elevenlabs_2026-10-09t10_42_57.mp3?x-kcdn-pid=112372"
+      },
+      "tags": [
+        "Characters"
+      ]
+    }
+  ],
+  "sourceGenerationMetadata": {
+    "323867570654831": {
+      "metadataPath": "projects/andre-time-travel/07_generations/originals/R1-J25-costume-oppenheimer_1.json",
+      "metadataSHA256": "9527420a02a9b30bc4380a1b4e7b0cc6a6887ef13fd901f639a7a9738199b986",
+      "job": "R1-J25-costume-oppenheimer",
+      "generationId": "ARhatI2BZLf2HhN7jMABocI2X1jna5Okb5ZZTIhJOe_8O6ZhotHZjt1-yeAr-smDJkt-aw6F",
+      "tool": "text_to_image",
+      "model": "gemini-3.1-flash-image",
+      "options": {
+        "img_resolution": "2k",
+        "aspect_ratio": "4:5",
+        "imageCount": 1
+      },
+      "refs": [],
+      "prompt": "Photorealistic cinematic costume detail photograph. The frame is cropped from the collarbone down to the waist: the head, face, chin and neck are completely outside the frame above the top edge. Both hands visible with natural anatomy. Original fictional costume reference, historically grounded, no text, no watermark, no other people, no face anywhere. Man's torso in a rumpled 1940s grey suit jacket over a white shirt with a loosened narrow tie, fingers holding a pencil. Pale pre-dawn desert light through a window.",
+      "provenance": "synthetic_fictional_costume",
+      "approved": false,
+      "sha256": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d",
+      "note": "below-neck costume fragment; oppenheimer",
+      "created": "2026-10-09T08:05:14-03:00"
+    },
+    "323854711683871": {
+      "metadataPath": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_4_alt.json",
+      "metadataSHA256": "9262a9756e7cc21eb2bfe921610b9690851c519cf61428cd71389a2496efc940",
+      "job": "R1-J26-table-anchor",
+      "generationId": "AYU7Vr4vNUkt865fG3WgBE01nqNEDXSVLBvLig-M14o-jPjwqafQjgUNxkwiRRSmcM4gvP0X",
+      "tool": "text_to_image",
+      "model": "gemini-3.1-flash-image",
+      "options": {
+        "img_resolution": "2k",
+        "aspect_ratio": "3:2",
+        "imageCount": 4
+      },
+      "refs": [],
+      "prompt": "Photorealistic cinematic photograph of a plain unpainted solid oak table made of wide planks, matte raw wood with visible length-wise grain, one small chipped nick on the near-left front edge, a faint pale ring stain near the centre, hand-planed top, simple square legs. Empty table, nothing on it, no people, no chairs in frame. Camera at table height, three-quarter angle from the front-left, soft warm window light from the right, plain dark neutral background. Sharp focus on the grain, fine film grain. No text, no watermark.",
+      "provenance": "synthetic_table_reference",
+      "approved": false,
+      "sha256": "629651c09beef771aa9ecd3379e64139db4e2b63f0e93346fe708abb05caf82d",
+      "note": "table anchor candidates (4)",
+      "created": "2026-10-09T08:05:58-03:00"
+    }
+  },
+  "tests": [
+    {
+      "webHistoryId": "323866270650569",
+      "name": "kling_20261013_VIDEO_Andre Atha_5250_0",
+      "createdAtDisplayed": "10/13/2026, 9:33:09 AM",
+      "resolution": "720p",
+      "segments": [
+        {
+          "kind": "reference",
+          "text": "Andre Athar"
+        },
+        {
+          "kind": "text",
+          "text": "sit at "
+        },
+        {
+          "kind": "reference",
+          "text": "table 1"
+        },
+        {
+          "kind": "text",
+          "text": "with "
+        },
+        {
+          "kind": "reference",
+          "text": "Blonde Lady"
+        },
+        {
+          "kind": "text",
+          "text": "and "
+        },
+        {
+          "kind": "reference",
+          "text": "Sarah"
+        },
+        {
+          "kind": "text",
+          "text": ".they keep looking at each other faces . "
+        }
+      ],
+      "asset_id": "KEXP-W323866270650569-result",
+      "generationId": null,
+      "workIndex": null,
+      "modelLabel": "VIDEO 3.0 Omni",
+      "canonicalModel": "kling-video-v3_0_omni",
+      "canonicalModelEvidence": "label mapping to live capability catalog; original request unavailable",
+      "durationDisplayedSeconds": 15,
+      "displayedTimeZone": null,
+      "promptEvidence": "Ordered DOM children of #work-detail-comment-content-id .prompt-render; exact text segments and reference names; spaces between inline chips are rendering, not serialized request.",
+      "serializedProviderPrompt": null,
+      "settingsUnknown": [
+        "seed",
+        "nativeAudioFlag",
+        "prefer_multi_shots",
+        "customMultiShot",
+        "creditCharge",
+        "originalTool",
+        "originalRequestBindings"
+      ],
+      "approved": false,
+      "promptReadable": "[@Andre Athar] sit at [@table 1] with [@Blonde Lady] and [@Sarah] .they keep looking at each other faces . ",
+      "inputs": [
+        {
+          "referenceName": "Andre Athar",
+          "assetIds": [
+            "KEXP-REF-01",
+            "KEXP-REF-02",
+            "KEXP-REF-03",
+            "KEXP-REF-04"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "table 1",
+          "assetIds": [
+            "KEXP-E323854711683871-cover"
+          ],
+          "elementId": "323854711683871",
+          "bindingEvidence": "Exact observed cover URL matches element_get"
+        },
+        {
+          "referenceName": "Blonde Lady",
+          "assetIds": [
+            "KEXP-REF-05"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "Sarah",
+          "assetIds": [
+            "KEXP-REF-06"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        }
+      ]
+    },
+    {
+      "webHistoryId": "323868230505094",
+      "name": "kling_20261013_VIDEO_on @Videop_5404_0",
+      "createdAtDisplayed": "10/13/2026, 10:05:48 AM",
+      "resolution": "1080p",
+      "segments": [
+        {
+          "kind": "text",
+          "text": "on "
+        },
+        {
+          "kind": "reference",
+          "text": "Video1"
+        },
+        {
+          "kind": "text",
+          "text": "put this clothes "
+        },
+        {
+          "kind": "reference",
+          "text": "Costume 1"
+        },
+        {
+          "kind": "text",
+          "text": "on "
+        },
+        {
+          "kind": "reference",
+          "text": "Andre Athar"
+        },
+        {
+          "kind": "text",
+          "text": "and make the ambience like "
+        },
+        {
+          "kind": "reference",
+          "text": "Zen-style Café"
+        },
+        {
+          "kind": "text",
+          "text": "with "
+        },
+        {
+          "kind": "reference",
+          "text": "Stellar Black Hole"
+        }
+      ],
+      "asset_id": "KEXP-W323868230505094-result",
+      "generationId": null,
+      "workIndex": null,
+      "modelLabel": "VIDEO 3.0 Omni",
+      "canonicalModel": "kling-video-v3_0_omni",
+      "canonicalModelEvidence": "label mapping to live capability catalog; original request unavailable",
+      "durationDisplayedSeconds": 15,
+      "displayedTimeZone": null,
+      "promptEvidence": "Ordered DOM children of #work-detail-comment-content-id .prompt-render; exact text segments and reference names; spaces between inline chips are rendering, not serialized request.",
+      "serializedProviderPrompt": null,
+      "settingsUnknown": [
+        "seed",
+        "nativeAudioFlag",
+        "prefer_multi_shots",
+        "customMultiShot",
+        "creditCharge",
+        "originalTool",
+        "originalRequestBindings"
+      ],
+      "approved": false,
+      "promptReadable": "on [@Video1] put this clothes [@Costume 1] on [@Andre Athar] and make the ambience like [@Zen-style Café] with [@Stellar Black Hole] ",
+      "inputs": [
+        {
+          "referenceName": "Video1",
+          "assetIds": [
+            "KEXP-W323866270650569-result"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Input thumbnail matches base-result thumbnail"
+        },
+        {
+          "referenceName": "Costume 1",
+          "assetIds": [
+            "KEXP-E323867570654831-cover"
+          ],
+          "elementId": "323867570654831",
+          "bindingEvidence": "Exact observed cover URL matches element_get"
+        },
+        {
+          "referenceName": "Andre Athar",
+          "assetIds": [
+            "KEXP-REF-01",
+            "KEXP-REF-02",
+            "KEXP-REF-03",
+            "KEXP-REF-04"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "Zen-style Café",
+          "assetIds": [
+            "KEXP-REF-07"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "Stellar Black Hole",
+          "assetIds": [
+            "KEXP-REF-09"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        }
+      ]
+    },
+    {
+      "webHistoryId": "323869015528491",
+      "name": "kling_20261013_VIDEO_Andre Atha_5453_0",
+      "createdAtDisplayed": "10/13/2026, 10:18:54 AM",
+      "resolution": "720p",
+      "segments": [
+        {
+          "kind": "reference",
+          "text": "Andre Athar"
+        },
+        {
+          "kind": "text",
+          "text": "sit at "
+        },
+        {
+          "kind": "reference",
+          "text": "table 1"
+        },
+        {
+          "kind": "text",
+          "text": "with "
+        },
+        {
+          "kind": "reference",
+          "text": "Blonde Lady"
+        },
+        {
+          "kind": "text",
+          "text": "and "
+        },
+        {
+          "kind": "reference",
+          "text": "Sarah"
+        },
+        {
+          "kind": "text",
+          "text": "at "
+        },
+        {
+          "kind": "reference",
+          "text": "Zen-style Café"
+        },
+        {
+          "kind": "text",
+          "text": ".they keep looking at each other faces . while"
+        },
+        {
+          "kind": "reference",
+          "text": "Snowflake"
+        },
+        {
+          "kind": "text",
+          "text": "keeps falling inside the place. "
+        }
+      ],
+      "asset_id": "KEXP-W323869015528491-result",
+      "generationId": null,
+      "workIndex": null,
+      "modelLabel": "VIDEO 3.0 Omni",
+      "canonicalModel": "kling-video-v3_0_omni",
+      "canonicalModelEvidence": "label mapping to live capability catalog; original request unavailable",
+      "durationDisplayedSeconds": 15,
+      "displayedTimeZone": null,
+      "promptEvidence": "Ordered DOM children of #work-detail-comment-content-id .prompt-render; exact text segments and reference names; spaces between inline chips are rendering, not serialized request.",
+      "serializedProviderPrompt": null,
+      "settingsUnknown": [
+        "seed",
+        "nativeAudioFlag",
+        "prefer_multi_shots",
+        "customMultiShot",
+        "creditCharge",
+        "originalTool",
+        "originalRequestBindings"
+      ],
+      "approved": false,
+      "promptReadable": "[@Andre Athar] sit at [@table 1] with [@Blonde Lady] and [@Sarah] at [@Zen-style Café] .they keep looking at each other faces . while[@Snowflake] keeps falling inside the place. ",
+      "inputs": [
+        {
+          "referenceName": "Andre Athar",
+          "assetIds": [
+            "KEXP-REF-01",
+            "KEXP-REF-02",
+            "KEXP-REF-03",
+            "KEXP-REF-04"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "table 1",
+          "assetIds": [
+            "KEXP-E323854711683871-cover"
+          ],
+          "elementId": "323854711683871",
+          "bindingEvidence": "Exact observed cover URL matches element_get"
+        },
+        {
+          "referenceName": "Blonde Lady",
+          "assetIds": [
+            "KEXP-REF-05"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "Sarah",
+          "assetIds": [
+            "KEXP-REF-06"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "Zen-style Café",
+          "assetIds": [
+            "KEXP-REF-07"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        },
+        {
+          "referenceName": "Snowflake",
+          "assetIds": [
+            "KEXP-REF-08"
+          ],
+          "elementId": null,
+          "bindingEvidence": "Exact display name and preview; numeric Element ID unavailable"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "asset_id": "KEXP-E324018220506771-cover",
+      "elementId": "324018220506771",
+      "referenceName": "Andre Athar_vr",
+      "resourceName": "cover",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBokMTNjOGExZjAtODI5OS00ZjExLTlkNzUtMWQ2MWNlYThjYTk4.origin?x-kcdn-pid=112372",
+      "role": "cover",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-cover.jpg",
+      "sha256": "c5ca1001d6098513b49db7d0abd808abf6025ebffda990ce5a841061d6ecdb1e",
+      "bytes": 58473,
+      "contentType": "image/jpeg",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:28.691297+00:00",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "asset_id": "KEXP-E324018220506771-video",
+      "elementId": "324018220506771",
+      "referenceName": "Andre Athar_vr",
+      "resourceName": "video",
+      "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ai_portal/1792046666/haGNQlyPnC/andre_video_reference_du8_24fps.mp4?x-kcdn-pid=112372",
+      "role": "video",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4",
+      "sha256": "da3d90a0d5b6aeba422f78f29e3ed5064ed20a216050e05f069ecf27d3ff70a7",
+      "bytes": 3681239,
+      "contentType": "video/mp4",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:29.600047+00:00",
+      "technical": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High 10",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1920,
+            "height": 1080,
+            "coded_width": 1920,
+            "coded_height": 1080,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "16:9",
+            "pix_fmt": "yuv420p10le",
+            "level": 40,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 98304,
+            "duration": "8.000000",
+            "bit_rate": "3543794",
+            "bits_per_raw_sample": "10",
+            "nb_frames": "192",
+            "extradata_size": 47,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "32000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/32000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 256000,
+            "duration": "8.000000",
+            "bit_rate": "129275",
+            "nb_frames": "251",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "8.000000",
+          "size": "3681239",
+          "bit_rate": "3681239",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf58.29.100"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "KEXP-E324018220506771-voice",
+      "elementId": "324018220506771",
+      "referenceName": "Andre Athar_vr",
+      "resourceName": "voice",
+      "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/ai_portal/1792046666/haGNQlyPnC/andre_video_reference_du8_24fps.mp4?x-kcdn-pid=112372",
+      "role": "voice",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4",
+      "sha256": "da3d90a0d5b6aeba422f78f29e3ed5064ed20a216050e05f069ecf27d3ff70a7",
+      "bytes": 3681239,
+      "contentType": "video/mp4",
+      "retrieval": "duplicate_url_reused",
+      "retrievedAt": "2026-10-15T07:07:29.600047+00:00"
+    },
+    {
+      "asset_id": "KEXP-E323980733525179-cover",
+      "elementId": "323980733525179",
+      "referenceName": "Andre_Athar_Element",
+      "resourceName": "cover",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWlfcG9ydGFsLzE3OTIwMDcwMTkvN2lVYmJhRFhGai8yMDI2MTAxNF8xMzMwMDMtaW1nX3N0eWxlLmpwZw.origin?x-kcdn-pid=112372",
+      "role": "cover",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-cover.jpg",
+      "sha256": "4e1f48c5bba9c9b4ea7cc024cd4fbdb1e301345222756197b22c03e209ed28af",
+      "bytes": 83056,
+      "contentType": "image/jpeg",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:30.163912+00:00",
+      "dimensions": [
+        768,
+        1376
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323980733525179-secondary-1",
+      "elementId": "323980733525179",
+      "referenceName": "Andre_Athar_Element",
+      "resourceName": "sideHalf",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzdhYTJiOTJjNjJhNTc5OTYwMWYwZjczNDIxMTEyYjBhdjl5OGMucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-1.png",
+      "sha256": "f89b77f7e503925a1f483acefc0ea8cab55db3ca4c08827e73b0e8f8b998533b",
+      "bytes": 926180,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:30.846176+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323980733525179-secondary-2",
+      "elementId": "323980733525179",
+      "referenceName": "Andre_Athar_Element",
+      "resourceName": "closeUp",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2M1OTdlOTkyZmI3NmJjZjdjNjZjMjQxMjM2Y2QyNDg5NmZnZDkucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-2.png",
+      "sha256": "4b551239b3c80269c4be28e002b5312753fd0f4571dec6284ad6d63e29c22b03",
+      "bytes": 1453914,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:31.668781+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323980733525179-secondary-3",
+      "elementId": "323980733525179",
+      "referenceName": "Andre_Athar_Element",
+      "resourceName": "backWhole",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2E1MTI3MGI4YTM3NTEzMGJkMjBhYzE2Nzg4MGQxODc3OGZrazIucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323980733525179-secondary-3.png",
+      "sha256": "82004c96f0afa05808ffc7a56140dc2f7babd5fe859cd2ff569f5690f93eee84",
+      "bytes": 901872,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:32.325590+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323980733525179-voice",
+      "elementId": "323980733525179",
+      "referenceName": "Andre_Athar_Element",
+      "resourceName": "voice",
+      "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/agent_upload/1791554368/2TrBGsp9XS/elevenlabs_2026-10-09t10_42_57.mp3?x-kcdn-pid=112372",
+      "role": "voice",
+      "quality": "provider_original_resource",
+      "path": "inbox/andre-voice/ElevenLabs_2026-10-09T10_42_57_Athar_pvc_sp100_s50_sb75_v4.mp3",
+      "sha256": "d8e5e20a16b103b363a52975d6c560c3a6ba1de116b501fc19d8bee3b44e3de8",
+      "bytes": 397698,
+      "contentType": "audio/mpeg",
+      "retrieval": "already_local_hash_reused",
+      "retrievedAt": "2026-10-15T07:07:32.971289+00:00"
+    },
+    {
+      "asset_id": "KEXP-E323867570654831-cover",
+      "elementId": "323867570654831",
+      "referenceName": "Costume 1",
+      "resourceName": "cover",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qUAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo2c3RhcmdhdGUvMTE0Lzc5NzlhZWIwLTUyMTEtNDA1Ni1hNGFhLTU0ZWM0YjAxMzY0OC5qcGVn.origin?x-kcdn-pid=112372",
+      "role": "cover",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/R1-J25-costume-oppenheimer_1.png",
+      "sha256": "e46baa1d1dfd70c8c6e139ae0e7f430800f0d981de105225c338bae33eb0c22d",
+      "bytes": 1091153,
+      "contentType": "image/jpeg",
+      "retrieval": "already_local_hash_reused",
+      "retrievedAt": "2026-10-15T07:07:33.649509+00:00",
+      "dimensions": [
+        1856,
+        2304
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323867570654831-secondary-1",
+      "elementId": "323867570654831",
+      "referenceName": "Costume 1",
+      "resourceName": "front",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzVhYmQ1ODVhMGViN2RmZjdiZDM0NDkyMDEzYThlZjljcDBiMjAucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-1.png",
+      "sha256": "468229d3dabf0b8511b3b17964cada373e718f4bb4346b6ee08424452175dc5b",
+      "bytes": 1598274,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:34.370857+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323867570654831-secondary-2",
+      "elementId": "323867570654831",
+      "referenceName": "Costume 1",
+      "resourceName": "side",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzE1NDE4ZDdhNWQ3OGNkNzQzYzdiZWZlNzU2NmQ0ZGQyeDN3dmEucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-2.png",
+      "sha256": "5d4d1e01e0735b23d984ae0a6007d0b93a706c84e07d7f4201706da32e3536da",
+      "bytes": 1578737,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:35.204086+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323867570654831-secondary-3",
+      "elementId": "323867570654831",
+      "referenceName": "Costume 1",
+      "resourceName": "closeUp",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2I5YTJhMTNiNDEzNTY1MmQyNzdkM2YyN2E1YmUwYzZmaHN0b3IucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323867570654831-secondary-3.png",
+      "sha256": "1ba45919d901bf75f90c97b0e56a465c089ac6620d9364ae0a82d12682de6acc",
+      "bytes": 1469397,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:35.990703+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323854711683871-cover",
+      "elementId": "323854711683871",
+      "referenceName": "table 1",
+      "resourceName": "cover",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTEyLzM5MDViOGY0LWI2OGQtNDdjYS05OWNiLWI3YzRlYjI1OWQ1OC5wbmc.origin?x-kcdn-pid=112372",
+      "role": "cover",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_4_alt.png",
+      "sha256": "629651c09beef771aa9ecd3379e64139db4e2b63f0e93346fe708abb05caf82d",
+      "bytes": 6749955,
+      "contentType": "image/png",
+      "retrieval": "already_local_hash_reused",
+      "retrievedAt": "2026-10-15T07:07:37.008109+00:00",
+      "dimensions": [
+        2528,
+        1696
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323854711683871-secondary-1",
+      "elementId": "323854711683871",
+      "referenceName": "table 1",
+      "resourceName": "front",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzRkY2Y2YmM5OWIzZDQwNGJjMGE0NjE3MTMxODkwMGRhM3pmZXIucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-1.png",
+      "sha256": "6ff62d00920ab6c9171544902f536a447cd10ba09ff531b7b31ed17dc5b68e13",
+      "bytes": 1227959,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:37.695350+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323854711683871-secondary-2",
+      "elementId": "323854711683871",
+      "referenceName": "table 1",
+      "resourceName": "back",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzJhYzY5MzYwYTgzMGU0NGIxZDVlYTI2YmI0ZWQwMTVla3FucjcucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-2.png",
+      "sha256": "8465a491e4cf03e1c4af09149eeef40ac8c07543cc9a2b431b75d2beb82b838f",
+      "bytes": 1737870,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:38.422661+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-E323854711683871-secondary-3",
+      "elementId": "323854711683871",
+      "referenceName": "table 1",
+      "resourceName": "side",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2E5MjZiODc5NGE4NDRhZTY2NWM3MzI3MGZjMDlkMmM3dzgwZWEucG5n.origin?x-kcdn-pid=112372",
+      "role": "secondary",
+      "quality": "provider_original_resource",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E323854711683871-secondary-3.png",
+      "sha256": "ab6cf4538d5a69006761065fcbc6df44168456d4ad9251575ff71ff900dd72ca",
+      "bytes": 1232282,
+      "contentType": "image/png",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:39.100200+00:00",
+      "dimensions": [
+        880,
+        1168
+      ]
+    },
+    {
+      "asset_id": "KEXP-W323869015528491-result",
+      "webHistoryId": "323869015528491",
+      "generationId": null,
+      "role": "result",
+      "resourceName": "6594ad9e-275a-49f7-bafb-86ff5c37f9a0-lOOnFi5GnZekGcPTPJvXbQ-output.mp4",
+      "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6594ad9e-275a-49f7-bafb-86ff5c37f9a0-lOOnFi5GnZekGcPTPJvXbQ-output.mp4?x-kcdn-pid=112372",
+      "quality": "observed_web_result_originality_unverified",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4",
+      "sha256": "f67aa96db1b5d785c0de72011a94aa4549732741f0da8fd533c5ee0c936dc488",
+      "bytes": 13960407,
+      "contentType": "video/mp4",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:39.522842+00:00",
+      "technical": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "44100",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x1",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/44100",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 663352,
+            "duration": "15.041995",
+            "bit_rate": "128217",
+            "nb_frames": "650",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1280,
+            "height": 720,
+            "coded_width": 1280,
+            "coded_height": 720,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 0,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x2",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 184832,
+            "duration": "15.041667",
+            "bit_rate": "7290679",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "361",
+            "extradata_size": 42,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc60.31.102 h264_slapi"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "15.041995",
+          "size": "13960407",
+          "bit_rate": "7424763",
+          "probe_score": 100,
+          "tags": {
+            "minor_version": "512",
+            "major_brand": "isom",
+            "compatible_brands": "isomiso2avc1mp41",
+            "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"kling\",\"ProduceID\":\"SGP_PROD_ai_web_323869015525521\",\"ReservedCode1\":null,\"ContentPropagator\":\"kling\",\"PropagateID\":\"SGP_PROD_ai_web_323869015525521\",\"ReservedCode2\":null}",
+            "encoder": "Lavf60.16.100"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "KEXP-W323868230505094-result",
+      "webHistoryId": "323868230505094",
+      "generationId": null,
+      "role": "result",
+      "resourceName": "5b73de17-dcb1-44b3-a5f9-6d0f0e84990e-OJgen8T99rGpK7yc5NUWaw-output.mp4",
+      "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/5b73de17-dcb1-44b3-a5f9-6d0f0e84990e-OJgen8T99rGpK7yc5NUWaw-output.mp4?x-kcdn-pid=112372",
+      "quality": "observed_web_result_originality_unverified",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323868230505094-result.mp4",
+      "sha256": "124c8e36a91f9643ef28b562c60cffd3b6d1ffe950c61f6b4922cacd3ed670f1",
+      "bytes": 21909168,
+      "contentType": "video/mp4",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:07:40.250308+00:00",
+      "technical": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "44100",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x1",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/44100",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 663352,
+            "duration": "15.041995",
+            "bit_rate": "128234",
+            "nb_frames": "650",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1920,
+            "height": 1080,
+            "coded_width": 1920,
+            "coded_height": 1080,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 0,
+            "pix_fmt": "yuv420p",
+            "level": 50,
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x2",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 184832,
+            "duration": "15.041667",
+            "bit_rate": "11518268",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "361",
+            "extradata_size": 41,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc60.31.102 h264_slapi"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323868230505094-result.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "15.041995",
+          "size": "21909168",
+          "bit_rate": "11652267",
+          "probe_score": 100,
+          "tags": {
+            "minor_version": "512",
+            "major_brand": "isom",
+            "compatible_brands": "isomiso2avc1mp41",
+            "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"kling\",\"ProduceID\":\"SGP_PROD_ai_web_323868230528114\",\"ReservedCode1\":null,\"ContentPropagator\":\"kling\",\"PropagateID\":\"SGP_PROD_ai_web_323868230528114\",\"ReservedCode2\":null}",
+            "encoder": "Lavf60.16.100"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "KEXP-W323866270650569-result",
+      "webHistoryId": "323866270650569",
+      "generationId": null,
+      "role": "result",
+      "resourceName": "29d3d6ba-9946-42ef-851b-daab8f89eca8-8sI_JP-iYXyGcX_pGm7meg-output.mp4",
+      "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/29d3d6ba-9946-42ef-851b-daab8f89eca8-8sI_JP-iYXyGcX_pGm7meg-output.mp4?x-kcdn-pid=112372",
+      "quality": "observed_web_result_originality_unverified",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4",
+      "sha256": "e92ede9824636ed255ffd6512ebd86214a2ad19c8ea825c2f4b20fed016dd100",
+      "bytes": 7937685,
+      "contentType": "video/mp4",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:42.680726+00:00",
+      "technical": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "44100",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x1",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/44100",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 663352,
+            "duration": "15.041995",
+            "bit_rate": "128208",
+            "nb_frames": "650",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1280,
+            "height": 720,
+            "coded_width": 1280,
+            "coded_height": 720,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 0,
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x2",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "time_base": "1/12288",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 184832,
+            "duration": "15.041667",
+            "bit_rate": "4087467",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "361",
+            "extradata_size": 42,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc60.31.102 h264_slapi"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/mnt/data/Projects_SSD/Movies_Projects/projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "15.041995",
+          "size": "7937685",
+          "bit_rate": "4221612",
+          "probe_score": 100,
+          "tags": {
+            "minor_version": "512",
+            "major_brand": "isom",
+            "compatible_brands": "isomiso2avc1mp41",
+            "AIGC": "{\"Label\":\"1\",\"ContentProducer\":\"kling\",\"ProduceID\":\"SGP_PROD_ai_web_323866270684629\",\"ReservedCode1\":null,\"ContentPropagator\":\"kling\",\"PropagateID\":\"SGP_PROD_ai_web_323866270684629\",\"ReservedCode2\":null}",
+            "encoder": "Lavf60.16.100"
+          }
+        }
+      }
+    },
+    {
+      "asset_id": "KEXP-REF-01",
+      "elementId": null,
+      "referenceName": "Andre Athar",
+      "resourceName": "cover",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qTwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo1c3RhcmdhdGUvMTE1LzY0MTllODU3LTc3ZWItNGE5MS04MTkxLWFmMjNjOTcxZDkwMC5wbmc:360x475.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-01.webp",
+      "sha256": "3e5eafd401fc59a50594d10e05722d7d54e0a22325ab25385c88cc2d0f17a4fc",
+      "bytes": 13596,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:43.165515+00:00",
+      "dimensions": [
+        360,
+        540
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-02",
+      "elementId": null,
+      "referenceName": "Andre Athar",
+      "resourceName": "view-1",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzFhNTVkNzUzM2QwNzQ0NmI0OWZjZjM1ZTJmNWI2NDNmbDRnd3kucG5n:360x475.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-02.webp",
+      "sha256": "ce6066d1536d250664c2e854f28dfd0824d30c92c1b7119b6e0556fe68ae6437",
+      "bytes": 5778,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:43.663755+00:00",
+      "dimensions": [
+        360,
+        478
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-03",
+      "elementId": null,
+      "referenceName": "Andre Athar",
+      "resourceName": "view-2",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzg3NGJjZWYzMWFhODUyMWIwNTYyYWRjMGU2OTIxOTRlZ3M4YzMucG5n:360x475.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-03.webp",
+      "sha256": "71c786096ee4b233a53d866af7d6442e4216ea582c058b8c61bebc040a5b3254",
+      "bytes": 6952,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:44.151198+00:00",
+      "dimensions": [
+        360,
+        478
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-04",
+      "elementId": null,
+      "referenceName": "Andre Athar",
+      "resourceName": "view-3",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzQ2ZDZiMGMwMDllODlhMTMzMmMwODI1N2QzZDUwZTNldjlxbTYucG5n:360x475.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-04.webp",
+      "sha256": "083f410830d479a6db1fd11b67a7f023c562912bb8f57ac242006caee1c6b2ed",
+      "bytes": 14876,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:44.657716+00:00",
+      "dimensions": [
+        360,
+        478
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-05",
+      "elementId": null,
+      "referenceName": "Blonde Lady",
+      "resourceName": "cover",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqa2xpbmcvZWxlbWVudC9CbG9uZGUtTGFkeS3kuLvopoHlj4LogIMucG5n:240x240.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-05.webp",
+      "sha256": "0f6aba36a2644f10f97674c5a2e157e5810c14c31f852641220b8cf040643b50",
+      "bytes": 7136,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:45.243690+00:00",
+      "dimensions": [
+        240,
+        425
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-06",
+      "elementId": null,
+      "referenceName": "Sarah",
+      "resourceName": "cover",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoka2xpbmcvZWxlbWVudC9TYXJhaC3kuLvopoHlj4LogIMucG5n:240x240.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-06.webp",
+      "sha256": "34e1f72dad9da6c38f1149768f54161df7ddab4e43661e1910863fc79db71784",
+      "bytes": 6730,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:45.750407+00:00",
+      "dimensions": [
+        240,
+        425
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-07",
+      "elementId": null,
+      "referenceName": "Zen-style Café",
+      "resourceName": "cover",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qSgoGdXBsb2FkEg55bGFiLXN0dW50LXNncBowa2xpbmcvZWxlbWVudC9aZW4tc3R5bGUtQ2FmZcyBLeS4u-imgeWPguiAgy5qcGVn:240x240.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-07.webp",
+      "sha256": "163bcdb7a93f339e3cb2b22492c6a6566b82fa950267d7c58592246dd61c3e5a",
+      "bytes": 7974,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:46.268043+00:00",
+      "dimensions": [
+        416,
+        240
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-08",
+      "elementId": null,
+      "referenceName": "Snowflake",
+      "resourceName": "cover",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBola2xpbmcvZWxlbWVudC_pm6roirEt5Li76KaB5Y-C6ICDLnBuZw:240x240.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-08.webp",
+      "sha256": "c6f164ff368b4ba6d021008b84dff9696676ec0689da3f91eec0ac1db7e7aa4e",
+      "bytes": 30680,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:46.790042+00:00",
+      "dimensions": [
+        240,
+        320
+      ]
+    },
+    {
+      "asset_id": "KEXP-REF-09",
+      "elementId": null,
+      "referenceName": "Stellar Black Hole",
+      "resourceName": "cover",
+      "role": "reference_preview",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qPwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBola2xpbmcvZWxlbWVudC_omavmtJ4t5Li76KaB5Y-C6ICDLnBuZw:240x240.webp?x-kcdn-pid=112372",
+      "quality": "web_preview_only_original_missing",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-REF-09.webp",
+      "sha256": "7f8e113f834ccbe4b4314d15ebe53e36a61871654aa89aa79763c72e3b19cbbb",
+      "bytes": 9844,
+      "contentType": "image/webp",
+      "retrieval": "downloaded",
+      "retrievedAt": "2026-10-15T07:10:47.276680+00:00",
+      "dimensions": [
+        320,
+        240
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "OBS-01",
+      "assets": [
+        "KEXP-W323866270650569-result"
+      ],
+      "observation": "Nas cinco amostras o homem de cabelo curto e paletó escuro, a mulher de branco e a personagem desenhada permanecem distintos. O anel claro da mesa reaparece. Olhares variam entre parceiros e câmera; a instrução coletiva não fixa uma sequência de olhares."
+    },
+    {
+      "id": "OBS-02",
+      "assets": [
+        "KEXP-W323868230505094-result",
+        "KEXP-E323867570654831-cover"
+      ],
+      "observation": "Paletó cinza, camisa clara e gravata aparecem no homem; o café e o efeito cósmico aparecem. Comparado ao Video1, as duas mulheres deixam de estar presentes nas cinco amostras e o plano vira um homem sozinho. Transferência de roupa/cenário observada; preservação da cena original não demonstrada."
+    },
+    {
+      "id": "OBS-03",
+      "assets": [
+        "KEXP-W323869015528491-result",
+        "KEXP-E323854711683871-cover"
+      ],
+      "observation": "Café e neve estão visíveis, com três personagens. A mesa vira baixa e pequena, os personagens se ajoelham, e a cobertura passa de aberta para próxima. Nomear a mesa não preservou escala, altura ou disposição das cadeiras."
+    },
+    {
+      "id": "OBS-04",
+      "assets": [
+        "KEXP-E323980733525179-cover",
+        "KEXP-E323980733525179-secondary-1",
+        "KEXP-E323980733525179-secondary-2",
+        "KEXP-E323980733525179-secondary-3",
+        "KEXP-E324018220506771-video"
+      ],
+      "observation": "O conjunto novo mostra cabelo mais longo, barba e camisa preta; frente, perfil, costas e retrato fornecem informação complementar. O vídeo de 8 s é uma composição simultânea de corpo inteiro e retrato. Não é prova de identidade real nem substitui o cânone D01/D02; continua referência experimental."
+    },
+    {
+      "id": "OBS-05",
+      "assets": [
+        "KEXP-E323867570654831-secondary-1",
+        "KEXP-E323867570654831-secondary-2"
+      ],
+      "observation": "As secundárias do figurino incluem rostos de outra representação, enquanto a capa corta o rosto. Pode haver competição entre roupa e identidade; o ensaio não isola causalidade. Para referência de figurino, preparar futuramente enquadramentos que mostrem a roupa sem rosto, com autorização própria."
+    },
+    {
+      "id": "OBS-06",
+      "assets": [
+        "KEXP-E323854711683871-cover"
+      ],
+      "observation": "Hash da capa = R1-J26-table-anchor_4_alt, diferente da mesa _2 escolhida em D04. table 1 não é sinônimo automático do anchor aprovado."
+    },
+    {
+      "id": "OBS-07",
+      "assets": [
+        "KEXP-E324018220506771-voice",
+        "KEXP-E324018220506771-video"
+      ],
+      "observation": "element_get devolve a mesma URL MP4 nos campos video e voice; guardado como um arquivo com dois papéis. Não foi inventado um MP3 separado, nem validada a voz por ouvido."
+    }
+  ],
+  "provenanceGaps": [
+    "query_tasks rejeitou os três IDs numéricos de histórico com Invalid generationId.; geraçãoId opaco e workIndex não foram expostos na UI. Respostas de erro preservadas. Não há ferramenta de listagem de histórico no tool_list atual.",
+    "O prompt exibido e os chips foram preservados em segmentos. A serialização original, tokens internos de Elements e settings não mostrados não foram recuperados; não foram reconstruídos por adivinhação.",
+    "Andre Athar usado nos testes não aparece no inventário próprio inicial/final. Não foi confundido com Andre_Athar_Element nem com Andre Athar_vr. IDs dos cinco references de biblioteca também não foram expostos.",
+    "Nove arquivos de referência web são apenas previews: quatro de Andre Athar e cinco capas de biblioteca. Originais e imagens secundárias da biblioteca não recuperados. URLs que retornaram bytes não foram chamadas de expiradas.",
+    "Prompts/fontes geradoras dos novos recursos Andre e das secundárias de costume/mesa não disponíveis via element_get. Dois prompts-fonte antigos foram recuperados de metadados locais e ligados por hash exato; não equivalem ao histórico completo de construção dos Elements.",
+    "O julgamento específico de Andre sobre cada take não foi fornecido. A frase dele sobre uma estratégia de sucesso é contexto, não aceite destes arquivos.",
+    "Inspeção própria: 22 imagens via duas folhas; cinco quadros amostrados de cada um dos quatro vídeos; decode integral. Sem revisão de todos os quadros, playback integral contínuo ou escuta; não há aceite de produção.",
+    "Inventário é limitado às superfícies observadas; não é exportação completa da conta. Itens surgidos durante a sessão seguem na fila, sem download neste lote.",
+    "The minimal frontend exporter path additions cause SHA drift against the untouched pending v2-reconciliation handoff. No ingestion/supersession of that handoff was performed; producer must reconcile hashes in a later delivery."
+  ],
+  "reviewState": "experimental_unapproved",
+  "andreJudgment": {
+    "statement": "i studied more about kling ai and learned how to better create the elements, like characters ,costumes. i tested some generations to show you the prompts and results. i think we should download kling assets so we have them here. you must learn how to proper use. one of the success strategies is to create references and name them properly",
+    "perAssetAcceptance": null
+  },
+  "nextBatchInventory": {
+    "scope": "Observed only, not full account",
+    "olderObserved": [
+      {
+        "webHistoryId": "323766877502402",
+        "promptDisplayed": "Image1  Cinematic camera movement, the man makes subtle natural movements, realistic lighting and atmosphere",
+        "downloadedThisBatch": false
+      },
+      {
+        "webHistoryId": "323766877507406",
+        "promptDisplayed": "Image1  Cinematic camera movement, the man makes subtle natural movements, realistic lighting and atmosphere",
+        "downloadedThisBatch": false
+      },
+      {
+        "webHistoryId": "323775342505873",
+        "promptDisplayed": "Andre Athar  Cinematic camera movement, the man makes subtle natural movements, realistic lighting and atmosphere",
+        "downloadedThisBatch": false
+      },
+      {
+        "webHistoryId": "323836589317207",
+        "promptDisplayed": "Image1 Camera placed high and distant. The entire rustic table and stone floor fill the frame. Fireplace dominates background left. Subject anchored in lower right corner, isolated in the vast room.",
+        "downloadedThisBatch": false
+      },
+      {
+        "webHistoryId": "323836589314605",
+        "promptDisplayed": "Image1 Camera placed far back in an adjacent hallway. A blurred wooden doorframe wraps the frame edges. Subject is a small, sharp figure compressed against the far stone wall, maintaining the same tense posture.",
+        "downloadedThisBatch": false
+      },
+      {
+        "webHistoryId": "323836590304003",
+        "promptDisplayed": "Image1 Camera positioned behind the subject's right shoulder. Original stone background is fully behind camera, unseen. New view reveals the heavy wooden door he stares at. Subject's dark blazer frames the left foreground.",
+        "downloadedThisBatch": false
+      }
+    ],
+    "newlyAppearedDuringSession": [
+      {
+        "elementId": "324019350521447",
+        "name": "Costumes_Athar_2",
+        "detailsRead": false,
+        "downloaded": false
+      },
+      {
+        "webHistoryId": "324018500502140",
+        "promptDisplayed": "Andre_Athar_Element fights kung fu against . They fight very fast . the 200mm camera gets diferent angles close up while thet fight. use action movies sounds for the hits.",
+        "downloaded": false,
+        "serializedPromptMissing": true
+      }
+    ],
+    "productionElementInventoryOnly": "323525046658711"
+  },
+  "officialSources": [
+    {
+      "url": "https://kling.ai/quickstart/klingai-element-library-3-user-guide",
+      "retrieved": "2026-10-15",
+      "use": "Multi-angle image Elements, 2–4 images; main reference; names and @ recall; type separation."
+    },
+    {
+      "url": "https://kling.ai/quickstart/klingai-video-3-model-user-guide",
+      "retrieved": "2026-10-15",
+      "use": "Element binding versus start/end frames; native voice; Multi-Shot switch."
+    },
+    {
+      "path": "evidence/tool_list.json",
+      "use": "Live CLI binding syntax, allowed tags and compatibility; not evidence of executed generation settings."
+    }
+  ],
+  "referenceNamingProposals": [
+    {
+      "elementId": "323980733525179",
+      "originalName": "Andre_Athar_Element",
+      "aliasProposto": "AA-ID-20261014-v01",
+      "applied": false
+    },
+    {
+      "elementId": "324018220506771",
+      "originalName": "Andre Athar_vr",
+      "aliasProposto": "AA-VIDREF-v01",
+      "applied": false
+    },
+    {
+      "elementId": "323867570654831",
+      "originalName": "Costume 1",
+      "aliasProposto": "WD-GREYTIE-v01",
+      "applied": false
+    },
+    {
+      "elementId": "323854711683871",
+      "originalName": "table 1",
+      "aliasProposto": "TB-J26ALT4-v01",
+      "applied": false
+    }
+  ]
+}

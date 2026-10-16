@@ -1,0 +1,50 @@
+{
+  "scope": "Observed only, not full account",
+  "olderObserved": [
+    {
+      "webHistoryId": "323766877502402",
+      "promptDisplayed": "Image1  Cinematic camera movement, the man makes subtle natural movements, realistic lighting and atmosphere",
+      "downloadedThisBatch": false
+    },
+    {
+      "webHistoryId": "323766877507406",
+      "promptDisplayed": "Image1  Cinematic camera movement, the man makes subtle natural movements, realistic lighting and atmosphere",
+      "downloadedThisBatch": false
+    },
+    {
+      "webHistoryId": "323775342505873",
+      "promptDisplayed": "Andre Athar  Cinematic camera movement, the man makes subtle natural movements, realistic lighting and atmosphere",
+      "downloadedThisBatch": false
+    },
+    {
+      "webHistoryId": "323836589317207",
+      "promptDisplayed": "Image1 Camera placed high and distant. The entire rustic table and stone floor fill the frame. Fireplace dominates background left. Subject anchored in lower right corner, isolated in the vast room.",
+      "downloadedThisBatch": false
+    },
+    {
+      "webHistoryId": "323836589314605",
+      "promptDisplayed": "Image1 Camera placed far back in an adjacent hallway. A blurred wooden doorframe wraps the frame edges. Subject is a small, sharp figure compressed against the far stone wall, maintaining the same tense posture.",
+      "downloadedThisBatch": false
+    },
+    {
+      "webHistoryId": "323836590304003",
+      "promptDisplayed": "Image1 Camera positioned behind the subject's right shoulder. Original stone background is fully behind camera, unseen. New view reveals the heavy wooden door he stares at. Subject's dark blazer frames the left foreground.",
+      "downloadedThisBatch": false
+    }
+  ],
+  "newlyAppearedDuringSession": [
+    {
+      "elementId": "324019350521447",
+      "name": "Costumes_Athar_2",
+      "detailsRead": false,
+      "downloaded": false
+    },
+    {
+      "webHistoryId": "324018500502140",
+      "promptDisplayed": "Andre_Athar_Element fights kung fu against . They fight very fast . the 200mm camera gets diferent angles close up while thet fight. use action movies sounds for the hits.",
+      "downloaded": false,
+      "serializedPromptMissing": true
+    }
+  ],
+  "productionElementInventoryOnly": "323525046658711"
+}

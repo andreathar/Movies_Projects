@@ -1,0 +1,298 @@
+{
+  "model": "cached faster-whisper base.en",
+  "offline": true,
+  "actualListening": false,
+  "language": "en",
+  "languageProbability": 1,
+  "segments": [
+    {
+      "start": 1.8599999999999994,
+      "end": 4.36,
+      "text": " His or do a that death is made on to just hours.",
+      "avg_logprob": -0.8946164405509217,
+      "no_speech_prob": 0.1272939294576645,
+      "words": [
+        {
+          "start": 1.8599999999999994,
+          "end": 2.26,
+          "word": " His",
+          "probability": 0.1838969886302948
+        },
+        {
+          "start": 2.26,
+          "end": 2.54,
+          "word": " or",
+          "probability": 0.3489155173301697
+        },
+        {
+          "start": 2.54,
+          "end": 2.7,
+          "word": " do",
+          "probability": 0.32622551918029785
+        },
+        {
+          "start": 2.7,
+          "end": 2.84,
+          "word": " a",
+          "probability": 0.18027855455875397
+        },
+        {
+          "start": 2.84,
+          "end": 3.02,
+          "word": " that",
+          "probability": 0.4068722426891327
+        },
+        {
+          "start": 3.02,
+          "end": 3.26,
+          "word": " death",
+          "probability": 0.07753244787454605
+        },
+        {
+          "start": 3.26,
+          "end": 3.46,
+          "word": " is",
+          "probability": 0.24970334768295288
+        },
+        {
+          "start": 3.46,
+          "end": 3.58,
+          "word": " made",
+          "probability": 0.16789385676383972
+        },
+        {
+          "start": 3.58,
+          "end": 3.74,
+          "word": " on",
+          "probability": 0.26792651414871216
+        },
+        {
+          "start": 3.74,
+          "end": 3.86,
+          "word": " to",
+          "probability": 0.28895509243011475
+        },
+        {
+          "start": 3.86,
+          "end": 4.06,
+          "word": " just",
+          "probability": 0.3596835136413574
+        },
+        {
+          "start": 4.06,
+          "end": 4.36,
+          "word": " hours.",
+          "probability": 0.2927016019821167
+        }
+      ]
+    },
+    {
+      "start": 5.1,
+      "end": 5.8,
+      "text": " She was out.",
+      "avg_logprob": -0.8946164405509217,
+      "no_speech_prob": 0.1272939294576645,
+      "words": [
+        {
+          "start": 5.1,
+          "end": 5.38,
+          "word": " She",
+          "probability": 0.7686026096343994
+        },
+        {
+          "start": 5.38,
+          "end": 5.56,
+          "word": " was",
+          "probability": 0.7482001781463623
+        },
+        {
+          "start": 5.56,
+          "end": 5.8,
+          "word": " out.",
+          "probability": 0.771852970123291
+        }
+      ]
+    },
+    {
+      "start": 6.28,
+      "end": 7.3,
+      "text": " You've begun as mouth isn't.",
+      "avg_logprob": -0.8946164405509217,
+      "no_speech_prob": 0.1272939294576645,
+      "words": [
+        {
+          "start": 6.28,
+          "end": 6.36,
+          "word": " You've",
+          "probability": 0.5925069898366928
+        },
+        {
+          "start": 6.36,
+          "end": 6.48,
+          "word": " begun",
+          "probability": 0.7572780251502991
+        },
+        {
+          "start": 6.48,
+          "end": 6.64,
+          "word": " as",
+          "probability": 0.3063700199127197
+        },
+        {
+          "start": 6.64,
+          "end": 6.78,
+          "word": " mouth",
+          "probability": 0.35330313444137573
+        },
+        {
+          "start": 6.78,
+          "end": 7.3,
+          "word": " isn't.",
+          "probability": 0.6290393322706223
+        }
+      ]
+    },
+    {
+      "start": 7.72,
+      "end": 9.08,
+      "text": " Peven you, who write this?",
+      "avg_logprob": -0.8946164405509217,
+      "no_speech_prob": 0.1272939294576645,
+      "words": [
+        {
+          "start": 7.72,
+          "end": 8.12,
+          "word": " Peven",
+          "probability": 0.32656292617321014
+        },
+        {
+          "start": 8.12,
+          "end": 8.3,
+          "word": " you,",
+          "probability": 0.4737115800380707
+        },
+        {
+          "start": 8.44,
+          "end": 8.56,
+          "word": " who",
+          "probability": 0.597724437713623
+        },
+        {
+          "start": 8.56,
+          "end": 8.74,
+          "word": " write",
+          "probability": 0.31416499614715576
+        },
+        {
+          "start": 8.74,
+          "end": 9.08,
+          "word": " this?",
+          "probability": 0.983826220035553
+        }
+      ]
+    },
+    {
+      "start": 9.54,
+      "end": 11.62,
+      "text": " You'll be in hella solace, they were Prudas Daster.",
+      "avg_logprob": -0.8946164405509217,
+      "no_speech_prob": 0.1272939294576645,
+      "words": [
+        {
+          "start": 9.54,
+          "end": 9.66,
+          "word": " You'll",
+          "probability": 0.14710144698619843
+        },
+        {
+          "start": 9.66,
+          "end": 9.72,
+          "word": " be",
+          "probability": 0.7588014602661133
+        },
+        {
+          "start": 9.72,
+          "end": 9.84,
+          "word": " in",
+          "probability": 0.8497880697250366
+        },
+        {
+          "start": 9.84,
+          "end": 10.24,
+          "word": " hella",
+          "probability": 0.36534254252910614
+        },
+        {
+          "start": 10.24,
+          "end": 10.66,
+          "word": " solace,",
+          "probability": 0.6530803740024567
+        },
+        {
+          "start": 10.74,
+          "end": 10.84,
+          "word": " they",
+          "probability": 0.17101459205150604
+        },
+        {
+          "start": 10.84,
+          "end": 10.98,
+          "word": " were",
+          "probability": 0.9387542009353638
+        },
+        {
+          "start": 10.98,
+          "end": 11.36,
+          "word": " Prudas",
+          "probability": 0.48656660318374634
+        },
+        {
+          "start": 11.36,
+          "end": 11.62,
+          "word": " Daster.",
+          "probability": 0.4793908894062042
+        }
+      ]
+    },
+    {
+      "start": 12.48,
+      "end": 14.52,
+      "text": " We'll yield the torta sinkifaya.",
+      "avg_logprob": -0.8946164405509217,
+      "no_speech_prob": 0.1272939294576645,
+      "words": [
+        {
+          "start": 12.48,
+          "end": 12.76,
+          "word": " We'll",
+          "probability": 0.6084635406732559
+        },
+        {
+          "start": 12.76,
+          "end": 12.9,
+          "word": " yield",
+          "probability": 0.5106233954429626
+        },
+        {
+          "start": 12.9,
+          "end": 13.28,
+          "word": " the",
+          "probability": 0.8453953862190247
+        },
+        {
+          "start": 13.28,
+          "end": 13.86,
+          "word": " torta",
+          "probability": 0.4670904278755188
+        },
+        {
+          "start": 13.86,
+          "end": 14.52,
+          "word": " sinkifaya.",
+          "probability": 0.3137635538975398
+        }
+      ]
+    }
+  ],
+  "limitation": "Automatic English-only transcript; noise/music can yield false words. No ear validation or claim of speaker/voice likeness."
+}

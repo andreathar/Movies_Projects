@@ -1,0 +1,17 @@
+{
+  "productionUnchangedSHA256": "5fc326463d0212587d0742c2129a7f89f91a0b0f38db971e1e910d2fb3a9f559",
+  "differences": [
+    {
+      "path": "/collectedAt",
+      "before": "2026-10-15T05:23:07.974Z",
+      "after": "2026-10-15T09:21:16.592Z"
+    },
+    {
+      "path": "/provenance/repositoryHead",
+      "before": "b2aca0d5e4d70d40cf4d7d13d0af88249e37684f",
+      "after": "3f1461118e8f8236b8179209f20ef56e97c991c2"
+    }
+  ],
+  "sourceContentAndHashesUnchanged": true,
+  "temporaryComparisonRemoved": true
+}
