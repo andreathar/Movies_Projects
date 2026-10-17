@@ -39,5 +39,67 @@
       "format": "HTML text extraction; not original HTML hash",
       "status": 200
     }
+  ],
+  "projectInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "workspace.json",
+      "sha256": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/script-en.md",
+      "sha256": "a0217c6f2e8d73efce91ea34c1e8fbd01acc7aa381f6d191c10112af1ef711e1",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/01_script/dialogue-lines.csv",
+      "sha256": "d14322550e9f52db6b88a8db3e5ace84e3b666900046edf9532c237f2f1a83f6",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md",
+      "sha256": "defa561d3919e241d1719b8fa4eb24257b31d7a8d96cfbbcc267c30c95533b44",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "series/andre-time-travel/FRAMEWORK.md",
+      "sha256": "a9ad76a6f3ed444cdb2d6baeed30b7c09ec17a8ffdcff9ad28a07fcbf27fe3ef",
+      "use": "Read-only context; hash is provenance, not approval."
+    },
+    {
+      "path": "shared/kling-capabilities.json",
+      "sha256": "b3c359648c75bd7fb2ae5d46b29c812687b26c1ee32806fe5affb4f6a3fbe16d",
+      "use": "Read-only context; hash is provenance, not approval."
+    }
   ]
 }

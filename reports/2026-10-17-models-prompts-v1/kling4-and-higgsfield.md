@@ -84,7 +84,7 @@ Exact workflow ID: `cinematic_studio_video_4_0`; inspect with `workflow get`, no
 | `video_extension` | At least one video; `extension_mode` required, forward/backward; forbidden in other modes |
 | Creative metadata | camera model/lens/aperture IDs, era, genre, pacing, light controls, color palette |
 
-Light constraints require valid custom arrays or real preset IDs and disallow contradictory custom/preset combinations. Do not invent IDs from brand/lens names or translate a prompt adjective into an undocumented flag. No published reference-duration/byte limits or exact camera preset roster are established by this one workflow schema. Catalog presence does not establish access or billable outcome.
+**Lighting schema inconsistency:** `light_id` has enum `["custom"]`, but the rules for `light="preset"` or `"user"` require a **non-custom** preset ID. No value satisfies both restrictions in this captured contract. Treat preset/user lighting as **unresolved, not executable guidance** until the producer obtains a reconciled official schema; this does not establish how the server actually behaves. Custom-light arrays have their own constraints and are not tested here. Do not invent IDs from brand/lens names or translate a prompt adjective into an undocumented flag. No published reference-duration/byte limits or exact camera preset roster are established by this one workflow schema. Catalog presence does not establish access or billable outcome.
 
 ### Other useful, inspected Higgsfield controls
 

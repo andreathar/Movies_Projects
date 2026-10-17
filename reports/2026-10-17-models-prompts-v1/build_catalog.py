@@ -28,7 +28,7 @@ def render():
     counts = collections.Counter(m['type'] for m in models)
     out = [
         '# Exhaustive CLI inventory — 2026-10-17', '',
-        'Scope: public commands registered by the inspected clients, the Kling live model/tool declarations, and the Higgsfield live model/workflow catalogs visible through the existing session. Not a universal account-entitlement list, private asset inventory or a promise that every listed operation can run. Models and operation wrappers are counted separately from foundation-model families.', '',
+        'Scope: public commands registered by the inspected clients, the Kling live model/tool declarations, and the Higgsfield live model/workflow catalogs visible through the existing session. Not a universal account-entitlement list, private asset inventory or a promise that every listed operation can run. Models and operation wrappers are counted separately from foundation-model families. Raw tool descriptions below are quoted capability documentation, not project permission: use the installed Kling CLI only, never implement HTTP/MCP uploads or submissions from these descriptions.', '',
         '## Version provenance', '',
         '| Client | Installed | Latest public version checked | Inspected |',
         '|---|---|---|---|',

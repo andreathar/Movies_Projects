@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-17",
+  "scope": "New research report only; no production/canonical changes",
+  "checks": {
+    "offlineCatalogRender": "passed; byte-identical",
+    "inventoryCounts": {
+      "higgsfieldHelpEntriesIncludingRoot": 125,
+      "higgsfieldModelOperations": 107,
+      "higgsfieldWorkflows": 22,
+      "klingModelIdSpellings": 15,
+      "klingRoutes": 6,
+      "klingServerTools": 18
+    },
+    "registeredCommandTreeComplete": "passed; 125 unique paths including root",
+    "uniqueHiggsModelIds": "passed; 107",
+    "uniqueHiggsWorkflowIds": "passed; 22",
+    "promptCards": "passed; P01-P16",
+    "completeDialogueQuotesMatchCSV": [
+      "IN-L01",
+      "G-L03",
+      "G-L04",
+      "N-L03",
+      "N-L04",
+      "O-L03",
+      "O-L04",
+      "OUT-L01"
+    ],
+    "klingSharedIdentitySanitization": "passed; body contains only mcpVersion/availableModels",
+    "workspaceValidate": {
+      "exitCode": 0,
+      "evidence": "snapshots/workspace-validate.json"
+    },
+    "workspaceResume": {
+      "exitCode": 0,
+      "evidence": "snapshots/workspace-resume.json"
+    },
+    "workspaceLint": {
+      "exitCode": 0,
+      "evidence": "snapshots/workspace-lint.json"
+    },
+    "localMarkdownLinks": "passed"
+  },
+  "versions": {
+    "klingInstalled": "0.2.3",
+    "klingNpmLatest": "0.2.3",
+    "higgsfieldInstalled": "1.1.24",
+    "higgsfieldNpmLatest": "1.2.2",
+    "higgsfieldInspected": "1.2.2 (53301eadf7311fc6a6a4c024cf4aff432028e974) built 2026-10-16T23:42:35Z",
+    "globalInstallationChanged": false
+  },
+  "notRun": [
+    "paid generation",
+    "uploads",
+    "cost/credit queries",
+    "runtime activation or install",
+    "model quality/entitlement test",
+    "media decode/playback/listening",
+    "language/voice/likeness/artistic acceptance",
+    "full stdlib unit suite: no management code changed; report renderer checked directly"
+  ],
+  "review": {
+    "status": "pending independent text review; no media certification"
+  }
+}

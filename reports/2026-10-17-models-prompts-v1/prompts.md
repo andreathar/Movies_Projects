@@ -2,6 +2,27 @@
 
 **Research proposals only · 2026-10-17 · no upload/generation permission.** English prompts preserve the current English screenplay. English is a production choice here, not a claim that it always performs better than Portuguese. All dialogue is fictional, not a historical quotation. These are library IDs `P01`–`P16`, **not new board tasks, shots or approved takes**.
 
+## Quick index
+
+| Draft | Scene / purpose | Stage |
+|---|---|---|
+| P01 | Galileo principal composition still | Candidate baseline preparation |
+| P02 | Galileo minimal listening-pose still | Candidate baseline preparation |
+| P03 | Andre listens to G-L03 | Candidate baseline coverage |
+| P04 | Andre speaks G-L04 | Proposed first speaking test, gated |
+| P05 | Galileo eyes after the difficult line | Candidate baseline reaction, gated |
+| P06 | Galileo hand releases tension | Future optional coverage; excluded from initial baseline |
+| P07 | Caesar eyes register the precedent | Future encounter library |
+| P08 | Khan foot settles after the difficult thought | Future alternate coverage |
+| P09 | Andre answers Napoleon without superiority | Future encounter library |
+| P10 | Andre cannot answer Oppenheimer's moral question | Future encounter library |
+| P11 | Oppenheimer hands hold the silence | Future optional coverage |
+| P12 | Opening hand/table contact | Future opening |
+| P13 | Table-texture match-cut plate | Future transition/edit |
+| P14 | Empty chair and final question | Future ending |
+| P15 | Single subtle contact Foley | Separate future audio scope |
+| P16 | Historically specific room tone | Separate future audio scope |
+
 ## Read before copying
 
 The current source is `projects/andre-time-travel/05_storyboard/source/production-plan.json`, revision `galileo-baseline-2026-10-13`, active baseline `galileo-g03-g04-2026-10-13`: **G-L03/G-L04 first; first speaking test G-P04**. It is prepared, not artistically approved. Existing IN/OUT and references are studies, not approved first/last frames. Wardrobe, table/lasca/ring detail and likeness still have holds. P01–P05 are candidate preparations for that baseline, **not a sequence of five new jobs to submit**. Start with the producer's exact next authorized assignment; create coverage only if the accepted cut needs it. P06–P16 are future library ideas, not current production assignments.
@@ -276,7 +297,7 @@ TIMING AND DELIVERY: Duration and loop handles as specified by the editor; no su
 | Kling V4 image-to-video | Approved safe first frame; only declared arguments; ≤10 total endpoint/middle images; no timestamp/audio flags assumed |
 | Kling V4 Omni | Bind real `图片X` / `视频X` / `音频X` roles or actual `<<<id>>>` Element references; combined ≤15, fixed smart multishot, compatible audio switches; no transcript-lock claim |
 | Higgsfield reference image model | Use exact live `job_type` and model schema; do not copy Kling Element syntax or legacy Nano Banana IDs |
-| Higgsfield Cinema4 workflow | Use `workflow get cinematic_studio_video_4_0`; references require `mode=omni_reference`; `t2v` rejects references; audio is `generate_audio`, not `enable_audio`; choose only valid preset IDs |
+| Higgsfield Cinema4 workflow | Use `workflow get cinematic_studio_video_4_0`; references require `mode=omni_reference`; `t2v` rejects references; audio is `generate_audio`, not `enable_audio`; preset/user lighting is blocked by contradictory captured `light_id` rules until reconciled |
 | Audio/SFX | Give an audio-specific prompt and measured duration; do not send scene direction as spoken TTS text; fees and voice rights require their own scope |
 
 **Before production:** producer records exact inputs/versions, actual schema and quote, budget ceiling, validity and upload scope. Kling paid work remains producer-only through `scripts/kling_batch.py` plus a matching `kling_job_release`. Higgsfield/other providers require their own authorization; this library grants none. Detail images remain producer-created. After any authorized generation, preserve originals and IDs/cost evidence; independently inspect decode, complete playback/listening, every risky frame/reflection, likeness, dialogue and timing. Andre accepts likeness/voice/artistic result separately. A generated clip never starts the next task or becomes an accepted take by existing.
