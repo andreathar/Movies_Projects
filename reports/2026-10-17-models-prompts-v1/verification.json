@@ -38,7 +38,12 @@
       "exitCode": 0,
       "evidence": "snapshots/workspace-lint.json"
     },
-    "localMarkdownLinks": "passed"
+    "localMarkdownLinks": "passed",
+    "criticalKlingAndCinema4SchemaClaims": "passed; durations/resolutions/reference limits/multishot/Cinema4 presence/audio arg checked directly against snapshots",
+    "npmLatestDistTags": "passed; Kling0.2.3 and Higgsfield1.2.2",
+    "releaseIntegrityChain": "passed; npm sha512 SRI, bundled expected checksum, downloaded GitHub archive sha256",
+    "reportLocalHandoffPlacement": "initial check rejected directory; newly created undelivered draft moved to required episode handoff directory",
+    "episodeHandoffCheck": "passed; version2.0, no errors/advisory"
   },
   "versions": {
     "klingInstalled": "0.2.3",
@@ -59,6 +64,9 @@
     "full stdlib unit suite: no management code changed; report renderer checked directly"
   ],
   "review": {
-    "status": "pending independent text review; no media certification"
+    "status": "complete; two findings addressed by researcher",
+    "runId": "del_mvbx70wm_qkv0",
+    "evidence": "review.md",
+    "noMediaCertification": true
   }
 }

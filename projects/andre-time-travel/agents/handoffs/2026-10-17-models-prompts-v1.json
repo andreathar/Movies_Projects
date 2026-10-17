@@ -68,7 +68,7 @@
   "changedFiles": [
     {
       "path": "reports/2026-10-17-models-prompts-v1/README.md",
-      "sha256After": "34edad9ea8f3ea29c4e76fea69b40cb8e9824a9c4be99b1a27516aafee415321",
+      "sha256After": "540d0c960476de1fa2d8caa9ccca18f950fea02ab0942831d469ceff26d9798f",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
@@ -83,12 +83,17 @@
     },
     {
       "path": "reports/2026-10-17-models-prompts-v1/kling4-and-higgsfield.md",
-      "sha256After": "89ea5a52630ad0d9b6173fc8860d0e4eea1f6f07ffaf3834112f2c3919df316f",
+      "sha256After": "6e815d390e47615a1fe305aa3aa634e82f7b0ff6d814b0194d239bacd90f73c5",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
       "path": "reports/2026-10-17-models-prompts-v1/prompts.md",
-      "sha256After": "42498b6f1f890d629b23be1d72e1c8a902de6858b3b2af888b3edb22ed1fbb4d",
+      "sha256After": "f543ffcb85d7f1ce8d26b71cad7dd7a2e49dacfd6b56f01e01bcdd4d1033185e",
+      "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
+    },
+    {
+      "path": "reports/2026-10-17-models-prompts-v1/review.md",
+      "sha256After": "bb546ae8e97f08fde6b58a000445ebccc4dc319efb14ebad11f15e840d52d4df",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
@@ -137,6 +142,21 @@
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
+      "path": "reports/2026-10-17-models-prompts-v1/snapshots/higgsfield-npm-bundled-checksums.json",
+      "sha256After": "212d82e8d62f3fced2eb2b6f35b84cc74787abf6b3ca3baf7ce6a17633767b4e",
+      "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
+    },
+    {
+      "path": "reports/2026-10-17-models-prompts-v1/snapshots/higgsfield-npm-dist-tags.json",
+      "sha256After": "fe7f81d4e06d067bb99bf9d586a7cfcb478c9b603956e601abca5d1aef4cfc6a",
+      "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
+    },
+    {
+      "path": "reports/2026-10-17-models-prompts-v1/snapshots/higgsfield-npm-release.json",
+      "sha256After": "a7ff18df5247b06973e89969aedf595c4ecedc5de7eb09a4e586ebb65d63b2df",
+      "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
+    },
+    {
       "path": "reports/2026-10-17-models-prompts-v1/snapshots/higgsfield-official-models.md",
       "sha256After": "a8bc9b7d62f6e2b23ac0001c92dafd7126fb8fa583cb37213f6d17cef8796f92",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
@@ -148,7 +168,7 @@
     },
     {
       "path": "reports/2026-10-17-models-prompts-v1/snapshots/higgsfield-release-verification.json",
-      "sha256After": "202dd430a790e7d7194ac423859cef4107607cba907b43e12953801d445b207d",
+      "sha256After": "c31cdd77af2d0324ba2c06da4f9547f505e609fc78b45792ec619aebbef83d7c",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
@@ -169,6 +189,11 @@
     {
       "path": "reports/2026-10-17-models-prompts-v1/snapshots/kling-cli-help.txt",
       "sha256After": "9426e83df895fc44b0bc661ec20199edc4b5fe27af384001f0917086748ac037",
+      "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
+    },
+    {
+      "path": "reports/2026-10-17-models-prompts-v1/snapshots/kling-npm-dist-tags.json",
+      "sha256After": "531b2eae7a9da38a66679a07a8978665939cfeb680fc2c1affc0dd72eeadd9d7",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
@@ -203,12 +228,12 @@
     },
     {
       "path": "reports/2026-10-17-models-prompts-v1/sources.json",
-      "sha256After": "ad1f057f5b2f29b7533095a540839e5519b207612af15c1cfed5e9be25926eed",
+      "sha256After": "3c4957257378fa5d8c44961d1fc7f3cbdde8db666dadf4c840c1de8feb941649",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     },
     {
       "path": "reports/2026-10-17-models-prompts-v1/verification.json",
-      "sha256After": "80554fbc51514488c114370e0f0ee4fcab57f0badf6cbd4a4b6d540055e4122c",
+      "sha256After": "45c961039f77ff7e9581f2d767772458ce4a0d5807a30f1654ac026009574504",
       "reason": "New dated research evidence, derived inventory or draft prompt documentation; not canonical production approval."
     }
   ],
@@ -216,7 +241,7 @@
     {
       "statement": "Latest public versions verified: Kling0.2.3 and Higgsfield1.2.2; installed Higgsfield1.1.24 unchanged. Complete dated catalogs and 16 draft prompt cards delivered.",
       "evidence": "reports/2026-10-17-models-prompts-v1/README.md",
-      "sha256": "34edad9ea8f3ea29c4e76fea69b40cb8e9824a9c4be99b1a27516aafee415321"
+      "sha256": "540d0c960476de1fa2d8caa9ccca18f950fea02ab0942831d469ceff26d9798f"
     }
   ],
   "verification": [
@@ -231,15 +256,26 @@
       "evidence": "reports/2026-10-17-models-prompts-v1/snapshots/workspace-{validate,resume,lint}.json"
     },
     {
-      "check": "manage.py handoff check on report-local draft",
-      "status": "rejected; canonical directory required, corrected to episode handoff location before delivery",
+      "check": "independent text/evidence review",
+      "status": "complete; two findings addressed; no media/production acceptance",
+      "evidence": "reports/2026-10-17-models-prompts-v1/review.md"
+    },
+    {
+      "check": "manage.py handoff check at canonical episode location",
+      "status": "passed",
       "evidence": "projects/andre-time-travel/agents/handoffs/2026-10-17-models-prompts-v1.json"
     }
   ],
   "nextActions": [],
   "stageComplete": true,
   "stageCompleteReason": "Research deliverable only. No production task launched; future model/prompt evaluation requires a separately accepted producer assignment.",
-  "blockers": [],
+  "blockers": [
+    {
+      "description": "Future Cinema4 preset/user-lighting use is blocked by contradictory captured schema rules. No production evaluation has been assigned.",
+      "owner": "desktop producer",
+      "unblockCondition": "Obtain reconciled official schema and a separately accepted evaluation assignment; do not use preset/user lighting from this snapshot."
+    }
+  ],
   "andreOnlyGates": [
     "Likeness/voice/artistic acceptance if any future production is commissioned."
   ],

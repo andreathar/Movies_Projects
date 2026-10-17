@@ -101,5 +101,22 @@
       "sha256": "b3c359648c75bd7fb2ae5d46b29c812687b26c1ee32806fe5affb4f6a3fbe16d",
       "use": "Read-only context; hash is provenance, not approval."
     }
+  ],
+  "additionalVersionEvidence": [
+    {
+      "url": "https://registry.npmjs.org/@klingai%2fcli-global",
+      "command": "npm view @klingai/cli-global dist-tags --json",
+      "snapshot": "snapshots/kling-npm-dist-tags.json"
+    },
+    {
+      "url": "https://registry.npmjs.org/@higgsfield%2fcli",
+      "command": "npm view @higgsfield/cli dist-tags --json",
+      "snapshot": "snapshots/higgsfield-npm-dist-tags.json"
+    },
+    {
+      "url": "https://registry.npmjs.org/@higgsfield%2fcli/1.2.2",
+      "command": "npm view @higgsfield/cli@1.2.2 version dist.tarball dist.integrity --json",
+      "snapshot": "snapshots/higgsfield-npm-release.json"
+    }
   ]
 }
