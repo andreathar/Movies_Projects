@@ -20,7 +20,7 @@ The Higgsfield breakdown is 42 video, 38 image, 15 3D, 8 audio, 3 data and 1 tex
 - **Kling 4.0 is not the same interface as Higgsfield Cinema Studio 4.0.** The former appears as `kling-video-v4_0` in Kling. Higgsfield lists Cinema4 as workflow `cinematic_studio_video_4_0`; its direct model list does not list Kling 4.0.
 - Kling V4 currently declares **3–30 s**, **720p/1080p**, up to **10 total keyframe images**, or **15 combined Omni references**. The official UI articles' 4K/HDR/Flash/extension wording must not be treated as supported CLI arguments. Omni V4's smart multishot cannot simply be turned off—important for historical-eye crop safety.
 - Higgsfield Cinema4 exposes different reference, sound and mode rules, including a 50-item reference cap/30-image cap and a video-extension mode. Neither schema presence nor a matching version number proves the same engine, price, output quality or account access.
-- Static Higgsfield docs lag behind live discovery. CLI, public API and web UI inventories must stay separate.
+- Static Higgsfield docs lag behind live discovery. CLI, public API and web UI inventories must stay separate. Cinema4's captured lighting-preset rules also contradict its `light_id` enum; preset/user lighting remains unresolved, not ready-to-run guidance.
 - **Project priority remains G-L03/G-L04 and proposed first speaking test G-P04**, after reference/timing gates. No source plan or approved route was changed; the prompt library is not a new production batch.
 
 ## Official sources

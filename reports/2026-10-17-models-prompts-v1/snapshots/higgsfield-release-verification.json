@@ -3,5 +3,14 @@
   "archiveSha256": "6a642f61f409a00d724de3079c1a7a25777eb1e49a2e0c3814e8a6ea3f49bb51",
   "matchesBundledNpmChecksum": true,
   "globalInstallationChanged": false,
-  "method": "Download/verify/extract in temporary folder; no package lifecycle scripts."
+  "method": "Download/verify/extract in temporary folder; no package lifecycle scripts.",
+  "expectedSha256": "6a642f61f409a00d724de3079c1a7a25777eb1e49a2e0c3814e8a6ea3f49bb51",
+  "expectedChecksumSource": {
+    "npmTarball": "https://registry.npmjs.org/@higgsfield/cli/-/cli-1.2.2.tgz",
+    "tarballIntegrity": "sha512-o2E6AzvAgJgNivVjMezYWoIjiPcdK6df2hb/zfdwtXwkJhY+WQiMKWIdQomhpq9KV3seO/p71RAs5s6IHwl+JQ==",
+    "tarballIntegrityVerified": true,
+    "embeddedFile": "package/checksums.json",
+    "savedAs": "snapshots/higgsfield-npm-bundled-checksums.json",
+    "archiveKey": "hf_1.2.2_linux_amd64.tar.gz"
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "version": "1.2.2",
+  "archives": {
+    "hf_1.2.2_darwin_amd64.tar.gz": "55c006d1198724efc5e612f71f7650209ab0a72ba50caed7528e4c99e639c96d",
+    "hf_1.2.2_darwin_arm64.tar.gz": "daef55b69b48d75f63f94e71379d66da737782a58a70be30441c9aa8213d8297",
+    "hf_1.2.2_linux_amd64.tar.gz": "6a642f61f409a00d724de3079c1a7a25777eb1e49a2e0c3814e8a6ea3f49bb51",
+    "hf_1.2.2_linux_arm64.tar.gz": "8f38897cccf31d517566a0a8b698e0955328d03b7755cac6ff4e050b9828ec79",
+    "hf_1.2.2_windows_amd64.tar.gz": "c759ad937b5c3d84b59e66448799235ea60232191fd526aee1c202f0e47a83ff",
+    "hf_1.2.2_windows_arm64.tar.gz": "f5dd5daa0b21d1fdcd6616519b4a3cd53f0425909fffba26541d09ba1d5542ab"
+  }
+}
