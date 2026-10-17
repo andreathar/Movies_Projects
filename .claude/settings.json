@@ -38,6 +38,21 @@
             "type": "command",
             "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/no-retry.py",
             "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/higgsfield-gate.py",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__.*[Hh]iggsfield.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}\"/.claude/hooks/higgsfield-gate.py",
+            "timeout": 10
           }
         ]
       }

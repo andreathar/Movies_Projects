@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "maintenance",
+  "contributorKind": "contributor",
+  "assignment": "Complete authorized bounded remediation of remaining frontend high dependency findings; preserve production/history and stop unsupported upstream paths.",
+  "parentTask": "01a0ff67-e9e4-75a0-99db-8bf420559029",
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "reports/2026-10-17-dependency-security-remediation-v2/README.md"
+  ],
+  "ownedPaths": [
+    "sites/movies-demandas/package.json",
+    "sites/movies-demandas/package-lock.json",
+    "reports/2026-10-17-dependency-security-remediation-v2",
+    "projects/andre-time-travel/agents/handoffs/2026-10-17-dependency-security-remediation-v2.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256Before": "01981f2784da0c6c0367c908f79ebb2f2dfdfd87d34dd66c4e42fac2c41c7780"
+    },
+    {
+      "path": "sites/movies-demandas/package-lock.json",
+      "sha256Before": "ab4360c498a569149bf6d3b1936500884844c3900c231046af74d92c32b5fa4d"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256After": "6d786b145a9dee358b64c03d0eafefac66ccf284ed5c54cafa63e1b6bc584da9",
+      "reason": "Compatible official security fixes plus two parent-scoped fixed leaf overrides;full tests/build/runtime preservation verified."
+    },
+    {
+      "path": "sites/movies-demandas/package-lock.json",
+      "sha256After": "c72a0b8b09682c8c4bc920d2099477bc194c7942f81e44aed4856c847a30eabe",
+      "reason": "Compatible official security fixes plus two parent-scoped fixed leaf overrides;full tests/build/runtime preservation verified."
+    },
+    {
+      "path": "reports/2026-10-17-dependency-security-remediation-v2/README.md",
+      "sha256After": "e7de86968f4c14e2a6238e133f2412e9e91982d12e28bf2c54a9d355801fabd4",
+      "reason": "New bounded security delivery evidence;historical reports unchanged."
+    },
+    {
+      "path": "reports/2026-10-17-dependency-security-remediation-v2/checks.json",
+      "sha256After": "98a1f6e928458da437ca2233abc1f61b3207988e8b223f3ec3c4a48aa6b78662",
+      "reason": "New bounded security delivery evidence;historical reports unchanged."
+    },
+    {
+      "path": "reports/2026-10-17-dependency-security-remediation-v2/high-disposition.json",
+      "sha256After": "cf7ae4b2647db71eb24fd3e3716f7d73ec4accb8a84ffe97ffdf95a744e69579",
+      "reason": "New bounded security delivery evidence;historical reports unchanged."
+    },
+    {
+      "path": "reports/2026-10-17-dependency-security-remediation-v2/preservation.json",
+      "sha256After": "d46b5e9bbef44aae786598273ae00727c79419915e31302c58974fc8baf60bf4",
+      "reason": "New bounded security delivery evidence;historical reports unchanged."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Verified bounded remediation evidence: README.md",
+      "evidence": "reports/2026-10-17-dependency-security-remediation-v2/README.md",
+      "sha256": "e7de86968f4c14e2a6238e133f2412e9e91982d12e28bf2c54a9d355801fabd4"
+    },
+    {
+      "statement": "Verified bounded remediation evidence: checks.json",
+      "evidence": "reports/2026-10-17-dependency-security-remediation-v2/checks.json",
+      "sha256": "98a1f6e928458da437ca2233abc1f61b3207988e8b223f3ec3c4a48aa6b78662"
+    },
+    {
+      "statement": "Verified bounded remediation evidence: high-disposition.json",
+      "evidence": "reports/2026-10-17-dependency-security-remediation-v2/high-disposition.json",
+      "sha256": "cf7ae4b2647db71eb24fd3e3716f7d73ec4accb8a84ffe97ffdf95a744e69579"
+    },
+    {
+      "statement": "Verified bounded remediation evidence: preservation.json",
+      "evidence": "reports/2026-10-17-dependency-security-remediation-v2/preservation.json",
+      "sha256": "d46b5e9bbef44aae786598273ae00727c79419915e31302c58974fc8baf60bf4"
+    }
+  ],
+  "verification": [
+    {
+      "name": "test",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 0.916,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-test.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exit": 0,
+      "seconds": 4.123,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-lint.log"
+    },
+    {
+      "name": "types",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exit": 0,
+      "seconds": 4.225,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-types.log"
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "seconds": 4.123,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-build.log"
+    },
+    {
+      "name": "peer-tree",
+      "command": [
+        "npm",
+        "ls",
+        "next",
+        "vite",
+        "vinext",
+        "eslint-config-next",
+        "sharp",
+        "react",
+        "react-dom",
+        "react-server-dom-webpack",
+        "@vitejs/plugin-rsc",
+        "@cloudflare/vite-plugin",
+        "wrangler",
+        "undici",
+        "ws",
+        "--json"
+      ],
+      "exit": 0,
+      "seconds": 1.016,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-peer-tree.log"
+    },
+    {
+      "name": "validate",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-resume.log"
+    },
+    {
+      "name": "agent-catalog",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-agent-catalog.log"
+    },
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-export-production.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-check-data.log"
+    },
+    {
+      "command": [
+        "node",
+        "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/integration.mjs"
+      ],
+      "exit": 0,
+      "capturedFrom": "successful exec_command result d6bd6b",
+      "undiciFetch": true,
+      "undiciWebSocketToWsServer": true,
+      "miniflareWorkerAndEphemeralD1": true,
+      "canonicalReferenceImageDimensionChecks": 7,
+      "directRsc": "19.2.8",
+      "vendoredRsc": "19.2.8",
+      "canonicalPersistedStateTouched": false
+    },
+    {
+      "name": "canonical build",
+      "exit": 0,
+      "evidence": "reports/2026-10-17-dependency-security-remediation-v2/checks.json"
+    }
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Review this delivery and its16-high disposition. Own upstream Braces blocker until a fixed compatible parser/consumer release exists or separately scope a maintained tooling replacement. Complete visual QA only after visible browser control is restored. No new upgrade,spend or film acceptance implied.",
+      "readiness": "pending_producer_review;upstream_fix_unavailable;browser_visual_qa_pending"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": "Eight high entries fixed/tested;remaining eight have a concrete unpatched upstream root. Visual QA remains blocked by the prior zero-width browser surface.",
+  "blockers": [
+    {
+      "description": "Braces3.0.3 has no published patched version (GHSA-vfj7-8cjw-p6xm). It keeps eight inherited package entries high across ESLint and Vinext commonjs/dynamic-import/glob chains. Exact per-package disposition is in the report.",
+      "owner": "producer/upstream parser and consumer maintainers",
+      "unblockCondition": "Official fixed compatible Braces/consumer release,or separately authorized maintained parser/tooling replacement. Do not downgrade or patch vendor code to silence audit."
+    },
+    {
+      "description": "Full visual QA remains unverified;the prior Chrome surface had zero viewport width and click timeout. Current service/HTTP/data integrity pass.",
+      "owner": "producer/user browser window",
+      "unblockCondition": "Show/select Movies Chrome tab in a visible non-minimized window and restore extension control;retry visual QA without another unchanged runtime restart."
+    }
+  ],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

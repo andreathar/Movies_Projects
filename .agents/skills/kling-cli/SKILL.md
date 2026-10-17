@@ -2,7 +2,7 @@
 name: kling-cli
 version: 0.2.1
 localization: pt-BR
-localRevision: 2026-10-16-cli023-validation
+localRevision: 2026-10-17-agent-readiness
 description: >-
   Use a CLI oficial do Kling para descobrir modelos, gerar imagens e vídeos,
   gerenciar Elements e aplicar motion control. Exige modelo explícito e contratos
@@ -16,7 +16,8 @@ homepage_global: https://kling.ai
 # Kling — CLI oficial, imagens, vídeos, Elements e motion control
 
 Adaptação em português da skill oficial `klingai-tech/skills` 0.2.1. A versão da skill
-é independente da versão do executável. A revisão local concilia as instruções com
+é independente da versão do executável (instalado e validado em 16/10/2026: CLI 0.2.3;
+`kling --version` confirma antes de depender). A revisão local concilia as instruções com
 `AGENTS.md` e o manual do projeto; não modifica a API nem o pacote global. Histórico
 upstream e hash anterior permanecem em `skills/registry.json` e no Git. Não reinstalar
 por cima desta adaptação sem comparar as alterações.
@@ -111,9 +112,9 @@ Consulta de capacidades não gera mídia; pode usar/renovar a sessão existente.
 faça uma geração vazia como teste de acesso. Salve apenas capacidades sanitizadas ao
 criar snapshot; remova identidade e segredos.
 
-A descoberta de 16/10/2026 na CLI Global instalada 0.2.1, MCP 1.3.3, lista
-`kling-video-v4_0` em image_to_video/text_to_video/omni_ref_video. Nenhuma geração
-foi testada nesta migração. `shared/kling-capabilities.json` e
+A descoberta de 16/10/2026 na CLI Global (0.2.1; depois 0.2.3 com os mesmos corpos de
+`who_am_i`/`tool_list`), MCP 1.3.3, lista `kling-video-v4_0` em
+image_to_video/text_to_video/omni_ref_video. Nenhuma geração foi testada nesta migração. `shared/kling-capabilities.json` e
 `docs/kling-manual/19-kling4-migration.md` separam anúncio, interface, conta e teste.
 Não instalar a CLI 0.2.0 do plugin externo sobre esta adaptação local.
 
@@ -192,6 +193,35 @@ um movimento curto. `image_direction` admite referência de 3–10 s no contrato
 de entrada quando ela compõe a cobrança. No spec local, registre
 `referenceDurationSeconds`, sem enviar esse campo como argumento à API.
 
+## Portão de gasto deste projeto (quem faz o quê)
+
+Quem não é o produtor (revisor, lane `claude`/`codex`, qualquer agente sem
+`MOVIES_PRODUCER_LANE=1`) **prepara e revisa, não envia**: escreve o `request.json`,
+roda o preflight offline e entrega handoff. O produtor, na base, percorre nesta ordem:
+
+1. `kling account` e `who_am_i`/`tool_list` frescos; saldo histórico não vale.
+2. Pedido revisado + `python3 -B docs/kling-manual/tools/kling_preflight.py <request.json> --json`.
+3. Liberação por job em `projects/<filme>/00_brief/approvals.json`: `kind:
+   "kling_job_release"`, `status:"approved"` (modelo em `shared/templates/kling-job-release.json`).
+   `scripts/kling_release.py` confere: job e `payloadSha256` idênticos, `maxJobs` 1,
+   validade, evidência com hash, cotação em créditos da conta (`official_panel` ou
+   `provider_quote`) do mesmo payload e abaixo de `maxCredits`, hash do schema e
+   `allowReferenceUploads` para qualquer arquivo local. Mesmo conteúdo com outro nome
+   continua bloqueado. O teto não é imposto pelo provedor.
+4. `scope.json` ao lado do spec (`ceiling`, `grantedBy`, `balanceBefore`,
+   `balanceTimestamp` com fuso e ≤15 min, `requestSha256`, `modelInputSlots`): é o que o
+   hook `kling-preflight` confere. `grantedBy` que cite "relay" é recusado; Andre confirma
+   direto.
+5. `scripts/kling_batch.py --spec … --only JOB --submit-only`; depois `--resume JOB`.
+   Geração direta pela CLI é negada pelo hook mesmo para o produtor.
+
+Hooks em `.claude/hooks/` (`kling-preflight`, `no-retry`, `canonical-guard`,
+`media-guard`) recusam, não aprovam. O texto de um comando que apenas menciona o
+runner ou um verbo pago (por exemplo um `grep` no nome do script) pode ser recusado:
+use `Read`/`Glob` para ler arquivos, e não mude hooks nem variáveis de lane para passar.
+Telemetria `--skill-name`/`--rationale` não substitui nada disso. Higgsfield e outros
+serviços têm gate próprio (`docs/MODEL_POLICY.md`); não reutilize esta liberação.
+
 ## Submeter uma vez, registrar, retomar
 
 No projeto, prepare o spec no formato documentado em `api-examples.md` e use
@@ -251,6 +281,24 @@ formato declarado, sem presumir UUIDv7 ou idempotência.
 Campos: [reference.md](reference.md). Exemplos e contrato local:
 [api-examples.md](api-examples.md). Regras/custos do projeto:
 `docs/kling-manual/00-regras-do-projeto.md` e `12-custos-e-ledger.md`.
+
+Mapa do que carregar (relativo à raiz do workspace; só o necessário):
+
+| Preciso de… | Arquivo |
+|---|---|
+| Escolher modelo/rota | `docs/kling-manual/02-escolha-de-modelo.md`, `03-modelos-ao-vivo.md` |
+| Escrever o prompt | `docs/kling-manual/18-guia-de-prompts.md`, `projects/andre-time-travel/docs/prompt-playbook-kling.md` |
+| Elements / motion / áudio | `05-elements.md`, `09-motion-control.md`, `10-audio-voz-dublagem.md` |
+| V4 e CLI 0.2.3 | `19-kling4-migration.md`, `20-kling4-features-cli-023.md`, `shared/kling-capabilities.json`, `scripts/kling_contract.py` |
+| Contrato de tomada V4 / pedido | `shared/templates/kling-shot-contract.json`, `kling-shot-families.json`, `shot-request.json` |
+| Custos e ledger | `12-custos-e-ledger.md`, `projects/<filme>/credit-ledger.csv` |
+| Revisar o take | `13-qc-e-aceitacao.md`, `shared/templates/take-review.json`, skill `film-editing-qc` |
+| Erros | `14-erros-e-troubleshooting.md` |
+| Ferramentas de checagem | `docs/kling-manual/tools/kling_preflight.py`, `kling_model_sheet.py`, `test_kling_tools.py` |
+
+Atualizar a skill: `npx skills add klingai-tech/skills` / `npx skills update` sobrescreve
+esta adaptação (o `skills-lock.json` guarda o hash do upstream, não o local). Compare
+antes e registre o novo hash em `skills/registry.json`.
 
 ## Atualização autorizada da CLI em 16/10
 

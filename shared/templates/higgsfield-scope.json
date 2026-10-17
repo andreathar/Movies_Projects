@@ -1,0 +1,10 @@
+{
+  "_comment": "Producer-owned scope for paid Higgsfield calls. Copy to projects/<episode>/00_brief/higgsfield-scope.json (or point HIGGSFIELD_SCOPE at it). Refresh balanceBefore/balanceTimestamp from `higgsfield account status` within 15 minutes of each call. A scope is a ceiling for the listed job types, not approval of any artifact, likeness, language or take.",
+  "ceiling": 0,
+  "grantedBy": "REPLACE-WITH-ANDRE-DIRECT-CONFIRMATION-REFERENCE",
+  "balanceBefore": 0,
+  "balanceTimestamp": "REPLACE-WITH-ISO-8601-WITH-UTC-OFFSET",
+  "jobTypes": [],
+  "purpose": "REPLACE-WITH-SHOT-OR-TASK-ID-AND-WHAT-IT-PRODUCES",
+  "uploadScope": "none"
+}

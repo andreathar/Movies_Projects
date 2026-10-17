@@ -7,7 +7,7 @@
       "path": "skills/kling-cli",
       "source": ".agents/skills/kling-cli",
       "type": "project_vendored",
-      "sourceSha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
+      "sourceSha256": "5645c994717fc646408afab39f1bee52ed403ad3db5cd9d4fe733c48c6f02683",
       "provenanceHistory": [
         {
           "source": "klingai-tech/skills",
@@ -48,6 +48,16 @@
           "sourceSha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
           "cliVersion": "0.2.3",
           "rehashedAt": "2026-10-16T08:11:31.304737+00:00"
+        },
+        {
+          "source": ".agents/skills/kling-cli",
+          "type": "project_agent_readiness_revision",
+          "localRevision": "2026-10-17-agent-readiness",
+          "previousSourceSha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
+          "sourceSha256": "5645c994717fc646408afab39f1bee52ed403ad3db5cd9d4fe733c48c6f02683",
+          "cliVersion": "0.2.3",
+          "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+          "note": "Added project spend gate (release, scope.json, hooks), load map, update warning; folded CLI 0.2.3 into body."
         }
       ]
     },
@@ -56,30 +66,84 @@
       "path": "skills/film-character-continuity",
       "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
       "type": "machine_local_symlink",
-      "sourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+      "sourceSha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
       "alreadyInstalledInActiveProfile": true,
-      "previousSourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
-      "rehashedAt": "2026-10-09T11:28:02-03:00"
+      "previousSourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+      "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+      "provenanceHistory": [
+        {
+          "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
+          "type": "machine_local_symlink",
+          "previousSourceSha256": "04e55f4d766b8c1a2fed7b8c3f144f8692c9bfd4446e3905a8bf9d9dd929f8b9",
+          "sourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+          "rehashedAt": "2026-10-09T11:28:02-03:00"
+        },
+        {
+          "source": "/home/athar/.hermes/skills/creative/film-character-continuity",
+          "type": "machine_local_symlink_content_review",
+          "previousSourceSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+          "sourceSha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
+          "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+          "reviewedBy": "claude (session 2026-10-17, full SKILL.md read)",
+          "note": "Changed after the 2026-10-09 linking. Content read in full; grants no spend or approval authority; conflicts and Hermes-only tools handled by skills/andre-time-travel/references/shared-skills-adapter.md. Producer to confirm at next ingest."
+        }
+      ]
     },
     {
       "name": "film-dialogue-localization",
       "path": "skills/film-dialogue-localization",
       "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
       "type": "machine_local_symlink",
-      "sourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+      "sourceSha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
       "alreadyInstalledInActiveProfile": true,
-      "previousSourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
-      "rehashedAt": "2026-10-09T11:28:02-03:00"
+      "previousSourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+      "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+      "provenanceHistory": [
+        {
+          "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
+          "type": "machine_local_symlink",
+          "previousSourceSha256": "e1c5f357d1579cba7717dd3887a3d33f5967c77ec5662d5b1f390a7a88616771",
+          "sourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+          "rehashedAt": "2026-10-09T11:28:02-03:00"
+        },
+        {
+          "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization",
+          "type": "machine_local_symlink_content_review",
+          "previousSourceSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+          "sourceSha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
+          "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+          "reviewedBy": "claude (session 2026-10-17, full SKILL.md read)",
+          "note": "Changed after the 2026-10-09 linking. Content read in full; grants no spend or approval authority; conflicts and Hermes-only tools handled by skills/andre-time-travel/references/shared-skills-adapter.md. Producer to confirm at next ingest."
+        }
+      ]
     },
     {
       "name": "film-editing-qc",
       "path": "skills/film-editing-qc",
       "source": "/home/athar/.hermes/skills/creative/film-editing-qc",
       "type": "machine_local_symlink",
-      "sourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+      "sourceSha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
       "alreadyInstalledInActiveProfile": true,
-      "previousSourceSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
-      "rehashedAt": "2026-10-09T11:28:02-03:00"
+      "previousSourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+      "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+      "provenanceHistory": [
+        {
+          "source": "/home/athar/.hermes/skills/creative/film-editing-qc",
+          "type": "machine_local_symlink",
+          "previousSourceSha256": "582accafdd36833f306bbae697be83bc1dde3eca9f420f570c2e99a1c81e8362",
+          "sourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+          "rehashedAt": "2026-10-09T11:28:02-03:00"
+        },
+        {
+          "source": "/home/athar/.hermes/skills/creative/film-editing-qc",
+          "type": "machine_local_symlink_content_review",
+          "previousSourceSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+          "sourceSha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
+          "rehashedAt": "2026-10-17T05:46:17.764383+00:00",
+          "reviewedBy": "claude (session 2026-10-17, full SKILL.md read)",
+          "note": "Changed after the 2026-10-09 linking. Content read in full; grants no spend or approval authority; conflicts and Hermes-only tools handled by skills/andre-time-travel/references/shared-skills-adapter.md. Producer to confirm at next ingest."
+        }
+      ]
     },
     {
       "name": "grounded-citations",

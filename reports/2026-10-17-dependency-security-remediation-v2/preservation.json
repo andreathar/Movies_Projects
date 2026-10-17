@@ -1,0 +1,39 @@
+{
+  "baselinePathCount": 3082,
+  "changes": [
+    {
+      "path": "sites/movies-demandas/package.json",
+      "status": "changed",
+      "metadataOnly": false
+    },
+    {
+      "path": "sites/movies-demandas/package-lock.json",
+      "status": "changed",
+      "metadataOnly": false
+    },
+    {
+      "path": "sites/movies-demandas/.vinext/dev/lock.json",
+      "status": "changed",
+      "metadataOnly": false
+    }
+  ],
+  "persistedStateUnchanged": true,
+  "databaseRevision": 9,
+  "databaseRowsSha256": "37460841060dcab56521005f93809913575416ee6d80878d10efc5b466cd4954",
+  "historicalSnapshotSha256": "0b5f24c862d8ce273e9fed65eaff299bf2d3ebfca4804c8389eb2ca9d96c95c5",
+  "head": "ed9eee8a689a4c0a8aa834dd28e29e5bd2fd6799",
+  "runtime": {
+    "running": true,
+    "ready": true,
+    "url": "http://127.0.0.1:5173",
+    "pid": 20952,
+    "startTicks": "9662495",
+    "processGroup": 20952,
+    "session": 20952,
+    "site": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+    "startedAt": "2026-10-17T09:08:55.949Z",
+    "log": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/.sites-runtime/local-review.log"
+  },
+  "externalBackups": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017",
+  "previousBackupsPreserved": true
+}

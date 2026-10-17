@@ -7,7 +7,7 @@
     },
     {
       "path": "agents/CONTRACT.md",
-      "sha256": "572ab336ead4a2857fa56348ceaf1fb77f452c0e9f74bc974587fcacaa9d1bfd"
+      "sha256": "f50036125db4098cda74d6a4cbd1b52262f423a396499fc1cc0f026bf461f38d"
     },
     {
       "path": "shared/kling-capabilities.json",
@@ -19,11 +19,11 @@
     },
     {
       "path": "skills/registry.json",
-      "sha256": "060b8f37c8d1f097772f7abbfbae51aa3c0b2ea891458cba65fe320bf43a320e"
+      "sha256": "181510eb3a8c37675bdd5b36958ea687d64f0b24f9d719bb572fbb3ae7b468c4"
     },
     {
       "path": "skills/kling-cli/SKILL.md",
-      "sha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c"
+      "sha256": "5645c994717fc646408afab39f1bee52ed403ad3db5cd9d4fe733c48c6f02683"
     },
     {
       "path": "skills/film-character-continuity/SKILL.md",
@@ -43,7 +43,7 @@
     },
     {
       "path": "skills/andre-time-travel/SKILL.md",
-      "sha256": "67416af5e18bd67db9905323a358f427cc72271153248d1d8697b9b5989188e0"
+      "sha256": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0"
     },
     {
       "path": "agents/producer.md",
@@ -95,7 +95,7 @@
       "kind": "project",
       "sourceType": "project_vendored",
       "effectiveSource": ".agents/skills/kling-cli",
-      "sha256": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c",
+      "sha256": "5645c994717fc646408afab39f1bee52ed403ad3db5cd9d4fe733c48c6f02683",
       "registeredHashMatches": true,
       "available": true,
       "roles": [
@@ -111,7 +111,7 @@
       "sourceType": "machine_local_symlink",
       "effectiveSource": "skills/film-character-continuity",
       "sha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
-      "registeredHashMatches": false,
+      "registeredHashMatches": true,
       "available": true,
       "roles": [
         "director",
@@ -130,7 +130,7 @@
       "sourceType": "machine_local_symlink",
       "effectiveSource": "skills/film-dialogue-localization",
       "sha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
-      "registeredHashMatches": false,
+      "registeredHashMatches": true,
       "available": true,
       "roles": [
         "director",
@@ -147,7 +147,7 @@
       "sourceType": "machine_local_symlink",
       "effectiveSource": "skills/film-editing-qc",
       "sha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
-      "registeredHashMatches": false,
+      "registeredHashMatches": true,
       "available": true,
       "roles": [
         "producer",
@@ -175,12 +175,12 @@
     {
       "id": "andre-time-travel",
       "title": "andre-time-travel",
-      "description": "Use when managing Andre's time-travel film project.",
+      "description": "Use for any work on Andre's time-travel film \"The Table Between Centuries\" in Movies_Projects — resuming a session, planning or reviewing a shot, keyframe, script line, take, edit or delivery, preparing or checking a Kling/Higgsfield/ElevenLabs request, writing a handoff, or deciding which skill, role brief or document to load next.",
       "path": "skills/andre-time-travel/SKILL.md",
       "kind": "project",
       "sourceType": "project_local",
       "effectiveSource": "skills/andre-time-travel",
-      "sha256": "67416af5e18bd67db9905323a358f427cc72271153248d1d8697b9b5989188e0",
+      "sha256": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0",
       "registeredHashMatches": true,
       "available": true,
       "roles": []

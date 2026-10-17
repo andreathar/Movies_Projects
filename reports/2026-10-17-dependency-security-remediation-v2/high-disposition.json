@@ -1,0 +1,143 @@
+{
+  "beforeHighPackages": 16,
+  "remediatedHighPackages": 8,
+  "blockedHighPackages": 8,
+  "auditAfter": {
+    "info": 0,
+    "low": 1,
+    "moderate": 6,
+    "high": 8,
+    "critical": 0,
+    "total": 15
+  },
+  "disposition": [
+    {
+      "package": "@next/eslint-plugin-next",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "brace-expansion",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "Both affected nodes patched within parent ranges:1.1.14\u21921.1.21 and5.0.6\u21925.0.12.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "braces",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; this is the vulnerable parser.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "browserslist",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "4.28.2\u21924.29.3 within declared range; target metadata dependency closure updated.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "eslint-config-next",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "fast-glob",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "image-size",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "2.0.2\u21922.0.4 via parent-scoped vinext override. Keeps beta5 framework instead of upgrading/migrating it. Same imageSize consumer API; all7 canonical references parsed and full build passed.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "js-yaml",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "4.1.1\u21924.3.2 within ESLint parent range; fixes the recorded merge/omap CPU advisories.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "micromatch",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "react-server-dom-webpack",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "React/React-DOM/direct RSC19.2.6\u219219.2.8; plugin-rsc0.5.26\u21920.5.30 also replaces vendored RSC19.2.6 with19.2.8. Fits existing Vinext peers; no vendor edits.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "source-map-js",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "1.2.1\u21921.2.2 within existing parent ranges.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "undici",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "7.24.8\u21927.29.1 via parent-scoped miniflare override. Stable Miniflare4 otherwise pins7.28.0, which still has later advisories. Same Node engine/API major; focused integration and full compatibility checks pass.",
+      "recommendedNextDecision": null
+    },
+    {
+      "package": "vinext",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "vite-plugin-commonjs",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "vite-plugin-dynamic-import",
+      "beforeSeverity": "high",
+      "status": "blocked_no_published_upstream_fix",
+      "currentSeverity": "high",
+      "reason": "Braces3.0.3/GHSA-vfj7-8cjw-p6xm remains unpatched; inherited through the existing Braces/micromatch/fast-glob lint or Vinext commonjs transform chain.",
+      "recommendedNextDecision": "Retain the supported tested toolchain until an official Braces/consumer fix ships, or separately authorize a maintained parser/tooling replacement/fork review. No available version-only fix; do not downgrade ESLint/Next or broadly replace Vinext to silence audit."
+    },
+    {
+      "package": "ws",
+      "beforeSeverity": "high",
+      "status": "remediated_and_tested",
+      "currentSeverity": null,
+      "reason": "8.18.0\u21928.21.0 through Cloudflare plugin1.43.1/Wrangler4.107.1/Miniflare4.20260702.0, with matching workers-types4.20260702.1; no runtime major migration.",
+      "recommendedNextDecision": null
+    }
+  ]
+}

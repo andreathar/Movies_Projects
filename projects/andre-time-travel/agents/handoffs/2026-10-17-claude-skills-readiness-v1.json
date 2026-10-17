@@ -1,0 +1,213 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "ad-hoc-skills-readiness",
+  "contributorKind": "contributor",
+  "assignment": "Andre (direct chat 2026-10-17): audit all skill-related files for agent readiness and implement the fixes, including Higgsfield gating.",
+  "parentTask": "Project improvements; no production transition",
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "skills/README.md",
+    "reports/2026-10-17-skills-readiness/README.md"
+  ],
+  "ownedPaths": [
+    ".agents/skills/kling-cli/SKILL.md",
+    ".claude/settings.json",
+    "agents/CONTRACT.md",
+    "agents/generated/catalog.json",
+    "docs/MODEL_POLICY.md",
+    "skills/README.md",
+    "skills/andre-time-travel/SKILL.md",
+    "skills/registry.json",
+    "tests/test_hooks.py",
+    ".claude/hooks/higgsfield-gate.py",
+    "shared/templates/higgsfield-scope.json",
+    "skills/andre-time-travel/references/shared-skills-adapter.md",
+    "tests/test_skills_readiness.py",
+    "reports/2026-10-17-skills-readiness/README.md",
+    "reports/2026-10-17-skills-readiness/canonical-docs.proposed.patch"
+  ],
+  "supersedes": [
+    "2026-10-17-coordinator-team-strategy-review-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": ".agents/skills/kling-cli/SKILL.md",
+      "sha256Before": "aa7bbf4a6fe326ef31c453bdd57f07d550c24eee23671b43bf866782810f077c"
+    },
+    {
+      "path": ".claude/settings.json",
+      "sha256Before": "33bbd5b5128db750714c2a6e4c16050c9779ab9a616d3f231cb7c10dd0fea793"
+    },
+    {
+      "path": "agents/CONTRACT.md",
+      "sha256Before": "572ab336ead4a2857fa56348ceaf1fb77f452c0e9f74bc974587fcacaa9d1bfd"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "5f8d8ff2faf104e64fdb59730dd876009ba07dbb79dfca254110cd14cc4cb829"
+    },
+    {
+      "path": "docs/MODEL_POLICY.md",
+      "sha256Before": "94fd23e943854215967e544b4692b4bcf7e7389682af45a8862e1098f454f764"
+    },
+    {
+      "path": "skills/README.md",
+      "sha256Before": "44dd4917ff22fb3722fb1b055a0c95d47edb64f70f5b043dc70a29e7d8a15052"
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "sha256Before": "67416af5e18bd67db9905323a358f427cc72271153248d1d8697b9b5989188e0"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256Before": "060b8f37c8d1f097772f7abbfbae51aa3c0b2ea891458cba65fe320bf43a320e"
+    },
+    {
+      "path": "tests/test_hooks.py",
+      "sha256Before": "2fe55b016447f33ec375cdc3235a69e1b0ab6f8721caf384b192d1fa405f93ce"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": ".agents/skills/kling-cli/SKILL.md",
+      "sha256After": "5645c994717fc646408afab39f1bee52ed403ad3db5cd9d4fe733c48c6f02683",
+      "reason": "Project spend gate, load map, CLI 0.2.3 folded in, update warning"
+    },
+    {
+      "path": ".claude/settings.json",
+      "sha256After": "e18a472b836b3d7abfbf90c2ad5ad0e3022f36e6bf3b5e7d6552c7672ae13ed6",
+      "reason": "Register higgsfield-gate for Bash and the Higgsfield MCP matcher"
+    },
+    {
+      "path": "agents/CONTRACT.md",
+      "sha256After": "f50036125db4098cda74d6a4cbd1b52262f423a396499fc1cc0f026bf461f38d",
+      "reason": "Point every role to the shared-skills adapter"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "f3176448813ffc0a4ad5e354e65ce4050f3c78f1c5c429e159c8741a8dc0cf1b",
+      "reason": "Regenerated derived catalog (skill hashes); agent_catalog.py --check ok"
+    },
+    {
+      "path": "docs/MODEL_POLICY.md",
+      "sha256After": "edfb66947fd62f59cbd44d374078c1b0ae5d575162d82e0ccc775a6a8fc6e227",
+      "reason": "Higgsfield policy row (paid, producer-only)"
+    },
+    {
+      "path": "skills/README.md",
+      "sha256After": "db97f1545b234d9705be548f7368f5ee45a1e53e6d7ec5cd7e075dcfed744606",
+      "reason": "Which-skill-when table, Higgsfield note, review rule"
+    },
+    {
+      "path": "skills/andre-time-travel/SKILL.md",
+      "sha256After": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0",
+      "reason": "Router rewrite (read order, task map, gates, hooks, closing)"
+    },
+    {
+      "path": "skills/registry.json",
+      "sha256After": "181510eb3a8c37675bdd5b36958ea687d64f0b24f9d719bb572fbb3ae7b468c4",
+      "reason": "kling-cli rehash + review entries for three film-* skills (history preserved)"
+    },
+    {
+      "path": "tests/test_hooks.py",
+      "sha256After": "a33c09421ec9815d4f7f3b1652fd91526bc6e9fd5204aae5d9cf977432e7ee2d",
+      "reason": "7 Higgsfield gate tests"
+    },
+    {
+      "path": ".claude/hooks/higgsfield-gate.py",
+      "sha256After": "c1b550a593d58a90c8a2b6cfe49c97b0f961f1d3165cc48fd24edc23326cb776",
+      "reason": "New deny-by-default gate for Higgsfield CLI and MCP"
+    },
+    {
+      "path": "shared/templates/higgsfield-scope.json",
+      "sha256After": "e83b3801a167bdd53c945f6de3d3626282d830747895435a304a772626411dc0",
+      "reason": "Scope record template"
+    },
+    {
+      "path": "skills/andre-time-travel/references/shared-skills-adapter.md",
+      "sha256After": "d61933b40e4efd6750f9cf52e3f72e9bba17aaa6e393da5f07af8fe4c1edb891",
+      "reason": "Precedence, tool mapping, verified ledger command"
+    },
+    {
+      "path": "tests/test_skills_readiness.py",
+      "sha256After": "7d33334612e5446f1a4461ac8b83192cd66e04e61851cd9c70d6f9b1732195ff",
+      "reason": "7 regression tests for skill readiness"
+    },
+    {
+      "path": "reports/2026-10-17-skills-readiness/README.md",
+      "sha256After": "314c01d3a3b146064293f841676d352b28a9cf833f3426f9e544190e615b49f5",
+      "reason": "Findings, changes, verification, follow-ups"
+    },
+    {
+      "path": "reports/2026-10-17-skills-readiness/canonical-docs.proposed.patch",
+      "sha256After": "d0acecad5fb10e6e4d163f2d4c95604ec5085c330befa5458d1f1af29a776a31",
+      "reason": "Verified patch for AGENTS.md/CLAUDE.md (blocked by canonical-guard for this lane)"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Symlink .claude/skills/andre-time-travel -> ../../skills/andre-time-travel created (directory symlink, so not listed in changedFiles).",
+      "evidence": "skills/andre-time-travel/SKILL.md",
+      "sha256": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0"
+    },
+    {
+      "statement": "~/.hermes shared skills were read and rehashed in the registry only; their files were not edited.",
+      "evidence": null,
+      "sha256": null
+    }
+  ],
+  "verification": [
+    ".venv/bin/python scripts/manage.py validate -> status ok, warnings [] (was 3 shared-skill-changed warnings)",
+    "python3 scripts/agent_catalog.py --check -> ok, changed []",
+    ".venv/bin/python -m unittest discover -s tests -> Ran 272 tests OK (baseline before edits: 258 OK)",
+    "git apply --check reports/2026-10-17-skills-readiness/canonical-docs.proposed.patch -> applies cleanly",
+    "grounded-citations command verified on a scratch copy of citations.json; canonical ledger unchanged",
+    "node scripts/export-workspace.mjs ../.. --check and export-production --check (sites/movies-demandas) -> snapshot stale; not rewritten because the files already carry another agent's uncommitted changes"
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Apply canonical-docs.proposed.patch to AGENTS.md/CLAUDE.md (canonical-guard blocks this lane), then ingest this handoff and confirm the film-* hash review.",
+      "readiness": "ready"
+    },
+    {
+      "role": "producer",
+      "action": "Re-run the two site exporters once the site repo's uncommitted work is settled (docs/AGENT_CATALOG.md).",
+      "readiness": "ready"
+    }
+  ],
+  "stageComplete": false,
+  "stageCompleteReason": null,
+  "blockers": [
+    {
+      "description": "AGENTS.md/CLAUDE.md edits are producer-only (canonical-guard)",
+      "owner": "producer",
+      "unblockCondition": "Producer applies the verified patch or declines it"
+    }
+  ],
+  "andreOnlyGates": [
+    "Direct grant + fresh balance in a scope record before any paid Higgsfield call",
+    "Decision whether to narrow the kling-preflight hook for read-only mentions of the runner script"
+  ],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": "First hash update overwrote previousSourceSha256 history in skills/registry.json",
+      "detected_by": "git diff review of the registry",
+      "solution": "Rebuilt from HEAD, moving earlier hashes into provenanceHistory",
+      "rule_added": "Never overwrite provenance fields; append history entries and diff the registry before closing"
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

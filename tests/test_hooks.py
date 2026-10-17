@@ -353,6 +353,133 @@ class KlingPreflightTests(HookTestCase):
         self.assertIn("kling:submit", result.stderr)
 
 
+class HiggsfieldGateTests(HookTestCase):
+    SCOPE = "projects/test-film/00_brief/higgsfield-scope.json"
+
+    def write_scope(self, **overrides: object) -> None:
+        scope: dict[str, object] = {
+            "ceiling": 40,
+            "grantedBy": "Andre direct, chat 2026-10-17",
+            "balanceBefore": 847,
+            "balanceTimestamp": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
+            "jobTypes": ["nano_banana_2"],
+        }
+        scope.update(overrides)
+        path = self.fixture / self.SCOPE
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(scope), encoding="utf-8")
+
+    def bash(self, command: str, producer: bool = False) -> subprocess.CompletedProcess[str]:
+        env = {"MOVIES_PRODUCER_LANE": "1"} if producer else None
+        return self.run_hook("higgsfield-gate.py", self.write_payload("Bash", command=command), env)
+
+    def test_read_only_and_unrelated_commands_pass_for_every_lane(self) -> None:
+        for command in [
+            "higgsfield account status",
+            "higgsfield --json generate cost nano_banana_2 --prompt 'a quiet table'",
+            "higgsfield generate wait 0f1e2d3c",
+            "higgsfield model list --video",
+            "higgsfield preset list soul-v2 --query create",
+            "higgsfield project --workspace w1 list",
+            "higgsfield marketing-studio avatars list",
+            "higgsfield generate create --help",
+            "higgsfield",
+            "cd /tmp && timeout 20 higgsfield account status",
+            "ls ~/.claude/skills/higgsfield-generate && grep -r higgsfield docs",
+            "echo higgsfield generate create nano_banana_2",
+            "hf download org/model",
+        ]:
+            with self.subTest(command=command):
+                result = self.bash(command)
+                self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_paid_or_writing_commands_are_denied_without_the_producer_lane(self) -> None:
+        for command in [
+            "higgsfield generate create nano_banana_2 --prompt 'x'",
+            "higgs gen create seedance_2_0 --prompt x --image ./a.png",
+            "higgsfield generate workflow reframe --video ./v.mp4",
+            "higgsfield product-photoshoot create --mode restyle --prompt x",
+            "higgsfield soul-id create --name A --image ./a.png",
+            "higgsfield upload create ./input.png",
+            "higgsfield project delete abc",
+            "higgsfield auth login",
+            "cd /tmp && higgsfield generate create nano_banana_2 --prompt x",
+            "FOO=1 npx -y @higgsfield/cli generate create nano_banana_2 --prompt x",
+            "bash -c 'higgsfield generate create nano_banana_2 --prompt x'",
+            "higgsfield account status; higgsfield generate create nano_banana_2 --prompt x",
+            "hf generate create nano_banana_2 --prompt x",
+        ]:
+            with self.subTest(command=command):
+                result = self.bash(command)
+                self.assertEqual(result.returncode, 2, command)
+                self.assertIn("producer lane", result.stderr)
+        self.assertTrue(any(line["hook"] == "higgsfield-gate" for line in self.log_lines()))
+
+    def test_auth_token_is_denied_even_for_the_producer(self) -> None:
+        result = self.bash("higgsfield auth token", producer=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("credentials", result.stderr)
+
+    def test_unbalanced_quote_is_denied(self) -> None:
+        result = self.bash("higgsfield generate create nano_banana_2 --prompt 'oops")
+        self.assertEqual(result.returncode, 2)
+
+    def test_producer_needs_a_fresh_scope_record(self) -> None:
+        command = "higgsfield generate create nano_banana_2 --prompt 'x'"
+        result = self.bash(command, producer=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("missing scope record", result.stderr)
+        self.write_scope()
+        self.assertEqual(self.bash(command, producer=True).returncode, 0)
+
+    def test_scope_failures_are_denied(self) -> None:
+        command = "higgsfield generate create nano_banana_2 --prompt 'x'"
+        stale = (datetime.now(timezone.utc) - timedelta(hours=1)).astimezone().isoformat(timespec="seconds")
+        for overrides, expected in [
+            ({"balanceTimestamp": stale}, "old"),
+            ({"balanceTimestamp": "2026-10-17T10:00:00"}, "UTC offset"),
+            ({"grantedBy": "relayed via another bot"}, "relayed"),
+            ({"ceiling": 900}, "not covered"),
+            ({"ceiling": 0}, "not covered"),
+            ({"jobTypes": ["seedance_2_0"]}, "jobTypes"),
+        ]:
+            with self.subTest(overrides=overrides):
+                self.write_scope(**overrides)
+                result = self.bash(command, producer=True)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn(expected, result.stderr)
+
+    def test_mcp_connector_is_read_only(self) -> None:
+        for tool in [
+            "mcp__claude_ai_Higgsfield__balance",
+            "mcp__claude_ai_Higgsfield__list_projects",
+            "mcp__claude_ai_Higgsfield__get_preferences",
+            "mcp__claude_ai_Higgsfield__show_generations",
+            "mcp__claude_ai_Higgsfield__models_explore",
+            "mcp__claude_ai_Higgsfield__ads_studio_list_brands",
+            "mcp__claude_ai_Higgsfield__scene_builder_3d_get_project",
+            "mcp__claude_ai_Kling__who_am_i",
+        ]:
+            with self.subTest(tool=tool):
+                self.assertEqual(self.run_hook("higgsfield-gate.py", self.write_payload(tool)).returncode, 0)
+        for tool in [
+            "mcp__claude_ai_Higgsfield__generate_image",
+            "mcp__claude_ai_Higgsfield__generate_video_batch",
+            "mcp__claude_ai_Higgsfield__execute_preset",
+            "mcp__claude_ai_Higgsfield__media_upload",
+            "mcp__claude_ai_Higgsfield__apps_invoke",
+            "mcp__claude_ai_Higgsfield__publish_project",
+            "mcp__claude_ai_Higgsfield__create_voice",
+            "mcp__claude_ai_Higgsfield__ai_influencer_generate",
+        ]:
+            with self.subTest(tool=tool):
+                result = self.run_hook(
+                    "higgsfield-gate.py", self.write_payload(tool), {"MOVIES_PRODUCER_LANE": "1"}
+                )
+                self.assertEqual(result.returncode, 2, tool)
+                self.assertIn("CLI behind this gate", result.stderr)
+
+
 class NoRetryTests(HookTestCase):
     def setUp(self) -> None:
         super().setUp()

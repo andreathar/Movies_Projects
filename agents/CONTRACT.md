@@ -4,7 +4,7 @@ Shared procedure for the briefs in this folder; `AGENTS.md` remains authoritativ
 
 ## Start
 
-Complete the mandatory `AGENTS.md` startup. Load this contract, **one** assigned role brief and its named skills; then the exact task inputs. Do not load every role or every historical handoff. Read additional evidence when needed, especially for a delivery being integrated. For encounter work, apply the direction document and consult historian, lighting and dialogue-sound as required by AGENTS.
+Complete the mandatory `AGENTS.md` startup. Load this contract, **one** assigned role brief and its named skills; then the exact task inputs. Named skills are read from `skills/<name>/SKILL.md`; the shared ones were written for another agent, so also apply `skills/andre-time-travel/references/shared-skills-adapter.md` (precedence, tool mapping, path fixes). Do not load every role or every historical handoff. Read additional evidence when needed, especially for a delivery being integrated. For encounter work, apply the direction document and consult historian, lighting and dialogue-sound as required by AGENTS.
 
 Before work identify: episode; session/participant (or `ad-hoc`, never a guessed Parley lane); role; task/package if assigned; mode; exact input paths, versions/hashes and review state; allowed output paths; checks; next owner. Missing information blocks only the affected action. Current board, approvals and decision IDs outrank dated examples.
 

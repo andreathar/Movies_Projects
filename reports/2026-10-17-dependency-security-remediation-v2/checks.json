@@ -1,0 +1,214 @@
+{
+  "staged": [
+    {
+      "name": "test",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 0.916,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-test.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exit": 0,
+      "seconds": 4.123,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-lint.log"
+    },
+    {
+      "name": "types",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exit": 0,
+      "seconds": 4.225,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-types.log"
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "seconds": 4.123,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-build.log"
+    },
+    {
+      "name": "peer-tree",
+      "command": [
+        "npm",
+        "ls",
+        "next",
+        "vite",
+        "vinext",
+        "eslint-config-next",
+        "sharp",
+        "react",
+        "react-dom",
+        "react-server-dom-webpack",
+        "@vitejs/plugin-rsc",
+        "@cloudflare/vite-plugin",
+        "wrangler",
+        "undici",
+        "ws",
+        "--json"
+      ],
+      "exit": 0,
+      "seconds": 1.016,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/stage-peer-tree.log"
+    }
+  ],
+  "focusedIntegration": {
+    "command": [
+      "node",
+      "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/integration.mjs"
+    ],
+    "exit": 0,
+    "capturedFrom": "successful exec_command result d6bd6b",
+    "undiciFetch": true,
+    "undiciWebSocketToWsServer": true,
+    "miniflareWorkerAndEphemeralD1": true,
+    "canonicalReferenceImageDimensionChecks": 7,
+    "directRsc": "19.2.8",
+    "vendoredRsc": "19.2.8",
+    "canonicalPersistedStateTouched": false
+  },
+  "canonicalBuild": {
+    "exit": 0,
+    "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/canonical-build.log"
+  },
+  "final": [
+    {
+      "name": "validate",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-resume.log"
+    },
+    {
+      "name": "agent-catalog",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-agent-catalog.log"
+    },
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-export-production.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/remaining-high-remediation-20261017/final-check-data.log"
+    }
+  ],
+  "runtimeIntegrity": {
+    "runtime": {
+      "running": true,
+      "ready": true,
+      "url": "http://127.0.0.1:5173",
+      "pid": 20952,
+      "startTicks": "9662495",
+      "processGroup": 20952,
+      "session": 20952,
+      "site": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "startedAt": "2026-10-17T09:08:55.949Z",
+      "log": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas/.sites-runtime/local-review.log"
+    },
+    "databaseUnchanged": true,
+    "requests": [
+      {
+        "path": "/__local/movies-ready",
+        "status": 200,
+        "sha256": "ded1b882cd819ced852e14f1dee0b87ce6f964c8209604003503f929e20e420d"
+      },
+      {
+        "path": "/@vite/client",
+        "status": 200,
+        "sha256": "1242ba9e022f03267653787f475b104c1fc56cd98e95f6c732f89f903d84a2f4"
+      },
+      {
+        "path": "/favicon.svg",
+        "status": 200,
+        "sha256": "e7dd858d06bc71f6949ead6f3dd7980a1f10636e0a97b0deaa52b61eeb4162ec",
+        "canonicalBytesMatch": true
+      },
+      {
+        "path": "/data/production.json",
+        "status": 200,
+        "sha256": "6f512af50f70af8e2febad7184d390ea864a59f29f73ae2e2c8d610a14448347",
+        "canonicalBytesMatch": true
+      },
+      {
+        "path": "/data/workspace-reference.json",
+        "status": 200,
+        "sha256": "71b471f4ee9d4c320a96acc605debfee70ae77c547767bb7c62b59f81acbcad7",
+        "canonicalBytesMatch": true
+      }
+    ]
+  }
+}
