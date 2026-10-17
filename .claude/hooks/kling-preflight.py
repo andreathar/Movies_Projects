@@ -75,15 +75,28 @@ def main() -> int:
     tokens = _common.split_command(command)
     if tokens is None:
         return _common.deny(root, HOOK, "command has unbalanced quoting; rewrite it plainly before any paid call")
+    if _common.proven_read_only(command):
+        return 0
+    if _common.plain_command(command) is None:
+        return _common.deny(root, HOOK, "compound or ambiguous Kling command; use one plain invocation")
     batch = _common.batch_invocation(tokens)
     if batch is not None:
         if batch["resume"]:
+            if batch["submit_only"]:
+                return _common.deny(root, HOOK, "resume and submit-only cannot be combined")
             return 0
-        paid = True
+    elif tokens and Path(tokens[0]).name.startswith("kling"):
+        pass  # Existing direct-generation refusal below still applies.
     else:
-        paid = cli_generation(tokens)
+        return _common.deny(root, HOOK, "wrapped or unrecognized Kling command; use one plain invocation")
+    paid = batch is not None or cli_generation(tokens)
     if not paid:
-        return 0
+        command_args = tokens[1:]
+        if command_args and command_args[0] in {"query_tasks", "who_am_i", "tool_list", "model_list", "--help", "--version"}:
+            return 0
+        if command_args in (["account"], ["account", "status"], ["account", "--json"]):
+            return 0
+        return _common.deny(root, HOOK, "unrecognized Kling operation; only established read-only commands may bypass submission gates")
     if not _common.is_producer():
         return _common.deny(
             root,

@@ -130,7 +130,7 @@ class SkillReadinessTests(unittest.TestCase):
 
     def test_higgsfield_gate_assets_are_wired(self) -> None:
         template = json.loads((ROOT / "shared/templates/higgsfield-scope.json").read_text(encoding="utf-8"))
-        for field in ["ceiling", "grantedBy", "balanceBefore", "balanceTimestamp", "jobTypes"]:
+        for field in ["ceiling", "grantedBy", "balanceBefore", "balanceTimestamp", "jobTypes", "uploadScope", "allowedOperations", "commandSha256"]:
             self.assertIn(field, template)
         settings = (ROOT / ".claude/settings.json").read_text(encoding="utf-8")
         self.assertIn("higgsfield-gate.py", settings)

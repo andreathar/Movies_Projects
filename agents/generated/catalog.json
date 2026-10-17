@@ -43,7 +43,7 @@
     },
     {
       "path": "skills/andre-time-travel/SKILL.md",
-      "sha256": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0"
+      "sha256": "168e02d4b8d37c976b30d134e03b994d0154eff6c1bc998ef860a1db63c961f4"
     },
     {
       "path": "agents/producer.md",
@@ -180,7 +180,7 @@
       "kind": "project",
       "sourceType": "project_local",
       "effectiveSource": "skills/andre-time-travel",
-      "sha256": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0",
+      "sha256": "168e02d4b8d37c976b30d134e03b994d0154eff6c1bc998ef860a1db63c961f4",
       "registeredHashMatches": true,
       "available": true,
       "roles": []

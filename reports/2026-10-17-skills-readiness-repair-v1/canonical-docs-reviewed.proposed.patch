@@ -1,0 +1,39 @@
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -16,7 +16,7 @@
+ ## Session start
+ 1. `workspace.json` + active film `memory/STATE.md` (single resume surface; `CONTINUE_HERE.md`, `START_HERE.md`, `docs/checkpoint-*.md` are detail). Decisions cited only by `00_brief/decisions/` IDs.
+ 2. Film `manifest.json`, `tasks/board.json`, `00_brief/approvals.json`.
+-3. `skills/andre-time-travel/SKILL.md` (operating procedure). Load `kling-cli`, `film-character-continuity`, `film-dialogue-localization`, `film-editing-qc` via `skills/` links when relevant — never copy them here.
++3. `skills/andre-time-travel/SKILL.md` (operating procedure and router: read order, task-to-document map, gates, hooks, closing checklist). Load `kling-cli`, `film-character-continuity`, `film-dialogue-localization`, `film-editing-qc` via `skills/` links when relevant — never copy them here. Shared skills are written for another agent: also apply `skills/andre-time-travel/references/shared-skills-adapter.md`; `AGENTS.md` remains authoritative on conflict.
+ 4. `.venv/bin/python scripts/manage.py status`; before planning/accepting/closing read the workflow map `projects/andre-time-travel/tasks/plans/workflow-map-v1.md` (owner, dependencies, evidence, next owner/blocker; its dated tables don't supersede board/approvals; reading it launches nothing and authorizes no spend).
+ 5. Before closing a delivery: `manage.py resume` and `lint`. Film gate hooks `.claude/hooks/` are refusals (tested in `tests/test_hooks.py`); they never approve, spend, commit or merge.
+ 6. Before any encounter work read `projects/andre-time-travel/docs/2026-10-09-direcao-encontros-fala-dificil.md`: the hard line motivates the reaction; keep Andre's perspective and identity; zero full historical faces; humor doesn't waive material-culture checks; consult historian, lighting, dialogue-sound roles.
+@@ -27,6 +27,7 @@
+ - All dialogue is fictional; factual anchors keep sources. Never invent quotes, task IDs, charges, job results, accepted takes, media files or language validation.
+ - The 7,741-credit snapshot is history, not balance: refresh via CLI before paid work. Whole-film spend authorization is a ceiling, not batch approval.
+ - Kling only through the installed CLI and live schemas: no HTTP/MCP bypass, credential access, login churn, auto-retries or paid probes. Paid submission only by the producer via `scripts/kling_batch.py` with a `kling_job_release` in `00_brief/approvals.json` (content, schema, quote, ceiling, validity, upload scope); same content under another name is still blocked; `--resume` is query-only. Reviewer agents have no spend or external-write authority; no background generation or schedules.
++- Higgsfield only through the installed CLI by the producer, with a fresh exact-command scope record (`shared/templates/higgsfield-scope.json`: ceiling, Andre's direct grant, live balance, job types, allowed operations, argv hash and media scope); read-only calls (`account status`, `model`, `generate cost`, `list/get/wait`) are free, the MCP connector is read-only, `auth token` is never run, and an output is an unreviewed candidate, never a likeness approval. The Claude Code hook `.claude/hooks/higgsfield-gate.py` applies only where loaded; its exact-command, job-type and media-scope checks do not grant authority. Policy in `docs/MODEL_POLICY.md`.
+ - ElevenLabs/other fees need their own scope; never buy credits or services automatically.
+ - No credentials/tokens in assets, logs, prompts, skills or memory; use existing vault routes. Project state lives in local film memory, not global user memory.
+ - Relative project paths in management data. Never silently overwrite user files, move/delete legacy Elements, commit, push or create media outside approved scope.
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -45,7 +45,7 @@
+ python3 scripts/review_sweep.py --record <path> --verdict keep|keep-tone-only|reject|variant-needed
+ ```
+ 
+-`scripts/kling_batch.py` (`--submit-only` / `--resume JOB`) and `scripts/gemini_generate.py` are producer-only paid tools. Do not run them unless you hold the producer role with a written scope and a fresh balance refresh (AGENTS.md).
++`scripts/kling_batch.py` (`--submit-only` / `--resume JOB`) and `scripts/gemini_generate.py` are producer-only paid tools. The `higgsfield` CLI is the same: only established read-only calls (`higgsfield account status`, `model list`, media-free `generate cost`) are allowed without write scope; plain generation/upload needs the producer lane and an exact-command/media scope record; other writes remain refused until implemented (`.claude/hooks/higgsfield-gate.py`, `docs/MODEL_POLICY.md`). Do not run them unless you hold the producer role with a written scope and a fresh balance refresh (AGENTS.md).
+ 
+ Run `manage.py validate` and the unit tests after any change to management data (JSON/CSV under `projects/`, `workspace.json`, registries, scripts).
+ 
+@@ -69,7 +69,7 @@
+ 
+ **Handoffs and provenance.** Agents deliver work as `projects/<film>/agents/handoffs/<date>-<role>-<topic>.json` copied from `shared/templates/agent-handoff-v2.json`, with before/after SHA-256 hashes. `workflow.py index/verify` produces the file inventory used to detect concurrent edits. `.gitattributes` sets `* -text` so hashes survive Git, and routes all media/PDF/ZIP through Git LFS.
+ 
+-**Roles and skills.** `agents/registry.json` maps film roles (producer, director, continuity, historian, ...) to briefs in `agents/*.md` and to skills; only `producer` has `paidSubmissionAuthority`. `skills/andre-time-travel/SKILL.md` is the project-local procedure; `kling-cli` is vendored at `.agents/skills/kling-cli`, linked from `skills/`, `.hermes/skills/` and `.claude/skills/`. The other shared skills link to profile sources through `skills/` and `.hermes/skills/`; they are not all mirrored in `.claude/skills/`. See `docs/AGENT_CATALOG.md` for derived, inactive reviewer adapters and frontend synchronization. `docs/PARLEY_PROTOCOL.md` describes the Agent Parley lanes (`claude`, `codex`) that work in separate worktrees and return handoffs instead of editing producer-owned records.
++**Roles and skills.** `agents/registry.json` maps film roles (producer, director, continuity, historian, ...) to briefs in `agents/*.md` and to skills; only `producer` has `paidSubmissionAuthority`. `skills/andre-time-travel/SKILL.md` is the project-local procedure; `kling-cli` is vendored at `.agents/skills/kling-cli`, linked from `skills/`, `.hermes/skills/` and `.claude/skills/`; `andre-time-travel` is linked from `.hermes/skills/` and `.claude/skills/` so Claude Code loads it as the router skill. The other shared skills link to profile sources through `skills/` and `.hermes/skills/`; they are not all mirrored in `.claude/skills/`. See `docs/AGENT_CATALOG.md` for derived, inactive reviewer adapters and frontend synchronization. `docs/PARLEY_PROTOCOL.md` describes the Agent Parley lanes (`claude`, `codex`) that work in separate worktrees and return handoffs instead of editing producer-owned records.
+ 
+ **Series vs. episode.** `series/andre-time-travel/series.json` and `FRAMEWORK.md` hold reusable rules; `shared/templates/continuation.json` + `workflow.py new-draft` create a clean draft under `drafts/` that inherits no budget, jobs, approvals or layout (tests in `tests/test_workflow.py` guard this).
+ 

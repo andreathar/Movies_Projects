@@ -287,6 +287,43 @@ class KlingPreflightTests(HookTestCase):
             result = self.run_hook("kling-preflight.py", self.write_payload("Bash", command=command))
             self.assertEqual(result.returncode, 0, command)
 
+    def test_plain_read_only_mentions_are_not_submissions(self) -> None:
+        for command in [
+            "grep -n scope scripts/kling_batch.py",
+            "rg kling_batch.py docs",
+            "sed -n '1,30p' scripts/kling_batch.py",
+            "cat scripts/kling_batch.py",
+            "head -n 10 scripts/kling_batch.py",
+            "echo scripts/kling_batch.py",
+        ]:
+            for hook in ("kling-preflight.py", "no-retry.py"):
+                with self.subTest(command=command, hook=hook):
+                    result = self.run_hook(hook, self.write_payload("Bash", command=command))
+                    self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_ambiguous_wrapped_chained_and_executable_reads_stay_denied(self) -> None:
+        self.scope.write_text(json.dumps(self.valid_scope), encoding="utf-8")
+        for command in [
+            "grep scope scripts/kling_batch.py; python3 scripts/kling_batch.py --submit-only",
+            "python3 scripts/kling_batch.py --resume DONE && kling text_to_video",
+            "python3 scripts/kling_batch.py --resume DONE\nkling text_to_video",
+            "bash -c 'python3 scripts/kling_batch.py --resume DONE'",
+            "env FOO=1 python3 scripts/kling_batch.py --resume DONE",
+            "sed -n '1e' scripts/kling_batch.py",
+            "sed -i 's/a/b/' scripts/kling_batch.py",
+            "rg --pre=anything kling_batch.py docs",
+            "echo $(python3 scripts/kling_batch.py --submit-only)",
+            "echo `python3 scripts/kling_batch.py --submit-only`",
+            "python3 scripts/kling_batch.py --resume DONE --submit-only",
+            "kling generate create unknown_model",
+            "kling unknown_operation",
+            "env FOO=1 kling text_to_video --prompt x",
+        ]:
+            for producer in (False, True):
+                with self.subTest(command=command, producer=producer):
+                    result = self.submit(producer=producer, command=command)
+                    self.assertEqual(result.returncode, 2, result.stderr)
+
     def test_default_batch_mode_is_a_paid_submission(self) -> None:
         self.scope.write_text(json.dumps(self.valid_scope), encoding="utf-8")
         default_mode = f"python3 scripts/kling_batch.py --spec {self.request}"
@@ -363,6 +400,12 @@ class HiggsfieldGateTests(HookTestCase):
             "balanceBefore": 847,
             "balanceTimestamp": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
             "jobTypes": ["nano_banana_2"],
+            "allowedOperations": ["generate:create"],
+            "uploadScope": "none",
+            "commandSha256": hashlib.sha256(json.dumps(
+                ["generate", "create", "nano_banana_2", "--prompt", "x"],
+                ensure_ascii=False, separators=(",", ":"),
+            ).encode()).hexdigest(),
         }
         scope.update(overrides)
         path = self.fixture / self.SCOPE
@@ -423,6 +466,8 @@ class HiggsfieldGateTests(HookTestCase):
     def test_unbalanced_quote_is_denied(self) -> None:
         result = self.bash("higgsfield generate create nano_banana_2 --prompt 'oops")
         self.assertEqual(result.returncode, 2)
+        self.assertEqual(self.bash("hf gen create nano_banana_2 --prompt 'oops").returncode, 2)
+        self.assertEqual(self.bash("higgsfield generate cost nano_banana_2 --image ./fixture.png").returncode, 2)
 
     def test_producer_needs_a_fresh_scope_record(self) -> None:
         command = "higgsfield generate create nano_banana_2 --prompt 'x'"
@@ -448,6 +493,84 @@ class HiggsfieldGateTests(HookTestCase):
                 result = self.bash(command, producer=True)
                 self.assertEqual(result.returncode, 2)
                 self.assertIn(expected, result.stderr)
+
+    def scope_for_command(self, command: str, **overrides: object) -> None:
+        import shlex
+        overrides["commandSha256"] = hashlib.sha256(json.dumps(
+            shlex.split(command)[1:], ensure_ascii=False, separators=(",", ":"),
+        ).encode()).hexdigest()
+        self.write_scope(**overrides)
+
+    def test_alias_job_types_and_exact_argv_are_enforced(self) -> None:
+        for program in ("higgsfield", "higgs", "hf"):
+            for group in ("generate", "gen"):
+                good = f"{program} {group} create nano_banana_2 --prompt x"
+                self.scope_for_command(good)
+                self.assertEqual(self.bash(good, producer=True).returncode, 0)
+                changed = good.replace("--prompt x", "--prompt changed")
+                self.assertEqual(self.bash(changed, producer=True).returncode, 2)
+                bad = good.replace("nano_banana_2", "other_model")
+                self.scope_for_command(bad)
+                result = self.bash(bad, producer=True)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn("jobTypes", result.stderr)
+        for value in ([], None, "*", ["*"], ["nano_banana_2", "nano_banana_2"]):
+            self.write_scope(jobTypes=value)
+            self.assertEqual(self.bash("higgsfield generate create nano_banana_2 --prompt x", producer=True).returncode, 2)
+
+    def test_uploads_and_implicit_uploads_require_exact_media_hashes(self) -> None:
+        media = self.fixture / "fixture.png"
+        media.write_bytes(b"synthetic fixture, never uploaded")
+        allowed = {"files": [{"path": "fixture.png", "sha256": sha256(media)}], "mediaIds": []}
+        for flag in ("--image", "--start-image", "--end-image", "--video", "--audio", "--image-references", "--video_references", "--audio-references"):
+            command = f"higgsfield generate create nano_banana_2 --prompt x {flag} ./fixture.png"
+            self.scope_for_command(command)
+            self.assertEqual(self.bash(command, producer=True).returncode, 2)
+            self.scope_for_command(command, uploadScope=allowed)
+            self.assertEqual(self.bash(command, producer=True).returncode, 0)
+            denied = {"files": [{"path": "fixture.png", "sha256": "0" * 64}], "mediaIds": []}
+            self.scope_for_command(command, uploadScope=denied)
+            self.assertEqual(self.bash(command, producer=True).returncode, 2)
+        upload = "higgsfield upload create ./fixture.png --image"
+        self.scope_for_command(upload, uploadScope=allowed)
+        self.assertEqual(self.bash(upload, producer=True).returncode, 2)  # operation not granted
+        self.scope_for_command(upload, uploadScope="none", allowedOperations=["upload:create"])
+        self.assertEqual(self.bash(upload, producer=True).returncode, 2)
+        self.scope_for_command(upload, uploadScope=allowed, allowedOperations=["upload:create"])
+        self.assertEqual(self.bash(upload, producer=True).returncode, 0)
+        media.write_bytes(b"changed after approval")
+        self.assertEqual(self.bash(upload, producer=True).returncode, 2)
+
+    def test_media_ids_paths_unknown_options_and_operations_fail_closed(self) -> None:
+        uuid = "12345678-1234-1234-1234-123456789abc"
+        command = f"higgsfield generate create nano_banana_2 --image={uuid}"
+        self.scope_for_command(command)
+        self.assertEqual(self.bash(command, producer=True).returncode, 2)
+        self.scope_for_command(command, uploadScope={"files": [], "mediaIds": [uuid]})
+        self.assertEqual(self.bash(command, producer=True).returncode, 0)
+        for suffix in ("--image ../outside.png", "--image https://example.invalid/photo.png", "--assets x", "--unknown-input x", "--params x"):
+            command = "higgsfield generate create nano_banana_2 " + suffix
+            self.scope_for_command(command, uploadScope={"files": [], "mediaIds": []})
+            self.assertEqual(self.bash(command, producer=True).returncode, 2)
+        for command in ("higgsfield soul-id create example", "higgsfield project delete example", "higgsfield auth login", "higgsfield generate workflow example"):
+            self.scope_for_command(command)
+            self.assertEqual(self.bash(command, producer=True).returncode, 2)
+
+    def test_paid_wrappers_chains_expansion_and_scope_shape_stay_denied_for_producer(self) -> None:
+        for command in (
+            "env FOO=1 higgsfield generate create nano_banana_2 --prompt x",
+            "bash -c 'higgsfield generate create nano_banana_2 --prompt x'",
+            "cd /tmp && higgsfield generate create nano_banana_2 --prompt x",
+            "higgsfield account status; higgsfield generate create nano_banana_2 --prompt x",
+            "higgsfield generate create nano_banana_2 --prompt $(echo x)",
+            "higgsfield generate create nano_banana_2 --prompt --help",
+        ):
+            self.scope_for_command(command)
+            self.assertEqual(self.bash(command, producer=True).returncode, 2, command)
+        command = "higgsfield generate create nano_banana_2 --prompt x"
+        for overrides in ({"ceiling": True}, {"balanceBefore": 99.5}, {"grantedBy": ""}, {"allowedOperations": []}, {"allowedOperations": [None]}, {"allowedOperations": [["generate:create"]]}):
+            self.write_scope(**overrides)
+            self.assertEqual(self.bash(command, producer=True).returncode, 2, overrides)
 
     def test_mcp_connector_is_read_only(self) -> None:
         for tool in [

@@ -44,6 +44,8 @@ def main() -> int:
     command = str((payload.get("tool_input") or {}).get("command") or "")
     if "kling_batch.py" not in command:
         return 0
+    if _common.proven_read_only(command):
+        return 0
     tokens = _common.split_command(command)
     if tokens is None:
         return _common.allow(root, HOOK, note="unbalanced quoting; preflight decides")

@@ -1,0 +1,192 @@
+{
+  "checks": [
+    {
+      "name": "python-tests-final",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 16.557,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/python-tests-final.log"
+    },
+    {
+      "name": "validate",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.058,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.18,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.196,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/resume.log"
+    },
+    {
+      "name": "assets",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.068,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/assets.log"
+    },
+    {
+      "name": "production-plan",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.107,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/production-plan.log"
+    },
+    {
+      "name": "catalog",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.031,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/catalog.log"
+    },
+    {
+      "name": "workspace-export",
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-workspace.mjs",
+        ".",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.139,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/workspace-export.log"
+    },
+    {
+      "name": "production-export",
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-production.mjs",
+        ".",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.188,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/production-export.log"
+    },
+    {
+      "name": "handoff",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "handoff",
+        "check",
+        "projects/andre-time-travel/agents/handoffs/2026-10-17-coordinator-skills-readiness-repair-v1.json"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.146,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/handoff.log"
+    },
+    {
+      "name": "canonical-patch-check",
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "reports/2026-10-17-skills-readiness-repair-v1/canonical-docs-reviewed.proposed.patch"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.002,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/canonical-patch-check.log"
+    },
+    {
+      "name": "root-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.005,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/root-diff-check.log"
+    },
+    {
+      "name": "frontend-owned-diff-check",
+      "command": [
+        "git",
+        "-C",
+        "sites/movies-demandas",
+        "diff",
+        "--check",
+        "--",
+        "data/production.json",
+        "data/workspace-reference.json"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.008,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/frontend-owned-diff-check.log"
+    }
+  ],
+  "fullPythonTests": 278,
+  "frontendTests": 87,
+  "hookTests": 46,
+  "skillReadinessTests": 7,
+  "protectedDocumentsApplied": false,
+  "protectedDocumentStatus": "pending actual permitted producer context; user content authorization already recorded",
+  "productionContentUnchanged": true,
+  "ingestionPerformed": false,
+  "paidJobsSubmitted": 0
+}

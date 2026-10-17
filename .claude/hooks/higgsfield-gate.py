@@ -12,6 +12,8 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 import os
+import hashlib
+import json
 from pathlib import Path
 import re
 import shlex
@@ -26,7 +28,7 @@ HOOK = "higgsfield-gate"
 MAX_BALANCE_AGE_SECONDS = 15 * 60
 SCOPE_ENV = "HIGGSFIELD_SCOPE"
 SCOPE_DEFAULT = "00_brief/higgsfield-scope.json"
-REQUIRED_SCOPE = ("ceiling", "grantedBy", "balanceBefore", "balanceTimestamp")
+REQUIRED_SCOPE = ("ceiling", "grantedBy", "balanceBefore", "balanceTimestamp", "jobTypes", "uploadScope", "allowedOperations", "commandSha256")
 PROGRAMS = {"higgsfield", "higgs"}
 # `hf` is also the Hugging Face CLI; treat it as Higgsfield only for Higgsfield-only groups.
 HF_ONLY_GROUPS = {
@@ -90,7 +92,9 @@ def invocations(command: str, depth: int = 0) -> list[list[str]] | None:
             if ASSIGNMENT.match(token) or token in WRAPPERS or token.startswith("-") or DURATION.match(token):
                 index += 1
                 continue
-            if name in SHELLS and depth < 3:
+            if name in SHELLS:
+                if depth >= 3:
+                    return None  # Do not assume a deeper shell is read-only.
                 rest = segment[index + 1:]
                 for position, item in enumerate(rest):
                     if item in {"-c", "-lc", "-ic", "-xc"} and position + 1 < len(rest):
@@ -126,7 +130,7 @@ def positionals(arguments: list[str]) -> list[str]:
 
 def classify(arguments: list[str]) -> tuple[str, str]:
     """Return ("read" | "token" | "paid", label) for one invocation."""
-    if any(argument in {"-h", "--help", "--version", "-v"} for argument in arguments):
+    if any(argument in {"-h", "--help", "--version", "-v"} for argument in arguments) and all(not a.startswith("-") or a in {"-h", "--help", "--version", "-v", "--json"} for a in arguments):
         return "read", "help"
     pos = positionals(arguments)
     if not pos or pos[0] in {"help", "version"}:
@@ -144,6 +148,90 @@ def classify(arguments: list[str]) -> tuple[str, str]:
 def mcp_read_only(tool_name: str) -> bool:
     suffix = tool_name.rsplit("__", 1)[-1]
     return suffix in MCP_READ_EXACT or bool(MCP_READ_PATTERN.match(suffix))
+
+
+SCALAR_FLAGS = {"--prompt", "--negative-prompt", "--duration", "--resolution", "--aspect-ratio", "--seed", "--quality", "--image-count", "--img-resolution", "--wait-timeout", "--wait-interval", "--generate-audio", "--mode", "--format", "--strength", "--should-texture"}
+BOOLEAN_FLAGS = {"--wait", "--json"}
+MEDIA_FLAGS = {"--image", "--video", "--audio", "--start-image", "--end-image",
+               "--image-references", "--video-references", "--audio-references"}
+
+
+def command_digest(arguments: list[str]) -> str:
+    """Bind approval to exact CLI argv after the executable, not just a model name."""
+    return hashlib.sha256(json.dumps(arguments, ensure_ascii=False, separators=(",", ":")).encode()).hexdigest()
+
+
+def paid_arguments(arguments: list[str]) -> list[str]:
+    """Remove only recognized global options before a plain command group."""
+    args = list(arguments)
+    while args and args[0].startswith("-"):
+        if args[0] == "--json":
+            args.pop(0)
+        elif args[0] == "--workspace" and len(args) > 1:
+            del args[:2]
+        else:
+            return []
+    if args and args[0] == "gen":
+        args[0] = "generate"
+    return args
+
+
+def scoped_media_problem(root: Path, arguments: list[str], operation: str, scope: Any) -> str | None:
+    values = []
+    if operation == "upload:create":
+        if len(arguments) < 3 or any(a not in {"--image", "--video", "--audio"} for a in arguments[3:]):
+            return "uploadScope requires one exact file and optional media-type flag"
+        values.append(arguments[2])
+    else:
+        index = 3
+        while index < len(arguments):
+            token = arguments[index]
+            key, equal, value = token.partition("=")
+            key = key.replace("_", "-")
+            if key in MEDIA_FLAGS:
+                if not equal:
+                    index += 1
+                    value = arguments[index] if index < len(arguments) else ""
+                if not value or value.startswith("--"):
+                    return "uploadScope cannot verify a missing media value"
+                values.append(value)
+            elif key in SCALAR_FLAGS:
+                if not equal:
+                    index += 1
+                    if index >= len(arguments) or arguments[index].startswith("--"):
+                        return "ambiguous scalar parameter value in scoped command"
+            elif key in BOOLEAN_FLAGS:
+                if equal:
+                    return "ambiguous boolean flag in scoped command"
+            else:
+                return "uploadScope cannot verify this unknown option/operand"
+            index += 1
+    if not values:
+        return None
+    if not isinstance(scope, dict) or set(scope) != {"files", "mediaIds"} or not isinstance(scope["files"], list) or not isinstance(scope["mediaIds"], list):
+        return "uploadScope does not authorize media inputs (local files auto-upload)"
+    files = {}
+    for item in scope["files"]:
+        if not isinstance(item, dict) or set(item) != {"path", "sha256"} or not isinstance(item["path"], str) or not isinstance(item["sha256"], str) or not re.fullmatch(r"[a-f0-9]{64}", item["sha256"]):
+            return "uploadScope file records require exact path and SHA-256"
+        path = Path(item["path"])
+        if path.is_absolute() or ".." in path.parts or not item["path"]:
+            return "uploadScope files must be workspace-relative"
+        target = (root / path).resolve()
+        if not target.is_relative_to(root.resolve()) or str(target) in files:
+            return "uploadScope contains an escaped or duplicate path"
+        files[str(target)] = item["sha256"]
+    if any(not isinstance(v, str) or not re.fullmatch(r"[a-fA-F0-9-]{36}", v) for v in scope["mediaIds"]):
+        return "uploadScope mediaIds must be explicit UUIDs"
+    for value in values:
+        path = Path(value)
+        target = (root / path).resolve() if not path.is_absolute() else path.resolve()
+        if operation != "upload:create" and value in scope["mediaIds"]:
+            continue
+        expected = files.get(str(target))
+        if not expected or not target.is_relative_to(root.resolve()) or not target.is_file() or _common.sha256_of(target) != expected:
+            return "uploadScope does not cover the exact media path/hash or ID"
+    return None
 
 
 def scope_problem(root: Path, label: str, arguments: list[str]) -> str | None:
@@ -169,29 +257,45 @@ def scope_problem(root: Path, label: str, arguments: list[str]) -> str | None:
     age = (datetime.now(timezone.utc) - observed).total_seconds()
     if age > MAX_BALANCE_AGE_SECONDS or age < -60:
         return f"balanceTimestamp is {int(age)} s old; run `higgsfield account status` and refresh the scope first"
-    try:
-        ceiling, balance = int(scope["ceiling"]), int(scope["balanceBefore"])
-    except (TypeError, ValueError):
+    ceiling, balance = scope["ceiling"], scope["balanceBefore"]
+    if type(ceiling) is not int or type(balance) is not int:
         return "ceiling and balanceBefore must be integers"
     if ceiling <= 0 or balance < ceiling:
         return f"ceiling {ceiling} is not covered by balance {balance}"
-    allowed = scope.get("jobTypes")
-    pos = positionals(arguments)
-    if isinstance(allowed, list) and allowed and pos[:2] == ["generate", "create"]:
-        if len(pos) < 3 or pos[2] not in allowed:
-            return f"job type {pos[2] if len(pos) > 2 else '?'} is not listed in scope jobTypes"
-    return None
+    if not isinstance(scope["grantedBy"], str) or not scope["grantedBy"].strip() or "REPLACE" in scope["grantedBy"].upper():
+        return "grantedBy must cite the direct grant, not a template placeholder"
+    args = paid_arguments(arguments)
+    if len(args) < 3 or args[:2] not in (["generate", "create"], ["upload", "create"]):
+        return "unsupported scoped operation; only explicit generate:create or upload:create is implemented"
+    operation = ":".join(args[:2])
+    operations = scope["allowedOperations"]
+    if not isinstance(operations, list) or operation not in operations or any(not isinstance(x, str) or x not in {"generate:create", "upload:create"} for x in operations):
+        return "operation is not listed in allowedOperations"
+    allowed = scope["jobTypes"]
+    if not isinstance(allowed, list) or any(not isinstance(v, str) or not re.fullmatch(r"[a-zA-Z0-9_]+", v) for v in allowed) or len(set(allowed)) != len(allowed):
+        return "jobTypes must be an explicit unique list"
+    if operation == "generate:create" and (not allowed or args[2] not in allowed):
+        return "job type is not listed in scope jobTypes"
+    if scope["commandSha256"] != command_digest(arguments):
+        return "commandSha256 does not match the exact CLI arguments"
+    return scoped_media_problem(root, args, operation, scope["uploadScope"])
+
 
 
 def gate_cli(root: Path, command: str) -> int:
+    if "$" in command or "`" in command or "\\" in command:
+        return _common.deny(root, HOOK, "ambiguous shell expansion in Higgsfield command")
     found = invocations(command)
     if found is None:
-        if "higgs" in command.lower():
+        if "higgs" in command.lower() or re.search(r"\bhf\b", command.lower()):
             return _common.deny(root, HOOK, "command has unbalanced quoting; rewrite it plainly before any Higgsfield call")
         return 0
     for arguments in found:
         kind, label = classify(arguments)
         if kind == "read":
+            pos = positionals(arguments)
+            if pos[:2] in (["generate", "cost"], ["gen", "cost"]) and any(a.split("=", 1)[0].replace("_", "-") in MEDIA_FLAGS for a in arguments):
+                return _common.deny(root, HOOK, "media-bearing cost lookup is not established read-only; no implicit upload is allowed")
             continue
         if kind == "token":
             return _common.deny(root, HOOK, "`auth token` prints credentials; never read or echo them", command=command[:300])
@@ -203,6 +307,9 @@ def gate_cli(root: Path, command: str) -> int:
                 f"({_common.PRODUCER_ENV}=1 on the base checkout) and a scope record",
                 command=command[:300],
             )
+        plain = _common.plain_command(command)
+        if plain is None or not plain or Path(plain[0]).name not in PROGRAMS | {"hf"} or len(found) != 1:
+            return _common.deny(root, HOOK, "paid/writing Higgsfield commands must be one plain invocation; wrapped, chained or ambiguous commands are refused")
         problem = scope_problem(root, label, arguments)
         if problem:
             return _common.deny(root, HOOK, problem, command=command[:300])

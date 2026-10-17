@@ -83,6 +83,43 @@ def split_command(command: str) -> list[str] | None:
         return None
 
 
+def plain_command(command: str) -> list[str] | None:
+    """Conservative single-command grammar; never evaluate shell syntax."""
+    if any(char in command for char in "$`\\\n\r;&|<>()"):
+        return None
+    return split_command(command)
+
+
+def proven_read_only(command: str) -> bool:
+    """Only simple display/search commands, with no executable sed/rg options."""
+    tokens = plain_command(command)
+    if not tokens:
+        return False
+    program, args = Path(tokens[0]).name, tokens[1:]
+    if program in {"cat", "head", "tail", "grep", "echo"}:
+        return True
+    if program == "rg":
+        return not any(a == "--pre" or a.startswith("--pre=") or
+                       a == "--hostname-bin" or a.startswith("--hostname-bin=") for a in args)
+    if program == "sed":
+        return len(args) >= 3 and args[0] == "-n" and bool(re.fullmatch(r"(?:\d+(?:,\d+)?|\$)?p", args[1])) and all(not a.startswith("-") for a in args[2:])
+    return False
+
+
+def batch_script_index(tokens: list[str]) -> int | None:
+    """Locate an actual plain runner invocation, never a filename data argument."""
+    if not tokens:
+        return None
+    if Path(tokens[0]).name == "kling_batch.py":
+        return 0
+    if not re.fullmatch(r"python(?:\d+(?:\.\d+)?)?", Path(tokens[0]).name):
+        return None
+    index = 1
+    while index < len(tokens) and tokens[index] in {"-B", "-I", "-u"}:
+        index += 1
+    return index if index < len(tokens) and Path(tokens[index]).name == "kling_batch.py" else None
+
+
 def redact(text: str) -> str:
     return SECRET_PATTERN.sub(r"\1[redacted]", text)
 
@@ -265,8 +302,10 @@ def has_successor(document: dict[str, Any]) -> bool:
 
 def batch_invocation(tokens: list[str]) -> dict[str, Any] | None:
     """Parse a ``kling_batch.py`` invocation into spec, only and mode fields."""
-    if not any(token.endswith("kling_batch.py") for token in tokens):
+    script_index = batch_script_index(tokens)
+    if script_index is None:
         return None
+    tokens = tokens[script_index + 1:]
     result: dict[str, Any] = {"spec": None, "only": [], "resume": None, "submit_only": False}
     index = 0
     while index < len(tokens):

@@ -1,0 +1,190 @@
+{
+  "tests": [
+    {
+      "name": "python-tests",
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "exit": 0,
+      "seconds": 17.352,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/python-tests.log"
+    },
+    {
+      "name": "frontend-tests",
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 1.206,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/frontend-tests.log"
+    },
+    {
+      "name": "frontend-lint",
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exit": 0,
+      "seconds": 5.681,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/frontend-lint.log"
+    },
+    {
+      "name": "frontend-types",
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exit": 0,
+      "seconds": 6.123,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/frontend-types.log"
+    },
+    {
+      "name": "frontend-build",
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "seconds": 4.675,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/repairs-2026-10-17/evidence/frontend-build.log"
+    }
+  ],
+  "preservation": {
+    "protectedRecords": {
+      "AGENTS.md": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b",
+      "CLAUDE.md": "840ef91bb4378d24bcff15ea7733135a6d2ed0eb77e0aa174b96a2f52533a946",
+      "workspace.json": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+      "projects/andre-time-travel/manifest.json": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+      "projects/andre-time-travel/tasks/board.json": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+      "projects/andre-time-travel/00_brief/approvals.json": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+      "projects/andre-time-travel/memory/STATE.md": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03",
+      "projects/andre-time-travel/memory/session-log.json": "fdc064e54825c74c18664087f84e23fc63d99ca10cf1842d26b373e18e4c5218",
+      "projects/andre-time-travel/credit-ledger.csv": "c661871f8f4b8d080c854b99d59ca544ecc78018fc1d34a5e10a890ca22f1c40",
+      "projects/andre-time-travel/asset-registry.csv": "8418af693cef58b0ba08f299bc7bee6d470dce6b437c90046cefa7e7d9f971c7",
+      "projects/andre-time-travel/05_storyboard/source/production-plan.json": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e"
+    },
+    "frontendFilesChecked": 128,
+    "frontendFilesChanged": [
+      "data/production.json",
+      "data/workspace-reference.json"
+    ],
+    "head": "44b489782642f28b218c51ca88a8dc5e7130880b",
+    "producerEnvironmentSetByDelivery": false,
+    "ownedChanges": [
+      {
+        "path": "tests/test_hooks.py",
+        "before": "a33c09421ec9815d4f7f3b1652fd91526bc6e9fd5204aae5d9cf977432e7ee2d",
+        "after": "bf4e97ad91a9bf59d84d09b68544d3628da386a41c3298207e02fd6012de64e6"
+      },
+      {
+        "path": "tests/test_skills_readiness.py",
+        "before": "7d33334612e5446f1a4461ac8b83192cd66e04e61851cd9c70d6f9b1732195ff",
+        "after": "9000f967ae2d3c34fd52fef0f6f1b9dc7a56884e5545a17406821d89a856e320"
+      },
+      {
+        "path": "docs/MODEL_POLICY.md",
+        "before": "edfb66947fd62f59cbd44d374078c1b0ae5d575162d82e0ccc775a6a8fc6e227",
+        "after": "2b019fbfca4e33a5c853b4c393f1db600efd4db97cd8b28e075ea87cd5977613"
+      },
+      {
+        "path": "shared/templates/higgsfield-scope.json",
+        "before": "e83b3801a167bdd53c945f6de3d3626282d830747895435a304a772626411dc0",
+        "after": "d7103e62f21fbcab7326886be0799c4bc30f4b4c649fb68c4f69c161ccdc0384"
+      },
+      {
+        "path": ".claude/hooks/higgsfield-gate.py",
+        "before": "c1b550a593d58a90c8a2b6cfe49c97b0f961f1d3165cc48fd24edc23326cb776",
+        "after": "0720cd9604315956bfe471fabb0dd81795acd62e6fb08877badea9eb295141f7"
+      },
+      {
+        "path": ".claude/hooks/_common.py",
+        "before": "4c32f345a3c87d258040d75a64978426867c4f10b185edf29001ca7ae8848185",
+        "after": "a6f30d8b4ada2caa8664fccf40744f6a8d98a79e95bcac0e9f2c6258b371884e"
+      },
+      {
+        "path": ".claude/hooks/no-retry.py",
+        "before": "2fa91cd589d3f92dd46eec361152dec183466fd2d49dc0ce471ede95d401ff30",
+        "after": "dda0d7011c0848f1c2972288c0c3e6f3a84be553319644bc4699a116e9c0593e"
+      },
+      {
+        "path": ".claude/hooks/kling-preflight.py",
+        "before": "51ec8e455b24be6454d7acee9b44532e0657dc0d0853ed29bb87c1f184e05478",
+        "after": "e1790d243ff3e220d039446e6b307c13468472b364792a036fa5df95127284e1"
+      },
+      {
+        "path": "skills/andre-time-travel/SKILL.md",
+        "before": "6e95b0b3cb17ea4974d0151d593b6a67b131a4a5636b57434a6c336ff1f8f0b0",
+        "after": "168e02d4b8d37c976b30d134e03b994d0154eff6c1bc998ef860a1db63c961f4"
+      },
+      {
+        "path": "agents/generated/catalog.json",
+        "before": "f3176448813ffc0a4ad5e354e65ce4050f3c78f1c5c429e159c8741a8dc0cf1b",
+        "after": "8da49ae439292e1e6b65f035b26996270f1627b39263015d28da1dd9ebd6fe5e"
+      },
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "before": "6f512af50f70af8e2febad7184d390ea864a59f29f73ae2e2c8d610a14448347",
+        "after": "b849c2f5ae0523846a126f84907ed1b27b355c423695db99d0b077a6d010dbb7"
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "before": "71b471f4ee9d4c320a96acc605debfee70ae77c547767bb7c62b59f81acbcad7",
+        "after": "bc2c6f63a77f7b6c7527348a398a588ada2d892f6fde9f42c2d0f3b31a12c83d"
+      }
+    ]
+  },
+  "beforeInventory": {
+    "names": [
+      "2026-10-17-coordinator-team-strategy-review-v1.json",
+      "2026-10-17-claude-skills-readiness-v1.json",
+      "2026-10-17-dependency-security-remediation-v2.json"
+    ],
+    "paths": 474,
+    "mismatches": [
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "recorded": "cc8436bf1818bcc793054468b5d2fb44cbf1a9b8a40bde9a141a4599f5a4bcee",
+        "actual": "6f512af50f70af8e2febad7184d390ea864a59f29f73ae2e2c8d610a14448347",
+        "sources": [
+          {
+            "handoff": "2026-10-17-coordinator-team-strategy-review-v1.json",
+            "sha256": "cc8436bf1818bcc793054468b5d2fb44cbf1a9b8a40bde9a141a4599f5a4bcee"
+          }
+        ]
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "recorded": "f13a04c8d71980930772945afc338fb1acdf635f65428eb4a0f205cbf3844eaf",
+        "actual": "71b471f4ee9d4c320a96acc605debfee70ae77c547767bb7c62b59f81acbcad7",
+        "sources": [
+          {
+            "handoff": "2026-10-17-coordinator-team-strategy-review-v1.json",
+            "sha256": "f13a04c8d71980930772945afc338fb1acdf635f65428eb4a0f205cbf3844eaf"
+          }
+        ]
+      }
+    ]
+  },
+  "canonicalDocuments": {
+    "status": "blocked",
+    "reason": "No actual permitted producer context; producer identity was not set by this helper",
+    "patchApplied": false
+  }
+}
