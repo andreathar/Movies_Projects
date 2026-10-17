@@ -1,0 +1,781 @@
+[
+  {
+    "command": "higgsfield",
+    "help": "Run Higgsfield image, video, and Marketing Studio workflows from the terminal.\n\nUsage:\n  higgsfield [flags]\n  higgsfield [command]\n\nAliases:\n  higgsfield, higgs, hf\n\nExamples:\n  higgsfield auth login\n  higgsfield model list --video\n  higgsfield workflow list\n  higgsfield generate create <model> --prompt \"cinematic product photo\" --image <upload_id>\n\nAvailable Commands:\n  account            Credits and transactions\n  auth               Login, logout, token\n  generate           Create, cost, list, wait jobs\n  help               Help about any command\n  marketing-studio   Marketing Studio assets\n  marketplace-cards  Marketplace product cards via backend prompt enhancement\n  model              List models and params\n  preset             Browse and resolve generation presets\n  product-photoshoot Brand-quality image generation via mode-specific prompt enhancement\n  project            Manage projects, folders, and assets\n  soul-id            Train and manage Soul refs\n  upload             Upload media and document inputs\n  version            Print build info\n  voices             List voices for text-to-speech and voice-change\n  website            Build and ship full-stack websites\n  workflow           List workflows and inspect params\n  workspace          Select billing workspace\n\nFlags:\n  -h, --help       help for higgsfield\n      --json       print raw JSON responses\n      --no-color   disable color output\n  -v, --version    print build info\n\nUse \"higgsfield [command] --help\" for more information about a command.\n",
+    "children": [
+      "account",
+      "auth",
+      "generate",
+      "marketing-studio",
+      "marketplace-cards",
+      "model",
+      "preset",
+      "product-photoshoot",
+      "project",
+      "soul-id",
+      "upload",
+      "version",
+      "voices",
+      "website",
+      "workflow",
+      "workspace"
+    ]
+  },
+  {
+    "command": "higgsfield account",
+    "help": "View the signed-in account's balance, subscription plan, and recent credit transactions.\n\nUsage:\n  higgsfield account [command]\n\nAliases:\n  account, acc\n\nExamples:\n  higgsfield account status\n  higgsfield account transactions --size 50\n\nAvailable Commands:\n  status       Show account email, plan, and available credits\n  transactions List recent credit transactions\n\nFlags:\n  -h, --help   help for account\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield account [command] --help\" for more information about a command.\n",
+    "children": [
+      "status",
+      "transactions"
+    ]
+  },
+  {
+    "command": "higgsfield account status",
+    "help": "Show account email, plan, and available credits\n\nUsage:\n  higgsfield account status [flags]\n\nFlags:\n  -h, --help   help for status\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield account transactions",
+    "help": "List recent credit transactions\n\nUsage:\n  higgsfield account transactions [flags]\n\nExamples:\n  higgsfield account transactions\n  higgsfield account transactions --size 100 --cursor <cursor>\n\nFlags:\n      --cursor string   pagination cursor\n  -h, --help            help for transactions\n      --size int        page size (max 100) (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield auth",
+    "help": "Authenticate with Higgsfield using OAuth 2.0 PKCE and manage the local credentials file.\n\nUsage:\n  higgsfield auth [command]\n\nExamples:\n  higgsfield auth login\n  higgsfield auth token\n  higgsfield auth logout\n\nAvailable Commands:\n  login       Start browser-based OAuth login\n  logout      Delete the locally stored access token\n  token       Print the current access token\n\nFlags:\n  -h, --help   help for auth\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield auth [command] --help\" for more information about a command.\n",
+    "children": [
+      "login",
+      "logout",
+      "token"
+    ]
+  },
+  {
+    "command": "higgsfield auth login",
+    "help": "Start browser-based OAuth login\n\nUsage:\n  higgsfield auth login [flags]\n\nFlags:\n  -h, --help       help for login\n      --port int   Loopback callback port; omit for default port with auto-fallback\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield auth logout",
+    "help": "Delete the locally stored access token\n\nUsage:\n  higgsfield auth logout [flags]\n\nFlags:\n  -h, --help   help for logout\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield auth token",
+    "help": "Print the current access token\n\nUsage:\n  higgsfield auth token [flags]\n\nFlags:\n  -h, --help   help for token\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield generate",
+    "help": "Create jobs, estimate cost, inspect results, and list recent image, video, or text generations.\n\nUsage:\n  higgsfield generate [command]\n\nAliases:\n  generate, gen\n\nExamples:\n  higgsfield generate create nano_banana_2 --prompt \"studio product photo\"\n  higgsfield generate workflow reframe --video ./source.mp4 --aspect-ratio 9:16\n  higgsfield generate cost nano_banana_2 --prompt \"studio product photo\"\n  higgsfield generate wait <job_id>\n\nAvailable Commands:\n  cost        Estimate generation cost\n  create      Create a generation job\n  get         Show one generation job\n  list        List recent generation jobs\n  wait        Poll a job until it finishes\n  workflow    Create a workflow generation\n\nFlags:\n  -h, --help   help for generate\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield generate [command] --help\" for more information about a command.\n",
+    "children": [
+      "cost",
+      "create",
+      "get",
+      "list",
+      "wait",
+      "workflow"
+    ]
+  },
+  {
+    "command": "higgsfield generate cost",
+    "help": "Estimate credits without creating a job.\nFor models, params and media flags match generate create. Local file paths are auto-uploaded.\nRun `higgsfield model get <job_type>` or `higgsfield workflow get <workflow_name>` to inspect accepted params.\n\nUsage:\n  higgsfield generate cost <job_type>|workflow <workflow_name> [--param value]... [flags]\n\nExamples:\n  higgsfield generate cost nano_banana_2 --prompt \"cinematic product photo\"\n  higgsfield generate cost <video_model> --prompt \"slow push-in shot\" --image ./first.png\n  higgsfield generate cost workflow reframe --duration 7.1 --resolution 1080p\n\nFlags:\n  -h, --help   help for cost\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield generate create",
+    "help": "Create an image, video, audio, or 3D job.\nPass params as --name value.\nMedia flags: --image-references, --video-references, --audio-references, --start-image, --end-image.\nShort aliases: --image, --video, --audio.\nMedia flags accept a UUID (upload id or job id) or a local file path — paths are auto-uploaded.\nRun `higgsfield model get <job_type>` to inspect accepted params.\nUse --wait to block until each job finishes and print the result URL(s).\n\nUsage:\n  higgsfield generate create <job_type> [--param value]... [flags]\n\nExamples:\n  higgsfield generate create seedance_2_0 --prompt \"cinematic product photo\" --image-references ./photo.png\n  higgsfield generate create <video_model> --prompt \"...\" --video-references ./reference.mp4 --wait --wait-timeout 20m --wait-interval 5s\n\nFlags:\n  -h, --help   help for create\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield generate get",
+    "help": "Show one generation job\n\nUsage:\n  higgsfield generate get <id> [flags]\n\nExamples:\n  higgsfield generate get <job_id>\n  higgsfield generate get <job_id> --json\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield generate list",
+    "help": "List recent generation jobs\n\nUsage:\n  higgsfield generate list [flags]\n\nExamples:\n  higgsfield generate list\n  higgsfield generate list --video --size 50\n  higgsfield generate list --text\n  higgsfield generate list --json\n\nFlags:\n      --audio      audio jobs only\n  -h, --help       help for list\n      --image      image jobs only\n      --size int   page size (default 20)\n      --text       text jobs only\n      --video      video jobs only\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield generate wait",
+    "help": "Poll a job until it finishes\n\nUsage:\n  higgsfield generate wait <id> [flags]\n\nExamples:\n  higgsfield generate wait <job_id>\n  higgsfield generate wait <job_id> --timeout 20m --interval 5s\n  higgsfield generate wait <job_id> --quiet\n\nFlags:\n  -h, --help                help for wait\n      --interval duration   poll interval (default 3s)\n  -q, --quiet               no progress output\n      --timeout duration    max wait duration (default 10m0s)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield generate workflow",
+    "help": "Create a workflow generation. Pass params as --name value. Media flags accept UUIDs or local file paths.\nRun `higgsfield workflow get <workflow_name>` to inspect accepted params.\n\nUsage:\n  higgsfield generate workflow <workflow_name> [--param value]... [flags]\n\nExamples:\n  higgsfield generate workflow draw_to_video --video ./source.mp4 --sketch ./frame.png --prompt \"make the jacket red\" --wait\n  higgsfield generate workflow reframe --video ./source.mp4 --aspect-ratio 9:16 --resolution 720p --wait\n\nFlags:\n  -h, --help   help for workflow\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio",
+    "help": "Manage avatars, products, hooks, settings, and web products used by Higgsfield Marketing Studio workflows.\n\nUsage:\n  higgsfield marketing-studio [command]\n\nAliases:\n  marketing-studio, marketing, ms\n\nExamples:\n  higgsfield marketing-studio avatars list\n  higgsfield marketing-studio hooks list\n  higgsfield marketing-studio products create --title \"Sneaker\" --image <upload_id>\n  higgsfield marketing-studio webproducts fetch --url https://example.com --wait\n\nAvailable Commands:\n  ad-formats    DTC Ads Engine ad format presets\n  ad-references Manage Marketing Studio ad references\n  avatars       Manage Marketing Studio avatars\n  brand-kits    Marketing Studio brand kits\n  dtc-ads       DTC Ads Engine — branded image generation\n  hooks         Manage Marketing Studio hooks\n  products      Manage Marketing Studio products\n  settings      Manage Marketing Studio settings\n  webproducts   Manage Marketing Studio web products\n\nFlags:\n  -h, --help   help for marketing-studio\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio [command] --help\" for more information about a command.\n",
+    "children": [
+      "ad-formats",
+      "ad-references",
+      "avatars",
+      "brand-kits",
+      "dtc-ads",
+      "hooks",
+      "products",
+      "settings",
+      "webproducts"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio ad-formats",
+    "help": "DTC Ads Engine ad format presets\n\nUsage:\n  higgsfield marketing-studio ad-formats [command]\n\nAliases:\n  ad-formats, ad-format, formats\n\nExamples:\n  higgsfield marketing-studio ad-formats list\n  higgsfield marketing-studio ad-formats list --type headline\n\nAvailable Commands:\n  list        List ad format presets\n\nFlags:\n  -h, --help   help for ad-formats\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio ad-formats [command] --help\" for more information about a command.\n",
+    "children": [
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio ad-formats list",
+    "help": "List ad format presets\n\nUsage:\n  higgsfield marketing-studio ad-formats list [flags]\n\nExamples:\n  higgsfield marketing-studio ad-formats list\n  higgsfield marketing-studio ad-formats list --type headline --json\n\nFlags:\n  -h, --help          help for list\n      --type string   filter by format type (client-side)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio ad-references",
+    "help": "Manage Marketing Studio ad references\n\nUsage:\n  higgsfield marketing-studio ad-references [command]\n\nAliases:\n  ad-references, ad-refs, adrefs\n\nExamples:\n  higgsfield marketing-studio ad-references list\n  higgsfield marketing-studio ad-references create --video-input <upload_id>\n  higgsfield marketing-studio ad-references get <id>\n\nAvailable Commands:\n  create      Create an ad reference\n  get         Fetch an ad reference\n  list        List ad references\n\nFlags:\n  -h, --help   help for ad-references\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio ad-references [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "get",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio ad-references create",
+    "help": "Create an ad reference\n\nUsage:\n  higgsfield marketing-studio ad-references create [flags]\n\nExamples:\n  higgsfield marketing-studio ad-references create --video-input <upload_id>\n  higgsfield marketing-studio ad-references create --video-input <upload_id> --avatar <avatar_id>\n  higgsfield marketing-studio ad-references create --job <job_id> --product <product_id>\n\nFlags:\n      --avatar string        marketing-studio avatar id (optional)\n  -h, --help                 help for create\n      --job string           completed video job id\n      --product string       marketing-studio product id (optional)\n      --video-input string   uploaded video input id\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio ad-references get",
+    "help": "Fetch an ad reference\n\nUsage:\n  higgsfield marketing-studio ad-references get <id> [flags]\n\nExamples:\n  higgsfield marketing-studio ad-references get 30c71a38-...\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio ad-references list",
+    "help": "List ad references\n\nUsage:\n  higgsfield marketing-studio ad-references list [flags]\n\nExamples:\n  higgsfield marketing-studio ad-references list\n  higgsfield marketing-studio ad-references list --size 50 --cursor <cursor>\n\nFlags:\n      --cursor string   pagination cursor (created_at unix timestamp)\n  -h, --help            help for list\n      --size int        page size (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio avatars",
+    "help": "Manage Marketing Studio avatars\n\nUsage:\n  higgsfield marketing-studio avatars [command]\n\nExamples:\n  higgsfield marketing-studio avatars list\n  higgsfield marketing-studio avatars create --name Alice --image <upload_id>\n\nAvailable Commands:\n  create      Create a Marketing Studio avatar\n  list        List Marketing Studio avatars\n\nFlags:\n  -h, --help   help for avatars\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio avatars [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio avatars create",
+    "help": "Create a Marketing Studio avatar\n\nUsage:\n  higgsfield marketing-studio avatars create [flags]\n\nExamples:\n  higgsfield marketing-studio avatars create --name Alice\n  higgsfield marketing-studio avatars create --name Alice --image <upload_id> --pinned\n\nFlags:\n  -h, --help               help for create\n      --image string       uploaded image id\n      --image-url string   uploaded image cloudfront url\n      --name string        avatar name (required)\n      --pinned             pin avatar\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio avatars list",
+    "help": "List Marketing Studio avatars\n\nUsage:\n  higgsfield marketing-studio avatars list [flags]\n\nExamples:\n  higgsfield marketing-studio avatars list\n  higgsfield marketing-studio avatars list --size 50\n\nFlags:\n  -h, --help       help for list\n      --size int   page size (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio brand-kits",
+    "help": "Marketing Studio brand kits\n\nUsage:\n  higgsfield marketing-studio brand-kits [command]\n\nAliases:\n  brand-kits, brand-kit, bk\n\nExamples:\n  higgsfield marketing-studio brand-kits list\n  higgsfield marketing-studio brand-kits fetch --url https://example.com --wait\n  higgsfield marketing-studio brand-kits get <id>\n\nAvailable Commands:\n  fetch       Create a brand kit from a website URL\n  get         Fetch a brand kit\n  list        List brand kits\n\nFlags:\n  -h, --help   help for brand-kits\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio brand-kits [command] --help\" for more information about a command.\n",
+    "children": [
+      "fetch",
+      "get",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio brand-kits fetch",
+    "help": "Create a brand kit from a website URL\n\nUsage:\n  higgsfield marketing-studio brand-kits fetch [flags]\n\nExamples:\n  higgsfield marketing-studio brand-kits fetch --url https://example.com\n  higgsfield marketing-studio brand-kits fetch --url https://example.com --wait\n\nFlags:\n  -h, --help               help for fetch\n      --timeout duration   wait timeout (default 2m0s)\n      --url string         website URL (required)\n      --wait               block until the kit is completed or failed\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio brand-kits get",
+    "help": "Fetch a brand kit\n\nUsage:\n  higgsfield marketing-studio brand-kits get <id> [flags]\n\nExamples:\n  higgsfield marketing-studio brand-kits get <id>\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio brand-kits list",
+    "help": "List brand kits\n\nUsage:\n  higgsfield marketing-studio brand-kits list [flags]\n\nExamples:\n  higgsfield marketing-studio brand-kits list\n  higgsfield marketing-studio brand-kits list --size 50 --cursor <cursor>\n\nFlags:\n      --cursor string   pagination cursor (created_at unix timestamp)\n  -h, --help            help for list\n      --size int        page size (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio dtc-ads",
+    "help": "DTC Ads Engine — branded image generation\n\nUsage:\n  higgsfield marketing-studio dtc-ads [command]\n\nAliases:\n  dtc-ads, dtc, ads\n\nExamples:\n  higgsfield marketing-studio dtc-ads generate --prompt \"hero shot\" --format-id <uuid> --brand-kit-id <uuid>\n\nAvailable Commands:\n  generate    Generate a DTC ad image\n\nFlags:\n  -h, --help   help for dtc-ads\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio dtc-ads [command] --help\" for more information about a command.\n",
+    "children": [
+      "generate"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio dtc-ads generate",
+    "help": "Generate a DTC ad image\n\nUsage:\n  higgsfield marketing-studio dtc-ads generate [flags]\n\nExamples:\n  higgsfield marketing-studio dtc-ads generate --prompt \"hero shot\" --format-id <uuid>\n  higgsfield marketing-studio dtc-ads generate --prompt \"...\" --format-id <uuid> --brand-kit-id <uuid> --wait\n\nFlags:\n      --aspect-ratio string   aspect ratio (default 1:1)\n      --avatar stringArray    avatar: <avatar_id>[:<type>] (default type: preset; max 1)\n      --batch-size int        batch size 1..20 (default 1)\n      --brand-kit-id string   brand kit id to apply\n      --cost-only             preview cost without creating a job\n      --folder-id string      folder placement\n      --format-id string      ad format id (required)\n      --from-file string      JSON file with the params shape (flags merge over file values)\n  -h, --help                  help for generate\n      --media stringArray     reference media: <media_input_id>[:<role>] (default role: image; repeatable, ≤14)\n      --product stringArray   product id (max 1)\n      --prompt string         image brief (required, or via --from-file)\n      --quality string        quality: low, medium, high (default low)\n      --resolution string     resolution: 1k, 2k, 4k (default 1k)\n      --timeout duration      wait timeout (default 5m0s)\n      --wait                  block until the job finishes\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio hooks",
+    "help": "Manage Marketing Studio hooks\n\nUsage:\n  higgsfield marketing-studio hooks [command]\n\nExamples:\n  higgsfield marketing-studio hooks list\n  higgsfield marketing-studio hooks list --search sale --size 50\n\nAvailable Commands:\n  list        List Marketing Studio hooks\n\nFlags:\n  -h, --help   help for hooks\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio hooks [command] --help\" for more information about a command.\n",
+    "children": [
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio hooks list",
+    "help": "List Marketing Studio hooks\n\nUsage:\n  higgsfield marketing-studio hooks list [flags]\n\nExamples:\n  higgsfield marketing-studio hooks list\n  higgsfield marketing-studio hooks list --search sale --cursor <cursor>\n\nFlags:\n      --cursor string   pagination cursor\n  -h, --help            help for list\n      --search string   search by name or prompt\n      --size int        custom item page size; preset items may also be returned (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio products",
+    "help": "Manage Marketing Studio products\n\nUsage:\n  higgsfield marketing-studio products [command]\n\nExamples:\n  higgsfield marketing-studio products list\n  higgsfield marketing-studio products create --title \"Sneaker\" --image <upload_id>\n  higgsfield marketing-studio products fetch --url https://example.com/product --wait\n\nAvailable Commands:\n  create      Create a product from uploaded images\n  fetch       Import a product from a web page\n  list        List Marketing Studio products\n\nFlags:\n  -h, --help   help for products\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio products [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "fetch",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio products create",
+    "help": "Create a product from uploaded images\n\nUsage:\n  higgsfield marketing-studio products create [flags]\n\nExamples:\n  higgsfield marketing-studio products create --title \"Sneaker\" --image <upload_id>\n  higgsfield marketing-studio products create --title \"Sneaker\" --description \"Limited release\" --image <upload_id>\n\nFlags:\n      --description string   product description\n  -h, --help                 help for create\n      --image stringArray    uploaded image id (repeatable, ≥1)\n      --title string         product title (required)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio products fetch",
+    "help": "Import a product from a web page\n\nUsage:\n  higgsfield marketing-studio products fetch [flags]\n\nExamples:\n  higgsfield marketing-studio products fetch --url https://example.com/product\n  higgsfield marketing-studio products fetch --url https://example.com/product --wait\n\nFlags:\n  -h, --help               help for fetch\n      --timeout duration   wait timeout (default 1m30s)\n      --url string         product page URL (required)\n      --wait               block until import completes\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio products list",
+    "help": "List Marketing Studio products\n\nUsage:\n  higgsfield marketing-studio products list [flags]\n\nExamples:\n  higgsfield marketing-studio products list\n  higgsfield marketing-studio products list --limit 50\n\nFlags:\n  -h, --help         help for list\n      --limit int    page limit (default 20)\n      --offset int   deprecated; SDK products list uses cursor pagination\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio settings",
+    "help": "Manage Marketing Studio settings\n\nUsage:\n  higgsfield marketing-studio settings [command]\n\nExamples:\n  higgsfield marketing-studio settings list\n  higgsfield marketing-studio settings list --search office --size 50\n\nAvailable Commands:\n  list        List Marketing Studio settings\n\nFlags:\n  -h, --help   help for settings\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio settings [command] --help\" for more information about a command.\n",
+    "children": [
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio settings list",
+    "help": "List Marketing Studio settings\n\nUsage:\n  higgsfield marketing-studio settings list [flags]\n\nExamples:\n  higgsfield marketing-studio settings list\n  higgsfield marketing-studio settings list --search office --cursor <cursor>\n\nFlags:\n      --cursor string   pagination cursor\n  -h, --help            help for list\n      --search string   search by name or prompt\n      --size int        custom item page size; preset items may also be returned (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio webproducts",
+    "help": "Manage Marketing Studio web products\n\nUsage:\n  higgsfield marketing-studio webproducts [command]\n\nExamples:\n  higgsfield marketing-studio webproducts list\n  higgsfield marketing-studio webproducts create --url https://example.com --title \"Product\"\n  higgsfield marketing-studio webproducts fetch --url https://example.com --wait\n\nAvailable Commands:\n  create      Create a web product from a URL\n  fetch       Import a web product from a URL\n  list        List Marketing Studio web products\n\nFlags:\n  -h, --help   help for webproducts\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketing-studio webproducts [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "fetch",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield marketing-studio webproducts create",
+    "help": "Create a web product from a URL\n\nUsage:\n  higgsfield marketing-studio webproducts create [flags]\n\nExamples:\n  higgsfield marketing-studio webproducts create --url https://example.com --title \"Landing Page\"\n\nFlags:\n      --description string    description\n      --desktop stringArray   deprecated; not exposed by the current SDK create spec\n      --favicon-url string    deprecated; not exposed by the current SDK create spec\n  -h, --help                  help for create\n      --mobile stringArray    deprecated; not exposed by the current SDK create spec\n      --subtitle string       deprecated; not exposed by the current SDK create spec\n      --title string          title\n      --url string            homepage URL\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio webproducts fetch",
+    "help": "Import a web product from a URL\n\nUsage:\n  higgsfield marketing-studio webproducts fetch [flags]\n\nExamples:\n  higgsfield marketing-studio webproducts fetch --url https://example.com\n  higgsfield marketing-studio webproducts fetch --url https://example.com --wait --timeout 2m\n\nFlags:\n  -h, --help               help for fetch\n      --timeout duration   wait timeout (default 1m30s)\n      --url string         page URL (required)\n      --wait               block until import completes\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketing-studio webproducts list",
+    "help": "List Marketing Studio web products\n\nUsage:\n  higgsfield marketing-studio webproducts list [flags]\n\nExamples:\n  higgsfield marketing-studio webproducts list\n  higgsfield marketing-studio webproducts list --limit 50\n\nFlags:\n  -h, --help         help for list\n      --limit int    page limit (default 20)\n      --offset int   deprecated; SDK webproducts list uses cursor pagination\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield marketplace-cards",
+    "help": "Create marketplace main images, secondary product images, and A+ style modules. Backend keeps marketplace references and prompt templates private, then returns nano_banana_2 prompts for job creation.\n\nUsage:\n  higgsfield marketplace-cards [command]\n\nAliases:\n  marketplace-cards, marketplace-card, cards\n\nExamples:\n  hf marketplace-cards create --scope product-images --prompt \"sparkling lemonade can\" --image can.png\n\nAvailable Commands:\n  create      Enhance marketplace card prompts and generate images\n\nFlags:\n  -h, --help   help for marketplace-cards\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield marketplace-cards [command] --help\" for more information about a command.\n",
+    "children": [
+      "create"
+    ]
+  },
+  {
+    "command": "higgsfield marketplace-cards create",
+    "help": "Enhance marketplace card prompts and generate images\n\nUsage:\n  higgsfield marketplace-cards create [flags]\n\nExamples:\n  hf marketplace-cards create --scope full-set --prompt \"peach lemonade can\" --image product.png\n\nFlags:\n      --asset strings            specific asset type; repeatable\n      --brand_context string     extra brand description\n      --category string          marketplace product category\n      --enhance-only             return enhanced prompts without submitting generation jobs\n  -h, --help                     help for create\n      --image strings            product reference image — file path or upload UUID; repeatable\n      --interval duration        poll interval (default 3s)\n      --main-job string          existing completed nano_banana_2 main image job id for secondary/A+ assets\n      --product_context string   extra product description\n      --product_url string       source product URL\n      --prompt string            user intent (required)\n      --scope string             generation scope: main, product-images, aplus, full-set (default \"main\")\n      --timeout duration         max wait per job (default 15m0s)\n      --visual_style string      visual style constraints\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield model",
+    "help": "List Higgsfield models and inspect each model's job_type, media type, and accepted parameters.\n\nUsage:\n  higgsfield model [command]\n\nExamples:\n  higgsfield model list\n  higgsfield model list --image\n  higgsfield model get nano_banana_2\n\nAvailable Commands:\n  get         Show model parameters and defaults\n  list        List image, video, text, and audio generation models\n\nFlags:\n  -h, --help   help for model\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield model [command] --help\" for more information about a command.\n",
+    "children": [
+      "get",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield model get",
+    "help": "Show model parameters and defaults\n\nUsage:\n  higgsfield model get <job_type> [flags]\n\nExamples:\n  higgsfield model get nano_banana_2\n  higgsfield model get <job_type> --json\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield model list",
+    "help": "List image, video, text, and audio generation models\n\nUsage:\n  higgsfield model list [flags]\n\nExamples:\n  higgsfield model list\n  higgsfield model list --video\n  higgsfield model list --audio\n  higgsfield model list --image --json\n\nFlags:\n      --audio   show audio models only\n  -h, --help    help for list\n      --image   show image models only\n      --text    show text models only\n      --video   show video models only\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield preset",
+    "help": "Browse and resolve generation presets\n\nUsage:\n  higgsfield preset [command]\n\nAliases:\n  preset, presets\n\nExamples:\n  higgsfield preset list marketing-studio-v2 --type hypermotion\n  higgsfield preset list soul-v2 --query exposure\n  higgsfield preset list video-explainer\n  higgsfield preset resolve video-explainer <preset_id>\n  higgsfield preset list animation-action --query walk\n\nAvailable Commands:\n  list        List presets by type\n  resolve     Resolve a preset into a generation input\n\nFlags:\n  -h, --help   help for preset\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield preset [command] --help\" for more information about a command.\n",
+    "children": [
+      "list",
+      "resolve"
+    ]
+  },
+  {
+    "command": "higgsfield preset list",
+    "help": "List server-managed presets. Types: marketing-studio-v2, soul-v2, video-explainer, animation-action.\n\nUsage:\n  higgsfield preset list <type> [flags]\n\nExamples:\n  higgsfield preset list marketing-studio-v2 --type product_shots --json\n  higgsfield preset list soul-v2 --json\n  higgsfield preset list video-explainer --json\n  higgsfield preset list animation-action --query backflip\n  higgsfield preset list animation-action --group Fighting --category Punching --limit 50 --json\n\nFlags:\n      --after string      animation action pagination token\n      --category string   filter animation actions by category\n      --group string      filter animation actions by group\n  -h, --help              help for list\n      --limit int         maximum animation action results (1-100) (default 20)\n      --query string      search preset name, category, or id\n      --type string       filter Marketing Studio V2 generation type\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield preset resolve",
+    "help": "Resolve a video-explainer preset into its workspace-scoped style media input.\n\nUsage:\n  higgsfield preset resolve <type> <preset_id> [flags]\n\nExamples:\n  higgsfield preset resolve video-explainer <preset_id>\n  higgsfield preset resolve video-explainer <preset_id> --json\n\nFlags:\n  -h, --help   help for resolve\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield product-photoshoot",
+    "help": "Submit a high-level intent and a mode; backend assembles a structured prompt and generates images.\n\nUsage:\n  higgsfield product-photoshoot [command]\n\nExamples:\n  higgsfield product-photoshoot create --mode lifestyle_scene --prompt \"bottle for IG\" --image bottle.jpg --count 3\n\nAvailable Commands:\n  create      Enhance prompt and generate brand images\n\nFlags:\n  -h, --help   help for product-photoshoot\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield product-photoshoot [command] --help\" for more information about a command.\n",
+    "children": [
+      "create"
+    ]
+  },
+  {
+    "command": "higgsfield product-photoshoot create",
+    "help": "Enhance prompt and generate brand images\n\nUsage:\n  higgsfield product-photoshoot create [flags]\n\nExamples:\n  higgsfield product-photoshoot create --mode product_shot --prompt \"hero shot of fragrance\" --image fragrance.jpg\n\nFlags:\n      --aspect_ratio string      override default aspect ratio for the mode\n      --brand_context string     extra brand description\n      --count int                number of variants (1-10) (default 1)\n      --enhance-only             return enhanced prompts without submitting generation jobs\n  -h, --help                     help for create\n      --image strings            reference image — file path or upload UUID; repeatable\n      --interval duration        poll interval (default 3s)\n      --mode string              product photoshoot mode (required)\n      --product_context string   extra product description\n      --prompt string            user intent (required)\n      --timeout duration         max wait per job (default 10m0s)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project",
+    "help": "Manage projects, folders, and assets\n\nUsage:\n  higgsfield project [command]\n\nAvailable Commands:\n  archive     Archive a project\n  assets      Manage project assets\n  create      Create a project\n  delete      Delete a project after explicit confirmation\n  folders     Manage project folders\n  get         Get project metadata and capabilities\n  list        List accessible projects\n  publication Manage community publication using current Cinema state\n  unarchive   Unarchive a project\n  update      Update project metadata\n\nFlags:\n  -h, --help               help for project\n      --workspace string   workspace for this request only\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield project [command] --help\" for more information about a command.\n",
+    "children": [
+      "archive",
+      "assets",
+      "create",
+      "delete",
+      "folders",
+      "get",
+      "list",
+      "publication",
+      "unarchive",
+      "update"
+    ]
+  },
+  {
+    "command": "higgsfield project archive",
+    "help": "Archive a project\n\nUsage:\n  higgsfield project archive <project-id> [flags]\n\nFlags:\n  -h, --help   help for archive\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets",
+    "help": "Manage project assets\n\nUsage:\n  higgsfield project assets [command]\n\nAvailable Commands:\n  add            Attach a typed source or upload a local file\n  confirm-upload Confirm a completed generic file upload\n  copy           Copy an existing project placement\n  get            Get placement details\n  list           List project assets\n  move           Move a placement\n  remove         Unlink a placement\n  resolve        Resolve an exact typed source to project placements\n\nFlags:\n  -h, --help   help for assets\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n\nUse \"higgsfield project assets [command] --help\" for more information about a command.\n",
+    "children": [
+      "add",
+      "confirm-upload",
+      "copy",
+      "get",
+      "list",
+      "move",
+      "remove",
+      "resolve"
+    ]
+  },
+  {
+    "command": "higgsfield project assets add",
+    "help": "Attach a typed source or upload a local file\n\nUsage:\n  higgsfield project assets add <project-id> [flags]\n\nFlags:\n      --file string     local file to upload before attaching\n      --folder string   destination folder ID; defaults to project root\n  -h, --help            help for add\n      --source string   typed source ID\n      --type string     source type (job, media_input, video_input, audio_input, file_input)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets confirm-upload",
+    "help": "Confirm a completed generic file upload\n\nUsage:\n  higgsfield project assets confirm-upload <file-input-id> [flags]\n\nFlags:\n  -h, --help   help for confirm-upload\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets copy",
+    "help": "Copy an existing project placement\n\nUsage:\n  higgsfield project assets copy <project-id> <placement-id> [flags]\n\nFlags:\n      --folder string           destination folder ID; defaults to project root\n  -h, --help                    help for copy\n      --target-project string   destination project ID; defaults to source project\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets get",
+    "help": "Get placement details\n\nUsage:\n  higgsfield project assets get <project-id> <placement-id> [flags]\n\nFlags:\n  -h, --help             help for get\n      --section string   detail section: source or prompt (default \"source\")\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets list",
+    "help": "List project assets\n\nUsage:\n  higgsfield project assets list <project-id> [flags]\n\nFlags:\n      --cursor string         opaque page cursor\n      --folder string         folder ID filter\n  -h, --help                  help for list\n      --limit int             page size (1-50) (default 20)\n      --model strings         model IDs\n      --only-liked            only liked assets\n      --order-by string       created_at, added_at, or liked_at (default \"created_at\")\n      --ordering string       asc or desc (default \"desc\")\n      --output-kind strings   output kinds\n      --source-type strings   source types\n      --status strings        statuses\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets move",
+    "help": "Move a placement\n\nUsage:\n  higgsfield project assets move <project-id> <placement-id> [flags]\n\nFlags:\n  -h, --help                    help for move\n      --target-folder string    target folder ID (required)\n      --target-project string   destination project ID; defaults to source project\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets remove",
+    "help": "Unlink a placement\n\nUsage:\n  higgsfield project assets remove <project-id> <placement-id> [flags]\n\nFlags:\n      --confirm string   must exactly match the placement ID\n  -h, --help             help for remove\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project assets resolve",
+    "help": "Resolve an exact typed source to project placements\n\nUsage:\n  higgsfield project assets resolve <project-id> [flags]\n\nFlags:\n      --cursor string   opaque page cursor\n      --folder string   folder filter\n  -h, --help            help for resolve\n      --limit int       page size (1-50) (default 20)\n      --source string   exact source ID (required)\n      --type string     source type (required)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project create",
+    "help": "Create a project\n\nUsage:\n  higgsfield project create [flags]\n\nFlags:\n      --color string             project folder color (default \"Cyan\")\n      --description string       project description\n      --emoji string             project emoji\n  -h, --help                     help for create\n      --idempotency-key string   stable key for replaying create\n      --name string              project name (required)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project delete",
+    "help": "Delete a project after explicit confirmation\n\nUsage:\n  higgsfield project delete <project-id> [flags]\n\nFlags:\n      --cascade          delete project contents after explicit confirmation\n      --confirm string   must exactly match the project ID\n  -h, --help             help for delete\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders",
+    "help": "Manage project folders\n\nUsage:\n  higgsfield project folders [command]\n\nAvailable Commands:\n  create      Create a folder\n  delete      Delete a folder\n  get         Get a folder\n  list        List project folders\n  move        Move a folder\n  rename      Rename a folder\n  search      Search folders throughout a project\n\nFlags:\n  -h, --help   help for folders\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n\nUse \"higgsfield project folders [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "delete",
+      "get",
+      "list",
+      "move",
+      "rename",
+      "search"
+    ]
+  },
+  {
+    "command": "higgsfield project folders create",
+    "help": "Create a folder\n\nUsage:\n  higgsfield project folders create <project-id> [flags]\n\nFlags:\n  -h, --help            help for create\n      --name string     folder name (required)\n      --parent string   parent folder ID (defaults to project root)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders delete",
+    "help": "Delete a folder\n\nUsage:\n  higgsfield project folders delete <project-id> <folder-id> [flags]\n\nFlags:\n      --cascade          delete folder children\n      --confirm string   must exactly match the folder ID\n  -h, --help             help for delete\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders get",
+    "help": "Get a folder\n\nUsage:\n  higgsfield project folders get <project-id> <folder-id> [flags]\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders list",
+    "help": "List project folders\n\nUsage:\n  higgsfield project folders list <project-id> [flags]\n\nFlags:\n      --cursor string   opaque page cursor\n  -h, --help            help for list\n      --limit int       page size (1-50) (default 20)\n      --parent string   parent folder ID; defaults to project root\n      --search string   filter child folders by name\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders move",
+    "help": "Move a folder\n\nUsage:\n  higgsfield project folders move <project-id> <folder-id> [flags]\n\nFlags:\n  -h, --help                   help for move\n      --target-parent string   target parent folder ID (required)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders rename",
+    "help": "Rename a folder\n\nUsage:\n  higgsfield project folders rename <project-id> <folder-id> [flags]\n\nFlags:\n  -h, --help          help for rename\n      --name string   new folder name (required)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project folders search",
+    "help": "Search folders throughout a project\n\nUsage:\n  higgsfield project folders search <project-id> [flags]\n\nFlags:\n      --cursor string   opaque page cursor\n  -h, --help            help for search\n      --limit int       page size (1-50) (default 20)\n      --search string   folder name search (required)\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project get",
+    "help": "Get project metadata and capabilities\n\nUsage:\n  higgsfield project get <project-id> [flags]\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project list",
+    "help": "List accessible projects\n\nUsage:\n  higgsfield project list [flags]\n\nFlags:\n      --cursor string   opaque page cursor\n  -h, --help            help for list\n      --limit int       page size (1-50) (default 20)\n      --search string   filter by project name\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication",
+    "help": "Manage community publication using current Cinema state\n\nUsage:\n  higgsfield project publication [command]\n\nAvailable Commands:\n  cancel-review  Cancel the CURRENT open review; saved metadata is not rolled back\n  confirm-review Separately confirm the CURRENT flagged review, hiding flagged media\n  get            Read current publication state; this is not operation recovery\n  preview        Save metadata and open the Cinema preview; this is a mutation\n  publish        Request publication of the working project with explicit rights and visibility\n  unpublish      Unpublish the current publication\n  update         Save metadata, potentially changing an existing public page immediately\n\nFlags:\n  -h, --help   help for publication\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n\nUse \"higgsfield project publication [command] --help\" for more information about a command.\n",
+    "children": [
+      "cancel-review",
+      "confirm-review",
+      "get",
+      "preview",
+      "publish",
+      "unpublish",
+      "update"
+    ]
+  },
+  {
+    "command": "higgsfield project publication cancel-review",
+    "help": "Cancel the CURRENT open review; saved metadata is not rolled back\n\nUsage:\n  higgsfield project publication cancel-review <project-id> [flags]\n\nFlags:\n  -h, --help   help for cancel-review\n  -y, --yes    approve this action noninteractively, including displayed public effects and required rights or hiding flagged media\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication confirm-review",
+    "help": "Separately confirm the CURRENT flagged review, hiding flagged media\n\nUsage:\n  higgsfield project publication confirm-review <project-id> [flags]\n\nFlags:\n  -h, --help   help for confirm-review\n  -y, --yes    approve this action noninteractively, including displayed public effects and required rights or hiding flagged media\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication get",
+    "help": "Read current publication state; this is not operation recovery\n\nUsage:\n  higgsfield project publication get <project-id> [flags]\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication preview",
+    "help": "Save metadata and open the Cinema preview; this is a mutation\n\nUsage:\n  higgsfield project publication preview <project-id> [flags]\n\nFlags:\n  -h, --help                   help for preview\n      --settings-file string   JSON settings patch file, or - for stdin\n  -y, --yes                    approve this action noninteractively, including displayed public effects and required rights or hiding flagged media\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication publish",
+    "help": "Request publication of the working project with explicit rights and visibility\n\nUsage:\n  higgsfield project publication publish <project-id> [flags]\n\nFlags:\n  -h, --help                   help for publish\n      --settings-file string   JSON settings patch file, or - for stdin\n  -y, --yes                    approve this action noninteractively, including displayed public effects and required rights or hiding flagged media\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication unpublish",
+    "help": "Unpublish the current publication\n\nUsage:\n  higgsfield project publication unpublish <project-id> [flags]\n\nFlags:\n  -h, --help   help for unpublish\n  -y, --yes    approve this action noninteractively, including displayed public effects and required rights or hiding flagged media\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project publication update",
+    "help": "Save metadata, potentially changing an existing public page immediately\n\nUsage:\n  higgsfield project publication update <project-id> [flags]\n\nFlags:\n  -h, --help                   help for update\n      --settings-file string   JSON settings patch file, or - for stdin\n  -y, --yes                    approve this action noninteractively, including displayed public effects and required rights or hiding flagged media\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project unarchive",
+    "help": "Unarchive a project\n\nUsage:\n  higgsfield project unarchive <project-id> [flags]\n\nFlags:\n  -h, --help   help for unarchive\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield project update",
+    "help": "Update project metadata\n\nUsage:\n  higgsfield project update <project-id> [flags]\n\nFlags:\n      --color string             new project color\n      --cover-image-url string   cover image URL; empty clears it\n      --description string       new project description\n      --emoji string             new project emoji\n  -h, --help                     help for update\n      --name string              new project name\n      --preview-url string       preview URL; empty clears it\n\nGlobal Flags:\n      --json               print raw JSON responses\n      --no-color           disable color output\n      --workspace string   workspace for this request only\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield soul-id",
+    "help": "Create custom Soul character references from uploaded images, list existing references, inspect one reference, or wait for training to finish.\n\nUsage:\n  higgsfield soul-id [command]\n\nExamples:\n  higgsfield soul-id create --name Alice --soul-2 --image ./alice1.png --image ./alice2.jpg --image ./alice3.png --image ./alice4.jpg --image ./alice5.png\n  higgsfield soul-id create --name Alice --soul-cinematic --image <upload_id> --image ./alice2.jpg\n  higgsfield soul-id list\n  higgsfield soul-id wait <soul_id>\n\nAvailable Commands:\n  create      Create a custom Soul reference\n  get         Show one custom Soul reference\n  list        List custom Soul references\n  wait        Poll Soul training until it finishes\n\nFlags:\n  -h, --help   help for soul-id\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield soul-id [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "get",
+      "list",
+      "wait"
+    ]
+  },
+  {
+    "command": "higgsfield soul-id create",
+    "help": "Create a custom Soul reference\n\nUsage:\n  higgsfield soul-id create [flags]\n\nExamples:\n  higgsfield soul-id create --name Alice --soul-2 --image ./alice1.png --image ./alice2.jpg --image ./alice3.png --image ./alice4.jpg --image ./alice5.png\n  higgsfield soul-id create --name Alice --soul-cinematic --image <upload_id> --image ./alice2.jpg\n\nFlags:\n  -h, --help                help for create\n      --image stringArray   upload UUID or local image path (repeatable, 5–20)\n      --name string         character name (required)\n      --soul-2              train Soul 2.0 model\n      --soul-cinematic      train Soul Cinematic model\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield soul-id get",
+    "help": "Show one custom Soul reference\n\nUsage:\n  higgsfield soul-id get <id> [flags]\n\nExamples:\n  higgsfield soul-id get <soul_id>\n  higgsfield soul-id get <soul_id> --json\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield soul-id list",
+    "help": "List custom Soul references\n\nUsage:\n  higgsfield soul-id list [flags]\n\nExamples:\n  higgsfield soul-id list\n  higgsfield soul-id list --size 50\n\nFlags:\n  -h, --help             help for list\n      --size int         page size (default 20)\n      --soul-2           list Soul 2.0 references\n      --soul-cinematic   list Soul Cinematic references\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield soul-id wait",
+    "help": "Poll Soul training until it finishes\n\nUsage:\n  higgsfield soul-id wait <id> [flags]\n\nExamples:\n  higgsfield soul-id wait <soul_id>\n  higgsfield soul-id wait <soul_id> --timeout 45m --interval 15s\n\nFlags:\n  -h, --help                help for wait\n      --interval duration   poll interval (default 10s)\n  -q, --quiet               no progress output\n      --timeout duration    max wait duration (default 30m0s)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield upload",
+    "help": "Upload local image, video, audio, or document files and list previously uploaded media IDs for use in generation commands.\n\nUsage:\n  higgsfield upload [command]\n\nExamples:\n  higgsfield upload create ./input.png\n  higgsfield upload create ./brief.pdf\n  higgsfield upload list --image\n  higgsfield upload list --video --size 50\n\nAvailable Commands:\n  create      Upload a local media or document file\n  list        List uploaded media IDs\n\nFlags:\n  -h, --help   help for upload\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield upload [command] --help\" for more information about a command.\n",
+    "children": [
+      "create",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield upload create",
+    "help": "Upload a local media or document file\n\nUsage:\n  higgsfield upload create <file> [flags]\n\nExamples:\n  higgsfield upload create ./reference.png\n  higgsfield upload create ./clip.mp4\n  higgsfield upload create ./source.pdf\n\nFlags:\n  -h, --help   help for create\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield upload list",
+    "help": "List uploaded media IDs\n\nUsage:\n  higgsfield upload list [flags]\n\nExamples:\n  higgsfield upload list\n  higgsfield upload list --audio\n  higgsfield upload list --video --size 50\n\nFlags:\n      --audio           audio uploads only\n      --cursor string   pagination cursor\n  -h, --help            help for list\n      --image           image uploads only\n      --size int        page size (default 20)\n      --video           video uploads only\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield version",
+    "help": "Print build info\n\nUsage:\n  higgsfield version [flags]\n\nFlags:\n  -h, --help   help for version\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield voices",
+    "help": "List voices. Use a voice's id as --voice-id and its Voice Type (preset for built-in voices, element for cloned ones) as --voice-type when running text-to-speech or voice-change.\n\nUsage:\n  higgsfield voices [command]\n\nExamples:\n  higgsfield voices list\n  higgsfield voices list --json\n  higgsfield voices get <voice_id>\n\nAvailable Commands:\n  get         Show a single voice\n  list        List available voices\n\nFlags:\n  -h, --help   help for voices\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield voices [command] --help\" for more information about a command.\n",
+    "children": [
+      "get",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield voices get",
+    "help": "Show a single voice\n\nUsage:\n  higgsfield voices get <voice_id> [flags]\n\nExamples:\n  higgsfield voices get <voice_id>\n  higgsfield voices get <voice_id> --json\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield voices list",
+    "help": "List available voices\n\nUsage:\n  higgsfield voices list [flags]\n\nExamples:\n  higgsfield voices list\n  higgsfield voices list --size 50\n  higgsfield voices list --cursor <cursor>\n  higgsfield voices list --json\n\nFlags:\n      --cursor string   pagination cursor\n  -h, --help            help for list\n      --size int        page size (1-100) (default 20)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website",
+    "help": "Create, edit (via git repo access), deploy, inspect the database, and manage secrets for full-stack websites.\n\nUsage:\n  higgsfield website [command]\n\nAliases:\n  website, websites\n\nExamples:\n  higgsfield website create\n  higgsfield website list\n  higgsfield website deploy <website_id>\n\nAvailable Commands:\n  categories  List the content categories a website can be filed under\n  contest     Enter a website in the current app contest\n  create      Create a website and its git repo\n  db          Read the website's database (read-only)\n  deploy      Build and deploy a website — ships the live site\n  list        List the websites you own\n  publish     Publish: list the current live deploy on the Higgsfield community feed\n  rename      Rename a website's subdomain — the old URL stops working\n  repo-access Get the website's git clone URL, branch, and a scoped token\n  secrets     Manage a website's secrets (environment variables)\n  status      Show a website's deploy status and live URLs\n\nFlags:\n  -h, --help   help for website\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield website [command] --help\" for more information about a command.\n",
+    "children": [
+      "categories",
+      "contest",
+      "create",
+      "db",
+      "deploy",
+      "list",
+      "publish",
+      "rename",
+      "repo-access",
+      "secrets",
+      "status"
+    ]
+  },
+  {
+    "command": "higgsfield website categories",
+    "help": "List the content categories a website can be filed under\n\nUsage:\n  higgsfield website categories [flags]\n\nExamples:\n  higgsfield website categories\n\nFlags:\n  -h, --help   help for categories\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website contest",
+    "help": "Enter the website in the current Higgsfield app contest, together with the social-media\nlinks promoting it. A website not yet on the community feed is published automatically\nby the entry — no separate `higgsfield website publish` needed; it just needs a live\nproduction deploy (run `higgsfield website deploy` first) and its page metadata filled.\n\nPass one or more --url flags, each a social-media link (YouTube, X/Twitter, Instagram,\nor TikTok); any other host is rejected. There is a single active contest, so no contest\nid is needed. Re-running for the same website OVERWRITES its urls (use it to fix or add\nlinks) — it does not create a second entry.\n\nUsage:\n  higgsfield website contest <website_id> [flags]\n\nExamples:\n  higgsfield website contest <website_id> --url https://youtu.be/abc --url https://x.com/u/status/1\n\nFlags:\n  -h, --help              help for contest\n      --url stringArray   social-media link promoting the website (repeatable, 1–10; YouTube/X/Instagram/TikTok)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website create",
+    "help": "Create a website and its git repo.\n\n--type is REQUIRED and is the USER'S choice — agents must ask the user which kind they want\nwhen the request doesn't make it obvious:\n  website  a standalone site with NO Higgsfield integration (no Sign in with Higgsfield,\n           no requests to Higgsfield); --template is OPTIONAL\n  app      a product tightly integrated with Higgsfield — its users sign in with Higgsfield\n           and generate images/videos through the Higgsfield SDK; --template is REQUIRED\n  game     a browser game — realtime multiplayer rooms on the game template;\n           --category is REQUIRED and must be a game genre (arcade, puzzle, shooter, …)\n\nWebsite templates:\n  scroll-scrub  the animated website — the visitor's scroll plays a generated film. Its\n                scrub engine ships pre-built, so you generate the film and fill in\n                app/src/scroll-scrub-scenes.ts instead of writing a controller. Pass this\n                for an animated site; omit --template for a non-animated one.\n\nApp templates (pick the closest product shape):\n  app-detail  a single tool landing page with generator hero and how-it-works\n  preset      pick-a-style generation, wizards, or upload/configure/iterate flows\n  studio      a full creative workspace with projects, prompt dock, and generations feed\n  custom      a bare scaffold; use ONLY when the user explicitly requests it\n\nThe two sets are NOT interchangeable — a cross-kind name is rejected. The selected\nnon-custom app layout is shipped at app/src/layouts/<template>.tsx and must be adapted in\nplace, not rebuilt or replaced.\n\nUsage:\n  higgsfield website create [flags]\n\nExamples:\n  higgsfield website create --type website --template scroll-scrub\n  higgsfield website create --type website\n  higgsfield website create --type app --template app-detail\n  higgsfield website create --type game --category arcade\n\nFlags:\n      --category hf website categories   content category slug the site is filed under (required); run hf website categories for the valid slugs, then pass the closest (e.g. cinematic, ads-marketing, other)\n  -h, --help                             help for create\n      --subdomain string                 subdomain to use as the site's slug (lowercase, DNS-safe; reserved or taken labels are rejected). Recommended: always set one derived from the site's name; omit only for a random subdomain.\n      --template string                  starter template; the set depends on --type. website (optional): scroll-scrub = the animated website, engine pre-built; omit for non-animated. app (required): app-detail | preset | studio | custom (bare scaffold; only when explicitly requested)\n      --type string                      what to build (required; the user's choice — ask them): website (standalone, no Higgsfield integration) | app (Higgsfield-integrated: Sign in with Higgsfield + SDK generation)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website db",
+    "help": "Read the website's database (read-only)\n\nUsage:\n  higgsfield website db [command]\n\nAvailable Commands:\n  query       Run one read-only SELECT/WITH statement\n  rows        Read a page of a table's rows\n  schema      Show a table's columns\n  tables      List the website's database tables\n\nFlags:\n  -h, --help   help for db\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield website db [command] --help\" for more information about a command.\n",
+    "children": [
+      "query",
+      "rows",
+      "schema",
+      "tables"
+    ]
+  },
+  {
+    "command": "higgsfield website db query",
+    "help": "Run one read-only SELECT/WITH statement\n\nUsage:\n  higgsfield website db query <website_id> [flags]\n\nExamples:\n  higgsfield website db query <website_id> --sql \"SELECT count(*) FROM users\"\n\nFlags:\n  -h, --help         help for query\n      --sql string   a single read-only SELECT/WITH statement (required)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website db rows",
+    "help": "Read a page of a table's rows\n\nUsage:\n  higgsfield website db rows <website_id> [flags]\n\nExamples:\n  higgsfield website db rows <website_id> --table users --limit 20\n  higgsfield website db rows <website_id> --table users --filter status:eq:active\n\nFlags:\n      --filter stringArray   row filter 'col:op[:value]' (repeatable; ops: eq ne gt gte lt lte like is_null)\n  -h, --help                 help for rows\n      --limit int            max rows (default 50)\n      --offset int           row offset for paging\n      --order-by string      column to sort by\n      --order-dir string     sort direction: asc | desc\n      --table string         table name (required)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website db schema",
+    "help": "Show a table's columns\n\nUsage:\n  higgsfield website db schema <website_id> [flags]\n\nExamples:\n  higgsfield website db schema <website_id> --table users\n\nFlags:\n  -h, --help           help for schema\n      --table string   table name (required)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website db tables",
+    "help": "List the website's database tables\n\nUsage:\n  higgsfield website db tables <website_id> [flags]\n\nExamples:\n  higgsfield website db tables <website_id>\n\nFlags:\n  -h, --help   help for tables\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website deploy",
+    "help": "Build and deploy a website — ships the live site\n\nUsage:\n  higgsfield website deploy <website_id> [flags]\n\nExamples:\n  higgsfield website deploy <website_id>\n\nFlags:\n  -h, --help   help for deploy\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website list",
+    "help": "List the websites you own\n\nUsage:\n  higgsfield website list [flags]\n\nExamples:\n  higgsfield website list\n\nFlags:\n  -h, --help   help for list\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website publish",
+    "help": "Publish the website: list it on the Higgsfield community feed (\"show in feed\"), where other\nusers can discover and remix it.\n\nPublishing NO LONGER deploys — it lists whatever is already live. Run\n`higgsfield website deploy` FIRST, and again after ANY later change, to ship it;\nre-publishing does not re-deploy and won't pick up un-deployed changes.\n\nBEFORE publishing, fill the page metadata in app/src/app-meta.json with real values —\nog_title, og_description, favicon_url, og_image_url — the feed card renders from them and a\nwebsite with an empty og_title is INVISIBLE on the feed. Agents: also OFFER the user a cover\nvideo for the card (og_video_url) and ask their permission first (video generation costs\ncredits) — never generate it unprompted.\n\nCommit and git push the metadata (and all other changes), then deploy, first — publish\nlists what's already live. For a deploy WITHOUT a feed listing, use\n`higgsfield website deploy`.\n\nUsage:\n  higgsfield website publish <website_id> [flags]\n\nExamples:\n  higgsfield website publish <website_id>\n\nFlags:\n  -h, --help   help for publish\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website rename",
+    "help": "Rename the website's subdomain (the slug in its public URL). The site is re-deployed under\nthe new subdomain and the OLD subdomain STOPS WORKING — anyone holding the old URL must be\ngiven the new one. Storage (database, files, config) and the code repo are KEPT; only the\npublic address changes.\n\nThis runs a full re-deploy and can take a couple of minutes; the command returns once the\nsite is live at the new URL. Fails if the new subdomain is already taken or reserved, or if\na deploy is already in flight — pick another subdomain or retry later.\n\nUsage:\n  higgsfield website rename <website_id> [flags]\n\nExamples:\n  higgsfield website rename <website_id> --subdomain my-new-name\n\nFlags:\n  -h, --help               help for rename\n      --subdomain string   the new subdomain (lowercase, DNS-safe; reserved or taken labels are rejected) (required)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website repo-access",
+    "help": "Get the website's git clone URL, branch, and a scoped token\n\nUsage:\n  higgsfield website repo-access <website_id> [flags]\n\nExamples:\n  higgsfield website repo-access <website_id>\n\nFlags:\n  -h, --help   help for repo-access\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website secrets",
+    "help": "Manage a website's secrets (environment variables)\n\nUsage:\n  higgsfield website secrets [command]\n\nAvailable Commands:\n  delete      Delete a secret — applied on the next deploy\n  list        List the website's secrets\n  set         Set (create or replace) a secret — staged until the next deploy\n\nFlags:\n  -h, --help   help for secrets\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield website secrets [command] --help\" for more information about a command.\n",
+    "children": [
+      "delete",
+      "list",
+      "set"
+    ]
+  },
+  {
+    "command": "higgsfield website secrets delete",
+    "help": "Delete a secret — applied on the next deploy\n\nUsage:\n  higgsfield website secrets delete <website_id> [flags]\n\nExamples:\n  higgsfield website secrets delete <website_id> --name STRIPE_SECRET_KEY\n\nFlags:\n  -h, --help          help for delete\n      --name string   secret name (required)\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website secrets list",
+    "help": "List the website's secrets\n\nUsage:\n  higgsfield website secrets list <website_id> [flags]\n\nExamples:\n  higgsfield website secrets list <website_id>\n\nFlags:\n  -h, --help   help for list\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website secrets set",
+    "help": "Set a secret using a hidden interactive prompt, or --value-stdin for scripts.\nStdin preserves whitespace and embedded newlines, removing one final LF or CRLF.\nInteractive input is limited to 4095 bytes including edits; stdin supports up to 1 MiB.\nThe secret is staged until the next deploy.\n\nUsage:\n  higgsfield website secrets set <website_id> [flags]\n\nExamples:\n  higgsfield website secrets set <website_id> --name STRIPE_SECRET_KEY\n  higgsfield website secrets set <website_id> --name STRIPE_SECRET_KEY --value-stdin < secret.txt\n\nFlags:\n  -h, --help          help for set\n      --name string   secret name, e.g. STRIPE_SECRET_KEY (required)\n      --value-stdin   read the secret from stdin\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield website status",
+    "help": "Show a website's deploy status and live URLs\n\nUsage:\n  higgsfield website status <website_id> [flags]\n\nExamples:\n  higgsfield website status <website_id>\n\nFlags:\n  -h, --help   help for status\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield workflow",
+    "help": "List Higgsfield workflows and inspect each workflow's media type, accepted parameters, and cost parameters.\n\nUsage:\n  higgsfield workflow [flags]\n  higgsfield workflow [command]\n\nExamples:\n  higgsfield workflow list\n  higgsfield workflow get draw_to_video\n  higgsfield workflow get reframe --json\n\nAvailable Commands:\n  get         Show workflow parameters\n  list        List workflows\n\nFlags:\n  -h, --help   help for workflow\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield workflow [command] --help\" for more information about a command.\n",
+    "children": [
+      "get",
+      "list"
+    ]
+  },
+  {
+    "command": "higgsfield workflow get",
+    "help": "Show workflow parameters\n\nUsage:\n  higgsfield workflow get <workflow_name> [flags]\n\nExamples:\n  higgsfield workflow get draw_to_video\n  higgsfield workflow get reframe --json\n\nFlags:\n  -h, --help   help for get\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield workflow list",
+    "help": "List workflows\n\nUsage:\n  higgsfield workflow list [flags]\n\nExamples:\n  higgsfield workflow list\n  higgsfield workflow list --json\n\nFlags:\n  -h, --help   help for list\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield workspace",
+    "help": "List available workspaces, select the active workspace, or return jobs to your private account context.\n\nUsage:\n  higgsfield workspace [command]\n\nAliases:\n  workspace, ws\n\nExamples:\n  higgsfield workspace list\n  higgsfield workspace set <workspace_id>\n  higgsfield workspace status\n  higgsfield workspace unset\n\nAvailable Commands:\n  list        List workspaces available to your account\n  set         Select a workspace for future requests\n  status      Show the currently selected workspace\n  unset       Clear the selected workspace\n\nFlags:\n  -h, --help   help for workspace\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n\nUse \"higgsfield workspace [command] --help\" for more information about a command.\n",
+    "children": [
+      "list",
+      "set",
+      "status",
+      "unset"
+    ]
+  },
+  {
+    "command": "higgsfield workspace list",
+    "help": "List workspaces available to your account\n\nUsage:\n  higgsfield workspace list [flags]\n\nFlags:\n  -h, --help   help for list\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield workspace set",
+    "help": "Select a workspace for future requests\n\nUsage:\n  higgsfield workspace set <id> [flags]\n\nFlags:\n  -h, --help   help for set\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield workspace status",
+    "help": "Show the currently selected workspace\n\nUsage:\n  higgsfield workspace status [flags]\n\nFlags:\n  -h, --help   help for status\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  },
+  {
+    "command": "higgsfield workspace unset",
+    "help": "Clear the selected workspace\n\nUsage:\n  higgsfield workspace unset [flags]\n\nFlags:\n  -h, --help   help for unset\n\nGlobal Flags:\n      --json       print raw JSON responses\n      --no-color   disable color output\n",
+    "children": []
+  }
+]

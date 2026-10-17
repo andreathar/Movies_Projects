@@ -1,0 +1,391 @@
+{
+  "checks": [
+    {
+      "name": "python-tests",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 10.143,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/python-tests.log"
+    },
+    {
+      "name": "catalog-check",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/catalog-check.log"
+    },
+    {
+      "name": "frontend-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.888,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/frontend-tests.log"
+    },
+    {
+      "name": "frontend-lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 4.3,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/frontend-lint.log"
+    },
+    {
+      "name": "frontend-types",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 4.636,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/frontend-types.log"
+    },
+    {
+      "name": "frontend-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 4.603,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/frontend-build.log"
+    },
+    {
+      "name": "workspace-check",
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-workspace.mjs",
+        ".",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.143,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/workspace-check.log"
+    },
+    {
+      "name": "production-check",
+      "command": [
+        "node",
+        "sites/movies-demandas/scripts/export-production.mjs",
+        ".",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.187,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/production-check.log"
+    },
+    {
+      "name": "production-plan",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.091,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/production-plan.log"
+    }
+  ],
+  "exportDiffs": {
+    "production": {
+      "diffPaths": [
+        "/collectedAt",
+        "/provenance/repositoryHead"
+      ],
+      "beforeVersion": "ce387212f9e78f723a1c11cde805caa705f70760494b05a8e29c858672080219",
+      "afterVersion": "ce387212f9e78f723a1c11cde805caa705f70760494b05a8e29c858672080219",
+      "beforeHead": "35f84474377f86876fcf691dee16036b8601a495",
+      "afterHead": "c57799265151cad357e435b4833412af668d15a2"
+    },
+    "workspace-reference": {
+      "diffPaths": [
+        "/adapters/artifacts/0/sha256",
+        "/adapters/artifacts/1/sha256",
+        "/adapters/artifacts/2/sha256",
+        "/adapters/artifacts/3/sha256",
+        "/adapters/artifacts/4/sha256",
+        "/adapters/artifacts/5/sha256",
+        "/collectedAt",
+        "/provenance/contentVersion",
+        "/provenance/repositoryHead",
+        "/roles/0/summary",
+        "/roles/1/name",
+        "/roles/1/summary",
+        "/roles/2/name",
+        "/roles/2/summary",
+        "/roles/3/name",
+        "/roles/3/summary",
+        "/roles/4/name",
+        "/roles/4/summary",
+        "/roles/5/name",
+        "/roles/5/summary",
+        "/roles/6/name",
+        "/roles/6/summary",
+        "/roles/7/name",
+        "/roles/7/summary",
+        "/roles/8/name",
+        "/roles/8/summary",
+        "/roles/9/name",
+        "/roles/9/summary",
+        "/sources"
+      ],
+      "beforeVersion": "9d2206d983a36d1c3fb61fd423eb2d8ddb57bbe73bf75b1f72279424c349f74c",
+      "afterVersion": "32888e04fad0110d5e4c589099086b6046bfdd38353f1b2e7bd3b80e5369012f",
+      "beforeHead": "35f84474377f86876fcf691dee16036b8601a495",
+      "afterHead": "c57799265151cad357e435b4833412af668d15a2"
+    },
+    "wordCounts": {
+      "baseline35f8447": 4014,
+      "current": 2338,
+      "reductionPercent": 41.8
+    }
+  },
+  "initialInventoryDrift": [
+    {
+      "path": "agents/continuity.md",
+      "historical": "5022de556283ad1f425b6fc049b27a2e8f250373c896b884117147fed53f528f",
+      "current": "01d31fbc5754049d95be46693b6f9f64c05f680acaa106a4d4e8409df171eb5f",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/coordinator.md",
+      "historical": "3b8238eff3113a1decb5bd0eaf46e9d5ec5c583b058f501abffcd3ba15975b37",
+      "current": "570472e9249daef06203cfe1650ea3c06e51eaa6f9f8b316482375c4d215ebd3",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "historical": "035542f4355b1f6549d98a8eccd2d48ae6f24c5acb35ea2598d49e596da81f92",
+      "current": "63b3c663fba2186c46223a65f3cf5b7abe247477a6acd6ddae6e56b9b61a07a0",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/director.md",
+      "historical": "dda3f19a222511b005a2314a46b720d48b437d27094ed8cc9349f4018d48f037",
+      "current": "59993a32b99a68a08a967618029657987d38fa33d08518cd6e91b6efa011aa1f",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/editor.md",
+      "historical": "71e57baeb59b02a3293294645dc51edb630b67ef840a90df6f5d28ca34cfaf01",
+      "current": "a065cea842e8561f0f2c86ce8ba49b4d816c05aafeffcc59d71876fdc2ce93a5",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "historical": "25493977802fd09e0721b517d3ffe19ec244f14a54dade8ae7793193fc92a090",
+      "current": "62df8d3b4b42d20e6ae6d500179e7a365e7b299820e4fc2c511e71477c529cb4",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/claude/movies-continuity.md",
+      "historical": "317aacf9aac2b8e34543eb3b3c360494ea6d02c29bba6623a3f4ff4e8dad19a2",
+      "current": "35065e068205b4a6fc6eaa2a52bdc9035841f127640f6d5cfab665898c6efe50",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/claude/movies-historian.md",
+      "historical": "49ddac35def29c27575305377819a927cc7d07f932d0207c2b3f4157f20c25ab",
+      "current": "584f5b2a406b7ce91af4cb580a550a40aab2c96601960df457680c7e68950a90",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/claude/movies-qc.md",
+      "historical": "1f717e7d4b9bf408023a5eb68a374da618d3c22fe3923c61032455797af25be3",
+      "current": "3d3d9a4120e2a3190d90e04df86a2d9aaca4cd793316deb62b68f6501732e0c0",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/codex/movies-continuity.toml",
+      "historical": "ceaa29def002bd9e016405d7dccc8b866398f92e1fe1c3a3af05403f3d3cfb5a",
+      "current": "f88165b52fcb6fc2742a2882bf0974489f5392da2ceda408fa42ee4d25c08340",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/codex/movies-historian.toml",
+      "historical": "9ca3cb76de436b680855e450a7eaa3798d556d07d9ce1b0bd7f25ce0f4bea7be",
+      "current": "e3a57e4d54a566810a904e32fc828a21710453cef084515c614d86e80ab3657e",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/generated/codex/movies-qc.toml",
+      "historical": "fff61059928f770b1f99275d134cbdfff93477019b533f10a9de0fa619c50ce3",
+      "current": "37ba5674de8de0ceca2742df94db777e851c307de7d8465a47722ccef2ba264a",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/historian.md",
+      "historical": "39268671d86e73d1c0cbe6d742195f36e0033d04c14b41d6c42e0f681233f40a",
+      "current": "ba62929fdbad7698caa04a02f4b67bc4510d7a06d1732811a115fab8ea9e6034",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/lighting.md",
+      "historical": "b6907966668b9eaa80384348c8a1c67d5ee18aca2ab83c29cedbbb9bf257a5eb",
+      "current": "00a9f7579987485e1f2da85eb59876d9b8e06cae5d7ee1aaae3d6b8b182b9c93",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/producer.md",
+      "historical": "52b9a676847ac48c41f565fa0193b51f14c4aa193cc852570fb2112e30354cd3",
+      "current": "f3ff5a5cd9664605f62a5c8faaba4a4c75dc36ce288799a8156fc44a06a40559",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/qc.md",
+      "historical": "c3f97f0d18c29aaee36fc7aca475daf2a3cf000b2c30ed44ad0489d679cef676",
+      "current": "5a08e8b7e4940e96e61ae1c23879faa32ce75332b3e7b49a0b739f6f93bc514a",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/registry.json",
+      "historical": "9b5d013a3a2e23964aa3a9a48613627342292bc4d2be1a2ea6b302bd631954f6",
+      "current": "7d3636390df352f89d64acd4aec78dc94325dd9f7ac913acb45b4b5b18222c93",
+      "strategyMatches": true
+    },
+    {
+      "path": "agents/storyboard.md",
+      "historical": "36fe02c5817dd0ff0c78ecc2fd82d5ce8a1aca8e86857e2be1315987c803d378",
+      "current": "b5c2c45a02a5e91f5b6be961ceb5f09679abc468cf61dc760dd3eee791f2bfaa",
+      "strategyMatches": true
+    },
+    {
+      "path": "scripts/agent_catalog.py",
+      "historical": "d479dd9c29857ade506c3185be84b92b0b350b9a1c913986d89915bb1f7fb83b",
+      "current": "01ea7b30814d3236f2bbfa5889af551f2cad3fe308377f633f9da632f3812e64",
+      "strategyMatches": true
+    },
+    {
+      "path": "tests/test_agent_catalog.py",
+      "historical": "941c3db36469db0c0a974c6b410c35bcce931efca747846a9503284dba10bbb8",
+      "current": "719a6f08ee804362163a50ece5c2f09bef753f8c39855ef6b1d399b678f59c31",
+      "strategyMatches": true
+    }
+  ],
+  "preservation": {
+    "head": "c57799265151cad357e435b4833412af668d15a2",
+    "protectedCanonicalHashes": {
+      "projects/andre-time-travel/manifest.json": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+      "projects/andre-time-travel/tasks/board.json": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+      "projects/andre-time-travel/00_brief/approvals.json": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+      "projects/andre-time-travel/memory/STATE.md": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03",
+      "projects/andre-time-travel/memory/session-log.json": "fdc064e54825c74c18664087f84e23fc63d99ca10cf1842d26b373e18e4c5218",
+      "projects/andre-time-travel/asset-registry.csv": "8418af693cef58b0ba08f299bc7bee6d470dce6b437c90046cefa7e7d9f971c7",
+      "projects/andre-time-travel/credit-ledger.csv": "c661871f8f4b8d080c854b99d59ca544ecc78018fc1d34a5e10a890ca22f1c40",
+      "projects/andre-time-travel/05_storyboard/source/production-plan.json": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e"
+    },
+    "ownedChanges": [
+      {
+        "path": "scripts/agent_catalog.py",
+        "before": "01ea7b30814d3236f2bbfa5889af551f2cad3fe308377f633f9da632f3812e64",
+        "after": "4497266bb5c1d3c5e08ce7e9d9574501320e873b63a3ed8711f471f4ee1cedd2"
+      },
+      {
+        "path": "tests/test_agent_catalog.py",
+        "before": "719a6f08ee804362163a50ece5c2f09bef753f8c39855ef6b1d399b678f59c31",
+        "after": "c516255cd5b73f673b8ccc25ea3bd157a0aa2e06b8e0b5b71af139520d277bb7"
+      },
+      {
+        "path": "docs/AGENT_CATALOG.md",
+        "before": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9",
+        "after": "e5748fca2a3ab8a42efc4616f1b9ef3d0862a0d1e3ee36aea9ac178950295a15"
+      },
+      {
+        "path": "sites/movies-demandas/app/workspace-reference.tsx",
+        "before": "2185dc86dbc9c1092c658b112d80efb3221b9e0ba6f3b4bd0991c1a5fbd7ea79",
+        "after": "3d2fdf8ff033895ed30fc7d65bb246950336ba08e25216af535b2f4c50fcfb62"
+      },
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "before": "53336c5807e8e99543779772ed1de046e7175c420c1ab4dcf56f462f65b206b5",
+        "after": "cc8436bf1818bcc793054468b5d2fb44cbf1a9b8a40bde9a141a4599f5a4bcee"
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "before": "af59a95022112e1e6ebd25b023d606f6be975d8300c506d935c482621953cee7",
+        "after": "f13a04c8d71980930772945afc338fb1acdf635f65428eb4a0f205cbf3844eaf"
+      },
+      {
+        "path": "agents/generated/catalog.json",
+        "before": "62df8d3b4b42d20e6ae6d500179e7a365e7b299820e4fc2c511e71477c529cb4",
+        "after": "5f8d8ff2faf104e64fdb59730dd876009ba07dbb79dfca254110cd14cc4cb829"
+      },
+      {
+        "path": "agents/generated/codex/movies-continuity.toml",
+        "before": "f88165b52fcb6fc2742a2882bf0974489f5392da2ceda408fa42ee4d25c08340",
+        "after": "22217f26ba63719a80ace3d677cfe550b22c79bdfe897e78382d901a16f88269"
+      },
+      {
+        "path": "agents/generated/codex/movies-historian.toml",
+        "before": "e3a57e4d54a566810a904e32fc828a21710453cef084515c614d86e80ab3657e",
+        "after": "69bfd23e657969e1ad1279fc6eab1b92ba161b373e163cf427ebfca082e78e74"
+      },
+      {
+        "path": "agents/generated/codex/movies-qc.toml",
+        "before": "37ba5674de8de0ceca2742df94db777e851c307de7d8465a47722ccef2ba264a",
+        "after": "53a8645dce06cb78741c3f0bbdc6a44dcee7ec7fbebe1b306f1f4f35f662d992"
+      },
+      {
+        "path": "agents/generated/claude/movies-continuity.md",
+        "before": "35065e068205b4a6fc6eaa2a52bdc9035841f127640f6d5cfab665898c6efe50",
+        "after": "0207ec3c029718a05ca7f894cba8d73d94211abd943c94166632b8b8aeb7f6ca"
+      },
+      {
+        "path": "agents/generated/claude/movies-qc.md",
+        "before": "3d3d9a4120e2a3190d90e04df86a2d9aaca4cd793316deb62b68f6501732e0c0",
+        "after": "249d9df7f9dca630e690cf7a42dc6d4dff7b17a20167392c7baa38a6e0b8e57a"
+      },
+      {
+        "path": "agents/generated/claude/movies-historian.md",
+        "before": "584f5b2a406b7ce91af4cb580a550a40aab2c96601960df457680c7e68950a90",
+        "after": "0e341065991a12cb7c281e9d6b61f7bae2619336ad77eb8d835aa1d15b0edaaf"
+      }
+    ],
+    "historicalHandoffHashes": {
+      "projects/andre-time-travel/agents/handoffs/2026-10-17-maintenance-cleanup-v2.json": "d6ba1285103ae194fa63c85affcc3ab9bc86dab2c505739d67bb8dd98243e7fa",
+      "projects/andre-time-travel/agents/handoffs/2026-10-17-team-strategy-v1.json": "0137c3f70b249c7cd5d46258db66200512708aab289f3656de78a2683284d97f"
+    }
+  },
+  "independentReview": {
+    "mode": "read-only",
+    "findings": [
+      "reviewer startup/hash capability mismatch",
+      "frontend filename guidance conflicts with team map",
+      "stale workspace catalog metadata"
+    ],
+    "editsByReviewer": false
+  }
+}

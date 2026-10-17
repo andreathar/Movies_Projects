@@ -1,0 +1,72 @@
+{
+  "display_name": "Higgsfield Soul 2.0",
+  "job_type": "text2image_soul_v2",
+  "params": [
+    {
+      "name": "aspect_ratio",
+      "type": "string",
+      "default": "1:1",
+      "required": false,
+      "enum": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    {
+      "name": "custom_reference_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "image_references",
+      "type": "array",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "prompt",
+      "type": "string",
+      "default": null,
+      "required": true
+    },
+    {
+      "name": "quality",
+      "type": "string",
+      "default": "2k",
+      "required": false,
+      "enum": [
+        "1.5k",
+        "2k"
+      ]
+    },
+    {
+      "name": "seed",
+      "type": "integer|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "style_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    }
+  ],
+  "rules": [
+    {
+      "cel": "size(params.image_references) <= 1",
+      "message": "at most one image reference is allowed"
+    },
+    {
+      "cel": "params.style_id == null || size(params.image_references) == 0",
+      "message": "style_id cannot be combined with image_references"
+    }
+  ],
+  "type": "image"
+}

@@ -1,0 +1,60 @@
+Kling CLI - image/video generation, reusable Elements, and motion control (MCP client in CLI form)
+
+Here's what you can do with Kling:
+
+📷 Generate images
+   · Text to image — "Draw me a cyberpunk-style cat"
+   · Image to image — "Use this image as a reference and restyle it in watercolor"
+
+🎬 Generate videos
+   · Text to video — "Generate a 5-second video of a sunset over the sea"
+   · Image to video — "Bring this image to life"
+
+🧩 Reusable subjects — create and manage character, animal, prop, and other Elements
+🎭 Motion control — drive a subject image with a motion video or saved motion
+
+📤 Upload assets — local images work out of the box and are uploaded to Kling automatically
+
+You can also combine agent and skill capabilities to build more complex creative workflows — like making an ad spot, a short story film, or batch-producing a set of assets.
+
+Getting started (recommended order):
+  1. kling login        Log in first (browser OAuth)
+  2. kling who_am_i     Discover available models, arguments and input slots (login required)
+  3. kling <command> --help  Read usage before running a command
+
+Usage:
+  kling <command> [options]
+  node --experimental-strip-types kling-cli/src/cli.ts <command> [options]
+
+Commands (1:1 with backend MCP tools, plus client-side commands):
+  who_am_i             Identity and tool capabilities (call first)
+  text_to_image        Text-to-image generation
+  image_to_image       Reference-image-to-image generation
+  text_to_video        Text-to-video generation
+  image_to_video       Image-to-video generation
+  omni_ref_video       Omni-Ref mixed-reference video
+  query_tasks          Query generation status by generation_id
+  file_upload          Upload a file and return its URL
+  element_create       Create a reusable Element subject
+  element_list         List the current user's Elements
+  element_get          Get full Element details
+  element_update       Update selected Element fields
+  element_delete       Delete an Element
+  motion_library_list  List saved motion assets
+  motion_control       Drive a subject image with a video or saved motion
+  feedback             Report stuck tasks, billing anomalies, or unexpected results
+  logout               Log out on the server and clear local credentials
+  account              Account info (membership + credits)
+  tool_list            List tools advertised by the MCP server (tools/list)
+  login                Login and save credentials
+
+Global flags:
+  --skill-name <n> / --skill-version <v>  Optional telemetry: identify the calling skill
+  --quiet, -q   Compact single-line JSON output (help remains plain text)
+  --help, -h    Show help (top-level or per command)
+  --version, -v Print CLI version; use as the first argument: kling --version
+
+Login is required to run commands other than login; help is available without login.
+Generation help reads live who_am_i model declarations; other MCP help reads tools/list.
+Offline or logged out, help falls back to local usage without confirming current server capabilities.
+Quote values containing spaces. Use --name=value when a value begins with --.

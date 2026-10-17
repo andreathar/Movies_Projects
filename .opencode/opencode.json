@@ -2,9 +2,6 @@
   "$schema": "https://opencode.ai/config.json",
   "_comment": "Movies_Projects: model policy = opencode/big-pickle (free, OpenCode-hosted) for all OpenCode lanes; MCP not used by the film disabled; lane may read the shared checkout. See docs/TOKEN_SPEND_AUDIT_2026-10-13.md",
   "mcp": {
-    "mcp-brasil": {
-      "enabled": false
-    }
   },
   "permission": {
     "external_directory": {

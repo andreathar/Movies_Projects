@@ -1,0 +1,75 @@
+{
+  "display_name": "Kling 3.0 Omni",
+  "job_type": "kling_o3_image_reference",
+  "params": [
+    {
+      "name": "aspect_ratio",
+      "type": "string",
+      "default": "16:9",
+      "required": false,
+      "enum": [
+        "16:9",
+        "9:16",
+        "1:1"
+      ]
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "default": 5,
+      "required": false
+    },
+    {
+      "name": "image_references",
+      "type": "array",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "mode",
+      "type": "string",
+      "default": "std",
+      "required": false,
+      "enum": [
+        "std",
+        "pro",
+        "4k"
+      ]
+    },
+    {
+      "name": "multi_prompt",
+      "type": "array",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "multi_shots",
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    {
+      "name": "prompt",
+      "type": "string",
+      "default": null,
+      "required": true
+    },
+    {
+      "name": "sound",
+      "type": "string",
+      "default": "on",
+      "required": false,
+      "enum": [
+        "on",
+        "off"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "cel": "params.multi_shots == (size(params.multi_prompt) > 0)",
+      "message": "Provide multi_prompt exactly when multi_shots is true."
+    }
+  ],
+  "type": "video"
+}

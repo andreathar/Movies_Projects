@@ -78,6 +78,15 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn('The parent packages the handoff',prompt)
                 self.assertIn('cannot complete full-media QC',prompt)
 
+    def test_unavailable_startup_and_hash_checks_use_attributed_parent_evidence(self):
+        for path, raw in m.render(self.root).items():
+            if path.endswith(('.md', '.toml')):
+                prompt = raw.decode()
+                self.assertIn('parent-supplied startup/status evidence and input hashes', prompt)
+                self.assertIn('do not claim to have independently run or computed them', prompt)
+                self.assertIn('unavailable mandatory startup checks not_run', prompt)
+                self.assertNotIn('Complete workspace AGENTS.md startup;', prompt)
+
     def test_missing_or_duplicate_review_section_rejected_before_writes(self):
         for text in (self.brief().replace('## Review','## Other'),
                      self.brief()+'\n## Review\nRepeated.\n'):

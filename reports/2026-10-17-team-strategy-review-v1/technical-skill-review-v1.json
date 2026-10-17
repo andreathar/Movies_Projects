@@ -1,0 +1,340 @@
+{
+  "skills": [
+    {
+      "id": "film-character-continuity",
+      "registeredSha256": "56cd809def3f75650330f5911c4aa7df05b310384219bf424435965de7a6e874",
+      "currentSha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
+      "source": "/home/athar/.hermes/skills/creative/film-character-continuity/SKILL.md",
+      "canonicalLinkMatches": true,
+      "catalogAndFrontendCurrent": true,
+      "driftVisible": true,
+      "filesReviewed": [
+        {
+          "path": "/home/athar/.hermes/skills/creative/film-character-continuity/SKILL.md",
+          "sha256": "0b4a8cdd8e432f3019c51d04827e0083ae9f0445c150f5c37dc19ff66cfd46fd",
+          "bytes": 11388
+        },
+        {
+          "path": "/home/athar/.hermes/skills/creative/film-character-continuity/references/preproduction-audit.md",
+          "sha256": "892e6cb861676f4ffb3825e4a01a10adc51801257ed5bf0f24c47af81b8f4cbf",
+          "bytes": 2747
+        },
+        {
+          "path": "/home/athar/.hermes/skills/creative/film-character-continuity/references/secondary-figure-generation.md",
+          "sha256": "091cefd025d9993caa38f60b5dd4aebfda502abef527a6e1ae08a221b20798ad",
+          "bytes": 5745
+        }
+      ]
+    },
+    {
+      "id": "film-dialogue-localization",
+      "registeredSha256": "933efa495fc45ee0c6a36ed6046835c30820f5451ae71515fbe2f854afb13164",
+      "currentSha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
+      "source": "/home/athar/.hermes/skills/creative/film-dialogue-localization/SKILL.md",
+      "canonicalLinkMatches": true,
+      "catalogAndFrontendCurrent": true,
+      "driftVisible": true,
+      "filesReviewed": [
+        {
+          "path": "/home/athar/.hermes/skills/creative/film-dialogue-localization/SKILL.md",
+          "sha256": "8b519a026d641766f2dafd2739c11b37f5a1711088d747f33f40641e3a84b1cf",
+          "bytes": 10037
+        }
+      ]
+    },
+    {
+      "id": "film-editing-qc",
+      "registeredSha256": "68ba02d1224737e710408e22b249fc23e3d870ff8bfb80aa17598ff14f6b5f3a",
+      "currentSha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
+      "source": "/home/athar/.hermes/skills/creative/film-editing-qc/SKILL.md",
+      "canonicalLinkMatches": true,
+      "catalogAndFrontendCurrent": true,
+      "driftVisible": true,
+      "filesReviewed": [
+        {
+          "path": "/home/athar/.hermes/skills/creative/film-editing-qc/SKILL.md",
+          "sha256": "1fcb9807423e3169aefd676c92002c7c24d8a9547e0ae0185773057809d96a17",
+          "bytes": 12159
+        },
+        {
+          "path": "/home/athar/.hermes/skills/creative/film-editing-qc/references/take-review-recipes.md",
+          "sha256": "6aa9d8ecf699bb6954c69f418bd4968a35c888b260a3f72841b293c18a1db44d",
+          "bytes": 5123
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "shotId": "G-MASTER",
+      "family": "F1",
+      "missingSlots": [
+        "image_1",
+        "image_2",
+        "image_3"
+      ],
+      "referenceIds": [
+        "G-ID",
+        "G-TABLE",
+        "G-ERA",
+        "G-IN"
+      ],
+      "selectedReferences": [
+        {
+          "id": "G-ID",
+          "role": "identity",
+          "path": "projects/andre-time-travel/02_references/andre/approved/cover_20240202_015341_hs34.jpg",
+          "sha256": "fee8a6104fb499bbf87d8bb0b3df7b8960adc506d753e49f59a014c7a68cb1f5"
+        },
+        {
+          "id": "G-TABLE",
+          "role": "table",
+          "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+          "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b"
+        },
+        {
+          "id": "G-ERA",
+          "role": "environment",
+          "path": "projects/andre-time-travel/02_references/table/R1-J29-plate-arcetri-1634_1.png",
+          "sha256": "09ae1705cccfee76315e4ddba8e3ffff6c0207abd659d14634ff40e0888e82d3"
+        },
+        {
+          "id": "G-IN",
+          "role": "composition",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+          "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4"
+        }
+      ],
+      "templateInputs": {
+        "images": [
+          "<FOTO_REAL_SELECIONADA>",
+          "<MESA_D04>",
+          "<CONTEXTO_ARCETRI>"
+        ]
+      },
+      "tool": "image_to_image",
+      "model": "kling-image-v3_0",
+      "auth": null,
+      "submissionBlocked": "Proposta local: referências, revisão criativa, cotação e liberação específica pendentes.",
+      "coherenceAnnotations": null
+    },
+    {
+      "shotId": "G-LISTEN-KF",
+      "family": "F2",
+      "missingSlots": [
+        "image_1"
+      ],
+      "referenceIds": [
+        "G-IN",
+        "G-OUT"
+      ],
+      "selectedReferences": [
+        {
+          "id": "G-IN",
+          "role": "composition",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+          "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4"
+        },
+        {
+          "id": "G-OUT",
+          "role": "composition",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+          "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf"
+        }
+      ],
+      "templateInputs": {
+        "images": [
+          "<MASTER_ESPACIAL_SELECIONADO>"
+        ]
+      },
+      "tool": "image_to_image",
+      "model": "kling-image-v3_0",
+      "auth": null,
+      "submissionBlocked": "Proposta local: referências, revisão criativa, cotação e liberação específica pendentes.",
+      "coherenceAnnotations": null
+    },
+    {
+      "shotId": "G-P03",
+      "family": "F4",
+      "missingSlots": [
+        "first_image"
+      ],
+      "referenceIds": [
+        "G-IN"
+      ],
+      "selectedReferences": [
+        {
+          "id": "G-IN",
+          "role": "composition",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+          "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4"
+        }
+      ],
+      "templateInputs": {
+        "inputs": {
+          "first_image": "<KEYFRAME_REACAO_SELECIONADO>"
+        }
+      },
+      "tool": "image_to_video",
+      "model": "kling-video-v3_0",
+      "auth": null,
+      "submissionBlocked": "Proposta local: referências, revisão criativa, cotação e liberação específica pendentes.",
+      "coherenceAnnotations": null
+    },
+    {
+      "shotId": "G-P04",
+      "family": "F3",
+      "missingSlots": [
+        "first_image"
+      ],
+      "referenceIds": [
+        "G-OUT",
+        "G-IN"
+      ],
+      "selectedReferences": [
+        {
+          "id": "G-OUT",
+          "role": "composition",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-out.png",
+          "sha256": "106b5b54769a6d6c5a7bffe22c0956f7a5f567a38d53b69007d6c5f7f21103bf"
+        },
+        {
+          "id": "G-IN",
+          "role": "composition",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/chatgpt-in-out-v1/03-galileo-in.png",
+          "sha256": "4bd1e7dd7b59e2f10c9f7c1addb9623360528f3a5d850ab7dc15e1f5b80b28d4"
+        }
+      ],
+      "templateInputs": {
+        "inputs": {
+          "first_image": "<KEYFRAME_FALA_SELECIONADO>"
+        }
+      },
+      "tool": "image_to_video",
+      "model": "kling-video-v3_0",
+      "auth": null,
+      "submissionBlocked": "Proposta local: referências, revisão criativa, cotação e liberação específica pendentes.",
+      "coherenceAnnotations": null
+    },
+    {
+      "shotId": "G-REACTION",
+      "family": "F4",
+      "missingSlots": [
+        "first_image"
+      ],
+      "referenceIds": [
+        "G-EYE-B"
+      ],
+      "selectedReferences": [
+        {
+          "id": "G-EYE-B",
+          "role": "historical_eyes",
+          "path": "projects/andre-time-travel/02_references/history-eyes/galileo/R2-J04-eyes-galileo-resolve-B_1_eyescrop.png",
+          "sha256": "f574bd636e028a5c5223a8f68f54bfcfe731e31e91a35a9347bb0c686d9f0215"
+        }
+      ],
+      "templateInputs": {
+        "inputs": {
+          "first_image": "<KEYFRAME_REACAO_SELECIONADO>"
+        }
+      },
+      "tool": "image_to_video",
+      "model": "kling-video-v3_0",
+      "auth": null,
+      "submissionBlocked": "Proposta local: referências, revisão criativa, cotação e liberação específica pendentes.",
+      "coherenceAnnotations": null
+    },
+    {
+      "shotId": "G-HAND-OPTION",
+      "family": "F5",
+      "missingSlots": [
+        "first_image"
+      ],
+      "referenceIds": [
+        "G-HAND-IN",
+        "G-HAND-OUT",
+        "G-TABLE"
+      ],
+      "selectedReferences": [
+        {
+          "id": "G-HAND-IN",
+          "role": "body_prop",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-v1.png",
+          "sha256": "4dc9f8905b28ee02f66347c57247a517f11851649c131af4bba8b08ed56d1137"
+        },
+        {
+          "id": "G-HAND-OUT",
+          "role": "body_prop",
+          "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/galileo-hands-out-v1.png",
+          "sha256": "bd2ee4259f27a604d3cc501bed361233e176b2e9f1d36c45cd2bfa0ba491b50d"
+        },
+        {
+          "id": "G-TABLE",
+          "role": "table",
+          "path": "projects/andre-time-travel/02_references/table/R1-J26-table-anchor_2.png",
+          "sha256": "3b25e4d226f3815b874e6d7a00c53237fb3181b8437d99c23097851bdd80e04b"
+        }
+      ],
+      "templateInputs": {
+        "inputs": {
+          "first_image": "<DETALHE_SELECIONADO>"
+        }
+      },
+      "tool": "image_to_video",
+      "model": "kling-video-v3_0",
+      "auth": null,
+      "submissionBlocked": "Proposta local: referências, revisão criativa, cotação e liberação específica pendentes.",
+      "coherenceAnnotations": null
+    }
+  ],
+  "checks": {
+    "sourceLinksAndHashes": "passed for all three skills and all six source/guide files",
+    "catalogAndFrontendReflectCurrentBytesAndUnresolvedRegistryDrift": "passed",
+    "bindingScope": "six proposal templates, eight unbound slots; no selected production payload",
+    "networkOrProviderCalls": false,
+    "mediaReviewPerformed": false,
+    "baselineBytesForRegisteredHashesAvailable": false,
+    "centreLineReproduction": {
+      "method": "Pillow thumbnail on synthetic in-memory frames; no media read/write",
+      "inputs": [
+        {
+          "size": [
+            1920,
+            1080
+          ],
+          "thumbnail": [
+            1200,
+            675
+          ],
+          "fixedX": 600,
+          "centerX": 600
+        },
+        {
+          "size": [
+            800,
+            1200
+          ],
+          "thumbnail": [
+            450,
+            675
+          ],
+          "fixedX": 600,
+          "centerX": 225
+        },
+        {
+          "size": [
+            640,
+            360
+          ],
+          "thumbnail": [
+            640,
+            360
+          ],
+          "fixedX": 600,
+          "centerX": 320
+        }
+      ],
+      "result": "source recipe incorrectly assumes every thumbnail is 1200 pixels wide; shared source not modified"
+    }
+  }
+}

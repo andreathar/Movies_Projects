@@ -1,0 +1,280 @@
+{
+  "cost_params": [
+    {
+      "name": "duration",
+      "type": "integer",
+      "default": 5,
+      "required": false
+    },
+    {
+      "name": "mode",
+      "type": "string",
+      "default": "t2v",
+      "required": false,
+      "enum": [
+        "t2v",
+        "omni_reference",
+        "video_edit",
+        "video_extension"
+      ]
+    },
+    {
+      "name": "resolution",
+      "type": "string",
+      "default": "720p",
+      "required": false,
+      "enum": [
+        "480p",
+        "720p",
+        "1080p"
+      ]
+    },
+    {
+      "name": "video_references",
+      "type": "array",
+      "default": null,
+      "required": false
+    }
+  ],
+  "display_name": "Cinema Studio 4.0",
+  "job_type": "cinematic_studio_video_4_0",
+  "params": [
+    {
+      "name": "aspect_ratio",
+      "type": "string",
+      "default": "16:9",
+      "required": false,
+      "enum": [
+        "auto",
+        "21:9",
+        "16:9",
+        "4:3",
+        "1:1",
+        "3:4",
+        "9:16"
+      ]
+    },
+    {
+      "name": "audio_references",
+      "type": "array",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "bitrate_mode",
+      "type": "string",
+      "default": "standard",
+      "required": false,
+      "enum": [
+        "standard",
+        "high"
+      ]
+    },
+    {
+      "name": "camera_aperture_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "camera_lens_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "camera_model_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "color_palette",
+      "type": "object|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "default": 5,
+      "required": false
+    },
+    {
+      "name": "end_image",
+      "type": "object|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "era_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "extension_mode",
+      "type": "string|null",
+      "default": null,
+      "required": false,
+      "enum": [
+        "backward",
+        "forward"
+      ]
+    },
+    {
+      "name": "generate_audio",
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    {
+      "name": "genre_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "image_references",
+      "type": "array",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "light",
+      "type": "string|null",
+      "default": null,
+      "required": false,
+      "enum": [
+        "preset",
+        "custom",
+        "user"
+      ]
+    },
+    {
+      "name": "light_custom",
+      "type": "array|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "light_id",
+      "type": "string|null",
+      "default": null,
+      "required": false,
+      "enum": [
+        "custom"
+      ]
+    },
+    {
+      "name": "mode",
+      "type": "string",
+      "default": "t2v",
+      "required": false,
+      "enum": [
+        "t2v",
+        "omni_reference",
+        "video_edit",
+        "video_extension"
+      ]
+    },
+    {
+      "name": "pacing_id",
+      "type": "string|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "prompt",
+      "type": "string",
+      "default": null,
+      "required": true
+    },
+    {
+      "name": "resolution",
+      "type": "string",
+      "default": "720p",
+      "required": false,
+      "enum": [
+        "480p",
+        "720p",
+        "1080p"
+      ]
+    },
+    {
+      "name": "start_image",
+      "type": "object|null",
+      "default": null,
+      "required": false
+    },
+    {
+      "name": "video_references",
+      "type": "array",
+      "default": null,
+      "required": false
+    }
+  ],
+  "rules": [
+    {
+      "cel": "params.mode != \"t2v\" || size(params.image_references) + size(params.video_references) + size(params.audio_references) + (params.start_image == null ? 0 : 1) + (params.end_image == null ? 0 : 1) == 0",
+      "message": "mode 't2v' does not accept reference media"
+    },
+    {
+      "cel": "params.mode != \"omni_reference\" || size(params.image_references) + size(params.video_references) + size(params.audio_references) + (params.start_image == null ? 0 : 1) + (params.end_image == null ? 0 : 1) > 0",
+      "message": "mode 'omni_reference' requires at least one reference media item"
+    },
+    {
+      "cel": "size(params.image_references) + size(params.video_references) + size(params.audio_references) + (params.start_image == null ? 0 : 1) + (params.end_image == null ? 0 : 1) <= 50",
+      "message": "at most 50 reference media items are allowed in total"
+    },
+    {
+      "cel": "params.mode != \"video_edit\" || size(params.video_references) == 1",
+      "message": "mode 'video_edit' requires exactly one video reference"
+    },
+    {
+      "cel": "params.mode != \"video_extension\" || size(params.video_references) >= 1",
+      "message": "mode 'video_extension' requires at least one video reference"
+    },
+    {
+      "cel": "params.mode != \"video_extension\" || !(params.extension_mode == null)",
+      "message": "'extension_mode' is required for mode 'video_extension'"
+    },
+    {
+      "cel": "params.mode == \"video_extension\" || params.extension_mode == null",
+      "message": "'extension_mode' is only allowed for mode 'video_extension'"
+    },
+    {
+      "cel": "size(params.image_references) + (params.start_image == null ? 0 : 1) + (params.end_image == null ? 0 : 1) <= 30",
+      "message": "at most 30 images are allowed (counting start_image and end_image)"
+    },
+    {
+      "cel": "params.mode == \"omni_reference\" || (params.start_image == null && params.end_image == null)",
+      "message": "start_image and end_image are only allowed for mode 'omni_reference'"
+    },
+    {
+      "cel": "params.light != \"custom\" || !(params.light_custom == null)",
+      "message": "light_custom is required when light is 'custom'"
+    },
+    {
+      "cel": "params.light_id != \"custom\" || !(params.light_custom == null)",
+      "message": "light_custom is required when light_id is 'custom'"
+    },
+    {
+      "cel": "params.light != \"custom\" || params.light_id == null || params.light_id == \"custom\"",
+      "message": "light_id must be omitted or 'custom' when light is 'custom'"
+    },
+    {
+      "cel": "params.light == null || params.light == \"custom\" || (!(params.light_id == null) && params.light_id != \"custom\")",
+      "message": "a preset id is required when light is 'preset' or 'user'"
+    },
+    {
+      "cel": "params.light == null || params.light == \"custom\" || params.light_custom == null",
+      "message": "light_custom must be omitted when light is 'preset' or 'user'"
+    },
+    {
+      "cel": "params.light != null || params.light_custom == null || params.light_id == null || params.light_id == \"custom\"",
+      "message": "light_id and light_custom are mutually exclusive"
+    }
+  ],
+  "type": "video"
+}

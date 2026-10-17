@@ -324,27 +324,27 @@
     "artifacts": [
       {
         "path": "agents/generated/claude/movies-continuity.md",
-        "sha256": "35065e068205b4a6fc6eaa2a52bdc9035841f127640f6d5cfab665898c6efe50"
+        "sha256": "0207ec3c029718a05ca7f894cba8d73d94211abd943c94166632b8b8aeb7f6ca"
       },
       {
         "path": "agents/generated/codex/movies-continuity.toml",
-        "sha256": "f88165b52fcb6fc2742a2882bf0974489f5392da2ceda408fa42ee4d25c08340"
+        "sha256": "22217f26ba63719a80ace3d677cfe550b22c79bdfe897e78382d901a16f88269"
       },
       {
         "path": "agents/generated/claude/movies-historian.md",
-        "sha256": "584f5b2a406b7ce91af4cb580a550a40aab2c96601960df457680c7e68950a90"
+        "sha256": "0e341065991a12cb7c281e9d6b61f7bae2619336ad77eb8d835aa1d15b0edaaf"
       },
       {
         "path": "agents/generated/codex/movies-historian.toml",
-        "sha256": "e3a57e4d54a566810a904e32fc828a21710453cef084515c614d86e80ab3657e"
+        "sha256": "69bfd23e657969e1ad1279fc6eab1b92ba161b373e163cf427ebfca082e78e74"
       },
       {
         "path": "agents/generated/claude/movies-qc.md",
-        "sha256": "3d3d9a4120e2a3190d90e04df86a2d9aaca4cd793316deb62b68f6501732e0c0"
+        "sha256": "249d9df7f9dca630e690cf7a42dc6d4dff7b17a20167392c7baa38a6e0b8e57a"
       },
       {
         "path": "agents/generated/codex/movies-qc.toml",
-        "sha256": "37ba5674de8de0ceca2742df94db777e851c307de7d8465a47722ccef2ba264a"
+        "sha256": "53a8645dce06cb78741c3f0bbdc6a44dcee7ec7fbebe1b306f1f4f35f662d992"
       }
     ],
     "runtimeVerified": false

@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "name": "handoff-check",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "handoff",
+        "check",
+        "projects/andre-time-travel/agents/handoffs/2026-10-17-coordinator-team-strategy-review-v1.json"
+      ],
+      "exit": 0,
+      "evidence": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/final-handoff-check.json"
+    },
+    {
+      "name": "lint",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "exit": 0,
+      "evidence": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/final-lint.json"
+    },
+    {
+      "name": "resume",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "exit": 0,
+      "evidence": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/final-resume.json"
+    },
+    {
+      "name": "validate",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit": 0,
+      "evidence": "/home/athar/Documents/Codex/2026-10-17/task-2/evidence/final-validate.json"
+    }
+  ],
+  "historicalHandoffsPreserved": true,
+  "producerIngestionPerformed": false
+}

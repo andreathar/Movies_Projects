@@ -1,0 +1,53 @@
+# Higgsfield API Docs
+
+> Integrate Higgsfield image and video generation into applications and agents.
+
+## Model discovery and source priority
+
+- Start at https://console.higgsfield.ai to discover models and open their model-specific API documentation.
+- Use the selected model’s documentation for its endpoint, request schema, supported parameters, and examples. Follow its model-specific `llms.txt` link when available.
+- Use https://docs.higgsfield.ai/docs/llms.txt for shared authentication, SDK, polling, webhook, and error-handling guidance.
+- Treat `/docs/openapi.json` as supplementary reference, not the authoritative model catalog. A model’s absence from that file does not establish that it is unavailable.
+- Check whether model documentation targets production or preview. Do not silently substitute environments, endpoints, or models.
+- If sources conflict or access prevents verification, describe the specific uncertainty. Distinguish documented availability from access verified with the user’s account.
+
+## Getting started
+
+- [Higgsfield API](https://docs.higgsfield.ai/docs/index.md): Platform overview.
+- [Quickstart](https://docs.higgsfield.ai/docs/quickstart.md): First generation walkthrough.
+- [Authentication](https://docs.higgsfield.ai/docs/authentication.md): Credentials and secure API access.
+- [How the API works](https://docs.higgsfield.ai/docs/how-to/introduction.md): Shared generation workflow.
+
+## Request lifecycle and media
+
+- [Requests and lifecycle](https://docs.higgsfield.ai/docs/concepts/requests.md): Request identifiers, states, and outputs.
+- [Polling](https://docs.higgsfield.ai/docs/concepts/polling.md): Status checks and backoff.
+- [Webhooks](https://docs.higgsfield.ai/docs/how-to/webhooks.md): Completion notifications and delivery handling.
+- [File uploads](https://docs.higgsfield.ai/docs/concepts/file-uploads.md): Preparing input media.
+- [Errors and retries](https://docs.higgsfield.ai/docs/concepts/errors.md): Failure handling and retry decisions.
+- [Rate limits](https://docs.higgsfield.ai/docs/concepts/rate-limits.md): Account and model limits.
+- [Billing and retention](https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md): Charges and output availability.
+
+## SDKs
+
+- [Client libraries](https://docs.higgsfield.ai/docs/how-to/sdk.md): Official Python and TypeScript clients.
+
+## Organizations
+
+- [Organizations](https://docs.higgsfield.ai/docs/organizations.md): Organization setup and collaboration.
+- [Managing members](https://docs.higgsfield.ai/docs/organizations/managing-members.md): Membership and access management.
+
+## Shared API reference
+
+- [API reference](https://docs.higgsfield.ai/docs/api-reference/overview.md): API reference overview.
+- [Get request status](https://docs.higgsfield.ai/docs/api-reference/requests/get-request-status.md): Check a submitted request.
+- [Cancel a queued request](https://docs.higgsfield.ai/docs/api-reference/requests/cancel-a-queued-request.md): Cancel eligible pending work.
+
+## Help
+
+- [FAQ](https://docs.higgsfield.ai/docs/help/faq.md): Common integration questions.
+- [Support](https://docs.higgsfield.ai/docs/help/support.md): Contact and troubleshooting resources.
+
+## Supplementary OpenAPI specification
+
+- [OpenAPI specification](https://docs.higgsfield.ai/docs/openapi.json): Supplementary machine-readable reference. Apply the model discovery and source priority guidance above.

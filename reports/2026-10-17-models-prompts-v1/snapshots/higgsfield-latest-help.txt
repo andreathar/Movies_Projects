@@ -1,0 +1,41 @@
+Run Higgsfield image, video, and Marketing Studio workflows from the terminal.
+
+Usage:
+  higgsfield [flags]
+  higgsfield [command]
+
+Aliases:
+  higgsfield, higgs, hf
+
+Examples:
+  higgsfield auth login
+  higgsfield model list --video
+  higgsfield workflow list
+  higgsfield generate create <model> --prompt "cinematic product photo" --image <upload_id>
+
+Available Commands:
+  account            Credits and transactions
+  auth               Login, logout, token
+  generate           Create, cost, list, wait jobs
+  help               Help about any command
+  marketing-studio   Marketing Studio assets
+  marketplace-cards  Marketplace product cards via backend prompt enhancement
+  model              List models and params
+  preset             Browse and resolve generation presets
+  product-photoshoot Brand-quality image generation via mode-specific prompt enhancement
+  project            Manage projects, folders, and assets
+  soul-id            Train and manage Soul refs
+  upload             Upload media and document inputs
+  version            Print build info
+  voices             List voices for text-to-speech and voice-change
+  website            Build and ship full-stack websites
+  workflow           List workflows and inspect params
+  workspace          Select billing workspace
+
+Flags:
+  -h, --help       help for higgsfield
+      --json       print raw JSON responses
+      --no-color   disable color output
+  -v, --version    print build info
+
+Use "higgsfield [command] --help" for more information about a command.

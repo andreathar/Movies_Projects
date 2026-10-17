@@ -1,0 +1,43 @@
+{
+  "retrievedOn": "2026-10-17",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/higgsfield-ai/cli/main/README.md",
+      "snapshot": "snapshots/higgsfield-official-readme.md",
+      "sha256": "4d390d1f8bcd7a7a3457e3edb7ecdd0094329f46a2aeb805f131d21e933f4630",
+      "status": 200
+    },
+    {
+      "url": "https://raw.githubusercontent.com/higgsfield-ai/cli/main/MODELS.md",
+      "snapshot": "snapshots/higgsfield-official-models.md",
+      "sha256": "a8bc9b7d62f6e2b23ac0001c92dafd7126fb8fa583cb37213f6d17cef8796f92",
+      "status": 200
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/models.md",
+      "snapshot": "snapshots/higgsfield-api-catalog.md",
+      "sha256": "7531a373b3a23a600601c0fa9cd00ef2527e0e6e6688d47c3c2e34cc006cc2cd",
+      "status": 200
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/llms.txt",
+      "snapshot": "snapshots/higgsfield-api-discovery.txt",
+      "sha256": "b08ca857d7578103250f687cb1760c49c0be32cfb6c7765b33affdc0fe138265",
+      "status": 200
+    },
+    {
+      "url": "https://kling.ai/blog/kling-4-ai-video-model",
+      "snapshot": "snapshots/kling4-guide-text.txt",
+      "sha256": "12b1441642e6f5581baea020217c6ec580c76a45461b900d51ee6e6a71df461e",
+      "format": "HTML text extraction; not original HTML hash",
+      "status": 200
+    },
+    {
+      "url": "https://kling.ai/blog/kling40-kling-visual-realism-creative-control-introducing-storytelling?tab=all",
+      "snapshot": "snapshots/kling4-launch-text.txt",
+      "sha256": "582e5c9da2cae74d95d639f3d70f28733edf5638ddc86d70496869891a475089",
+      "format": "HTML text extraction; not original HTML hash",
+      "status": 200
+    }
+  ]
+}

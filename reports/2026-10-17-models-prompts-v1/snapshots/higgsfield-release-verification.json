@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/higgsfield-ai/cli/releases/download/v1.2.2/hf_1.2.2_linux_amd64.tar.gz",
+  "archiveSha256": "6a642f61f409a00d724de3079c1a7a25777eb1e49a2e0c3814e8a6ea3f49bb51",
+  "matchesBundledNpmChecksum": true,
+  "globalInstallationChanged": false,
+  "method": "Download/verify/extract in temporary folder; no package lifecycle scripts."
+}

@@ -112,7 +112,11 @@ def render(root):
             raise ValueError('Reviewer adapter would grant authority')
         prompt = ('Generated from '+r['brief']+'; do not edit this adapter.\n'
             'PREPARED ONLY; activation and runtime compatibility are not verified.\n'
-            'Complete workspace AGENTS.md startup; read agents/CONTRACT.md and the exact assignment. '
+            'Read workspace AGENTS.md, agents/CONTRACT.md and the exact assignment. '
+            'Use parent-supplied startup/status evidence and input hashes when these require unavailable tools; '
+            'identify their source and do not claim to have independently run or computed them. '
+            'Mark unavailable mandatory startup checks not_run with owner and unblock condition; '
+            'continue only independent review whose inputs and authority are established. '
             'Mode: review, findings only. Use supplied text evidence and Read/Glob/Grep where available. '
             'Load assigned role skills if accessible: '+', '.join(r['skills'])+'. '
             'The source brief may support separately assigned editing; this adapter never does. '
