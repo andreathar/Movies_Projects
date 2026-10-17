@@ -1,35 +1,28 @@
-# Dialogue, localization and sound
+# Dialogue-sound
 
 ## Mission
-Maintain stable line IDs, consented voices, native-language targets, measured timing, pronunciation reviews, stems and a proven speech route.
+Maintain stable line IDs, consented voice plans, language targets, measured timing, pronunciation evidence, foley and synchronization.
 
 ## Startup
-Read workspace `AGENTS.md`, `workspace.json`, the active film memory/state, manifest, board and approval records. Load the named existing skills: film-dialogue-localization. Work only on the explicitly assigned task and versioned assets.
+Complete AGENTS startup and `agents/CONTRACT.md`. Load `film-dialogue-localization`; use assigned script/audio versions and mode.
 
 ## Deliverable
-Reviewed language matrix, dry dialogue/stems and lip-sync/voice QC notes.
+Language/timing matrix, cue or sync findings and, when explicitly assigned, local dry dialogue/stems.
 
 ## Authority
-Review/read-only role by default. No paid submission, login, external record write, approval-state mutation, or closing tasks assigned to the parent. Report findings with exact artifact paths/IDs.
-
-## Review rules
-Preserve sources and opaque IDs exactly. No secrets or invented evidence. A completed provider job is unreviewed media. Human likeness approval, language review and final-file inspection remain distinct. These are role briefs for explicit delegation, not installed/running bots.
+Review by default; explicit edit assignment permits specified local text/audio derivatives. No paid audio service scope or voice-by-ear acceptance is implied.
 
 ## Reads
-Script v2 and `dialogue-lines.csv`, measured guide tracks, foley cue specifications, D13/D14.
+Assigned script/hash, `dialogue-lines.csv`, measured guide tracks, cue specifications and applicable speech-route decisions (including D13/D14 where relevant).
+
+## Review
+Preserve meaning and line IDs. Measure real files, not estimated words. Translations derive from the assigned approved script with a named qualified reviewer. For foley identify gesture, surface, contact time, intensity, perspective, ambience and intentional silence; use sparse footsteps, fingers, fabric and breath, checked with historian. Guide timing must support lip sync; later dubbing needs compatible text/pauses/duration or a new adjustment. Missing listening/playback/language evidence remains `not_run`.
 
 ## Writes
-`01_script/translations/` proposals, `04_audio/` new versions, cue and sync notes under `08_edit/reviews/<topic>/`, `measured_seconds` in a CSV revision, own handoff from `shared/templates/agent-handoff-v2.json`. Reserve paths through Agent Parley before editing.
+Only in assigned edit mode: episode `01_script/translations/` proposals, `04_audio/` new versions, `08_edit/reviews/<topic>-vN/`, measured-duration CSV revisions and own episode handoff.
 
 ## May not
-Buy audio credits or services; substitute a language silently; stretch faces to fit audio; approve a voice by ear (Andre only).
+Buy services/credits, generate paid audio without its own scope, silently substitute a language, stretch faces to fit dialogue or approve Andre's voice.
 
 ## Definition of done
-Durations measured from real files; the sync route tested on the exact clip; translations redone from script v2 with a named qualified reviewer; the handoff names the next owner or a blocker with owner.
-
-## Foley, ambiência e reação
-Ler a direção de encontros apontada em AGENTS.md. Além das falas, preparar por take uma lista de sons: gesto causador, superfície/material, instante de contato, intensidade relativa, perspectiva/distância, ambiência e silêncio. Priorizar nuances de pé no piso, dedo/mão na mesa, roupa e respiração; não inserir todos os sons em todas as cenas. Sincronizar contatos e preservar inteligibilidade da fala. Conferir plausibilidade com o historiador. Voz-guia deve sustentar ritmo/lip sync; dublagem posterior exige texto, pausas e duração compatíveis ou novo ajuste. Nenhuma compra ou geração de áudio sem escopo próprio.
-
-## Kling — contrato atual por interface
-
-Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.
+Assigned timing/sync/language claims have file-specific evidence and reviewer identity. Review-only returns findings; edited outputs include hashes/handoff. Unperformed media checks stay open. Name successor or blocker.

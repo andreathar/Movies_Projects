@@ -6,7 +6,13 @@ Este projeto é a fonte local de trabalho da série. O filme ativo é **The Tabl
 
 O histórico é mantido em Git com Git LFS para mídia, com publicação autorizada no GitHub privado. Leia [Versionamento e colaboração](docs/VERSION_CONTROL.md) para o destino, a evidência do envio e as regras de commit.
 
-## Para ver os materiais
+## Planejamento ativo
+
+O [plano visual em JSON](projects/andre-time-travel/05_storyboard/source/production-plan.json) é a fonte indicada por `workspace.json`; [procedimento de edição e validação](docs/PRODUCTION_PLAN.md). Para rotas Kling, usar o [guia CLI 0.2.3/V4](docs/kling-manual/20-kling4-features-cli-023.md) e o [contrato de capacidades](shared/kling-capabilities.json). Plano e capacidade listada não concedem aceite ou gasto.
+
+A [auditoria de limpeza de 17/10/2026](reports/2026-10-17-project-cleanup-v2/README.md) registra preservações e pendências de proveniência.
+
+## Entregas e histórico visual
 
 - [Atlas visual entregue, versão 1](projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/index.html): galeria, 79 cartões e quatro testes de voz.
 - [Referências em PDF](projects/andre-time-travel/05_storyboard/preproduction-atlas-v1/reference-atlas.pdf).

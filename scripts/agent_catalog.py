@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 REVIEWERS = ('historian', 'continuity', 'qc')
+REVIEW_SECTIONS = ('Reads', 'Review', 'May not')
 
 def digest(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -31,10 +32,23 @@ def unique(items, key):
     return set(ids)
 
 def mission(text):
-    match = re.search(r'^## (?:Mission|Missão)\s*\n(.*?)(?=\n## |\Z)', text, re.M | re.S)
+    match = re.search(r'^## (?:Mission|Missão)[ \t]*\n(.*?)(?=^## |\Z)', text, re.M | re.S)
     if not match or not match[1].strip():
         raise ValueError('Role brief needs a Mission section')
     return ' '.join(match[1].split())
+
+def review_sections(text):
+    """Select review evidence/rules, never inherit source editing/completion steps."""
+    sections = {}
+    for match in re.finditer(r'^## ([^\n]+)\n(.*?)(?=^## |\Z)', text, re.M | re.S):
+        heading, body = match[1].strip(), match[2].strip()
+        if heading in sections:
+            raise ValueError(f'Duplicate role section: {heading}')
+        sections[heading] = body
+    for heading in REVIEW_SECTIONS:
+        if not sections.get(heading):
+            raise ValueError(f'Reviewer brief needs a {heading} section')
+    return '\n\n'.join(f'## {heading}\n{sections[heading]}' for heading in REVIEW_SECTIONS)
 
 def skill_description(text):
     match = re.search(r'^description:\s*(.*)$', text, re.M)
@@ -54,6 +68,7 @@ def render(root):
         sources.append({'path': path, 'sha256': digest(raw)})
         return raw.decode()
     read('AGENTS.md')
+    read('agents/CONTRACT.md')
     read('shared/kling-capabilities.json')
     agents = json.loads(read('agents/registry.json'))
     registry = json.loads(read('skills/registry.json'))
@@ -96,9 +111,21 @@ def render(root):
         if r.get('paidSubmissionAuthority') or r.get('dispatchAuthority') or r.get('creativeDecisionAuthority'):
             raise ValueError('Reviewer adapter would grant authority')
         prompt = ('Generated from '+r['brief']+'; do not edit this adapter.\n'
-            'Read workspace AGENTS.md and the exact assignment before work. This adapter is for findings-only review. '
-            'Return evidence to the parent; do not edit files, dispatch, spend, submit jobs, or approve production. '
-            'If the assignment needs unavailable tools, report the limitation. This text is an operating rule, not a security boundary.\n\n'+brief)
+            'PREPARED ONLY; activation and runtime compatibility are not verified.\n'
+            'Complete workspace AGENTS.md startup; read agents/CONTRACT.md and the exact assignment. '
+            'Mode: review, findings only. Use supplied text evidence and Read/Glob/Grep where available. '
+            'Load assigned role skills if accessible: '+', '.join(r['skills'])+'. '
+            'The source brief may support separately assigned editing; this adapter never does. '
+            'Do not edit files, reserve outputs, write a handoff, dispatch, spend, submit jobs, or approve production. '
+            'No shell, external research, media decoding, playback or listening capability is established here. '
+            'Do not infer capability from a role name or supplied report. This text is an operating rule, not a security boundary.\n\n'
+            '## Mission\n'+summary+'\n\n'+review_sections(brief)+'\n\n'
+            '## Completion for this adapter\n'
+            'Return scope and input paths/hashes; findings with severity, claim, artifact path/hash and line or timestamp, '
+            'evidence, uncertainty and recommended action; checks actually run; dependencies/open decisions; next owner or blocker. '
+            'Separate observed from inferred. Mark unavailable checks not_run with owner and unblock condition. '
+            'The parent packages the handoff and arranges missing media/language verification. '
+            'Text review cannot complete full-media QC, certify zero-face safety or replace qualified language/human acceptance.\n')
         name = 'movies-'+r['id']
         outputs[f'agents/generated/claude/{name}.md'] = ('---\nname: '+name+'\ndescription: '+json.dumps(summary)+'\ntools: Read, Glob, Grep\n---\n\n'+prompt).encode()
         outputs[f'agents/generated/codex/{name}.toml'] = ('# PREPARED ONLY: discovery and activation not verified.\nname = '+json.dumps(name)+'\ndescription = '+json.dumps(summary)+'\ndeveloper_instructions = '+json.dumps(prompt)+'\n').encode()

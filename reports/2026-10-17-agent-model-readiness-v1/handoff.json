@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "independent-agent-prompt-reviewer",
+  "contributorKind": "ad-hoc",
+  "assignment": "Check agents/ for clarity, context economy and executable model/task alignment. Review only.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "reports/2026-10-17-agent-model-readiness-v1"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b"
+    },
+    {
+      "path": "agents/README.md",
+      "sha256Before": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682"
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256Before": "5022de556283ad1f425b6fc049b27a2e8f250373c896b884117147fed53f528f"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "3b8238eff3113a1decb5bd0eaf46e9d5ec5c583b058f501abffcd3ba15975b37"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256Before": "035542f4355b1f6549d98a8eccd2d48ae6f24c5acb35ea2598d49e596da81f92"
+    },
+    {
+      "path": "agents/director.md",
+      "sha256Before": "dda3f19a222511b005a2314a46b720d48b437d27094ed8cc9349f4018d48f037"
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256Before": "71e57baeb59b02a3293294645dc51edb630b67ef840a90df6f5d28ca34cfaf01"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "25493977802fd09e0721b517d3ffe19ec244f14a54dade8ae7793193fc92a090"
+    },
+    {
+      "path": "agents/generated/claude/movies-continuity.md",
+      "sha256Before": "317aacf9aac2b8e34543eb3b3c360494ea6d02c29bba6623a3f4ff4e8dad19a2"
+    },
+    {
+      "path": "agents/generated/claude/movies-historian.md",
+      "sha256Before": "49ddac35def29c27575305377819a927cc7d07f932d0207c2b3f4157f20c25ab"
+    },
+    {
+      "path": "agents/generated/claude/movies-qc.md",
+      "sha256Before": "1f717e7d4b9bf408023a5eb68a374da618d3c22fe3923c61032455797af25be3"
+    },
+    {
+      "path": "agents/generated/codex/movies-continuity.toml",
+      "sha256Before": "ceaa29def002bd9e016405d7dccc8b866398f92e1fe1c3a3af05403f3d3cfb5a"
+    },
+    {
+      "path": "agents/generated/codex/movies-historian.toml",
+      "sha256Before": "9ca3cb76de436b680855e450a7eaa3798d556d07d9ce1b0bd7f25ce0f4bea7be"
+    },
+    {
+      "path": "agents/generated/codex/movies-qc.toml",
+      "sha256Before": "fff61059928f770b1f99275d134cbdfff93477019b533f10a9de0fa619c50ce3"
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256Before": "39268671d86e73d1c0cbe6d742195f36e0033d04c14b41d6c42e0f681233f40a"
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256Before": "b6907966668b9eaa80384348c8a1c67d5ee18aca2ab83c29cedbbb9bf257a5eb"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256Before": "52b9a676847ac48c41f565fa0193b51f14c4aa193cc852570fb2112e30354cd3"
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256Before": "c3f97f0d18c29aaee36fc7aca475daf2a3cf000b2c30ed44ad0489d679cef676"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "9b5d013a3a2e23964aa3a9a48613627342292bc4d2be1a2ea6b302bd631954f6"
+    },
+    {
+      "path": "agents/storyboard.md",
+      "sha256Before": "36fe02c5817dd0ff0c78ecc2fd82d5ce8a1aca8e86857e2be1315987c803d378"
+    },
+    {
+      "path": "docs/AGENT_CATALOG.md",
+      "sha256Before": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9"
+    },
+    {
+      "path": "scripts/agent_catalog.py",
+      "sha256Before": "d479dd9c29857ade506c3185be84b92b0b350b9a1c913986d89915bb1f7fb83b"
+    },
+    {
+      "path": "tests/test_agent_catalog.py",
+      "sha256Before": "941c3db36469db0c0a974c6b410c35bcce931efca747846a9503284dba10bbb8"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "reports/2026-10-17-agent-model-readiness-v1/README.md",
+      "sha256After": "3b360b252ab76d31960ca87097fc9bce6bb9298c1954089815ffdaef8429abd8",
+      "reason": "New static model-readiness review."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "No agent source, generated adapter, client permission or model configuration changed.",
+      "evidence": "reports/2026-10-17-agent-model-readiness-v1/README.md",
+      "sha256": "3b360b252ab76d31960ca87097fc9bce6bb9298c1954089815ffdaef8429abd8"
+    }
+  ],
+  "verification": [
+    {
+      "command": "scripts/agent_catalog.py --check",
+      "result": "OK; 7 outputs unchanged, activation pending."
+    },
+    {
+      "command": "unittest discover -s tests -p test_agent_catalog.py",
+      "result": "8 tests passed."
+    },
+    {
+      "command": "manage.py status / resume / lint",
+      "result": "Exit 0; skill drift and existing lint advisories retained."
+    }
+  ],
+  "nextActions": [
+    {
+      "role": "desktop producer/coordinator",
+      "action": "Review and assign a bounded correction of approval contradictions and adapter mode/tool mismatches.",
+      "readiness": "Proposed; not accepted or started."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Static role/model-readiness review delivered; performance/runtime effectiveness not benchmarked.",
+  "blockers": [
+    {
+      "description": "Governance wording/source edits and runtime activation are outside this read-only review.",
+      "owner": "desktop producer/coordinator",
+      "unblockCondition": "Assign exact source corrections separately; runtime permission changes need their own review and authorization."
+    }
+  ],
+  "andreOnlyGates": [],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

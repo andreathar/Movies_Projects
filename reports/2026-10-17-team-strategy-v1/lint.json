@@ -1,0 +1,39 @@
+{
+  "status": "error",
+  "hard": [
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/continuity.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/coordinator.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/dialogue-sound.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/director.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/editor.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/catalog.json",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/claude/movies-continuity.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/claude/movies-historian.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/claude/movies-qc.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/codex/movies-continuity.toml",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/codex/movies-historian.toml",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/generated/codex/movies-qc.toml",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/historian.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/lighting.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/producer.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/qc.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/registry.json",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: agents/storyboard.md",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: scripts/agent_catalog.py",
+    "2026-10-17-maintenance-cleanup-v2.json: changedFiles sha256 mismatch: tests/test_agent_catalog.py"
+  ],
+  "advisory": [
+    "coherence G-MASTER INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-LISTEN-KF INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-P03 INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-P04 INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-REACTION INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "coherence G-HAND-OPTION INPUT_ROLE_UNDOCUMENTED: Entradas sem binding de função/referência.",
+    "approval flags duplicated in manifest.json and approvals.json (R06)",
+    "4 handoff(s) not ingested: 2026-10-10-execution-plan-v1.json, 2026-10-13-claude-preflight-ledger-audit-v1.json, 2026-10-13-code-quality-intensive-v1.json, 2026-10-17-maintenance-cleanup-v2.json",
+    "29 handoff(s) superseded; stored hashes kept as history: 2026-10-11-claude-mistakes-promotion-v1.json, 2026-10-11-claude-repo-cleanup-v1.json, 2026-10-11-structure-naming-agents-implementation.json, 2026-10-11-structure-naming-merge-v1.json, 2026-10-12-agent-catalog-frontend-v1.json, 2026-10-12-agent-catalog-frontend-v2.json, 2026-10-12-agent-catalog-frontend-v3.json, 2026-10-12-agent-catalog-frontend-v4.json, 2026-10-12-cinematic-coherence-integration-v1.json, 2026-10-12-documentation-reconciliation-v1.json, 2026-10-12-kling-ab-min-v1.json, 2026-10-12-kling-ab-min-v2.json, 2026-10-12-kling-cli-audit-v2.json, 2026-10-12-kling-otimizacao-v1.json, 2026-10-12-master-plan-implementation-v1.json, 2026-10-12-master-plan-implementation-v2.json, 2026-10-13-agents-hash-reconciliation-v1.json, 2026-10-13-costs-panel-reconciliation-v1.json, 2026-10-13-galileo-active-baseline-v1.json, 2026-10-13-parley-shared-media-organization-v1.json, 2026-10-15-kling-element-experiments-v1.json, 2026-10-15-kling-element-experiments-v2-reconciliation.json, 2026-10-15-qc-reference-review-controls-v1.json, 2026-10-15-qc-reference-review-controls-v2-reconciliation.json, 2026-10-15-qc-reference-review-controls-v3-kling-reconciliation.json, 2026-10-16-kling4-final-verification-v2.json, 2026-10-16-kling4-migration-v1.json, 2026-10-16-kling4-runtime-verification-v3.json, 2026-10-17-maintenance-cleanup-v1.json",
+    "session-log.json entries use 2 UTC offsets: +0000, -0300",
+    "4 untracked or modified path(s) under projects/andre-time-travel: ?? projects/andre-time-travel/07_generations/downloads/2026-10-17-element-experiments-v3/; ?? projects/andre-time-travel/agents/handoffs/2026-10-17-maintenance-cleanup-v1.json; ?? projects/andre-time-travel/agents/handoffs/2026-10-17-maintenance-cleanup-v2.json; ?? projects/andre-time-travel/docs/kling-element-experiments-20261017-v3.md"
+  ],
+  "film": "andre-time-travel"
+}

@@ -1,264 +1,60 @@
-# Coordinator protocol for Movies_Projects
+# Coordination procedure
 
-## Purpose
+Scope: bounded coordination under `AGENTS.md`, [PARLEY_PROTOCOL.md](PARLEY_PROTOCOL.md), [LOCAL_AGENT_HANDOFF.md](LOCAL_AGENT_HANDOFF.md) and the current board. [Team map](../agents/README.md) defines concise role/process/path names; [role contract](../agents/CONTRACT.md) defines modes and evidence. Neither role names nor this procedure start participants or grant permissions.
 
-This protocol defines how the coordinator role interacts with Agent Parley lanes in `Movies_Projects`. It turns the film's existing production map into deterministic, bounded coordination: read current state, claim work, send a structured assignment, verify outputs, and only then release dependent work.
+## 1. Scope → Assign
 
-This file is intentionally local to the project and complements the operational rules in `AGENTS.md`, `docs/LOCAL_AGENT_HANDOFF.md`, `docs/PARLEY_PROTOCOL.md`, and the production task board.
+Complete mandatory startup. Read current dependencies, approvals, blockers and exact input versions. Inspect only relevant/new handoffs, expanding to dependency evidence as necessary. The workflow map's dated tables are not live board status.
 
-## 1. Active operating model
+A task may be offered only when its actual prerequisites are satisfied, its recorded blocker is resolved by the authorized owner, applicable approvals match its content/version/use, and an available participant can perform the required checks. File existence, a completed generator job or acknowledgement alone is insufficient. Do not bypass a production blocker because an upstream task merely delivered files. Independent local preparation may continue only within its existing authorized scope.
 
-The coordinator is a human/agent dispatch role, not a policy override. It does not replace the producer role or Andre's approval gates.
+Discover real participants; never route to proposed roster names. In a live launcher-managed lane use its exact supplied CLI prefix, own worktree and injected identity. Outside such a lane do not impersonate `claude`, `codex` or `operator`, start services, relaunch clients or install plugins to make dispatch work. Report unavailable coordination to the producer; do independent assigned local work where possible.
 
-- Producer owns canonical task records, paid submissions, and final approval authority.
-- Lane roles own only the bounded outputs defined in their assigned work package.
-- Coordinator owns coordination state: queue ordering, task routing, evidence verification, blocker declarations, and assignment handoffs.
+Send one 150–250-word assignment per coherent output, with `ack_required`, `ack_within` 900 seconds unless explicitly varied, and an idempotency key. Keep payloads below Parley's message limit; link exact local specs for detail. Use this format (angle-bracket values are placeholders, not existing tasks or a send-ready message):
 
-## 2. Coordination loop
-
-The coordinator follows this loop for every next step:
-
-1. Read the current board and workflow map.
-2. Find ready tasks with all dependencies satisfied and no open blocker.
-3. Check the assigned lane has capacity and a valid allowed output path.
-4. Read the exact input artifacts and their versions/hashes.
-5. Create one assignment message with clear scope and acceptance criteria.
-6. Send the task to the named lane via Parley mail.
-7. Track acknowledgment.
-8. Await the handoff and verify the output artifact.
-9. Record the actual result in the coordinator's integration handoff, with any proposed decision in `proposedDecisions` and any proposed blocker in `blockers[]`.
-10. Release the next dependent task or keep the blocker explicit.
-
-No task moves forward on optimism alone. Movement requires evidence.
-
-## 3. Ready task rules
-
-A task is ready only when all of these are true:
-
-- `board.json` lists it as `in_progress`, `blocked`, or `ready` and the natural dependency chain allows it.
-- Every required upstream task has a recorded delivery or an explicit accepted condition.
-- Required inputs exist at the path declared in the task spec.
-- Any required decision record or approval file exists and is not older than the current task version.
-- The lane responsible for the task has a valid role, clear allowed write path, and no live blocker from a previous assignment.
-
-The coordinator must not infer readiness from a prior draft or from an unverified generator result.
-
-## 4. Assignment message format
-
-Each Parley assignment must contain the following fields.
-
-### Required fields
-
-- `taskId`: board task ID, such as `T12`.
-- `workPackage`: work package label, such as `W14` or `W15`.
-- `role`: the film role performing the work (e.g., `historian`, `continuity`, `editor`, `dialogue-sound`, `producer`, `qc`).
-- `owner`: the target lane or participant name.
-- `scope`: what exact output is expected.
-- `inputs`: array of file paths with version or hash data.
-- `allowedPaths`: files the lane may edit or create.
-- `checks`: the minimum accepted verification steps.
-- `blockers`: known blockers or constraints; if none, state `none`.
-- `nextOwner`: who should receive the handoff after this task.
-- `idempotencyKey`: unique task-version-key pair for deduplication.
-- `deadline`: if set, the time limit for acknowledgement or completion.
-
-### Example
-
-```json
-{
-  "schemaVersion": "1.0",
-  "taskId": "T12",
-  "workPackage": "W15",
-  "role": "continuity",
-  "owner": "codex-edit-qc",
-  "scope": "Review likeness evidence, proportions, expression and grooming for the selected detail-study set.",
-  "inputs": [
-    {
-      "path": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/manifest.json",
-      "sha256": "<sha256>",
-      "version": "detail-studies-v1"
-    },
-    {
-      "path": "projects/andre-time-travel/memory/STATE.md",
-      "sha256": "<sha256>",
-      "version": "current"
-    }
-  ],
-  "allowedPaths": [
-    "projects/andre-time-travel/02_references/_review/",
-    "projects/andre-time-travel/08_edit/reviews/"
-  ],
-  "checks": [
-    "Compare exact candidate images against the current continuity matrix",
-    "Record only evidence-backed observations",
-    "Do not regenerate or replace originals",
-    "Deliver a concise findings file with path and version references"
-  ],
-  "blockers": [
-    "No Andre likeness approval is implied by starting this review."
-  ],
-  "nextOwner": "producer",
-  "idempotencyKey": "T12-W15-v1",
-  "deadline": "900s"
-}
+```text
+subject: <task-or-topic> / <role> / <version> / Assign
+owner: <discovered participant>; role: <stable role ID>; mode: review|edit
+scope: <goal and explicit producer authorization>
+episodeRoot: projects/<episode>
+task/package: <existing IDs if assigned; otherwise not applicable>
+inputs: <workspace-relative paths, versions, SHA-256, review state>
+allowedPaths: <exact editable outputs; empty for findings-only review>
+checks: <required tools, tests and evidence; separate media/language gates>
+constraints: <no spend, external writes, substitutes or canonical edits>
+nextOwner: <named successor and readiness condition>
+ackWithin: 900 seconds; completionDeadline: <explicit or not set>
+idempotencyKey: <topic>-<version>-<sequence>
 ```
 
-## 5. Handoff verification standard
+A retry of the same send reuses its key; changed scope/version gets a new key and states what it supersedes. Acceptance must confirm role, inputs, mode, paths and checks. Mail acknowledgement is not necessarily scope acceptance. Producer owns ready work until accepted. Existing local film assignments need no forge issue or invented issue number.
 
-A completed handoff is not accepted based on a human claim alone. The coordinator verifies the following:
+## 2. Make → Check
 
-- The assigned output files exist in the allowed path.
-- The output file version matches the intended assignment.
-- A SHA-256 hash is recorded.
-- The checks listed in the assignment were performed.
-- Any defects or blockers are explicit and not hidden.
-- The next owner is named, or a blocker is recorded instead.
+The accepted owner reads only required evidence, reserves assigned outputs through available Parley and performs the bounded work. Reservations are advisory; they grant no authority and are not filesystem locks. Stop overlapping edits on conflict. Do not edit another participant's checkout or assume a successful reservation proves native filesystem/tool access.
 
-If verification fails, the coordinator must return the work to the same owner for repair, without assuming the issue is resolved.
+Review-only adapters return findings to the parent and do not create files. An explicit edit assignment delivers new versioned artifacts plus an episode handoff from `shared/templates/agent-handoff-v2.json`. Preserve base hashes, original media, provider results and concurrent edits.
 
-## 6. Dependencies and role ordering
+Coordinator verifies:
 
-The structure of the project establishes a clear precedence chain.
+- Claimed outputs are within assigned paths and match exact versions/hashes.
+- Declared checks actually ran, with evidence and limitations; no fabricated playback or language review.
+- Relevant existing findings were dispositioned, not hidden or re-audited without cause.
+- Dependencies, Andre-only gates and decisions remain separate from delivery.
+- Successor is named, or a blocker has owner, evidence and unblock condition.
 
-### Core precedence
+Missing tools/checks are `not_run`; required full-media QC stays incomplete. Request a bounded repair from the current owner when evidence fails. Do not automatically grant tools, regenerate media or resubmit jobs.
 
-- `continuity` owns bible and identity lock logic before most creative review.
-- `historian` approves factual and script integrity before dialogue or voice scope.
-- `dialogue-sound` is blocked until script and voice route are confirmed.
-- `storyboard` is blocked until script, timing, and keyframe decisions converge.
-- `producer` gates paid work and final scene packaging.
-- `qc` verifies exact exported files after the film is assembled.
+## 3. Integrate → Close
 
-### Common dependency patterns
+Coordinator returns a proposed integration handoff under `projects/<episode>/agents/handoffs/`. Proposed decisions go in `proposedDecisions`; blockers in `blockers[]` with `description`, `owner`, `unblockCondition`; successor in `nextActions`. It never edits board, approvals, ledger, decision store, STATE, session-log or mistakes.
 
-- `T06`/`T07` depend on `T05` script approval and `T01` boundaries.
-- `T11` depends on measured guide timing, historical script clarity, and cost freeze.
-- `T12` depends on `T03`, `T08`, `T11` and is a gate for chapter generation.
-- `T13` depends on `T09`, `T10`, `T12` and becomes the critical gate for all later chapter tasks.
-- `T18` depends on all four chapter results.
-- `T20` and `T21` depend on final corrections and historical-language work, not just script completion.
+Desktop producer checks the delivery (`manage.py handoff check`), reviews diffs/claims and ingests only verified evidence (`manage.py handoff ingest`). Director records authorized decisions. Integration is not approval of media, spending, commit or publication.
 
-These are operational, not theoretical; the coordinator must respect them exactly.
+Close only with an accepted successor, a precise owned blocker or a genuinely closed stage. If release of file reservations is appropriate after delivery, coordinate it explicitly; responsibility still stays with the producer/current owner until accepted transfer. Record actual checks/hashes once and communicate material changes only.
 
-## 7. Lane-specific routing templates
+## 4. Unavailable peers and escalation
 
-The coordinator routes by role with specific output expectations.
+Inspect status when a routing decision or changed event requires it, not on a timer. After a needed question use one scoped event wait where available. If it expires, or the peer is offline/paused, report the blocker and owner; do not loop, repeatedly wake a peer or invent a response. No periodic report, background schedule, Telegram/email notification, new transport, supervision setting or external contact is authorized by this procedure.
 
-### Historian
-
-- Input: approved script and historical research notes.
-- Output: reviewed factual notes, source-cited corrections, risk notes.
-- Gate: changes must not silently alter the approved script.
-
-### Continuity
-
-- Input: approved elements, bibles, keyframes, image reviews.
-- Output: continuity matrix updates, dress/pose/historical-material comparison findings, candidate acceptance or rejection.
-- Gate: no unreviewed image implies acceptance.
-
-### Dialogue-sound
-
-- Input: script, timing, configured voice route, approved lines.
-- Output: guide timing, voice tests, dry dialogue, language plan, review files.
-- Gate: no language target is accepted without explicit reviewer and approval.
-
-### Storyboard
-
-- Input: timing, script, keyframes, detail-study review.
-- Output: scene coverage, animatic timing, shot list updates.
-- Gate: selected shots and exact timing only after continuity and script checks.
-
-### Editor
-
-- Input: accepted chapters, animatics, audio tracks.
-- Output: edits, review notes, timeline files, final masters.
-- Gate: technical playback is required; not just source clips.
-
-### QC
-
-- Input: final masters and exported assets.
-- Output: exact review reports, defect list, acceptance or rejection.
-- Gate: face safety, sync, captions and full playback must be checked.
-
-### Producer
-
-- Input: all canonical records, approvals, budgets, board state.
-- Output: canonical state updates, budget reconciliation, paid-go/no-go decisions.
-- Gate: no paid job or final approval without Andre or recorded scope.
-
-## 8. Blocker handling
-
-A blocker must be precise and attributable.
-
-### Required blocker fields
-
-- `taskId`
-- `ownerRole`
-- `ownerName`
-- `reason`
-- `unblockCondition`
-- `evidencePath`
-
-Example:
-
-```json
-{
-  "taskId": "T12",
-  "ownerRole": "producer",
-  "ownerName": "desktop-producer",
-  "reason": "Selected image subset is not yet approved by Andre for likeness.",
-  "unblockCondition": "Andre reviews the selected subset and records approval in the decision log.",
-  "evidencePath": "projects/andre-time-travel/05_storyboard/keyframes/detail-studies-v1/review.md"
-}
-```
-
-The coordinator must never leave a blocker as “waiting on something” without a named owner and a clear condition.
-
-## 9. Decision proposals
-
-The coordinator does not write the decision store or the board. Every coordination decision is proposed in its integration handoff, not just in the thread. The director records decision records under `00_brief/decisions/` and the producer applies board changes (`docs/PARLEY_PROTOCOL.md` ownership table; the film gate hooks refuse lane writes there). D20 (`D20-detail-studies-art.json`) is an art selection for detail studies, not a likeness approval. There is no `D20-likeness-review.json`.
-
-Record:
-
-- Which task was dispatched
-- Which lane received it
-- Which inputs were used
-- What evidence was checked
-- The acceptance or rejection reason
-- Which task is now unblocked or deferred
-
-The coordinator saves only its integration handoff under `projects/andre-time-travel/agents/handoffs/`. The director records adopted decision records under `00_brief/decisions/`. The producer applies board changes.
-
-## 10. Non-goals and guardrails
-
-The coordinator must not:
-
-- Create new paid generation requests without a producer-scoped approval.
-- Re-run a failed generator job without explicit authorization.
-- Claim a task as complete without evidence.
-- Dispatch work to a lane outside its allowed write paths.
-- Delete originals or archival sources.
-- Skip ahead to the next milestone by inference. The staged workflow still applies.
-
-## 11. Minimum coordination checklist
-
-Before closing any task, the coordinator must confirm:
-
-- Did the handoff path and version match the task assignment?
-- Was the exact artifact reviewed and hash recorded?
-- Did we identify the next owner or a precise blocker?
-- Was the output consistent with the production board and not a duplicate of an older result?
-- Did the next task become eligible only after the conditions were satisfied?
-
-## 12. Practical summary
-
-The coordinator in this repo is not a general-purpose task manager. It is a narrow operational role that makes the existing project workflow explicit:
-
-- track dependencies,
-- issue bounded assignments,
-- verify evidence,
-- protect producer-approved gates,
-- and keep every next task either clearly owned or blocked.
-
-This makes the project’s distributed work manageable while staying faithful to `AGENTS.md`, `LOCAL_AGENT_HANDOFF.md`, and the Agent Parley model.
-
+Andre remains the operator for runtime/permission/integration decisions. If an existing capability refuses an action, report the exact refusal and minimum operator decision; no alternate route or trust change. Separate role approval, technical checks, human acceptance and model/provider activation. Proposed roles or historical successful messages prove no current runtime readiness.

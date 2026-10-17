@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "kind": "experiment_gallery_identity_correction",
+  "sources": [
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v1/manifest.json",
+      "sha256": "34ff1dd695d3d12e5b0763354ea9fdd8d052c6df98371433ad217b77763bb204"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+      "sha256": "79315382109e24d7b44d10de616f91498359a04cec76c57d8943b682ec5676eb"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review.json",
+      "sha256": "5c29174f868042742efa09b11a5a2787c8b02f429282e6813102f597f124ab20"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/evidence/analysis.json",
+      "sha256": "9cd2ea1aafdd2da64e5d9ad47827d596f47628c3990949549a3001e165d2633e"
+    },
+    {
+      "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/evidence/local-analysis.json",
+      "sha256": "c2a1d9b80a952fa5a47c12d52e9c9e27b7e7b1bb305bc25f53f58ca24d888124"
+    }
+  ],
+  "supersedesPresentation": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/index.html",
+  "supersessionScope": "presentation joins only; historical observations, reviews and ingestion remain unchanged",
+  "approved": false,
+  "newMediaFiles": 0,
+  "normalSpeedPlaybackWatched": false,
+  "actualAudioListening": false,
+  "inheritedReview": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review.json",
+  "videos": [
+    {
+      "asset_id": "KEXP-E324018220506771-video",
+      "video": {
+        "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-E324018220506771-video.mp4",
+        "sha256": "da3d90a0d5b6aeba422f78f29e3ed5064ed20a216050e05f069ecf27d3ff70a7"
+      },
+      "observation": {
+        "asset_id": "KEXP-E324018220506771-video",
+        "frames": 192,
+        "observed": "Split screen throughout. Left body approaches then turns profile/back near 5.5–7.1s; right portrait articulates/blinks. Broad longer hair/beard, pinstripe jacket and black shirt persist in these thumbnails. Two simultaneous views remain, so this is a composite reference, not a clean single-subject shot.",
+        "limits": "No normal-speed playback or heard speech; no full-resolution facial/voice acceptance."
+      },
+      "sheets": [
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/frames-000-039.jpg",
+          "sha256": "3bf04ae3b9b135ff1ad4d953b0ebd597d9e3edff16c8c4ed920fe832643dab3c",
+          "firstFrame": 0,
+          "lastFrame": 39
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/frames-040-079.jpg",
+          "sha256": "481b969ae8612a61009cb526d59eb6feae0c8d819be7122063b379524e7bed17",
+          "firstFrame": 40,
+          "lastFrame": 79
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/frames-080-119.jpg",
+          "sha256": "8d15f948e2b99032e9e445b7c73dcd38fcdc48af5dfaf578781d585c21842eba",
+          "firstFrame": 80,
+          "lastFrame": 119
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/frames-120-159.jpg",
+          "sha256": "7ad9508a3e7a602b9acafa04044bcad2b108e41346bcfc7bd1168f75306a6848",
+          "firstFrame": 120,
+          "lastFrame": 159
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/frames-160-191.jpg",
+          "sha256": "88fcc7f79468b153713d3d9ee73910a210cd5740d35cb8bb1043a8a82ca57a3c",
+          "firstFrame": 160,
+          "lastFrame": 191
+        }
+      ],
+      "audio": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/audio.wav",
+        "sha256": "820d68a8731db3f23efe4a5ef9b05996699cd853aef3b83ed6c738a45c1bc780"
+      },
+      "asr": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-E324018220506771-video/asr.json",
+        "sha256": "c41192dcb63f7b074fec6b057ef0675437987cdd8a6091ff99dc256dbe4cb994"
+      }
+    },
+    {
+      "asset_id": "KEXP-W323866270650569-result",
+      "video": {
+        "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323866270650569-result.mp4",
+        "sha256": "e92ede9824636ed255ffd6512ebd86214a2ad19c8ea825c2f4b20fed016dd100"
+      },
+      "observation": {
+        "asset_id": "KEXP-W323866270650569-result",
+        "frames": 361,
+        "observed": "Three cast members persist: realistic woman left, short-haired man center, cartoon Sarah right. Hard cut f170→171 at 7.125s changes height/framing. Mouth and hand activity exceeds a simple silent gaze; gaze also goes toward camera.",
+        "limits": "Table perspective changes; no metric proof of table geometry or exact facial likeness."
+      },
+      "sheets": [
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-000-039.jpg",
+          "sha256": "751369850c59a4115a72b41243b1f69632d9b01bc597968adbce66ad513afead",
+          "firstFrame": 0,
+          "lastFrame": 39
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-040-079.jpg",
+          "sha256": "ec76ec453d2de614dfbfd4fe3cd0869b543e34a41177db389d948a2243c2546f",
+          "firstFrame": 40,
+          "lastFrame": 79
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-080-119.jpg",
+          "sha256": "7f85a3c091008a01281c4b4289d56b570a6f3563599886449923c2653fd7054a",
+          "firstFrame": 80,
+          "lastFrame": 119
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-120-159.jpg",
+          "sha256": "aee3bb365cd9a100c39f6b522e7bd86d9741670737023371d301c59ddeabebaf",
+          "firstFrame": 120,
+          "lastFrame": 159
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-160-199.jpg",
+          "sha256": "9e5b525dfe2303c3a6ae74aae977cc57221590f681480e3490ef9b0953e3ae4b",
+          "firstFrame": 160,
+          "lastFrame": 199
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-200-239.jpg",
+          "sha256": "0045d07292bbb323cca15e304e8ca70d6a10924dedb5fe90b3caa3463693e71f",
+          "firstFrame": 200,
+          "lastFrame": 239
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-240-279.jpg",
+          "sha256": "89eaaaa898c26410bd09ef64b61d16298bbe9801c9d0da415a5ffaa013415cc6",
+          "firstFrame": 240,
+          "lastFrame": 279
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-280-319.jpg",
+          "sha256": "58926ae6f1e365e741324eb16f7d03d6536b9068065e22a0d4ccfdb4167efdea",
+          "firstFrame": 280,
+          "lastFrame": 319
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-320-359.jpg",
+          "sha256": "c709a086744bc9a7debfa7e8a7067bfc64bc50eda70f8115c1eafd1712145681",
+          "firstFrame": 320,
+          "lastFrame": 359
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/frames-360-360.jpg",
+          "sha256": "68507c29e89a95a75cde4545398a7bfb2ef5e4930c8f709f4852591f62e57f51",
+          "firstFrame": 360,
+          "lastFrame": 360
+        }
+      ],
+      "audio": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/audio.wav",
+        "sha256": "a0b33f1e73e3847b661d218b22e98f525e620f2459d711c761b6baac180290ad"
+      },
+      "asr": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323866270650569-result/asr.json",
+        "sha256": "0640577973414dea979a12302cf769dcdc23c86ba3d7164c99ad2191689e22d1"
+      }
+    },
+    {
+      "asset_id": "KEXP-W323868230505094-result",
+      "video": {
+        "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323868230505094-result.mp4",
+        "sha256": "124c8e36a91f9643ef28b562c60cffd3b6d1ffe950c61f6b4922cacd3ed670f1"
+      },
+      "observation": {
+        "asset_id": "KEXP-W323868230505094-result",
+        "frames": 361,
+        "observed": "Both companions are absent throughout all 361 static thumbnails. Solo short-haired man wears grey jacket/white shirt/tie in café; purple black-hole effect appears around 1.5s. Pose/framing/effect jumps f170→171 near 7.125s; automated scene threshold misses it.",
+        "limits": "Compared to the archived base sequence, visual cast is not retained. Audio similarity is measured separately, not heard."
+      },
+      "sheets": [
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-000-039.jpg",
+          "sha256": "af8d043a3361d84f4a9ff582ce54cc18bb36b3becd3237a76cc4b4a7a8c43dd3",
+          "firstFrame": 0,
+          "lastFrame": 39
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-040-079.jpg",
+          "sha256": "7cdaf545654b23d83beef950f76f5895749591dc651c308c5ba0bc5f134b630b",
+          "firstFrame": 40,
+          "lastFrame": 79
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-080-119.jpg",
+          "sha256": "2cb4c74ea6ae0d20b6fa2bc0fec5b83f7746d1d366caa00b2410bbac753a0953",
+          "firstFrame": 80,
+          "lastFrame": 119
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-120-159.jpg",
+          "sha256": "b9ee3346d78603f1f2071b6c8eef134d27e2abcdd36494664b4a2f2a509cfe32",
+          "firstFrame": 120,
+          "lastFrame": 159
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-160-199.jpg",
+          "sha256": "fc69c58ee5028fcd6a6d7871bb7bfea7f675ed45f4c36246f92fec60347526ea",
+          "firstFrame": 160,
+          "lastFrame": 199
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-200-239.jpg",
+          "sha256": "6f56e850c3132daa040b02ae2ee851ea89a7aa9389ff925ba3fd4e91b23d82d7",
+          "firstFrame": 200,
+          "lastFrame": 239
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-240-279.jpg",
+          "sha256": "d34a034704e34afda81fe045d6e20ae7c283e3a3ed1509204dc478bb6e63ceb5",
+          "firstFrame": 240,
+          "lastFrame": 279
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-280-319.jpg",
+          "sha256": "31720b4f566ec59373e748bcc420505d0dd0208449e824e84295d7af6a888fb9",
+          "firstFrame": 280,
+          "lastFrame": 319
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-320-359.jpg",
+          "sha256": "55e6618d71ca14cf0cc7fcf8e67c0a0e9b0bd806005a6029b4351b183036a7d7",
+          "firstFrame": 320,
+          "lastFrame": 359
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/frames-360-360.jpg",
+          "sha256": "8e1f9724ab762c4841ae8c86a82bffa78e3f3f9ec920dd0e6a2fc27466c19af5",
+          "firstFrame": 360,
+          "lastFrame": 360
+        }
+      ],
+      "audio": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/audio.wav",
+        "sha256": "5077112e7b35a0c73953139905e0cb88cb05fc9c58148a31a780cf1201c7cd81"
+      },
+      "asr": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323868230505094-result/asr.json",
+        "sha256": "bddf94a6531ebb2b83f7c3f0cda6d31c49dc9579f4aab7923ec46d5d9a3bcec3"
+      }
+    },
+    {
+      "asset_id": "KEXP-W323869015528491-result",
+      "video": {
+        "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v1/KEXP-W323869015528491-result.mp4",
+        "sha256": "f67aa96db1b5d785c0de72011a94aa4549732741f0da8fd533c5ee0c936dc488"
+      },
+      "observation": {
+        "asset_id": "KEXP-W323869015528491-result",
+        "frames": 361,
+        "observed": "Three people persist, kneeling around a low table in café. Sarah is on screen left, realistic woman right. Hard cut f182→183 at 7.625s goes wide→close. Snow increases; a large foreground flake occludes the man’s face around 10.83–11.25s.",
+        "limits": "This is a separate generation; an unspecified previous seating arrangement cannot be assumed. Face continuity cannot be assessed while occluded."
+      },
+      "sheets": [
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-000-039.jpg",
+          "sha256": "5520eaf094a077d57f7b1253b6b1b3b66b7ff1c495e054a9f0ebd5c2e7ca7350",
+          "firstFrame": 0,
+          "lastFrame": 39
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-040-079.jpg",
+          "sha256": "7d14a1e9fda3029fd806f13ae6fbe81d2f1b11691e6fae2d51e4d3c1db5ef471",
+          "firstFrame": 40,
+          "lastFrame": 79
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-080-119.jpg",
+          "sha256": "755143b25f9cdf7ea08af80ca02cc9d2d243de579f7d2e4bcd2b6dd649ccbb25",
+          "firstFrame": 80,
+          "lastFrame": 119
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-120-159.jpg",
+          "sha256": "399702a12d0a5561a25f183accaffac7576ddbb2e7e628eb8cc8781946364076",
+          "firstFrame": 120,
+          "lastFrame": 159
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-160-199.jpg",
+          "sha256": "8fbe0ad941d0ad55df02b261a4acca78a6bf08d4845059a8a6d33cd87200215d",
+          "firstFrame": 160,
+          "lastFrame": 199
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-200-239.jpg",
+          "sha256": "766c453b1e0f739cc16c490bef3802dfdf2a2a7f712107a317d512831e4d1903",
+          "firstFrame": 200,
+          "lastFrame": 239
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-240-279.jpg",
+          "sha256": "8c975052cd1953228e85b916841c8804ad505462767870cbdca038e6b6cfe570",
+          "firstFrame": 240,
+          "lastFrame": 279
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-280-319.jpg",
+          "sha256": "811700978bd7c1f5aa4bd9062b77c8d37aec92a7165737f6b983efa7742a7772",
+          "firstFrame": 280,
+          "lastFrame": 319
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-320-359.jpg",
+          "sha256": "e44dec3bf122cf13f7750472e62b20168d56a0cc03a23dd8ddf04683a54cbd03",
+          "firstFrame": 320,
+          "lastFrame": 359
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/frames-360-360.jpg",
+          "sha256": "c1a5f1a58b66b27a73a3a9ec6ef7f5d90006bd6f0e10e39fb9d92eb012e0b6d9",
+          "firstFrame": 360,
+          "lastFrame": 360
+        }
+      ],
+      "audio": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/audio.wav",
+        "sha256": "ad25ce4bfa5f45f6846f6bc1321b795fd8bd9874ba9d6844704fef475958ebfc"
+      },
+      "asr": {
+        "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP-W323869015528491-result/asr.json",
+        "sha256": "448dd3b92469dcb5d9913d9c88d1f643f554502acc10bb001d70efc8d8d58ffc"
+      }
+    },
+    {
+      "asset_id": "KEXP2-W324018500523155-local",
+      "video": {
+        "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-W324018500523155-local.mp4",
+        "sha256": "5abcbde40437210d7373e708f4c3161bd728b8ab96acac6f712e538ad03a1f88"
+      },
+      "observation": {
+        "asset_id": "KEXP2-W324018500523155-local",
+        "frames": 361,
+        "observed": "Opening portrait widens into two-person kung-fu choreography on white background. Longer-haired man in grey pinstripe jacket/black shirt and second dark-haired man in black remain broadly distinguishable. Camera framing and screen positions change as bodies move; limbs/faces overlap during blocks and kicks.",
+        "limits": "Every frame inspected as a 256×144 static tile; blur/occlusion prevents certifying hands, contact physics or exact identity. No inferred opponent identity, 200mm focal-length verification or binding to the inventoried web item. Local artifact has zero audio streams."
+      },
+      "sheets": [
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-000-039.jpg",
+          "sha256": "8dbd3360ffd1da513a6bf7631d7cc1f759d6ef913e85a006e497676575fbdc53",
+          "firstFrame": 0,
+          "lastFrame": 39
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-040-079.jpg",
+          "sha256": "65a06c2284aad5aa84625cef5e04988ea075b151e80c69e848eb79a6c8f1d33e",
+          "firstFrame": 40,
+          "lastFrame": 79
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-080-119.jpg",
+          "sha256": "1a49d4681d6e0beab0f4ad0e583295be7df4acf944d11776aa2e6ea4ad68ff1f",
+          "firstFrame": 80,
+          "lastFrame": 119
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-120-159.jpg",
+          "sha256": "3a0baa0c4ac17599d3157ee5dad44b82eb9ecdfd50c82f6fdb47d20c23a10e7f",
+          "firstFrame": 120,
+          "lastFrame": 159
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-160-199.jpg",
+          "sha256": "31e75e6d24efe2fdafeaa6964ed9b71122ac7cd48c7b12172879ef9bd5816a98",
+          "firstFrame": 160,
+          "lastFrame": 199
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-200-239.jpg",
+          "sha256": "4f51ffe021d18165430406e8b5853e743b63468cdd39a1fb1fdf79e63442bff9",
+          "firstFrame": 200,
+          "lastFrame": 239
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-240-279.jpg",
+          "sha256": "c0312c7e81dd3e5ffaf5f693b07ff066cc18ca42f8cac53f84219af2343a4a87",
+          "firstFrame": 240,
+          "lastFrame": 279
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-280-319.jpg",
+          "sha256": "6d2606f521b8a260f4f7b6b0509ba57090cec1860042fb200ab6dab0370381de",
+          "firstFrame": 280,
+          "lastFrame": 319
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-320-359.jpg",
+          "sha256": "46f7bccba3b701537205df185abbc6a52853975d7be95db54b0c30977f80fc2f",
+          "firstFrame": 320,
+          "lastFrame": 359
+        },
+        {
+          "path": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/review/temporal/KEXP2-W324018500523155-local/frames-360-360.jpg",
+          "sha256": "5119808f3b1e819fb07469b7c9f2e21938bf63e4a3c4a17a79e1a406387f671d",
+          "firstFrame": 360,
+          "lastFrame": 360
+        }
+      ],
+      "audio": null,
+      "asr": null
+    }
+  ],
+  "costumeReferences": [
+    {
+      "asset_id": "KEXP2-E324019350521447-cover",
+      "resourceName": "cover",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qVwoGdXBsb2FkEg55bGFiLXN0dW50LXNncBo9YWlfcG9ydGFsLzE3OTIwNDc3MDkvOFYydlJnMW1Rai8yMDI2MTAxNF8xMzMzMjQtaW1nX3N0eWxlLmpwZw.origin?x-kcdn-pid=112372",
+      "elementId": "324019350521447",
+      "originalName": "Costumes_Athar_2",
+      "quality": "provider_original_resource",
+      "sourcePrompt": null,
+      "sourcePromptGap": "element_get exposes reference resources and description, not their source generation prompts",
+      "approved": false,
+      "retrieval": "downloaded",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-cover.jpg",
+      "sha256": "7e6745181b62233f334e4e335b18105506d007741b23c3332f6a0b29d68aefdf",
+      "bytes": 105800,
+      "contentType": "image/jpeg",
+      "retrievedAt": "2026-10-15T08:58:30.005387+00:00",
+      "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+      "proposedLocalAlias": "WD-GREENCHK-v01",
+      "role": "costume_reference"
+    },
+    {
+      "asset_id": "KEXP2-E324019350521447-secondary-1",
+      "resourceName": "back",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzBiMjg1MzQ1NmY2MDExODA4YjFjMWZmNWJiOTE0ZGRhajZ4dWIucG5n.origin?x-kcdn-pid=112372",
+      "elementId": "324019350521447",
+      "originalName": "Costumes_Athar_2",
+      "quality": "provider_original_resource",
+      "sourcePrompt": null,
+      "sourcePromptGap": "element_get exposes reference resources and description, not their source generation prompts",
+      "approved": false,
+      "retrieval": "downloaded",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-1.png",
+      "sha256": "0e28eca42e057dd8d8e9c67c58892f66c791002901721707e9cf4faa2b60989a",
+      "bytes": 936966,
+      "contentType": "image/png",
+      "retrievedAt": "2026-10-15T08:58:30.747660+00:00",
+      "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+      "proposedLocalAlias": "WD-GREENCHK-v01",
+      "role": "costume_reference"
+    },
+    {
+      "asset_id": "KEXP2-E324019350521447-secondary-2",
+      "resourceName": "side",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqX2Q5MmFjMTM4YWI0ZDcyNThiNzc4ZmEwY2FjOGU3MTc2a3ExZDAucG5n.origin?x-kcdn-pid=112372",
+      "elementId": "324019350521447",
+      "originalName": "Costumes_Athar_2",
+      "quality": "provider_original_resource",
+      "sourcePrompt": null,
+      "sourcePromptGap": "element_get exposes reference resources and description, not their source generation prompts",
+      "approved": false,
+      "retrieval": "downloaded",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-2.png",
+      "sha256": "4edb55726313ecce39a26dc65626fd5ec58b29876890bff6cb5a4f5e2c50236e",
+      "bytes": 437408,
+      "contentType": "image/png",
+      "retrievedAt": "2026-10-15T08:58:31.515713+00:00",
+      "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+      "proposedLocalAlias": "WD-GREENCHK-v01",
+      "role": "costume_reference"
+    },
+    {
+      "asset_id": "KEXP2-E324019350521447-secondary-3",
+      "resourceName": "closeUp",
+      "url": "https://s15-kling.klingai.com/kimg/EMXN1y8qRAoGdXBsb2FkEg55bGFiLXN0dW50LXNncBoqXzE0YWYxNmM4OGNiYzcxODVmMDJlMDliYjEyNmM2ZTc4OWUwem0ucG5n.origin?x-kcdn-pid=112372",
+      "elementId": "324019350521447",
+      "originalName": "Costumes_Athar_2",
+      "quality": "provider_original_resource",
+      "sourcePrompt": null,
+      "sourcePromptGap": "element_get exposes reference resources and description, not their source generation prompts",
+      "approved": false,
+      "retrieval": "downloaded",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-secondary-3.png",
+      "sha256": "b638cd7f2644585036a91c07507886f53d7edd72233b7fc32276e5c0dc59bfac",
+      "bytes": 1962491,
+      "contentType": "image/png",
+      "retrievedAt": "2026-10-15T08:58:32.303741+00:00",
+      "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+      "proposedLocalAlias": "WD-GREENCHK-v01",
+      "role": "costume_reference"
+    },
+    {
+      "asset_id": "KEXP2-E324019350521447-local-source-candidate",
+      "path": "projects/andre-time-travel/07_generations/originals/kling-experiments-20261015-v2/KEXP2-E324019350521447-local-source-candidate.jpg",
+      "sha256": "8c56b59a261e1af244383a3e41ed5cd149e9f37bfc3247ad214e1d70482d8473",
+      "bytes": 145424,
+      "role": "local_costume_source_candidate",
+      "elementId": "324019350521447",
+      "originalName": "Costumes_Athar_2",
+      "resourceName": "local_source_candidate",
+      "retrieval": "local_original_copied_once",
+      "sourcePath": "/home/athar/Downloads/Photos_Andre/20261014_133324-IMG_STYLE.jpg",
+      "sourceFilename": "20261014_133324-IMG_STYLE.jpg",
+      "contentType": "image/jpeg",
+      "quality": "local_source_candidate_not_byte_identical_to_provider_cover",
+      "sourcePrompt": null,
+      "sourcePromptGap": "No source prompt/model/settings established from Element metadata or local JPEG tags.",
+      "relationship": "Filename stem matches provider cover upload filename; same dimensions and observed content, mean absolute pixel difference 0.604/255 and RMSE 1.130/255. Strong visual correspondence, not proof of exact uploaded bytes.",
+      "relationshipConfirmed": false,
+      "catalog": "projects/andre-time-travel/07_generations/downloads/2026-10-15-element-experiments-v2/manifest.json",
+      "proposedLocalAlias": "WD-GREENCHK-v01",
+      "approved": false
+    }
+  ]
+}

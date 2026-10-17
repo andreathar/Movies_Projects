@@ -1,6 +1,6 @@
 # Manual do Kling — Movies_Projects
 
-> Atualização 16/10/2026: consultar [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
+> Atualização 16/10/2026: consultar [CLI 0.2.3 e funções V4](20-kling4-features-cli-023.md), [contrato V4 por interface](19-kling4-migration.md) e `shared/kling-capabilities.json` antes de escolher rota/custo. Tabelas e pilotos anteriores abaixo são evidência datada, sem liberação nova.
 
 **Status: PROPOSTA de Claude (2026-10-09) para revisão do Codex e da Andre. Nada aqui é aprovação, decisão ou autorização de gasto.**
 Pasta nova, só arquivos novos: nada existente foi alterado, movido ou apagado, e nenhum commit foi feito.
@@ -47,14 +47,16 @@ Objetivo: uma solução por processo que o Kling permite, para o filme *The Tabl
 | 16-fontes.md | Links e grau de confiança |
 | 17-integracao-cli.md | Auditoria da integração CLI (2026-10-12) |
 | 18-guia-de-prompts.md | Como escrever prompts que o Kling entende e o filme exige; templates por rota; checklist |
+| 19-kling4-migration.md | Contrato V4 por interface e migração |
+| 20-kling4-features-cli-023.md | CLI 0.2.3, capacidades e limites registrados em 16/10 |
 | snapshots/ | `who_am_i` sanitizado (sem userId), `tool_list`, `--help` de cada comando, com sha256 |
-| tools/ | `kling_model_sheet.py` (gera o 03), `kling_preflight.py` (valida request.json offline) e `test_kling_tools.py` (15 testes: `python3 -I tools/test_kling_tools.py`) |
+| tools/ | `kling_model_sheet.py` (gera o 03), `kling_preflight.py` (valida request.json offline) e `test_kling_tools.py` (16 testes: `python3 -I tools/test_kling_tools.py`) |
 
 ## Manutenção
 
 - O 03 é gerado: `python3 -I tools/kling_model_sheet.py snapshots/who_am_i.sanitized.json > 03-modelos-ao-vivo.md`.
-- Quando o Kling mudar (versão do MCP, modelos novos): rode `kling who_am_i`, remova `body.user`, substitua o snapshot, regenere o 03 e rode o preflight em um request conhecido.
-- Snapshot atual: `mcpVersion 1.3.3`, CLI `kling 0.2.1`, skill `kling-cli 0.2.1`.
+- Quando o Kling mudar (versão do MCP, modelos novos): rode `kling who_am_i`, remova `body.user`, preserve o snapshot anterior e salve uma nova versão datada antes de revisar o 03 e rodar o preflight em um request conhecido.
+- Snapshot histórico da auditoria de 12/10: `mcpVersion 1.3.3`, CLI `kling 0.2.1`, skill `kling-cli 0.2.1`. A versão executável registrada em 16/10 é 0.2.3; consultar o guia 20 e `shared/kling-capabilities.json`. Skill e executável têm versões independentes.
 
 ## Auditoria da integração (2026-10-12)
 

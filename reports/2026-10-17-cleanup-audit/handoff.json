@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "independent-cleanup-auditor",
+  "contributorKind": "ad-hoc",
+  "assignment": "Review unused/deprecated workspace structure without deleting or editing canonical production sources.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "reports/2026-10-17-cleanup-audit"
+  ],
+  "baseFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256Before": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b"
+    },
+    {
+      "path": "workspace.json",
+      "sha256Before": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee"
+    },
+    {
+      "path": "README.md",
+      "sha256Before": "257d8854e2b367779c164c4be10eb6c1a69052e51d2887ea161f80267e4022a5"
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256Before": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256Before": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce"
+    },
+    {
+      "path": ".gitignore",
+      "sha256Before": "6957b8e94e6858627eb427b696860c80c78a3a681c01d46ae0d94064017175d3"
+    },
+    {
+      "path": "projects/andre-time-travel/memory/STATE.md",
+      "sha256Before": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03"
+    },
+    {
+      "path": "projects/andre-time-travel/manifest.json",
+      "sha256Before": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6"
+    },
+    {
+      "path": "projects/andre-time-travel/tasks/board.json",
+      "sha256Before": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda"
+    },
+    {
+      "path": "projects/andre-time-travel/00_brief/approvals.json",
+      "sha256Before": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51"
+    },
+    {
+      "path": "projects/andre-time-travel/asset-registry.csv",
+      "sha256Before": "8418af693cef58b0ba08f299bc7bee6d470dce6b437c90046cefa7e7d9f971c7"
+    },
+    {
+      "path": "projects/andre-time-travel/05_storyboard/source/production-plan.json",
+      "sha256Before": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e"
+    },
+    {
+      "path": "sites/movies-demandas/package.json",
+      "sha256Before": "ad196de3b8d77402f25749bedf3f70762a57ba521ffad505101b617a47c1ba30"
+    },
+    {
+      "path": "sites/movies-demandas/.gitignore",
+      "sha256Before": "202fd3375db871dfefa14bbb6f9ca1ffb197a6cd21dce2624274df516f83f04e"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "reports/2026-10-17-cleanup-audit/README.md",
+      "sha256After": "e31ecf303ba25d1d699b3dd79b2f0364739629565c29ee9e8a6853bba83ba271",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/assets-validation.json",
+      "sha256After": "0d8b89dc1c863b023219e109397870d33ea3679ca76bbf1c2a2fd1c6a1dde07e",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/base-hashes.json",
+      "sha256After": "2474e023e149cdcf9179974990d5a8a57d071976cd22f9a95ecba45cc6cc8139",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/concurrent-changes.patch",
+      "sha256After": "ff50d79f963c957506ac5c8e46df0dd893a7d644c8891c3bffcd9d03651759c0",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/documentation-findings.md",
+      "sha256After": "f4a5e5b5847534e5efb3d40bd8ea4b958baac4e8f305250827786fb44b701b73",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/exact-duplicates.json",
+      "sha256After": "96b966161b1bf7ce0fd0bc4ac4a8158da1f3300fe091a9b48d67a81ee3b8e85b",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/git-baseline.txt",
+      "sha256After": "e6ad95f2cfe1a92bf02632b39607fe231de32566e076a5783825ecd39789a1bc",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/git-final-observed.txt",
+      "sha256After": "de217e3e2d29143d7083bb87ceb98070928fa864b00a837a1da9cea0d4e01484",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/inventory-method.py",
+      "sha256After": "ef84934e5b6c41be6e059e488e436216834f5772ae3b2c3d6c0a47e84ab6596d",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/inventory.json",
+      "sha256After": "c123846597b09f03499f7c1593896a541a33a2311d0b8b53d6148f4b95f6e009",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/lint.json",
+      "sha256After": "adec4fd1a039639e2e124125c439aff6d243a165014f432f2af12bbd68cd7cf5",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/resume.json",
+      "sha256After": "896a69a50f7c5ba0132a9a420d2de98efc820e0f5d791ed7d6dd20e13bb4e21f",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/summary.json",
+      "sha256After": "cbfacda4c9e5b12a2782520895157c18536912581b3da0438f7c98c0c630821f",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/symlinks.json",
+      "sha256After": "e1a2ebd350a3002ce88613d152233677fe72565d9326760e46d0ad93a1edea7f",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/technical-findings.md",
+      "sha256After": "2df050821284ed5d0203311148d624aaf0c3a88c3e6dd8c36938a12064b5de44",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/unit-tests.txt",
+      "sha256After": "31df1c2d9cf865328d5dc1e0fd7937353ac587c4fd1b17bad395c60600f15acc",
+      "reason": "New audit evidence only."
+    },
+    {
+      "path": "reports/2026-10-17-cleanup-audit/validate.json",
+      "sha256After": "3b3759f6a10ad3aea7d8241c422c088ee62dcda841e49fd00a0310a90b3ad829",
+      "reason": "New audit evidence only."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "No existing source or media changed by this audit. Concurrent edits observed and preserved.",
+      "evidence": "reports/2026-10-17-cleanup-audit/README.md",
+      "sha256": "e31ecf303ba25d1d699b3dd79b2f0364739629565c29ee9e8a6853bba83ba271"
+    }
+  ],
+  "verification": [
+    {
+      "command": "manage.py status / validate / assets validate / resume / lint",
+      "result": "All passed; three skill drift warnings and lint advisories preserved."
+    },
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests",
+      "result": "245 passed, before newly observed concurrent source changes; excludes docs/kling-manual/tools suite."
+    },
+    {
+      "command": "Filtered filesystem inventory and SHA-256 duplicate-media scan",
+      "result": "3046 files; 67 exact duplicate groups; zero broken symlinks in scope."
+    },
+    {
+      "command": "Two read-only researcher audits",
+      "result": "Both completed successfully; results copied into documentation-findings.md and technical-findings.md."
+    }
+  ],
+  "nextActions": [
+    {
+      "role": "desktop producer/coordinator",
+      "action": "Review this audit against concurrent cleanup delivery; accept and assign only remaining navigation/configuration fixes. No historical-media removal inferred.",
+      "readiness": "Awaiting acceptance; not started."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Read-only structure, documentation, script/binding and duplicate-media audits delivered; no removal executed.",
+  "blockers": [
+    {
+      "description": "Canonical integration and any destructive/path-migration cleanup are not assigned to this audit. Other source edits appeared during review.",
+      "owner": "desktop producer/coordinator; Andre for destructive/global cleanup approval",
+      "unblockCondition": "Identify concurrent writer and compare delivery, assign remaining paths and approve per-path recovery/migration manifest before removal."
+    }
+  ],
+  "andreOnlyGates": [
+    "Destructive/global cleanup authorization; any separate artistic or spend acceptance remains unchanged."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

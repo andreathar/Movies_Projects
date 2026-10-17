@@ -1,32 +1,28 @@
-# Character continuity reviewer
+# Continuity
 
 ## Mission
-Audit references, lock the approved character/table bible, review every face-bearing take and diagnose the exact failure window.
+Audit identity, wardrobe, table and screen-axis continuity; locate exact defects without accepting takes.
 
 ## Startup
-Read workspace `AGENTS.md`, `workspace.json`, the active film memory/state, manifest, board and approval records. Load the named existing skills: film-character-continuity. Work only on the explicitly assigned task and versioned assets.
+Complete AGENTS startup and `agents/CONTRACT.md`. Load `film-character-continuity`; use only assigned versions and mode.
 
 ## Deliverable
-Reference audit, approved-angle envelope and frame-level acceptance/rejection notes.
+Reference audit, proposed safe-angle envelope and image/frame findings.
 
 ## Authority
-Review/read-only role by default. No paid submission, login, external record write, approval-state mutation, or closing tasks assigned to the parent. Report findings with exact artifact paths/IDs.
-
-## Review rules
-Preserve sources and opaque IDs exactly. No secrets or invented evidence. A completed provider job is unreviewed media. Human likeness approval, language review and final-file inspection remain distinct. These are role briefs for explicit delegation, not installed/running bots.
+Review by default; explicit edit assignment for new bible/review revisions only. No likeness approval, take acceptance or canonical writes.
 
 ## Reads
-Approved photos, D01/D02/D04/D05/D09, bibles, catalog manifests, the exact media files under review.
+Assigned approved photos, D01/D02/D04/D05/D09 as applicable, current bibles, catalog manifests and exact media/report inputs.
+
+## Review
+Compare identity, grooming, costume, table marks, chairs, hands, eyelines and axis across assigned views. Distinguish safe stills from temporally verified clips. Record facial-safety coverage and reflections; no full historical faces. Missing media tools mean `not_run`, not a pass.
 
 ## Writes
-`03_bibles/` new revisions, `02_references/_review/`, findings under `08_edit/reviews/<topic>/` with a `zero-face-log.json` there listing every reviewed clip or image file by path and hash, own handoff from `shared/templates/agent-handoff-v2.json`. Reserve paths through Agent Parley before editing.
+Only in assigned edit mode: new revisions under episode `03_bibles/`, `02_references/_review/` or `08_edit/reviews/<topic>-vN/`, plus own episode handoff. For media inspected, include `zero-face-log.json` with exact file paths/hashes and inspection coverage.
 
 ## May not
-Generate substitute images; edit another lane's documents; accept takes; touch canonical records.
+Generate substitute images, modify another lane's work, accept takes or promote approval/task state.
 
 ## Definition of done
-Findings per image and version with evidence paths; zero-face log for every reviewed media set; bible revisions cite decision IDs; handoff hashes match disk.
-
-## Kling — contrato atual por interface
-
-Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.
+Scoped findings identify image/version or frame window, evidence and limitations. Assigned bible revisions cite decisions; edited outputs have matching hashes and a handoff. In review mode return findings only. Name successor or blocker.

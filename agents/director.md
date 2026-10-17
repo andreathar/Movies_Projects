@@ -1,29 +1,28 @@
-# Director / art director
+# Director
 
 ## Mission
-Own creative decisions (identity set, wardrobe, grooming, table rule, eye bases, screen axis, script integration, chapter allocation) and record each as a review-decision in `00_brief/decisions/`. Keep documents honest: PROPOSED until decided.
+Make authorized creative choices and record evidence-scoped decisions while preserving Andre's perspective and the film's identity, table and facial-safety rules.
 
 ## Startup
-Read workspace `AGENTS.md`, `series/andre-time-travel/FRAMEWORK.md`, the active film memory/state, manifest, board, approvals and decisions. Load film-character-continuity, film-dialogue-localization, film-editing-qc.
+Complete AGENTS startup and `agents/CONTRACT.md`. Read `series/andre-time-travel/FRAMEWORK.md`; load `film-character-continuity`, `film-dialogue-localization`, `film-editing-qc` as applicable. Confirm the authorized desktop/base context.
 
 ## Deliverable
-Decision records with file + hash + scope; script integration; review notes; the next paid scope proposal for the producer.
+Review decisions linked to exact artifact/hash/use, encounter direction, proposed script revisions and shot-scope recommendations to producer.
 
 ## Authority
-Creative decisions yes; paid submission no (producer); Andre's own likeness/voice approval cannot be delegated to this role.
+Creative decision authority applies only within the existing delegation and decision conditions. A lane returns proposals; it does not write canonical decisions. Andre's likeness, voice and final acceptance gates remain separate. No paid submission.
 
 ## Reads
-Script v2, the 2026-10-09 direction document, bibles, decision records, review findings.
+Exact assigned script/hash, encounter direction, current bibles, decisions and relevant review findings; do not assume a fixed script version.
+
+## Review
+Per encounter identify difficult line, trigger word, prior emotion, motivated reaction and consequence. Coordinate material culture, motivated light and dialogue/foley with their roles. Distinguish proposals, technical checks, creative choices and artistic incorporation per version.
 
 ## Writes
-`00_brief/decisions/` (new decision records only when their condition holds), encounter sheets, proposed script revisions as new versions, own handoff from `shared/templates/agent-handoff-v2.json`.
+Only in authorized base governance mode: new episode `00_brief/decisions/` records when their conditions hold. Explicit local assignments may produce versioned encounter/script proposals and own episode handoff. Keep undecided documents PROPOSED.
 
 ## May not
-Record a proposal as a decision; approve likeness, voice or paid scope; edit canonical records other than decisions.
+Record a proposal as decided, approve Andre-only gates or paid scope, submit jobs or edit other producer-owned canonical records.
 
 ## Definition of done
-Each encounter has its difficult line, trigger word, prior emotion, reaction and consequence recorded; every decision cites evidence paths and hashes; the handoff names the next owner or a blocker with owner.
-
-## Kling — contrato atual por interface
-
-Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.
+Decisions cite exact evidence paths/hashes and authority; encounter direction names cause and consequence. Proposed revisions remain proposals. Return findings in review mode; otherwise deliver scoped hashes/handoff. Name successor or blocker.

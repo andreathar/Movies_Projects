@@ -1,0 +1,560 @@
+{
+  "schema": "movies/cleanup-checks/v1",
+  "baselineHead": "35f84474377f86876fcf691dee16036b8601a495",
+  "externalEvidenceRoot": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17",
+  "baseline": [
+    {
+      "name": "validate",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.061,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.233,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.18,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-resume.log"
+    },
+    {
+      "name": "assets",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.069,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-assets.log"
+    },
+    {
+      "name": "production-plan",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.103,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-production-plan.log"
+    },
+    {
+      "name": "agent-catalog",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.032,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-agent-catalog.log"
+    },
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 1,
+      "seconds": 0.151,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 1,
+      "seconds": 0.182,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-export-production.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.102,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-check-data.log"
+    }
+  ],
+  "baselineExportChecksOutsideSandbox": [
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 1,
+      "seconds": 0.146,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-export-unsandboxed-export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 1,
+      "seconds": 0.189,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/baseline-export-unsandboxed-export-production.log"
+    }
+  ],
+  "final": [
+    {
+      "name": "validate",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.058,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.165,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.172,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-resume.log"
+    },
+    {
+      "name": "assets",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.067,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-assets.log"
+    },
+    {
+      "name": "production-plan",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.09,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-production-plan.log"
+    },
+    {
+      "name": "agent-catalog",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.029,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-agent-catalog.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.092,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-check-data.log"
+    }
+  ],
+  "fullSuites": [
+    {
+      "name": "python-tests",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 11.037,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/python-tests.log"
+    },
+    {
+      "name": "manual-tests",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-I",
+        "-B",
+        "docs/kling-manual/tools/test_kling_tools.py"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.114,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/manual-tests.log"
+    },
+    {
+      "name": "frontend-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 1.066,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-tests.log"
+    },
+    {
+      "name": "frontend-lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 5.724,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-lint.log"
+    },
+    {
+      "name": "frontend-types",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 5.274,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-types.log"
+    },
+    {
+      "name": "frontend-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 5.025,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-build.log"
+    }
+  ],
+  "preservation": {
+    "baselineFiles": 2996,
+    "unchangedContentHashes": 2988,
+    "sensitiveFilesContentNotRead": [
+      {
+        "path": ".env",
+        "metadataUnchanged": true
+      },
+      {
+        "path": ".env.example",
+        "metadataUnchanged": true
+      },
+      {
+        "path": "docs/TOKEN_EFFICIENCY.md",
+        "metadataUnchanged": true
+      },
+      {
+        "path": "docs/TOKEN_SPEND_AUDIT_2026-10-13.md",
+        "metadataUnchanged": true
+      }
+    ],
+    "changedBaselinePaths": [
+      "START_HERE.md",
+      "CLAUDE.md",
+      "README.md",
+      "scripts/build_galileo_animatic.py"
+    ],
+    "unexpectedChanges": [],
+    "missingBaselinePaths": [],
+    "symlinks": [
+      {
+        "path": ".claude/skills/kling-cli",
+        "unchanged": true
+      },
+      {
+        "path": "skills/kling-cli",
+        "unchanged": true
+      },
+      {
+        "path": "skills/film-character-continuity",
+        "unchanged": true
+      },
+      {
+        "path": "skills/film-editing-qc",
+        "unchanged": true
+      },
+      {
+        "path": "skills/film-dialogue-localization",
+        "unchanged": true
+      },
+      {
+        "path": "skills/grounded-citations",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/plans/andre-time-travel-production.md",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/skills/kling-cli",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/skills/film-character-continuity",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/skills/andre-time-travel",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/skills/film-editing-qc",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/skills/film-dialogue-localization",
+        "unchanged": true
+      },
+      {
+        "path": ".hermes/skills/grounded-citations",
+        "unchanged": true
+      }
+    ],
+    "baseHead": "35f84474377f86876fcf691dee16036b8601a495",
+    "baseHeadUnchanged": true,
+    "frontendGitStatusUnchanged": true,
+    "allProtectedFilesPreserved": true
+  },
+  "exportSourceIntegrity": [
+    {
+      "name": "production",
+      "repositoryHead": "629c23d39654f1ba0cc9159111bd172ba8d36425",
+      "sourceCount": 47,
+      "mismatchingSources": []
+    },
+    {
+      "name": "workspace-reference",
+      "repositoryHead": "629c23d39654f1ba0cc9159111bd172ba8d36425",
+      "sourceCount": 33,
+      "mismatchingSources": []
+    }
+  ],
+  "testCounts": {
+    "python": 245,
+    "manual": 16,
+    "frontend": 87
+  },
+  "vendorProbes": "Previous seven official-validator probes retained as historical evidence; not rerun because no Kling runtime code changed.",
+  "finalExportChecksOutsideSandbox": [
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 1,
+      "seconds": 0.142,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-export-export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 1,
+      "seconds": 0.186,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-export-export-production.log"
+    }
+  ],
+  "closing": [
+    {
+      "name": "validate",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.061,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.17,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.183,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-resume.log"
+    },
+    {
+      "name": "assets",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.068,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-assets.log"
+    },
+    {
+      "name": "production-plan",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.09,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-production-plan.log"
+    },
+    {
+      "name": "agent-catalog",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.03,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-agent-catalog.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.088,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/closing-check-data.log"
+    }
+  ],
+  "concurrentAuditPreserved": "reports/2026-10-17-cleanup-audit/",
+  "rollbackDryRun": "Passed for all seven owned paths; no rollback applied.",
+  "handoffChecks": {
+    "cleanup": "schema2.0 ok errors=[] advisory=[]",
+    "priorRuntimeV3": "schema2.0 ok errors=[] advisory=[]; bytes preserved"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "AGENTS.md": "43042ebe198fb0b77440364211b84e622f75aa9f87b94c6a84543310bc0dd44b",
+  "workspace.json": "51ad1405210474ee26636052149c5b25b9446dc480c6f1fbd0022c38569d20ee",
+  "README.md": "257d8854e2b367779c164c4be10eb6c1a69052e51d2887ea161f80267e4022a5",
+  "START_HERE.md": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79",
+  "CLAUDE.md": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce",
+  ".gitignore": "6957b8e94e6858627eb427b696860c80c78a3a681c01d46ae0d94064017175d3",
+  "projects/andre-time-travel/memory/STATE.md": "1e6d6b2b40b9c40f52c1e9e58b4b58e5d219c20ee6106869f46e0f6be73f8a03",
+  "projects/andre-time-travel/manifest.json": "142883c33f175505c7cdbdedcf1fb89f10f23444764433b63fb4debc19344ce6",
+  "projects/andre-time-travel/tasks/board.json": "597be4c1d709601a1062367832d9dc6bc0a2aa08c9b582e1aeacdb98ca5ffcda",
+  "projects/andre-time-travel/00_brief/approvals.json": "1ce842faf2adb30ed70c02e8f13190a337d0505a10ad63aa1a790c02cc668e51",
+  "projects/andre-time-travel/asset-registry.csv": "8418af693cef58b0ba08f299bc7bee6d470dce6b437c90046cefa7e7d9f971c7",
+  "projects/andre-time-travel/05_storyboard/source/production-plan.json": "4defe04b45599e5cad08b20e5e726dc6874df3d61f75543d50d3a56da236135e",
+  "sites/movies-demandas/package.json": "ad196de3b8d77402f25749bedf3f70762a57ba521ffad505101b617a47c1ba30",
+  "sites/movies-demandas/.gitignore": "202fd3375db871dfefa14bbb6f9ca1ffb197a6cd21dce2624274df516f83f04e"
+}

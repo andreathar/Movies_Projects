@@ -9,7 +9,6 @@ from __future__ import annotations
 import argparse
 import html
 import json
-import math
 import subprocess
 import textwrap
 from pathlib import Path

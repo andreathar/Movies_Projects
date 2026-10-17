@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "ad-hoc-team-strategy",
+  "contributorKind": "contributor",
+  "assignment": "Andre direct request: optimize existing role briefs/prepared adapters, keep inactive, and clarify concise team/process/folder/file/Parley strategy.",
+  "parentTask": null,
+  "workPackages": [],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/<episode>/memory/STATE.md"
+  ],
+  "ownedPaths": [
+    "agents/storyboard.md",
+    "agents/lighting.md",
+    "agents/director.md",
+    "agents/coordinator.md",
+    "agents/qc.md",
+    "agents/historian.md",
+    "agents/producer.md",
+    "agents/dialogue-sound.md",
+    "agents/continuity.md",
+    "agents/editor.md",
+    "agents/README.md",
+    "agents/registry.json",
+    "agents/generated/catalog.json",
+    "agents/generated/codex/movies-continuity.toml",
+    "agents/generated/codex/movies-historian.toml",
+    "agents/generated/codex/movies-qc.toml",
+    "agents/generated/claude/movies-continuity.md",
+    "agents/generated/claude/movies-qc.md",
+    "agents/generated/claude/movies-historian.md",
+    "scripts/agent_catalog.py",
+    "tests/test_agent_catalog.py",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/COORDINATOR_PROTOCOL.md",
+    "agents/CONTRACT.md",
+    "reports/2026-10-17-team-strategy-v1/README.md",
+    "reports/2026-10-17-team-strategy-v1/catalog-check.json",
+    "reports/2026-10-17-team-strategy-v1/frontend-catalog-check.log",
+    "reports/2026-10-17-team-strategy-v1/lint.json",
+    "reports/2026-10-17-team-strategy-v1/resume.json",
+    "reports/2026-10-17-team-strategy-v1/unit-tests.log",
+    "reports/2026-10-17-team-strategy-v1/validate.json",
+    "projects/andre-time-travel/agents/handoffs/2026-10-17-team-strategy-v1.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "agents/storyboard.md",
+      "sha256Before": "36fe02c5817dd0ff0c78ecc2fd82d5ce8a1aca8e86857e2be1315987c803d378"
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256Before": "b6907966668b9eaa80384348c8a1c67d5ee18aca2ab83c29cedbbb9bf257a5eb"
+    },
+    {
+      "path": "agents/director.md",
+      "sha256Before": "dda3f19a222511b005a2314a46b720d48b437d27094ed8cc9349f4018d48f037"
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256Before": "3b8238eff3113a1decb5bd0eaf46e9d5ec5c583b058f501abffcd3ba15975b37"
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256Before": "c3f97f0d18c29aaee36fc7aca475daf2a3cf000b2c30ed44ad0489d679cef676"
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256Before": "39268671d86e73d1c0cbe6d742195f36e0033d04c14b41d6c42e0f681233f40a"
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256Before": "52b9a676847ac48c41f565fa0193b51f14c4aa193cc852570fb2112e30354cd3"
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256Before": "035542f4355b1f6549d98a8eccd2d48ae6f24c5acb35ea2598d49e596da81f92"
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256Before": "5022de556283ad1f425b6fc049b27a2e8f250373c896b884117147fed53f528f"
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256Before": "71e57baeb59b02a3293294645dc51edb630b67ef840a90df6f5d28ca34cfaf01"
+    },
+    {
+      "path": "agents/README.md",
+      "sha256Before": "37d35c75d93c46991d01cd49c663ebcd164b305cab56881e509bc08b2b419682"
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256Before": "9b5d013a3a2e23964aa3a9a48613627342292bc4d2be1a2ea6b302bd631954f6"
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256Before": "25493977802fd09e0721b517d3ffe19ec244f14a54dade8ae7793193fc92a090"
+    },
+    {
+      "path": "agents/generated/codex/movies-continuity.toml",
+      "sha256Before": "ceaa29def002bd9e016405d7dccc8b866398f92e1fe1c3a3af05403f3d3cfb5a"
+    },
+    {
+      "path": "agents/generated/codex/movies-historian.toml",
+      "sha256Before": "9ca3cb76de436b680855e450a7eaa3798d556d07d9ce1b0bd7f25ce0f4bea7be"
+    },
+    {
+      "path": "agents/generated/codex/movies-qc.toml",
+      "sha256Before": "fff61059928f770b1f99275d134cbdfff93477019b533f10a9de0fa619c50ce3"
+    },
+    {
+      "path": "agents/generated/claude/movies-continuity.md",
+      "sha256Before": "317aacf9aac2b8e34543eb3b3c360494ea6d02c29bba6623a3f4ff4e8dad19a2"
+    },
+    {
+      "path": "agents/generated/claude/movies-qc.md",
+      "sha256Before": "1f717e7d4b9bf408023a5eb68a374da618d3c22fe3923c61032455797af25be3"
+    },
+    {
+      "path": "agents/generated/claude/movies-historian.md",
+      "sha256Before": "49ddac35def29c27575305377819a927cc7d07f932d0207c2b3f4157f20c25ab"
+    },
+    {
+      "path": "scripts/agent_catalog.py",
+      "sha256Before": "d479dd9c29857ade506c3185be84b92b0b350b9a1c913986d89915bb1f7fb83b"
+    },
+    {
+      "path": "tests/test_agent_catalog.py",
+      "sha256Before": "941c3db36469db0c0a974c6b410c35bcce931efca747846a9503284dba10bbb8"
+    },
+    {
+      "path": "docs/AGENT_CATALOG.md",
+      "sha256Before": "2eebd5c2b57c0afb796b403a3de01b5077d52a48ae37895d754db85be40bfad9"
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256Before": "1fe7722ac9d8f996426ad07241090ae555115ec5f92e8864a7ab3537735e3fe3"
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256Before": "a1cad27b73cdcb5f4184d7862799ba55a6e11f7fe9c8125356349cd8e376ddfd"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "agents/storyboard.md",
+      "sha256After": "b5c2c45a02a5e91f5b6be961ceb5f09679abc468cf61dc760dd3eee791f2bfaa",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/lighting.md",
+      "sha256After": "00a9f7579987485e1f2da85eb59876d9b8e06cae5d7ee1aaae3d6b8b182b9c93",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/director.md",
+      "sha256After": "59993a32b99a68a08a967618029657987d38fa33d08518cd6e91b6efa011aa1f",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/coordinator.md",
+      "sha256After": "570472e9249daef06203cfe1650ea3c06e51eaa6f9f8b316482375c4d215ebd3",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/qc.md",
+      "sha256After": "5a08e8b7e4940e96e61ae1c23879faa32ce75332b3e7b49a0b739f6f93bc514a",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/historian.md",
+      "sha256After": "ba62929fdbad7698caa04a02f4b67bc4510d7a06d1732811a115fab8ea9e6034",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/producer.md",
+      "sha256After": "f3ff5a5cd9664605f62a5c8faaba4a4c75dc36ce288799a8156fc44a06a40559",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/dialogue-sound.md",
+      "sha256After": "63b3c663fba2186c46223a65f3cf5b7abe247477a6acd6ddae6e56b9b61a07a0",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/continuity.md",
+      "sha256After": "01d31fbc5754049d95be46693b6f9f64c05f680acaa106a4d4e8409df171eb5f",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/editor.md",
+      "sha256After": "a065cea842e8561f0f2c86ce8ba49b4d816c05aafeffcc59d71876fdc2ce93a5",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/README.md",
+      "sha256After": "e4128e5a47bddf59f7f3ad325948f042675eb883ff1462f38abbaceca880c042",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/registry.json",
+      "sha256After": "7d3636390df352f89d64acd4aec78dc94325dd9f7ac913acb45b4b5b18222c93",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/catalog.json",
+      "sha256After": "62df8d3b4b42d20e6ae6d500179e7a365e7b299820e4fc2c511e71477c529cb4",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/codex/movies-continuity.toml",
+      "sha256After": "f88165b52fcb6fc2742a2882bf0974489f5392da2ceda408fa42ee4d25c08340",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/codex/movies-historian.toml",
+      "sha256After": "e3a57e4d54a566810a904e32fc828a21710453cef084515c614d86e80ab3657e",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/codex/movies-qc.toml",
+      "sha256After": "37ba5674de8de0ceca2742df94db777e851c307de7d8465a47722ccef2ba264a",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/claude/movies-continuity.md",
+      "sha256After": "35065e068205b4a6fc6eaa2a52bdc9035841f127640f6d5cfab665898c6efe50",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/claude/movies-qc.md",
+      "sha256After": "3d3d9a4120e2a3190d90e04df86a2d9aaca4cd793316deb62b68f6501732e0c0",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/generated/claude/movies-historian.md",
+      "sha256After": "584f5b2a406b7ce91af4cb580a550a40aab2c96601960df457680c7e68950a90",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "scripts/agent_catalog.py",
+      "sha256After": "01ea7b30814d3236f2bbfa5889af551f2cad3fe308377f633f9da632f3812e64",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "tests/test_agent_catalog.py",
+      "sha256After": "719a6f08ee804362163a50ece5c2f09bef753f8c39855ef6b1d399b678f59c31",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "docs/PARLEY_PROTOCOL.md",
+      "sha256After": "7d6e1637ad549e44a9f62d3af721ba6849ee6b102ee54cc6b0248c7d0947ca3d",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "docs/COORDINATOR_PROTOCOL.md",
+      "sha256After": "0384e5aa6838400876e39bced13a22d3f573011e501dc93e92dfa830d0f8d9b8",
+      "reason": "User-authorized concise team/role strategy and inactive reviewer adapter optimization."
+    },
+    {
+      "path": "agents/CONTRACT.md",
+      "sha256After": "572ab336ead4a2857fa56348ceaf1fb77f452c0e9f74bc974587fcacaa9d1bfd",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/README.md",
+      "sha256After": "5661e7aea90ae5d2fd4c42484236168a0019832700dc9734a57ab4ca95f98859",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/catalog-check.json",
+      "sha256After": "1339e9bd4a8e3bc2e9e4fbcce0caab6114e225d37c66aa012e560f19b16b6e18",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/frontend-catalog-check.log",
+      "sha256After": "be58a448880fd47ec80085e421f4a1c4fa229bcc68e01b894281e123ea4a1797",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/lint.json",
+      "sha256After": "82ac260bd5efb02dc5a57ccd99a33f191939670e66238065e1bc8bafc1ebf84b",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/resume.json",
+      "sha256After": "8eb8e54e29e8cb40baa2371ce82a97887fcf30ef33d883881ffa3949b2b735b2",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/unit-tests.log",
+      "sha256After": "26090370958e8e9c78929dee2ee44a9abe5f5fae58aae571cecfa2bfffe409d7",
+      "reason": "New shared role contract or delivery evidence."
+    },
+    {
+      "path": "reports/2026-10-17-team-strategy-v1/validate.json",
+      "sha256After": "3b3759f6a10ad3aea7d8241c422c088ee62dcda841e49fd00a0310a90b3ad829",
+      "reason": "New shared role contract or delivery evidence."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Team strategy implemented without native activation, Parley dispatch, canonical state edits or spending.",
+      "evidence": "reports/2026-10-17-team-strategy-v1/README.md",
+      "sha256": "5661e7aea90ae5d2fd4c42484236168a0019832700dc9734a57ab4ca95f98859"
+    }
+  ],
+  "verification": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -s tests",
+      "result": "257 tests passed; includes 14 catalog tests.",
+      "evidence": "reports/2026-10-17-team-strategy-v1/unit-tests.log"
+    },
+    {
+      "command": "scripts/agent_catalog.py; scripts/agent_catalog.py --check",
+      "result": "Seven derived files regenerated; check OK; activation pending.",
+      "evidence": "reports/2026-10-17-team-strategy-v1/catalog-check.json"
+    },
+    {
+      "command": "manage.py validate / resume",
+      "result": "Both exit 0.",
+      "evidence": "reports/2026-10-17-team-strategy-v1"
+    },
+    {
+      "command": "git diff --check -- agents docs/COORDINATOR_PROTOCOL.md docs/PARLEY_PROTOCOL.md scripts/agent_catalog.py tests/test_agent_catalog.py",
+      "result": "Passed."
+    },
+    {
+      "command": "manage.py lint",
+      "result": "Exit 2: old maintenance-cleanup-v2 snapshot hashes conflict with this newly authorized revision; preserved, producer reconciliation required.",
+      "evidence": "reports/2026-10-17-team-strategy-v1/lint.json"
+    },
+    {
+      "command": "node sites/movies-demandas/scripts/export-workspace.mjs . --check",
+      "result": "Exit 1: workspace-reference.json stale; existing concurrent frontend work preserved.",
+      "evidence": "reports/2026-10-17-team-strategy-v1/frontend-catalog-check.log"
+    }
+  ],
+  "nextActions": [
+    {
+      "role": "desktop producer/coordinator",
+      "action": "Review/integrate delivery; reconcile overlapping historical maintenance evidence without losing unrelated claims; assign frontend snapshot refresh to its owner.",
+      "readiness": "Pending producer review; no successor acceptance or runtime start claimed."
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Assigned source implementation and static/unit verification delivered. Integration remains blocked by historical evidence reconciliation and frontend freshness.",
+  "blockers": [
+    {
+      "description": "Preserved maintenance-cleanup-v2 handoff has 20 changedFiles SHA-256 mismatches after this authorized source revision.",
+      "owner": "desktop producer",
+      "unblockCondition": "Reconcile/version the affected evidence while preserving unrelated maintenance claims; do not blindly rehash old history."
+    },
+    {
+      "description": "Nested frontend workspace-reference.json is stale; concurrent frontend changes were not overwritten.",
+      "owner": "frontend owner via desktop producer",
+      "unblockCondition": "Refresh/review derived snapshots against accepted source metadata in a bounded assignment; pass freshness checks."
+    }
+  ],
+  "andreOnlyGates": [
+    "No native adapter activation, permissions, paid work, publication, commit or merge included."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [
+    {
+      "mistake": "Initial storyboard regression assertion used escaped literal word boundaries and did not detect approval wording.",
+      "detected_by": "Independent read-only reviewer del_mvbw0rw2_rcml before delivery.",
+      "solution": "Corrected regex word boundaries and added a known forbidden-string positive control; final full suite passed.",
+      "rule_added": "Authority/negative matching regression tests must include a known failing wording positive control."
+    }
+  ],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  }
+}

@@ -21,7 +21,7 @@
     },
     {
       "id": "director",
-      "name": "Director / art director",
+      "name": "Director",
       "brief": "agents/director.md",
       "skills": [
         "film-character-continuity",
@@ -40,7 +40,7 @@
     },
     {
       "id": "continuity",
-      "name": "Character continuity reviewer",
+      "name": "Continuity",
       "brief": "agents/continuity.md",
       "skills": [
         "film-character-continuity"
@@ -55,7 +55,7 @@
     },
     {
       "id": "historian",
-      "name": "Historical research reviewer",
+      "name": "Historian",
       "brief": "agents/historian.md",
       "skills": [
         "grounded-citations"
@@ -70,7 +70,7 @@
     },
     {
       "id": "dialogue-sound",
-      "name": "Dialogue, localization and sound",
+      "name": "Dialogue-sound",
       "brief": "agents/dialogue-sound.md",
       "skills": [
         "film-dialogue-localization"
@@ -85,7 +85,7 @@
     },
     {
       "id": "storyboard",
-      "name": "Storyboard and shot designer",
+      "name": "Storyboard",
       "brief": "agents/storyboard.md",
       "skills": [
         "film-character-continuity",
@@ -101,7 +101,7 @@
     },
     {
       "id": "editor",
-      "name": "Editor / finisher",
+      "name": "Editor",
       "brief": "agents/editor.md",
       "skills": [
         "film-editing-qc"
@@ -116,7 +116,7 @@
     },
     {
       "id": "qc",
-      "name": "Independent final reviewer",
+      "name": "QC",
       "brief": "agents/qc.md",
       "skills": [
         "film-character-continuity",
@@ -133,7 +133,7 @@
     },
     {
       "id": "lighting",
-      "name": "Lighting and light continuity reviewer",
+      "name": "Lighting",
       "brief": "agents/lighting.md",
       "skills": [
         "film-character-continuity"
@@ -148,7 +148,7 @@
     },
     {
       "id": "coordinator",
-      "name": "Coordinator / dispatcher",
+      "name": "Coordinator",
       "brief": "agents/coordinator.md",
       "skills": [],
       "running": false,
@@ -157,7 +157,7 @@
       "creativeDecisionAuthority": false,
       "dispatchAuthority": true,
       "canonicalWriteAuthority": false,
-      "notes": "Coordinator is a proposed lane role; discover actual participants before dispatch. Routes work and verifies handoffs. Proposes board, decision and approval changes through handoffs; the producer applies board and approval changes, and the director records decision records. dispatchAuthority is not spending authority and not canonical-write authority. Does not approve work or spend money. The project-local coordinate link was removed. The external skill exists in the sibling source and installed plugin, but is not registered or required for this role; presence on disk does not prove loading in a session. Registry flags describe authority, not live Parley activity.",
+      "notes": "Routing responsibility, not a live participant or permission grant. Discover actual participants; dispatch only within producer-assigned scope. Return canonical changes as handoff proposals. No spending, approvals or canonical writes. See agents/README.md and docs/COORDINATOR_PROTOCOL.md. Registry flags do not prove runtime activity or skill loading.",
       "delegatesTo": [
         "producer",
         "director",

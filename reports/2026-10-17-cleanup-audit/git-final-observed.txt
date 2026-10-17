@@ -1,0 +1,6 @@
+ M CLAUDE.md
+ M README.md
+ M START_HERE.md
+ M scripts/build_galileo_animatic.py
+ m sites/movies-demandas
+?? reports/2026-10-17-cleanup-audit/

@@ -1,0 +1,67 @@
+[
+  {
+    "path": ".claude/skills/kling-cli",
+    "target": "../../.agents/skills/kling-cli",
+    "resolves": true
+  },
+  {
+    "path": "skills/kling-cli",
+    "target": "../.agents/skills/kling-cli",
+    "resolves": true
+  },
+  {
+    "path": "skills/film-character-continuity",
+    "target": "../../../../../home/athar/.hermes/skills/creative/film-character-continuity",
+    "resolves": true
+  },
+  {
+    "path": "skills/film-editing-qc",
+    "target": "../../../../../home/athar/.hermes/skills/creative/film-editing-qc",
+    "resolves": true
+  },
+  {
+    "path": "skills/film-dialogue-localization",
+    "target": "../../../../../home/athar/.hermes/skills/creative/film-dialogue-localization",
+    "resolves": true
+  },
+  {
+    "path": "skills/grounded-citations",
+    "target": "../../../../../home/athar/.hermes/skills/research/grounded-citations",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/plans/andre-time-travel-production.md",
+    "target": "../../projects/andre-time-travel/docs/production-plan.md",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/skills/kling-cli",
+    "target": "../../.agents/skills/kling-cli",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/skills/film-character-continuity",
+    "target": "../../skills/film-character-continuity",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/skills/andre-time-travel",
+    "target": "../../skills/andre-time-travel",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/skills/film-editing-qc",
+    "target": "../../skills/film-editing-qc",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/skills/film-dialogue-localization",
+    "target": "../../skills/film-dialogue-localization",
+    "resolves": true
+  },
+  {
+    "path": ".hermes/skills/grounded-citations",
+    "target": "../../skills/grounded-citations",
+    "resolves": true
+  }
+]

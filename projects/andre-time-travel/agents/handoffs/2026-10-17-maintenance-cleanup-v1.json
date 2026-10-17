@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "2.0",
+  "episode": "andre-time-travel",
+  "agentRole": "maintenance",
+  "contributorKind": "contributor",
+  "assignment": "Delegated local project cleanup audit; reversible documentation repairs and unused import removal; preserve production state, media and pending handoffs.",
+  "parentTask": "Project cleanup audit; no production-board transitions",
+  "workPackages": [
+    "W64",
+    "W65",
+    "W66",
+    "W67"
+  ],
+  "readFirst": [
+    "AGENTS.md",
+    "workspace.json",
+    "projects/andre-time-travel/memory/STATE.md",
+    "docs/PARLEY_PROTOCOL.md",
+    "docs/LOCAL_AGENT_HANDOFF.md",
+    "projects/andre-time-travel/tasks/plans/workflow-map-v1.md"
+  ],
+  "ownedPaths": [
+    "README.md",
+    "CLAUDE.md",
+    "START_HERE.md",
+    "scripts/build_galileo_animatic.py",
+    "reports/2026-10-17-project-cleanup-v1/README.md",
+    "reports/2026-10-17-project-cleanup-v1/checks.json"
+  ],
+  "baseFiles": [
+    {
+      "path": "README.md",
+      "sha256Before": "257d8854e2b367779c164c4be10eb6c1a69052e51d2887ea161f80267e4022a5"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256Before": "ad970a67a656cfb4a0dc62b27956cc531ef3c91cddb591a4fe313bac3d1935ce"
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256Before": "396779375f36c26be06e1261661b61fe2cc9f54a186c47b5058482f9bae07e79"
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256Before": "db53ba116ae4368ca5f93182eb3e87ce9710be3e8b5219d6620ee438d9d2c1c7"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "README.md",
+      "sha256After": "1bcf2862e5b4d829d752b2c1d58604d3fc04fdf33948752f386a13227f214d62",
+      "reason": "Bounded maintenance cleanup; original content backed up externally."
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256After": "840ef91bb4378d24bcff15ea7733135a6d2ed0eb77e0aa174b96a2f52533a946",
+      "reason": "Bounded maintenance cleanup; original content backed up externally."
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256After": "9e82a747699ba93e48372b961b3bc56ebbce76b88ba4b593705f9b63a58950ec",
+      "reason": "Bounded maintenance cleanup; original content backed up externally."
+    },
+    {
+      "path": "scripts/build_galileo_animatic.py",
+      "sha256After": "abe2d357ca8cac9e10afd5e5ac879765bc3625972c3fd849299ba91c118925d2",
+      "reason": "Bounded maintenance cleanup; original content backed up externally."
+    },
+    {
+      "path": "reports/2026-10-17-project-cleanup-v1/README.md",
+      "sha256After": "27a8a97151d5d271e39202c528d795190761d2575cd600211b18cc096c8d19ed",
+      "reason": "New dated cleanup audit/evidence; no historical record overwritten."
+    },
+    {
+      "path": "reports/2026-10-17-project-cleanup-v1/checks.json",
+      "sha256After": "050e204c1df53f29106d68b6325e7cf7616adab12beb354a7b43fbebcbaee999",
+      "reason": "New dated cleanup audit/evidence; no historical record overwritten."
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Bounded cleanup, no file removal; full offline tests and build pass; preexisting export freshness and experiment identity findings retained for producer.",
+      "evidence": "reports/2026-10-17-project-cleanup-v1/README.md",
+      "sha256": "27a8a97151d5d271e39202c528d795190761d2575cd600211b18cc096c8d19ed"
+    }
+  ],
+  "verification": [
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/python-tests.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-I",
+        "-B",
+        "docs/kling-manual/tools/test_kling_tools.py"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/manual-tests.log"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-tests.log"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-lint.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-types.log"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/frontend-build.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-validate.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-lint.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-resume.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-assets.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-production-plan.log"
+    },
+    {
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-agent-catalog.log"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "exitCode": 0,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-check-data.log"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "exitCode": 1,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-export-export-workspace.log",
+      "preexistingFailure": true
+    },
+    {
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "exitCode": 1,
+      "externalLog": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/final-export-export-production.log",
+      "preexistingFailure": true
+    }
+  ],
+  "nextActions": [
+    {
+      "role": "producer",
+      "action": "Review cleanup and pending Kling4 v3 separately; reconcile experiment gallery IDs and semantic observations, then address existing export freshness without overwriting frontend work.",
+      "readiness": "pending_producer_review; no successor assignment accepted"
+    }
+  ],
+  "stageComplete": true,
+  "stageCompleteReason": "Bounded safe cleanup completed; unresolved provenance and creative decisions remain with producer.",
+  "blockers": [
+    {
+      "description": "Two experiment gallery label/video/sheet/audio identities conflict; source observations need producer verification.",
+      "owner": "producer",
+      "unblockCondition": "Review exact media/observations and deliver a corrected provenance revision, preserving originals."
+    },
+    {
+      "description": "Both frontend export --check commands already fail; snapshots cite old HEAD while source hashes match.",
+      "owner": "producer",
+      "unblockCondition": "Review dirty site and pending hash inventory before explicit snapshot freshness reconciliation."
+    }
+  ],
+  "andreOnlyGates": [
+    "No new likeness, composition, wardrobe, table, voice, language, spend or final acceptance."
+  ],
+  "proposedDecisions": [],
+  "mistakes": [],
+  "paidJobsSubmitted": 0,
+  "canonicalStateChanged": false,
+  "supersedes": [],
+  "reviewStatus": "pending_producer_review",
+  "ingest": {
+    "status": "pending",
+    "by": null,
+    "at": null
+  },
+  "externalRollbackManifest": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/rollback-manifest.json"
+}

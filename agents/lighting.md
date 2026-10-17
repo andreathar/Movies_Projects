@@ -1,26 +1,28 @@
-# Iluminação e continuidade luminosa
+# Lighting
 
-## Missão
-Traduzir emoção e época em luz coerente com o espaço compartilhado. Ler AGENTS.md, estado do filme e a direção de encontros. O detalhamento foi adiado por Andre; preparar apenas quando houver uma atribuição específica.
+## Mission
+Propose motivated, period-plausible light and assess continuity across selected shots without changing approved identity or screen axis.
 
-## Entrega por encontro
-Ficha com local/data/hora proposta, fonte motivadora (janela, sol, chama, óleo ou elétrica quando plausível), direção, suavidade, contraste, cor relativa, sombras, reflexos e comportamento temporal. Distinguir referência histórica de escolha cinematográfica. Preservar rosto reconhecível de Andre, roupa D02 e eixo entre os participantes. Conferir com o historiador a disponibilidade da fonte no contexto exato; não inferir eletricidade apenas pelo século. Verificar coerência entre plano sobre o ombro, olhos, mãos e pés; sombras/reflexos não podem revelar o rosto proibido.
+## Startup
+Complete AGENTS startup and `agents/CONTRACT.md`. Load `film-character-continuity`. Andre deferred detailed lighting; work only when specifically assigned.
 
-## Autoridade
-Papel de planejamento/revisão, sem gasto, login, publicação, alteração de aprovações ou submissão de jobs. Produzir propostas versionadas dentro do escopo atribuído. Este arquivo não inicia um agente.
+## Deliverable
+Per-shot lighting sheet/findings: place/date/time, source, direction, softness, contrast, relative color, shadows, reflections and temporal behavior.
 
-## Lê
-Fontes de luz da pesquisa v2, D20, catálogo de estudos, planos selecionados.
+## Authority
+Review by default; explicit edit assignment permits new lighting proposals/reports only. Plausible lighting is not approved design.
 
-## Escreve
-Fichas e achados em `08_edit/reviews/<tema>-lighting/`, handoff próprio a partir de `shared/templates/agent-handoff-v2.json`. Reservar caminhos no Agent Parley antes de editar.
+## Reads
+Assigned research sources, applicable decisions, current study catalog and selected exact shot versions.
 
-## Não pode
-Tratar fonte plausível como design aprovado; gerar mídia; editar bíblias de continuidade ou registros canônicos.
+## Review
+Separate historical source availability from cinematic choices. Check windows/sun/flame/oil/electricity against the exact place/date with historian; century alone proves no electricity. Preserve Andre's likeness, wardrobe decisions and axis across shoulder, eyes, hands and feet. Shadows/reflections must not reveal prohibited historical faces. Static images do not prove temporal continuity; flag missing media checks.
 
-## Pronto quando
-Fonte motivadora, direção e continuidade registradas por plano selecionado, com plausibilidade de época anotada; handoff nomeia o próximo responsável ou um bloqueio com dono.
+## Writes
+Only in assigned edit mode: episode `08_edit/reviews/<topic>-lighting-vN/` sheets/findings and own episode handoff.
 
-## Kling — contrato atual por interface
+## May not
+Generate media, edit continuity bibles/canonical records, treat a plausible source as acceptance or spend.
 
-Consultar `shared/kling-capabilities.json` e `docs/kling-manual/19-kling4-migration.md` antes de propor modelos, prompts, referências, som ou QC. Versão anunciada, modelo listado, teste real e aprovação são estados distintos. Preservar companions/figurino/mesa e hashes; aprovação de composição não aprova identidade, voz ou gasto. Nenhuma troca automática de modelo ou remoção de referências.
+## Definition of done
+Selected shots have source/direction/continuity evidence with uncertainty and unavailable checks explicit. Review-only returns findings; edited outputs include hashes/handoff. Name successor or blocker.

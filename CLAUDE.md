@@ -20,22 +20,25 @@ The management tools are stdlib-only Python (3.11+). `README.md` and `docs/VERSI
 .venv/bin/python scripts/manage.py status        # read-only state of workspace + board
 .venv/bin/python scripts/manage.py validate      # workspace integrity, exit 2 on error
 .venv/bin/python scripts/manage.py lint          # hard contradictions and advisories
-.venv/bin/python scripts/manage.py resume        # session-start digest (AGENTS.md step 7)
+.venv/bin/python scripts/manage.py resume        # session-start digest; closing checks: AGENTS.md step 5
 .venv/bin/python scripts/manage.py handoff check <file>    # validate a handoff and its hashes (producer: handoff ingest)
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python -m unittest tests.test_workflow.WorkflowTests.test_paths_cannot_escape_workspace   # one test
 
 # Handoff inventory (SHA-256 index) and verification
-.venv/bin/python scripts/workflow.py index  --output reports/workflow-v1/file-index.json
-.venv/bin/python scripts/workflow.py verify --index  reports/workflow-v1/file-index.json
+.venv/bin/python scripts/workflow.py index  --output reports/<new-audit>/file-index.json
+.venv/bin/python scripts/workflow.py verify --index  reports/<new-audit>/file-index.json
 .venv/bin/python scripts/workflow.py new-draft --id <slug> --title "<title>" [--test-only]
 .venv/bin/python scripts/workflow.py check-clean-draft --path drafts/<slug>
 
+# Choose an unused revision (v4 is an example); preserve existing atlas and audit outputs.
 # Rebuild the review atlas into a NEW revision folder (refuses to overwrite). Needs Pillow,
 # ReportLab, pdftoppm and DejaVu fonts; see docs/REPEATABLE_WORKFLOW.md.
 python3 scripts/build_preproduction_atlas.py --source 05_storyboard/source/atlas.json \
-    --output 05_storyboard/preproduction-atlas-v3 --revision v3
-python3 scripts/verify_handoff.py --output reports/<name>.json
+    --output 05_storyboard/preproduction-atlas-v4 --revision v4
+python3 scripts/verify_handoff.py \
+    --atlas projects/andre-time-travel/05_storyboard/preproduction-atlas-v4 \
+    --output reports/<name>.json
 
 # Free local review log of images (no media generation)
 python3 scripts/review_sweep.py --film andre-time-travel

@@ -1,0 +1,877 @@
+{
+  "scope": "Gallery identity/navigation and export freshness implementation; structural audit; no production-state changes",
+  "targeted": [
+    {
+      "name": "gallery-tests",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_experiment_gallery.py"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/gallery-tests.log"
+    },
+    {
+      "name": "gallery-check",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/experiment_gallery.py",
+        "--output",
+        "projects/andre-time-travel/07_generations/downloads/2026-10-17-element-experiments-v3",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/gallery-check.log"
+    },
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/export-production.log"
+    },
+    {
+      "name": "export-tests",
+      "command": [
+        "node",
+        "--test",
+        "tests/export.test.mjs"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/export-tests.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "exit": 0,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/check-data.log"
+    }
+  ],
+  "exports": {
+    "results": [
+      {
+        "command": [
+          "node",
+          "scripts/export-production.mjs",
+          "../.."
+        ],
+        "exit": 0,
+        "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/refresh-production.log"
+      },
+      {
+        "command": [
+          "node",
+          "scripts/export-workspace.mjs",
+          "../.."
+        ],
+        "exit": 0,
+        "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/refresh-workspace.log"
+      }
+    ],
+    "diffs": [
+      {
+        "path": "sites/movies-demandas/data/production.json",
+        "changedJsonPaths": [
+          "/collectedAt",
+          "/provenance/repositoryHead"
+        ],
+        "beforeContentVersion": "ce387212f9e78f723a1c11cde805caa705f70760494b05a8e29c858672080219",
+        "afterContentVersion": "ce387212f9e78f723a1c11cde805caa705f70760494b05a8e29c858672080219",
+        "productionStateChanged": false
+      },
+      {
+        "path": "sites/movies-demandas/data/workspace-reference.json",
+        "changedJsonPaths": [
+          "/collectedAt",
+          "/paths/9/path",
+          "/paths/10/path",
+          "/provenance/contentVersion",
+          "/provenance/repositoryHead",
+          "/sources/33"
+        ],
+        "beforeContentVersion": "e03bf01244c391b86111a420dbb8e2a5ab5b07266d5997fecdf983b5d0f94cf3",
+        "afterContentVersion": "9d2206d983a36d1c3fb61fd423eb2d8ddb57bbe73bf75b1f72279424c349f74c",
+        "productionStateChanged": false
+      }
+    ]
+  },
+  "structure": {
+    "scope": "Full-tree metadata only, no symlink traversal; logicalBytes regular file payload, allocatedBytes includes directory/symlink blocks; hardlinks counted per path. No credentials or runtime contents read.",
+    "directories": [
+      {
+        "path": "series",
+        "files": 2,
+        "logicalBytes": 10940,
+        "allocatedBytes": 24576,
+        "symlinks": 0
+      },
+      {
+        "path": ".serena",
+        "files": 17,
+        "logicalBytes": 2850629,
+        "allocatedBytes": 2912256,
+        "symlinks": 0
+      },
+      {
+        "path": "memory",
+        "files": 2,
+        "logicalBytes": 1248,
+        "allocatedBytes": 12288,
+        "symlinks": 0
+      },
+      {
+        "path": ".vllm",
+        "files": 1,
+        "logicalBytes": 286735,
+        "allocatedBytes": 294912,
+        "symlinks": 0
+      },
+      {
+        "path": "projects",
+        "files": 1766,
+        "logicalBytes": 1551395691,
+        "allocatedBytes": 1556054016,
+        "symlinks": 0
+      },
+      {
+        "path": "scripts",
+        "files": 54,
+        "logicalBytes": 893912,
+        "allocatedBytes": 1015808,
+        "symlinks": 0
+      },
+      {
+        "path": ".vscode",
+        "files": 1,
+        "logicalBytes": 266,
+        "allocatedBytes": 8192,
+        "symlinks": 0
+      },
+      {
+        "path": ".opencode",
+        "files": 3651,
+        "logicalBytes": 54895220,
+        "allocatedBytes": 65409024,
+        "symlinks": 7
+      },
+      {
+        "path": "inbox",
+        "files": 411,
+        "logicalBytes": 495322349,
+        "allocatedBytes": 496189440,
+        "symlinks": 0
+      },
+      {
+        "path": "reports",
+        "files": 371,
+        "logicalBytes": 5651298,
+        "allocatedBytes": 6713344,
+        "symlinks": 0
+      },
+      {
+        "path": ".github",
+        "files": 2,
+        "logicalBytes": 4357,
+        "allocatedBytes": 20480,
+        "symlinks": 0
+      },
+      {
+        "path": "shared",
+        "files": 11,
+        "logicalBytes": 25261,
+        "allocatedBytes": 65536,
+        "symlinks": 0
+      },
+      {
+        "path": ".ruff_cache",
+        "files": 5,
+        "logicalBytes": 505,
+        "allocatedBytes": 28672,
+        "symlinks": 0
+      },
+      {
+        "path": ".claude",
+        "files": 21,
+        "logicalBytes": 136989,
+        "allocatedBytes": 200704,
+        "symlinks": 1
+      },
+      {
+        "path": ".codex",
+        "files": 1,
+        "logicalBytes": 105,
+        "allocatedBytes": 8192,
+        "symlinks": 0
+      },
+      {
+        "path": "skills",
+        "files": 3,
+        "logicalBytes": 9355,
+        "allocatedBytes": 40960,
+        "symlinks": 5
+      },
+      {
+        "path": "agents",
+        "files": 19,
+        "logicalBytes": 68342,
+        "allocatedBytes": 118784,
+        "symlinks": 0
+      },
+      {
+        "path": "tasks",
+        "files": 1,
+        "logicalBytes": 1765,
+        "allocatedBytes": 8192,
+        "symlinks": 0
+      },
+      {
+        "path": "docs",
+        "files": 71,
+        "logicalBytes": 1354930,
+        "allocatedBytes": 1536000,
+        "symlinks": 0
+      },
+      {
+        "path": "sites",
+        "files": 51068,
+        "logicalBytes": 1002984232,
+        "allocatedBytes": 1170558976,
+        "symlinks": 39
+      },
+      {
+        "path": ".agents",
+        "files": 6,
+        "logicalBytes": 29552,
+        "allocatedBytes": 65536,
+        "symlinks": 0
+      },
+      {
+        "path": "drafts",
+        "files": 35,
+        "logicalBytes": 14781,
+        "allocatedBytes": 212992,
+        "symlinks": 0
+      },
+      {
+        "path": ".venv",
+        "files": 8000,
+        "logicalBytes": 511751093,
+        "allocatedBytes": 534401024,
+        "symlinks": 4
+      },
+      {
+        "path": "tests",
+        "files": 36,
+        "logicalBytes": 630786,
+        "allocatedBytes": 712704,
+        "symlinks": 0
+      },
+      {
+        "path": ".hermes",
+        "files": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 12288,
+        "symlinks": 7
+      },
+      {
+        "path": ".mypy_cache",
+        "files": 371,
+        "logicalBytes": 15396081,
+        "allocatedBytes": 16306176,
+        "symlinks": 0
+      },
+      {
+        "path": ".git",
+        "files": 1857,
+        "logicalBytes": 1951611037,
+        "allocatedBytes": 1962987520,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/02_references",
+        "files": 176,
+        "logicalBytes": 404568549,
+        "allocatedBytes": 405041152,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/memory",
+        "files": 10,
+        "logicalBytes": 98126,
+        "allocatedBytes": 131072,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/03_bibles",
+        "files": 29,
+        "logicalBytes": 473900,
+        "allocatedBytes": 544768,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/05_storyboard",
+        "files": 379,
+        "logicalBytes": 305550534,
+        "allocatedBytes": 306483200,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/08_edit",
+        "files": 140,
+        "logicalBytes": 96608288,
+        "allocatedBytes": 97046528,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/00_brief",
+        "files": 45,
+        "logicalBytes": 631365,
+        "allocatedBytes": 757760,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/04_audio",
+        "files": 46,
+        "logicalBytes": 21036654,
+        "allocatedBytes": 21184512,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/01_script",
+        "files": 10,
+        "logicalBytes": 63705,
+        "allocatedBytes": 98304,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/06_pilot",
+        "files": 13,
+        "logicalBytes": 9385832,
+        "allocatedBytes": 9428992,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/07_generations",
+        "files": 719,
+        "logicalBytes": 680288016,
+        "allocatedBytes": 682156032,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/agents",
+        "files": 70,
+        "logicalBytes": 1724886,
+        "allocatedBytes": 1875968,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/tasks",
+        "files": 33,
+        "logicalBytes": 1187044,
+        "allocatedBytes": 1273856,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/docs",
+        "files": 29,
+        "logicalBytes": 335328,
+        "allocatedBytes": 401408,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/logs",
+        "files": 17,
+        "logicalBytes": 239674,
+        "allocatedBytes": 290816,
+        "symlinks": 0
+      },
+      {
+        "path": "projects/andre-time-travel/09_delivery",
+        "files": 46,
+        "logicalBytes": 28989594,
+        "allocatedBytes": 29110272,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/dist",
+        "files": 74,
+        "logicalBytes": 2213603,
+        "allocatedBytes": 2506752,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/node_modules",
+        "files": 50392,
+        "logicalBytes": 996875115,
+        "allocatedBytes": 1161338880,
+        "symlinks": 39
+      },
+      {
+        "path": "sites/movies-demandas/scripts",
+        "files": 25,
+        "logicalBytes": 113106,
+        "allocatedBytes": 176128,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/app",
+        "files": 50,
+        "logicalBytes": 168060,
+        "allocatedBytes": 323584,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/examples",
+        "files": 2,
+        "logicalBytes": 2165,
+        "allocatedBytes": 32768,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/hooks",
+        "files": 1,
+        "logicalBytes": 565,
+        "allocatedBytes": 8192,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/qa",
+        "files": 5,
+        "logicalBytes": 178924,
+        "allocatedBytes": 192512,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/public",
+        "files": 4,
+        "logicalBytes": 2104,
+        "allocatedBytes": 20480,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.github",
+        "files": 1,
+        "logicalBytes": 3,
+        "allocatedBytes": 16384,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.sites-runtime",
+        "files": 5,
+        "logicalBytes": 969649,
+        "allocatedBytes": 999424,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.wrangler",
+        "files": 13,
+        "logicalBytes": 226332,
+        "allocatedBytes": 303104,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/drizzle",
+        "files": 3,
+        "logicalBytes": 1644,
+        "allocatedBytes": 20480,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/data",
+        "files": 2,
+        "logicalBytes": 195946,
+        "allocatedBytes": 204800,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.superpowers",
+        "files": 1,
+        "logicalBytes": 2,
+        "allocatedBytes": 12288,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.openai",
+        "files": 1,
+        "logicalBytes": 91,
+        "allocatedBytes": 8192,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/components",
+        "files": 69,
+        "logicalBytes": 216565,
+        "allocatedBytes": 409600,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/vendor",
+        "files": 2,
+        "logicalBytes": 17104,
+        "allocatedBytes": 24576,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/docs",
+        "files": 1,
+        "logicalBytes": 75649,
+        "allocatedBytes": 90112,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/db",
+        "files": 2,
+        "logicalBytes": 722,
+        "allocatedBytes": 12288,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.vinext",
+        "files": 1,
+        "logicalBytes": 202,
+        "allocatedBytes": 12288,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/build",
+        "files": 5,
+        "logicalBytes": 17332,
+        "allocatedBytes": 32768,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/tests",
+        "files": 19,
+        "logicalBytes": 69661,
+        "allocatedBytes": 118784,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.tsupgrader",
+        "files": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 8192,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.git",
+        "files": 356,
+        "logicalBytes": 632901,
+        "allocatedBytes": 2555904,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/.next",
+        "files": 1,
+        "logicalBytes": 1046,
+        "allocatedBytes": 12288,
+        "symlinks": 0
+      },
+      {
+        "path": "sites/movies-demandas/lib",
+        "files": 17,
+        "logicalBytes": 49947,
+        "allocatedBytes": 102400,
+        "symlinks": 0
+      }
+    ]
+  },
+  "independentReview": {
+    "fiveCardsMatchManifest": true,
+    "fiveObservationsIdenticalToHistoricalReview": true,
+    "sheets": 45,
+    "representedFrames": 1636,
+    "audioAsrPairs": 4,
+    "htmlLocalLinks": 114,
+    "historicalHashesChecked": 269,
+    "historicalDrift": 0,
+    "normalSpeedPlaybackOrListeningRepeated": false
+  },
+  "externalEvidenceRoot": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17",
+  "semanticExportProofBeforeNavigation": "/home/athar/Documents/Codex/2026-10-17/task/audit-2026-10-17/semantic-export-proof.jsonl",
+  "fullSuites": [
+    {
+      "name": "python-tests",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 10.586,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/python-tests.log"
+    },
+    {
+      "name": "manual-tests",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-I",
+        "-B",
+        "docs/kling-manual/tools/test_kling_tools.py"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.114,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/manual-tests.log"
+    },
+    {
+      "name": "frontend-tests",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 1.016,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/frontend-tests.log"
+    },
+    {
+      "name": "frontend-lint",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 4.273,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/frontend-lint.log"
+    },
+    {
+      "name": "frontend-types",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 4.574,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/frontend-types.log"
+    },
+    {
+      "name": "frontend-build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 4.273,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/frontend-build.log"
+    }
+  ],
+  "final": [
+    {
+      "name": "validate",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.056,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-validate.log"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "lint"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.167,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-lint.log"
+    },
+    {
+      "name": "resume",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "resume"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.18,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-resume.log"
+    },
+    {
+      "name": "assets",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/manage.py",
+        "assets",
+        "validate"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.067,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-assets.log"
+    },
+    {
+      "name": "production-plan",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/production_plan.py",
+        "check",
+        "--verify-media"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.087,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-production-plan.log"
+    },
+    {
+      "name": "agent-catalog",
+      "command": [
+        "/mnt/data/Projects_SSD/Movies_Projects/.venv/bin/python",
+        "-B",
+        "scripts/agent_catalog.py",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects",
+      "exit": 0,
+      "seconds": 0.028,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-agent-catalog.log"
+    },
+    {
+      "name": "export-workspace",
+      "command": [
+        "node",
+        "scripts/export-workspace.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.143,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-export-workspace.log"
+    },
+    {
+      "name": "export-production",
+      "command": [
+        "node",
+        "scripts/export-production.mjs",
+        "../..",
+        "--check"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.179,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-export-production.log"
+    },
+    {
+      "name": "check-data",
+      "command": [
+        "node",
+        "scripts/check-data.mjs"
+      ],
+      "cwd": "/mnt/data/Projects_SSD/Movies_Projects/sites/movies-demandas",
+      "exit": 0,
+      "seconds": 0.089,
+      "log": "/home/athar/Documents/Codex/2026-10-17/task/continuation-2026-10-17/final-check-data.log"
+    }
+  ],
+  "testCounts": {
+    "python": 251,
+    "manual": 16,
+    "frontend": 87,
+    "galleryRegressions": 6,
+    "targetedExport": 5
+  },
+  "preservation": {
+    "baselineFiles": 2996,
+    "unchangedBaselineContentHashes": 2982,
+    "intendedChangedBaselinePaths": [
+      "START_HERE.md",
+      "CLAUDE.md",
+      "README.md",
+      "scripts/build_galileo_animatic.py",
+      "docs/SHARED_MEDIA.md",
+      "docs/kling-manual/README.md",
+      "sites/movies-demandas/scripts/export-workspace.mjs",
+      "sites/movies-demandas/.sites-runtime/local-review.log",
+      "sites/movies-demandas/data/production.json",
+      "sites/movies-demandas/data/workspace-reference.json"
+    ],
+    "unexpectedChanges": [],
+    "mutableRuntimeLogDriftPreserved": [
+      "sites/movies-demandas/.sites-runtime/local-review.log"
+    ],
+    "missingBaselineFiles": [],
+    "metadataOnlyEntries": [
+      {
+        "path": ".env",
+        "unchanged": true
+      },
+      {
+        "path": ".env.example",
+        "unchanged": true
+      },
+      {
+        "path": "docs/TOKEN_EFFICIENCY.md",
+        "unchanged": true
+      },
+      {
+        "path": "docs/TOKEN_SPEND_AUDIT_2026-10-13.md",
+        "unchanged": true
+      }
+    ],
+    "all13SymlinksUnchanged": true,
+    "headUnchanged": true,
+    "registeredWorktreesUnchanged": true,
+    "concurrentOtherAuditDrift": [],
+    "allBaselineMediaUnchanged": true,
+    "baselineMediaFiles": 1125,
+    "baselineMediaBytes": 2036752866,
+    "unrelatedFrontendContentUnchanged": true,
+    "removedWholeFiles": 0,
+    "archivedWholeFiles": 0,
+    "mediaFilesCopiedOrGenerated": 0,
+    "phase2OwnedPaths": 17,
+    "netStorageReclaimed": 0
+  },
+  "rollbackDryRun": "Pass,17 owned paths; no rollback applied",
+  "handoffValidation": "schema2.0 statusok errors=[] advisory=[]"
+}

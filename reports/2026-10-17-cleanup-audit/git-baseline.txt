@@ -1,0 +1,97 @@
+ m sites/movies-demandas
+?? reports/2026-10-17-cleanup-audit/
+
+Frontend nested checkout (pre-existing work; do not clean):
+ M README.md
+ M app/api/workspace/route.ts
+ M app/chatgpt-auth.ts
+ M app/dashboard.tsx
+ M app/globals.css
+ M app/page.tsx
+ M app/workspace-reference.tsx
+ M components/ui/badge.tsx
+ M components/ui/breadcrumb.tsx
+ M components/ui/button-group.tsx
+ M components/ui/button.tsx
+ M components/ui/calendar.tsx
+ M components/ui/carousel.tsx
+ M components/ui/chart.tsx
+ M components/ui/field.tsx
+ M components/ui/form.tsx
+ M components/ui/item.tsx
+ M components/ui/marker.tsx
+ M components/ui/navigation-menu.tsx
+ M components/ui/pagination.tsx
+ M components/ui/progress.tsx
+ M components/ui/tabs.tsx
+ M components/ui/toggle-group.tsx
+ M components/ui/toggle.tsx
+ M data/production.json
+ M data/workspace-reference.json
+ M eslint.config.mjs
+ M examples/d1/app/api/notes/route.ts
+ M lib/model.ts
+ M package.json
+ M scripts/connector-preview/connector-preview-session.mjs
+ M scripts/connector-preview/host-binding.mjs
+ M scripts/export-production.mjs
+ M scripts/export-workspace.mjs
+ M scripts/npm-install.mjs
+ M scripts/pnpm-install.mjs
+ M tests/api.test.mjs
+ M tests/model.test.ts
+ M vite.config.ts
+?? app/_dashboard/
+?? app/_production-plan/
+?? app/kling-capabilities.tsx
+?? app/kling-test-summary.tsx
+?? app/production-plan-panel.module.css
+?? app/production-plan-panel.tsx
+?? app/restart-summary.tsx
+?? app/scene-costs-panel.tsx
+?? app/scene-costs.css
+?? components/ui/badge-variants.ts
+?? components/ui/button-group-variants.ts
+?? components/ui/button-variants.ts
+?? components/ui/marker-variants.ts
+?? components/ui/navigation-menu-variants.ts
+?? components/ui/tabs-variants.ts
+?? components/ui/toggle-variants.ts
+?? docs/
+?? lib/chatgpt-paths.ts
+?? lib/dates.ts
+?? lib/download.ts
+?? lib/production-plan.ts
+?? lib/scene-costs.ts
+?? lib/task-filters.ts
+?? lib/task-text.ts
+?? lib/workspace-client.ts
+?? lib/workspace-reference.ts
+?? lib/workspace-store.ts
+?? scripts/baseline-media.mjs
+?? scripts/check-data.mjs
+?? scripts/export-common.mjs
+?? scripts/export-costs.mjs
+?? scripts/local-review.mjs
+?? scripts/reference-review-fixture.mjs
+?? scripts/reference-review-server.mjs
+?? scripts/reference-review-store.mjs
+?? scripts/review-lock.mjs
+?? scripts/review-readiness.mjs
+?? tests/baseline-media.test.mjs
+?? tests/dashboard-shell.test.mjs
+?? tests/dates.test.ts
+?? tests/export-costs.test.mjs
+?? tests/export.test.mjs
+?? tests/helpers/
+?? tests/kling-capabilities.test.mjs
+?? tests/production-plan-tabs.test.mjs
+?? tests/reference-review.test.mjs
+?? tests/review-lock.test.mjs
+?? tests/review-readiness.test.mjs
+?? tests/scene-costs-component.test.mjs
+?? tests/scene-costs.test.ts
+?? tests/task-filters.test.ts
+?? tests/task-modal.test.mjs
+?? tests/task-text.test.ts
+?? tests/workspace-client.test.ts

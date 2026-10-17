@@ -11,7 +11,7 @@ O registro da série está em [series/andre-time-travel/series.json](series/andr
 
 - [`AGENTS.md`](AGENTS.md): project boundaries and agent startup instructions.
 - [`workspace.json`](workspace.json): film registry and expected layout.
-- [`projects/andre-time-travel/docs/production-plan.md`](projects/andre-time-travel/docs/production-plan.md): canonical production plan.
+- [`projects/andre-time-travel/05_storyboard/source/production-plan.json`](projects/andre-time-travel/05_storyboard/source/production-plan.json): active visual production plan, selected by `workspace.json`; [editing and validation](docs/PRODUCTION_PLAN.md).
 - [`projects/andre-time-travel/01_script/script-en.md`](projects/andre-time-travel/01_script/script-en.md): sourced fictional English draft.
 - [`projects/andre-time-travel/tasks/board.json`](projects/andre-time-travel/tasks/board.json): live production tasks.
 - [`projects/andre-time-travel/memory/STATE.md`](projects/andre-time-travel/memory/STATE.md): resume point.
@@ -36,6 +36,8 @@ As ferramentas de gestão e inventário usam apenas a biblioteca padrão do Pyth
 
 ## Organization
 
-`projects/` holds each film; `agents/` holds role briefs; `skills/` holds the project procedure and links to existing canonical skills; `memory/` indexes local film memory; `scripts/` contains safe management tools; `docs/` explains operations; `shared/templates/` holds review templates.
+`projects/` holds each film; `agents/` holds role briefs; `skills/` holds the project procedure and links to existing canonical skills; `memory/` indexes local film memory; `scripts/` contains management, validation and producer tools; `docs/` explains operations; `shared/templates/` holds review templates.
 
-O projeto agora usa Git local na branch `main`, com Git LFS para mídias e um snapshot inicial. Não há remoto nem publicação no GitHub. Veja [docs/VERSION_CONTROL.md](docs/VERSION_CONTROL.md). Os links de skills continuam locais à máquina, sem copiar código de fornecedores. Nenhum serviço pago ou dataset Cognee foi criado.
+O projeto usa Git na branch `main`, com Git LFS para mídias e o remoto privado `origin`. A publicação anterior e os limites de autorização estão em [docs/VERSION_CONTROL.md](docs/VERSION_CONTROL.md). Os links de skills continuam locais à máquina, sem copiar código de fornecedores. A organização local não concede autorização de gasto ou publicação.
+
+Auditoria e limpeza local: [inventário, mudanças verificadas e pendências — 17/10/2026](reports/2026-10-17-project-cleanup-v2/README.md).
