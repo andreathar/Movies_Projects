@@ -429,25 +429,43 @@ class Store:
             return {"after": self._one(c, "approvals", a["id"])}, artifact["project_id"]
         raise ManagementError("unsupported command")
 
-    def query(self, token, project, kind):
+    def projects(self, token):
+        with self._connect() as c:
+            actor = self._actor(c, token)
+            if actor["is_operator"]:
+                rows = c.execute("SELECT id,title FROM projects ORDER BY id")
+            else:
+                rows = c.execute("SELECT p.id,p.title FROM projects p JOIN memberships m "
+                                 "ON p.id=m.project_id WHERE m.identity_id=? ORDER BY p.id", (actor["id"],))
+            return [dict(row) for row in rows]
+
+    def snapshot(self, token, project, kinds):
+        """All projections share one authorized SQLite read transaction."""
         with self._connect() as c:
             actor = self._actor(c, token)
             self._member(c, actor, project)
-            tables = {"tasks", "artifact_versions", "decisions", "events"}
-            if kind in tables:
-                rows = c.execute(f"SELECT * FROM {kind} WHERE project_id=? ORDER BY " +
-                                 ("sequence" if kind == "events" else "id"), (project,))
-            elif kind == "handoffs":
-                rows = c.execute("SELECT h.* FROM handoffs h JOIN tasks t ON h.task_id=t.id WHERE t.project_id=? ORDER BY h.id", (project,))
-            elif kind == "approvals":
-                rows = c.execute("SELECT a.* FROM approvals a JOIN artifact_versions v ON a.artifact_id=v.id WHERE v.project_id=? ORDER BY a.id", (project,))
-            elif kind in {"task_dependencies", "task_allowed_paths", "task_inputs"}:
-                rows = c.execute(f"SELECT r.* FROM {kind} r JOIN tasks t ON r.task_id=t.id WHERE t.project_id=?", (project,))
-            elif kind in {"handoff_artifacts", "handoff_checks", "handoff_dependencies", "handoff_open_decisions"}:
-                rows = c.execute(f"SELECT r.* FROM {kind} r JOIN handoffs h ON r.handoff_id=h.id JOIN tasks t ON h.task_id=t.id WHERE t.project_id=?", (project,))
-            else:
-                raise ManagementError("unsupported query")
-            return [dict(row) for row in rows]
+            return {kind: self._query(c, project, kind) for kind in kinds}
+
+    def query(self, token, project, kind):
+        return self.snapshot(token, project, [kind])[kind]
+
+    @staticmethod
+    def _query(c, project, kind):
+        tables = {"tasks", "artifact_versions", "decisions", "events"}
+        if kind in tables:
+            rows = c.execute(f"SELECT * FROM {kind} WHERE project_id=? ORDER BY " +
+                             ("sequence" if kind == "events" else "id"), (project,))
+        elif kind == "handoffs":
+            rows = c.execute("SELECT h.* FROM handoffs h JOIN tasks t ON h.task_id=t.id WHERE t.project_id=? ORDER BY h.id", (project,))
+        elif kind == "approvals":
+            rows = c.execute("SELECT a.* FROM approvals a JOIN artifact_versions v ON a.artifact_id=v.id WHERE v.project_id=? ORDER BY a.id", (project,))
+        elif kind in {"task_dependencies", "task_allowed_paths", "task_inputs"}:
+            rows = c.execute(f"SELECT r.* FROM {kind} r JOIN tasks t ON r.task_id=t.id WHERE t.project_id=?", (project,))
+        elif kind in {"handoff_artifacts", "handoff_checks", "handoff_dependencies", "handoff_open_decisions"}:
+            rows = c.execute(f"SELECT r.* FROM {kind} r JOIN handoffs h ON r.handoff_id=h.id JOIN tasks t ON h.task_id=t.id WHERE t.project_id=?", (project,))
+        else:
+            raise ManagementError("unsupported query")
+        return [dict(row) for row in rows]
 
     def backup(self, token, destination: Path):
         """Consistent SQLite snapshot, exclusive output; includes private identity hashes."""

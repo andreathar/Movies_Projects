@@ -14,6 +14,10 @@ Fontes novas:
 - `scripts/production_db.py`: comandos transacionais e CLI, usando apenas Python 3.11+ stdlib.
 - `tests/test_production_db.py`: testes com estado sintético em diretórios temporários.
 
+Etapa seguinte implementada: painel local e API/cliente de agentes, descritos em
+`docs/PRODUCTION_LOCAL_PANEL.md`. Isso não conecta o painel remoto legado nem ativa
+serviços automaticamente; as notas de primeira entrega abaixo são históricas nesse ponto.
+
 Não é necessário recuperar `workspace.json` para usar este núcleo. Nenhum banco real de
 operação nem credencial de operador é criado pela instalação do código ou pelos testes.
 

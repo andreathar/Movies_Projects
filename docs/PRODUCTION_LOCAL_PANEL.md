@@ -1,0 +1,152 @@
+# Painel local e API de agentes — gestão nova
+
+## Estado desta etapa
+
+Implementação local ligada ao banco de `docs/PRODUCTION_DATABASE.md`, sem migração,
+importação, fallback ou sincronização com JSON/D1. O painel oferece formulários de
+operações e tabelas de consulta; não exige editar documentos JSON de gestão.
+
+Arquivos:
+- `scripts/production_web.py`: painel HTML sem JavaScript, sessão de navegador e API.
+- `scripts/production_client.py`: cliente de agentes via API, sem proxies ou redirects.
+- `scripts/production_db.py`: descoberta autorizada de projetos e snapshots consistentes.
+- `tests/test_production_web.py`: integração sintética, sem abrir portas.
+
+O painel anterior em `sites/movies-demandas` é um repositório separado com trabalho
+concorrente. Não foi modificado, inicializado, publicado ou conectado ao novo banco.
+Sua estrutura mistura D1, pacotes importados e JSON de revisão; sua implantação remota
+não acessa o SQLite e filesystem desta máquina. Por isso esta etapa usa uma superfície
+local separada. Para projetos novos, somente o banco novo deve ser usado; não cadastrar
+os mesmos dados também no painel legado. Este documento não altera contratos canônicos
+de produção de episódios nem afirma que o legado já foi desativado globalmente.
+
+## Iniciar explicitamente
+
+Não há daemon, schedule, serviço instalado ou porta aberta por esta entrega.
+
+1. Inicializar banco e identidades pela CLI descrita em `docs/PRODUCTION_DATABASE.md`.
+   Nada é semeado automaticamente. Cadastro de identidade gera somente uma credencial
+   local privada, sem disponibilizá-la a agentes automaticamente.
+2. **Consultar o registro canônico de portas e serviços e reservar uma porta livre** antes
+   de iniciar. Nenhuma porta de operação foi escolhida ou reservada nesta entrega.
+3. Executar manualmente, substituindo `PORTA_LIVRE` pela porta aprovada:
+
+```sh
+.venv/bin/python scripts/production_web.py \
+  --db .production-db/management.sqlite3 --port PORTA_LIVRE
+```
+
+4. Abrir exatamente `http://127.0.0.1:PORTA_LIVRE/` no navegador. O endereço `localhost`
+   não é um alias aceito pelo controle de Host desta versão.
+5. Entrar com **a sua própria** credencial local no campo de senha do painel. A regra de
+   não colar credenciais em chat, logs, prompts ou repositórios continua válida. Este campo
+   é apenas para entrada direta do usuário no formulário local; o assistente não deve ler
+   credenciais reais para preencher a página. Não usar tokens em URL, argv ou localStorage.
+
+O servidor só vincula `127.0.0.1`. O uso de HTTP é deliberadamente restrito ao loopback;
+**não é servidor de produção, acesso LAN ou implantação Cloudflare**. Não publicar por
+proxy/túnel nem remover essa restrição. Outros usuários/processos da mesma máquina não
+são isolados pelo loopback; proteger arquivos e credenciais no sistema operacional.
+
+## Fluxo no painel
+
+Sem projetos, o painel mostra o estado vazio e oferece criação explícita. Após criar,
+escolher o projeto na lista para ver tarefas, handoffs, versões, decisões, aprovações,
+evidências e eventos. Cada operação é um formulário próprio; os campos usam IDs e revisões
+exibidos nas consultas. Para listas, informar um item por linha, sem JSON.
+
+Exemplo de declaração de verificação em handoff:
+
+```text
+leitura | passed | Comparei o arquivo exato com a entrega
+playback | not_run | Esta atribuição não inclui vídeo
+```
+
+Isso registra declarações, não executa testes. A revisão real continua necessária.
+
+Sequência: criar tarefa → oferecer com escopo/caminhos/entradas → destinatário entrar com
+sua credencial e aceitar → registrar versão do arquivo → entregar → produtor verificar ou
+devolver → integrar com sucessora aceita, bloqueio responsável ou etapa encerrada.
+
+Um destinatário precisa ter vínculo no projeto antes da oferta, inclusive o operador se
+pretender executar a tarefa. Não compartilhar a credencial do operador para simular aceite.
+O banco não concede papéis porque um formulário esteja visível: todos são validados pelo
+núcleo. Os formulários de aprovação não liberam gasto ou certificam identidade artística.
+
+Cada formulário carrega um ID de requisição para impedir duplicação no reenvio. Para uma
+nova operação, recarregar o painel. Conflito ou falha é recusado sem commit; recarregar o
+estado e revisar antes de tentar novamente. Não há edição genérica de estado das tarefas.
+
+## API e cliente de agentes
+
+Todas as chamadas exigem `Authorization: Bearer <credencial>` da identidade atribuída.
+A API não usa cookies, não tem CORS e recusa requisições com Origin de navegador. JSON
+existe apenas no transporte HTTP e nos payloads de auditoria já previstos pelo núcleo.
+
+| Método / caminho | Resultado |
+| --- | --- |
+| `GET /api/projects` | Projetos acessíveis à identidade |
+| `GET /api/snapshot?project=ID` | Projeções do projeto na mesma transação de leitura |
+| `GET /api/query?project=ID&kind=tasks` | Consulta específica permitida |
+| `POST /api/commands` | Comando permitido e auditado |
+
+Envelope do POST: `command`, `args`, `request_id`, `reason`, sem outros campos. As
+operações são as mesmas oferecidas nos formulários. Inicialização, criação de identidades,
+backup, SQL arbitrário e escolha de banco/raiz/credencial por request são proibidos.
+Esses controles permanecem na CLI local do operador.
+
+O agente pode usar a CLI original diretamente no mesmo filesystem ou este cliente HTTP:
+
+```sh
+.venv/bin/python scripts/production_client.py \
+  --url http://127.0.0.1:PORTA_LIVRE \
+  --credential .production-db/executor.credential projects
+
+.venv/bin/python scripts/production_client.py \
+  --url http://127.0.0.1:PORTA_LIVRE \
+  --credential .production-db/executor.credential snapshot --project filme-novo
+
+# Objeto efêmero no stdin: protocolo, não arquivo de gestão.
+printf '%s' '{"task":"FN-T01","revision":2}' | \
+  .venv/bin/python scripts/production_client.py \
+    --url http://127.0.0.1:PORTA_LIVRE \
+    --credential .production-db/executor.credential execute task-accept \
+    --request-id aceite-001 --reason 'Aceite do escopo oferecido'
+```
+
+Não há auto-retry. Após timeout, conferir estado e usar o mesmo ID/conteúdo se for preciso
+recuperar a resposta, sem inventar um novo ID e duplicar efeitos. Não há executor de
+agentes, submissão de mídia ou integração com serviços pagos.
+
+## Controles e limites
+
+- Host exato para reduzir DNS rebinding; vínculo somente no loopback IPv4.
+- Navegador: Origin exata, CSRF por sessão, expiração fixa de 30 minutos, logout e limite
+  de tentativas de login. **Não há cookies**: cookies de loopback seriam enviados também a
+  serviços vizinhos em outras portas. O identificador de sessão segue somente em campos
+  ocultos de formulários POST para a mesma origem. Navegação de projetos também usa POST;
+  GET sempre mostra login. Não usar URL/storage para guardar sessão.
+- Credencial fica somente na memória da sessão do servidor após o login, não no HTML,
+  URL ou log de acesso. O handle temporário e CSRF ficam nos formulários e são sensíveis;
+  não compartilhar HTML autenticado. Não há logs de requisição, persistência de sessão
+  ou script de terceiros.
+- Escapamento de HTML, CSP sem scripts/frames, no-store e no-referrer.
+- Corpo limitado a 64 KiB; sem transfer-encoding, content-length duplicado ou corpo truncado.
+- Permissões, hashes, transações, revisões e idempotência são os do mesmo núcleo SQLite.
+- Snapshot por projeto é consistente; seleção de projeto/autenticação são verificações
+  separadas e não prometem um snapshot global de todos os projetos.
+- Não há paginação de eventos, revogação/rotação de credenciais nem autenticação remota.
+  Painel é uma primeira superfície local, não um substituto de infraestrutura multiusuário.
+- Testes cobrem aplicação e adaptador HTTP em memória, sem listener real. Inspeção visual,
+  teclado e playback no navegador **não foram executados** nesta etapa.
+
+## Próximo responsável / ativação
+
+O assistente desta conversa implementou painel/API/client como sucessor do núcleo.
+A próxima etapa permanece com o produtor/coordenador: revisar o desenho local, definir
+identidades e porta de operação, testar no navegador e decidir o corte operacional.
+Nenhum banco real, operador ou serviço foi inicializado por esta entrega.
+
+Se a operação desejada for remota, o bloqueio pertence ao produtor: definir hospedagem,
+autenticação/revogação e localização do banco antes de expor qualquer endpoint. Não basta
+apontar o painel Cloudflare para localhost, espelhar D1 ou recriar os JSON antigos.
