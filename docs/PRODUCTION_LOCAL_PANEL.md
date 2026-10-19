@@ -20,6 +20,57 @@ local separada. Para projetos novos, somente o banco novo deve ser usado; não c
 os mesmos dados também no painel legado. Este documento não altera contratos canônicos
 de produção de episódios nem afirma que o legado já foi desativado globalmente.
 
+## Escolhas predefinidas — atualização após o primeiro projeto
+
+A pedido de Andre, os formulários usam dropdowns nativos para papel, resultado de
+aprovação, projeto existente, participante, destinatário/responsável, tarefa, handoff,
+artefato de aprovação e versão anterior. As listas de registros dependem do projeto
+selecionado na navegação; recarregue sua visão para buscar entregas recém-criadas.
+O retorno de uma operação preserva o projeto selecionado. Novos IDs, descrições,
+caminhos e listas de múltiplos registros continuam como campos de texto nesta versão.
+
+Equipe significa os participantes vinculados ao projeto, não um novo cadastro de
+departamentos. Os papéis disponíveis são Produtor, Colaborador e Revisor. A UI explica
+as permissões existentes; não há editor de permissões avulsas. Operador é um privilégio
+administrativo separado, necessário para vincular pessoas e aprovar/rejeitar. Produtor
+sozinho não concede esses poderes. Colaborador e Revisor têm o mesmo acesso técnico
+atual, sem redução ou ampliação silenciosa de autorização.
+
+Identidades globais só aparecem ao operador; outros usuários veem a própria identidade
+e, no projeto autorizado, seus participantes. Tokens/hashes de credenciais não são
+projetados nas opções. A validação do núcleo continua obrigatória para UI e API.
+
+O rótulo ambíguo foi trocado por **“Por que fazer isso?”**, com ajuda para relatar somente
+verificações realmente feitas. O campo continua sendo o motivo auditado pelo banco.
+
+Verificação desta atualização: 344 testes stdlib passaram; Chromium sintético passou em
+18 checks, incluindo dropdowns e fluxo completo. Evidência privada, sem dados do projeto
+do usuário: `.production-db/browser-check-v5/result.json`. Revisão independente corrigiu
+a primeira explicação que confundia permissões de produtor e operador; regra: descrever
+permissões a partir dos gates reais do núcleo, nunca inferir pelo nome do papel.
+`manage.py resume`, `validate` e `lint` passaram (lint com avisos legados). O servidor foi
+reiniciado somente após identificar PID/cwd/argumentos; novo PID observado 77882,
+loopback 18741, HTTP 200. Sessões antigas expiraram; banco e credenciais foram mantidos.
+O projeto cadastrado foi informado por Andre, não inspecionado nesta atualização.
+
+Etapa de dropdowns concluída. Próximo responsável: usuário/produtor, para utilizar as
+opções na equipe do projeto; nenhuma atribuição ou aprovação de filme foi iniciada pelo
+assistente. Nenhum commit/push nem alteração do trabalho concorrente.
+
+### Fontes desta atualização (SHA-256)
+
+| Fonte | Base | Após |
+| --- | --- | --- |
+| `scripts/production_db.py` | `705931f7cdbd90332be92f44dd025949dad0b028589876dcfd72152e08eae51b` | `8c769a0cedbf441b757bb7eeada14c2e3f6097b7cf7cfaa1daf23b73b554de9a` |
+| `scripts/production_web.py` | `e73f9eafafeb6a1d8ad850917c88e493d263e6d343671e1ab34e3d5f4172555f` | `245626fb98b824895bf5efffa6c0d63bdc85c6163d34bb601bb3d90050116690` |
+| `tests/test_production_web.py` | `27ba5f0953cdcdf1a3dea21706b5e2bd4f5189e8df6315129287f43b39a4780c` | `c1ecce93c72f88d313c31c9816a2cd7c8e237c37fab48827008bd7466dfe0e92` |
+| `scripts/production_browser_smoke.cjs` | `dde4f0cff80c4ba282cb721c37f3ffe39e0bcbd7ada01209212636564e500af6` | `1358b2b760399c30af16633a3f0caf9e1c1830c0ddb613fedbc74d33df8f802d` |
+
+Base deste documento antes da atualização:
+`d6471faeb056eae70233da2abbabdc2b9f06932c8409b4274ab66d03d4de355c`.
+Histórico da ativação inicial em `docs/PRODUCTION_LOCAL_ACTIVATION_HANDOFF.md`; não é
+um estado atual de contagem de projetos, processo ou lint.
+
 ## Ativação local verificada
 
 Após Andre autorizar prosseguir com o teste de navegador e ativação, foi inicializado
