@@ -1,72 +1,61 @@
 # Release Process
 
-Follow this process when preparing and releasing a new version.
+Mechanical steps are implemented in `scripts/changelog.py` (stdlib only, no network, writes
+files only when asked). The rules live in `mem:changelog_conventions`. Do not hand-copy the
+commit list: run the script, then review its output.
 
-## 1) Determine Version Bump
-
-From commits since last tag (`git describe --tags --abbrev=0`), determine SemVer bump:
-- **major**: any commit with `BREAKING CHANGE` or `!:` in message
-- **minor**: any `feat:` commit
-- **patch**: only `fix:` (and other non-breaking changes)
-
-Get last tag: `git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0"`
-Get commits since: `git log <LAST_TAG>..HEAD --no-merges --format="%H %s"`
-
-## 2) Gather Changes
-
-Collect and categorize commits:
 ```bash
-git log <LAST_TAG>..HEAD --no-merges --format="%h %s"
+# categorize commits since the last tag (or an explicit reference) without writing
+.venv/bin/python scripts/changelog.py list [--since REF] [--json]
+
+# merge missing entries into the [Unreleased] section (idempotent)
+.venv/bin/python scripts/changelog.py write [--since REF]
+
+# move [Unreleased] into a dated version section and refresh compare links
+.venv/bin/python scripts/changelog.py release 0.2.0 [--date YYYY-MM-DD]
+
+# structural check (exit 1 with --strict)
+.venv/bin/python scripts/changelog.py check [--strict]
 ```
 
-For each significant commit:
-- Read full message: `git log -1 --format="%B" <commit>`
-- Extract PR number if present (`(#NNN)`)
-- Categorize by conventional commit prefix per changelog_conventions.md
-- Skip: `chore`, `docs`, `test`, `ci`, `style`, `build` unless they contain breaking changes
+## 1) Determine the bump
 
-## 3) Update CHANGELOG.md
+`git describe --tags --abbrev=0` gives the last released tag. From the commits since it:
+**major** on any breaking change (`!:` or a `BREAKING CHANGE:` footer), **minor** on any `feat`,
+**patch** otherwise. The script applies that mapping to pick the section, not the number: the
+number is the agent's (or Andre's) decision and is passed to `release`.
 
-1. If `CHANGELOG.md` doesn't exist, create it with full header per changelog_conventions.md
-2. Add new version section under header and before any existing version sections:
-   ```markdown
-   ## [<VERSION>] - <YYYY-MM-DD>
-   ```
-   (VERSION has no `v` prefix in heading; tags will have `v` prefix)
-3. Add categorized entries (only include sections with entries)
-4. Update compare links at bottom:
-   ```markdown
-   [Unreleased]: https://github.com/andreathar/Movies_Projects/compare/v<NEW>...HEAD
-   [<VERSION>]: https://github.com/andreathar/Movies_Projects/compare/v<OLD>...v<NEW>
-   ```
+## 2) Update [Unreleased]
 
-Date: `date +%Y-%m-%d`
+Run `write`. Before the first tag exists there is no natural reference, so pass `--since <ref>`
+once for the initial seed; afterwards the last tag is used automatically.
 
-## 4) Verify & Commit
+Normalisation is by exact bullet text, so `write` is idempotent as long as you do not reword an
+entry in place. If you must reword, do it after `release` (the block then leaves `[Unreleased]`)
+or stop re-running `write` over the same range.
 
-1. Review entries for accuracy and completeness
-2. Stage and commit:
-   ```bash
-   git add CHANGELOG.md
-   git commit -m "docs: add CHANGELOG.md for v<NEW> release"
-   ```
-3. Create tag and push (or open PR):
-   ```bash
-   git tag -a v<NEW> -m "Release v<NEW>"
-   git push origin main --tags
-   ```
+## 3) Release
 
-## 5) Automation Notes
+Run `release <version>`; it moves the entries, dates the section and rewrites the compare links
+from `git remote get-url origin`. It never commits, tags or pushes.
 
-- Prefer `scripts/bump_version.py` if it exists (Serena's pattern). Run with appropriate bump level.
-- If script doesn't exist, follow manual steps above.
-- After release, ensure [Unreleased] section remains at top (empty or with future items).
+Then, separately and only with the applicable authorization:
 
-## 6) Validation
+```bash
+git add CHANGELOG.md && git commit -m "docs: add CHANGELOG.md for v<version> release"
+git tag -a v<version> -m "Release v<version>"
+```
 
-Before committing:
-- Entries follow Keep a Changelog format
-- No empty sections
-- Version numbers correct (no `v` in [heading] but `v` in tag/compare URLs)
-- Links are properly formatted
-- Changes are user-focused
+Creating the tag matters: the next `write` uses the last tag as its range, so releasing without
+tagging makes the already released commits look unreleased again.
+
+## 4) Checks before delivering
+
+- `.venv/bin/python scripts/changelog.py check --strict`
+- `.venv/bin/python -m unittest discover -s tests -p "test_changelog.py"`
+
+## Boundaries
+
+No commit, tag, push or version claim is implied by generating a changelog. Changelog wording is
+a management artefact, not artistic acceptance; a released version describes what shipped, it
+does not approve it.

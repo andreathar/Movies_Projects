@@ -33,3 +33,6 @@ client_secret*.json
 # before delivery; the producer promotes them to memory/mistakes.jsonl.
 projects/*/logs/hooks.jsonl
 projects/*/logs/mistakes-draft.jsonl
+
+# Isolated greenfield management runtime: databases, backups and private local credentials.
+.production-db/
