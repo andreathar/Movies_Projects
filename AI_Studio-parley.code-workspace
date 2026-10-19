@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../AI_Studio-parley"
+		},
+		{
+			"path": "../Movies_Projects"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"driver": "SQLite",
+				"database": "${workspaceFolder:AI_Studio-parley}/data/agent-parley.sqlite3",
+				"name": "Parley_Studio"
+			}
+		],
+		"sqltools.useNodeRuntime": true
+	}
+}
