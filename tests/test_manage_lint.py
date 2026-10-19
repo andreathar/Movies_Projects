@@ -356,6 +356,28 @@ class LintTests(ManageCliMixin, unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertIn("offset", " ".join(report["advisory"]))
 
+    def test_missing_changelog_is_advisory(self) -> None:
+        code, report = self.run_json(self.root, "lint")
+        self.assertEqual(code, 0)
+        self.assertIn("CHANGELOG.md absent", " ".join(report["advisory"]))
+
+    def test_valid_changelog_adds_no_changelog_advisory(self) -> None:
+        (self.root / "CHANGELOG.md").write_text(
+            "# Changelog\n\n## [Unreleased]\n\n### Added\n- something (#1)\n", encoding="utf-8"
+        )
+        code, report = self.run_json(self.root, "lint")
+        self.assertEqual(code, 0)
+        self.assertNotIn("CHANGELOG.md", " ".join(report["advisory"]))
+
+    def test_malformed_changelog_is_advisory_not_hard(self) -> None:
+        (self.root / "CHANGELOG.md").write_text("# Notes\n\nno version sections\n", encoding="utf-8")
+        before = self.snapshot()
+        code, report = self.run_json(self.root, "lint")
+        self.assertEqual(code, 0)
+        self.assertEqual(report["hard"], [])
+        self.assertIn("CHANGELOG.md:", " ".join(report["advisory"]))
+        self.assertEqual(before, self.snapshot())
+
     def test_git_status_unavailable_outside_repository(self) -> None:
         code, report = self.run_json(self.root, "lint")
         self.assertEqual(code, 0)

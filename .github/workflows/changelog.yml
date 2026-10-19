@@ -1,0 +1,37 @@
+name: changelog
+
+# Validates CHANGELOG.md structure and the changelog automation. Stdlib only: no install,
+# no network, no credentials. Structural problems fail the job; the file itself is never
+# rewritten here (see scripts/changelog.py — CI only reads).
+
+on:
+  pull_request:
+    paths:
+      - CHANGELOG.md
+      - scripts/changelog.py
+      - tests/test_changelog.py
+      - .github/workflows/changelog.yml
+  push:
+    branches: [main]
+    paths:
+      - CHANGELOG.md
+      - scripts/changelog.py
+      - tests/test_changelog.py
+      - .github/workflows/changelog.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate CHANGELOG.md structure
+        run: python scripts/changelog.py check --strict
+      - name: Run changelog automation tests
+        run: python -m unittest discover -s tests -p "test_changelog.py" -v

@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-18
+
 ### Added
 - Add release process documentation and initial changelog setup
 - Add dependency security remediation reports and skill readiness updates
 - Update models and prompts documentation with new research evidence and verification details
 - Update documentation and add verification files for Higgsfield and Kling releases
 - Implement team strategy delivery for episode andre-time-travel
+
+[Unreleased]: https://github.com/andreathar/Movies_Projects/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/andreathar/Movies_Projects/releases/tag/v0.1.0

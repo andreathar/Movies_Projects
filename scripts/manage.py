@@ -618,6 +618,28 @@ def lint_blockers(root: Path, project: dict[str, Any], advisory: list[str]) -> N
         )
 
 
+def lint_changelog(root: Path, advisory: list[str]) -> None:
+    """Report CHANGELOG.md hygiene as advisory; never a hard film contradiction.
+
+    The changelog is a management artefact, so its absence or a structural problem must not
+    block film work or stand in for artistic acceptance.
+    """
+    path = root / "CHANGELOG.md"
+    if not path.is_file():
+        advisory.append("CHANGELOG.md absent; run scripts/changelog.py write to seed it (R-changelog)")
+        return
+    # Loaded from this script's own directory: --root may point at a synthetic workspace
+    # (tests, fixtures) that has no scripts/ tree of its own.
+    spec = importlib.util.spec_from_file_location("movies_changelog", Path(__file__).resolve().parent / "changelog.py")
+    if spec is None or spec.loader is None:
+        advisory.append("scripts/changelog.py unavailable; cannot check CHANGELOG.md (R-changelog)")
+        return
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    for problem in module.check(path.read_text(encoding="utf-8")):
+        advisory.append(f"CHANGELOG.md: {problem} (R-changelog)")
+
+
 def lint(root: Path) -> dict[str, Any]:
     """Report hard contradictions and advisories for the active film without validate."""
     hard: list[str] = []
@@ -641,6 +663,7 @@ def lint(root: Path) -> dict[str, Any]:
         ("session-log", lambda: lint_session_log(film, advisory)),
         ("git", lambda: lint_git_status(root, project, advisory)),
         ("blockers", lambda: lint_blockers(root, project, advisory)),
+        ("changelog", lambda: lint_changelog(root, advisory)),
     ]
     for name, check in checks:
         try:

@@ -111,7 +111,7 @@ class ReleaseTests(unittest.TestCase):
         self.assertIn("## [1.2.0] - 2026-10-18", updated)
         self.assertIn("## [Unreleased]", updated)
         self.assertIn("[Unreleased]: https://example.test/acme/app/compare/v1.2.0...HEAD", updated)
-        self.assertIn("[1.2.0]: https://example.test/acme/app/compare/v1.2.0...v1.2.0", updated)
+        self.assertIn("[1.2.0]: https://example.test/acme/app/releases/tag/v1.2.0", updated)
         self.assertIn("## [1.2.0] - 2026-10-18\n\n### Added", updated)
 
     def test_release_requires_a_patch_version_and_entries(self):
@@ -129,7 +129,7 @@ class ReleaseTests(unittest.TestCase):
         second = self._release(seeded, "0.2.0", "2026-02-01")
         self.assertIn("[0.2.0]: https://example.test/acme/app/compare/v0.1.0...v0.2.0", second)
         self.assertIn("[Unreleased]: https://example.test/acme/app/compare/v0.2.0...HEAD", second)
-        self.assertIn("[0.1.0]: https://example.test/acme/app/compare/v0.1.0...v0.1.0", second)
+        self.assertIn("[0.1.0]: https://example.test/acme/app/releases/tag/v0.1.0", second)
 
     def test_older_sections_keep_their_blank_lines(self):
         first = self._release(self.text, "0.1.0", "2026-01-01")

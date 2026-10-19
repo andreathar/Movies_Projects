@@ -250,9 +250,11 @@ def release(text: str, version: str, released: str, url: str) -> tuple[str, int]
     updated = "\n".join(rebuilt).rstrip() + "\n"
 
     if url:
-        source = f"v{previous}" if previous else f"v{version}"
         links["Unreleased"] = f"{url}/compare/v{version}...HEAD"
-        links[version] = f"{url}/compare/{source}...v{version}"
+        # First release: link the tag itself; later releases compare against the previous one.
+        links[version] = (
+            f"{url}/compare/v{previous}...v{version}" if previous else f"{url}/releases/tag/v{version}"
+        )
         ordered = [f"[Unreleased]: {links['Unreleased']}"]
         for line in rebuilt:
             match = VERSION_HEADING_RE.match(line)
