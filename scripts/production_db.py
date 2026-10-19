@@ -439,6 +439,19 @@ class Store:
                                  "ON p.id=m.project_id WHERE m.identity_id=? ORDER BY p.id", (actor["id"],))
             return [dict(row) for row in rows]
 
+    def participants(self, token, project=None):
+        """Public IDs/roles only; never disclose credentials or unrelated project members."""
+        with self._connect() as c:
+            actor = self._actor(c, token)
+            if project:
+                self._member(c, actor, project)
+                rows = c.execute("SELECT identity_id AS id,role FROM memberships WHERE project_id=? ORDER BY identity_id", (project,))
+            elif actor["is_operator"]:
+                rows = c.execute("SELECT id FROM identities ORDER BY id")
+            else:
+                return [{"id": actor["id"]}]
+            return [dict(row) for row in rows]
+
     def snapshot(self, token, project, kinds):
         """All projections share one authorized SQLite read transaction."""
         with self._connect() as c:

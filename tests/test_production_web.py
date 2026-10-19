@@ -74,10 +74,69 @@ class ProductionWebTests(unittest.TestCase):
         return self.call("POST", "/api/commands", token=token or self.owner, data={
             "command": command, "args": args, "request_id": request_id, "reason": "Synthetic API check"})
 
+    def test_predefined_dropdowns_and_project_scoped_options(self):
+        self.execute("project-create", project="one", title="Projeto <um>")
+        self.execute("project-create", project="two", title="Projeto dois")
+        self.execute("task-create", project="one", id="T-one", title="Tarefa <um>")
+        self.execute("task-create", project="two", id="T-other", title="Outra tarefa")
+        cookie, _ = self.login()
+        page = self.call(path="/?project=one", cookie=cookie).body.decode()
+        def options(field):
+            return re.search(r'<select[^>]*id="' + field + r'"[^>]*>(.*?)</select>', page).group(1)
+        self.assertIn('value="producer"', options("member-add-role"))
+        self.assertIn('value="contributor"', options("member-add-role"))
+        self.assertIn('value="reviewer"', options("member-add-role"))
+        self.assertIn('value="approved"', options("approval-record-outcome"))
+        self.assertIn('value="rejected"', options("approval-record-outcome"))
+        self.assertIn('value="one" selected', options("task-create-project"))
+        self.assertIn('value="T-one"', options("task-offer-task"))
+        self.assertNotIn('T-other', options("task-offer-task"))
+        self.assertIn('Tarefa &lt;um&gt;', options("task-offer-task"))
+        self.assertIn('id="project-create-project" name="project" required type="text"', page)
+        self.assertIn("Equipe e permissões", page)
+        self.assertNotIn("Motivo e evidência real", page)
+        self.assertNotIn(self.owner, page)
+
+    def test_participant_choices_do_not_leak_other_projects_or_secrets(self):
+        self.store.add_identity(self.owner, "reader", self.root / "reader.key", request_id="reader-id", reason="Synthetic fixture")
+        self.store.add_identity(self.owner, "unrelated", self.root / "unrelated.key", request_id="other-id", reason="Synthetic fixture")
+        self.execute("project-create", project="one", title="One")
+        self.execute("project-create", project="two", title="Two")
+        self.execute("member-add", project="one", user="operator", role="producer")
+        self.execute("member-add", project="one", user="reader", role="reviewer")
+        self.execute("member-add", project="two", user="unrelated", role="contributor")
+        reader = credential(self.root / "reader.key")
+        self.assertEqual(self.store.participants(reader), [{"id": "reader"}])
+        members = self.store.participants(reader, "one")
+        self.assertEqual({row["id"] for row in members}, {"operator", "reader"})
+        self.assertTrue(all(set(row) == {"id", "role"} for row in members))
+        with self.assertRaises(ManagementError):
+            self.store.participants(reader, "two")
+        cookie, _ = self.login(reader)
+        page = self.call(path="/?project=one", cookie=cookie).body.decode()
+        self.assertNotIn("unrelated", page)
+        self.assertNotIn(reader, page)
+        self.assertEqual(self.api("member-add", {"project": "one", "user": "unrelated", "role": "admin"}).status, 400)
+        self.assertEqual({row["id"] for row in self.store.participants(self.owner, "one")}, {"operator", "reader"})
+
+    def test_command_return_preserves_selected_project(self):
+        self.execute("project-create", project="one", title="One")
+        self.execute("task-create", project="one", id="T1", title="Task")
+        self.execute("member-add", project="one", user="operator", role="producer")
+        cookie, csrf = self.login()
+        response = self.call("POST", "/command", cookie=cookie, origin="http://127.0.0.1:19876", data={
+            "command": "task-block", "task": "T1", "revision": "1", "owner": "operator",
+            "condition": "Synthetic missing input", "reason": "Synthetic fixture", "request_id": "block-ui",
+            "csrf": csrf, "view_project": "one"})
+        self.assertEqual(response.status, 200)
+        self.assertIn(b'name="project" value="one"', response.body)
+
     def test_empty_dashboard_does_not_seed_and_requires_login(self):
         page = self.call()
         self.assertEqual(page.status, 200)
         self.assertIn(b'type="password"', page.body)
+        # no-referrer makes native browser form POSTs send Origin:null and blocks login.
+        self.assertEqual(page.headers["Referrer-Policy"], "same-origin")
         self.assertEqual(self.store.projects(self.owner), [])
         cookie, _ = self.login()
         page = self.call(cookie=cookie)

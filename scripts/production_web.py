@@ -39,7 +39,7 @@ KINDS = ("tasks", "handoffs", "artifact_versions", "decisions", "approvals", "ev
          "task_dependencies", "task_inputs", "task_allowed_paths", "handoff_artifacts",
          "handoff_checks", "handoff_dependencies", "handoff_open_decisions")
 LABELS = {"project": "Projeto (ID)", "title": "Título", "user": "Participante (ID)",
-          "role": "Papel: producer, contributor ou reviewer", "id": "Novo ID",
+          "role": "Papel na equipe (define as permissões)", "id": "Novo ID",
           "task": "Tarefa (ID)", "revision": "Revisão esperada", "to": "Destinatário (ID)",
           "scope": "Escopo", "owner": "Responsável (ID)", "condition": "Condição para desbloquear",
           "path": "Caminho relativo do arquivo", "supersedes": "Versão anterior (ID)",
@@ -52,7 +52,16 @@ LABELS = {"project": "Projeto (ID)", "title": "Título", "user": "Participante (
           "input": "Versões de entrada (um ID por linha)",
           "successor": "Sucessora já aceita (ID)", "blocker_owner": "Responsável pelo bloqueio (ID)",
           "closed": "Encerrar etapa sem sucessora", "purpose": "Finalidade da aprovação",
-          "outcome": "Resultado: approved ou rejected"}
+          "outcome": "Resultado"}
+ROLE_OPTIONS = (("producer", "Produtor"), ("contributor", "Colaborador"), ("reviewer", "Revisor"))
+OUTCOME_OPTIONS = (("approved", "Aprovado"), ("rejected", "Rejeitado"))
+
+
+def select_control(attrs, options, selected=""):
+    content = '<select' + attrs + '><option value="">Selecione uma opção</option>'
+    for value, label in options:
+        content += '<option value="' + escape(value, quote=True) + '"' + (' selected' if value == selected else '') + '>' + escape(label) + '</option>'
+    return content + '</select>'
 MAX_BODY = 65536
 SESSION_SECONDS = 1800
 
@@ -131,7 +140,7 @@ class Application:
     def response(self, status, body, *, html=False, extra=None):
         headers = {"Content-Type": "text/html; charset=utf-8" if html else "application/json; charset=utf-8",
                    "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff",
-                   "Referrer-Policy": "no-referrer",
+                   "Referrer-Policy": "same-origin",
                    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'; base-uri 'none'"}
         headers.update(extra or {})
         return Response(status, (body if html else encoded(body)).encode(), headers)
@@ -211,7 +220,7 @@ class Application:
                     return self.response(200, self.dashboard(session, data.get("project", "")), html=True)
                 if route.path == "/command":
                     command = data.get("command", "")
-                    args = {k: v for k, v in data.items() if k not in {"command", "csrf", "session", "request_id", "reason"} and v != ""}
+                    args = {k: v for k, v in data.items() if k not in {"command", "csrf", "session", "request_id", "reason", "view_project"} and v != ""}
                     for key in list(args):
                         if key == "revision":
                             try:
@@ -228,7 +237,7 @@ class Application:
                     result = self.store.execute(session["token"], command, args,
                                                 request_id=data.get("request_id", ""), reason=data.get("reason", ""))
                     return self.response(200, self.page("Operação registrada", "<p>Confirmada no banco. Reenviar a mesma requisição não duplica a operação.</p>"
-                        + "<pre>" + escape(json.dumps(result, ensure_ascii=False, indent=2)) + '</pre>' + self.navigation(session)), html=True)
+                        + "<pre>" + escape(json.dumps(result, ensure_ascii=False, indent=2)) + '</pre>' + self.navigation(session, args.get("project", data.get("view_project", "")))), html=True)
                 return self.response(404, {"error": "route not found"})
             if route.path != "/":
                 return self.response(404, {"error": "route not found"})
@@ -266,6 +275,9 @@ class Application:
         projects = self.projects(session["token"])
         if project and project not in {p["id"] for p in projects}:
             raise ManagementError("project permission denied")
+        identities = self.store.participants(session["token"])
+        members = self.store.participants(session["token"], project) if project else []
+        snapshot = {kind: [] for kind in KINDS}
         content = self.navigation(session, action="/logout", label="Sair")
         content += '<nav aria-label="Projetos"><h2>Projetos</h2>'
         for p in projects:
@@ -288,23 +300,46 @@ class Application:
                         content += '<tr>' + ''.join('<td>' + escape(str(row[k]) if row[k] is not None else '—') + '</td>' for k in columns) + '</tr>'
                     content += '</tbody></table></div>'
                 content += '</section>'
-        content += '<h2>Operações</h2><p>Use IDs e revisões exibidos no banco. Os formulários não concedem papéis; o núcleo valida cada operação. Cadastro de identidades e backup permanecem na CLI local.</p>'
+        content += '<section><h2>Equipe e permissões</h2><p>A equipe é formada pelos participantes vinculados ao projeto selecionado. Selecione o projeto na navegação acima para carregar suas opções.</p>'
+        content += '<ul><li>Operador local (privilégio administrativo separado do papel): cria projetos, cadastra identidades, vincula participantes e registra aprovações/rejeições. Possui acesso administrativo aos projetos; não é vinculado automaticamente à equipe.</li><li>Produtor: gerencia tarefas, decisões e integração de entregas. O papel sozinho não autoriza vincular participantes nem registrar aprovações.</li><li>Colaborador e revisor: consultam o projeto, aceitam atribuições próprias e registram artefatos e entregas próprias. Nesta versão, ambos têm as mesmas permissões técnicas.</li></ul><p>Permissões são definidas pelo papel e verificadas pelo servidor; não há concessão avulsa de permissões.</p>'
+        for member in members:
+            content += '<p>' + escape(member['id']) + ' — ' + escape(dict(ROLE_OPTIONS)[member['role']]) + '</p>'
+        content += '</section><h2>Operações</h2><p>Escolha registros existentes nas listas. Novos IDs e descrições continuam livres. Revise a revisão esperada antes de enviar. Cadastro de identidades e backup permanecem na CLI local.</p>'
         for command, (title, mandatory, optional) in COMMANDS.items():
             content += '<details><summary>' + escape(title) + '</summary><form action="/command" method="post">'
-            for key, value in (("command", command), ("session", session["id"]), ("csrf", session["csrf"]), ("request_id", "req-" + secrets.token_urlsafe(18))):
+            for key, value in (("command", command), ("session", session["id"]), ("csrf", session["csrf"]), ("request_id", "req-" + secrets.token_urlsafe(18)), ("view_project", project)):
                 content += '<input type="hidden" name="' + key + '" value="' + escape(value, quote=True) + '">'
             for key in (mandatory + ' ' + optional).split():
                 field_id = command + '-' + key
                 content += '<label for="' + field_id + '">' + escape(LABELS[key]) + (' (obrigatório)' if key in mandatory.split() else ' (opcional)') + '</label>'
                 attrs = ' id="' + field_id + '" name="' + key + '"' + (' required' if key in mandatory.split() else '')
-                if key == 'closed':
+                options = None
+                if key == 'role':
+                    options = ROLE_OPTIONS
+                elif key == 'outcome':
+                    options = OUTCOME_OPTIONS
+                elif key == 'project' and command != 'project-create':
+                    options = [(p['id'], p['title'] + ' (' + p['id'] + ')') for p in projects]
+                elif key in {'user', 'to', 'owner', 'blocker_owner'}:
+                    options = [(p['id'], p['id']) for p in (identities if key == 'user' else members)]
+                elif key in {'task', 'successor', 'handoff'}:
+                    rows = snapshot['handoffs' if key == 'handoff' else 'tasks']
+                    options = [(row['id'], row.get('title', row['id']) + ' — ' + row['id']) for row in rows]
+                elif key == 'artifact' and command == 'approval-record':
+                    options = [(row['id'], row['id'] + ' — ' + row['path']) for row in snapshot['artifact_versions']]
+                elif key == 'supersedes':
+                    kind = {'artifact-add': 'artifact_versions', 'decision-record': 'decisions', 'approval-record': 'approvals'}[command]
+                    options = [(row['id'], row['id']) for row in snapshot[kind]]
+                if options is not None:
+                    content += select_control(attrs, options, project if key == 'project' else '')
+                elif key == 'closed':
                     content += '<select' + attrs + '><option value="">Não</option><option value="true">Sim</option></select>'
                 elif key in array_fields(command) or key in {'scope', 'limitations'}:
                     content += '<textarea' + attrs + '></textarea>'
                 else:
                     value = project if key == 'project' else ''
                     content += '<input' + attrs + (' type="number" min="1" step="1"' if key == 'revision' else ' type="text"') + ' value="' + escape(value, quote=True) + '">'
-            content += '<label for="' + command + '-reason">Motivo e evidência real (obrigatório)</label><textarea id="' + command + '-reason" name="reason" required></textarea>'
+            content += '<label for="' + command + '-reason">Por que fazer isso? (obrigatório)</label><p id="' + command + '-reason-help">Explique o motivo. Se houve verificação, descreva o que foi conferido; não invente evidência.</p><textarea id="' + command + '-reason" name="reason" aria-describedby="' + command + '-reason-help" required></textarea>'
             content += '<button type="submit">' + escape(title) + '</button></form></details>'
         return self.page("Gestão de produção", content)
 

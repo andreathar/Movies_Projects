@@ -20,9 +20,33 @@ local separada. Para projetos novos, somente o banco novo deve ser usado; não c
 os mesmos dados também no painel legado. Este documento não altera contratos canônicos
 de produção de episódios nem afirma que o legado já foi desativado globalmente.
 
-## Iniciar explicitamente
+## Ativação local verificada
 
-Não há daemon, schedule, serviço instalado ou porta aberta por esta entrega.
+Após Andre autorizar prosseguir com o teste de navegador e ativação, foi inicializado
+um banco operacional **sem projetos ou dados herdados**, com uma identidade bootstrap
+`operador-local`. O processo local foi iniciado em `http://127.0.0.1:18741/` e a porta
+18741 registrada no inventário canônico de serviços da máquina.
+
+- Banco: `.production-db/management.sqlite3` (modo 600).
+- Credencial do operador: `.production-db/operator.credential` (modo 600); não mostrar
+  seu conteúdo em chat/logs. Uso direto pelo usuário somente no campo de senha local.
+- Diretório runtime: `.production-db/` (modo 700, ignorado pelo Git).
+- PID observado na ativação: 4036726; PID de execução em `.production-db/server.pid`.
+- Log privado: `.production-db/server.log`, sem log de acesso ou credenciais.
+- Teste: HTTP 200 na tela de login, integridade SQLite `ok`, zero projetos, tarefas,
+  handoffs, decisões e aprovações. Somente uma identidade e o evento bootstrap.
+
+Esse é um processo local temporário iniciado via `nohup`, não um serviço instalado;
+não há autostart, daemon de sistema ou schedule. Disponibilidade futura deve ser
+conferida: o processo não é garantido após reinício/logout da máquina. Para interromper,
+primeiro confirmar que o PID registrado ainda corresponde a `scripts/production_web.py`
+neste workspace (incluindo `/proc/<pid>/cwd`), então enviar SIGTERM somente a esse
+processo. Nunca usar um PID antigo sem verificar, nem encerrar outros serviços.
+
+## Iniciar explicitamente após interrupção
+
+As instruções abaixo são para iniciar se o processo **não estiver rodando**; não executar
+`init` de novo nem substituir banco/credencial existentes.
 
 1. Inicializar banco e identidades pela CLI descrita em `docs/PRODUCTION_DATABASE.md`.
    Nada é semeado automaticamente. Cadastro de identidade gera somente uma credencial
@@ -130,22 +154,49 @@ agentes, submissão de mídia ou integração com serviços pagos.
   URL ou log de acesso. O handle temporário e CSRF ficam nos formulários e são sensíveis;
   não compartilhar HTML autenticado. Não há logs de requisição, persistência de sessão
   ou script de terceiros.
-- Escapamento de HTML, CSP sem scripts/frames, no-store e no-referrer.
+- Escapamento de HTML, CSP sem scripts/frames, no-store e Referrer-Policy same-origin.
+  A política no-referrer foi substituída após teste real: ela produz Origin:null em POSTs
+  nativos do Chromium, impedindo login. A validação de Origin continua exata.
 - Corpo limitado a 64 KiB; sem transfer-encoding, content-length duplicado ou corpo truncado.
 - Permissões, hashes, transações, revisões e idempotência são os do mesmo núcleo SQLite.
 - Snapshot por projeto é consistente; seleção de projeto/autenticação são verificações
   separadas e não prometem um snapshot global de todos os projetos.
 - Não há paginação de eventos, revogação/rotação de credenciais nem autenticação remota.
   Painel é uma primeira superfície local, não um substituto de infraestrutura multiusuário.
-- Testes cobrem aplicação e adaptador HTTP em memória, sem listener real. Inspeção visual,
-  teclado e playback no navegador **não foram executados** nesta etapa.
+- Testes de aplicação/adaptador HTTP em memória e teste real com Chromium headless.
+  O teste de navegador usa banco e credenciais sintéticos temporários, processo loopback
+  encerrado ao final e evidência final em `.production-db/browser-check-v4/` (inclui versões
+  de ferramentas, hashes dos scripts e screenshots). A porta 18742 é reservada para QA
+  temporário; não é o painel operacional.
+  Foram verificados teclado no login, desktop, mobile sem overflow, identidades separadas,
+  fluxo completo e API no mesmo banco. Não houve playback de mídia nem aceite artístico.
+
+## Repetir QA sem tocar no banco operacional
+
+Após checar a porta reservada 18742, executar com o módulo Playwright já instalado:
+
+```sh
+.venv/bin/python scripts/production_browser_check.py \
+  --port 18742 --playwright-module /CAMINHO/INSTALADO/playwright \
+  --output .production-db/browser-check-NOVA-REVISAO
+```
+
+O destino deve ser novo. O runner Linux cria credenciais sintéticas privadas em um
+workspace temporário, exige um nonce de execução, recusa symlinks de credenciais e URL
+fora do loopback, usa criação exclusiva da proposta e encerra servidor/browser ao final.
+Em timeout, encerra também os grupos descendentes conhecidos do Chromium. O teste não
+aceita caminho de credencial operacional. Não captura call logs de Playwright que possam
+conter campos de senha. Versões e hashes ficam no relatório `result.json` de QA, não em
+um novo registro operacional de projeto.
 
 ## Próximo responsável / ativação
 
 O assistente desta conversa implementou painel/API/client como sucessor do núcleo.
-A próxima etapa permanece com o produtor/coordenador: revisar o desenho local, definir
-identidades e porta de operação, testar no navegador e decidir o corte operacional.
-Nenhum banco real, operador ou serviço foi inicializado por esta entrega.
+A ativação local de infraestrutura está concluída, com banco vazio e bootstrap local;
+não foi criada identidade de Andre nem distribuída credencial a agentes. A próxima ação
+pertence ao usuário/produtor: entrar com a credencial local e cadastrar o primeiro projeto
+novo e suas identidades/atribuições. Nenhum projeto, aprovação ou permissão antiga foi
+herdado. O assistente não abriu ou aceitou uma atribuição de produção de filme.
 
 Se a operação desejada for remota, o bloqueio pertence ao produtor: definir hospedagem,
 autenticação/revogação e localização do banco antes de expor qualquer endpoint. Não basta
