@@ -1,0 +1,11 @@
+{
+  "name": "prompt-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local app: headshots + locations + script -> character sheets, scene references and Kling / Higgsfield prompts",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}
