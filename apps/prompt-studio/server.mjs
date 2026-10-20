@@ -63,7 +63,7 @@ function blankProject(title) {
   while (fs.existsSync(projDir(id))) { i += 1; id = `${base}-${i}`; }
   return {
     id, title, createdAt: new Date().toISOString(), style: 'photoreal-unretouched', aspect: '16:9', defaultCamera: 'locked', dialogueLanguage: 'English',
-    consent: false, kling: { imageModel: 'kling-image-o1', videoModel: 'kling-video-v3_0' }, higgsfield: { imageModel: 'nano_banana_pro', videoModel: 'seedance_2_5' },
+    consent: false, kling: { imageModel: 'kling-image-o1', videoModel: 'kling-video-v4_0' }, higgsfield: { imageModel: 'nano_banana_pro', videoModel: 'seedance_2_5' },
     characters: [], locations: [], script: '', sceneSettings: {}, shotOverrides: {},
   };
 }

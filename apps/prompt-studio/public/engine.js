@@ -41,6 +41,14 @@
   /* --------------------------------------------------------- platform facts */
   const KLING_TAGS = ['Characters', 'Animals', 'Items', 'Costumes', 'Scenes', 'Effects', 'Others'];
   const KLING_IMAGE_MODELS = ['kling-image-o1', 'kling-image-v3_0', 'kling-image-v3_0_omni'];
+  // Per-model limits from the live who_am_i schema (checked 2026-10-20); re-check before relying on them.
+  const KLING_VIDEO_LIMITS = {
+    'kling-video-v3_0': { maxDuration: 15, elements: true },
+    'kling-video-v3_0_omni': { maxDuration: 15, elements: true },
+    'kling-video-v3_0_turbo': { maxDuration: 15, elements: false },
+    'kling-video-o1': { maxDuration: 10, elements: true },
+    'kling-video-v4_0': { maxDuration: 30, elements: true },
+  };
   const KLING_VIDEO_MODELS = ['kling-video-v3_0', 'kling-video-v3_0_omni', 'kling-video-v3_0_turbo', 'kling-video-o1', 'kling-video-v4_0'];
   const HIGGS_IMAGE_MODELS = ['nano_banana_pro', 'nano_banana_2', 'soul_cinematic', 'gpt_image_2', 'seedream_v5_pro', 'kling_omni_image', 'cinematic_studio_2_5'];
   const HIGGS_VIDEO_MODELS = {
@@ -121,6 +129,12 @@
       aspect: '16:9',
       clause: 'Character turnaround model sheet, four consistent full-body views in a row, front view, 3/4 view, side profile and back view, evenly spaced, neutral standing pose, arms relaxed',
       extra: 'same scale and height on all four views, full body and both feet visible in every view, no other people, no props, empty seamless studio',
+    },
+    'production-sheet': {
+      label: 'Production sheet (4 views + details + face)',
+      aspect: '2:3',
+      clause: 'Vertical character production sheet on one canvas, top row four consistent full-body views of the character evenly spaced, front view, 3/4 view, side profile and back view, neutral standing pose with arms relaxed, full head-to-toe with both feet visible in every view, bottom left clean detail insets of the outfit pieces and accessories laid out flat, bottom right a large front-facing head-and-shoulders face close-up of the same character',
+      extra: 'same scale, height, face, hair and outfit on every view, one character only, no other people, no mannequin, no props, no text, no labels, no frame borders, empty seamless studio',
     },
     expression: {
       label: 'Expression sheet',
@@ -635,18 +649,24 @@
 
     // ----- Kling CLI args
     const vModel = (project.kling && project.kling.videoModel) || 'kling-video-v3_0';
-    const klingArgs = {
-      model: vModel,
-      duration: String(Math.max(3, Math.min(15, dur))),
-      resolution: '1080p',
-      enable_audio: audioOn,
-      prefer_multi_shots: false,
-      aspect_ratio: project.aspect || '16:9',
-    };
+    const vLimits = KLING_VIDEO_LIMITS[vModel] || KLING_VIDEO_LIMITS['kling-video-v3_0'];
+    const klingDuration = String(Math.max(3, Math.min(vLimits.maxDuration, dur)));
     const elArg = cli.filter((t) => t.el).map((t) => ({ id: t.el, bindName: klingElementName(t.c.name) }));
     const firstFile = `${assetName({ project: project.title, kind: 'shot', subject: shot.id, variant: 'keyframe', version: 1 })}`;
-    const cliCmd = `kling image_to_video --model ${vModel} --input first_image=./${firstFile} --duration ${klingArgs.duration} --resolution ${klingArgs.resolution} --enable_audio ${klingArgs.enable_audio} --prefer_multi_shots false` +
-      (elArg.length ? ` --elements '${JSON.stringify(elArg)}'` : '') + ' ' + shellQuote(i2vCli);
+    // Live who_am_i (2026-10-20): v4.0 image_to_video has no elements/enable_audio args and follows the
+    // first frame's ratio; Elements on v4.0 go through omni_ref_video (image_1 = keyframe, type per element_get).
+    const useOmniRef = vModel === 'kling-video-v4_0' && elArg.length > 0;
+    const klingTool = useOmniRef ? 'omni_ref_video' : 'image_to_video';
+    const klingArgs = vModel === 'kling-video-v4_0'
+      ? { model: vModel, duration: klingDuration, resolution: '1080p', ...(useOmniRef ? { aspect_ratio: 'auto', enable_audio: audioOn, keepOriginalSound: false } : {}) }
+      : { model: vModel, duration: klingDuration, resolution: '1080p', enable_audio: audioOn, prefer_multi_shots: false, aspect_ratio: project.aspect || '16:9' };
+    const klingInputKey = useOmniRef ? 'image_1' : 'first_image';
+    const klingElements = useOmniRef ? elArg.map((e) => ({ ...e, type: 'image' })) : elArg;
+    const elementsAllowed = vLimits.elements && (klingTool === 'omni_ref_video' || vModel !== 'kling-video-v4_0');
+    const cliCmd = `kling ${klingTool} --model ${vModel} --input ${klingInputKey}=./${firstFile} --duration ${klingArgs.duration} --resolution ${klingArgs.resolution}` +
+      (klingArgs.enable_audio != null ? ` --enable_audio ${klingArgs.enable_audio}` : '') +
+      (klingArgs.prefer_multi_shots === false ? ' --prefer_multi_shots false' : '') +
+      (elementsAllowed && klingElements.length ? ` --elements '${JSON.stringify(klingElements)}'` : '') + ' ' + shellQuote(i2vCli);
 
     return {
       id: shot.id,
@@ -657,7 +677,7 @@
       },
       kling: {
         keyframe: { tool: 'image_to_image', model: (project.kling && project.kling.imageModel) || 'kling-image-o1', promptCli: keyframeCli, promptApp: keyframeApp, images: kc.refs, elements: elArg },
-        video: { tool: 'image_to_video', args: klingArgs, promptCli: i2vCli, promptApp: i2vApp, elements: elArg, cli: cliCmd },
+        video: { tool: klingTool, inputKey: klingInputKey, args: klingArgs, promptCli: i2vCli, promptApp: i2vApp, elements: elementsAllowed ? klingElements : [], cli: cliCmd },
       },
       higgsfield: {
         keyframe: { tool: 'generate_image', model: (project.higgsfield && project.higgsfield.imageModel) || 'nano_banana_pro', aspect_ratio: project.aspect || '16:9', prompt: higgsKeyframe, references: kc.refs.map((r) => ({ role: 'image_references', file: r.file, label: r.label })) },
@@ -728,7 +748,7 @@
         outfit: o,
         element: klingElementSpecCostume(project, c, o),
         sheet: outfitSheet(project, c, o),
-        characterSheets: ['split-screen', 'turnaround'].map((k) => ({
+        characterSheets: ['production-sheet', 'split-screen', 'turnaround'].map((k) => ({
           composition: k,
           higgsfield: higgsfieldCharacterSheet(project, c, o, k),
           kling: klingCharacterSheet(project, c, o, k),
@@ -748,13 +768,13 @@
       const v = prompts.kling.video;
       jobs.push({
         job: `${slugify(project.title).toUpperCase()}-${shot.id}`,
-        tool: 'image_to_video',
+        tool: v.tool,
         model: v.args.model,
         auth: 'REPLACE-WITH-AUTHORIZED-APR-ID',
         submissionBlocked: 'Draft from Prompt Studio — review prompt, media, schema and budget before removing this field.',
         prompt: v.promptCli,
-        args: { duration: v.args.duration, resolution: v.args.resolution, imageCount: '1', enable_audio: v.args.enable_audio, prefer_multi_shots: v.args.prefer_multi_shots },
-        inputs: { first_image: prompts.fileNames.keyframe },
+        args: { ...v.args, model: undefined, imageCount: '1' },
+        inputs: { [v.inputKey]: prompts.fileNames.keyframe },
         ...(v.elements.length ? { elements: v.elements } : {}),
       });
     }
@@ -798,7 +818,7 @@
   }
 
   return {
-    slugify, pascal, words, pad, PRONOUNS, KLING_TAGS, KLING_IMAGE_MODELS, KLING_VIDEO_MODELS, HIGGS_IMAGE_MODELS, HIGGS_VIDEO_MODELS,
+    slugify, pascal, words, pad, PRONOUNS, KLING_TAGS, KLING_IMAGE_MODELS, KLING_VIDEO_MODELS, KLING_VIDEO_LIMITS, HIGGS_IMAGE_MODELS, HIGGS_VIDEO_MODELS,
     CAMERA, STYLE_PRESETS, COMPOSITIONS, PLATES, NAME_KINDS,
     assetName, higgsElementName, klingElementName,
     parseScript, sceneCast, buildShots, resolveScene, estimateDuration,
