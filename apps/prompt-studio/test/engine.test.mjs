@@ -157,3 +157,38 @@ test('location plates and full pack/spec export', () => {
   assert.ok(spec.every((j) => j.submissionBlocked && j.auth.startsWith('REPLACE')));
   assert.ok(E.toMarkdown(p).includes('# The Table — Prompt pack'));
 });
+
+test('production sheet matches the 4-view + details + face layout', () => {
+  const p = project();
+  const o = p.characters[0].outfits[0];
+  const h = E.higgsfieldCharacterSheet(p, p.characters[0], o, 'production-sheet');
+  const k = E.klingCharacterSheet(p, p.characters[0], o, 'production-sheet');
+  for (const phrase of ['four consistent full-body views', 'back view', 'detail insets', 'face close-up']) {
+    assert.ok(JSON.stringify(h).includes(phrase), `higgsfield missing "${phrase}"`);
+    assert.ok(JSON.stringify(k).includes(phrase), `kling missing "${phrase}"`);
+  }
+  assert.equal(E.COMPOSITIONS['production-sheet'].aspect, '2:3');
+});
+
+test('Kling 4.0 follows the live schema: no v3-only args, 30s cap, omni_ref_video with elements', () => {
+  const p = project();
+  p.kling = { imageModel: 'kling-image-o1', videoModel: 'kling-video-v4_0' };
+  let { shots } = E.buildShots(p);
+  let v = E.shotPrompts(p, shots[0]).kling.video;
+  assert.equal(v.tool, 'image_to_video');
+  assert.equal(v.inputKey, 'first_image');
+  assert.equal(v.args.prefer_multi_shots, undefined);
+  assert.equal(v.args.enable_audio, undefined);
+  assert.ok(!v.cli.includes('--prefer_multi_shots'));
+  p.characters[0].klingElementId = '12345';
+  ({ shots } = E.buildShots(p));
+  v = E.shotPrompts(p, shots[0]).kling.video;
+  assert.equal(v.tool, 'omni_ref_video');
+  assert.equal(v.inputKey, 'image_1');
+  assert.deepEqual(v.elements[0].type, 'image');
+  assert.ok(v.cli.startsWith('kling omni_ref_video --model kling-video-v4_0 --input image_1='));
+  const spec = E.klingSpec(p)[0];
+  assert.equal(spec.tool, 'omni_ref_video');
+  assert.ok(spec.inputs.image_1 && !spec.inputs.first_image);
+  assert.equal(E.KLING_VIDEO_LIMITS['kling-video-o1'].maxDuration, 10);
+});
