@@ -313,7 +313,7 @@
     for (const x of (outfit && outfit.refs) || []) refs.push({ role: 'image_references', file: x, label: 'Outfit reference' });
 
     const idLead = hasRefs
-      ? `Use the attached reference photos (front and side headshots) as the exact facial identity: keep the same face shape, features, skin tone, hair and age, do not beautify or alter the person`
+      ? `use the attached reference photos (front and side headshots) as the exact facial identity: keep the same face shape, features, skin tone, hair and age, do not beautify or alter the person`
       : '';
     const parts = [
       comp.clause,
@@ -371,7 +371,6 @@
       const idLines = [];
       if (front) idLines.push(`the person with EXACTLY the face of ${tok(front, target)}`);
       if (side) idLines.push(`${tok(side, target)} is the same person in side profile`);
-      const outfitRef = outfitIdx.length ? `, wearing the outfit shown in ${outfitIdx.map((i) => tok(i, target)).join(' and ')}` : '';
       const text = join([
         comp.clause,
         idLines.join('; ') || 'original character',
@@ -379,8 +378,7 @@
         'pure white seamless studio background',
         c.hair ? 'hair: ' + c.hair : '',
         c.build,
-        outfit ? 'wearing ' + outfitPhrase(outfit) + (outfitRef ? '' : '') : '',
-        outfitRef ? outfitRef.slice(2) : '',
+        outfit ? 'wearing ' + outfitPhrase(outfit) + (outfitIdx.length ? ` (exactly as shown in ${outfitIdx.map((i) => tok(i, target)).join(' and ')})` : '') : (outfitIdx.length ? `wearing the outfit shown in ${outfitIdx.map((i) => tok(i, target)).join(' and ')}` : ''),
         style.lighting,
         style.photo ? 'natural skin texture, no retouching, no beauty filter' : style.realism,
         comp.extra,

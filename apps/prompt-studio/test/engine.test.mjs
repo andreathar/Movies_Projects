@@ -74,6 +74,10 @@ test('Kling sheet uses 图片N for CLI and @ImageN for app, in slot order', () =
   assert.doesNotMatch(k.promptApp, /图片/);
   assert.match(k.cli, /--image \.\/uploads\/f\.jpg --image \.\/uploads\/s\.jpg/);
   assert.equal(k.tokenMap[0].cli, '图片1');
+  assert.equal((k.promptCli.match(/wearing/g) || []).length, 1);
+  assert.match(k.promptCli, /exactly as shown in 图片3/);
+  const hh = E.higgsfieldCharacterSheet(p, p.characters[0], p.characters[0].outfits[0], 'split-screen');
+  assert.doesNotMatch(hh.prompt, /, Use /);
 });
 
 test('Kling element spec: cover + 1-3 secondary, valid tag', () => {
